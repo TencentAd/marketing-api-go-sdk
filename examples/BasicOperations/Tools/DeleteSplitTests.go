@@ -38,7 +38,7 @@ func (e *SplitTestsDeleteExample) Init() {
 	}
 }
 
-func (e *SplitTestsDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *SplitTestsDeleteExample) RunExample() (model.SplitTestsDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

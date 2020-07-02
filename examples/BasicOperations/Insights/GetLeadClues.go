@@ -35,7 +35,7 @@ func (e *LeadCluesGetExample) Init() {
 	e.Data = model.LeadCluesGetRequest{}
 }
 
-func (e *LeadCluesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *LeadCluesGetExample) RunExample() (model.LeadCluesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

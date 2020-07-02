@@ -35,7 +35,7 @@ func (e *AdgroupsUpdateConfiguredStatusExample) Init() {
 	e.Data = model.AdgroupsUpdateConfiguredStatusRequest{}
 }
 
-func (e *AdgroupsUpdateConfiguredStatusExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdgroupsUpdateConfiguredStatusExample) RunExample() (model.AdgroupsUpdateConfiguredStatusResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

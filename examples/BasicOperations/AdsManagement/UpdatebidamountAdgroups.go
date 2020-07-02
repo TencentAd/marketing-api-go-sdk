@@ -35,7 +35,7 @@ func (e *AdgroupsUpdateBidAmountExample) Init() {
 	e.Data = model.AdgroupsUpdateBidAmountRequest{}
 }
 
-func (e *AdgroupsUpdateBidAmountExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdgroupsUpdateBidAmountExample) RunExample() (model.AdgroupsUpdateBidAmountResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

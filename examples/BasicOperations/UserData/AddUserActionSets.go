@@ -39,7 +39,7 @@ func (e *UserActionSetsAddExample) Init() {
 	}
 }
 
-func (e *UserActionSetsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserActionSetsAddExample) RunExample() (model.UserActionSetsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -11,6 +11,8 @@ package model
 
 // 返回结构
 type PlayablePagesGetListStruct struct {
+	LandingPageId          string                  `json:"landing_page_id,omitempty"`
+	PlayablePageId         string                  `json:"playable_page_id,omitempty"`
 	PlayablePageMaterialId string                  `json:"playable_page_material_id,omitempty"`
 	PlayablePageName       string                  `json:"playable_page_name,omitempty"`
 	PlayablePageCdnBaseUrl string                  `json:"playable_page_cdn_base_url,omitempty"`

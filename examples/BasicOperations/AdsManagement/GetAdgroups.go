@@ -48,7 +48,7 @@ func (e *AdgroupsGetExample) Init() {
 	}
 }
 
-func (e *AdgroupsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdgroupsGetExample) RunExample() (model.AdgroupsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

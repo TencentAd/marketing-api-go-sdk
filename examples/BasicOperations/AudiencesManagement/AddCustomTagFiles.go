@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type CustomTagFilesAddExample struct {
@@ -47,7 +48,7 @@ func (e *CustomTagFilesAddExample) Init() {
 	e.CustomTagFilesAddOpts = &api.CustomTagFilesAddOpts{}
 }
 
-func (e *CustomTagFilesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomTagFilesAddExample) RunExample() (model.CustomTagFilesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

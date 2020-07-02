@@ -35,7 +35,7 @@ func (e *ConversionsAddExample) Init() {
 	e.Data = model.ConversionsAddRequest{}
 }
 
-func (e *ConversionsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ConversionsAddExample) RunExample() (model.ConversionsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

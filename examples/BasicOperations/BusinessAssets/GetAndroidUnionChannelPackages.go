@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type AndroidUnionChannelPackagesGetExample struct {
@@ -39,7 +40,7 @@ func (e *AndroidUnionChannelPackagesGetExample) Init() {
 	e.AndroidUnionChannelPackagesGetOpts = &api.AndroidUnionChannelPackagesGetOpts{}
 }
 
-func (e *AndroidUnionChannelPackagesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AndroidUnionChannelPackagesGetExample) RunExample() (model.AndroidUnionChannelPackagesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

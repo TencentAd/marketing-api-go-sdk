@@ -48,7 +48,7 @@ func (e *AdcreativePreviewsGetExample) Init() {
 	}
 }
 
-func (e *AdcreativePreviewsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativePreviewsGetExample) RunExample() (model.AdcreativePreviewsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

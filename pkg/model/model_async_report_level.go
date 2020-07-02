@@ -21,4 +21,6 @@ const (
 	AsyncReportLevel_ADVERTISER     AsyncReportLevel = "REPORT_LEVEL_ADVERTISER"
 	AsyncReportLevel_CAMPAIGN       AsyncReportLevel = "REPORT_LEVEL_CAMPAIGN"
 	AsyncReportLevel_ADGROUP        AsyncReportLevel = "REPORT_LEVEL_ADGROUP"
+	AsyncReportLevel_MATERIAL_VIDEO AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
+	AsyncReportLevel_MATERIAL_IMAGE AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
 )

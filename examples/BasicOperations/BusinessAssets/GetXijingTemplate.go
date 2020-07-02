@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type XijingTemplateGetExample struct {
@@ -39,7 +40,7 @@ func (e *XijingTemplateGetExample) Init() {
 	e.XijingTemplateGetOpts = &api.XijingTemplateGetOpts{}
 }
 
-func (e *XijingTemplateGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *XijingTemplateGetExample) RunExample() (model.XijingTemplateGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -35,7 +35,7 @@ func (e *AdgroupsUpdateDatetimeExample) Init() {
 	e.Data = model.AdgroupsUpdateDatetimeRequest{}
 }
 
-func (e *AdgroupsUpdateDatetimeExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdgroupsUpdateDatetimeExample) RunExample() (model.AdgroupsUpdateDatetimeResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -35,7 +35,7 @@ func (e *ProfilesDeleteExample) Init() {
 	e.Data = model.ProfilesDeleteRequest{}
 }
 
-func (e *ProfilesDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProfilesDeleteExample) RunExample() (model.ProfilesDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

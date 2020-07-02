@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type WechatAdvertiserSpecificationGetExample struct {
@@ -35,7 +36,7 @@ func (e *WechatAdvertiserSpecificationGetExample) Init() {
 	e.WechatAdvertiserSpecificationGetOpts = &api.WechatAdvertiserSpecificationGetOpts{}
 }
 
-func (e *WechatAdvertiserSpecificationGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatAdvertiserSpecificationGetExample) RunExample() (model.WechatAdvertiserSpecificationGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

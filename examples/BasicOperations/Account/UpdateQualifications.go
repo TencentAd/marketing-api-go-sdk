@@ -40,7 +40,7 @@ func (e *QualificationsUpdateExample) Init() {
 	}
 }
 
-func (e *QualificationsUpdateExample) RunExample() (interface{}, *http.Response, error) {
+func (e *QualificationsUpdateExample) RunExample() (model.QualificationsUpdateResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -41,7 +41,7 @@ func (e *UnionPositionPackagesAddExample) Init() {
 	}
 }
 
-func (e *UnionPositionPackagesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UnionPositionPackagesAddExample) RunExample() (model.UnionPositionPackagesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

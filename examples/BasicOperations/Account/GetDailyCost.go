@@ -47,7 +47,7 @@ func (e *DailyCostGetExample) Init() {
 	}
 }
 
-func (e *DailyCostGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *DailyCostGetExample) RunExample() (model.DailyCostGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

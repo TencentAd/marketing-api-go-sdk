@@ -40,7 +40,7 @@ func (e *CustomAudiencesAddExample) Init() {
 	}
 }
 
-func (e *CustomAudiencesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomAudiencesAddExample) RunExample() (model.CustomAudiencesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -46,7 +46,7 @@ func (e *SystemStatusGetExample) Init() {
 	e.SystemStatusGetOpts = &api.SystemStatusGetOpts{}
 }
 
-func (e *SystemStatusGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *SystemStatusGetExample) RunExample() (model.SystemStatusGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

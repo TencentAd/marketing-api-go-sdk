@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type UserActionSetsGetExample struct {
@@ -41,7 +42,7 @@ func (e *UserActionSetsGetExample) Init() {
 	}
 }
 
-func (e *UserActionSetsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserActionSetsGetExample) RunExample() (model.UserActionSetsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

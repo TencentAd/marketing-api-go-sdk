@@ -9,7 +9,7 @@
 
 package model
 
-// PlayablePageAuditStatus : 试玩素材状态
+// PlayablePageAuditStatus : 互动推广页状态
 type PlayablePageAuditStatus string
 
 // List of PlayablePageAuditStatus

@@ -22,6 +22,7 @@ type Adcreative struct {
 	CreatedTime            int64                          `json:"created_time,omitempty"`
 	LastModifiedTime       int64                          `json:"last_modified_time,omitempty"`
 	PlayablePageMaterialId string                         `json:"playable_page_material_id,omitempty"`
+	VideoEndPage           VideoEndPageSpec               `json:"video_end_page,omitempty"`
 	AdcreativeTemplateId   int64                          `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements     AdcreativeCreativeElementsRead `json:"adcreative_elements,omitempty"`
 }

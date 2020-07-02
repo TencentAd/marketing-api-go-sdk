@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type CustomAudienceInsightsGetExample struct {
@@ -45,7 +46,7 @@ func (e *CustomAudienceInsightsGetExample) Init() {
 	}
 }
 
-func (e *CustomAudienceInsightsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomAudienceInsightsGetExample) RunExample() (model.CustomAudienceInsightsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

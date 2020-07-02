@@ -39,7 +39,7 @@ func (e *AdDiagnosisGetExample) Init() {
 	}
 }
 
-func (e *AdDiagnosisGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdDiagnosisGetExample) RunExample() (model.AdDiagnosisGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

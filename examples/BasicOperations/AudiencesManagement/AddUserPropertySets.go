@@ -38,7 +38,7 @@ func (e *UserPropertySetsAddExample) Init() {
 	}
 }
 
-func (e *UserPropertySetsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserPropertySetsAddExample) RunExample() (model.UserPropertySetsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

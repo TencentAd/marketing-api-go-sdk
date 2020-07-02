@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type DiagnosisGetExample struct {
@@ -39,7 +40,7 @@ func (e *DiagnosisGetExample) Init() {
 	e.DiagnosisGetOpts = &api.DiagnosisGetOpts{}
 }
 
-func (e *DiagnosisGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *DiagnosisGetExample) RunExample() (model.DiagnosisGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -46,7 +46,7 @@ func (e *ProductItemsAddExample) Init() {
 	}
 }
 
-func (e *ProductItemsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProductItemsAddExample) RunExample() (model.ProductItemsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

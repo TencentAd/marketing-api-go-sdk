@@ -38,7 +38,7 @@ func (e *AdcreativesDeleteExample) Init() {
 	}
 }
 
-func (e *AdcreativesDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativesDeleteExample) RunExample() (model.AdcreativesDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

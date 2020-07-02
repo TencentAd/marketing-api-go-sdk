@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type PlayablePagesAddExample struct {
@@ -42,7 +43,7 @@ func (e *PlayablePagesAddExample) Init() {
 	}
 }
 
-func (e *PlayablePagesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *PlayablePagesAddExample) RunExample() (model.PlayablePagesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -39,7 +39,7 @@ func (e *ComplianceValidationGetExample) Init() {
 	}
 }
 
-func (e *ComplianceValidationGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ComplianceValidationGetExample) RunExample() (model.ComplianceValidationGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

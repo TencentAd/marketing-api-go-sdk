@@ -234,7 +234,7 @@ paths:
     get:
       tags:
       - "playable_pages"
-      summary: "获取试玩素材"
+      summary: "获取互动推广页"
       operationId: "playable_pages_get"
       consumes:
       - "text/plain"
@@ -290,7 +290,7 @@ paths:
     post:
       tags:
       - "playable_pages"
-      summary: "添加试玩素材"
+      summary: "添加互动推广页"
       operationId: "playable_pages_add"
       consumes:
       - "multipart/form-data"
@@ -6952,6 +6952,8 @@ definitions:
     - "REPORT_LEVEL_ADVERTISER"
     - "REPORT_LEVEL_CAMPAIGN"
     - "REPORT_LEVEL_ADGROUP"
+    - "REPORT_LEVEL_MATERIAL_VIDEO"
+    - "REPORT_LEVEL_MATERIAL_IMAGE"
   TimeGranularity:
     type: "string"
     description: "异步报表粒度"
@@ -7078,7 +7080,8 @@ definitions:
     - "CLAIM_TYPE_CLICK"
   IntOptimizationGoal:
     type: "string"
-    description: "广告优化目标类型"
+    description: "优化目标类型，支持的优化目标及对应的深度优化目标可通过“<a href='docs/api/tools/capabilities/optimization_goal_permissions_get'\
+      \ target='_blank'>查询优化目标权限</a>”接口进行查询"
     enum:
     - "OPTIMIZATIONGOAL_NONE"
     - "OPTIMIZATIONGOAL_BRAND_CONVERSION"
@@ -7127,7 +7130,7 @@ definitions:
     - "OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD"
   ConversionOptimizationGoal:
     type: "string"
-    description: "深度优化价值目标"
+    description: "深度优化ROI目标，深度优化行为目标和深度优化ROI目标仅可填写其中一个"
     enum:
     - "GOAL_NONE"
     - "GOAL_7DAY_PURCHASE_ROAS"
@@ -8932,6 +8935,9 @@ definitions:
         share_content_spec:
           share_title: "share_title"
           share_description: "share_description"
+        video_end_page:
+          end_page_id: "end_page_id"
+          end_page_type: {}
         universal_link_url: "universal_link_url"
         created_time: 5
         component_id: 9
@@ -9375,6 +9381,17 @@ definitions:
       product_catalog_id: 7
       product_mode: {}
       product_source: "product_source"
+  video_end_page_spec:
+    type: "object"
+    properties:
+      end_page_id:
+        type: "string"
+      end_page_type:
+        $ref: "#/definitions/VideoEndPageType"
+    description: "视频播放结束页"
+    example:
+      end_page_id: "end_page_id"
+      end_page_type: {}
   revised_adcreative_spec:
     type: "object"
     properties:
@@ -10684,10 +10701,8 @@ definitions:
         - ""
         - ""
         exclude:
-        - time_window: 1
-          audience_id: 6
-        - time_window: 1
-          audience_id: 6
+        - ""
+        - ""
   DataPlatform:
     type: "string"
     description: "数据应用"
@@ -10907,10 +10922,8 @@ definitions:
         - ""
         - ""
         exclude:
-        - time_window: 1
-          audience_id: 6
-        - time_window: 1
-          audience_id: 6
+        - ""
+        - ""
       keyword_spec:
         include_keyword:
         - "include_keyword"
@@ -11447,17 +11460,21 @@ definitions:
           page_size: 9
         list:
         - playable_page_material_id: "playable_page_material_id"
+          playable_page_id: "playable_page_id"
           created_time: 6
           last_modified_time: 1
           playable_page_name: "playable_page_name"
+          landing_page_id: "landing_page_id"
           audit_status: {}
           playable_page_cdn_base_url: "playable_page_cdn_base_url"
           playable_page_direction: {}
           audit_msg: "audit_msg"
         - playable_page_material_id: "playable_page_material_id"
+          playable_page_id: "playable_page_id"
           created_time: 6
           last_modified_time: 1
           playable_page_name: "playable_page_name"
+          landing_page_id: "landing_page_id"
           audit_status: {}
           playable_page_cdn_base_url: "playable_page_cdn_base_url"
           playable_page_direction: {}
@@ -11494,17 +11511,21 @@ definitions:
         page_size: 9
       list:
       - playable_page_material_id: "playable_page_material_id"
+        playable_page_id: "playable_page_id"
         created_time: 6
         last_modified_time: 1
         playable_page_name: "playable_page_name"
+        landing_page_id: "landing_page_id"
         audit_status: {}
         playable_page_cdn_base_url: "playable_page_cdn_base_url"
         playable_page_direction: {}
         audit_msg: "audit_msg"
       - playable_page_material_id: "playable_page_material_id"
+        playable_page_id: "playable_page_id"
         created_time: 6
         last_modified_time: 1
         playable_page_name: "playable_page_name"
+        landing_page_id: "landing_page_id"
         audit_status: {}
         playable_page_cdn_base_url: "playable_page_cdn_base_url"
         playable_page_direction: {}
@@ -11512,6 +11533,10 @@ definitions:
   PlayablePagesGetListStruct:
     type: "object"
     properties:
+      landing_page_id:
+        type: "string"
+      playable_page_id:
+        type: "string"
       playable_page_material_id:
         type: "string"
       playable_page_name:
@@ -11533,23 +11558,25 @@ definitions:
     description: "返回结构"
     example:
       playable_page_material_id: "playable_page_material_id"
+      playable_page_id: "playable_page_id"
       created_time: 6
       last_modified_time: 1
       playable_page_name: "playable_page_name"
+      landing_page_id: "landing_page_id"
       audit_status: {}
       playable_page_cdn_base_url: "playable_page_cdn_base_url"
       playable_page_direction: {}
       audit_msg: "audit_msg"
   PlayablePageDirection:
     type: "string"
-    description: "试玩素材展示方向"
+    description: "互动推广页展示方向"
     enum:
     - "PLAYABLE_PAGE_DIRECTION_HORIZONTAL_VERTICAL"
     - "PLAYABLE_PAGE_DIRECTION_VERTICAL"
     - "PLAYABLE_PAGE_DIRECTION_HORIZONTAL"
   PlayablePageAuditStatus:
     type: "string"
-    description: "试玩素材状态"
+    description: "互动推广页状态"
     enum:
     - "PLAYABLE_PAGE_AUDIT_STATUS_UNKNOWN"
     - "PLAYABLE_PAGE_AUDIT_STATUS_PENDING"
@@ -11576,6 +11603,8 @@ definitions:
       code: 0
       data:
         playable_page_material_id: "playable_page_material_id"
+        playable_page_id: "playable_page_id"
+        landing_page_id: "landing_page_id"
       message_cn: "message_cn"
       message: "message"
       errors:
@@ -11594,10 +11623,16 @@ definitions:
   PlayablePagesAddResponseData:
     type: "object"
     properties:
+      landing_page_id:
+        type: "string"
+      playable_page_id:
+        type: "string"
       playable_page_material_id:
         type: "string"
     example:
       playable_page_material_id: "playable_page_material_id"
+      playable_page_id: "playable_page_id"
+      landing_page_id: "landing_page_id"
   AsyncReportsAddRequest:
     type: "object"
     properties:
@@ -33423,6 +33458,9 @@ definitions:
           share_content_spec:
             share_title: "share_title"
             share_description: "share_description"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           universal_link_url: "universal_link_url"
           created_time: 5
           component_id: 9
@@ -33651,6 +33689,9 @@ definitions:
           share_content_spec:
             share_title: "share_title"
             share_description: "share_description"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           universal_link_url: "universal_link_url"
           created_time: 5
           component_id: 9
@@ -33764,6 +33805,8 @@ definitions:
         type: "boolean"
       playable_page_material_id:
         type: "string"
+      video_end_page:
+        $ref: "#/definitions/video_end_page_spec"
       feeds_video_comment_switch:
         type: "boolean"
       adcreative_template_id:
@@ -33975,6 +34018,9 @@ definitions:
       share_content_spec:
         share_title: "share_title"
         share_description: "share_description"
+      video_end_page:
+        end_page_id: "end_page_id"
+        end_page_type: {}
       universal_link_url: "universal_link_url"
       created_time: 5
       component_id: 9
@@ -34223,6 +34269,11 @@ definitions:
     example:
       page_url: "page_url"
       page_id: 2
+  VideoEndPageType:
+    type: "string"
+    description: "视频播放结束页类型"
+    enum:
+    - "VIDEO_END_PAGE_TYPE_PLAY_H5"
   adcreative_creative_elements:
     type: "object"
     properties:
@@ -34998,6 +35049,9 @@ definitions:
               - "image_list"
             promoted_object_type: {}
             adcreative_name: "adcreative_name"
+            video_end_page:
+              end_page_id: "end_page_id"
+              end_page_type: {}
             campaign_id: 7
           adgroup_id: 1
           last_modified_time: 1
@@ -35151,6 +35205,9 @@ definitions:
               - "image_list"
             promoted_object_type: {}
             adcreative_name: "adcreative_name"
+            video_end_page:
+              end_page_id: "end_page_id"
+              end_page_type: {}
             campaign_id: 7
           adgroup_id: 1
           last_modified_time: 1
@@ -35335,6 +35392,9 @@ definitions:
             - "image_list"
           promoted_object_type: {}
           adcreative_name: "adcreative_name"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           campaign_id: 7
         adgroup_id: 1
         last_modified_time: 1
@@ -35488,6 +35548,9 @@ definitions:
             - "image_list"
           promoted_object_type: {}
           adcreative_name: "adcreative_name"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           campaign_id: 7
         adgroup_id: 1
         last_modified_time: 1
@@ -35688,6 +35751,9 @@ definitions:
           - "image_list"
         promoted_object_type: {}
         adcreative_name: "adcreative_name"
+        video_end_page:
+          end_page_id: "end_page_id"
+          end_page_type: {}
         campaign_id: 7
       adgroup_id: 1
       last_modified_time: 1
@@ -35739,6 +35805,8 @@ definitions:
         format: "int64"
       playable_page_material_id:
         type: "string"
+      video_end_page:
+        $ref: "#/definitions/video_end_page_spec"
       adcreative_template_id:
         type: "integer"
         format: "int64"
@@ -35877,6 +35945,9 @@ definitions:
         - "image_list"
       promoted_object_type: {}
       adcreative_name: "adcreative_name"
+      video_end_page:
+        end_page_id: "end_page_id"
+        end_page_type: {}
       campaign_id: 7
   adcreative_creative_elements_read:
     type: "object"
@@ -36228,6 +36299,8 @@ definitions:
         type: "boolean"
       playable_page_material_id:
         type: "string"
+      video_end_page:
+        $ref: "#/definitions/video_end_page_spec"
       feeds_video_comment_switch:
         type: "boolean"
       account_id:
@@ -36353,6 +36426,9 @@ definitions:
       share_content_spec:
         share_title: "share_title"
         share_description: "share_description"
+      video_end_page:
+        end_page_id: "end_page_id"
+        end_page_type: {}
       automatic_site_enabled: true
       universal_link_url: "universal_link_url"
       campaign_id: 0
@@ -36471,6 +36547,8 @@ definitions:
         type: "boolean"
       playable_page_material_id:
         type: "string"
+      video_end_page:
+        $ref: "#/definitions/video_end_page_spec"
       feeds_video_comment_switch:
         type: "boolean"
       account_id:
@@ -36698,6 +36776,9 @@ definitions:
       share_content_spec:
         share_title: "share_title"
         share_description: "share_description"
+      video_end_page:
+        end_page_id: "end_page_id"
+        end_page_type: {}
       category:
       - 5
       - 5
@@ -37059,6 +37140,9 @@ definitions:
           share_content_spec:
             share_title: "share_title"
             share_description: "share_description"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           universal_link_url: "universal_link_url"
           automatic_site_enabled: true
           campaign_id: 6
@@ -37321,6 +37405,9 @@ definitions:
           share_content_spec:
             share_title: "share_title"
             share_description: "share_description"
+          video_end_page:
+            end_page_id: "end_page_id"
+            end_page_type: {}
           universal_link_url: "universal_link_url"
           automatic_site_enabled: true
           campaign_id: 6
@@ -37614,6 +37701,9 @@ definitions:
         share_content_spec:
           share_title: "share_title"
           share_description: "share_description"
+        video_end_page:
+          end_page_id: "end_page_id"
+          end_page_type: {}
         universal_link_url: "universal_link_url"
         automatic_site_enabled: true
         campaign_id: 6
@@ -37876,6 +37966,9 @@ definitions:
         share_content_spec:
           share_title: "share_title"
           share_description: "share_description"
+        video_end_page:
+          end_page_id: "end_page_id"
+          end_page_type: {}
         universal_link_url: "universal_link_url"
         automatic_site_enabled: true
         campaign_id: 6
@@ -37983,6 +38076,8 @@ definitions:
         type: "boolean"
       playable_page_material_id:
         type: "string"
+      video_end_page:
+        $ref: "#/definitions/video_end_page_spec"
       feeds_video_comment_switch:
         type: "boolean"
       adcreative_template_id:
@@ -38226,6 +38321,9 @@ definitions:
       share_content_spec:
         share_title: "share_title"
         share_description: "share_description"
+      video_end_page:
+        end_page_id: "end_page_id"
+        end_page_type: {}
       universal_link_url: "universal_link_url"
       automatic_site_enabled: true
       campaign_id: 6
@@ -49602,10 +49700,8 @@ definitions:
           - ""
           - ""
           exclude:
-          - time_window: 1
-            audience_id: 6
-          - time_window: 1
-            audience_id: 6
+          - ""
+          - ""
       type: "type"
   combine_spec:
     type: "object"
@@ -49617,17 +49713,15 @@ definitions:
       exclude:
         type: "array"
         items:
-          $ref: "#/definitions/simple_rule"
+          $ref: "#/definitions/exclude_simple_rule"
     description: "组合人群信息"
     example:
       include:
       - ""
       - ""
       exclude:
-      - time_window: 1
-        audience_id: 6
-      - time_window: 1
-        audience_id: 6
+      - ""
+      - ""
   include_simple_rule:
     type: "array"
     description: "包含的人群"
@@ -49643,9 +49737,11 @@ definitions:
         type: "integer"
         format: "int64"
     description: "组合人群简单规则"
-    example:
-      time_window: 1
-      audience_id: 6
+  exclude_simple_rule:
+    type: "array"
+    description: "排除的人群"
+    items:
+      $ref: "#/definitions/simple_rule"
   CustomAudienceEstimationsGetResponse:
     type: "object"
     properties:
@@ -50784,10 +50880,8 @@ definitions:
           - ""
           - ""
           exclude:
-          - time_window: 1
-            audience_id: 6
-          - time_window: 1
-            audience_id: 6
+          - ""
+          - ""
         keyword_spec:
           include_keyword:
           - "include_keyword"
@@ -51746,10 +51840,8 @@ definitions:
               - ""
               - ""
               exclude:
-              - time_window: 1
-                audience_id: 6
-              - time_window: 1
-                audience_id: 6
+              - ""
+              - ""
             keyword_spec:
               include_keyword:
               - "include_keyword"
@@ -51913,10 +52005,8 @@ definitions:
               - ""
               - ""
               exclude:
-              - time_window: 1
-                audience_id: 6
-              - time_window: 1
-                audience_id: 6
+              - ""
+              - ""
             keyword_spec:
               include_keyword:
               - "include_keyword"
@@ -52111,10 +52201,8 @@ definitions:
             - ""
             - ""
             exclude:
-            - time_window: 1
-              audience_id: 6
-            - time_window: 1
-              audience_id: 6
+            - ""
+            - ""
           keyword_spec:
             include_keyword:
             - "include_keyword"
@@ -52278,10 +52366,8 @@ definitions:
             - ""
             - ""
             exclude:
-            - time_window: 1
-              audience_id: 6
-            - time_window: 1
-              audience_id: 6
+            - ""
+            - ""
           keyword_spec:
             include_keyword:
             - "include_keyword"
@@ -52478,10 +52564,8 @@ definitions:
           - ""
           - ""
           exclude:
-          - time_window: 1
-            audience_id: 6
-          - time_window: 1
-            audience_id: 6
+          - ""
+          - ""
         keyword_spec:
           include_keyword:
           - "include_keyword"

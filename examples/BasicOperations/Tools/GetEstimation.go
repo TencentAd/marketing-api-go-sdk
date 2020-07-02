@@ -47,7 +47,7 @@ func (e *EstimationGetExample) Init() {
 	}
 }
 
-func (e *EstimationGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *EstimationGetExample) RunExample() (model.EstimationGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

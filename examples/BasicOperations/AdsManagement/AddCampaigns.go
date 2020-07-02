@@ -41,7 +41,7 @@ func (e *CampaignsAddExample) Init() {
 	}
 }
 
-func (e *CampaignsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CampaignsAddExample) RunExample() (model.CampaignsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

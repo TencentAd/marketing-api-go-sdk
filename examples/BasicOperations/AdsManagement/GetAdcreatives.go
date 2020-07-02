@@ -48,7 +48,7 @@ func (e *AdcreativesGetExample) Init() {
 	}
 }
 
-func (e *AdcreativesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativesGetExample) RunExample() (model.AdcreativesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

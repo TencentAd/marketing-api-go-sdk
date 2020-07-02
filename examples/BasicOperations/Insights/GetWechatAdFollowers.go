@@ -45,7 +45,7 @@ func (e *WechatAdFollowersGetExample) Init() {
 	}
 }
 
-func (e *WechatAdFollowersGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatAdFollowersGetExample) RunExample() (model.WechatAdFollowersGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

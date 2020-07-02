@@ -35,7 +35,7 @@ func (e *CampaignsUpdateDailyBudgetExample) Init() {
 	e.Data = model.CampaignsUpdateDailyBudgetRequest{}
 }
 
-func (e *CampaignsUpdateDailyBudgetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CampaignsUpdateDailyBudgetExample) RunExample() (model.CampaignsUpdateDailyBudgetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

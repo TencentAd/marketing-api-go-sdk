@@ -9,8 +9,5 @@
 
 package model
 
-// 组合人群信息
-type CombineSpec struct {
-	Include []IncludeSimpleRule `json:"include,omitempty"`
-	Exclude []ExcludeSimpleRule `json:"exclude,omitempty"`
-}
+// 排除的人群
+type ExcludeSimpleRule []SimpleRule

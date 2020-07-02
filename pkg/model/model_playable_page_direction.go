@@ -9,7 +9,7 @@
 
 package model
 
-// PlayablePageDirection : 试玩素材展示方向
+// PlayablePageDirection : 互动推广页展示方向
 type PlayablePageDirection string
 
 // List of PlayablePageDirection

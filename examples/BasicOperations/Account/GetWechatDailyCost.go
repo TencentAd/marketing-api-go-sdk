@@ -38,7 +38,7 @@ func (e *WechatDailyCostGetExample) Init() {
 	e.WechatDailyCostGetOpts = &api.WechatDailyCostGetOpts{}
 }
 
-func (e *WechatDailyCostGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatDailyCostGetExample) RunExample() (model.WechatDailyCostGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -57,7 +57,7 @@ func (e *CustomAudienceReportsGetExample) Init() {
 	}
 }
 
-func (e *CustomAudienceReportsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomAudienceReportsGetExample) RunExample() (model.CustomAudienceReportsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

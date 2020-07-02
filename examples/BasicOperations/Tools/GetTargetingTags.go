@@ -19,12 +19,13 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type TargetingTagsGetExample struct {
 	TAds                 *ads.SDKClient
 	AccessToken          string
-	Type_                string
+	Type                 string
 	TargetingTagsGetOpts *api.TargetingTagsGetOpts
 }
 
@@ -34,7 +35,7 @@ func (e *TargetingTagsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Type_ = "APP_CATEGORY"
+	e.Type = "APP_CATEGORY"
 	e.TargetingTagsGetOpts = &api.TargetingTagsGetOpts{
 
 		AccountId: optional.NewInt64(int64(0)),
@@ -43,11 +44,11 @@ func (e *TargetingTagsGetExample) Init() {
 	}
 }
 
-func (e *TargetingTagsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *TargetingTagsGetExample) RunExample() (model.TargetingTagsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.TargetingTags().Get(ctx, e.Type_, e.TargetingTagsGetOpts)
+	return tads.TargetingTags().Get(ctx, e.Type, e.TargetingTagsGetOpts)
 }
 
 func main() {

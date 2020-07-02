@@ -39,7 +39,7 @@ func (e *PromotedObjectsUpdateExample) Init() {
 	}
 }
 
-func (e *PromotedObjectsUpdateExample) RunExample() (interface{}, *http.Response, error) {
+func (e *PromotedObjectsUpdateExample) RunExample() (model.PromotedObjectsUpdateResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

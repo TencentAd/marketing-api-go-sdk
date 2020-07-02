@@ -35,7 +35,7 @@ func (e *AsyncReportsAddExample) Init() {
 	e.Data = model.AsyncReportsAddRequest{}
 }
 
-func (e *AsyncReportsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AsyncReportsAddExample) RunExample() (model.AsyncReportsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

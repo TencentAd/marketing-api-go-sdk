@@ -35,7 +35,7 @@ func (e *AdcreativeTemplatePreviewsGetExample) Init() {
 	e.Data = model.AdcreativeTemplatePreviewsGetRequest{}
 }
 
-func (e *AdcreativeTemplatePreviewsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativeTemplatePreviewsGetExample) RunExample() (model.AdcreativeTemplatePreviewsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

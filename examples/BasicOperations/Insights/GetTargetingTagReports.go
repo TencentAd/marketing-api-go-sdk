@@ -26,7 +26,7 @@ type TargetingTagReportsGetExample struct {
 	TAds                       *ads.SDKClient
 	AccessToken                string
 	AccountId                  int64
-	Type_                      string
+	Type                       string
 	Level                      string
 	DateRange                  model.ReportDateRange
 	TargetingTagReportsGetOpts *api.TargetingTagReportsGetOpts
@@ -39,7 +39,7 @@ func (e *TargetingTagReportsGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = int64(0)
-	e.Type_ = "CITY"
+	e.Type = "CITY"
 	e.Level = "ADVERTISER"
 	e.DateRange = model.ReportDateRange{
 		StartDate: "REPORT START DATE",
@@ -51,11 +51,11 @@ func (e *TargetingTagReportsGetExample) Init() {
 	}
 }
 
-func (e *TargetingTagReportsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *TargetingTagReportsGetExample) RunExample() (model.TargetingTagReportsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.TargetingTagReports().Get(ctx, e.AccountId, e.Type_, e.Level, e.DateRange, e.TargetingTagReportsGetOpts)
+	return tads.TargetingTagReports().Get(ctx, e.AccountId, e.Type, e.Level, e.DateRange, e.TargetingTagReportsGetOpts)
 }
 
 func main() {

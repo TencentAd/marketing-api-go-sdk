@@ -39,7 +39,7 @@ func (e *QualificationsDeleteExample) Init() {
 	}
 }
 
-func (e *QualificationsDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *QualificationsDeleteExample) RunExample() (model.QualificationsDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

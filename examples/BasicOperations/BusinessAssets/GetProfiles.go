@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type ProfilesGetExample struct {
@@ -37,7 +38,7 @@ func (e *ProfilesGetExample) Init() {
 	e.ProfilesGetOpts = &api.ProfilesGetOpts{}
 }
 
-func (e *ProfilesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProfilesGetExample) RunExample() (model.ProfilesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

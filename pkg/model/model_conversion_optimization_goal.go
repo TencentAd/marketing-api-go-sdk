@@ -9,7 +9,7 @@
 
 package model
 
-// ConversionOptimizationGoal : 深度优化价值目标
+// ConversionOptimizationGoal : 深度优化ROI目标，深度优化行为目标和深度优化ROI目标仅可填写其中一个
 type ConversionOptimizationGoal string
 
 // List of ConversionOptimizationGoal

@@ -44,7 +44,7 @@ func (e *WechatLeadsGetExample) Init() {
 	}
 }
 
-func (e *WechatLeadsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatLeadsGetExample) RunExample() (model.WechatLeadsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

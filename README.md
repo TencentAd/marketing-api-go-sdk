@@ -23,7 +23,7 @@ go mod tidy
 ## 如何使用
 SDK数组参数调用的方法名与API接口一一对应，如campaigns/get接口就对应tads.Campaigns().Get()方法
 ### 获取Access Token
-###### 注：本示例适用于授权时通过Authorization Code获取Access Token和Refresh Token，如需更新Access Token请参考 ./examples/refresh_token.php 示例
+###### 注：本示例适用于授权时通过Authorization Code获取Access Token和Refresh Token，如需更新Access Token请参考 ./examples/Authentication/RefreshAccessToken.go 示例
 ```go
 package main
 

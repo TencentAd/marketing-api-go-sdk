@@ -36,18 +36,14 @@ func (e *CustomAudienceEstimationsGetExample) Init() {
 		AccountId: int64(0),
 		AudienceSpec: model.EstimationAudienceSpec{
 			CombineSpec: model.CombineSpec{
-				Include: []model.IncludeSimpleRule{model.null{
-					model.SimpleRule{
-						AudienceId: int64(0),
-					},
-				}},
+				Include: []model.IncludeSimpleRule{},
 			},
 		},
 		Type_: "COMBINE",
 	}
 }
 
-func (e *CustomAudienceEstimationsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomAudienceEstimationsGetExample) RunExample() (model.CustomAudienceEstimationsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

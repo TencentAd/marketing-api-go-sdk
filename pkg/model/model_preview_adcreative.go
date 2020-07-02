@@ -35,6 +35,7 @@ type PreviewAdcreative struct {
 	Label                         []string                   `json:"label,omitempty"`
 	UnionMarketSwitch             bool                       `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                     `json:"playable_page_material_id,omitempty"`
+	VideoEndPage                  VideoEndPageSpec           `json:"video_end_page,omitempty"`
 	FeedsVideoCommentSwitch       bool                       `json:"feeds_video_comment_switch,omitempty"`
 	AdcreativeTemplateId          int64                      `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            AdcreativeCreativeElements `json:"adcreative_elements,omitempty"`

@@ -38,7 +38,7 @@ func (e *CampaignsDeleteExample) Init() {
 	}
 }
 
-func (e *CampaignsDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CampaignsDeleteExample) RunExample() (model.CampaignsDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

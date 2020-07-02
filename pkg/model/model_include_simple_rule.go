@@ -10,5 +10,4 @@
 package model
 
 // 包含的人群
-type IncludeSimpleRule struct {
-}
+type IncludeSimpleRule []SimpleRule

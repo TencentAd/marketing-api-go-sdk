@@ -38,7 +38,7 @@ func (e *WechatPagesDeleteExample) Init() {
 	}
 }
 
-func (e *WechatPagesDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatPagesDeleteExample) RunExample() (model.WechatPagesDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

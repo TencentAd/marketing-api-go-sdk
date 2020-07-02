@@ -49,7 +49,7 @@ func (e *ProductCatalogsReportsGetExample) Init() {
 	}
 }
 
-func (e *ProductCatalogsReportsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProductCatalogsReportsGetExample) RunExample() (model.ProductCatalogsReportsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

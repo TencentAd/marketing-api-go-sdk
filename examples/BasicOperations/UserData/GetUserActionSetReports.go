@@ -51,7 +51,7 @@ func (e *UserActionSetReportsGetExample) Init() {
 	}
 }
 
-func (e *UserActionSetReportsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserActionSetReportsGetExample) RunExample() (model.UserActionSetReportsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

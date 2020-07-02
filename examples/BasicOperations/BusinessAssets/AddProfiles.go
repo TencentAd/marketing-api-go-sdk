@@ -35,7 +35,7 @@ func (e *ProfilesAddExample) Init() {
 	e.Data = model.ProfilesAddRequest{}
 }
 
-func (e *ProfilesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProfilesAddExample) RunExample() (model.ProfilesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

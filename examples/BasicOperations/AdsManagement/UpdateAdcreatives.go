@@ -45,7 +45,7 @@ func (e *AdcreativesUpdateExample) Init() {
 	}
 }
 
-func (e *AdcreativesUpdateExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativesUpdateExample) RunExample() (model.AdcreativesUpdateResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

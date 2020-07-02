@@ -51,7 +51,7 @@ func (e *DynamicCreativesAddExample) Init() {
 	}
 }
 
-func (e *DynamicCreativesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *DynamicCreativesAddExample) RunExample() (model.DynamicCreativesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

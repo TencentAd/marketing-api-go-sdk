@@ -40,7 +40,7 @@ func (e *FundTransferAddExample) Init() {
 	}
 }
 
-func (e *FundTransferAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *FundTransferAddExample) RunExample() (model.FundTransferAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -37,7 +37,7 @@ func (e *CustomDataSaltGetExample) Init() {
 	}
 }
 
-func (e *CustomDataSaltGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomDataSaltGetExample) RunExample() (model.CustomDataSaltGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

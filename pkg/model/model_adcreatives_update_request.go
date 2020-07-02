@@ -30,6 +30,7 @@ type AdcreativesUpdateRequest struct {
 	Label                         []string                     `json:"label,omitempty"`
 	UnionMarketSwitch             bool                         `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                       `json:"playable_page_material_id,omitempty"`
+	VideoEndPage                  VideoEndPageSpec             `json:"video_end_page,omitempty"`
 	FeedsVideoCommentSwitch       bool                         `json:"feeds_video_comment_switch,omitempty"`
 	AccountId                     int64                        `json:"account_id,omitempty"`
 	AdcreativeElements            AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`

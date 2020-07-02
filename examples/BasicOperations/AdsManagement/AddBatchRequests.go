@@ -35,7 +35,7 @@ func (e *BatchRequestsAddExample) Init() {
 	e.Data = model.BatchRequestsAddRequest{}
 }
 
-func (e *BatchRequestsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *BatchRequestsAddExample) RunExample() (model.BatchRequestsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -46,7 +46,7 @@ func (e *TargetingsAddExample) Init() {
 	}
 }
 
-func (e *TargetingsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *TargetingsAddExample) RunExample() (model.TargetingsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

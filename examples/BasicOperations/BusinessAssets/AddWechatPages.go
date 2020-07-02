@@ -58,7 +58,7 @@ func (e *WechatPagesAddExample) Init() {
 	}
 }
 
-func (e *WechatPagesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatPagesAddExample) RunExample() (model.WechatPagesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

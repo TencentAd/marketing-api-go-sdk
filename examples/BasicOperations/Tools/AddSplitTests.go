@@ -39,7 +39,7 @@ func (e *SplitTestsAddExample) Init() {
 	}
 }
 
-func (e *SplitTestsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *SplitTestsAddExample) RunExample() (model.SplitTestsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

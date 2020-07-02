@@ -49,7 +49,7 @@ func (e *HourlyReportsGetExample) Init() {
 	}
 }
 
-func (e *HourlyReportsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *HourlyReportsGetExample) RunExample() (model.HourlyReportsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

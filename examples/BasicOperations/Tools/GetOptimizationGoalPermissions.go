@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type OptimizationGoalPermissionsGetExample struct {
@@ -41,7 +42,7 @@ func (e *OptimizationGoalPermissionsGetExample) Init() {
 	e.OptimizationGoalPermissionsGetOpts = &api.OptimizationGoalPermissionsGetOpts{}
 }
 
-func (e *OptimizationGoalPermissionsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *OptimizationGoalPermissionsGetExample) RunExample() (model.OptimizationGoalPermissionsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

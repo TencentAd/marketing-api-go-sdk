@@ -38,7 +38,7 @@ func (e *CustomTagsAddExample) Init() {
 	}
 }
 
-func (e *CustomTagsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CustomTagsAddExample) RunExample() (model.CustomTagsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

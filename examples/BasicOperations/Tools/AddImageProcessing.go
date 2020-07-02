@@ -35,7 +35,7 @@ func (e *ImageProcessingAddExample) Init() {
 	e.Data = model.ImageProcessingAddRequest{}
 }
 
-func (e *ImageProcessingAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ImageProcessingAddExample) RunExample() (model.ImageProcessingAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

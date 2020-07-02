@@ -40,7 +40,7 @@ func (e *AdvertiserAddExample) Init() {
 	}
 }
 
-func (e *AdvertiserAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdvertiserAddExample) RunExample() (model.AdvertiserAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

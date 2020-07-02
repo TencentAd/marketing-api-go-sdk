@@ -29,7 +29,7 @@ var (
 type PlayablePagesApiService service
 
 /*
-PlayablePagesApiService 添加试玩素材
+PlayablePagesApiService 添加互动推广页
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param playablePageName
@@ -132,7 +132,7 @@ func (a *PlayablePagesApiService) Add(ctx context.Context, accountId int64, play
 }
 
 /*
-PlayablePagesApiService 获取试玩素材
+PlayablePagesApiService 获取互动推广页
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *PlayablePagesGetOpts - Optional Parameters:

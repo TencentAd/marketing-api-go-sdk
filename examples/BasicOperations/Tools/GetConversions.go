@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type ConversionsGetExample struct {
@@ -37,7 +38,7 @@ func (e *ConversionsGetExample) Init() {
 	e.ConversionsGetOpts = &api.ConversionsGetOpts{}
 }
 
-func (e *ConversionsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ConversionsGetExample) RunExample() (model.ConversionsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type RealtimeCostGetExample struct {
@@ -45,7 +46,7 @@ func (e *RealtimeCostGetExample) Init() {
 	}
 }
 
-func (e *RealtimeCostGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *RealtimeCostGetExample) RunExample() (model.RealtimeCostGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

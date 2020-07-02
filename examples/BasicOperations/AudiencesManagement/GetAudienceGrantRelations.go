@@ -48,7 +48,7 @@ func (e *AudienceGrantRelationsGetExample) Init() {
 	}
 }
 
-func (e *AudienceGrantRelationsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AudienceGrantRelationsGetExample) RunExample() (model.AudienceGrantRelationsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

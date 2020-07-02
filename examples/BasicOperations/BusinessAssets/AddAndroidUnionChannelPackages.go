@@ -35,7 +35,7 @@ func (e *AndroidUnionChannelPackagesAddExample) Init() {
 	e.Data = model.AndroidUnionChannelPackagesAddRequest{}
 }
 
-func (e *AndroidUnionChannelPackagesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AndroidUnionChannelPackagesAddExample) RunExample() (model.AndroidUnionChannelPackagesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -35,7 +35,7 @@ func (e *CampaignsUpdateConfiguredStatusExample) Init() {
 	e.Data = model.CampaignsUpdateConfiguredStatusRequest{}
 }
 
-func (e *CampaignsUpdateConfiguredStatusExample) RunExample() (interface{}, *http.Response, error) {
+func (e *CampaignsUpdateConfiguredStatusExample) RunExample() (model.CampaignsUpdateConfiguredStatusResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

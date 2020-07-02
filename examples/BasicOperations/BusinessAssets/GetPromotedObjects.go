@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type PromotedObjectsGetExample struct {
@@ -41,7 +42,7 @@ func (e *PromotedObjectsGetExample) Init() {
 	}
 }
 
-func (e *PromotedObjectsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *PromotedObjectsGetExample) RunExample() (model.PromotedObjectsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

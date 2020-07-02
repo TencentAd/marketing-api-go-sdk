@@ -48,7 +48,7 @@ func (e *VideosGetExample) Init() {
 	}
 }
 
-func (e *VideosGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *VideosGetExample) RunExample() (model.VideosGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

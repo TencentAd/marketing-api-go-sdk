@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type ProductsSystemStatusGetExample struct {
@@ -43,7 +44,7 @@ func (e *ProductsSystemStatusGetExample) Init() {
 	}
 }
 
-func (e *ProductsSystemStatusGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProductsSystemStatusGetExample) RunExample() (model.ProductsSystemStatusGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

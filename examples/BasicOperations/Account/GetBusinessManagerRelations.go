@@ -18,6 +18,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type BusinessManagerRelationsGetExample struct {
@@ -35,7 +36,7 @@ func (e *BusinessManagerRelationsGetExample) Init() {
 	e.BusinessManagerRelationsGetOpts = &api.BusinessManagerRelationsGetOpts{}
 }
 
-func (e *BusinessManagerRelationsGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *BusinessManagerRelationsGetExample) RunExample() (model.BusinessManagerRelationsGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

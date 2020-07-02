@@ -38,7 +38,7 @@ func (e *TargetingsDeleteExample) Init() {
 	}
 }
 
-func (e *TargetingsDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *TargetingsDeleteExample) RunExample() (model.TargetingsDeleteResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

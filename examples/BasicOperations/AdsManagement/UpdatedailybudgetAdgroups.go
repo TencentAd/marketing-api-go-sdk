@@ -35,7 +35,7 @@ func (e *AdgroupsUpdateDailyBudgetExample) Init() {
 	e.Data = model.AdgroupsUpdateDailyBudgetRequest{}
 }
 
-func (e *AdgroupsUpdateDailyBudgetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdgroupsUpdateDailyBudgetExample) RunExample() (model.AdgroupsUpdateDailyBudgetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

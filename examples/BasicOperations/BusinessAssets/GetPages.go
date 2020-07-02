@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type PagesGetExample struct {
@@ -43,7 +44,7 @@ func (e *PagesGetExample) Init() {
 	}
 }
 
-func (e *PagesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *PagesGetExample) RunExample() (model.PagesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

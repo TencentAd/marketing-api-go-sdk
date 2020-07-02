@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type AdcreativeTemplatesGetExample struct {
@@ -40,7 +41,7 @@ func (e *AdcreativeTemplatesGetExample) Init() {
 	}
 }
 
-func (e *AdcreativeTemplatesGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativeTemplatesGetExample) RunExample() (model.AdcreativeTemplatesGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

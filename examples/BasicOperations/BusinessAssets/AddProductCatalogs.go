@@ -41,7 +41,7 @@ func (e *ProductCatalogsAddExample) Init() {
 	}
 }
 
-func (e *ProductCatalogsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ProductCatalogsAddExample) RunExample() (model.ProductCatalogsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

@@ -42,7 +42,7 @@ func (e *DynamicAdVideoAddExample) Init() {
 	}
 }
 
-func (e *DynamicAdVideoAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *DynamicAdVideoAddExample) RunExample() (model.DynamicAdVideoAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

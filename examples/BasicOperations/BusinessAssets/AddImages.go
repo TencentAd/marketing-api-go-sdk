@@ -19,6 +19,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type ImagesAddExample struct {
@@ -45,7 +46,7 @@ func (e *ImagesAddExample) Init() {
 	}
 }
 
-func (e *ImagesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *ImagesAddExample) RunExample() (model.ImagesAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

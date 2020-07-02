@@ -47,7 +47,7 @@ func (e *EcommerceOrderGetExample) Init() {
 	}
 }
 
-func (e *EcommerceOrderGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *EcommerceOrderGetExample) RunExample() (model.EcommerceOrderGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

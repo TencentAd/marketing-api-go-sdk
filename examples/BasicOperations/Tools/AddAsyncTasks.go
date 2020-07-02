@@ -44,7 +44,7 @@ func (e *AsyncTasksAddExample) Init() {
 	}
 }
 
-func (e *AsyncTasksAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AsyncTasksAddExample) RunExample() (model.AsyncTasksAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

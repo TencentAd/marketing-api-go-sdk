@@ -45,7 +45,7 @@ func (e *QualificationsAddExample) Init() {
 	}
 }
 
-func (e *QualificationsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *QualificationsAddExample) RunExample() (model.QualificationsAddResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

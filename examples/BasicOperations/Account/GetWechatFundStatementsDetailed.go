@@ -47,7 +47,7 @@ func (e *WechatFundStatementsDetailedGetExample) Init() {
 	}
 }
 
-func (e *WechatFundStatementsDetailedGetExample) RunExample() (interface{}, *http.Response, error) {
+func (e *WechatFundStatementsDetailedGetExample) RunExample() (model.WechatFundStatementsDetailedGetResponseData, *http.Response, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
