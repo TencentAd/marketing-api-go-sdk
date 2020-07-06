@@ -64,7 +64,7 @@ func (a *FundStatementsDailyApiService) Get(ctx context.Context, accountId int64
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("fund_type", parameterToString(fundType, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.TradeType.IsSet() {
 		localVarQueryParams.Add("trade_type", parameterToString(localVarOptionals.TradeType.Value(), ""))
 	}

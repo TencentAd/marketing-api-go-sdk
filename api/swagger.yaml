@@ -473,6 +473,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -613,6 +614,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -946,6 +948,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -1776,6 +1779,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
+        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "page"
         in: "query"
@@ -1950,6 +1954,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_range"
         in: "query"
@@ -1957,6 +1962,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
+        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "filtering"
         in: "query"
@@ -2133,6 +2139,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2222,6 +2229,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2316,6 +2324,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "pos_type"
         in: "query"
@@ -2413,6 +2422,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2510,6 +2520,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/tag_spec"
+        collectionFormat: "multi"
         x-exportParamName: "TagSpec"
       - name: "fields"
         in: "query"
@@ -2551,6 +2562,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_granularity"
         in: "query"
@@ -2758,6 +2770,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/query_spec"
+        collectionFormat: "multi"
         x-exportParamName: "QuerySpec"
       - name: "fields"
         in: "query"
@@ -2846,6 +2859,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
+        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "position_type"
         in: "query"
@@ -3059,6 +3073,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/status_spec"
+        collectionFormat: "multi"
         x-exportParamName: "StatusSpec"
       - name: "fields"
         in: "query"
@@ -3817,6 +3832,7 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/date_range_transaction"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "page"
         in: "query"
@@ -3877,6 +3893,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "trade_type"
         in: "query"
@@ -4977,6 +4994,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
+        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "fields"
         in: "query"
@@ -5567,6 +5585,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_granularity"
         in: "query"
@@ -6228,6 +6247,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "group_by"
         in: "query"
@@ -6437,6 +6457,7 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
+        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "page"
         in: "query"

@@ -64,7 +64,7 @@ func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capab
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("capability", parameterToString(capability, ""))
 	if localVarOptionals != nil && localVarOptionals.QuerySpec.IsSet() {
-		localVarQueryParams.Add("query_spec", parameterToString(localVarOptionals.QuerySpec.Value(), ""))
+		localVarQueryParams.Add("query_spec", parameterToString(localVarOptionals.QuerySpec.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

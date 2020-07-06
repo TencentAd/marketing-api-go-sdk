@@ -72,7 +72,7 @@ func (a *TrackingReportsApiService) Get(ctx context.Context, accountId int64, da
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.TimeGranularity.IsSet() {
 		localVarQueryParams.Add("time_granularity", parameterToString(localVarOptionals.TimeGranularity.Value(), ""))
 	}

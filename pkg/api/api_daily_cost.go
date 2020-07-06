@@ -69,7 +69,7 @@ func (a *DailyCostApiService) Get(ctx context.Context, dateRange ReportDateRange
 	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
 		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
 	}
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

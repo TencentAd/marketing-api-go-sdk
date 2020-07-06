@@ -64,7 +64,7 @@ func (a *CustomAudienceReportsApiService) Get(ctx context.Context, accountId int
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("filtering", parameterToString(filtering, "multi"))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.GroupBy.IsSet() {
 		localVarQueryParams.Add("group_by", parameterToString(localVarOptionals.GroupBy.Value(), "multi"))
 	}

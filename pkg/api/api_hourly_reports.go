@@ -74,7 +74,7 @@ func (a *HourlyReportsApiService) Get(ctx context.Context, accountId int64, leve
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("level", parameterToString(level, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

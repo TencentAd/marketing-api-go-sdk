@@ -69,7 +69,7 @@ func (a *EcommerceOrderApiService) Get(ctx context.Context, accountId int64, dat
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}

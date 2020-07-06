@@ -67,7 +67,7 @@ func (a *LeadsApiService) Get(ctx context.Context, accountId int64, timeRange Ti
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("time_range", parameterToString(timeRange, ""))
+	localVarQueryParams.Add("time_range", parameterToString(timeRange, "multi"))
 	localVarQueryParams.Add("position_type", parameterToString(positionType, ""))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))

@@ -64,7 +64,7 @@ func (a *DiagnosisApiService) Get(ctx context.Context, accountId int64, adgroupI
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("adgroup_id_list", parameterToString(adgroupIdList, "multi"))
 	if localVarOptionals != nil && localVarOptionals.TimeRange.IsSet() {
-		localVarQueryParams.Add("time_range", parameterToString(localVarOptionals.TimeRange.Value(), ""))
+		localVarQueryParams.Add("time_range", parameterToString(localVarOptionals.TimeRange.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

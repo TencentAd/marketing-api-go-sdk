@@ -67,7 +67,7 @@ func (a *TargetingTagsApiService) Get(ctx context.Context, type_ string, localVa
 	}
 	localVarQueryParams.Add("type", parameterToString(type_, ""))
 	if localVarOptionals != nil && localVarOptionals.TagSpec.IsSet() {
-		localVarQueryParams.Add("tag_spec", parameterToString(localVarOptionals.TagSpec.Value(), ""))
+		localVarQueryParams.Add("tag_spec", parameterToString(localVarOptionals.TagSpec.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

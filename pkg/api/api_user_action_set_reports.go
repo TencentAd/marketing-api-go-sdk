@@ -65,7 +65,7 @@ func (a *UserActionSetReportsApiService) Get(ctx context.Context, accountId int6
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("user_action_set_id", parameterToString(userActionSetId, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	localVarQueryParams.Add("time_granularity", parameterToString(timeGranularity, ""))
 	if localVarOptionals != nil && localVarOptionals.Aggregation.IsSet() {
 		localVarQueryParams.Add("aggregation", parameterToString(localVarOptionals.Aggregation.Value(), ""))

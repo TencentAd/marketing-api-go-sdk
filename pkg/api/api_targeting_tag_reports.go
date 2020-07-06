@@ -78,7 +78,7 @@ func (a *TargetingTagReportsApiService) Get(ctx context.Context, accountId int64
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("type", parameterToString(type_, ""))
 	localVarQueryParams.Add("level", parameterToString(level, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.PosType.IsSet() {
 		localVarQueryParams.Add("pos_type", parameterToString(localVarOptionals.PosType.Value(), ""))
 	}

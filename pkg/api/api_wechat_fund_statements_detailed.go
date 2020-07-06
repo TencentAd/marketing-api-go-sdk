@@ -66,7 +66,7 @@ func (a *WechatFundStatementsDetailedApiService) Get(ctx context.Context, tradeT
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("trade_type", parameterToString(tradeType, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
+	localVarQueryParams.Add("date_range", parameterToString(dateRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

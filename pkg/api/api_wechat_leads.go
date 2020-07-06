@@ -68,10 +68,10 @@ func (a *WechatLeadsApiService) Get(ctx context.Context, localVarOptionals *Wech
 	localVarFormParams := url.Values{}
 
 	if localVarOptionals != nil && localVarOptionals.DateRange.IsSet() {
-		localVarQueryParams.Add("date_range", parameterToString(localVarOptionals.DateRange.Value(), ""))
+		localVarQueryParams.Add("date_range", parameterToString(localVarOptionals.DateRange.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.TimeRange.IsSet() {
-		localVarQueryParams.Add("time_range", parameterToString(localVarOptionals.TimeRange.Value(), ""))
+		localVarQueryParams.Add("time_range", parameterToString(localVarOptionals.TimeRange.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))

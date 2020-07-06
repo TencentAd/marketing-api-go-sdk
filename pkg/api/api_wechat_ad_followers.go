@@ -62,7 +62,7 @@ func (a *WechatAdFollowersApiService) Get(ctx context.Context, timeRange TimeRan
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("time_range", parameterToString(timeRange, ""))
+	localVarQueryParams.Add("time_range", parameterToString(timeRange, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}

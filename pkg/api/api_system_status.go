@@ -62,7 +62,7 @@ func (a *SystemStatusApiService) Get(ctx context.Context, accountId int64, statu
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("status_type", parameterToString(statusType, ""))
-	localVarQueryParams.Add("status_spec", parameterToString(statusSpec, ""))
+	localVarQueryParams.Add("status_spec", parameterToString(statusSpec, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
