@@ -1,6 +1,7 @@
 package ads
 
 import (
+	"encoding/json"
 	"net/http"
 	"net/http/httputil"
 	"os"
@@ -17,7 +18,12 @@ func (l *LogMiddleware) Handle(req *http.Request, next func(req *http.Request) (
 		if tads.GetDebugFile() == "" {
 			debugFile = os.Stdout
 		} else {
-			debugFile, err = os.OpenFile(tads.GetDebugFile(), os.O_APPEND, 0666)
+			debugFile, err = os.OpenFile(tads.GetDebugFile(), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+			if err != nil {
+				defer debugFile.Close()
+			} else {
+				return nil, err
+			}
 		}
 		if request, err := httputil.DumpRequestOut(req, true); err == nil {
 			if debugFile != nil {
@@ -28,11 +34,17 @@ func (l *LogMiddleware) Handle(req *http.Request, next func(req *http.Request) (
 	}
 	rsp, err = next(req)
 	if tads.IsDebug() {
-		if response, err := httputil.DumpResponse(rsp, true); err == nil {
-			if debugFile != nil {
-				_, err = debugFile.Write(response)
-				_, err = debugFile.WriteString("\n")
+		if rsp != nil {
+			if response, err := httputil.DumpResponse(rsp, true); err == nil {
+				if debugFile != nil {
+					_, err = debugFile.Write(response)
+					_, err = debugFile.WriteString("\n")
+				}
 			}
+		} else {
+			errStr, _ := json.Marshal(err)
+			_, err = debugFile.Write(errStr)
+			_, err = debugFile.WriteString("\n")
 		}
 	}
 

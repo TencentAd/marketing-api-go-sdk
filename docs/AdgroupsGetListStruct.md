@@ -1,0 +1,53 @@
+# AdgroupsGetListStruct
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**CampaignId** | **int64** |  | [optional] [default to null]
+**AdgroupId** | **int64** |  | [optional] [default to null]
+**AdgroupName** | **string** |  | [optional] [default to null]
+**SiteSet** | **[]string** |  | [optional] [default to null]
+**AutomaticSiteEnabled** | **bool** |  | [optional] [default to null]
+**OptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
+**BillingEvent** | [***BillingEvent**](BillingEvent.md) |  | [optional] [default to null]
+**BidAmount** | **int64** |  | [optional] [default to null]
+**DailyBudget** | **int64** |  | [optional] [default to null]
+**PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
+**PromotedObjectId** | **string** |  | [optional] [default to null]
+**AppAndroidChannelPackageId** | **string** |  | [optional] [default to null]
+**TargetingId** | **int64** |  | [optional] [default to null]
+**Targeting** | [***ReadTargetingSettingForAdgroup**](read_targeting_setting_for_adgroup.md) |  | [optional] [default to null]
+**TargetingTranslation** | **string** |  | [optional] [default to null]
+**IsIncludeUnsupportedTargeting** | **bool** |  | [optional] [default to null]
+**SceneSpec** | [***SceneTargeting**](scene_targeting.md) |  | [optional] [default to null]
+**BeginDate** | **string** |  | [optional] [default to null]
+**EndDate** | **string** |  | [optional] [default to null]
+**TimeSeries** | **string** |  | [optional] [default to null]
+**ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
+**CustomizedCategory** | **string** |  | [optional] [default to null]
+**CreatedTime** | **int64** |  | [optional] [default to null]
+**LastModifiedTime** | **int64** |  | [optional] [default to null]
+**DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
+**UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
+**AdditionalUserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
+**IsDeleted** | **bool** |  | [optional] [default to null]
+**DynamicCreativeId** | **int64** |  | [optional] [default to null]
+**IsRewardedVideoAd** | **bool** |  | [optional] [default to null]
+**CostGuaranteeMessage** | **string** |  | [optional] [default to null]
+**CostGuaranteeStatus** | [***CostGuaranteeStatus**](CostGuaranteeStatus.md) |  | [optional] [default to null]
+**BidStrategy** | [***BidStrategy**](BidStrategy.md) |  | [optional] [default to null]
+**ColdStartAudience** | **[]int64** |  | [optional] [default to null]
+**AutoAudience** | **bool** |  | [optional] [default to null]
+**ExpandEnabled** | **bool** |  | [optional] [default to null]
+**ExpandTargeting** | **[]string** |  | [optional] [default to null]
+**DeepConversionSpec** | [***DeepConversionSpec**](deep_conversion_spec.md) |  | [optional] [default to null]
+**DeepOptimizationActionType** | [***DeepOptimizationActionType**](DeepOptimizationActionType.md) |  | [optional] [default to null]
+**ConversionId** | **int64** |  | [optional] [default to null]
+**DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
+**DeepConversionWorthRate** | **float64** |  | [optional] [default to null]
+**AndroidChannelPackageAuditMessage** | **string** |  | [optional] [default to null]
+**SystemStatus** | [***AdgroupSysStatus**](AdgroupSysStatus.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

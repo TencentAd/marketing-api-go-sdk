@@ -2,14 +2,14 @@
 swagger: "2.0"
 info:
   description: "Marketing API"
-  version: "1.2"
+  version: "1.3"
   title: "Marketing API"
   termsOfService: "http://developers.e.qq.com/"
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 host: "sandbox-api.e.qq.com"
-basePath: "/v1.2"
+basePath: "/v1.3"
 schemes:
 - "https"
 paths:
@@ -177,7 +177,7 @@ paths:
     get:
       tags:
       - "wechat_advertiser_specification"
-      summary: "获取微信广告主信息"
+      summary: "查询微信公众平台广告主详情信息"
       operationId: "wechat_advertiser_specification_get"
       consumes:
       - "text/plain"
@@ -473,7 +473,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -518,7 +517,7 @@ paths:
     get:
       tags:
       - "business_manager_relations"
-      summary: "获取商务管家代理的广告主列表"
+      summary: "查询商务管家账号下广告主信息"
       operationId: "business_manager_relations_get"
       consumes:
       - "text/plain"
@@ -560,7 +559,7 @@ paths:
     get:
       tags:
       - "wechat_agency"
-      summary: "获取微信服务商信息"
+      summary: "查询微信公众平台服务商详情信息"
       operationId: "wechat_agency_get"
       consumes:
       - "text/plain"
@@ -614,7 +613,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -948,7 +946,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -1373,7 +1370,7 @@ paths:
     get:
       tags:
       - "wechat_advertiser_detail"
-      summary: "【待废弃，请使用新接口wechat_advertiser_specification/get】获取微信广告主信息"
+      summary: "【待废弃，请使用新接口wechat_advertiser_specification/get】查询微信公众平台广告主详情信息"
       operationId: "wechat_advertiser_detail_get"
       consumes:
       - "text/plain"
@@ -1430,7 +1427,7 @@ paths:
     post:
       tags:
       - "advertiser"
-      summary: "添加服务商子客户"
+      summary: "添加腾讯广告服务商子客"
       operationId: "advertiser_add"
       consumes:
       - "application/json"
@@ -1456,7 +1453,7 @@ paths:
     post:
       tags:
       - "advertiser"
-      summary: "更新广告主信息"
+      summary: "更新腾讯广告广告主信息"
       operationId: "advertiser_update"
       consumes:
       - "application/json"
@@ -1779,7 +1776,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
-        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "page"
         in: "query"
@@ -1941,7 +1937,7 @@ paths:
     get:
       tags:
       - "wechat_leads"
-      summary: "获取销售线索"
+      summary: "获取销售线索(待废弃)"
       operationId: "wechat_leads_get"
       consumes:
       - "text/plain"
@@ -1954,7 +1950,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_range"
         in: "query"
@@ -1962,7 +1957,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
-        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "filtering"
         in: "query"
@@ -2139,7 +2133,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2229,7 +2222,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2324,7 +2316,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "pos_type"
         in: "query"
@@ -2422,7 +2413,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/report_date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "filtering"
         in: "query"
@@ -2520,7 +2510,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/tag_spec"
-        collectionFormat: "multi"
         x-exportParamName: "TagSpec"
       - name: "fields"
         in: "query"
@@ -2562,7 +2551,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_granularity"
         in: "query"
@@ -2770,7 +2758,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/query_spec"
-        collectionFormat: "multi"
         x-exportParamName: "QuerySpec"
       - name: "fields"
         in: "query"
@@ -2840,7 +2827,7 @@ paths:
     get:
       tags:
       - "leads"
-      summary: "获取销售线索"
+      summary: "获取销售线索(待废弃)"
       operationId: "leads_get"
       consumes:
       - "text/plain"
@@ -2859,7 +2846,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
-        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "position_type"
         in: "query"
@@ -3073,7 +3059,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/status_spec"
-        collectionFormat: "multi"
         x-exportParamName: "StatusSpec"
       - name: "fields"
         in: "query"
@@ -3717,7 +3702,7 @@ paths:
     get:
       tags:
       - "advertiser"
-      summary: "获取广告主信息"
+      summary: "查询腾讯广告广告主信息"
       operationId: "advertiser_get"
       consumes:
       - "text/plain"
@@ -3832,7 +3817,6 @@ paths:
         type: "object"
         items:
           $ref: "#/definitions/date_range_transaction"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "page"
         in: "query"
@@ -3893,7 +3877,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "trade_type"
         in: "query"
@@ -4924,7 +4907,7 @@ paths:
     get:
       tags:
       - "wechat_advertiser"
-      summary: "获取微信广告主信息"
+      summary: "查询微信公众平台广告主基础信息"
       operationId: "wechat_advertiser_get"
       consumes:
       - "text/plain"
@@ -4994,7 +4977,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/time_range"
-        collectionFormat: "multi"
         x-exportParamName: "TimeRange"
       - name: "fields"
         in: "query"
@@ -5585,7 +5567,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "time_granularity"
         in: "query"
@@ -6247,7 +6228,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "group_by"
         in: "query"
@@ -6457,7 +6437,6 @@ paths:
         type: "object"
         items:
           $ref: "../common.json#/definitions/date_range"
-        collectionFormat: "multi"
         x-exportParamName: "DateRange"
       - name: "page"
         in: "query"
@@ -8141,6 +8120,10 @@ definitions:
         type: "array"
         items:
           type: "string"
+      mobile_union_industry:
+        type: "array"
+        items:
+          type: "string"
     description: "场景定向"
     example:
       mobile_union:
@@ -8152,6 +8135,9 @@ definitions:
       exclude_mobile_union:
       - "exclude_mobile_union"
       - "exclude_mobile_union"
+      mobile_union_industry:
+      - "mobile_union_industry"
+      - "mobile_union_industry"
   tag_spec:
     type: "object"
     properties:
@@ -8577,6 +8563,10 @@ definitions:
         type: "array"
         items:
           type: "string"
+      mobile_union_industry:
+        type: "array"
+        items:
+          type: "string"
       union_position_package:
         type: "array"
         items:
@@ -8612,6 +8602,9 @@ definitions:
       exclude_mobile_union:
       - "exclude_mobile_union"
       - "exclude_mobile_union"
+      mobile_union_industry:
+      - "mobile_union_industry"
+      - "mobile_union_industry"
       tencent_news:
       - "tencent_news"
       - "tencent_news"
@@ -8738,6 +8731,9 @@ definitions:
         exclude_mobile_union:
         - "exclude_mobile_union"
         - "exclude_mobile_union"
+        mobile_union_industry:
+        - "mobile_union_industry"
+        - "mobile_union_industry"
         tencent_news:
         - "tencent_news"
         - "tencent_news"
@@ -10303,6 +10299,9 @@ definitions:
     - "SITE_SET_QQ_MUSIC_GAME"
     - "SITE_SET_KUAISHOU"
     - "SITE_SET_PCQQ"
+    - "SITE_SET_MINI_GAME_WECHAT"
+    - "SITE_SET_MINI_GAME_QQ"
+    - "SITE_SET_MOBILE_GAME"
   SplitTestStatus:
     type: "string"
     description: "拆分对比实验状态"
@@ -10757,6 +10756,7 @@ definitions:
     - "SALTED_HASH_IMEI"
     - "SALTED_HASH_IDFA"
     - "OAID"
+    - "HASH_OAID"
   OperationType:
     type: "string"
     description: "文件操作类型"
@@ -17279,26 +17279,27 @@ definitions:
           app_application_cost: 3
           app_order_rate: 7.04836565559697
           sign_in_count: 9
+          video_outer_play25_count: 9
           deep_conversions_count: 5
-          official_account_register_rate: 8.638367073739522
+          official_account_register_rate: 4.403697036782718
           arppu_cost: 4
           leads_purchase_cost: 5
           is_expand_targeting: true
           page_phone_call_back_count: 9
-          link_click_user_count: 0
+          link_click_user_count: 8
           ctr: 3.616076749251911
           page_phone_call_back_rate: 7.726998920545485
           click_nick_count: 8
-          order_rate: 9.908114046741538
+          order_rate: 9.120398275527268
           cre_web: 0
           platform_page_navigation_count: 1
           phone_call_uv: 8
           cheout_td_reward: 0.8411762798681321
           withdr_dep_web: 2
           first_memcard_app_cost: 6
-          wechat_minigame_retention_count: 2
+          wechat_minigame_retention_count: 0
           coupon_get_count: 1
-          official_account_follow_rate: 2.1518888575299036
+          official_account_follow_rate: 2.1871588311421153
           activated_rate: 2.3021358869347655
           follow_count: 5
           add_desktop_cost: 0
@@ -17308,10 +17309,11 @@ definitions:
           page_phone_call_direct_cost: 8
           web_register_uv: 7
           retention_cost: 3
-          platform_key_page_avg_view_per_user: 7.6528347060559
+          platform_key_page_avg_view_per_user: 0.6895265584691002
           landing_page_click_count: 3
-          official_account_first_day_order_amount: 4
-          valid_leads_cost: 6
+          official_account_first_day_order_amount: 6
+          valid_leads_cost: 7
+          video_outer_play_time_count: 9.629537564416708
           own_page_navigation_count: 3
           memcard_app_count: 6
           pre_cre_web: 7
@@ -17325,23 +17327,26 @@ definitions:
           effective_reserve_count: 1
           page_consult_count: 9
           forward_cost: 3
-          leads_rate: 7.437703257022269
+          leads_rate: 0.29551818216563164
           key_page_view_cost: 7
           lottery_leads_cost: 0
           web_commodity_page_view_cost: 4
-          order_count: 4
+          order_count: 7
+          video_outer_play100_count: 5
           web_add_to_cart_rate: 9.748669620880193
+          video_outer_play_rate: 2.4977456046390434
           external_form_reservation_count: 2
-          cpn_click_button_cost: 8
-          official_account_register_user_count: 3
+          cpn_click_button_cost: 3
+          official_account_register_user_count: 0
           platform_shop_navigation_count: 6
           account_id: 6
           leads_purchase_uv: 8
-          official_account_order_count: 2
-          compensation_amount: 9
+          official_account_order_count: 4
+          compensation_amount: 0
           ad_pur_val_web: 9
           video_outer_play_count: 1
           template_id: 5
+          material_id: 0
           page_phone_call_direct_count: 6
           view_count: 1
           app_withdraw_uv: 1
@@ -17350,67 +17355,65 @@ definitions:
           install_count: 7
           first_pay_rate: 9.721723570087065
           own_page_navi_cost: 6
-          image_click_user_count: 7
+          image_click_user_count: 9
           app_add_to_cart_cost: 0
           game_create_role_count: 2
           first_day_order_amount: 3
-          official_account_follow_count: 6
+          official_account_follow_count: 0
           web_checkout_rate: 5.974942028545841
           click_head_count: 2
           deep_conversions_rate: 9.721046668148785
           order_amount: 6
-          video_outer_play_user_count: 3
+          video_outer_play_user_count: 7
           add_to_cart_price: 6
           cheout_fd_reward: 6.4280627569296165
           app_ad_pur_arpu_cost: 9
           lottery_leads_count: 8
-          forward_user_count: 9
+          forward_user_count: 1
           click_poi_count: 2
           campaign_id: 4
-          praise_user_count: 0
+          praise_user_count: 5
           read_count: 2
           from_follow_uv: 6
           platform_coupon_get_cost: 7
           effective_leads_count: 6
-          app_aroused_rate: 1.7692392591014339
           tool_consult_count: 2
-          web_application_rate: 9.684087197655908
-          withdr_dep_web_user_count: 4
+          withdr_dep_web_user_count: 1
           overall_leads_purchase_count: 9
           add_wishlist_count: 3
-          coupon_get_rate: 0.05965928697733491
-          deep_link_cnt: 7
-          video_click_user_count: 6
+          coupon_get_rate: 2.3317418552851765
+          video_click_user_count: 9
           effective_phone_count: 3
-          cost_deviation_rate: 9.0012452339701
-          valid_page_consult_user_count: 0
+          cost_deviation_rate: 7.014147440046284
+          valid_page_consult_user_count: 7
           install_cost: 5
           phone_consult_count: 7
           follow_cost: 7
           praise_count: 8
           app_commodity_page_view_cost: 6
           add_to_cart_amount: 8
-          wechat_minigame_register_cost: 4
+          wechat_minigame_register_cost: 6
           page_reservation_rate: 3.0937452626664474
           comment_cost: 0
-          portrait_click_user_count: 9
+          portrait_click_user_count: 6
           first_memcard_web_cost: 2
-          official_account_apply_rate: 7.964879197514727
+          official_account_apply_rate: 5.948961008630453
+          video_outer_play50_count: 3
           activated_count: 5
-          official_account_credit_apply_user_count: 1
+          official_account_credit_apply_user_count: 4
           app_register_cost: 8
           click_detail_count: 2
           platform_coupon_get_count: 8
-          view_user_count: 8
-          avg_view_per_user: 6.460213024504889
+          view_user_count: 9
+          avg_view_per_user: 1.7692392591014339
           game_tutorial_finish_count: 4
           conversions_cost: 3
-          wechat_minigame_arpu: 7.701777079007398
+          wechat_minigame_arpu: 8.708394192403432
           effect_leads_purchase_count: 5
           app_register_count: 4
           web_application_count: 5
-          official_account_order_rate: 0.6052866655822231
-          official_account_register_roi: 9
+          official_account_order_rate: 7.321091499885957
+          official_account_register_roi: 2
           wechat_agency_id: "wechat_agency_id"
           special_page_exp_uv: 8
           app_pre_credit_uv: 7
@@ -17419,15 +17422,17 @@ definitions:
           app_order_cost: 5
           deliver_rate: 9.402167524121316
           valuable_click_count: 1
-          official_account_credit_user_count: 7
+          official_account_credit_user_count: 4
           cpn_click_button_uv: 0
+          video_outer_play75_count: 8
           union_position_id: 8
+          video_outer_play_time_avg_rate: 4.917163120387481
           pre_cre_app: 6
           web_ad_pur_arpu_cost: 4
           first_day_order_count: 1
+          video_outer_play95_count: 9
           video_inner_play_count: 6
           forward_count: 0
-          app_application_rate: 0.8972273556195443
           leads_purchase_rate: 5.5569822283364845
           app_checkout_count: 8
           withdr_dep_app: 4
@@ -17438,34 +17443,36 @@ definitions:
           web_arppu_cost: 8
           cheout_total_reward: 7.3842318535314
           web_add_to_cart_cost: 7
-          official_account_register_cost: 5
-          official_account_apply_amount: 7
+          official_account_register_cost: 6
+          official_account_apply_amount: 9
           special_page_exp_cost: 2
           ad_pur_val_app: 0
           valuable_click_cost: 9
+          site_set: "site_set"
           thousand_display_price: 7
           app_order_amount: 3
-          leads_user_count: 8
+          leads_user_count: 0
           app_application_count: 1
           retention_count: 8
           ad_id: 0
           page_phone_call_back_cost: 6
           web_activated_checkout_rate: 1.0639121808530916
           cheout_fd: 8
-          official_account_apply_count: 8
+          official_account_apply_count: 3
           order_unit_price: 4
           effective_cost: 9
-          official_account_reader_count: 6
+          official_account_reader_count: 5
           game_authorize_count: 6
           web_order_count: 3
-          official_account_follow_cost: 4
+          official_account_follow_cost: 7
           web_order_rate: 3.0576100241049344
           adgroup_id: 8
           platform_page_view_count: 6
+          signature: "signature"
           app_checkout_amount: 7
           cheout_tw_reward: 5.747795090145878
           potential_phone_count: 4
-          comment_user_count: 0
+          comment_user_count: 8
           app_apply_uv: 1
           web_register_count: 5
           app_checkout_cost: 3
@@ -17475,8 +17482,8 @@ definitions:
           coupon_click_count: 1
           web_commodity_page_view_rate: 8.28965939814297
           wechat_minigame_checkout_amount: 4
-          official_account_consult_count: 2
-          official_account_register_amount: 9
+          official_account_consult_count: 0
+          official_account_register_amount: 4
           no_interest_count: 4
           potential_customer_phone_uv: 6
           web_checkout_cost: 0
@@ -17485,7 +17492,7 @@ definitions:
           web_cart_amount: 5
           lan_button_click_count: 5
           download_count: 5
-          valid_leads_rate: 5.304373278797373
+          valid_leads_rate: 7.437703257022269
           app_activated_checkout_rate: 3.8008573585058016
           retention_rate: 4.459605034958679
           wechat_app_register_uv: 4
@@ -17494,7 +17501,7 @@ definitions:
           promoted_object_type: "promoted_object_type"
           add_to_cart_cost: 9
           app_add_to_cart_count: 9
-          leads_user_rate: 1.6056289151258096
+          leads_user_rate: 9.908114046741538
           platform_shop_navigation_cost: 6
           page_consult_cost: 9
           web_credit_uv: 2
@@ -17504,19 +17511,20 @@ definitions:
           first_memcard_web_count: 7
           view_commodity_page_uv: 8
           app_commodity_page_view_count: 2
-          wechat_minigame_checkout_count: 0
+          wechat_minigame_checkout_count: 4
           app_add_to_cart_rate: 6.203595661339589
           arpu_cost: 3
-          coupon_get_cost: 9
+          coupon_get_cost: 2
           praise_cost: 4
-          official_account_first_day_order_count: 6
+          official_account_first_day_order_count: 7
           sign_in_cost: 0
           page_consult_rate: 7.92839742024475
           web_order_amount: 8
           potential_reserve_count: 5
           valid_phone_uv: 8
-          quest_reservation_pv_cost: 7
-          leads_cost: 7
+          video_outer_play_cost: 0
+          quest_reservation_pv_cost: 8
+          leads_cost: 4
           cpc: 2
           click_user_count: 6
           deliver_cost: 7
@@ -17526,19 +17534,19 @@ definitions:
           web_reg_rate: 9.785002165136461
           web_checkout_amount: 3
           first_pay_count: 9
-          platform_key_page_view_duration: 9.120398275527268
-          poi_click_user_count: 5
-          video_inner_play_user_count: 8
+          platform_key_page_view_duration: 9.290244967928562
+          poi_click_user_count: 7
+          video_inner_play_user_count: 9
           wechat_account_id: "wechat_account_id"
-          coupon_use_count: 5
-          nickname_click_user_count: 3
+          coupon_use_count: 6
+          nickname_click_user_count: 6
           key_page_view_count: 0
           conversions_rate: 4.432841187680573
           inte_phone_count: 7
-          platform_key_page_view_user_count: 8
+          platform_key_page_view_user_count: 6
           pre_cre_web_val: 0
           coupon_issue_count: 1
-          official_account_order_roi: 2
+          official_account_order_roi: 3
           platform_coupon_get_rate: 9.897492629215506
           deep_conversions_cost: 2
           web_application_cost: 6
@@ -17548,10 +17556,11 @@ definitions:
           withdr_dep_app_val: 3
           activated_cost: 6
           cheout_ow: 4
-          wechat_minigame_register_rate: 0.313237310471568
-          official_account_order_user_count: 3
+          wechat_minigame_register_rate: 5.304373278797373
+          official_account_order_user_count: 4
+          video_outer_play10_count: 5
           promoted_object_id: "promoted_object_id"
-          official_account_apply_cost: 4
+          official_account_apply_cost: 9
           web_register_cost: 9
           download_rate: 9.702963800023566
           potential_consult_count: 1
@@ -17570,17 +17579,16 @@ definitions:
           app_credit_uv: 7
           valid_leads_uv: 4
           page_reservation_count: 3
-          official_account_order_amount: 4
-          official_account_order_cost: 5
-          official_account_apply_user_count: 4
-          app_aroused_cost: 6
+          official_account_order_amount: 2
+          official_account_order_cost: 7
+          official_account_apply_user_count: 8
           page_reservation_cost: 7
           order_roi: 1.041444916118296
           first_pay_cost: 5
           withdr_dep_web_val: 2
           cre_app_val: 6
           deliver_count: 4
-          official_account_apply_roi: 7
+          official_account_apply_roi: 8
           own_page_coupon_get_count: 0
           app_register_rate: 3.2841216543560217
           memcard_web_count: 6
@@ -17588,26 +17596,27 @@ definitions:
           app_application_cost: 3
           app_order_rate: 7.04836565559697
           sign_in_count: 9
+          video_outer_play25_count: 9
           deep_conversions_count: 5
-          official_account_register_rate: 8.638367073739522
+          official_account_register_rate: 4.403697036782718
           arppu_cost: 4
           leads_purchase_cost: 5
           is_expand_targeting: true
           page_phone_call_back_count: 9
-          link_click_user_count: 0
+          link_click_user_count: 8
           ctr: 3.616076749251911
           page_phone_call_back_rate: 7.726998920545485
           click_nick_count: 8
-          order_rate: 9.908114046741538
+          order_rate: 9.120398275527268
           cre_web: 0
           platform_page_navigation_count: 1
           phone_call_uv: 8
           cheout_td_reward: 0.8411762798681321
           withdr_dep_web: 2
           first_memcard_app_cost: 6
-          wechat_minigame_retention_count: 2
+          wechat_minigame_retention_count: 0
           coupon_get_count: 1
-          official_account_follow_rate: 2.1518888575299036
+          official_account_follow_rate: 2.1871588311421153
           activated_rate: 2.3021358869347655
           follow_count: 5
           add_desktop_cost: 0
@@ -17617,10 +17626,11 @@ definitions:
           page_phone_call_direct_cost: 8
           web_register_uv: 7
           retention_cost: 3
-          platform_key_page_avg_view_per_user: 7.6528347060559
+          platform_key_page_avg_view_per_user: 0.6895265584691002
           landing_page_click_count: 3
-          official_account_first_day_order_amount: 4
-          valid_leads_cost: 6
+          official_account_first_day_order_amount: 6
+          valid_leads_cost: 7
+          video_outer_play_time_count: 9.629537564416708
           own_page_navigation_count: 3
           memcard_app_count: 6
           pre_cre_web: 7
@@ -17634,23 +17644,26 @@ definitions:
           effective_reserve_count: 1
           page_consult_count: 9
           forward_cost: 3
-          leads_rate: 7.437703257022269
+          leads_rate: 0.29551818216563164
           key_page_view_cost: 7
           lottery_leads_cost: 0
           web_commodity_page_view_cost: 4
-          order_count: 4
+          order_count: 7
+          video_outer_play100_count: 5
           web_add_to_cart_rate: 9.748669620880193
+          video_outer_play_rate: 2.4977456046390434
           external_form_reservation_count: 2
-          cpn_click_button_cost: 8
-          official_account_register_user_count: 3
+          cpn_click_button_cost: 3
+          official_account_register_user_count: 0
           platform_shop_navigation_count: 6
           account_id: 6
           leads_purchase_uv: 8
-          official_account_order_count: 2
-          compensation_amount: 9
+          official_account_order_count: 4
+          compensation_amount: 0
           ad_pur_val_web: 9
           video_outer_play_count: 1
           template_id: 5
+          material_id: 0
           page_phone_call_direct_count: 6
           view_count: 1
           app_withdraw_uv: 1
@@ -17659,67 +17672,65 @@ definitions:
           install_count: 7
           first_pay_rate: 9.721723570087065
           own_page_navi_cost: 6
-          image_click_user_count: 7
+          image_click_user_count: 9
           app_add_to_cart_cost: 0
           game_create_role_count: 2
           first_day_order_amount: 3
-          official_account_follow_count: 6
+          official_account_follow_count: 0
           web_checkout_rate: 5.974942028545841
           click_head_count: 2
           deep_conversions_rate: 9.721046668148785
           order_amount: 6
-          video_outer_play_user_count: 3
+          video_outer_play_user_count: 7
           add_to_cart_price: 6
           cheout_fd_reward: 6.4280627569296165
           app_ad_pur_arpu_cost: 9
           lottery_leads_count: 8
-          forward_user_count: 9
+          forward_user_count: 1
           click_poi_count: 2
           campaign_id: 4
-          praise_user_count: 0
+          praise_user_count: 5
           read_count: 2
           from_follow_uv: 6
           platform_coupon_get_cost: 7
           effective_leads_count: 6
-          app_aroused_rate: 1.7692392591014339
           tool_consult_count: 2
-          web_application_rate: 9.684087197655908
-          withdr_dep_web_user_count: 4
+          withdr_dep_web_user_count: 1
           overall_leads_purchase_count: 9
           add_wishlist_count: 3
-          coupon_get_rate: 0.05965928697733491
-          deep_link_cnt: 7
-          video_click_user_count: 6
+          coupon_get_rate: 2.3317418552851765
+          video_click_user_count: 9
           effective_phone_count: 3
-          cost_deviation_rate: 9.0012452339701
-          valid_page_consult_user_count: 0
+          cost_deviation_rate: 7.014147440046284
+          valid_page_consult_user_count: 7
           install_cost: 5
           phone_consult_count: 7
           follow_cost: 7
           praise_count: 8
           app_commodity_page_view_cost: 6
           add_to_cart_amount: 8
-          wechat_minigame_register_cost: 4
+          wechat_minigame_register_cost: 6
           page_reservation_rate: 3.0937452626664474
           comment_cost: 0
-          portrait_click_user_count: 9
+          portrait_click_user_count: 6
           first_memcard_web_cost: 2
-          official_account_apply_rate: 7.964879197514727
+          official_account_apply_rate: 5.948961008630453
+          video_outer_play50_count: 3
           activated_count: 5
-          official_account_credit_apply_user_count: 1
+          official_account_credit_apply_user_count: 4
           app_register_cost: 8
           click_detail_count: 2
           platform_coupon_get_count: 8
-          view_user_count: 8
-          avg_view_per_user: 6.460213024504889
+          view_user_count: 9
+          avg_view_per_user: 1.7692392591014339
           game_tutorial_finish_count: 4
           conversions_cost: 3
-          wechat_minigame_arpu: 7.701777079007398
+          wechat_minigame_arpu: 8.708394192403432
           effect_leads_purchase_count: 5
           app_register_count: 4
           web_application_count: 5
-          official_account_order_rate: 0.6052866655822231
-          official_account_register_roi: 9
+          official_account_order_rate: 7.321091499885957
+          official_account_register_roi: 2
           wechat_agency_id: "wechat_agency_id"
           special_page_exp_uv: 8
           app_pre_credit_uv: 7
@@ -17728,15 +17739,17 @@ definitions:
           app_order_cost: 5
           deliver_rate: 9.402167524121316
           valuable_click_count: 1
-          official_account_credit_user_count: 7
+          official_account_credit_user_count: 4
           cpn_click_button_uv: 0
+          video_outer_play75_count: 8
           union_position_id: 8
+          video_outer_play_time_avg_rate: 4.917163120387481
           pre_cre_app: 6
           web_ad_pur_arpu_cost: 4
           first_day_order_count: 1
+          video_outer_play95_count: 9
           video_inner_play_count: 6
           forward_count: 0
-          app_application_rate: 0.8972273556195443
           leads_purchase_rate: 5.5569822283364845
           app_checkout_count: 8
           withdr_dep_app: 4
@@ -17747,34 +17760,36 @@ definitions:
           web_arppu_cost: 8
           cheout_total_reward: 7.3842318535314
           web_add_to_cart_cost: 7
-          official_account_register_cost: 5
-          official_account_apply_amount: 7
+          official_account_register_cost: 6
+          official_account_apply_amount: 9
           special_page_exp_cost: 2
           ad_pur_val_app: 0
           valuable_click_cost: 9
+          site_set: "site_set"
           thousand_display_price: 7
           app_order_amount: 3
-          leads_user_count: 8
+          leads_user_count: 0
           app_application_count: 1
           retention_count: 8
           ad_id: 0
           page_phone_call_back_cost: 6
           web_activated_checkout_rate: 1.0639121808530916
           cheout_fd: 8
-          official_account_apply_count: 8
+          official_account_apply_count: 3
           order_unit_price: 4
           effective_cost: 9
-          official_account_reader_count: 6
+          official_account_reader_count: 5
           game_authorize_count: 6
           web_order_count: 3
-          official_account_follow_cost: 4
+          official_account_follow_cost: 7
           web_order_rate: 3.0576100241049344
           adgroup_id: 8
           platform_page_view_count: 6
+          signature: "signature"
           app_checkout_amount: 7
           cheout_tw_reward: 5.747795090145878
           potential_phone_count: 4
-          comment_user_count: 0
+          comment_user_count: 8
           app_apply_uv: 1
           web_register_count: 5
           app_checkout_cost: 3
@@ -17784,8 +17799,8 @@ definitions:
           coupon_click_count: 1
           web_commodity_page_view_rate: 8.28965939814297
           wechat_minigame_checkout_amount: 4
-          official_account_consult_count: 2
-          official_account_register_amount: 9
+          official_account_consult_count: 0
+          official_account_register_amount: 4
           no_interest_count: 4
           potential_customer_phone_uv: 6
           web_checkout_cost: 0
@@ -17794,7 +17809,7 @@ definitions:
           web_cart_amount: 5
           lan_button_click_count: 5
           download_count: 5
-          valid_leads_rate: 5.304373278797373
+          valid_leads_rate: 7.437703257022269
           app_activated_checkout_rate: 3.8008573585058016
           retention_rate: 4.459605034958679
           wechat_app_register_uv: 4
@@ -17803,7 +17818,7 @@ definitions:
           promoted_object_type: "promoted_object_type"
           add_to_cart_cost: 9
           app_add_to_cart_count: 9
-          leads_user_rate: 1.6056289151258096
+          leads_user_rate: 9.908114046741538
           platform_shop_navigation_cost: 6
           page_consult_cost: 9
           web_credit_uv: 2
@@ -17813,19 +17828,20 @@ definitions:
           first_memcard_web_count: 7
           view_commodity_page_uv: 8
           app_commodity_page_view_count: 2
-          wechat_minigame_checkout_count: 0
+          wechat_minigame_checkout_count: 4
           app_add_to_cart_rate: 6.203595661339589
           arpu_cost: 3
-          coupon_get_cost: 9
+          coupon_get_cost: 2
           praise_cost: 4
-          official_account_first_day_order_count: 6
+          official_account_first_day_order_count: 7
           sign_in_cost: 0
           page_consult_rate: 7.92839742024475
           web_order_amount: 8
           potential_reserve_count: 5
           valid_phone_uv: 8
-          quest_reservation_pv_cost: 7
-          leads_cost: 7
+          video_outer_play_cost: 0
+          quest_reservation_pv_cost: 8
+          leads_cost: 4
           cpc: 2
           click_user_count: 6
           deliver_cost: 7
@@ -17835,19 +17851,19 @@ definitions:
           web_reg_rate: 9.785002165136461
           web_checkout_amount: 3
           first_pay_count: 9
-          platform_key_page_view_duration: 9.120398275527268
-          poi_click_user_count: 5
-          video_inner_play_user_count: 8
+          platform_key_page_view_duration: 9.290244967928562
+          poi_click_user_count: 7
+          video_inner_play_user_count: 9
           wechat_account_id: "wechat_account_id"
-          coupon_use_count: 5
-          nickname_click_user_count: 3
+          coupon_use_count: 6
+          nickname_click_user_count: 6
           key_page_view_count: 0
           conversions_rate: 4.432841187680573
           inte_phone_count: 7
-          platform_key_page_view_user_count: 8
+          platform_key_page_view_user_count: 6
           pre_cre_web_val: 0
           coupon_issue_count: 1
-          official_account_order_roi: 2
+          official_account_order_roi: 3
           platform_coupon_get_rate: 9.897492629215506
           deep_conversions_cost: 2
           web_application_cost: 6
@@ -17857,10 +17873,11 @@ definitions:
           withdr_dep_app_val: 3
           activated_cost: 6
           cheout_ow: 4
-          wechat_minigame_register_rate: 0.313237310471568
-          official_account_order_user_count: 3
+          wechat_minigame_register_rate: 5.304373278797373
+          official_account_order_user_count: 4
+          video_outer_play10_count: 5
           promoted_object_id: "promoted_object_id"
-          official_account_apply_cost: 4
+          official_account_apply_cost: 9
           web_register_cost: 9
           download_rate: 9.702963800023566
           potential_consult_count: 1
@@ -17879,17 +17896,16 @@ definitions:
           app_credit_uv: 7
           valid_leads_uv: 4
           page_reservation_count: 3
-          official_account_order_amount: 4
-          official_account_order_cost: 5
-          official_account_apply_user_count: 4
-          app_aroused_cost: 6
+          official_account_order_amount: 2
+          official_account_order_cost: 7
+          official_account_apply_user_count: 8
           page_reservation_cost: 7
           order_roi: 1.041444916118296
           first_pay_cost: 5
           withdr_dep_web_val: 2
           cre_app_val: 6
           deliver_count: 4
-          official_account_apply_roi: 7
+          official_account_apply_roi: 8
           own_page_coupon_get_count: 0
           app_register_rate: 3.2841216543560217
           memcard_web_count: 6
@@ -17928,26 +17944,27 @@ definitions:
         app_application_cost: 3
         app_order_rate: 7.04836565559697
         sign_in_count: 9
+        video_outer_play25_count: 9
         deep_conversions_count: 5
-        official_account_register_rate: 8.638367073739522
+        official_account_register_rate: 4.403697036782718
         arppu_cost: 4
         leads_purchase_cost: 5
         is_expand_targeting: true
         page_phone_call_back_count: 9
-        link_click_user_count: 0
+        link_click_user_count: 8
         ctr: 3.616076749251911
         page_phone_call_back_rate: 7.726998920545485
         click_nick_count: 8
-        order_rate: 9.908114046741538
+        order_rate: 9.120398275527268
         cre_web: 0
         platform_page_navigation_count: 1
         phone_call_uv: 8
         cheout_td_reward: 0.8411762798681321
         withdr_dep_web: 2
         first_memcard_app_cost: 6
-        wechat_minigame_retention_count: 2
+        wechat_minigame_retention_count: 0
         coupon_get_count: 1
-        official_account_follow_rate: 2.1518888575299036
+        official_account_follow_rate: 2.1871588311421153
         activated_rate: 2.3021358869347655
         follow_count: 5
         add_desktop_cost: 0
@@ -17957,10 +17974,11 @@ definitions:
         page_phone_call_direct_cost: 8
         web_register_uv: 7
         retention_cost: 3
-        platform_key_page_avg_view_per_user: 7.6528347060559
+        platform_key_page_avg_view_per_user: 0.6895265584691002
         landing_page_click_count: 3
-        official_account_first_day_order_amount: 4
-        valid_leads_cost: 6
+        official_account_first_day_order_amount: 6
+        valid_leads_cost: 7
+        video_outer_play_time_count: 9.629537564416708
         own_page_navigation_count: 3
         memcard_app_count: 6
         pre_cre_web: 7
@@ -17974,23 +17992,26 @@ definitions:
         effective_reserve_count: 1
         page_consult_count: 9
         forward_cost: 3
-        leads_rate: 7.437703257022269
+        leads_rate: 0.29551818216563164
         key_page_view_cost: 7
         lottery_leads_cost: 0
         web_commodity_page_view_cost: 4
-        order_count: 4
+        order_count: 7
+        video_outer_play100_count: 5
         web_add_to_cart_rate: 9.748669620880193
+        video_outer_play_rate: 2.4977456046390434
         external_form_reservation_count: 2
-        cpn_click_button_cost: 8
-        official_account_register_user_count: 3
+        cpn_click_button_cost: 3
+        official_account_register_user_count: 0
         platform_shop_navigation_count: 6
         account_id: 6
         leads_purchase_uv: 8
-        official_account_order_count: 2
-        compensation_amount: 9
+        official_account_order_count: 4
+        compensation_amount: 0
         ad_pur_val_web: 9
         video_outer_play_count: 1
         template_id: 5
+        material_id: 0
         page_phone_call_direct_count: 6
         view_count: 1
         app_withdraw_uv: 1
@@ -17999,67 +18020,65 @@ definitions:
         install_count: 7
         first_pay_rate: 9.721723570087065
         own_page_navi_cost: 6
-        image_click_user_count: 7
+        image_click_user_count: 9
         app_add_to_cart_cost: 0
         game_create_role_count: 2
         first_day_order_amount: 3
-        official_account_follow_count: 6
+        official_account_follow_count: 0
         web_checkout_rate: 5.974942028545841
         click_head_count: 2
         deep_conversions_rate: 9.721046668148785
         order_amount: 6
-        video_outer_play_user_count: 3
+        video_outer_play_user_count: 7
         add_to_cart_price: 6
         cheout_fd_reward: 6.4280627569296165
         app_ad_pur_arpu_cost: 9
         lottery_leads_count: 8
-        forward_user_count: 9
+        forward_user_count: 1
         click_poi_count: 2
         campaign_id: 4
-        praise_user_count: 0
+        praise_user_count: 5
         read_count: 2
         from_follow_uv: 6
         platform_coupon_get_cost: 7
         effective_leads_count: 6
-        app_aroused_rate: 1.7692392591014339
         tool_consult_count: 2
-        web_application_rate: 9.684087197655908
-        withdr_dep_web_user_count: 4
+        withdr_dep_web_user_count: 1
         overall_leads_purchase_count: 9
         add_wishlist_count: 3
-        coupon_get_rate: 0.05965928697733491
-        deep_link_cnt: 7
-        video_click_user_count: 6
+        coupon_get_rate: 2.3317418552851765
+        video_click_user_count: 9
         effective_phone_count: 3
-        cost_deviation_rate: 9.0012452339701
-        valid_page_consult_user_count: 0
+        cost_deviation_rate: 7.014147440046284
+        valid_page_consult_user_count: 7
         install_cost: 5
         phone_consult_count: 7
         follow_cost: 7
         praise_count: 8
         app_commodity_page_view_cost: 6
         add_to_cart_amount: 8
-        wechat_minigame_register_cost: 4
+        wechat_minigame_register_cost: 6
         page_reservation_rate: 3.0937452626664474
         comment_cost: 0
-        portrait_click_user_count: 9
+        portrait_click_user_count: 6
         first_memcard_web_cost: 2
-        official_account_apply_rate: 7.964879197514727
+        official_account_apply_rate: 5.948961008630453
+        video_outer_play50_count: 3
         activated_count: 5
-        official_account_credit_apply_user_count: 1
+        official_account_credit_apply_user_count: 4
         app_register_cost: 8
         click_detail_count: 2
         platform_coupon_get_count: 8
-        view_user_count: 8
-        avg_view_per_user: 6.460213024504889
+        view_user_count: 9
+        avg_view_per_user: 1.7692392591014339
         game_tutorial_finish_count: 4
         conversions_cost: 3
-        wechat_minigame_arpu: 7.701777079007398
+        wechat_minigame_arpu: 8.708394192403432
         effect_leads_purchase_count: 5
         app_register_count: 4
         web_application_count: 5
-        official_account_order_rate: 0.6052866655822231
-        official_account_register_roi: 9
+        official_account_order_rate: 7.321091499885957
+        official_account_register_roi: 2
         wechat_agency_id: "wechat_agency_id"
         special_page_exp_uv: 8
         app_pre_credit_uv: 7
@@ -18068,15 +18087,17 @@ definitions:
         app_order_cost: 5
         deliver_rate: 9.402167524121316
         valuable_click_count: 1
-        official_account_credit_user_count: 7
+        official_account_credit_user_count: 4
         cpn_click_button_uv: 0
+        video_outer_play75_count: 8
         union_position_id: 8
+        video_outer_play_time_avg_rate: 4.917163120387481
         pre_cre_app: 6
         web_ad_pur_arpu_cost: 4
         first_day_order_count: 1
+        video_outer_play95_count: 9
         video_inner_play_count: 6
         forward_count: 0
-        app_application_rate: 0.8972273556195443
         leads_purchase_rate: 5.5569822283364845
         app_checkout_count: 8
         withdr_dep_app: 4
@@ -18087,34 +18108,36 @@ definitions:
         web_arppu_cost: 8
         cheout_total_reward: 7.3842318535314
         web_add_to_cart_cost: 7
-        official_account_register_cost: 5
-        official_account_apply_amount: 7
+        official_account_register_cost: 6
+        official_account_apply_amount: 9
         special_page_exp_cost: 2
         ad_pur_val_app: 0
         valuable_click_cost: 9
+        site_set: "site_set"
         thousand_display_price: 7
         app_order_amount: 3
-        leads_user_count: 8
+        leads_user_count: 0
         app_application_count: 1
         retention_count: 8
         ad_id: 0
         page_phone_call_back_cost: 6
         web_activated_checkout_rate: 1.0639121808530916
         cheout_fd: 8
-        official_account_apply_count: 8
+        official_account_apply_count: 3
         order_unit_price: 4
         effective_cost: 9
-        official_account_reader_count: 6
+        official_account_reader_count: 5
         game_authorize_count: 6
         web_order_count: 3
-        official_account_follow_cost: 4
+        official_account_follow_cost: 7
         web_order_rate: 3.0576100241049344
         adgroup_id: 8
         platform_page_view_count: 6
+        signature: "signature"
         app_checkout_amount: 7
         cheout_tw_reward: 5.747795090145878
         potential_phone_count: 4
-        comment_user_count: 0
+        comment_user_count: 8
         app_apply_uv: 1
         web_register_count: 5
         app_checkout_cost: 3
@@ -18124,8 +18147,8 @@ definitions:
         coupon_click_count: 1
         web_commodity_page_view_rate: 8.28965939814297
         wechat_minigame_checkout_amount: 4
-        official_account_consult_count: 2
-        official_account_register_amount: 9
+        official_account_consult_count: 0
+        official_account_register_amount: 4
         no_interest_count: 4
         potential_customer_phone_uv: 6
         web_checkout_cost: 0
@@ -18134,7 +18157,7 @@ definitions:
         web_cart_amount: 5
         lan_button_click_count: 5
         download_count: 5
-        valid_leads_rate: 5.304373278797373
+        valid_leads_rate: 7.437703257022269
         app_activated_checkout_rate: 3.8008573585058016
         retention_rate: 4.459605034958679
         wechat_app_register_uv: 4
@@ -18143,7 +18166,7 @@ definitions:
         promoted_object_type: "promoted_object_type"
         add_to_cart_cost: 9
         app_add_to_cart_count: 9
-        leads_user_rate: 1.6056289151258096
+        leads_user_rate: 9.908114046741538
         platform_shop_navigation_cost: 6
         page_consult_cost: 9
         web_credit_uv: 2
@@ -18153,19 +18176,20 @@ definitions:
         first_memcard_web_count: 7
         view_commodity_page_uv: 8
         app_commodity_page_view_count: 2
-        wechat_minigame_checkout_count: 0
+        wechat_minigame_checkout_count: 4
         app_add_to_cart_rate: 6.203595661339589
         arpu_cost: 3
-        coupon_get_cost: 9
+        coupon_get_cost: 2
         praise_cost: 4
-        official_account_first_day_order_count: 6
+        official_account_first_day_order_count: 7
         sign_in_cost: 0
         page_consult_rate: 7.92839742024475
         web_order_amount: 8
         potential_reserve_count: 5
         valid_phone_uv: 8
-        quest_reservation_pv_cost: 7
-        leads_cost: 7
+        video_outer_play_cost: 0
+        quest_reservation_pv_cost: 8
+        leads_cost: 4
         cpc: 2
         click_user_count: 6
         deliver_cost: 7
@@ -18175,19 +18199,19 @@ definitions:
         web_reg_rate: 9.785002165136461
         web_checkout_amount: 3
         first_pay_count: 9
-        platform_key_page_view_duration: 9.120398275527268
-        poi_click_user_count: 5
-        video_inner_play_user_count: 8
+        platform_key_page_view_duration: 9.290244967928562
+        poi_click_user_count: 7
+        video_inner_play_user_count: 9
         wechat_account_id: "wechat_account_id"
-        coupon_use_count: 5
-        nickname_click_user_count: 3
+        coupon_use_count: 6
+        nickname_click_user_count: 6
         key_page_view_count: 0
         conversions_rate: 4.432841187680573
         inte_phone_count: 7
-        platform_key_page_view_user_count: 8
+        platform_key_page_view_user_count: 6
         pre_cre_web_val: 0
         coupon_issue_count: 1
-        official_account_order_roi: 2
+        official_account_order_roi: 3
         platform_coupon_get_rate: 9.897492629215506
         deep_conversions_cost: 2
         web_application_cost: 6
@@ -18197,10 +18221,11 @@ definitions:
         withdr_dep_app_val: 3
         activated_cost: 6
         cheout_ow: 4
-        wechat_minigame_register_rate: 0.313237310471568
-        official_account_order_user_count: 3
+        wechat_minigame_register_rate: 5.304373278797373
+        official_account_order_user_count: 4
+        video_outer_play10_count: 5
         promoted_object_id: "promoted_object_id"
-        official_account_apply_cost: 4
+        official_account_apply_cost: 9
         web_register_cost: 9
         download_rate: 9.702963800023566
         potential_consult_count: 1
@@ -18219,17 +18244,16 @@ definitions:
         app_credit_uv: 7
         valid_leads_uv: 4
         page_reservation_count: 3
-        official_account_order_amount: 4
-        official_account_order_cost: 5
-        official_account_apply_user_count: 4
-        app_aroused_cost: 6
+        official_account_order_amount: 2
+        official_account_order_cost: 7
+        official_account_apply_user_count: 8
         page_reservation_cost: 7
         order_roi: 1.041444916118296
         first_pay_cost: 5
         withdr_dep_web_val: 2
         cre_app_val: 6
         deliver_count: 4
-        official_account_apply_roi: 7
+        official_account_apply_roi: 8
         own_page_coupon_get_count: 0
         app_register_rate: 3.2841216543560217
         memcard_web_count: 6
@@ -18237,26 +18261,27 @@ definitions:
         app_application_cost: 3
         app_order_rate: 7.04836565559697
         sign_in_count: 9
+        video_outer_play25_count: 9
         deep_conversions_count: 5
-        official_account_register_rate: 8.638367073739522
+        official_account_register_rate: 4.403697036782718
         arppu_cost: 4
         leads_purchase_cost: 5
         is_expand_targeting: true
         page_phone_call_back_count: 9
-        link_click_user_count: 0
+        link_click_user_count: 8
         ctr: 3.616076749251911
         page_phone_call_back_rate: 7.726998920545485
         click_nick_count: 8
-        order_rate: 9.908114046741538
+        order_rate: 9.120398275527268
         cre_web: 0
         platform_page_navigation_count: 1
         phone_call_uv: 8
         cheout_td_reward: 0.8411762798681321
         withdr_dep_web: 2
         first_memcard_app_cost: 6
-        wechat_minigame_retention_count: 2
+        wechat_minigame_retention_count: 0
         coupon_get_count: 1
-        official_account_follow_rate: 2.1518888575299036
+        official_account_follow_rate: 2.1871588311421153
         activated_rate: 2.3021358869347655
         follow_count: 5
         add_desktop_cost: 0
@@ -18266,10 +18291,11 @@ definitions:
         page_phone_call_direct_cost: 8
         web_register_uv: 7
         retention_cost: 3
-        platform_key_page_avg_view_per_user: 7.6528347060559
+        platform_key_page_avg_view_per_user: 0.6895265584691002
         landing_page_click_count: 3
-        official_account_first_day_order_amount: 4
-        valid_leads_cost: 6
+        official_account_first_day_order_amount: 6
+        valid_leads_cost: 7
+        video_outer_play_time_count: 9.629537564416708
         own_page_navigation_count: 3
         memcard_app_count: 6
         pre_cre_web: 7
@@ -18283,23 +18309,26 @@ definitions:
         effective_reserve_count: 1
         page_consult_count: 9
         forward_cost: 3
-        leads_rate: 7.437703257022269
+        leads_rate: 0.29551818216563164
         key_page_view_cost: 7
         lottery_leads_cost: 0
         web_commodity_page_view_cost: 4
-        order_count: 4
+        order_count: 7
+        video_outer_play100_count: 5
         web_add_to_cart_rate: 9.748669620880193
+        video_outer_play_rate: 2.4977456046390434
         external_form_reservation_count: 2
-        cpn_click_button_cost: 8
-        official_account_register_user_count: 3
+        cpn_click_button_cost: 3
+        official_account_register_user_count: 0
         platform_shop_navigation_count: 6
         account_id: 6
         leads_purchase_uv: 8
-        official_account_order_count: 2
-        compensation_amount: 9
+        official_account_order_count: 4
+        compensation_amount: 0
         ad_pur_val_web: 9
         video_outer_play_count: 1
         template_id: 5
+        material_id: 0
         page_phone_call_direct_count: 6
         view_count: 1
         app_withdraw_uv: 1
@@ -18308,67 +18337,65 @@ definitions:
         install_count: 7
         first_pay_rate: 9.721723570087065
         own_page_navi_cost: 6
-        image_click_user_count: 7
+        image_click_user_count: 9
         app_add_to_cart_cost: 0
         game_create_role_count: 2
         first_day_order_amount: 3
-        official_account_follow_count: 6
+        official_account_follow_count: 0
         web_checkout_rate: 5.974942028545841
         click_head_count: 2
         deep_conversions_rate: 9.721046668148785
         order_amount: 6
-        video_outer_play_user_count: 3
+        video_outer_play_user_count: 7
         add_to_cart_price: 6
         cheout_fd_reward: 6.4280627569296165
         app_ad_pur_arpu_cost: 9
         lottery_leads_count: 8
-        forward_user_count: 9
+        forward_user_count: 1
         click_poi_count: 2
         campaign_id: 4
-        praise_user_count: 0
+        praise_user_count: 5
         read_count: 2
         from_follow_uv: 6
         platform_coupon_get_cost: 7
         effective_leads_count: 6
-        app_aroused_rate: 1.7692392591014339
         tool_consult_count: 2
-        web_application_rate: 9.684087197655908
-        withdr_dep_web_user_count: 4
+        withdr_dep_web_user_count: 1
         overall_leads_purchase_count: 9
         add_wishlist_count: 3
-        coupon_get_rate: 0.05965928697733491
-        deep_link_cnt: 7
-        video_click_user_count: 6
+        coupon_get_rate: 2.3317418552851765
+        video_click_user_count: 9
         effective_phone_count: 3
-        cost_deviation_rate: 9.0012452339701
-        valid_page_consult_user_count: 0
+        cost_deviation_rate: 7.014147440046284
+        valid_page_consult_user_count: 7
         install_cost: 5
         phone_consult_count: 7
         follow_cost: 7
         praise_count: 8
         app_commodity_page_view_cost: 6
         add_to_cart_amount: 8
-        wechat_minigame_register_cost: 4
+        wechat_minigame_register_cost: 6
         page_reservation_rate: 3.0937452626664474
         comment_cost: 0
-        portrait_click_user_count: 9
+        portrait_click_user_count: 6
         first_memcard_web_cost: 2
-        official_account_apply_rate: 7.964879197514727
+        official_account_apply_rate: 5.948961008630453
+        video_outer_play50_count: 3
         activated_count: 5
-        official_account_credit_apply_user_count: 1
+        official_account_credit_apply_user_count: 4
         app_register_cost: 8
         click_detail_count: 2
         platform_coupon_get_count: 8
-        view_user_count: 8
-        avg_view_per_user: 6.460213024504889
+        view_user_count: 9
+        avg_view_per_user: 1.7692392591014339
         game_tutorial_finish_count: 4
         conversions_cost: 3
-        wechat_minigame_arpu: 7.701777079007398
+        wechat_minigame_arpu: 8.708394192403432
         effect_leads_purchase_count: 5
         app_register_count: 4
         web_application_count: 5
-        official_account_order_rate: 0.6052866655822231
-        official_account_register_roi: 9
+        official_account_order_rate: 7.321091499885957
+        official_account_register_roi: 2
         wechat_agency_id: "wechat_agency_id"
         special_page_exp_uv: 8
         app_pre_credit_uv: 7
@@ -18377,15 +18404,17 @@ definitions:
         app_order_cost: 5
         deliver_rate: 9.402167524121316
         valuable_click_count: 1
-        official_account_credit_user_count: 7
+        official_account_credit_user_count: 4
         cpn_click_button_uv: 0
+        video_outer_play75_count: 8
         union_position_id: 8
+        video_outer_play_time_avg_rate: 4.917163120387481
         pre_cre_app: 6
         web_ad_pur_arpu_cost: 4
         first_day_order_count: 1
+        video_outer_play95_count: 9
         video_inner_play_count: 6
         forward_count: 0
-        app_application_rate: 0.8972273556195443
         leads_purchase_rate: 5.5569822283364845
         app_checkout_count: 8
         withdr_dep_app: 4
@@ -18396,34 +18425,36 @@ definitions:
         web_arppu_cost: 8
         cheout_total_reward: 7.3842318535314
         web_add_to_cart_cost: 7
-        official_account_register_cost: 5
-        official_account_apply_amount: 7
+        official_account_register_cost: 6
+        official_account_apply_amount: 9
         special_page_exp_cost: 2
         ad_pur_val_app: 0
         valuable_click_cost: 9
+        site_set: "site_set"
         thousand_display_price: 7
         app_order_amount: 3
-        leads_user_count: 8
+        leads_user_count: 0
         app_application_count: 1
         retention_count: 8
         ad_id: 0
         page_phone_call_back_cost: 6
         web_activated_checkout_rate: 1.0639121808530916
         cheout_fd: 8
-        official_account_apply_count: 8
+        official_account_apply_count: 3
         order_unit_price: 4
         effective_cost: 9
-        official_account_reader_count: 6
+        official_account_reader_count: 5
         game_authorize_count: 6
         web_order_count: 3
-        official_account_follow_cost: 4
+        official_account_follow_cost: 7
         web_order_rate: 3.0576100241049344
         adgroup_id: 8
         platform_page_view_count: 6
+        signature: "signature"
         app_checkout_amount: 7
         cheout_tw_reward: 5.747795090145878
         potential_phone_count: 4
-        comment_user_count: 0
+        comment_user_count: 8
         app_apply_uv: 1
         web_register_count: 5
         app_checkout_cost: 3
@@ -18433,8 +18464,8 @@ definitions:
         coupon_click_count: 1
         web_commodity_page_view_rate: 8.28965939814297
         wechat_minigame_checkout_amount: 4
-        official_account_consult_count: 2
-        official_account_register_amount: 9
+        official_account_consult_count: 0
+        official_account_register_amount: 4
         no_interest_count: 4
         potential_customer_phone_uv: 6
         web_checkout_cost: 0
@@ -18443,7 +18474,7 @@ definitions:
         web_cart_amount: 5
         lan_button_click_count: 5
         download_count: 5
-        valid_leads_rate: 5.304373278797373
+        valid_leads_rate: 7.437703257022269
         app_activated_checkout_rate: 3.8008573585058016
         retention_rate: 4.459605034958679
         wechat_app_register_uv: 4
@@ -18452,7 +18483,7 @@ definitions:
         promoted_object_type: "promoted_object_type"
         add_to_cart_cost: 9
         app_add_to_cart_count: 9
-        leads_user_rate: 1.6056289151258096
+        leads_user_rate: 9.908114046741538
         platform_shop_navigation_cost: 6
         page_consult_cost: 9
         web_credit_uv: 2
@@ -18462,19 +18493,20 @@ definitions:
         first_memcard_web_count: 7
         view_commodity_page_uv: 8
         app_commodity_page_view_count: 2
-        wechat_minigame_checkout_count: 0
+        wechat_minigame_checkout_count: 4
         app_add_to_cart_rate: 6.203595661339589
         arpu_cost: 3
-        coupon_get_cost: 9
+        coupon_get_cost: 2
         praise_cost: 4
-        official_account_first_day_order_count: 6
+        official_account_first_day_order_count: 7
         sign_in_cost: 0
         page_consult_rate: 7.92839742024475
         web_order_amount: 8
         potential_reserve_count: 5
         valid_phone_uv: 8
-        quest_reservation_pv_cost: 7
-        leads_cost: 7
+        video_outer_play_cost: 0
+        quest_reservation_pv_cost: 8
+        leads_cost: 4
         cpc: 2
         click_user_count: 6
         deliver_cost: 7
@@ -18484,19 +18516,19 @@ definitions:
         web_reg_rate: 9.785002165136461
         web_checkout_amount: 3
         first_pay_count: 9
-        platform_key_page_view_duration: 9.120398275527268
-        poi_click_user_count: 5
-        video_inner_play_user_count: 8
+        platform_key_page_view_duration: 9.290244967928562
+        poi_click_user_count: 7
+        video_inner_play_user_count: 9
         wechat_account_id: "wechat_account_id"
-        coupon_use_count: 5
-        nickname_click_user_count: 3
+        coupon_use_count: 6
+        nickname_click_user_count: 6
         key_page_view_count: 0
         conversions_rate: 4.432841187680573
         inte_phone_count: 7
-        platform_key_page_view_user_count: 8
+        platform_key_page_view_user_count: 6
         pre_cre_web_val: 0
         coupon_issue_count: 1
-        official_account_order_roi: 2
+        official_account_order_roi: 3
         platform_coupon_get_rate: 9.897492629215506
         deep_conversions_cost: 2
         web_application_cost: 6
@@ -18506,10 +18538,11 @@ definitions:
         withdr_dep_app_val: 3
         activated_cost: 6
         cheout_ow: 4
-        wechat_minigame_register_rate: 0.313237310471568
-        official_account_order_user_count: 3
+        wechat_minigame_register_rate: 5.304373278797373
+        official_account_order_user_count: 4
+        video_outer_play10_count: 5
         promoted_object_id: "promoted_object_id"
-        official_account_apply_cost: 4
+        official_account_apply_cost: 9
         web_register_cost: 9
         download_rate: 9.702963800023566
         potential_consult_count: 1
@@ -18528,17 +18561,16 @@ definitions:
         app_credit_uv: 7
         valid_leads_uv: 4
         page_reservation_count: 3
-        official_account_order_amount: 4
-        official_account_order_cost: 5
-        official_account_apply_user_count: 4
-        app_aroused_cost: 6
+        official_account_order_amount: 2
+        official_account_order_cost: 7
+        official_account_apply_user_count: 8
         page_reservation_cost: 7
         order_roi: 1.041444916118296
         first_pay_cost: 5
         withdr_dep_web_val: 2
         cre_app_val: 6
         deliver_count: 4
-        official_account_apply_roi: 7
+        official_account_apply_roi: 8
         own_page_coupon_get_count: 0
         app_register_rate: 3.2841216543560217
         memcard_web_count: 6
@@ -19244,21 +19276,6 @@ definitions:
       app_add_to_cart_rate:
         type: "number"
         format: "double"
-      deep_link_cnt:
-        type: "integer"
-        format: "int64"
-      app_application_rate:
-        type: "number"
-        format: "double"
-      web_application_rate:
-        type: "number"
-        format: "double"
-      app_aroused_rate:
-        type: "number"
-        format: "double"
-      app_aroused_cost:
-        type: "integer"
-        format: "int64"
       is_expand_targeting:
         type: "boolean"
       wechat_account_id:
@@ -19466,32 +19483,70 @@ definitions:
       video_inner_play_user_count:
         type: "integer"
         format: "int64"
+      site_set:
+        type: "string"
+      material_id:
+        type: "integer"
+        format: "int64"
+      signature:
+        type: "string"
+      video_outer_play10_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play25_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play50_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play75_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play95_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play100_count:
+        type: "integer"
+        format: "int64"
+      video_outer_play_time_count:
+        type: "number"
+        format: "double"
+      video_outer_play_time_avg_rate:
+        type: "number"
+        format: "double"
+      video_outer_play_rate:
+        type: "number"
+        format: "double"
+      video_outer_play_cost:
+        type: "integer"
+        format: "int64"
     description: "返回结构"
     example:
       comment_count: 0
       app_application_cost: 3
       app_order_rate: 7.04836565559697
       sign_in_count: 9
+      video_outer_play25_count: 9
       deep_conversions_count: 5
-      official_account_register_rate: 8.638367073739522
+      official_account_register_rate: 4.403697036782718
       arppu_cost: 4
       leads_purchase_cost: 5
       is_expand_targeting: true
       page_phone_call_back_count: 9
-      link_click_user_count: 0
+      link_click_user_count: 8
       ctr: 3.616076749251911
       page_phone_call_back_rate: 7.726998920545485
       click_nick_count: 8
-      order_rate: 9.908114046741538
+      order_rate: 9.120398275527268
       cre_web: 0
       platform_page_navigation_count: 1
       phone_call_uv: 8
       cheout_td_reward: 0.8411762798681321
       withdr_dep_web: 2
       first_memcard_app_cost: 6
-      wechat_minigame_retention_count: 2
+      wechat_minigame_retention_count: 0
       coupon_get_count: 1
-      official_account_follow_rate: 2.1518888575299036
+      official_account_follow_rate: 2.1871588311421153
       activated_rate: 2.3021358869347655
       follow_count: 5
       add_desktop_cost: 0
@@ -19501,10 +19556,11 @@ definitions:
       page_phone_call_direct_cost: 8
       web_register_uv: 7
       retention_cost: 3
-      platform_key_page_avg_view_per_user: 7.6528347060559
+      platform_key_page_avg_view_per_user: 0.6895265584691002
       landing_page_click_count: 3
-      official_account_first_day_order_amount: 4
-      valid_leads_cost: 6
+      official_account_first_day_order_amount: 6
+      valid_leads_cost: 7
+      video_outer_play_time_count: 9.629537564416708
       own_page_navigation_count: 3
       memcard_app_count: 6
       pre_cre_web: 7
@@ -19518,23 +19574,26 @@ definitions:
       effective_reserve_count: 1
       page_consult_count: 9
       forward_cost: 3
-      leads_rate: 7.437703257022269
+      leads_rate: 0.29551818216563164
       key_page_view_cost: 7
       lottery_leads_cost: 0
       web_commodity_page_view_cost: 4
-      order_count: 4
+      order_count: 7
+      video_outer_play100_count: 5
       web_add_to_cart_rate: 9.748669620880193
+      video_outer_play_rate: 2.4977456046390434
       external_form_reservation_count: 2
-      cpn_click_button_cost: 8
-      official_account_register_user_count: 3
+      cpn_click_button_cost: 3
+      official_account_register_user_count: 0
       platform_shop_navigation_count: 6
       account_id: 6
       leads_purchase_uv: 8
-      official_account_order_count: 2
-      compensation_amount: 9
+      official_account_order_count: 4
+      compensation_amount: 0
       ad_pur_val_web: 9
       video_outer_play_count: 1
       template_id: 5
+      material_id: 0
       page_phone_call_direct_count: 6
       view_count: 1
       app_withdraw_uv: 1
@@ -19543,67 +19602,65 @@ definitions:
       install_count: 7
       first_pay_rate: 9.721723570087065
       own_page_navi_cost: 6
-      image_click_user_count: 7
+      image_click_user_count: 9
       app_add_to_cart_cost: 0
       game_create_role_count: 2
       first_day_order_amount: 3
-      official_account_follow_count: 6
+      official_account_follow_count: 0
       web_checkout_rate: 5.974942028545841
       click_head_count: 2
       deep_conversions_rate: 9.721046668148785
       order_amount: 6
-      video_outer_play_user_count: 3
+      video_outer_play_user_count: 7
       add_to_cart_price: 6
       cheout_fd_reward: 6.4280627569296165
       app_ad_pur_arpu_cost: 9
       lottery_leads_count: 8
-      forward_user_count: 9
+      forward_user_count: 1
       click_poi_count: 2
       campaign_id: 4
-      praise_user_count: 0
+      praise_user_count: 5
       read_count: 2
       from_follow_uv: 6
       platform_coupon_get_cost: 7
       effective_leads_count: 6
-      app_aroused_rate: 1.7692392591014339
       tool_consult_count: 2
-      web_application_rate: 9.684087197655908
-      withdr_dep_web_user_count: 4
+      withdr_dep_web_user_count: 1
       overall_leads_purchase_count: 9
       add_wishlist_count: 3
-      coupon_get_rate: 0.05965928697733491
-      deep_link_cnt: 7
-      video_click_user_count: 6
+      coupon_get_rate: 2.3317418552851765
+      video_click_user_count: 9
       effective_phone_count: 3
-      cost_deviation_rate: 9.0012452339701
-      valid_page_consult_user_count: 0
+      cost_deviation_rate: 7.014147440046284
+      valid_page_consult_user_count: 7
       install_cost: 5
       phone_consult_count: 7
       follow_cost: 7
       praise_count: 8
       app_commodity_page_view_cost: 6
       add_to_cart_amount: 8
-      wechat_minigame_register_cost: 4
+      wechat_minigame_register_cost: 6
       page_reservation_rate: 3.0937452626664474
       comment_cost: 0
-      portrait_click_user_count: 9
+      portrait_click_user_count: 6
       first_memcard_web_cost: 2
-      official_account_apply_rate: 7.964879197514727
+      official_account_apply_rate: 5.948961008630453
+      video_outer_play50_count: 3
       activated_count: 5
-      official_account_credit_apply_user_count: 1
+      official_account_credit_apply_user_count: 4
       app_register_cost: 8
       click_detail_count: 2
       platform_coupon_get_count: 8
-      view_user_count: 8
-      avg_view_per_user: 6.460213024504889
+      view_user_count: 9
+      avg_view_per_user: 1.7692392591014339
       game_tutorial_finish_count: 4
       conversions_cost: 3
-      wechat_minigame_arpu: 7.701777079007398
+      wechat_minigame_arpu: 8.708394192403432
       effect_leads_purchase_count: 5
       app_register_count: 4
       web_application_count: 5
-      official_account_order_rate: 0.6052866655822231
-      official_account_register_roi: 9
+      official_account_order_rate: 7.321091499885957
+      official_account_register_roi: 2
       wechat_agency_id: "wechat_agency_id"
       special_page_exp_uv: 8
       app_pre_credit_uv: 7
@@ -19612,15 +19669,17 @@ definitions:
       app_order_cost: 5
       deliver_rate: 9.402167524121316
       valuable_click_count: 1
-      official_account_credit_user_count: 7
+      official_account_credit_user_count: 4
       cpn_click_button_uv: 0
+      video_outer_play75_count: 8
       union_position_id: 8
+      video_outer_play_time_avg_rate: 4.917163120387481
       pre_cre_app: 6
       web_ad_pur_arpu_cost: 4
       first_day_order_count: 1
+      video_outer_play95_count: 9
       video_inner_play_count: 6
       forward_count: 0
-      app_application_rate: 0.8972273556195443
       leads_purchase_rate: 5.5569822283364845
       app_checkout_count: 8
       withdr_dep_app: 4
@@ -19631,34 +19690,36 @@ definitions:
       web_arppu_cost: 8
       cheout_total_reward: 7.3842318535314
       web_add_to_cart_cost: 7
-      official_account_register_cost: 5
-      official_account_apply_amount: 7
+      official_account_register_cost: 6
+      official_account_apply_amount: 9
       special_page_exp_cost: 2
       ad_pur_val_app: 0
       valuable_click_cost: 9
+      site_set: "site_set"
       thousand_display_price: 7
       app_order_amount: 3
-      leads_user_count: 8
+      leads_user_count: 0
       app_application_count: 1
       retention_count: 8
       ad_id: 0
       page_phone_call_back_cost: 6
       web_activated_checkout_rate: 1.0639121808530916
       cheout_fd: 8
-      official_account_apply_count: 8
+      official_account_apply_count: 3
       order_unit_price: 4
       effective_cost: 9
-      official_account_reader_count: 6
+      official_account_reader_count: 5
       game_authorize_count: 6
       web_order_count: 3
-      official_account_follow_cost: 4
+      official_account_follow_cost: 7
       web_order_rate: 3.0576100241049344
       adgroup_id: 8
       platform_page_view_count: 6
+      signature: "signature"
       app_checkout_amount: 7
       cheout_tw_reward: 5.747795090145878
       potential_phone_count: 4
-      comment_user_count: 0
+      comment_user_count: 8
       app_apply_uv: 1
       web_register_count: 5
       app_checkout_cost: 3
@@ -19668,8 +19729,8 @@ definitions:
       coupon_click_count: 1
       web_commodity_page_view_rate: 8.28965939814297
       wechat_minigame_checkout_amount: 4
-      official_account_consult_count: 2
-      official_account_register_amount: 9
+      official_account_consult_count: 0
+      official_account_register_amount: 4
       no_interest_count: 4
       potential_customer_phone_uv: 6
       web_checkout_cost: 0
@@ -19678,7 +19739,7 @@ definitions:
       web_cart_amount: 5
       lan_button_click_count: 5
       download_count: 5
-      valid_leads_rate: 5.304373278797373
+      valid_leads_rate: 7.437703257022269
       app_activated_checkout_rate: 3.8008573585058016
       retention_rate: 4.459605034958679
       wechat_app_register_uv: 4
@@ -19687,7 +19748,7 @@ definitions:
       promoted_object_type: "promoted_object_type"
       add_to_cart_cost: 9
       app_add_to_cart_count: 9
-      leads_user_rate: 1.6056289151258096
+      leads_user_rate: 9.908114046741538
       platform_shop_navigation_cost: 6
       page_consult_cost: 9
       web_credit_uv: 2
@@ -19697,19 +19758,20 @@ definitions:
       first_memcard_web_count: 7
       view_commodity_page_uv: 8
       app_commodity_page_view_count: 2
-      wechat_minigame_checkout_count: 0
+      wechat_minigame_checkout_count: 4
       app_add_to_cart_rate: 6.203595661339589
       arpu_cost: 3
-      coupon_get_cost: 9
+      coupon_get_cost: 2
       praise_cost: 4
-      official_account_first_day_order_count: 6
+      official_account_first_day_order_count: 7
       sign_in_cost: 0
       page_consult_rate: 7.92839742024475
       web_order_amount: 8
       potential_reserve_count: 5
       valid_phone_uv: 8
-      quest_reservation_pv_cost: 7
-      leads_cost: 7
+      video_outer_play_cost: 0
+      quest_reservation_pv_cost: 8
+      leads_cost: 4
       cpc: 2
       click_user_count: 6
       deliver_cost: 7
@@ -19719,19 +19781,19 @@ definitions:
       web_reg_rate: 9.785002165136461
       web_checkout_amount: 3
       first_pay_count: 9
-      platform_key_page_view_duration: 9.120398275527268
-      poi_click_user_count: 5
-      video_inner_play_user_count: 8
+      platform_key_page_view_duration: 9.290244967928562
+      poi_click_user_count: 7
+      video_inner_play_user_count: 9
       wechat_account_id: "wechat_account_id"
-      coupon_use_count: 5
-      nickname_click_user_count: 3
+      coupon_use_count: 6
+      nickname_click_user_count: 6
       key_page_view_count: 0
       conversions_rate: 4.432841187680573
       inte_phone_count: 7
-      platform_key_page_view_user_count: 8
+      platform_key_page_view_user_count: 6
       pre_cre_web_val: 0
       coupon_issue_count: 1
-      official_account_order_roi: 2
+      official_account_order_roi: 3
       platform_coupon_get_rate: 9.897492629215506
       deep_conversions_cost: 2
       web_application_cost: 6
@@ -19741,10 +19803,11 @@ definitions:
       withdr_dep_app_val: 3
       activated_cost: 6
       cheout_ow: 4
-      wechat_minigame_register_rate: 0.313237310471568
-      official_account_order_user_count: 3
+      wechat_minigame_register_rate: 5.304373278797373
+      official_account_order_user_count: 4
+      video_outer_play10_count: 5
       promoted_object_id: "promoted_object_id"
-      official_account_apply_cost: 4
+      official_account_apply_cost: 9
       web_register_cost: 9
       download_rate: 9.702963800023566
       potential_consult_count: 1
@@ -19763,17 +19826,16 @@ definitions:
       app_credit_uv: 7
       valid_leads_uv: 4
       page_reservation_count: 3
-      official_account_order_amount: 4
-      official_account_order_cost: 5
-      official_account_apply_user_count: 4
-      app_aroused_cost: 6
+      official_account_order_amount: 2
+      official_account_order_cost: 7
+      official_account_apply_user_count: 8
       page_reservation_cost: 7
       order_roi: 1.041444916118296
       first_pay_cost: 5
       withdr_dep_web_val: 2
       cre_app_val: 6
       deliver_count: 4
-      official_account_apply_roi: 7
+      official_account_apply_roi: 8
       own_page_coupon_get_count: 0
       app_register_rate: 3.2841216543560217
       memcard_web_count: 6
@@ -22250,6 +22312,7 @@ definitions:
           deep_conversions_count: 3
           arppu_cost: 2
           province: "province"
+          leads_purchase_cost: 1
           page_phone_call_back_count: 9
           link_click_user_count: 7
           ctr: 9.301444243932576
@@ -22258,6 +22321,7 @@ definitions:
           cre_web: 6
           platform_page_navigation_count: 6
           region_id: 0
+          phone_call_uv: 7
           cheout_td_reward: 8.782449469456207
           withdr_dep_web: 6
           coupon_get_count: 1
@@ -22265,8 +22329,10 @@ definitions:
           follow_count: 1
           add_desktop_cost: 7
           click_activated_rate: 9.132027271330688
+          web_apply_uv: 1
           pre_cre_app_val: 6
           page_phone_call_direct_cost: 9
+          web_register_uv: 4
           retention_cost: 0
           landing_page_click_count: 4
           valid_leads_cost: 1
@@ -22275,7 +22341,9 @@ definitions:
           web_order_cost: 8
           from_follow_cost: 9
           app_checkout_rate: 0.4867146239815201
+          valuable_click_rate: 8.071139232091417
           install_rate: 6.176386745020588
+          lan_button_click_cost: 2
           effective_reserve_count: 5
           page_consult_count: 1
           forward_cost: 8
@@ -22285,9 +22353,12 @@ definitions:
           external_form_reservation_count: 8
           gender_name: "gender_name"
           platform_shop_navigation_count: 7
+          account_id: 6
+          leads_purchase_uv: 7
           ad_pur_val_web: 6
           page_phone_call_direct_count: 5
           view_count: 6
+          app_withdraw_uv: 8
           web_add_to_cart_count: 5
           web_commodity_page_view_count: 1
           install_count: 4
@@ -22295,6 +22366,7 @@ definitions:
           own_page_navi_cost: 9
           app_add_to_cart_cost: 1
           game_create_role_count: 8
+          first_day_order_amount: 9
           official_account_follow_count: 3
           web_checkout_rate: 9.456612101333725
           click_head_count: 4
@@ -22306,10 +22378,13 @@ definitions:
           click_poi_count: 2
           behavior_time_window: "behavior_time_window"
           praise_user_count: 4
+          campaign_id: 5
           read_count: 0
           from_follow_uv: 3
           platform_coupon_get_cost: 7
           effective_leads_count: 0
+          overall_leads_purchase_count: 7
+          add_wishlist_count: 9
           targeting_type: "targeting_type"
           effective_phone_count: 7
           install_cost: 7
@@ -22329,25 +22404,35 @@ definitions:
           avg_view_per_user: 3.804112695731078
           conversions_cost: 1
           game_tutorial_finish_count: 6
+          effect_leads_purchase_count: 6
           app_register_count: 6
           web_application_count: 6
+          special_page_exp_uv: 4
+          app_pre_credit_uv: 1
+          leads_purchase_count: 1
           download_cost: 1
           app_order_cost: 6
           age: "age"
           valuable_click_count: 4
           deliver_rate: 1.0502890910539986
+          cpn_click_button_uv: 5
           pre_cre_app: 7
           web_ad_pur_arpu_cost: 3
+          first_day_order_count: 5
+          video_inner_play_count: 5
           forward_count: 9
+          leads_purchase_rate: 2.719219329469812
           app_checkout_count: 4
           withdr_dep_app: 1
           valid_click_count: 7
           cheout_ow_reward: 0.4008378390304357
+          click_image_count: 8
           page_phone_call_direct_rate: 4.637509675190766
           web_arppu_cost: 2
           cheout_total_reward: 3.5117904067536143
           web_add_to_cart_cost: 6
           targeting_tag: "targeting_tag"
+          special_page_exp_cost: 8
           ad_pur_val_app: 4
           valuable_click_cost: 0
           tag_class: "tag_class"
@@ -22356,6 +22441,7 @@ definitions:
           app_order_amount: 8
           app_application_count: 3
           retention_count: 9
+          ad_id: 5
           page_phone_call_back_cost: 6
           web_activated_checkout_rate: 7.88722683998926
           cheout_fd: 1
@@ -22365,6 +22451,7 @@ definitions:
           web_order_count: 6
           behavior_scene: "behavior_scene"
           web_order_rate: 0.10263654006109402
+          adgroup_id: 8
           gender: "gender"
           platform_page_view_count: 7
           city: "city"
@@ -22372,27 +22459,37 @@ definitions:
           cheout_tw_reward: 2.5524281586707875
           comment_user_count: 6
           potential_phone_count: 0
+          app_apply_uv: 3
+          audience_id: 0
           web_register_count: 7
           app_checkout_cost: 9
           platform_page_navigation_cost: 3
           read_cost: 5
+          platform_page_view_rate: 1.2786903972794905
           coupon_click_count: 7
           web_commodity_page_view_rate: 4.4935252719377825
+          no_interest_count: 8
+          potential_customer_phone_uv: 4
           web_checkout_cost: 3
           cheout_tw: 8
           cheout_om_reward: 4.432841187680573
           web_cart_amount: 2
+          lan_button_click_count: 9
           download_count: 1
           app_activated_checkout_rate: 9.721723570087065
           retention_rate: 9.402167524121316
+          wechat_app_register_uv: 0
           cre_app: 9
           cheout_td: 5
+          promoted_object_type: "promoted_object_type"
           app_add_to_cart_count: 2
           platform_shop_navigation_cost: 7
           page_consult_cost: 4
+          web_credit_uv: 3
           scan_follow_count: 2
           date: "date"
           web_arpu_cost: 3
+          view_commodity_page_uv: 8
           app_commodity_page_view_count: 5
           arpu_cost: 4
           praise_cost: 8
@@ -22400,6 +22497,7 @@ definitions:
           page_consult_rate: 7.390706075830692
           web_order_amount: 2
           potential_reserve_count: 6
+          valid_phone_uv: 1
           cpc: 3
           click_user_count: 8
           deliver_cost: 4
@@ -22425,17 +22523,22 @@ definitions:
           withdr_dep_app_val: 9
           activated_cost: 0
           cheout_ow: 3
+          promoted_object_id: "promoted_object_id"
           web_register_cost: 4
           download_rate: 4.258773108174356
           potential_consult_count: 4
           conversions_count: 9
+          video_play_count: 2
           own_page_coupon_get_cost: 7
+          cpn_click_button_count: 5
           cheout_om: 7
           web_checkout_count: 3
           effective_consult_count: 0
+          key_page_uv: 8
           cost: 2
           app_order_count: 8
           cre_web_val: 8
+          app_credit_uv: 4
           valid_leads_uv: 3
           page_reservation_count: 2
           page_reservation_cost: 6
@@ -22453,6 +22556,7 @@ definitions:
           deep_conversions_count: 3
           arppu_cost: 2
           province: "province"
+          leads_purchase_cost: 1
           page_phone_call_back_count: 9
           link_click_user_count: 7
           ctr: 9.301444243932576
@@ -22461,6 +22565,7 @@ definitions:
           cre_web: 6
           platform_page_navigation_count: 6
           region_id: 0
+          phone_call_uv: 7
           cheout_td_reward: 8.782449469456207
           withdr_dep_web: 6
           coupon_get_count: 1
@@ -22468,8 +22573,10 @@ definitions:
           follow_count: 1
           add_desktop_cost: 7
           click_activated_rate: 9.132027271330688
+          web_apply_uv: 1
           pre_cre_app_val: 6
           page_phone_call_direct_cost: 9
+          web_register_uv: 4
           retention_cost: 0
           landing_page_click_count: 4
           valid_leads_cost: 1
@@ -22478,7 +22585,9 @@ definitions:
           web_order_cost: 8
           from_follow_cost: 9
           app_checkout_rate: 0.4867146239815201
+          valuable_click_rate: 8.071139232091417
           install_rate: 6.176386745020588
+          lan_button_click_cost: 2
           effective_reserve_count: 5
           page_consult_count: 1
           forward_cost: 8
@@ -22488,9 +22597,12 @@ definitions:
           external_form_reservation_count: 8
           gender_name: "gender_name"
           platform_shop_navigation_count: 7
+          account_id: 6
+          leads_purchase_uv: 7
           ad_pur_val_web: 6
           page_phone_call_direct_count: 5
           view_count: 6
+          app_withdraw_uv: 8
           web_add_to_cart_count: 5
           web_commodity_page_view_count: 1
           install_count: 4
@@ -22498,6 +22610,7 @@ definitions:
           own_page_navi_cost: 9
           app_add_to_cart_cost: 1
           game_create_role_count: 8
+          first_day_order_amount: 9
           official_account_follow_count: 3
           web_checkout_rate: 9.456612101333725
           click_head_count: 4
@@ -22509,10 +22622,13 @@ definitions:
           click_poi_count: 2
           behavior_time_window: "behavior_time_window"
           praise_user_count: 4
+          campaign_id: 5
           read_count: 0
           from_follow_uv: 3
           platform_coupon_get_cost: 7
           effective_leads_count: 0
+          overall_leads_purchase_count: 7
+          add_wishlist_count: 9
           targeting_type: "targeting_type"
           effective_phone_count: 7
           install_cost: 7
@@ -22532,25 +22648,35 @@ definitions:
           avg_view_per_user: 3.804112695731078
           conversions_cost: 1
           game_tutorial_finish_count: 6
+          effect_leads_purchase_count: 6
           app_register_count: 6
           web_application_count: 6
+          special_page_exp_uv: 4
+          app_pre_credit_uv: 1
+          leads_purchase_count: 1
           download_cost: 1
           app_order_cost: 6
           age: "age"
           valuable_click_count: 4
           deliver_rate: 1.0502890910539986
+          cpn_click_button_uv: 5
           pre_cre_app: 7
           web_ad_pur_arpu_cost: 3
+          first_day_order_count: 5
+          video_inner_play_count: 5
           forward_count: 9
+          leads_purchase_rate: 2.719219329469812
           app_checkout_count: 4
           withdr_dep_app: 1
           valid_click_count: 7
           cheout_ow_reward: 0.4008378390304357
+          click_image_count: 8
           page_phone_call_direct_rate: 4.637509675190766
           web_arppu_cost: 2
           cheout_total_reward: 3.5117904067536143
           web_add_to_cart_cost: 6
           targeting_tag: "targeting_tag"
+          special_page_exp_cost: 8
           ad_pur_val_app: 4
           valuable_click_cost: 0
           tag_class: "tag_class"
@@ -22559,6 +22685,7 @@ definitions:
           app_order_amount: 8
           app_application_count: 3
           retention_count: 9
+          ad_id: 5
           page_phone_call_back_cost: 6
           web_activated_checkout_rate: 7.88722683998926
           cheout_fd: 1
@@ -22568,6 +22695,7 @@ definitions:
           web_order_count: 6
           behavior_scene: "behavior_scene"
           web_order_rate: 0.10263654006109402
+          adgroup_id: 8
           gender: "gender"
           platform_page_view_count: 7
           city: "city"
@@ -22575,27 +22703,37 @@ definitions:
           cheout_tw_reward: 2.5524281586707875
           comment_user_count: 6
           potential_phone_count: 0
+          app_apply_uv: 3
+          audience_id: 0
           web_register_count: 7
           app_checkout_cost: 9
           platform_page_navigation_cost: 3
           read_cost: 5
+          platform_page_view_rate: 1.2786903972794905
           coupon_click_count: 7
           web_commodity_page_view_rate: 4.4935252719377825
+          no_interest_count: 8
+          potential_customer_phone_uv: 4
           web_checkout_cost: 3
           cheout_tw: 8
           cheout_om_reward: 4.432841187680573
           web_cart_amount: 2
+          lan_button_click_count: 9
           download_count: 1
           app_activated_checkout_rate: 9.721723570087065
           retention_rate: 9.402167524121316
+          wechat_app_register_uv: 0
           cre_app: 9
           cheout_td: 5
+          promoted_object_type: "promoted_object_type"
           app_add_to_cart_count: 2
           platform_shop_navigation_cost: 7
           page_consult_cost: 4
+          web_credit_uv: 3
           scan_follow_count: 2
           date: "date"
           web_arpu_cost: 3
+          view_commodity_page_uv: 8
           app_commodity_page_view_count: 5
           arpu_cost: 4
           praise_cost: 8
@@ -22603,6 +22741,7 @@ definitions:
           page_consult_rate: 7.390706075830692
           web_order_amount: 2
           potential_reserve_count: 6
+          valid_phone_uv: 1
           cpc: 3
           click_user_count: 8
           deliver_cost: 4
@@ -22628,17 +22767,22 @@ definitions:
           withdr_dep_app_val: 9
           activated_cost: 0
           cheout_ow: 3
+          promoted_object_id: "promoted_object_id"
           web_register_cost: 4
           download_rate: 4.258773108174356
           potential_consult_count: 4
           conversions_count: 9
+          video_play_count: 2
           own_page_coupon_get_cost: 7
+          cpn_click_button_count: 5
           cheout_om: 7
           web_checkout_count: 3
           effective_consult_count: 0
+          key_page_uv: 8
           cost: 2
           app_order_count: 8
           cre_web_val: 8
+          app_credit_uv: 4
           valid_leads_uv: 3
           page_reservation_count: 2
           page_reservation_cost: 6
@@ -22687,6 +22831,7 @@ definitions:
         deep_conversions_count: 3
         arppu_cost: 2
         province: "province"
+        leads_purchase_cost: 1
         page_phone_call_back_count: 9
         link_click_user_count: 7
         ctr: 9.301444243932576
@@ -22695,6 +22840,7 @@ definitions:
         cre_web: 6
         platform_page_navigation_count: 6
         region_id: 0
+        phone_call_uv: 7
         cheout_td_reward: 8.782449469456207
         withdr_dep_web: 6
         coupon_get_count: 1
@@ -22702,8 +22848,10 @@ definitions:
         follow_count: 1
         add_desktop_cost: 7
         click_activated_rate: 9.132027271330688
+        web_apply_uv: 1
         pre_cre_app_val: 6
         page_phone_call_direct_cost: 9
+        web_register_uv: 4
         retention_cost: 0
         landing_page_click_count: 4
         valid_leads_cost: 1
@@ -22712,7 +22860,9 @@ definitions:
         web_order_cost: 8
         from_follow_cost: 9
         app_checkout_rate: 0.4867146239815201
+        valuable_click_rate: 8.071139232091417
         install_rate: 6.176386745020588
+        lan_button_click_cost: 2
         effective_reserve_count: 5
         page_consult_count: 1
         forward_cost: 8
@@ -22722,9 +22872,12 @@ definitions:
         external_form_reservation_count: 8
         gender_name: "gender_name"
         platform_shop_navigation_count: 7
+        account_id: 6
+        leads_purchase_uv: 7
         ad_pur_val_web: 6
         page_phone_call_direct_count: 5
         view_count: 6
+        app_withdraw_uv: 8
         web_add_to_cart_count: 5
         web_commodity_page_view_count: 1
         install_count: 4
@@ -22732,6 +22885,7 @@ definitions:
         own_page_navi_cost: 9
         app_add_to_cart_cost: 1
         game_create_role_count: 8
+        first_day_order_amount: 9
         official_account_follow_count: 3
         web_checkout_rate: 9.456612101333725
         click_head_count: 4
@@ -22743,10 +22897,13 @@ definitions:
         click_poi_count: 2
         behavior_time_window: "behavior_time_window"
         praise_user_count: 4
+        campaign_id: 5
         read_count: 0
         from_follow_uv: 3
         platform_coupon_get_cost: 7
         effective_leads_count: 0
+        overall_leads_purchase_count: 7
+        add_wishlist_count: 9
         targeting_type: "targeting_type"
         effective_phone_count: 7
         install_cost: 7
@@ -22766,25 +22923,35 @@ definitions:
         avg_view_per_user: 3.804112695731078
         conversions_cost: 1
         game_tutorial_finish_count: 6
+        effect_leads_purchase_count: 6
         app_register_count: 6
         web_application_count: 6
+        special_page_exp_uv: 4
+        app_pre_credit_uv: 1
+        leads_purchase_count: 1
         download_cost: 1
         app_order_cost: 6
         age: "age"
         valuable_click_count: 4
         deliver_rate: 1.0502890910539986
+        cpn_click_button_uv: 5
         pre_cre_app: 7
         web_ad_pur_arpu_cost: 3
+        first_day_order_count: 5
+        video_inner_play_count: 5
         forward_count: 9
+        leads_purchase_rate: 2.719219329469812
         app_checkout_count: 4
         withdr_dep_app: 1
         valid_click_count: 7
         cheout_ow_reward: 0.4008378390304357
+        click_image_count: 8
         page_phone_call_direct_rate: 4.637509675190766
         web_arppu_cost: 2
         cheout_total_reward: 3.5117904067536143
         web_add_to_cart_cost: 6
         targeting_tag: "targeting_tag"
+        special_page_exp_cost: 8
         ad_pur_val_app: 4
         valuable_click_cost: 0
         tag_class: "tag_class"
@@ -22793,6 +22960,7 @@ definitions:
         app_order_amount: 8
         app_application_count: 3
         retention_count: 9
+        ad_id: 5
         page_phone_call_back_cost: 6
         web_activated_checkout_rate: 7.88722683998926
         cheout_fd: 1
@@ -22802,6 +22970,7 @@ definitions:
         web_order_count: 6
         behavior_scene: "behavior_scene"
         web_order_rate: 0.10263654006109402
+        adgroup_id: 8
         gender: "gender"
         platform_page_view_count: 7
         city: "city"
@@ -22809,27 +22978,37 @@ definitions:
         cheout_tw_reward: 2.5524281586707875
         comment_user_count: 6
         potential_phone_count: 0
+        app_apply_uv: 3
+        audience_id: 0
         web_register_count: 7
         app_checkout_cost: 9
         platform_page_navigation_cost: 3
         read_cost: 5
+        platform_page_view_rate: 1.2786903972794905
         coupon_click_count: 7
         web_commodity_page_view_rate: 4.4935252719377825
+        no_interest_count: 8
+        potential_customer_phone_uv: 4
         web_checkout_cost: 3
         cheout_tw: 8
         cheout_om_reward: 4.432841187680573
         web_cart_amount: 2
+        lan_button_click_count: 9
         download_count: 1
         app_activated_checkout_rate: 9.721723570087065
         retention_rate: 9.402167524121316
+        wechat_app_register_uv: 0
         cre_app: 9
         cheout_td: 5
+        promoted_object_type: "promoted_object_type"
         app_add_to_cart_count: 2
         platform_shop_navigation_cost: 7
         page_consult_cost: 4
+        web_credit_uv: 3
         scan_follow_count: 2
         date: "date"
         web_arpu_cost: 3
+        view_commodity_page_uv: 8
         app_commodity_page_view_count: 5
         arpu_cost: 4
         praise_cost: 8
@@ -22837,6 +23016,7 @@ definitions:
         page_consult_rate: 7.390706075830692
         web_order_amount: 2
         potential_reserve_count: 6
+        valid_phone_uv: 1
         cpc: 3
         click_user_count: 8
         deliver_cost: 4
@@ -22862,17 +23042,22 @@ definitions:
         withdr_dep_app_val: 9
         activated_cost: 0
         cheout_ow: 3
+        promoted_object_id: "promoted_object_id"
         web_register_cost: 4
         download_rate: 4.258773108174356
         potential_consult_count: 4
         conversions_count: 9
+        video_play_count: 2
         own_page_coupon_get_cost: 7
+        cpn_click_button_count: 5
         cheout_om: 7
         web_checkout_count: 3
         effective_consult_count: 0
+        key_page_uv: 8
         cost: 2
         app_order_count: 8
         cre_web_val: 8
+        app_credit_uv: 4
         valid_leads_uv: 3
         page_reservation_count: 2
         page_reservation_cost: 6
@@ -22890,6 +23075,7 @@ definitions:
         deep_conversions_count: 3
         arppu_cost: 2
         province: "province"
+        leads_purchase_cost: 1
         page_phone_call_back_count: 9
         link_click_user_count: 7
         ctr: 9.301444243932576
@@ -22898,6 +23084,7 @@ definitions:
         cre_web: 6
         platform_page_navigation_count: 6
         region_id: 0
+        phone_call_uv: 7
         cheout_td_reward: 8.782449469456207
         withdr_dep_web: 6
         coupon_get_count: 1
@@ -22905,8 +23092,10 @@ definitions:
         follow_count: 1
         add_desktop_cost: 7
         click_activated_rate: 9.132027271330688
+        web_apply_uv: 1
         pre_cre_app_val: 6
         page_phone_call_direct_cost: 9
+        web_register_uv: 4
         retention_cost: 0
         landing_page_click_count: 4
         valid_leads_cost: 1
@@ -22915,7 +23104,9 @@ definitions:
         web_order_cost: 8
         from_follow_cost: 9
         app_checkout_rate: 0.4867146239815201
+        valuable_click_rate: 8.071139232091417
         install_rate: 6.176386745020588
+        lan_button_click_cost: 2
         effective_reserve_count: 5
         page_consult_count: 1
         forward_cost: 8
@@ -22925,9 +23116,12 @@ definitions:
         external_form_reservation_count: 8
         gender_name: "gender_name"
         platform_shop_navigation_count: 7
+        account_id: 6
+        leads_purchase_uv: 7
         ad_pur_val_web: 6
         page_phone_call_direct_count: 5
         view_count: 6
+        app_withdraw_uv: 8
         web_add_to_cart_count: 5
         web_commodity_page_view_count: 1
         install_count: 4
@@ -22935,6 +23129,7 @@ definitions:
         own_page_navi_cost: 9
         app_add_to_cart_cost: 1
         game_create_role_count: 8
+        first_day_order_amount: 9
         official_account_follow_count: 3
         web_checkout_rate: 9.456612101333725
         click_head_count: 4
@@ -22946,10 +23141,13 @@ definitions:
         click_poi_count: 2
         behavior_time_window: "behavior_time_window"
         praise_user_count: 4
+        campaign_id: 5
         read_count: 0
         from_follow_uv: 3
         platform_coupon_get_cost: 7
         effective_leads_count: 0
+        overall_leads_purchase_count: 7
+        add_wishlist_count: 9
         targeting_type: "targeting_type"
         effective_phone_count: 7
         install_cost: 7
@@ -22969,25 +23167,35 @@ definitions:
         avg_view_per_user: 3.804112695731078
         conversions_cost: 1
         game_tutorial_finish_count: 6
+        effect_leads_purchase_count: 6
         app_register_count: 6
         web_application_count: 6
+        special_page_exp_uv: 4
+        app_pre_credit_uv: 1
+        leads_purchase_count: 1
         download_cost: 1
         app_order_cost: 6
         age: "age"
         valuable_click_count: 4
         deliver_rate: 1.0502890910539986
+        cpn_click_button_uv: 5
         pre_cre_app: 7
         web_ad_pur_arpu_cost: 3
+        first_day_order_count: 5
+        video_inner_play_count: 5
         forward_count: 9
+        leads_purchase_rate: 2.719219329469812
         app_checkout_count: 4
         withdr_dep_app: 1
         valid_click_count: 7
         cheout_ow_reward: 0.4008378390304357
+        click_image_count: 8
         page_phone_call_direct_rate: 4.637509675190766
         web_arppu_cost: 2
         cheout_total_reward: 3.5117904067536143
         web_add_to_cart_cost: 6
         targeting_tag: "targeting_tag"
+        special_page_exp_cost: 8
         ad_pur_val_app: 4
         valuable_click_cost: 0
         tag_class: "tag_class"
@@ -22996,6 +23204,7 @@ definitions:
         app_order_amount: 8
         app_application_count: 3
         retention_count: 9
+        ad_id: 5
         page_phone_call_back_cost: 6
         web_activated_checkout_rate: 7.88722683998926
         cheout_fd: 1
@@ -23005,6 +23214,7 @@ definitions:
         web_order_count: 6
         behavior_scene: "behavior_scene"
         web_order_rate: 0.10263654006109402
+        adgroup_id: 8
         gender: "gender"
         platform_page_view_count: 7
         city: "city"
@@ -23012,27 +23222,37 @@ definitions:
         cheout_tw_reward: 2.5524281586707875
         comment_user_count: 6
         potential_phone_count: 0
+        app_apply_uv: 3
+        audience_id: 0
         web_register_count: 7
         app_checkout_cost: 9
         platform_page_navigation_cost: 3
         read_cost: 5
+        platform_page_view_rate: 1.2786903972794905
         coupon_click_count: 7
         web_commodity_page_view_rate: 4.4935252719377825
+        no_interest_count: 8
+        potential_customer_phone_uv: 4
         web_checkout_cost: 3
         cheout_tw: 8
         cheout_om_reward: 4.432841187680573
         web_cart_amount: 2
+        lan_button_click_count: 9
         download_count: 1
         app_activated_checkout_rate: 9.721723570087065
         retention_rate: 9.402167524121316
+        wechat_app_register_uv: 0
         cre_app: 9
         cheout_td: 5
+        promoted_object_type: "promoted_object_type"
         app_add_to_cart_count: 2
         platform_shop_navigation_cost: 7
         page_consult_cost: 4
+        web_credit_uv: 3
         scan_follow_count: 2
         date: "date"
         web_arpu_cost: 3
+        view_commodity_page_uv: 8
         app_commodity_page_view_count: 5
         arpu_cost: 4
         praise_cost: 8
@@ -23040,6 +23260,7 @@ definitions:
         page_consult_rate: 7.390706075830692
         web_order_amount: 2
         potential_reserve_count: 6
+        valid_phone_uv: 1
         cpc: 3
         click_user_count: 8
         deliver_cost: 4
@@ -23065,17 +23286,22 @@ definitions:
         withdr_dep_app_val: 9
         activated_cost: 0
         cheout_ow: 3
+        promoted_object_id: "promoted_object_id"
         web_register_cost: 4
         download_rate: 4.258773108174356
         potential_consult_count: 4
         conversions_count: 9
+        video_play_count: 2
         own_page_coupon_get_cost: 7
+        cpn_click_button_count: 5
         cheout_om: 7
         web_checkout_count: 3
         effective_consult_count: 0
+        key_page_uv: 8
         cost: 2
         app_order_count: 8
         cre_web_val: 8
+        app_credit_uv: 4
         valid_leads_uv: 3
         page_reservation_count: 2
         page_reservation_cost: 6
@@ -23686,6 +23912,127 @@ definitions:
       web_order_amount:
         type: "integer"
         format: "int64"
+      account_id:
+        type: "integer"
+        format: "int64"
+      campaign_id:
+        type: "integer"
+        format: "int64"
+      adgroup_id:
+        type: "integer"
+        format: "int64"
+      ad_id:
+        type: "integer"
+        format: "int64"
+      audience_id:
+        type: "integer"
+        format: "int64"
+      promoted_object_type:
+        type: "string"
+      promoted_object_id:
+        type: "string"
+      platform_page_view_rate:
+        type: "number"
+        format: "double"
+      valuable_click_rate:
+        type: "number"
+        format: "double"
+      video_play_count:
+        type: "integer"
+        format: "int64"
+      click_image_count:
+        type: "integer"
+        format: "int64"
+      video_inner_play_count:
+        type: "integer"
+        format: "int64"
+      lan_button_click_count:
+        type: "integer"
+        format: "int64"
+      lan_button_click_cost:
+        type: "integer"
+        format: "int64"
+      cpn_click_button_count:
+        type: "integer"
+        format: "int64"
+      cpn_click_button_uv:
+        type: "integer"
+        format: "int64"
+      key_page_uv:
+        type: "integer"
+        format: "int64"
+      special_page_exp_uv:
+        type: "integer"
+        format: "int64"
+      special_page_exp_cost:
+        type: "integer"
+        format: "int64"
+      view_commodity_page_uv:
+        type: "integer"
+        format: "int64"
+      effect_leads_purchase_count:
+        type: "integer"
+        format: "int64"
+      overall_leads_purchase_count:
+        type: "integer"
+        format: "int64"
+      leads_purchase_count:
+        type: "integer"
+        format: "int64"
+      leads_purchase_rate:
+        type: "number"
+        format: "double"
+      leads_purchase_cost:
+        type: "integer"
+        format: "int64"
+      leads_purchase_uv:
+        type: "integer"
+        format: "int64"
+      phone_call_uv:
+        type: "integer"
+        format: "int64"
+      valid_phone_uv:
+        type: "integer"
+        format: "int64"
+      potential_customer_phone_uv:
+        type: "integer"
+        format: "int64"
+      web_register_uv:
+        type: "integer"
+        format: "int64"
+      web_apply_uv:
+        type: "integer"
+        format: "int64"
+      web_credit_uv:
+        type: "integer"
+        format: "int64"
+      app_apply_uv:
+        type: "integer"
+        format: "int64"
+      app_pre_credit_uv:
+        type: "integer"
+        format: "int64"
+      app_credit_uv:
+        type: "integer"
+        format: "int64"
+      app_withdraw_uv:
+        type: "integer"
+        format: "int64"
+      wechat_app_register_uv:
+        type: "integer"
+        format: "int64"
+      no_interest_count:
+        type: "integer"
+        format: "int64"
+      first_day_order_count:
+        type: "integer"
+        format: "int64"
+      first_day_order_amount:
+        type: "integer"
+        format: "int64"
+      add_wishlist_count:
+        type: "integer"
+        format: "int64"
     description: "返回结构"
     example:
       comment_count: 7
@@ -23695,6 +24042,7 @@ definitions:
       deep_conversions_count: 3
       arppu_cost: 2
       province: "province"
+      leads_purchase_cost: 1
       page_phone_call_back_count: 9
       link_click_user_count: 7
       ctr: 9.301444243932576
@@ -23703,6 +24051,7 @@ definitions:
       cre_web: 6
       platform_page_navigation_count: 6
       region_id: 0
+      phone_call_uv: 7
       cheout_td_reward: 8.782449469456207
       withdr_dep_web: 6
       coupon_get_count: 1
@@ -23710,8 +24059,10 @@ definitions:
       follow_count: 1
       add_desktop_cost: 7
       click_activated_rate: 9.132027271330688
+      web_apply_uv: 1
       pre_cre_app_val: 6
       page_phone_call_direct_cost: 9
+      web_register_uv: 4
       retention_cost: 0
       landing_page_click_count: 4
       valid_leads_cost: 1
@@ -23720,7 +24071,9 @@ definitions:
       web_order_cost: 8
       from_follow_cost: 9
       app_checkout_rate: 0.4867146239815201
+      valuable_click_rate: 8.071139232091417
       install_rate: 6.176386745020588
+      lan_button_click_cost: 2
       effective_reserve_count: 5
       page_consult_count: 1
       forward_cost: 8
@@ -23730,9 +24083,12 @@ definitions:
       external_form_reservation_count: 8
       gender_name: "gender_name"
       platform_shop_navigation_count: 7
+      account_id: 6
+      leads_purchase_uv: 7
       ad_pur_val_web: 6
       page_phone_call_direct_count: 5
       view_count: 6
+      app_withdraw_uv: 8
       web_add_to_cart_count: 5
       web_commodity_page_view_count: 1
       install_count: 4
@@ -23740,6 +24096,7 @@ definitions:
       own_page_navi_cost: 9
       app_add_to_cart_cost: 1
       game_create_role_count: 8
+      first_day_order_amount: 9
       official_account_follow_count: 3
       web_checkout_rate: 9.456612101333725
       click_head_count: 4
@@ -23751,10 +24108,13 @@ definitions:
       click_poi_count: 2
       behavior_time_window: "behavior_time_window"
       praise_user_count: 4
+      campaign_id: 5
       read_count: 0
       from_follow_uv: 3
       platform_coupon_get_cost: 7
       effective_leads_count: 0
+      overall_leads_purchase_count: 7
+      add_wishlist_count: 9
       targeting_type: "targeting_type"
       effective_phone_count: 7
       install_cost: 7
@@ -23774,25 +24134,35 @@ definitions:
       avg_view_per_user: 3.804112695731078
       conversions_cost: 1
       game_tutorial_finish_count: 6
+      effect_leads_purchase_count: 6
       app_register_count: 6
       web_application_count: 6
+      special_page_exp_uv: 4
+      app_pre_credit_uv: 1
+      leads_purchase_count: 1
       download_cost: 1
       app_order_cost: 6
       age: "age"
       valuable_click_count: 4
       deliver_rate: 1.0502890910539986
+      cpn_click_button_uv: 5
       pre_cre_app: 7
       web_ad_pur_arpu_cost: 3
+      first_day_order_count: 5
+      video_inner_play_count: 5
       forward_count: 9
+      leads_purchase_rate: 2.719219329469812
       app_checkout_count: 4
       withdr_dep_app: 1
       valid_click_count: 7
       cheout_ow_reward: 0.4008378390304357
+      click_image_count: 8
       page_phone_call_direct_rate: 4.637509675190766
       web_arppu_cost: 2
       cheout_total_reward: 3.5117904067536143
       web_add_to_cart_cost: 6
       targeting_tag: "targeting_tag"
+      special_page_exp_cost: 8
       ad_pur_val_app: 4
       valuable_click_cost: 0
       tag_class: "tag_class"
@@ -23801,6 +24171,7 @@ definitions:
       app_order_amount: 8
       app_application_count: 3
       retention_count: 9
+      ad_id: 5
       page_phone_call_back_cost: 6
       web_activated_checkout_rate: 7.88722683998926
       cheout_fd: 1
@@ -23810,6 +24181,7 @@ definitions:
       web_order_count: 6
       behavior_scene: "behavior_scene"
       web_order_rate: 0.10263654006109402
+      adgroup_id: 8
       gender: "gender"
       platform_page_view_count: 7
       city: "city"
@@ -23817,27 +24189,37 @@ definitions:
       cheout_tw_reward: 2.5524281586707875
       comment_user_count: 6
       potential_phone_count: 0
+      app_apply_uv: 3
+      audience_id: 0
       web_register_count: 7
       app_checkout_cost: 9
       platform_page_navigation_cost: 3
       read_cost: 5
+      platform_page_view_rate: 1.2786903972794905
       coupon_click_count: 7
       web_commodity_page_view_rate: 4.4935252719377825
+      no_interest_count: 8
+      potential_customer_phone_uv: 4
       web_checkout_cost: 3
       cheout_tw: 8
       cheout_om_reward: 4.432841187680573
       web_cart_amount: 2
+      lan_button_click_count: 9
       download_count: 1
       app_activated_checkout_rate: 9.721723570087065
       retention_rate: 9.402167524121316
+      wechat_app_register_uv: 0
       cre_app: 9
       cheout_td: 5
+      promoted_object_type: "promoted_object_type"
       app_add_to_cart_count: 2
       platform_shop_navigation_cost: 7
       page_consult_cost: 4
+      web_credit_uv: 3
       scan_follow_count: 2
       date: "date"
       web_arpu_cost: 3
+      view_commodity_page_uv: 8
       app_commodity_page_view_count: 5
       arpu_cost: 4
       praise_cost: 8
@@ -23845,6 +24227,7 @@ definitions:
       page_consult_rate: 7.390706075830692
       web_order_amount: 2
       potential_reserve_count: 6
+      valid_phone_uv: 1
       cpc: 3
       click_user_count: 8
       deliver_cost: 4
@@ -23870,17 +24253,22 @@ definitions:
       withdr_dep_app_val: 9
       activated_cost: 0
       cheout_ow: 3
+      promoted_object_id: "promoted_object_id"
       web_register_cost: 4
       download_rate: 4.258773108174356
       potential_consult_count: 4
       conversions_count: 9
+      video_play_count: 2
       own_page_coupon_get_cost: 7
+      cpn_click_button_count: 5
       cheout_om: 7
       web_checkout_count: 3
       effective_consult_count: 0
+      key_page_uv: 8
       cost: 2
       app_order_count: 8
       cre_web_val: 8
+      app_credit_uv: 4
       valid_leads_uv: 3
       page_reservation_count: 2
       page_reservation_cost: 6
@@ -24952,6 +25340,9 @@ definitions:
         exclude_mobile_union:
         - "exclude_mobile_union"
         - "exclude_mobile_union"
+        mobile_union_industry:
+        - "mobile_union_industry"
+        - "mobile_union_industry"
       adgroup:
         optimization_goal: {}
         promoted_object_id: "promoted_object_id"
@@ -30314,6 +30705,9 @@ definitions:
         exclude_mobile_union:
         - "exclude_mobile_union"
         - "exclude_mobile_union"
+        mobile_union_industry:
+        - "mobile_union_industry"
+        - "mobile_union_industry"
         tencent_news:
         - "tencent_news"
         - "tencent_news"
@@ -30789,6 +31183,9 @@ definitions:
         exclude_mobile_union:
         - "exclude_mobile_union"
         - "exclude_mobile_union"
+        mobile_union_industry:
+        - "mobile_union_industry"
+        - "mobile_union_industry"
         tencent_news:
         - "tencent_news"
         - "tencent_news"
@@ -31145,6 +31542,9 @@ definitions:
             exclude_mobile_union:
             - "exclude_mobile_union"
             - "exclude_mobile_union"
+            mobile_union_industry:
+            - "mobile_union_industry"
+            - "mobile_union_industry"
             tencent_news:
             - "tencent_news"
             - "tencent_news"
@@ -31432,6 +31832,9 @@ definitions:
             exclude_mobile_union:
             - "exclude_mobile_union"
             - "exclude_mobile_union"
+            mobile_union_industry:
+            - "mobile_union_industry"
+            - "mobile_union_industry"
             tencent_news:
             - "tencent_news"
             - "tencent_news"
@@ -31750,6 +32153,9 @@ definitions:
           exclude_mobile_union:
           - "exclude_mobile_union"
           - "exclude_mobile_union"
+          mobile_union_industry:
+          - "mobile_union_industry"
+          - "mobile_union_industry"
           tencent_news:
           - "tencent_news"
           - "tencent_news"
@@ -32037,6 +32443,9 @@ definitions:
           exclude_mobile_union:
           - "exclude_mobile_union"
           - "exclude_mobile_union"
+          mobile_union_industry:
+          - "mobile_union_industry"
+          - "mobile_union_industry"
           tencent_news:
           - "tencent_news"
           - "tencent_news"
@@ -32439,6 +32848,9 @@ definitions:
         exclude_mobile_union:
         - "exclude_mobile_union"
         - "exclude_mobile_union"
+        mobile_union_industry:
+        - "mobile_union_industry"
+        - "mobile_union_industry"
         tencent_news:
         - "tencent_news"
         - "tencent_news"
@@ -33114,6 +33526,10 @@ definitions:
         type: "array"
         items:
           type: "string"
+      mobile_union_industry:
+        type: "array"
+        items:
+          type: "string"
       union_position_package:
         type: "array"
         items:
@@ -33149,6 +33565,9 @@ definitions:
       exclude_mobile_union:
       - "exclude_mobile_union"
       - "exclude_mobile_union"
+      mobile_union_industry:
+      - "mobile_union_industry"
+      - "mobile_union_industry"
       tencent_news:
       - "tencent_news"
       - "tencent_news"
@@ -33761,6 +34180,9 @@ definitions:
           exclude_mobile_union:
           - "exclude_mobile_union"
           - "exclude_mobile_union"
+          mobile_union_industry:
+          - "mobile_union_industry"
+          - "mobile_union_industry"
           tencent_news:
           - "tencent_news"
           - "tencent_news"
@@ -36234,6 +36656,7 @@ definitions:
     - "SITE_SET_QQCOM"
     - "SITE_SET_WECHAT"
     - "SITE_SET_MOBILE_MYAPP"
+    - "SITE_SET_MOBILE_YYB"
     - "SITE_SET_MOBILE_INNER"
     - "SITE_SET_TENCENT_NEWS"
     - "SITE_SET_TENCENT_VIDEO"
@@ -36261,6 +36684,9 @@ definitions:
     - "SITE_SET_KANDIAN"
     - "SITE_SET_QQ_MUSIC_GAME"
     - "SITE_SET_MOMENTS"
+    - "SITE_SET_MINI_GAME_WECHAT"
+    - "SITE_SET_MINI_GAME_QQ"
+    - "SITE_SET_MOBILE_GAME"
   AdcreativesAddRequest:
     type: "object"
     properties:
@@ -36290,6 +36716,10 @@ definitions:
       qq_mini_game_tracking_query_string:
         type: "string"
       deep_link_url:
+        type: "string"
+      android_deep_link_app_id:
+        type: "string"
+      ios_deep_link_app_id:
         type: "string"
       universal_link_url:
         type: "string"
@@ -36352,6 +36782,7 @@ definitions:
         mini_game_spec:
           mini_game_tracking_parameter: "mini_game_tracking_parameter"
       multi_share_optimization_enabled: true
+      android_deep_link_app_id: "android_deep_link_app_id"
       link_page_type: {}
       feeds_video_comment_switch: true
       promoted_object_id: "promoted_object_id"
@@ -36463,6 +36894,7 @@ definitions:
       - "label"
       - "label"
       link_name_type: {}
+      ios_deep_link_app_id: "ios_deep_link_app_id"
       account_id: 2
       profile_id: 1
       promoted_object_type: {}
@@ -36539,6 +36971,10 @@ definitions:
         type: "string"
       deep_link_url:
         type: "string"
+      android_deep_link_app_id:
+        type: "string"
+      ios_deep_link_app_id:
+        type: "string"
       universal_link_url:
         type: "string"
       share_content_spec:
@@ -36578,9 +37014,7 @@ definitions:
       adcreative_elements:
         $ref: "#/definitions/adcreative_creative_elements_mp"
     example:
-      component_id: 1
       union_market_switch: true
-      deep_link_url: "deep_link_url"
       revised_adcreative_spec:
         revised_adcreative_elements:
           mini_program_path: "mini_program_path"
@@ -36686,9 +37120,6 @@ definitions:
         mini_game_spec:
           mini_game_tracking_parameter: "mini_game_tracking_parameter"
       adcreative_id: 0
-      label:
-      - "label"
-      - "label"
       link_page_spec:
         page_url: "page_url"
         page_id: 6
@@ -36698,12 +37129,11 @@ definitions:
         mini_game_spec:
           mini_game_tracking_parameter: "mini_game_tracking_parameter"
       multi_share_optimization_enabled: true
-      link_name_type: {}
+      android_deep_link_app_id: "android_deep_link_app_id"
       link_page_type: {}
       feeds_video_comment_switch: true
       playable_page_material_id: "playable_page_material_id"
       qq_mini_game_tracking_query_string: "qq_mini_game_tracking_query_string"
-      account_id: 5
       adcreative_elements:
         banner_content:
           image: "image"
@@ -36791,19 +37221,27 @@ definitions:
         image_list:
         - "image_list"
         - "image_list"
-      profile_id: 6
-      online_enabled: true
-      adcreative_name: "adcreative_name"
       share_content_spec:
         share_title: "share_title"
         share_description: "share_description"
       video_end_page:
         end_page_id: "end_page_id"
         end_page_type: {}
+      universal_link_url: "universal_link_url"
+      component_id: 1
+      deep_link_url: "deep_link_url"
+      label:
+      - "label"
+      - "label"
+      link_name_type: {}
+      ios_deep_link_app_id: "ios_deep_link_app_id"
+      account_id: 5
+      profile_id: 6
+      online_enabled: true
+      adcreative_name: "adcreative_name"
       category:
       - 5
       - 5
-      universal_link_url: "universal_link_url"
   AdcreativesUpdateResponse:
     type: "object"
     properties:
@@ -37042,6 +37480,7 @@ definitions:
             mini_game_spec:
               mini_game_tracking_parameter: "mini_game_tracking_parameter"
           multi_share_optimization_enabled: true
+          android_deep_link_app_id: "android_deep_link_app_id"
           link_page_type: {}
           feeds_video_comment_switch: true
           promoted_object_id: "promoted_object_id"
@@ -37180,6 +37619,7 @@ definitions:
           - "label"
           - "label"
           link_name_type: {}
+          ios_deep_link_app_id: "ios_deep_link_app_id"
           is_dynamic_creative: true
           profile_id: 5
           online_enabled: true
@@ -37307,6 +37747,7 @@ definitions:
             mini_game_spec:
               mini_game_tracking_parameter: "mini_game_tracking_parameter"
           multi_share_optimization_enabled: true
+          android_deep_link_app_id: "android_deep_link_app_id"
           link_page_type: {}
           feeds_video_comment_switch: true
           promoted_object_id: "promoted_object_id"
@@ -37445,6 +37886,7 @@ definitions:
           - "label"
           - "label"
           link_name_type: {}
+          ios_deep_link_app_id: "ios_deep_link_app_id"
           is_dynamic_creative: true
           profile_id: 5
           online_enabled: true
@@ -37603,6 +38045,7 @@ definitions:
           mini_game_spec:
             mini_game_tracking_parameter: "mini_game_tracking_parameter"
         multi_share_optimization_enabled: true
+        android_deep_link_app_id: "android_deep_link_app_id"
         link_page_type: {}
         feeds_video_comment_switch: true
         promoted_object_id: "promoted_object_id"
@@ -37741,6 +38184,7 @@ definitions:
         - "label"
         - "label"
         link_name_type: {}
+        ios_deep_link_app_id: "ios_deep_link_app_id"
         is_dynamic_creative: true
         profile_id: 5
         online_enabled: true
@@ -37868,6 +38312,7 @@ definitions:
           mini_game_spec:
             mini_game_tracking_parameter: "mini_game_tracking_parameter"
         multi_share_optimization_enabled: true
+        android_deep_link_app_id: "android_deep_link_app_id"
         link_page_type: {}
         feeds_video_comment_switch: true
         promoted_object_id: "promoted_object_id"
@@ -38006,6 +38451,7 @@ definitions:
         - "label"
         - "label"
         link_name_type: {}
+        ios_deep_link_app_id: "ios_deep_link_app_id"
         is_dynamic_creative: true
         profile_id: 5
         online_enabled: true
@@ -38045,6 +38491,10 @@ definitions:
       qq_mini_game_tracking_query_string:
         type: "string"
       deep_link_url:
+        type: "string"
+      android_deep_link_app_id:
+        type: "string"
+      ios_deep_link_app_id:
         type: "string"
       universal_link_url:
         type: "string"
@@ -38223,6 +38673,7 @@ definitions:
         mini_game_spec:
           mini_game_tracking_parameter: "mini_game_tracking_parameter"
       multi_share_optimization_enabled: true
+      android_deep_link_app_id: "android_deep_link_app_id"
       link_page_type: {}
       feeds_video_comment_switch: true
       promoted_object_id: "promoted_object_id"
@@ -38361,6 +38812,7 @@ definitions:
       - "label"
       - "label"
       link_name_type: {}
+      ios_deep_link_app_id: "ios_deep_link_app_id"
       is_dynamic_creative: true
       profile_id: 5
       online_enabled: true

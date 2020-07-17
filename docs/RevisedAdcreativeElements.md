@@ -1,0 +1,44 @@
+# RevisedAdcreativeElements
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Image** | **string** |  | [optional] [default to null]
+**Image2** | **string** |  | [optional] [default to null]
+**Image3** | **string** |  | [optional] [default to null]
+**Title** | **string** |  | [optional] [default to null]
+**Description** | **string** |  | [optional] [default to null]
+**Corporate** | [***AdcreativeCorporate**](adcreative_corporate.md) |  | [optional] [default to null]
+**Video** | **string** |  | [optional] [default to null]
+**LinkNameType** | [***LinkNameTypeMp**](LinkNameTypeMP.md) |  | [optional] [default to null]
+**ImageList** | **[]string** |  | [optional] [default to null]
+**ElementStory** | [**[]AdcreativeElementStoryArrayItem**](adcreative_element_story_array_item.md) |  | [optional] [default to null]
+**Url** | **string** |  | [optional] [default to null]
+**ButtonText** | **string** |  | [optional] [default to null]
+**BottomText** | **string** |  | [optional] [default to null]
+**MiniProgramId** | **string** |  | [optional] [default to null]
+**MiniProgramPath** | **string** |  | [optional] [default to null]
+**Label** | [**[]AdcreativeLabel**](adcreative_label.md) |  | [optional] [default to null]
+**ProductTags** | **[]string** |  | [optional] [default to null]
+**LogoDescription** | **string** |  | [optional] [default to null]
+**Logo** | **string** |  | [optional] [default to null]
+**LeftBottomTxt** | **string** |  | [optional] [default to null]
+**AnimationEffect** | **string** |  | [optional] [default to null]
+**Phone** | **string** |  | [optional] [default to null]
+**ShortVideoStruct** | [***ShortVideoStruct**](short_video_struct.md) |  | [optional] [default to null]
+**LongVideoStruct** | [***LongVideoStruct**](long_video_struct.md) |  | [optional] [default to null]
+**BannerContent** | [***AdcreativeBannerContent**](adcreative_banner_content.md) |  | [optional] [default to null]
+**CardContent** | [***AdcreativeCardContent**](adcreative_card_content.md) |  | [optional] [default to null]
+**VideoPopupUrl** | **string** |  | [optional] [default to null]
+**VideoPopupButton** | [***AdcreativeVideoPopupButton**](adcreative_video_popup_button.md) |  | [optional] [default to null]
+**Brand** | [***AdCreativeBrand**](ad_creative_brand.md) |  | [optional] [default to null]
+**Caption** | **string** |  | [optional] [default to null]
+**LabelledImg** | [***AdcreativeLabelledImg**](adcreative_labelled_img.md) |  | [optional] [default to null]
+**FullScreenImage** | **string** |  | [optional] [default to null]
+**ZipUrl** | **string** |  | [optional] [default to null]
+**EndPage** | [***AdCreativeEndPage**](ad_creative_end_page.md) |  | [optional] [default to null]
+**CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

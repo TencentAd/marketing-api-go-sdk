@@ -13,6 +13,7 @@
 ```shell
 go get github.com/tencentad/marketing-api-go-sdk
 ```
+
 ### 使用 go mod 获取
 其中的 ${VERSION} 需要替换成要使用的版本，如v1.0.0，具体版本号可查看相应的tag
 ```shell
