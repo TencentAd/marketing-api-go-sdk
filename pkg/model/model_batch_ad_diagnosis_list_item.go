@@ -17,13 +17,13 @@ type BatchAdDiagnosisListItem struct {
 	LearningStatus           LearningStatus       `json:"learning_status,omitempty"`
 	CostGuaranteeStatus      CostGuaranteeStatus  `json:"cost_guarantee_status,omitempty"`
 	CostGuaranteeMoney       int64                `json:"cost_guarantee_money,omitempty"`
-	ExposureCompeteScore     int64                `json:"exposure_compete_score,omitempty"`
-	ExposureRaiseRate        float64              `json:"exposure_raise_rate,omitempty"`
-	CpaBiasToday             float64              `json:"cpa_bias_today,omitempty"`
-	CpaBiasOverall           float64              `json:"cpa_bias_overall,omitempty"`
+	ExposureCompeteScore     string               `json:"exposure_compete_score,omitempty"`
+	ExposureRaiseRate        string               `json:"exposure_raise_rate,omitempty"`
+	CpaBiasToday             string               `json:"cpa_bias_today,omitempty"`
+	CpaBiasOverall           string               `json:"cpa_bias_overall,omitempty"`
 	IsOcpx                   bool                 `json:"is_ocpx,omitempty"`
-	OptimizationGoal         int64                `json:"optimization_goal,omitempty"`
-	DeepOptimizationGoal     int64                `json:"deep_optimization_goal,omitempty"`
+	OptimizationGoal         string               `json:"optimization_goal,omitempty"`
+	DeepOptimizationGoal     string               `json:"deep_optimization_goal,omitempty"`
 	ConclusionDescription    string               `json:"conclusion_description,omitempty"`
 	HasDiagnoseDetail        bool                 `json:"has_diagnose_detail,omitempty"`
 	OperateSuggestionDesc    string               `json:"operate_suggestion_desc,omitempty"`

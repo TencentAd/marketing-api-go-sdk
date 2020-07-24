@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 **ImageDurationMillisecond** | **int64** |  | [optional] [default to null]
 **AudioDurationMillisecond** | **int64** |  | [optional] [default to null]
 **SourceType** | [***MediaSourceType**](MediaSourceType.md) |  | [optional] [default to null]
-**ProductCatalogId** | **int64** |  | [optional] [default to null]
+**ProductCatalogId** | **string** |  | [optional] [default to null]
 **ProductOuterId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

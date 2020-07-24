@@ -227,6 +227,7 @@ Name | Type | Description | Notes
 **SpecialPageExpCost** | **int64** |  | [optional] [default to null]
 **ViewCommodityPageUv** | **int64** |  | [optional] [default to null]
 **EffectLeadsPurchaseCount** | **int64** |  | [optional] [default to null]
+**ReservationUv** | **int64** |  | [optional] [default to null]
 **OverallLeadsPurchaseCount** | **int64** |  | [optional] [default to null]
 **LeadsPurchaseCount** | **int64** |  | [optional] [default to null]
 **LeadsPurchaseRate** | **float64** |  | [optional] [default to null]

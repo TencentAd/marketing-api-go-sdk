@@ -172,6 +172,8 @@ type APIClient struct {
 
 	ProductCatalogsReportsApi *ProductCatalogsReportsApiService
 
+	ProductCategoriesListApi *ProductCategoriesListApiService
+
 	ProductItemsApi *ProductItemsApiService
 
 	ProductItemsDetailApi *ProductItemsDetailApiService
@@ -320,6 +322,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PlayablePagesApi = (*PlayablePagesApiService)(&c.common)
 	c.ProductCatalogsApi = (*ProductCatalogsApiService)(&c.common)
 	c.ProductCatalogsReportsApi = (*ProductCatalogsReportsApiService)(&c.common)
+	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)

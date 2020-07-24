@@ -265,6 +265,10 @@ func (c *SDKClient) ProductCatalogsReports() *api.ProductCatalogsReportsApiServi
 	return c.Client.ProductCatalogsReportsApi
 }
 
+func (c *SDKClient) ProductCategoriesList() *api.ProductCategoriesListApiService {
+	return c.Client.ProductCategoriesListApi
+}
+
 func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 	return c.Client.ProductItemsApi
 }

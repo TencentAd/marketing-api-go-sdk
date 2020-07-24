@@ -46,7 +46,7 @@ type ProductItemSpec struct {
 	Discount                  float64           `json:"discount,omitempty"`
 	SalePrice                 float64           `json:"sale_price,omitempty"`
 	StartTime                 string            `json:"start_time,omitempty"`
-	EndTime                   int64             `json:"end_time,omitempty"`
+	EndTime                   string            `json:"end_time,omitempty"`
 	SalesVolume               int64             `json:"sales_volume,omitempty"`
 	StockVolume               int64             `json:"stock_volume,omitempty"`
 	Slogan                    string            `json:"slogan,omitempty"`

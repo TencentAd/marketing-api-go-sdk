@@ -9,7 +9,7 @@
 
 package model
 
-// ProductMode : 动态商品广告类型
+// ProductMode : 用于投放的的商品数量
 type ProductMode string
 
 // List of ProductMode

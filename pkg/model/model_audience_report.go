@@ -11,16 +11,16 @@ package model
 
 // custom_audience_report人群报表结构
 type AudienceReport struct {
-	AudienceId            int64      `json:"audience_id,omitempty"`
-	AccountId             int64      `json:"account_id,omitempty"`
-	AdgroupId             int64      `json:"adgroup_id,omitempty"`
-	CampaignId            int64      `json:"campaign_id,omitempty"`
-	WechatAdgroupId       int64      `json:"wechat_adgroup_id,omitempty"`
-	WechatCampaignId      int64      `json:"wechat_campaign_id,omitempty"`
-	ModelId               int64      `json:"model_id,omitempty"`
-	AudiencePredictTaskId int64      `json:"audience_predict_task_id,omitempty"`
-	ActionType            ActionType `json:"action_type,omitempty"`
-	Cost                  int64      `json:"cost,omitempty"`
-	ActionCount           int64      `json:"action_count,omitempty"`
-	UserCount             int64      `json:"user_count,omitempty"`
+	AudienceId            int64        `json:"audience_id,omitempty"`
+	AccountId             int64        `json:"account_id,omitempty"`
+	AdgroupId             int64        `json:"adgroup_id,omitempty"`
+	CampaignId            int64        `json:"campaign_id,omitempty"`
+	WechatAdgroupId       int64        `json:"wechat_adgroup_id,omitempty"`
+	WechatCampaignId      int64        `json:"wechat_campaign_id,omitempty"`
+	ModelId               int64        `json:"model_id,omitempty"`
+	AudiencePredictTaskId int64        `json:"audience_predict_task_id,omitempty"`
+	ActionType            AdActionType `json:"action_type,omitempty"`
+	Cost                  int64        `json:"cost,omitempty"`
+	ActionCount           int64        `json:"action_count,omitempty"`
+	UserCount             int64        `json:"user_count,omitempty"`
 }

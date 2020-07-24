@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 **Discount** | **float64** |  | [optional] [default to null]
 **SalePrice** | **float64** |  | [optional] [default to null]
 **StartTime** | **string** |  | [optional] [default to null]
-**EndTime** | **int64** |  | [optional] [default to null]
+**EndTime** | **string** |  | [optional] [default to null]
 **SalesVolume** | **int64** |  | [optional] [default to null]
 **StockVolume** | **int64** |  | [optional] [default to null]
 **Slogan** | **string** |  | [optional] [default to null]

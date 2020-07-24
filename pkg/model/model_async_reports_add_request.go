@@ -14,6 +14,8 @@ type AsyncReportsAddRequest struct {
 	TaskName     string           `json:"task_name,omitempty"`
 	ReportFields []string         `json:"report_fields,omitempty"`
 	Level        AsyncReportLevel `json:"level,omitempty"`
+	TimeLine     TimeLine         `json:"time_line,omitempty"`
+	GroupBy      []string         `json:"group_by,omitempty"`
 	Granularity  TimeGranularity  `json:"granularity,omitempty"`
 	Date         string           `json:"date,omitempty"`
 }

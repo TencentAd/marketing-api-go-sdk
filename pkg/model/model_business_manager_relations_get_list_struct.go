@@ -11,6 +11,7 @@ package model
 
 // 返回结构
 type BusinessManagerRelationsGetListStruct struct {
-	AccountId       int64  `json:"account_id,omitempty"`
-	CorporationName string `json:"corporation_name,omitempty"`
+	AccountId       int64         `json:"account_id,omitempty"`
+	CorporationName string        `json:"corporation_name,omitempty"`
+	FundType        BmAccountType `json:"fund_type,omitempty"`
 }

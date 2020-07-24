@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **AgencyIdList** | **[]int64** |  | [optional] [default to null]
 **StaffWechatIdList** | **[]string** |  | [optional] [default to null]
 **DailyBudget** | **int64** |  | [optional] [default to null]
-**FundType** | [***AccountTypeMap**](AccountTypeMap.md) |  | [optional] [default to null]
+**FundType** | [***WechatAdvertiserAccountType**](WechatAdvertiserAccountType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

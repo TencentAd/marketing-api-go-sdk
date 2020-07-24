@@ -213,6 +213,7 @@ type DailyReportsGetListStruct struct {
 	SpecialPageExpCost                  int64   `json:"special_page_exp_cost,omitempty"`
 	ViewCommodityPageUv                 int64   `json:"view_commodity_page_uv,omitempty"`
 	EffectLeadsPurchaseCount            int64   `json:"effect_leads_purchase_count,omitempty"`
+	ReservationUv                       int64   `json:"reservation_uv,omitempty"`
 	OverallLeadsPurchaseCount           int64   `json:"overall_leads_purchase_count,omitempty"`
 	LeadsPurchaseCount                  int64   `json:"leads_purchase_count,omitempty"`
 	LeadsPurchaseRate                   float64 `json:"leads_purchase_rate,omitempty"`
@@ -234,13 +235,28 @@ type DailyReportsGetListStruct struct {
 	FirstDayOrderCount                  int64   `json:"first_day_order_count,omitempty"`
 	FirstDayOrderAmount                 int64   `json:"first_day_order_amount,omitempty"`
 	AddWishlistCount                    int64   `json:"add_wishlist_count,omitempty"`
+	VideoOuterPlay10Count               int64   `json:"video_outer_play10_count,omitempty"`
+	VideoOuterPlay25Count               int64   `json:"video_outer_play25_count,omitempty"`
+	VideoOuterPlay50Count               int64   `json:"video_outer_play50_count,omitempty"`
+	VideoOuterPlay75Count               int64   `json:"video_outer_play75_count,omitempty"`
+	VideoOuterPlay95Count               int64   `json:"video_outer_play95_count,omitempty"`
+	VideoOuterPlay100Count              int64   `json:"video_outer_play100_count,omitempty"`
+	VideoOuterPlayTimeCount             float64 `json:"video_outer_play_time_count,omitempty"`
+	VideoOuterPlayTimeAvgRate           float64 `json:"video_outer_play_time_avg_rate,omitempty"`
+	VideoOuterPlayRate                  float64 `json:"video_outer_play_rate,omitempty"`
+	VideoOuterPlayCost                  int64   `json:"video_outer_play_cost,omitempty"`
 	VideoOuterPlayCount                 int64   `json:"video_outer_play_count,omitempty"`
+	VideoOuterPlay3sCount               int64   `json:"video_outer_play3s_count,omitempty"`
+	VideoOuterPlay5sCount               int64   `json:"video_outer_play5s_count,omitempty"`
+	VideoOuterPlay7sCount               int64   `json:"video_outer_play7s_count,omitempty"`
 	CampaignId                          int64   `json:"campaign_id,omitempty"`
 	AdgroupId                           int64   `json:"adgroup_id,omitempty"`
 	AdId                                int64   `json:"ad_id,omitempty"`
 	PromotedObjectType                  string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                    string  `json:"promoted_object_id,omitempty"`
 	UnionPositionId                     int64   `json:"union_position_id,omitempty"`
+	IndustryParentName                  string  `json:"industry_parent_name,omitempty"`
+	PlacementName                       string  `json:"placement_name,omitempty"`
 	TemplateId                          int64   `json:"template_id,omitempty"`
 	AddToCartCost                       int64   `json:"add_to_cart_cost,omitempty"`
 	WebAddToCartRate                    float64 `json:"web_add_to_cart_rate,omitempty"`
@@ -318,14 +334,4 @@ type DailyReportsGetListStruct struct {
 	SiteSet                             string  `json:"site_set,omitempty"`
 	MaterialId                          int64   `json:"material_id,omitempty"`
 	Signature                           string  `json:"signature,omitempty"`
-	VideoOuterPlay10Count               int64   `json:"video_outer_play10_count,omitempty"`
-	VideoOuterPlay25Count               int64   `json:"video_outer_play25_count,omitempty"`
-	VideoOuterPlay50Count               int64   `json:"video_outer_play50_count,omitempty"`
-	VideoOuterPlay75Count               int64   `json:"video_outer_play75_count,omitempty"`
-	VideoOuterPlay95Count               int64   `json:"video_outer_play95_count,omitempty"`
-	VideoOuterPlay100Count              int64   `json:"video_outer_play100_count,omitempty"`
-	VideoOuterPlayTimeCount             float64 `json:"video_outer_play_time_count,omitempty"`
-	VideoOuterPlayTimeAvgRate           float64 `json:"video_outer_play_time_avg_rate,omitempty"`
-	VideoOuterPlayRate                  float64 `json:"video_outer_play_rate,omitempty"`
-	VideoOuterPlayCost                  int64   `json:"video_outer_play_cost,omitempty"`
 }

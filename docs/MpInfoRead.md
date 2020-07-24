@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **WechatAccountId** | **string** |  | [optional] [default to null]
 **WechatAccountName** | **string** |  | [optional] [default to null]
-**SystemStatus** | [***SysStatus**](SysStatus.md) |  | [optional] [default to null]
+**SystemStatus** | [***WechatCustomerSystemStatus**](WechatCustomerSystemStatus.md) |  | [optional] [default to null]
 **IndustryName** | **string** |  | [optional] [default to null]
 **ContactPerson** | **string** |  | [optional] [default to null]
 **ContactPersonTelephone** | **string** |  | [optional] [default to null]

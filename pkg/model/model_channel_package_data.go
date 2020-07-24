@@ -18,6 +18,6 @@ type ChannelPackageData struct {
 	VersionName      string             `json:"version_name,omitempty"`
 	CreatedTime      int64              `json:"created_time,omitempty"`
 	LastModifiedTime int64              `json:"last_modified_time,omitempty"`
-	SystemStatus     SysStatus          `json:"system_status,omitempty"`
+	SystemStatus     PackageSysStatus   `json:"system_status,omitempty"`
 	AuditStatus      PackageAuditStatus `json:"audit_status,omitempty"`
 }

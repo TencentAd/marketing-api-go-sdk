@@ -9,16 +9,17 @@
 3. Go SDK 需要依赖 1.11 版本及以上
 
 ## 如何安装
-### 使用 go get 获取
-```shell
-go get github.com/tencentad/marketing-api-go-sdk
-```
-
+推荐使用 go mod 的方式获取
 ### 使用 go mod 获取
 其中的 ${VERSION} 需要替换成要使用的版本，如v1.0.0，具体版本号可查看相应的tag
 ```shell
 go mod edit -require="github.com/tencentad/marketing-api-go-sdk@${VERSION}"
-go mod tidy
+go mod download
+```
+
+### 使用 go get 获取
+```shell
+go get github.com/tencentad/marketing-api-go-sdk
 ```
 
 ## 如何使用

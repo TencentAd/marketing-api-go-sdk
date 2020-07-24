@@ -39,6 +39,6 @@ type VideosGetListStruct struct {
 	ImageDurationMillisecond int64             `json:"image_duration_millisecond,omitempty"`
 	AudioDurationMillisecond int64             `json:"audio_duration_millisecond,omitempty"`
 	SourceType               MediaSourceType   `json:"source_type,omitempty"`
-	ProductCatalogId         int64             `json:"product_catalog_id,omitempty"`
+	ProductCatalogId         string            `json:"product_catalog_id,omitempty"`
 	ProductOuterId           string            `json:"product_outer_id,omitempty"`
 }

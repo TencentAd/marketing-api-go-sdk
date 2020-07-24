@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **WechatCampaignId** | **int64** |  | [optional] [default to null]
 **ModelId** | **int64** |  | [optional] [default to null]
 **AudiencePredictTaskId** | **int64** |  | [optional] [default to null]
-**ActionType** | [***ActionType**](ActionType.md) |  | [optional] [default to null]
+**ActionType** | [***AdActionType**](AdActionType.md) |  | [optional] [default to null]
 **Cost** | **int64** |  | [optional] [default to null]
 **ActionCount** | **int64** |  | [optional] [default to null]
 **UserCount** | **int64** |  | [optional] [default to null]

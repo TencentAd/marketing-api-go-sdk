@@ -235,6 +235,7 @@ type TargetingTagReportsGetListStruct struct {
 	SpecialPageExpCost           int64   `json:"special_page_exp_cost,omitempty"`
 	ViewCommodityPageUv          int64   `json:"view_commodity_page_uv,omitempty"`
 	EffectLeadsPurchaseCount     int64   `json:"effect_leads_purchase_count,omitempty"`
+	ReservationUv                int64   `json:"reservation_uv,omitempty"`
 	OverallLeadsPurchaseCount    int64   `json:"overall_leads_purchase_count,omitempty"`
 	LeadsPurchaseCount           int64   `json:"leads_purchase_count,omitempty"`
 	LeadsPurchaseRate            float64 `json:"leads_purchase_rate,omitempty"`

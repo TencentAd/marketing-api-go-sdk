@@ -228,17 +228,19 @@ AdcreativesApiService 获取广告创意
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "IsDeleted" (optional.Bool) -
+     * @param "LinkPageTypeCompatible" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdcreativesGetResponse
 */
 
 type AdcreativesGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	IsDeleted optional.Bool
-	Fields    optional.Interface
+	Filtering              optional.Interface
+	Page                   optional.Int64
+	PageSize               optional.Int64
+	IsDeleted              optional.Bool
+	LinkPageTypeCompatible optional.Bool
+	Fields                 optional.Interface
 }
 
 func (a *AdcreativesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AdcreativesGetOpts) (AdcreativesGetResponseData, *http.Response, error) {
@@ -270,6 +272,9 @@ func (a *AdcreativesApiService) Get(ctx context.Context, accountId int64, localV
 	}
 	if localVarOptionals != nil && localVarOptionals.IsDeleted.IsSet() {
 		localVarQueryParams.Add("is_deleted", parameterToString(localVarOptionals.IsDeleted.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.LinkPageTypeCompatible.IsSet() {
+		localVarQueryParams.Add("link_page_type_compatible", parameterToString(localVarOptionals.LinkPageTypeCompatible.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

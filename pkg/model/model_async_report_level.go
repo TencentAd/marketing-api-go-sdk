@@ -14,13 +14,14 @@ type AsyncReportLevel string
 
 // List of AsyncReportLevel
 const (
-	AsyncReportLevel_ADGROUP_WECHAT AsyncReportLevel = "REPORT_LEVEL_ADGROUP_WECHAT"
-	AsyncReportLevel_AD_WECHAT      AsyncReportLevel = "REPORT_LEVEL_AD_WECHAT"
-	AsyncReportLevel_POI_WECHAT     AsyncReportLevel = "REPORT_LEVEL_POI_WECHAT"
-	AsyncReportLevel_AD             AsyncReportLevel = "REPORT_LEVEL_AD"
-	AsyncReportLevel_ADVERTISER     AsyncReportLevel = "REPORT_LEVEL_ADVERTISER"
-	AsyncReportLevel_CAMPAIGN       AsyncReportLevel = "REPORT_LEVEL_CAMPAIGN"
-	AsyncReportLevel_ADGROUP        AsyncReportLevel = "REPORT_LEVEL_ADGROUP"
-	AsyncReportLevel_MATERIAL_VIDEO AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
-	AsyncReportLevel_MATERIAL_IMAGE AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
+	AsyncReportLevel_ADGROUP_WECHAT  AsyncReportLevel = "REPORT_LEVEL_ADGROUP_WECHAT"
+	AsyncReportLevel_AD_WECHAT       AsyncReportLevel = "REPORT_LEVEL_AD_WECHAT"
+	AsyncReportLevel_POI_WECHAT      AsyncReportLevel = "REPORT_LEVEL_POI_WECHAT"
+	AsyncReportLevel_AD              AsyncReportLevel = "REPORT_LEVEL_AD"
+	AsyncReportLevel_ADVERTISER      AsyncReportLevel = "REPORT_LEVEL_ADVERTISER"
+	AsyncReportLevel_CAMPAIGN        AsyncReportLevel = "REPORT_LEVEL_CAMPAIGN"
+	AsyncReportLevel_ADGROUP         AsyncReportLevel = "REPORT_LEVEL_ADGROUP"
+	AsyncReportLevel_MATERIAL_VIDEO  AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
+	AsyncReportLevel_MATERIAL_IMAGE  AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
+	AsyncReportLevel_PROMOTED_OBJECT AsyncReportLevel = "REPORT_LEVEL_PROMOTED_OBJECT"
 )
