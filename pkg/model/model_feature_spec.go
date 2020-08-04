@@ -11,7 +11,7 @@ package model
 
 // 特征规则
 type FeatureSpec struct {
-	DataSourceType          FeatureDataSourceType   `json:"data_source_type,omitempty"`
-	PropertyDataFeatureSpec PropertyDataFeatureSpec `json:"property_data_feature_spec,omitempty"`
-	CustomFileFeatureSpec   CustomFileFeatureSpec   `json:"custom_file_feature_spec,omitempty"`
+	DataSourceType          FeatureDataSourceType    `json:"data_source_type,omitempty"`
+	PropertyDataFeatureSpec *PropertyDataFeatureSpec `json:"property_data_feature_spec,omitempty"`
+	CustomFileFeatureSpec   *CustomFileFeatureSpec   `json:"custom_file_feature_spec,omitempty"`
 }

@@ -22,5 +22,5 @@ type CustomAudience struct {
 	UserCount        int64         `json:"user_count,omitempty"`
 	CreatedTime      string        `json:"created_time,omitempty"`
 	LastModifiedTime string        `json:"last_modified_time,omitempty"`
-	AudienceSpec     AudienceSpec  `json:"audience_spec,omitempty"`
+	AudienceSpec     *AudienceSpec `json:"audience_spec,omitempty"`
 }

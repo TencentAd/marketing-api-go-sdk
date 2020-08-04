@@ -11,5 +11,5 @@ package model
 
 type BusinessManagerRelationsGetResponseData struct {
 	List     []BusinessManagerRelationsGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                                    `json:"page_info,omitempty"`
+	PageInfo *Conf                                   `json:"page_info,omitempty"`
 }

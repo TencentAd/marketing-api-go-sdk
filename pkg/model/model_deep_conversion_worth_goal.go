@@ -14,9 +14,9 @@ type DeepConversionWorthGoal string
 
 // List of DeepConversionWorthGoal
 const (
-	DeepConversionWorthGoal_30DAYPURCHASEROAS_     DeepConversionWorthGoal = "GOAL_30DAY_PURCHASE_ROAS"
-	DeepConversionWorthGoal_30DAYMONETIZATIONROAS_ DeepConversionWorthGoal = "GOAL_30DAY_MONETIZATION_ROAS"
-	DeepConversionWorthGoal_30DAYORDERROAS_        DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
-	DeepConversionWorthGoal_1DAYPURCHASEROAS_      DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
-	DeepConversionWorthGoal_1DAYMONETIZATIONROAS_  DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_30DAYPURCHASEROAS     DeepConversionWorthGoal = "GOAL_30DAY_PURCHASE_ROAS"
+	DeepConversionWorthGoal_30DAYMONETIZATIONROAS DeepConversionWorthGoal = "GOAL_30DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_30DAYORDERROAS        DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
+	DeepConversionWorthGoal_1DAYPURCHASEROAS      DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
+	DeepConversionWorthGoal_1DAYMONETIZATIONROAS  DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"
 )

@@ -11,5 +11,5 @@ package model
 
 type CustomFeaturesGetResponseData struct {
 	List     []CustomFeature `json:"list,omitempty"`
-	PageInfo PageInfo        `json:"page_info,omitempty"`
+	PageInfo *PageInfo       `json:"page_info,omitempty"`
 }

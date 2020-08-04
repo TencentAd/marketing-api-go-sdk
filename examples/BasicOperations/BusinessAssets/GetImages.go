@@ -38,7 +38,7 @@ func (e *ImagesGetExample) Init() {
 	e.AccountId = int64(0)
 	e.ImagesGetOpts = &api.ImagesGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "image_id",
 			Operator: "EQUALS",
 			Values:   []string{"YOUR IMAGE ID"},

@@ -35,7 +35,7 @@ func (e *AdgroupsAddExample) Init() {
 	e.Data = model.AdgroupsAddRequest{
 		EndDate:          "YOUR ADGROUP END DATE",
 		OptimizationGoal: model.OptimizationGoal_IMPRESSION,
-		Targeting: model.WriteTargetingSettingForAdgroup{
+		Targeting: &model.WriteTargetingSettingForAdgroup{
 			UserOs: []string{"IOS"},
 		},
 		AccountId:          int64(0),

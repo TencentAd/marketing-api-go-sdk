@@ -11,5 +11,5 @@ package model
 
 type ConversionsGetResponseData struct {
 	List     []ConversionsGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                       `json:"page_info,omitempty"`
+	PageInfo *Conf                      `json:"page_info,omitempty"`
 }

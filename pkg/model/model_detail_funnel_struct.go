@@ -11,10 +11,10 @@ package model
 
 // 诊断详情-漏斗分析明细
 type DetailFunnelStruct struct {
-	TargetingWidenessRate TargetingWidenessRateFunnelStruct `json:"targeting_wideness_rate,omitempty"`
-	CompeteWinRate        CompeteWinRateFunnelStruct        `json:"compete_win_rate,omitempty"`
-	ExposureCount         ExposureCountFunnelStruct         `json:"exposure_count,omitempty"`
-	Ctr                   CtrFunnelStruct                   `json:"ctr,omitempty"`
-	Cvr                   CvrFunnelStruct                   `json:"cvr,omitempty"`
-	Cpa                   CpaFunnelStruct                   `json:"cpa,omitempty"`
+	TargetingWidenessRate *TargetingWidenessRateFunnelStruct `json:"targeting_wideness_rate,omitempty"`
+	CompeteWinRate        *CompeteWinRateFunnelStruct        `json:"compete_win_rate,omitempty"`
+	ExposureCount         *ExposureCountFunnelStruct         `json:"exposure_count,omitempty"`
+	Ctr                   *CtrFunnelStruct                   `json:"ctr,omitempty"`
+	Cvr                   *CvrFunnelStruct                   `json:"cvr,omitempty"`
+	Cpa                   *CpaFunnelStruct                   `json:"cpa,omitempty"`
 }

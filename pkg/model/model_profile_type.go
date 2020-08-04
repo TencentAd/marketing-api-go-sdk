@@ -16,4 +16,5 @@ type ProfileType string
 const (
 	ProfileType_DEFINITION    ProfileType = "PROFILE_TYPE_DEFINITION"
 	ProfileType_AUTO_GENERATE ProfileType = "PROFILE_TYPE_AUTO_GENERATE"
+	ProfileType_WEAPP         ProfileType = "PROFILE_TYPE_WEAPP"
 )

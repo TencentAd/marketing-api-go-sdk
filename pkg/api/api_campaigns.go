@@ -40,6 +40,7 @@ func (a *CampaignsApiService) Add(ctx context.Context, data CampaignsAddRequest)
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsAddResponseData
 		localVarResponse    CampaignsAddResponse
 	)
@@ -70,7 +71,7 @@ func (a *CampaignsApiService) Add(ctx context.Context, data CampaignsAddRequest)
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -94,7 +95,7 @@ func (a *CampaignsApiService) Add(ctx context.Context, data CampaignsAddRequest)
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -136,6 +137,7 @@ func (a *CampaignsApiService) Delete(ctx context.Context, data CampaignsDeleteRe
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsDeleteResponseData
 		localVarResponse    CampaignsDeleteResponse
 	)
@@ -166,7 +168,7 @@ func (a *CampaignsApiService) Delete(ctx context.Context, data CampaignsDeleteRe
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -190,7 +192,7 @@ func (a *CampaignsApiService) Delete(ctx context.Context, data CampaignsDeleteRe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -247,6 +249,7 @@ func (a *CampaignsApiService) Get(ctx context.Context, accountId int64, localVar
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsGetResponseData
 		localVarResponse    CampaignsGetResponse
 	)
@@ -291,7 +294,7 @@ func (a *CampaignsApiService) Get(ctx context.Context, accountId int64, localVar
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -315,7 +318,7 @@ func (a *CampaignsApiService) Get(ctx context.Context, accountId int64, localVar
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -357,6 +360,7 @@ func (a *CampaignsApiService) Update(ctx context.Context, data CampaignsUpdateRe
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsUpdateResponseData
 		localVarResponse    CampaignsUpdateResponse
 	)
@@ -387,7 +391,7 @@ func (a *CampaignsApiService) Update(ctx context.Context, data CampaignsUpdateRe
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -411,7 +415,7 @@ func (a *CampaignsApiService) Update(ctx context.Context, data CampaignsUpdateRe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -453,6 +457,7 @@ func (a *CampaignsApiService) UpdateConfiguredStatus(ctx context.Context, data C
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsUpdateConfiguredStatusResponseData
 		localVarResponse    CampaignsUpdateConfiguredStatusResponse
 	)
@@ -483,7 +488,7 @@ func (a *CampaignsApiService) UpdateConfiguredStatus(ctx context.Context, data C
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -507,7 +512,7 @@ func (a *CampaignsApiService) UpdateConfiguredStatus(ctx context.Context, data C
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -549,6 +554,7 @@ func (a *CampaignsApiService) UpdateDailyBudget(ctx context.Context, data Campai
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CampaignsUpdateDailyBudgetResponseData
 		localVarResponse    CampaignsUpdateDailyBudgetResponse
 	)
@@ -579,7 +585,7 @@ func (a *CampaignsApiService) UpdateDailyBudget(ctx context.Context, data Campai
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -603,7 +609,7 @@ func (a *CampaignsApiService) UpdateDailyBudget(ctx context.Context, data Campai
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

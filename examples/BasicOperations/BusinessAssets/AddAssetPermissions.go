@@ -36,7 +36,7 @@ func (e *AssetPermissionsAddExample) Init() {
 		LicensingAccountIdList: []int64{int64(0)},
 		AccountId:              int64(0),
 		AssetType:              model.AssetType_ASSET_TYPE_CANVAS_WECHAT,
-		AssetPermissionSpec: []model.AssetPermissionSpecStruct{model.AssetPermissionSpecStruct{
+		AssetPermissionSpec: []model.AssetPermissionSpecStruct{&model.AssetPermissionSpecStruct{
 			AssetPermissionGrantType: model.AssetPermissionGrantType_ASSET_PERMISSION_GRANT_TYPE_ASSET,
 			AssetId:                  int64(0),
 		}},

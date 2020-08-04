@@ -17,5 +17,5 @@ type ProductCatalogsGetListStruct struct {
 	ProductCatalogVertical  CatalogVertical   `json:"product_catalog_vertical,omitempty"`
 	ProductCatalogStatus    CatalogStatus     `json:"product_catalog_status,omitempty"`
 	ProductRecommendMethods []RecommendMethod `json:"product_recommend_methods,omitempty"`
-	DeepLinkEnabled         DeepLinkEnabled   `json:"deep_link_enabled,omitempty"`
+	DeepLinkEnabled         *DeepLinkEnabled  `json:"deep_link_enabled,omitempty"`
 }

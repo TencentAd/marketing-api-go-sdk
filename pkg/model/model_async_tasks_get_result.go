@@ -11,7 +11,7 @@ package model
 
 // 任务结果
 type AsyncTasksGetResult struct {
-	Code    int64             `json:"code,omitempty"`
-	Message string            `json:"message,omitempty"`
-	Data    AsyncTasksGetData `json:"data,omitempty"`
+	Code    int64              `json:"code,omitempty"`
+	Message string             `json:"message,omitempty"`
+	Data    *AsyncTasksGetData `json:"data,omitempty"`
 }

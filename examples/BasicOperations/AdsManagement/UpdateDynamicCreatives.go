@@ -34,7 +34,7 @@ func (e *DynamicCreativesUpdateExample) Init() {
 	})
 	e.Data = model.DynamicCreativesUpdateRequest{
 		AccountId: int64(0),
-		DynamicCreativeElements: model.DynamicCreativeElements{
+		DynamicCreativeElements: &model.DynamicCreativeElements{
 			ImageOptions:       []string{"YOUR AD IMAGE"},
 			TitleOptions:       []string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
 			DescriptionOptions: []string{"YOUR AD DESCRIPTION"},

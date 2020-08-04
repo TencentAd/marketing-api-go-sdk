@@ -35,11 +35,11 @@ func (e *AudienceGrantRelationsAddExample) Init() {
 	e.Data = model.AudienceGrantRelationsAddRequest{
 		AccountId: int64(0),
 		GrantType: model.AudienceGrantType_GRANT_TYPE_BUSINESS,
-		GrantSpec: model.GrantSpec{
-			GrantToBusinessSpec: model.GrantToBusinessSpec{
+		GrantSpec: &model.GrantSpec{
+			GrantToBusinessSpec: &model.GrantToBusinessSpec{
 				GrantBusinessId: int64(0),
 				GrantScopeType:  model.AudienceGrantScopeType_BUSINESS,
-				GrantBusinessPermission: model.GrantBusinessPermission{
+				GrantBusinessPermission: &model.GrantBusinessPermission{
 					GrantPermissionTypeList: []string{"GRANT_PERMISSION_TYPE_TARGET"},
 				},
 			},

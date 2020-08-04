@@ -32,5 +32,5 @@ type EcommerceOrderListStruct struct {
 	AdgroupId              int64                `json:"adgroup_id,omitempty"`
 	AdgroupName            string               `json:"adgroup_name,omitempty"`
 	FromAccountId          int64                `json:"from_account_id,omitempty"`
-	DeliverySpec           OrderDeliverySpec    `json:"delivery_spec,omitempty"`
+	DeliverySpec           *OrderDeliverySpec   `json:"delivery_spec,omitempty"`
 }

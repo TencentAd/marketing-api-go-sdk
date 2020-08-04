@@ -47,6 +47,7 @@ Name | Type | Description | Notes
 **DeepConversionWorthRate** | **float64** |  | [optional] [default to null]
 **AndroidChannelPackageAuditMessage** | **string** |  | [optional] [default to null]
 **SystemStatus** | [***AdgroupSysStatus**](AdgroupSysStatus.md) |  | [optional] [default to null]
+**Status** | [***CalcStatus**](CalcStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

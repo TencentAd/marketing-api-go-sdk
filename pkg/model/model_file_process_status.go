@@ -17,5 +17,5 @@ const (
 	FileProcessStatus_PENDING    FileProcessStatus = "PENDING"
 	FileProcessStatus_PROCESSING FileProcessStatus = "PROCESSING"
 	FileProcessStatus_SUCCESS    FileProcessStatus = "SUCCESS"
-	FileProcessStatus_ERROR_     FileProcessStatus = "ERROR"
+	FileProcessStatus_ERROR      FileProcessStatus = "ERROR"
 )

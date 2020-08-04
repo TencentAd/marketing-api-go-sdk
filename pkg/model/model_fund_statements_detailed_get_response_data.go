@@ -11,5 +11,5 @@ package model
 
 type FundStatementsDetailedGetResponseData struct {
 	List     []FundStatementsDetailedGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                                  `json:"page_info,omitempty"`
+	PageInfo *Conf                                 `json:"page_info,omitempty"`
 }

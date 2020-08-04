@@ -40,6 +40,7 @@ func (a *AdgroupsApiService) Add(ctx context.Context, data AdgroupsAddRequest) (
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsAddResponseData
 		localVarResponse    AdgroupsAddResponse
 	)
@@ -70,7 +71,7 @@ func (a *AdgroupsApiService) Add(ctx context.Context, data AdgroupsAddRequest) (
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -94,7 +95,7 @@ func (a *AdgroupsApiService) Add(ctx context.Context, data AdgroupsAddRequest) (
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -136,6 +137,7 @@ func (a *AdgroupsApiService) Delete(ctx context.Context, data AdgroupsDeleteRequ
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsDeleteResponseData
 		localVarResponse    AdgroupsDeleteResponse
 	)
@@ -166,7 +168,7 @@ func (a *AdgroupsApiService) Delete(ctx context.Context, data AdgroupsDeleteRequ
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -190,7 +192,7 @@ func (a *AdgroupsApiService) Delete(ctx context.Context, data AdgroupsDeleteRequ
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -247,6 +249,7 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsGetResponseData
 		localVarResponse    AdgroupsGetResponse
 	)
@@ -291,7 +294,7 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -315,7 +318,7 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -357,6 +360,7 @@ func (a *AdgroupsApiService) Update(ctx context.Context, data AdgroupsUpdateRequ
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsUpdateResponseData
 		localVarResponse    AdgroupsUpdateResponse
 	)
@@ -387,7 +391,7 @@ func (a *AdgroupsApiService) Update(ctx context.Context, data AdgroupsUpdateRequ
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -411,7 +415,7 @@ func (a *AdgroupsApiService) Update(ctx context.Context, data AdgroupsUpdateRequ
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -453,6 +457,7 @@ func (a *AdgroupsApiService) UpdateBidAmount(ctx context.Context, data AdgroupsU
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsUpdateBidAmountResponseData
 		localVarResponse    AdgroupsUpdateBidAmountResponse
 	)
@@ -483,7 +488,7 @@ func (a *AdgroupsApiService) UpdateBidAmount(ctx context.Context, data AdgroupsU
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -507,7 +512,7 @@ func (a *AdgroupsApiService) UpdateBidAmount(ctx context.Context, data AdgroupsU
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -549,6 +554,7 @@ func (a *AdgroupsApiService) UpdateConfiguredStatus(ctx context.Context, data Ad
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsUpdateConfiguredStatusResponseData
 		localVarResponse    AdgroupsUpdateConfiguredStatusResponse
 	)
@@ -579,7 +585,7 @@ func (a *AdgroupsApiService) UpdateConfiguredStatus(ctx context.Context, data Ad
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -603,7 +609,7 @@ func (a *AdgroupsApiService) UpdateConfiguredStatus(ctx context.Context, data Ad
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -645,6 +651,7 @@ func (a *AdgroupsApiService) UpdateDailyBudget(ctx context.Context, data Adgroup
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsUpdateDailyBudgetResponseData
 		localVarResponse    AdgroupsUpdateDailyBudgetResponse
 	)
@@ -675,7 +682,7 @@ func (a *AdgroupsApiService) UpdateDailyBudget(ctx context.Context, data Adgroup
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -699,7 +706,7 @@ func (a *AdgroupsApiService) UpdateDailyBudget(ctx context.Context, data Adgroup
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -741,6 +748,7 @@ func (a *AdgroupsApiService) UpdateDatetime(ctx context.Context, data AdgroupsUp
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue AdgroupsUpdateDatetimeResponseData
 		localVarResponse    AdgroupsUpdateDatetimeResponse
 	)
@@ -771,7 +779,7 @@ func (a *AdgroupsApiService) UpdateDatetime(ctx context.Context, data AdgroupsUp
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -795,7 +803,7 @@ func (a *AdgroupsApiService) UpdateDatetime(ctx context.Context, data AdgroupsUp
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

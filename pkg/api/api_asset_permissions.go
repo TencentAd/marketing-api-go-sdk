@@ -39,6 +39,7 @@ func (a *AssetPermissionsApiService) Add(ctx context.Context, data AssetPermissi
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue interface{}
 		localVarResponse    AssetPermissionsAddResponse
 	)
@@ -69,7 +70,7 @@ func (a *AssetPermissionsApiService) Add(ctx context.Context, data AssetPermissi
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -135,6 +136,7 @@ func (a *AssetPermissionsApiService) Delete(ctx context.Context, data AssetPermi
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue interface{}
 		localVarResponse    AssetPermissionsDeleteResponse
 	)
@@ -165,7 +167,7 @@ func (a *AssetPermissionsApiService) Delete(ctx context.Context, data AssetPermi
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}

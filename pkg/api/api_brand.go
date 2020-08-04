@@ -43,6 +43,7 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue BrandAddResponseData
 		localVarResponse    BrandAddResponse
 	)
@@ -74,13 +75,14 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	localVarFormParams.Add("name", parameterToString(name, ""))
 	localVarFile := brandImageFile
+	localVarFileKey = "brand_image_file"
 	if localVarFile != nil {
 		fbs, _ := ioutil.ReadAll(localVarFile)
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
 		localVarFile.Close()
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -104,7 +106,7 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -157,6 +159,7 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue BrandGetResponseData
 		localVarResponse    BrandGetResponse
 	)
@@ -195,7 +198,7 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -219,7 +222,7 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

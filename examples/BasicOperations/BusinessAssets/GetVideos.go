@@ -38,7 +38,7 @@ func (e *VideosGetExample) Init() {
 	e.AccountId = int64(0)
 	e.VideosGetOpts = &api.VideosGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "media_id",
 			Operator: "EQUALS",
 			Values:   []string{"YOUR VIDEO ID"},

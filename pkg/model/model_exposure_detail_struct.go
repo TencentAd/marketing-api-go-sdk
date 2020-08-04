@@ -11,7 +11,7 @@ package model
 
 // 诊断详情-曝光明细
 type ExposureDetailStruct struct {
-	EffectData                 ExposureEffectDataStruct                 `json:"effect_data,omitempty"`
-	EffectDataTrends           []ExposureEffectDataTrendsItem           `json:"effect_data_trends,omitempty"`
-	TargetingLabelContribution ExposureTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
+	EffectData                 *ExposureEffectDataStruct                 `json:"effect_data,omitempty"`
+	EffectDataTrends           []ExposureEffectDataTrendsItem            `json:"effect_data_trends,omitempty"`
+	TargetingLabelContribution *ExposureTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
 }

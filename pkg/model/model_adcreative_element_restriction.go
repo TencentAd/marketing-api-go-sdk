@@ -11,9 +11,9 @@ package model
 
 // 广告创意元素需满足的限制条件
 type AdcreativeElementRestriction struct {
-	TextRestriction   TextRestriction   `json:"text_restriction,omitempty"`
-	ImageRestriction  ImageRestriction  `json:"image_restriction,omitempty"`
-	UrlRestriction    UrlRestriction    `json:"url_restriction,omitempty"`
-	VideoRestriction  VideoRestriction  `json:"video_restriction,omitempty"`
-	NumberRestriction NumberRestriction `json:"number_restriction,omitempty"`
+	TextRestriction   *TextRestriction   `json:"text_restriction,omitempty"`
+	ImageRestriction  *ImageRestriction  `json:"image_restriction,omitempty"`
+	UrlRestriction    *UrlRestriction    `json:"url_restriction,omitempty"`
+	VideoRestriction  *VideoRestriction  `json:"video_restriction,omitempty"`
+	NumberRestriction *NumberRestriction `json:"number_restriction,omitempty"`
 }

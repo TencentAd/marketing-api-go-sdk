@@ -34,13 +34,13 @@ func (e *DynamicCreativesAddExample) Init() {
 	})
 	e.Data = model.DynamicCreativesAddRequest{
 		AccountId: int64(0),
-		DynamicCreativeElements: model.DynamicCreativeElements{
+		DynamicCreativeElements: &model.DynamicCreativeElements{
 			ImageOptions:       []string{"YOUR AD IMAGE"},
 			TitleOptions:       []string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
 			DescriptionOptions: []string{"YOUR AD DESCRIPTION"},
 		},
-		PageType: model.DestinationType_DEFAULT_,
-		PageSpec: model.DynamicPageSpec{
+		PageType: model.DestinationType_DEFAULT,
+		PageSpec: &model.DynamicPageSpec{
 			PageUrl: "YOUR AD PAGE URL",
 		},
 		CampaignType:              model.CampaignType_NORMAL,

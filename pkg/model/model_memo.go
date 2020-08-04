@@ -11,5 +11,5 @@ package model
 
 // 更多信息
 type Memo struct {
-	WechatFundSpec WechatFundSpec `json:"wechat_fund_spec,omitempty"`
+	WechatFundSpec *WechatFundSpec `json:"wechat_fund_spec,omitempty"`
 }

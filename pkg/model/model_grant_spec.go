@@ -11,5 +11,5 @@ package model
 
 // 人群授权信息
 type GrantSpec struct {
-	GrantToBusinessSpec GrantToBusinessSpec `json:"grant_to_business_spec,omitempty"`
+	GrantToBusinessSpec *GrantToBusinessSpec `json:"grant_to_business_spec,omitempty"`
 }

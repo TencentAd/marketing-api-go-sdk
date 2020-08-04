@@ -11,5 +11,5 @@ package model
 
 type AudienceGrantRelationsGetResponseData struct {
 	List     []GrantInfo `json:"list,omitempty"`
-	PageInfo PageInfo    `json:"page_info,omitempty"`
+	PageInfo *PageInfo   `json:"page_info,omitempty"`
 }

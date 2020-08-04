@@ -40,6 +40,7 @@ func (a *DynamicCreativesApiService) Add(ctx context.Context, data DynamicCreati
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue DynamicCreativesAddResponseData
 		localVarResponse    DynamicCreativesAddResponse
 	)
@@ -70,7 +71,7 @@ func (a *DynamicCreativesApiService) Add(ctx context.Context, data DynamicCreati
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -94,7 +95,7 @@ func (a *DynamicCreativesApiService) Add(ctx context.Context, data DynamicCreati
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -149,6 +150,7 @@ func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, l
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue DynamicCreativesGetResponseData
 		localVarResponse    DynamicCreativesGetResponse
 	)
@@ -190,7 +192,7 @@ func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, l
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -214,7 +216,7 @@ func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, l
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -256,6 +258,7 @@ func (a *DynamicCreativesApiService) Update(ctx context.Context, data DynamicCre
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue DynamicCreativesUpdateResponseData
 		localVarResponse    DynamicCreativesUpdateResponse
 	)
@@ -286,7 +289,7 @@ func (a *DynamicCreativesApiService) Update(ctx context.Context, data DynamicCre
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -310,7 +313,7 @@ func (a *DynamicCreativesApiService) Update(ctx context.Context, data DynamicCre
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

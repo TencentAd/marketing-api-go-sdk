@@ -34,11 +34,11 @@ func (e *AdcreativesUpdateExample) Init() {
 	})
 	e.Data = model.AdcreativesUpdateRequest{
 		AccountId: int64(0),
-		AdcreativeElements: model.AdcreativeCreativeElementsMp{
+		AdcreativeElements: &model.AdcreativeCreativeElementsMp{
 			Title:       "YOUR AD TEXT",
 			Description: "YOUR AD DESCRIPTION",
 		},
-		PageSpec: model.PageSpec{
+		PageSpec: &model.PageSpec{
 			PageUrl: "YOUR AD PAGE URL",
 		},
 		AdcreativeId: int64(0),

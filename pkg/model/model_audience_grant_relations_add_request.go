@@ -13,5 +13,5 @@ type AudienceGrantRelationsAddRequest struct {
 	AccountId      int64             `json:"account_id,omitempty"`
 	AudienceIdList []int64           `json:"audience_id_list,omitempty"`
 	GrantType      AudienceGrantType `json:"grant_type,omitempty"`
-	GrantSpec      GrantSpec         `json:"grant_spec,omitempty"`
+	GrantSpec      *GrantSpec        `json:"grant_spec,omitempty"`
 }

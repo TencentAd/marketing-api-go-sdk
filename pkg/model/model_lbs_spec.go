@@ -11,8 +11,8 @@ package model
 
 // LBS人群信息
 type LbsSpec struct {
-	LbsType            LbsType            `json:"lbs_type,omitempty"`
-	CrossCityRule      CrossCityRule      `json:"cross_city_rule,omitempty"`
-	PoiRule            PoiRule            `json:"poi_rule,omitempty"`
-	CustomLocationRule CustomLocationRule `json:"custom_location_rule,omitempty"`
+	LbsType            LbsType             `json:"lbs_type,omitempty"`
+	CrossCityRule      *CrossCityRule      `json:"cross_city_rule,omitempty"`
+	PoiRule            *PoiRule            `json:"poi_rule,omitempty"`
+	CustomLocationRule *CustomLocationRule `json:"custom_location_rule,omitempty"`
 }

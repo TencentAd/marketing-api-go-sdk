@@ -11,6 +11,6 @@ package model
 
 // 修改后的创意内容，当且仅当 online_enabled = true 时，此字段允许写入
 type RevisedAdcreativeSpec struct {
-	RevisedAdcreativeElements RevisedAdcreativeElements `json:"revised_adcreative_elements,omitempty"`
-	RevisedPageSpec           RevisedPageSpec           `json:"revised_page_spec,omitempty"`
+	RevisedAdcreativeElements *RevisedAdcreativeElements `json:"revised_adcreative_elements,omitempty"`
+	RevisedPageSpec           *RevisedPageSpec           `json:"revised_page_spec,omitempty"`
 }

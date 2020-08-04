@@ -43,6 +43,7 @@ func (a *PlayablePagesApiService) Add(ctx context.Context, accountId int64, play
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue PlayablePagesAddResponseData
 		localVarResponse    PlayablePagesAddResponse
 	)
@@ -74,13 +75,14 @@ func (a *PlayablePagesApiService) Add(ctx context.Context, accountId int64, play
 	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	localVarFormParams.Add("playable_page_name", parameterToString(playablePageName, ""))
 	localVarFile := materialFile
+	localVarFileKey = "material_file"
 	if localVarFile != nil {
 		fbs, _ := ioutil.ReadAll(localVarFile)
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
 		localVarFile.Close()
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -104,7 +106,7 @@ func (a *PlayablePagesApiService) Add(ctx context.Context, accountId int64, play
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -159,6 +161,7 @@ func (a *PlayablePagesApiService) Get(ctx context.Context, accountId int64, loca
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue PlayablePagesGetResponseData
 		localVarResponse    PlayablePagesGetResponse
 	)
@@ -200,7 +203,7 @@ func (a *PlayablePagesApiService) Get(ctx context.Context, accountId int64, loca
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -224,7 +227,7 @@ func (a *PlayablePagesApiService) Get(ctx context.Context, accountId int64, loca
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

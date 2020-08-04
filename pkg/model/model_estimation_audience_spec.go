@@ -11,5 +11,5 @@ package model
 
 // 人群信息
 type EstimationAudienceSpec struct {
-	CombineSpec CombineSpec `json:"combine_spec,omitempty"`
+	CombineSpec *CombineSpec `json:"combine_spec,omitempty"`
 }

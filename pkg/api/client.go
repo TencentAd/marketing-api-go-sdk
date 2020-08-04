@@ -90,6 +90,8 @@ type APIClient struct {
 
 	BatchRequestsApi *BatchRequestsApiService
 
+	BidSimulationApi *BidSimulationApiService
+
 	BrandApi *BrandApiService
 
 	BusinessManagerRelationsApi *BusinessManagerRelationsApiService
@@ -177,6 +179,8 @@ type APIClient struct {
 	ProductItemsApi *ProductItemsApiService
 
 	ProductItemsDetailApi *ProductItemsDetailApiService
+
+	ProductItemsListApi *ProductItemsListApiService
 
 	ProductsSystemStatusApi *ProductsSystemStatusApiService
 
@@ -281,6 +285,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AuthorizationApi = (*AuthorizationApiService)(&c.common)
 	c.BatchOperationApi = (*BatchOperationApiService)(&c.common)
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
+	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
@@ -325,6 +330,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
+	c.ProductItemsListApi = (*ProductItemsListApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
@@ -464,7 +470,8 @@ func (c *APIClient) prepareRequest(
 	queryParams url.Values,
 	formParams url.Values,
 	fileName string,
-	fileBytes []byte) (localVarRequest *http.Request, err error) {
+	fileBytes []byte,
+	fileKey string) (localVarRequest *http.Request, err error) {
 
 	var body *bytes.Buffer
 
@@ -505,7 +512,7 @@ func (c *APIClient) prepareRequest(
 		if len(fileBytes) > 0 && fileName != "" {
 			w.Boundary()
 			//_, fileNm := filepath.Split(fileName)
-			part, err := w.CreateFormFile("file", filepath.Base(fileName))
+			part, err := w.CreateFormFile(fileKey, filepath.Base(fileName))
 			if err != nil {
 				return nil, err
 			}

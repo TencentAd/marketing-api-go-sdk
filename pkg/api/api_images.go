@@ -54,6 +54,7 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue ImagesAddResponseData
 		localVarResponse    ImagesAddResponse
 	)
@@ -86,6 +87,7 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 	localVarFormParams.Add("upload_type", parameterToString(uploadType, ""))
 	localVarFormParams.Add("signature", parameterToString(signature, ""))
 	var localVarFile *os.File
+	localVarFileKey = "file"
 	if localVarOptionals != nil && localVarOptionals.File.IsSet() {
 		localVarFileOk := false
 		localVarFile, localVarFileOk = localVarOptionals.File.Value().(*os.File)
@@ -105,7 +107,7 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
 		localVarFormParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -129,7 +131,7 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -184,6 +186,7 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue ImagesGetResponseData
 		localVarResponse    ImagesGetResponse
 	)
@@ -225,7 +228,7 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -249,7 +252,7 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

@@ -11,5 +11,5 @@ package model
 
 type AsyncTasksGetResponseData struct {
 	List     []AsyncTasksGetTaskListStruct `json:"list,omitempty"`
-	PageInfo Conf                          `json:"page_info,omitempty"`
+	PageInfo *Conf                         `json:"page_info,omitempty"`
 }

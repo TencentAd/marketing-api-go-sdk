@@ -11,7 +11,7 @@ package model
 
 // 流量充足度、竞争宽松度趋势变化
 type CompeteSurroundingsStruct struct {
-	DisplayFlag        bool                          `json:"display_flag,omitempty"`
-	TrafficSufficiency TrafficSufficiencyTrendStruct `json:"traffic_sufficiency,omitempty"`
-	CompeteIntense     CompeteIntenseTrendStruct     `json:"compete_intense,omitempty"`
+	DisplayFlag        bool                           `json:"display_flag,omitempty"`
+	TrafficSufficiency *TrafficSufficiencyTrendStruct `json:"traffic_sufficiency,omitempty"`
+	CompeteIntense     *CompeteIntenseTrendStruct     `json:"compete_intense,omitempty"`
 }

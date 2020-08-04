@@ -14,7 +14,7 @@ type PageTypeRead string
 
 // List of PageTypeRead
 const (
-	PageTypeRead_DEFAULT_                     PageTypeRead = "PAGE_TYPE_DEFAULT"
+	PageTypeRead_DEFAULT                      PageTypeRead = "PAGE_TYPE_DEFAULT"
 	PageTypeRead_TSA_APP                      PageTypeRead = "PAGE_TYPE_TSA_APP"
 	PageTypeRead_TSA_WEB_NONE_ECOMMERCE       PageTypeRead = "PAGE_TYPE_TSA_WEB_NONE_ECOMMERCE"
 	PageTypeRead_FENGYE_ECOMMERCE             PageTypeRead = "PAGE_TYPE_FENGYE_ECOMMERCE"

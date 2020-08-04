@@ -11,5 +11,5 @@ package model
 
 type SplitTestsGetResponseData struct {
 	List     []SplitTestsGetListStruct `json:"list,omitempty"`
-	PageInfo PageInfo                  `json:"page_info,omitempty"`
+	PageInfo *PageInfo                 `json:"page_info,omitempty"`
 }

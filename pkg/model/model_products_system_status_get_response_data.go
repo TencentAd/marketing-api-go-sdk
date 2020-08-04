@@ -11,5 +11,5 @@ package model
 
 type ProductsSystemStatusGetResponseData struct {
 	List     []AuditRejectItem `json:"list,omitempty"`
-	PageInfo PageInfo          `json:"page_info,omitempty"`
+	PageInfo *PageInfo         `json:"page_info,omitempty"`
 }

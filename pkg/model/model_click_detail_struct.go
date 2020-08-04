@@ -11,7 +11,7 @@ package model
 
 // 诊断详情-点击明细
 type ClickDetailStruct struct {
-	EffectData                 ClickEffectDataStruct                 `json:"effect_data,omitempty"`
-	EffectDataTrends           []ClickEffectDataTrendsItem           `json:"effect_data_trends,omitempty"`
-	TargetingLabelContribution ClickTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
+	EffectData                 *ClickEffectDataStruct                 `json:"effect_data,omitempty"`
+	EffectDataTrends           []ClickEffectDataTrendsItem            `json:"effect_data_trends,omitempty"`
+	TargetingLabelContribution *ClickTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
 }

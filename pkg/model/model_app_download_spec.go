@@ -11,7 +11,7 @@ package model
 
 // 应用下载信息
 type AppDownloadSpec struct {
-	Title          string         `json:"title,omitempty"`
-	AppIosSpec     AppIosSpec     `json:"app_ios_spec,omitempty"`
-	AppAndroidSpec AppAndroidSpec `json:"app_android_spec,omitempty"`
+	Title          string          `json:"title,omitempty"`
+	AppIosSpec     *AppIosSpec     `json:"app_ios_spec,omitempty"`
+	AppAndroidSpec *AppAndroidSpec `json:"app_android_spec,omitempty"`
 }

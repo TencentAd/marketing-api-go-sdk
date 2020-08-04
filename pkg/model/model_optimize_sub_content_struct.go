@@ -11,7 +11,7 @@ package model
 
 // 优化内容
 type OptimizeSubContentStruct struct {
-	Targeting OptTargetingStruct `json:"targeting,omitempty"`
-	Bid       OptBidStruct       `json:"bid,omitempty"`
-	Budget    OptBudgetStruct    `json:"budget,omitempty"`
+	Targeting *OptTargetingStruct `json:"targeting,omitempty"`
+	Bid       *OptBidStruct       `json:"bid,omitempty"`
+	Budget    *OptBudgetStruct    `json:"budget,omitempty"`
 }

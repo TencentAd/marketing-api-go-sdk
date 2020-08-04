@@ -16,7 +16,7 @@ type EstimationReadTargetingSetting struct {
 	Education                        []string                          `json:"education,omitempty"`
 	MaritalStatus                    []string                          `json:"marital_status,omitempty"`
 	WorkingStatus                    []string                          `json:"working_status,omitempty"`
-	GeoLocation                      GeoLocations                      `json:"geo_location,omitempty"`
+	GeoLocation                      *GeoLocations                     `json:"geo_location,omitempty"`
 	UserOs                           []string                          `json:"user_os,omitempty"`
 	NewDevice                        []string                          `json:"new_device,omitempty"`
 	DevicePrice                      []string                          `json:"device_price,omitempty"`
@@ -35,12 +35,12 @@ type EstimationReadTargetingSetting struct {
 	GameConsumptionLevel             []string                          `json:"game_consumption_level,omitempty"`
 	PaidUser                         []string                          `json:"paid_user,omitempty"`
 	ResidentialCommunityPrice        []ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`
-	WechatAdBehavior                 LimitWechatAdBehavior             `json:"wechat_ad_behavior,omitempty"`
+	WechatAdBehavior                 *LimitWechatAdBehavior            `json:"wechat_ad_behavior,omitempty"`
 	CustomAudience                   []int64                           `json:"custom_audience,omitempty"`
 	ExcludedCustomAudience           []int64                           `json:"excluded_custom_audience,omitempty"`
 	DeprecatedCustomAudience         []int64                           `json:"deprecated_custom_audience,omitempty"`
 	DeprecatedExcludedCustomAudience []int64                           `json:"deprecated_excluded_custom_audience,omitempty"`
-	BehaviorOrInterest               BehaviorOrInterest                `json:"behavior_or_interest,omitempty"`
+	BehaviorOrInterest               *BehaviorOrInterest               `json:"behavior_or_interest,omitempty"`
 	AirQualityIndex                  []string                          `json:"air_quality_index,omitempty"`
 	WechatOfficialAccountCategory    []int64                           `json:"wechat_official_account_category,omitempty"`
 	MobileUnionCategory              []int64                           `json:"mobile_union_category,omitempty"`

@@ -16,11 +16,11 @@ type WriteTargetingSettingForAdgroup struct {
 	Education                     []string                          `json:"education,omitempty"`
 	MaritalStatus                 []string                          `json:"marital_status,omitempty"`
 	WorkingStatus                 []string                          `json:"working_status,omitempty"`
-	GeoLocation                   GeoLocations                      `json:"geo_location,omitempty"`
+	GeoLocation                   *GeoLocations                     `json:"geo_location,omitempty"`
 	UserOs                        []string                          `json:"user_os,omitempty"`
 	NewDevice                     []string                          `json:"new_device,omitempty"`
 	DevicePrice                   []string                          `json:"device_price,omitempty"`
-	DeviceBrandModel              DeviceBrandModel                  `json:"device_brand_model,omitempty"`
+	DeviceBrandModel              *DeviceBrandModel                 `json:"device_brand_model,omitempty"`
 	NetworkType                   []string                          `json:"network_type,omitempty"`
 	NetworkOperator               []string                          `json:"network_operator,omitempty"`
 	NetworkScene                  []string                          `json:"network_scene,omitempty"`
@@ -37,10 +37,10 @@ type WriteTargetingSettingForAdgroup struct {
 	ResidentialCommunityPrice     []ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`
 	FinancialSituation            []string                          `json:"financial_situation,omitempty"`
 	ConsumptionType               []string                          `json:"consumption_type,omitempty"`
-	WechatAdBehavior              WechatAdBehavior                  `json:"wechat_ad_behavior,omitempty"`
+	WechatAdBehavior              *WechatAdBehavior                 `json:"wechat_ad_behavior,omitempty"`
 	CustomAudience                []int64                           `json:"custom_audience,omitempty"`
 	ExcludedCustomAudience        []int64                           `json:"excluded_custom_audience,omitempty"`
-	BehaviorOrInterest            BehaviorOrInterest                `json:"behavior_or_interest,omitempty"`
+	BehaviorOrInterest            *BehaviorOrInterest               `json:"behavior_or_interest,omitempty"`
 	WechatOfficialAccountCategory []int64                           `json:"wechat_official_account_category,omitempty"`
 	MobileUnionCategory           []int64                           `json:"mobile_union_category,omitempty"`
 	MiniGameQqStatus              []string                          `json:"mini_game_qq_status,omitempty"`

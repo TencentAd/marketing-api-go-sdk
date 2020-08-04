@@ -11,5 +11,5 @@ package model
 
 type CustomTagFilesGetResponseData struct {
 	List     []CustomTagFile `json:"list,omitempty"`
-	PageInfo PageInfo        `json:"page_info,omitempty"`
+	PageInfo *PageInfo       `json:"page_info,omitempty"`
 }

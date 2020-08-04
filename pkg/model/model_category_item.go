@@ -15,4 +15,5 @@ type CategoryItem struct {
 	CategoryName     string `json:"category_name,omitempty"`
 	ParentCategoryId int64  `json:"parent_category_id,omitempty"`
 	Level            int64  `json:"level,omitempty"`
+	CategoryPath     string `json:"category_path,omitempty"`
 }

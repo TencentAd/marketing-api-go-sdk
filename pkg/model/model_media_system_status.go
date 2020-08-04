@@ -16,5 +16,5 @@ type MediaSystemStatus string
 const (
 	MediaSystemStatus_VALID   MediaSystemStatus = "MEDIA_STATUS_VALID"
 	MediaSystemStatus_PENDING MediaSystemStatus = "MEDIA_STATUS_PENDING"
-	MediaSystemStatus_ERROR_  MediaSystemStatus = "MEDIA_STATUS_ERROR"
+	MediaSystemStatus_ERROR   MediaSystemStatus = "MEDIA_STATUS_ERROR"
 )

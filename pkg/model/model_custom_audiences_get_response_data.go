@@ -11,5 +11,5 @@ package model
 
 type CustomAudiencesGetResponseData struct {
 	List     []CustomAudience `json:"list,omitempty"`
-	PageInfo PageInfo         `json:"page_info,omitempty"`
+	PageInfo *PageInfo        `json:"page_info,omitempty"`
 }

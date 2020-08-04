@@ -13,5 +13,5 @@ package model
 type GrantInfo struct {
 	AudienceId int64             `json:"audience_id,omitempty"`
 	GrantType  AudienceGrantType `json:"grant_type,omitempty"`
-	GrantSpec  GrantSpec         `json:"grant_spec,omitempty"`
+	GrantSpec  *GrantSpec        `json:"grant_spec,omitempty"`
 }

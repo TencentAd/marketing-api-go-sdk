@@ -38,7 +38,7 @@ func (e *AudienceGrantRelationsGetExample) Init() {
 	e.AccountId = int64(0)
 	e.AudienceGrantRelationsGetOpts = &api.AudienceGrantRelationsGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "audience_id",
 			Operator: "IN",
 			Values:   []string{"YOUR AUDIENCE ID"},

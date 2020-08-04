@@ -16,7 +16,7 @@ type AdcreativeCreativeElementsWithOptions struct {
 	Image3                     string                            `json:"image3,omitempty"`
 	Title                      string                            `json:"title,omitempty"`
 	Description                string                            `json:"description,omitempty"`
-	Corporate                  AdcreativeCorporate               `json:"corporate,omitempty"`
+	Corporate                  *AdcreativeCorporate              `json:"corporate,omitempty"`
 	Video                      string                            `json:"video,omitempty"`
 	ImageOptions               []string                          `json:"image_options,omitempty"`
 	TitleOptions               []string                          `json:"title_options,omitempty"`
@@ -37,17 +37,17 @@ type AdcreativeCreativeElementsWithOptions struct {
 	LeftBottomTxt              string                            `json:"left_bottom_txt,omitempty"`
 	AnimationEffect            string                            `json:"animation_effect,omitempty"`
 	Phone                      string                            `json:"phone,omitempty"`
-	ShortVideoStruct           ShortVideoStruct                  `json:"short_video_struct,omitempty"`
-	LongVideoStruct            LongVideoStruct                   `json:"long_video_struct,omitempty"`
-	BannerContent              AdcreativeBannerContent           `json:"banner_content,omitempty"`
-	CardContent                AdcreativeCardContent             `json:"card_content,omitempty"`
+	ShortVideoStruct           *ShortVideoStruct                 `json:"short_video_struct,omitempty"`
+	LongVideoStruct            *LongVideoStruct                  `json:"long_video_struct,omitempty"`
+	BannerContent              *AdcreativeBannerContent          `json:"banner_content,omitempty"`
+	CardContent                *AdcreativeCardContent            `json:"card_content,omitempty"`
 	VideoPopupUrl              string                            `json:"video_popup_url,omitempty"`
-	VideoPopupButton           AdcreativeVideoPopupButton        `json:"video_popup_button,omitempty"`
-	Brand                      AdCreativeBrand                   `json:"brand,omitempty"`
+	VideoPopupButton           *AdcreativeVideoPopupButton       `json:"video_popup_button,omitempty"`
+	Brand                      *AdCreativeBrand                  `json:"brand,omitempty"`
 	Caption                    string                            `json:"caption,omitempty"`
-	LabelledImg                AdcreativeLabelledImg             `json:"labelled_img,omitempty"`
+	LabelledImg                *AdcreativeLabelledImg            `json:"labelled_img,omitempty"`
 	FullScreenImage            string                            `json:"full_screen_image,omitempty"`
 	ZipUrl                     string                            `json:"zip_url,omitempty"`
-	EndPage                    AdCreativeEndPage                 `json:"end_page,omitempty"`
+	EndPage                    *AdCreativeEndPage                `json:"end_page,omitempty"`
 	CountdownExpiringTimestamp int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

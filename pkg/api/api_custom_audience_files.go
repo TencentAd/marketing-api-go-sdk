@@ -55,6 +55,7 @@ func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CustomAudienceFilesAddResponseData
 		localVarResponse    CustomAudienceFilesAddResponse
 	)
@@ -87,6 +88,7 @@ func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64
 	localVarFormParams.Add("audience_id", parameterToString(audienceId, ""))
 	localVarFormParams.Add("user_id_type", parameterToString(userIdType, ""))
 	localVarFile := file
+	localVarFileKey = "file"
 	if localVarFile != nil {
 		fbs, _ := ioutil.ReadAll(localVarFile)
 		localVarFileBytes = fbs
@@ -102,7 +104,7 @@ func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64
 	if localVarOptionals != nil && localVarOptionals.SaltId.IsSet() {
 		localVarFormParams.Add("salt_id", parameterToString(localVarOptionals.SaltId.Value(), ""))
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -126,7 +128,7 @@ func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -183,6 +185,7 @@ func (a *CustomAudienceFilesApiService) Get(ctx context.Context, accountId int64
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CustomAudienceFilesGetResponseData
 		localVarResponse    CustomAudienceFilesGetResponse
 	)
@@ -227,7 +230,7 @@ func (a *CustomAudienceFilesApiService) Get(ctx context.Context, accountId int64
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -251,7 +254,7 @@ func (a *CustomAudienceFilesApiService) Get(ctx context.Context, accountId int64
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

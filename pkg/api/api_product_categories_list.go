@@ -33,13 +33,15 @@ ProductCategoriesListApiService 获取商品类目
  * @param accountId
  * @param productCatalogId
  * @param optional nil or *ProductCategoriesListGetOpts - Optional Parameters:
+     * @param "CategoryName" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ProductCategoriesListGetResponse
 */
 
 type ProductCategoriesListGetOpts struct {
-	Fields optional.Interface
+	CategoryName optional.String
+	Fields       optional.Interface
 }
 
 func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, localVarOptionals *ProductCategoriesListGetOpts) (ProductCategoriesListGetResponseData, *http.Response, error) {
@@ -48,6 +50,7 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue ProductCategoriesListGetResponseData
 		localVarResponse    ProductCategoriesListGetResponse
 	)
@@ -61,6 +64,9 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("product_catalog_id", parameterToString(productCatalogId, ""))
+	if localVarOptionals != nil && localVarOptionals.CategoryName.IsSet() {
+		localVarQueryParams.Add("category_name", parameterToString(localVarOptionals.CategoryName.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
@@ -81,7 +87,7 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -105,7 +111,7 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

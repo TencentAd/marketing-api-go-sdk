@@ -11,8 +11,8 @@ package model
 
 // 自定义地理位置规则
 type CustomLocationRule struct {
-	PoiType       LbsPoiType              `json:"poi_type,omitempty"`
-	DateRange     CustomLocationDateRange `json:"date_range,omitempty"`
-	FrequencySpec FrequencySpec           `json:"frequency_spec,omitempty"`
-	AreaList      []AreaSpec              `json:"area_list,omitempty"`
+	PoiType       LbsPoiType               `json:"poi_type,omitempty"`
+	DateRange     *CustomLocationDateRange `json:"date_range,omitempty"`
+	FrequencySpec *FrequencySpec           `json:"frequency_spec,omitempty"`
+	AreaList      []AreaSpec               `json:"area_list,omitempty"`
 }

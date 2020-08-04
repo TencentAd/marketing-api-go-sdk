@@ -11,5 +11,5 @@ package model
 
 // 商品组件
 type ElementGoods struct {
-	GoodsButtonSpec GoodsButtonSpec `json:"goods_button_spec,omitempty"`
+	GoodsButtonSpec *GoodsButtonSpec `json:"goods_button_spec,omitempty"`
 }

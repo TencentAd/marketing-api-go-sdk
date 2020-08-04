@@ -37,7 +37,7 @@ func (e *AdcreativePreviewsGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = int64(0)
-	e.Filtering = []model.FilteringStruct{model.FilteringStruct{
+	e.Filtering = []model.FilteringStruct{&model.FilteringStruct{
 		Field:    "adgroup_id",
 		Operator: "EQUALS",
 		Values:   []string{"YOUR ADGROUP ID"},

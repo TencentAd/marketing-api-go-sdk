@@ -11,12 +11,12 @@ package model
 
 // 诊断详情-竞争力明细
 type DetailCompeteDetailStruct struct {
-	CompeteAttribution    []CompeteAttributionStruct  `json:"compete_attribution,omitempty"`
-	CompeteBudgetDetails  CompeteBudgetDetailsStruct  `json:"compete_budget_details,omitempty"`
-	CompeteBidDetails     CompeteBidDetailsStruct     `json:"compete_bid_details,omitempty"`
-	CompeteUserAcceptance CompeteUserAcceptanceStruct `json:"compete_user_acceptance,omitempty"`
-	CompetePctrTrends     CompetePctrTrendsStruct     `json:"compete_pctr_trends,omitempty"`
-	CompetePcvrTrends     CompetePcvrTrendsStruct     `json:"compete_pcvr_trends,omitempty"`
-	CompeteWinAdgroup     CompeteWinAdgroupStruct     `json:"compete_win_adgroup,omitempty"`
-	CompeteSurroundings   CompeteSurroundingsStruct   `json:"compete_surroundings,omitempty"`
+	CompeteAttribution    []CompeteAttributionStruct   `json:"compete_attribution,omitempty"`
+	CompeteBudgetDetails  *CompeteBudgetDetailsStruct  `json:"compete_budget_details,omitempty"`
+	CompeteBidDetails     *CompeteBidDetailsStruct     `json:"compete_bid_details,omitempty"`
+	CompeteUserAcceptance *CompeteUserAcceptanceStruct `json:"compete_user_acceptance,omitempty"`
+	CompetePctrTrends     *CompetePctrTrendsStruct     `json:"compete_pctr_trends,omitempty"`
+	CompetePcvrTrends     *CompetePcvrTrendsStruct     `json:"compete_pcvr_trends,omitempty"`
+	CompeteWinAdgroup     *CompeteWinAdgroupStruct     `json:"compete_win_adgroup,omitempty"`
+	CompeteSurroundings   *CompeteSurroundingsStruct   `json:"compete_surroundings,omitempty"`
 }

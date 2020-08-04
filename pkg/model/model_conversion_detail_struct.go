@@ -11,7 +11,7 @@ package model
 
 // 诊断详情-转化明细
 type ConversionDetailStruct struct {
-	EffectData                 ConversionEffectDataStruct                 `json:"effect_data,omitempty"`
-	EffectDataTrends           []ConversionEffectDataTrendsItem           `json:"effect_data_trends,omitempty"`
-	TargetingLabelContribution ConversionTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
+	EffectData                 *ConversionEffectDataStruct                 `json:"effect_data,omitempty"`
+	EffectDataTrends           []ConversionEffectDataTrendsItem            `json:"effect_data_trends,omitempty"`
+	TargetingLabelContribution *ConversionTargetingLabelContributionStruct `json:"targeting_label_contribution,omitempty"`
 }

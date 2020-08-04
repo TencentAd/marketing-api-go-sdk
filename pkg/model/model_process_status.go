@@ -17,7 +17,7 @@ const (
 	ProcessStatus_PENDING    ProcessStatus = "PENDING"
 	ProcessStatus_PROCESSING ProcessStatus = "PROCESSING"
 	ProcessStatus_SUCCESS    ProcessStatus = "SUCCESS"
-	ProcessStatus_ERROR_     ProcessStatus = "ERROR"
+	ProcessStatus_ERROR      ProcessStatus = "ERROR"
 	ProcessStatus_FROZEN     ProcessStatus = "FROZEN"
 	ProcessStatus_THAWING    ProcessStatus = "THAWING"
 	ProcessStatus_LOCKING    ProcessStatus = "LOCKING"

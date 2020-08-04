@@ -11,12 +11,12 @@ package model
 
 // 行为上报数据
 type UserAction struct {
-	ActionTime       int64         `json:"action_time,omitempty"`
-	UserId           ActionsUserId `json:"user_id,omitempty"`
-	ActionType       ActionType    `json:"action_type,omitempty"`
-	ActionParam      string        `json:"action_param,omitempty"`
-	CustomAction     string        `json:"custom_action,omitempty"`
-	Trace            Trace         `json:"trace,omitempty"`
-	Url              string        `json:"url,omitempty"`
-	ExternalActionId string        `json:"external_action_id,omitempty"`
+	ActionTime       int64          `json:"action_time,omitempty"`
+	UserId           *ActionsUserId `json:"user_id,omitempty"`
+	ActionType       ActionType     `json:"action_type,omitempty"`
+	ActionParam      string         `json:"action_param,omitempty"`
+	CustomAction     string         `json:"custom_action,omitempty"`
+	Trace            *Trace         `json:"trace,omitempty"`
+	Url              string         `json:"url,omitempty"`
+	ExternalActionId string         `json:"external_action_id,omitempty"`
 }

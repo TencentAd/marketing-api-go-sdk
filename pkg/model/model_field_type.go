@@ -14,10 +14,10 @@ type FieldType string
 
 // List of FieldType
 const (
-	FieldType_STRING_       FieldType = "FIELD_TYPE_STRING"
+	FieldType_STRING        FieldType = "FIELD_TYPE_STRING"
 	FieldType_ENUM          FieldType = "FIELD_TYPE_ENUM"
 	FieldType_INTEGER       FieldType = "FIELD_TYPE_INTEGER"
-	FieldType_STRUCT_       FieldType = "FIELD_TYPE_STRUCT"
+	FieldType_STRUCT        FieldType = "FIELD_TYPE_STRUCT"
 	FieldType_INTEGER_ARRAY FieldType = "FIELD_TYPE_INTEGER_ARRAY"
 	FieldType_ENUM_ARRAY    FieldType = "FIELD_TYPE_ENUM_ARRAY"
 	FieldType_STRING_ARRAY  FieldType = "FIELD_TYPE_STRING_ARRAY"

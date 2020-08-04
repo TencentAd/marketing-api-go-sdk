@@ -12,5 +12,5 @@ package model
 // 获取行为定向标签的条件，type 为 BEHAVIOR 时必填
 type BehaviorTargetingTagSpec struct {
 	QueryMode TargetingTagQueryMode `json:"query_mode,omitempty"`
-	QuerySpec QuerySpec             `json:"query_spec,omitempty"`
+	QuerySpec *QuerySpec            `json:"query_spec,omitempty"`
 }

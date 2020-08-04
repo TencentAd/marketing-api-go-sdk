@@ -38,7 +38,7 @@ func (e *AdcreativesGetExample) Init() {
 	e.AccountId = int64(0)
 	e.AdcreativesGetOpts = &api.AdcreativesGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "promoted_object_type",
 			Operator: "EQUALS",
 			Values:   []string{"PROMOTED_OBJECT_TYPE_APP_IOS"},

@@ -82,4 +82,5 @@ type ProductItemSpec struct {
 	CommentCount              int64             `json:"comment_count,omitempty"`
 	AuthorFansCount           int64             `json:"author_fans_count,omitempty"`
 	SemanticLabels            []string          `json:"semantic_labels,omitempty"`
+	DetailImg                 []string          `json:"detail_img,omitempty"`
 }

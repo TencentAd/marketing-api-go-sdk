@@ -39,6 +39,7 @@ func (a *UserPropertiesApiService) Add(ctx context.Context, data UserPropertiesA
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue interface{}
 		localVarResponse    UserPropertiesAddResponse
 	)
@@ -69,7 +70,7 @@ func (a *UserPropertiesApiService) Add(ctx context.Context, data UserPropertiesA
 	}
 	// body params
 	localVarPostBody = &data
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}

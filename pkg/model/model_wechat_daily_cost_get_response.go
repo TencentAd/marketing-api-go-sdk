@@ -10,9 +10,9 @@
 package model
 
 type WechatDailyCostGetResponse struct {
-	Code      int64                          `json:"code,omitempty"`
-	Message   string                         `json:"message,omitempty"`
-	MessageCn string                         `json:"message_cn,omitempty"`
-	Errors    []ApiErrorStruct               `json:"errors,omitempty"`
-	Data      WechatDailyCostGetResponseData `json:"data,omitempty"`
+	Code      int64                           `json:"code,omitempty"`
+	Message   string                          `json:"message,omitempty"`
+	MessageCn string                          `json:"message_cn,omitempty"`
+	Errors    []ApiErrorStruct                `json:"errors,omitempty"`
+	Data      *WechatDailyCostGetResponseData `json:"data,omitempty"`
 }

@@ -11,8 +11,8 @@ package model
 
 // 处理操作信息
 type OperationSpec struct {
-	ConfigureStatusSpec ConfigureStatusSpec `json:"configure_status_spec,omitempty"`
-	BidAmountSpec       BidAmountSpec       `json:"bid_amount_spec,omitempty"`
-	DateSpec            DateSpec            `json:"date_spec,omitempty"`
-	TimeSeriesSpec      TimeSeriesSpec      `json:"time_series_spec,omitempty"`
+	ConfigureStatusSpec *ConfigureStatusSpec `json:"configure_status_spec,omitempty"`
+	BidAmountSpec       *BidAmountSpec       `json:"bid_amount_spec,omitempty"`
+	DateSpec            *DateSpec            `json:"date_spec,omitempty"`
+	TimeSeriesSpec      *TimeSeriesSpec      `json:"time_series_spec,omitempty"`
 }

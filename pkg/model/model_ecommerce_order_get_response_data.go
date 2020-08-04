@@ -11,5 +11,5 @@ package model
 
 type EcommerceOrderGetResponseData struct {
 	List     []EcommerceOrderListStruct `json:"list,omitempty"`
-	PageInfo PageInfo                   `json:"page_info,omitempty"`
+	PageInfo *PageInfo                  `json:"page_info,omitempty"`
 }

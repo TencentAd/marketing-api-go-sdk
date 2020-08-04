@@ -53,6 +53,7 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CustomTagFilesAddResponseData
 		localVarResponse    CustomTagFilesAddResponse
 	)
@@ -85,6 +86,7 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 	localVarFormParams.Add("user_id_type", parameterToString(userIdType, ""))
 	localVarFormParams.Add("tag_id", parameterToString(tagId, ""))
 	localVarFile := file
+	localVarFileKey = "file"
 	if localVarFile != nil {
 		fbs, _ := ioutil.ReadAll(localVarFile)
 		localVarFileBytes = fbs
@@ -97,7 +99,7 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 	if localVarOptionals != nil && localVarOptionals.OpenAppId.IsSet() {
 		localVarFormParams.Add("open_app_id", parameterToString(localVarOptionals.OpenAppId.Value(), ""))
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -121,7 +123,7 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -176,6 +178,7 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue CustomTagFilesGetResponseData
 		localVarResponse    CustomTagFilesGetResponse
 	)
@@ -217,7 +220,7 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -241,7 +244,7 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

@@ -11,5 +11,5 @@ package model
 
 type WechatFundsGetResponseData struct {
 	List []WechatFundsGetListStruct `json:"list,omitempty"`
-	Memo Memo                       `json:"memo,omitempty"`
+	Memo *Memo                      `json:"memo,omitempty"`
 }

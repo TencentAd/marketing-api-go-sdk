@@ -248,6 +248,12 @@ Name | Type | Description | Notes
 **FirstDayOrderCount** | **int64** |  | [optional] [default to null]
 **FirstDayOrderAmount** | **int64** |  | [optional] [default to null]
 **AddWishlistCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayAmount** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayRate** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

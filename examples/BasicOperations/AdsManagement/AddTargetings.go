@@ -33,8 +33,8 @@ func (e *TargetingsAddExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.TargetingsAddRequest{
-		Targeting: model.WriteTargetingSetting{
-			Age: []model.AgeStruct{model.AgeStruct{
+		Targeting: &model.WriteTargetingSetting{
+			Age: []model.AgeStruct{&model.AgeStruct{
 				Max: int64(0),
 				Min: int64(0),
 			}},

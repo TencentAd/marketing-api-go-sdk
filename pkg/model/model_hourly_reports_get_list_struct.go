@@ -247,6 +247,12 @@ type HourlyReportsGetListStruct struct {
 	VideoOuterPlay3sCount               int64   `json:"video_outer_play3s_count,omitempty"`
 	VideoOuterPlay5sCount               int64   `json:"video_outer_play5s_count,omitempty"`
 	VideoOuterPlay7sCount               int64   `json:"video_outer_play7s_count,omitempty"`
+	FirstDayPayCount                    int64   `json:"first_day_pay_count,omitempty"`
+	FirstDayPayCost                     int64   `json:"first_day_pay_cost,omitempty"`
+	FirstDayFirstPayCost                int64   `json:"first_day_first_pay_cost,omitempty"`
+	FirstDayFirstPayCount               int64   `json:"first_day_first_pay_count,omitempty"`
+	FirstDayPayAmount                   int64   `json:"first_day_pay_amount,omitempty"`
+	FirstDayFirstPayRate                float64 `json:"first_day_first_pay_rate,omitempty"`
 	CampaignId                          int64   `json:"campaign_id,omitempty"`
 	WebAddToCartCount                   int64   `json:"web_add_to_cart_count,omitempty"`
 	WebAddToCartCost                    int64   `json:"web_add_to_cart_cost,omitempty"`
@@ -323,4 +329,5 @@ type HourlyReportsGetListStruct struct {
 	ForwardUserCount                    int64   `json:"forward_user_count,omitempty"`
 	VideoOuterPlayUserCount             int64   `json:"video_outer_play_user_count,omitempty"`
 	VideoInnerPlayUserCount             int64   `json:"video_inner_play_user_count,omitempty"`
+	PoiId                               string  `json:"poi_id,omitempty"`
 }

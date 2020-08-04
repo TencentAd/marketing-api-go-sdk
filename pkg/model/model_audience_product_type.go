@@ -22,7 +22,7 @@ const (
 	AudienceProductType_QQ_GROUP                   AudienceProductType = "PRODUCT_TYPE_QQ_GROUP"
 	AudienceProductType_QQ_BUSINESS                AudienceProductType = "PRODUCT_TYPE_QQ_BUSINESS"
 	AudienceProductType_B_QQ                       AudienceProductType = "PRODUCT_TYPE_B_QQ"
-	AudienceProductType_51BUY_                     AudienceProductType = "PRODUCT_TYPE_51BUY"
+	AudienceProductType_51BUY                      AudienceProductType = "PRODUCT_TYPE_51BUY"
 	AudienceProductType_QQ_TUAN                    AudienceProductType = "PRODUCT_TYPE_QQ_TUAN"
 	AudienceProductType_TASK                       AudienceProductType = "PRODUCT_TYPE_TASK"
 	AudienceProductType_APP_ANDROID_OPEN_PLATFORM  AudienceProductType = "PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM"

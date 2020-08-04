@@ -13,5 +13,5 @@ package model
 type BusinessManagerRelationsGetListStruct struct {
 	AccountId       int64         `json:"account_id,omitempty"`
 	CorporationName string        `json:"corporation_name,omitempty"`
-	FundType        BmAccountType `json:"fund_type,omitempty"`
+	AccountType     BmAccountType `json:"account_type,omitempty"`
 }

@@ -16,7 +16,7 @@ type DynamicCreativeElements struct {
 	Image3                     string                            `json:"image3,omitempty"`
 	Title                      string                            `json:"title,omitempty"`
 	Description                string                            `json:"description,omitempty"`
-	Corporate                  AdcreativeCorporate               `json:"corporate,omitempty"`
+	Corporate                  *AdcreativeCorporate              `json:"corporate,omitempty"`
 	Video                      string                            `json:"video,omitempty"`
 	ImageOptions               []string                          `json:"image_options,omitempty"`
 	TitleOptions               []string                          `json:"title_options,omitempty"`
@@ -38,13 +38,13 @@ type DynamicCreativeElements struct {
 	LeftBottomTxt              string                            `json:"left_bottom_txt,omitempty"`
 	AnimationEffect            string                            `json:"animation_effect,omitempty"`
 	Phone                      string                            `json:"phone,omitempty"`
-	ShortVideoStruct           ShortVideoStruct                  `json:"short_video_struct,omitempty"`
-	LongVideoStruct            LongVideoStruct                   `json:"long_video_struct,omitempty"`
-	BannerContent              AdcreativeBannerContent           `json:"banner_content,omitempty"`
-	CardContent                AdcreativeCardContent             `json:"card_content,omitempty"`
-	VideoPopupButton           AdcreativeVideoPopupButton        `json:"video_popup_button,omitempty"`
+	ShortVideoStruct           *ShortVideoStruct                 `json:"short_video_struct,omitempty"`
+	LongVideoStruct            *LongVideoStruct                  `json:"long_video_struct,omitempty"`
+	BannerContent              *AdcreativeBannerContent          `json:"banner_content,omitempty"`
+	CardContent                *AdcreativeCardContent            `json:"card_content,omitempty"`
+	VideoPopupButton           *AdcreativeVideoPopupButton       `json:"video_popup_button,omitempty"`
 	ButtonUrl                  string                            `json:"button_url,omitempty"`
-	Brand                      BrandStruct                       `json:"brand,omitempty"`
+	Brand                      *BrandStruct                      `json:"brand,omitempty"`
 	Caption                    string                            `json:"caption,omitempty"`
 	CountdownExpiringTimestamp int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

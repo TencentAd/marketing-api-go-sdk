@@ -11,6 +11,6 @@ package model
 
 // 获取定向标签的条件
 type TagSpec struct {
-	BehaviorSpec BehaviorTargetingTagSpec `json:"behavior_spec,omitempty"`
-	InterestSpec InterestTargetingTagSpec `json:"interest_spec,omitempty"`
+	BehaviorSpec *BehaviorTargetingTagSpec `json:"behavior_spec,omitempty"`
+	InterestSpec *InterestTargetingTagSpec `json:"interest_spec,omitempty"`
 }

@@ -1,4 +1,4 @@
-# ProductItemDisplayQuantity
+# CalcStatus
 
 ## Properties
 Name | Type | Description | Notes

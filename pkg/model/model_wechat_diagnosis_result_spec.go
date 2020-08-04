@@ -11,6 +11,6 @@ package model
 
 // 微信广告的诊断结论<br>仅微信广告会返回此字段
 type WechatDiagnosisResultSpec struct {
-	WechatCostDiagnosisResultSpec     WechatCostDiagnosisResultSpec     `json:"wechat_cost_diagnosis_result_spec,omitempty"`
-	WechatExposureDiagnosisResultSpec WechatExposureDiagnosisResultSpec `json:"wechat_exposure_diagnosis_result_spec,omitempty"`
+	WechatCostDiagnosisResultSpec     *WechatCostDiagnosisResultSpec     `json:"wechat_cost_diagnosis_result_spec,omitempty"`
+	WechatExposureDiagnosisResultSpec *WechatExposureDiagnosisResultSpec `json:"wechat_exposure_diagnosis_result_spec,omitempty"`
 }

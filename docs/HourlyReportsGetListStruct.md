@@ -239,6 +239,12 @@ Name | Type | Description | Notes
 **VideoOuterPlay3sCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay5sCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay7sCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayAmount** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayRate** | **float64** |  | [optional] [default to null]
 **CampaignId** | **int64** |  | [optional] [default to null]
 **WebAddToCartCount** | **int64** |  | [optional] [default to null]
 **WebAddToCartCost** | **int64** |  | [optional] [default to null]
@@ -315,6 +321,7 @@ Name | Type | Description | Notes
 **ForwardUserCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlayUserCount** | **int64** |  | [optional] [default to null]
 **VideoInnerPlayUserCount** | **int64** |  | [optional] [default to null]
+**PoiId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

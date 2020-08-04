@@ -34,8 +34,8 @@ func (e *CustomAudienceEstimationsGetExample) Init() {
 	})
 	e.Data = model.CustomAudienceEstimationsGetRequest{
 		AccountId: int64(0),
-		AudienceSpec: model.EstimationAudienceSpec{
-			CombineSpec: model.CombineSpec{
+		AudienceSpec: &model.EstimationAudienceSpec{
+			CombineSpec: &model.CombineSpec{
 				Include: []model.IncludeSimpleRule{},
 			},
 		},

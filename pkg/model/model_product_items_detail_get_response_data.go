@@ -10,8 +10,8 @@
 package model
 
 type ProductItemsDetailGetResponseData struct {
-	FeedId          int64           `json:"feed_id,omitempty"`
-	SystemStatus    AuditStatus     `json:"system_status,omitempty"`
-	RejectMessage   string          `json:"reject_message,omitempty"`
-	ProductItemSpec ProductItemSpec `json:"product_item_spec,omitempty"`
+	FeedId          int64            `json:"feed_id,omitempty"`
+	SystemStatus    AuditStatus      `json:"system_status,omitempty"`
+	RejectMessage   string           `json:"reject_message,omitempty"`
+	ProductItemSpec *ProductItemSpec `json:"product_item_spec,omitempty"`
 }

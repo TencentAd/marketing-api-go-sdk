@@ -16,6 +16,6 @@ type ChannelTaskStatus string
 const (
 	ChannelTaskStatus_PENDING    ChannelTaskStatus = "CHANNEL_TASK_STATUS_PENDING"
 	ChannelTaskStatus_PROCESSING ChannelTaskStatus = "CHANNEL_TASK_STATUS_PROCESSING"
-	ChannelTaskStatus_ERROR_     ChannelTaskStatus = "CHANNEL_TASK_STATUS_ERROR"
+	ChannelTaskStatus_ERROR      ChannelTaskStatus = "CHANNEL_TASK_STATUS_ERROR"
 	ChannelTaskStatus_COMPLETED  ChannelTaskStatus = "CHANNEL_TASK_STATUS_COMPLETED"
 )

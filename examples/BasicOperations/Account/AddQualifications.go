@@ -35,8 +35,8 @@ func (e *QualificationsAddExample) Init() {
 	e.Data = model.QualificationsAddRequest{
 		AccountId:         int64(0),
 		QualificationType: model.QualificationType_ADDITIONAL_INDUSTRY_QUALIFICATION,
-		QualificationSpec: model.QualificationSpec{
-			AdditionalIndustrySpec: model.AdditionalIndustryQualificationsSpec{
+		QualificationSpec: &model.QualificationSpec{
+			AdditionalIndustrySpec: &model.AdditionalIndustryQualificationsSpec{
 				SystemIndustryId:  int64(0),
 				QualificationCode: "YOUR QUALIFICATION CODE",
 				ImageIdList:       []string{"YOUR QUALIFICATION IMAGE ID"},

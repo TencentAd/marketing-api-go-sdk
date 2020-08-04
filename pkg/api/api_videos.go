@@ -52,6 +52,7 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue VideosAddResponseData
 		localVarResponse    VideosAddResponse
 	)
@@ -82,6 +83,7 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	}
 	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	localVarFile := videoFile
+	localVarFileKey = "video_file"
 	if localVarFile != nil {
 		fbs, _ := ioutil.ReadAll(localVarFile)
 		localVarFileBytes = fbs
@@ -95,7 +97,7 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	if localVarOptionals != nil && localVarOptionals.AdcreativeTemplateId.IsSet() {
 		localVarFormParams.Add("adcreative_template_id", parameterToString(localVarOptionals.AdcreativeTemplateId.Value(), ""))
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -119,7 +121,7 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
@@ -174,6 +176,7 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
+		localVarFileKey     string
 		localVarReturnValue VideosGetResponseData
 		localVarResponse    VideosGetResponse
 	)
@@ -215,7 +218,7 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
 	}
@@ -239,7 +242,7 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
 				return localVarReturnValue, localVarHttpResponse, err
 			}
-			return localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse, err
 		}

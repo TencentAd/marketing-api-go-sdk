@@ -15,7 +15,7 @@ type LinkPageType string
 // List of LinkPageType
 const (
 	LinkPageType_NOT_USED            LinkPageType = "LINK_PAGE_TYPE_NOT_USED"
-	LinkPageType_DEFAULT_            LinkPageType = "LINK_PAGE_TYPE_DEFAULT"
+	LinkPageType_DEFAULT             LinkPageType = "LINK_PAGE_TYPE_DEFAULT"
 	LinkPageType_CANVAS_WECHAT       LinkPageType = "LINK_PAGE_TYPE_CANVAS_WECHAT"
 	LinkPageType_ARTICAL_WECHAT      LinkPageType = "LINK_PAGE_TYPE_ARTICAL_WECHAT"
 	LinkPageType_MINI_PROGRAM_WECHAT LinkPageType = "LINK_PAGE_TYPE_MINI_PROGRAM_WECHAT"

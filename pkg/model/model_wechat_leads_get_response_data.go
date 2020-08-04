@@ -11,5 +11,5 @@ package model
 
 type WechatLeadsGetResponseData struct {
 	List     []WechatLeadsGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                       `json:"page_info,omitempty"`
+	PageInfo *Conf                      `json:"page_info,omitempty"`
 }

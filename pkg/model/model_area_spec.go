@@ -12,5 +12,5 @@ package model
 // 区域定义
 type AreaSpec struct {
 	AreaType   LbsAreaType `json:"area_type,omitempty"`
-	CircleArea CircleArea  `json:"circle_area,omitempty"`
+	CircleArea *CircleArea `json:"circle_area,omitempty"`
 }

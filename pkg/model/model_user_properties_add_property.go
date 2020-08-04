@@ -11,7 +11,7 @@ package model
 
 // 用户属性数据
 type UserPropertiesAddProperty struct {
-	OuterUserId  string           `json:"outer_user_id,omitempty"`
-	UserId       PropertiesUserId `json:"user_id,omitempty"`
-	PropertyData string           `json:"property_data,omitempty"`
+	OuterUserId  string            `json:"outer_user_id,omitempty"`
+	UserId       *PropertiesUserId `json:"user_id,omitempty"`
+	PropertyData string            `json:"property_data,omitempty"`
 }

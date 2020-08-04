@@ -11,7 +11,7 @@ package model
 
 // 行为兴趣意向定向
 type BehaviorOrInterest struct {
-	Interest  Interest         `json:"interest,omitempty"`
+	Interest  *Interest        `json:"interest,omitempty"`
 	Behavior  []BehaviorStruct `json:"behavior,omitempty"`
-	Intention Intention        `json:"intention,omitempty"`
+	Intention *Intention       `json:"intention,omitempty"`
 }

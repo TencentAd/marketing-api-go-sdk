@@ -38,7 +38,7 @@ func (e *AdsGetExample) Init() {
 	e.AccountId = int64(0)
 	e.AdsGetOpts = &api.AdsGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "configured_status",
 			Operator: "EQUALS",
 			Values:   []string{"AD_STATUS_NORMAL"},

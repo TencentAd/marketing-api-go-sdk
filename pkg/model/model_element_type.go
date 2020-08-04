@@ -20,7 +20,7 @@ const (
 	ElementType_URL       ElementType = "ELEMENT_TYPE_URL"
 	ElementType_ENUM      ElementType = "ELEMENT_TYPE_ENUM"
 	ElementType_CANVAS    ElementType = "ELEMENT_TYPE_CANVAS"
-	ElementType_STRUCT_   ElementType = "ELEMENT_TYPE_STRUCT"
+	ElementType_STRUCT    ElementType = "ELEMENT_TYPE_STRUCT"
 	ElementType_REFERENCE ElementType = "ELEMENT_TYPE_REFERENCE"
 	ElementType_BOOLEAN   ElementType = "ELEMENT_TYPE_BOOLEAN"
 	ElementType_PHONE     ElementType = "ELEMENT_TYPE_PHONE"

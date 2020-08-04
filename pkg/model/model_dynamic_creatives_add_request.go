@@ -10,20 +10,20 @@
 package model
 
 type DynamicCreativesAddRequest struct {
-	DynamicCreativeName       string                  `json:"dynamic_creative_name,omitempty"`
-	DynamicCreativeTemplateId int64                   `json:"dynamic_creative_template_id,omitempty"`
-	DynamicCreativeElements   DynamicCreativeElements `json:"dynamic_creative_elements,omitempty"`
-	CampaignType              CampaignType            `json:"campaign_type,omitempty"`
-	PromotedObjectType        PromotedObjectType      `json:"promoted_object_type,omitempty"`
-	PageType                  DestinationType         `json:"page_type,omitempty"`
-	AutomaticSiteEnabled      bool                    `json:"automatic_site_enabled,omitempty"`
-	SiteSet                   []string                `json:"site_set,omitempty"`
-	PromotedObjectId          string                  `json:"promoted_object_id,omitempty"`
-	PageSpec                  DynamicPageSpec         `json:"page_spec,omitempty"`
-	DeepLinkUrl               string                  `json:"deep_link_url,omitempty"`
-	ImpressionTrackingUrl     string                  `json:"impression_tracking_url,omitempty"`
-	ClickTrackingUrl          string                  `json:"click_tracking_url,omitempty"`
-	FeedsVideoCommentSwitch   bool                    `json:"feeds_video_comment_switch,omitempty"`
-	UnionMarketSwitch         bool                    `json:"union_market_switch,omitempty"`
-	AccountId                 int64                   `json:"account_id,omitempty"`
+	DynamicCreativeName       string                   `json:"dynamic_creative_name,omitempty"`
+	DynamicCreativeTemplateId int64                    `json:"dynamic_creative_template_id,omitempty"`
+	DynamicCreativeElements   *DynamicCreativeElements `json:"dynamic_creative_elements,omitempty"`
+	CampaignType              CampaignType             `json:"campaign_type,omitempty"`
+	PromotedObjectType        PromotedObjectType       `json:"promoted_object_type,omitempty"`
+	PageType                  DestinationType          `json:"page_type,omitempty"`
+	AutomaticSiteEnabled      bool                     `json:"automatic_site_enabled,omitempty"`
+	SiteSet                   []string                 `json:"site_set,omitempty"`
+	PromotedObjectId          string                   `json:"promoted_object_id,omitempty"`
+	PageSpec                  *DynamicPageSpec         `json:"page_spec,omitempty"`
+	DeepLinkUrl               string                   `json:"deep_link_url,omitempty"`
+	ImpressionTrackingUrl     string                   `json:"impression_tracking_url,omitempty"`
+	ClickTrackingUrl          string                   `json:"click_tracking_url,omitempty"`
+	FeedsVideoCommentSwitch   bool                     `json:"feeds_video_comment_switch,omitempty"`
+	UnionMarketSwitch         bool                     `json:"union_market_switch,omitempty"`
+	AccountId                 int64                    `json:"account_id,omitempty"`
 }

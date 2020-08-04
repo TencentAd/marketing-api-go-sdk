@@ -12,7 +12,12 @@ type HeaderMiddleware struct {
 func (h *HeaderMiddleware) Handle(req *http.Request, next func(req *http.Request) (rsp *http.Response, err error)) (rsp *http.Response, err error) {
 	tads := h.tads
 	if tads.Config.GlobalConfig.HttpOption.Header != nil {
-		req.Header = tads.Config.GlobalConfig.HttpOption.Header
+		for k, v := range tads.Config.GlobalConfig.HttpOption.Header {
+			req.Header[k] = v
+		}
+	}
+	if host := req.Header.Get("Host"); host != "" {
+		req.Host = host
 	}
 	if tads.IsMonitor() {
 		req.Header.Add("X-SDK-LANGUAGE", "GO")

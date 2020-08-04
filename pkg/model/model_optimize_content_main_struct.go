@@ -11,6 +11,6 @@ package model
 
 // 诊断详情-优化操作明细
 type OptimizeContentMainStruct struct {
-	Status           OptimizeSubStatusStruct  `json:"status,omitempty"`
-	OptimizeContents OptimizeSubContentStruct `json:"optimize_contents,omitempty"`
+	Status           *OptimizeSubStatusStruct  `json:"status,omitempty"`
+	OptimizeContents *OptimizeSubContentStruct `json:"optimize_contents,omitempty"`
 }

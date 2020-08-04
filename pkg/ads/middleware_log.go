@@ -27,6 +27,7 @@ func (l *LogMiddleware) Handle(req *http.Request, next func(req *http.Request) (
 		}
 		if request, err := httputil.DumpRequestOut(req, true); err == nil {
 			if debugFile != nil {
+				_, err = debugFile.WriteString("Request Host:" + req.URL.Host + "\n")
 				_, err = debugFile.Write(request)
 				_, err = debugFile.WriteString("\n")
 			}

@@ -11,7 +11,7 @@ package model
 
 // 跨城市规则
 type CrossCityRule struct {
-	Route     []string  `json:"route,omitempty"`
-	DateRange DateRange `json:"date_range,omitempty"`
-	Frequency int64     `json:"frequency,omitempty"`
+	Route     []string   `json:"route,omitempty"`
+	DateRange *DateRange `json:"date_range,omitempty"`
+	Frequency int64      `json:"frequency,omitempty"`
 }

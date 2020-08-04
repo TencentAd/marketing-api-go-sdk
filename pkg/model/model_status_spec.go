@@ -11,5 +11,5 @@ package model
 
 // 获取系统状态所需条件
 type StatusSpec struct {
-	OcpaLearningSpec OcpaLearningSpec `json:"ocpa_learning_spec,omitempty"`
+	OcpaLearningSpec *OcpaLearningSpec `json:"ocpa_learning_spec,omitempty"`
 }

@@ -39,7 +39,7 @@ func (e *SystemStatusGetExample) Init() {
 	e.AccountId = int64(0)
 	e.StatusType = "STATUS_TYPE_OCPA_LEARNING"
 	e.StatusSpec = model.StatusSpec{
-		OcpaLearningSpec: model.OcpaLearningSpec{
+		OcpaLearningSpec: &model.OcpaLearningSpec{
 			AdgroupIdList: []int64{int64(0)},
 		},
 	}

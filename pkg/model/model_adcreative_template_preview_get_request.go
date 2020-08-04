@@ -10,6 +10,6 @@
 package model
 
 type AdcreativeTemplatePreviewGetRequest struct {
-	PreviewSpec AdcreativePreviewSpec `json:"preview_spec,omitempty"`
-	AccountId   int64                 `json:"account_id,omitempty"`
+	PreviewSpec *AdcreativePreviewSpec `json:"preview_spec,omitempty"`
+	AccountId   int64                  `json:"account_id,omitempty"`
 }

@@ -37,7 +37,7 @@ func (e *DynamicAdImagesAddExample) Init() {
 		AccountId:             int64(0),
 		ProductMode:           model.ProductMode_SINGLE,
 		ProductSource:         "YOUR PRODUCT ID",
-		DynamicAdTemplateSize: model.DynamicAdTemplateSize_1280720_,
+		DynamicAdTemplateSize: model.DynamicAdTemplateSize_1280720,
 		DynamicAdTemplateId:   int64(0),
 	}
 }

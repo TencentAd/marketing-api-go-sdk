@@ -34,15 +34,15 @@ func (e *AdcreativeTemplatePreviewGetExample) Init() {
 	})
 	e.Data = model.AdcreativeTemplatePreviewGetRequest{
 		AccountId: int64(0),
-		PreviewSpec: model.AdcreativePreviewSpec{
+		PreviewSpec: &model.AdcreativePreviewSpec{
 			AdcreativeTemplateId: int64(133),
 			SiteSet:              []string{"SITE_SET_WECHAT"},
 			PromotedObjectType:   model.WechatPromotedObjectType_LINK_WECHAT,
-			AdcreativeElements: model.AdcreativeCreativeElements{
+			AdcreativeElements: &model.AdcreativeCreativeElements{
 				Image: "YOUR AD IMAGE ID",
 			},
-			PageType: model.DestinationType_DEFAULT_,
-			PageSpec: model.PreviewPageSpec{
+			PageType: model.DestinationType_DEFAULT,
+			PageSpec: &model.PreviewPageSpec{
 				PageUrl: "YOUR AD PAGE URL",
 			},
 		},

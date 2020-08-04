@@ -11,10 +11,10 @@ package model
 
 // 返回结构
 type AsyncTasksGetTaskListStruct struct {
-	TaskId      int64               `json:"task_id,omitempty"`
-	TaskName    string              `json:"task_name,omitempty"`
-	TaskType    TaskType            `json:"task_type,omitempty"`
-	Status      TaskStatus          `json:"status,omitempty"`
-	CreatedTime int64               `json:"created_time,omitempty"`
-	Result      AsyncTasksGetResult `json:"result,omitempty"`
+	TaskId      int64                `json:"task_id,omitempty"`
+	TaskName    string               `json:"task_name,omitempty"`
+	TaskType    TaskType             `json:"task_type,omitempty"`
+	Status      TaskStatus           `json:"status,omitempty"`
+	CreatedTime int64                `json:"created_time,omitempty"`
+	Result      *AsyncTasksGetResult `json:"result,omitempty"`
 }

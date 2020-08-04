@@ -14,7 +14,7 @@ type DestinationType string
 
 // List of DestinationType
 const (
-	DestinationType_DEFAULT_                     DestinationType = "PAGE_TYPE_DEFAULT"
+	DestinationType_DEFAULT                      DestinationType = "PAGE_TYPE_DEFAULT"
 	DestinationType_TSA_APP                      DestinationType = "PAGE_TYPE_TSA_APP"
 	DestinationType_TSA_WEB_NONE_ECOMMERCE       DestinationType = "PAGE_TYPE_TSA_WEB_NONE_ECOMMERCE"
 	DestinationType_CANVAS_WECHAT                DestinationType = "PAGE_TYPE_CANVAS_WECHAT"

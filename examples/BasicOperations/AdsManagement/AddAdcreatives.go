@@ -35,12 +35,12 @@ func (e *AdcreativesAddExample) Init() {
 	e.Data = model.AdcreativesAddRequest{
 		AccountId:            int64(0),
 		AdcreativeTemplateId: int64(0),
-		AdcreativeElements: model.AdcreativeCreativeElementsMp{
+		AdcreativeElements: &model.AdcreativeCreativeElementsMp{
 			Title:       "YOUR AD TEXT",
 			Description: "YOUR AD DESCRIPTION",
 		},
-		PageType: model.DestinationType_DEFAULT_,
-		PageSpec: model.PageSpec{
+		PageType: model.DestinationType_DEFAULT,
+		PageSpec: &model.PageSpec{
 			PageUrl: "YOUR AD PAGE URL",
 		},
 		PromotedObjectType: model.PromotedObjectType_LINK,

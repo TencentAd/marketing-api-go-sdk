@@ -11,5 +11,5 @@ package model
 
 type PlayablePagesGetResponseData struct {
 	List     []PlayablePagesGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                         `json:"page_info,omitempty"`
+	PageInfo *Conf                        `json:"page_info,omitempty"`
 }

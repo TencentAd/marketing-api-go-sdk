@@ -249,6 +249,12 @@ type DailyReportsGetListStruct struct {
 	VideoOuterPlay3sCount               int64   `json:"video_outer_play3s_count,omitempty"`
 	VideoOuterPlay5sCount               int64   `json:"video_outer_play5s_count,omitempty"`
 	VideoOuterPlay7sCount               int64   `json:"video_outer_play7s_count,omitempty"`
+	FirstDayPayCount                    int64   `json:"first_day_pay_count,omitempty"`
+	FirstDayPayCost                     int64   `json:"first_day_pay_cost,omitempty"`
+	FirstDayFirstPayCost                int64   `json:"first_day_first_pay_cost,omitempty"`
+	FirstDayFirstPayCount               int64   `json:"first_day_first_pay_count,omitempty"`
+	FirstDayPayAmount                   int64   `json:"first_day_pay_amount,omitempty"`
+	FirstDayFirstPayRate                float64 `json:"first_day_first_pay_rate,omitempty"`
 	CampaignId                          int64   `json:"campaign_id,omitempty"`
 	AdgroupId                           int64   `json:"adgroup_id,omitempty"`
 	AdId                                int64   `json:"ad_id,omitempty"`
@@ -262,6 +268,9 @@ type DailyReportsGetListStruct struct {
 	WebAddToCartRate                    float64 `json:"web_add_to_cart_rate,omitempty"`
 	AppAddToCartRate                    float64 `json:"app_add_to_cart_rate,omitempty"`
 	IsExpandTargeting                   bool    `json:"is_expand_targeting,omitempty"`
+	SiteSet                             string  `json:"site_set,omitempty"`
+	MaterialId                          int64   `json:"material_id,omitempty"`
+	Signature                           string  `json:"signature,omitempty"`
 	WechatAccountId                     string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                      string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                   float64 `json:"cost_deviation_rate,omitempty"`
@@ -331,7 +340,4 @@ type DailyReportsGetListStruct struct {
 	ForwardUserCount                    int64   `json:"forward_user_count,omitempty"`
 	VideoOuterPlayUserCount             int64   `json:"video_outer_play_user_count,omitempty"`
 	VideoInnerPlayUserCount             int64   `json:"video_inner_play_user_count,omitempty"`
-	SiteSet                             string  `json:"site_set,omitempty"`
-	MaterialId                          int64   `json:"material_id,omitempty"`
-	Signature                           string  `json:"signature,omitempty"`
 }

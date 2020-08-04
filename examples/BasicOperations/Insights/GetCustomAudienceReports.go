@@ -38,11 +38,11 @@ func (e *CustomAudienceReportsGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = int64(0)
-	e.Filtering = []model.FilteringStruct{model.FilteringStruct{
+	e.Filtering = []model.FilteringStruct{&model.FilteringStruct{
 		Field:    "audience_id",
 		Operator: "IN",
 		Values:   []string{"YOUR AUDIENCE ID"},
-	}, model.FilteringStruct{
+	}, &model.FilteringStruct{
 		Field:    "audience_platform",
 		Operator: "EQUALS",
 		Values:   []string{"DMP"},

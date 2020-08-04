@@ -10,8 +10,8 @@
 package model
 
 type PromotedObjectsAddRequest struct {
-	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
-	PromotedObjectId   string             `json:"promoted_object_id,omitempty"`
-	PromotedObjectSpec PromotedObjectSpec `json:"promoted_object_spec,omitempty"`
-	AccountId          int64              `json:"account_id,omitempty"`
+	PromotedObjectType PromotedObjectType  `json:"promoted_object_type,omitempty"`
+	PromotedObjectId   string              `json:"promoted_object_id,omitempty"`
+	PromotedObjectSpec *PromotedObjectSpec `json:"promoted_object_spec,omitempty"`
+	AccountId          int64               `json:"account_id,omitempty"`
 }

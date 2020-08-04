@@ -11,7 +11,7 @@ package model
 
 // 广告信息
 type Ad struct {
-	AdName                  string            `json:"ad_name,omitempty"`
-	Adcreative              PreviewAdcreative `json:"adcreative,omitempty"`
-	FeedsInteractionEnabled bool              `json:"feeds_interaction_enabled,omitempty"`
+	AdName                  string             `json:"ad_name,omitempty"`
+	Adcreative              *PreviewAdcreative `json:"adcreative,omitempty"`
+	FeedsInteractionEnabled bool               `json:"feeds_interaction_enabled,omitempty"`
 }

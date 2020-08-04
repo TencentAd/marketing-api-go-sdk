@@ -16,7 +16,7 @@ type AdcreativeCreativeElementsRead struct {
 	Image3                        string                            `json:"image3,omitempty"`
 	Title                         string                            `json:"title,omitempty"`
 	Description                   string                            `json:"description,omitempty"`
-	Corporate                     AdcreativeCorporate               `json:"corporate,omitempty"`
+	Corporate                     *AdcreativeCorporate              `json:"corporate,omitempty"`
 	Video                         string                            `json:"video,omitempty"`
 	LinkNameType                  LinkNameType                      `json:"link_name_type,omitempty"`
 	ImageList                     []string                          `json:"image_list,omitempty"`
@@ -35,14 +35,14 @@ type AdcreativeCreativeElementsRead struct {
 	AnimationEffect               string                            `json:"animation_effect,omitempty"`
 	Phone                         string                            `json:"phone,omitempty"`
 	Caption                       string                            `json:"caption,omitempty"`
-	LogoPage                      AdcreativeLogoPage                `json:"logo_page,omitempty"`
+	LogoPage                      *AdcreativeLogoPage               `json:"logo_page,omitempty"`
 	VideoPopupUrl                 string                            `json:"video_popup_url,omitempty"`
-	VideoPopupButton              AdcreativeVideoPopupButton        `json:"video_popup_button,omitempty"`
+	VideoPopupButton              *AdcreativeVideoPopupButton       `json:"video_popup_button,omitempty"`
 	VideoPopupButtonText          string                            `json:"video_popup_button_text,omitempty"`
 	VideoPopupButtonUrl           string                            `json:"video_popup_button_url,omitempty"`
 	LongVideo1                    string                            `json:"long_video1,omitempty"`
 	LongVideo2                    string                            `json:"long_video2,omitempty"`
-	ShortVideoStruct              ShortVideoStruct                  `json:"short_video_struct,omitempty"`
+	ShortVideoStruct              *ShortVideoStruct                 `json:"short_video_struct,omitempty"`
 	QzoneVideoPageId              string                            `json:"qzone_video_page_id,omitempty"`
 	Qq                            string                            `json:"qq,omitempty"`
 	LeftCanvas                    string                            `json:"left_canvas,omitempty"`
@@ -55,14 +55,14 @@ type AdcreativeCreativeElementsRead struct {
 	FogText                       string                            `json:"fog_text,omitempty"`
 	SandText                      string                            `json:"sand_text,omitempty"`
 	HazeText                      string                            `json:"haze_text,omitempty"`
-	LabelledImg                   AdcreativeLabelledImg             `json:"labelled_img,omitempty"`
+	LabelledImg                   *AdcreativeLabelledImg            `json:"labelled_img,omitempty"`
 	ShareImg                      string                            `json:"share_img,omitempty"`
-	LongVideoStruct               LongVideoStruct                   `json:"long_video_struct,omitempty"`
-	BannerContent                 AdcreativeBannerContent           `json:"banner_content,omitempty"`
-	CardContent                   AdcreativeCardContent             `json:"card_content,omitempty"`
-	Brand                         AdCreativeBrand                   `json:"brand,omitempty"`
+	LongVideoStruct               *LongVideoStruct                  `json:"long_video_struct,omitempty"`
+	BannerContent                 *AdcreativeBannerContent          `json:"banner_content,omitempty"`
+	CardContent                   *AdcreativeCardContent            `json:"card_content,omitempty"`
+	Brand                         *AdCreativeBrand                  `json:"brand,omitempty"`
 	FullScreenImage               string                            `json:"full_screen_image,omitempty"`
 	ZipUrl                        string                            `json:"zip_url,omitempty"`
-	EndPage                       AdCreativeEndPage                 `json:"end_page,omitempty"`
+	EndPage                       *AdCreativeEndPage                `json:"end_page,omitempty"`
 	CountdownExpiringTimestamp    int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

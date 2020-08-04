@@ -35,9 +35,9 @@ func (e *UserPropertiesAddExample) Init() {
 	e.Data = model.UserPropertiesAddRequest{
 		WechatAppId: "YOUR WECHAT APP ID",
 		AccountId:   int64(0),
-		Property: []model.UserPropertiesAddProperty{model.UserPropertiesAddProperty{
+		Property: []model.UserPropertiesAddProperty{&model.UserPropertiesAddProperty{
 			OuterUserId: "YOUR USER ID",
-			UserId: model.PropertiesUserId{
+			UserId: &model.PropertiesUserId{
 				WechatOpenid: "YOUR USER WECHAT OPENID",
 			},
 			PropertyData: {"YOUR DATA KEY": "YOUR DATA VALUE"},

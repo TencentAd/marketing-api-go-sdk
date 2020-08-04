@@ -241,6 +241,12 @@ Name | Type | Description | Notes
 **VideoOuterPlay3sCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay5sCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay7sCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCost** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayCount** | **int64** |  | [optional] [default to null]
+**FirstDayPayAmount** | **int64** |  | [optional] [default to null]
+**FirstDayFirstPayRate** | **float64** |  | [optional] [default to null]
 **CampaignId** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdId** | **int64** |  | [optional] [default to null]
@@ -254,6 +260,9 @@ Name | Type | Description | Notes
 **WebAddToCartRate** | **float64** |  | [optional] [default to null]
 **AppAddToCartRate** | **float64** |  | [optional] [default to null]
 **IsExpandTargeting** | **bool** |  | [optional] [default to null]
+**SiteSet** | **string** |  | [optional] [default to null]
+**MaterialId** | **int64** |  | [optional] [default to null]
+**Signature** | **string** |  | [optional] [default to null]
 **WechatAccountId** | **string** |  | [optional] [default to null]
 **WechatAgencyId** | **string** |  | [optional] [default to null]
 **CostDeviationRate** | **float64** |  | [optional] [default to null]
@@ -323,9 +332,6 @@ Name | Type | Description | Notes
 **ForwardUserCount** | **int64** |  | [optional] [default to null]
 **VideoOuterPlayUserCount** | **int64** |  | [optional] [default to null]
 **VideoInnerPlayUserCount** | **int64** |  | [optional] [default to null]
-**SiteSet** | **string** |  | [optional] [default to null]
-**MaterialId** | **int64** |  | [optional] [default to null]
-**Signature** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

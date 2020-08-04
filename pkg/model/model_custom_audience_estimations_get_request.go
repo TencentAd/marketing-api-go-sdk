@@ -10,7 +10,7 @@
 package model
 
 type CustomAudienceEstimationsGetRequest struct {
-	AccountId    int64                  `json:"account_id,omitempty"`
-	Type_        string                 `json:"type,omitempty"`
-	AudienceSpec EstimationAudienceSpec `json:"audience_spec,omitempty"`
+	AccountId    int64                   `json:"account_id,omitempty"`
+	Type_        string                  `json:"type,omitempty"`
+	AudienceSpec *EstimationAudienceSpec `json:"audience_spec,omitempty"`
 }

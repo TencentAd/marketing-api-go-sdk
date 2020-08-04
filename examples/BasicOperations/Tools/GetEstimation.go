@@ -33,15 +33,15 @@ func (e *EstimationGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.EstimationGetRequest{
-		Targeting: model.EstimationReadTargetingSetting{
-			Age: []model.AgeStruct{model.AgeStruct{
+		Targeting: &model.EstimationReadTargetingSetting{
+			Age: []model.AgeStruct{&model.AgeStruct{
 				Max: int64(0),
 				Min: int64(0),
 			}},
 			Gender: []string{"YOUR TARGETING GENDER"},
 		},
 		AccountId: int64(0),
-		CampaignSpec: model.CampaignTargeting{
+		CampaignSpec: &model.CampaignTargeting{
 			CampaignId: int64(0),
 		},
 	}

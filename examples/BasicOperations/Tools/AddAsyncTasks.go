@@ -36,8 +36,8 @@ func (e *AsyncTasksAddExample) Init() {
 		TaskName:  "SDK异步任务5ede252e2f1db",
 		AccountId: int64(0),
 		TaskType:  model.TaskType_TASK_TYPE_AD_HOURLY_REPORT,
-		TaskSpec: model.TaskSpec{
-			TaskTypeAdHourlyReportSpec: model.TaskTypeAdHourlyReportSpec{
+		TaskSpec: &model.TaskSpec{
+			TaskTypeAdHourlyReportSpec: &model.TaskTypeAdHourlyReportSpec{
 				Date: "REPORT DATE",
 			},
 		},

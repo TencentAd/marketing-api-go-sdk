@@ -10,6 +10,6 @@
 package model
 
 type CustomTagsGetResponseData struct {
-	List     []Tag    `json:"list,omitempty"`
-	PageInfo PageInfo `json:"page_info,omitempty"`
+	List     []Tag     `json:"list,omitempty"`
+	PageInfo *PageInfo `json:"page_info,omitempty"`
 }

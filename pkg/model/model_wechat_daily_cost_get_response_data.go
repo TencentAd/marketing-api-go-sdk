@@ -11,5 +11,5 @@ package model
 
 type WechatDailyCostGetResponseData struct {
 	List     []WechatDailyCostGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                           `json:"page_info,omitempty"`
+	PageInfo *Conf                          `json:"page_info,omitempty"`
 }

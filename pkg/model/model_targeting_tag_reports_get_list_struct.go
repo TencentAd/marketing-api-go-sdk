@@ -256,4 +256,10 @@ type TargetingTagReportsGetListStruct struct {
 	FirstDayOrderCount           int64   `json:"first_day_order_count,omitempty"`
 	FirstDayOrderAmount          int64   `json:"first_day_order_amount,omitempty"`
 	AddWishlistCount             int64   `json:"add_wishlist_count,omitempty"`
+	FirstDayPayCount             int64   `json:"first_day_pay_count,omitempty"`
+	FirstDayPayCost              int64   `json:"first_day_pay_cost,omitempty"`
+	FirstDayFirstPayCost         int64   `json:"first_day_first_pay_cost,omitempty"`
+	FirstDayFirstPayCount        int64   `json:"first_day_first_pay_count,omitempty"`
+	FirstDayPayAmount            int64   `json:"first_day_pay_amount,omitempty"`
+	FirstDayFirstPayRate         float64 `json:"first_day_first_pay_rate,omitempty"`
 }

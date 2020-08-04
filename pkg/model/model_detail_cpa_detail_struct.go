@@ -11,6 +11,6 @@ package model
 
 // 诊断详情-成本明细
 type DetailCpaDetailStruct struct {
-	EffectData       CpaEffectDataStruct `json:"effect_data,omitempty"`
-	EffectDataTrends CpaEffectDataTrends `json:"effect_data_trends,omitempty"`
+	EffectData       *CpaEffectDataStruct `json:"effect_data,omitempty"`
+	EffectDataTrends *CpaEffectDataTrends `json:"effect_data_trends,omitempty"`
 }

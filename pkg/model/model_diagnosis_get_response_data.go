@@ -11,5 +11,5 @@ package model
 
 type DiagnosisGetResponseData struct {
 	List     []DiagnosisGetListStruct `json:"list,omitempty"`
-	PageInfo PageInfo                 `json:"page_info,omitempty"`
+	PageInfo *PageInfo                `json:"page_info,omitempty"`
 }

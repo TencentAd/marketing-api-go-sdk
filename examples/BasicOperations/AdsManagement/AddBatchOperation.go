@@ -36,8 +36,8 @@ func (e *BatchOperationAddExample) Init() {
 		AccountId:      int64(0),
 		OperationType:  model.BatchOperationType_DATE,
 		ResourceIdList: []int64{int64(0)},
-		OperationSpec: model.OperationSpec{
-			DateSpec: model.DateSpec{
+		OperationSpec: &model.OperationSpec{
+			DateSpec: &model.DateSpec{
 				BeginDate: "YOUR ADGROUP BEGIN DATE",
 				EndDate:   "YOUR ADGROUP END DATE",
 			},

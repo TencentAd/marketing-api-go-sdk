@@ -11,5 +11,5 @@ package model
 
 type LabelsGetResponseData struct {
 	List     []LabelsLabel `json:"list,omitempty"`
-	PageInfo PageInfo      `json:"page_info,omitempty"`
+	PageInfo *PageInfo     `json:"page_info,omitempty"`
 }

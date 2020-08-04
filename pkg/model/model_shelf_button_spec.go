@@ -11,7 +11,7 @@ package model
 
 // 按钮信息
 type ShelfButtonSpec struct {
-	LinkSpec        LinkSpec        `json:"link_spec,omitempty"`
-	AppDownloadSpec AppDownloadSpec `json:"app_download_spec,omitempty"`
-	MiniProgramSpec MiniProgramSpec `json:"mini_program_spec,omitempty"`
+	LinkSpec        *LinkSpec        `json:"link_spec,omitempty"`
+	AppDownloadSpec *AppDownloadSpec `json:"app_download_spec,omitempty"`
+	MiniProgramSpec *MiniProgramSpec `json:"mini_program_spec,omitempty"`
 }

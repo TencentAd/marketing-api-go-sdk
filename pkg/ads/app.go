@@ -101,6 +101,10 @@ func (c *SDKClient) BatchRequests() *api.BatchRequestsApiService {
 	return c.Client.BatchRequestsApi
 }
 
+func (c *SDKClient) BidSimulation() *api.BidSimulationApiService {
+	return c.Client.BidSimulationApi
+}
+
 func (c *SDKClient) Brand() *api.BrandApiService {
 	return c.Client.BrandApi
 }
@@ -275,6 +279,10 @@ func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 
 func (c *SDKClient) ProductItemsDetail() *api.ProductItemsDetailApiService {
 	return c.Client.ProductItemsDetailApi
+}
+
+func (c *SDKClient) ProductItemsList() *api.ProductItemsListApiService {
+	return c.Client.ProductItemsListApi
 }
 
 func (c *SDKClient) ProductsSystemStatus() *api.ProductsSystemStatusApiService {

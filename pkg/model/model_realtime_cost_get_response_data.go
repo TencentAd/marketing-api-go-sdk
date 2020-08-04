@@ -11,5 +11,5 @@ package model
 
 type RealtimeCostGetResponseData struct {
 	List     []RealtimeCostGetListStruct `json:"list,omitempty"`
-	PageInfo Conf                        `json:"page_info,omitempty"`
+	PageInfo *Conf                       `json:"page_info,omitempty"`
 }

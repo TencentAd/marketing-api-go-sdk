@@ -11,10 +11,10 @@ package model
 
 // 人群信息
 type AudienceSpec struct {
-	LookalikeSpec  LookalikeSpec  `json:"lookalike_spec,omitempty"`
-	UserActionSpec UserActionSpec `json:"user_action_spec,omitempty"`
-	LbsSpec        LbsSpec        `json:"lbs_spec,omitempty"`
-	KeywordSpec    KeywordSpec    `json:"keyword_spec,omitempty"`
-	AdRuleSpec     AdRuleSpec     `json:"ad_rule_spec,omitempty"`
-	CombineSpec    CombineSpec    `json:"combine_spec,omitempty"`
+	LookalikeSpec  *LookalikeSpec  `json:"lookalike_spec,omitempty"`
+	UserActionSpec *UserActionSpec `json:"user_action_spec,omitempty"`
+	LbsSpec        *LbsSpec        `json:"lbs_spec,omitempty"`
+	KeywordSpec    *KeywordSpec    `json:"keyword_spec,omitempty"`
+	AdRuleSpec     *AdRuleSpec     `json:"ad_rule_spec,omitempty"`
+	CombineSpec    *CombineSpec    `json:"combine_spec,omitempty"`
 }
