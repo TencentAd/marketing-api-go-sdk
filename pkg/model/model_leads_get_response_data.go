@@ -10,6 +10,6 @@
 package model
 
 type LeadsGetResponseData struct {
-	List     []LeadsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                `json:"page_info,omitempty"`
+	List     *[]LeadsGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                 `json:"page_info,omitempty"`
 }

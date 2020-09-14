@@ -10,5 +10,5 @@
 package model
 
 type SystemStatusGetResponseData struct {
-	List []SystemStatusGetListStruct `json:"list,omitempty"`
+	List *[]SystemStatusGetListStruct `json:"list,omitempty"`
 }

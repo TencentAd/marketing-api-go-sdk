@@ -10,6 +10,6 @@
 package model
 
 type ProductCatalogsGetResponseData struct {
-	List     []ProductCatalogsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                          `json:"page_info,omitempty"`
+	List     *[]ProductCatalogsGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                           `json:"page_info,omitempty"`
 }

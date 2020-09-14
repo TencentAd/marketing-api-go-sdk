@@ -11,7 +11,7 @@ package model
 
 // 返回结构
 type BatchRequestsAddListStruct struct {
-	HttpCode int64          `json:"http_code,omitempty"`
-	Headers  []HeaderStruct `json:"headers,omitempty"`
-	Body     string         `json:"body,omitempty"`
+	HttpCode int64           `json:"http_code,omitempty"`
+	Headers  *[]HeaderStruct `json:"headers,omitempty"`
+	Body     string          `json:"body,omitempty"`
 }

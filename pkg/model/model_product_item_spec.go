@@ -18,12 +18,12 @@ type ProductItemSpec struct {
 	LastModifiedTime          string            `json:"last_modified_time,omitempty"`
 	ExpirationTime            string            `json:"expiration_time,omitempty"`
 	ImageUrl                  string            `json:"image_url,omitempty"`
-	AdditionalImageUrl        []string          `json:"additional_image_url,omitempty"`
+	AdditionalImageUrl        *[]string         `json:"additional_image_url,omitempty"`
 	VideoDuration             string            `json:"video_duration,omitempty"`
 	VideoUrl                  string            `json:"video_url,omitempty"`
 	PlayCount                 int64             `json:"play_count,omitempty"`
 	PublishTime               string            `json:"publish_time,omitempty"`
-	AdditionalVideoUrl        []string          `json:"additional_video_url,omitempty"`
+	AdditionalVideoUrl        *[]string         `json:"additional_video_url,omitempty"`
 	PcPageUrl                 string            `json:"pc_page_url,omitempty"`
 	MobileH5PageUrl           string            `json:"mobile_h5_page_url,omitempty"`
 	AndroidPageUrl            string            `json:"android_page_url,omitempty"`
@@ -50,7 +50,7 @@ type ProductItemSpec struct {
 	SalesVolume               int64             `json:"sales_volume,omitempty"`
 	StockVolume               int64             `json:"stock_volume,omitempty"`
 	Slogan                    string            `json:"slogan,omitempty"`
-	CustomLabel               []string          `json:"custom_label,omitempty"`
+	CustomLabel               *[]string         `json:"custom_label,omitempty"`
 	FirstCategoryId           int64             `json:"first_category_id,omitempty"`
 	SecondCategoryId          int64             `json:"second_category_id,omitempty"`
 	ThirdCategoryId           int64             `json:"third_category_id,omitempty"`
@@ -59,6 +59,10 @@ type ProductItemSpec struct {
 	SecondCategoryName        string            `json:"second_category_name,omitempty"`
 	ThirdCategoryName         string            `json:"third_category_name,omitempty"`
 	FourthCategoryName        string            `json:"fourth_category_name,omitempty"`
+	FirstCategoryUrl          string            `json:"first_category_url,omitempty"`
+	SecondCategoryUrl         string            `json:"second_category_url,omitempty"`
+	ThirdCategoryUrl          string            `json:"third_category_url,omitempty"`
+	FourthCategoryUrl         string            `json:"fourth_category_url,omitempty"`
 	BrandId                   int64             `json:"brand_id,omitempty"`
 	BrandName                 string            `json:"brand_name,omitempty"`
 	BrandUrl                  string            `json:"brand_url,omitempty"`
@@ -69,7 +73,7 @@ type ProductItemSpec struct {
 	ShopName                  string            `json:"shop_name,omitempty"`
 	ShopUrl                   string            `json:"shop_url,omitempty"`
 	ShopCustomInfo            string            `json:"shop_custom_info,omitempty"`
-	ShopIdList                []string          `json:"shop_id_list,omitempty"`
+	ShopIdList                *[]string         `json:"shop_id_list,omitempty"`
 	ProductViewCount          int64             `json:"product_view_count,omitempty"`
 	FavoriteCount             int64             `json:"favorite_count,omitempty"`
 	Rating                    float64           `json:"rating,omitempty"`
@@ -81,6 +85,12 @@ type ProductItemSpec struct {
 	ForwardCount              int64             `json:"forward_count,omitempty"`
 	CommentCount              int64             `json:"comment_count,omitempty"`
 	AuthorFansCount           int64             `json:"author_fans_count,omitempty"`
-	SemanticLabels            []string          `json:"semantic_labels,omitempty"`
-	DetailImg                 []string          `json:"detail_img,omitempty"`
+	SemanticLabels            *[]string         `json:"semantic_labels,omitempty"`
+	DetailImg                 *[]string         `json:"detail_img,omitempty"`
+	ShowCount                 int64             `json:"show_count,omitempty"`
+	PlayRate                  float64           `json:"play_rate,omitempty"`
+	MakeMoneyOnline           string            `json:"make_money_online,omitempty"`
+	LiveBroadcast             string            `json:"live_broadcast,omitempty"`
+	PlatformAttribute         string            `json:"platform_attribute,omitempty"`
+	CustomData                string            `json:"custom_data,omitempty"`
 }

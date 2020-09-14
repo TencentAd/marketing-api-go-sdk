@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AsyncReportFilesGet**
-> AsyncReportFilesGetResponse AsyncReportFilesGet(ctx, accountId, taskId, fileId, optional)
+> string AsyncReportFilesGet(ctx, accountId, taskId, fileId, optional)
 获取文件接口
 
 ### Required Parameters
@@ -33,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AsyncReportFilesGetResponse**](AsyncReportFilesGetResponse.md)
+**string**
 
 ### Authorization
 

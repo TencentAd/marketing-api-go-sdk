@@ -249,6 +249,15 @@ type DailyReportsGetListStruct struct {
 	VideoOuterPlay3sCount               int64   `json:"video_outer_play3s_count,omitempty"`
 	VideoOuterPlay5sCount               int64   `json:"video_outer_play5s_count,omitempty"`
 	VideoOuterPlay7sCount               int64   `json:"video_outer_play7s_count,omitempty"`
+	EffectLeadsPurchaseCost             int64   `json:"effect_leads_purchase_cost,omitempty"`
+	CreWebCost                          int64   `json:"cre_web_cost,omitempty"`
+	CreAppCost                          int64   `json:"cre_app_cost,omitempty"`
+	PreCreWebCost                       int64   `json:"pre_cre_web_cost,omitempty"`
+	PreCreAppCost                       int64   `json:"pre_cre_app_cost,omitempty"`
+	IncomeRoi1                          float64 `json:"income_roi_1,omitempty"`
+	IncomeRoi3                          float64 `json:"income_roi_3,omitempty"`
+	IncomeRoi7                          float64 `json:"income_roi_7,omitempty"`
+	IncomeRoi14                         float64 `json:"income_roi_14,omitempty"`
 	FirstDayPayCount                    int64   `json:"first_day_pay_count,omitempty"`
 	FirstDayPayCost                     int64   `json:"first_day_pay_cost,omitempty"`
 	FirstDayFirstPayCost                int64   `json:"first_day_first_pay_cost,omitempty"`

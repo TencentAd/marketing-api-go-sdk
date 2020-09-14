@@ -10,6 +10,6 @@
 package model
 
 type PromotedObjectsGetResponseData struct {
-	List     []PromotedObjectsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                          `json:"page_info,omitempty"`
+	List     *[]PromotedObjectsGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                           `json:"page_info,omitempty"`
 }

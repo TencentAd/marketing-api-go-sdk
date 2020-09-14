@@ -11,7 +11,7 @@ package model
 
 // 微信广告的成本诊断结论<br>仅微信的oCPA广告会返回此字段
 type WechatCostDiagnosisResultSpec struct {
-	DiagnosisConclusion string           `json:"diagnosis_conclusion,omitempty"`
-	OverallCpc          int64            `json:"overall_cpc,omitempty"`
-	HistoryCpcSpecList  []HistoryCpcSpec `json:"history_cpc_spec_list,omitempty"`
+	DiagnosisConclusion string            `json:"diagnosis_conclusion,omitempty"`
+	OverallCpc          int64             `json:"overall_cpc,omitempty"`
+	HistoryCpcSpecList  *[]HistoryCpcSpec `json:"history_cpc_spec_list,omitempty"`
 }

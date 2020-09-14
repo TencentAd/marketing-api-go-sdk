@@ -35,17 +35,17 @@ func (e *TargetingsUpdateExample) Init() {
 	e.Data = model.TargetingsUpdateRequest{
 		TargetingId: int64(0),
 		Targeting: &model.WriteTargetingSetting{
-			Age: []model.AgeStruct{&model.AgeStruct{
+			Age: &[]model.AgeStruct{&model.AgeStruct{
 				Max: int64(0),
 				Min: int64(0),
 			}},
-			Gender: []string{"YOUR TARGETING GENDER"},
+			Gender: &[]string{"YOUR TARGETING GENDER"},
 		},
 		AccountId: int64(0),
 	}
 }
 
-func (e *TargetingsUpdateExample) RunExample() (model.TargetingsUpdateResponseData, *http.Response, error) {
+func (e *TargetingsUpdateExample) RunExample() (model.TargetingsUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -55,7 +55,7 @@ func (e *TargetingsUpdateExample) RunExample() (model.TargetingsUpdateResponseDa
 func main() {
 	e := &TargetingsUpdateExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -65,5 +65,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

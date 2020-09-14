@@ -10,9 +10,9 @@
 package model
 
 type QualificationsGetResponseData struct {
-	IndustryQualifications           []IndustryQualificationsStruct           `json:"industry_qualifications,omitempty"`
-	AdQualifications                 []AdQualificationsStruct                 `json:"ad_qualifications,omitempty"`
-	AdditionalIndustryQualifications []AdditionalIndustryQualificationsStruct `json:"additional_industry_qualifications,omitempty"`
-	IndustryQualificationsWechat     []WechatIndustryQualificationsStruct     `json:"industry_qualifications_wechat,omitempty"`
-	AdQualificationsWechat           []WechatAdQualificationsStruct           `json:"ad_qualifications_wechat,omitempty"`
+	IndustryQualifications           *[]IndustryQualificationsStruct           `json:"industry_qualifications,omitempty"`
+	AdQualifications                 *[]AdQualificationsStruct                 `json:"ad_qualifications,omitempty"`
+	AdditionalIndustryQualifications *[]AdditionalIndustryQualificationsStruct `json:"additional_industry_qualifications,omitempty"`
+	IndustryQualificationsWechat     *[]WechatIndustryQualificationsStruct     `json:"industry_qualifications_wechat,omitempty"`
+	AdQualificationsWechat           *[]WechatAdQualificationsStruct           `json:"ad_qualifications_wechat,omitempty"`
 }

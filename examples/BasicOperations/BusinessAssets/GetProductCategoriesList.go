@@ -26,6 +26,8 @@ type ProductCategoriesListGetExample struct {
 	AccessToken                  string
 	AccountId                    int64
 	ProductCatalogId             int64
+	Page                         int64
+	PageSize                     int64
 	ProductCategoriesListGetOpts *api.ProductCategoriesListGetOpts
 }
 
@@ -37,20 +39,22 @@ func (e *ProductCategoriesListGetExample) Init() {
 	})
 	e.AccountId = 789
 	e.ProductCatalogId = 789
+	e.Page = 789
+	e.PageSize = 789
 	e.ProductCategoriesListGetOpts = &api.ProductCategoriesListGetOpts{}
 }
 
-func (e *ProductCategoriesListGetExample) RunExample() (model.ProductCategoriesListGetResponseData, *http.Response, error) {
+func (e *ProductCategoriesListGetExample) RunExample() (model.ProductCategoriesListGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.ProductCategoriesList().Get(ctx, e.AccountId, e.ProductCatalogId, e.ProductCategoriesListGetOpts)
+	return tads.ProductCategoriesList().Get(ctx, e.AccountId, e.ProductCatalogId, e.Page, e.PageSize, e.ProductCategoriesListGetOpts)
 }
 
 func main() {
 	e := &ProductCategoriesListGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -60,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

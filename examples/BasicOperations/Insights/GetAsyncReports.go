@@ -38,7 +38,7 @@ func (e *AsyncReportsGetExample) Init() {
 	e.AsyncReportsGetOpts = &api.AsyncReportsGetOpts{}
 }
 
-func (e *AsyncReportsGetExample) RunExample() (model.AsyncReportsGetResponseData, *http.Response, error) {
+func (e *AsyncReportsGetExample) RunExample() (model.AsyncReportsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -48,7 +48,7 @@ func (e *AsyncReportsGetExample) RunExample() (model.AsyncReportsGetResponseData
 func main() {
 	e := &AsyncReportsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -58,5 +58,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

@@ -11,8 +11,8 @@ package model
 
 // 场景定向
 type EstimationSceneTargeting struct {
-	DisplayScene        []string `json:"display_scene,omitempty"`
-	MobileUnion         []string `json:"mobile_union,omitempty"`
-	ExcludeMobileUnion  []string `json:"exclude_mobile_union,omitempty"`
-	MobileUnionIndustry []string `json:"mobile_union_industry,omitempty"`
+	DisplayScene        *[]string `json:"display_scene,omitempty"`
+	MobileUnion         *[]string `json:"mobile_union,omitempty"`
+	ExcludeMobileUnion  *[]string `json:"exclude_mobile_union,omitempty"`
+	MobileUnionIndustry *[]string `json:"mobile_union_industry,omitempty"`
 }

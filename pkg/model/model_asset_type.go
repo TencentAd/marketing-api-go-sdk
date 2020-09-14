@@ -14,5 +14,8 @@ type AssetType string
 
 // List of AssetType
 const (
-	AssetType_ASSET_TYPE_CANVAS_WECHAT AssetType = "ASSET_TYPE_CANVAS_WECHAT"
+	AssetType_XIJING        AssetType = "ASSET_TYPE_XIJING"
+	AssetType_CANVAS_WECHAT AssetType = "ASSET_TYPE_CANVAS_WECHAT"
+	AssetType_CANVAS_IMAGE  AssetType = "ASSET_TYPE_CANVAS_IMAGE"
+	AssetType_CANVAS_VIDEO  AssetType = "ASSET_TYPE_CANVAS_VIDEO"
 )

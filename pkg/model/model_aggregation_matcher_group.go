@@ -11,5 +11,5 @@ package model
 
 // 聚合规则数组
 type AggregationMatcherGroup struct {
-	AggregationMatcher []AggregationMatcher `json:"aggregation_matcher,omitempty"`
+	AggregationMatcher *[]AggregationMatcher `json:"aggregation_matcher,omitempty"`
 }

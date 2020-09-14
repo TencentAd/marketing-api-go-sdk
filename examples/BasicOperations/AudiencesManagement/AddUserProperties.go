@@ -35,7 +35,7 @@ func (e *UserPropertiesAddExample) Init() {
 	e.Data = model.UserPropertiesAddRequest{
 		WechatAppId: "YOUR WECHAT APP ID",
 		AccountId:   int64(0),
-		Property: []model.UserPropertiesAddProperty{&model.UserPropertiesAddProperty{
+		Property: &[]model.UserPropertiesAddProperty{&model.UserPropertiesAddProperty{
 			OuterUserId: "YOUR USER ID",
 			UserId: &model.PropertiesUserId{
 				WechatOpenid: "YOUR USER WECHAT OPENID",
@@ -46,7 +46,7 @@ func (e *UserPropertiesAddExample) Init() {
 	}
 }
 
-func (e *UserPropertiesAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserPropertiesAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -56,7 +56,7 @@ func (e *UserPropertiesAddExample) RunExample() (interface{}, *http.Response, er
 func main() {
 	e := &UserPropertiesAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -66,5 +66,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

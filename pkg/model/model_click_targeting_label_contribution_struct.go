@@ -11,6 +11,6 @@ package model
 
 // 定向标签（点击）贡献度
 type ClickTargetingLabelContributionStruct struct {
-	Locard   []LabelContributionListItem `json:"locard,omitempty"`
-	Audience []LabelContributionListItem `json:"audience,omitempty"`
+	Locard   *[]LabelContributionListItem `json:"locard,omitempty"`
+	Audience *[]LabelContributionListItem `json:"audience,omitempty"`
 }

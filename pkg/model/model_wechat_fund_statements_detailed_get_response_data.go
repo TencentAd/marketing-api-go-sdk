@@ -10,6 +10,6 @@
 package model
 
 type WechatFundStatementsDetailedGetResponseData struct {
-	List     []DetailedFundStatement `json:"list,omitempty"`
-	PageInfo *Conf                   `json:"page_info,omitempty"`
+	List     *[]DetailedFundStatement `json:"list,omitempty"`
+	PageInfo *Conf                    `json:"page_info,omitempty"`
 }

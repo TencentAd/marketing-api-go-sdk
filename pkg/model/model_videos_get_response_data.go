@@ -10,6 +10,6 @@
 package model
 
 type VideosGetResponseData struct {
-	List     []VideosGetListStruct `json:"list,omitempty"`
-	PageInfo *ConfPageSize500      `json:"page_info,omitempty"`
+	List     *[]VideosGetListStruct `json:"list,omitempty"`
+	PageInfo *ConfPageSize500       `json:"page_info,omitempty"`
 }

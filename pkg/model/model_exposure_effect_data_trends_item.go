@@ -11,6 +11,6 @@ package model
 
 // 单日曝光趋势
 type ExposureEffectDataTrendsItem struct {
-	Date   string        `json:"date,omitempty"`
-	Trends []PointStruct `json:"trends,omitempty"`
+	Date   string         `json:"date,omitempty"`
+	Trends *[]PointStruct `json:"trends,omitempty"`
 }

@@ -10,5 +10,5 @@
 package model
 
 type CampaignsUpdateDailyBudgetResponseData struct {
-	List []CampaignsUpdateDailyBudgetListStruct `json:"list,omitempty"`
+	List *[]CampaignsUpdateDailyBudgetListStruct `json:"list,omitempty"`
 }

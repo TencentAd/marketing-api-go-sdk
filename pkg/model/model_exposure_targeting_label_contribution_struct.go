@@ -11,6 +11,6 @@ package model
 
 // 定向标签（曝光）贡献度
 type ExposureTargetingLabelContributionStruct struct {
-	Locard   []LabelContributionListItem `json:"locard,omitempty"`
-	Audience []LabelContributionListItem `json:"audience,omitempty"`
+	Locard   *[]LabelContributionListItem `json:"locard,omitempty"`
+	Audience *[]LabelContributionListItem `json:"audience,omitempty"`
 }

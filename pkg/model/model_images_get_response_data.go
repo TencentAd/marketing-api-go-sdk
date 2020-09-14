@@ -10,6 +10,6 @@
 package model
 
 type ImagesGetResponseData struct {
-	List     []ImagesGetListStruct `json:"list,omitempty"`
-	PageInfo *ConfPageSize500      `json:"page_info,omitempty"`
+	List     *[]ImagesGetListStruct `json:"list,omitempty"`
+	PageInfo *ConfPageSize500       `json:"page_info,omitempty"`
 }

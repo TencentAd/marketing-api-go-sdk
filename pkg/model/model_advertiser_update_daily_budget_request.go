@@ -10,5 +10,5 @@
 package model
 
 type AdvertiserUpdateDailyBudgetRequest struct {
-	UpdateDailyBudgetSpec []AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct `json:"update_daily_budget_spec,omitempty"`
+	UpdateDailyBudgetSpec *[]AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct `json:"update_daily_budget_spec,omitempty"`
 }

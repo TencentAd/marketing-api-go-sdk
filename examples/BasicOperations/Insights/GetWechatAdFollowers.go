@@ -45,7 +45,7 @@ func (e *WechatAdFollowersGetExample) Init() {
 	}
 }
 
-func (e *WechatAdFollowersGetExample) RunExample() (model.WechatAdFollowersGetResponseData, *http.Response, error) {
+func (e *WechatAdFollowersGetExample) RunExample() (model.WechatAdFollowersGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -55,7 +55,7 @@ func (e *WechatAdFollowersGetExample) RunExample() (model.WechatAdFollowersGetRe
 func main() {
 	e := &WechatAdFollowersGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -65,5 +65,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

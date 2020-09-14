@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CapabilitiesGet**](CapabilitiesApi.md#CapabilitiesGet) | **Get** /capabilities/get | 查询广告相关权限
+[**CapabilitiesGet**](CapabilitiesApi.md#CapabilitiesGet) | **Get** /capabilities/get | 查询广告相关权限（待废弃）
 
 
 # **CapabilitiesGet**
 > CapabilitiesGetResponse CapabilitiesGet(ctx, accountId, capability, optional)
-查询广告相关权限
+查询广告相关权限（待废弃）
 
 ### Required Parameters
 
@@ -27,7 +27,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **querySpec** | [**optional.Interface of QuerySpec**](QuerySpec.md)|  | 
+ **querySpec** | [**optional.Interface of CapabilitiesGetQuerySpec**](CapabilitiesGetQuerySpec.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

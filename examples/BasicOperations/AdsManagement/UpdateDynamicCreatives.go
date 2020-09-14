@@ -35,16 +35,16 @@ func (e *DynamicCreativesUpdateExample) Init() {
 	e.Data = model.DynamicCreativesUpdateRequest{
 		AccountId: int64(0),
 		DynamicCreativeElements: &model.DynamicCreativeElements{
-			ImageOptions:       []string{"YOUR AD IMAGE"},
-			TitleOptions:       []string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
-			DescriptionOptions: []string{"YOUR AD DESCRIPTION"},
+			ImageOptions:       &[]string{"YOUR AD IMAGE"},
+			TitleOptions:       &[]string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
+			DescriptionOptions: &[]string{"YOUR AD DESCRIPTION"},
 		},
 		DynamicCreativeId:         int64(0),
 		DynamicCreativeTemplateId: int64(0),
 	}
 }
 
-func (e *DynamicCreativesUpdateExample) RunExample() (model.DynamicCreativesUpdateResponseData, *http.Response, error) {
+func (e *DynamicCreativesUpdateExample) RunExample() (model.DynamicCreativesUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -54,7 +54,7 @@ func (e *DynamicCreativesUpdateExample) RunExample() (model.DynamicCreativesUpda
 func main() {
 	e := &DynamicCreativesUpdateExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -64,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

@@ -10,5 +10,5 @@
 package model
 
 type UserActionSetsGetResponseData struct {
-	List []UserActionSet `json:"list,omitempty"`
+	List *[]UserActionSet `json:"list,omitempty"`
 }

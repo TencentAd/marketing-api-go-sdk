@@ -162,6 +162,10 @@ type APIClient struct {
 
 	LeadsApi *LeadsApiService
 
+	LeadsFormApi *LeadsFormApiService
+
+	LeadsFormListApi *LeadsFormListApiService
+
 	OauthApi *OauthApiService
 
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
@@ -179,8 +183,6 @@ type APIClient struct {
 	ProductItemsApi *ProductItemsApiService
 
 	ProductItemsDetailApi *ProductItemsDetailApiService
-
-	ProductItemsListApi *ProductItemsListApiService
 
 	ProductsSystemStatusApi *ProductsSystemStatusApiService
 
@@ -243,6 +245,8 @@ type APIClient struct {
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
+
+	XijingPageListApi *XijingPageListApiService
 
 	XijingTemplateApi *XijingTemplateApiService
 }
@@ -321,6 +325,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LabelsApi = (*LabelsApiService)(&c.common)
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
 	c.LeadsApi = (*LeadsApiService)(&c.common)
+	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
+	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
@@ -330,7 +336,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
-	c.ProductItemsListApi = (*ProductItemsListApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
@@ -362,6 +367,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
+	c.XijingPageListApi = (*XijingPageListApiService)(&c.common)
 	c.XijingTemplateApi = (*XijingTemplateApiService)(&c.common)
 
 	return c
@@ -520,9 +526,9 @@ func (c *APIClient) prepareRequest(
 			if err != nil {
 				return nil, err
 			}
-			// Set the Boundary in the Content-Type
-			headerParams["Content-Type"] = w.FormDataContentType()
 		}
+		// Set the Boundary in the Content-Type
+		headerParams["Content-Type"] = w.FormDataContentType()
 
 		// Set Content-Length
 		headerParams["Content-Length"] = fmt.Sprintf("%d", body.Len())

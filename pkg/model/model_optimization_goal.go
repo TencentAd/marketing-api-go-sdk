@@ -67,4 +67,8 @@ const (
 	OptimizationGoal_MOBILE_APP_ACCREDIT                 OptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT"
 	OptimizationGoal_PURCHASE_MEMBER_CARD                OptimizationGoal = "OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD"
 	OptimizationGoal_PAGE_CONFIRM_EFFECTIVE_LEADS        OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS"
+	OptimizationGoal_ADD_DESKTOP                         OptimizationGoal = "OPTIMIZATIONGOAL_ADD_DESKTOP"
+	OptimizationGoal_RESERVATION                         OptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION"
+	OptimizationGoal_FIRST_ECOMMERCE_ORDER               OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER"
+	OptimizationGoal_LIKE                                OptimizationGoal = "OPTIMIZATIONGOAL_LIKE"
 )

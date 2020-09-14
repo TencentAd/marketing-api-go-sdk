@@ -42,7 +42,7 @@ func (e *LabelsGetExample) Init() {
 	}
 }
 
-func (e *LabelsGetExample) RunExample() (model.LabelsGetResponseData, *http.Response, error) {
+func (e *LabelsGetExample) RunExample() (model.LabelsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -52,7 +52,7 @@ func (e *LabelsGetExample) RunExample() (model.LabelsGetResponseData, *http.Resp
 func main() {
 	e := &LabelsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -62,5 +62,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

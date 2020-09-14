@@ -34,7 +34,7 @@ CustomTagsApiService 创建客户标签
 
 @return CustomTagsAddResponse
 */
-func (a *CustomTagsApiService) Add(ctx context.Context, data CustomTagsAddRequest) (CustomTagsAddResponseData, *http.Response, error) {
+func (a *CustomTagsApiService) Add(ctx context.Context, data CustomTagsAddRequest) (CustomTagsAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -78,13 +78,13 @@ func (a *CustomTagsApiService) Add(ctx context.Context, data CustomTagsAddReques
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -92,12 +92,16 @@ func (a *CustomTagsApiService) Add(ctx context.Context, data CustomTagsAddReques
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -112,16 +116,16 @@ func (a *CustomTagsApiService) Add(ctx context.Context, data CustomTagsAddReques
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -131,7 +135,7 @@ CustomTagsApiService 删除客户标签
 
 @return CustomTagsDeleteResponse
 */
-func (a *CustomTagsApiService) Delete(ctx context.Context, data CustomTagsDeleteRequest) (interface{}, *http.Response, error) {
+func (a *CustomTagsApiService) Delete(ctx context.Context, data CustomTagsDeleteRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -175,13 +179,13 @@ func (a *CustomTagsApiService) Delete(ctx context.Context, data CustomTagsDelete
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -189,12 +193,16 @@ func (a *CustomTagsApiService) Delete(ctx context.Context, data CustomTagsDelete
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -209,16 +217,16 @@ func (a *CustomTagsApiService) Delete(ctx context.Context, data CustomTagsDelete
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -247,7 +255,7 @@ type CustomTagsGetOpts struct {
 	Fields      optional.Interface
 }
 
-func (a *CustomTagsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *CustomTagsGetOpts) (CustomTagsGetResponseData, *http.Response, error) {
+func (a *CustomTagsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *CustomTagsGetOpts) (CustomTagsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -311,13 +319,13 @@ func (a *CustomTagsApiService) Get(ctx context.Context, accountId int64, localVa
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -325,12 +333,16 @@ func (a *CustomTagsApiService) Get(ctx context.Context, accountId int64, localVa
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -345,16 +357,16 @@ func (a *CustomTagsApiService) Get(ctx context.Context, accountId int64, localVa
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -364,7 +376,7 @@ CustomTagsApiService 更新客户标签
 
 @return CustomTagsUpdateResponse
 */
-func (a *CustomTagsApiService) Update(ctx context.Context, data CustomTagsUpdateRequest) (interface{}, *http.Response, error) {
+func (a *CustomTagsApiService) Update(ctx context.Context, data CustomTagsUpdateRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -408,13 +420,13 @@ func (a *CustomTagsApiService) Update(ctx context.Context, data CustomTagsUpdate
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -422,12 +434,16 @@ func (a *CustomTagsApiService) Update(ctx context.Context, data CustomTagsUpdate
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -442,14 +458,14 @@ func (a *CustomTagsApiService) Update(ctx context.Context, data CustomTagsUpdate
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

@@ -11,7 +11,7 @@ package model
 
 // 不支持的属性
 type UnsupportSpec struct {
-	SiteSet       []string      `json:"site_set,omitempty"`
+	SiteSet       *[]string     `json:"site_set,omitempty"`
 	Name          string        `json:"name,omitempty"`
 	UnsupportType UnsupportType `json:"unsupport_type,omitempty"`
 }

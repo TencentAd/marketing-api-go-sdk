@@ -11,8 +11,8 @@ package model
 
 // 地理位置定向
 type GeoLocations struct {
-	LocationTypes     []string              `json:"location_types,omitempty"`
-	Regions           []int64               `json:"regions,omitempty"`
-	BusinessDistricts []int64               `json:"business_districts,omitempty"`
-	CustomLocations   []CustomLocationsItem `json:"custom_locations,omitempty"`
+	LocationTypes     *[]string              `json:"location_types,omitempty"`
+	Regions           *[]int64               `json:"regions,omitempty"`
+	BusinessDistricts *[]int64               `json:"business_districts,omitempty"`
+	CustomLocations   *[]CustomLocationsItem `json:"custom_locations,omitempty"`
 }

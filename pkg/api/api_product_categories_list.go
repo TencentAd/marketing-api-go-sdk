@@ -32,7 +32,11 @@ ProductCategoriesListApiService 获取商品类目
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param productCatalogId
+ * @param page
+ * @param pageSize
  * @param optional nil or *ProductCategoriesListGetOpts - Optional Parameters:
+     * @param "Level" (optional.Int64) -
+     * @param "CategoryId" (optional.Int64) -
      * @param "CategoryName" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
@@ -40,11 +44,13 @@ ProductCategoriesListApiService 获取商品类目
 */
 
 type ProductCategoriesListGetOpts struct {
+	Level        optional.Int64
+	CategoryId   optional.Int64
 	CategoryName optional.String
 	Fields       optional.Interface
 }
 
-func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, localVarOptionals *ProductCategoriesListGetOpts) (ProductCategoriesListGetResponseData, *http.Response, error) {
+func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, page int64, pageSize int64, localVarOptionals *ProductCategoriesListGetOpts) (ProductCategoriesListGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -64,6 +70,14 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("product_catalog_id", parameterToString(productCatalogId, ""))
+	localVarQueryParams.Add("page", parameterToString(page, ""))
+	localVarQueryParams.Add("page_size", parameterToString(pageSize, ""))
+	if localVarOptionals != nil && localVarOptionals.Level.IsSet() {
+		localVarQueryParams.Add("level", parameterToString(localVarOptionals.Level.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.CategoryId.IsSet() {
+		localVarQueryParams.Add("category_id", parameterToString(localVarOptionals.CategoryId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.CategoryName.IsSet() {
 		localVarQueryParams.Add("category_name", parameterToString(localVarOptionals.CategoryName.Value(), ""))
 	}
@@ -94,13 +108,13 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -108,12 +122,16 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -128,14 +146,14 @@ func (a *ProductCategoriesListApiService) Get(ctx context.Context, accountId int
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

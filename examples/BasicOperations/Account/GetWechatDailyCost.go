@@ -38,7 +38,7 @@ func (e *WechatDailyCostGetExample) Init() {
 	e.WechatDailyCostGetOpts = &api.WechatDailyCostGetOpts{}
 }
 
-func (e *WechatDailyCostGetExample) RunExample() (model.WechatDailyCostGetResponseData, *http.Response, error) {
+func (e *WechatDailyCostGetExample) RunExample() (model.WechatDailyCostGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -48,7 +48,7 @@ func (e *WechatDailyCostGetExample) RunExample() (model.WechatDailyCostGetRespon
 func main() {
 	e := &WechatDailyCostGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -58,5 +58,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

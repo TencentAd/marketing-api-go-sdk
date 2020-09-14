@@ -41,11 +41,11 @@ func (e *CustomAudienceReportsGetExample) Init() {
 	e.Filtering = []model.FilteringStruct{&model.FilteringStruct{
 		Field:    "audience_id",
 		Operator: "IN",
-		Values:   []string{"YOUR AUDIENCE ID"},
+		Values:   &[]string{"YOUR AUDIENCE ID"},
 	}, &model.FilteringStruct{
 		Field:    "audience_platform",
 		Operator: "EQUALS",
-		Values:   []string{"DMP"},
+		Values:   &[]string{"DMP"},
 	}}
 	e.DateRange = model.DateRange{
 		StartDate: "REPORT START DATE",
@@ -57,7 +57,7 @@ func (e *CustomAudienceReportsGetExample) Init() {
 	}
 }
 
-func (e *CustomAudienceReportsGetExample) RunExample() (model.CustomAudienceReportsGetResponseData, *http.Response, error) {
+func (e *CustomAudienceReportsGetExample) RunExample() (model.CustomAudienceReportsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -67,7 +67,7 @@ func (e *CustomAudienceReportsGetExample) RunExample() (model.CustomAudienceRepo
 func main() {
 	e := &CustomAudienceReportsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -77,5 +77,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

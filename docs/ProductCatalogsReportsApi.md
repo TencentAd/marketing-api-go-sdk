@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ProductCatalogsReportsGet**](ProductCatalogsReportsApi.md#ProductCatalogsReportsGet) | **Get** /product_catalogs_reports/get | 获取商品库报表
+[**ProductCatalogsReportsGet**](ProductCatalogsReportsApi.md#ProductCatalogsReportsGet) | **Get** /product_catalogs_reports/get | 获取商品库报表(待废弃)
 
 
 # **ProductCatalogsReportsGet**
 > ProductCatalogsReportsGetResponse ProductCatalogsReportsGet(ctx, accountId, productCatalogId, dateRange, optional)
-获取商品库报表
+获取商品库报表(待废弃)
 
 ### Required Parameters
 

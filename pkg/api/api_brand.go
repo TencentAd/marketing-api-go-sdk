@@ -37,7 +37,7 @@ BrandApiService 创建品牌形象
 
 @return BrandAddResponse
 */
-func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string, brandImageFile *os.File) (BrandAddResponseData, *http.Response, error) {
+func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string, brandImageFile *os.File) (BrandAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -77,10 +77,17 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 	localVarFile := brandImageFile
 	localVarFileKey = "brand_image_file"
 	if localVarFile != nil {
-		fbs, _ := ioutil.ReadAll(localVarFile)
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
-		localVarFile.Close()
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
@@ -89,13 +96,13 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -103,12 +110,16 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -123,16 +134,16 @@ func (a *BrandApiService) Add(ctx context.Context, accountId int64, name string,
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -153,7 +164,7 @@ type BrandGetOpts struct {
 	Fields   optional.Interface
 }
 
-func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOptionals *BrandGetOpts) (BrandGetResponseData, *http.Response, error) {
+func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOptionals *BrandGetOpts) (BrandGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -205,13 +216,13 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -219,12 +230,16 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -239,14 +254,14 @@ func (a *BrandApiService) Get(ctx context.Context, accountId int64, localVarOpti
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

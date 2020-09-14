@@ -41,14 +41,14 @@ func (e *ImagesGetExample) Init() {
 		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "image_id",
 			Operator: "EQUALS",
-			Values:   []string{"YOUR IMAGE ID"},
+			Values:   &[]string{"YOUR IMAGE ID"},
 		}}),
 
 		Fields: optional.NewInterface([]string{"image_id", "width", "height", "file_size", "type", "signature", "source_signature", "preview_url", "source_type", "created_time", "last_modified_time"}),
 	}
 }
 
-func (e *ImagesGetExample) RunExample() (model.ImagesGetResponseData, *http.Response, error) {
+func (e *ImagesGetExample) RunExample() (model.ImagesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *ImagesGetExample) RunExample() (model.ImagesGetResponseData, *http.Resp
 func main() {
 	e := &ImagesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

@@ -10,5 +10,5 @@
 package model
 
 type BidSimulationGetResponseData struct {
-	DiagBidSimulate []BidSimulateResultItem `json:"diag_bid_simulate,omitempty"`
+	DiagBidSimulate *[]BidSimulateResultItem `json:"diag_bid_simulate,omitempty"`
 }

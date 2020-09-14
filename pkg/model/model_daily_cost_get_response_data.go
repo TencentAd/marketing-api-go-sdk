@@ -10,6 +10,6 @@
 package model
 
 type DailyCostGetResponseData struct {
-	List     []DailyCostGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                    `json:"page_info,omitempty"`
+	List     *[]DailyCostGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                     `json:"page_info,omitempty"`
 }

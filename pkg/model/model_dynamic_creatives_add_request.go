@@ -17,7 +17,7 @@ type DynamicCreativesAddRequest struct {
 	PromotedObjectType        PromotedObjectType       `json:"promoted_object_type,omitempty"`
 	PageType                  DestinationType          `json:"page_type,omitempty"`
 	AutomaticSiteEnabled      bool                     `json:"automatic_site_enabled,omitempty"`
-	SiteSet                   []string                 `json:"site_set,omitempty"`
+	SiteSet                   *[]string                `json:"site_set,omitempty"`
 	PromotedObjectId          string                   `json:"promoted_object_id,omitempty"`
 	PageSpec                  *DynamicPageSpec         `json:"page_spec,omitempty"`
 	DeepLinkUrl               string                   `json:"deep_link_url,omitempty"`

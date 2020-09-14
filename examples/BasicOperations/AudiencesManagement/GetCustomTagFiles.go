@@ -42,7 +42,7 @@ func (e *CustomTagFilesGetExample) Init() {
 	}
 }
 
-func (e *CustomTagFilesGetExample) RunExample() (model.CustomTagFilesGetResponseData, *http.Response, error) {
+func (e *CustomTagFilesGetExample) RunExample() (model.CustomTagFilesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -52,7 +52,7 @@ func (e *CustomTagFilesGetExample) RunExample() (model.CustomTagFilesGetResponse
 func main() {
 	e := &CustomTagFilesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -62,5 +62,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

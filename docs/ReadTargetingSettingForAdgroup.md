@@ -43,6 +43,7 @@ Name | Type | Description | Notes
 **DeprecatedExcludedCustomAudience** | **[]int64** |  | [optional] [default to null]
 **DeprecatedRegion** | **[]int64** |  | [optional] [default to null]
 **MiniGameQqStatus** | **[]string** |  | [optional] [default to null]
+**ExcludedConvertedAudience** | [***ExcludedConvertedAudience**](excluded_converted_audience.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

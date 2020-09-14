@@ -10,6 +10,6 @@
 package model
 
 type TargetingTagReportsGetResponseData struct {
-	List     []TargetingTagReportsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                              `json:"page_info,omitempty"`
+	List     *[]TargetingTagReportsGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                               `json:"page_info,omitempty"`
 }

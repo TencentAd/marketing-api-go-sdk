@@ -35,9 +35,9 @@ func (e *DynamicCreativesAddExample) Init() {
 	e.Data = model.DynamicCreativesAddRequest{
 		AccountId: int64(0),
 		DynamicCreativeElements: &model.DynamicCreativeElements{
-			ImageOptions:       []string{"YOUR AD IMAGE"},
-			TitleOptions:       []string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
-			DescriptionOptions: []string{"YOUR AD DESCRIPTION"},
+			ImageOptions:       &[]string{"YOUR AD IMAGE"},
+			TitleOptions:       &[]string{"YOUR AD TEXT 1", "YOUR AD TEXT 2"},
+			DescriptionOptions: &[]string{"YOUR AD DESCRIPTION"},
 		},
 		PageType: model.DestinationType_DEFAULT,
 		PageSpec: &model.DynamicPageSpec{
@@ -45,13 +45,13 @@ func (e *DynamicCreativesAddExample) Init() {
 		},
 		CampaignType:              model.CampaignType_NORMAL,
 		PromotedObjectType:        model.PromotedObjectType_LINK,
-		SiteSet:                   []string{"SITE_SET_MOBILE_INNER"},
+		SiteSet:                   &[]string{"SITE_SET_MOBILE_INNER"},
 		DynamicCreativeTemplateId: int64(0),
 		DynamicCreativeName:       "SDK动态创意5ede25293ba60",
 	}
 }
 
-func (e *DynamicCreativesAddExample) RunExample() (model.DynamicCreativesAddResponseData, *http.Response, error) {
+func (e *DynamicCreativesAddExample) RunExample() (model.DynamicCreativesAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -61,7 +61,7 @@ func (e *DynamicCreativesAddExample) RunExample() (model.DynamicCreativesAddResp
 func main() {
 	e := &DynamicCreativesAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -71,5 +71,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

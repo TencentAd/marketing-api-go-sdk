@@ -44,7 +44,7 @@ func (e *CapabilitiesGetExample) Init() {
 	}
 }
 
-func (e *CapabilitiesGetExample) RunExample() (model.CapabilitiesGetResponseData, *http.Response, error) {
+func (e *CapabilitiesGetExample) RunExample() (model.CapabilitiesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -54,7 +54,7 @@ func (e *CapabilitiesGetExample) RunExample() (model.CapabilitiesGetResponseData
 func main() {
 	e := &CapabilitiesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -64,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

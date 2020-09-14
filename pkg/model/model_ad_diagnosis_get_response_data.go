@@ -10,5 +10,5 @@
 package model
 
 type AdDiagnosisGetResponseData struct {
-	List []BatchAdDiagnosisListItem `json:"list,omitempty"`
+	List *[]BatchAdDiagnosisListItem `json:"list,omitempty"`
 }

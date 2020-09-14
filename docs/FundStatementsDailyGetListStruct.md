@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TradeType** | [***TradeType**](TradeType.md) |  | [optional] [default to null]
+**TransTime** | **int64** |  | [optional] [default to null]
 **Amount** | **int64** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **FundType** | [***AccountTypeMap**](AccountTypeMap.md) |  | [optional] [default to null]

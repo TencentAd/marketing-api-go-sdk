@@ -35,7 +35,7 @@ func (e *BatchOperationAddExample) Init() {
 	e.Data = model.BatchOperationAddRequest{
 		AccountId:      int64(0),
 		OperationType:  model.BatchOperationType_DATE,
-		ResourceIdList: []int64{int64(0)},
+		ResourceIdList: &[]int64{int64(0)},
 		OperationSpec: &model.OperationSpec{
 			DateSpec: &model.DateSpec{
 				BeginDate: "YOUR ADGROUP BEGIN DATE",
@@ -46,7 +46,7 @@ func (e *BatchOperationAddExample) Init() {
 	}
 }
 
-func (e *BatchOperationAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *BatchOperationAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -56,7 +56,7 @@ func (e *BatchOperationAddExample) RunExample() (interface{}, *http.Response, er
 func main() {
 	e := &BatchOperationAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -66,5 +66,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

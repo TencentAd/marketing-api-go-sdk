@@ -10,5 +10,5 @@
 package model
 
 type XijingPageDeleteResponseData struct {
-	List []PageOperateResponses `json:"list,omitempty"`
+	List *[]PageOperateResponses `json:"list,omitempty"`
 }

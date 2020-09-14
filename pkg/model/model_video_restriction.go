@@ -11,14 +11,14 @@ package model
 
 // 视频需满足的限制条件，仅当element_type是ELEMENT_TYPE_VIDEO时返回
 type VideoRestriction struct {
-	Width       int64    `json:"width,omitempty"`
-	Height      int64    `json:"height,omitempty"`
-	MinWidth    int64    `json:"min_width,omitempty"`
-	MinHeight   int64    `json:"min_height,omitempty"`
-	RatioWidth  int64    `json:"ratio_width,omitempty"`
-	RatioHeight int64    `json:"ratio_height,omitempty"`
-	FileSize    int64    `json:"file_size,omitempty"`
-	FileFormat  []string `json:"file_format,omitempty"`
-	MinDuration int64    `json:"min_duration,omitempty"`
-	MaxDuration int64    `json:"max_duration,omitempty"`
+	Width       int64     `json:"width,omitempty"`
+	Height      int64     `json:"height,omitempty"`
+	MinWidth    int64     `json:"min_width,omitempty"`
+	MinHeight   int64     `json:"min_height,omitempty"`
+	RatioWidth  int64     `json:"ratio_width,omitempty"`
+	RatioHeight int64     `json:"ratio_height,omitempty"`
+	FileSize    int64     `json:"file_size,omitempty"`
+	FileFormat  *[]string `json:"file_format,omitempty"`
+	MinDuration int64     `json:"min_duration,omitempty"`
+	MaxDuration int64     `json:"max_duration,omitempty"`
 }

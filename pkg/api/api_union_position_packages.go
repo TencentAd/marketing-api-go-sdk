@@ -34,7 +34,7 @@ UnionPositionPackagesApiService 联盟流量包模块
 
 @return UnionPositionPackagesAddResponse
 */
-func (a *UnionPositionPackagesApiService) Add(ctx context.Context, data UnionPositionPackagesAddRequest) (UnionPositionPackagesAddResponseData, *http.Response, error) {
+func (a *UnionPositionPackagesApiService) Add(ctx context.Context, data UnionPositionPackagesAddRequest) (UnionPositionPackagesAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -78,13 +78,13 @@ func (a *UnionPositionPackagesApiService) Add(ctx context.Context, data UnionPos
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -92,12 +92,16 @@ func (a *UnionPositionPackagesApiService) Add(ctx context.Context, data UnionPos
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -112,16 +116,16 @@ func (a *UnionPositionPackagesApiService) Add(ctx context.Context, data UnionPos
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -131,7 +135,7 @@ UnionPositionPackagesApiService 联盟流量包删除接口
 
 @return UnionPositionPackagesDeleteResponse
 */
-func (a *UnionPositionPackagesApiService) Delete(ctx context.Context, data UnionPositionPackagesDeleteRequest) (interface{}, *http.Response, error) {
+func (a *UnionPositionPackagesApiService) Delete(ctx context.Context, data UnionPositionPackagesDeleteRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -175,13 +179,13 @@ func (a *UnionPositionPackagesApiService) Delete(ctx context.Context, data Union
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -189,12 +193,16 @@ func (a *UnionPositionPackagesApiService) Delete(ctx context.Context, data Union
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -209,16 +217,16 @@ func (a *UnionPositionPackagesApiService) Delete(ctx context.Context, data Union
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -241,7 +249,7 @@ type UnionPositionPackagesGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *UnionPositionPackagesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *UnionPositionPackagesGetOpts) (UnionPositionPackagesGetResponseData, *http.Response, error) {
+func (a *UnionPositionPackagesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *UnionPositionPackagesGetOpts) (UnionPositionPackagesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -296,13 +304,13 @@ func (a *UnionPositionPackagesApiService) Get(ctx context.Context, accountId int
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -310,12 +318,16 @@ func (a *UnionPositionPackagesApiService) Get(ctx context.Context, accountId int
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -330,14 +342,14 @@ func (a *UnionPositionPackagesApiService) Get(ctx context.Context, accountId int
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

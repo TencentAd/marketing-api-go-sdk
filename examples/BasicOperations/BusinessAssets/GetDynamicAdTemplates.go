@@ -51,7 +51,7 @@ func (e *DynamicAdTemplatesGetExample) Init() {
 	}
 }
 
-func (e *DynamicAdTemplatesGetExample) RunExample() (model.DynamicAdTemplatesGetResponseData, *http.Response, error) {
+func (e *DynamicAdTemplatesGetExample) RunExample() (model.DynamicAdTemplatesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -61,7 +61,7 @@ func (e *DynamicAdTemplatesGetExample) RunExample() (model.DynamicAdTemplatesGet
 func main() {
 	e := &DynamicAdTemplatesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -71,5 +71,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

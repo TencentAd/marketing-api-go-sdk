@@ -34,7 +34,7 @@ func (e *UserActionsAddExample) Init() {
 	})
 	e.Data = model.UserActionsAddRequest{
 		AccountId: int64(0),
-		Actions: []model.UserAction{&model.UserAction{
+		Actions: &[]model.UserAction{&model.UserAction{
 			ActionTime: int64(1591616815),
 			UserId: &model.ActionsUserId{
 				HashImei: "YOUR USER IMEI",
@@ -46,7 +46,7 @@ func (e *UserActionsAddExample) Init() {
 	}
 }
 
-func (e *UserActionsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *UserActionsAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -56,7 +56,7 @@ func (e *UserActionsAddExample) RunExample() (interface{}, *http.Response, error
 func main() {
 	e := &UserActionsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -66,5 +66,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

@@ -11,6 +11,6 @@ package model
 
 // 广告创意元素枚举值特性
 type AdcreativeElementEnumProperty struct {
-	Default_    string                        `json:"default,omitempty"`
-	Enumeration []AdcreativeElementEnumOption `json:"enumeration,omitempty"`
+	Default_    string                         `json:"default,omitempty"`
+	Enumeration *[]AdcreativeElementEnumOption `json:"enumeration,omitempty"`
 }

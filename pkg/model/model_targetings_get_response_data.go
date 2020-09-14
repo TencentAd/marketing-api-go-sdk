@@ -10,6 +10,6 @@
 package model
 
 type TargetingsGetResponseData struct {
-	List     []TargetingsGetListStruct `json:"list,omitempty"`
-	PageInfo *ConfPageSize500          `json:"page_info,omitempty"`
+	List     *[]TargetingsGetListStruct `json:"list,omitempty"`
+	PageInfo *ConfPageSize500           `json:"page_info,omitempty"`
 }

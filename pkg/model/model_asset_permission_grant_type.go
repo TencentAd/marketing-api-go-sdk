@@ -9,10 +9,11 @@
 
 package model
 
-// AssetPermissionGrantType : 资产权限授予类型
+// AssetPermissionGrantType : 资产权限授予类型，素材授权功能目前白名单灰度中，若要使用可联系运营开通
 type AssetPermissionGrantType string
 
 // List of AssetPermissionGrantType
 const (
-	AssetPermissionGrantType_ASSET_PERMISSION_GRANT_TYPE_ASSET AssetPermissionGrantType = "ASSET_PERMISSION_GRANT_TYPE_ASSET"
+	AssetPermissionGrantType_ASSET   AssetPermissionGrantType = "ASSET_PERMISSION_GRANT_TYPE_ASSET"
+	AssetPermissionGrantType_ACCOUNT AssetPermissionGrantType = "ASSET_PERMISSION_GRANT_TYPE_ACCOUNT"
 )

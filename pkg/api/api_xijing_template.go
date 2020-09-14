@@ -42,7 +42,7 @@ type XijingTemplateGetOpts struct {
 	Fields optional.Interface
 }
 
-func (a *XijingTemplateApiService) Get(ctx context.Context, accountId int64, templateId string, localVarOptionals *XijingTemplateGetOpts) (XijingTemplateGetResponseData, *http.Response, error) {
+func (a *XijingTemplateApiService) Get(ctx context.Context, accountId int64, templateId string, localVarOptionals *XijingTemplateGetOpts) (XijingTemplateGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -89,13 +89,13 @@ func (a *XijingTemplateApiService) Get(ctx context.Context, accountId int64, tem
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -103,12 +103,16 @@ func (a *XijingTemplateApiService) Get(ctx context.Context, accountId int64, tem
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -123,14 +127,14 @@ func (a *XijingTemplateApiService) Get(ctx context.Context, accountId int64, tem
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

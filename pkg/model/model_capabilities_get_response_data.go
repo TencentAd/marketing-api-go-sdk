@@ -12,5 +12,5 @@ package model
 type CapabilitiesGetResponseData struct {
 	WechatEcommerceProductSpec *WechatEcommerceProductSpec `json:"wechat_ecommerce_product_spec,omitempty"`
 	WechatLinkAdSpec           *WechatLinkAdSpec           `json:"wechat_link_ad_spec,omitempty"`
-	WechatOcpaSpec             []WechatOcpaSpecStruct      `json:"wechat_ocpa_spec,omitempty"`
+	WechatOcpaSpec             *[]WechatOcpaSpecStruct     `json:"wechat_ocpa_spec,omitempty"`
 }

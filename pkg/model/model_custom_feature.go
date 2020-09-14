@@ -18,6 +18,6 @@ type CustomFeature struct {
 	FeatureClassId        int64        `json:"feature_class_id,omitempty"`
 	FeatureSpec           *FeatureSpec `json:"feature_spec,omitempty"`
 	IsSupportedTimeWindow bool         `json:"is_supported_time_window,omitempty"`
-	TimeWindow            []int64      `json:"time_window,omitempty"`
+	TimeWindow            *[]int64     `json:"time_window,omitempty"`
 	CreatedTime           string       `json:"created_time,omitempty"`
 }

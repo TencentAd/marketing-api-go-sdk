@@ -10,5 +10,5 @@
 package model
 
 type WechatAdLabelsGetResponseData struct {
-	List []WechatAdLabelsGetListStruct `json:"list,omitempty"`
+	List *[]WechatAdLabelsGetListStruct `json:"list,omitempty"`
 }

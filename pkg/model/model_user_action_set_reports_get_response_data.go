@@ -10,5 +10,5 @@
 package model
 
 type UserActionSetReportsGetResponseData struct {
-	List []TimeData `json:"list,omitempty"`
+	List *[]TimeData `json:"list,omitempty"`
 }

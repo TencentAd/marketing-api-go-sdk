@@ -10,7 +10,7 @@
 package model
 
 type OptimizationGoalPermissionsGetResponseData struct {
-	OptimizationGoalPermissionList             []string                                       `json:"optimization_goal_permission_list,omitempty"`
-	DeepBehaviorOptimizationGoalPermissionList []DeepBehaviorOptimizationGoalPermissionStruct `json:"deep_behavior_optimization_goal_permission_list,omitempty"`
-	DeepWorthOptimizationGoalPermissionList    []DeepWorthOptimizationGoalPermissionStruct    `json:"deep_worth_optimization_goal_permission_list,omitempty"`
+	OptimizationGoalPermissionList             *[]string                                       `json:"optimization_goal_permission_list,omitempty"`
+	DeepBehaviorOptimizationGoalPermissionList *[]DeepBehaviorOptimizationGoalPermissionStruct `json:"deep_behavior_optimization_goal_permission_list,omitempty"`
+	DeepWorthOptimizationGoalPermissionList    *[]DeepWorthOptimizationGoalPermissionStruct    `json:"deep_worth_optimization_goal_permission_list,omitempty"`
 }

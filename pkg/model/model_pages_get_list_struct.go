@@ -17,5 +17,6 @@ type PagesGetListStruct struct {
 	CreatedTime      int64               `json:"created_time,omitempty"`
 	LastModifiedTime int64               `json:"last_modified_time,omitempty"`
 	PromotedObjectId string              `json:"promoted_object_id,omitempty"`
+	ProductCatalogId int64               `json:"product_catalog_id,omitempty"`
 	PageType         DestinationTypeRead `json:"page_type,omitempty"`
 }

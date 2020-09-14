@@ -10,6 +10,6 @@
 package model
 
 type UnionPositionPackagesGetResponseData struct {
-	List     []UnionPositionPackagesGetListStruct `json:"list,omitempty"`
-	PageInfo *PageInfo                            `json:"page_info,omitempty"`
+	List     *[]UnionPositionPackagesGetListStruct `json:"list,omitempty"`
+	PageInfo *PageInfo                             `json:"page_info,omitempty"`
 }

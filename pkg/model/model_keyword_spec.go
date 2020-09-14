@@ -11,6 +11,6 @@ package model
 
 // Keyword人群信息
 type KeywordSpec struct {
-	IncludeKeyword []string `json:"include_keyword,omitempty"`
-	ExcludeKeyword []string `json:"exclude_keyword,omitempty"`
+	IncludeKeyword *[]string `json:"include_keyword,omitempty"`
+	ExcludeKeyword *[]string `json:"exclude_keyword,omitempty"`
 }

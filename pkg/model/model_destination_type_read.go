@@ -14,9 +14,11 @@ type DestinationTypeRead string
 
 // List of DestinationTypeRead
 const (
-	DestinationTypeRead_TSA_APP                DestinationTypeRead = "PAGE_TYPE_TSA_APP"
-	DestinationTypeRead_TSA_WEB_NONE_ECOMMERCE DestinationTypeRead = "PAGE_TYPE_TSA_WEB_NONE_ECOMMERCE"
-	DestinationTypeRead_CANVAS_WECHAT          DestinationTypeRead = "PAGE_TYPE_CANVAS_WECHAT"
-	DestinationTypeRead_UNSUPPORTED            DestinationTypeRead = "PAGE_TYPE_UNSUPPORTED"
-	DestinationTypeRead_FENGYE_ECOMMERCE       DestinationTypeRead = "PAGE_TYPE_FENGYE_ECOMMERCE"
+	DestinationTypeRead_TSA_APP                         DestinationTypeRead = "PAGE_TYPE_TSA_APP"
+	DestinationTypeRead_TSA_WEB_NONE_ECOMMERCE          DestinationTypeRead = "PAGE_TYPE_TSA_WEB_NONE_ECOMMERCE"
+	DestinationTypeRead_CANVAS_WECHAT                   DestinationTypeRead = "PAGE_TYPE_CANVAS_WECHAT"
+	DestinationTypeRead_UNSUPPORTED                     DestinationTypeRead = "PAGE_TYPE_UNSUPPORTED"
+	DestinationTypeRead_FENGYE_ECOMMERCE                DestinationTypeRead = "PAGE_TYPE_FENGYE_ECOMMERCE"
+	DestinationTypeRead_YUEBAO_QUICKAPP                 DestinationTypeRead = "PAGE_TYPE_YUEBAO_QUICKAPP"
+	DestinationTypeRead_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationTypeRead = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
 )

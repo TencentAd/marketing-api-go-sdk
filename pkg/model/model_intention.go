@@ -11,5 +11,5 @@ package model
 
 // 行为兴趣意向定向的意向部分
 type Intention struct {
-	TargetingTags []int64 `json:"targeting_tags,omitempty"`
+	TargetingTags *[]int64 `json:"targeting_tags,omitempty"`
 }

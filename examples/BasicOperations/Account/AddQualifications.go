@@ -39,13 +39,13 @@ func (e *QualificationsAddExample) Init() {
 			AdditionalIndustrySpec: &model.AdditionalIndustryQualificationsSpec{
 				SystemIndustryId:  int64(0),
 				QualificationCode: "YOUR QUALIFICATION CODE",
-				ImageIdList:       []string{"YOUR QUALIFICATION IMAGE ID"},
+				ImageIdList:       &[]string{"YOUR QUALIFICATION IMAGE ID"},
 			},
 		},
 	}
 }
 
-func (e *QualificationsAddExample) RunExample() (model.QualificationsAddResponseData, *http.Response, error) {
+func (e *QualificationsAddExample) RunExample() (model.QualificationsAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -55,7 +55,7 @@ func (e *QualificationsAddExample) RunExample() (model.QualificationsAddResponse
 func main() {
 	e := &QualificationsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -65,5 +65,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

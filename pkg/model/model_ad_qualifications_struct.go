@@ -13,7 +13,7 @@ package model
 type AdQualificationsStruct struct {
 	QualificationId     int64               `json:"qualification_id,omitempty"`
 	QualificationCode   string              `json:"qualification_code,omitempty"`
-	ImageIdList         []string            `json:"image_id_list,omitempty"`
+	ImageIdList         *[]string           `json:"image_id_list,omitempty"`
 	QualificationStatus QualificationStatus `json:"qualification_status,omitempty"`
 	RejectMessage       string              `json:"reject_message,omitempty"`
 	CreatedTime         int64               `json:"created_time,omitempty"`

@@ -14,7 +14,7 @@ type AdgroupsGetListStruct struct {
 	CampaignId                        int64                           `json:"campaign_id,omitempty"`
 	AdgroupId                         int64                           `json:"adgroup_id,omitempty"`
 	AdgroupName                       string                          `json:"adgroup_name,omitempty"`
-	SiteSet                           []string                        `json:"site_set,omitempty"`
+	SiteSet                           *[]string                       `json:"site_set,omitempty"`
 	AutomaticSiteEnabled              bool                            `json:"automatic_site_enabled,omitempty"`
 	OptimizationGoal                  OptimizationGoal                `json:"optimization_goal,omitempty"`
 	BillingEvent                      BillingEvent                    `json:"billing_event,omitempty"`
@@ -36,18 +36,18 @@ type AdgroupsGetListStruct struct {
 	CreatedTime                       int64                           `json:"created_time,omitempty"`
 	LastModifiedTime                  int64                           `json:"last_modified_time,omitempty"`
 	DynamicAdSpec                     *DynamicAdSpec                  `json:"dynamic_ad_spec,omitempty"`
-	UserActionSets                    []UserActionSetStruct           `json:"user_action_sets,omitempty"`
-	AdditionalUserActionSets          []UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
+	UserActionSets                    *[]UserActionSetStruct          `json:"user_action_sets,omitempty"`
+	AdditionalUserActionSets          *[]UserActionSetStruct          `json:"additional_user_action_sets,omitempty"`
 	IsDeleted                         bool                            `json:"is_deleted,omitempty"`
 	DynamicCreativeId                 int64                           `json:"dynamic_creative_id,omitempty"`
 	IsRewardedVideoAd                 bool                            `json:"is_rewarded_video_ad,omitempty"`
 	CostGuaranteeMessage              string                          `json:"cost_guarantee_message,omitempty"`
 	CostGuaranteeStatus               CostGuaranteeStatus             `json:"cost_guarantee_status,omitempty"`
 	BidStrategy                       BidStrategy                     `json:"bid_strategy,omitempty"`
-	ColdStartAudience                 []int64                         `json:"cold_start_audience,omitempty"`
+	ColdStartAudience                 *[]int64                        `json:"cold_start_audience,omitempty"`
 	AutoAudience                      bool                            `json:"auto_audience,omitempty"`
 	ExpandEnabled                     bool                            `json:"expand_enabled,omitempty"`
-	ExpandTargeting                   []string                        `json:"expand_targeting,omitempty"`
+	ExpandTargeting                   *[]string                       `json:"expand_targeting,omitempty"`
 	DeepConversionSpec                *DeepConversionSpec             `json:"deep_conversion_spec,omitempty"`
 	DeepOptimizationActionType        DeepOptimizationActionType      `json:"deep_optimization_action_type,omitempty"`
 	ConversionId                      int64                           `json:"conversion_id,omitempty"`
@@ -55,5 +55,7 @@ type AdgroupsGetListStruct struct {
 	DeepConversionWorthRate           float64                         `json:"deep_conversion_worth_rate,omitempty"`
 	AndroidChannelPackageAuditMessage string                          `json:"android_channel_package_audit_message,omitempty"`
 	SystemStatus                      AdgroupSysStatus                `json:"system_status,omitempty"`
+	BidMode                           BidMode                         `json:"bid_mode,omitempty"`
 	Status                            CalcStatus                      `json:"status,omitempty"`
+	BidAdjustment                     *BidAdjustment                  `json:"bid_adjustment,omitempty"`
 }

@@ -48,7 +48,7 @@ func (e *AdcreativeTemplateDetailGetExample) Init() {
 	}
 }
 
-func (e *AdcreativeTemplateDetailGetExample) RunExample() (model.AdcreativeTemplateDetailGetResponseData, *http.Response, error) {
+func (e *AdcreativeTemplateDetailGetExample) RunExample() (model.AdcreativeTemplateDetailGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *AdcreativeTemplateDetailGetExample) RunExample() (model.AdcreativeTempl
 func main() {
 	e := &AdcreativeTemplateDetailGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

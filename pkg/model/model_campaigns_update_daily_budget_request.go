@@ -10,6 +10,6 @@
 package model
 
 type CampaignsUpdateDailyBudgetRequest struct {
-	AccountId             int64                                               `json:"account_id,omitempty"`
-	UpdateDailyBudgetSpec []CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct `json:"update_daily_budget_spec,omitempty"`
+	AccountId             int64                                                `json:"account_id,omitempty"`
+	UpdateDailyBudgetSpec *[]CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct `json:"update_daily_budget_spec,omitempty"`
 }

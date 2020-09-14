@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **PromotedObjectName** | **string** |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
 **PromotedObjectType** | [***ProductPromotedObjectTypeSelect**](ProductPromotedObjectTypeSelect.md) |  | [optional] [default to null]
-**PromotedObjectSpec** | [***PromotedObjectSpec**](promoted_object_spec.md) |  | [optional] [default to null]
+**PromotedObjectSpec** | [***PromotedObjectGetSpec**](promoted_object_get_spec.md) |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 

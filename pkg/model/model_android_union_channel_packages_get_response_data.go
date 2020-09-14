@@ -10,6 +10,6 @@
 package model
 
 type AndroidUnionChannelPackagesGetResponseData struct {
-	List     []UnionChannelPackageData `json:"list,omitempty"`
-	PageInfo *Conf                     `json:"page_info,omitempty"`
+	List     *[]UnionChannelPackageData `json:"list,omitempty"`
+	PageInfo *Conf                      `json:"page_info,omitempty"`
 }

@@ -34,11 +34,11 @@ func (e *EstimationGetExample) Init() {
 	})
 	e.Data = model.EstimationGetRequest{
 		Targeting: &model.EstimationReadTargetingSetting{
-			Age: []model.AgeStruct{&model.AgeStruct{
+			Age: &[]model.AgeStruct{&model.AgeStruct{
 				Max: int64(0),
 				Min: int64(0),
 			}},
-			Gender: []string{"YOUR TARGETING GENDER"},
+			Gender: &[]string{"YOUR TARGETING GENDER"},
 		},
 		AccountId: int64(0),
 		CampaignSpec: &model.CampaignTargeting{
@@ -47,7 +47,7 @@ func (e *EstimationGetExample) Init() {
 	}
 }
 
-func (e *EstimationGetExample) RunExample() (model.EstimationGetResponseData, *http.Response, error) {
+func (e *EstimationGetExample) RunExample() (model.EstimationGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -57,7 +57,7 @@ func (e *EstimationGetExample) RunExample() (model.EstimationGetResponseData, *h
 func main() {
 	e := &EstimationGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -67,5 +67,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

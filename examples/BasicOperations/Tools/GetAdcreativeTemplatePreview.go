@@ -36,7 +36,7 @@ func (e *AdcreativeTemplatePreviewGetExample) Init() {
 		AccountId: int64(0),
 		PreviewSpec: &model.AdcreativePreviewSpec{
 			AdcreativeTemplateId: int64(133),
-			SiteSet:              []string{"SITE_SET_WECHAT"},
+			SiteSet:              &[]string{"SITE_SET_WECHAT"},
 			PromotedObjectType:   model.WechatPromotedObjectType_LINK_WECHAT,
 			AdcreativeElements: &model.AdcreativeCreativeElements{
 				Image: "YOUR AD IMAGE ID",
@@ -49,7 +49,7 @@ func (e *AdcreativeTemplatePreviewGetExample) Init() {
 	}
 }
 
-func (e *AdcreativeTemplatePreviewGetExample) RunExample() (model.AdcreativeTemplatePreviewGetResponseData, *http.Response, error) {
+func (e *AdcreativeTemplatePreviewGetExample) RunExample() (model.AdcreativeTemplatePreviewGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -59,7 +59,7 @@ func (e *AdcreativeTemplatePreviewGetExample) RunExample() (model.AdcreativeTemp
 func main() {
 	e := &AdcreativeTemplatePreviewGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -69,5 +69,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

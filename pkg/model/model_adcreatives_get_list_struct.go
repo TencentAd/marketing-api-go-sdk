@@ -20,12 +20,14 @@ type AdcreativesGetListStruct struct {
 	LinkPageType                  LinkPageType                      `json:"link_page_type,omitempty"`
 	LinkNameType                  LinkNameTypeMp                    `json:"link_name_type,omitempty"`
 	LinkPageSpec                  *LinkPageSpec                     `json:"link_page_spec,omitempty"`
+	ConversionDataType            ConversionDataType                `json:"conversion_data_type,omitempty"`
+	ConversionTargetType          ConversionTargetType              `json:"conversion_target_type,omitempty"`
 	QqMiniGameTrackingQueryString string                            `json:"qq_mini_game_tracking_query_string,omitempty"`
 	DeepLinkUrl                   string                            `json:"deep_link_url,omitempty"`
 	AndroidDeepLinkAppId          string                            `json:"android_deep_link_app_id,omitempty"`
 	IosDeepLinkAppId              string                            `json:"ios_deep_link_app_id,omitempty"`
 	UniversalLinkUrl              string                            `json:"universal_link_url,omitempty"`
-	SiteSet                       []string                          `json:"site_set,omitempty"`
+	SiteSet                       *[]string                         `json:"site_set,omitempty"`
 	AutomaticSiteEnabled          bool                              `json:"automatic_site_enabled,omitempty"`
 	PromotedObjectType            PromotedObjectType                `json:"promoted_object_type,omitempty"`
 	PromotedObjectId              string                            `json:"promoted_object_id,omitempty"`
@@ -40,12 +42,14 @@ type AdcreativesGetListStruct struct {
 	ComponentId                   int64                             `json:"component_id,omitempty"`
 	OnlineEnabled                 bool                              `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec            `json:"revised_adcreative_spec,omitempty"`
-	Category                      []int64                           `json:"category,omitempty"`
-	Label                         []string                          `json:"label,omitempty"`
+	Category                      *[]int64                          `json:"category,omitempty"`
+	Label                         *[]string                         `json:"label,omitempty"`
 	UnionMarketSwitch             bool                              `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                            `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec                 `json:"video_end_page,omitempty"`
 	FeedsVideoCommentSwitch       bool                              `json:"feeds_video_comment_switch,omitempty"`
+	FloatingZone                  *FloatingZone                     `json:"floating_zone,omitempty"`
+	MarketingPendantImageId       string                            `json:"marketing_pendant_image_id,omitempty"`
 	AdcreativeTemplateId          int64                             `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

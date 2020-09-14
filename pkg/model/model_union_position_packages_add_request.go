@@ -15,5 +15,5 @@ type UnionPositionPackagesAddRequest struct {
 	PromotedObjectType  PromotedObjectType `json:"promoted_object_type,omitempty"`
 	PromotedObjectId    string             `json:"promoted_object_id,omitempty"`
 	UnionPackageType    UnionPackageType   `json:"union_package_type,omitempty"`
-	UnionPositionIdList []int64            `json:"union_position_id_list,omitempty"`
+	UnionPositionIdList *[]int64           `json:"union_position_id_list,omitempty"`
 }

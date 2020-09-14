@@ -39,7 +39,7 @@ func (e *ComplianceValidationGetExample) Init() {
 	}
 }
 
-func (e *ComplianceValidationGetExample) RunExample() (model.ComplianceValidationGetResponseData, *http.Response, error) {
+func (e *ComplianceValidationGetExample) RunExample() (model.ComplianceValidationGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -49,7 +49,7 @@ func (e *ComplianceValidationGetExample) RunExample() (model.ComplianceValidatio
 func main() {
 	e := &ComplianceValidationGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -59,5 +59,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

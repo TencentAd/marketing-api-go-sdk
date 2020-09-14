@@ -35,7 +35,7 @@ func (e *LeadCluesGetExample) Init() {
 	e.Data = model.LeadCluesGetRequest{}
 }
 
-func (e *LeadCluesGetExample) RunExample() (model.LeadCluesGetResponseData, *http.Response, error) {
+func (e *LeadCluesGetExample) RunExample() (model.LeadCluesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -45,7 +45,7 @@ func (e *LeadCluesGetExample) RunExample() (model.LeadCluesGetResponseData, *htt
 func main() {
 	e := &LeadCluesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -55,5 +55,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

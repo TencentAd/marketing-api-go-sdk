@@ -28,7 +28,7 @@ var (
 type ProductCatalogsReportsApiService service
 
 /*
-ProductCatalogsReportsApiService 获取商品库报表
+ProductCatalogsReportsApiService 获取商品库报表(待废弃)
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param productCatalogId
@@ -49,7 +49,7 @@ type ProductCatalogsReportsGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *ProductCatalogsReportsApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, dateRange ReportDateRange, localVarOptionals *ProductCatalogsReportsGetOpts) (ProductCatalogsReportsGetResponseData, *http.Response, error) {
+func (a *ProductCatalogsReportsApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, dateRange ReportDateRange, localVarOptionals *ProductCatalogsReportsGetOpts) (ProductCatalogsReportsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -106,13 +106,13 @@ func (a *ProductCatalogsReportsApiService) Get(ctx context.Context, accountId in
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -120,12 +120,16 @@ func (a *ProductCatalogsReportsApiService) Get(ctx context.Context, accountId in
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -140,14 +144,14 @@ func (a *ProductCatalogsReportsApiService) Get(ctx context.Context, accountId in
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

@@ -11,9 +11,9 @@ package model
 
 // POI规则
 type PoiRule struct {
-	RegionId      []int64    `json:"region_id,omitempty"`
-	PoiCategoryId []int64    `json:"poi_category_id,omitempty"`
+	RegionId      *[]int64   `json:"region_id,omitempty"`
+	PoiCategoryId *[]int64   `json:"poi_category_id,omitempty"`
 	DateRange     *DateRange `json:"date_range,omitempty"`
-	DayOfWeek     []string   `json:"day_of_week,omitempty"`
+	DayOfWeek     *[]string  `json:"day_of_week,omitempty"`
 	Frequency     int64      `json:"frequency,omitempty"`
 }

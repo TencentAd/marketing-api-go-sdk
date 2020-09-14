@@ -10,5 +10,5 @@
 package model
 
 type BatchRequestsAddResponseData struct {
-	List []BatchRequestsAddListStruct `json:"list,omitempty"`
+	List *[]BatchRequestsAddListStruct `json:"list,omitempty"`
 }

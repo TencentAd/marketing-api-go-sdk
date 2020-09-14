@@ -47,7 +47,7 @@ type CustomTagFilesAddOpts struct {
 	OpenAppId     optional.String
 }
 
-func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, userIdType string, tagId int64, file *os.File, localVarOptionals *CustomTagFilesAddOpts) (CustomTagFilesAddResponseData, *http.Response, error) {
+func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, userIdType string, tagId int64, file *os.File, localVarOptionals *CustomTagFilesAddOpts) (CustomTagFilesAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -88,10 +88,17 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 	localVarFile := file
 	localVarFileKey = "file"
 	if localVarFile != nil {
-		fbs, _ := ioutil.ReadAll(localVarFile)
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
-		localVarFile.Close()
 	}
 	if localVarOptionals != nil && localVarOptionals.OperationType.IsSet() {
 		localVarFormParams.Add("operation_type", parameterToString(localVarOptionals.OperationType.Value(), ""))
@@ -106,13 +113,13 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -120,12 +127,16 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -140,16 +151,16 @@ func (a *CustomTagFilesApiService) Add(ctx context.Context, accountId int64, use
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -172,7 +183,7 @@ type CustomTagFilesGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *CustomTagFilesGetOpts) (CustomTagFilesGetResponseData, *http.Response, error) {
+func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *CustomTagFilesGetOpts) (CustomTagFilesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -227,13 +238,13 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -241,12 +252,16 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -261,14 +276,14 @@ func (a *CustomTagFilesApiService) Get(ctx context.Context, accountId int64, loc
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

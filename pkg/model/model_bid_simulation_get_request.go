@@ -10,9 +10,9 @@
 package model
 
 type BidSimulationGetRequest struct {
-	AccountId             int64   `json:"account_id,omitempty"`
-	ReqType               int64   `json:"req_type,omitempty"`
-	OptimizationGoalLevel int64   `json:"optimization_goal_level,omitempty"`
-	AdgroupId             int64   `json:"adgroup_id,omitempty"`
-	BidList               []int64 `json:"bid_list,omitempty"`
+	AccountId             int64    `json:"account_id,omitempty"`
+	ReqType               int64    `json:"req_type,omitempty"`
+	OptimizationGoalLevel int64    `json:"optimization_goal_level,omitempty"`
+	AdgroupId             int64    `json:"adgroup_id,omitempty"`
+	BidList               *[]int64 `json:"bid_list,omitempty"`
 }

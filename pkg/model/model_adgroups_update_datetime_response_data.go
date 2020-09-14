@@ -10,5 +10,5 @@
 package model
 
 type AdgroupsUpdateDatetimeResponseData struct {
-	List []AdgroupsUpdateDatetimeListStruct `json:"list,omitempty"`
+	List *[]AdgroupsUpdateDatetimeListStruct `json:"list,omitempty"`
 }

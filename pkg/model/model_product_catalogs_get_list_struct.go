@@ -11,11 +11,11 @@ package model
 
 // 返回结构
 type ProductCatalogsGetListStruct struct {
-	ProductCatalogId        int64             `json:"product_catalog_id,omitempty"`
-	ProductCatalogName      string            `json:"product_catalog_name,omitempty"`
-	ProductCatalogType      CatalogType       `json:"product_catalog_type,omitempty"`
-	ProductCatalogVertical  CatalogVertical   `json:"product_catalog_vertical,omitempty"`
-	ProductCatalogStatus    CatalogStatus     `json:"product_catalog_status,omitempty"`
-	ProductRecommendMethods []RecommendMethod `json:"product_recommend_methods,omitempty"`
-	DeepLinkEnabled         *DeepLinkEnabled  `json:"deep_link_enabled,omitempty"`
+	ProductCatalogId        int64              `json:"product_catalog_id,omitempty"`
+	ProductCatalogName      string             `json:"product_catalog_name,omitempty"`
+	ProductCatalogType      CatalogType        `json:"product_catalog_type,omitempty"`
+	ProductCatalogVertical  CatalogVertical    `json:"product_catalog_vertical,omitempty"`
+	ProductCatalogStatus    CatalogStatus      `json:"product_catalog_status,omitempty"`
+	ProductRecommendMethods *[]RecommendMethod `json:"product_recommend_methods,omitempty"`
+	DeepLinkEnabled         *DeepLinkEnabled   `json:"deep_link_enabled,omitempty"`
 }

@@ -10,5 +10,5 @@
 package model
 
 type TargetingTagsGetResponseData struct {
-	List []TargetingTagsGetListStruct `json:"list,omitempty"`
+	List *[]TargetingTagsGetListStruct `json:"list,omitempty"`
 }

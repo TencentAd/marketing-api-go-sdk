@@ -10,6 +10,6 @@
 package model
 
 type AdvertiserGetResponseData struct {
-	List     []AdvertiserGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                     `json:"page_info,omitempty"`
+	List     *[]AdvertiserGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                      `json:"page_info,omitempty"`
 }

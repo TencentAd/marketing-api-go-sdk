@@ -11,7 +11,7 @@ package model
 
 // 任务结果
 type AsyncTasksGetData struct {
-	FileInfoList                []AsyncTasksGetFileInfo   `json:"file_info_list,omitempty"`
-	ChannelPackageInfoList      []ChannelPackageInfo      `json:"channel_package_info_list,omitempty"`
-	UnionChannelPackageInfoList []UnionChannelPackageInfo `json:"union_channel_package_info_list,omitempty"`
+	FileInfoList                *[]AsyncTasksGetFileInfo   `json:"file_info_list,omitempty"`
+	ChannelPackageInfoList      *[]ChannelPackageInfo      `json:"channel_package_info_list,omitempty"`
+	UnionChannelPackageInfoList *[]UnionChannelPackageInfo `json:"union_channel_package_info_list,omitempty"`
 }

@@ -11,5 +11,5 @@ package model
 
 // 图文复合组件
 type ElementShelf struct {
-	ShelfSpec []ShelfSpecStruct `json:"shelf_spec,omitempty"`
+	ShelfSpec *[]ShelfSpecStruct `json:"shelf_spec,omitempty"`
 }

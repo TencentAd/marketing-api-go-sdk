@@ -10,5 +10,5 @@
 package model
 
 type AdcreativeTemplateDetailGetResponseData struct {
-	List []AdcreativeTemplateListStruct `json:"list,omitempty"`
+	List *[]AdcreativeTemplateDetailGetAdcreativeTemplateListStruct `json:"list,omitempty"`
 }

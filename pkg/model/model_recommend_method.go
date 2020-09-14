@@ -11,9 +11,9 @@ package model
 
 // 推荐方式
 type RecommendMethod struct {
-	MethodId           int64       `json:"method_id,omitempty"`
-	MethodName         string      `json:"method_name,omitempty"`
-	MethodDescription  string      `json:"method_description,omitempty"`
-	SubMethodOperators []string    `json:"sub_method_operators,omitempty"`
-	SubMethods         []SubMethod `json:"sub_methods,omitempty"`
+	MethodId           int64        `json:"method_id,omitempty"`
+	MethodName         string       `json:"method_name,omitempty"`
+	MethodDescription  string       `json:"method_description,omitempty"`
+	SubMethodOperators *[]string    `json:"sub_method_operators,omitempty"`
+	SubMethods         *[]SubMethod `json:"sub_methods,omitempty"`
 }

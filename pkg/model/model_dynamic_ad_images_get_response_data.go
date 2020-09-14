@@ -10,6 +10,6 @@
 package model
 
 type DynamicAdImagesGetResponseData struct {
-	List     []DynamicAdImagesGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                          `json:"page_info,omitempty"`
+	List     *[]DynamicAdImagesGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                           `json:"page_info,omitempty"`
 }

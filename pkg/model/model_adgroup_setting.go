@@ -14,7 +14,7 @@ type AdgroupSetting struct {
 	AdgroupId            int64              `json:"adgroup_id,omitempty"`
 	AdgroupName          string             `json:"adgroup_name,omitempty"`
 	AutomaticSiteEnabled bool               `json:"automatic_site_enabled,omitempty"`
-	SiteSet              []string           `json:"site_set,omitempty"`
+	SiteSet              *[]string          `json:"site_set,omitempty"`
 	BidType              CostType           `json:"bid_type,omitempty"`
 	BidAmount            int64              `json:"bid_amount,omitempty"`
 	PromotedObjectType   PromotedObjectType `json:"promoted_object_type,omitempty"`

@@ -41,14 +41,14 @@ func (e *AdsGetExample) Init() {
 		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "configured_status",
 			Operator: "EQUALS",
-			Values:   []string{"AD_STATUS_NORMAL"},
+			Values:   &[]string{"AD_STATUS_NORMAL"},
 		}}),
 
 		Fields: optional.NewInterface([]string{"ad_id", "campaign_id", "adgroup_id", "adcreative_id", "ad_name"}),
 	}
 }
 
-func (e *AdsGetExample) RunExample() (model.AdsGetResponseData, *http.Response, error) {
+func (e *AdsGetExample) RunExample() (model.AdsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *AdsGetExample) RunExample() (model.AdsGetResponseData, *http.Response, 
 func main() {
 	e := &AdsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

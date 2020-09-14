@@ -35,13 +35,13 @@ func (e *UnionPositionPackagesAddExample) Init() {
 	e.Data = model.UnionPositionPackagesAddRequest{
 		AccountId:           int64(0),
 		PromotedObjectType:  model.PromotedObjectType_LINK,
-		UnionPositionIdList: []int64{int64(0)},
+		UnionPositionIdList: &[]int64{int64(0)},
 		UnionPackageName:    "SDK流量包5ede252bd3a86",
 		UnionPackageType:    model.UnionPackageType_INCLUDE,
 	}
 }
 
-func (e *UnionPositionPackagesAddExample) RunExample() (model.UnionPositionPackagesAddResponseData, *http.Response, error) {
+func (e *UnionPositionPackagesAddExample) RunExample() (model.UnionPositionPackagesAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -51,7 +51,7 @@ func (e *UnionPositionPackagesAddExample) RunExample() (model.UnionPositionPacka
 func main() {
 	e := &UnionPositionPackagesAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -61,5 +61,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

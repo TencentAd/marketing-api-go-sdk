@@ -245,6 +245,14 @@ func (c *SDKClient) Leads() *api.LeadsApiService {
 	return c.Client.LeadsApi
 }
 
+func (c *SDKClient) LeadsForm() *api.LeadsFormApiService {
+	return c.Client.LeadsFormApi
+}
+
+func (c *SDKClient) LeadsFormList() *api.LeadsFormListApiService {
+	return c.Client.LeadsFormListApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
@@ -279,10 +287,6 @@ func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 
 func (c *SDKClient) ProductItemsDetail() *api.ProductItemsDetailApiService {
 	return c.Client.ProductItemsDetailApi
-}
-
-func (c *SDKClient) ProductItemsList() *api.ProductItemsListApiService {
-	return c.Client.ProductItemsListApi
 }
 
 func (c *SDKClient) ProductsSystemStatus() *api.ProductsSystemStatusApiService {
@@ -407,6 +411,10 @@ func (c *SDKClient) XijingPage() *api.XijingPageApiService {
 
 func (c *SDKClient) XijingPageByComponents() *api.XijingPageByComponentsApiService {
 	return c.Client.XijingPageByComponentsApi
+}
+
+func (c *SDKClient) XijingPageList() *api.XijingPageListApiService {
+	return c.Client.XijingPageListApi
 }
 
 func (c *SDKClient) XijingTemplate() *api.XijingTemplateApiService {

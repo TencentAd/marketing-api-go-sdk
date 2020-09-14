@@ -12,7 +12,7 @@ package model
 // 预览信息
 type AdcreativePreviewSpec struct {
 	AdcreativeTemplateId int64                       `json:"adcreative_template_id,omitempty"`
-	SiteSet              []string                    `json:"site_set,omitempty"`
+	SiteSet              *[]string                   `json:"site_set,omitempty"`
 	PromotedObjectType   WechatPromotedObjectType    `json:"promoted_object_type,omitempty"`
 	AdcreativeElements   *AdcreativeCreativeElements `json:"adcreative_elements,omitempty"`
 	PromotedObjectId     string                      `json:"promoted_object_id,omitempty"`

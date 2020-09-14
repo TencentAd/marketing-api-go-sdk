@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**XijingPageByComponentsAdd**](XijingPageByComponentsApi.md#XijingPageByComponentsAdd) | **Post** /xijing_page_by_components/add | 基于组件创建落地页
+[**XijingPageByComponentsAdd**](XijingPageByComponentsApi.md#XijingPageByComponentsAdd) | **Post** /xijing_page_by_components/add | 蹊径-基于组件创建落地页
 
 
 # **XijingPageByComponentsAdd**
 > XijingPageByComponentsAddResponse XijingPageByComponentsAdd(ctx, data)
-基于组件创建落地页
+蹊径-基于组件创建落地页
 
 ### Required Parameters
 

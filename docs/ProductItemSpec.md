@@ -51,6 +51,10 @@ Name | Type | Description | Notes
 **SecondCategoryName** | **string** |  | [optional] [default to null]
 **ThirdCategoryName** | **string** |  | [optional] [default to null]
 **FourthCategoryName** | **string** |  | [optional] [default to null]
+**FirstCategoryUrl** | **string** |  | [optional] [default to null]
+**SecondCategoryUrl** | **string** |  | [optional] [default to null]
+**ThirdCategoryUrl** | **string** |  | [optional] [default to null]
+**FourthCategoryUrl** | **string** |  | [optional] [default to null]
 **BrandId** | **int64** |  | [optional] [default to null]
 **BrandName** | **string** |  | [optional] [default to null]
 **BrandUrl** | **string** |  | [optional] [default to null]
@@ -75,6 +79,12 @@ Name | Type | Description | Notes
 **AuthorFansCount** | **int64** |  | [optional] [default to null]
 **SemanticLabels** | **[]string** |  | [optional] [default to null]
 **DetailImg** | **[]string** |  | [optional] [default to null]
+**ShowCount** | **int64** |  | [optional] [default to null]
+**PlayRate** | **float64** |  | [optional] [default to null]
+**MakeMoneyOnline** | **string** |  | [optional] [default to null]
+**LiveBroadcast** | **string** |  | [optional] [default to null]
+**PlatformAttribute** | **string** |  | [optional] [default to null]
+**CustomData** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

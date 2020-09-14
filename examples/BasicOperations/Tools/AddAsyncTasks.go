@@ -44,7 +44,7 @@ func (e *AsyncTasksAddExample) Init() {
 	}
 }
 
-func (e *AsyncTasksAddExample) RunExample() (model.AsyncTasksAddResponseData, *http.Response, error) {
+func (e *AsyncTasksAddExample) RunExample() (model.AsyncTasksAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -54,7 +54,7 @@ func (e *AsyncTasksAddExample) RunExample() (model.AsyncTasksAddResponseData, *h
 func main() {
 	e := &AsyncTasksAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -64,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

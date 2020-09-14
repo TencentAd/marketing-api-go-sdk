@@ -214,6 +214,10 @@ type TargetingTagReportsGetListStruct struct {
 	WebCartAmount                int64   `json:"web_cart_amount,omitempty"`
 	AppOrderAmount               int64   `json:"app_order_amount,omitempty"`
 	WebOrderAmount               int64   `json:"web_order_amount,omitempty"`
+	CreWebCost                   int64   `json:"cre_web_cost,omitempty"`
+	CreAppCost                   int64   `json:"cre_app_cost,omitempty"`
+	PreCreWebCost                int64   `json:"pre_cre_web_cost,omitempty"`
+	PreCreAppCost                int64   `json:"pre_cre_app_cost,omitempty"`
 	AccountId                    int64   `json:"account_id,omitempty"`
 	CampaignId                   int64   `json:"campaign_id,omitempty"`
 	AdgroupId                    int64   `json:"adgroup_id,omitempty"`
@@ -256,6 +260,11 @@ type TargetingTagReportsGetListStruct struct {
 	FirstDayOrderCount           int64   `json:"first_day_order_count,omitempty"`
 	FirstDayOrderAmount          int64   `json:"first_day_order_amount,omitempty"`
 	AddWishlistCount             int64   `json:"add_wishlist_count,omitempty"`
+	EffectLeadsPurchaseCost      int64   `json:"effect_leads_purchase_cost,omitempty"`
+	IncomeRoi1                   float64 `json:"income_roi_1,omitempty"`
+	IncomeRoi3                   float64 `json:"income_roi_3,omitempty"`
+	IncomeRoi7                   float64 `json:"income_roi_7,omitempty"`
+	IncomeRoi14                  float64 `json:"income_roi_14,omitempty"`
 	FirstDayPayCount             int64   `json:"first_day_pay_count,omitempty"`
 	FirstDayPayCost              int64   `json:"first_day_pay_cost,omitempty"`
 	FirstDayFirstPayCost         int64   `json:"first_day_first_pay_cost,omitempty"`

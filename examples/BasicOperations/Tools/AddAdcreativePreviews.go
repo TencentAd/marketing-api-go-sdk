@@ -33,14 +33,14 @@ func (e *AdcreativePreviewsAddExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.AdcreativePreviewsAddRequest{
-		UserIdList: []string{"YOUR USER QQ"},
+		UserIdList: &[]string{"YOUR USER QQ"},
 		AccountId:  int64(0),
 		AdgroupId:  int64(0),
 		UserIdType: model.ViewerIdType_QQ_ID,
 	}
 }
 
-func (e *AdcreativePreviewsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AdcreativePreviewsAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -50,7 +50,7 @@ func (e *AdcreativePreviewsAddExample) RunExample() (interface{}, *http.Response
 func main() {
 	e := &AdcreativePreviewsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -60,5 +60,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

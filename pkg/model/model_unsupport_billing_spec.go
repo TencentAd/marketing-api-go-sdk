@@ -11,7 +11,7 @@ package model
 
 // 支持的计费信息
 type UnsupportBillingSpec struct {
-	SiteSet       []string      `json:"site_set,omitempty"`
+	SiteSet       *[]string     `json:"site_set,omitempty"`
 	BillingEvent  BillingEvent  `json:"billing_event,omitempty"`
 	MinPrice      int64         `json:"min_price,omitempty"`
 	MaxPrice      int64         `json:"max_price,omitempty"`

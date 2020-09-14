@@ -10,6 +10,6 @@
 package model
 
 type ProfilesGetResponseData struct {
-	List     []ProfilesGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                   `json:"page_info,omitempty"`
+	List     *[]ProfilesGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                    `json:"page_info,omitempty"`
 }

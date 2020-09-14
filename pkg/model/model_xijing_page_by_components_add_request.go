@@ -10,7 +10,7 @@
 package model
 
 type XijingPageByComponentsAddRequest struct {
-	AccountId    int64         `json:"account_id,omitempty"`
-	IsAutoSubmit int64         `json:"is_auto_submit,omitempty"`
-	Pages        []PagesStruct `json:"pages,omitempty"`
+	AccountId    int64                                   `json:"account_id,omitempty"`
+	IsAutoSubmit int64                                   `json:"is_auto_submit,omitempty"`
+	Pages        *[]XijingPageByComponentsAddPagesStruct `json:"pages,omitempty"`
 }

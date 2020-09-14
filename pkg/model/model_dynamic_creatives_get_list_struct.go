@@ -20,7 +20,7 @@ type DynamicCreativesGetListStruct struct {
 	PageSpec                  *DynamicPageSpec             `json:"page_spec,omitempty"`
 	DeepLinkUrl               string                       `json:"deep_link_url,omitempty"`
 	AutomaticSiteEnabled      bool                         `json:"automatic_site_enabled,omitempty"`
-	SiteSet                   []string                     `json:"site_set,omitempty"`
+	SiteSet                   *[]string                    `json:"site_set,omitempty"`
 	PromotedObjectType        PromotedObjectType           `json:"promoted_object_type,omitempty"`
 	PromotedObjectId          string                       `json:"promoted_object_id,omitempty"`
 	CreatedTime               int64                        `json:"created_time,omitempty"`

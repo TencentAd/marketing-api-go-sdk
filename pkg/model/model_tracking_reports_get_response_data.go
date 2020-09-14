@@ -10,6 +10,6 @@
 package model
 
 type TrackingReportsGetResponseData struct {
-	List     []TrackingReportListStruct `json:"list,omitempty"`
-	PageInfo *Conf                      `json:"page_info,omitempty"`
+	List     *[]TrackingReportListStruct `json:"list,omitempty"`
+	PageInfo *Conf                       `json:"page_info,omitempty"`
 }

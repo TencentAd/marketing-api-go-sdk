@@ -11,6 +11,6 @@ package model
 
 // 设备品牌型号定向
 type DeviceBrandModel struct {
-	IncludedList []int64 `json:"included_list,omitempty"`
-	ExcludedList []int64 `json:"excluded_list,omitempty"`
+	IncludedList *[]int64 `json:"included_list,omitempty"`
+	ExcludedList *[]int64 `json:"excluded_list,omitempty"`
 }

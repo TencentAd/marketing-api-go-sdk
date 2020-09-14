@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type WechatAdLabelsGetListStruct struct {
-	LabelCategory string   `json:"label_category,omitempty"`
-	Label         []string `json:"label,omitempty"`
+	LabelCategory string    `json:"label_category,omitempty"`
+	Label         *[]string `json:"label,omitempty"`
 }

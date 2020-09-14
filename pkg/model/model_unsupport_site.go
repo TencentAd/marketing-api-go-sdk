@@ -9,7 +9,7 @@
 
 package model
 
-// 不支持的站点
+// 不支持的版位
 type UnsupportSite struct {
-	SiteSet []string `json:"site_set,omitempty"`
+	SiteSet *[]string `json:"site_set,omitempty"`
 }

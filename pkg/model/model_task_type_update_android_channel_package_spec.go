@@ -11,7 +11,7 @@ package model
 
 // 更新应用宝渠道包接口任务所需条件
 type TaskTypeUpdateAndroidChannelPackageSpec struct {
-	MyappAuthKey              string                            `json:"myapp_auth_key,omitempty"`
-	AndroidAppId              int64                             `json:"android_app_id,omitempty"`
-	AndroidChannelPackageSpec []UpdateAndroidChannelPackageSpec `json:"android_channel_package_spec,omitempty"`
+	MyappAuthKey              string                             `json:"myapp_auth_key,omitempty"`
+	AndroidAppId              int64                              `json:"android_app_id,omitempty"`
+	AndroidChannelPackageSpec *[]UpdateAndroidChannelPackageSpec `json:"android_channel_package_spec,omitempty"`
 }

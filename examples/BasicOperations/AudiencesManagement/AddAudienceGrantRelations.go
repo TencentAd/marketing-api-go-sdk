@@ -35,20 +35,20 @@ func (e *AudienceGrantRelationsAddExample) Init() {
 	e.Data = model.AudienceGrantRelationsAddRequest{
 		AccountId: int64(0),
 		GrantType: model.AudienceGrantType_GRANT_TYPE_BUSINESS,
-		GrantSpec: &model.GrantSpec{
-			GrantToBusinessSpec: &model.GrantToBusinessSpec{
+		GrantSpec: &model.AudienceGrantRelationsAddGrantSpec{
+			GrantToBusinessSpec: &model.AudienceGrantRelationsAddGrantToBusinessSpec{
 				GrantBusinessId: int64(0),
 				GrantScopeType:  model.AudienceGrantScopeType_BUSINESS,
 				GrantBusinessPermission: &model.GrantBusinessPermission{
-					GrantPermissionTypeList: []string{"GRANT_PERMISSION_TYPE_TARGET"},
+					GrantPermissionTypeList: &[]string{"GRANT_PERMISSION_TYPE_TARGET"},
 				},
 			},
 		},
-		AudienceIdList: []int64{int64(0)},
+		AudienceIdList: &[]int64{int64(0)},
 	}
 }
 
-func (e *AudienceGrantRelationsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AudienceGrantRelationsAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *AudienceGrantRelationsAddExample) RunExample() (interface{}, *http.Resp
 func main() {
 	e := &AudienceGrantRelationsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

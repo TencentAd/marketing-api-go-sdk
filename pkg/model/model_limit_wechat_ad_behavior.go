@@ -11,6 +11,6 @@ package model
 
 // 微信广告行为定向
 type LimitWechatAdBehavior struct {
-	Actions         []string `json:"actions,omitempty"`
-	ExcludedActions []string `json:"excluded_actions,omitempty"`
+	Actions         *[]string `json:"actions,omitempty"`
+	ExcludedActions *[]string `json:"excluded_actions,omitempty"`
 }

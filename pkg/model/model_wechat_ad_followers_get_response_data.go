@@ -10,6 +10,6 @@
 package model
 
 type WechatAdFollowersGetResponseData struct {
-	List     []WechatAdFollowersGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                            `json:"page_info,omitempty"`
+	List     *[]WechatAdFollowersGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                             `json:"page_info,omitempty"`
 }

@@ -45,12 +45,12 @@ func (e *AdcreativesAddExample) Init() {
 		},
 		PromotedObjectType: model.PromotedObjectType_LINK,
 		AdcreativeName:     "SDK广告创意5ede2529029e9",
-		SiteSet:            []string{"SITE_SET_QZONE"},
+		SiteSet:            &[]string{"SITE_SET_QZONE"},
 		CampaignId:         int64(0),
 	}
 }
 
-func (e *AdcreativesAddExample) RunExample() (model.AdcreativesAddResponseData, *http.Response, error) {
+func (e *AdcreativesAddExample) RunExample() (model.AdcreativesAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -60,7 +60,7 @@ func (e *AdcreativesAddExample) RunExample() (model.AdcreativesAddResponseData, 
 func main() {
 	e := &AdcreativesAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -70,5 +70,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

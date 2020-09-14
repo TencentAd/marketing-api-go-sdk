@@ -36,11 +36,11 @@ func (e *QualificationsUpdateExample) Init() {
 		AccountId:         int64(0),
 		QualificationId:   int64(0),
 		QualificationType: model.QualificationType_ADDITIONAL_INDUSTRY_QUALIFICATION,
-		ImageIdList:       []string{"YOUR QUALIFICATION IMAGE ID"},
+		ImageIdList:       &[]string{"YOUR QUALIFICATION IMAGE ID"},
 	}
 }
 
-func (e *QualificationsUpdateExample) RunExample() (model.QualificationsUpdateResponseData, *http.Response, error) {
+func (e *QualificationsUpdateExample) RunExample() (model.QualificationsUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -50,7 +50,7 @@ func (e *QualificationsUpdateExample) RunExample() (model.QualificationsUpdateRe
 func main() {
 	e := &QualificationsUpdateExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -60,5 +60,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

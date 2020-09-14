@@ -23,6 +23,6 @@ type EstimationGetResponseData struct {
 	MinExposureDaily        int64           `json:"min_exposure_daily,omitempty"`
 	MaxExposureDaily        int64           `json:"max_exposure_daily,omitempty"`
 	TargetingStatus         TargetingStatus `json:"targeting_status,omitempty"`
-	SuggestTargeting        []string        `json:"suggest_targeting,omitempty"`
+	SuggestTargeting        *[]string       `json:"suggest_targeting,omitempty"`
 	IsRealExposureSupported bool            `json:"is_real_exposure_supported,omitempty"`
 }

@@ -12,8 +12,6 @@ package api
 import (
 	"context"
 	"github.com/antihax/optional"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
-	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -36,22 +34,21 @@ AsyncReportFilesApiService 获取文件接口
  * @param optional nil or *AsyncReportFilesGetOpts - Optional Parameters:
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
-@return AsyncReportFilesGetResponse
+@return string
 */
 
 type AsyncReportFilesGetOpts struct {
 	Fields optional.Interface
 }
 
-func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, taskId int64, fileId int64, localVarOptionals *AsyncReportFilesGetOpts) (interface{}, *http.Response, error) {
+func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, taskId int64, fileId int64, localVarOptionals *AsyncReportFilesGetOpts) (string, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
-		localVarResponse    AsyncReportFilesGetResponse
+		localVarReturnValue string
 	)
 
 	// create path and map variables
@@ -91,27 +88,17 @@ func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, t
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
-		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
-		if err == nil {
-			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
-			}
-			return localVarReturnValue, localVarHttpResponse, err
-		} else {
-			return localVarReturnValue, localVarHttpResponse, err
-		}
+		return string(localVarBody), localVarHttpResponse.Header, err
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
@@ -121,18 +108,18 @@ func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, t
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v AsyncReportFilesGetResponse
+			var v string
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

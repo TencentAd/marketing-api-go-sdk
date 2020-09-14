@@ -10,5 +10,5 @@
 package model
 
 type ComplianceValidationGetResponseData struct {
-	SuggestionList []string `json:"suggestion_list,omitempty"`
+	SuggestionList *[]string `json:"suggestion_list,omitempty"`
 }

@@ -10,6 +10,6 @@
 package model
 
 type AdgroupsUpdateDatetimeRequest struct {
-	AccountId          int64                  `json:"account_id,omitempty"`
-	UpdateDatetimeSpec []UpdateDatetimeStruct `json:"update_datetime_spec,omitempty"`
+	AccountId          int64                   `json:"account_id,omitempty"`
+	UpdateDatetimeSpec *[]UpdateDatetimeStruct `json:"update_datetime_spec,omitempty"`
 }

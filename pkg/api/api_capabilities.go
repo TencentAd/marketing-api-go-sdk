@@ -28,12 +28,12 @@ var (
 type CapabilitiesApiService service
 
 /*
-CapabilitiesApiService 查询广告相关权限
+CapabilitiesApiService 查询广告相关权限（待废弃）
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param capability
  * @param optional nil or *CapabilitiesGetOpts - Optional Parameters:
-     * @param "QuerySpec" (optional.Interface of QuerySpec) -
+     * @param "QuerySpec" (optional.Interface of CapabilitiesGetQuerySpec) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CapabilitiesGetResponse
@@ -44,7 +44,7 @@ type CapabilitiesGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capability string, localVarOptionals *CapabilitiesGetOpts) (CapabilitiesGetResponseData, *http.Response, error) {
+func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capability string, localVarOptionals *CapabilitiesGetOpts) (CapabilitiesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -94,13 +94,13 @@ func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capab
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -108,12 +108,16 @@ func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capab
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -128,14 +132,14 @@ func (a *CapabilitiesApiService) Get(ctx context.Context, accountId int64, capab
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

@@ -36,7 +36,7 @@ func (e *AdgroupsAddExample) Init() {
 		EndDate:          "YOUR ADGROUP END DATE",
 		OptimizationGoal: model.OptimizationGoal_IMPRESSION,
 		Targeting: &model.WriteTargetingSettingForAdgroup{
-			UserOs: []string{"IOS"},
+			UserOs: &[]string{"IOS"},
 		},
 		AccountId:          int64(0),
 		BidAmount:          int64(0),
@@ -44,13 +44,13 @@ func (e *AdgroupsAddExample) Init() {
 		TimeSeries:         "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
 		PromotedObjectType: model.PromotedObjectType_LINK,
 		BeginDate:          "YOUR ADGROUP BEGIN DATE",
-		SiteSet:            []string{"SITE_SET_QZONE"},
+		SiteSet:            &[]string{"SITE_SET_QZONE"},
 		AdgroupName:        "SDK广告组5ede25290dec2",
 		CampaignId:         int64(0),
 	}
 }
 
-func (e *AdgroupsAddExample) RunExample() (model.AdgroupsAddResponseData, *http.Response, error) {
+func (e *AdgroupsAddExample) RunExample() (model.AdgroupsAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -60,7 +60,7 @@ func (e *AdgroupsAddExample) RunExample() (model.AdgroupsAddResponseData, *http.
 func main() {
 	e := &AdgroupsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -70,5 +70,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

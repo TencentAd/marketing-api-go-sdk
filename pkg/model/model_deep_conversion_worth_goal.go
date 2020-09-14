@@ -9,7 +9,7 @@
 
 package model
 
-// DeepConversionWorthGoal : 优化 ROI 目标
+// DeepConversionWorthGoal : 优化ROI目标，不可更改，如修改深度优化效果值，需在结构体中传入已设置的优化ROI目标
 type DeepConversionWorthGoal string
 
 // List of DeepConversionWorthGoal

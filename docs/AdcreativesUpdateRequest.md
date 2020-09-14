@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **LinkPageType** | [***LinkPageType**](LinkPageType.md) |  | [optional] [default to null]
 **LinkNameType** | [***LinkNameTypeMp**](LinkNameTypeMP.md) |  | [optional] [default to null]
 **LinkPageSpec** | [***LinkPageSpec**](link_page_spec.md) |  | [optional] [default to null]
+**ConversionDataType** | [***ConversionDataType**](ConversionDataType.md) |  | [optional] [default to null]
+**ConversionTargetType** | [***ConversionTargetType**](ConversionTargetType.md) |  | [optional] [default to null]
 **QqMiniGameTrackingQueryString** | **string** |  | [optional] [default to null]
 **DeepLinkUrl** | **string** |  | [optional] [default to null]
 **AndroidDeepLinkAppId** | **string** |  | [optional] [default to null]
@@ -27,6 +29,8 @@ Name | Type | Description | Notes
 **PlayablePageMaterialId** | **string** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
 **FeedsVideoCommentSwitch** | **bool** |  | [optional] [default to null]
+**FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
+**MarketingPendantImageId** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]
 

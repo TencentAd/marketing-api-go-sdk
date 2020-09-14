@@ -10,6 +10,6 @@
 package model
 
 type AdsGetResponseData struct {
-	List     []AdsGetListStruct `json:"list,omitempty"`
-	PageInfo *ConfPageSize500   `json:"page_info,omitempty"`
+	List     *[]AdsGetListStruct `json:"list,omitempty"`
+	PageInfo *ConfPageSize500    `json:"page_info,omitempty"`
 }

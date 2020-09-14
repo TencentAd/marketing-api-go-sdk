@@ -35,7 +35,7 @@ func (e *AdvertiserUpdateDailyBudgetExample) Init() {
 	e.Data = model.AdvertiserUpdateDailyBudgetRequest{}
 }
 
-func (e *AdvertiserUpdateDailyBudgetExample) RunExample() (model.AdvertiserUpdateDailyBudgetResponseData, *http.Response, error) {
+func (e *AdvertiserUpdateDailyBudgetExample) RunExample() (model.AdvertiserUpdateDailyBudgetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -45,7 +45,7 @@ func (e *AdvertiserUpdateDailyBudgetExample) RunExample() (model.AdvertiserUpdat
 func main() {
 	e := &AdvertiserUpdateDailyBudgetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -55,5 +55,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

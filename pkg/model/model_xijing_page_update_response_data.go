@@ -10,5 +10,5 @@
 package model
 
 type XijingPageUpdateResponseData struct {
-	List []PageOperateResponses `json:"list,omitempty"`
+	List *[]PageOperateResponses `json:"list,omitempty"`
 }

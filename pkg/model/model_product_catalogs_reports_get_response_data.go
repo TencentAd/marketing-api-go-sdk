@@ -10,5 +10,5 @@
 package model
 
 type ProductCatalogsReportsGetResponseData struct {
-	List []ProductCatalogsReportsGetListStruct `json:"list,omitempty"`
+	List *[]ProductCatalogsReportsGetListStruct `json:"list,omitempty"`
 }

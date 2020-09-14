@@ -9,7 +9,7 @@
 
 package model
 
-// 多站点的审核结果信息
+// 多版位的审核结果信息
 type AuditSpecStruct struct {
 	SiteSet       SiteSetDefinition `json:"site_set,omitempty"`
 	SystemStatus  SysStatus         `json:"system_status,omitempty"`

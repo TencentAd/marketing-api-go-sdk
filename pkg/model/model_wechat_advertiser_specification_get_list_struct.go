@@ -19,7 +19,7 @@ type WechatAdvertiserSpecificationGetListStruct struct {
 	CorporationName   string                         `json:"corporation_name,omitempty"`
 	AuthStatus        WechatAuthStatus               `json:"auth_status,omitempty"`
 	AuthTime          int64                          `json:"auth_time,omitempty"`
-	AgencyIdList      []int64                        `json:"agency_id_list,omitempty"`
-	StaffWechatIdList []string                       `json:"staff_wechat_id_list,omitempty"`
+	AgencyIdList      *[]int64                       `json:"agency_id_list,omitempty"`
+	StaffWechatIdList *[]string                      `json:"staff_wechat_id_list,omitempty"`
 	DailyBudget       int64                          `json:"daily_budget,omitempty"`
 }

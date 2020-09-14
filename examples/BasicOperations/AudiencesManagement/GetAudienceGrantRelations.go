@@ -41,14 +41,14 @@ func (e *AudienceGrantRelationsGetExample) Init() {
 		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "audience_id",
 			Operator: "IN",
-			Values:   []string{"YOUR AUDIENCE ID"},
+			Values:   &[]string{"YOUR AUDIENCE ID"},
 		}}),
 
 		Fields: optional.NewInterface([]string{"audience_id", "grant_type", "grant_spec"}),
 	}
 }
 
-func (e *AudienceGrantRelationsGetExample) RunExample() (model.AudienceGrantRelationsGetResponseData, *http.Response, error) {
+func (e *AudienceGrantRelationsGetExample) RunExample() (model.AudienceGrantRelationsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *AudienceGrantRelationsGetExample) RunExample() (model.AudienceGrantRela
 func main() {
 	e := &AudienceGrantRelationsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

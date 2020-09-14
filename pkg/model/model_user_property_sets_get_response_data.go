@@ -10,5 +10,5 @@
 package model
 
 type UserPropertySetsGetResponseData struct {
-	List []UserPropertySet `json:"list,omitempty"`
+	List *[]UserPropertySet `json:"list,omitempty"`
 }

@@ -43,7 +43,7 @@ func (e *BrandAddExample) Init() {
 	}
 }
 
-func (e *BrandAddExample) RunExample() (model.BrandAddResponseData, *http.Response, error) {
+func (e *BrandAddExample) RunExample() (model.BrandAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -53,7 +53,7 @@ func (e *BrandAddExample) RunExample() (model.BrandAddResponseData, *http.Respon
 func main() {
 	e := &BrandAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -63,5 +63,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

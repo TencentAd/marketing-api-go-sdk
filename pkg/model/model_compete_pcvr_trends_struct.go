@@ -11,9 +11,9 @@ package model
 
 // 转化率趋势变化
 type CompetePcvrTrendsStruct struct {
-	Score          int64    `json:"score,omitempty"`
-	SelfAvg        []string `json:"self_avg,omitempty"`
-	SelfChoseAvg   []string `json:"self_chose_avg,omitempty"`
-	WinnerChoseAvg []string `json:"winner_chose_avg,omitempty"`
-	Conclusion     string   `json:"conclusion,omitempty"`
+	Score          int64     `json:"score,omitempty"`
+	SelfAvg        *[]string `json:"self_avg,omitempty"`
+	SelfChoseAvg   *[]string `json:"self_chose_avg,omitempty"`
+	WinnerChoseAvg *[]string `json:"winner_chose_avg,omitempty"`
+	Conclusion     string    `json:"conclusion,omitempty"`
 }

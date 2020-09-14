@@ -10,6 +10,6 @@
 package model
 
 type DailyReportsGetResponseData struct {
-	List     []DailyReportsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                       `json:"page_info,omitempty"`
+	List     *[]DailyReportsGetListStruct `json:"list,omitempty"`
+	PageInfo *Conf                        `json:"page_info,omitempty"`
 }

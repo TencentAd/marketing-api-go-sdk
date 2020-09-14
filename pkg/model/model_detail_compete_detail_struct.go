@@ -11,7 +11,7 @@ package model
 
 // 诊断详情-竞争力明细
 type DetailCompeteDetailStruct struct {
-	CompeteAttribution    []CompeteAttributionStruct   `json:"compete_attribution,omitempty"`
+	CompeteAttribution    *[]CompeteAttributionStruct  `json:"compete_attribution,omitempty"`
 	CompeteBudgetDetails  *CompeteBudgetDetailsStruct  `json:"compete_budget_details,omitempty"`
 	CompeteBidDetails     *CompeteBidDetailsStruct     `json:"compete_bid_details,omitempty"`
 	CompeteUserAcceptance *CompeteUserAcceptanceStruct `json:"compete_user_acceptance,omitempty"`

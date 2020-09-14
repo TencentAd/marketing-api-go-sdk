@@ -9,7 +9,7 @@
 
 package model
 
-// DeepConversionBehaviorGoal : 优化转化行为目标。
+// DeepConversionBehaviorGoal : 优化转化行为目标，不可更改，如修改目标价格，需在结构体中传入已设置的优化转化行为目标。
 type DeepConversionBehaviorGoal string
 
 // List of DeepConversionBehaviorGoal

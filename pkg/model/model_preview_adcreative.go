@@ -12,7 +12,7 @@ package model
 // 广告创意
 type PreviewAdcreative struct {
 	AdcreativeName                string                      `json:"adcreative_name,omitempty"`
-	SiteSet                       []string                    `json:"site_set,omitempty"`
+	SiteSet                       *[]string                   `json:"site_set,omitempty"`
 	PromotedObjectType            PromotedObjectType          `json:"promoted_object_type,omitempty"`
 	PromotedObjectId              string                      `json:"promoted_object_id,omitempty"`
 	PageType                      PageTypeRead                `json:"page_type,omitempty"`
@@ -31,12 +31,14 @@ type PreviewAdcreative struct {
 	ComponentId                   int64                       `json:"component_id,omitempty"`
 	OnlineEnabled                 bool                        `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec      `json:"revised_adcreative_spec,omitempty"`
-	Category                      []int64                     `json:"category,omitempty"`
-	Label                         []string                    `json:"label,omitempty"`
+	Category                      *[]int64                    `json:"category,omitempty"`
+	Label                         *[]string                   `json:"label,omitempty"`
 	UnionMarketSwitch             bool                        `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                      `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec           `json:"video_end_page,omitempty"`
 	FeedsVideoCommentSwitch       bool                        `json:"feeds_video_comment_switch,omitempty"`
+	ConversionDataType            ConversionDataType          `json:"conversion_data_type,omitempty"`
+	ConversionTargetType          ConversionTargetType        `json:"conversion_target_type,omitempty"`
 	AdcreativeTemplateId          int64                       `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElements `json:"adcreative_elements,omitempty"`
 }

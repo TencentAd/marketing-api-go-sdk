@@ -16,7 +16,7 @@ type Adcreative struct {
 	CampaignId             int64                           `json:"campaign_id,omitempty"`
 	PageType               PageTypeRead                    `json:"page_type,omitempty"`
 	PageSpec               *PageSpec                       `json:"page_spec,omitempty"`
-	SiteSet                []string                        `json:"site_set,omitempty"`
+	SiteSet                *[]string                       `json:"site_set,omitempty"`
 	PromotedObjectType     PromotedObjectType              `json:"promoted_object_type,omitempty"`
 	PromotedObjectId       string                          `json:"promoted_object_id,omitempty"`
 	CreatedTime            int64                           `json:"created_time,omitempty"`

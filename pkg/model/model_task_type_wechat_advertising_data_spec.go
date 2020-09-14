@@ -12,5 +12,5 @@ package model
 // 获取微信数据任务查询条件
 type TaskTypeWechatAdvertisingDataSpec struct {
 	LastModifiedTimeRange *LastModifiedTimeRange `json:"last_modified_time_range,omitempty"`
-	Fields                []string               `json:"fields,omitempty"`
+	Fields                *[]string              `json:"fields,omitempty"`
 }

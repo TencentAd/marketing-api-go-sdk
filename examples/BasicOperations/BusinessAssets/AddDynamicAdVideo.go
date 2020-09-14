@@ -42,7 +42,7 @@ func (e *DynamicAdVideoAddExample) Init() {
 	}
 }
 
-func (e *DynamicAdVideoAddExample) RunExample() (model.DynamicAdVideoAddResponseData, *http.Response, error) {
+func (e *DynamicAdVideoAddExample) RunExample() (model.DynamicAdVideoAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -52,7 +52,7 @@ func (e *DynamicAdVideoAddExample) RunExample() (model.DynamicAdVideoAddResponse
 func main() {
 	e := &DynamicAdVideoAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -62,5 +62,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

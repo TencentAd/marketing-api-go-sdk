@@ -40,13 +40,13 @@ func (e *SystemStatusGetExample) Init() {
 	e.StatusType = "STATUS_TYPE_OCPA_LEARNING"
 	e.StatusSpec = model.StatusSpec{
 		OcpaLearningSpec: &model.OcpaLearningSpec{
-			AdgroupIdList: []int64{int64(0)},
+			AdgroupIdList: &[]int64{int64(0)},
 		},
 	}
 	e.SystemStatusGetOpts = &api.SystemStatusGetOpts{}
 }
 
-func (e *SystemStatusGetExample) RunExample() (model.SystemStatusGetResponseData, *http.Response, error) {
+func (e *SystemStatusGetExample) RunExample() (model.SystemStatusGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -56,7 +56,7 @@ func (e *SystemStatusGetExample) RunExample() (model.SystemStatusGetResponseData
 func main() {
 	e := &SystemStatusGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -66,5 +66,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

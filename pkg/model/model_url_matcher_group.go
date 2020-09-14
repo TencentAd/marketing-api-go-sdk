@@ -11,5 +11,5 @@ package model
 
 // 匹配规则组
 type UrlMatcherGroup struct {
-	UrlMatcher []UrlMatcher `json:"url_matcher,omitempty"`
+	UrlMatcher *[]UrlMatcher `json:"url_matcher,omitempty"`
 }

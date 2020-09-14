@@ -15,4 +15,5 @@ type AssetPermissionsDeleteRequest struct {
 	AssetType                AssetType                `json:"asset_type,omitempty"`
 	AssetPermissionGrantType AssetPermissionGrantType `json:"asset_permission_grant_type,omitempty"`
 	AssetId                  int64                    `json:"asset_id,omitempty"`
+	LicensingIdType          AssetAccountType         `json:"licensing_id_type,omitempty"`
 }

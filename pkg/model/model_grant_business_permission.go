@@ -11,5 +11,5 @@ package model
 
 // 授权给商务管家账号认领所有广告账号的权限信息
 type GrantBusinessPermission struct {
-	GrantPermissionTypeList []string `json:"grant_permission_type_list,omitempty"`
+	GrantPermissionTypeList *[]string `json:"grant_permission_type_list,omitempty"`
 }

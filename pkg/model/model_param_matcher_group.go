@@ -11,5 +11,5 @@ package model
 
 // 匹配规则组
 type ParamMatcherGroup struct {
-	ParamMatcher []ParamMatcher `json:"param_matcher,omitempty"`
+	ParamMatcher *[]ParamMatcher `json:"param_matcher,omitempty"`
 }

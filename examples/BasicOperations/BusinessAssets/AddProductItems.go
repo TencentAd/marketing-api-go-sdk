@@ -35,7 +35,7 @@ func (e *ProductItemsAddExample) Init() {
 	e.Data = model.ProductItemsAddRequest{
 		ProductCatalogId: int64(0),
 		AccountId:        int64(0),
-		ProductItemSpecList: []model.ProductItemSpec{&model.ProductItemSpec{
+		ProductItemSpecList: &[]model.ProductItemSpec{&model.ProductItemSpec{
 			ProductOuterId: "YOUR PRODUCT ID",
 			ProductName:    "YOUR PRODUCT NAME",
 			ExpirationTime: "2021-06-08 11:46:51",
@@ -46,7 +46,7 @@ func (e *ProductItemsAddExample) Init() {
 	}
 }
 
-func (e *ProductItemsAddExample) RunExample() (model.ProductItemsAddResponseData, *http.Response, error) {
+func (e *ProductItemsAddExample) RunExample() (model.ProductItemsAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -56,7 +56,7 @@ func (e *ProductItemsAddExample) RunExample() (model.ProductItemsAddResponseData
 func main() {
 	e := &ProductItemsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -66,5 +66,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

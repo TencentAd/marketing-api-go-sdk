@@ -10,7 +10,7 @@
 package model
 
 type XijingPageUpdateRequest struct {
-	AccountId            int64    `json:"account_id,omitempty"`
-	IsSubmittedForReview bool     `json:"is_submitted_for_review,omitempty"`
-	PageIdList           []string `json:"page_id_list,omitempty"`
+	AccountId            int64     `json:"account_id,omitempty"`
+	IsSubmittedForReview bool      `json:"is_submitted_for_review,omitempty"`
+	PageIdList           *[]string `json:"page_id_list,omitempty"`
 }

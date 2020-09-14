@@ -10,5 +10,5 @@
 package model
 
 type CustomDataSaltGetResponseData struct {
-	List []Salt `json:"list,omitempty"`
+	List *[]Salt `json:"list,omitempty"`
 }

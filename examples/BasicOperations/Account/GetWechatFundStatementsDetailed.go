@@ -47,7 +47,7 @@ func (e *WechatFundStatementsDetailedGetExample) Init() {
 	}
 }
 
-func (e *WechatFundStatementsDetailedGetExample) RunExample() (model.WechatFundStatementsDetailedGetResponseData, *http.Response, error) {
+func (e *WechatFundStatementsDetailedGetExample) RunExample() (model.WechatFundStatementsDetailedGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -57,7 +57,7 @@ func (e *WechatFundStatementsDetailedGetExample) RunExample() (model.WechatFundS
 func main() {
 	e := &WechatFundStatementsDetailedGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -67,5 +67,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

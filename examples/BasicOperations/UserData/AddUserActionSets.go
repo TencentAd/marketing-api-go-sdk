@@ -39,7 +39,7 @@ func (e *UserActionSetsAddExample) Init() {
 	}
 }
 
-func (e *UserActionSetsAddExample) RunExample() (model.UserActionSetsAddResponseData, *http.Response, error) {
+func (e *UserActionSetsAddExample) RunExample() (model.UserActionSetsAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -49,7 +49,7 @@ func (e *UserActionSetsAddExample) RunExample() (model.UserActionSetsAddResponse
 func main() {
 	e := &UserActionSetsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -59,5 +59,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

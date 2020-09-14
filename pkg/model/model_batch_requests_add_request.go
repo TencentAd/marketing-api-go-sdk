@@ -10,5 +10,5 @@
 package model
 
 type BatchRequestsAddRequest struct {
-	BatchRequestSpec []BatchRequestSpecStruct `json:"batch_request_spec,omitempty"`
+	BatchRequestSpec *[]BatchRequestSpecStruct `json:"batch_request_spec,omitempty"`
 }

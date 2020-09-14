@@ -10,5 +10,5 @@
 package model
 
 type AdgroupsUpdateConfiguredStatusResponseData struct {
-	List []AdgroupsUpdateConfiguredStatusListStruct `json:"list,omitempty"`
+	List *[]AdgroupsUpdateConfiguredStatusListStruct `json:"list,omitempty"`
 }

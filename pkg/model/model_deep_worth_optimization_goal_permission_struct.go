@@ -12,5 +12,5 @@ package model
 // 返回结构
 type DeepWorthOptimizationGoalPermissionStruct struct {
 	OptimizationGoal              OptimizationGoal `json:"optimization_goal,omitempty"`
-	DeepWorthOptimizationGoalList []string         `json:"deep_worth_optimization_goal_list,omitempty"`
+	DeepWorthOptimizationGoalList *[]string        `json:"deep_worth_optimization_goal_list,omitempty"`
 }

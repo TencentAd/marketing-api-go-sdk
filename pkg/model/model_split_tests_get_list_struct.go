@@ -18,7 +18,7 @@ type SplitTestsGetListStruct struct {
 	BeginTime                int64             `json:"begin_time,omitempty"`
 	EndTime                  int64             `json:"end_time,omitempty"`
 	SmartExpandEnabled       bool              `json:"smart_expand_enabled,omitempty"`
-	AdgroupIdList            []int64           `json:"adgroup_id_list,omitempty"`
+	AdgroupIdList            *[]int64          `json:"adgroup_id_list,omitempty"`
 	RecommendedRating        RecommendedRating `json:"recommended_rating,omitempty"`
-	RecommendedAdgroupIdList []int64           `json:"recommended_adgroup_id_list,omitempty"`
+	RecommendedAdgroupIdList *[]int64          `json:"recommended_adgroup_id_list,omitempty"`
 }

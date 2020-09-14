@@ -10,6 +10,6 @@
 package model
 
 type DynamicAdTemplatesGetResponseData struct {
-	List     []DynamicAdTemplatesGetListStruct `json:"list,omitempty"`
-	PageInfo *PageInfo                         `json:"page_info,omitempty"`
+	List     *[]DynamicAdTemplatesGetListStruct `json:"list,omitempty"`
+	PageInfo *PageInfo                          `json:"page_info,omitempty"`
 }

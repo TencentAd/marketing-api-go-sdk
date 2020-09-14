@@ -11,5 +11,5 @@ package model
 
 // 任务结果
 type AsyncReportsGetData struct {
-	FileInfoList []AsyncReportsGetFileInfo `json:"file_info_list,omitempty"`
+	FileInfoList *[]AsyncReportsGetFileInfo `json:"file_info_list,omitempty"`
 }

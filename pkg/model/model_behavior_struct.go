@@ -11,10 +11,10 @@ package model
 
 // 行为兴趣意向定向的行为部分的结构
 type BehaviorStruct struct {
-	TargetingTags  []string                   `json:"targeting_tags,omitempty"`
-	CategoryIdList []int64                    `json:"category_id_list,omitempty"`
-	KeywordList    []string                   `json:"keyword_list,omitempty"`
-	Scene          []string                   `json:"scene,omitempty"`
+	TargetingTags  *[]string                  `json:"targeting_tags,omitempty"`
+	CategoryIdList *[]int64                   `json:"category_id_list,omitempty"`
+	KeywordList    *[]string                  `json:"keyword_list,omitempty"`
+	Scene          *[]string                  `json:"scene,omitempty"`
 	TimeWindow     BehaviorInterestTimeWindow `json:"time_window,omitempty"`
-	Intensity      []string                   `json:"intensity,omitempty"`
+	Intensity      *[]string                  `json:"intensity,omitempty"`
 }

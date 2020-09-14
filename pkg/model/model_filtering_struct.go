@@ -11,7 +11,7 @@ package model
 
 // 过滤条件
 type FilteringStruct struct {
-	Field    string   `json:"field,omitempty"`
-	Operator string   `json:"operator,omitempty"`
-	Values   []string `json:"values,omitempty"`
+	Field    string    `json:"field,omitempty"`
+	Operator string    `json:"operator,omitempty"`
+	Values   *[]string `json:"values,omitempty"`
 }

@@ -33,17 +33,17 @@ func (e *AssetPermissionsAddExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.AssetPermissionsAddRequest{
-		LicensingAccountIdList: []int64{int64(0)},
+		LicensingAccountIdList: &[]int64{int64(0)},
 		AccountId:              int64(0),
-		AssetType:              model.AssetType_ASSET_TYPE_CANVAS_WECHAT,
-		AssetPermissionSpec: []model.AssetPermissionSpecStruct{&model.AssetPermissionSpecStruct{
-			AssetPermissionGrantType: model.AssetPermissionGrantType_ASSET_PERMISSION_GRANT_TYPE_ASSET,
+		AssetType:              model.AssetType_CANVAS_WECHAT,
+		AssetPermissionSpec: &[]model.AssetPermissionSpecStruct{&model.AssetPermissionSpecStruct{
+			AssetPermissionGrantType: model.AssetPermissionGrantType_ASSET,
 			AssetId:                  int64(0),
 		}},
 	}
 }
 
-func (e *AssetPermissionsAddExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AssetPermissionsAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -53,7 +53,7 @@ func (e *AssetPermissionsAddExample) RunExample() (interface{}, *http.Response, 
 func main() {
 	e := &AssetPermissionsAddExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -63,5 +63,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

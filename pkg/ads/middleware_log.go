@@ -19,7 +19,7 @@ func (l *LogMiddleware) Handle(req *http.Request, next func(req *http.Request) (
 			debugFile = os.Stdout
 		} else {
 			debugFile, err = os.OpenFile(tads.GetDebugFile(), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-			if err != nil {
+			if err == nil {
 				defer debugFile.Close()
 			} else {
 				return nil, err

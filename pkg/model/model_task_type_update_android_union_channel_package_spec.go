@@ -11,6 +11,6 @@ package model
 
 // 更新广告渠道包接口任务所需条件
 type TaskTypeUpdateAndroidUnionChannelPackageSpec struct {
-	AndroidUnionAppId              int64                                  `json:"android_union_app_id,omitempty"`
-	AndroidUnionChannelPackageSpec []UpdateAndroidUnionChannelPackageSpec `json:"android_union_channel_package_spec,omitempty"`
+	AndroidUnionAppId              int64                                   `json:"android_union_app_id,omitempty"`
+	AndroidUnionChannelPackageSpec *[]UpdateAndroidUnionChannelPackageSpec `json:"android_union_channel_package_spec,omitempty"`
 }

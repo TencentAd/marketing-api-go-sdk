@@ -44,7 +44,7 @@ func (e *CustomAudienceFilesGetExample) Init() {
 	}
 }
 
-func (e *CustomAudienceFilesGetExample) RunExample() (model.CustomAudienceFilesGetResponseData, *http.Response, error) {
+func (e *CustomAudienceFilesGetExample) RunExample() (model.CustomAudienceFilesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -54,7 +54,7 @@ func (e *CustomAudienceFilesGetExample) RunExample() (model.CustomAudienceFilesG
 func main() {
 	e := &CustomAudienceFilesGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -64,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

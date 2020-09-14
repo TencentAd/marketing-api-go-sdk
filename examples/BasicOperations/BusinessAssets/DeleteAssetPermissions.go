@@ -34,14 +34,14 @@ func (e *AssetPermissionsDeleteExample) Init() {
 	})
 	e.Data = model.AssetPermissionsDeleteRequest{
 		AccountId:                int64(0),
-		AssetPermissionGrantType: model.AssetPermissionGrantType_ASSET_PERMISSION_GRANT_TYPE_ASSET,
-		AssetType:                model.AssetType_ASSET_TYPE_CANVAS_WECHAT,
+		AssetPermissionGrantType: model.AssetPermissionGrantType_ASSET,
+		AssetType:                model.AssetType_CANVAS_WECHAT,
 		AssetId:                  int64(0),
 		LicensingAccountId:       int64(0),
 	}
 }
 
-func (e *AssetPermissionsDeleteExample) RunExample() (interface{}, *http.Response, error) {
+func (e *AssetPermissionsDeleteExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -51,7 +51,7 @@ func (e *AssetPermissionsDeleteExample) RunExample() (interface{}, *http.Respons
 func main() {
 	e := &AssetPermissionsDeleteExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -61,5 +61,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

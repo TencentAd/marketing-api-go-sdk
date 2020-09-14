@@ -41,14 +41,14 @@ func (e *VideosGetExample) Init() {
 		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
 			Field:    "media_id",
 			Operator: "EQUALS",
-			Values:   []string{"YOUR VIDEO ID"},
+			Values:   &[]string{"YOUR VIDEO ID"},
 		}}),
 
 		Fields: optional.NewInterface([]string{"video_id", "width", "height", "video_frames", "video_fps", "video_codec", "video_bit_rate", "audio_codec", "audio_bit_rate", "file_size", "type", "signature", "system_status", "description", "preview_url", "created_time", "last_modified_time", "video_profile_name", "audio_sample_rate", "max_keyframe_interval", "min_keyframe_interval", "sample_aspect_ratio", "audio_profile_name", "scan_type", "image_duration_millisecond", "audio_duration_millisecond", "source_type"}),
 	}
 }
 
-func (e *VideosGetExample) RunExample() (model.VideosGetResponseData, *http.Response, error) {
+func (e *VideosGetExample) RunExample() (model.VideosGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *VideosGetExample) RunExample() (model.VideosGetResponseData, *http.Resp
 func main() {
 	e := &VideosGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

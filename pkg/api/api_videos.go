@@ -46,7 +46,7 @@ type VideosAddOpts struct {
 	AdcreativeTemplateId optional.Int64
 }
 
-func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *os.File, signature string, localVarOptionals *VideosAddOpts) (VideosAddResponseData, *http.Response, error) {
+func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *os.File, signature string, localVarOptionals *VideosAddOpts) (VideosAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -85,10 +85,17 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	localVarFile := videoFile
 	localVarFileKey = "video_file"
 	if localVarFile != nil {
-		fbs, _ := ioutil.ReadAll(localVarFile)
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
-		localVarFile.Close()
 	}
 	localVarFormParams.Add("signature", parameterToString(signature, ""))
 	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
@@ -104,13 +111,13 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -118,12 +125,16 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -138,16 +149,16 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }
 
 /*
@@ -170,7 +181,7 @@ type VideosGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOptionals *VideosGetOpts) (VideosGetResponseData, *http.Response, error) {
+func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOptionals *VideosGetOpts) (VideosGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -225,13 +236,13 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 
 	localVarHttpResponse, err := a.client.callAPI(r)
 	if err != nil || localVarHttpResponse == nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
-	localVarHttpResponse.Body.Close()
+	defer localVarHttpResponse.Body.Close()
 	if err != nil {
-		return localVarReturnValue, localVarHttpResponse, err
+		return localVarReturnValue, nil, err
 	}
 
 	if localVarHttpResponse.StatusCode < 300 {
@@ -239,12 +250,16 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if localVarResponse.Code > 0 {
-				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponse.Errors)
-				return localVarReturnValue, localVarHttpResponse, err
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
-			return localVarReturnValue, localVarHttpResponse, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
 	}
 
@@ -259,14 +274,14 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
-				return localVarReturnValue, localVarHttpResponse, newErr
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
 			}
 			newErr.model = v
-			return localVarReturnValue, localVarHttpResponse, newErr
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
 		}
 
-		return localVarReturnValue, localVarHttpResponse, newErr
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
 	}
 
-	return localVarReturnValue, localVarHttpResponse, nil
+	return localVarReturnValue, localVarHttpResponse.Header, nil
 }

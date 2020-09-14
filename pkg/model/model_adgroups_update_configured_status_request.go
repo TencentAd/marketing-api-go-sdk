@@ -10,6 +10,6 @@
 package model
 
 type AdgroupsUpdateConfiguredStatusRequest struct {
-	AccountId                  int64                                                        `json:"account_id,omitempty"`
-	UpdateConfiguredStatusSpec []AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct `json:"update_configured_status_spec,omitempty"`
+	AccountId                  int64                                                         `json:"account_id,omitempty"`
+	UpdateConfiguredStatusSpec *[]AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct `json:"update_configured_status_spec,omitempty"`
 }

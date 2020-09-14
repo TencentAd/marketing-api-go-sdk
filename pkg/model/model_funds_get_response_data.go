@@ -10,5 +10,5 @@
 package model
 
 type FundsGetResponseData struct {
-	List []FundsGetListStruct `json:"list,omitempty"`
+	List *[]FundsGetListStruct `json:"list,omitempty"`
 }

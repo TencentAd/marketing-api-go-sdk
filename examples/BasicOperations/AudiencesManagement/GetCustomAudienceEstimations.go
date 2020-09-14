@@ -36,14 +36,14 @@ func (e *CustomAudienceEstimationsGetExample) Init() {
 		AccountId: int64(0),
 		AudienceSpec: &model.EstimationAudienceSpec{
 			CombineSpec: &model.CombineSpec{
-				Include: []model.IncludeSimpleRule{},
+				Include: &[]model.IncludeSimpleRule{},
 			},
 		},
 		Type_: "COMBINE",
 	}
 }
 
-func (e *CustomAudienceEstimationsGetExample) RunExample() (model.CustomAudienceEstimationsGetResponseData, *http.Response, error) {
+func (e *CustomAudienceEstimationsGetExample) RunExample() (model.CustomAudienceEstimationsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -53,7 +53,7 @@ func (e *CustomAudienceEstimationsGetExample) RunExample() (model.CustomAudience
 func main() {
 	e := &CustomAudienceEstimationsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -63,5 +63,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

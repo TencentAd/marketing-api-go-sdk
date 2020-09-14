@@ -45,7 +45,7 @@ func (e *AdcreativesUpdateExample) Init() {
 	}
 }
 
-func (e *AdcreativesUpdateExample) RunExample() (model.AdcreativesUpdateResponseData, *http.Response, error) {
+func (e *AdcreativesUpdateExample) RunExample() (model.AdcreativesUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -55,7 +55,7 @@ func (e *AdcreativesUpdateExample) RunExample() (model.AdcreativesUpdateResponse
 func main() {
 	e := &AdcreativesUpdateExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -65,5 +65,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

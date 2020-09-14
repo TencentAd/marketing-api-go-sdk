@@ -11,5 +11,5 @@ package model
 
 // 获取学习状态所需条件
 type OcpaLearningSpec struct {
-	AdgroupIdList []int64 `json:"adgroup_id_list,omitempty"`
+	AdgroupIdList *[]int64 `json:"adgroup_id_list,omitempty"`
 }

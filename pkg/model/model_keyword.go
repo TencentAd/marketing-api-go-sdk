@@ -11,5 +11,5 @@ package model
 
 // 关键词定向
 type Keyword struct {
-	Words []string `json:"words,omitempty"`
+	Words *[]string `json:"words,omitempty"`
 }

@@ -14,5 +14,5 @@ type SplitTestsUpdateRequest struct {
 	SplitTestId     int64           `json:"split_test_id,omitempty"`
 	SplitTestStatus SplitTestStatus `json:"split_test_status,omitempty"`
 	SplitTestName   string          `json:"split_test_name,omitempty"`
-	AdgroupIdList   []int64         `json:"adgroup_id_list,omitempty"`
+	AdgroupIdList   *[]int64        `json:"adgroup_id_list,omitempty"`
 }

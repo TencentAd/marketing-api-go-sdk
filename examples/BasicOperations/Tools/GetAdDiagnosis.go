@@ -34,12 +34,12 @@ func (e *AdDiagnosisGetExample) Init() {
 	})
 	e.Data = model.AdDiagnosisGetRequest{
 		AccountId:     int64(0),
-		DetailFields:  []string{"funnel", "target_detail", "compete_detail", "exposure_detail", "click_detail", "conversion_detail", "cpa_detail", "operation_log", "optimization"},
-		AdgroupIdList: []int64{int64(0)},
+		DetailFields:  &[]string{"funnel", "target_detail", "compete_detail", "exposure_detail", "click_detail", "conversion_detail", "cpa_detail", "operation_log", "optimization"},
+		AdgroupIdList: &[]int64{int64(0)},
 	}
 }
 
-func (e *AdDiagnosisGetExample) RunExample() (model.AdDiagnosisGetResponseData, *http.Response, error) {
+func (e *AdDiagnosisGetExample) RunExample() (model.AdDiagnosisGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -49,7 +49,7 @@ func (e *AdDiagnosisGetExample) RunExample() (model.AdDiagnosisGetResponseData, 
 func main() {
 	e := &AdDiagnosisGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -59,5 +59,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

@@ -38,7 +38,7 @@ func (e *WechatAdLabelsGetExample) Init() {
 	e.WechatAdLabelsGetOpts = &api.WechatAdLabelsGetOpts{}
 }
 
-func (e *WechatAdLabelsGetExample) RunExample() (model.WechatAdLabelsGetResponseData, *http.Response, error) {
+func (e *WechatAdLabelsGetExample) RunExample() (model.WechatAdLabelsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -48,7 +48,7 @@ func (e *WechatAdLabelsGetExample) RunExample() (model.WechatAdLabelsGetResponse
 func main() {
 	e := &WechatAdLabelsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -58,5 +58,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

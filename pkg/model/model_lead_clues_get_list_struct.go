@@ -50,4 +50,5 @@ type LeadCluesGetListStruct struct {
 	PosType             int64  `json:"pos_type,omitempty"`
 	LeadsCreateTime     string `json:"leads_create_time,omitempty"`
 	LeadsActionTime     string `json:"leads_action_time,omitempty"`
+	LeadsTags           string `json:"leads_tags,omitempty"`
 }

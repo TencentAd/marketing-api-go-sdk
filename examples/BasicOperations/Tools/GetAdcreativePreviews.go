@@ -40,7 +40,7 @@ func (e *AdcreativePreviewsGetExample) Init() {
 	e.Filtering = []model.FilteringStruct{&model.FilteringStruct{
 		Field:    "adgroup_id",
 		Operator: "EQUALS",
-		Values:   []string{"YOUR ADGROUP ID"},
+		Values:   &[]string{"YOUR ADGROUP ID"},
 	}}
 	e.AdcreativePreviewsGetOpts = &api.AdcreativePreviewsGetOpts{
 
@@ -48,7 +48,7 @@ func (e *AdcreativePreviewsGetExample) Init() {
 	}
 }
 
-func (e *AdcreativePreviewsGetExample) RunExample() (model.AdcreativePreviewsGetResponseData, *http.Response, error) {
+func (e *AdcreativePreviewsGetExample) RunExample() (model.AdcreativePreviewsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
@@ -58,7 +58,7 @@ func (e *AdcreativePreviewsGetExample) RunExample() (model.AdcreativePreviewsGet
 func main() {
 	e := &AdcreativePreviewsGetExample{}
 	e.Init()
-	response, httpResponse, err := e.RunExample()
+	response, headers, err := e.RunExample()
 	if err != nil {
 		if resErr, ok := err.(errors.ResponseError); ok {
 			errStr, _ := json.Marshal(resErr)
@@ -68,5 +68,5 @@ func main() {
 		}
 	}
 	fmt.Println("Response data:", response)
-	fmt.Println("Http response:", httpResponse)
+	fmt.Println("Headers:", headers)
 }

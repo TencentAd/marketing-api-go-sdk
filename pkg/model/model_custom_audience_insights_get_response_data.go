@@ -10,5 +10,5 @@
 package model
 
 type CustomAudienceInsightsGetResponseData struct {
-	List []CustomAudienceInsights `json:"list,omitempty"`
+	List *[]CustomAudienceInsights `json:"list,omitempty"`
 }

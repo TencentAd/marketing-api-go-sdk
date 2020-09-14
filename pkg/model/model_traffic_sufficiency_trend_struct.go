@@ -11,7 +11,7 @@ package model
 
 // 流量充足度情况
 type TrafficSufficiencyTrendStruct struct {
-	Score      int64         `json:"score,omitempty"`
-	Trends     []PointStruct `json:"trends,omitempty"`
-	Conclusion string        `json:"conclusion,omitempty"`
+	Score      int64          `json:"score,omitempty"`
+	Trends     *[]PointStruct `json:"trends,omitempty"`
+	Conclusion string         `json:"conclusion,omitempty"`
 }
