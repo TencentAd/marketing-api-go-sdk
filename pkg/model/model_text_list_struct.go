@@ -9,8 +9,8 @@
 
 package model
 
-// 游戏用户消费能力信息结构
-type PlayerConsuptStruct struct {
-	Min int64 `json:"min,omitempty"`
-	Max int64 `json:"max,omitempty"`
+// 文案信息结构
+type TextListStruct struct {
+	Text string `json:"text,omitempty"`
+	Tag  string `json:"tag,omitempty"`
 }

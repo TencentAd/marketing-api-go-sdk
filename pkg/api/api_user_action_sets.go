@@ -134,6 +134,7 @@ UserActionSetsApiService 获取用户行为数据源
  * @param accountId
  * @param optional nil or *UserActionSetsGetOpts - Optional Parameters:
      * @param "UserActionSetId" (optional.Int64) -
+     * @param "Type_" (optional.Interface of []string) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return UserActionSetsGetResponse
@@ -141,6 +142,7 @@ UserActionSetsApiService 获取用户行为数据源
 
 type UserActionSetsGetOpts struct {
 	UserActionSetId optional.Int64
+	Type_           optional.Interface
 	Fields          optional.Interface
 }
 
@@ -165,6 +167,9 @@ func (a *UserActionSetsApiService) Get(ctx context.Context, accountId int64, loc
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	if localVarOptionals != nil && localVarOptionals.UserActionSetId.IsSet() {
 		localVarQueryParams.Add("user_action_set_id", parameterToString(localVarOptionals.UserActionSetId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Type_.IsSet() {
+		localVarQueryParams.Add("type", parameterToString(localVarOptionals.Type_.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

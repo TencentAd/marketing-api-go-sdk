@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**VideosAdd**](VideosApi.md#VideosAdd) | **Post** /videos/add | 添加视频文件
 [**VideosGet**](VideosApi.md#VideosGet) | **Get** /videos/get | 获取视频文件
+[**VideosUpdate**](VideosApi.md#VideosUpdate) | **Post** /videos/update | 修改视频信息
 
 
 # **VideosAdd**
@@ -82,6 +83,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: text/plain
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VideosUpdate**
+> VideosUpdateResponse VideosUpdate(ctx, data)
+修改视频信息
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**VideosUpdateRequest**](VideosUpdateRequest.md)|  | 
+
+### Return type
+
+[**VideosUpdateResponse**](VideosUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -129,6 +129,10 @@ func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
 }
 
+func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
+	return c.Client.CreativetoolsTextApi
+}
+
 func (c *SDKClient) CustomAudienceEstimations() *api.CustomAudienceEstimationsApiService {
 	return c.Client.CustomAudienceEstimationsApi
 }
@@ -253,6 +257,26 @@ func (c *SDKClient) LeadsFormList() *api.LeadsFormListApiService {
 	return c.Client.LeadsFormListApi
 }
 
+func (c *SDKClient) LocalEndadsmanually() *api.LocalEndadsmanuallyApiService {
+	return c.Client.LocalEndadsmanuallyApi
+}
+
+func (c *SDKClient) LocalEstimatedamount() *api.LocalEstimatedamountApiService {
+	return c.Client.LocalEstimatedamountApi
+}
+
+func (c *SDKClient) LocalStores() *api.LocalStoresApiService {
+	return c.Client.LocalStoresApi
+}
+
+func (c *SDKClient) LocalStoresAddressParsingResult() *api.LocalStoresAddressParsingResultApiService {
+	return c.Client.LocalStoresAddressParsingResultApi
+}
+
+func (c *SDKClient) LocalStoresSearchInfo() *api.LocalStoresSearchInfoApiService {
+	return c.Client.LocalStoresSearchInfoApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
@@ -287,6 +311,10 @@ func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 
 func (c *SDKClient) ProductItemsDetail() *api.ProductItemsDetailApiService {
 	return c.Client.ProductItemsDetailApi
+}
+
+func (c *SDKClient) ProductItemsVerticals() *api.ProductItemsVerticalsApiService {
+	return c.Client.ProductItemsVerticalsApi
 }
 
 func (c *SDKClient) ProductsSystemStatus() *api.ProductsSystemStatusApiService {
@@ -377,6 +405,10 @@ func (c *SDKClient) WechatAdvertiserDetail() *api.WechatAdvertiserDetailApiServi
 	return c.Client.WechatAdvertiserDetailApi
 }
 
+func (c *SDKClient) WechatAdvertiserLocalBusiness() *api.WechatAdvertiserLocalBusinessApiService {
+	return c.Client.WechatAdvertiserLocalBusinessApi
+}
+
 func (c *SDKClient) WechatAdvertiserSpecification() *api.WechatAdvertiserSpecificationApiService {
 	return c.Client.WechatAdvertiserSpecificationApi
 }
@@ -393,6 +425,10 @@ func (c *SDKClient) WechatFundStatementsDetailed() *api.WechatFundStatementsDeta
 	return c.Client.WechatFundStatementsDetailedApi
 }
 
+func (c *SDKClient) WechatFundTransfer() *api.WechatFundTransferApiService {
+	return c.Client.WechatFundTransferApi
+}
+
 func (c *SDKClient) WechatFunds() *api.WechatFundsApiService {
 	return c.Client.WechatFundsApi
 }
@@ -403,6 +439,10 @@ func (c *SDKClient) WechatLeads() *api.WechatLeadsApiService {
 
 func (c *SDKClient) WechatPages() *api.WechatPagesApiService {
 	return c.Client.WechatPagesApi
+}
+
+func (c *SDKClient) WechatQualifications() *api.WechatQualificationsApiService {
+	return c.Client.WechatQualificationsApi
 }
 
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {

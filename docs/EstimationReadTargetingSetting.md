@@ -23,7 +23,6 @@ Name | Type | Description | Notes
 **AppInstallStatus** | **[]string** |  | [optional] [default to null]
 **MiniGameQqStatus** | **[]string** |  | [optional] [default to null]
 **ConsumptionStatus** | **[]string** |  | [optional] [default to null]
-**GamerConsumptionAbility** | [**[]PlayerConsuptStruct**](player_consupt_struct.md) |  | [optional] [default to null]
 **GameConsumptionLevel** | **[]string** |  | [optional] [default to null]
 **PaidUser** | **[]string** |  | [optional] [default to null]
 **ResidentialCommunityPrice** | [**[]ResidentialCommunityPriceStruct**](residential_community_price_struct.md) |  | [optional] [default to null]

@@ -36,7 +36,7 @@ func (e *ProductCatalogsAddExample) Init() {
 		CatalogName:      "SDK商品库5ede252bae6f6",
 		AccountId:        int64(0),
 		CatalogType:      model.CatalogType_CATALOG_TYPE_STANDARD,
-		IndustryType:     model.CatalogIndustry_INDUSTRY_TYPE_ECOMMERCE,
+		IndustryType:     model.CatalogIndustry_ECOMMERCE,
 		CatalogScaleType: model.CatalogScale_NORMAL,
 	}
 }

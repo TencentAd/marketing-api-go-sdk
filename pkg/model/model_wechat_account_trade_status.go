@@ -9,7 +9,7 @@
 
 package model
 
-// WechatAccountTradeStatus : 账户交易状态，当trade_type为ADVERTISER_TRANSFER时，此字段会返回
+// WechatAccountTradeStatus : 账户交易状态
 type WechatAccountTradeStatus string
 
 // List of WechatAccountTradeStatus

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **ClickDetail** | [***ClickDetailStruct**](click_detail_struct.md) |  | [optional] [default to null]
 **ConversionDetail** | [***ConversionDetailStruct**](conversion_detail_struct.md) |  | [optional] [default to null]
 **CpaDetail** | [***DetailCpaDetailStruct**](detail_cpa_detail_struct.md) |  | [optional] [default to null]
+**CreativeDetail** | [***DetailCreativeDetailStruct**](detail_creative_detail_struct.md) |  | [optional] [default to null]
 **Optimization** | [***OptimizeContentMainStruct**](optimize_content_main_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

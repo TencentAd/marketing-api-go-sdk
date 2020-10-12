@@ -14,5 +14,7 @@ type CatalogIndustry string
 
 // List of CatalogIndustry
 const (
-	CatalogIndustry_INDUSTRY_TYPE_ECOMMERCE CatalogIndustry = "INDUSTRY_TYPE_ECOMMERCE"
+	CatalogIndustry_ECOMMERCE CatalogIndustry = "INDUSTRY_TYPE_ECOMMERCE"
+	CatalogIndustry_READING   CatalogIndustry = "INDUSTRY_TYPE_READING"
+	CatalogIndustry_EDUCATION CatalogIndustry = "INDUSTRY_TYPE_EDUCATION"
 )

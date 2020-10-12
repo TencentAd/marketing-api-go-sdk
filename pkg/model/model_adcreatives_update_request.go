@@ -36,6 +36,7 @@ type AdcreativesUpdateRequest struct {
 	PlayablePageMaterialId        string                        `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec             `json:"video_end_page,omitempty"`
 	FeedsVideoCommentSwitch       bool                          `json:"feeds_video_comment_switch,omitempty"`
+	SimpleCanvasSubType           SimpleCanvasSubType           `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                        `json:"marketing_pendant_image_id,omitempty"`
 	AccountId                     int64                         `json:"account_id,omitempty"`

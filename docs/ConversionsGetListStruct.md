@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **DeepBehaviorOptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
 **DeepWorthOptimizationGoal** | [***ConversionOptimizationGoal**](ConversionOptimizationGoal.md) |  | [optional] [default to null]
 **UserActionSetId** | **int64** |  | [optional] [default to null]
+**UserActionSetKey** | **string** |  | [optional] [default to null]
 **SiteSetEnable** | **bool** |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **AccessStatus** | [***AccessStatus**](AccessStatus.md) |  | [optional] [default to null]

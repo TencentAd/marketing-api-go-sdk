@@ -29,6 +29,7 @@ type AdgroupsGetListStruct struct {
 	IsIncludeUnsupportedTargeting     bool                            `json:"is_include_unsupported_targeting,omitempty"`
 	SceneSpec                         *SceneTargeting                 `json:"scene_spec,omitempty"`
 	BeginDate                         string                          `json:"begin_date,omitempty"`
+	FirstDayBeginTime                 string                          `json:"first_day_begin_time,omitempty"`
 	EndDate                           string                          `json:"end_date,omitempty"`
 	TimeSeries                        string                          `json:"time_series,omitempty"`
 	ConfiguredStatus                  AdStatus                        `json:"configured_status,omitempty"`
@@ -58,4 +59,6 @@ type AdgroupsGetListStruct struct {
 	BidMode                           BidMode                         `json:"bid_mode,omitempty"`
 	Status                            CalcStatus                      `json:"status,omitempty"`
 	BidAdjustment                     *BidAdjustment                  `json:"bid_adjustment,omitempty"`
+	AutoAcquisitionEnabled            bool                            `json:"auto_acquisition_enabled,omitempty"`
+	AutoAcquisitionBudget             int64                           `json:"auto_acquisition_budget,omitempty"`
 }

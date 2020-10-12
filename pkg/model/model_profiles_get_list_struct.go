@@ -16,6 +16,7 @@ type ProfilesGetListStruct struct {
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
 	PromotedObjectId   string             `json:"promoted_object_id,omitempty"`
 	HeadImageId        string             `json:"head_image_id,omitempty"`
+	HeadImageUrl       string             `json:"head_image_url,omitempty"`
 	ProfileName        string             `json:"profile_name,omitempty"`
 	Description        string             `json:"description,omitempty"`
 	CreatedTime        int64              `json:"created_time,omitempty"`

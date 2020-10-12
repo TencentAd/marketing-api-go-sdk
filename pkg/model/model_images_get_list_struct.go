@@ -12,6 +12,7 @@ package model
 // 返回结构
 type ImagesGetListStruct struct {
 	ImageId          string          `json:"image_id,omitempty"`
+	Description      string          `json:"description,omitempty"`
 	SourceSignature  string          `json:"source_signature,omitempty"`
 	PreviewUrl       string          `json:"preview_url,omitempty"`
 	SourceType       ImageSourceType `json:"source_type,omitempty"`

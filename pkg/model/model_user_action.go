@@ -18,5 +18,7 @@ type UserAction struct {
 	CustomAction     string                 `json:"custom_action,omitempty"`
 	Trace            *Trace                 `json:"trace,omitempty"`
 	Url              string                 `json:"url,omitempty"`
+	ProductInform    *ProductInform         `json:"product_inform,omitempty"`
+	Channel          ActionChannelType      `json:"channel,omitempty"`
 	ExternalActionId string                 `json:"external_action_id,omitempty"`
 }

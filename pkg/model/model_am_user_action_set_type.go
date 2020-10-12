@@ -14,9 +14,12 @@ type AmUserActionSetType string
 
 // List of AmUserActionSetType
 const (
-	AmUserActionSetType_WEB       AmUserActionSetType = "WEB"
-	AmUserActionSetType_ANDROID   AmUserActionSetType = "ANDROID"
-	AmUserActionSetType_IOS       AmUserActionSetType = "IOS"
-	AmUserActionSetType_OFFLINE   AmUserActionSetType = "OFFLINE"
-	AmUserActionSetType_MARKETING AmUserActionSetType = "MARKETING"
+	AmUserActionSetType_WEB                 AmUserActionSetType = "WEB"
+	AmUserActionSetType_ANDROID             AmUserActionSetType = "ANDROID"
+	AmUserActionSetType_IOS                 AmUserActionSetType = "IOS"
+	AmUserActionSetType_OFFLINE             AmUserActionSetType = "OFFLINE"
+	AmUserActionSetType_WECHAT              AmUserActionSetType = "WECHAT"
+	AmUserActionSetType_WECHAT_MINI_PROGRAM AmUserActionSetType = "WECHAT_MINI_PROGRAM"
+	AmUserActionSetType_WECHAT_MINI_GAME    AmUserActionSetType = "WECHAT_MINI_GAME"
+	AmUserActionSetType_MARKETING           AmUserActionSetType = "MARKETING"
 )

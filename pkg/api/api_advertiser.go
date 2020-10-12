@@ -134,9 +134,9 @@ AdvertiserApiService 查询腾讯广告广告主信息
  * @param optional nil or *AdvertiserGetOpts - Optional Parameters:
      * @param "AccountId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
+     * @param "Fields" (optional.Interface of []string) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdvertiserGetResponse
 */
@@ -144,9 +144,9 @@ AdvertiserApiService 查询腾讯广告广告主信息
 type AdvertiserGetOpts struct {
 	AccountId optional.Int64
 	Filtering optional.Interface
+	Fields    optional.Interface
 	Page      optional.Int64
 	PageSize  optional.Int64
-	Fields    optional.Interface
 }
 
 func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *AdvertiserGetOpts) (AdvertiserGetResponseData, http.Header, error) {
@@ -173,14 +173,14 @@ func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *Adver
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}
+	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
+		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

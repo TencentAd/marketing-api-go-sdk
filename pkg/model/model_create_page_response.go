@@ -11,8 +11,8 @@ package model
 
 // 创建页面返回数据结构
 type CreatePageResponse struct {
-	PageId        int64  `json:"page_id,omitempty"`
-	PageServiceId string `json:"page_service_id,omitempty"`
+	LandingPageId int64  `json:"landingPageId,omitempty"`
+	Id            string `json:"id,omitempty"`
 	Code          int64  `json:"code,omitempty"`
 	Message       string `json:"message,omitempty"`
 }

@@ -14,6 +14,7 @@ type AdgroupsAddRequest struct {
 	AdgroupName                string                           `json:"adgroup_name,omitempty"`
 	PromotedObjectType         PromotedObjectType               `json:"promoted_object_type,omitempty"`
 	BeginDate                  string                           `json:"begin_date,omitempty"`
+	FirstDayBeginTime          string                           `json:"first_day_begin_time,omitempty"`
 	EndDate                    string                           `json:"end_date,omitempty"`
 	BillingEvent               BillingEvent                     `json:"billing_event,omitempty"`
 	BidAmount                  int64                            `json:"bid_amount,omitempty"`
@@ -46,5 +47,7 @@ type AdgroupsAddRequest struct {
 	DeepConversionWorthRate    float64                          `json:"deep_conversion_worth_rate,omitempty"`
 	BidMode                    BidMode                          `json:"bid_mode,omitempty"`
 	BidAdjustment              *BidAdjustment                   `json:"bid_adjustment,omitempty"`
+	AutoAcquisitionEnabled     bool                             `json:"auto_acquisition_enabled,omitempty"`
+	AutoAcquisitionBudget      int64                            `json:"auto_acquisition_budget,omitempty"`
 	AccountId                  int64                            `json:"account_id,omitempty"`
 }

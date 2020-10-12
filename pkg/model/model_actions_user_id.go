@@ -19,4 +19,7 @@ type ActionsUserId struct {
 	HashAndroidId string `json:"hash_android_id,omitempty"`
 	HashMac       string `json:"hash_mac,omitempty"`
 	Oaid          string `json:"oaid,omitempty"`
+	WechatOpenid  string `json:"wechat_openid,omitempty"`
+	WechatUnionid string `json:"wechat_unionid,omitempty"`
+	WechatAppId   string `json:"wechat_app_id,omitempty"`
 }

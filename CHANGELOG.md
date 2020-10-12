@@ -1,10 +1,13 @@
 # 更新日志
 本文记录了Go SDK的更新日志。
 
-## 2020-09-11
-1. 发布Go SDK [2.0.0] 版
-- 数组调整为指针，可区分空数组和nil
+## 2020-10-10
+1. 发布Go SDK [1.3.0] 版
+- AdgroupsUpdateRequest.DailyBudget调整为指针，可区分0和nil
+- AdvertiserUpdateRequest.DailyBudget调整为指针，可区分0和nil
+- CampaignsUpdateRequest.DailyBudget调整为指针，可区分0和nil
 - 增加新接口支持
+- 数组调整为指针，可区分空数组和nil
 - 修复推广目标相关接口genres字段返回和IDL不符的问题
 - 修复上传图片接口用UPLOAD_TYPE_BYTES方式上传的问题
 

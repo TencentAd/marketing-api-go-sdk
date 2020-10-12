@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ImagesAdd**](ImagesApi.md#ImagesAdd) | **Post** /images/add | 添加图片文件
 [**ImagesGet**](ImagesApi.md#ImagesGet) | **Get** /images/get | 获取图片信息
+[**ImagesUpdate**](ImagesApi.md#ImagesUpdate) | **Post** /images/update | 修改图片信息
 
 
 # **ImagesAdd**
@@ -83,6 +84,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: text/plain
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **ImagesUpdate**
+> ImagesUpdateResponse ImagesUpdate(ctx, data)
+修改图片信息
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ImagesUpdateRequest**](ImagesUpdateRequest.md)|  | 
+
+### Return type
+
+[**ImagesUpdateResponse**](ImagesUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

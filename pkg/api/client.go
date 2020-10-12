@@ -104,6 +104,8 @@ type APIClient struct {
 
 	ConversionsApi *ConversionsApiService
 
+	CreativetoolsTextApi *CreativetoolsTextApiService
+
 	CustomAudienceEstimationsApi *CustomAudienceEstimationsApiService
 
 	CustomAudienceFilesApi *CustomAudienceFilesApiService
@@ -166,6 +168,16 @@ type APIClient struct {
 
 	LeadsFormListApi *LeadsFormListApiService
 
+	LocalEndadsmanuallyApi *LocalEndadsmanuallyApiService
+
+	LocalEstimatedamountApi *LocalEstimatedamountApiService
+
+	LocalStoresApi *LocalStoresApiService
+
+	LocalStoresAddressParsingResultApi *LocalStoresAddressParsingResultApiService
+
+	LocalStoresSearchInfoApi *LocalStoresSearchInfoApiService
+
 	OauthApi *OauthApiService
 
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
@@ -183,6 +195,8 @@ type APIClient struct {
 	ProductItemsApi *ProductItemsApiService
 
 	ProductItemsDetailApi *ProductItemsDetailApiService
+
+	ProductItemsVerticalsApi *ProductItemsVerticalsApiService
 
 	ProductsSystemStatusApi *ProductsSystemStatusApiService
 
@@ -228,6 +242,8 @@ type APIClient struct {
 
 	WechatAdvertiserDetailApi *WechatAdvertiserDetailApiService
 
+	WechatAdvertiserLocalBusinessApi *WechatAdvertiserLocalBusinessApiService
+
 	WechatAdvertiserSpecificationApi *WechatAdvertiserSpecificationApiService
 
 	WechatAgencyApi *WechatAgencyApiService
@@ -236,11 +252,15 @@ type APIClient struct {
 
 	WechatFundStatementsDetailedApi *WechatFundStatementsDetailedApiService
 
+	WechatFundTransferApi *WechatFundTransferApiService
+
 	WechatFundsApi *WechatFundsApiService
 
 	WechatLeadsApi *WechatLeadsApiService
 
 	WechatPagesApi *WechatPagesApiService
+
+	WechatQualificationsApi *WechatQualificationsApiService
 
 	XijingPageApi *XijingPageApiService
 
@@ -296,6 +316,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
+	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
 	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
 	c.CustomAudienceInsightsApi = (*CustomAudienceInsightsApiService)(&c.common)
@@ -327,6 +348,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LeadsApi = (*LeadsApiService)(&c.common)
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
+	c.LocalEndadsmanuallyApi = (*LocalEndadsmanuallyApiService)(&c.common)
+	c.LocalEstimatedamountApi = (*LocalEstimatedamountApiService)(&c.common)
+	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
+	c.LocalStoresAddressParsingResultApi = (*LocalStoresAddressParsingResultApiService)(&c.common)
+	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
@@ -336,6 +362,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
+	c.ProductItemsVerticalsApi = (*ProductItemsVerticalsApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
@@ -358,13 +385,16 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
 	c.WechatAdvertiserApi = (*WechatAdvertiserApiService)(&c.common)
 	c.WechatAdvertiserDetailApi = (*WechatAdvertiserDetailApiService)(&c.common)
+	c.WechatAdvertiserLocalBusinessApi = (*WechatAdvertiserLocalBusinessApiService)(&c.common)
 	c.WechatAdvertiserSpecificationApi = (*WechatAdvertiserSpecificationApiService)(&c.common)
 	c.WechatAgencyApi = (*WechatAgencyApiService)(&c.common)
 	c.WechatDailyCostApi = (*WechatDailyCostApiService)(&c.common)
 	c.WechatFundStatementsDetailedApi = (*WechatFundStatementsDetailedApiService)(&c.common)
+	c.WechatFundTransferApi = (*WechatFundTransferApiService)(&c.common)
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
 	c.WechatLeadsApi = (*WechatLeadsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
+	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
 	c.XijingPageListApi = (*XijingPageListApiService)(&c.common)

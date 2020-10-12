@@ -33,7 +33,6 @@ type ReadTargetingSetting struct {
 	AppInstallStatus                 *[]string                          `json:"app_install_status,omitempty"`
 	MiniGameQqStatus                 *[]string                          `json:"mini_game_qq_status,omitempty"`
 	ConsumptionStatus                *[]string                          `json:"consumption_status,omitempty"`
-	GamerConsumptionAbility          *[]PlayerConsuptStruct             `json:"gamer_consumption_ability,omitempty"`
 	GameConsumptionLevel             *[]string                          `json:"game_consumption_level,omitempty"`
 	ResidentialCommunityPrice        *[]ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`
 	FinancialSituation               *[]string                          `json:"financial_situation,omitempty"`

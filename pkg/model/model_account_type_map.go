@@ -30,4 +30,6 @@ const (
 	AccountTypeMap_INTERNAL_QUOTA          AccountTypeMap = "FUND_TYPE_INTERNAL_QUOTA"
 	AccountTypeMap_TEST_VIRTUAL            AccountTypeMap = "FUND_TYPE_TEST_VIRTUAL"
 	AccountTypeMap_UNSUPPORTED             AccountTypeMap = "FUND_TYPE_UNSUPPORTED"
+	AccountTypeMap_JD_PRIVILEGE            AccountTypeMap = "FUND_TYPE_JD_PRIVILEGE"
+	AccountTypeMap_JD_WIRELESS_CASH        AccountTypeMap = "FUND_TYPE_JD_WIRELESS_CASH"
 )

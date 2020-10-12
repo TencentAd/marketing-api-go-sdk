@@ -32,7 +32,6 @@ type ReadTargetingSettingForAdgroup struct {
 	AirQualityIndex                  *[]string                          `json:"air_quality_index,omitempty"`
 	AppInstallStatus                 *[]string                          `json:"app_install_status,omitempty"`
 	ConsumptionStatus                *[]string                          `json:"consumption_status,omitempty"`
-	GamerConsumptionAbility          *[]PlayerConsuptStruct             `json:"gamer_consumption_ability,omitempty"`
 	GameConsumptionLevel             *[]string                          `json:"game_consumption_level,omitempty"`
 	ResidentialCommunityPrice        *[]ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`
 	FinancialSituation               *[]string                          `json:"financial_situation,omitempty"`
@@ -51,5 +50,5 @@ type ReadTargetingSettingForAdgroup struct {
 	DeprecatedExcludedCustomAudience *[]int64                           `json:"deprecated_excluded_custom_audience,omitempty"`
 	DeprecatedRegion                 *[]int64                           `json:"deprecated_region,omitempty"`
 	MiniGameQqStatus                 *[]string                          `json:"mini_game_qq_status,omitempty"`
-	ExcludedConvertedAudience        ExcludedConvertedAudience          `json:"excluded_converted_audience,omitempty"`
+	ExcludedConvertedAudience        *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
 }

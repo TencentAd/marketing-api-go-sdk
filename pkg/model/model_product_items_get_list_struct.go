@@ -28,4 +28,6 @@ type ProductItemsGetListStruct struct {
 	BrandId            int64   `json:"brand_id,omitempty"`
 	Description        string  `json:"description,omitempty"`
 	CustomData         string  `json:"custom_data,omitempty"`
+	IsVideo            string  `json:"is_video,omitempty"`
+	DataSource         string  `json:"data_source,omitempty"`
 }

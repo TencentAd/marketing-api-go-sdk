@@ -53,6 +53,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
  **userActionSetId** | **optional.Int64**|  | 
+ **type_** | [**optional.Interface of []string**](string.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

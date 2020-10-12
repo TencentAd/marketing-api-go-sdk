@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ImageId** | **string** |  | [optional] [default to null]
+**Description** | **string** |  | [optional] [default to null]
 **SourceSignature** | **string** |  | [optional] [default to null]
 **PreviewUrl** | **string** |  | [optional] [default to null]
 **SourceType** | [***ImageSourceType**](ImageSourceType.md) |  | [optional] [default to null]

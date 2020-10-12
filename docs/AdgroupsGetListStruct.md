@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **IsIncludeUnsupportedTargeting** | **bool** |  | [optional] [default to null]
 **SceneSpec** | [***SceneTargeting**](scene_targeting.md) |  | [optional] [default to null]
 **BeginDate** | **string** |  | [optional] [default to null]
+**FirstDayBeginTime** | **string** |  | [optional] [default to null]
 **EndDate** | **string** |  | [optional] [default to null]
 **TimeSeries** | **string** |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
@@ -50,6 +51,8 @@ Name | Type | Description | Notes
 **BidMode** | [***BidMode**](BidMode.md) |  | [optional] [default to null]
 **Status** | [***CalcStatus**](CalcStatus.md) |  | [optional] [default to null]
 **BidAdjustment** | [***BidAdjustment**](bid_adjustment.md) |  | [optional] [default to null]
+**AutoAcquisitionEnabled** | **bool** |  | [optional] [default to null]
+**AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

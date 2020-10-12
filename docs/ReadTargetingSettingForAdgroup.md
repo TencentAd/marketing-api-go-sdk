@@ -24,7 +24,6 @@ Name | Type | Description | Notes
 **AirQualityIndex** | **[]string** |  | [optional] [default to null]
 **AppInstallStatus** | **[]string** |  | [optional] [default to null]
 **ConsumptionStatus** | **[]string** |  | [optional] [default to null]
-**GamerConsumptionAbility** | [**[]PlayerConsuptStruct**](player_consupt_struct.md) |  | [optional] [default to null]
 **GameConsumptionLevel** | **[]string** |  | [optional] [default to null]
 **ResidentialCommunityPrice** | [**[]ResidentialCommunityPriceStruct**](residential_community_price_struct.md) |  | [optional] [default to null]
 **FinancialSituation** | **[]string** |  | [optional] [default to null]
@@ -43,7 +42,7 @@ Name | Type | Description | Notes
 **DeprecatedExcludedCustomAudience** | **[]int64** |  | [optional] [default to null]
 **DeprecatedRegion** | **[]int64** |  | [optional] [default to null]
 **MiniGameQqStatus** | **[]string** |  | [optional] [default to null]
-**ExcludedConvertedAudience** | [***ExcludedConvertedAudience**](excluded_converted_audience.md) |  | [optional] [default to null]
+**ExcludedConvertedAudience** | [***ExcludedConvertedAudienceStruct**](excluded_converted_audience_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **CustomAction** | **string** |  | [optional] [default to null]
 **Trace** | [***Trace**](trace.md) |  | [optional] [default to null]
 **Url** | **string** |  | [optional] [default to null]
+**ProductInform** | [***ProductInform**](product_inform.md) |  | [optional] [default to null]
+**Channel** | [***ActionChannelType**](ActionChannelType.md) |  | [optional] [default to null]
 **ExternalActionId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

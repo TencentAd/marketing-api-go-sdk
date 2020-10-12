@@ -11,7 +11,7 @@ package model
 
 type AdvertiserUpdateRequest struct {
 	AccountId               int64                    `json:"account_id,omitempty"`
-	DailyBudget             int64                    `json:"daily_budget,omitempty"`
+	DailyBudget             *int64                   `json:"daily_budget,omitempty"`
 	SystemIndustryId        int64                    `json:"system_industry_id,omitempty"`
 	CorporationName         string                   `json:"corporation_name,omitempty"`
 	CertificationImageId    string                   `json:"certification_image_id,omitempty"`

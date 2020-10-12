@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **QualificationCode** | **string** |  | [optional] [default to null]
 **ImageIdList** | **[]string** |  | [optional] [default to null]
 **QualificationStatus** | [***QualificationStatus**](QualificationStatus.md) |  | [optional] [default to null]
+**ExpiredDate** | **string** |  | [optional] [default to null]
 **RejectMessage** | **string** |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
