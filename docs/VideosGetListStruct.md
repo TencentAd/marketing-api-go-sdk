@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **SourceType** | [***MediaSourceType**](MediaSourceType.md) |  | [optional] [default to null]
 **ProductCatalogId** | **string** |  | [optional] [default to null]
 **ProductOuterId** | **string** |  | [optional] [default to null]
+**SourceReferenceId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

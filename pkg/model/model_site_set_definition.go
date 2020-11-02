@@ -22,6 +22,7 @@ const (
 	SiteSetDefinition_WECHAT               SiteSetDefinition = "SITE_SET_WECHAT"
 	SiteSetDefinition_MOBILE_MYAPP         SiteSetDefinition = "SITE_SET_MOBILE_MYAPP"
 	SiteSetDefinition_MOBILE_YYB           SiteSetDefinition = "SITE_SET_MOBILE_YYB"
+	SiteSetDefinition_QQSHOPPING           SiteSetDefinition = "SITE_SET_QQSHOPPING"
 	SiteSetDefinition_MOBILE_INNER         SiteSetDefinition = "SITE_SET_MOBILE_INNER"
 	SiteSetDefinition_TENCENT_NEWS         SiteSetDefinition = "SITE_SET_TENCENT_NEWS"
 	SiteSetDefinition_TENCENT_VIDEO        SiteSetDefinition = "SITE_SET_TENCENT_VIDEO"

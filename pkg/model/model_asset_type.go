@@ -14,8 +14,11 @@ type AssetType string
 
 // List of AssetType
 const (
-	AssetType_XIJING        AssetType = "ASSET_TYPE_XIJING"
-	AssetType_CANVAS_WECHAT AssetType = "ASSET_TYPE_CANVAS_WECHAT"
-	AssetType_CANVAS_IMAGE  AssetType = "ASSET_TYPE_CANVAS_IMAGE"
-	AssetType_CANVAS_VIDEO  AssetType = "ASSET_TYPE_CANVAS_VIDEO"
+	AssetType_XIJING              AssetType = "ASSET_TYPE_XIJING"
+	AssetType_CANVAS_WECHAT       AssetType = "ASSET_TYPE_CANVAS_WECHAT"
+	AssetType_CANVAS_IMAGE        AssetType = "ASSET_TYPE_CANVAS_IMAGE"
+	AssetType_CANVAS_VIDEO        AssetType = "ASSET_TYPE_CANVAS_VIDEO"
+	AssetType_FENGYE              AssetType = "ASSET_TYPE_FENGYE"
+	AssetType_DYNAMIC_AD_TEMPLATE AssetType = "ASSET_TYPE_DYNAMIC_AD_TEMPLATE"
+	AssetType_AD_QUALIFICATION    AssetType = "ASSET_TYPE_AD_QUALIFICATION"
 )

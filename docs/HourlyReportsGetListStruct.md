@@ -195,6 +195,7 @@ Name | Type | Description | Notes
 **ClickPoiCount** | **int64** |  | [optional] [default to null]
 **VideoInnerPlayCount** | **int64** |  | [optional] [default to null]
 **LanButtonClickCount** | **int64** |  | [optional] [default to null]
+**LanJumpButtonClickers** | **int64** |  | [optional] [default to null]
 **LanButtonClickCost** | **int64** |  | [optional] [default to null]
 **CpnClickButtonCount** | **int64** |  | [optional] [default to null]
 **CpnClickButtonUv** | **int64** |  | [optional] [default to null]

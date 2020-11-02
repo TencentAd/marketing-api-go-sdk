@@ -93,6 +93,14 @@ func (c *SDKClient) Authorization() *api.AuthorizationApiService {
 	return c.Client.AuthorizationApi
 }
 
+func (c *SDKClient) BatchAsyncRequestSpecification() *api.BatchAsyncRequestSpecificationApiService {
+	return c.Client.BatchAsyncRequestSpecificationApi
+}
+
+func (c *SDKClient) BatchAsyncRequests() *api.BatchAsyncRequestsApiService {
+	return c.Client.BatchAsyncRequestsApi
+}
+
 func (c *SDKClient) BatchOperation() *api.BatchOperationApiService {
 	return c.Client.BatchOperationApi
 }
@@ -121,6 +129,10 @@ func (c *SDKClient) Capabilities() *api.CapabilitiesApiService {
 	return c.Client.CapabilitiesApi
 }
 
+func (c *SDKClient) Channels() *api.ChannelsApiService {
+	return c.Client.ChannelsApi
+}
+
 func (c *SDKClient) ComplianceValidation() *api.ComplianceValidationApiService {
 	return c.Client.ComplianceValidationApi
 }
@@ -131,6 +143,10 @@ func (c *SDKClient) Conversions() *api.ConversionsApiService {
 
 func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
 	return c.Client.CreativetoolsTextApi
+}
+
+func (c *SDKClient) CreativevideoLabel() *api.CreativevideoLabelApiService {
+	return c.Client.CreativevideoLabelApi
 }
 
 func (c *SDKClient) CustomAudienceEstimations() *api.CustomAudienceEstimationsApiService {
@@ -257,6 +273,10 @@ func (c *SDKClient) LeadsFormList() *api.LeadsFormListApiService {
 	return c.Client.LeadsFormListApi
 }
 
+func (c *SDKClient) Local() *api.LocalApiService {
+	return c.Client.LocalApi
+}
+
 func (c *SDKClient) LocalEndadsmanually() *api.LocalEndadsmanuallyApiService {
 	return c.Client.LocalEndadsmanuallyApi
 }
@@ -335,6 +355,10 @@ func (c *SDKClient) Qualifications() *api.QualificationsApiService {
 
 func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {
 	return c.Client.RealtimeCostApi
+}
+
+func (c *SDKClient) Shop() *api.ShopApiService {
+	return c.Client.ShopApi
 }
 
 func (c *SDKClient) SplitTests() *api.SplitTestsApiService {

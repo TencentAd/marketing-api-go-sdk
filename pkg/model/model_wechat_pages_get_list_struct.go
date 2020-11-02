@@ -21,5 +21,6 @@ type WechatPagesGetListStruct struct {
 	PageType             PageTypeRead             `json:"page_type,omitempty"`
 	SourceType           WechatPageSourceType     `json:"source_type,omitempty"`
 	VideoResourceStatus  WechatPageResourceStatus `json:"video_resource_status,omitempty"`
+	CanvasType           CanvasType               `json:"canvas_type,omitempty"`
 	PageElementsSpecList *[]PageElementsStruct    `json:"page_elements_spec_list,omitempty"`
 }

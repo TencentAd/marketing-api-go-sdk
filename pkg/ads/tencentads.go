@@ -21,7 +21,7 @@ type SDKClient struct {
 }
 
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.3.0"
+	version := "1.4.0"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.NewV4().String()
@@ -145,7 +145,10 @@ func (tads *SDKClient) RoundTrip(req *http.Request) (rsp *http.Response, err err
 	return beforeFunc(req)
 }
 
-func (tads *SDKClient) GenMiddlewareHandleFunc(middleware Middleware, beforeFunc func(req *http.Request) (rsp *http.Response, err error)) func(req *http.Request) (rsp *http.Response, err error) {
+func (tads *SDKClient) GenMiddlewareHandleFunc(
+	middleware Middleware,
+	beforeFunc func(req *http.Request) (rsp *http.Response, err error),
+) func(req *http.Request) (rsp *http.Response, err error) {
 	return func(req *http.Request) (rsp *http.Response, err error) {
 		return middleware.Handle(req, beforeFunc)
 	}

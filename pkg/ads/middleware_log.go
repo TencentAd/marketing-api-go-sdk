@@ -11,7 +11,10 @@ type LogMiddleware struct {
 	tads *SDKClient
 }
 
-func (l *LogMiddleware) Handle(req *http.Request, next func(req *http.Request) (rsp *http.Response, err error)) (rsp *http.Response, err error) {
+func (l *LogMiddleware) Handle(
+	req *http.Request,
+	next func(req *http.Request) (rsp *http.Response, err error),
+) (rsp *http.Response, err error) {
 	var debugFile *os.File
 	tads := l.tads
 	if tads.IsDebug() {

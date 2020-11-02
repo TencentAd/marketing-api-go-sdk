@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **PlayablePageMaterialId** | **string** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
 **FeedsVideoCommentSwitch** | **bool** |  | [optional] [default to null]
+**WebviewUrl** | **string** |  | [optional] [default to null]
 **SimpleCanvasSubType** | [***SimpleCanvasSubType**](SimpleCanvasSubType.md) |  | [optional] [default to null]
 **FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]

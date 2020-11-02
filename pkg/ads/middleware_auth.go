@@ -13,7 +13,10 @@ type AuthMiddleware struct {
 	tads *SDKClient
 }
 
-func (a *AuthMiddleware) Handle(req *http.Request, next func(req *http.Request) (rsp *http.Response, err error)) (rsp *http.Response, err error) {
+func (a *AuthMiddleware) Handle(
+	req *http.Request,
+	next func(req *http.Request) (rsp *http.Response, err error),
+) (rsp *http.Response, err error) {
 	nonce := uuid.NewV4().String()
 	apiKey := config.APIKey{
 		AccessToken: a.tads.GetAccessToken(),

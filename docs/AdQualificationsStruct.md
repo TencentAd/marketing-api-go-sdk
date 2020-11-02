@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **ImageIdList** | **[]string** |  | [optional] [default to null]
 **QualificationStatus** | [***QualificationStatus**](QualificationStatus.md) |  | [optional] [default to null]
 **ExpiredDate** | **string** |  | [optional] [default to null]
+**IsMdmShared** | [***AdQualificationSharedStatus**](AdQualificationSharedStatus.md) |  | [optional] [default to null]
 **RejectMessage** | **string** |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]

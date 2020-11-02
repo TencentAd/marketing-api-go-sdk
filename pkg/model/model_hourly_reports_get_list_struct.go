@@ -203,6 +203,7 @@ type HourlyReportsGetListStruct struct {
 	ClickPoiCount                       int64   `json:"click_poi_count,omitempty"`
 	VideoInnerPlayCount                 int64   `json:"video_inner_play_count,omitempty"`
 	LanButtonClickCount                 int64   `json:"lan_button_click_count,omitempty"`
+	LanJumpButtonClickers               int64   `json:"lan_jump_button_clickers,omitempty"`
 	LanButtonClickCost                  int64   `json:"lan_button_click_cost,omitempty"`
 	CpnClickButtonCount                 int64   `json:"cpn_click_button_count,omitempty"`
 	CpnClickButtonUv                    int64   `json:"cpn_click_button_uv,omitempty"`

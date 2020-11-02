@@ -9,7 +9,10 @@ type DiffHostMiddleware struct {
 	tads *SDKClient
 }
 
-func (d *DiffHostMiddleware) Handle(req *http.Request, next func(req *http.Request) (rsp *http.Response, err error)) (rsp *http.Response, err error) {
+func (d *DiffHostMiddleware) Handle(
+	req *http.Request,
+	next func(req *http.Request) (rsp *http.Response, err error),
+) (rsp *http.Response, err error) {
 	interfaceUrl := req.URL.Path[len("/"+d.tads.ApiVersion):]
 	if specialUrl, ok := SpecialUrlInterfaceList[interfaceUrl]; ok {
 		if specialUrl.Host != "" {

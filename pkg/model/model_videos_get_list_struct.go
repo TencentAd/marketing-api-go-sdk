@@ -41,4 +41,5 @@ type VideosGetListStruct struct {
 	SourceType               MediaSourceType   `json:"source_type,omitempty"`
 	ProductCatalogId         string            `json:"product_catalog_id,omitempty"`
 	ProductOuterId           string            `json:"product_outer_id,omitempty"`
+	SourceReferenceId        string            `json:"source_reference_id,omitempty"`
 }

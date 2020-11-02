@@ -11,9 +11,9 @@ package model
 
 // 返回结构
 type ListStruct struct {
-	WechatQualificationName string `json:"wechat_qualification_name,omitempty"`
-	WechatQualificationUrl  string `json:"wechat_qualification_url,omitempty"`
-	WechatQualificationId   int64  `json:"wechat_qualification_id,omitempty"`
-	ReviewStatus            string `json:"review_status,omitempty"`
-	AuditMessage            string `json:"audit_message,omitempty"`
+	WechatQualificationName string                                 `json:"wechat_qualification_name,omitempty"`
+	WechatQualificationUrl  string                                 `json:"wechat_qualification_url,omitempty"`
+	WechatQualificationId   int64                                  `json:"wechat_qualification_id,omitempty"`
+	ReviewStatus            LocalBusinessQualificationReviewStatus `json:"review_status,omitempty"`
+	AuditMessage            string                                 `json:"audit_message,omitempty"`
 }

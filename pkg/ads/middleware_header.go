@@ -9,7 +9,10 @@ type HeaderMiddleware struct {
 	tads *SDKClient
 }
 
-func (h *HeaderMiddleware) Handle(req *http.Request, next func(req *http.Request) (rsp *http.Response, err error)) (rsp *http.Response, err error) {
+func (h *HeaderMiddleware) Handle(
+	req *http.Request,
+	next func(req *http.Request) (rsp *http.Response, err error),
+) (rsp *http.Response, err error) {
 	tads := h.tads
 	if tads.Config.GlobalConfig.HttpOption.Header != nil {
 		for k, v := range tads.Config.GlobalConfig.HttpOption.Header {

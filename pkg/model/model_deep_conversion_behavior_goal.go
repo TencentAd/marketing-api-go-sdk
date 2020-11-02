@@ -37,4 +37,5 @@ const (
 	DeepConversionBehaviorGoal_PURCHASE_MEMBER_CARD                DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD"
 	DeepConversionBehaviorGoal_CONFIRM_EFFECTIVE_LEADS_RESERVATION DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION"
 	DeepConversionBehaviorGoal_LEADS_COLLECT                       DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_LEADS_COLLECT"
+	DeepConversionBehaviorGoal_PROMOTION_VIEW_KEY_PAGE             DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE"
 )

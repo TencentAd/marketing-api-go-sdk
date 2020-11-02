@@ -25,4 +25,5 @@ const (
 	PageElementsType_SHELF                    PageElementsType = "SHELF"
 	PageElementsType_FLOAT_BUTTON             PageElementsType = "FLOAT_BUTTON"
 	PageElementsType_GOODS                    PageElementsType = "GOODS"
+	PageElementsType_COMMON_COMPONENT         PageElementsType = "COMMON_COMPONENT"
 )

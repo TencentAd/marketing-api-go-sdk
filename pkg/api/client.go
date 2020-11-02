@@ -86,6 +86,10 @@ type APIClient struct {
 
 	AuthorizationApi *AuthorizationApiService
 
+	BatchAsyncRequestSpecificationApi *BatchAsyncRequestSpecificationApiService
+
+	BatchAsyncRequestsApi *BatchAsyncRequestsApiService
+
 	BatchOperationApi *BatchOperationApiService
 
 	BatchRequestsApi *BatchRequestsApiService
@@ -100,11 +104,15 @@ type APIClient struct {
 
 	CapabilitiesApi *CapabilitiesApiService
 
+	ChannelsApi *ChannelsApiService
+
 	ComplianceValidationApi *ComplianceValidationApiService
 
 	ConversionsApi *ConversionsApiService
 
 	CreativetoolsTextApi *CreativetoolsTextApiService
+
+	CreativevideoLabelApi *CreativevideoLabelApiService
 
 	CustomAudienceEstimationsApi *CustomAudienceEstimationsApiService
 
@@ -168,6 +176,8 @@ type APIClient struct {
 
 	LeadsFormListApi *LeadsFormListApiService
 
+	LocalApi *LocalApiService
+
 	LocalEndadsmanuallyApi *LocalEndadsmanuallyApiService
 
 	LocalEstimatedamountApi *LocalEstimatedamountApiService
@@ -207,6 +217,8 @@ type APIClient struct {
 	QualificationsApi *QualificationsApiService
 
 	RealtimeCostApi *RealtimeCostApiService
+
+	ShopApi *ShopApiService
 
 	SplitTestsApi *SplitTestsApiService
 
@@ -307,6 +319,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AsyncTasksApi = (*AsyncTasksApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
 	c.AuthorizationApi = (*AuthorizationApiService)(&c.common)
+	c.BatchAsyncRequestSpecificationApi = (*BatchAsyncRequestSpecificationApiService)(&c.common)
+	c.BatchAsyncRequestsApi = (*BatchAsyncRequestsApiService)(&c.common)
 	c.BatchOperationApi = (*BatchOperationApiService)(&c.common)
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
 	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
@@ -314,9 +328,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
+	c.ChannelsApi = (*ChannelsApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
+	c.CreativevideoLabelApi = (*CreativevideoLabelApiService)(&c.common)
 	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
 	c.CustomAudienceInsightsApi = (*CustomAudienceInsightsApiService)(&c.common)
@@ -348,6 +364,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LeadsApi = (*LeadsApiService)(&c.common)
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
+	c.LocalApi = (*LocalApiService)(&c.common)
 	c.LocalEndadsmanuallyApi = (*LocalEndadsmanuallyApiService)(&c.common)
 	c.LocalEstimatedamountApi = (*LocalEstimatedamountApiService)(&c.common)
 	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
@@ -368,6 +385,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
+	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
