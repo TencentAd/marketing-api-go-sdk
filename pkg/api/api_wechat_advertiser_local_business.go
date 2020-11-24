@@ -37,16 +37,23 @@ WechatAdvertiserLocalBusinessApiService 附近推商家开户
  * @param contactPerson
  * @param contactPersonMobile
  * @param contactPersonCardId
- * @param contactPersonTele
  * @param corporation
  * @param corporationLicence
- * @param businessContent
  * @param industryId
  * @param businessId
+ * @param optional nil or *WechatAdvertiserLocalBusinessAddOpts - Optional Parameters:
+     * @param "ContactPersonTele" (optional.String) -
+     * @param "BusinessContent" (optional.String) -
 
 @return WechatAdvertiserLocalBusinessAddResponse
 */
-func (a *WechatAdvertiserLocalBusinessApiService) Add(ctx context.Context, headImage *os.File, name string, description string, contactPerson string, contactPersonMobile string, contactPersonCardId string, contactPersonTele string, corporation string, corporationLicence string, businessContent string, industryId int64, businessId string) (WechatAdvertiserLocalBusinessAddResponseData, http.Header, error) {
+
+type WechatAdvertiserLocalBusinessAddOpts struct {
+	ContactPersonTele optional.String
+	BusinessContent   optional.String
+}
+
+func (a *WechatAdvertiserLocalBusinessApiService) Add(ctx context.Context, headImage *os.File, name string, description string, contactPerson string, contactPersonMobile string, contactPersonCardId string, corporation string, corporationLicence string, industryId int64, businessId string, localVarOptionals *WechatAdvertiserLocalBusinessAddOpts) (WechatAdvertiserLocalBusinessAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -101,10 +108,14 @@ func (a *WechatAdvertiserLocalBusinessApiService) Add(ctx context.Context, headI
 	localVarFormParams.Add("contact_person", parameterToString(contactPerson, ""))
 	localVarFormParams.Add("contact_person_mobile", parameterToString(contactPersonMobile, ""))
 	localVarFormParams.Add("contact_person_card_id", parameterToString(contactPersonCardId, ""))
-	localVarFormParams.Add("contact_person_tele", parameterToString(contactPersonTele, ""))
+	if localVarOptionals != nil && localVarOptionals.ContactPersonTele.IsSet() {
+		localVarFormParams.Add("contact_person_tele", parameterToString(localVarOptionals.ContactPersonTele.Value(), ""))
+	}
 	localVarFormParams.Add("corporation", parameterToString(corporation, ""))
 	localVarFormParams.Add("corporation_licence", parameterToString(corporationLicence, ""))
-	localVarFormParams.Add("business_content", parameterToString(businessContent, ""))
+	if localVarOptionals != nil && localVarOptionals.BusinessContent.IsSet() {
+		localVarFormParams.Add("business_content", parameterToString(localVarOptionals.BusinessContent.Value(), ""))
+	}
 	localVarFormParams.Add("industry_id", parameterToString(industryId, ""))
 	localVarFormParams.Add("business_id", parameterToString(businessId, ""))
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
@@ -283,16 +294,23 @@ WechatAdvertiserLocalBusinessApiService 更新附近推商家信息
  * @param contactPerson
  * @param contactPersonMobile
  * @param contactPersonCardId
- * @param contactPersonTele
  * @param corporation
  * @param corporationLicence
- * @param businessContent
  * @param industryId
  * @param accountId
+ * @param optional nil or *WechatAdvertiserLocalBusinessUpdateOpts - Optional Parameters:
+     * @param "ContactPersonTele" (optional.String) -
+     * @param "BusinessContent" (optional.String) -
 
 @return WechatAdvertiserLocalBusinessUpdateResponse
 */
-func (a *WechatAdvertiserLocalBusinessApiService) Update(ctx context.Context, headImage *os.File, name string, description string, contactPerson string, contactPersonMobile string, contactPersonCardId string, contactPersonTele string, corporation string, corporationLicence string, businessContent string, industryId int64, accountId int64) (interface{}, http.Header, error) {
+
+type WechatAdvertiserLocalBusinessUpdateOpts struct {
+	ContactPersonTele optional.String
+	BusinessContent   optional.String
+}
+
+func (a *WechatAdvertiserLocalBusinessApiService) Update(ctx context.Context, headImage *os.File, name string, description string, contactPerson string, contactPersonMobile string, contactPersonCardId string, corporation string, corporationLicence string, industryId int64, accountId int64, localVarOptionals *WechatAdvertiserLocalBusinessUpdateOpts) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -347,10 +365,14 @@ func (a *WechatAdvertiserLocalBusinessApiService) Update(ctx context.Context, he
 	localVarFormParams.Add("contact_person", parameterToString(contactPerson, ""))
 	localVarFormParams.Add("contact_person_mobile", parameterToString(contactPersonMobile, ""))
 	localVarFormParams.Add("contact_person_card_id", parameterToString(contactPersonCardId, ""))
-	localVarFormParams.Add("contact_person_tele", parameterToString(contactPersonTele, ""))
+	if localVarOptionals != nil && localVarOptionals.ContactPersonTele.IsSet() {
+		localVarFormParams.Add("contact_person_tele", parameterToString(localVarOptionals.ContactPersonTele.Value(), ""))
+	}
 	localVarFormParams.Add("corporation", parameterToString(corporation, ""))
 	localVarFormParams.Add("corporation_licence", parameterToString(corporationLicence, ""))
-	localVarFormParams.Add("business_content", parameterToString(businessContent, ""))
+	if localVarOptionals != nil && localVarOptionals.BusinessContent.IsSet() {
+		localVarFormParams.Add("business_content", parameterToString(localVarOptionals.BusinessContent.Value(), ""))
+	}
 	localVarFormParams.Add("industry_id", parameterToString(industryId, ""))
 	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)

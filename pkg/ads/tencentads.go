@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+// SDKClient ...
 type SDKClient struct {
 	http.RoundTripper
 	Config         *config.SDKConfig
@@ -20,8 +21,9 @@ type SDKClient struct {
 	middlewareList []Middleware
 }
 
+// Init ...
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.4.0"
+	version := "1.4.1"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.NewV4().String()
@@ -51,6 +53,7 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 	return sdkClient
 }
 
+// SetHost ...
 func (tads *SDKClient) SetHost(host string, schema string) *SDKClient {
 	modified := false
 	if host != "" {
@@ -67,54 +70,66 @@ func (tads *SDKClient) SetHost(host string, schema string) *SDKClient {
 	return tads
 }
 
+// UseSandbox ...
 func (tads *SDKClient) UseSandbox() *SDKClient {
 	return tads.SetHost("sandbox-api.e.qq.com", "https")
 }
 
+// UseProduction ...
 func (tads *SDKClient) UseProduction() *SDKClient {
 	return tads.SetHost("api.e.qq.com", "https")
 }
 
+// GetAccessToken ...
 func (tads *SDKClient) GetAccessToken() string {
 	return tads.Config.AccessToken
 }
 
+// SetAccessToken ...
 func (tads *SDKClient) SetAccessToken(accessToken string) *SDKClient {
 	tads.Config.AccessToken = accessToken
 	return tads
 }
 
+// GetVersion ...
 func (tads *SDKClient) GetVersion() string {
 	return tads.Version
 }
 
+// IsDebug ...
 func (tads *SDKClient) IsDebug() bool {
 	return tads.Config.IsDebug
 }
 
+// SetDebug ...
 func (tads *SDKClient) SetDebug(debug bool) *SDKClient {
 	tads.Config.IsDebug = debug
 	return tads
 }
 
+// GetDebugFile ...
 func (tads *SDKClient) GetDebugFile() string {
 	return tads.Config.DebugFile
 }
 
+// SetDebugFile ...
 func (tads *SDKClient) SetDebugFile(debugFile string) *SDKClient {
 	tads.Config.DebugFile = debugFile
 	return tads
 }
 
+// IsMonitor ...
 func (tads *SDKClient) IsMonitor() bool {
 	return !tads.Config.SkipMonitor
 }
 
+// SetHeaders ...
 func (tads *SDKClient) SetHeaders(header http.Header) *SDKClient {
 	tads.Config.GlobalConfig.HttpOption.Header = header
 	return tads
 }
 
+// SetHeader ...
 func (tads *SDKClient) SetHeader(key string, value string) *SDKClient {
 	if tads.Config.GlobalConfig.HttpOption.Header == nil {
 		tads.Config.GlobalConfig.HttpOption.Header = http.Header{}
@@ -123,16 +138,19 @@ func (tads *SDKClient) SetHeader(key string, value string) *SDKClient {
 	return tads
 }
 
+// SetMonitor ...
 func (tads *SDKClient) SetMonitor(monitor bool) *SDKClient {
 	tads.Config.SkipMonitor = !monitor
 	return tads
 }
 
+// AppendMiddleware ...
 func (tads *SDKClient) AppendMiddleware(middleware Middleware) *SDKClient {
 	tads.middlewareList = append(tads.middlewareList, middleware)
 	return tads
 }
 
+// RoundTrip ...
 func (tads *SDKClient) RoundTrip(req *http.Request) (rsp *http.Response, err error) {
 	beforeFunc := func(req *http.Request) (rsp *http.Response, err error) {
 		return tads.RoundTripper.RoundTrip(req)
@@ -145,6 +163,7 @@ func (tads *SDKClient) RoundTrip(req *http.Request) (rsp *http.Response, err err
 	return beforeFunc(req)
 }
 
+// GenMiddlewareHandleFunc ...
 func (tads *SDKClient) GenMiddlewareHandleFunc(
 	middleware Middleware,
 	beforeFunc func(req *http.Request) (rsp *http.Response, err error),
@@ -153,3 +172,5 @@ func (tads *SDKClient) GenMiddlewareHandleFunc(
 		return middleware.Handle(req, beforeFunc)
 	}
 }
+
+// SetNameService ...

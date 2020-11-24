@@ -9,9 +9,10 @@
 
 package model
 
-// 拉取广告结构(计划数据较少放一起了)
+// 广告结构
 type AdgroupGetSpec struct {
 	AdgroupId         int64                    `json:"adgroup_id,omitempty"`
+	ConfiguredStatus  AdStatus                 `json:"configured_status,omitempty"`
 	AdgroupName       string                   `json:"adgroup_name,omitempty"`
 	BeginDate         string                   `json:"begin_date,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`

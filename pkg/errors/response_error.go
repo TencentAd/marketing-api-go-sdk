@@ -4,6 +4,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
+// ResponseError ...
 type ResponseError struct {
 	error
 	Code      int64                  `json:"code,omitempty"`
@@ -12,10 +13,12 @@ type ResponseError struct {
 	Errors    []model.ApiErrorStruct `json:"errors,omitempty"`
 }
 
+// Error ...
 func (e ResponseError) Error() string {
 	return e.Message
 }
 
+// NewError ...
 func NewError(code int64, message string, messageCn string, errors []model.ApiErrorStruct) ResponseError {
 	return ResponseError{
 		Code:      code,

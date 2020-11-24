@@ -43,6 +43,7 @@ type AdcreativesAddRequest struct {
 	SimpleCanvasSubType           SimpleCanvasSubType           `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                        `json:"marketing_pendant_image_id,omitempty"`
+	CountdownSwitch               bool                          `json:"countdown_switch,omitempty"`
 	AccountId                     int64                         `json:"account_id,omitempty"`
 	AdcreativeTemplateId          int64                         `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`

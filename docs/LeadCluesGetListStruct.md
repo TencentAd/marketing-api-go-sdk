@@ -43,6 +43,8 @@ Name | Type | Description | Notes
 **LeadsCreateTime** | **string** |  | [optional] [default to null]
 **LeadsActionTime** | **string** |  | [optional] [default to null]
 **LeadsTags** | **string** |  | [optional] [default to null]
+**ShopName** | **string** |  | [optional] [default to null]
+**ShopAddress** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

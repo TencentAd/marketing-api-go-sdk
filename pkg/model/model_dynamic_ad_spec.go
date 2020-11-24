@@ -13,4 +13,5 @@ package model
 type DynamicAdSpec struct {
 	ProductCatalogId int64       `json:"product_catalog_id,omitempty"`
 	ProductMode      ProductMode `json:"product_mode,omitempty"`
+	ProductSource    string      `json:"product_source,omitempty"`
 }

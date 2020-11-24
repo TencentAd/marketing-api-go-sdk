@@ -21,6 +21,7 @@ type ImagesGetListStruct struct {
 	ProductCatalogId  int64           `json:"product_catalog_id,omitempty"`
 	ProductOuterId    string          `json:"product_outer_id,omitempty"`
 	SourceReferenceId string          `json:"source_reference_id,omitempty"`
+	OwnerAccountId    string          `json:"owner_account_id,omitempty"`
 	Width             int64           `json:"width,omitempty"`
 	Height            int64           `json:"height,omitempty"`
 	FileSize          int64           `json:"file_size,omitempty"`

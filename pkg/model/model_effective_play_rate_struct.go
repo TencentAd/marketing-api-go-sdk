@@ -11,11 +11,11 @@ package model
 
 // 视频有效播放率(is_video为true有效)
 type EffectivePlayRateStruct struct {
-	Value              string    `json:"value,omitempty"`
-	Score              string    `json:"score,omitempty"`
-	RankOverall        string    `json:"rank_overall,omitempty"`
-	RankFirstCategory  string    `json:"rank_first_category,omitempty"`
-	RankSecondCategory string    `json:"rank_second_category,omitempty"`
-	SelfTrends         *[]string `json:"self_trends,omitempty"`
-	BenchmarkTrends    *[]string `json:"benchmark_trends,omitempty"`
+	Value              string         `json:"value,omitempty"`
+	Score              string         `json:"score,omitempty"`
+	RankOverall        string         `json:"rank_overall,omitempty"`
+	RankFirstCategory  string         `json:"rank_first_category,omitempty"`
+	RankSecondCategory string         `json:"rank_second_category,omitempty"`
+	SelfTrends         *[]PointStruct `json:"self_trends,omitempty"`
+	BenchmarkTrends    *[]PointStruct `json:"benchmark_trends,omitempty"`
 }

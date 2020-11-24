@@ -16,25 +16,25 @@ import (
 	"os"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 )
 
 type WechatAdvertiserLocalBusinessUpdateExample struct {
-	TAds                *ads.SDKClient
-	AccessToken         string
-	HeadImage           *os.File
-	Name                string
-	Description         string
-	ContactPerson       string
-	ContactPersonMobile string
-	ContactPersonCardId string
-	ContactPersonTele   string
-	Corporation         string
-	CorporationLicence  string
-	BusinessContent     string
-	IndustryId          int64
-	AccountId           int64
+	TAds                                    *ads.SDKClient
+	AccessToken                             string
+	HeadImage                               *os.File
+	Name                                    string
+	Description                             string
+	ContactPerson                           string
+	ContactPersonMobile                     string
+	ContactPersonCardId                     string
+	Corporation                             string
+	CorporationLicence                      string
+	IndustryId                              int64
+	AccountId                               int64
+	WechatAdvertiserLocalBusinessUpdateOpts *api.WechatAdvertiserLocalBusinessUpdateOpts
 }
 
 func (e *WechatAdvertiserLocalBusinessUpdateExample) Init() {
@@ -52,19 +52,18 @@ func (e *WechatAdvertiserLocalBusinessUpdateExample) Init() {
 	e.ContactPerson = "contactPerson_example"
 	e.ContactPersonMobile = "contactPersonMobile_example"
 	e.ContactPersonCardId = "contactPersonCardId_example"
-	e.ContactPersonTele = "contactPersonTele_example"
 	e.Corporation = "corporation_example"
 	e.CorporationLicence = "corporationLicence_example"
-	e.BusinessContent = "businessContent_example"
 	e.IndustryId = 789
 	e.AccountId = 789
+	e.WechatAdvertiserLocalBusinessUpdateOpts = &api.WechatAdvertiserLocalBusinessUpdateOpts{}
 }
 
 func (e *WechatAdvertiserLocalBusinessUpdateExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.WechatAdvertiserLocalBusiness().Update(ctx, e.HeadImage, e.Name, e.Description, e.ContactPerson, e.ContactPersonMobile, e.ContactPersonCardId, e.ContactPersonTele, e.Corporation, e.CorporationLicence, e.BusinessContent, e.IndustryId, e.AccountId)
+	return tads.WechatAdvertiserLocalBusiness().Update(ctx, e.HeadImage, e.Name, e.Description, e.ContactPerson, e.ContactPersonMobile, e.ContactPersonCardId, e.Corporation, e.CorporationLicence, e.IndustryId, e.AccountId, e.WechatAdvertiserLocalBusinessUpdateOpts)
 }
 
 func main() {

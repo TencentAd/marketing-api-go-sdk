@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **ProductCatalogId** | **int64** |  | [optional] [default to null]
 **ProductOuterId** | **string** |  | [optional] [default to null]
 **SourceReferenceId** | **string** |  | [optional] [default to null]
+**OwnerAccountId** | **string** |  | [optional] [default to null]
 **Width** | **int64** |  | [optional] [default to null]
 **Height** | **int64** |  | [optional] [default to null]
 **FileSize** | **int64** |  | [optional] [default to null]

@@ -42,6 +42,7 @@ type AdgroupsAddRequest struct {
 	ExpandTargeting            *[]string                        `json:"expand_targeting,omitempty"`
 	DeepConversionSpec         *DeepConversionSpec              `json:"deep_conversion_spec,omitempty"`
 	DeepOptimizationActionType DeepOptimizationActionType       `json:"deep_optimization_action_type,omitempty"`
+	PoiList                    *[]string                        `json:"poi_list,omitempty"`
 	ConversionId               int64                            `json:"conversion_id,omitempty"`
 	DeepConversionBehaviorBid  int64                            `json:"deep_conversion_behavior_bid,omitempty"`
 	DeepConversionWorthRate    float64                          `json:"deep_conversion_worth_rate,omitempty"`
@@ -49,5 +50,6 @@ type AdgroupsAddRequest struct {
 	BidAdjustment              *BidAdjustment                   `json:"bid_adjustment,omitempty"`
 	AutoAcquisitionEnabled     bool                             `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget      int64                            `json:"auto_acquisition_budget,omitempty"`
+	AutoDerivedCreativeEnabled bool                             `json:"auto_derived_creative_enabled,omitempty"`
 	AccountId                  int64                            `json:"account_id,omitempty"`
 }

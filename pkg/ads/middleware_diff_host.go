@@ -5,10 +5,12 @@ import (
 	"net/url"
 )
 
+// DiffHostMiddleware ...
 type DiffHostMiddleware struct {
 	tads *SDKClient
 }
 
+// Handle ...
 func (d *DiffHostMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),

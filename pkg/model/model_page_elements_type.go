@@ -26,4 +26,6 @@ const (
 	PageElementsType_FLOAT_BUTTON             PageElementsType = "FLOAT_BUTTON"
 	PageElementsType_GOODS                    PageElementsType = "GOODS"
 	PageElementsType_COMMON_COMPONENT         PageElementsType = "COMMON_COMPONENT"
+	PageElementsType_SWIPE_WEBVIEW            PageElementsType = "SWIPE_WEBVIEW"
+	PageElementsType_WEBVIEW                  PageElementsType = "WEBVIEW"
 )

@@ -26,4 +26,7 @@ const (
 	WechatMpOpenFundType_UNSUPPPORTED      WechatMpOpenFundType = "FUND_TYPE_UNSUPPPORTED"
 	WechatMpOpenFundType_MINIPROGRAM       WechatMpOpenFundType = "FUND_TYPE_MINIPROGRAM"
 	WechatMpOpenFundType_CREDIT            WechatMpOpenFundType = "FUND_TYPE_CREDIT"
+	WechatMpOpenFundType_INNER             WechatMpOpenFundType = "FUND_TYPE_INNER"
+	WechatMpOpenFundType_DEBT_TEMP         WechatMpOpenFundType = "FUND_TYPE_DEBT_TEMP"
+	WechatMpOpenFundType_DEBT_FIXED        WechatMpOpenFundType = "FUND_TYPE_DEBT_FIXED"
 )

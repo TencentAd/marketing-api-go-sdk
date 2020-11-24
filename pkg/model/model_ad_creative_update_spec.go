@@ -13,6 +13,7 @@ package model
 type AdCreativeUpdateSpec struct {
 	AdcreativeName     string                          `json:"adcreative_name,omitempty"`
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
+	PageSpec           *DpPageSpec                     `json:"page_spec,omitempty"`
 	ButtonTips         string                          `json:"button_tips,omitempty"`
 	CouponTitle        string                          `json:"coupon_title,omitempty"`
 }

@@ -9,7 +9,7 @@
 
 package model
 
-// 拉取ad结构
+// 计划结构
 type CampaignGetSpec struct {
 	CampaignId   int64  `json:"campaign_id,omitempty"`
 	CampaignName string `json:"campaign_name,omitempty"`

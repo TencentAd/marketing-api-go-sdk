@@ -9,7 +9,7 @@
 
 package model
 
-// ConversionTargetType : 数据展示转化数据量类型，仅投朋友圈流量且conversion_data_type为CONVERSION_DATA_ADMETRIC时可设置
+// ConversionTargetType : 数据展示转化行为
 type ConversionTargetType string
 
 // List of ConversionTargetType

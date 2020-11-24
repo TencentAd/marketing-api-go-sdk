@@ -11,31 +11,10 @@ package model
 
 // 报表效果数据
 type MetricDetailData struct {
-	Cost                     int64   `json:"cost,omitempty"`
-	ViewCount                int64   `json:"view_count,omitempty"`
-	ValidClickCount          int64   `json:"valid_click_count,omitempty"`
-	Ctr                      float64 `json:"ctr,omitempty"`
-	OrderCount               int64   `json:"order_count,omitempty"`
-	WebOrderCost             int64   `json:"web_order_cost,omitempty"`
-	OrderRoi                 float64 `json:"order_roi,omitempty"`
-	ChannelsVideoPlayPv      int64   `json:"channels_video_play_pv,omitempty"`
-	ChannelsVideoPlayTime    int64   `json:"channels_video_play_time,omitempty"`
-	ChannelsHeartPv          int64   `json:"channels_heart_pv,omitempty"`
-	ChannelsHeartDedupPv     int64   `json:"channels_heart_dedup_pv,omitempty"`
-	ChannelsCommentPv        int64   `json:"channels_comment_pv,omitempty"`
-	ChannelsCommentUv        int64   `json:"channels_comment_uv,omitempty"`
-	ChannelsSharePv          int64   `json:"channels_share_pv,omitempty"`
-	ChannelsShareUv          int64   `json:"channels_share_uv,omitempty"`
-	ChannelsFollowPv         int64   `json:"channels_follow_pv,omitempty"`
-	ChannelsFollowDedupPv    int64   `json:"channels_follow_dedup_pv,omitempty"`
-	ChannelsFeedsHeartPv     int64   `json:"channels_feeds_heart_pv,omitempty"`
-	ChannelsFeedsHeartUv     int64   `json:"channels_feeds_heart_uv,omitempty"`
-	ChannelsFeedsCommentPv   int64   `json:"channels_feeds_comment_pv,omitempty"`
-	ChannelsFeedsSharePv     int64   `json:"channels_feeds_share_pv,omitempty"`
-	ChannelsFeedsVideoPlayPv int64   `json:"channels_feeds_video_play_pv,omitempty"`
-	ExpPv                    int64   `json:"exp_pv,omitempty"`
-	CanvasCpnCouponsGetPv    int64   `json:"canvas_cpn_coupons_get_pv,omitempty"`
-	CanvasCpnCouponsCost     int64   `json:"canvas_cpn_coupons_cost,omitempty"`
-	CanvasCpnCouponsUsePv    int64   `json:"canvas_cpn_coupons_use_pv,omitempty"`
-	Purchase                 int64   `json:"purchase,omitempty"`
+	Cost                  int64 `json:"cost,omitempty"`
+	ExpPv                 int64 `json:"exp_pv,omitempty"`
+	CanvasCpnCouponsGetPv int64 `json:"canvas_cpn_coupons_get_pv,omitempty"`
+	CanvasCpnCouponsCost  int64 `json:"canvas_cpn_coupons_cost,omitempty"`
+	CanvasCpnCouponsUsePv int64 `json:"canvas_cpn_coupons_use_pv,omitempty"`
+	Purchase              int64 `json:"purchase,omitempty"`
 }

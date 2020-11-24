@@ -33,6 +33,7 @@ type AdgroupsUpdateRequest struct {
 	ExpandEnabled              bool                             `json:"expand_enabled,omitempty"`
 	ExpandTargeting            *[]string                        `json:"expand_targeting,omitempty"`
 	DeepConversionSpec         *DeepConversionSpec              `json:"deep_conversion_spec,omitempty"`
+	PoiList                    *[]string                        `json:"poi_list,omitempty"`
 	DeepConversionBehaviorBid  int64                            `json:"deep_conversion_behavior_bid,omitempty"`
 	DeepConversionWorthRate    float64                          `json:"deep_conversion_worth_rate,omitempty"`
 	BidMode                    BidMode                          `json:"bid_mode,omitempty"`

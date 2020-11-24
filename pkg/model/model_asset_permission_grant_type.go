@@ -9,7 +9,7 @@
 
 package model
 
-// AssetPermissionGrantType : 资产权限授予类型，素材授权功能目前白名单灰度中，若要使用可联系运营开通
+// AssetPermissionGrantType : 资产权限授予类型
 type AssetPermissionGrantType string
 
 // List of AssetPermissionGrantType

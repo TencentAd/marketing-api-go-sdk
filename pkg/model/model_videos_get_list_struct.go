@@ -42,4 +42,5 @@ type VideosGetListStruct struct {
 	ProductCatalogId         string            `json:"product_catalog_id,omitempty"`
 	ProductOuterId           string            `json:"product_outer_id,omitempty"`
 	SourceReferenceId        string            `json:"source_reference_id,omitempty"`
+	OwnerAccountId           string            `json:"owner_account_id,omitempty"`
 }

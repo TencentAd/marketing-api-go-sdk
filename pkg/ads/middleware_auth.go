@@ -9,10 +9,12 @@ import (
 	"time"
 )
 
+// AuthMiddleware ...
 type AuthMiddleware struct {
 	tads *SDKClient
 }
 
+// Handle ...
 func (a *AuthMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),

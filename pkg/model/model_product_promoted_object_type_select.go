@@ -23,6 +23,7 @@ const (
 	ProductPromotedObjectTypeSelect_EXCHANGE_APP_ANDROID_MYAPP ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_EXCHANGE_APP_ANDROID_MYAPP"
 	ProductPromotedObjectTypeSelect_DIANPING_SHOP              ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_DIANPING_SHOP"
 	ProductPromotedObjectTypeSelect_UNSUPPORTED                ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_UNSUPPORTED"
+	ProductPromotedObjectTypeSelect_MINI_GAME_WECHAT           ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT"
 	ProductPromotedObjectTypeSelect_MINI_GAME_QQ               ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_MINI_GAME_QQ"
 	ProductPromotedObjectTypeSelect_JD                         ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_JD"
 )

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **AppAndroidUnionSpec** | [***AppAndroidUnionSpec**](app_android_union_spec.md) |  | [optional] [default to null]
 **AppAndroidMyappSpec** | [***AppAndroidMyappSpec**](app_android_myapp_spec.md) |  | [optional] [default to null]
 **DianpingShop** | [***ProductTypeDianpingShop**](product_type_dianping_shop.md) |  | [optional] [default to null]
+**MiniGameWechatSpec** | [***MiniGameWechatSpec**](mini_game_wechat_spec.md) |  | [optional] [default to null]
 **QqBrowserMiniProgram** | [***QqBrowserMiniProgram**](qq_browser_mini_program.md) |  | [optional] [default to null]
 **LocalAdsSpec** | [***LocalAdsSpec**](local_ads_spec.md) |  | [optional] [default to null]
 

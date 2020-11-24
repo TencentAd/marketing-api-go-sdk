@@ -109,6 +109,7 @@ type HourlyReportsGetListStruct struct {
 	IntePhoneCount                      int64   `json:"inte_phone_count,omitempty"`
 	PhoneCallCount                      int64   `json:"phone_call_count,omitempty"`
 	ExternalFormReservationCount        int64   `json:"external_form_reservation_count,omitempty"`
+	AppAdPayingUsers                    int64   `json:"app_ad_paying_users,omitempty"`
 	AdPurValWeb                         int64   `json:"ad_pur_val_web,omitempty"`
 	AdPurValApp                         int64   `json:"ad_pur_val_app,omitempty"`
 	GameCreateRoleCount                 int64   `json:"game_create_role_count,omitempty"`
@@ -138,6 +139,7 @@ type HourlyReportsGetListStruct struct {
 	WebArppuCost                        int64   `json:"web_arppu_cost,omitempty"`
 	WebArpuCost                         int64   `json:"web_arpu_cost,omitempty"`
 	AppAdPurArpuCost                    int64   `json:"app_ad_pur_arpu_cost,omitempty"`
+	AppAdPurArppuCost                   int64   `json:"app_ad_pur_arppu_cost,omitempty"`
 	WebAdPurArpuCost                    int64   `json:"web_ad_pur_arpu_cost,omitempty"`
 	CheoutFd                            int64   `json:"cheout_fd,omitempty"`
 	CheoutTd                            int64   `json:"cheout_td,omitempty"`
@@ -170,8 +172,11 @@ type HourlyReportsGetListStruct struct {
 	WithdrDepAppVal                     int64   `json:"withdr_dep_app_val,omitempty"`
 	FirstPayCost                        int64   `json:"first_pay_cost,omitempty"`
 	LandingPageClickCount               int64   `json:"landing_page_click_count,omitempty"`
-	ScanFollowCount                     int64   `json:"scan_follow_count,omitempty"`
 	WebCartAmount                       int64   `json:"web_cart_amount,omitempty"`
+	ScanFollowCount                     int64   `json:"scan_follow_count,omitempty"`
+	ScanFollowUserCount                 int64   `json:"scan_follow_user_count,omitempty"`
+	ScanFollowUserCost                  int64   `json:"scan_follow_user_cost,omitempty"`
+	ScanFollowUserRate                  float64 `json:"scan_follow_user_rate,omitempty"`
 	AppOrderAmount                      int64   `json:"app_order_amount,omitempty"`
 	WebOrderAmount                      int64   `json:"web_order_amount,omitempty"`
 	PhoneConsultCount                   int64   `json:"phone_consult_count,omitempty"`
@@ -204,6 +209,8 @@ type HourlyReportsGetListStruct struct {
 	VideoInnerPlayCount                 int64   `json:"video_inner_play_count,omitempty"`
 	LanButtonClickCount                 int64   `json:"lan_button_click_count,omitempty"`
 	LanJumpButtonClickers               int64   `json:"lan_jump_button_clickers,omitempty"`
+	LanJumpButtonClickCost              int64   `json:"lan_jump_button_click_cost,omitempty"`
+	LanJumpButtonCtr                    float64 `json:"lan_jump_button_ctr,omitempty"`
 	LanButtonClickCost                  int64   `json:"lan_button_click_cost,omitempty"`
 	CpnClickButtonCount                 int64   `json:"cpn_click_button_count,omitempty"`
 	CpnClickButtonUv                    int64   `json:"cpn_click_button_uv,omitempty"`
@@ -253,21 +260,37 @@ type HourlyReportsGetListStruct struct {
 	CreAppCost                          int64   `json:"cre_app_cost,omitempty"`
 	PreCreWebCost                       int64   `json:"pre_cre_web_cost,omitempty"`
 	PreCreAppCost                       int64   `json:"pre_cre_app_cost,omitempty"`
+	RequestConversionsCount             int64   `json:"request_conversions_count,omitempty"`
+	RequestConversionsCost              int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                          float64 `json:"income_roi_1,omitempty"`
 	IncomeRoi3                          float64 `json:"income_roi_3,omitempty"`
 	IncomeRoi7                          float64 `json:"income_roi_7,omitempty"`
 	IncomeRoi14                         float64 `json:"income_roi_14,omitempty"`
+	ActivatedTotalPaymentCost           int64   `json:"activated_total_payment_cost,omitempty"`
+	PaymentAmountActivatedD3            int64   `json:"payment_amount_activated_d3,omitempty"`
+	PaymentAmountActivatedD7            int64   `json:"payment_amount_activated_d7,omitempty"`
+	PaymentAmountActivatedD14           int64   `json:"payment_amount_activated_d14,omitempty"`
+	PaymentAmountActivatedD30           int64   `json:"payment_amount_activated_d30,omitempty"`
 	FirstDayPayCount                    int64   `json:"first_day_pay_count,omitempty"`
 	FirstDayPayCost                     int64   `json:"first_day_pay_cost,omitempty"`
 	FirstDayFirstPayCost                int64   `json:"first_day_first_pay_cost,omitempty"`
 	FirstDayFirstPayCount               int64   `json:"first_day_first_pay_count,omitempty"`
+	PaymentCostActivatedD1              int64   `json:"payment_cost_activated_d1,omitempty"`
 	FirstDayPayAmount                   int64   `json:"first_day_pay_amount,omitempty"`
+	RoiActivatedD1                      float64 `json:"roi_activated_d1,omitempty"`
+	RoiActivatedD3                      float64 `json:"roi_activated_d3,omitempty"`
+	RoiActivatedD7                      float64 `json:"roi_activated_d7,omitempty"`
+	RoiActivatedD14                     float64 `json:"roi_activated_d14,omitempty"`
+	RoiActivatedD30                     float64 `json:"roi_activated_d30,omitempty"`
 	FirstDayFirstPayRate                float64 `json:"first_day_first_pay_rate,omitempty"`
 	CampaignId                          int64   `json:"campaign_id,omitempty"`
+	CampaignName                        string  `json:"campaign_name,omitempty"`
 	WebAddToCartCount                   int64   `json:"web_add_to_cart_count,omitempty"`
 	WebAddToCartCost                    int64   `json:"web_add_to_cart_cost,omitempty"`
 	AdgroupId                           int64   `json:"adgroup_id,omitempty"`
+	AdgroupName                         string  `json:"adgroup_name,omitempty"`
 	AdId                                int64   `json:"ad_id,omitempty"`
+	AdName                              string  `json:"ad_name,omitempty"`
 	PromotedObjectType                  string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                    string  `json:"promoted_object_id,omitempty"`
 	WechatAccountId                     string  `json:"wechat_account_id,omitempty"`

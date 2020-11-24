@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **WechatAdvertiserLocalBusinessAdd**
-> WechatAdvertiserLocalBusinessAddResponse WechatAdvertiserLocalBusinessAdd(ctx, headImage, name, description, contactPerson, contactPersonMobile, contactPersonCardId, contactPersonTele, corporation, corporationLicence, businessContent, industryId, businessId)
+> WechatAdvertiserLocalBusinessAddResponse WechatAdvertiserLocalBusinessAdd(ctx, headImage, name, description, contactPerson, contactPersonMobile, contactPersonCardId, corporation, corporationLicence, industryId, businessId, optional)
 附近推商家开户
 
 ### Required Parameters
@@ -24,12 +24,29 @@ Name | Type | Description  | Notes
   **contactPerson** | **string**|  | 
   **contactPersonMobile** | **string**|  | 
   **contactPersonCardId** | **string**|  | 
-  **contactPersonTele** | **string**|  | 
   **corporation** | **string**|  | 
   **corporationLicence** | **string**|  | 
-  **businessContent** | **string**|  | 
   **industryId** | **int64**|  | 
   **businessId** | **string**|  | 
+ **optional** | ***WechatAdvertiserLocalBusinessApiWechatAdvertiserLocalBusinessAddOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a WechatAdvertiserLocalBusinessApiWechatAdvertiserLocalBusinessAddOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+
+
+
+
+
+
+
+
+ **contactPersonTele** | **optional.String**|  | 
+ **businessContent** | **optional.String**|  | 
 
 ### Return type
 
@@ -82,7 +99,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **WechatAdvertiserLocalBusinessUpdate**
-> WechatAdvertiserLocalBusinessUpdateResponse WechatAdvertiserLocalBusinessUpdate(ctx, headImage, name, description, contactPerson, contactPersonMobile, contactPersonCardId, contactPersonTele, corporation, corporationLicence, businessContent, industryId, accountId)
+> WechatAdvertiserLocalBusinessUpdateResponse WechatAdvertiserLocalBusinessUpdate(ctx, headImage, name, description, contactPerson, contactPersonMobile, contactPersonCardId, corporation, corporationLicence, industryId, accountId, optional)
 更新附近推商家信息
 
 ### Required Parameters
@@ -96,12 +113,29 @@ Name | Type | Description  | Notes
   **contactPerson** | **string**|  | 
   **contactPersonMobile** | **string**|  | 
   **contactPersonCardId** | **string**|  | 
-  **contactPersonTele** | **string**|  | 
   **corporation** | **string**|  | 
   **corporationLicence** | **string**|  | 
-  **businessContent** | **string**|  | 
   **industryId** | **int64**|  | 
   **accountId** | **int64**|  | 
+ **optional** | ***WechatAdvertiserLocalBusinessApiWechatAdvertiserLocalBusinessUpdateOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a WechatAdvertiserLocalBusinessApiWechatAdvertiserLocalBusinessUpdateOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+
+
+
+
+
+
+
+
+ **contactPersonTele** | **optional.String**|  | 
+ **businessContent** | **optional.String**|  | 
 
 ### Return type
 

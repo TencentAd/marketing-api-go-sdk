@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AdgroupId** | **int64** |  | [optional] [default to null]
+**ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
 **BeginDate** | **string** |  | [optional] [default to null]
 **Targeting** | [***DpWriteTargetingSetting**](dp_write_targeting_setting.md) |  | [optional] [default to null]

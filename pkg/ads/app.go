@@ -121,6 +121,10 @@ func (c *SDKClient) BusinessManagerRelations() *api.BusinessManagerRelationsApiS
 	return c.Client.BusinessManagerRelationsApi
 }
 
+func (c *SDKClient) BusinessMdmAccountRelations() *api.BusinessMdmAccountRelationsApiService {
+	return c.Client.BusinessMdmAccountRelationsApi
+}
+
 func (c *SDKClient) Campaigns() *api.CampaignsApiService {
 	return c.Client.CampaignsApi
 }
@@ -143,10 +147,6 @@ func (c *SDKClient) Conversions() *api.ConversionsApiService {
 
 func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
 	return c.Client.CreativetoolsTextApi
-}
-
-func (c *SDKClient) CreativevideoLabel() *api.CreativevideoLabelApiService {
-	return c.Client.CreativevideoLabelApi
 }
 
 func (c *SDKClient) CustomAudienceEstimations() *api.CustomAudienceEstimationsApiService {
@@ -261,10 +261,6 @@ func (c *SDKClient) LeadClues() *api.LeadCluesApiService {
 	return c.Client.LeadCluesApi
 }
 
-func (c *SDKClient) Leads() *api.LeadsApiService {
-	return c.Client.LeadsApi
-}
-
 func (c *SDKClient) LeadsForm() *api.LeadsFormApiService {
 	return c.Client.LeadsFormApi
 }
@@ -357,6 +353,10 @@ func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {
 	return c.Client.RealtimeCostApi
 }
 
+func (c *SDKClient) Report() *api.ReportApiService {
+	return c.Client.ReportApi
+}
+
 func (c *SDKClient) Shop() *api.ShopApiService {
 	return c.Client.ShopApi
 }
@@ -409,6 +409,18 @@ func (c *SDKClient) UserPropertySets() *api.UserPropertySetsApiService {
 	return c.Client.UserPropertySetsApi
 }
 
+func (c *SDKClient) VideomakerAutoadjustments() *api.VideomakerAutoadjustmentsApiService {
+	return c.Client.VideomakerAutoadjustmentsApi
+}
+
+func (c *SDKClient) VideomakerSubtitles() *api.VideomakerSubtitlesApiService {
+	return c.Client.VideomakerSubtitlesApi
+}
+
+func (c *SDKClient) VideomakerTasks() *api.VideomakerTasksApiService {
+	return c.Client.VideomakerTasksApi
+}
+
 func (c *SDKClient) Videos() *api.VideosApiService {
 	return c.Client.VideosApi
 }
@@ -455,10 +467,6 @@ func (c *SDKClient) WechatFundTransfer() *api.WechatFundTransferApiService {
 
 func (c *SDKClient) WechatFunds() *api.WechatFundsApiService {
 	return c.Client.WechatFundsApi
-}
-
-func (c *SDKClient) WechatLeads() *api.WechatLeadsApiService {
-	return c.Client.WechatLeadsApi
 }
 
 func (c *SDKClient) WechatPages() *api.WechatPagesApiService {

@@ -17,6 +17,8 @@ Name | Type | Description | Notes
 **ContactPersonMobile** | **string** |  | [optional] [default to null]
 **WechatSpec** | [***MpInfoRead**](mp_info_read.md) |  | [optional] [default to null]
 **Websites** | [**[]WebsiteReadStruct**](website_read_struct.md) |  | [optional] [default to null]
+**MdmId** | **int64** |  | [optional] [default to null]
+**MdmName** | **string** |  | [optional] [default to null]
 **AgencyAccountId** | **int64** |  | [optional] [default to null]
 **Operators** | [**[]AdvertiserOperatorStruct**](advertiser_operator_struct.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]

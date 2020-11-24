@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Score** | **int64** |  | [optional] [default to null]
-**Acceptance** | **[]string** |  | [optional] [default to null]
+**Acceptance** | [**[]CompeteAttributionStruct**](compete_attribution_struct.md) |  | [optional] [default to null]
 **Conclusion** | **string** |  | [optional] [default to null]
 **Ratio** | **float64** |  | [optional] [default to null]
 

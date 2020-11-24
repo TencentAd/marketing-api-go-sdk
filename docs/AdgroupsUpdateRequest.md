@@ -26,6 +26,7 @@ Name | Type | Description | Notes
 **ExpandEnabled** | **bool** |  | [optional] [default to null]
 **ExpandTargeting** | **[]string** |  | [optional] [default to null]
 **DeepConversionSpec** | [***DeepConversionSpec**](deep_conversion_spec.md) |  | [optional] [default to null]
+**PoiList** | **[]string** |  | [optional] [default to null]
 **DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
 **DeepConversionWorthRate** | **float64** |  | [optional] [default to null]
 **BidMode** | [***BidMode**](BidMode.md) |  | [optional] [default to null]

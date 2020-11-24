@@ -51,4 +51,6 @@ type LeadCluesGetListStruct struct {
 	LeadsCreateTime     string `json:"leads_create_time,omitempty"`
 	LeadsActionTime     string `json:"leads_action_time,omitempty"`
 	LeadsTags           string `json:"leads_tags,omitempty"`
+	ShopName            string `json:"shop_name,omitempty"`
+	ShopAddress         string `json:"shop_address,omitempty"`
 }

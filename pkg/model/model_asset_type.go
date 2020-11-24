@@ -21,4 +21,6 @@ const (
 	AssetType_FENGYE              AssetType = "ASSET_TYPE_FENGYE"
 	AssetType_DYNAMIC_AD_TEMPLATE AssetType = "ASSET_TYPE_DYNAMIC_AD_TEMPLATE"
 	AssetType_AD_QUALIFICATION    AssetType = "ASSET_TYPE_AD_QUALIFICATION"
+	AssetType_CATALOG             AssetType = "ASSET_TYPE_CATALOG"
+	AssetType_ACTION_SET          AssetType = "ASSET_TYPE_ACTION_SET"
 )

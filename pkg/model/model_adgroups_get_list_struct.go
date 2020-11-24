@@ -23,6 +23,7 @@ type AdgroupsGetListStruct struct {
 	PromotedObjectType                PromotedObjectType              `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                  string                          `json:"promoted_object_id,omitempty"`
 	AppAndroidChannelPackageId        string                          `json:"app_android_channel_package_id,omitempty"`
+	MiniGameProgramId                 string                          `json:"mini_game_program_id,omitempty"`
 	TargetingId                       int64                           `json:"targeting_id,omitempty"`
 	Targeting                         *ReadTargetingSettingForAdgroup `json:"targeting,omitempty"`
 	TargetingTranslation              string                          `json:"targeting_translation,omitempty"`
@@ -36,6 +37,7 @@ type AdgroupsGetListStruct struct {
 	CustomizedCategory                string                          `json:"customized_category,omitempty"`
 	CreatedTime                       int64                           `json:"created_time,omitempty"`
 	LastModifiedTime                  int64                           `json:"last_modified_time,omitempty"`
+	AdCount                           int64                           `json:"ad_count,omitempty"`
 	DynamicAdSpec                     *DynamicAdSpec                  `json:"dynamic_ad_spec,omitempty"`
 	UserActionSets                    *[]UserActionSetStruct          `json:"user_action_sets,omitempty"`
 	AdditionalUserActionSets          *[]UserActionSetStruct          `json:"additional_user_action_sets,omitempty"`
@@ -51,6 +53,7 @@ type AdgroupsGetListStruct struct {
 	ExpandTargeting                   *[]string                       `json:"expand_targeting,omitempty"`
 	DeepConversionSpec                *DeepConversionSpec             `json:"deep_conversion_spec,omitempty"`
 	DeepOptimizationActionType        DeepOptimizationActionType      `json:"deep_optimization_action_type,omitempty"`
+	PoiList                           *[]string                       `json:"poi_list,omitempty"`
 	ConversionId                      int64                           `json:"conversion_id,omitempty"`
 	DeepConversionBehaviorBid         int64                           `json:"deep_conversion_behavior_bid,omitempty"`
 	DeepConversionWorthRate           float64                         `json:"deep_conversion_worth_rate,omitempty"`
@@ -61,4 +64,5 @@ type AdgroupsGetListStruct struct {
 	BidAdjustment                     *BidAdjustment                  `json:"bid_adjustment,omitempty"`
 	AutoAcquisitionEnabled            bool                            `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget             int64                           `json:"auto_acquisition_budget,omitempty"`
+	AutoDerivedCreativeEnabled        bool                            `json:"auto_derived_creative_enabled,omitempty"`
 }

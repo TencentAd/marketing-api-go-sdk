@@ -100,6 +100,8 @@ type APIClient struct {
 
 	BusinessManagerRelationsApi *BusinessManagerRelationsApiService
 
+	BusinessMdmAccountRelationsApi *BusinessMdmAccountRelationsApiService
+
 	CampaignsApi *CampaignsApiService
 
 	CapabilitiesApi *CapabilitiesApiService
@@ -111,8 +113,6 @@ type APIClient struct {
 	ConversionsApi *ConversionsApiService
 
 	CreativetoolsTextApi *CreativetoolsTextApiService
-
-	CreativevideoLabelApi *CreativevideoLabelApiService
 
 	CustomAudienceEstimationsApi *CustomAudienceEstimationsApiService
 
@@ -170,8 +170,6 @@ type APIClient struct {
 
 	LeadCluesApi *LeadCluesApiService
 
-	LeadsApi *LeadsApiService
-
 	LeadsFormApi *LeadsFormApiService
 
 	LeadsFormListApi *LeadsFormListApiService
@@ -218,6 +216,8 @@ type APIClient struct {
 
 	RealtimeCostApi *RealtimeCostApiService
 
+	ReportApi *ReportApiService
+
 	ShopApi *ShopApiService
 
 	SplitTestsApi *SplitTestsApiService
@@ -244,6 +244,12 @@ type APIClient struct {
 
 	UserPropertySetsApi *UserPropertySetsApiService
 
+	VideomakerAutoadjustmentsApi *VideomakerAutoadjustmentsApiService
+
+	VideomakerSubtitlesApi *VideomakerSubtitlesApiService
+
+	VideomakerTasksApi *VideomakerTasksApiService
+
 	VideosApi *VideosApiService
 
 	WechatAdFollowersApi *WechatAdFollowersApiService
@@ -267,8 +273,6 @@ type APIClient struct {
 	WechatFundTransferApi *WechatFundTransferApiService
 
 	WechatFundsApi *WechatFundsApiService
-
-	WechatLeadsApi *WechatLeadsApiService
 
 	WechatPagesApi *WechatPagesApiService
 
@@ -326,13 +330,13 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)
+	c.BusinessMdmAccountRelationsApi = (*BusinessMdmAccountRelationsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
 	c.ChannelsApi = (*ChannelsApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
-	c.CreativevideoLabelApi = (*CreativevideoLabelApiService)(&c.common)
 	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
 	c.CustomAudienceInsightsApi = (*CustomAudienceInsightsApiService)(&c.common)
@@ -361,7 +365,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LabelAudiencesApi = (*LabelAudiencesApiService)(&c.common)
 	c.LabelsApi = (*LabelsApiService)(&c.common)
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
-	c.LeadsApi = (*LeadsApiService)(&c.common)
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
 	c.LocalApi = (*LocalApiService)(&c.common)
@@ -385,6 +388,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
+	c.ReportApi = (*ReportApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
@@ -398,6 +402,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.UserActionsApi = (*UserActionsApiService)(&c.common)
 	c.UserPropertiesApi = (*UserPropertiesApiService)(&c.common)
 	c.UserPropertySetsApi = (*UserPropertySetsApiService)(&c.common)
+	c.VideomakerAutoadjustmentsApi = (*VideomakerAutoadjustmentsApiService)(&c.common)
+	c.VideomakerSubtitlesApi = (*VideomakerSubtitlesApiService)(&c.common)
+	c.VideomakerTasksApi = (*VideomakerTasksApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatAdFollowersApi = (*WechatAdFollowersApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
@@ -410,7 +417,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.WechatFundStatementsDetailedApi = (*WechatFundStatementsDetailedApiService)(&c.common)
 	c.WechatFundTransferApi = (*WechatFundTransferApiService)(&c.common)
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
-	c.WechatLeadsApi = (*WechatLeadsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)

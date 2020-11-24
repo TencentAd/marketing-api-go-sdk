@@ -5,10 +5,12 @@ import (
 	"runtime"
 )
 
+// HeaderMiddleware ...
 type HeaderMiddleware struct {
 	tads *SDKClient
 }
 
+// Handle ...
 func (h *HeaderMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),

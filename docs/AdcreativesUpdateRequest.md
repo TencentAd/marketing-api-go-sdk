@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **SimpleCanvasSubType** | [***SimpleCanvasSubType**](SimpleCanvasSubType.md) |  | [optional] [default to null]
 **FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]
+**CountdownSwitch** | **bool** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]
 

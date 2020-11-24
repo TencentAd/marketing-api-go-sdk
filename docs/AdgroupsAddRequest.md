@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **ExpandTargeting** | **[]string** |  | [optional] [default to null]
 **DeepConversionSpec** | [***DeepConversionSpec**](deep_conversion_spec.md) |  | [optional] [default to null]
 **DeepOptimizationActionType** | [***DeepOptimizationActionType**](DeepOptimizationActionType.md) |  | [optional] [default to null]
+**PoiList** | **[]string** |  | [optional] [default to null]
 **ConversionId** | **int64** |  | [optional] [default to null]
 **DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
 **DeepConversionWorthRate** | **float64** |  | [optional] [default to null]
@@ -42,6 +43,7 @@ Name | Type | Description | Notes
 **BidAdjustment** | [***BidAdjustment**](bid_adjustment.md) |  | [optional] [default to null]
 **AutoAcquisitionEnabled** | **bool** |  | [optional] [default to null]
 **AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
+**AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

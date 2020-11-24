@@ -16,4 +16,5 @@ type AssetPermissionsAddRequest struct {
 	LicensingAccountIdList *[]int64                     `json:"licensing_account_id_list,omitempty"`
 	LicensingIdType        AssetAccountType             `json:"licensing_id_type,omitempty"`
 	PathId                 int64                        `json:"path_id,omitempty"`
+	PermissionList         *[]string                    `json:"permission_list,omitempty"`
 }

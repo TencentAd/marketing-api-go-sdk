@@ -9,7 +9,7 @@
 
 package model
 
-// ConversionDataType : 数据展示数据类型
+// ConversionDataType : 数据展示的数据类型
 type ConversionDataType string
 
 // List of ConversionDataType

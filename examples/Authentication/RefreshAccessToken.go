@@ -11,6 +11,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 )
 
+// RefreshAccessTokenExample ...
 type RefreshAccessTokenExample struct {
 	TAds           *ads.SDKClient
 	AccessToken    string
@@ -20,6 +21,7 @@ type RefreshAccessTokenExample struct {
 	OauthTokenOpts *api.OauthTokenOpts
 }
 
+// Init ...
 func (e *RefreshAccessTokenExample) Init() {
 	e.TAds = ads.Init(&config.SDKConfig{
 		IsDebug: true,
@@ -35,6 +37,7 @@ func (e *RefreshAccessTokenExample) Init() {
 	}
 }
 
+// RunExample ...
 func (e *RefreshAccessTokenExample) RunExample() {
 	tads := e.TAds
 	// change ctx as needed

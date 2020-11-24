@@ -18,6 +18,7 @@ type PromotedObjectGetSpec struct {
 	AppAndroidUnionSpec  *AppAndroidUnionSpec          `json:"app_android_union_spec,omitempty"`
 	AppAndroidMyappSpec  *AppAndroidMyappSpec          `json:"app_android_myapp_spec,omitempty"`
 	DianpingShop         *ProductTypeDianpingShop      `json:"dianping_shop,omitempty"`
+	MiniGameWechatSpec   *MiniGameWechatSpec           `json:"mini_game_wechat_spec,omitempty"`
 	QqBrowserMiniProgram *QqBrowserMiniProgram         `json:"qq_browser_mini_program,omitempty"`
 	LocalAdsSpec         *LocalAdsSpec                 `json:"local_ads_spec,omitempty"`
 }

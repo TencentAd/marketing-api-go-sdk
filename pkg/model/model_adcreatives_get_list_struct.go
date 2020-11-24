@@ -52,6 +52,7 @@ type AdcreativesGetListStruct struct {
 	SimpleCanvasSubType           SimpleCanvasSubType               `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                     `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                            `json:"marketing_pendant_image_id,omitempty"`
+	CountdownSwitch               bool                              `json:"countdown_switch,omitempty"`
 	AdcreativeTemplateId          int64                             `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

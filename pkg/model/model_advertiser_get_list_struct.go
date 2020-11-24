@@ -25,6 +25,8 @@ type AdvertiserGetListStruct struct {
 	ContactPersonMobile              string                       `json:"contact_person_mobile,omitempty"`
 	WechatSpec                       *MpInfoRead                  `json:"wechat_spec,omitempty"`
 	Websites                         *[]WebsiteReadStruct         `json:"websites,omitempty"`
+	MdmId                            int64                        `json:"mdm_id,omitempty"`
+	MdmName                          string                       `json:"mdm_name,omitempty"`
 	AgencyAccountId                  int64                        `json:"agency_account_id,omitempty"`
 	Operators                        *[]AdvertiserOperatorStruct  `json:"operators,omitempty"`
 	AccountId                        int64                        `json:"account_id,omitempty"`

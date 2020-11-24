@@ -7,10 +7,12 @@ import (
 	"os"
 )
 
+// LogMiddleware ...
 type LogMiddleware struct {
 	tads *SDKClient
 }
 
+// Handle ...
 func (l *LogMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),
