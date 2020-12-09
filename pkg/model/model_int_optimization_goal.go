@@ -59,4 +59,8 @@ const (
 	IntOptimizationGoal_MOBILE_APP_AD_INCOME                IntOptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_AD_INCOME"
 	IntOptimizationGoal_MOBILE_APP_ACCREDIT                 IntOptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT"
 	IntOptimizationGoal_PURCHASE_MEMBER_CARD                IntOptimizationGoal = "OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD"
+	IntOptimizationGoal_EXTERNAL_LINK_CLICK                 IntOptimizationGoal = "OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK"
+	IntOptimizationGoal_BUY_COUPONS                         IntOptimizationGoal = "OPTIMIZATIONGOAL_BUY_COUPONS"
+	IntOptimizationGoal_LEAVE_INFORMATION                   IntOptimizationGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
+	IntOptimizationGoal_ONE_DAY_RETENTION_RATIO             IntOptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 )

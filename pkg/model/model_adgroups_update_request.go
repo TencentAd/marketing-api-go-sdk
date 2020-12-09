@@ -13,7 +13,7 @@ type AdgroupsUpdateRequest struct {
 	AdgroupId                  int64                            `json:"adgroup_id,omitempty"`
 	AdgroupName                string                           `json:"adgroup_name,omitempty"`
 	BeginDate                  *string                          `json:"begin_date,omitempty"`
-	FirstDayBeginTime          string                           `json:"first_day_begin_time,omitempty"`
+	FirstDayBeginTime          *string                          `json:"first_day_begin_time,omitempty"`
 	EndDate                    *string                          `json:"end_date,omitempty"`
 	BidAmount                  int64                            `json:"bid_amount,omitempty"`
 	ConversionId               int64                            `json:"conversion_id,omitempty"`

@@ -14,7 +14,6 @@ type CatalogType string
 
 // List of CatalogType
 const (
-	CatalogType_CATALOG_TYPE_UNKNOWN           CatalogType = "CATALOG_TYPE_UNKNOWN"
 	CatalogType_CATALOG_TYPE_STANDARD          CatalogType = "CATALOG_TYPE_STANDARD"
 	CatalogType_CATALOG_TYPE_FENGYE            CatalogType = "CATALOG_TYPE_FENGYE"
 	CatalogType_CATALOG_TYPE_LOCAL_STORE       CatalogType = "CATALOG_TYPE_LOCAL_STORE"
@@ -23,4 +22,5 @@ const (
 	CatalogType_PRODUCT_CATALOG_TYPE_SMALLSHOP CatalogType = "PRODUCT_CATALOG_TYPE_SMALLSHOP"
 	CatalogType_PRODUCT_CATALOG_TYPE_YUEBAO    CatalogType = "PRODUCT_CATALOG_TYPE_YUEBAO"
 	CatalogType_PRODUCT_CATALOG_TYPE_MAIBAO    CatalogType = "PRODUCT_CATALOG_TYPE_MAIBAO"
+	CatalogType_CATALOG_TYPE_UNKNOWN           CatalogType = "CATALOG_TYPE_UNKNOWN"
 )

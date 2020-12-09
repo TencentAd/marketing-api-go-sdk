@@ -101,6 +101,9 @@ type TargetingTagReportsGetListStruct struct {
 	FromFollowCost               int64   `json:"from_follow_cost,omitempty"`
 	AddDesktopPv                 int64   `json:"add_desktop_pv,omitempty"`
 	AddDesktopCost               int64   `json:"add_desktop_cost,omitempty"`
+	StoreVisitor                 int64   `json:"store_visitor,omitempty"`
+	TryOutUser                   int64   `json:"try_out_user,omitempty"`
+	ConsultLeaveInfoUsers        int64   `json:"consult_leave_info_users,omitempty"`
 	Age                          string  `json:"age,omitempty"`
 	RegionId                     int64   `json:"region_id,omitempty"`
 	CityId                       int64   `json:"city_id,omitempty"`

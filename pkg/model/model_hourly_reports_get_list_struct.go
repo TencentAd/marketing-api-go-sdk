@@ -260,6 +260,9 @@ type HourlyReportsGetListStruct struct {
 	CreAppCost                          int64   `json:"cre_app_cost,omitempty"`
 	PreCreWebCost                       int64   `json:"pre_cre_web_cost,omitempty"`
 	PreCreAppCost                       int64   `json:"pre_cre_app_cost,omitempty"`
+	StoreVisitor                        int64   `json:"store_visitor,omitempty"`
+	TryOutUser                          int64   `json:"try_out_user,omitempty"`
+	ConsultLeaveInfoUsers               int64   `json:"consult_leave_info_users,omitempty"`
 	RequestConversionsCount             int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost              int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                          float64 `json:"income_roi_1,omitempty"`

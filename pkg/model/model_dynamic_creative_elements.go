@@ -19,9 +19,11 @@ type DynamicCreativeElements struct {
 	Corporate                  *AdcreativeCorporate               `json:"corporate,omitempty"`
 	Video                      string                             `json:"video,omitempty"`
 	ImageOptions               *[]string                          `json:"image_options,omitempty"`
+	ImageListOptions           *[]ImageListOptions                `json:"image_list_options,omitempty"`
 	TitleOptions               *[]string                          `json:"title_options,omitempty"`
 	DescriptionOptions         *[]string                          `json:"description_options,omitempty"`
 	VideoOptions               *[]string                          `json:"video_options,omitempty"`
+	ShortVideoStructOptions    *[]ShortVideoStruct                `json:"short_video_struct_options,omitempty"`
 	DeepLinkType               string                             `json:"deep_link_type,omitempty"`
 	LinkNameType               LinkNameType                       `json:"link_name_type,omitempty"`
 	ImageList                  *[]string                          `json:"image_list,omitempty"`

@@ -262,6 +262,9 @@ type DailyReportsGetListStruct struct {
 	CreAppCost                          int64   `json:"cre_app_cost,omitempty"`
 	PreCreWebCost                       int64   `json:"pre_cre_web_cost,omitempty"`
 	PreCreAppCost                       int64   `json:"pre_cre_app_cost,omitempty"`
+	StoreVisitor                        int64   `json:"store_visitor,omitempty"`
+	TryOutUser                          int64   `json:"try_out_user,omitempty"`
+	ConsultLeaveInfoUsers               int64   `json:"consult_leave_info_users,omitempty"`
 	RequestConversionsCount             int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost              int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                          float64 `json:"income_roi_1,omitempty"`
@@ -304,6 +307,14 @@ type DailyReportsGetListStruct struct {
 	SiteSet                             string  `json:"site_set,omitempty"`
 	MaterialId                          int64   `json:"material_id,omitempty"`
 	Signature                           string  `json:"signature,omitempty"`
+	ProductCatalogId                    int64   `json:"product_catalog_id,omitempty"`
+	ProductOuterId                      string  `json:"product_outer_id,omitempty"`
+	BrandId                             int64   `json:"brand_id,omitempty"`
+	ProductSetId                        int64   `json:"product_set_id,omitempty"`
+	ShopId                              int64   `json:"shop_id,omitempty"`
+	FirstCategoryId                     int64   `json:"first_category_id,omitempty"`
+	SecondCategoryId                    int64   `json:"second_category_id,omitempty"`
+	ThirdCategoryId                     int64   `json:"third_category_id,omitempty"`
 	WechatAccountId                     string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                      string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                   float64 `json:"cost_deviation_rate,omitempty"`

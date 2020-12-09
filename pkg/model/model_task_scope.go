@@ -20,4 +20,5 @@ const (
 	TaskScope_ADVERTISER     TaskScope = "TASK_SCOPE_ADVERTISER"
 	TaskScope_SCHEDULED_TASK TaskScope = "TASK_SCOPE_SCHEDULED_TASK"
 	TaskScope_AD             TaskScope = "TASK_SCOPE_AD"
+	TaskScope_ADCREATIVE     TaskScope = "TASK_SCOPE_ADCREATIVE"
 )

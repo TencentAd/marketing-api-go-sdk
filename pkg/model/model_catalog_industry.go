@@ -17,4 +17,5 @@ const (
 	CatalogIndustry_ECOMMERCE CatalogIndustry = "INDUSTRY_TYPE_ECOMMERCE"
 	CatalogIndustry_READING   CatalogIndustry = "INDUSTRY_TYPE_READING"
 	CatalogIndustry_EDUCATION CatalogIndustry = "INDUSTRY_TYPE_EDUCATION"
+	CatalogIndustry_WEDDING   CatalogIndustry = "INDUSTRY_TYPE_WEDDING"
 )
