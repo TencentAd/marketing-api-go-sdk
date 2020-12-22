@@ -265,6 +265,15 @@ type DailyReportsGetListStruct struct {
 	StoreVisitor                        int64   `json:"store_visitor,omitempty"`
 	TryOutUser                          int64   `json:"try_out_user,omitempty"`
 	ConsultLeaveInfoUsers               int64   `json:"consult_leave_info_users,omitempty"`
+	ActivePageViews                     int64   `json:"active_page_views,omitempty"`
+	ActivePageViewers                   int64   `json:"active_page_viewers,omitempty"`
+	ActivePageInteractionAmount         int64   `json:"active_page_interaction_amount,omitempty"`
+	ActivePageInteractionUsers          int64   `json:"active_page_interaction_users,omitempty"`
+	JoinChatGroupAmount                 int64   `json:"join_chat_group_amount,omitempty"`
+	GuideToFollowPageViews              int64   `json:"guide_to_follow_page_views,omitempty"`
+	GuideToFollowPageViewers            int64   `json:"guide_to_follow_page_viewers,omitempty"`
+	GuideToFollowPageInteractionAmount  int64   `json:"guide_to_follow_page_interaction_amount,omitempty"`
+	GuideToFollowPageInteractionUsers   int64   `json:"guide_to_follow_page_interaction_users,omitempty"`
 	RequestConversionsCount             int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost              int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                          float64 `json:"income_roi_1,omitempty"`

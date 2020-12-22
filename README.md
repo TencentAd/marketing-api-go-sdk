@@ -153,6 +153,26 @@ func main() {
 }
 ```
 
+### 对于返回的Json取严格模式校验
+```go
+package main
+
+import (
+	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
+)
+
+func main() {
+	accessToken := "YOUR ACCESS TOKEN"
+	ads.Init(&config.SDKConfig{
+		AccessToken: accessToken,
+		IsStrictMode: true
+	})
+}
+```
+如果返回值中包含不认识的属性，会抛ResponseStrictError
+
+
 ### 关闭SDK上报
 ###### 目前SDK上报信息为您的服务器版本和 Go 版本信息，为了帮助您更好地定位使用上的问题，建议开启上报，如需关闭请参考如下配置。
 ```go

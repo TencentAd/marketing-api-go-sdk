@@ -9,7 +9,7 @@
 
 package model
 
-// AudienceGrantScopeType : 人群授权的范围
+// AudienceGrantScopeType : 人群授权的范围。仅支持 'GRANT_SCOPE_TYPE_ACCOUNT' 枚举值。授权给BM内全部账号功能不再在此接口中支持实现
 type AudienceGrantScopeType string
 
 // List of AudienceGrantScopeType

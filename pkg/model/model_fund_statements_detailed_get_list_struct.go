@@ -11,9 +11,12 @@ package model
 
 // 返回结构
 type FundStatementsDetailedGetListStruct struct {
-	Time           int64     `json:"time,omitempty"`
-	ExternalBillNo string    `json:"external_bill_no,omitempty"`
-	TradeType      TradeType `json:"trade_type,omitempty"`
-	Amount         int64     `json:"amount,omitempty"`
-	Description    string    `json:"description,omitempty"`
+	AccountId      int64          `json:"account_id,omitempty"`
+	Balance        int64          `json:"balance,omitempty"`
+	Time           int64          `json:"time,omitempty"`
+	ExternalBillNo string         `json:"external_bill_no,omitempty"`
+	TradeTypeExt   TradeTypeExt   `json:"trade_type_ext,omitempty"`
+	Amount         int64          `json:"amount,omitempty"`
+	Description    string         `json:"description,omitempty"`
+	FundType       AccountTypeMap `json:"fund_type,omitempty"`
 }

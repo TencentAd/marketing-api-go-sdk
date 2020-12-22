@@ -56,6 +56,7 @@ Name | Type | Description | Notes
 **BidAdjustment** | [***BidAdjustment**](bid_adjustment.md) |  | [optional] [default to null]
 **AutoAcquisitionEnabled** | **bool** |  | [optional] [default to null]
 **AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
+**CreativeDisplayType** | [***CreativeDisplayType**](CreativeDisplayType.md) |  | [optional] [default to null]
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

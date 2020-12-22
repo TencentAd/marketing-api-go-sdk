@@ -30,6 +30,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
+	apierrors "github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"golang.org/x/oauth2"
 )
 
@@ -41,8 +42,9 @@ var (
 // APIClient manages communication with the Marketing API API v1.3
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
-	Cfg    *config.Configuration
-	common service // Reuse a single struct instead of allocating one for each service on the heap.
+	Cfg       *config.Configuration
+	SDKConfig *config.SDKConfig
+	common    service // Reuse a single struct instead of allocating one for each service on the heap.
 
 	// API Services
 
@@ -67,6 +69,12 @@ type APIClient struct {
 	AdsApi *AdsApiService
 
 	AdvertiserApi *AdvertiserApiService
+
+	AgencyInnerTransferApi *AgencyInnerTransferApiService
+
+	AgencyPeerTransferApi *AgencyPeerTransferApiService
+
+	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
 	AndroidChannelPackagesApi *AndroidChannelPackagesApiService
 
@@ -293,13 +301,15 @@ type service struct {
 
 // NewAPIClient creates a new API client. Requires a userAgent string describing your application.
 // optionally a custom http.Client to allow for advanced features such as caching.
-func NewAPIClient(cfg *config.Configuration) *APIClient {
+func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
+	cfg := sdkConfig.Configuration
 	if cfg.HTTPClient == nil {
 		cfg.HTTPClient = &http.Client{}
 	}
 
 	c := &APIClient{}
-	c.Cfg = cfg
+	c.SDKConfig = sdkConfig
+	c.Cfg = &cfg
 	c.common.client = c
 
 	// API Services
@@ -314,6 +324,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
+	c.AgencyInnerTransferApi = (*AgencyInnerTransferApiService)(&c.common)
+	c.AgencyPeerTransferApi = (*AgencyPeerTransferApiService)(&c.common)
+	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelPackagesApi = (*AndroidChannelPackagesApiService)(&c.common)
 	c.AndroidUnionChannelPackagesApi = (*AndroidUnionChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
@@ -685,8 +698,12 @@ func (c *APIClient) decode(v interface{}, b []byte, contentType string) (err err
 		}
 		return nil
 	} else if strings.Contains(contentType, "application/json") {
-		if err = json.Unmarshal(b, v); err != nil {
-			return err
+		dec := json.NewDecoder(bytes.NewReader(b))
+		if c.SDKConfig.IsStrictMode {
+			dec.DisallowUnknownFields() // Force
+		}
+		if err := dec.Decode(v); err != nil {
+			return apierrors.NewResponseStrictError(err.Error())
 		}
 		return nil
 	}

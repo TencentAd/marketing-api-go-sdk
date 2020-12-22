@@ -57,6 +57,18 @@ func (c *SDKClient) Advertiser() *api.AdvertiserApiService {
 	return c.Client.AdvertiserApi
 }
 
+func (c *SDKClient) AgencyInnerTransfer() *api.AgencyInnerTransferApiService {
+	return c.Client.AgencyInnerTransferApi
+}
+
+func (c *SDKClient) AgencyPeerTransfer() *api.AgencyPeerTransferApiService {
+	return c.Client.AgencyPeerTransferApi
+}
+
+func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
+	return c.Client.AgencyRealtimeCostApi
+}
+
 func (c *SDKClient) AndroidChannelPackages() *api.AndroidChannelPackagesApiService {
 	return c.Client.AndroidChannelPackagesApi
 }

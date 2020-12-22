@@ -9,6 +9,7 @@ type SDKConfig struct {
 	IsDebug      bool
 	DebugFile    string
 	SkipMonitor  bool
+	IsStrictMode bool
 	GlobalConfig GlobalConfig
 }
 

@@ -39,4 +39,6 @@ const (
 	PromotedObjectType_JD                         PromotedObjectType = "PROMOTED_OBJECT_TYPE_JD"
 	PromotedObjectType_MINI_GAME_QQ               PromotedObjectType = "PROMOTED_OBJECT_TYPE_MINI_GAME_QQ"
 	PromotedObjectType_COUPON_WECHAT              PromotedObjectType = "PROMOTED_OBJECT_TYPE_COUPON_WECHAT"
+	PromotedObjectType_APP_PROMOTION              PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_PROMOTION"
+	PromotedObjectType_WECHAT_CHANNELS            PromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS"
 )

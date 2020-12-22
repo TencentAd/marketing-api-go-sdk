@@ -64,5 +64,6 @@ type AdgroupsGetListStruct struct {
 	BidAdjustment                     *BidAdjustment                  `json:"bid_adjustment,omitempty"`
 	AutoAcquisitionEnabled            bool                            `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget             int64                           `json:"auto_acquisition_budget,omitempty"`
+	CreativeDisplayType               CreativeDisplayType             `json:"creative_display_type,omitempty"`
 	AutoDerivedCreativeEnabled        bool                            `json:"auto_derived_creative_enabled,omitempty"`
 }

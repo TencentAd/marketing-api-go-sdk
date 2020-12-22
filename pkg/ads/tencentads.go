@@ -23,7 +23,7 @@ type SDKClient struct {
 
 // Init ...
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.4.2"
+	version := "1.4.3"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.NewV4().String()
@@ -33,7 +33,7 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 		Nonce:       nonce[0:8] + nonce[9:13] + nonce[14:18],
 	}
 	ctx = context.WithValue(ctx, config.ContextAPIKey, apiKey)
-	client := api.NewAPIClient(&cfg.Configuration)
+	client := api.NewAPIClient(cfg)
 	sdkClient := &SDKClient{
 		Config:       cfg,
 		Ctx:          &ctx,

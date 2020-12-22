@@ -14,8 +14,14 @@ type CatalogIndustry string
 
 // List of CatalogIndustry
 const (
-	CatalogIndustry_ECOMMERCE CatalogIndustry = "INDUSTRY_TYPE_ECOMMERCE"
-	CatalogIndustry_READING   CatalogIndustry = "INDUSTRY_TYPE_READING"
-	CatalogIndustry_EDUCATION CatalogIndustry = "INDUSTRY_TYPE_EDUCATION"
-	CatalogIndustry_WEDDING   CatalogIndustry = "INDUSTRY_TYPE_WEDDING"
+	CatalogIndustry_ECOMMERCE  CatalogIndustry = "INDUSTRY_TYPE_ECOMMERCE"
+	CatalogIndustry_READING    CatalogIndustry = "INDUSTRY_TYPE_READING"
+	CatalogIndustry_EDUCATION  CatalogIndustry = "INDUSTRY_TYPE_EDUCATION"
+	CatalogIndustry_WEDDING    CatalogIndustry = "INDUSTRY_TYPE_WEDDING"
+	CatalogIndustry_VIDEO      CatalogIndustry = "INDUSTRY_TYPE_VIDEO"
+	CatalogIndustry_INSURANCE  CatalogIndustry = "INDUSTRY_TYPE_INSURANCE"
+	CatalogIndustry_LOAN       CatalogIndustry = "INDUSTRY_TYPE_LOAN"
+	CatalogIndustry_FINANCIAL  CatalogIndustry = "INDUSTRY_TYPE_FINANCIAL"
+	CatalogIndustry_BANKCARD   CatalogIndustry = "INDUSTRY_TYPE_BANKCARD"
+	CatalogIndustry_SECURITIES CatalogIndustry = "INDUSTRY_TYPE_SECURITIES"
 )
