@@ -18,7 +18,6 @@ Name | Type | Description | Notes
 **IosDeepLinkAppId** | **string** |  | [optional] [default to null]
 **UniversalLinkUrl** | **string** |  | [optional] [default to null]
 **ShareContentSpec** | [***ShareContentSpec**](share_content_spec.md) |  | [optional] [default to null]
-**MultiShareOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **ProfileId** | **int64** |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]
 **OnlineEnabled** | **bool** |  | [optional] [default to null]

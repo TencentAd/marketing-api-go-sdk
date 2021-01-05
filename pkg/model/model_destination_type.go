@@ -29,4 +29,12 @@ const (
 	DestinationType_FULL_SCREEN_WECHAT              DestinationType = "PAGE_TYPE_FULL_SCREEN_WECHAT"
 	DestinationType_YUEBAO_QUICKAPP                 DestinationType = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationType_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationType = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationType_YOUZAN_SINGLE                   DestinationType = "PAGE_TYPE_YOUZAN_SINGLE"
+	DestinationType_YOUZAN_TOGETHER                 DestinationType = "PAGE_TYPE_YOUZAN_TOGETHER"
+	DestinationType_YOUZAN_WECHAT_MINIPROGRAM       DestinationType = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
+	DestinationType_YIYE_FORM                       DestinationType = "PAGE_TYPE_YIYE_FORM"
+	DestinationType_WEIMOB_PRODUCTSET               DestinationType = "PAGE_TYPE_WEIMOB_PRODUCTSET"
+	DestinationType_WEIMOB_PROMOTION                DestinationType = "PAGE_TYPE_WEIMOB_PROMOTION"
+	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
+	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
 )

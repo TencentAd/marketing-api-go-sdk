@@ -18,5 +18,5 @@ type PageStruct struct {
 	PagePublishStatus  PagePublishStatus `json:"page_publish_status,omitempty"`
 	PageStatus         PageAuditStatus   `json:"page_status,omitempty"`
 	PageLastModifyTime string            `json:"page_last_modify_time,omitempty"`
-	PageAccountId      int64             `json:"page_account_id,omitempty"`
+	PageOwnerId        int64             `json:"page_owner_id,omitempty"`
 }

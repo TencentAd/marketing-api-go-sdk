@@ -25,7 +25,6 @@ type AdcreativesUpdateRequest struct {
 	IosDeepLinkAppId              *string                       `json:"ios_deep_link_app_id,omitempty"`
 	UniversalLinkUrl              *string                       `json:"universal_link_url,omitempty"`
 	ShareContentSpec              *ShareContentSpec             `json:"share_content_spec,omitempty"`
-	MultiShareOptimizationEnabled bool                          `json:"multi_share_optimization_enabled,omitempty"`
 	ProfileId                     int64                         `json:"profile_id,omitempty"`
 	ComponentId                   int64                         `json:"component_id,omitempty"`
 	OnlineEnabled                 bool                          `json:"online_enabled,omitempty"`

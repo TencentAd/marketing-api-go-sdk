@@ -62,5 +62,6 @@ const (
 	IntOptimizationGoal_EXTERNAL_LINK_CLICK                 IntOptimizationGoal = "OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK"
 	IntOptimizationGoal_BUY_COUPONS                         IntOptimizationGoal = "OPTIMIZATIONGOAL_BUY_COUPONS"
 	IntOptimizationGoal_LEAVE_INFORMATION                   IntOptimizationGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
+	IntOptimizationGoal_CORE_ACTION                         IntOptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 	IntOptimizationGoal_ONE_DAY_RETENTION_RATIO             IntOptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 )

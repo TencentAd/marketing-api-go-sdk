@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **PromotedObjectId** | **string** |  | [optional] [default to null]
 **ClaimType** | [***ClaimType**](ClaimType.md) |  | [optional] [default to null]
 **FeedbackUrl** | **string** |  | [optional] [default to null]
+**LandingPageUrl** | **string** |  | [optional] [default to null]
+**MiniProgramId** | **string** |  | [optional] [default to null]
 **SelfAttributed** | **bool** |  | [optional] [default to null]
 **OptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
 **DeepBehaviorOptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]

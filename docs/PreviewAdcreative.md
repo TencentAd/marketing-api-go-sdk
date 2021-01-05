@@ -19,7 +19,6 @@ Name | Type | Description | Notes
 **DynamicAdcreativeSpec** | [***DynamicAdcreativeSpec**](dynamic_adcreative_spec.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **IsDynamicCreative** | **bool** |  | [optional] [default to null]
-**MultiShareOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]
 **OnlineEnabled** | **bool** |  | [optional] [default to null]
 **RevisedAdcreativeSpec** | [***RevisedAdcreativeSpec**](revised_adcreative_spec.md) |  | [optional] [default to null]

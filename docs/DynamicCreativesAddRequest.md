@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
 **FeedsVideoCommentSwitch** | **bool** |  | [optional] [default to null]
 **UnionMarketSwitch** | **bool** |  | [optional] [default to null]
+**DynamicAdcreativeSpec** | [***DynamicAdcreativeSpec**](dynamic_adcreative_spec.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

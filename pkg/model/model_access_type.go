@@ -9,11 +9,12 @@
 
 package model
 
-// AccessType : 上报方式
+// AccessType : 上报方式, SDK上报方式仅支持安卓和ios转化场景，JS上报方式仅支持网页转化场景
 type AccessType string
 
 // List of AccessType
 const (
 	AccessType_SDK AccessType = "ACCESS_TYPE_SDK"
 	AccessType_API AccessType = "ACCESS_TYPE_API"
+	AccessType_JS  AccessType = "ACCESS_TYPE_JS"
 )

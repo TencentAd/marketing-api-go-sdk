@@ -9,7 +9,7 @@
 
 package model
 
-// ClaimType : 归因方式，SDK上报方式时归因方式只能为CLAIM_TYPE_ACTIVATION
+// ClaimType : 归因方式，SDK上报方式时归因方式只能为CLAIM_TYPE_ACTIVATION，JS上报方式时只能是CLAIM_TYPE_CLICK
 type ClaimType string
 
 // List of ClaimType

@@ -39,5 +39,6 @@ const (
 	DeepConversionBehaviorGoal_LEADS_COLLECT                       DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_LEADS_COLLECT"
 	DeepConversionBehaviorGoal_PROMOTION_VIEW_KEY_PAGE             DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE"
 	DeepConversionBehaviorGoal_LEAVE_INFORMATION                   DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
+	DeepConversionBehaviorGoal_CORE_ACTION                         DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 	DeepConversionBehaviorGoal_ONE_DAY_RETENTION_RATIO             DeepConversionBehaviorGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 )

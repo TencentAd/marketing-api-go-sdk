@@ -48,5 +48,6 @@ type DynamicCreativeElements struct {
 	ButtonUrl                  string                             `json:"button_url,omitempty"`
 	Brand                      *BrandStruct                       `json:"brand,omitempty"`
 	Caption                    string                             `json:"caption,omitempty"`
+	ShopImage                  string                             `json:"shop_image,omitempty"`
 	CountdownExpiringTimestamp int64                              `json:"countdown_expiring_timestamp,omitempty"`
 }

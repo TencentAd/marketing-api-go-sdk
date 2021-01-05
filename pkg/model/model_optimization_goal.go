@@ -74,4 +74,5 @@ const (
 	OptimizationGoal_EXTERNAL_LINK_CLICK                 OptimizationGoal = "OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK"
 	OptimizationGoal_BUY_COUPONS                         OptimizationGoal = "OPTIMIZATIONGOAL_BUY_COUPONS"
 	OptimizationGoal_LEAVE_INFORMATION                   OptimizationGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
+	OptimizationGoal_CORE_ACTION                         OptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 )

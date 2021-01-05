@@ -17,4 +17,6 @@ type MetricDetailData struct {
 	CanvasCpnCouponsCost  int64 `json:"canvas_cpn_coupons_cost,omitempty"`
 	CanvasCpnCouponsUsePv int64 `json:"canvas_cpn_coupons_use_pv,omitempty"`
 	Purchase              int64 `json:"purchase,omitempty"`
+	PromotionClaimOfferPv int64 `json:"promotion_claim_offer_pv,omitempty"`
+	PageVisitStorePv      int64 `json:"page_visit_store_pv,omitempty"`
 }

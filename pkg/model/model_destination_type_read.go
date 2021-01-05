@@ -21,4 +21,12 @@ const (
 	DestinationTypeRead_FENGYE_ECOMMERCE                DestinationTypeRead = "PAGE_TYPE_FENGYE_ECOMMERCE"
 	DestinationTypeRead_YUEBAO_QUICKAPP                 DestinationTypeRead = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationTypeRead_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationTypeRead = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationTypeRead_YOUZAN_SINGLE                   DestinationTypeRead = "PAGE_TYPE_YOUZAN_SINGLE"
+	DestinationTypeRead_YOUZAN_TOGETHER                 DestinationTypeRead = "PAGE_TYPE_YOUZAN_TOGETHER"
+	DestinationTypeRead_YOUZAN_WECHAT_MINIPROGRAM       DestinationTypeRead = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
+	DestinationTypeRead_YIYE_FORM                       DestinationTypeRead = "PAGE_TYPE_YIYE_FORM"
+	DestinationTypeRead_WEIMOB_PRODUCTSET               DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCTSET"
+	DestinationTypeRead_WEIMOB_PROMOTION                DestinationTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
+	DestinationTypeRead_WEIMOB_PRODUCT                  DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
+	DestinationTypeRead_WEIMOB_H5                       DestinationTypeRead = "PAGE_TYPE_WEIMOB_H5"
 )

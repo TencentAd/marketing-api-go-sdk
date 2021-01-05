@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **LinkNameType** | [***LinkNameTypeMp**](LinkNameTypeMP.md) |  | [optional] [default to null]
 **ImageList** | **[]string** |  | [optional] [default to null]
 **ElementStory** | [**[]AdcreativeElementStoryArrayItem**](adcreative_element_story_array_item.md) |  | [optional] [default to null]
-**MultiShareOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **Url** | **string** |  | [optional] [default to null]
 **ButtonText** | **string** |  | [optional] [default to null]
 **BottomText** | **string** |  | [optional] [default to null]
@@ -56,6 +55,7 @@ Name | Type | Description | Notes
 **FullScreenImage** | **string** |  | [optional] [default to null]
 **ZipUrl** | **string** |  | [optional] [default to null]
 **EndPage** | [***AdCreativeEndPage**](ad_creative_end_page.md) |  | [optional] [default to null]
+**ShopImage** | **string** |  | [optional] [default to null]
 **CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

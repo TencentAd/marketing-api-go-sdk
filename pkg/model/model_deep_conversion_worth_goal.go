@@ -16,6 +16,7 @@ type DeepConversionWorthGoal string
 const (
 	DeepConversionWorthGoal_30DAYPURCHASEROAS     DeepConversionWorthGoal = "GOAL_30DAY_PURCHASE_ROAS"
 	DeepConversionWorthGoal_30DAYMONETIZATIONROAS DeepConversionWorthGoal = "GOAL_30DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_7DAYPURCHASEROAS      DeepConversionWorthGoal = "GOAL_7DAY_PURCHASE_ROAS"
 	DeepConversionWorthGoal_30DAYORDERROAS        DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
 	DeepConversionWorthGoal_1DAYPURCHASEROAS      DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
 	DeepConversionWorthGoal_1DAYMONETIZATIONROAS  DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"

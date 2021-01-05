@@ -27,7 +27,6 @@ type PreviewAdcreative struct {
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec      `json:"dynamic_adcreative_spec,omitempty"`
 	IsDeleted                     bool                        `json:"is_deleted,omitempty"`
 	IsDynamicCreative             bool                        `json:"is_dynamic_creative,omitempty"`
-	MultiShareOptimizationEnabled bool                        `json:"multi_share_optimization_enabled,omitempty"`
 	ComponentId                   int64                       `json:"component_id,omitempty"`
 	OnlineEnabled                 bool                        `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec      `json:"revised_adcreative_spec,omitempty"`

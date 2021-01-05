@@ -42,5 +42,6 @@ type AdcreativeCreativeElements struct {
 	FullScreenImage            string                             `json:"full_screen_image,omitempty"`
 	ZipUrl                     string                             `json:"zip_url,omitempty"`
 	EndPage                    *AdCreativeEndPage                 `json:"end_page,omitempty"`
+	ShopImage                  string                             `json:"shop_image,omitempty"`
 	CountdownExpiringTimestamp int64                              `json:"countdown_expiring_timestamp,omitempty"`
 }

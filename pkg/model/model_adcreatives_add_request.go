@@ -31,7 +31,6 @@ type AdcreativesAddRequest struct {
 	ProfileId                     int64                         `json:"profile_id,omitempty"`
 	ShareContentSpec              *ShareContentSpec             `json:"share_content_spec,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec        `json:"dynamic_adcreative_spec,omitempty"`
-	MultiShareOptimizationEnabled bool                          `json:"multi_share_optimization_enabled,omitempty"`
 	ComponentId                   int64                         `json:"component_id,omitempty"`
 	Category                      *[]int64                      `json:"category,omitempty"`
 	Label                         *[]string                     `json:"label,omitempty"`

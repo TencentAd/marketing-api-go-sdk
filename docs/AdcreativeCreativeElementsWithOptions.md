@@ -41,6 +41,7 @@ Name | Type | Description | Notes
 **FullScreenImage** | **string** |  | [optional] [default to null]
 **ZipUrl** | **string** |  | [optional] [default to null]
 **EndPage** | [***AdCreativeEndPage**](ad_creative_end_page.md) |  | [optional] [default to null]
+**ShopImage** | **string** |  | [optional] [default to null]
 **CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
