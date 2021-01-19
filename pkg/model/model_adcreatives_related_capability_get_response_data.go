@@ -10,5 +10,5 @@
 package model
 
 type AdcreativesRelatedCapabilityGetResponseData struct {
-	QueryResult bool `json:"query_result,omitempty"`
+	QueryResult *bool `json:"query_result,omitempty"`
 }

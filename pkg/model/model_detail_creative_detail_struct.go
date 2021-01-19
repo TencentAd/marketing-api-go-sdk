@@ -11,8 +11,8 @@ package model
 
 // 诊断详情-定向明细
 type DetailCreativeDetailStruct struct {
-	IsVideo             bool                       `json:"is_video,omitempty"`
-	IsWechatMoment      bool                       `json:"is_wechat_moment,omitempty"`
+	IsVideo             *bool                      `json:"is_video,omitempty"`
+	IsWechatMoment      *bool                      `json:"is_wechat_moment,omitempty"`
 	PlayDuration        string                     `json:"play_duration,omitempty"`
 	PlayProgress        string                     `json:"play_progress,omitempty"`
 	CtrLevel            *CtrLevelStruct            `json:"ctr_level,omitempty"`

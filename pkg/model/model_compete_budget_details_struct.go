@@ -12,7 +12,7 @@ package model
 // 预算竞争力明细
 type CompeteBudgetDetailsStruct struct {
 	Score                   int64  `json:"score,omitempty"`
-	RaiseAccountBalanceFlag bool   `json:"raise_account_balance_flag,omitempty"`
+	RaiseAccountBalanceFlag *bool  `json:"raise_account_balance_flag,omitempty"`
 	RecommendRecharge       int64  `json:"recommend_recharge,omitempty"`
 	AccountDailyCost        int64  `json:"account_daily_cost,omitempty"`
 	AccountDayBudget        int64  `json:"account_day_budget,omitempty"`

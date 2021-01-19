@@ -20,30 +20,30 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type ReportJdCreativeTemplateHourlyReportExample struct {
+type TargetingsShareAddExample struct {
 	TAds        *ads.SDKClient
 	AccessToken string
-	Data        model.ReportJdCreativeTemplateHourlyReportRequest
+	Data        model.TargetingsShareAddRequest
 }
 
-func (e *ReportJdCreativeTemplateHourlyReportExample) Init() {
+func (e *TargetingsShareAddExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.ReportJdCreativeTemplateHourlyReportRequest{}
+	e.Data = model.TargetingsShareAddRequest{}
 }
 
-func (e *ReportJdCreativeTemplateHourlyReportExample) RunExample() (model.ReportJdCreativeTemplateHourlyReportResponseData, http.Header, error) {
+func (e *TargetingsShareAddExample) RunExample() (model.TargetingsShareAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Report().JdCreativeTemplateHourlyReport(ctx, e.Data)
+	return tads.TargetingsShare().Add(ctx, e.Data)
 }
 
 func main() {
-	e := &ReportJdCreativeTemplateHourlyReportExample{}
+	e := &TargetingsShareAddExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

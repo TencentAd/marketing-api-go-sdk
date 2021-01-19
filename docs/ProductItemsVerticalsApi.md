@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ProductItemsVerticalsGet**](ProductItemsVerticalsApi.md#ProductItemsVerticalsGet) | **Get** /product_items_verticals/get | 商品列表
+[**ProductItemsVerticalsGet**](ProductItemsVerticalsApi.md#ProductItemsVerticalsGet) | **Get** /product_items_verticals/get | 行业列表
 
 
 # **ProductItemsVerticalsGet**
 > ProductItemsVerticalsGetResponse ProductItemsVerticalsGet(ctx, optional)
-商品列表
+行业列表
 
 ### Required Parameters
 

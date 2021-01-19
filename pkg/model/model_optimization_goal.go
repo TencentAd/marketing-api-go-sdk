@@ -75,4 +75,5 @@ const (
 	OptimizationGoal_BUY_COUPONS                         OptimizationGoal = "OPTIMIZATIONGOAL_BUY_COUPONS"
 	OptimizationGoal_LEAVE_INFORMATION                   OptimizationGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
 	OptimizationGoal_CORE_ACTION                         OptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
+	OptimizationGoal_ONE_DAY_RETENTION_RATIO             OptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 )

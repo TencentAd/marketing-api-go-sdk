@@ -334,7 +334,7 @@ type DailyReportsGetListStruct struct {
 	AddToCartCost                        int64   `json:"add_to_cart_cost,omitempty"`
 	WebAddToCartRate                     float64 `json:"web_add_to_cart_rate,omitempty"`
 	AppAddToCartRate                     float64 `json:"app_add_to_cart_rate,omitempty"`
-	IsExpandTargeting                    bool    `json:"is_expand_targeting,omitempty"`
+	IsExpandTargeting                    *bool   `json:"is_expand_targeting,omitempty"`
 	SiteSet                              string  `json:"site_set,omitempty"`
 	MaterialId                           int64   `json:"material_id,omitempty"`
 	Signature                            string  `json:"signature,omitempty"`

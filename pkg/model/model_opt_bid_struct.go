@@ -11,13 +11,13 @@ package model
 
 // 出价优化
 type OptBidStruct struct {
-	AdjustBidStrategyFlag   bool   `json:"adjust_bid_strategy_flag,omitempty"`
+	AdjustBidStrategyFlag   *bool  `json:"adjust_bid_strategy_flag,omitempty"`
 	CurrentBidStrategy      string `json:"current_bid_strategy,omitempty"`
 	OptimizeBidStrategy     string `json:"optimize_bid_strategy,omitempty"`
-	AdjustBidAmountFlag     bool   `json:"adjust_bid_amount_flag,omitempty"`
+	AdjustBidAmountFlag     *bool  `json:"adjust_bid_amount_flag,omitempty"`
 	CurrentBidAmount        int64  `json:"current_bid_amount,omitempty"`
 	OptimizeBidAmount       int64  `json:"optimize_bid_amount,omitempty"`
-	AdjustDeepBidAmountFlag bool   `json:"adjust_deep_bid_amount_flag,omitempty"`
+	AdjustDeepBidAmountFlag *bool  `json:"adjust_deep_bid_amount_flag,omitempty"`
 	CurrentDeepBidAmount    int64  `json:"current_deep_bid_amount,omitempty"`
 	OptimizeDeepBidAmount   int64  `json:"optimize_deep_bid_amount,omitempty"`
 }

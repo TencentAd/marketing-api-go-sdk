@@ -64,7 +64,7 @@ type ProductItemSpec struct {
 	ThirdCategoryUrl          string                `json:"third_category_url,omitempty"`
 	FourthCategoryUrl         string                `json:"fourth_category_url,omitempty"`
 	BrandId                   int64                 `json:"brand_id,omitempty"`
-	BrandName                 string                `json:"brand_name,omitempty"`
+	ProductBrand              string                `json:"product_brand,omitempty"`
 	BrandUrl                  string                `json:"brand_url,omitempty"`
 	PromotionId               int64                 `json:"promotion_id,omitempty"`
 	PromotionName             string                `json:"promotion_name,omitempty"`
@@ -114,4 +114,9 @@ type ProductItemSpec struct {
 	ShootingSceneDetail       *[]string             `json:"shooting_scene_detail,omitempty"`
 	TourPlaceDomestic         TourPlaceDomestic     `json:"tour_place_domestic,omitempty"`
 	TourPlaceForeign          TourPlaceForeign      `json:"tour_place_foreign,omitempty"`
+	MaxInsuranceQuota         float64               `json:"max_insurance_quota,omitempty"`
+	FirstMonthInsuranceFee    float64               `json:"first_month_insurance_fee,omitempty"`
+	MaxQuota                  float64               `json:"max_quota,omitempty"`
+	AnnualizedRateOfReturn    float64               `json:"annualized_rate_of_return,omitempty"`
+	RiskType                  RiskTypeStatus        `json:"risk_type,omitempty"`
 }

@@ -25,17 +25,17 @@ type PreviewAdcreative struct {
 	LastModifiedTime              int64                       `json:"last_modified_time,omitempty"`
 	ShareContentSpec              *ShareContentSpec           `json:"share_content_spec,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec      `json:"dynamic_adcreative_spec,omitempty"`
-	IsDeleted                     bool                        `json:"is_deleted,omitempty"`
-	IsDynamicCreative             bool                        `json:"is_dynamic_creative,omitempty"`
+	IsDeleted                     *bool                       `json:"is_deleted,omitempty"`
+	IsDynamicCreative             *bool                       `json:"is_dynamic_creative,omitempty"`
 	ComponentId                   int64                       `json:"component_id,omitempty"`
-	OnlineEnabled                 bool                        `json:"online_enabled,omitempty"`
+	OnlineEnabled                 *bool                       `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec      `json:"revised_adcreative_spec,omitempty"`
 	Category                      *[]int64                    `json:"category,omitempty"`
 	Label                         *[]string                   `json:"label,omitempty"`
-	UnionMarketSwitch             bool                        `json:"union_market_switch,omitempty"`
+	UnionMarketSwitch             *bool                       `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                      `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec           `json:"video_end_page,omitempty"`
-	FeedsVideoCommentSwitch       bool                        `json:"feeds_video_comment_switch,omitempty"`
+	FeedsVideoCommentSwitch       *bool                       `json:"feeds_video_comment_switch,omitempty"`
 	ConversionDataType            ConversionDataType          `json:"conversion_data_type,omitempty"`
 	ConversionTargetType          ConversionTargetType        `json:"conversion_target_type,omitempty"`
 	AdcreativeTemplateId          int64                       `json:"adcreative_template_id,omitempty"`

@@ -21,11 +21,11 @@ type BatchAdDiagnosisListItem struct {
 	ExposureRaiseRate        string                `json:"exposure_raise_rate,omitempty"`
 	CpaBiasToday             string                `json:"cpa_bias_today,omitempty"`
 	CpaBiasOverall           string                `json:"cpa_bias_overall,omitempty"`
-	IsOcpx                   bool                  `json:"is_ocpx,omitempty"`
+	IsOcpx                   *bool                 `json:"is_ocpx,omitempty"`
 	OptimizationGoal         string                `json:"optimization_goal,omitempty"`
 	DeepOptimizationGoal     string                `json:"deep_optimization_goal,omitempty"`
 	ConclusionDescription    string                `json:"conclusion_description,omitempty"`
-	HasDiagnoseDetail        bool                  `json:"has_diagnose_detail,omitempty"`
+	HasDiagnoseDetail        *bool                 `json:"has_diagnose_detail,omitempty"`
 	OperateSuggestionDesc    string                `json:"operate_suggestion_desc,omitempty"`
 	LearningStatusDesc       string                `json:"learning_status_desc,omitempty"`
 	ExposureCompeteScoreDesc string                `json:"exposure_compete_score_desc,omitempty"`

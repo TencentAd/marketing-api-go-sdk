@@ -29,8 +29,8 @@ type AdgroupsUpdateRequest struct {
 	AdditionalUserActionSets   *[]UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
 	BidStrategy                BidStrategy                      `json:"bid_strategy,omitempty"`
 	ColdStartAudience          *[]int64                         `json:"cold_start_audience,omitempty"`
-	AutoAudience               bool                             `json:"auto_audience,omitempty"`
-	ExpandEnabled              bool                             `json:"expand_enabled,omitempty"`
+	AutoAudience               *bool                            `json:"auto_audience,omitempty"`
+	ExpandEnabled              *bool                            `json:"expand_enabled,omitempty"`
 	ExpandTargeting            *[]string                        `json:"expand_targeting,omitempty"`
 	DeepConversionSpec         *DeepConversionSpec              `json:"deep_conversion_spec,omitempty"`
 	PoiList                    *[]string                        `json:"poi_list,omitempty"`
@@ -38,7 +38,8 @@ type AdgroupsUpdateRequest struct {
 	DeepConversionWorthRate    float64                          `json:"deep_conversion_worth_rate,omitempty"`
 	BidMode                    BidMode                          `json:"bid_mode,omitempty"`
 	BidAdjustment              *BidAdjustment                   `json:"bid_adjustment,omitempty"`
-	AutoAcquisitionEnabled     bool                             `json:"auto_acquisition_enabled,omitempty"`
+	AutoAcquisitionEnabled     *bool                            `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget      int64                            `json:"auto_acquisition_budget,omitempty"`
+	AutoDerivedCreativeEnabled *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	AccountId                  int64                            `json:"account_id,omitempty"`
 }

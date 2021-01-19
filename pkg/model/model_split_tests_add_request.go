@@ -15,5 +15,5 @@ type SplitTestsAddRequest struct {
 	BeginTime          int64    `json:"begin_time,omitempty"`
 	EndTime            int64    `json:"end_time,omitempty"`
 	AdgroupIdList      *[]int64 `json:"adgroup_id_list,omitempty"`
-	SmartExpandEnabled bool     `json:"smart_expand_enabled,omitempty"`
+	SmartExpandEnabled *bool    `json:"smart_expand_enabled,omitempty"`
 }

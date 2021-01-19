@@ -28,6 +28,7 @@ Name | Type | Description  | Notes
  **videoId** | **optional.String**|  | 
  **videoFile** | **optional.Interface of *os.File**|  | 
  **signature** | **optional.String**|  | 
+ **onlySubtitleFile** | **optional.Bool**|  | 
 
 ### Return type
 

@@ -15,35 +15,40 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type ReportJdOfflineReportStatusExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.ReportJdOfflineReportStatusRequest
+type TargetingsShareGetExample struct {
+	TAds                   *ads.SDKClient
+	AccessToken            string
+	AccountId              int64
+	TargetingId            int64
+	TargetingsShareGetOpts *api.TargetingsShareGetOpts
 }
 
-func (e *ReportJdOfflineReportStatusExample) Init() {
+func (e *TargetingsShareGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.ReportJdOfflineReportStatusRequest{}
+	e.AccountId = 789
+	e.TargetingId = 789
+	e.TargetingsShareGetOpts = &api.TargetingsShareGetOpts{}
 }
 
-func (e *ReportJdOfflineReportStatusExample) RunExample() (model.ReportJdOfflineReportStatusResponseData, http.Header, error) {
+func (e *TargetingsShareGetExample) RunExample() (model.TargetingsShareGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Report().JdOfflineReportStatus(ctx, e.Data)
+	return tads.TargetingsShare().Get(ctx, e.AccountId, e.TargetingId, e.TargetingsShareGetOpts)
 }
 
 func main() {
-	e := &ReportJdOfflineReportStatusExample{}
+	e := &TargetingsShareGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

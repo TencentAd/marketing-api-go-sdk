@@ -19,7 +19,7 @@ type ConversionsAddRequest struct {
 	FeedbackUrl                  string                     `json:"feedback_url,omitempty"`
 	LandingPageUrl               string                     `json:"landing_page_url,omitempty"`
 	MiniProgramId                string                     `json:"mini_program_id,omitempty"`
-	SelfAttributed               bool                       `json:"self_attributed,omitempty"`
+	SelfAttributed               *bool                      `json:"self_attributed,omitempty"`
 	OptimizationGoal             IntOptimizationGoal        `json:"optimization_goal,omitempty"`
 	DeepBehaviorOptimizationGoal IntOptimizationGoal        `json:"deep_behavior_optimization_goal,omitempty"`
 	DeepWorthOptimizationGoal    ConversionOptimizationGoal `json:"deep_worth_optimization_goal,omitempty"`

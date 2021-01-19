@@ -11,5 +11,5 @@ package model
 
 // 朋友圈电商推广能力
 type WechatEcommerceProductSpec struct {
-	Result bool `json:"result,omitempty"`
+	Result *bool `json:"result,omitempty"`
 }

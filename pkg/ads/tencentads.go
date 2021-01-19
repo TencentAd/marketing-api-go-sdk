@@ -2,12 +2,14 @@ package ads
 
 import (
 	"context"
-	"github.com/satori/go.uuid"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
+	"fmt"
 	"net/http"
 	"strconv"
 	"time"
+
+	uuid "github.com/satori/go.uuid"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 )
 
 // SDKClient ...
@@ -23,7 +25,7 @@ type SDKClient struct {
 
 // Init ...
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.4.4"
+	version := "1.5.0"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.NewV4().String()
@@ -51,6 +53,11 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 		&LogMiddleware{sdkClient},
 	}
 	return sdkClient
+}
+
+func (tads *SDKClient) SetIpPort(ip string, port int, schema string) {
+	ipPort := fmt.Sprintf("%s:%d", ip, port)
+	tads.SetHost(ipPort, schema)
 }
 
 // SetHost ...

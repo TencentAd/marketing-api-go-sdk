@@ -393,6 +393,10 @@ func (c *SDKClient) Targetings() *api.TargetingsApiService {
 	return c.Client.TargetingsApi
 }
 
+func (c *SDKClient) TargetingsShare() *api.TargetingsShareApiService {
+	return c.Client.TargetingsShareApi
+}
+
 func (c *SDKClient) TrackingReports() *api.TrackingReportsApiService {
 	return c.Client.TrackingReportsApi
 }

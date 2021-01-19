@@ -13,5 +13,5 @@ package model
 type Ad struct {
 	AdName                  string             `json:"ad_name,omitempty"`
 	Adcreative              *PreviewAdcreative `json:"adcreative,omitempty"`
-	FeedsInteractionEnabled bool               `json:"feeds_interaction_enabled,omitempty"`
+	FeedsInteractionEnabled *bool              `json:"feeds_interaction_enabled,omitempty"`
 }

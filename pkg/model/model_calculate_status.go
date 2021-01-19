@@ -47,4 +47,10 @@ const (
 	CalculateStatus_PART_INVALID           CalculateStatus = "CALCULATE_STATUS_PART_INVALID"
 	CalculateStatus_AD_PARTIAL_NORMAL      CalculateStatus = "CALCULATE_STATUS_AD_PARTIAL_NORMAL"
 	CalculateStatus_AD_PARTIAL_PENDING     CalculateStatus = "CALCULATE_STATUS_AD_PARTIAL_PENDING"
+	CalculateStatus_UNKNOWN                CalculateStatus = "CALCULATE_STATUS_UNKNOWN"
+	CalculateStatus_ACTIVE_AD_LIMIT        CalculateStatus = "CALCULATE_STATUS_ACTIVE_AD_LIMIT"
+	CalculateStatus_WECHAT_CHANNELS_STOP   CalculateStatus = "CALCULATE_STATUS_WECHAT_CHANNELS_STOP"
+	CalculateStatus_WECHAT_CHANNELS_READY  CalculateStatus = "CALCULATE_STATUS_WECHAT_CHANNELS_READY"
+	CalculateStatus_ENABLE                 CalculateStatus = "CALCULATE_STATUS_ENABLE"
+	CalculateStatus_EXCLUDE_DEL            CalculateStatus = "CALCULATE_STATUS_EXCLUDE_DEL"
 )

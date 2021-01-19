@@ -238,6 +238,8 @@ type APIClient struct {
 
 	TargetingsApi *TargetingsApiService
 
+	TargetingsShareApi *TargetingsShareApiService
+
 	TrackingReportsApi *TrackingReportsApiService
 
 	UnionPositionPackagesApi *UnionPositionPackagesApiService
@@ -408,6 +410,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
 	c.TargetingsApi = (*TargetingsApiService)(&c.common)
+	c.TargetingsShareApi = (*TargetingsShareApiService)(&c.common)
 	c.TrackingReportsApi = (*TrackingReportsApiService)(&c.common)
 	c.UnionPositionPackagesApi = (*UnionPositionPackagesApiService)(&c.common)
 	c.UserActionSetReportsApi = (*UserActionSetReportsApiService)(&c.common)

@@ -21,6 +21,6 @@ type CampaignsGetListStruct struct {
 	CreatedTime        int64              `json:"created_time,omitempty"`
 	LastModifiedTime   int64              `json:"last_modified_time,omitempty"`
 	SpeedMode          SpeedMode          `json:"speed_mode,omitempty"`
-	IsDeleted          bool               `json:"is_deleted,omitempty"`
+	IsDeleted          *bool              `json:"is_deleted,omitempty"`
 	IsAutoReplenish    int64              `json:"is_auto_replenish,omitempty"`
 }

@@ -21,4 +21,5 @@ type BatchAsyncRequestTaskSpec struct {
 	DeleteCampaignSpec                          *[]DeleteCampaignItem                          `json:"delete_campaign_spec,omitempty"`
 	DeleteAdgroupSpec                           *[]DeleteAdgroupItem                           `json:"delete_adgroup_spec,omitempty"`
 	DeleteAdSpec                                *[]DeleteAdItem                                `json:"delete_ad_spec,omitempty"`
+	TargetingsShareSpec                         *[]TargetingsShareItem                         `json:"targetings_share_spec,omitempty"`
 }

@@ -39,4 +39,6 @@ const (
 	PageTypeRead_WEIMOB_PROMOTION                PageTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	PageTypeRead_WEIMOB_PRODUCT                  PageTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	PageTypeRead_WEIMOB_H5                       PageTypeRead = "PAGE_TYPE_WEIMOB_H5"
+	PageTypeRead_CHANNELS_WATCH_LIVE             PageTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	PageTypeRead_CHANNELS_RESERVE_LIVE           PageTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )

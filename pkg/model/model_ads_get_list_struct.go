@@ -22,9 +22,9 @@ type AdsGetListStruct struct {
 	AuditSpec               *[]AuditSpecStruct `json:"audit_spec,omitempty"`
 	ImpressionTrackingUrl   string             `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl        string             `json:"click_tracking_url,omitempty"`
-	FeedsInteractionEnabled bool               `json:"feeds_interaction_enabled,omitempty"`
-	IsDeleted               bool               `json:"is_deleted,omitempty"`
-	IsDynamicCreative       bool               `json:"is_dynamic_creative,omitempty"`
+	FeedsInteractionEnabled *bool              `json:"feeds_interaction_enabled,omitempty"`
+	IsDeleted               *bool              `json:"is_deleted,omitempty"`
+	IsDynamicCreative       *bool              `json:"is_dynamic_creative,omitempty"`
 	CreatedTime             int64              `json:"created_time,omitempty"`
 	LastModifiedTime        int64              `json:"last_modified_time,omitempty"`
 	RejectMessage           string             `json:"reject_message,omitempty"`

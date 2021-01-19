@@ -20,7 +20,7 @@ type AdgroupsAddRequest struct {
 	BidAmount                  int64                            `json:"bid_amount,omitempty"`
 	OptimizationGoal           OptimizationGoal                 `json:"optimization_goal,omitempty"`
 	TimeSeries                 string                           `json:"time_series,omitempty"`
-	AutomaticSiteEnabled       bool                             `json:"automatic_site_enabled,omitempty"`
+	AutomaticSiteEnabled       *bool                            `json:"automatic_site_enabled,omitempty"`
 	SiteSet                    *[]string                        `json:"site_set,omitempty"`
 	DailyBudget                int64                            `json:"daily_budget,omitempty"`
 	PromotedObjectId           string                           `json:"promoted_object_id,omitempty"`
@@ -34,11 +34,11 @@ type AdgroupsAddRequest struct {
 	UserActionSets             *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
 	AdditionalUserActionSets   *[]UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
 	DynamicCreativeId          int64                            `json:"dynamic_creative_id,omitempty"`
-	IsRewardedVideoAd          bool                             `json:"is_rewarded_video_ad,omitempty"`
+	IsRewardedVideoAd          *bool                            `json:"is_rewarded_video_ad,omitempty"`
 	BidStrategy                BidStrategy                      `json:"bid_strategy,omitempty"`
 	ColdStartAudience          *[]int64                         `json:"cold_start_audience,omitempty"`
-	AutoAudience               bool                             `json:"auto_audience,omitempty"`
-	ExpandEnabled              bool                             `json:"expand_enabled,omitempty"`
+	AutoAudience               *bool                            `json:"auto_audience,omitempty"`
+	ExpandEnabled              *bool                            `json:"expand_enabled,omitempty"`
 	ExpandTargeting            *[]string                        `json:"expand_targeting,omitempty"`
 	DeepConversionSpec         *DeepConversionSpec              `json:"deep_conversion_spec,omitempty"`
 	DeepOptimizationActionType DeepOptimizationActionType       `json:"deep_optimization_action_type,omitempty"`
@@ -48,9 +48,9 @@ type AdgroupsAddRequest struct {
 	DeepConversionWorthRate    float64                          `json:"deep_conversion_worth_rate,omitempty"`
 	BidMode                    BidMode                          `json:"bid_mode,omitempty"`
 	BidAdjustment              *BidAdjustment                   `json:"bid_adjustment,omitempty"`
-	AutoAcquisitionEnabled     bool                             `json:"auto_acquisition_enabled,omitempty"`
+	AutoAcquisitionEnabled     *bool                            `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget      int64                            `json:"auto_acquisition_budget,omitempty"`
 	CreativeDisplayType        CreativeDisplayType              `json:"creative_display_type,omitempty"`
-	AutoDerivedCreativeEnabled bool                             `json:"auto_derived_creative_enabled,omitempty"`
+	AutoDerivedCreativeEnabled *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	AccountId                  int64                            `json:"account_id,omitempty"`
 }

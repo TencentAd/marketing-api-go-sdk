@@ -11,7 +11,7 @@ package model
 
 // 诊断详情-定向明细
 type DetailTargetDetailStruct struct {
-	ExpandTargetingOpened bool           `json:"expand_targeting_opened,omitempty"`
+	ExpandTargetingOpened *bool          `json:"expand_targeting_opened,omitempty"`
 	Score                 int64          `json:"score,omitempty"`
 	Trends                *[]PointStruct `json:"trends,omitempty"`
 	Conclusion            string         `json:"conclusion,omitempty"`

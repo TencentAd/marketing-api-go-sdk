@@ -16,7 +16,8 @@ type DynamicCreativesUpdateRequest struct {
 	DeepLinkUrl               string                   `json:"deep_link_url,omitempty"`
 	ImpressionTrackingUrl     string                   `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl          string                   `json:"click_tracking_url,omitempty"`
-	FeedsVideoCommentSwitch   bool                     `json:"feeds_video_comment_switch,omitempty"`
-	UnionMarketSwitch         bool                     `json:"union_market_switch,omitempty"`
+	FeedsVideoCommentSwitch   *bool                    `json:"feeds_video_comment_switch,omitempty"`
+	UnionMarketSwitch         *bool                    `json:"union_market_switch,omitempty"`
+	VideoEndPage              *VideoEndPageSpec        `json:"video_end_page,omitempty"`
 	AccountId                 int64                    `json:"account_id,omitempty"`
 }

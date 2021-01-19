@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **DeleteCampaignSpec** | [**[]DeleteCampaignItem**](delete_campaign_item.md) |  | [optional] [default to null]
 **DeleteAdgroupSpec** | [**[]DeleteAdgroupItem**](delete_adgroup_item.md) |  | [optional] [default to null]
 **DeleteAdSpec** | [**[]DeleteAdItem**](delete_ad_item.md) |  | [optional] [default to null]
+**TargetingsShareSpec** | [**[]TargetingsShareItem**](targetings_share_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -29,4 +29,6 @@ const (
 	DestinationTypeRead_WEIMOB_PROMOTION                DestinationTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationTypeRead_WEIMOB_PRODUCT                  DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationTypeRead_WEIMOB_H5                       DestinationTypeRead = "PAGE_TYPE_WEIMOB_H5"
+	DestinationTypeRead_CHANNELS_WATCH_LIVE             DestinationTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	DestinationTypeRead_CHANNELS_RESERVE_LIVE           DestinationTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )

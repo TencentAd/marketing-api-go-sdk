@@ -27,19 +27,19 @@ type AdcreativesUpdateRequest struct {
 	ShareContentSpec              *ShareContentSpec             `json:"share_content_spec,omitempty"`
 	ProfileId                     int64                         `json:"profile_id,omitempty"`
 	ComponentId                   int64                         `json:"component_id,omitempty"`
-	OnlineEnabled                 bool                          `json:"online_enabled,omitempty"`
+	OnlineEnabled                 *bool                         `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec        `json:"revised_adcreative_spec,omitempty"`
 	Category                      *[]int64                      `json:"category,omitempty"`
 	Label                         *[]string                     `json:"label,omitempty"`
-	UnionMarketSwitch             bool                          `json:"union_market_switch,omitempty"`
+	UnionMarketSwitch             *bool                         `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                        `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec             `json:"video_end_page,omitempty"`
-	FeedsVideoCommentSwitch       bool                          `json:"feeds_video_comment_switch,omitempty"`
+	FeedsVideoCommentSwitch       *bool                         `json:"feeds_video_comment_switch,omitempty"`
 	WebviewUrl                    *string                       `json:"webview_url,omitempty"`
 	SimpleCanvasSubType           SimpleCanvasSubType           `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                        `json:"marketing_pendant_image_id,omitempty"`
-	CountdownSwitch               bool                          `json:"countdown_switch,omitempty"`
+	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
 	AccountId                     int64                         `json:"account_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 }

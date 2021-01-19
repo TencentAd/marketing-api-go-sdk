@@ -11,6 +11,6 @@ package model
 
 // 排除已转化用户定向
 type ExcludedConvertedAudienceStruct struct {
-	ExcludedDimension      ExcludedConvertedAudience `json:"excluded_dimension,omitempty"`
-	ConversionBehaviorList *[]string                 `json:"conversion_behavior_list,omitempty"`
+	ExcludedDimension      ExcludedDimension `json:"excluded_dimension,omitempty"`
+	ConversionBehaviorList *[]string         `json:"conversion_behavior_list,omitempty"`
 }

@@ -19,16 +19,17 @@ type DynamicCreativesGetListStruct struct {
 	PageType                  PageTypeRead                 `json:"page_type,omitempty"`
 	PageSpec                  *DynamicPageSpec             `json:"page_spec,omitempty"`
 	DeepLinkUrl               string                       `json:"deep_link_url,omitempty"`
-	AutomaticSiteEnabled      bool                         `json:"automatic_site_enabled,omitempty"`
+	AutomaticSiteEnabled      *bool                        `json:"automatic_site_enabled,omitempty"`
 	SiteSet                   *[]string                    `json:"site_set,omitempty"`
 	PromotedObjectType        PromotedObjectType           `json:"promoted_object_type,omitempty"`
 	PromotedObjectId          string                       `json:"promoted_object_id,omitempty"`
 	CreatedTime               int64                        `json:"created_time,omitempty"`
 	LastModifiedTime          int64                        `json:"last_modified_time,omitempty"`
-	IsDeleted                 bool                         `json:"is_deleted,omitempty"`
+	IsDeleted                 *bool                        `json:"is_deleted,omitempty"`
 	CampaignType              CampaignType                 `json:"campaign_type,omitempty"`
 	ImpressionTrackingUrl     string                       `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl          string                       `json:"click_tracking_url,omitempty"`
-	FeedsVideoCommentSwitch   bool                         `json:"feeds_video_comment_switch,omitempty"`
-	UnionMarketSwitch         bool                         `json:"union_market_switch,omitempty"`
+	FeedsVideoCommentSwitch   *bool                        `json:"feeds_video_comment_switch,omitempty"`
+	UnionMarketSwitch         *bool                        `json:"union_market_switch,omitempty"`
+	VideoEndPage              *VideoEndPageSpec            `json:"video_end_page,omitempty"`
 }

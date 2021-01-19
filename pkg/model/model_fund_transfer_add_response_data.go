@@ -14,5 +14,5 @@ type FundTransferAddResponseData struct {
 	ExternalBillNo string         `json:"external_bill_no,omitempty"`
 	FundType       AccountTypeMap `json:"fund_type,omitempty"`
 	Time           int64          `json:"time,omitempty"`
-	IsRepeated     bool           `json:"is_repeated,omitempty"`
+	IsRepeated     *bool          `json:"is_repeated,omitempty"`
 }

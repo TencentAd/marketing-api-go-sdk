@@ -28,7 +28,7 @@ type AdcreativesGetListStruct struct {
 	IosDeepLinkAppId              string                            `json:"ios_deep_link_app_id,omitempty"`
 	UniversalLinkUrl              string                            `json:"universal_link_url,omitempty"`
 	SiteSet                       *[]string                         `json:"site_set,omitempty"`
-	AutomaticSiteEnabled          bool                              `json:"automatic_site_enabled,omitempty"`
+	AutomaticSiteEnabled          *bool                             `json:"automatic_site_enabled,omitempty"`
 	PromotedObjectType            PromotedObjectType                `json:"promoted_object_type,omitempty"`
 	PromotedObjectId              string                            `json:"promoted_object_id,omitempty"`
 	ProfileId                     int64                             `json:"profile_id,omitempty"`
@@ -36,22 +36,22 @@ type AdcreativesGetListStruct struct {
 	LastModifiedTime              int64                             `json:"last_modified_time,omitempty"`
 	ShareContentSpec              *ShareContentSpec                 `json:"share_content_spec,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec            `json:"dynamic_adcreative_spec,omitempty"`
-	IsDeleted                     bool                              `json:"is_deleted,omitempty"`
-	IsDynamicCreative             bool                              `json:"is_dynamic_creative,omitempty"`
+	IsDeleted                     *bool                             `json:"is_deleted,omitempty"`
+	IsDynamicCreative             *bool                             `json:"is_dynamic_creative,omitempty"`
 	ComponentId                   int64                             `json:"component_id,omitempty"`
-	OnlineEnabled                 bool                              `json:"online_enabled,omitempty"`
+	OnlineEnabled                 *bool                             `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec            `json:"revised_adcreative_spec,omitempty"`
 	Category                      *[]int64                          `json:"category,omitempty"`
 	Label                         *[]string                         `json:"label,omitempty"`
-	UnionMarketSwitch             bool                              `json:"union_market_switch,omitempty"`
+	UnionMarketSwitch             *bool                             `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                            `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec                 `json:"video_end_page,omitempty"`
-	FeedsVideoCommentSwitch       bool                              `json:"feeds_video_comment_switch,omitempty"`
+	FeedsVideoCommentSwitch       *bool                             `json:"feeds_video_comment_switch,omitempty"`
 	WebviewUrl                    string                            `json:"webview_url,omitempty"`
 	SimpleCanvasSubType           SimpleCanvasSubType               `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                     `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                            `json:"marketing_pendant_image_id,omitempty"`
-	CountdownSwitch               bool                              `json:"countdown_switch,omitempty"`
+	CountdownSwitch               *bool                             `json:"countdown_switch,omitempty"`
 	AdcreativeTemplateId          int64                             `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

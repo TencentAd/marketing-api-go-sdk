@@ -16,6 +16,6 @@ type UserActionSet struct {
 	MobileAppId     int64               `json:"mobile_app_id,omitempty"`
 	Name            string              `json:"name,omitempty"`
 	Description     string              `json:"description,omitempty"`
-	ActivateStatus  bool                `json:"activate_status,omitempty"`
+	ActivateStatus  *bool               `json:"activate_status,omitempty"`
 	CreatedTime     string              `json:"created_time,omitempty"`
 }

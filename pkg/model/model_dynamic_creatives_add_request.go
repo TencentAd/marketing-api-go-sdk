@@ -16,15 +16,16 @@ type DynamicCreativesAddRequest struct {
 	CampaignType              CampaignType             `json:"campaign_type,omitempty"`
 	PromotedObjectType        PromotedObjectType       `json:"promoted_object_type,omitempty"`
 	PageType                  DestinationType          `json:"page_type,omitempty"`
-	AutomaticSiteEnabled      bool                     `json:"automatic_site_enabled,omitempty"`
+	AutomaticSiteEnabled      *bool                    `json:"automatic_site_enabled,omitempty"`
 	SiteSet                   *[]string                `json:"site_set,omitempty"`
 	PromotedObjectId          string                   `json:"promoted_object_id,omitempty"`
 	PageSpec                  *DynamicPageSpec         `json:"page_spec,omitempty"`
 	DeepLinkUrl               string                   `json:"deep_link_url,omitempty"`
 	ImpressionTrackingUrl     string                   `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl          string                   `json:"click_tracking_url,omitempty"`
-	FeedsVideoCommentSwitch   bool                     `json:"feeds_video_comment_switch,omitempty"`
-	UnionMarketSwitch         bool                     `json:"union_market_switch,omitempty"`
+	FeedsVideoCommentSwitch   *bool                    `json:"feeds_video_comment_switch,omitempty"`
+	UnionMarketSwitch         *bool                    `json:"union_market_switch,omitempty"`
 	DynamicAdcreativeSpec     *DynamicAdcreativeSpec   `json:"dynamic_adcreative_spec,omitempty"`
+	VideoEndPage              *VideoEndPageSpec        `json:"video_end_page,omitempty"`
 	AccountId                 int64                    `json:"account_id,omitempty"`
 }

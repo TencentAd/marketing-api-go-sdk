@@ -21,6 +21,7 @@ const (
 	DestinationType_MINI_PROGRAM_WECHAT             DestinationType = "PAGE_TYPE_MINI_PROGRAM_WECHAT"
 	DestinationType_FENGYE_ECOMMERCE                DestinationType = "PAGE_TYPE_FENGYE_ECOMMERCE"
 	DestinationType_MINI_GAME_WECHAT                DestinationType = "PAGE_TYPE_MINI_GAME_WECHAT"
+	DestinationType_IOS_APP                         DestinationType = "PAGE_TYPE_IOS_APP"
 	DestinationType_MINI_PROGRAM_QQ                 DestinationType = "PAGE_TYPE_MINI_PROGRAM_QQ"
 	DestinationType_MINI_PROGRAM_CANVAS_WECHAT      DestinationType = "PAGE_TYPE_MINI_PROGRAM_CANVAS_WECHAT"
 	DestinationType_MINI_GAME_QQ                    DestinationType = "PAGE_TYPE_MINI_GAME_QQ"
@@ -37,4 +38,7 @@ const (
 	DestinationType_WEIMOB_PROMOTION                DestinationType = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
+	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
+	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )

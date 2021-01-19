@@ -28,7 +28,7 @@ var (
 type ProductItemsVerticalsApiService service
 
 /*
-ProductItemsVerticalsApiService 商品列表
+ProductItemsVerticalsApiService 行业列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *ProductItemsVerticalsGetOpts - Optional Parameters:
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表

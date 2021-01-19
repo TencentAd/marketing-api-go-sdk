@@ -15,5 +15,5 @@ type AdvertiserOperatorStruct struct {
 	OperatorName    string `json:"operator_name,omitempty"`
 	Qq              int64  `json:"qq,omitempty"`
 	WechatAccountId string `json:"wechat_account_id,omitempty"`
-	IsMaster        bool   `json:"is_master,omitempty"`
+	IsMaster        *bool  `json:"is_master,omitempty"`
 }

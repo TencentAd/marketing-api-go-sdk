@@ -14,7 +14,7 @@ type AdcreativesAddRequest struct {
 	AdcreativeName                string                        `json:"adcreative_name,omitempty"`
 	PromotedObjectType            PromotedObjectType            `json:"promoted_object_type,omitempty"`
 	PageType                      DestinationType               `json:"page_type,omitempty"`
-	AutomaticSiteEnabled          bool                          `json:"automatic_site_enabled,omitempty"`
+	AutomaticSiteEnabled          *bool                         `json:"automatic_site_enabled,omitempty"`
 	SiteSet                       *[]string                     `json:"site_set,omitempty"`
 	PageSpec                      *PageSpec                     `json:"page_spec,omitempty"`
 	LinkPageType                  LinkPageType                  `json:"link_page_type,omitempty"`
@@ -34,15 +34,15 @@ type AdcreativesAddRequest struct {
 	ComponentId                   int64                         `json:"component_id,omitempty"`
 	Category                      *[]int64                      `json:"category,omitempty"`
 	Label                         *[]string                     `json:"label,omitempty"`
-	UnionMarketSwitch             bool                          `json:"union_market_switch,omitempty"`
+	UnionMarketSwitch             *bool                         `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        string                        `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec             `json:"video_end_page,omitempty"`
-	FeedsVideoCommentSwitch       bool                          `json:"feeds_video_comment_switch,omitempty"`
+	FeedsVideoCommentSwitch       *bool                         `json:"feeds_video_comment_switch,omitempty"`
 	WebviewUrl                    string                        `json:"webview_url,omitempty"`
 	SimpleCanvasSubType           SimpleCanvasSubType           `json:"simple_canvas_sub_type,omitempty"`
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       string                        `json:"marketing_pendant_image_id,omitempty"`
-	CountdownSwitch               bool                          `json:"countdown_switch,omitempty"`
+	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
 	AccountId                     int64                         `json:"account_id,omitempty"`
 	AdcreativeTemplateId          int64                         `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`

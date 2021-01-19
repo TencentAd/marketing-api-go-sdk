@@ -16,13 +16,13 @@ type ConversionsGetListStruct struct {
 	AccessType                   AccessType                 `json:"access_type,omitempty"`
 	ClaimType                    ClaimType                  `json:"claim_type,omitempty"`
 	FeedbackUrl                  string                     `json:"feedback_url,omitempty"`
-	SelfAttributed               bool                       `json:"self_attributed,omitempty"`
+	SelfAttributed               *bool                      `json:"self_attributed,omitempty"`
 	OptimizationGoal             IntOptimizationGoal        `json:"optimization_goal,omitempty"`
 	DeepBehaviorOptimizationGoal IntOptimizationGoal        `json:"deep_behavior_optimization_goal,omitempty"`
 	DeepWorthOptimizationGoal    ConversionOptimizationGoal `json:"deep_worth_optimization_goal,omitempty"`
 	UserActionSetId              int64                      `json:"user_action_set_id,omitempty"`
 	UserActionSetKey             string                     `json:"user_action_set_key,omitempty"`
-	SiteSetEnable                bool                       `json:"site_set_enable,omitempty"`
-	IsDeleted                    bool                       `json:"is_deleted,omitempty"`
+	SiteSetEnable                *bool                      `json:"site_set_enable,omitempty"`
+	IsDeleted                    *bool                      `json:"is_deleted,omitempty"`
 	AccessStatus                 AccessStatus               `json:"access_status,omitempty"`
 }

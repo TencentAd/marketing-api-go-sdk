@@ -14,7 +14,7 @@ type AdcreativeElement struct {
 	Name           string                           `json:"name,omitempty"`
 	ElementType    ElementType                      `json:"element_type,omitempty"`
 	FieldType      FieldType                        `json:"field_type,omitempty"`
-	Required       bool                             `json:"required,omitempty"`
+	Required       *bool                            `json:"required,omitempty"`
 	Description    string                           `json:"description,omitempty"`
 	ParentName     string                           `json:"parent_name,omitempty"`
 	EnumProperty   *AdcreativeElementEnumProperty   `json:"enum_property,omitempty"`

@@ -16,5 +16,5 @@ type DynamicAdImagesAddRequest struct {
 	ProductSource         string                `json:"product_source,omitempty"`
 	DynamicAdTemplateSize DynamicAdTemplateSize `json:"dynamic_ad_template_size,omitempty"`
 	DynamicAdTemplateId   int64                 `json:"dynamic_ad_template_id,omitempty"`
-	ImageMattingEnabled   bool                  `json:"image_matting_enabled,omitempty"`
+	ImageMattingEnabled   *bool                 `json:"image_matting_enabled,omitempty"`
 }

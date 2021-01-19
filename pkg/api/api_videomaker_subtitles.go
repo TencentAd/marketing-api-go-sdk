@@ -36,14 +36,16 @@ VideomakerSubtitlesApiService 创建视频加字幕任务
      * @param "VideoId" (optional.String) -
      * @param "VideoFile" (optional.Interface of *os.File) -
      * @param "Signature" (optional.String) -
+     * @param "OnlySubtitleFile" (optional.Bool) -
 
 @return VideomakerSubtitlesAddResponse
 */
 
 type VideomakerSubtitlesAddOpts struct {
-	VideoId   optional.String
-	VideoFile optional.Interface
-	Signature optional.String
+	VideoId          optional.String
+	VideoFile        optional.Interface
+	Signature        optional.String
+	OnlySubtitleFile optional.Bool
 }
 
 func (a *VideomakerSubtitlesApiService) Add(ctx context.Context, accountId int64, localVarOptionals *VideomakerSubtitlesAddOpts) (VideomakerSubtitlesAddResponseData, http.Header, error) {
@@ -109,6 +111,9 @@ func (a *VideomakerSubtitlesApiService) Add(ctx context.Context, accountId int64
 	}
 	if localVarOptionals != nil && localVarOptionals.Signature.IsSet() {
 		localVarFormParams.Add("signature", parameterToString(localVarOptionals.Signature.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OnlySubtitleFile.IsSet() {
+		localVarFormParams.Add("only_subtitle_file", parameterToString(localVarOptionals.OnlySubtitleFile.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {

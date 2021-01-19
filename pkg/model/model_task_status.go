@@ -21,4 +21,5 @@ const (
 	TaskStatus_CANCELLED  TaskStatus = "TASK_STATUS_CANCELLED"
 	TaskStatus_FAIL       TaskStatus = "TASK_STATUS_FAIL"
 	TaskStatus_DELETED    TaskStatus = "TASK_STATUS_DELETED"
+	TaskStatus_DRAFT      TaskStatus = "TASK_STATUS_DRAFT"
 )

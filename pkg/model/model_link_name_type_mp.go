@@ -48,4 +48,7 @@ const (
 	LinkNameTypeMp_GO_TO_KUAISHOU          LinkNameTypeMp = "GO_TO_KUAISHOU"
 	LinkNameTypeMp_WATCH_LIVE              LinkNameTypeMp = "WATCH_LIVE"
 	LinkNameTypeMp_RESERVE_NOW             LinkNameTypeMp = "RESERVE_NOW"
+	LinkNameTypeMp_OPEN_APP                LinkNameTypeMp = "OPEN_APP"
+	LinkNameTypeMp_ALREADY_INSTALL         LinkNameTypeMp = "ALREADY_INSTALL"
+	LinkNameTypeMp_RESERVE_LIVE            LinkNameTypeMp = "RESERVE_LIVE"
 )

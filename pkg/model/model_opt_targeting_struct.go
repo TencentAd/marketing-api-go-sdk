@@ -11,12 +11,12 @@ package model
 
 // 定向优化
 type OptTargetingStruct struct {
-	OpenAutoExpandFlag                   bool                       `json:"open_auto_expand_flag,omitempty"`
+	OpenAutoExpandFlag                   *bool                      `json:"open_auto_expand_flag,omitempty"`
 	ExpandTargetingRule                  *[]string                  `json:"expand_targeting_rule,omitempty"`
-	OpenExpandSeedPopulationFlag         bool                       `json:"open_expand_seed_population_flag,omitempty"`
-	OpenExpandSeedPopulationSelectedFlag bool                       `json:"open_expand_seed_population_selected_flag,omitempty"`
+	OpenExpandSeedPopulationFlag         *bool                      `json:"open_expand_seed_population_flag,omitempty"`
+	OpenExpandSeedPopulationSelectedFlag *bool                      `json:"open_expand_seed_population_selected_flag,omitempty"`
 	ExpandSeedPopulations                *[]int64                   `json:"expand_seed_populations,omitempty"`
-	AddMoreLocardLabelsFlag              bool                       `json:"add_more_locard_labels_flag,omitempty"`
+	AddMoreLocardLabelsFlag              *bool                      `json:"add_more_locard_labels_flag,omitempty"`
 	LocardBehaviors                      *[]LocardBehaviorsListItem `json:"locard_behaviors,omitempty"`
 	LocardInterests                      *[]LocardInterestsListItem `json:"locard_interests,omitempty"`
 }

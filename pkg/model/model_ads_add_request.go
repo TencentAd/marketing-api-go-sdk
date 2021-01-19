@@ -16,6 +16,6 @@ type AdsAddRequest struct {
 	ConfiguredStatus        AdStatus `json:"configured_status,omitempty"`
 	ImpressionTrackingUrl   string   `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl        string   `json:"click_tracking_url,omitempty"`
-	FeedsInteractionEnabled bool     `json:"feeds_interaction_enabled,omitempty"`
+	FeedsInteractionEnabled *bool    `json:"feeds_interaction_enabled,omitempty"`
 	AccountId               int64    `json:"account_id,omitempty"`
 }

@@ -56,7 +56,7 @@ Name | Type | Description | Notes
 **ThirdCategoryUrl** | **string** |  | [optional] [default to null]
 **FourthCategoryUrl** | **string** |  | [optional] [default to null]
 **BrandId** | **int64** |  | [optional] [default to null]
-**BrandName** | **string** |  | [optional] [default to null]
+**ProductBrand** | **string** |  | [optional] [default to null]
 **BrandUrl** | **string** |  | [optional] [default to null]
 **PromotionId** | **int64** |  | [optional] [default to null]
 **PromotionName** | **string** |  | [optional] [default to null]
@@ -106,6 +106,11 @@ Name | Type | Description | Notes
 **ShootingSceneDetail** | **[]string** |  | [optional] [default to null]
 **TourPlaceDomestic** | [***TourPlaceDomestic**](TourPlaceDomestic.md) |  | [optional] [default to null]
 **TourPlaceForeign** | [***TourPlaceForeign**](TourPlaceForeign.md) |  | [optional] [default to null]
+**MaxInsuranceQuota** | **float64** |  | [optional] [default to null]
+**FirstMonthInsuranceFee** | **float64** |  | [optional] [default to null]
+**MaxQuota** | **float64** |  | [optional] [default to null]
+**AnnualizedRateOfReturn** | **float64** |  | [optional] [default to null]
+**RiskType** | [***RiskTypeStatus**](RiskTypeStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

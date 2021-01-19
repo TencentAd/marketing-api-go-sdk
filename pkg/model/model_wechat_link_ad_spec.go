@@ -11,5 +11,5 @@ package model
 
 // 品牌活动页投放能力
 type WechatLinkAdSpec struct {
-	Result bool `json:"result,omitempty"`
+	Result *bool `json:"result,omitempty"`
 }
