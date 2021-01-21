@@ -37,6 +37,8 @@ Name | Type | Description  | Notes
  **pageStatus** | **optional.String**|  | 
  **pageSource** | **optional.String**|  | 
  **pageOwnerId** | **optional.Int64**|  | 
+ **appId** | **optional.Int64**|  | 
+ **appType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

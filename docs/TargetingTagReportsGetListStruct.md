@@ -111,11 +111,18 @@ Name | Type | Description | Notes
 **MiniGameAdMonetizationUsers** | **int64** |  | [optional] [default to null]
 **MiniGamePayingCount** | **int64** |  | [optional] [default to null]
 **MiniGamePayingAmount** | **int64** |  | [optional] [default to null]
+**MiniGameFirstPayingUsers** | **int64** |  | [optional] [default to null]
 **MiniGameCreateRoleUsers** | **int64** |  | [optional] [default to null]
 **MiniGameCreateRoleCost** | **int64** |  | [optional] [default to null]
 **MiniGameRetentionD1** | **int64** |  | [optional] [default to null]
 **MiniGameKeyPageViewers** | **int64** |  | [optional] [default to null]
 **MiniGameKeyPageViewCost** | **int64** |  | [optional] [default to null]
+**MiniGameAdMonetizationAmount** | **int64** |  | [optional] [default to null]
+**MiniGamePayingAmountByUpload** | **int64** |  | [optional] [default to null]
+**MiniGamePayingCountByUpload** | **int64** |  | [optional] [default to null]
+**ConsultLeaveInfoCost** | **int64** |  | [optional] [default to null]
+**PurchaseAmountWithCoupon** | **int64** |  | [optional] [default to null]
+**PurchaseAmountWithCouponCost** | **int64** |  | [optional] [default to null]
 **Age** | **string** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
@@ -314,8 +321,8 @@ Name | Type | Description | Notes
 **MiniGameFirstDayAdPayingArpu** | **int64** |  | [optional] [default to null]
 **MiniGamePayingUsersD1** | **int64** |  | [optional] [default to null]
 **MiniGamePayingAmountD1** | **int64** |  | [optional] [default to null]
-**MiniGameFirstPayingUsers** | **int64** |  | [optional] [default to null]
 **MiniGameFirstDayPayingRoi** | **float64** |  | [optional] [default to null]
+**MiniGamePayingAmountD1ByUpload** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

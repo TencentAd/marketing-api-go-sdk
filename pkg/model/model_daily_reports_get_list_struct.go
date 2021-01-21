@@ -280,11 +280,18 @@ type DailyReportsGetListStruct struct {
 	MiniGameAdMonetizationUsers          int64   `json:"mini_game_ad_monetization_users,omitempty"`
 	MiniGamePayingCount                  int64   `json:"mini_game_paying_count,omitempty"`
 	MiniGamePayingAmount                 int64   `json:"mini_game_paying_amount,omitempty"`
+	MiniGameFirstPayingUsers             int64   `json:"mini_game_first_paying_users,omitempty"`
 	MiniGameCreateRoleUsers              int64   `json:"mini_game_create_role_users,omitempty"`
 	MiniGameCreateRoleCost               int64   `json:"mini_game_create_role_cost,omitempty"`
 	MiniGameRetentionD1                  int64   `json:"mini_game_retention_d1,omitempty"`
 	MiniGameKeyPageViewers               int64   `json:"mini_game_key_page_viewers,omitempty"`
 	MiniGameKeyPageViewCost              int64   `json:"mini_game_key_page_view_cost,omitempty"`
+	MiniGameAdMonetizationAmount         int64   `json:"mini_game_ad_monetization_amount,omitempty"`
+	MiniGamePayingAmountByUpload         int64   `json:"mini_game_paying_amount_by_upload,omitempty"`
+	MiniGamePayingCountByUpload          int64   `json:"mini_game_paying_count_by_upload,omitempty"`
+	ConsultLeaveInfoCost                 int64   `json:"consult_leave_info_cost,omitempty"`
+	PurchaseAmountWithCoupon             int64   `json:"purchase_amount_with_coupon,omitempty"`
+	PurchaseAmountWithCouponCost         int64   `json:"purchase_amount_with_coupon_cost,omitempty"`
 	RequestConversionsCount              int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                           float64 `json:"income_roi_1,omitempty"`
@@ -315,8 +322,8 @@ type DailyReportsGetListStruct struct {
 	MiniGameFirstDayAdPayingArpu         int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
 	MiniGamePayingUsersD1                int64   `json:"mini_game_paying_users_d1,omitempty"`
 	MiniGamePayingAmountD1               int64   `json:"mini_game_paying_amount_d1,omitempty"`
-	MiniGameFirstPayingUsers             int64   `json:"mini_game_first_paying_users,omitempty"`
 	MiniGameFirstDayPayingRoi            float64 `json:"mini_game_first_day_paying_roi,omitempty"`
+	MiniGamePayingAmountD1ByUpload       int64   `json:"mini_game_paying_amount_d1_by_upload,omitempty"`
 	CampaignId                           int64   `json:"campaign_id,omitempty"`
 	CampaignName                         string  `json:"campaign_name,omitempty"`
 	AdgroupId                            int64   `json:"adgroup_id,omitempty"`
@@ -336,7 +343,7 @@ type DailyReportsGetListStruct struct {
 	AppAddToCartRate                     float64 `json:"app_add_to_cart_rate,omitempty"`
 	IsExpandTargeting                    *bool   `json:"is_expand_targeting,omitempty"`
 	SiteSet                              string  `json:"site_set,omitempty"`
-	MaterialId                           int64   `json:"material_id,omitempty"`
+	MaterialId                           string  `json:"material_id,omitempty"`
 	Signature                            string  `json:"signature,omitempty"`
 	ProductCatalogId                     int64   `json:"product_catalog_id,omitempty"`
 	ProductOuterId                       string  `json:"product_outer_id,omitempty"`

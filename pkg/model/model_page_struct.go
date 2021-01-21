@@ -19,4 +19,9 @@ type PageStruct struct {
 	PageStatus         PageAuditStatus   `json:"page_status,omitempty"`
 	PageLastModifyTime string            `json:"page_last_modify_time,omitempty"`
 	PageOwnerId        int64             `json:"page_owner_id,omitempty"`
+	PublishUrl         string            `json:"publish_url,omitempty"`
+	RejectReason       string            `json:"reject_reason,omitempty"`
+	PlayableType       PlayableType      `json:"playable_type,omitempty"`
+	PublishAppId       *PublishAppId     `json:"publish_app_id,omitempty"`
+	UnpublishAppId     *UnpublishAppId   `json:"unpublish_app_id,omitempty"`
 }

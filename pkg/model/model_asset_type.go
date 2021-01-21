@@ -24,4 +24,5 @@ const (
 	AssetType_CATALOG             AssetType = "ASSET_TYPE_CATALOG"
 	AssetType_ACTION_SET          AssetType = "ASSET_TYPE_ACTION_SET"
 	AssetType_CONVERSION_SPEC     AssetType = "ASSET_TYPE_CONVERSION_SPEC"
+	AssetType_UNION_PACKAGE       AssetType = "ASSET_TYPE_UNION_PACKAGE"
 )

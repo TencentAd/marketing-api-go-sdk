@@ -44,6 +44,8 @@ XijingPageListApiService 蹊径-获取落地页列表
      * @param "PageStatus" (optional.String) -
      * @param "PageSource" (optional.String) -
      * @param "PageOwnerId" (optional.Int64) -
+     * @param "AppId" (optional.Int64) -
+     * @param "AppType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return XijingPageListGetResponse
@@ -62,6 +64,8 @@ type XijingPageListGetOpts struct {
 	PageStatus              optional.String
 	PageSource              optional.String
 	PageOwnerId             optional.Int64
+	AppId                   optional.Int64
+	AppType                 optional.String
 	Fields                  optional.Interface
 }
 
@@ -119,6 +123,12 @@ func (a *XijingPageListApiService) Get(ctx context.Context, accountId int64, loc
 	}
 	if localVarOptionals != nil && localVarOptionals.PageOwnerId.IsSet() {
 		localVarQueryParams.Add("page_owner_id", parameterToString(localVarOptionals.PageOwnerId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AppId.IsSet() {
+		localVarQueryParams.Add("app_id", parameterToString(localVarOptionals.AppId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AppType.IsSet() {
+		localVarQueryParams.Add("app_type", parameterToString(localVarOptionals.AppType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
