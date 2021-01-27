@@ -17,6 +17,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 )
 
@@ -25,55 +26,48 @@ var (
 	_ context.Context
 )
 
-type OptimizationGoalPermissionsApiService service
+type VideomakerVideocapturesApiService service
 
 /*
-OptimizationGoalPermissionsApiService 查询优化目标权限
+VideomakerVideocapturesApiService 生成视频封面图
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
- * @param siteSet
- * @param promotedObjectType
- * @param optional nil or *OptimizationGoalPermissionsGetOpts - Optional Parameters:
-     * @param "BidMode" (optional.String) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param optional nil or *VideomakerVideocapturesAddOpts - Optional Parameters:
+     * @param "VideoId" (optional.String) -
+     * @param "VideoFile" (optional.Interface of *os.File) -
+     * @param "Signature" (optional.String) -
+     * @param "Number" (optional.Int64) -
 
-@return OptimizationGoalPermissionsGetResponse
+@return VideomakerVideocapturesAddResponse
 */
 
-type OptimizationGoalPermissionsGetOpts struct {
-	BidMode optional.String
-	Fields  optional.Interface
+type VideomakerVideocapturesAddOpts struct {
+	VideoId   optional.String
+	VideoFile optional.Interface
+	Signature optional.String
+	Number    optional.Int64
 }
 
-func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, accountId int64, siteSet []string, promotedObjectType string, localVarOptionals *OptimizationGoalPermissionsGetOpts) (OptimizationGoalPermissionsGetResponseData, http.Header, error) {
+func (a *VideomakerVideocapturesApiService) Add(ctx context.Context, accountId int64, localVarOptionals *VideomakerVideocapturesAddOpts) (VideomakerVideocapturesAddResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue OptimizationGoalPermissionsGetResponseData
-		localVarResponse    OptimizationGoalPermissionsGetResponse
+		localVarReturnValue VideomakerVideocapturesAddResponseData
+		localVarResponse    VideomakerVideocapturesAddResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/optimization_goal_permissions/get"
+	localVarPath := a.client.Cfg.BasePath + "/videomaker_videocaptures/add"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("site_set", parameterToString(siteSet, "multi"))
-	if localVarOptionals != nil && localVarOptionals.BidMode.IsSet() {
-		localVarQueryParams.Add("bid_mode", parameterToString(localVarOptionals.BidMode.Value(), ""))
-	}
-	localVarQueryParams.Add("promoted_object_type", parameterToString(promotedObjectType, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"multipart/form-data"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -88,6 +82,38 @@ func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, account
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.VideoId.IsSet() {
+		localVarFormParams.Add("video_id", parameterToString(localVarOptionals.VideoId.Value(), ""))
+	}
+	var localVarFile *os.File
+	localVarFileKey = "video_file"
+	if localVarOptionals != nil && localVarOptionals.VideoFile.IsSet() {
+		localVarFileOk := false
+		localVarFile, localVarFileOk = localVarOptionals.VideoFile.Value().(*os.File)
+		if !localVarFileOk {
+			return localVarReturnValue, nil, reportError("videoFile should be *os.File")
+		}
+	}
+	if localVarFile != nil {
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		localVarFileBytes = fbs
+		localVarFileName = localVarFile.Name()
+	}
+	if localVarOptionals != nil && localVarOptionals.Signature.IsSet() {
+		localVarFormParams.Add("signature", parameterToString(localVarOptionals.Signature.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Number.IsSet() {
+		localVarFormParams.Add("number", parameterToString(localVarOptionals.Number.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
@@ -130,7 +156,7 @@ func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, account
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v OptimizationGoalPermissionsGetResponse
+			var v VideomakerVideocapturesAddResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

@@ -18,4 +18,5 @@ const (
 	SizeAdjustmentMethodEnum_COLOR       SizeAdjustmentMethodEnum = "COLOR"
 	SizeAdjustmentMethodEnum_SMART_CLIP  SizeAdjustmentMethodEnum = "SMART_CLIP"
 	SizeAdjustmentMethodEnum_SMART_IMAGE SizeAdjustmentMethodEnum = "SMART_IMAGE"
+	SizeAdjustmentMethodEnum_IMAGE       SizeAdjustmentMethodEnum = "IMAGE"
 )

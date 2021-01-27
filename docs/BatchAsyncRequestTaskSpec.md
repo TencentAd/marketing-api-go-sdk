@@ -13,7 +13,14 @@ Name | Type | Description | Notes
 **DeleteCampaignSpec** | [**[]DeleteCampaignItem**](delete_campaign_item.md) |  | [optional] [default to null]
 **DeleteAdgroupSpec** | [**[]DeleteAdgroupItem**](delete_adgroup_item.md) |  | [optional] [default to null]
 **DeleteAdSpec** | [**[]DeleteAdItem**](delete_ad_item.md) |  | [optional] [default to null]
+**UpdateAdgroupDeepConversionWorthRateSpec** | [**[]UpdateAdgroupDeepConversionWorthRateItem**](update_adgroup_deep_conversion_worth_rate_item.md) |  | [optional] [default to null]
+**UpdateAdcreativeDeepLinkUrlSpec** | [**[]UpdateAdcreativeDeepLinkUrlItem**](update_adcreative_deep_link_url_item.md) |  | [optional] [default to null]
 **TargetingsShareSpec** | [**[]TargetingsShareItem**](targetings_share_item.md) |  | [optional] [default to null]
+**UpdateCampaignConfiguredStatusSpec** | [**[]UpdateCampaignConfiguredStatusItem**](update_campaign_configured_status_item.md) |  | [optional] [default to null]
+**UpdateCampaignDailyBudgetSpec** | [**[]UpdateCampaignDailyBudgetItem**](update_campaign_daily_budget_item.md) |  | [optional] [default to null]
+**UpdateAdgroupConfiguredStatusSpec** | [**[]UpdateAdgroupConfiguredStatusItem**](update_adgroup_configured_status_item.md) |  | [optional] [default to null]
+**UpdateAdgroupDailyBudgetSpec** | [**[]UpdateAdgroupDailyBudgetItem**](update_adgroup_daily_budget_item.md) |  | [optional] [default to null]
+**UpdateAdConfiguredStatusSpec** | [**[]UpdateAdConfiguredStatusItem**](update_ad_configured_status_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

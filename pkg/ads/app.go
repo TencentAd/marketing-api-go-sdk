@@ -313,6 +313,10 @@ func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissio
 	return c.Client.OptimizationGoalPermissionsApi
 }
 
+func (c *SDKClient) OuterClues() *api.OuterCluesApiService {
+	return c.Client.OuterCluesApi
+}
+
 func (c *SDKClient) Pages() *api.PagesApiService {
 	return c.Client.PagesApi
 }
@@ -435,6 +439,10 @@ func (c *SDKClient) VideomakerSubtitles() *api.VideomakerSubtitlesApiService {
 
 func (c *SDKClient) VideomakerTasks() *api.VideomakerTasksApiService {
 	return c.Client.VideomakerTasksApi
+}
+
+func (c *SDKClient) VideomakerVideocaptures() *api.VideomakerVideocapturesApiService {
+	return c.Client.VideomakerVideocapturesApi
 }
 
 func (c *SDKClient) Videos() *api.VideosApiService {

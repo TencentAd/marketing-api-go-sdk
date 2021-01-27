@@ -21,5 +21,12 @@ type BatchAsyncRequestTaskSpec struct {
 	DeleteCampaignSpec                          *[]DeleteCampaignItem                          `json:"delete_campaign_spec,omitempty"`
 	DeleteAdgroupSpec                           *[]DeleteAdgroupItem                           `json:"delete_adgroup_spec,omitempty"`
 	DeleteAdSpec                                *[]DeleteAdItem                                `json:"delete_ad_spec,omitempty"`
+	UpdateAdgroupDeepConversionWorthRateSpec    *[]UpdateAdgroupDeepConversionWorthRateItem    `json:"update_adgroup_deep_conversion_worth_rate_spec,omitempty"`
+	UpdateAdcreativeDeepLinkUrlSpec             *[]UpdateAdcreativeDeepLinkUrlItem             `json:"update_adcreative_deep_link_url_spec,omitempty"`
 	TargetingsShareSpec                         *[]TargetingsShareItem                         `json:"targetings_share_spec,omitempty"`
+	UpdateCampaignConfiguredStatusSpec          *[]UpdateCampaignConfiguredStatusItem          `json:"update_campaign_configured_status_spec,omitempty"`
+	UpdateCampaignDailyBudgetSpec               *[]UpdateCampaignDailyBudgetItem               `json:"update_campaign_daily_budget_spec,omitempty"`
+	UpdateAdgroupConfiguredStatusSpec           *[]UpdateAdgroupConfiguredStatusItem           `json:"update_adgroup_configured_status_spec,omitempty"`
+	UpdateAdgroupDailyBudgetSpec                *[]UpdateAdgroupDailyBudgetItem                `json:"update_adgroup_daily_budget_spec,omitempty"`
+	UpdateAdConfiguredStatusSpec                *[]UpdateAdConfiguredStatusItem                `json:"update_ad_configured_status_spec,omitempty"`
 }

@@ -15,7 +15,7 @@ type AdgroupsAddRequest struct {
 	PromotedObjectType         PromotedObjectType               `json:"promoted_object_type,omitempty"`
 	BeginDate                  string                           `json:"begin_date,omitempty"`
 	FirstDayBeginTime          string                           `json:"first_day_begin_time,omitempty"`
-	EndDate                    string                           `json:"end_date,omitempty"`
+	EndDate                    *string                          `json:"end_date,omitempty"`
 	BillingEvent               BillingEvent                     `json:"billing_event,omitempty"`
 	BidAmount                  int64                            `json:"bid_amount,omitempty"`
 	OptimizationGoal           OptimizationGoal                 `json:"optimization_goal,omitempty"`

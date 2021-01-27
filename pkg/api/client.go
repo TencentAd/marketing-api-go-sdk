@@ -198,6 +198,8 @@ type APIClient struct {
 
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
 
+	OuterCluesApi *OuterCluesApiService
+
 	PagesApi *PagesApiService
 
 	PlayablePagesApi *PlayablePagesApiService
@@ -259,6 +261,8 @@ type APIClient struct {
 	VideomakerSubtitlesApi *VideomakerSubtitlesApiService
 
 	VideomakerTasksApi *VideomakerTasksApiService
+
+	VideomakerVideocapturesApi *VideomakerVideocapturesApiService
 
 	VideosApi *VideosApiService
 
@@ -390,6 +394,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
+	c.OuterCluesApi = (*OuterCluesApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
 	c.PlayablePagesApi = (*PlayablePagesApiService)(&c.common)
 	c.ProductCatalogsApi = (*ProductCatalogsApiService)(&c.common)
@@ -421,6 +426,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideomakerAutoadjustmentsApi = (*VideomakerAutoadjustmentsApiService)(&c.common)
 	c.VideomakerSubtitlesApi = (*VideomakerSubtitlesApiService)(&c.common)
 	c.VideomakerTasksApi = (*VideomakerTasksApiService)(&c.common)
+	c.VideomakerVideocapturesApi = (*VideomakerVideocapturesApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatAdFollowersApi = (*WechatAdFollowersApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
