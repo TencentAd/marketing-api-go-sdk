@@ -10,5 +10,5 @@
 package model
 
 type DynamicCreativesUpdateResponseData struct {
-	DynamicCreativeId int64 `json:"dynamic_creative_id,omitempty"`
+	DynamicCreativeId *int64 `json:"dynamic_creative_id,omitempty"`
 }

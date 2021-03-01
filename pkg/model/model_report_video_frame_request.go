@@ -13,5 +13,5 @@ type ReportVideoFrameRequest struct {
 	Filtering *[]FilteringStruct `json:"filtering,omitempty"`
 	DateRange *DateRange         `json:"date_range,omitempty"`
 	GroupBy   *[]string          `json:"group_by,omitempty"`
-	AccountId int64              `json:"account_id,omitempty"`
+	AccountId *int64             `json:"account_id,omitempty"`
 }

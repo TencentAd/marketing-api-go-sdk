@@ -9,7 +9,7 @@
 
 package model
 
-// SizeAdjustmentMethodEnum : 调整尺寸方式：高斯模糊、指定颜色、智能裁剪、智能取图
+// SizeAdjustmentMethodEnum : 调整尺寸方式：高斯模糊、指定颜色、智能裁剪、智能取图、指定图片
 type SizeAdjustmentMethodEnum string
 
 // List of SizeAdjustmentMethodEnum

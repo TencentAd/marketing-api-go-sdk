@@ -11,6 +11,6 @@ package model
 
 // 投放日期信息
 type DateSpec struct {
-	BeginDate string `json:"begin_date,omitempty"`
-	EndDate   string `json:"end_date,omitempty"`
+	BeginDate *string `json:"begin_date,omitempty"`
+	EndDate   *string `json:"end_date,omitempty"`
 }

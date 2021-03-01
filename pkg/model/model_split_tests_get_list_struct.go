@@ -11,12 +11,12 @@ package model
 
 // 返回结构
 type SplitTestsGetListStruct struct {
-	AccountId                int64             `json:"account_id,omitempty"`
-	SplitTestId              int64             `json:"split_test_id,omitempty"`
+	AccountId                *int64            `json:"account_id,omitempty"`
+	SplitTestId              *int64            `json:"split_test_id,omitempty"`
 	SplitTestStatus          SplitTestStatus   `json:"split_test_status,omitempty"`
-	SplitTestName            string            `json:"split_test_name,omitempty"`
-	BeginTime                int64             `json:"begin_time,omitempty"`
-	EndTime                  int64             `json:"end_time,omitempty"`
+	SplitTestName            *string           `json:"split_test_name,omitempty"`
+	BeginTime                *int64            `json:"begin_time,omitempty"`
+	EndTime                  *int64            `json:"end_time,omitempty"`
 	SmartExpandEnabled       *bool             `json:"smart_expand_enabled,omitempty"`
 	AdgroupIdList            *[]int64          `json:"adgroup_id_list,omitempty"`
 	RecommendedRating        RecommendedRating `json:"recommended_rating,omitempty"`

@@ -10,5 +10,5 @@
 package model
 
 type SplitTestsUpdateResponseData struct {
-	SplitTestId int64 `json:"split_test_id,omitempty"`
+	SplitTestId *int64 `json:"split_test_id,omitempty"`
 }

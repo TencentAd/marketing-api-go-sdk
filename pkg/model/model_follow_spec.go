@@ -11,5 +11,5 @@ package model
 
 // 关注公众号信息
 type FollowSpec struct {
-	Title string `json:"title,omitempty"`
+	Title *string `json:"title,omitempty"`
 }

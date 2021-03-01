@@ -11,7 +11,7 @@ package model
 
 // 授权给商务管家账号认领的账号的授权信息
 type AudienceGrantRelationsGetGrantToBusinessSpec struct {
-	GrantBusinessId         int64                                            `json:"grant_business_id,omitempty"`
+	GrantBusinessId         *int64                                           `json:"grant_business_id,omitempty"`
 	GrantScopeType          AudienceGrantScopeType                           `json:"grant_scope_type,omitempty"`
 	GrantBusinessPermission *GrantBusinessPermission                         `json:"grant_business_permission,omitempty"`
 	GrantAccountPermission  *AudienceGrantRelationsGetGrantAccountPermission `json:"grant_account_permission,omitempty"`

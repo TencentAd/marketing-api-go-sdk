@@ -11,6 +11,6 @@ package model
 
 // 计划结构
 type CampaignCreateSpec struct {
-	AccountId    int64  `json:"account_id,omitempty"`
-	CampaignName string `json:"campaign_name,omitempty"`
+	AccountId    *int64  `json:"account_id,omitempty"`
+	CampaignName *string `json:"campaign_name,omitempty"`
 }

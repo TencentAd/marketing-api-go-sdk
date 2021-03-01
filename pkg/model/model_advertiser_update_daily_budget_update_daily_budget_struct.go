@@ -11,6 +11,6 @@ package model
 
 // 更新日限额条件
 type AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct struct {
-	AccountId   int64 `json:"account_id,omitempty"`
-	DailyBudget int64 `json:"daily_budget,omitempty"`
+	AccountId   *int64 `json:"account_id,omitempty"`
+	DailyBudget *int64 `json:"daily_budget,omitempty"`
 }

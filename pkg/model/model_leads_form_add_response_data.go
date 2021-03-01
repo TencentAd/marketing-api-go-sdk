@@ -10,5 +10,5 @@
 package model
 
 type LeadsFormAddResponseData struct {
-	ComponentId string `json:"component_id,omitempty"`
+	ComponentId *string `json:"component_id,omitempty"`
 }

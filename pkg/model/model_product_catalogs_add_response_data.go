@@ -10,5 +10,5 @@
 package model
 
 type ProductCatalogsAddResponseData struct {
-	ProductCatalogId int64 `json:"product_catalog_id,omitempty"`
+	ProductCatalogId *int64 `json:"product_catalog_id,omitempty"`
 }

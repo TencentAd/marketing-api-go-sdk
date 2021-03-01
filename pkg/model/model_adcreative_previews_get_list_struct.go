@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type AdcreativePreviewsGetListStruct struct {
-	UserId     string       `json:"user_id,omitempty"`
+	UserId     *string      `json:"user_id,omitempty"`
 	UserIdType ViewerIdType `json:"user_id_type,omitempty"`
 }

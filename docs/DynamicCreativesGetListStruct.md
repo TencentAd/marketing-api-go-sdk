@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **SiteSet** | **[]string** |  | [optional] [default to null]
 **PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
+**ProfileId** | **int64** |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]

@@ -11,9 +11,9 @@ package model
 
 // 个人身份证明
 type IndividualQualification struct {
-	IdentificationUrl          string `json:"identification_url,omitempty"`
-	IdentificationUrl2         string `json:"identification_url2,omitempty"`
-	PhotoUrl                   string `json:"photo_url,omitempty"`
-	IdentificationFrontImageId string `json:"identification_front_image_id,omitempty"`
-	IdentificationBackImageId  string `json:"identification_back_image_id,omitempty"`
+	IdentificationUrl          *string `json:"identification_url,omitempty"`
+	IdentificationUrl2         *string `json:"identification_url2,omitempty"`
+	PhotoUrl                   *string `json:"photo_url,omitempty"`
+	IdentificationFrontImageId *string `json:"identification_front_image_id,omitempty"`
+	IdentificationBackImageId  *string `json:"identification_back_image_id,omitempty"`
 }

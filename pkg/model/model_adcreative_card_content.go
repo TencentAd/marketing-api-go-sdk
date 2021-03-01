@@ -11,7 +11,7 @@ package model
 
 // 卡片素材内容
 type AdcreativeCardContent struct {
-	Image       string `json:"image,omitempty"`
-	Description string `json:"description,omitempty"`
-	Url         string `json:"url,omitempty"`
+	Image       *string `json:"image,omitempty"`
+	Description *string `json:"description,omitempty"`
+	Url         *string `json:"url,omitempty"`
 }

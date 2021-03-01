@@ -10,6 +10,6 @@
 package model
 
 type LeadCluesUpdateRequest struct {
-	AccountId int64                    `json:"account_id,omitempty"`
+	AccountId *int64                   `json:"account_id,omitempty"`
 	Leads     *[]LeadsStatusInfoStruct `json:"leads,omitempty"`
 }

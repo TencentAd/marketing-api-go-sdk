@@ -10,5 +10,5 @@
 package model
 
 type CustomAudienceFilesAddResponseData struct {
-	CustomAudienceFileId int64 `json:"custom_audience_file_id,omitempty"`
+	CustomAudienceFileId *int64 `json:"custom_audience_file_id,omitempty"`
 }

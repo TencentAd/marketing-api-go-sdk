@@ -13,6 +13,6 @@ package model
 type AppBehavior struct {
 	ObjectType   AppActionObjectType `json:"object_type,omitempty"`
 	ObjectIdList *[]int64            `json:"object_id_list,omitempty"`
-	TimeWindow   int64               `json:"time_window,omitempty"`
+	TimeWindow   *int64              `json:"time_window,omitempty"`
 	ActIdList    *[]string           `json:"act_id_list,omitempty"`
 }

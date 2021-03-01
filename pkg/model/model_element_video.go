@@ -11,5 +11,5 @@ package model
 
 // 视频组件元素
 type ElementVideo struct {
-	VideoId int64 `json:"video_id,omitempty"`
+	VideoId *int64 `json:"video_id,omitempty"`
 }

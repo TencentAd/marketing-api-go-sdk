@@ -10,7 +10,7 @@
 package model
 
 type AndroidUnionChannelPackagesAddResponseData struct {
-	AppAndroidChannelPackageId string        `json:"app_android_channel_package_id,omitempty"`
-	PackageName                string        `json:"package_name,omitempty"`
+	AppAndroidChannelPackageId *string       `json:"app_android_channel_package_id,omitempty"`
+	PackageName                *string       `json:"package_name,omitempty"`
 	PackageStatus              PackageStatus `json:"package_status,omitempty"`
 }

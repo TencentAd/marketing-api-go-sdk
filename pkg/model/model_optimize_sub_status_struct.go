@@ -20,13 +20,13 @@ type OptimizeSubStatusStruct struct {
 	Budget                    OptimizeStatus `json:"budget,omitempty"`
 	DailyBudget               OptimizeStatus `json:"daily_budget,omitempty"`
 	AccountBalance            OptimizeStatus `json:"account_balance,omitempty"`
-	TargetingStatusDesc       string         `json:"targeting_status_desc,omitempty"`
-	TargetingExpandStatusDesc string         `json:"targeting_expand_status_desc,omitempty"`
-	TargetingLocardStatusDesc string         `json:"targeting_locard_status_desc,omitempty"`
-	BidStatusDesc             string         `json:"bid_status_desc,omitempty"`
-	BidStrategyStatusDesc     string         `json:"bid_strategy_status_desc,omitempty"`
-	BidAmountStatusDesc       string         `json:"bid_amount_status_desc,omitempty"`
-	BudgetStatusDesc          string         `json:"budget_status_desc,omitempty"`
-	DailyBudgetStatusDesc     string         `json:"daily_budget_status_desc,omitempty"`
-	AccountBalanceStatusDesc  string         `json:"account_balance_status_desc,omitempty"`
+	TargetingStatusDesc       *string        `json:"targeting_status_desc,omitempty"`
+	TargetingExpandStatusDesc *string        `json:"targeting_expand_status_desc,omitempty"`
+	TargetingLocardStatusDesc *string        `json:"targeting_locard_status_desc,omitempty"`
+	BidStatusDesc             *string        `json:"bid_status_desc,omitempty"`
+	BidStrategyStatusDesc     *string        `json:"bid_strategy_status_desc,omitempty"`
+	BidAmountStatusDesc       *string        `json:"bid_amount_status_desc,omitempty"`
+	BudgetStatusDesc          *string        `json:"budget_status_desc,omitempty"`
+	DailyBudgetStatusDesc     *string        `json:"daily_budget_status_desc,omitempty"`
+	AccountBalanceStatusDesc  *string        `json:"account_balance_status_desc,omitempty"`
 }

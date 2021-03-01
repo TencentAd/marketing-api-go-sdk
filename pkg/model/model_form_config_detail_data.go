@@ -11,7 +11,7 @@ package model
 
 // 表单属性
 type FormConfigDetailData struct {
-	Title      string `json:"title,omitempty"`
-	SubTitle   string `json:"sub_title,omitempty"`
-	SubmitText string `json:"submit_text,omitempty"`
+	Title      *string `json:"title,omitempty"`
+	SubTitle   *string `json:"sub_title,omitempty"`
+	SubmitText *string `json:"submit_text,omitempty"`
 }

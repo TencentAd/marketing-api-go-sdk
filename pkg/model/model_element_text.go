@@ -11,5 +11,5 @@ package model
 
 // 文本组件元素
 type ElementText struct {
-	Text string `json:"text,omitempty"`
+	Text *string `json:"text,omitempty"`
 }

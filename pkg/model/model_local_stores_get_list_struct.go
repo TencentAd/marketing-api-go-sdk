@@ -11,12 +11,12 @@ package model
 
 // 返回结构
 type LocalStoresGetListStruct struct {
-	PoiId              string    `json:"poi_id,omitempty"`
-	LocalStoreName     string    `json:"local_store_name,omitempty"`
-	LocalStoreProvince string    `json:"local_store_province,omitempty"`
-	LocalStoreCity     string    `json:"local_store_city,omitempty"`
-	LocalStoreAddress  string    `json:"local_store_address,omitempty"`
-	CreatedTime        int64     `json:"created_time,omitempty"`
-	LastModifiedTime   int64     `json:"last_modified_time,omitempty"`
+	PoiId              *string   `json:"poi_id,omitempty"`
+	LocalStoreName     *string   `json:"local_store_name,omitempty"`
+	LocalStoreProvince *string   `json:"local_store_province,omitempty"`
+	LocalStoreCity     *string   `json:"local_store_city,omitempty"`
+	LocalStoreAddress  *string   `json:"local_store_address,omitempty"`
+	CreatedTime        *int64    `json:"created_time,omitempty"`
+	LastModifiedTime   *int64    `json:"last_modified_time,omitempty"`
 	SystemStatus       SysStatus `json:"system_status,omitempty"`
 }

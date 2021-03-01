@@ -91,7 +91,7 @@ func (a *AdvertiserApiService) Add(ctx context.Context, data AdvertiserAddReques
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -219,7 +219,7 @@ func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *Adver
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -320,7 +320,7 @@ func (a *AdvertiserApiService) Update(ctx context.Context, data AdvertiserUpdate
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -421,7 +421,7 @@ func (a *AdvertiserApiService) UpdateDailyBudget(ctx context.Context, data Adver
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors

@@ -11,5 +11,5 @@ package model
 
 // 微信小游戏信息
 type MiniGameWechatSpec struct {
-	MiniGameProgramId string `json:"mini_game_program_id,omitempty"`
+	MiniGameProgramId *string `json:"mini_game_program_id,omitempty"`
 }

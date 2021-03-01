@@ -11,7 +11,7 @@ package model
 
 // 圆形区域定义
 type CircleArea struct {
-	Longitude float64 `json:"longitude,omitempty"`
-	Latitude  float64 `json:"latitude,omitempty"`
-	Radius    int64   `json:"radius,omitempty"`
+	Longitude *float64 `json:"longitude,omitempty"`
+	Latitude  *float64 `json:"latitude,omitempty"`
+	Radius    *int64   `json:"radius,omitempty"`
 }

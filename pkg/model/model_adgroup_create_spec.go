@@ -11,8 +11,8 @@ package model
 
 // 广告组结构
 type AdgroupCreateSpec struct {
-	AdgroupName       string                   `json:"adgroup_name,omitempty"`
-	BeginDate         string                   `json:"begin_date,omitempty"`
+	AdgroupName       *string                  `json:"adgroup_name,omitempty"`
+	BeginDate         *string                  `json:"begin_date,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`
 	PoiList           *[]string                `json:"poi_list,omitempty"`
 	PackageLevel      PackageLevel             `json:"package_level,omitempty"`

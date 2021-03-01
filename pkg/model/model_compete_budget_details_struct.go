@@ -11,15 +11,15 @@ package model
 
 // 预算竞争力明细
 type CompeteBudgetDetailsStruct struct {
-	Score                   int64  `json:"score,omitempty"`
-	RaiseAccountBalanceFlag *bool  `json:"raise_account_balance_flag,omitempty"`
-	RecommendRecharge       int64  `json:"recommend_recharge,omitempty"`
-	AccountDailyCost        int64  `json:"account_daily_cost,omitempty"`
-	AccountDayBudget        int64  `json:"account_day_budget,omitempty"`
-	CampaignDailyCost       int64  `json:"campaign_daily_cost,omitempty"`
-	CampaignDayBudget       int64  `json:"campaign_day_budget,omitempty"`
-	AdgroupDailyCost        int64  `json:"adgroup_daily_cost,omitempty"`
-	AdgroupDayBudget        int64  `json:"adgroup_day_budget,omitempty"`
-	AccountBalance          int64  `json:"account_balance,omitempty"`
-	Conclusion              string `json:"conclusion,omitempty"`
+	Score                   *int64  `json:"score,omitempty"`
+	RaiseAccountBalanceFlag *bool   `json:"raise_account_balance_flag,omitempty"`
+	RecommendRecharge       *int64  `json:"recommend_recharge,omitempty"`
+	AccountDailyCost        *int64  `json:"account_daily_cost,omitempty"`
+	AccountDayBudget        *int64  `json:"account_day_budget,omitempty"`
+	CampaignDailyCost       *int64  `json:"campaign_daily_cost,omitempty"`
+	CampaignDayBudget       *int64  `json:"campaign_day_budget,omitempty"`
+	AdgroupDailyCost        *int64  `json:"adgroup_daily_cost,omitempty"`
+	AdgroupDayBudget        *int64  `json:"adgroup_day_budget,omitempty"`
+	AccountBalance          *int64  `json:"account_balance,omitempty"`
+	Conclusion              *string `json:"conclusion,omitempty"`
 }

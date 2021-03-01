@@ -11,6 +11,6 @@ package model
 
 // 日期范围
 type DateRangeTransaction struct {
-	StartDate string `json:"start_date,omitempty"`
-	EndDate   string `json:"end_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty"`
+	EndDate   *string `json:"end_date,omitempty"`
 }

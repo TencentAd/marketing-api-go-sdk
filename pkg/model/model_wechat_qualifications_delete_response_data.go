@@ -10,5 +10,5 @@
 package model
 
 type WechatQualificationsDeleteResponseData struct {
-	WechatQualificationId int64 `json:"wechat_qualification_id,omitempty"`
+	WechatQualificationId *int64 `json:"wechat_qualification_id,omitempty"`
 }

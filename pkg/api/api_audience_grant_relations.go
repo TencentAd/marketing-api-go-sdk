@@ -91,7 +91,7 @@ func (a *AudienceGrantRelationsApiService) Add(ctx context.Context, data Audienc
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -216,7 +216,7 @@ func (a *AudienceGrantRelationsApiService) Get(ctx context.Context, accountId in
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors

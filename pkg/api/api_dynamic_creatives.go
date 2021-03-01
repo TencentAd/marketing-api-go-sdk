@@ -91,7 +91,7 @@ func (a *DynamicCreativesApiService) Add(ctx context.Context, data DynamicCreati
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -216,7 +216,7 @@ func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, l
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -317,7 +317,7 @@ func (a *DynamicCreativesApiService) Update(ctx context.Context, data DynamicCre
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors

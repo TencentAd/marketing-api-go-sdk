@@ -11,10 +11,10 @@ package model
 
 // 返回结构
 type PromotedObjectsGetListStruct struct {
-	PromotedObjectName string                          `json:"promoted_object_name,omitempty"`
-	PromotedObjectId   string                          `json:"promoted_object_id,omitempty"`
+	PromotedObjectName *string                         `json:"promoted_object_name,omitempty"`
+	PromotedObjectId   *string                         `json:"promoted_object_id,omitempty"`
 	PromotedObjectType ProductPromotedObjectTypeSelect `json:"promoted_object_type,omitempty"`
 	PromotedObjectSpec *PromotedObjectGetSpec          `json:"promoted_object_spec,omitempty"`
-	CreatedTime        int64                           `json:"created_time,omitempty"`
-	LastModifiedTime   int64                           `json:"last_modified_time,omitempty"`
+	CreatedTime        *int64                          `json:"created_time,omitempty"`
+	LastModifiedTime   *int64                          `json:"last_modified_time,omitempty"`
 }

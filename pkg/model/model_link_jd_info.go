@@ -12,8 +12,8 @@ package model
 // 京东POP商户投放商品信息
 type LinkJdInfo struct {
 	EcommerceType EcommerceType `json:"ecommerce_type,omitempty"`
-	ItemId        string        `json:"item_id,omitempty"`
-	ShopId        string        `json:"shop_id,omitempty"`
+	ItemId        *string       `json:"item_id,omitempty"`
+	ShopId        *string       `json:"shop_id,omitempty"`
 	ItemCategory  *[]Category   `json:"item_category,omitempty"`
 	ShopCategory  *[]Category   `json:"shop_category,omitempty"`
 }

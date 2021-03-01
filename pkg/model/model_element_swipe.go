@@ -11,6 +11,6 @@ package model
 
 // 上划组件元素
 type ElementSwipe struct {
-	JumpUrl   string `json:"jump_url,omitempty"`
-	SwipeText string `json:"swipe_text,omitempty"`
+	JumpUrl   *string `json:"jump_url,omitempty"`
+	SwipeText *string `json:"swipe_text,omitempty"`
 }

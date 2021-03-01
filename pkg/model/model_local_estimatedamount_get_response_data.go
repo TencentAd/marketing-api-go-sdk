@@ -10,6 +10,6 @@
 package model
 
 type LocalEstimatedamountGetResponseData struct {
-	EstimatedViews        int64 `json:"estimated_views,omitempty"`
-	EstimatedCouponAmount int64 `json:"estimated_coupon_amount,omitempty"`
+	EstimatedViews        *int64 `json:"estimated_views,omitempty"`
+	EstimatedCouponAmount *int64 `json:"estimated_coupon_amount,omitempty"`
 }

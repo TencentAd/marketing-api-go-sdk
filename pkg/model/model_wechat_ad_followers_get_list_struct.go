@@ -11,13 +11,13 @@ package model
 
 // 返回结构
 type WechatAdFollowersGetListStruct struct {
-	Openid           string             `json:"openid,omitempty"`
-	WechatAdgroupId  int64              `json:"wechat_adgroup_id,omitempty"`
-	WechatCampaignId int64              `json:"wechat_campaign_id,omitempty"`
-	WechatAccountId  string             `json:"wechat_account_id,omitempty"`
-	WechatAgencyId   string             `json:"wechat_agency_id,omitempty"`
-	CampaignId       int64              `json:"campaign_id,omitempty"`
-	AdgroupId        int64              `json:"adgroup_id,omitempty"`
-	SubscribeTime    int64              `json:"subscribe_time,omitempty"`
+	Openid           *string            `json:"openid,omitempty"`
+	WechatAdgroupId  *int64             `json:"wechat_adgroup_id,omitempty"`
+	WechatCampaignId *int64             `json:"wechat_campaign_id,omitempty"`
+	WechatAccountId  *string            `json:"wechat_account_id,omitempty"`
+	WechatAgencyId   *string            `json:"wechat_agency_id,omitempty"`
+	CampaignId       *int64             `json:"campaign_id,omitempty"`
+	AdgroupId        *int64             `json:"adgroup_id,omitempty"`
+	SubscribeTime    *int64             `json:"subscribe_time,omitempty"`
 	PositionType     WechatPositionType `json:"position_type,omitempty"`
 }

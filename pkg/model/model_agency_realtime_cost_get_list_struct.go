@@ -11,7 +11,7 @@ package model
 
 // 返回结构
 type AgencyRealtimeCostGetListStruct struct {
-	Cost         int64          `json:"cost,omitempty"`
-	CaculateTime int64          `json:"caculate_time,omitempty"`
+	Cost         *int64         `json:"cost,omitempty"`
+	CaculateTime *int64         `json:"caculate_time,omitempty"`
 	FundType     AccountTypeMap `json:"fund_type,omitempty"`
 }

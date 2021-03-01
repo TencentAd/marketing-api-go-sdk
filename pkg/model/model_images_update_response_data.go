@@ -10,5 +10,5 @@
 package model
 
 type ImagesUpdateResponseData struct {
-	ImageId string `json:"image_id,omitempty"`
+	ImageId *string `json:"image_id,omitempty"`
 }

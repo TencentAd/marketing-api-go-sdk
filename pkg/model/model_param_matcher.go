@@ -11,7 +11,7 @@ package model
 
 // 匹配规则
 type ParamMatcher struct {
-	ParamName  string   `json:"param_name,omitempty"`
-	ParamValue string   `json:"param_value,omitempty"`
+	ParamName  *string  `json:"param_name,omitempty"`
+	ParamValue *string  `json:"param_value,omitempty"`
 	Operator   Operator `json:"operator,omitempty"`
 }

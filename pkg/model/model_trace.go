@@ -11,5 +11,5 @@ package model
 
 // 跟踪信息
 type Trace struct {
-	ClickId string `json:"click_id,omitempty"`
+	ClickId *string `json:"click_id,omitempty"`
 }

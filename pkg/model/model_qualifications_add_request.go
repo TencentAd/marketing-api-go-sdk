@@ -12,5 +12,5 @@ package model
 type QualificationsAddRequest struct {
 	QualificationType QualificationType  `json:"qualification_type,omitempty"`
 	QualificationSpec *QualificationSpec `json:"qualification_spec,omitempty"`
-	AccountId         int64              `json:"account_id,omitempty"`
+	AccountId         *int64             `json:"account_id,omitempty"`
 }

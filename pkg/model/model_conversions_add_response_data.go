@@ -10,5 +10,5 @@
 package model
 
 type ConversionsAddResponseData struct {
-	ConversionId int64 `json:"conversion_id,omitempty"`
+	ConversionId *int64 `json:"conversion_id,omitempty"`
 }

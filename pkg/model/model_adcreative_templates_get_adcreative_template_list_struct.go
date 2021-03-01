@@ -11,12 +11,12 @@ package model
 
 // 创意形式和投放权限数据结构
 type AdcreativeTemplatesGetAdcreativeTemplateListStruct struct {
-	AdcreativeTemplateId          int64                          `json:"adcreative_template_id,omitempty"`
-	AdcreativeTemplateName        string                         `json:"adcreative_template_name,omitempty"`
-	AdcreativeTemplateDescription string                         `json:"adcreative_template_description,omitempty"`
-	AdcreativeTemplateSize        string                         `json:"adcreative_template_size,omitempty"`
-	AdcreativeTemplateStyle       string                         `json:"adcreative_template_style,omitempty"`
-	AdcreativeTemplateAppellation string                         `json:"adcreative_template_appellation,omitempty"`
+	AdcreativeTemplateId          *int64                         `json:"adcreative_template_id,omitempty"`
+	AdcreativeTemplateName        *string                        `json:"adcreative_template_name,omitempty"`
+	AdcreativeTemplateDescription *string                        `json:"adcreative_template_description,omitempty"`
+	AdcreativeTemplateSize        *string                        `json:"adcreative_template_size,omitempty"`
+	AdcreativeTemplateStyle       *string                        `json:"adcreative_template_style,omitempty"`
+	AdcreativeTemplateAppellation *string                        `json:"adcreative_template_appellation,omitempty"`
 	SiteSet                       SiteSetDefinition              `json:"site_set,omitempty"`
 	PromotedObjectType            PromotedObjectTypeWithoutJd    `json:"promoted_object_type,omitempty"`
 	AdcreativeSampleImageList     *[]AdcreativeSampleImage       `json:"adcreative_sample_image_list,omitempty"`

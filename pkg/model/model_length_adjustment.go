@@ -11,6 +11,6 @@ package model
 
 // 调整时长
 type LengthAdjustment struct {
-	TargetLength           int64                  `json:"target_length,omitempty"`
+	TargetLength           *int64                 `json:"target_length,omitempty"`
 	LengthAdjustmentMethod LengthAdjustmentMethod `json:"length_adjustment_method,omitempty"`
 }

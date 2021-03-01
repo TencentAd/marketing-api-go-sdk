@@ -11,5 +11,5 @@ package model
 
 // 下拉选项
 type ConfigsDetailDataArrayItem struct {
-	Name string `json:"name,omitempty"`
+	Name *string `json:"name,omitempty"`
 }

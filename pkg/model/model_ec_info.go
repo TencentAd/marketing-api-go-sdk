@@ -11,6 +11,6 @@ package model
 
 // 电商标的物信息
 type EcInfo struct {
-	ProductPrice     int64 `json:"product_price,omitempty"`
-	ProductMetaClass int64 `json:"product_meta_class,omitempty"`
+	ProductPrice     *int64 `json:"product_price,omitempty"`
+	ProductMetaClass *int64 `json:"product_meta_class,omitempty"`
 }

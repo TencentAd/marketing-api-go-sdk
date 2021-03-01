@@ -10,9 +10,9 @@
 package model
 
 type WechatFundTransferAddRequest struct {
-	AccountId    int64                 `json:"account_id,omitempty"`
+	AccountId    *int64                `json:"account_id,omitempty"`
 	FundType     WechatAccountFundType `json:"fund_type,omitempty"`
-	Amount       int64                 `json:"amount,omitempty"`
+	Amount       *int64                `json:"amount,omitempty"`
 	TransferType TransferType          `json:"transfer_type,omitempty"`
-	Operator     string                `json:"operator,omitempty"`
+	Operator     *string               `json:"operator,omitempty"`
 }

@@ -11,7 +11,7 @@ package model
 
 // 类目路径
 type CategoryPathsItem struct {
-	CategoryId   int64  `json:"category_id,omitempty"`
-	CategoryName string `json:"category_name,omitempty"`
-	Level        int64  `json:"level,omitempty"`
+	CategoryId   *int64  `json:"category_id,omitempty"`
+	CategoryName *string `json:"category_name,omitempty"`
+	Level        *int64  `json:"level,omitempty"`
 }

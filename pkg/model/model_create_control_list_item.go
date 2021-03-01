@@ -12,7 +12,7 @@ package model
 // 表单项
 type CreateControlListItem struct {
 	ItemType       ItemType  `json:"item_type,omitempty"`
-	ItemName       string    `json:"item_name,omitempty"`
-	Placeholder    string    `json:"placeholder,omitempty"`
+	ItemName       *string   `json:"item_name,omitempty"`
+	Placeholder    *string   `json:"placeholder,omitempty"`
 	SelectElements *[]string `json:"select_elements,omitempty"`
 }

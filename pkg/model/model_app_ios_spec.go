@@ -11,6 +11,6 @@ package model
 
 // iOS应用信息元素
 type AppIosSpec struct {
-	DeepLinkUrl string `json:"deep_link_url,omitempty"`
-	AppIosId    string `json:"app_ios_id,omitempty"`
+	DeepLinkUrl *string `json:"deep_link_url,omitempty"`
+	AppIosId    *string `json:"app_ios_id,omitempty"`
 }

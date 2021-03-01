@@ -11,6 +11,6 @@ package model
 
 // 视频封面图
 type VideoCaptureStruct struct {
-	ImageUrl  string                `json:"image_url,omitempty"`
+	ImageUrl  *string               `json:"image_url,omitempty"`
 	ImageType VideoCaptureImageType `json:"image_type,omitempty"`
 }

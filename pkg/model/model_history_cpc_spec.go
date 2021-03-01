@@ -11,7 +11,7 @@ package model
 
 //
 type HistoryCpcSpec struct {
-	Date      string `json:"date,omitempty"`
-	ActualCpc int64  `json:"actual_cpc,omitempty"`
-	TargetCpc int64  `json:"target_cpc,omitempty"`
+	Date      *string `json:"date,omitempty"`
+	ActualCpc *int64  `json:"actual_cpc,omitempty"`
+	TargetCpc *int64  `json:"target_cpc,omitempty"`
 }

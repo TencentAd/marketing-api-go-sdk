@@ -11,6 +11,6 @@ package model
 
 // 修改屏蔽优量汇流量包信息
 type UpdateExcludeUnionPositionPackageItem struct {
-	AdgroupId                   int64    `json:"adgroup_id,omitempty"`
+	AdgroupId                   *int64   `json:"adgroup_id,omitempty"`
 	ExcludeUnionPositionPackage *[]int64 `json:"exclude_union_position_package,omitempty"`
 }

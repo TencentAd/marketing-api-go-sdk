@@ -11,8 +11,8 @@ package model
 
 // 返回结构
 type BusinessMdmAccountRelationsGetListStruct struct {
-	AccountId       int64 `json:"account_id,omitempty"`
-	BusinessId      int64 `json:"business_id,omitempty"`
-	MdmId           int64 `json:"mdm_id,omitempty"`
-	AgencyAccountId int64 `json:"agency_account_id,omitempty"`
+	AccountId       *int64 `json:"account_id,omitempty"`
+	BusinessId      *int64 `json:"business_id,omitempty"`
+	MdmId           *int64 `json:"mdm_id,omitempty"`
+	AgencyAccountId *int64 `json:"agency_account_id,omitempty"`
 }

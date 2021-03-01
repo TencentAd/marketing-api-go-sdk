@@ -11,7 +11,7 @@ package model
 
 // 返回结构
 type RealtimeCostGetListStruct struct {
-	CampaignId int64 `json:"campaign_id,omitempty"`
-	AdgroupId  int64 `json:"adgroup_id,omitempty"`
-	Cost       int64 `json:"cost,omitempty"`
+	CampaignId *int64 `json:"campaign_id,omitempty"`
+	AdgroupId  *int64 `json:"adgroup_id,omitempty"`
+	Cost       *int64 `json:"cost,omitempty"`
 }

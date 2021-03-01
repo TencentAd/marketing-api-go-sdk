@@ -10,5 +10,5 @@
 package model
 
 type TargetingsDeleteResponseData struct {
-	TargetingId int64 `json:"targeting_id,omitempty"`
+	TargetingId *int64 `json:"targeting_id,omitempty"`
 }

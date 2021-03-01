@@ -11,16 +11,16 @@ package model
 
 // 返回结构
 type CampaignsGetListStruct struct {
-	CampaignId         int64              `json:"campaign_id,omitempty"`
-	CampaignName       string             `json:"campaign_name,omitempty"`
+	CampaignId         *int64             `json:"campaign_id,omitempty"`
+	CampaignName       *string            `json:"campaign_name,omitempty"`
 	ConfiguredStatus   AdStatus           `json:"configured_status,omitempty"`
 	CampaignType       CampaignType       `json:"campaign_type,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
-	DailyBudget        int64              `json:"daily_budget,omitempty"`
-	BudgetReachDate    int64              `json:"budget_reach_date,omitempty"`
-	CreatedTime        int64              `json:"created_time,omitempty"`
-	LastModifiedTime   int64              `json:"last_modified_time,omitempty"`
+	DailyBudget        *int64             `json:"daily_budget,omitempty"`
+	BudgetReachDate    *int64             `json:"budget_reach_date,omitempty"`
+	CreatedTime        *int64             `json:"created_time,omitempty"`
+	LastModifiedTime   *int64             `json:"last_modified_time,omitempty"`
 	SpeedMode          SpeedMode          `json:"speed_mode,omitempty"`
 	IsDeleted          *bool              `json:"is_deleted,omitempty"`
-	IsAutoReplenish    int64              `json:"is_auto_replenish,omitempty"`
+	IsAutoReplenish    *int64             `json:"is_auto_replenish,omitempty"`
 }

@@ -11,8 +11,8 @@ package model
 
 // 返回结构
 type TargetingsShareGetListStruct struct {
-	TargetingId        int64 `json:"targeting_id,omitempty"`
-	ShareToAccountId   int64 `json:"share_to_account_id,omitempty"`
-	ShareToTargetingId int64 `json:"share_to_targeting_id,omitempty"`
-	SharedTime         int64 `json:"shared_time,omitempty"`
+	TargetingId        *int64 `json:"targeting_id,omitempty"`
+	ShareToAccountId   *int64 `json:"share_to_account_id,omitempty"`
+	ShareToTargetingId *int64 `json:"share_to_targeting_id,omitempty"`
+	SharedTime         *int64 `json:"shared_time,omitempty"`
 }

@@ -17,6 +17,10 @@ func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
 	return c.Client.AdDiagnosisApi
 }
 
+func (c *SDKClient) AdLabel() *api.AdLabelApiService {
+	return c.Client.AdLabelApi
+}
+
 func (c *SDKClient) AdcreativePreviews() *api.AdcreativePreviewsApiService {
 	return c.Client.AdcreativePreviewsApi
 }
@@ -79,6 +83,10 @@ func (c *SDKClient) AndroidUnionChannelPackages() *api.AndroidUnionChannelPackag
 
 func (c *SDKClient) AssetPermissions() *api.AssetPermissionsApiService {
 	return c.Client.AssetPermissionsApi
+}
+
+func (c *SDKClient) AssetPrePermissions() *api.AssetPrePermissionsApiService {
+	return c.Client.AssetPrePermissionsApi
 }
 
 func (c *SDKClient) AsyncReportFiles() *api.AsyncReportFilesApiService {
@@ -207,6 +215,10 @@ func (c *SDKClient) DailyReports() *api.DailyReportsApiService {
 
 func (c *SDKClient) Diagnosis() *api.DiagnosisApiService {
 	return c.Client.DiagnosisApi
+}
+
+func (c *SDKClient) DplabelAdLabel() *api.DplabelAdLabelApiService {
+	return c.Client.DplabelAdLabelApi
 }
 
 func (c *SDKClient) DynamicAdImages() *api.DynamicAdImagesApiService {

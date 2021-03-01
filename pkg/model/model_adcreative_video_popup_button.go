@@ -11,6 +11,6 @@ package model
 
 // 视频浮层按钮信息
 type AdcreativeVideoPopupButton struct {
-	VideoPopupButtonText string `json:"video_popup_button_text,omitempty"`
-	VideoPopupButtonUrl  string `json:"video_popup_button_url,omitempty"`
+	VideoPopupButtonText *string `json:"video_popup_button_text,omitempty"`
+	VideoPopupButtonUrl  *string `json:"video_popup_button_url,omitempty"`
 }

@@ -11,5 +11,5 @@ package model
 
 // 微信门店小时报表查询条件
 type TaskTypeWechatPoiHourlyReportSpec struct {
-	Date string `json:"date,omitempty"`
+	Date *string `json:"date,omitempty"`
 }

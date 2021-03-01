@@ -11,5 +11,5 @@ package model
 
 // 广告小时报表查询条件
 type TaskTypeWechatAdHourlyReportSpec struct {
-	Date string `json:"date,omitempty"`
+	Date *string `json:"date,omitempty"`
 }

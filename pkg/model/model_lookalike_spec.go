@@ -11,6 +11,6 @@ package model
 
 // Lookalike人群信息
 type LookalikeSpec struct {
-	SeedAudienceId  int64 `json:"seed_audience_id,omitempty"`
-	ExpandUserCount int64 `json:"expand_user_count,omitempty"`
+	SeedAudienceId  *int64 `json:"seed_audience_id,omitempty"`
+	ExpandUserCount *int64 `json:"expand_user_count,omitempty"`
 }

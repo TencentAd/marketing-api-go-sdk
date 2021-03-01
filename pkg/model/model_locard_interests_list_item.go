@@ -11,6 +11,6 @@ package model
 
 // 罗卡兴趣标签
 type LocardInterestsListItem struct {
-	Id   string `json:"id,omitempty"`
-	Text string `json:"text,omitempty"`
+	Id   *string `json:"id,omitempty"`
+	Text *string `json:"text,omitempty"`
 }

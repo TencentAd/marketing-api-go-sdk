@@ -11,7 +11,7 @@ package model
 
 // banner素材内容
 type AdcreativeBannerContent struct {
-	Image string `json:"image,omitempty"`
-	Title string `json:"title,omitempty"`
-	Url   string `json:"url,omitempty"`
+	Image *string `json:"image,omitempty"`
+	Title *string `json:"title,omitempty"`
+	Url   *string `json:"url,omitempty"`
 }

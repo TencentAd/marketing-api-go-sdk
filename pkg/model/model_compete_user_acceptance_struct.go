@@ -11,8 +11,8 @@ package model
 
 // 用户接受度
 type CompeteUserAcceptanceStruct struct {
-	Score      int64                       `json:"score,omitempty"`
+	Score      *int64                      `json:"score,omitempty"`
 	Acceptance *[]CompeteAttributionStruct `json:"acceptance,omitempty"`
-	Conclusion string                      `json:"conclusion,omitempty"`
-	Ratio      float64                     `json:"ratio,omitempty"`
+	Conclusion *string                     `json:"conclusion,omitempty"`
+	Ratio      *float64                    `json:"ratio,omitempty"`
 }

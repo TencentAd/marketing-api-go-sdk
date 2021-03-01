@@ -11,6 +11,6 @@ package model
 
 // 完整视频结构
 type LongVideoStruct struct {
-	LongVideo1 int64 `json:"long_video1,omitempty"`
-	LongVideo2 int64 `json:"long_video2,omitempty"`
+	LongVideo1 *int64 `json:"long_video1,omitempty"`
+	LongVideo2 *int64 `json:"long_video2,omitempty"`
 }

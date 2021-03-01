@@ -11,6 +11,6 @@ package model
 
 // 枫叶信息
 type FengyeSpec struct {
-	Title    string `json:"title,omitempty"`
-	FengyeId string `json:"fengye_id,omitempty"`
+	Title    *string `json:"title,omitempty"`
+	FengyeId *string `json:"fengye_id,omitempty"`
 }

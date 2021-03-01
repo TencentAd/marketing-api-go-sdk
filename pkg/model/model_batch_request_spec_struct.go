@@ -11,6 +11,6 @@ package model
 
 // 单个请求所需条件
 type BatchRequestSpecStruct struct {
-	RelativePath string `json:"relative_path,omitempty"`
-	Body         string `json:"body,omitempty"`
+	RelativePath *string `json:"relative_path,omitempty"`
+	Body         *string `json:"body,omitempty"`
 }

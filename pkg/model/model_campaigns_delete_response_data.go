@@ -10,5 +10,5 @@
 package model
 
 type CampaignsDeleteResponseData struct {
-	CampaignId int64 `json:"campaign_id,omitempty"`
+	CampaignId *int64 `json:"campaign_id,omitempty"`
 }

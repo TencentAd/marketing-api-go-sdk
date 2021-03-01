@@ -282,6 +282,7 @@ Name | Type | Description | Notes
 **ConsultLeaveInfoCost** | **int64** |  | [optional] [default to null]
 **PurchaseAmountWithCoupon** | **int64** |  | [optional] [default to null]
 **PurchaseAmountWithCouponCost** | **int64** |  | [optional] [default to null]
+**MiniGamePayingAmountClickD1ByUpload** | **int64** |  | [optional] [default to null]
 **RequestConversionsCount** | **int64** |  | [optional] [default to null]
 **RequestConversionsCost** | **int64** |  | [optional] [default to null]
 **IncomeRoi1** | **float64** |  | [optional] [default to null]

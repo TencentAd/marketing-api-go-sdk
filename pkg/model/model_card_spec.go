@@ -11,6 +11,6 @@ package model
 
 // 卡券信息
 type CardSpec struct {
-	Title  string `json:"title,omitempty"`
-	CardId string `json:"card_id,omitempty"`
+	Title  *string `json:"title,omitempty"`
+	CardId *string `json:"card_id,omitempty"`
 }

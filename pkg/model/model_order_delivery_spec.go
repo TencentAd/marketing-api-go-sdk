@@ -11,7 +11,7 @@ package model
 
 // 物流详情
 type OrderDeliverySpec struct {
-	DeliveryTrackingNumber string                  `json:"delivery_tracking_number,omitempty"`
+	DeliveryTrackingNumber *string                 `json:"delivery_tracking_number,omitempty"`
 	ExpressCompany         ExpressCompany          `json:"express_company,omitempty"`
 	DeliveryInfoList       *[]DeliveryDetailStruct `json:"delivery_info_list,omitempty"`
 }

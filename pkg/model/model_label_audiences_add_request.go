@@ -10,6 +10,6 @@
 package model
 
 type LabelAudiencesAddRequest struct {
-	AccountId int64 `json:"account_id,omitempty"`
-	LabelId   int64 `json:"label_id,omitempty"`
+	AccountId *int64 `json:"account_id,omitempty"`
+	LabelId   *int64 `json:"label_id,omitempty"`
 }

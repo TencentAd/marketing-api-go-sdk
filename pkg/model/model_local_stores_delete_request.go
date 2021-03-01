@@ -10,6 +10,6 @@
 package model
 
 type LocalStoresDeleteRequest struct {
-	AccountId int64     `json:"account_id,omitempty"`
+	AccountId *int64    `json:"account_id,omitempty"`
 	PoiList   *[]string `json:"poi_list,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 视频结束页
 type AdCreativeEndPage struct {
-	EndPageType string `json:"end_page_type,omitempty"`
-	EndPageDesc string `json:"end_page_desc,omitempty"`
+	EndPageType *string `json:"end_page_type,omitempty"`
+	EndPageDesc *string `json:"end_page_desc,omitempty"`
 }

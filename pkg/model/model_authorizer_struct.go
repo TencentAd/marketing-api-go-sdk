@@ -11,10 +11,10 @@ package model
 
 // 权限信息
 type AuthorizerStruct struct {
-	AccountUin      int64           `json:"account_uin,omitempty"`
-	AccountId       int64           `json:"account_id,omitempty"`
+	AccountUin      *int64          `json:"account_uin,omitempty"`
+	AccountId       *int64          `json:"account_id,omitempty"`
 	ScopeList       *[]string       `json:"scope_list,omitempty"`
-	WechatAccountId string          `json:"wechat_account_id,omitempty"`
+	WechatAccountId *string         `json:"wechat_account_id,omitempty"`
 	AccountRoleType AccountRoleType `json:"account_role_type,omitempty"`
 	AccountType     AccountType     `json:"account_type,omitempty"`
 	RoleType        RoleType        `json:"role_type,omitempty"`

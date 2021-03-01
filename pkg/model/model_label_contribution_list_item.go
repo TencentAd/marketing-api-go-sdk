@@ -11,8 +11,8 @@ package model
 
 // 标签贡献度
 type LabelContributionListItem struct {
-	Label        string  `json:"label,omitempty"`
-	Count        int64   `json:"count,omitempty"`
-	Contribution int64   `json:"contribution,omitempty"`
-	Ratio        float64 `json:"ratio,omitempty"`
+	Label        *string  `json:"label,omitempty"`
+	Count        *int64   `json:"count,omitempty"`
+	Contribution *int64   `json:"contribution,omitempty"`
+	Ratio        *float64 `json:"ratio,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 标签图片
 type AdcreativeLabelledImg struct {
-	Image string             `json:"image,omitempty"`
+	Image *string            `json:"image,omitempty"`
 	Label *[]AdcreativeLabel `json:"label,omitempty"`
 }

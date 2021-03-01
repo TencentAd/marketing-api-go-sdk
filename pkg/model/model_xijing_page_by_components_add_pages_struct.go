@@ -12,10 +12,10 @@ package model
 // 落地页配置结构
 type XijingPageByComponentsAddPagesStruct struct {
 	PageType          ComponentsPageType `json:"page_type,omitempty"`
-	PageName          string             `json:"page_name,omitempty"`
-	PageTitle         string             `json:"page_title,omitempty"`
-	MobileAppId       string             `json:"mobile_app_id,omitempty"`
-	BgColor           string             `json:"bg_color,omitempty"`
-	BgImageId         string             `json:"bg_image_id,omitempty"`
+	PageName          *string            `json:"page_name,omitempty"`
+	PageTitle         *string            `json:"page_title,omitempty"`
+	MobileAppId       *string            `json:"mobile_app_id,omitempty"`
+	BgColor           *string            `json:"bg_color,omitempty"`
+	BgImageId         *string            `json:"bg_image_id,omitempty"`
 	ComponentSpecList *[]string          `json:"component_spec_list,omitempty"`
 }

@@ -10,8 +10,8 @@
 package model
 
 type UserPropertySetsUpdateRequest struct {
-	AccountId         int64  `json:"account_id,omitempty"`
-	UserPropertySetId int64  `json:"user_property_set_id,omitempty"`
-	Name              string `json:"name,omitempty"`
-	Description       string `json:"description,omitempty"`
+	AccountId         *int64  `json:"account_id,omitempty"`
+	UserPropertySetId *int64  `json:"user_property_set_id,omitempty"`
+	Name              *string `json:"name,omitempty"`
+	Description       *string `json:"description,omitempty"`
 }

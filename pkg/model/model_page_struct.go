@@ -11,16 +11,16 @@ package model
 
 // 获取落地页列表落地页数据结构
 type PageStruct struct {
-	PageId             int64             `json:"page_id,omitempty"`
-	PageServiceId      string            `json:"page_service_id,omitempty"`
-	PageName           string            `json:"page_name,omitempty"`
+	PageId             *int64            `json:"page_id,omitempty"`
+	PageServiceId      *string           `json:"page_service_id,omitempty"`
+	PageName           *string           `json:"page_name,omitempty"`
 	PageType           PageType          `json:"page_type,omitempty"`
 	PagePublishStatus  PagePublishStatus `json:"page_publish_status,omitempty"`
 	PageStatus         PageAuditStatus   `json:"page_status,omitempty"`
-	PageLastModifyTime string            `json:"page_last_modify_time,omitempty"`
-	PageOwnerId        int64             `json:"page_owner_id,omitempty"`
-	PublishUrl         string            `json:"publish_url,omitempty"`
-	RejectReason       string            `json:"reject_reason,omitempty"`
+	PageLastModifyTime *string           `json:"page_last_modify_time,omitempty"`
+	PageOwnerId        *int64            `json:"page_owner_id,omitempty"`
+	PublishUrl         *string           `json:"publish_url,omitempty"`
+	RejectReason       *string           `json:"reject_reason,omitempty"`
 	PlayableType       PlayableType      `json:"playable_type,omitempty"`
 	PublishAppId       *PublishAppId     `json:"publish_app_id,omitempty"`
 	UnpublishAppId     *UnpublishAppId   `json:"unpublish_app_id,omitempty"`

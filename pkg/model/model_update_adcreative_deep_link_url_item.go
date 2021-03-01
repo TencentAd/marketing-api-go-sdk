@@ -11,6 +11,6 @@ package model
 
 // 修改广告创意应用直达页 URL
 type UpdateAdcreativeDeepLinkUrlItem struct {
-	AdcreativeId int64  `json:"adcreative_id,omitempty"`
-	DeepLinkUrl  string `json:"deep_link_url,omitempty"`
+	AdcreativeId *int64  `json:"adcreative_id,omitempty"`
+	DeepLinkUrl  *string `json:"deep_link_url,omitempty"`
 }

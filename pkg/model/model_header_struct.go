@@ -11,6 +11,6 @@ package model
 
 // 单个header
 type HeaderStruct struct {
-	Name  string `json:"name,omitempty"`
-	Value string `json:"value,omitempty"`
+	Name  *string `json:"name,omitempty"`
+	Value *string `json:"value,omitempty"`
 }

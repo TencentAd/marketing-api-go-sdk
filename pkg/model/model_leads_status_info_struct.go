@@ -11,7 +11,7 @@ package model
 
 // 回传信息结构
 type LeadsStatusInfoStruct struct {
-	LeadsId             int64                        `json:"leads_id,omitempty"`
+	LeadsId             *int64                       `json:"leads_id,omitempty"`
 	LeadsConvertType    LeadCluesLeadsConvertType    `json:"leads_convert_type,omitempty"`
 	LeadsIneffectReason LeadCluesLeadsIneffectReason `json:"leads_ineffect_reason,omitempty"`
 	LeadsIntentionScore LeadCluesLeadsIntentionScore `json:"leads_intention_score,omitempty"`

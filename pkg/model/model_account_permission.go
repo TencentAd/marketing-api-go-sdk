@@ -11,6 +11,6 @@ package model
 
 // 授权给指定账号结构
 type AccountPermission struct {
-	AccountId               int64     `json:"account_id,omitempty"`
+	AccountId               *int64    `json:"account_id,omitempty"`
 	GrantPermissionTypeList *[]string `json:"grant_permission_type_list,omitempty"`
 }

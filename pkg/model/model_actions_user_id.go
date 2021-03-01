@@ -11,15 +11,15 @@ package model
 
 // 用户标识，app数据上报时必填，web数据上报时可以不填user_id，但建议填写，方便后续优化
 type ActionsUserId struct {
-	HashImei      string `json:"hash_imei,omitempty"`
-	HashIdfa      string `json:"hash_idfa,omitempty"`
-	GdtOpenid     string `json:"gdt_openid,omitempty"`
-	HashPhone     string `json:"hash_phone,omitempty"`
-	Qaid          string `json:"qaid,omitempty"`
-	HashAndroidId string `json:"hash_android_id,omitempty"`
-	HashMac       string `json:"hash_mac,omitempty"`
-	Oaid          string `json:"oaid,omitempty"`
-	WechatOpenid  string `json:"wechat_openid,omitempty"`
-	WechatUnionid string `json:"wechat_unionid,omitempty"`
-	WechatAppId   string `json:"wechat_app_id,omitempty"`
+	HashImei      *string `json:"hash_imei,omitempty"`
+	HashIdfa      *string `json:"hash_idfa,omitempty"`
+	GdtOpenid     *string `json:"gdt_openid,omitempty"`
+	HashPhone     *string `json:"hash_phone,omitempty"`
+	Qaid          *string `json:"qaid,omitempty"`
+	HashAndroidId *string `json:"hash_android_id,omitempty"`
+	HashMac       *string `json:"hash_mac,omitempty"`
+	Oaid          *string `json:"oaid,omitempty"`
+	WechatOpenid  *string `json:"wechat_openid,omitempty"`
+	WechatUnionid *string `json:"wechat_unionid,omitempty"`
+	WechatAppId   *string `json:"wechat_app_id,omitempty"`
 }

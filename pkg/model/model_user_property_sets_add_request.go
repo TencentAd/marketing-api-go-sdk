@@ -10,7 +10,7 @@
 package model
 
 type UserPropertySetsAddRequest struct {
-	AccountId   int64  `json:"account_id,omitempty"`
-	Name        string `json:"name,omitempty"`
-	Description string `json:"description,omitempty"`
+	AccountId   *int64  `json:"account_id,omitempty"`
+	Name        *string `json:"name,omitempty"`
+	Description *string `json:"description,omitempty"`
 }

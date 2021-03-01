@@ -11,8 +11,8 @@ package model
 
 // 维度数据
 type Dimension struct {
-	Second     int64  `json:"second,omitempty"`
-	MaterialId string `json:"material_id,omitempty"`
-	Date       string `json:"date,omitempty"`
-	AccountId  int64  `json:"account_id,omitempty"`
+	Second     *int64  `json:"second,omitempty"`
+	MaterialId *string `json:"material_id,omitempty"`
+	Date       *string `json:"date,omitempty"`
+	AccountId  *int64  `json:"account_id,omitempty"`
 }

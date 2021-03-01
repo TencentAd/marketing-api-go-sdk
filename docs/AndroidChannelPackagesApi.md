@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AndroidChannelPackagesGet**
-> AndroidChannelPackagesGetResponse AndroidChannelPackagesGet(ctx, accountId, myappAuthKey, androidAppId, optional)
+> AndroidChannelPackagesGetResponse AndroidChannelPackagesGet(ctx, accountId, androidAppId, optional)
 获取应用宝渠道包
 
 ### Required Parameters
@@ -17,7 +17,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **myappAuthKey** | **string**|  | 
   **androidAppId** | **int64**|  | 
  **optional** | ***AndroidChannelPackagesApiAndroidChannelPackagesGetOpts** | optional parameters | nil if no parameters
 
@@ -28,7 +27,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
+ **myappAuthKey** | **optional.String**|  | 
+ **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 

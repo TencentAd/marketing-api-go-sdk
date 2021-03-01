@@ -11,6 +11,6 @@ package model
 
 // 分享信息，仅在部分朋友圈创意形式下设置有效，具体可通过创意形式查询工具或 adcreative_templates/get 接口进行查询
 type ShareContentSpec struct {
-	ShareTitle       string `json:"share_title,omitempty"`
-	ShareDescription string `json:"share_description,omitempty"`
+	ShareTitle       *string `json:"share_title,omitempty"`
+	ShareDescription *string `json:"share_description,omitempty"`
 }

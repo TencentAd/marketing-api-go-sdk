@@ -11,7 +11,7 @@ package model
 
 // 人群分布信息结构
 type RangeDistribution struct {
-	DimensionValue string  `json:"dimension_value,omitempty"`
-	Percentage     int64   `json:"percentage,omitempty"`
-	Tgi            float64 `json:"tgi,omitempty"`
+	DimensionValue *string  `json:"dimension_value,omitempty"`
+	Percentage     *int64   `json:"percentage,omitempty"`
+	Tgi            *float64 `json:"tgi,omitempty"`
 }

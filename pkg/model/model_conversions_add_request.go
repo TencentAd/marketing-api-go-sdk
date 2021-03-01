@@ -10,18 +10,18 @@
 package model
 
 type ConversionsAddRequest struct {
-	AccountId                    int64                      `json:"account_id,omitempty"`
-	ConversionName               string                     `json:"conversion_name,omitempty"`
+	AccountId                    *int64                     `json:"account_id,omitempty"`
+	ConversionName               *string                    `json:"conversion_name,omitempty"`
 	AccessType                   AccessType                 `json:"access_type,omitempty"`
 	ConversionScene              ConversionScene            `json:"conversion_scene,omitempty"`
-	PromotedObjectId             string                     `json:"promoted_object_id,omitempty"`
+	PromotedObjectId             *string                    `json:"promoted_object_id,omitempty"`
 	ClaimType                    ClaimType                  `json:"claim_type,omitempty"`
-	FeedbackUrl                  string                     `json:"feedback_url,omitempty"`
-	LandingPageUrl               string                     `json:"landing_page_url,omitempty"`
-	MiniProgramId                string                     `json:"mini_program_id,omitempty"`
+	FeedbackUrl                  *string                    `json:"feedback_url,omitempty"`
+	LandingPageUrl               *string                    `json:"landing_page_url,omitempty"`
+	MiniProgramId                *string                    `json:"mini_program_id,omitempty"`
 	SelfAttributed               *bool                      `json:"self_attributed,omitempty"`
 	OptimizationGoal             IntOptimizationGoal        `json:"optimization_goal,omitempty"`
 	DeepBehaviorOptimizationGoal IntOptimizationGoal        `json:"deep_behavior_optimization_goal,omitempty"`
 	DeepWorthOptimizationGoal    ConversionOptimizationGoal `json:"deep_worth_optimization_goal,omitempty"`
-	UserActionSetId              int64                      `json:"user_action_set_id,omitempty"`
+	UserActionSetId              *int64                     `json:"user_action_set_id,omitempty"`
 }

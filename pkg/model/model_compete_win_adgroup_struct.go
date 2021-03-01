@@ -11,7 +11,7 @@ package model
 
 // 账户内部竞争激烈度
 type CompeteWinAdgroupStruct struct {
-	Score      int64                        `json:"score,omitempty"`
+	Score      *int64                       `json:"score,omitempty"`
 	List       *[]CompeteWinAdgroupListItem `json:"list,omitempty"`
-	Conclusion string                       `json:"conclusion,omitempty"`
+	Conclusion *string                      `json:"conclusion,omitempty"`
 }

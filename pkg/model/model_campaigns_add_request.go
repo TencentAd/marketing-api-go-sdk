@@ -10,11 +10,11 @@
 package model
 
 type CampaignsAddRequest struct {
-	AccountId          int64              `json:"account_id,omitempty"`
-	CampaignName       string             `json:"campaign_name,omitempty"`
+	AccountId          *int64             `json:"account_id,omitempty"`
+	CampaignName       *string            `json:"campaign_name,omitempty"`
 	CampaignType       CampaignType       `json:"campaign_type,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
-	DailyBudget        int64              `json:"daily_budget,omitempty"`
+	DailyBudget        *int64             `json:"daily_budget,omitempty"`
 	ConfiguredStatus   AdStatus           `json:"configured_status,omitempty"`
 	SpeedMode          SpeedMode          `json:"speed_mode,omitempty"`
 }

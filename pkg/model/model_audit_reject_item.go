@@ -11,8 +11,8 @@ package model
 
 // 商品失败信息Item
 type AuditRejectItem struct {
-	FeedId        int64       `json:"feed_id,omitempty"`
-	ProductId     string      `json:"product_id,omitempty"`
+	FeedId        *int64      `json:"feed_id,omitempty"`
+	ProductId     *string     `json:"product_id,omitempty"`
 	SystemStatus  AuditStatus `json:"system_status,omitempty"`
-	RejectMessage string      `json:"reject_message,omitempty"`
+	RejectMessage *string     `json:"reject_message,omitempty"`
 }

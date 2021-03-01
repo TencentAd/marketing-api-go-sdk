@@ -11,9 +11,9 @@ package model
 
 // 应用宝 app 信息
 type AppAndroidMyappSpec struct {
-	Packname           string                      `json:"packname,omitempty"`
-	Version            string                      `json:"version,omitempty"`
-	Icon               string                      `json:"icon,omitempty"`
-	PackageSize        string                      `json:"package_size,omitempty"`
+	Packname           *string                     `json:"packname,omitempty"`
+	Version            *string                     `json:"version,omitempty"`
+	Icon               *string                     `json:"icon,omitempty"`
+	PackageSize        *string                     `json:"package_size,omitempty"`
 	ChannelPackageSpec *[]ChannelPackageSpecStruct `json:"channel_package_spec,omitempty"`
 }

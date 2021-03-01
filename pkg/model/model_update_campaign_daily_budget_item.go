@@ -11,6 +11,6 @@ package model
 
 // 修改推广计划日预算
 type UpdateCampaignDailyBudgetItem struct {
-	CampaignId  int64 `json:"campaign_id,omitempty"`
-	DailyBudget int64 `json:"daily_budget,omitempty"`
+	CampaignId  *int64 `json:"campaign_id,omitempty"`
+	DailyBudget *int64 `json:"daily_budget,omitempty"`
 }

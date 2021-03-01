@@ -11,6 +11,6 @@ package model
 
 // 更新单个广告组客户设置的状态条件
 type AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct struct {
-	AdgroupId        int64    `json:"adgroup_id,omitempty"`
+	AdgroupId        *int64   `json:"adgroup_id,omitempty"`
 	ConfiguredStatus AdStatus `json:"configured_status,omitempty"`
 }

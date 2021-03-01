@@ -11,11 +11,11 @@ package model
 
 // 创意规格和投放权限数据结构
 type AdcreativeTemplateDetailGetAdcreativeTemplateListStruct struct {
-	AdcreativeTemplateId                  int64                          `json:"adcreative_template_id,omitempty"`
-	AdcreativeTemplateName                string                         `json:"adcreative_template_name,omitempty"`
-	AdcreativeTemplateDescription         string                         `json:"adcreative_template_description,omitempty"`
-	AdcreativeTemplateSize                string                         `json:"adcreative_template_size,omitempty"`
-	AdcreativeTemplateStyle               string                         `json:"adcreative_template_style,omitempty"`
+	AdcreativeTemplateId                  *int64                         `json:"adcreative_template_id,omitempty"`
+	AdcreativeTemplateName                *string                        `json:"adcreative_template_name,omitempty"`
+	AdcreativeTemplateDescription         *string                        `json:"adcreative_template_description,omitempty"`
+	AdcreativeTemplateSize                *string                        `json:"adcreative_template_size,omitempty"`
+	AdcreativeTemplateStyle               *string                        `json:"adcreative_template_style,omitempty"`
 	AdcreativeSampleImageList             *[]AdcreativeSampleImage       `json:"adcreative_sample_image_list,omitempty"`
 	AdAttributes                          *[]AdcreativeElement           `json:"ad_attributes,omitempty"`
 	AdcreativeAttributes                  *[]AdcreativeElement           `json:"adcreative_attributes,omitempty"`

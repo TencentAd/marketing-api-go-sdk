@@ -11,9 +11,9 @@ package model
 
 // 商品信息
 type VerticalItemSpec struct {
-	Id                  int64     `json:"id,omitempty"`
-	Name                string    `json:"name,omitempty"`
-	Description         string    `json:"description,omitempty"`
+	Id                  *int64    `json:"id,omitempty"`
+	Name                *string   `json:"name,omitempty"`
+	Description         *string   `json:"description,omitempty"`
 	SupportCatalogTypes *[]string `json:"support_catalog_types,omitempty"`
-	Type_               string    `json:"type,omitempty"`
+	Type_               *string   `json:"type,omitempty"`
 }

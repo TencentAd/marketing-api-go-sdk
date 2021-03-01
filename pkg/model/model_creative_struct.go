@@ -11,7 +11,7 @@ package model
 
 // 创意规格结构体
 type CreativeStruct struct {
-	DeepLinkUrl          string                                 `json:"deep_link_url,omitempty"`
-	AdcreativeTemplateId int64                                  `json:"adcreative_template_id,omitempty"`
+	DeepLinkUrl          *string                                `json:"deep_link_url,omitempty"`
+	AdcreativeTemplateId *int64                                 `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements   *AdcreativeCreativeElementsWithOptions `json:"adcreative_elements,omitempty"`
 }

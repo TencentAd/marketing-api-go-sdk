@@ -12,8 +12,8 @@ package model
 type AgencyInnerTransferAddRequest struct {
 	FundTypeFrom   AccountTypeMapInnerTransfer `json:"fund_type_from,omitempty"`
 	FundTypeTo     AccountTypeMapInnerTransfer `json:"fund_type_to,omitempty"`
-	Amount         int64                       `json:"amount,omitempty"`
-	ExternalBillNo string                      `json:"external_bill_no,omitempty"`
-	Memo           string                      `json:"memo,omitempty"`
-	AccountId      int64                       `json:"account_id,omitempty"`
+	Amount         *int64                      `json:"amount,omitempty"`
+	ExternalBillNo *string                     `json:"external_bill_no,omitempty"`
+	Memo           *string                     `json:"memo,omitempty"`
+	AccountId      *int64                      `json:"account_id,omitempty"`
 }

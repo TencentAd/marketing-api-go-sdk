@@ -11,7 +11,7 @@ package model
 
 type XijingPageListGetResponseData struct {
 	List       *[]PageStruct `json:"list,omitempty"`
-	TotalPages int64         `json:"total_pages,omitempty"`
-	PageSize   int64         `json:"page_size,omitempty"`
-	PageIndex  int64         `json:"page_index,omitempty"`
+	TotalPages *int64        `json:"total_pages,omitempty"`
+	PageSize   *int64        `json:"page_size,omitempty"`
+	PageIndex  *int64        `json:"page_index,omitempty"`
 }

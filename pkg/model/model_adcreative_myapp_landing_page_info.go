@@ -11,6 +11,6 @@ package model
 
 // 落地页
 type AdcreativeMyappLandingPageInfo struct {
-	MyappPageId string `json:"myapp_page_id,omitempty"`
-	Url         string `json:"url,omitempty"`
+	MyappPageId *string `json:"myapp_page_id,omitempty"`
+	Url         *string `json:"url,omitempty"`
 }

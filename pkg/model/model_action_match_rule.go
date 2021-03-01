@@ -12,6 +12,6 @@ package model
 // 行为和参数匹配规则
 type ActionMatchRule struct {
 	ActionType        ActionType           `json:"action_type,omitempty"`
-	CustomAction      string               `json:"custom_action,omitempty"`
+	CustomAction      *string              `json:"custom_action,omitempty"`
 	ParamMatcherGroup *[]ParamMatcherGroup `json:"param_matcher_group,omitempty"`
 }

@@ -10,8 +10,8 @@
 package model
 
 type CustomTagsUpdateRequest struct {
-	AccountId   int64  `json:"account_id,omitempty"`
-	TagId       int64  `json:"tag_id,omitempty"`
-	Name        string `json:"name,omitempty"`
-	Description string `json:"description,omitempty"`
+	AccountId   *int64  `json:"account_id,omitempty"`
+	TagId       *int64  `json:"tag_id,omitempty"`
+	Name        *string `json:"name,omitempty"`
+	Description *string `json:"description,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type WechatAdvertiserGetListStruct struct {
-	AccountId       int64  `json:"account_id,omitempty"`
-	WechatAccountId string `json:"wechat_account_id,omitempty"`
+	AccountId       *int64  `json:"account_id,omitempty"`
+	WechatAccountId *string `json:"wechat_account_id,omitempty"`
 }

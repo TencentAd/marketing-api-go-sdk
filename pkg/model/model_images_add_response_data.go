@@ -10,12 +10,12 @@
 package model
 
 type ImagesAddResponseData struct {
-	ImageId     string    `json:"image_id,omitempty"`
-	PreviewUrl  string    `json:"preview_url,omitempty"`
-	Description string    `json:"description,omitempty"`
-	Width       int64     `json:"width,omitempty"`
-	Height      int64     `json:"height,omitempty"`
-	FileSize    int64     `json:"file_size,omitempty"`
+	ImageId     *string   `json:"image_id,omitempty"`
+	PreviewUrl  *string   `json:"preview_url,omitempty"`
+	Description *string   `json:"description,omitempty"`
+	Width       *int64    `json:"width,omitempty"`
+	Height      *int64    `json:"height,omitempty"`
+	FileSize    *int64    `json:"file_size,omitempty"`
 	Type_       ImageType `json:"type,omitempty"`
-	Signature   string    `json:"signature,omitempty"`
+	Signature   *string   `json:"signature,omitempty"`
 }

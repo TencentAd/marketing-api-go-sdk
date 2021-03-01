@@ -10,10 +10,10 @@
 package model
 
 type LeadsFormAddRequest struct {
-	AccountId     int64                    `json:"account_id,omitempty"`
-	ComponentName string                   `json:"component_name,omitempty"`
-	Title         string                   `json:"title,omitempty"`
-	SubTitle      string                   `json:"sub_title,omitempty"`
-	SubmitText    string                   `json:"submit_text,omitempty"`
+	AccountId     *int64                   `json:"account_id,omitempty"`
+	ComponentName *string                  `json:"component_name,omitempty"`
+	Title         *string                  `json:"title,omitempty"`
+	SubTitle      *string                  `json:"sub_title,omitempty"`
+	SubmitText    *string                  `json:"submit_text,omitempty"`
 	Items         *[]CreateControlListItem `json:"items,omitempty"`
 }

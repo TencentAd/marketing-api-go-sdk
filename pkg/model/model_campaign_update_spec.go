@@ -11,5 +11,5 @@ package model
 
 // 计划结构
 type CampaignUpdateSpec struct {
-	CampaignName string `json:"campaign_name,omitempty"`
+	CampaignName *string `json:"campaign_name,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type ProductItemsAddListStruct struct {
-	ProductId      string `json:"product_id,omitempty"`
-	ProductOuterId string `json:"product_outer_id,omitempty"`
+	ProductId      *string `json:"product_id,omitempty"`
+	ProductOuterId *string `json:"product_outer_id,omitempty"`
 }

@@ -12,7 +12,7 @@ package model
 // 行为和参数聚合规则
 type ActionAggregationRule struct {
 	ActionType       ActionType                 `json:"action_type,omitempty"`
-	CustomAction     string                     `json:"custom_action,omitempty"`
+	CustomAction     *string                    `json:"custom_action,omitempty"`
 	AggregationGroup *[]AggregationMatcherGroup `json:"aggregation_group,omitempty"`
 	FilterGroup      *[]MiniParamMatcherGroup   `json:"filter_group,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 时间范围
 type CustomLocationDateRange struct {
-	StartDate string `json:"start_date,omitempty"`
-	EndDate   string `json:"end_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty"`
+	EndDate   *string `json:"end_date,omitempty"`
 }

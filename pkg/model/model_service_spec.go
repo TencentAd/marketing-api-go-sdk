@@ -11,5 +11,5 @@ package model
 
 // 客服组建信息
 type ServiceSpec struct {
-	Title string `json:"title,omitempty"`
+	Title *string `json:"title,omitempty"`
 }

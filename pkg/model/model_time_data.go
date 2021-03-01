@@ -11,12 +11,12 @@ package model
 
 // TimeData返回结构
 type TimeData struct {
-	Date                  string     `json:"date,omitempty"`
-	Hour                  int64      `json:"hour,omitempty"`
-	Domain                string     `json:"domain,omitempty"`
+	Date                  *string    `json:"date,omitempty"`
+	Hour                  *int64     `json:"hour,omitempty"`
+	Domain                *string    `json:"domain,omitempty"`
 	ActionType            ActionType `json:"action_type,omitempty"`
-	CustomAction          string     `json:"custom_action,omitempty"`
-	RawActionCount        int64      `json:"raw_action_count,omitempty"`
-	IdentifiedActionCount int64      `json:"identified_action_count,omitempty"`
-	IdentifiedUserCount   int64      `json:"identified_user_count,omitempty"`
+	CustomAction          *string    `json:"custom_action,omitempty"`
+	RawActionCount        *int64     `json:"raw_action_count,omitempty"`
+	IdentifiedActionCount *int64     `json:"identified_action_count,omitempty"`
+	IdentifiedUserCount   *int64     `json:"identified_user_count,omitempty"`
 }

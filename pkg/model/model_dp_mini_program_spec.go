@@ -11,6 +11,6 @@ package model
 
 // 小程序落地页，mini_program_id和mini_program_path要同时填写
 type DpMiniProgramSpec struct {
-	MiniProgramId   string `json:"mini_program_id,omitempty"`
-	MiniProgramPath string `json:"mini_program_path,omitempty"`
+	MiniProgramId   *string `json:"mini_program_id,omitempty"`
+	MiniProgramPath *string `json:"mini_program_path,omitempty"`
 }

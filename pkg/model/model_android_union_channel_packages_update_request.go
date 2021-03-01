@@ -10,7 +10,7 @@
 package model
 
 type AndroidUnionChannelPackagesUpdateRequest struct {
-	AccountId                  int64  `json:"account_id,omitempty"`
-	AndroidUnionAppId          int64  `json:"android_union_app_id,omitempty"`
-	AppAndroidChannelPackageId string `json:"app_android_channel_package_id,omitempty"`
+	AccountId                  *int64  `json:"account_id,omitempty"`
+	AndroidUnionAppId          *int64  `json:"android_union_app_id,omitempty"`
+	AppAndroidChannelPackageId *string `json:"app_android_channel_package_id,omitempty"`
 }

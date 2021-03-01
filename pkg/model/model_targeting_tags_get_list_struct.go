@@ -11,10 +11,10 @@ package model
 
 // 返回结构
 type TargetingTagsGetListStruct struct {
-	Id         int64     `json:"id,omitempty"`
-	Name       string    `json:"name,omitempty"`
-	ParentId   int64     `json:"parent_id,omitempty"`
-	ParentName string    `json:"parent_name,omitempty"`
+	Id         *int64    `json:"id,omitempty"`
+	Name       *string   `json:"name,omitempty"`
+	ParentId   *int64    `json:"parent_id,omitempty"`
+	ParentName *string   `json:"parent_name,omitempty"`
 	CityLevel  CityLevel `json:"city_level,omitempty"`
 	TagClass   TagClass  `json:"tag_class,omitempty"`
 }

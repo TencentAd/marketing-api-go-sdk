@@ -10,6 +10,6 @@
 package model
 
 type TargetingsDeleteRequest struct {
-	TargetingId int64 `json:"targeting_id,omitempty"`
-	AccountId   int64 `json:"account_id,omitempty"`
+	TargetingId *int64 `json:"targeting_id,omitempty"`
+	AccountId   *int64 `json:"account_id,omitempty"`
 }

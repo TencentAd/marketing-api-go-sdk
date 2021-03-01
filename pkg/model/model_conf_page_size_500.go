@@ -11,8 +11,8 @@ package model
 
 // 分页配置信息
 type ConfPageSize500 struct {
-	Page        int64 `json:"page,omitempty"`
-	PageSize    int64 `json:"page_size,omitempty"`
-	TotalNumber int64 `json:"total_number,omitempty"`
-	TotalPage   int64 `json:"total_page,omitempty"`
+	Page        *int64 `json:"page,omitempty"`
+	PageSize    *int64 `json:"page_size,omitempty"`
+	TotalNumber *int64 `json:"total_number,omitempty"`
+	TotalPage   *int64 `json:"total_page,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 修改广告深度优化行为目标出价
 type UpdateDeepConversionBehaviorBidItem struct {
-	AdgroupId                 int64 `json:"adgroup_id,omitempty"`
-	DeepConversionBehaviorBid int64 `json:"deep_conversion_behavior_bid,omitempty"`
+	AdgroupId                 *int64 `json:"adgroup_id,omitempty"`
+	DeepConversionBehaviorBid *int64 `json:"deep_conversion_behavior_bid,omitempty"`
 }

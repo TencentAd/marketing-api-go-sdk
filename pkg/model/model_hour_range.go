@@ -11,6 +11,6 @@ package model
 
 // 查询的具体时段范围
 type HourRange struct {
-	BeginHour int64 `json:"begin_hour,omitempty"`
-	EndHour   int64 `json:"end_hour,omitempty"`
+	BeginHour *int64 `json:"begin_hour,omitempty"`
+	EndHour   *int64 `json:"end_hour,omitempty"`
 }

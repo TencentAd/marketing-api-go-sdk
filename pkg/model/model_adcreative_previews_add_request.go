@@ -10,9 +10,9 @@
 package model
 
 type AdcreativePreviewsAddRequest struct {
-	AdgroupId  int64        `json:"adgroup_id,omitempty"`
-	CampaignId int64        `json:"campaign_id,omitempty"`
+	AdgroupId  *int64       `json:"adgroup_id,omitempty"`
+	CampaignId *int64       `json:"campaign_id,omitempty"`
 	UserIdType ViewerIdType `json:"user_id_type,omitempty"`
 	UserIdList *[]string    `json:"user_id_list,omitempty"`
-	AccountId  int64        `json:"account_id,omitempty"`
+	AccountId  *int64       `json:"account_id,omitempty"`
 }

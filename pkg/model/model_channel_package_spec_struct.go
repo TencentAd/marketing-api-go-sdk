@@ -11,6 +11,6 @@ package model
 
 // 渠道包详细信息
 type ChannelPackageSpecStruct struct {
-	AppAndroidChannelPackageId string `json:"app_android_channel_package_id,omitempty"`
-	PackageName                string `json:"package_name,omitempty"`
+	AppAndroidChannelPackageId *string `json:"app_android_channel_package_id,omitempty"`
+	PackageName                *string `json:"package_name,omitempty"`
 }

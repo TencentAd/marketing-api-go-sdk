@@ -10,5 +10,5 @@
 package model
 
 type DynamicAdImagesAddResponseData struct {
-	ImageId string `json:"image_id,omitempty"`
+	ImageId *string `json:"image_id,omitempty"`
 }

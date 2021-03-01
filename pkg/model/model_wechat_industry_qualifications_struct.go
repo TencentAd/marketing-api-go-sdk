@@ -11,10 +11,10 @@ package model
 
 // 微信行业资质信息
 type WechatIndustryQualificationsStruct struct {
-	QualificationId     int64               `json:"qualification_id,omitempty"`
-	QualificationName   string              `json:"qualification_name,omitempty"`
-	ImageUrl            string              `json:"image_url,omitempty"`
-	ExpiredDate         string              `json:"expired_date,omitempty"`
+	QualificationId     *int64              `json:"qualification_id,omitempty"`
+	QualificationName   *string             `json:"qualification_name,omitempty"`
+	ImageUrl            *string             `json:"image_url,omitempty"`
+	ExpiredDate         *string             `json:"expired_date,omitempty"`
 	QualificationStatus QualificationStatus `json:"qualification_status,omitempty"`
-	RejectMessage       string              `json:"reject_message,omitempty"`
+	RejectMessage       *string             `json:"reject_message,omitempty"`
 }

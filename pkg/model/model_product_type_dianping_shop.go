@@ -11,15 +11,15 @@ package model
 
 // 只有product_type为PRODUCT_TYPE_DIANPING_SHOP时才能使用
 type ProductTypeDianpingShop struct {
-	ShopName      string  `json:"shop_name,omitempty"`
-	Address       string  `json:"address,omitempty"`
-	City          string  `json:"city,omitempty"`
-	District      string  `json:"district,omitempty"`
-	BusinessArea  string  `json:"business_area,omitempty"`
-	StreetNumber  string  `json:"street_number,omitempty"`
-	Longitude     float64 `json:"longitude,omitempty"`
-	Latitude      float64 `json:"latitude,omitempty"`
-	ShopDetailUrl string  `json:"shop_detail_url,omitempty"`
-	Ratings       int64   `json:"ratings,omitempty"`
-	AveragePrice  int64   `json:"average_price,omitempty"`
+	ShopName      *string  `json:"shop_name,omitempty"`
+	Address       *string  `json:"address,omitempty"`
+	City          *string  `json:"city,omitempty"`
+	District      *string  `json:"district,omitempty"`
+	BusinessArea  *string  `json:"business_area,omitempty"`
+	StreetNumber  *string  `json:"street_number,omitempty"`
+	Longitude     *float64 `json:"longitude,omitempty"`
+	Latitude      *float64 `json:"latitude,omitempty"`
+	ShopDetailUrl *string  `json:"shop_detail_url,omitempty"`
+	Ratings       *int64   `json:"ratings,omitempty"`
+	AveragePrice  *int64   `json:"average_price,omitempty"`
 }

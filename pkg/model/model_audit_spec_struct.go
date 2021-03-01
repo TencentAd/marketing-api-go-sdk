@@ -13,5 +13,5 @@ package model
 type AuditSpecStruct struct {
 	SiteSet       SiteSetDefinition `json:"site_set,omitempty"`
 	SystemStatus  SysStatus         `json:"system_status,omitempty"`
-	RejectMessage string            `json:"reject_message,omitempty"`
+	RejectMessage *string           `json:"reject_message,omitempty"`
 }

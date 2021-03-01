@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **BottomText** | **string** |  | [optional] [default to null]
 **MiniProgramId** | **string** |  | [optional] [default to null]
 **MiniProgramPath** | **string** |  | [optional] [default to null]
-**Label** | [**[]AdcreativeLabel**](adcreative_label.md) |  | [optional] [default to null]
+**Label** | [**[]CreativeLabel**](creative_label.md) |  | [optional] [default to null]
 **ProductTags** | **[]string** |  | [optional] [default to null]
 **LogoDescription** | **string** |  | [optional] [default to null]
 **Logo** | **string** |  | [optional] [default to null]

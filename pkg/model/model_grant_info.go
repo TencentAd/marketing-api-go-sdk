@@ -11,7 +11,7 @@ package model
 
 // 权限信息
 type GrantInfo struct {
-	AudienceId int64                               `json:"audience_id,omitempty"`
+	AudienceId *int64                              `json:"audience_id,omitempty"`
 	GrantType  AudienceGrantType                   `json:"grant_type,omitempty"`
 	GrantSpec  *AudienceGrantRelationsGetGrantSpec `json:"grant_spec,omitempty"`
 }

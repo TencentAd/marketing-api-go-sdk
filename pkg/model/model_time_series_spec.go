@@ -11,5 +11,5 @@ package model
 
 // 投放时间信息
 type TimeSeriesSpec struct {
-	TimeSeries string `json:"time_series,omitempty"`
+	TimeSeries *string `json:"time_series,omitempty"`
 }

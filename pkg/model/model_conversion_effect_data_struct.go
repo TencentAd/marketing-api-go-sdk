@@ -11,8 +11,8 @@ package model
 
 // 效果数据（转化）
 type ConversionEffectDataStruct struct {
-	Count       int64   `json:"count,omitempty"`
-	Ratio       float64 `json:"ratio,omitempty"`
-	CategoryWin float64 `json:"category_win,omitempty"`
-	CategoryAvg float64 `json:"category_avg,omitempty"`
+	Count       *int64   `json:"count,omitempty"`
+	Ratio       *float64 `json:"ratio,omitempty"`
+	CategoryWin *float64 `json:"category_win,omitempty"`
+	CategoryAvg *float64 `json:"category_avg,omitempty"`
 }

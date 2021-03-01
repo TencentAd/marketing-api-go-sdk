@@ -11,8 +11,8 @@ package model
 
 // 回传信息结构
 type OuterLeadsStatusInfoStruct struct {
-	AccountId                int64  `json:"account_id,omitempty"`
-	OuterLeadsId             string `json:"outer_leads_id,omitempty"`
-	OuterLeadsConvertType    string `json:"outer_leads_convert_type,omitempty"`
-	OuterLeadsIneffectReason string `json:"outer_leads_ineffect_reason,omitempty"`
+	AccountId                *int64  `json:"account_id,omitempty"`
+	OuterLeadsId             *string `json:"outer_leads_id,omitempty"`
+	OuterLeadsConvertType    *string `json:"outer_leads_convert_type,omitempty"`
+	OuterLeadsIneffectReason *string `json:"outer_leads_ineffect_reason,omitempty"`
 }

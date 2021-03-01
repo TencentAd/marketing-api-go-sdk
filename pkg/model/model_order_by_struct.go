@@ -11,6 +11,6 @@ package model
 
 // 排序字段结构
 type OrderByStruct struct {
-	SortField string  `json:"sort_field,omitempty"`
+	SortField *string `json:"sort_field,omitempty"`
 	SortType  Sortord `json:"sort_type,omitempty"`
 }

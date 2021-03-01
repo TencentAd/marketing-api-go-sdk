@@ -12,5 +12,5 @@ package model
 // oCPC/oCPM 优化 ROI 配置
 type DeepConversionWorthSpec struct {
 	Goal        DeepConversionWorthGoal `json:"goal,omitempty"`
-	ExpectedRoi float64                 `json:"expected_roi,omitempty"`
+	ExpectedRoi *float64                `json:"expected_roi,omitempty"`
 }

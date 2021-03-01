@@ -10,5 +10,5 @@
 package model
 
 type LabelAudiencesAddResponseData struct {
-	AudienceId int64 `json:"audience_id,omitempty"`
+	AudienceId *int64 `json:"audience_id,omitempty"`
 }

@@ -15,5 +15,5 @@ type PoiRule struct {
 	PoiCategoryId *[]int64   `json:"poi_category_id,omitempty"`
 	DateRange     *DateRange `json:"date_range,omitempty"`
 	DayOfWeek     *[]string  `json:"day_of_week,omitempty"`
-	Frequency     int64      `json:"frequency,omitempty"`
+	Frequency     *int64     `json:"frequency,omitempty"`
 }

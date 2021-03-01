@@ -10,5 +10,5 @@
 package model
 
 type QualificationsDeleteResponseData struct {
-	QualificationId int64 `json:"qualification_id,omitempty"`
+	QualificationId *int64 `json:"qualification_id,omitempty"`
 }

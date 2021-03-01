@@ -11,5 +11,5 @@ package model
 
 // logo页
 type AdcreativeLogoPage struct {
-	Image string `json:"image,omitempty"`
+	Image *string `json:"image,omitempty"`
 }

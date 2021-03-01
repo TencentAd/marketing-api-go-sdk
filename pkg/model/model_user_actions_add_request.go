@@ -10,7 +10,7 @@
 package model
 
 type UserActionsAddRequest struct {
-	AccountId       int64         `json:"account_id,omitempty"`
-	UserActionSetId int64         `json:"user_action_set_id,omitempty"`
+	AccountId       *int64        `json:"account_id,omitempty"`
+	UserActionSetId *int64        `json:"user_action_set_id,omitempty"`
 	Actions         *[]UserAction `json:"actions,omitempty"`
 }

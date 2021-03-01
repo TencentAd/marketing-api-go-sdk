@@ -10,8 +10,8 @@
 package model
 
 type EcommerceOrderUpdateRequest struct {
-	AccountId              int64          `json:"account_id,omitempty"`
-	EcommerceOrderId       string         `json:"ecommerce_order_id,omitempty"`
-	DeliveryTrackingNumber string         `json:"delivery_tracking_number,omitempty"`
+	AccountId              *int64         `json:"account_id,omitempty"`
+	EcommerceOrderId       *string        `json:"ecommerce_order_id,omitempty"`
+	DeliveryTrackingNumber *string        `json:"delivery_tracking_number,omitempty"`
 	ExpressCompany         ExpressCompany `json:"express_company,omitempty"`
 }

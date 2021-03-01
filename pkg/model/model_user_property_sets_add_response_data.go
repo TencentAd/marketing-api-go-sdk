@@ -10,5 +10,5 @@
 package model
 
 type UserPropertySetsAddResponseData struct {
-	UserPropertySetId int64 `json:"user_property_set_id,omitempty"`
+	UserPropertySetId *int64 `json:"user_property_set_id,omitempty"`
 }

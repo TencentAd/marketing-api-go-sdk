@@ -21,6 +21,7 @@ const (
 	DestinationType_MINI_PROGRAM_WECHAT             DestinationType = "PAGE_TYPE_MINI_PROGRAM_WECHAT"
 	DestinationType_FENGYE_ECOMMERCE                DestinationType = "PAGE_TYPE_FENGYE_ECOMMERCE"
 	DestinationType_MINI_GAME_WECHAT                DestinationType = "PAGE_TYPE_MINI_GAME_WECHAT"
+	DestinationType_FENGYE_EC_WECHAT_MINIPROGRAM    DestinationType = "PAGE_TYPE_FENGYE_EC_WECHAT_MINIPROGRAM"
 	DestinationType_IOS_APP                         DestinationType = "PAGE_TYPE_IOS_APP"
 	DestinationType_MINI_PROGRAM_QQ                 DestinationType = "PAGE_TYPE_MINI_PROGRAM_QQ"
 	DestinationType_MINI_PROGRAM_CANVAS_WECHAT      DestinationType = "PAGE_TYPE_MINI_PROGRAM_CANVAS_WECHAT"

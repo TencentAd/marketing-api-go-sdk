@@ -91,7 +91,7 @@ func (a *UserActionSetsApiService) Add(ctx context.Context, data UserActionSetsA
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -211,7 +211,7 @@ func (a *UserActionSetsApiService) Get(ctx context.Context, accountId int64, loc
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors

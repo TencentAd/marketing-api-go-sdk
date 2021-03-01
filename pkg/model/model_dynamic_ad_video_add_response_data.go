@@ -10,7 +10,7 @@
 package model
 
 type DynamicAdVideoAddResponseData struct {
-	VideoId              string `json:"video_id,omitempty"`
-	VideoPreviewImageUrl string `json:"video_preview_image_url,omitempty"`
-	VideoPreviewImageId  int64  `json:"video_preview_image_id,omitempty"`
+	VideoId              *string `json:"video_id,omitempty"`
+	VideoPreviewImageUrl *string `json:"video_preview_image_url,omitempty"`
+	VideoPreviewImageId  *int64  `json:"video_preview_image_id,omitempty"`
 }

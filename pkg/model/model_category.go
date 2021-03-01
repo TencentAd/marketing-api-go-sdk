@@ -12,6 +12,6 @@ package model
 // 类目信息
 type Category struct {
 	Level OcpaCategoryLevel `json:"level,omitempty"`
-	Id    int64             `json:"id,omitempty"`
-	Name  string            `json:"name,omitempty"`
+	Id    *int64            `json:"id,omitempty"`
+	Name  *string           `json:"name,omitempty"`
 }

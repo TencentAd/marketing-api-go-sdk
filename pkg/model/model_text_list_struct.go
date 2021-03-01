@@ -11,6 +11,6 @@ package model
 
 // 文案信息结构
 type TextListStruct struct {
-	Text string `json:"text,omitempty"`
-	Tag  string `json:"tag,omitempty"`
+	Text *string `json:"text,omitempty"`
+	Tag  *string `json:"tag,omitempty"`
 }

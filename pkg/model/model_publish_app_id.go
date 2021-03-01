@@ -11,6 +11,6 @@ package model
 
 // 已发布版本落地页 App信息
 type PublishAppId struct {
-	AndroidAppId int64 `json:"android_app_id,omitempty"`
-	IosAppId     int64 `json:"ios_app_id,omitempty"`
+	AndroidAppId *int64 `json:"android_app_id,omitempty"`
+	IosAppId     *int64 `json:"ios_app_id,omitempty"`
 }

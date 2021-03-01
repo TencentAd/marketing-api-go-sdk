@@ -12,6 +12,6 @@ package model
 // oCPC/oCPM投放能力
 type WechatOcpaSpecStruct struct {
 	OptimizationGoal OptimizationGoal `json:"optimization_goal,omitempty"`
-	MaxPrice         int64            `json:"max_price,omitempty"`
-	MinPrice         int64            `json:"min_price,omitempty"`
+	MaxPrice         *int64           `json:"max_price,omitempty"`
+	MinPrice         *int64           `json:"min_price,omitempty"`
 }

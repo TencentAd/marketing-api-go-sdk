@@ -12,18 +12,18 @@ package model
 // 资金明细
 type DetailedFundStatement struct {
 	TradeType            WechatAccountTradeType   `json:"trade_type,omitempty"`
-	Time                 int64                    `json:"time,omitempty"`
-	Amount               int64                    `json:"amount,omitempty"`
-	WechatAccountId      string                   `json:"wechat_account_id,omitempty"`
-	WechatAccountName    string                   `json:"wechat_account_name,omitempty"`
+	Time                 *int64                   `json:"time,omitempty"`
+	Amount               *int64                   `json:"amount,omitempty"`
+	WechatAccountId      *string                  `json:"wechat_account_id,omitempty"`
+	WechatAccountName    *string                  `json:"wechat_account_name,omitempty"`
 	FundType             WechatMpOpenFundType     `json:"fund_type,omitempty"`
-	ExternalBillNo       string                   `json:"external_bill_no,omitempty"`
-	Description          string                   `json:"description,omitempty"`
-	Operator             string                   `json:"operator,omitempty"`
-	BillNo               string                   `json:"bill_no,omitempty"`
-	RepaymentChannelType string                   `json:"repayment_channel_type,omitempty"`
-	CompanyName          string                   `json:"company_name,omitempty"`
-	ContactName          string                   `json:"contact_name,omitempty"`
-	ContactPhone         string                   `json:"contact_phone,omitempty"`
+	ExternalBillNo       *string                  `json:"external_bill_no,omitempty"`
+	Description          *string                  `json:"description,omitempty"`
+	Operator             *string                  `json:"operator,omitempty"`
+	BillNo               *string                  `json:"bill_no,omitempty"`
+	RepaymentChannelType *string                  `json:"repayment_channel_type,omitempty"`
+	CompanyName          *string                  `json:"company_name,omitempty"`
+	ContactName          *string                  `json:"contact_name,omitempty"`
+	ContactPhone         *string                  `json:"contact_phone,omitempty"`
 	Status               WechatAccountTradeStatus `json:"status,omitempty"`
 }

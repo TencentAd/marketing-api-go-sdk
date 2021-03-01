@@ -11,6 +11,6 @@ package model
 
 // 商标
 type AdcreativeCorporate struct {
-	CorporateName string `json:"corporate_name,omitempty"`
-	CorporateImg  string `json:"corporate_img,omitempty"`
+	CorporateName *string `json:"corporate_name,omitempty"`
+	CorporateImg  *string `json:"corporate_img,omitempty"`
 }

@@ -11,5 +11,5 @@ package model
 
 // 电商推广条件
 type WechatLinkAd struct {
-	Url string `json:"url,omitempty"`
+	Url *string `json:"url,omitempty"`
 }

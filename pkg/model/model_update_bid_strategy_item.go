@@ -11,6 +11,6 @@ package model
 
 // 修改定向包
 type UpdateBidStrategyItem struct {
-	AdgroupId   int64       `json:"adgroup_id,omitempty"`
+	AdgroupId   *int64      `json:"adgroup_id,omitempty"`
 	BidStrategy BidStrategy `json:"bid_strategy,omitempty"`
 }

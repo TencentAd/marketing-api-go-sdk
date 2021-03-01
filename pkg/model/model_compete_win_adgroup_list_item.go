@@ -11,7 +11,7 @@ package model
 
 // 账户内部竞争激烈度列表节点
 type CompeteWinAdgroupListItem struct {
-	Rank        int64  `json:"rank,omitempty"`
-	AdgroupId   int64  `json:"adgroup_id,omitempty"`
-	AdgroupName string `json:"adgroup_name,omitempty"`
+	Rank        *int64  `json:"rank,omitempty"`
+	AdgroupId   *int64  `json:"adgroup_id,omitempty"`
+	AdgroupName *string `json:"adgroup_name,omitempty"`
 }

@@ -11,13 +11,13 @@ package model
 
 // 返回结构
 type BatchAsyncRequestsGetTaskListStruct struct {
-	TaskId            int64            `json:"task_id,omitempty"`
-	TaskName          string           `json:"task_name,omitempty"`
+	TaskId            *int64           `json:"task_id,omitempty"`
+	TaskName          *string          `json:"task_name,omitempty"`
 	TaskType          TaskType         `json:"task_type,omitempty"`
 	TaskScope         TaskScope        `json:"task_scope,omitempty"`
 	Status            TaskStatus       `json:"status,omitempty"`
 	ResultStatus      TaskResultStatus `json:"result_status,omitempty"`
-	CreatedTime       int64            `json:"created_time,omitempty"`
-	EndTime           int64            `json:"end_time,omitempty"`
+	CreatedTime       *int64           `json:"created_time,omitempty"`
+	EndTime           *int64           `json:"end_time,omitempty"`
 	ScopeObjectIdList *[]int64         `json:"scope_object_id_list,omitempty"`
 }

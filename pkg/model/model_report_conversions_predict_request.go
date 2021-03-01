@@ -11,5 +11,5 @@ package model
 
 type ReportConversionsPredictRequest struct {
 	Filtering *[]FilteringStruct `json:"filtering,omitempty"`
-	AccountId int64              `json:"account_id,omitempty"`
+	AccountId *int64             `json:"account_id,omitempty"`
 }

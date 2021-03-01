@@ -12,5 +12,5 @@ package model
 // 用户行为数据源结构体
 type UserActionSetStruct struct {
 	Type_ UserActionSetType `json:"type,omitempty"`
-	Id    int64             `json:"id,omitempty"`
+	Id    *int64            `json:"id,omitempty"`
 }

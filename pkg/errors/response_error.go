@@ -19,11 +19,24 @@ func (e ResponseError) Error() string {
 }
 
 // NewError ...
-func NewError(code int64, message string, messageCn string, errors []model.ApiErrorStruct) ResponseError {
+func NewError(code *int64, message *string, messageCn *string, errors []model.ApiErrorStruct) ResponseError {
+	var codeValue int64
+	var messageValue string
+	var messageCnValue string
+	if code != nil {
+		codeValue = *code
+	}
+	if message != nil {
+		messageValue = *message
+	}
+	if messageCn != nil {
+		messageCnValue = *messageCn
+	}
+
 	return ResponseError{
-		Code:      code,
-		Message:   message,
-		MessageCn: messageCn,
+		Code:      codeValue,
+		Message:   messageValue,
+		MessageCn: messageCnValue,
 		Errors:    errors,
 	}
 }

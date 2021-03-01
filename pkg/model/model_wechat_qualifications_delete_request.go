@@ -10,6 +10,6 @@
 package model
 
 type WechatQualificationsDeleteRequest struct {
-	AccountId             int64 `json:"account_id,omitempty"`
-	WechatQualificationId int64 `json:"wechat_qualification_id,omitempty"`
+	AccountId             *int64 `json:"account_id,omitempty"`
+	WechatQualificationId *int64 `json:"wechat_qualification_id,omitempty"`
 }

@@ -10,7 +10,7 @@
 package model
 
 type VideosUpdateRequest struct {
-	AccountId   int64   `json:"account_id,omitempty"`
-	VideoId     int64   `json:"video_id,omitempty"`
+	AccountId   *int64  `json:"account_id,omitempty"`
+	VideoId     *int64  `json:"video_id,omitempty"`
 	Description *string `json:"description,omitempty"`
 }

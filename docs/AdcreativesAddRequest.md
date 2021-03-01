@@ -36,6 +36,7 @@ Name | Type | Description | Notes
 **FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
+**PageTrackUrl** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]

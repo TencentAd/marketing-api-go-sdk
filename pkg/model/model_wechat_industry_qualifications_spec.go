@@ -11,6 +11,6 @@ package model
 
 // 微信行业资质信息，当且仅当qualification_type=INDUSTRY_QUALIFICATION_WECHAT时可填且必填
 type WechatIndustryQualificationsSpec struct {
-	QualificationName string `json:"qualification_name,omitempty"`
-	ImageId           string `json:"image_id,omitempty"`
+	QualificationName *string `json:"qualification_name,omitempty"`
+	ImageId           *string `json:"image_id,omitempty"`
 }

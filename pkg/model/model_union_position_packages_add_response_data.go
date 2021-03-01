@@ -10,5 +10,5 @@
 package model
 
 type UnionPositionPackagesAddResponseData struct {
-	UnionPackageId int64 `json:"union_package_id,omitempty"`
+	UnionPackageId *int64 `json:"union_package_id,omitempty"`
 }

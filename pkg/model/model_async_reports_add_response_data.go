@@ -10,5 +10,5 @@
 package model
 
 type AsyncReportsAddResponseData struct {
-	TaskId int64 `json:"task_id,omitempty"`
+	TaskId *int64 `json:"task_id,omitempty"`
 }

@@ -10,10 +10,10 @@
 package model
 
 type ChannelsGetRequest struct {
-	AccountId int64              `json:"account_id,omitempty"`
+	AccountId *int64             `json:"account_id,omitempty"`
 	DateRange *DateRange         `json:"date_range,omitempty"`
 	Filtering *[]FilteringStruct `json:"filtering,omitempty"`
 	Level     DpApiReportLevel   `json:"level,omitempty"`
-	Page      int64              `json:"page,omitempty"`
-	PageSize  int64              `json:"page_size,omitempty"`
+	Page      *int64             `json:"page,omitempty"`
+	PageSize  *int64             `json:"page_size,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // QQ 浏览器小程序信息
 type QqBrowserMiniProgram struct {
-	Packname string `json:"packname,omitempty"`
-	Icon     string `json:"icon,omitempty"`
+	Packname *string `json:"packname,omitempty"`
+	Icon     *string `json:"icon,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 更新单个广告组日限额条件
 type AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct struct {
-	AdgroupId   int64 `json:"adgroup_id,omitempty"`
-	DailyBudget int64 `json:"daily_budget,omitempty"`
+	AdgroupId   *int64 `json:"adgroup_id,omitempty"`
+	DailyBudget *int64 `json:"daily_budget,omitempty"`
 }

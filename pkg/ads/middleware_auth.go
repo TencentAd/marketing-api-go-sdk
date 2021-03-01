@@ -30,7 +30,7 @@ func (a *AuthMiddleware) Handle(
 	query.Set("timestamp", apiKey.Timestamp)
 	query.Set("nonce", apiKey.Nonce)
 	req.URL.RawQuery = query.Encode()
-	ctx := context.WithValue(*a.tads.Ctx, config.ContextAPIKey, apiKey)
+	ctx := context.WithValue(req.Context(), config.ContextAPIKey, apiKey)
 	req = req.WithContext(ctx)
 	rsp, err = next(req)
 	return rsp, err

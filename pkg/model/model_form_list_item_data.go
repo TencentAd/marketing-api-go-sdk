@@ -11,7 +11,7 @@ package model
 
 // 表单列表每一项目
 type FormListItemData struct {
-	ComponentName string `json:"component_name,omitempty"`
-	ComponentId   string `json:"component_id,omitempty"`
-	CreatedTime   string `json:"created_time,omitempty"`
+	ComponentName *string `json:"component_name,omitempty"`
+	ComponentId   *string `json:"component_id,omitempty"`
+	CreatedTime   *string `json:"created_time,omitempty"`
 }

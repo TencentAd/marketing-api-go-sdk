@@ -11,16 +11,16 @@ package model
 
 // 竞争表现评估类型
 type CompititionAnalysisDetailSpec struct {
-	Date                   string `json:"date,omitempty"`
-	Hour                   int64  `json:"hour,omitempty"`
-	AdUserAcceptance       int64  `json:"ad_user_acceptance,omitempty"`
-	AdBidAmount            int64  `json:"ad_bid_amount,omitempty"`
-	SameIndustryBidAmount  int64  `json:"same_industry_bid_amount,omitempty"`
-	WinOverAdBidAmount     int64  `json:"win_over_ad_bid_amount,omitempty"`
-	AdClick                int64  `json:"ad_click,omitempty"`
-	SameIndustryClick      int64  `json:"same_industry_click,omitempty"`
-	WinOverAdClick         int64  `json:"win_over_ad_click,omitempty"`
-	AdConversion           int64  `json:"ad_conversion,omitempty"`
-	SameIndustryConversion int64  `json:"same_industry_conversion,omitempty"`
-	WinOverAdConversion    int64  `json:"win_over_ad_conversion,omitempty"`
+	Date                   *string `json:"date,omitempty"`
+	Hour                   *int64  `json:"hour,omitempty"`
+	AdUserAcceptance       *int64  `json:"ad_user_acceptance,omitempty"`
+	AdBidAmount            *int64  `json:"ad_bid_amount,omitempty"`
+	SameIndustryBidAmount  *int64  `json:"same_industry_bid_amount,omitempty"`
+	WinOverAdBidAmount     *int64  `json:"win_over_ad_bid_amount,omitempty"`
+	AdClick                *int64  `json:"ad_click,omitempty"`
+	SameIndustryClick      *int64  `json:"same_industry_click,omitempty"`
+	WinOverAdClick         *int64  `json:"win_over_ad_click,omitempty"`
+	AdConversion           *int64  `json:"ad_conversion,omitempty"`
+	SameIndustryConversion *int64  `json:"same_industry_conversion,omitempty"`
+	WinOverAdConversion    *int64  `json:"win_over_ad_conversion,omitempty"`
 }

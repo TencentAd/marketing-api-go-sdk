@@ -10,5 +10,5 @@
 package model
 
 type CustomTagsAddResponseData struct {
-	TagId int64 `json:"tag_id,omitempty"`
+	TagId *int64 `json:"tag_id,omitempty"`
 }

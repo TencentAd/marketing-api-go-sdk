@@ -24,6 +24,7 @@ const (
 	PageTypeRead_MINI_PROGRAM_WECHAT             PageTypeRead = "PAGE_TYPE_MINI_PROGRAM_WECHAT"
 	PageTypeRead_UNSUPPORTED                     PageTypeRead = "PAGE_TYPE_UNSUPPORTED"
 	PageTypeRead_MINI_GAME_WECHAT                PageTypeRead = "PAGE_TYPE_MINI_GAME_WECHAT"
+	PageTypeRead_FENGYE_EC_WECHAT_MINIPROGRAM    PageTypeRead = "PAGE_TYPE_FENGYE_EC_WECHAT_MINIPROGRAM"
 	PageTypeRead_MINI_PROGRAM_QQ                 PageTypeRead = "PAGE_TYPE_MINI_PROGRAM_QQ"
 	PageTypeRead_MINI_GAME_QQ                    PageTypeRead = "PAGE_TYPE_MINI_GAME_QQ"
 	PageTypeRead_MINI_PROGRAM_CANVAS_WECHAT      PageTypeRead = "PAGE_TYPE_MINI_PROGRAM_CANVAS_WECHAT"

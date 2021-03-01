@@ -10,6 +10,6 @@
 package model
 
 type VideomakerVideocapturesAddResponseData struct {
-	Code          int64                 `json:"code,omitempty"`
+	Code          *int64                `json:"code,omitempty"`
 	VideoCaptures *[]VideoCaptureStruct `json:"video_captures,omitempty"`
 }

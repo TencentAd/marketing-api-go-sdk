@@ -12,6 +12,6 @@ package model
 // 支持的计费信息
 type SupportBillingSpec struct {
 	BillingEvent BillingEvent `json:"billing_event,omitempty"`
-	MinPrice     int64        `json:"min_price,omitempty"`
-	MaxPrice     int64        `json:"max_price,omitempty"`
+	MinPrice     *int64       `json:"min_price,omitempty"`
+	MaxPrice     *int64       `json:"max_price,omitempty"`
 }

@@ -11,9 +11,9 @@ package model
 
 // 素材
 type AdcreativeElementStoryArrayItem struct {
-	Image       string `json:"image,omitempty"`
-	Image2      string `json:"image2,omitempty"`
-	Description string `json:"description,omitempty"`
-	Url         string `json:"url,omitempty"`
-	Title       string `json:"title,omitempty"`
+	Image       *string `json:"image,omitempty"`
+	Image2      *string `json:"image2,omitempty"`
+	Description *string `json:"description,omitempty"`
+	Url         *string `json:"url,omitempty"`
+	Title       *string `json:"title,omitempty"`
 }

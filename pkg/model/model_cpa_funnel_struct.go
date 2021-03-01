@@ -11,6 +11,6 @@ package model
 
 // 成本分析
 type CpaFunnelStruct struct {
-	BiasToday   float64 `json:"bias_today,omitempty"`
-	BiasOverall float64 `json:"bias_overall,omitempty"`
+	BiasToday   *float64 `json:"bias_today,omitempty"`
+	BiasOverall *float64 `json:"bias_overall,omitempty"`
 }

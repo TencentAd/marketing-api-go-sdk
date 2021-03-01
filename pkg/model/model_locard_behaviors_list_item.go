@@ -11,6 +11,6 @@ package model
 
 // 罗卡行为标签
 type LocardBehaviorsListItem struct {
-	Id   string `json:"id,omitempty"`
-	Text string `json:"text,omitempty"`
+	Id   *string `json:"id,omitempty"`
+	Text *string `json:"text,omitempty"`
 }

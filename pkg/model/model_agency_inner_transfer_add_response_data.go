@@ -12,8 +12,8 @@ package model
 type AgencyInnerTransferAddResponseData struct {
 	FundTypeFrom   AccountTypeMapInnerTransfer `json:"fund_type_from,omitempty"`
 	FundTypeTo     AccountTypeMapInnerTransfer `json:"fund_type_to,omitempty"`
-	Amount         int64                       `json:"amount,omitempty"`
-	ExternalBillNo string                      `json:"external_bill_no,omitempty"`
+	Amount         *int64                      `json:"amount,omitempty"`
+	ExternalBillNo *string                     `json:"external_bill_no,omitempty"`
 	IsRepeated     Boolean                     `json:"is_repeated,omitempty"`
-	Time           int64                       `json:"time,omitempty"`
+	Time           *int64                      `json:"time,omitempty"`
 }

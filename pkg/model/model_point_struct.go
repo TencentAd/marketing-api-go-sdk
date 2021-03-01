@@ -11,6 +11,6 @@ package model
 
 // 趋势节点
 type PointStruct struct {
-	Time  string  `json:"time,omitempty"`
-	Value float64 `json:"value,omitempty"`
+	Time  *string  `json:"time,omitempty"`
+	Value *float64 `json:"value,omitempty"`
 }

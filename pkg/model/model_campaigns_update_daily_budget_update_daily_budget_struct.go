@@ -11,6 +11,6 @@ package model
 
 // 更新日限额条件
 type CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct struct {
-	CampaignId  int64 `json:"campaign_id,omitempty"`
-	DailyBudget int64 `json:"daily_budget,omitempty"`
+	CampaignId  *int64 `json:"campaign_id,omitempty"`
+	DailyBudget *int64 `json:"daily_budget,omitempty"`
 }

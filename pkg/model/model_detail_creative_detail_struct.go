@@ -13,8 +13,8 @@ package model
 type DetailCreativeDetailStruct struct {
 	IsVideo             *bool                      `json:"is_video,omitempty"`
 	IsWechatMoment      *bool                      `json:"is_wechat_moment,omitempty"`
-	PlayDuration        string                     `json:"play_duration,omitempty"`
-	PlayProgress        string                     `json:"play_progress,omitempty"`
+	PlayDuration        *string                    `json:"play_duration,omitempty"`
+	PlayProgress        *string                    `json:"play_progress,omitempty"`
 	CtrLevel            *CtrLevelStruct            `json:"ctr_level,omitempty"`
 	EffectivePlayRate   *EffectivePlayRateStruct   `json:"effective_play_rate,omitempty"`
 	NoInterestClickRate *NoInterestClickRateStruct `json:"no_interest_click_rate,omitempty"`

@@ -11,5 +11,5 @@ package model
 
 // 删除广告组
 type DeleteAdgroupItem struct {
-	AdgroupId int64 `json:"adgroup_id,omitempty"`
+	AdgroupId *int64 `json:"adgroup_id,omitempty"`
 }

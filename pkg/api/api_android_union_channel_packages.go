@@ -91,7 +91,7 @@ func (a *AndroidUnionChannelPackagesApiService) Add(ctx context.Context, data An
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -134,6 +134,7 @@ AndroidUnionChannelPackagesApiService 获取广告渠道包
  * @param accountId
  * @param androidUnionAppId
  * @param optional nil or *AndroidUnionChannelPackagesGetOpts - Optional Parameters:
+     * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
@@ -142,9 +143,10 @@ AndroidUnionChannelPackagesApiService 获取广告渠道包
 */
 
 type AndroidUnionChannelPackagesGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	Filtering optional.Interface
+	Page      optional.Int64
+	PageSize  optional.Int64
+	Fields    optional.Interface
 }
 
 func (a *AndroidUnionChannelPackagesApiService) Get(ctx context.Context, accountId int64, androidUnionAppId int64, localVarOptionals *AndroidUnionChannelPackagesGetOpts) (AndroidUnionChannelPackagesGetResponseData, http.Header, error) {
@@ -167,6 +169,9 @@ func (a *AndroidUnionChannelPackagesApiService) Get(ctx context.Context, account
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("android_union_app_id", parameterToString(androidUnionAppId, ""))
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}
@@ -213,7 +218,7 @@ func (a *AndroidUnionChannelPackagesApiService) Get(ctx context.Context, account
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
@@ -314,7 +319,7 @@ func (a *AndroidUnionChannelPackagesApiService) Update(ctx context.Context, data
 		// If we succeed, return the data, otherwise pass on to decode error.
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
-			if localVarResponse.Code != 0 {
+			if *localVarResponse.Code != 0 {
 				var localVarResponseErrors []ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors

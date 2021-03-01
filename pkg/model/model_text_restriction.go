@@ -11,7 +11,7 @@ package model
 
 // 文本需满足的限制条件，仅当element_type是ELEMENT_TYPE_TEXT时返回
 type TextRestriction struct {
-	MinLength   int64  `json:"min_length,omitempty"`
-	MaxLength   int64  `json:"max_length,omitempty"`
-	TextPattern string `json:"text_pattern,omitempty"`
+	MinLength   *int64  `json:"min_length,omitempty"`
+	MaxLength   *int64  `json:"max_length,omitempty"`
+	TextPattern *string `json:"text_pattern,omitempty"`
 }

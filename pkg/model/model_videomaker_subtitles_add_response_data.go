@@ -10,6 +10,6 @@
 package model
 
 type VideomakerSubtitlesAddResponseData struct {
-	Code   int64  `json:"code,omitempty"`
-	TaskId string `json:"task_id,omitempty"`
+	Code   *int64  `json:"code,omitempty"`
+	TaskId *string `json:"task_id,omitempty"`
 }

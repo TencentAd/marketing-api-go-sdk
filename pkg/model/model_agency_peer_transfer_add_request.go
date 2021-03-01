@@ -10,10 +10,10 @@
 package model
 
 type AgencyPeerTransferAddRequest struct {
-	AgencyUid      int64          `json:"agency_uid,omitempty"`
-	Amount         int64          `json:"amount,omitempty"`
-	ExternalBillNo string         `json:"external_bill_no,omitempty"`
-	Memo           string         `json:"memo,omitempty"`
-	AccountId      int64          `json:"account_id,omitempty"`
+	AgencyUid      *int64         `json:"agency_uid,omitempty"`
+	Amount         *int64         `json:"amount,omitempty"`
+	ExternalBillNo *string        `json:"external_bill_no,omitempty"`
+	Memo           *string        `json:"memo,omitempty"`
+	AccountId      *int64         `json:"account_id,omitempty"`
 	FundType       AccountTypeMap `json:"fund_type,omitempty"`
 }

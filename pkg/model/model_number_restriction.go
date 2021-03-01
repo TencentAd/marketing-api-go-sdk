@@ -11,6 +11,6 @@ package model
 
 // 数值型需满足的限制条件，仅当element_type是ELEMENT_TYPE_INTEGER时返回
 type NumberRestriction struct {
-	Min int64 `json:"min,omitempty"`
-	Max int64 `json:"max,omitempty"`
+	Min *int64 `json:"min,omitempty"`
+	Max *int64 `json:"max,omitempty"`
 }

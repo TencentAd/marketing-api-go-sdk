@@ -11,11 +11,11 @@ package model
 
 // 用户ID
 type PropertiesUserId struct {
-	HashQq        string `json:"hash_qq,omitempty"`
-	HashPhone     string `json:"hash_phone,omitempty"`
-	HashIdfa      string `json:"hash_idfa,omitempty"`
-	HashImei      string `json:"hash_imei,omitempty"`
-	HashMac       string `json:"hash_mac,omitempty"`
-	WechatOpenid  string `json:"wechat_openid,omitempty"`
-	WechatUnionid string `json:"wechat_unionid,omitempty"`
+	HashQq        *string `json:"hash_qq,omitempty"`
+	HashPhone     *string `json:"hash_phone,omitempty"`
+	HashIdfa      *string `json:"hash_idfa,omitempty"`
+	HashImei      *string `json:"hash_imei,omitempty"`
+	HashMac       *string `json:"hash_mac,omitempty"`
+	WechatOpenid  *string `json:"wechat_openid,omitempty"`
+	WechatUnionid *string `json:"wechat_unionid,omitempty"`
 }

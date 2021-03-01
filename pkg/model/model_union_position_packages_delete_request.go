@@ -10,6 +10,6 @@
 package model
 
 type UnionPositionPackagesDeleteRequest struct {
-	AccountId      int64 `json:"account_id,omitempty"`
-	UnionPackageId int64 `json:"union_package_id,omitempty"`
+	AccountId      *int64 `json:"account_id,omitempty"`
+	UnionPackageId *int64 `json:"union_package_id,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 修改广告组安卓应用渠道包 id
 type UpdateAdgroupAppAndroidChannelPackageIdItem struct {
-	AdgroupId                  int64  `json:"adgroup_id,omitempty"`
-	AppAndroidChannelPackageId string `json:"app_android_channel_package_id,omitempty"`
+	AdgroupId                  *int64  `json:"adgroup_id,omitempty"`
+	AppAndroidChannelPackageId *string `json:"app_android_channel_package_id,omitempty"`
 }

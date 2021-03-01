@@ -10,7 +10,7 @@
 package model
 
 type LocalEstimatedamountGetRequest struct {
-	AccountId    int64        `json:"account_id,omitempty"`
+	AccountId    *int64       `json:"account_id,omitempty"`
 	CityLevel    CityLevel    `json:"city_level,omitempty"`
 	PackageLevel PackageLevel `json:"package_level,omitempty"`
 }

@@ -11,9 +11,9 @@ package model
 
 // 标签
 type AdcreativeLabel struct {
-	CoordinateX    int64          `json:"coordinate_x,omitempty"`
-	CoordinateY    int64          `json:"coordinate_y,omitempty"`
+	CoordinateX    *int64         `json:"coordinate_x,omitempty"`
+	CoordinateY    *int64         `json:"coordinate_y,omitempty"`
 	Direction      LableDirection `json:"direction,omitempty"`
-	Content        string         `json:"content,omitempty"`
-	LandingPageUrl string         `json:"landing_page_url,omitempty"`
+	Content        *string        `json:"content,omitempty"`
+	LandingPageUrl *string        `json:"landing_page_url,omitempty"`
 }

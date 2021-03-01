@@ -11,19 +11,19 @@ package model
 
 // 导入的线索信息结构
 type LeadsImportInfoStruct struct {
-	OuterLeadsId             string              `json:"outer_leads_id,omitempty"`
+	OuterLeadsId             *string             `json:"outer_leads_id,omitempty"`
 	LeadsType                LeadCluesLeadsType  `json:"leads_type,omitempty"`
-	LeadsUserId              string              `json:"leads_user_id,omitempty"`
+	LeadsUserId              *string             `json:"leads_user_id,omitempty"`
 	LeadsUserType            LeadsUserType       `json:"leads_user_type,omitempty"`
-	LeadsName                string              `json:"leads_name,omitempty"`
+	LeadsName                *string             `json:"leads_name,omitempty"`
 	LeadsGender              LeadCluesGenderType `json:"leads_gender,omitempty"`
-	LeadsTel                 string              `json:"leads_tel,omitempty"`
-	LeadsQq                  int64               `json:"leads_qq,omitempty"`
-	LeadsWechat              string              `json:"leads_wechat,omitempty"`
-	LeadsEmail               string              `json:"leads_email,omitempty"`
-	LeadsArea                string              `json:"leads_area,omitempty"`
-	Bundle                   string              `json:"bundle,omitempty"`
-	ClickId                  string              `json:"click_id,omitempty"`
-	OuterLeadsConvertType    string              `json:"outer_leads_convert_type,omitempty"`
-	OuterLeadsIneffectReason string              `json:"outer_leads_ineffect_reason,omitempty"`
+	LeadsTel                 *string             `json:"leads_tel,omitempty"`
+	LeadsQq                  *int64              `json:"leads_qq,omitempty"`
+	LeadsWechat              *string             `json:"leads_wechat,omitempty"`
+	LeadsEmail               *string             `json:"leads_email,omitempty"`
+	LeadsArea                *string             `json:"leads_area,omitempty"`
+	Bundle                   *string             `json:"bundle,omitempty"`
+	ClickId                  *string             `json:"click_id,omitempty"`
+	OuterLeadsConvertType    *string             `json:"outer_leads_convert_type,omitempty"`
+	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
 }

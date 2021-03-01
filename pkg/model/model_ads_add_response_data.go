@@ -10,5 +10,5 @@
 package model
 
 type AdsAddResponseData struct {
-	AdId int64 `json:"ad_id,omitempty"`
+	AdId *int64 `json:"ad_id,omitempty"`
 }

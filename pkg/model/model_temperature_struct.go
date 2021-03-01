@@ -11,6 +11,6 @@ package model
 
 // 温度信息结构
 type TemperatureStruct struct {
-	Min int64 `json:"min,omitempty"`
-	Max int64 `json:"max,omitempty"`
+	Min *int64 `json:"min,omitempty"`
+	Max *int64 `json:"max,omitempty"`
 }

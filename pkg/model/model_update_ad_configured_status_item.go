@@ -11,6 +11,6 @@ package model
 
 // 修改广告客户设置的状态
 type UpdateAdConfiguredStatusItem struct {
-	AdId             int64    `json:"ad_id,omitempty"`
+	AdId             *int64   `json:"ad_id,omitempty"`
 	ConfiguredStatus AdStatus `json:"configured_status,omitempty"`
 }

@@ -11,9 +11,9 @@ package model
 
 // 运营人员结构
 type AdvertiserOperatorStruct struct {
-	OperatorId      int64  `json:"operator_id,omitempty"`
-	OperatorName    string `json:"operator_name,omitempty"`
-	Qq              int64  `json:"qq,omitempty"`
-	WechatAccountId string `json:"wechat_account_id,omitempty"`
-	IsMaster        *bool  `json:"is_master,omitempty"`
+	OperatorId      *int64  `json:"operator_id,omitempty"`
+	OperatorName    *string `json:"operator_name,omitempty"`
+	Qq              *int64  `json:"qq,omitempty"`
+	WechatAccountId *string `json:"wechat_account_id,omitempty"`
+	IsMaster        *bool   `json:"is_master,omitempty"`
 }

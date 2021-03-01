@@ -10,8 +10,8 @@
 package model
 
 type TargetingsAddRequest struct {
-	TargetingName string                 `json:"targeting_name,omitempty"`
-	Description   string                 `json:"description,omitempty"`
-	AccountId     int64                  `json:"account_id,omitempty"`
+	TargetingName *string                `json:"targeting_name,omitempty"`
+	Description   *string                `json:"description,omitempty"`
+	AccountId     *int64                 `json:"account_id,omitempty"`
 	Targeting     *WriteTargetingSetting `json:"targeting,omitempty"`
 }

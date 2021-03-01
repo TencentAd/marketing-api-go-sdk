@@ -10,8 +10,8 @@
 package model
 
 type ProductCatalogsAddRequest struct {
-	AccountId        int64           `json:"account_id,omitempty"`
-	CatalogName      string          `json:"catalog_name,omitempty"`
+	AccountId        *int64          `json:"account_id,omitempty"`
+	CatalogName      *string         `json:"catalog_name,omitempty"`
 	CatalogScaleType CatalogScale    `json:"catalog_scale_type,omitempty"`
 	CatalogType      CatalogType     `json:"catalog_type,omitempty"`
 	IndustryType     CatalogIndustry `json:"industry_type,omitempty"`

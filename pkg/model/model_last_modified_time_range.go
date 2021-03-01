@@ -11,6 +11,6 @@ package model
 
 // 广告组信息最后更新时间范围，一次最多允许获取7天的数据，最远可获取2018.01.01的数据
 type LastModifiedTimeRange struct {
-	BeginTime int64 `json:"begin_time,omitempty"`
-	EndTime   int64 `json:"end_time,omitempty"`
+	BeginTime *int64 `json:"begin_time,omitempty"`
+	EndTime   *int64 `json:"end_time,omitempty"`
 }

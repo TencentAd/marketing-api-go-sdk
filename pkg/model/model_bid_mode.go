@@ -9,7 +9,7 @@
 
 package model
 
-// BidMode : 出价方式
+// BidMode : 出价方式，<br/>        优化目标查询接口需传输出价方式才可获取是否支持“点击”优化目标，<br/>        “点击”优化目标仅支持BID_MODE_OCPM出价方式。
 type BidMode string
 
 // List of BidMode

@@ -10,6 +10,6 @@
 package model
 
 type OuterCluesUpdateRequest struct {
-	OperatorAccountId         int64                         `json:"operator_account_id,omitempty"`
+	OperatorAccountId         *int64                        `json:"operator_account_id,omitempty"`
 	LeadsConversionStatusList *[]OuterLeadsStatusInfoStruct `json:"leads_conversion_status_list,omitempty"`
 }

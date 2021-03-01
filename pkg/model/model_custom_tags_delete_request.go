@@ -10,6 +10,6 @@
 package model
 
 type CustomTagsDeleteRequest struct {
-	AccountId int64 `json:"account_id,omitempty"`
-	TagId     int64 `json:"tag_id,omitempty"`
+	AccountId *int64 `json:"account_id,omitempty"`
+	TagId     *int64 `json:"tag_id,omitempty"`
 }

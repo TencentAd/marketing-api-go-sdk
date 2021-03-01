@@ -11,7 +11,7 @@ package model
 
 // 推广计划信息
 type CampaignTargeting struct {
-	CampaignId   int64        `json:"campaign_id,omitempty"`
+	CampaignId   *int64       `json:"campaign_id,omitempty"`
 	CampaignType CampaignType `json:"campaign_type,omitempty"`
-	DailyBudget  int64        `json:"daily_budget,omitempty"`
+	DailyBudget  *int64       `json:"daily_budget,omitempty"`
 }

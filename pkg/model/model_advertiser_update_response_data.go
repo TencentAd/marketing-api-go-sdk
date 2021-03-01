@@ -10,5 +10,5 @@
 package model
 
 type AdvertiserUpdateResponseData struct {
-	AccountId int64 `json:"account_id,omitempty"`
+	AccountId *int64 `json:"account_id,omitempty"`
 }

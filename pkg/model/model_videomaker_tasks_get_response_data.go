@@ -10,9 +10,9 @@
 package model
 
 type VideomakerTasksGetResponseData struct {
-	Code      int64      `json:"code,omitempty"`
-	TaskId    string     `json:"task_id,omitempty"`
+	Code      *int64     `json:"code,omitempty"`
+	TaskId    *string    `json:"task_id,omitempty"`
 	Status    Status     `json:"status,omitempty"`
-	VideoId   string     `json:"video_id,omitempty"`
+	VideoId   *string    `json:"video_id,omitempty"`
 	OtherData *OtherData `json:"other_data,omitempty"`
 }

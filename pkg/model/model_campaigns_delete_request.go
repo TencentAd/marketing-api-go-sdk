@@ -10,6 +10,6 @@
 package model
 
 type CampaignsDeleteRequest struct {
-	AccountId  int64 `json:"account_id,omitempty"`
-	CampaignId int64 `json:"campaign_id,omitempty"`
+	AccountId  *int64 `json:"account_id,omitempty"`
+	CampaignId *int64 `json:"campaign_id,omitempty"`
 }

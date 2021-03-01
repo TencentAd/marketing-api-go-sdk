@@ -11,7 +11,7 @@ package model
 
 // 数据指标
 type Metrics struct {
-	VideoOuterPlayIndex  float64 `json:"video_outer_play_index,omitempty"`
-	VideoOuterClickIndex float64 `json:"video_outer_click_index,omitempty"`
-	VideoOffsetIndex     float64 `json:"video_offset_index,omitempty"`
+	VideoOuterPlayIndex  *float64 `json:"video_outer_play_index,omitempty"`
+	VideoOuterClickIndex *float64 `json:"video_outer_click_index,omitempty"`
+	VideoOffsetIndex     *float64 `json:"video_offset_index,omitempty"`
 }

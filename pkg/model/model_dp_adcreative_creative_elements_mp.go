@@ -11,7 +11,7 @@ package model
 
 // 创意元素
 type DpAdcreativeCreativeElementsMp struct {
-	Title       string    `json:"title,omitempty"`
-	Description string    `json:"description,omitempty"`
+	Title       *string   `json:"title,omitempty"`
+	Description *string   `json:"description,omitempty"`
 	ImageList   *[]string `json:"image_list,omitempty"`
 }

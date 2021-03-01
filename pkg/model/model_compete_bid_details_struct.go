@@ -11,7 +11,7 @@ package model
 
 // 出价竞争力明细
 type CompeteBidDetailsStruct struct {
-	Score      int64  `json:"score,omitempty"`
-	BidAmount  int64  `json:"bid_amount,omitempty"`
-	Conclusion string `json:"conclusion,omitempty"`
+	Score      *int64  `json:"score,omitempty"`
+	BidAmount  *int64  `json:"bid_amount,omitempty"`
+	Conclusion *string `json:"conclusion,omitempty"`
 }

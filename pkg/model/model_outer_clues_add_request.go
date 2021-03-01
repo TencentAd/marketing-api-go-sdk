@@ -10,6 +10,6 @@
 package model
 
 type OuterCluesAddRequest struct {
-	AccountId     int64                    `json:"account_id,omitempty"`
+	AccountId     *int64                   `json:"account_id,omitempty"`
 	LeadsInfoList *[]LeadsImportInfoStruct `json:"leads_info_list,omitempty"`
 }

@@ -10,11 +10,11 @@
 package model
 
 type ProfilesAddRequest struct {
-	AccountId          int64              `json:"account_id,omitempty"`
+	AccountId          *int64             `json:"account_id,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
-	PromotedObjectId   string             `json:"promoted_object_id,omitempty"`
+	PromotedObjectId   *string            `json:"promoted_object_id,omitempty"`
 	ProfileType        ProfileType        `json:"profile_type,omitempty"`
-	HeadImageId        string             `json:"head_image_id,omitempty"`
-	ProfileName        string             `json:"profile_name,omitempty"`
-	Description        string             `json:"description,omitempty"`
+	HeadImageId        *string            `json:"head_image_id,omitempty"`
+	ProfileName        *string            `json:"profile_name,omitempty"`
+	Description        *string            `json:"description,omitempty"`
 }

@@ -12,6 +12,6 @@ package model
 // 频次定义
 type FrequencySpec struct {
 	Comparator        Comparator `json:"comparator,omitempty"`
-	FrequencyMinValue int64      `json:"frequency_min_value,omitempty"`
-	FrequencyMaxValue int64      `json:"frequency_max_value,omitempty"`
+	FrequencyMinValue *int64     `json:"frequency_min_value,omitempty"`
+	FrequencyMaxValue *int64     `json:"frequency_max_value,omitempty"`
 }

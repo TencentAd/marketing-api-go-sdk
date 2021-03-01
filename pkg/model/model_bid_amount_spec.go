@@ -11,5 +11,5 @@ package model
 
 // 出价修改信息
 type BidAmountSpec struct {
-	BidAmount int64 `json:"bid_amount,omitempty"`
+	BidAmount *int64 `json:"bid_amount,omitempty"`
 }

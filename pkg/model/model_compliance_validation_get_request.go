@@ -10,8 +10,8 @@
 package model
 
 type ComplianceValidationGetRequest struct {
-	AccountId int64   `json:"account_id,omitempty"`
+	AccountId *int64  `json:"account_id,omitempty"`
 	SiteSet   SiteSet `json:"site_set,omitempty"`
-	ImageId   string  `json:"image_id,omitempty"`
-	Text      string  `json:"text,omitempty"`
+	ImageId   *string `json:"image_id,omitempty"`
+	Text      *string `json:"text,omitempty"`
 }

@@ -44,8 +44,8 @@ func (e *DynamicAdTemplatesGetExample) Init() {
 	e.DynamicAdTemplateHeight = int64(720)
 	e.DynamicAdTemplatesGetOpts = &api.DynamicAdTemplatesGetOpts{
 
-		DynamicAdTemplateType:          optional.NewString(DYNAMIC_AD_IMAGE_TEMPLATE),
-		DynamicAdTemplateOwnershipType: optional.NewString(PRIVATE_TEMPLATE),
+		DynamicAdTemplateType:          optional.NewString("DYNAMIC_AD_IMAGE_TEMPLATE"),
+		DynamicAdTemplateOwnershipType: optional.NewString("PRIVATE_TEMPLATE"),
 
 		Fields: optional.NewInterface([]string{"dynamic_ad_template_id", "dynamic_ad_template_name", "dynamic_ad_template_type", "product_item_display_quantity", "dynamic_ad_template_width", "dynamic_ad_template_height", "image_url", "video_url"}),
 	}

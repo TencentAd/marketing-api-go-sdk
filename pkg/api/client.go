@@ -50,6 +50,8 @@ type APIClient struct {
 
 	AdDiagnosisApi *AdDiagnosisApiService
 
+	AdLabelApi *AdLabelApiService
+
 	AdcreativePreviewsApi *AdcreativePreviewsApiService
 
 	AdcreativeTemplateDetailApi *AdcreativeTemplateDetailApiService
@@ -81,6 +83,8 @@ type APIClient struct {
 	AndroidUnionChannelPackagesApi *AndroidUnionChannelPackagesApiService
 
 	AssetPermissionsApi *AssetPermissionsApiService
+
+	AssetPrePermissionsApi *AssetPrePermissionsApiService
 
 	AsyncReportFilesApi *AsyncReportFilesApiService
 
@@ -145,6 +149,8 @@ type APIClient struct {
 	DailyReportsApi *DailyReportsApiService
 
 	DiagnosisApi *DiagnosisApiService
+
+	DplabelAdLabelApi *DplabelAdLabelApiService
 
 	DynamicAdImagesApi *DynamicAdImagesApiService
 
@@ -320,6 +326,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 
 	// API Services
 	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
+	c.AdLabelApi = (*AdLabelApiService)(&c.common)
 	c.AdcreativePreviewsApi = (*AdcreativePreviewsApiService)(&c.common)
 	c.AdcreativeTemplateDetailApi = (*AdcreativeTemplateDetailApiService)(&c.common)
 	c.AdcreativeTemplatePreviewApi = (*AdcreativeTemplatePreviewApiService)(&c.common)
@@ -336,6 +343,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AndroidChannelPackagesApi = (*AndroidChannelPackagesApiService)(&c.common)
 	c.AndroidUnionChannelPackagesApi = (*AndroidUnionChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
+	c.AssetPrePermissionsApi = (*AssetPrePermissionsApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
 	c.AsyncTaskFilesApi = (*AsyncTaskFilesApiService)(&c.common)
@@ -368,6 +376,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DailyCostApi = (*DailyCostApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
+	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
 	c.DynamicAdTemplatesApi = (*DynamicAdTemplatesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)

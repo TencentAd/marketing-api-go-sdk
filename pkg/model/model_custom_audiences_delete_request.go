@@ -10,6 +10,6 @@
 package model
 
 type CustomAudiencesDeleteRequest struct {
-	AccountId  int64 `json:"account_id,omitempty"`
-	AudienceId int64 `json:"audience_id,omitempty"`
+	AccountId  *int64 `json:"account_id,omitempty"`
+	AudienceId *int64 `json:"audience_id,omitempty"`
 }

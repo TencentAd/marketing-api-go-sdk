@@ -11,6 +11,6 @@ package model
 
 // salt返回结构
 type Salt struct {
-	SaltId    string `json:"salt_id,omitempty"`
-	SaltValue string `json:"salt_value,omitempty"`
+	SaltId    *string `json:"salt_id,omitempty"`
+	SaltValue *string `json:"salt_value,omitempty"`
 }

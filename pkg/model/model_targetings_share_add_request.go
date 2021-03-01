@@ -10,8 +10,8 @@
 package model
 
 type TargetingsShareAddRequest struct {
-	TargetingId      int64              `json:"targeting_id,omitempty"`
-	ShareToAccountId int64              `json:"share_to_account_id,omitempty"`
+	TargetingId      *int64             `json:"targeting_id,omitempty"`
+	ShareToAccountId *int64             `json:"share_to_account_id,omitempty"`
 	ShareType        TargetingShareType `json:"share_type,omitempty"`
-	AccountId        int64              `json:"account_id,omitempty"`
+	AccountId        *int64             `json:"account_id,omitempty"`
 }

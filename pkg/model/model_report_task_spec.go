@@ -11,6 +11,6 @@ package model
 
 // 报表任务所需条件
 type ReportTaskSpec struct {
-	Level string `json:"level,omitempty"`
-	Date  string `json:"date,omitempty"`
+	Level *string `json:"level,omitempty"`
+	Date  *string `json:"date,omitempty"`
 }

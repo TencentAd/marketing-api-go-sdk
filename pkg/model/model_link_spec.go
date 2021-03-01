@@ -11,6 +11,6 @@ package model
 
 // 外链信息
 type LinkSpec struct {
-	Title string `json:"title,omitempty"`
-	Url   string `json:"url,omitempty"`
+	Title *string `json:"title,omitempty"`
+	Url   *string `json:"url,omitempty"`
 }

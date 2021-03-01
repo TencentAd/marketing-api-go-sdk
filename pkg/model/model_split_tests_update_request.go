@@ -10,9 +10,9 @@
 package model
 
 type SplitTestsUpdateRequest struct {
-	AccountId       int64           `json:"account_id,omitempty"`
-	SplitTestId     int64           `json:"split_test_id,omitempty"`
+	AccountId       *int64          `json:"account_id,omitempty"`
+	SplitTestId     *int64          `json:"split_test_id,omitempty"`
 	SplitTestStatus SplitTestStatus `json:"split_test_status,omitempty"`
-	SplitTestName   string          `json:"split_test_name,omitempty"`
+	SplitTestName   *string         `json:"split_test_name,omitempty"`
 	AdgroupIdList   *[]int64        `json:"adgroup_id_list,omitempty"`
 }

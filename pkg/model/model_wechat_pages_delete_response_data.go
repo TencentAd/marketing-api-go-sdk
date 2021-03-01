@@ -10,5 +10,5 @@
 package model
 
 type WechatPagesDeleteResponseData struct {
-	PageId int64 `json:"page_id,omitempty"`
+	PageId *int64 `json:"page_id,omitempty"`
 }

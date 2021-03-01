@@ -11,8 +11,8 @@ package model
 
 type OauthTokenResponseData struct {
 	AuthorizerInfo        *AuthorizerStruct `json:"authorizer_info,omitempty"`
-	AccessToken           string            `json:"access_token,omitempty"`
-	RefreshToken          string            `json:"refresh_token,omitempty"`
-	AccessTokenExpiresIn  int64             `json:"access_token_expires_in,omitempty"`
-	RefreshTokenExpiresIn int64             `json:"refresh_token_expires_in,omitempty"`
+	AccessToken           *string           `json:"access_token,omitempty"`
+	RefreshToken          *string           `json:"refresh_token,omitempty"`
+	AccessTokenExpiresIn  *int64            `json:"access_token_expires_in,omitempty"`
+	RefreshTokenExpiresIn *int64            `json:"refresh_token_expires_in,omitempty"`
 }

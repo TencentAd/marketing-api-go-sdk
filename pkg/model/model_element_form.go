@@ -11,5 +11,5 @@ package model
 
 // 表单组件元素
 type ElementForm struct {
-	Title string `json:"title,omitempty"`
+	Title *string `json:"title,omitempty"`
 }

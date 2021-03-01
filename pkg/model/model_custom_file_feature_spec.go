@@ -13,5 +13,5 @@ package model
 type CustomFileFeatureSpec struct {
 	DataType           FeatureValueDataType `json:"data_type,omitempty"`
 	IsMultiValued      *bool                `json:"is_multi_valued,omitempty"`
-	PossibleValuesSize int64                `json:"possible_values_size,omitempty"`
+	PossibleValuesSize *int64               `json:"possible_values_size,omitempty"`
 }

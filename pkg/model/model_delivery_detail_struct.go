@@ -11,6 +11,6 @@ package model
 
 // 快递详情元素
 type DeliveryDetailStruct struct {
-	DeliveryUpdateTime string `json:"delivery_update_time,omitempty"`
-	DeliveryDetail     string `json:"delivery_detail,omitempty"`
+	DeliveryUpdateTime *string `json:"delivery_update_time,omitempty"`
+	DeliveryDetail     *string `json:"delivery_detail,omitempty"`
 }

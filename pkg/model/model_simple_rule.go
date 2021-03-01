@@ -11,6 +11,6 @@ package model
 
 // 组合人群简单规则
 type SimpleRule struct {
-	AudienceId int64 `json:"audience_id,omitempty"`
-	TimeWindow int64 `json:"time_window,omitempty"`
+	AudienceId *int64 `json:"audience_id,omitempty"`
+	TimeWindow *int64 `json:"time_window,omitempty"`
 }

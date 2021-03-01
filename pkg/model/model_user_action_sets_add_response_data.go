@@ -10,5 +10,5 @@
 package model
 
 type UserActionSetsAddResponseData struct {
-	UserActionSetId int64 `json:"user_action_set_id,omitempty"`
+	UserActionSetId *int64 `json:"user_action_set_id,omitempty"`
 }

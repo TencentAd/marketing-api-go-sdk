@@ -10,6 +10,6 @@
 package model
 
 type CreativetoolsTextGetResponseData struct {
-	ReturnNumber int64             `json:"return_number,omitempty"`
+	ReturnNumber *int64            `json:"return_number,omitempty"`
 	ReturnTexts  *[]TextListStruct `json:"return_texts,omitempty"`
 }

@@ -11,6 +11,6 @@ package model
 
 // 微信账户更多信息
 type WechatFundSpec struct {
-	UsableAmount int64 `json:"usable_amount,omitempty"`
-	LockedAmount int64 `json:"locked_amount,omitempty"`
+	UsableAmount *int64 `json:"usable_amount,omitempty"`
+	LockedAmount *int64 `json:"locked_amount,omitempty"`
 }

@@ -11,5 +11,5 @@ package model
 
 // 删除推广计划
 type DeleteCampaignItem struct {
-	CampaignId int64 `json:"campaign_id,omitempty"`
+	CampaignId *int64 `json:"campaign_id,omitempty"`
 }

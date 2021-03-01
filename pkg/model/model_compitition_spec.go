@@ -11,7 +11,7 @@ package model
 
 // 竞争激烈度明细数据
 type CompititionSpec struct {
-	Date             string `json:"date,omitempty"`
-	Hour             int64  `json:"hour,omitempty"`
-	CompititionScore int64  `json:"compitition_score,omitempty"`
+	Date             *string `json:"date,omitempty"`
+	Hour             *int64  `json:"hour,omitempty"`
+	CompititionScore *int64  `json:"compitition_score,omitempty"`
 }

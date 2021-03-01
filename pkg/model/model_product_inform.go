@@ -12,7 +12,7 @@ package model
 // 商品信息
 type ProductInform struct {
 	ContentType      ActionProductInformType `json:"content_type,omitempty"`
-	ProductCatalogId string                  `json:"product_catalog_id,omitempty"`
+	ProductCatalogId *string                 `json:"product_catalog_id,omitempty"`
 	ProductId        *[]string               `json:"product_id,omitempty"`
 	CategoryPath     *[]string               `json:"category_path,omitempty"`
 }

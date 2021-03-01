@@ -10,14 +10,14 @@
 package model
 
 type WechatAgencyGetResponseData struct {
-	AccountId          int64                     `json:"account_id,omitempty"`
-	WechatAccountId    string                    `json:"wechat_account_id,omitempty"`
-	WechatAccountName  string                    `json:"wechat_account_name,omitempty"`
-	CorporationName    string                    `json:"corporation_name,omitempty"`
-	AdminName          string                    `json:"admin_name,omitempty"`
-	AdminPhoneNumber   string                    `json:"admin_phone_number,omitempty"`
-	AdminWechatId      string                    `json:"admin_wechat_id,omitempty"`
-	CertificationImage string                    `json:"certification_image,omitempty"`
-	CorporationLicence string                    `json:"corporation_licence,omitempty"`
+	AccountId          *int64                    `json:"account_id,omitempty"`
+	WechatAccountId    *string                   `json:"wechat_account_id,omitempty"`
+	WechatAccountName  *string                   `json:"wechat_account_name,omitempty"`
+	CorporationName    *string                   `json:"corporation_name,omitempty"`
+	AdminName          *string                   `json:"admin_name,omitempty"`
+	AdminPhoneNumber   *string                   `json:"admin_phone_number,omitempty"`
+	AdminWechatId      *string                   `json:"admin_wechat_id,omitempty"`
+	CertificationImage *string                   `json:"certification_image,omitempty"`
+	CorporationLicence *string                   `json:"corporation_licence,omitempty"`
 	AdvertiserInfoSpec *AdvertiserInfoSpecStruct `json:"advertiser_info_spec,omitempty"`
 }

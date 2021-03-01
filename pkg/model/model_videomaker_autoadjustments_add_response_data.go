@@ -10,6 +10,6 @@
 package model
 
 type VideomakerAutoadjustmentsAddResponseData struct {
-	Code    int64     `json:"code,omitempty"`
+	Code    *int64    `json:"code,omitempty"`
 	TaskIds *[]string `json:"task_ids,omitempty"`
 }

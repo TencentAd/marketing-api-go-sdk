@@ -10,13 +10,13 @@
 package model
 
 type AsyncReportsAddRequest struct {
-	AccountId    int64                          `json:"account_id,omitempty"`
-	TaskName     string                         `json:"task_name,omitempty"`
+	AccountId    *int64                         `json:"account_id,omitempty"`
+	TaskName     *string                        `json:"task_name,omitempty"`
 	ReportFields *[]string                      `json:"report_fields,omitempty"`
 	Level        AsyncReportLevel               `json:"level,omitempty"`
 	Filtering    *[]AsyncReportsFilteringStruct `json:"filtering,omitempty"`
 	TimeLine     TimeLine                       `json:"time_line,omitempty"`
 	GroupBy      *[]string                      `json:"group_by,omitempty"`
 	Granularity  TimeGranularity                `json:"granularity,omitempty"`
-	Date         string                         `json:"date,omitempty"`
+	Date         *string                        `json:"date,omitempty"`
 }

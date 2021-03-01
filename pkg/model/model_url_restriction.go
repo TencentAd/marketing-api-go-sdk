@@ -11,5 +11,5 @@ package model
 
 // 链接需满足的限制条件，仅当element_type是ELEMENT_TYPE_URL时返回
 type UrlRestriction struct {
-	UrlPattern string `json:"url_pattern,omitempty"`
+	UrlPattern *string `json:"url_pattern,omitempty"`
 }

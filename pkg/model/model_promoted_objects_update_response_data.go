@@ -10,5 +10,5 @@
 package model
 
 type PromotedObjectsUpdateResponseData struct {
-	PromotedObjectId string `json:"promoted_object_id,omitempty"`
+	PromotedObjectId *string `json:"promoted_object_id,omitempty"`
 }

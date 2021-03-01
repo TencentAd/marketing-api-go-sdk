@@ -10,5 +10,5 @@
 package model
 
 type CustomDataSaltGetRequest struct {
-	AccountId int64 `json:"account_id,omitempty"`
+	AccountId *int64 `json:"account_id,omitempty"`
 }

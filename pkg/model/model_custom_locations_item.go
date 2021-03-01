@@ -11,7 +11,7 @@ package model
 
 // option_list_item
 type CustomLocationsItem struct {
-	Longitude float64 `json:"longitude,omitempty"`
-	Latitude  float64 `json:"latitude,omitempty"`
-	Radius    int64   `json:"radius,omitempty"`
+	Longitude *float64 `json:"longitude,omitempty"`
+	Latitude  *float64 `json:"latitude,omitempty"`
+	Radius    *int64   `json:"radius,omitempty"`
 }

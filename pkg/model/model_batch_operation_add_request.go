@@ -14,5 +14,5 @@ type BatchOperationAddRequest struct {
 	OperationType  BatchOperationType `json:"operation_type,omitempty"`
 	ResourceIdList *[]int64           `json:"resource_id_list,omitempty"`
 	OperationSpec  *OperationSpec     `json:"operation_spec,omitempty"`
-	AccountId      int64              `json:"account_id,omitempty"`
+	AccountId      *int64             `json:"account_id,omitempty"`
 }

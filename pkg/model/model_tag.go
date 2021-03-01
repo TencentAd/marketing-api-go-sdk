@@ -11,11 +11,11 @@ package model
 
 //
 type Tag struct {
-	TagId       int64  `json:"tag_id,omitempty"`
-	ParentTagId int64  `json:"parent_tag_id,omitempty"`
-	Name        string `json:"name,omitempty"`
-	Description string `json:"description,omitempty"`
-	TagCode     string `json:"tag_code,omitempty"`
-	UserCount   int64  `json:"user_count,omitempty"`
-	CreatedTime string `json:"created_time,omitempty"`
+	TagId       *int64  `json:"tag_id,omitempty"`
+	ParentTagId *int64  `json:"parent_tag_id,omitempty"`
+	Name        *string `json:"name,omitempty"`
+	Description *string `json:"description,omitempty"`
+	TagCode     *string `json:"tag_code,omitempty"`
+	UserCount   *int64  `json:"user_count,omitempty"`
+	CreatedTime *string `json:"created_time,omitempty"`
 }

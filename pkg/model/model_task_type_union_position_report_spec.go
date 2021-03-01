@@ -11,5 +11,5 @@ package model
 
 // 优量汇广告位报表查询条件
 type TaskTypeUnionPositionReportSpec struct {
-	Date string `json:"date,omitempty"`
+	Date *string `json:"date,omitempty"`
 }

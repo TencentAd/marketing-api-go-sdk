@@ -11,7 +11,7 @@ package model
 
 // 子推荐方式
 type SubMethod struct {
-	SubMethodId          int64  `json:"sub_method_id,omitempty"`
-	SubMethodName        string `json:"sub_method_name,omitempty"`
-	SubMethodDescription string `json:"sub_method_description,omitempty"`
+	SubMethodId          *int64  `json:"sub_method_id,omitempty"`
+	SubMethodName        *string `json:"sub_method_name,omitempty"`
+	SubMethodDescription *string `json:"sub_method_description,omitempty"`
 }

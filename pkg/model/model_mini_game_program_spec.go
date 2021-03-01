@@ -11,6 +11,6 @@ package model
 
 // 小游戏信息
 type MiniGameProgramSpec struct {
-	Title             string `json:"title,omitempty"`
-	MiniGameProgramId string `json:"mini_game_program_id,omitempty"`
+	Title             *string `json:"title,omitempty"`
+	MiniGameProgramId *string `json:"mini_game_program_id,omitempty"`
 }

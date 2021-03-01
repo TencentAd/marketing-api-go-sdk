@@ -11,9 +11,9 @@ package model
 
 // 小程序启动金更多信息
 type MiniprogramAmount struct {
-	ReceivedAmount  int64 `json:"received_amount,omitempty"`
-	UsedAmount      int64 `json:"used_amount,omitempty"`
-	LockedAmount    int64 `json:"locked_amount,omitempty"`
-	RepaidAmount    int64 `json:"repaid_amount,omitempty"`
-	NeedRepayAmount int64 `json:"need_repay_amount,omitempty"`
+	ReceivedAmount  *int64 `json:"received_amount,omitempty"`
+	UsedAmount      *int64 `json:"used_amount,omitempty"`
+	LockedAmount    *int64 `json:"locked_amount,omitempty"`
+	RepaidAmount    *int64 `json:"repaid_amount,omitempty"`
+	NeedRepayAmount *int64 `json:"need_repay_amount,omitempty"`
 }

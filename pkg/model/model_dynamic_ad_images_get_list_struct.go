@@ -11,9 +11,9 @@ package model
 
 // 返回结构
 type DynamicAdImagesGetListStruct struct {
-	ImageId             string `json:"image_id,omitempty"`
-	DynamicAdTemplateId int64  `json:"dynamic_ad_template_id,omitempty"`
-	Width               int64  `json:"width,omitempty"`
-	Height              int64  `json:"height,omitempty"`
-	SampleImageUrl      string `json:"sample_image_url,omitempty"`
+	ImageId             *string `json:"image_id,omitempty"`
+	DynamicAdTemplateId *int64  `json:"dynamic_ad_template_id,omitempty"`
+	Width               *int64  `json:"width,omitempty"`
+	Height              *int64  `json:"height,omitempty"`
+	SampleImageUrl      *string `json:"sample_image_url,omitempty"`
 }

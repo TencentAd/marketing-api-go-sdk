@@ -11,13 +11,13 @@ package model
 
 // 广告结构
 type AdgroupGetSpec struct {
-	AdgroupId         int64                    `json:"adgroup_id,omitempty"`
+	AdgroupId         *int64                   `json:"adgroup_id,omitempty"`
 	ConfiguredStatus  AdStatus                 `json:"configured_status,omitempty"`
-	AdgroupName       string                   `json:"adgroup_name,omitempty"`
-	BeginDate         string                   `json:"begin_date,omitempty"`
+	AdgroupName       *string                  `json:"adgroup_name,omitempty"`
+	BeginDate         *string                  `json:"begin_date,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`
 	CalcStatus        CalculateStatus          `json:"calc_status,omitempty"`
-	RejectMessage     string                   `json:"reject_message,omitempty"`
+	RejectMessage     *string                  `json:"reject_message,omitempty"`
 	PoiList           *[]string                `json:"poi_list,omitempty"`
 	ColdStartAudience *[]int64                 `json:"cold_start_audience,omitempty"`
 }

@@ -11,9 +11,9 @@ package model
 
 // label返回结构
 type LabelsLabel struct {
-	LabelId          int64  `json:"label_id,omitempty"`
-	AudienceId       int64  `json:"audience_id,omitempty"`
-	DisplayLabelName string `json:"display_label_name,omitempty"`
-	Description      string `json:"description,omitempty"`
-	UserCount        int64  `json:"user_count,omitempty"`
+	LabelId          *int64  `json:"label_id,omitempty"`
+	AudienceId       *int64  `json:"audience_id,omitempty"`
+	DisplayLabelName *string `json:"display_label_name,omitempty"`
+	Description      *string `json:"description,omitempty"`
+	UserCount        *int64  `json:"user_count,omitempty"`
 }

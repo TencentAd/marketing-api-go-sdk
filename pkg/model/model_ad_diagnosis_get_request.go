@@ -10,7 +10,7 @@
 package model
 
 type AdDiagnosisGetRequest struct {
-	AccountId     int64     `json:"account_id,omitempty"`
+	AccountId     *int64    `json:"account_id,omitempty"`
 	AdgroupIdList *[]int64  `json:"adgroup_id_list,omitempty"`
 	DetailFields  *[]string `json:"detail_fields,omitempty"`
 }

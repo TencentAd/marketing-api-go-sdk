@@ -10,5 +10,5 @@
 package model
 
 type AdcreativesDeleteResponseData struct {
-	AdcreativeId int64 `json:"adcreative_id,omitempty"`
+	AdcreativeId *int64 `json:"adcreative_id,omitempty"`
 }

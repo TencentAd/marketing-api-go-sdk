@@ -11,6 +11,6 @@ package model
 
 // 视频播放结束页
 type VideoEndPageSpec struct {
-	EndPageId   string           `json:"end_page_id,omitempty"`
+	EndPageId   *string          `json:"end_page_id,omitempty"`
 	EndPageType VideoEndPageType `json:"end_page_type,omitempty"`
 }

@@ -10,6 +10,6 @@
 package model
 
 type AdgroupsUpdateBidAmountRequest struct {
-	AccountId           int64                    `json:"account_id,omitempty"`
+	AccountId           *int64                   `json:"account_id,omitempty"`
 	UpdateBidAmountSpec *[]UpdateBidAmountStruct `json:"update_bid_amount_spec,omitempty"`
 }

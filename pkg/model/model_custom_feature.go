@@ -11,13 +11,13 @@ package model
 
 // custom_feature_class返回结构
 type CustomFeature struct {
-	AccountId             int64        `json:"account_id,omitempty"`
-	FeatureId             int64        `json:"feature_id,omitempty"`
-	Name                  string       `json:"name,omitempty"`
-	Description           string       `json:"description,omitempty"`
-	FeatureClassId        int64        `json:"feature_class_id,omitempty"`
+	AccountId             *int64       `json:"account_id,omitempty"`
+	FeatureId             *int64       `json:"feature_id,omitempty"`
+	Name                  *string      `json:"name,omitempty"`
+	Description           *string      `json:"description,omitempty"`
+	FeatureClassId        *int64       `json:"feature_class_id,omitempty"`
 	FeatureSpec           *FeatureSpec `json:"feature_spec,omitempty"`
 	IsSupportedTimeWindow *bool        `json:"is_supported_time_window,omitempty"`
 	TimeWindow            *[]int64     `json:"time_window,omitempty"`
-	CreatedTime           string       `json:"created_time,omitempty"`
+	CreatedTime           *string      `json:"created_time,omitempty"`
 }

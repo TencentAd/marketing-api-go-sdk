@@ -13,7 +13,7 @@ package model
 type UnsupportBillingSpec struct {
 	SiteSet       *[]string     `json:"site_set,omitempty"`
 	BillingEvent  BillingEvent  `json:"billing_event,omitempty"`
-	MinPrice      int64         `json:"min_price,omitempty"`
-	MaxPrice      int64         `json:"max_price,omitempty"`
+	MinPrice      *int64        `json:"min_price,omitempty"`
+	MaxPrice      *int64        `json:"max_price,omitempty"`
 	UnsupportType UnsupportType `json:"unsupport_type,omitempty"`
 }

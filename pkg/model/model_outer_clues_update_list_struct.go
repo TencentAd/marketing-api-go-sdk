@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type OuterCluesUpdateListStruct struct {
-	AccountId    int64  `json:"account_id,omitempty"`
-	OuterLeadsId string `json:"outer_leads_id,omitempty"`
+	AccountId    *int64  `json:"account_id,omitempty"`
+	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
 }

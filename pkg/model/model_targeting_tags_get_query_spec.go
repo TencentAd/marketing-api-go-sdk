@@ -11,9 +11,9 @@ package model
 
 // 查询定向标签的条件，当 query_mode 为 TARGETING_TAG_QUERY_MODE_VERIFY_QUERY_LIST、TARGETING_TAG_QUERY_MODE_SEARCH 和 TARGETING_TAG_QUERY_MODE_RECOMMEND 时必填
 type TargetingTagsGetQuerySpec struct {
-	Query                  string                         `json:"query,omitempty"`
+	Query                  *string                        `json:"query,omitempty"`
 	QueryList              *[]string                      `json:"query_list,omitempty"`
-	MaxResultNumber        int64                          `json:"max_result_number,omitempty"`
+	MaxResultNumber        *int64                         `json:"max_result_number,omitempty"`
 	ExcludingTargetingTags *[]string                      `json:"excluding_targeting_tags,omitempty"`
 	AdvancedRecommendType  TargetingAdvancedRecommendType `json:"advanced_recommend_type,omitempty"`
 }

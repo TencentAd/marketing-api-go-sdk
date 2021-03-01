@@ -11,8 +11,8 @@ package model
 
 // 广告组结构
 type AdgroupUpdateSpec struct {
-	AdgroupName       string                   `json:"adgroup_name,omitempty"`
-	BeginDate         string                   `json:"begin_date,omitempty"`
+	AdgroupName       *string                  `json:"adgroup_name,omitempty"`
+	BeginDate         *string                  `json:"begin_date,omitempty"`
 	ConfiguredStatus  AdStatus                 `json:"configured_status,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`
 	PoiList           *[]string                `json:"poi_list,omitempty"`

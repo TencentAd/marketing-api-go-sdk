@@ -11,7 +11,7 @@ package model
 
 // 根据创意规格一键适配
 type SmartAdjustment struct {
-	AdcreativeTemplateId int64              `json:"adcreative_template_id,omitempty"`
+	AdcreativeTemplateId *int64             `json:"adcreative_template_id,omitempty"`
 	CampaignType         CampaignType       `json:"campaign_type,omitempty"`
 	PromotedObjectType   PromotedObjectType `json:"promoted_object_type,omitempty"`
 	SiteSet              *[]string          `json:"site_set,omitempty"`

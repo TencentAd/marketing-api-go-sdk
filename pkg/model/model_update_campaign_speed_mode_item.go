@@ -11,6 +11,6 @@ package model
 
 // 修改推广计划投放速度模式
 type UpdateCampaignSpeedModeItem struct {
-	CampaignId int64     `json:"campaign_id,omitempty"`
+	CampaignId *int64    `json:"campaign_id,omitempty"`
 	SpeedMode  SpeedMode `json:"speed_mode,omitempty"`
 }

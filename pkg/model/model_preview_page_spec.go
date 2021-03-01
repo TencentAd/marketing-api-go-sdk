@@ -11,6 +11,6 @@ package model
 
 // 落地页信息
 type PreviewPageSpec struct {
-	PageId  int64  `json:"page_id,omitempty"`
-	PageUrl string `json:"page_url,omitempty"`
+	PageId  *int64  `json:"page_id,omitempty"`
+	PageUrl *string `json:"page_url,omitempty"`
 }

@@ -10,6 +10,6 @@
 package model
 
 type LocalStoresAddressParsingResultGetRequest struct {
-	AccountId        int64     `json:"account_id,omitempty"`
+	AccountId        *int64    `json:"account_id,omitempty"`
 	StoreAddressList *[]string `json:"store_address_list,omitempty"`
 }

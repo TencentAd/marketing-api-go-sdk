@@ -14,6 +14,7 @@ type AssetType string
 
 // List of AssetType
 const (
+	AssetType_NDMP                AssetType = "ASSET_TYPE_NDMP"
 	AssetType_XIJING              AssetType = "ASSET_TYPE_XIJING"
 	AssetType_CANVAS_WECHAT       AssetType = "ASSET_TYPE_CANVAS_WECHAT"
 	AssetType_CANVAS_IMAGE        AssetType = "ASSET_TYPE_CANVAS_IMAGE"

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [optional] [default to null]
 **ButtonText** | **string** |  | [optional] [default to null]
 **BottomText** | **string** |  | [optional] [default to null]
-**Label** | [**[]AdcreativeLabel**](adcreative_label.md) |  | [optional] [default to null]
+**Label** | [**[]CreativeLabel**](creative_label.md) |  | [optional] [default to null]
 **ProductTags** | **[]string** |  | [optional] [default to null]
 **LogoDescription** | **string** |  | [optional] [default to null]
 **Logo** | **string** |  | [optional] [default to null]

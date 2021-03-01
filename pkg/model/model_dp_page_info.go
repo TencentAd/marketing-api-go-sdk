@@ -11,8 +11,8 @@ package model
 
 // 拉取创意结构
 type DpPageInfo struct {
-	Page      int64 `json:"page,omitempty"`
-	PageSize  int64 `json:"page_size,omitempty"`
-	TotalPage int64 `json:"total_page,omitempty"`
-	TotalNum  int64 `json:"total_num,omitempty"`
+	Page      *int64 `json:"page,omitempty"`
+	PageSize  *int64 `json:"page_size,omitempty"`
+	TotalPage *int64 `json:"total_page,omitempty"`
+	TotalNum  *int64 `json:"total_num,omitempty"`
 }

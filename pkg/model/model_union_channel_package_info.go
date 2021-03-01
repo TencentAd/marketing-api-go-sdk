@@ -11,9 +11,9 @@ package model
 
 // 广告渠道包任务处理信息
 type UnionChannelPackageInfo struct {
-	AndroidUnionAppId int64                  `json:"android_union_app_id,omitempty"`
-	PackageName       string                 `json:"package_name,omitempty"`
+	AndroidUnionAppId *int64                 `json:"android_union_app_id,omitempty"`
+	PackageName       *string                `json:"package_name,omitempty"`
 	Status            UnionChannelTaskStatus `json:"status,omitempty"`
-	CreatedTime       int64                  `json:"created_time,omitempty"`
-	LastModifiedTime  int64                  `json:"last_modified_time,omitempty"`
+	CreatedTime       *int64                 `json:"created_time,omitempty"`
+	LastModifiedTime  *int64                 `json:"last_modified_time,omitempty"`
 }

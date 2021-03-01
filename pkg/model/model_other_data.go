@@ -11,6 +11,6 @@ package model
 
 // 其他相关数据
 type OtherData struct {
-	SubtitleFile string `json:"subtitle_file,omitempty"`
-	AudioFile    string `json:"audio_file,omitempty"`
+	SubtitleFile *string `json:"subtitle_file,omitempty"`
+	AudioFile    *string `json:"audio_file,omitempty"`
 }

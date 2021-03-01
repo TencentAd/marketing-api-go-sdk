@@ -13,7 +13,7 @@ package model
 type SizeAdjustment struct {
 	TargetSize           SizeType                 `json:"target_size,omitempty"`
 	SizeAdjustmentMethod SizeAdjustmentMethodEnum `json:"size_adjustment_method,omitempty"`
-	Color                string                   `json:"color,omitempty"`
-	BgImageId1           string                   `json:"bg_image_id1,omitempty"`
-	BgImageId2           string                   `json:"bg_image_id2,omitempty"`
+	Color                *string                  `json:"color,omitempty"`
+	BgImageId1           *string                  `json:"bg_image_id1,omitempty"`
+	BgImageId2           *string                  `json:"bg_image_id2,omitempty"`
 }

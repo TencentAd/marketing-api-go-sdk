@@ -11,10 +11,10 @@ package model
 
 // 返回结构
 type UnionPositionPackagesGetListStruct struct {
-	UnionPackageId      int64            `json:"union_package_id,omitempty"`
-	UnionPackageName    string           `json:"union_package_name,omitempty"`
+	UnionPackageId      *int64           `json:"union_package_id,omitempty"`
+	UnionPackageName    *string          `json:"union_package_name,omitempty"`
 	UnionPackageType    UnionPackageType `json:"union_package_type,omitempty"`
 	UnionPositionIdList *[]int64         `json:"union_position_id_list,omitempty"`
-	CreatedTime         int64            `json:"created_time,omitempty"`
-	LastModifiedTime    int64            `json:"last_modified_time,omitempty"`
+	CreatedTime         *int64           `json:"created_time,omitempty"`
+	LastModifiedTime    *int64           `json:"last_modified_time,omitempty"`
 }

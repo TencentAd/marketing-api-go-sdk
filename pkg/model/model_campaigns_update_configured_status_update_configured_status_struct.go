@@ -11,6 +11,6 @@ package model
 
 // 更新客户设置的状态条件
 type CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct struct {
-	CampaignId       int64    `json:"campaign_id,omitempty"`
+	CampaignId       *int64   `json:"campaign_id,omitempty"`
 	ConfiguredStatus AdStatus `json:"configured_status,omitempty"`
 }

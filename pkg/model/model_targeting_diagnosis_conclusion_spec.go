@@ -11,10 +11,10 @@ package model
 
 // 定向维度的曝光评估结果
 type TargetingDiagnosisConclusionSpec struct {
-	TargetingDiagnosisScore  int64                   `json:"targeting_diagnosis_score,omitempty"`
-	ContractOccupiedScore    int64                   `json:"contract_occupied_score,omitempty"`
+	TargetingDiagnosisScore  *int64                  `json:"targeting_diagnosis_score,omitempty"`
+	ContractOccupiedScore    *int64                  `json:"contract_occupied_score,omitempty"`
 	ContractOccupiedSpecList *[]ContractOccupiedSpec `json:"contract_occupied_spec_list,omitempty"`
-	CompititionScore         int64                   `json:"compitition_score,omitempty"`
+	CompititionScore         *int64                  `json:"compitition_score,omitempty"`
 	CompititionSpecList      *[]CompititionSpec      `json:"compitition_spec_list,omitempty"`
-	Conclusion               string                  `json:"conclusion,omitempty"`
+	Conclusion               *string                 `json:"conclusion,omitempty"`
 }

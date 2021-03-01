@@ -10,8 +10,8 @@
 package model
 
 type BatchAsyncRequestsAddRequest struct {
-	AccountId int64                      `json:"account_id,omitempty"`
-	TaskName  string                     `json:"task_name,omitempty"`
+	AccountId *int64                     `json:"account_id,omitempty"`
+	TaskName  *string                    `json:"task_name,omitempty"`
 	TaskType  TaskType                   `json:"task_type,omitempty"`
 	TaskSpec  *BatchAsyncRequestTaskSpec `json:"task_spec,omitempty"`
 }

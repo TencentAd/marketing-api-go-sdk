@@ -11,6 +11,6 @@ package model
 
 // 居住社区价格
 type ResidentialCommunityPriceStruct struct {
-	Min int64 `json:"min,omitempty"`
-	Max int64 `json:"max,omitempty"`
+	Min *int64 `json:"min,omitempty"`
+	Max *int64 `json:"max,omitempty"`
 }

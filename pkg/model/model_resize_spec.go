@@ -11,6 +11,6 @@ package model
 
 // 缩放信息
 type ResizeSpec struct {
-	Width  int64 `json:"width,omitempty"`
-	Height int64 `json:"height,omitempty"`
+	Width  *int64 `json:"width,omitempty"`
+	Height *int64 `json:"height,omitempty"`
 }

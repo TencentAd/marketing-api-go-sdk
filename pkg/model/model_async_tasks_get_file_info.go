@@ -11,6 +11,6 @@ package model
 
 // 文件返回结果
 type AsyncTasksGetFileInfo struct {
-	FileId int64  `json:"file_id,omitempty"`
-	Md5    string `json:"md5,omitempty"`
+	FileId *int64  `json:"file_id,omitempty"`
+	Md5    *string `json:"md5,omitempty"`
 }

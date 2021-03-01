@@ -11,8 +11,8 @@ package model
 
 // 更新单个广告组投放时间条件
 type UpdateDatetimeStruct struct {
-	AdgroupId  int64  `json:"adgroup_id,omitempty"`
-	BeginDate  string `json:"begin_date,omitempty"`
-	EndDate    string `json:"end_date,omitempty"`
-	TimeSeries string `json:"time_series,omitempty"`
+	AdgroupId  *int64  `json:"adgroup_id,omitempty"`
+	BeginDate  *string `json:"begin_date,omitempty"`
+	EndDate    *string `json:"end_date,omitempty"`
+	TimeSeries *string `json:"time_series,omitempty"`
 }

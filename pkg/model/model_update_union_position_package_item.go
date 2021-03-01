@@ -11,6 +11,6 @@ package model
 
 // 修改定投优量汇流量包信息
 type UpdateUnionPositionPackageItem struct {
-	AdgroupId            int64    `json:"adgroup_id,omitempty"`
+	AdgroupId            *int64   `json:"adgroup_id,omitempty"`
 	UnionPositionPackage *[]int64 `json:"union_position_package,omitempty"`
 }

@@ -26,7 +26,6 @@ type AndroidChannelPackagesGetExample struct {
 	TAds                          *ads.SDKClient
 	AccessToken                   string
 	AccountId                     int64
-	MyappAuthKey                  string
 	AndroidAppId                  int64
 	AndroidChannelPackagesGetOpts *api.AndroidChannelPackagesGetOpts
 }
@@ -38,9 +37,10 @@ func (e *AndroidChannelPackagesGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = int64(0)
-	e.MyappAuthKey = "YOUR MYAPP AUTH KEY"
 	e.AndroidAppId = int64(0)
 	e.AndroidChannelPackagesGetOpts = &api.AndroidChannelPackagesGetOpts{
+
+		MyappAuthKey: optional.NewString("YOUR MYAPP AUTH KEY"),
 
 		Fields: optional.NewInterface([]string{"android_app_id", "package_name", "channel_package_id", "version_code", "version_name", "created_time", "last_modified_time", "system_status", "audit_status"}),
 	}
@@ -50,7 +50,7 @@ func (e *AndroidChannelPackagesGetExample) RunExample() (model.AndroidChannelPac
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AndroidChannelPackages().Get(ctx, e.AccountId, e.MyappAuthKey, e.AndroidAppId, e.AndroidChannelPackagesGetOpts)
+	return tads.AndroidChannelPackages().Get(ctx, e.AccountId, e.AndroidAppId, e.AndroidChannelPackagesGetOpts)
 }
 
 func main() {

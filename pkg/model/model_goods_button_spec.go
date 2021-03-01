@@ -11,5 +11,5 @@ package model
 
 // 商品按钮
 type GoodsButtonSpec struct {
-	Title string `json:"title,omitempty"`
+	Title *string `json:"title,omitempty"`
 }

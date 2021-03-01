@@ -10,6 +10,6 @@
 package model
 
 type AdcreativesDeleteRequest struct {
-	AdcreativeId int64 `json:"adcreative_id,omitempty"`
-	AccountId    int64 `json:"account_id,omitempty"`
+	AdcreativeId *int64 `json:"adcreative_id,omitempty"`
+	AccountId    *int64 `json:"account_id,omitempty"`
 }

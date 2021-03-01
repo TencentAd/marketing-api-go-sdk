@@ -10,5 +10,5 @@
 package model
 
 type CustomTagFilesAddResponseData struct {
-	CustomTagFileId int64 `json:"custom_tag_file_id,omitempty"`
+	CustomTagFileId *int64 `json:"custom_tag_file_id,omitempty"`
 }

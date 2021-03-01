@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
 **FeedsVideoCommentSwitch** | **bool** |  | [optional] [default to null]
 **UnionMarketSwitch** | **bool** |  | [optional] [default to null]
+**ProfileId** | **int64** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 

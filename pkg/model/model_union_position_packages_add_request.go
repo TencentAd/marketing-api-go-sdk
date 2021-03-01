@@ -10,10 +10,10 @@
 package model
 
 type UnionPositionPackagesAddRequest struct {
-	AccountId           int64              `json:"account_id,omitempty"`
-	UnionPackageName    string             `json:"union_package_name,omitempty"`
+	AccountId           *int64             `json:"account_id,omitempty"`
+	UnionPackageName    *string            `json:"union_package_name,omitempty"`
 	PromotedObjectType  PromotedObjectType `json:"promoted_object_type,omitempty"`
-	PromotedObjectId    string             `json:"promoted_object_id,omitempty"`
+	PromotedObjectId    *string            `json:"promoted_object_id,omitempty"`
 	UnionPackageType    UnionPackageType   `json:"union_package_type,omitempty"`
 	UnionPositionIdList *[]int64           `json:"union_position_id_list,omitempty"`
 }

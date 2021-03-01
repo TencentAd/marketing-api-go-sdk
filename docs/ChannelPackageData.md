@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AndroidAppId** | **int64** |  | [optional] [default to null]
 **PackageName** | **string** |  | [optional] [default to null]
+**PackageDownloadUrl** | **string** |  | [optional] [default to null]
 **ChannelPackageId** | **string** |  | [optional] [default to null]
 **VersionCode** | **int64** |  | [optional] [default to null]
 **VersionName** | **string** |  | [optional] [default to null]

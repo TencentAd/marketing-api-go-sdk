@@ -10,5 +10,5 @@
 package model
 
 type AdcreativeTemplatePreviewGetResponseData struct {
-	PreviewUrl string `json:"preview_url,omitempty"`
+	PreviewUrl *string `json:"preview_url,omitempty"`
 }

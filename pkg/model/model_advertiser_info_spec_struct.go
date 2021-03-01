@@ -11,7 +11,7 @@ package model
 
 // 关联的子客信息
 type AdvertiserInfoSpecStruct struct {
-	StatusPreAuthorizationNumber     int64 `json:"status_pre_authorization_number,omitempty"`
-	StatusConfirmAuthorizationNumber int64 `json:"status_confirm_authorization_number,omitempty"`
-	StatusRequestCancelationNumber   int64 `json:"status_request_cancelation_number,omitempty"`
+	StatusPreAuthorizationNumber     *int64 `json:"status_pre_authorization_number,omitempty"`
+	StatusConfirmAuthorizationNumber *int64 `json:"status_confirm_authorization_number,omitempty"`
+	StatusRequestCancelationNumber   *int64 `json:"status_request_cancelation_number,omitempty"`
 }

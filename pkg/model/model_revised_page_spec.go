@@ -11,6 +11,6 @@ package model
 
 // 修改后的落地页，填写要求同page_spec，当且仅当 online_enabled = true 时，此字段允许写入
 type RevisedPageSpec struct {
-	PageId  int64  `json:"page_id,omitempty"`
-	PageUrl string `json:"page_url,omitempty"`
+	PageId  *int64  `json:"page_id,omitempty"`
+	PageUrl *string `json:"page_url,omitempty"`
 }

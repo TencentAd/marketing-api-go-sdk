@@ -11,7 +11,7 @@ package model
 
 // 创建应用宝渠道包接口任务所需条件
 type TaskTypeCreateAndroidChannelPackageSpec struct {
-	MyappAuthKey              string                             `json:"myapp_auth_key,omitempty"`
-	AndroidAppId              int64                              `json:"android_app_id,omitempty"`
+	MyappAuthKey              *string                            `json:"myapp_auth_key,omitempty"`
+	AndroidAppId              *int64                             `json:"android_app_id,omitempty"`
 	AndroidChannelPackageSpec *[]CreateAndroidChannelPackageSpec `json:"android_channel_package_spec,omitempty"`
 }

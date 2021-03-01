@@ -11,6 +11,6 @@ package model
 
 // 修改定向包
 type UpdateTargetingIdItem struct {
-	AdgroupId   int64 `json:"adgroup_id,omitempty"`
-	TargetingId int64 `json:"targeting_id,omitempty"`
+	AdgroupId   *int64 `json:"adgroup_id,omitempty"`
+	TargetingId *int64 `json:"targeting_id,omitempty"`
 }

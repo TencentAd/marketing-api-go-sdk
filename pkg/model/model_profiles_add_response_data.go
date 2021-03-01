@@ -10,5 +10,5 @@
 package model
 
 type ProfilesAddResponseData struct {
-	ProfileId int64 `json:"profile_id,omitempty"`
+	ProfileId *int64 `json:"profile_id,omitempty"`
 }

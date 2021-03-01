@@ -10,5 +10,5 @@
 package model
 
 type CustomAudienceEstimationsGetResponseData struct {
-	UserCount int64 `json:"user_count,omitempty"`
+	UserCount *int64 `json:"user_count,omitempty"`
 }

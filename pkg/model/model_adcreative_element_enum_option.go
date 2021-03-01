@@ -11,6 +11,6 @@ package model
 
 // 创意元素枚举可选值结构体
 type AdcreativeElementEnumOption struct {
-	Value       string `json:"value,omitempty"`
-	Description string `json:"description,omitempty"`
+	Value       *string `json:"value,omitempty"`
+	Description *string `json:"description,omitempty"`
 }

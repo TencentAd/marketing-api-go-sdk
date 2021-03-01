@@ -10,5 +10,5 @@
 package model
 
 type ShopAddResponseData struct {
-	AdgroupId int64 `json:"adgroup_id,omitempty"`
+	AdgroupId *int64 `json:"adgroup_id,omitempty"`
 }

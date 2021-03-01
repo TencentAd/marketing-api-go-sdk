@@ -11,5 +11,5 @@ package model
 
 // webview组件元素
 type ElementWebview struct {
-	Url string `json:"url,omitempty"`
+	Url *string `json:"url,omitempty"`
 }

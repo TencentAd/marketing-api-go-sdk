@@ -12,5 +12,5 @@ package model
 // 资产权限结构
 type AssetPermissionSpecStruct struct {
 	AssetPermissionGrantType AssetPermissionGrantType `json:"asset_permission_grant_type,omitempty"`
-	AssetId                  int64                    `json:"asset_id,omitempty"`
+	AssetId                  *int64                   `json:"asset_id,omitempty"`
 }
