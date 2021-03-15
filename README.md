@@ -24,6 +24,9 @@ go get github.com/tencentad/marketing-api-go-sdk
 
 ## 如何使用
 SDK数组参数调用的方法名与API接口一一对应，如campaigns/get接口就对应tads.Campaigns().Get()方法
+
+注意:model中的所有基本数据类型均为指针类型, 例如：*string, *bool, *int64, *float64
+
 ### 获取Access Token
 ###### 注：本示例适用于授权时通过Authorization Code获取Access Token和Refresh Token，如需更新Access Token请参考 ./examples/Authentication/RefreshAccessToken.go 示例
 ```go
@@ -107,10 +110,12 @@ func main() {
 	})
 	// your account id
 	accountId := int64(0)
+    field := "promoted_object_type"
+    operator := "EQUALS"
 	campaignsGetOpts := &api.CampaignsGetOpts{
 		Filtering: optional.NewInterface([]model.FilteringStruct{model.FilteringStruct{
-			Field:"promoted_object_type",
-			Operator:"EQUALS",
+			Field:&field,
+			Operator:&operator,
 			Values:[]string{"PROMOTED_OBJECT_TYPE_APP_IOS"},
 		}}),
 	}

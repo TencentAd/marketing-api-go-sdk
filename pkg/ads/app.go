@@ -509,6 +509,10 @@ func (c *SDKClient) WechatPages() *api.WechatPagesApiService {
 	return c.Client.WechatPagesApi
 }
 
+func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
+	return c.Client.WechatPagesGrantinfoApi
+}
+
 func (c *SDKClient) WechatQualifications() *api.WechatQualificationsApiService {
 	return c.Client.WechatQualificationsApi
 }

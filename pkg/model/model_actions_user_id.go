@@ -15,6 +15,7 @@ type ActionsUserId struct {
 	HashIdfa      *string `json:"hash_idfa,omitempty"`
 	GdtOpenid     *string `json:"gdt_openid,omitempty"`
 	HashPhone     *string `json:"hash_phone,omitempty"`
+	Sha256Phone   *string `json:"sha256_phone,omitempty"`
 	Qaid          *string `json:"qaid,omitempty"`
 	HashAndroidId *string `json:"hash_android_id,omitempty"`
 	HashMac       *string `json:"hash_mac,omitempty"`

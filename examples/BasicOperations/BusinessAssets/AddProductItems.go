@@ -35,7 +35,7 @@ func (e *ProductItemsAddExample) Init() {
 	e.Data = model.ProductItemsAddRequest{
 		ProductCatalogId: int64(0),
 		AccountId:        int64(0),
-		ProductItemSpecList: &[]model.ProductItemSpec{&model.ProductItemSpec{
+		ProductItemSpecList: &[]model.ProductItemSpec{{
 			ProductOuterId: "YOUR PRODUCT ID",
 			ProductName:    "YOUR PRODUCT NAME",
 			ExpirationTime: "2021-06-08 11:46:51",

@@ -135,15 +135,23 @@ UserActionSetsApiService 获取用户行为数据源
  * @param optional nil or *UserActionSetsGetOpts - Optional Parameters:
      * @param "UserActionSetId" (optional.Int64) -
      * @param "Type_" (optional.Interface of []string) -
+     * @param "MobileAppId" (optional.Int64) -
+     * @param "WechatAppId" (optional.String) -
+     * @param "Name" (optional.String) -
+     * @param "IncludePermission" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return UserActionSetsGetResponse
 */
 
 type UserActionSetsGetOpts struct {
-	UserActionSetId optional.Int64
-	Type_           optional.Interface
-	Fields          optional.Interface
+	UserActionSetId   optional.Int64
+	Type_             optional.Interface
+	MobileAppId       optional.Int64
+	WechatAppId       optional.String
+	Name              optional.String
+	IncludePermission optional.Bool
+	Fields            optional.Interface
 }
 
 func (a *UserActionSetsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *UserActionSetsGetOpts) (UserActionSetsGetResponseData, http.Header, error) {
@@ -170,6 +178,18 @@ func (a *UserActionSetsApiService) Get(ctx context.Context, accountId int64, loc
 	}
 	if localVarOptionals != nil && localVarOptionals.Type_.IsSet() {
 		localVarQueryParams.Add("type", parameterToString(localVarOptionals.Type_.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.MobileAppId.IsSet() {
+		localVarQueryParams.Add("mobile_app_id", parameterToString(localVarOptionals.MobileAppId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatAppId.IsSet() {
+		localVarQueryParams.Add("wechat_app_id", parameterToString(localVarOptionals.WechatAppId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Name.IsSet() {
+		localVarQueryParams.Add("name", parameterToString(localVarOptionals.Name.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.IncludePermission.IsSet() {
+		localVarQueryParams.Add("include_permission", parameterToString(localVarOptionals.IncludePermission.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

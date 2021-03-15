@@ -75,5 +75,6 @@ type DynamicCreativeElementsRead struct {
 	BannerContent              *AdcreativeBannerContent           `json:"banner_content,omitempty"`
 	CardContent                *AdcreativeCardContent             `json:"card_content,omitempty"`
 	ShopImage                  *string                            `json:"shop_image,omitempty"`
+	HeadLine                   *string                            `json:"head_line,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

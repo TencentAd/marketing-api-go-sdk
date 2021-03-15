@@ -38,4 +38,5 @@ const (
 	PromotedObjectTypeWithoutJd_MINI_GAME_WECHAT           PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT"
 	PromotedObjectTypeWithoutJd_COUPON_WECHAT              PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_COUPON_WECHAT"
 	PromotedObjectTypeWithoutJd_MINI_GAME_QQ               PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_MINI_GAME_QQ"
+	PromotedObjectTypeWithoutJd_MINI_PROGRAM_WECHAT        PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT"
 )

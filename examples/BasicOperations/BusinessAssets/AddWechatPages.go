@@ -33,14 +33,14 @@ func (e *WechatPagesAddExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.WechatPagesAddRequest{
-		PageElementsSpecList: &[]model.PageElementsStruct{&model.PageElementsStruct{
+		PageElementsSpecList: &[]model.PageElementsStruct{{
 			ElementType: model.PageElementsType_GOODS,
 			ElementGoods: &model.ElementGoods{
 				GoodsButtonSpec: &model.GoodsButtonSpec{
 					Title: "YOUR AD TITLE",
 				},
 			},
-		}, &model.PageElementsStruct{
+		}, {
 			ElementType: model.PageElementsType_BUTTON,
 			ButtonSpec: &model.ElementButtonRead{
 				ServiceSpec: &model.ServiceSpec{

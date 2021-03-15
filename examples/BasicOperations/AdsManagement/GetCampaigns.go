@@ -38,7 +38,7 @@ func (e *CampaignsGetExample) Init() {
 	e.AccountId = int64(0)
 	e.CampaignsGetOpts = &api.CampaignsGetOpts{
 
-		Filtering: optional.NewInterface([]model.FilteringStruct{&model.FilteringStruct{
+		Filtering: optional.NewInterface([]model.FilteringStruct{{
 			Field:    "promoted_object_type",
 			Operator: "EQUALS",
 			Values:   &[]string{"PROMOTED_OBJECT_TYPE_APP_IOS"},

@@ -79,6 +79,7 @@ Optional parameters are passed through a pointer to a WechatPagesApiWechatPagesG
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
+ **ownerUid** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

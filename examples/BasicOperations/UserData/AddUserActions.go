@@ -34,7 +34,7 @@ func (e *UserActionsAddExample) Init() {
 	})
 	e.Data = model.UserActionsAddRequest{
 		AccountId: int64(0),
-		Actions: &[]model.UserAction{&model.UserAction{
+		Actions: &[]model.UserAction{{
 			ActionTime: int64(1591616815),
 			UserId: &model.ActionsUserId{
 				HashImei: "YOUR USER IMEI",

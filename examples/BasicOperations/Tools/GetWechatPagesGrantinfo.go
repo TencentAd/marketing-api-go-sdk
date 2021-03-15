@@ -14,7 +14,6 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
@@ -22,41 +21,32 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type AdgroupsGetExample struct {
-	TAds            *ads.SDKClient
-	AccessToken     string
-	AccountId       int64
-	AdgroupsGetOpts *api.AdgroupsGetOpts
+type WechatPagesGrantinfoGetExample struct {
+	TAds                        *ads.SDKClient
+	AccessToken                 string
+	AccountId                   int64
+	WechatPagesGrantinfoGetOpts *api.WechatPagesGrantinfoGetOpts
 }
 
-func (e *AdgroupsGetExample) Init() {
+func (e *WechatPagesGrantinfoGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = int64(0)
-	e.AdgroupsGetOpts = &api.AdgroupsGetOpts{
-
-		Filtering: optional.NewInterface([]model.FilteringStruct{{
-			Field:    "promoted_object_type",
-			Operator: "EQUALS",
-			Values:   &[]string{"PROMOTED_OBJECT_TYPE_APP_IOS"},
-		}}),
-
-		Fields: optional.NewInterface([]string{"adgroup_id", "campaign_id", "adgroup_name"}),
-	}
+	e.AccountId = 789
+	e.WechatPagesGrantinfoGetOpts = &api.WechatPagesGrantinfoGetOpts{}
 }
 
-func (e *AdgroupsGetExample) RunExample() (model.AdgroupsGetResponseData, http.Header, error) {
+func (e *WechatPagesGrantinfoGetExample) RunExample() (model.WechatPagesGrantinfoGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Adgroups().Get(ctx, e.AccountId, e.AdgroupsGetOpts)
+	return tads.WechatPagesGrantinfo().Get(ctx, e.AccountId, e.WechatPagesGrantinfoGetOpts)
 }
 
 func main() {
-	e := &AdgroupsGetExample{}
+	e := &WechatPagesGrantinfoGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

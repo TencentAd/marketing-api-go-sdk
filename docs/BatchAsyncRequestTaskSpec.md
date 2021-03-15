@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **UpdateAdgroupConfiguredStatusSpec** | [**[]UpdateAdgroupConfiguredStatusItem**](update_adgroup_configured_status_item.md) |  | [optional] [default to null]
 **UpdateAdgroupDailyBudgetSpec** | [**[]UpdateAdgroupDailyBudgetItem**](update_adgroup_daily_budget_item.md) |  | [optional] [default to null]
 **UpdateAdConfiguredStatusSpec** | [**[]UpdateAdConfiguredStatusItem**](update_ad_configured_status_item.md) |  | [optional] [default to null]
+**UpdateAdgroupAutoAcquisitionSpec** | [**[]UpdateAdgroupAutoAcquisitionItem**](update_adgroup_auto_acquisition_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

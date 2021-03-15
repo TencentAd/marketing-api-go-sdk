@@ -25,51 +25,49 @@ var (
 	_ context.Context
 )
 
-type WechatFundStatementsDetailedApiService service
+type WechatPagesGrantinfoApiService service
 
 /*
-WechatFundStatementsDetailedApiService 获取微信资金账户流水信息
+WechatPagesGrantinfoApiService 获取原生页授权方信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param tradeType
- * @param dateRange
- * @param optional nil or *WechatFundStatementsDetailedGetOpts - Optional Parameters:
-     * @param "Filtering" (optional.Interface of []FilteringStruct) -
+ * @param accountId
+ * @param optional nil or *WechatPagesGrantinfoGetOpts - Optional Parameters:
+     * @param "SearchKey" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
-@return WechatFundStatementsDetailedGetResponse
+@return WechatPagesGrantinfoGetResponse
 */
 
-type WechatFundStatementsDetailedGetOpts struct {
-	Filtering optional.Interface
+type WechatPagesGrantinfoGetOpts struct {
+	SearchKey optional.String
 	Page      optional.Int64
 	PageSize  optional.Int64
 	Fields    optional.Interface
 }
 
-func (a *WechatFundStatementsDetailedApiService) Get(ctx context.Context, tradeType string, dateRange ReportDateRange, localVarOptionals *WechatFundStatementsDetailedGetOpts) (WechatFundStatementsDetailedGetResponseData, http.Header, error) {
+func (a *WechatPagesGrantinfoApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WechatPagesGrantinfoGetOpts) (WechatPagesGrantinfoGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue WechatFundStatementsDetailedGetResponseData
-		localVarResponse    WechatFundStatementsDetailedGetResponse
+		localVarReturnValue WechatPagesGrantinfoGetResponseData
+		localVarResponse    WechatPagesGrantinfoGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/wechat_fund_statements_detailed/get"
+	localVarPath := a.client.Cfg.BasePath + "/wechat_pages_grantinfo/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("trade_type", parameterToString(tradeType, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
-	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
-		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.SearchKey.IsSet() {
+		localVarQueryParams.Add("search_key", parameterToString(localVarOptionals.SearchKey.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
@@ -138,7 +136,7 @@ func (a *WechatFundStatementsDetailedApiService) Get(ctx context.Context, tradeT
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v WechatFundStatementsDetailedGetResponse
+			var v WechatPagesGrantinfoGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

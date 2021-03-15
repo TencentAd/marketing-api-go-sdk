@@ -34,7 +34,7 @@ func (e *EstimationGetExample) Init() {
 	})
 	e.Data = model.EstimationGetRequest{
 		Targeting: &model.EstimationReadTargetingSetting{
-			Age: &[]model.AgeStruct{&model.AgeStruct{
+			Age: &[]model.AgeStruct{{
 				Max: int64(0),
 				Min: int64(0),
 			}},

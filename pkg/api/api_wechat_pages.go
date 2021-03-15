@@ -234,6 +234,7 @@ WechatPagesApiService 获取微信落地页列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *WechatPagesGetOpts - Optional Parameters:
+     * @param "OwnerUid" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -243,6 +244,7 @@ WechatPagesApiService 获取微信落地页列表
 */
 
 type WechatPagesGetOpts struct {
+	OwnerUid  optional.Int64
 	Filtering optional.Interface
 	Page      optional.Int64
 	PageSize  optional.Int64
@@ -268,6 +270,9 @@ func (a *WechatPagesApiService) Get(ctx context.Context, accountId int64, localV
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.OwnerUid.IsSet() {
+		localVarQueryParams.Add("owner_uid", parameterToString(localVarOptionals.OwnerUid.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

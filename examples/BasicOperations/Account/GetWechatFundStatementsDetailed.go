@@ -26,7 +26,7 @@ type WechatFundStatementsDetailedGetExample struct {
 	TAds                                *ads.SDKClient
 	AccessToken                         string
 	TradeType                           string
-	DateRange                           model.DateRange
+	DateRange                           model.ReportDateRange
 	WechatFundStatementsDetailedGetOpts *api.WechatFundStatementsDetailedGetOpts
 }
 
@@ -37,7 +37,7 @@ func (e *WechatFundStatementsDetailedGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.TradeType = "ADVERTISER_CHARGE"
-	e.DateRange = model.DateRange{
+	e.DateRange = model.ReportDateRange{
 		StartDate: "REPORT START DATE",
 		EndDate:   "REPORT END DATE",
 	}

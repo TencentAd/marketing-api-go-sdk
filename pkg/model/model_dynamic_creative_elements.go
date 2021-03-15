@@ -49,5 +49,6 @@ type DynamicCreativeElements struct {
 	Brand                      *BrandStruct                       `json:"brand,omitempty"`
 	Caption                    *string                            `json:"caption,omitempty"`
 	ShopImage                  *string                            `json:"shop_image,omitempty"`
+	HeadLine                   *string                            `json:"head_line,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

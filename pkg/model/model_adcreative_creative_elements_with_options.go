@@ -50,5 +50,6 @@ type AdcreativeCreativeElementsWithOptions struct {
 	ZipUrl                     *string                            `json:"zip_url,omitempty"`
 	EndPage                    *AdCreativeEndPage                 `json:"end_page,omitempty"`
 	ShopImage                  *string                            `json:"shop_image,omitempty"`
+	HeadLine                   *string                            `json:"head_line,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

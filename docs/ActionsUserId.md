@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **HashIdfa** | **string** |  | [optional] [default to null]
 **GdtOpenid** | **string** |  | [optional] [default to null]
 **HashPhone** | **string** |  | [optional] [default to null]
+**Sha256Phone** | **string** |  | [optional] [default to null]
 **Qaid** | **string** |  | [optional] [default to null]
 **HashAndroidId** | **string** |  | [optional] [default to null]
 **HashMac** | **string** |  | [optional] [default to null]

@@ -36,7 +36,11 @@ func (e *CustomAudienceEstimationsGetExample) Init() {
 		AccountId: int64(0),
 		AudienceSpec: &model.EstimationAudienceSpec{
 			CombineSpec: &model.CombineSpec{
-				Include: &[]model.IncludeSimpleRule{},
+				Include: &[]model.IncludeSimpleRule{&model.object{
+					&model.SimpleRule{
+						AudienceId: int64(0),
+					},
+				}},
 			},
 		},
 		Type_: "COMBINE",
