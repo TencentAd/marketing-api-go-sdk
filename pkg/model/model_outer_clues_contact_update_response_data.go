@@ -9,7 +9,6 @@
 
 package model
 
-// 返回结构
-type OuterCluesUpdateListStruct struct {
-	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
+type OuterCluesContactUpdateResponseData struct {
+	FailLeadsList *[]OuterCluesContactUpdateListStruct `json:"fail_leads_list,omitempty"`
 }

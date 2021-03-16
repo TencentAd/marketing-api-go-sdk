@@ -37,6 +37,7 @@ type LeadCluesGetListStruct struct {
 	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
 	LeadsUserId              *string             `json:"leads_user_id,omitempty"`
 	LeadsUserType            LeadsUserType       `json:"leads_user_type,omitempty"`
+	LeadsUserWechatAppid     *string             `json:"leads_user_wechat_appid,omitempty"`
 	LeadsName                *string             `json:"leads_name,omitempty"`
 	LeadsTelephone           *string             `json:"leads_telephone,omitempty"`
 	TelephoneLocation        *string             `json:"telephone_location,omitempty"`

@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **OuterLeadsIneffectReason** | **string** |  | [optional] [default to null]
 **LeadsUserId** | **string** |  | [optional] [default to null]
 **LeadsUserType** | [***LeadsUserType**](LeadsUserType.md) |  | [optional] [default to null]
+**LeadsUserWechatAppid** | **string** |  | [optional] [default to null]
 **LeadsName** | **string** |  | [optional] [default to null]
 **LeadsTelephone** | **string** |  | [optional] [default to null]
 **TelephoneLocation** | **string** |  | [optional] [default to null]
