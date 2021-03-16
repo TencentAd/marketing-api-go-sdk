@@ -10,7 +10,7 @@
 package model
 
 // 本地门店信息
-type LocalAdsSpec struct {
+type LocalAdsSpecRead struct {
 	ShopName         *string `json:"shop_name,omitempty"`
 	Address          *string `json:"address,omitempty"`
 	Telphone         *string `json:"telphone,omitempty"`

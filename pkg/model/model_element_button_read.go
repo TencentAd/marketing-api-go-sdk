@@ -21,4 +21,5 @@ type ElementButtonRead struct {
 	CardSpec            *CardSpec            `json:"card_spec,omitempty"`
 	FollowSpec          *FollowSpec          `json:"follow_spec,omitempty"`
 	ServiceSpec         *ServiceSpec         `json:"service_spec,omitempty"`
+	WecomSpec           *WecomSpec           `json:"wecom_spec,omitempty"`
 }

@@ -10,7 +10,7 @@
 package model
 
 // 推广目标详细信息
-type PromotedObjectGetSpec struct {
+type PromotedObjectSpecRead struct {
 	JdItem               *EcInfo                       `json:"jd_item,omitempty"`
 	JdShop               *EcInfo                       `json:"jd_shop,omitempty"`
 	AppIosSpec           *PromotedObjectAppIosSpec     `json:"app_ios_spec,omitempty"`
@@ -20,5 +20,5 @@ type PromotedObjectGetSpec struct {
 	DianpingShop         *ProductTypeDianpingShop      `json:"dianping_shop,omitempty"`
 	MiniGameWechatSpec   *MiniGameWechatSpec           `json:"mini_game_wechat_spec,omitempty"`
 	QqBrowserMiniProgram *QqBrowserMiniProgram         `json:"qq_browser_mini_program,omitempty"`
-	LocalAdsSpec         *LocalAdsSpec                 `json:"local_ads_spec,omitempty"`
+	LocalAdsSpec         *LocalAdsSpecRead             `json:"local_ads_spec,omitempty"`
 }

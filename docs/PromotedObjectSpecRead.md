@@ -1,4 +1,4 @@
-# PromotedObjectGetSpec
+# PromotedObjectSpecRead
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **DianpingShop** | [***ProductTypeDianpingShop**](product_type_dianping_shop.md) |  | [optional] [default to null]
 **MiniGameWechatSpec** | [***MiniGameWechatSpec**](mini_game_wechat_spec.md) |  | [optional] [default to null]
 **QqBrowserMiniProgram** | [***QqBrowserMiniProgram**](qq_browser_mini_program.md) |  | [optional] [default to null]
-**LocalAdsSpec** | [***LocalAdsSpec**](local_ads_spec.md) |  | [optional] [default to null]
+**LocalAdsSpec** | [***LocalAdsSpecRead**](local_ads_spec_read.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
