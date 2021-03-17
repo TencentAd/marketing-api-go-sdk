@@ -20,4 +20,5 @@ const (
 	DeepConversionWorthGoal_30DAYORDERROAS        DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
 	DeepConversionWorthGoal_1DAYPURCHASEROAS      DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
 	DeepConversionWorthGoal_1DAYMONETIZATIONROAS  DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_7DAYMONETIZATIONROAS  DeepConversionWorthGoal = "GOAL_7DAY_MONETIZATION_ROAS"
 )
