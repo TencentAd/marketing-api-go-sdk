@@ -1,4 +1,4 @@
-# OuterCluesAddListStruct
+# MediaStatusType
 
 ## Properties
 Name | Type | Description | Notes

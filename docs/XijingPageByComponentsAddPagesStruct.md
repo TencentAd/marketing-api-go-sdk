@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **PageType** | [***ComponentsPageType**](ComponentsPageType.md) |  | [optional] [default to null]
 **PageName** | **string** |  | [optional] [default to null]
 **PageTitle** | **string** |  | [optional] [default to null]
+**Clipboard** | **string** |  | [optional] [default to null]
 **MobileAppId** | **string** |  | [optional] [default to null]
 **BgColor** | **string** |  | [optional] [default to null]
 **BgImageId** | **string** |  | [optional] [default to null]

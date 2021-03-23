@@ -11,6 +11,7 @@ package model
 
 // 回传信息结构
 type LeadsContactInfoStruct struct {
+	OuterLeadsId         *string             `json:"outer_leads_id,omitempty"`
 	LeadsUserType        LeadsUserType       `json:"leads_user_type,omitempty"`
 	LeadsUserWechatAppid *string             `json:"leads_user_wechat_appid,omitempty"`
 	LeadsUserId          *string             `json:"leads_user_id,omitempty"`

@@ -128,7 +128,7 @@ func (a *XijingPageApiService) Add(ctx context.Context, data XijingPageAddReques
 }
 
 /*
-XijingPageApiService 蹊径-送审落地页
+XijingPageApiService 蹊径-删除落地页
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

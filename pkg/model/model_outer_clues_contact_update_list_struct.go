@@ -11,5 +11,4 @@ package model
 
 // 返回结构
 type OuterCluesContactUpdateListStruct struct {
-	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
 }

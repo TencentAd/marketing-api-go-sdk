@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**XijingPageAdd**](XijingPageApi.md#XijingPageAdd) | **Post** /xijing_page/add | 蹊径-基于模板创建落地页
-[**XijingPageDelete**](XijingPageApi.md#XijingPageDelete) | **Post** /xijing_page/delete | 蹊径-送审落地页
+[**XijingPageDelete**](XijingPageApi.md#XijingPageDelete) | **Post** /xijing_page/delete | 蹊径-删除落地页
 [**XijingPageUpdate**](XijingPageApi.md#XijingPageUpdate) | **Post** /xijing_page/update | 蹊径-送审落地页
 
 
@@ -37,7 +37,7 @@ Name | Type | Description  | Notes
 
 # **XijingPageDelete**
 > XijingPageDeleteResponse XijingPageDelete(ctx, data)
-蹊径-送审落地页
+蹊径-删除落地页
 
 ### Required Parameters
 
