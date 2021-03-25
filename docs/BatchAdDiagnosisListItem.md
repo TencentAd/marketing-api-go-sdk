@@ -22,6 +22,13 @@ Name | Type | Description | Notes
 **LearningStatusDesc** | **string** |  | [optional] [default to null]
 **ExposureCompeteScoreDesc** | **string** |  | [optional] [default to null]
 **Detail** | [***ResponseDetailStruct**](response_detail_struct.md) |  | [optional] [default to null]
+**AutoAcquisitionStatus** | [***AutoAcquisitionStatus**](AutoAcquisitionStatus.md) |  | [optional] [default to null]
+**AutoAcquisitionStatusName** | **string** |  | [optional] [default to null]
+**AutoAcquisitionStatusDesc** | **string** |  | [optional] [default to null]
+**AutoAcquisitionBeginTime** | **string** |  | [optional] [default to null]
+**AutoAcquisitionEndTime** | **string** |  | [optional] [default to null]
+**IsPotential** | **bool** |  | [optional] [default to null]
+**PotentialDetail** | [***ResponsePotentialStruct**](response_potential_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

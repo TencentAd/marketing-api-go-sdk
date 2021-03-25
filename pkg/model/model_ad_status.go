@@ -14,12 +14,15 @@ type AdStatus string
 
 // List of AdStatus
 const (
-	AdStatus_NORMAL   AdStatus = "AD_STATUS_NORMAL"
-	AdStatus_SUSPEND  AdStatus = "AD_STATUS_SUSPEND"
-	AdStatus_WITHDRAW AdStatus = "AD_STATUS_WITHDRAW"
-	AdStatus_PENDING  AdStatus = "AD_STATUS_PENDING"
-	AdStatus_DENIED   AdStatus = "AD_STATUS_DENIED"
-	AdStatus_FROZEN   AdStatus = "AD_STATUS_FROZEN"
-	AdStatus_PREPARE  AdStatus = "AD_STATUS_PREPARE"
-	AdStatus_DELETED  AdStatus = "AD_STATUS_DELETED"
+	AdStatus_NORMAL            AdStatus = "AD_STATUS_NORMAL"
+	AdStatus_PENDING           AdStatus = "AD_STATUS_PENDING"
+	AdStatus_DENIED            AdStatus = "AD_STATUS_DENIED"
+	AdStatus_FROZEN            AdStatus = "AD_STATUS_FROZEN"
+	AdStatus_PARTIALLY_PENDING AdStatus = "AD_STATUS_PARTIALLY_PENDING"
+	AdStatus_PARTIALLY_NORMAL  AdStatus = "AD_STATUS_PARTIALLY_NORMAL"
+	AdStatus_SUSPEND           AdStatus = "AD_STATUS_SUSPEND"
+	AdStatus_INVALID           AdStatus = "AD_STATUS_INVALID"
+	AdStatus_PREPARE           AdStatus = "AD_STATUS_PREPARE"
+	AdStatus_DELETED           AdStatus = "AD_STATUS_DELETED"
+	AdStatus_WITHDRAW          AdStatus = "AD_STATUS_WITHDRAW"
 )
