@@ -11,6 +11,6 @@ package model
 
 // 推广目标信息
 type AdProduct struct {
-	ProductType   AudienceProductType `json:"product_type,omitempty"`
-	ProductRefsId *string             `json:"product_refs_id,omitempty"`
+	PromotedObjectType AudienceProductType `json:"promoted_object_type,omitempty"`
+	PromotedObjectId   *string             `json:"promoted_object_id,omitempty"`
 }
