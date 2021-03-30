@@ -291,6 +291,9 @@ type HourlyReportsGetListStruct struct {
 	PurchaseAmountWithCoupon             *int64   `json:"purchase_amount_with_coupon,omitempty"`
 	PurchaseAmountWithCouponCost         *int64   `json:"purchase_amount_with_coupon_cost,omitempty"`
 	MiniGamePayingAmountClickD1ByUpload  *int64   `json:"mini_game_paying_amount_click_d1_by_upload,omitempty"`
+	MiniGameRetentionD1Rate              *float64 `json:"mini_game_retention_d1_rate,omitempty"`
+	MiniGameRetentionD1Cost              *int64   `json:"mini_game_retention_d1_cost,omitempty"`
+	KeyPageViewRate                      *float64 `json:"key_page_view_rate,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                           *float64 `json:"income_roi_1,omitempty"`

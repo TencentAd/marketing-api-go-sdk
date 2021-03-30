@@ -389,6 +389,10 @@ func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
 }
 
+func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
+	return c.Client.SceneSpecTagsApi
+}
+
 func (c *SDKClient) Shop() *api.ShopApiService {
 	return c.Client.ShopApi
 }
