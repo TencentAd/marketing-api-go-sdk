@@ -302,6 +302,8 @@ type APIClient struct {
 
 	WechatPagesCsgrouplistApi *WechatPagesCsgrouplistApiService
 
+	WechatPagesCustomApi *WechatPagesCustomApiService
+
 	WechatPagesGrantinfoApi *WechatPagesGrantinfoApiService
 
 	WechatQualificationsApi *WechatQualificationsApiService
@@ -460,6 +462,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.WechatPagesCsgrouplistApi = (*WechatPagesCsgrouplistApiService)(&c.common)
+	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)

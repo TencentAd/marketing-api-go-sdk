@@ -521,6 +521,10 @@ func (c *SDKClient) WechatPagesCsgrouplist() *api.WechatPagesCsgrouplistApiServi
 	return c.Client.WechatPagesCsgrouplistApi
 }
 
+func (c *SDKClient) WechatPagesCustom() *api.WechatPagesCustomApiService {
+	return c.Client.WechatPagesCustomApi
+}
+
 func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 	return c.Client.WechatPagesGrantinfoApi
 }
