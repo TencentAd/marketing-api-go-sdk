@@ -9,6 +9,7 @@
 
 package model
 
-type SceneSpecTagsGetResponseData struct {
-	List *[]SceneSpecTagsGetListStruct `json:"list,omitempty"`
+type ProductSeriesGetResponseData struct {
+	List     *[]ProductSeriesStruct `json:"list,omitempty"`
+	PageInfo *Conf                  `json:"page_info,omitempty"`
 }

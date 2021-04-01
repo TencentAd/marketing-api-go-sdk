@@ -25,46 +25,58 @@ var (
 	_ context.Context
 )
 
-type SceneSpecTagsApiService service
+type ProductSeriesApiService service
 
 /*
-SceneSpecTagsApiService 获取场景定向标签
+ProductSeriesApiService 获取商品系列
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param type_
- * @param optional nil or *SceneSpecTagsGetOpts - Optional Parameters:
-     * @param "AccountId" (optional.Int64) -
+ * @param accountId
+ * @param catalogId
+ * @param optional nil or *ProductSeriesGetOpts - Optional Parameters:
+     * @param "Filtering" (optional.Interface of []ProductSeriesSearchFilteringStruct) -
+     * @param "Page" (optional.Int64) -
+     * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
-@return SceneSpecTagsGetResponse
+@return ProductSeriesGetResponse
 */
 
-type SceneSpecTagsGetOpts struct {
-	AccountId optional.Int64
+type ProductSeriesGetOpts struct {
+	Filtering optional.Interface
+	Page      optional.Int64
+	PageSize  optional.Int64
 	Fields    optional.Interface
 }
 
-func (a *SceneSpecTagsApiService) Get(ctx context.Context, type_ string, localVarOptionals *SceneSpecTagsGetOpts) (SceneSpecTagsGetResponseData, http.Header, error) {
+func (a *ProductSeriesApiService) Get(ctx context.Context, accountId int64, catalogId int64, localVarOptionals *ProductSeriesGetOpts) (ProductSeriesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue SceneSpecTagsGetResponseData
-		localVarResponse    SceneSpecTagsGetResponse
+		localVarReturnValue ProductSeriesGetResponseData
+		localVarResponse    ProductSeriesGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/scene_spec_tags/get"
+	localVarPath := a.client.Cfg.BasePath + "/product_series/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
-		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	localVarQueryParams.Add("catalog_id", parameterToString(catalogId, ""))
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}
-	localVarQueryParams.Add("type", parameterToString(type_, ""))
+	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
+		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
+		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
@@ -126,7 +138,7 @@ func (a *SceneSpecTagsApiService) Get(ctx context.Context, type_ string, localVa
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v SceneSpecTagsGetResponse
+			var v ProductSeriesGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

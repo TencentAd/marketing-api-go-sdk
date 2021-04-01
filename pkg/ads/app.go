@@ -365,6 +365,10 @@ func (c *SDKClient) ProductItemsVerticals() *api.ProductItemsVerticalsApiService
 	return c.Client.ProductItemsVerticalsApi
 }
 
+func (c *SDKClient) ProductSeries() *api.ProductSeriesApiService {
+	return c.Client.ProductSeriesApi
+}
+
 func (c *SDKClient) ProductsSystemStatus() *api.ProductsSystemStatusApiService {
 	return c.Client.ProductsSystemStatusApi
 }
@@ -387,10 +391,6 @@ func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {
 
 func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
-}
-
-func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
-	return c.Client.SceneSpecTagsApi
 }
 
 func (c *SDKClient) Shop() *api.ShopApiService {

@@ -1,4 +1,4 @@
-# SceneSpecTagsType
+# CurrencyType
 
 ## Properties
 Name | Type | Description | Notes

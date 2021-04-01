@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ProductCatalogsAdd**](ProductCatalogsApi.md#ProductCatalogsAdd) | **Post** /product_catalogs/add | 创建商品库
-[**ProductCatalogsGet**](ProductCatalogsApi.md#ProductCatalogsGet) | **Get** /product_catalogs/get | 获取商品目录信息
+[**ProductCatalogsGet**](ProductCatalogsApi.md#ProductCatalogsGet) | **Get** /product_catalogs/get | 获取商品库
 
 
 # **ProductCatalogsAdd**
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **ProductCatalogsGet**
 > ProductCatalogsGetResponse ProductCatalogsGet(ctx, accountId, optional)
-获取商品目录信息
+获取商品库
 
 ### Required Parameters
 
@@ -52,6 +52,8 @@ Optional parameters are passed through a pointer to a ProductCatalogsApiProductC
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
+ **catalogId** | **optional.Int64**|  | 
+ **catalogName** | **optional.String**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 

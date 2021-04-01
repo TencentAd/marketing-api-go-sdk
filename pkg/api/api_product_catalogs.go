@@ -129,10 +129,12 @@ func (a *ProductCatalogsApiService) Add(ctx context.Context, data ProductCatalog
 }
 
 /*
-ProductCatalogsApiService 获取商品目录信息
+ProductCatalogsApiService 获取商品库
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *ProductCatalogsGetOpts - Optional Parameters:
+     * @param "CatalogId" (optional.Int64) -
+     * @param "CatalogName" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
@@ -141,9 +143,11 @@ ProductCatalogsApiService 获取商品目录信息
 */
 
 type ProductCatalogsGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	CatalogId   optional.Int64
+	CatalogName optional.String
+	Page        optional.Int64
+	PageSize    optional.Int64
+	Fields      optional.Interface
 }
 
 func (a *ProductCatalogsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *ProductCatalogsGetOpts) (ProductCatalogsGetResponseData, http.Header, error) {
@@ -165,6 +169,12 @@ func (a *ProductCatalogsApiService) Get(ctx context.Context, accountId int64, lo
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.CatalogId.IsSet() {
+		localVarQueryParams.Add("catalog_id", parameterToString(localVarOptionals.CatalogId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.CatalogName.IsSet() {
+		localVarQueryParams.Add("catalog_name", parameterToString(localVarOptionals.CatalogName.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}

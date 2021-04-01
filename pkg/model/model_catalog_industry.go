@@ -24,4 +24,5 @@ const (
 	CatalogIndustry_FINANCIAL  CatalogIndustry = "INDUSTRY_TYPE_FINANCIAL"
 	CatalogIndustry_BANKCARD   CatalogIndustry = "INDUSTRY_TYPE_BANKCARD"
 	CatalogIndustry_SECURITIES CatalogIndustry = "INDUSTRY_TYPE_SECURITIES"
+	CatalogIndustry_ESTATE     CatalogIndustry = "INDUSTRY_TYPE_ESTATE"
 )

@@ -224,6 +224,8 @@ type APIClient struct {
 
 	ProductItemsVerticalsApi *ProductItemsVerticalsApiService
 
+	ProductSeriesApi *ProductSeriesApiService
+
 	ProductsSystemStatusApi *ProductsSystemStatusApiService
 
 	ProfilesApi *ProfilesApiService
@@ -235,8 +237,6 @@ type APIClient struct {
 	RealtimeCostApi *RealtimeCostApiService
 
 	ReportApi *ReportApiService
-
-	SceneSpecTagsApi *SceneSpecTagsApiService
 
 	ShopApi *ShopApiService
 
@@ -423,13 +423,13 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
 	c.ProductItemsVerticalsApi = (*ProductItemsVerticalsApiService)(&c.common)
+	c.ProductSeriesApi = (*ProductSeriesApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReportApi = (*ReportApiService)(&c.common)
-	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)

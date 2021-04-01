@@ -21,32 +21,34 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type SceneSpecTagsGetExample struct {
+type ProductSeriesGetExample struct {
 	TAds                 *ads.SDKClient
 	AccessToken          string
-	Type                 string
-	SceneSpecTagsGetOpts *api.SceneSpecTagsGetOpts
+	AccountId            int64
+	CatalogId            int64
+	ProductSeriesGetOpts *api.ProductSeriesGetOpts
 }
 
-func (e *SceneSpecTagsGetExample) Init() {
+func (e *ProductSeriesGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Type = "type__example"
-	e.SceneSpecTagsGetOpts = &api.SceneSpecTagsGetOpts{}
+	e.AccountId = 789
+	e.CatalogId = 789
+	e.ProductSeriesGetOpts = &api.ProductSeriesGetOpts{}
 }
 
-func (e *SceneSpecTagsGetExample) RunExample() (model.SceneSpecTagsGetResponseData, http.Header, error) {
+func (e *ProductSeriesGetExample) RunExample() (model.ProductSeriesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.SceneSpecTags().Get(ctx, e.Type, e.SceneSpecTagsGetOpts)
+	return tads.ProductSeries().Get(ctx, e.AccountId, e.CatalogId, e.ProductSeriesGetOpts)
 }
 
 func main() {
-	e := &SceneSpecTagsGetExample{}
+	e := &ProductSeriesGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

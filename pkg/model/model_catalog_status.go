@@ -9,7 +9,7 @@
 
 package model
 
-// CatalogStatus : 商品目录状态，详见 <a href='catalog_status' target='_blank'>[商品目录状态]</a>
+// CatalogStatus : 商品库状态，详见 <a href='catalog_status' target='_blank'>[商品库状态]</a>
 type CatalogStatus string
 
 // List of CatalogStatus

@@ -9,7 +9,7 @@
 
 package model
 
-// CatalogVertical : 商品目录行业类型，详见 <a href='catalog_vertical' target='_blank'>[商品目录行业类型]</a>
+// CatalogVertical : 商品库行业类型，详见 <a href='catalog_vertical' target='_blank'>[商品库行业类型]</a>
 type CatalogVertical string
 
 // List of CatalogVertical
