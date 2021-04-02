@@ -46,6 +46,7 @@ XijingPageListApiService 蹊径-获取落地页列表
      * @param "PageOwnerId" (optional.Int64) -
      * @param "AppId" (optional.Int64) -
      * @param "AppType" (optional.String) -
+     * @param "QueryType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return XijingPageListGetResponse
@@ -66,6 +67,7 @@ type XijingPageListGetOpts struct {
 	PageOwnerId             optional.Int64
 	AppId                   optional.Int64
 	AppType                 optional.String
+	QueryType               optional.String
 	Fields                  optional.Interface
 }
 
@@ -129,6 +131,9 @@ func (a *XijingPageListApiService) Get(ctx context.Context, accountId int64, loc
 	}
 	if localVarOptionals != nil && localVarOptionals.AppType.IsSet() {
 		localVarQueryParams.Add("app_type", parameterToString(localVarOptionals.AppType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.QueryType.IsSet() {
+		localVarQueryParams.Add("query_type", parameterToString(localVarOptionals.QueryType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

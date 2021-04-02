@@ -541,6 +541,10 @@ func (c *SDKClient) XijingPageByComponents() *api.XijingPageByComponentsApiServi
 	return c.Client.XijingPageByComponentsApi
 }
 
+func (c *SDKClient) XijingPageInteractive() *api.XijingPageInteractiveApiService {
+	return c.Client.XijingPageInteractiveApi
+}
+
 func (c *SDKClient) XijingPageList() *api.XijingPageListApiService {
 	return c.Client.XijingPageListApi
 }
