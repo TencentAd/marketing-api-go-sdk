@@ -4,14 +4,14 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**WechatPagesAdd**](WechatPagesApi.md#WechatPagesAdd) | **Post** /wechat_pages/add | 创建微信落地页
+[**WechatPagesAdd**](WechatPagesApi.md#WechatPagesAdd) | **Post** /wechat_pages/add | 基于模板创建微信原生页
 [**WechatPagesDelete**](WechatPagesApi.md#WechatPagesDelete) | **Post** /wechat_pages/delete | 删除微信落地页
 [**WechatPagesGet**](WechatPagesApi.md#WechatPagesGet) | **Get** /wechat_pages/get | 获取微信落地页列表
 
 
 # **WechatPagesAdd**
 > WechatPagesAddResponse WechatPagesAdd(ctx, data)
-创建微信落地页
+基于模板创建微信原生页
 
 ### Required Parameters
 

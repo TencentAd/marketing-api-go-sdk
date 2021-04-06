@@ -19,7 +19,7 @@ type CanvasFloatButtonSpecType struct {
 	DescColor       *string                `json:"desc_color,omitempty"`
 	AppearType      *int64                 `json:"appear_type,omitempty"`
 	DisappearType   *int64                 `json:"disappear_type,omitempty"`
-	ForbidPage      *[]int64               `json:"forbid_page,omitempty"`
+	ForbidPageList  *[]int64               `json:"forbid_page_list,omitempty"`
 	ElementType     CanvasFloatElementType `json:"element_type,omitempty"`
 	AppDownloadSpec *FloatAppDownloadSpec  `json:"app_download_spec,omitempty"`
 }

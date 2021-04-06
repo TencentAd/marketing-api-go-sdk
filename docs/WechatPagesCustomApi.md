@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**WechatPagesCustomAdd**](WechatPagesCustomApi.md#WechatPagesCustomAdd) | **Post** /wechat_pages_custom/add | 自定义创建微信原生页
+[**WechatPagesCustomAdd**](WechatPagesCustomApi.md#WechatPagesCustomAdd) | **Post** /wechat_pages_custom/add | 基于组件创建微信原生页
 
 
 # **WechatPagesCustomAdd**
 > WechatPagesCustomAddResponse WechatPagesCustomAdd(ctx, data)
-自定义创建微信原生页
+基于组件创建微信原生页
 
 ### Required Parameters
 

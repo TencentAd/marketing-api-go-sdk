@@ -10,6 +10,5 @@
 package model
 
 type WechatPagesCustomAddResponseData struct {
-	PageId  *int64  `json:"page_id,omitempty"`
-	PageUrl *string `json:"page_url,omitempty"`
+	PageId *int64 `json:"page_id,omitempty"`
 }

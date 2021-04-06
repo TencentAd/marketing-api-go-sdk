@@ -9,7 +9,7 @@
 
 package model
 
-// 顶部图片组件元素<br>        图片大小: 不超过300KB<br>        图片尺寸: 朋友圈常规广告 800*800,<br>        朋友圈卡片广告800*450. <br>        公众号及其他广告位 800*800/640*800/800*640/800*450
+// 顶部图片组件元素<br>        图片大小: 不超过300KB<br>        图片尺寸: 朋友圈常规广告 800*800, 朋友圈卡片广告800*450. <br>        公众号及其他广告位 800*800/640*800/800*640/800*450
 type TopImageSpec struct {
 	ImageId    *string `json:"image_id,omitempty"`
 	Width      *int64  `json:"width,omitempty"`

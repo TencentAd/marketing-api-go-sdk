@@ -28,7 +28,7 @@ var (
 type WechatPagesApiService service
 
 /*
-WechatPagesApiService 创建微信落地页
+WechatPagesApiService 基于模板创建微信原生页
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
