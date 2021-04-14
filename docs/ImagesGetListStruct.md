@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **SourceSignature** | **string** |  | [optional] [default to null]
 **PreviewUrl** | **string** |  | [optional] [default to null]
 **SourceType** | [***ImageSourceType**](ImageSourceType.md) |  | [optional] [default to null]
+**ImageUsage** | [***ImageUsage**](ImageUsage.md) |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **ProductCatalogId** | **int64** |  | [optional] [default to null]

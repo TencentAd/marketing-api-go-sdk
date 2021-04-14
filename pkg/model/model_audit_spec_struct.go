@@ -11,7 +11,8 @@ package model
 
 // 多版位的审核结果信息
 type AuditSpecStruct struct {
-	SiteSet       SiteSetDefinition `json:"site_set,omitempty"`
-	SystemStatus  SysStatus         `json:"system_status,omitempty"`
-	RejectMessage *string           `json:"reject_message,omitempty"`
+	SiteSet                 SiteSetDefinition          `json:"site_set,omitempty"`
+	SystemStatus            SysStatus                  `json:"system_status,omitempty"`
+	RejectMessage           *string                    `json:"reject_message,omitempty"`
+	ElementRejectDetailInfo *[]ElementRejectDetailInfo `json:"element_reject_detail_info,omitempty"`
 }

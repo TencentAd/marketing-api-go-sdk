@@ -20,4 +20,5 @@ type PagesGetListStruct struct {
 	ProductCatalogId *int64              `json:"product_catalog_id,omitempty"`
 	PageType         DestinationTypeRead `json:"page_type,omitempty"`
 	PlayableType     PlayableType        `json:"playable_type,omitempty"`
+	PageStatus       PageStatus          `json:"page_status,omitempty"`
 }

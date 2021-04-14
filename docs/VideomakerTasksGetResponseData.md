@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Code** | **int64** |  | [optional] [default to null]
 **TaskId** | **string** |  | [optional] [default to null]
-**Status** | [***Status**](Status.md) |  | [optional] [default to null]
+**Status** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **VideoId** | **string** |  | [optional] [default to null]
 **OtherData** | [***OtherData**](other_data.md) |  | [optional] [default to null]
 

@@ -27,4 +27,8 @@ type LeadsImportInfoStruct struct {
 	ClickId                  *string             `json:"click_id,omitempty"`
 	OuterLeadsConvertType    *string             `json:"outer_leads_convert_type,omitempty"`
 	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
+	Memo                     *string             `json:"memo,omitempty"`
+	CampaignId               *int64              `json:"campaign_id,omitempty"`
+	AdgroupId                *int64              `json:"adgroup_id,omitempty"`
+	WechatAgencyId           *string             `json:"wechat_agency_id,omitempty"`
 }

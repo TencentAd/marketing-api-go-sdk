@@ -1,4 +1,4 @@
-# Status
+# PageStatus
 
 ## Properties
 Name | Type | Description | Notes

@@ -9,8 +9,7 @@
 
 package model
 
-// 落地页信息
-type DynamicPageSpec struct {
-	PageId  *int64  `json:"page_id,omitempty"`
-	PageUrl *string `json:"page_url,omitempty"`
+// 返回结构
+type OuterCluesClaiminfoUpdateListStruct struct {
+	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
 }

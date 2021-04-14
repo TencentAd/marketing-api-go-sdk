@@ -40,7 +40,7 @@ func (e *DynamicCreativesAddExample) Init() {
 			DescriptionOptions: &[]string{"YOUR AD DESCRIPTION"},
 		},
 		PageType: model.DestinationType_DEFAULT,
-		PageSpec: &model.DynamicPageSpec{
+		PageSpec: &model.DynamicCreativePageSpec{
 			PageUrl: "YOUR AD PAGE URL",
 		},
 		CampaignType:              model.CampaignType_NORMAL,

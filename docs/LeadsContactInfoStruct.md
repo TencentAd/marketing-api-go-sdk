@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **LeadsEmail** | **string** |  | [optional] [default to null]
 **LeadsArea** | **string** |  | [optional] [default to null]
 **Bundle** | **string** |  | [optional] [default to null]
+**Memo** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

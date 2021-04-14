@@ -33,6 +33,7 @@ Name | Type | Description  | Notes
 
  **file** | **optional.Interface of *os.File**|  | 
  **bytes** | **optional.String**|  | 
+ **imageUsage** | **optional.String**|  | 
  **description** | **optional.String**|  | 
 
 ### Return type

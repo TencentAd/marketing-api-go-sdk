@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **DynamicCreativeTemplateId** | **int64** |  | [optional] [default to null]
 **DynamicCreativeElements** | [***DynamicCreativeElementsRead**](dynamic_creative_elements_read.md) |  | [optional] [default to null]
 **PageType** | [***PageTypeRead**](PageTypeRead.md) |  | [optional] [default to null]
-**PageSpec** | [***DynamicPageSpec**](dynamic_page_spec.md) |  | [optional] [default to null]
+**PageSpec** | [***DynamicCreativePageSpec**](dynamic_creative_page_spec.md) |  | [optional] [default to null]
 **DeepLinkUrl** | **string** |  | [optional] [default to null]
 **AutomaticSiteEnabled** | **bool** |  | [optional] [default to null]
 **SiteSet** | **[]string** |  | [optional] [default to null]

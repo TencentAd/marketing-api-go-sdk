@@ -40,6 +40,7 @@ type AdcreativesUpdateRequest struct {
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       *string                       `json:"marketing_pendant_image_id,omitempty"`
 	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
+	DynamicAdcreativeSpec         *DynamicAdcreativeSpec        `json:"dynamic_adcreative_spec,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 }

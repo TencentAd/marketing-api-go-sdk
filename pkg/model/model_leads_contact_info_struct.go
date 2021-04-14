@@ -23,4 +23,5 @@ type LeadsContactInfoStruct struct {
 	LeadsEmail           *string             `json:"leads_email,omitempty"`
 	LeadsArea            *string             `json:"leads_area,omitempty"`
 	Bundle               *string             `json:"bundle,omitempty"`
+	Memo                 *string             `json:"memo,omitempty"`
 }

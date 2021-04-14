@@ -17,7 +17,7 @@ type DynamicCreativesGetListStruct struct {
 	DynamicCreativeTemplateId *int64                       `json:"dynamic_creative_template_id,omitempty"`
 	DynamicCreativeElements   *DynamicCreativeElementsRead `json:"dynamic_creative_elements,omitempty"`
 	PageType                  PageTypeRead                 `json:"page_type,omitempty"`
-	PageSpec                  *DynamicPageSpec             `json:"page_spec,omitempty"`
+	PageSpec                  *DynamicCreativePageSpec     `json:"page_spec,omitempty"`
 	DeepLinkUrl               *string                      `json:"deep_link_url,omitempty"`
 	AutomaticSiteEnabled      *bool                        `json:"automatic_site_enabled,omitempty"`
 	SiteSet                   *[]string                    `json:"site_set,omitempty"`

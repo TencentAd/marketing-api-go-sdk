@@ -19,6 +19,10 @@ Name | Type | Description | Notes
 **ClickId** | **string** |  | [optional] [default to null]
 **OuterLeadsConvertType** | **string** |  | [optional] [default to null]
 **OuterLeadsIneffectReason** | **string** |  | [optional] [default to null]
+**Memo** | **string** |  | [optional] [default to null]
+**CampaignId** | **int64** |  | [optional] [default to null]
+**AdgroupId** | **int64** |  | [optional] [default to null]
+**WechatAgencyId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

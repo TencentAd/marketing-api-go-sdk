@@ -16,6 +16,7 @@ type ImagesGetListStruct struct {
 	SourceSignature   *string         `json:"source_signature,omitempty"`
 	PreviewUrl        *string         `json:"preview_url,omitempty"`
 	SourceType        ImageSourceType `json:"source_type,omitempty"`
+	ImageUsage        ImageUsage      `json:"image_usage,omitempty"`
 	CreatedTime       *int64          `json:"created_time,omitempty"`
 	LastModifiedTime  *int64          `json:"last_modified_time,omitempty"`
 	ProductCatalogId  *int64          `json:"product_catalog_id,omitempty"`

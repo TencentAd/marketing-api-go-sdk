@@ -329,6 +329,10 @@ func (c *SDKClient) OuterClues() *api.OuterCluesApiService {
 	return c.Client.OuterCluesApi
 }
 
+func (c *SDKClient) OuterCluesClaiminfo() *api.OuterCluesClaiminfoApiService {
+	return c.Client.OuterCluesClaiminfoApi
+}
+
 func (c *SDKClient) OuterCluesContact() *api.OuterCluesContactApiService {
 	return c.Client.OuterCluesContactApi
 }

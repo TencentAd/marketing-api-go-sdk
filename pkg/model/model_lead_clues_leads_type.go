@@ -24,4 +24,5 @@ const (
 	LeadCluesLeadsType_LANDING_PAGE_CLICK  LeadCluesLeadsType = "LEADS_TYPE_LANDING_PAGE_CLICK"
 	LeadCluesLeadsType_ONE_CLICK_AUTHORIZE LeadCluesLeadsType = "LEADS_TYPE_ONE_CLICK_AUTHORIZE"
 	LeadCluesLeadsType_PAGE_SCAN_CODE      LeadCluesLeadsType = "LEADS_TYPE_PAGE_SCAN_CODE"
+	LeadCluesLeadsType_PROMOTION_FOLLOW    LeadCluesLeadsType = "LEADS_TYPE_PROMOTION_FOLLOW"
 )

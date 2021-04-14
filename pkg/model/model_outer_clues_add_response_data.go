@@ -10,5 +10,6 @@
 package model
 
 type OuterCluesAddResponseData struct {
-	FailOuterLeadIdList *[]OuterCluesAddListStruct `json:"fail_outer_lead_id_list,omitempty"`
+	FailOuterLeadIdList *[]OuterCluesAddListStruct      `json:"fail_outer_lead_id_list,omitempty"`
+	SuccessLeadIdList   *[]SuccessLeadsIdListRespStruct `json:"success_lead_id_list,omitempty"`
 }

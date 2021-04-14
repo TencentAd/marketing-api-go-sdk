@@ -37,6 +37,7 @@ ImagesApiService 添加图片文件
  * @param optional nil or *ImagesAddOpts - Optional Parameters:
      * @param "File" (optional.Interface of *os.File) -
      * @param "Bytes" (optional.String) -
+     * @param "ImageUsage" (optional.String) -
      * @param "Description" (optional.String) -
 
 @return ImagesAddResponse
@@ -45,6 +46,7 @@ ImagesApiService 添加图片文件
 type ImagesAddOpts struct {
 	File        optional.Interface
 	Bytes       optional.String
+	ImageUsage  optional.String
 	Description optional.String
 }
 
@@ -110,6 +112,9 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 	}
 	if localVarOptionals != nil && localVarOptionals.Bytes.IsSet() {
 		localVarFormParams.Add("bytes", parameterToString(localVarOptionals.Bytes.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ImageUsage.IsSet() {
+		localVarFormParams.Add("image_usage", parameterToString(localVarOptionals.ImageUsage.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
 		localVarFormParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
