@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **AutoAcquisitionEnabled** | **bool** |  | [optional] [default to null]
 **AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
+**UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
