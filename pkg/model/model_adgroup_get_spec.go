@@ -17,6 +17,7 @@ type AdgroupGetSpec struct {
 	BeginDate         *string                  `json:"begin_date,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`
 	CalcStatus        CalculateStatus          `json:"calc_status,omitempty"`
+	MetricDetail      *MetricDetailData        `json:"metric_detail,omitempty"`
 	RejectMessage     *string                  `json:"reject_message,omitempty"`
 	PoiList           *[]string                `json:"poi_list,omitempty"`
 	ColdStartAudience *[]int64                 `json:"cold_start_audience,omitempty"`
