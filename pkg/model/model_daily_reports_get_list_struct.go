@@ -296,6 +296,12 @@ type DailyReportsGetListStruct struct {
 	MiniGameRetentionD1Rate              *float64 `json:"mini_game_retention_d1_rate,omitempty"`
 	MiniGameRetentionD1Cost              *int64   `json:"mini_game_retention_d1_cost,omitempty"`
 	KeyPageViewRate                      *float64 `json:"key_page_view_rate,omitempty"`
+	WechatCostStage1                     *int64   `json:"wechat_cost_stage1,omitempty"`
+	WechatCostStage2                     *int64   `json:"wechat_cost_stage2,omitempty"`
+	WechatDeepConversionsCountStage1     *int64   `json:"wechat_deep_conversions_count_stage1,omitempty"`
+	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
+	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
+	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeRoi1                           *float64 `json:"income_roi_1,omitempty"`

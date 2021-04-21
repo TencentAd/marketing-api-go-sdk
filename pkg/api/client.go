@@ -82,6 +82,8 @@ type APIClient struct {
 
 	AndroidUnionChannelPackagesApi *AndroidUnionChannelPackagesApiService
 
+	AppAndroidChannelPackagesApi *AppAndroidChannelPackagesApiService
+
 	AssetPermissionsApi *AssetPermissionsApiService
 
 	AssetPrePermissionsApi *AssetPrePermissionsApiService
@@ -356,6 +358,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelPackagesApi = (*AndroidChannelPackagesApiService)(&c.common)
 	c.AndroidUnionChannelPackagesApi = (*AndroidUnionChannelPackagesApiService)(&c.common)
+	c.AppAndroidChannelPackagesApi = (*AppAndroidChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
 	c.AssetPrePermissionsApi = (*AssetPrePermissionsApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)

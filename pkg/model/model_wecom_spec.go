@@ -13,4 +13,5 @@ package model
 type WecomSpec struct {
 	Title   *string `json:"title,omitempty"`
 	Groupid *int64  `json:"groupid,omitempty"`
+	Setid   *int64  `json:"setid,omitempty"`
 }

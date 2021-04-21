@@ -98,11 +98,6 @@ type TargetingTagReportsGetListStruct struct {
 	PraiseCost                           *int64   `json:"praise_cost,omitempty"`
 	CommentCount                         *int64   `json:"comment_count,omitempty"`
 	CommentCost                          *int64   `json:"comment_cost,omitempty"`
-	Cost1                                *int64   `json:"cost1,omitempty"`
-	Cost2                                *int64   `json:"cost2,omitempty"`
-	Cost3                                *int64   `json:"cost3,omitempty"`
-	Cost4                                *int64   `json:"cost4,omitempty"`
-	CreditCost                           *int64   `json:"credit_cost,omitempty"`
 	AdPurValApp                          *int64   `json:"ad_pur_val_app,omitempty"`
 	FromFollowUv                         *int64   `json:"from_follow_uv,omitempty"`
 	FromFollowCost                       *int64   `json:"from_follow_cost,omitempty"`
@@ -184,6 +179,12 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameRetentionD1Rate              *float64 `json:"mini_game_retention_d1_rate,omitempty"`
 	MiniGameRetentionD1Cost              *int64   `json:"mini_game_retention_d1_cost,omitempty"`
 	KeyPageViewRate                      *float64 `json:"key_page_view_rate,omitempty"`
+	WechatCostStage1                     *int64   `json:"wechat_cost_stage1,omitempty"`
+	WechatCostStage2                     *int64   `json:"wechat_cost_stage2,omitempty"`
+	WechatDeepConversionsCountStage1     *int64   `json:"wechat_deep_conversions_count_stage1,omitempty"`
+	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
+	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
+	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
 	Age                                  *string  `json:"age,omitempty"`
 	RegionId                             *int64   `json:"region_id,omitempty"`
 	CityId                               *int64   `json:"city_id,omitempty"`

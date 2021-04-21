@@ -81,6 +81,10 @@ func (c *SDKClient) AndroidUnionChannelPackages() *api.AndroidUnionChannelPackag
 	return c.Client.AndroidUnionChannelPackagesApi
 }
 
+func (c *SDKClient) AppAndroidChannelPackages() *api.AppAndroidChannelPackagesApiService {
+	return c.Client.AppAndroidChannelPackagesApi
+}
+
 func (c *SDKClient) AssetPermissions() *api.AssetPermissionsApiService {
 	return c.Client.AssetPermissionsApi
 }
