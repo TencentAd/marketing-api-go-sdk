@@ -302,8 +302,13 @@ type DailyReportsGetListStruct struct {
 	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
+	RegisterActivateRate                 *float64 `json:"register_activate_rate,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
+	IncomeVal1                           *int64   `json:"income_val_1,omitempty"`
+	IncomeVal3                           *int64   `json:"income_val_3,omitempty"`
+	IncomeVal7                           *int64   `json:"income_val_7,omitempty"`
+	IncomeVal14                          *int64   `json:"income_val_14,omitempty"`
 	IncomeRoi1                           *float64 `json:"income_roi_1,omitempty"`
 	IncomeRoi3                           *float64 `json:"income_roi_3,omitempty"`
 	IncomeRoi7                           *float64 `json:"income_roi_7,omitempty"`

@@ -23,4 +23,6 @@ const (
 	AdgroupSysStatus_PREPARE           AdgroupSysStatus = "AD_GROUP_STATUS_PREPARE"
 	AdgroupSysStatus_DELETED           AdgroupSysStatus = "AD_GROUP_STATUS_DELETED"
 	AdgroupSysStatus_INVALID           AdgroupSysStatus = "AD_GROUP_STATUS_INVALID"
+	AdgroupSysStatus_TO_BE_STARTED     AdgroupSysStatus = "AD_GROUP_STATUS_TO_BE_STARTED"
+	AdgroupSysStatus_ENDED             AdgroupSysStatus = "AD_GROUP_STATUS_ENDED"
 )
