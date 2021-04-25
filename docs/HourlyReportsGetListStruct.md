@@ -341,6 +341,7 @@ Name | Type | Description | Notes
 **AdName** | **string** |  | [optional] [default to null]
 **PromotedObjectType** | **string** |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
+**ActivateRegisterRate** | **float64** |  | [optional] [default to null]
 **WechatAccountId** | **string** |  | [optional] [default to null]
 **WechatAgencyId** | **string** |  | [optional] [default to null]
 **CostDeviationRate** | **float64** |  | [optional] [default to null]

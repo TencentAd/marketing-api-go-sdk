@@ -360,6 +360,7 @@ type DailyReportsGetListStruct struct {
 	SiteSet                              *string  `json:"site_set,omitempty"`
 	MaterialId                           *string  `json:"material_id,omitempty"`
 	Signature                            *string  `json:"signature,omitempty"`
+	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	ProductCatalogId                     *int64   `json:"product_catalog_id,omitempty"`
 	ProductOuterId                       *string  `json:"product_outer_id,omitempty"`
 	BrandId                              *int64   `json:"brand_id,omitempty"`

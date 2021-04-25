@@ -349,6 +349,7 @@ type HourlyReportsGetListStruct struct {
 	AdName                               *string  `json:"ad_name,omitempty"`
 	PromotedObjectType                   *string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                     *string  `json:"promoted_object_id,omitempty"`
+	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	WechatAccountId                      *string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                       *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                    *float64 `json:"cost_deviation_rate,omitempty"`

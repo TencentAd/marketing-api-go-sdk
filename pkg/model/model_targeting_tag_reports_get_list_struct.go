@@ -42,6 +42,7 @@ type TargetingTagReportsGetListStruct struct {
 	PlatformPageNavigationCount          *int64   `json:"platform_page_navigation_count,omitempty"`
 	PlatformPageNavigationCost           *int64   `json:"platform_page_navigation_cost,omitempty"`
 	PlatformShopNavigationCount          *int64   `json:"platform_shop_navigation_count,omitempty"`
+	PlatformShopNavigationCost           *int64   `json:"platform_shop_navigation_cost,omitempty"`
 	WebApplicationCount                  *int64   `json:"web_application_count,omitempty"`
 	WebApplicationCost                   *int64   `json:"web_application_cost,omitempty"`
 	PageReservationCount                 *int64   `json:"page_reservation_count,omitempty"`
@@ -96,6 +97,7 @@ type TargetingTagReportsGetListStruct struct {
 	AppCheckoutAmount                    *int64   `json:"app_checkout_amount,omitempty"`
 	AppCheckoutCost                      *int64   `json:"app_checkout_cost,omitempty"`
 	PlatformCouponClickCount             *int64   `json:"platform_coupon_click_count,omitempty"`
+	PlatformCouponGetRate                *float64 `json:"platform_coupon_get_rate,omitempty"`
 	FollowCount                          *int64   `json:"follow_count,omitempty"`
 	FollowCost                           *int64   `json:"follow_cost,omitempty"`
 	ForwardCount                         *int64   `json:"forward_count,omitempty"`
@@ -116,6 +118,7 @@ type TargetingTagReportsGetListStruct struct {
 	GameAuthorizeCount                   *int64   `json:"game_authorize_count,omitempty"`
 	GameTutorialFinishCount              *int64   `json:"game_tutorial_finish_count,omitempty"`
 	EffectiveLeadsCount                  *int64   `json:"effective_leads_count,omitempty"`
+	EffectiveCost                        *int64   `json:"effective_cost,omitempty"`
 	EffectiveReserveCount                *int64   `json:"effective_reserve_count,omitempty"`
 	EffectiveConsultCount                *int64   `json:"effective_consult_count,omitempty"`
 	EffectivePhoneCount                  *int64   `json:"effective_phone_count,omitempty"`
@@ -138,17 +141,25 @@ type TargetingTagReportsGetListStruct struct {
 	WebArppuCost                         *int64   `json:"web_arppu_cost,omitempty"`
 	WebArpuCost                          *int64   `json:"web_arpu_cost,omitempty"`
 	AppAdPurArpuCost                     *int64   `json:"app_ad_pur_arpu_cost,omitempty"`
+	AppAdPurArppuCost                    *int64   `json:"app_ad_pur_arppu_cost,omitempty"`
+	WebAdPurArpuCost                     *int64   `json:"web_ad_pur_arpu_cost,omitempty"`
 	CheoutFd                             *int64   `json:"cheout_fd,omitempty"`
 	CheoutTd                             *int64   `json:"cheout_td,omitempty"`
 	CheoutOw                             *int64   `json:"cheout_ow,omitempty"`
 	CheoutTw                             *int64   `json:"cheout_tw,omitempty"`
 	CheoutOm                             *int64   `json:"cheout_om,omitempty"`
+	CheoutFdReward                       *float64 `json:"cheout_fd_reward,omitempty"`
+	CheoutTdReward                       *float64 `json:"cheout_td_reward,omitempty"`
+	CheoutOwReward                       *float64 `json:"cheout_ow_reward,omitempty"`
+	CheoutTwReward                       *float64 `json:"cheout_tw_reward,omitempty"`
+	CheoutOmReward                       *float64 `json:"cheout_om_reward,omitempty"`
 	CheoutTotalReward                    *float64 `json:"cheout_total_reward,omitempty"`
 	FromFollowUv                         *int64   `json:"from_follow_uv,omitempty"`
 	FromFollowCost                       *int64   `json:"from_follow_cost,omitempty"`
 	AddDesktopPv                         *int64   `json:"add_desktop_pv,omitempty"`
 	AddDesktopCost                       *int64   `json:"add_desktop_cost,omitempty"`
 	FirstPayCount                        *int64   `json:"first_pay_count,omitempty"`
+	FirstPayRate                         *float64 `json:"first_pay_rate,omitempty"`
 	PreCreWeb                            *int64   `json:"pre_cre_web,omitempty"`
 	PreCreApp                            *int64   `json:"pre_cre_app,omitempty"`
 	PreCreWebVal                         *int64   `json:"pre_cre_web_val,omitempty"`
@@ -161,15 +172,19 @@ type TargetingTagReportsGetListStruct struct {
 	WithdrDepApp                         *int64   `json:"withdr_dep_app,omitempty"`
 	WithdrDepWebVal                      *int64   `json:"withdr_dep_web_val,omitempty"`
 	WithdrDepAppVal                      *int64   `json:"withdr_dep_app_val,omitempty"`
+	FirstPayCost                         *int64   `json:"first_pay_cost,omitempty"`
 	LandingPageClickCount                *int64   `json:"landing_page_click_count,omitempty"`
 	WebCartAmount                        *int64   `json:"web_cart_amount,omitempty"`
 	ScanFollowCount                      *int64   `json:"scan_follow_count,omitempty"`
 	ScanFollowUserCount                  *int64   `json:"scan_follow_user_count,omitempty"`
+	ScanFollowUserCost                   *int64   `json:"scan_follow_user_cost,omitempty"`
+	ScanFollowUserRate                   *float64 `json:"scan_follow_user_rate,omitempty"`
 	AppOrderAmount                       *int64   `json:"app_order_amount,omitempty"`
 	WebOrderAmount                       *int64   `json:"web_order_amount,omitempty"`
 	PhoneConsultCount                    *int64   `json:"phone_consult_count,omitempty"`
 	ToolConsultCount                     *int64   `json:"tool_consult_count,omitempty"`
 	LotteryLeadsCount                    *int64   `json:"lottery_leads_count,omitempty"`
+	LotteryLeadsCost                     *int64   `json:"lottery_leads_cost,omitempty"`
 	ConversionsCount                     *int64   `json:"conversions_count,omitempty"`
 	ConversionsRate                      *float64 `json:"conversions_rate,omitempty"`
 	ConversionsCost                      *int64   `json:"conversions_cost,omitempty"`
@@ -180,6 +195,10 @@ type TargetingTagReportsGetListStruct struct {
 	FirstMemcardAppCount                 *int64   `json:"first_memcard_app_count,omitempty"`
 	MemcardWebCount                      *int64   `json:"memcard_web_count,omitempty"`
 	MemcardAppCount                      *int64   `json:"memcard_app_count,omitempty"`
+	FirstMemcardWebRate                  *float64 `json:"first_memcard_web_rate,omitempty"`
+	FirstMemcardAppRate                  *float64 `json:"first_memcard_app_rate,omitempty"`
+	FirstMemcardWebCost                  *int64   `json:"first_memcard_web_cost,omitempty"`
+	FirstMemcardAppCost                  *int64   `json:"first_memcard_app_cost,omitempty"`
 	ValuableClickCount                   *int64   `json:"valuable_click_count,omitempty"`
 	ValuableClickRate                    *float64 `json:"valuable_click_rate,omitempty"`
 	ValuableClickCost                    *int64   `json:"valuable_click_cost,omitempty"`
@@ -192,6 +211,8 @@ type TargetingTagReportsGetListStruct struct {
 	VideoInnerPlayCount                  *int64   `json:"video_inner_play_count,omitempty"`
 	LanButtonClickCount                  *int64   `json:"lan_button_click_count,omitempty"`
 	LanJumpButtonClickers                *int64   `json:"lan_jump_button_clickers,omitempty"`
+	LanJumpButtonClickCost               *int64   `json:"lan_jump_button_click_cost,omitempty"`
+	LanJumpButtonCtr                     *float64 `json:"lan_jump_button_ctr,omitempty"`
 	LanButtonClickCost                   *int64   `json:"lan_button_click_cost,omitempty"`
 	CpnClickButtonCount                  *int64   `json:"cpn_click_button_count,omitempty"`
 	CpnClickButtonUv                     *int64   `json:"cpn_click_button_uv,omitempty"`
@@ -228,11 +249,19 @@ type TargetingTagReportsGetListStruct struct {
 	VideoOuterPlay75Count                *int64   `json:"video_outer_play75_count,omitempty"`
 	VideoOuterPlay95Count                *int64   `json:"video_outer_play95_count,omitempty"`
 	VideoOuterPlay100Count               *int64   `json:"video_outer_play100_count,omitempty"`
+	VideoOuterPlayTimeCount              *float64 `json:"video_outer_play_time_count,omitempty"`
 	VideoOuterPlayTimeAvgRate            *float64 `json:"video_outer_play_time_avg_rate,omitempty"`
+	VideoOuterPlayRate                   *float64 `json:"video_outer_play_rate,omitempty"`
+	VideoOuterPlayCost                   *int64   `json:"video_outer_play_cost,omitempty"`
 	VideoOuterPlayCount                  *int64   `json:"video_outer_play_count,omitempty"`
 	VideoOuterPlay3sCount                *int64   `json:"video_outer_play3s_count,omitempty"`
 	VideoOuterPlay5sCount                *int64   `json:"video_outer_play5s_count,omitempty"`
 	VideoOuterPlay7sCount                *int64   `json:"video_outer_play7s_count,omitempty"`
+	EffectLeadsPurchaseCost              *int64   `json:"effect_leads_purchase_cost,omitempty"`
+	CreWebCost                           *int64   `json:"cre_web_cost,omitempty"`
+	CreAppCost                           *int64   `json:"cre_app_cost,omitempty"`
+	PreCreWebCost                        *int64   `json:"pre_cre_web_cost,omitempty"`
+	PreCreAppCost                        *int64   `json:"pre_cre_app_cost,omitempty"`
 	StoreVisitor                         *int64   `json:"store_visitor,omitempty"`
 	TryOutUser                           *int64   `json:"try_out_user,omitempty"`
 	ConsultLeaveInfoUsers                *int64   `json:"consult_leave_info_users,omitempty"`
@@ -273,8 +302,9 @@ type TargetingTagReportsGetListStruct struct {
 	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
-	RegisterActivateRate                 *float64 `json:"register_activate_rate,omitempty"`
+	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	Age                                  *string  `json:"age,omitempty"`
+	RegisterActivateRate                 *float64 `json:"register_activate_rate,omitempty"`
 	RegionId                             *int64   `json:"region_id,omitempty"`
 	CityId                               *int64   `json:"city_id,omitempty"`
 	Province                             *string  `json:"province,omitempty"`
@@ -299,24 +329,6 @@ type TargetingTagReportsGetListStruct struct {
 	BehaviorScene                        *string  `json:"behavior_scene,omitempty"`
 	BehaviorTimeWindow                   *string  `json:"behavior_time_window,omitempty"`
 	BehaviorIntensity                    *string  `json:"behavior_intensity,omitempty"`
-	PlatformShopNavigationCost           *int64   `json:"platform_shop_navigation_cost,omitempty"`
-	PlatformCouponGetRate                *float64 `json:"platform_coupon_get_rate,omitempty"`
-	EffectiveCost                        *int64   `json:"effective_cost,omitempty"`
-	AppAdPurArppuCost                    *int64   `json:"app_ad_pur_arppu_cost,omitempty"`
-	WebAdPurArpuCost                     *int64   `json:"web_ad_pur_arpu_cost,omitempty"`
-	CheoutFdReward                       *float64 `json:"cheout_fd_reward,omitempty"`
-	CheoutTdReward                       *float64 `json:"cheout_td_reward,omitempty"`
-	CheoutOwReward                       *float64 `json:"cheout_ow_reward,omitempty"`
-	CheoutTwReward                       *float64 `json:"cheout_tw_reward,omitempty"`
-	CheoutOmReward                       *float64 `json:"cheout_om_reward,omitempty"`
-	FirstPayRate                         *float64 `json:"first_pay_rate,omitempty"`
-	FirstPayCost                         *int64   `json:"first_pay_cost,omitempty"`
-	ScanFollowUserCost                   *int64   `json:"scan_follow_user_cost,omitempty"`
-	ScanFollowUserRate                   *float64 `json:"scan_follow_user_rate,omitempty"`
-	CreWebCost                           *int64   `json:"cre_web_cost,omitempty"`
-	CreAppCost                           *int64   `json:"cre_app_cost,omitempty"`
-	PreCreWebCost                        *int64   `json:"pre_cre_web_cost,omitempty"`
-	PreCreAppCost                        *int64   `json:"pre_cre_app_cost,omitempty"`
 	GenderName                           *string  `json:"gender_name,omitempty"`
 	AccountId                            *int64   `json:"account_id,omitempty"`
 	CampaignId                           *int64   `json:"campaign_id,omitempty"`
@@ -325,9 +337,6 @@ type TargetingTagReportsGetListStruct struct {
 	AudienceId                           *int64   `json:"audience_id,omitempty"`
 	PromotedObjectType                   *string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                     *string  `json:"promoted_object_id,omitempty"`
-	LanJumpButtonClickCost               *int64   `json:"lan_jump_button_click_cost,omitempty"`
-	LanJumpButtonCtr                     *float64 `json:"lan_jump_button_ctr,omitempty"`
-	EffectLeadsPurchaseCost              *int64   `json:"effect_leads_purchase_cost,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                           *int64   `json:"income_val_1,omitempty"`

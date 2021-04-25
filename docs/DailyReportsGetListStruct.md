@@ -352,6 +352,7 @@ Name | Type | Description | Notes
 **SiteSet** | **string** |  | [optional] [default to null]
 **MaterialId** | **string** |  | [optional] [default to null]
 **Signature** | **string** |  | [optional] [default to null]
+**ActivateRegisterRate** | **float64** |  | [optional] [default to null]
 **ProductCatalogId** | **int64** |  | [optional] [default to null]
 **ProductOuterId** | **string** |  | [optional] [default to null]
 **BrandId** | **int64** |  | [optional] [default to null]

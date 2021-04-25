@@ -18,4 +18,5 @@ type SceneTargeting struct {
 	ExcludeUnionPositionPackage *[]int64  `json:"exclude_union_position_package,omitempty"`
 	TencentNews                 *[]string `json:"tencent_news,omitempty"`
 	DisplayScene                *[]string `json:"display_scene,omitempty"`
+	MobileUnionCategory         *[]int64  `json:"mobile_union_category,omitempty"`
 }
