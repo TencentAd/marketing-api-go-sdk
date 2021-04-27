@@ -31,6 +31,9 @@ const (
 	DestinationType_FULL_SCREEN_WECHAT              DestinationType = "PAGE_TYPE_FULL_SCREEN_WECHAT"
 	DestinationType_YUEBAO_QUICKAPP                 DestinationType = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationType_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationType = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
+	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 	DestinationType_YOUZAN_SINGLE                   DestinationType = "PAGE_TYPE_YOUZAN_SINGLE"
 	DestinationType_YOUZAN_TOGETHER                 DestinationType = "PAGE_TYPE_YOUZAN_TOGETHER"
 	DestinationType_YOUZAN_WECHAT_MINIPROGRAM       DestinationType = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
@@ -40,7 +43,4 @@ const (
 	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
 	DestinationType_TSA_OTT                         DestinationType = "PAGE_TYPE_TSA_OTT"
-	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
-	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
-	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )

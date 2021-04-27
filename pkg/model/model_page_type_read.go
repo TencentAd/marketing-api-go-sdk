@@ -32,6 +32,9 @@ const (
 	PageTypeRead_FULL_SCREEN_WECHAT              PageTypeRead = "PAGE_TYPE_FULL_SCREEN_WECHAT"
 	PageTypeRead_YUEBAO_QUICKAPP                 PageTypeRead = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	PageTypeRead_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE PageTypeRead = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	PageTypeRead_WECHAT_CHANNELS                 PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS"
+	PageTypeRead_CHANNELS_WATCH_LIVE             PageTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	PageTypeRead_CHANNELS_RESERVE_LIVE           PageTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 	PageTypeRead_YOUZAN_SINGLE                   PageTypeRead = "PAGE_TYPE_YOUZAN_SINGLE"
 	PageTypeRead_YOUZAN_TOGETHER                 PageTypeRead = "PAGE_TYPE_YOUZAN_TOGETHER"
 	PageTypeRead_YOUZAN_WECHAT_MINIPROGRAM       PageTypeRead = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
@@ -40,6 +43,4 @@ const (
 	PageTypeRead_WEIMOB_PROMOTION                PageTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	PageTypeRead_WEIMOB_PRODUCT                  PageTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	PageTypeRead_WEIMOB_H5                       PageTypeRead = "PAGE_TYPE_WEIMOB_H5"
-	PageTypeRead_CHANNELS_WATCH_LIVE             PageTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
-	PageTypeRead_CHANNELS_RESERVE_LIVE           PageTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )

@@ -22,6 +22,9 @@ const (
 	DestinationTypeRead_FENGYE_EC_WECHAT_MINIPROGRAM    DestinationTypeRead = "PAGE_TYPE_FENGYE_EC_WECHAT_MINIPROGRAM"
 	DestinationTypeRead_YUEBAO_QUICKAPP                 DestinationTypeRead = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationTypeRead_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationTypeRead = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationTypeRead_WECHAT_CHANNELS                 DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS"
+	DestinationTypeRead_CHANNELS_WATCH_LIVE             DestinationTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
+	DestinationTypeRead_CHANNELS_RESERVE_LIVE           DestinationTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 	DestinationTypeRead_YOUZAN_SINGLE                   DestinationTypeRead = "PAGE_TYPE_YOUZAN_SINGLE"
 	DestinationTypeRead_YOUZAN_TOGETHER                 DestinationTypeRead = "PAGE_TYPE_YOUZAN_TOGETHER"
 	DestinationTypeRead_YOUZAN_WECHAT_MINIPROGRAM       DestinationTypeRead = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
@@ -30,6 +33,4 @@ const (
 	DestinationTypeRead_WEIMOB_PROMOTION                DestinationTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationTypeRead_WEIMOB_PRODUCT                  DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationTypeRead_WEIMOB_H5                       DestinationTypeRead = "PAGE_TYPE_WEIMOB_H5"
-	DestinationTypeRead_CHANNELS_WATCH_LIVE             DestinationTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
-	DestinationTypeRead_CHANNELS_RESERVE_LIVE           DestinationTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 )
