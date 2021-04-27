@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **ExcludeUnionPositionPackage** | **[]int64** |  | [optional] [default to null]
 **TencentNews** | **[]string** |  | [optional] [default to null]
 **DisplayScene** | **[]string** |  | [optional] [default to null]
+**MobileUnionCategory** | **[]int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -302,7 +302,7 @@ type DailyReportsGetListStruct struct {
 	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
-	RegisterActivateRate                 *float64 `json:"register_activate_rate,omitempty"`
+	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                           *int64   `json:"income_val_1,omitempty"`
@@ -360,7 +360,6 @@ type DailyReportsGetListStruct struct {
 	SiteSet                              *string  `json:"site_set,omitempty"`
 	MaterialId                           *string  `json:"material_id,omitempty"`
 	Signature                            *string  `json:"signature,omitempty"`
-	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	ProductCatalogId                     *int64   `json:"product_catalog_id,omitempty"`
 	ProductOuterId                       *string  `json:"product_outer_id,omitempty"`
 	BrandId                              *int64   `json:"brand_id,omitempty"`

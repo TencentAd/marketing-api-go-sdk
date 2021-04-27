@@ -39,6 +39,7 @@ const (
 	DestinationType_WEIMOB_PROMOTION                DestinationType = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
+	DestinationType_TSA_OTT                         DestinationType = "PAGE_TYPE_TSA_OTT"
 	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
 	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"

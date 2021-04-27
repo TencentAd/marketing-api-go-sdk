@@ -296,7 +296,6 @@ Name | Type | Description | Notes
 **WechatShallowConversionsCountStage2** | **int64** |  | [optional] [default to null]
 **ActivateRegisterRate** | **float64** |  | [optional] [default to null]
 **Age** | **string** |  | [optional] [default to null]
-**RegisterActivateRate** | **float64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **Province** | **string** |  | [optional] [default to null]

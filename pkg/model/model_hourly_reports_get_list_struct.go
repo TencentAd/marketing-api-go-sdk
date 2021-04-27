@@ -300,7 +300,7 @@ type HourlyReportsGetListStruct struct {
 	WechatDeepConversionsCountStage2     *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
-	RegisterActivateRate                 *float64 `json:"register_activate_rate,omitempty"`
+	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                           *int64   `json:"income_val_1,omitempty"`
@@ -349,7 +349,6 @@ type HourlyReportsGetListStruct struct {
 	AdName                               *string  `json:"ad_name,omitempty"`
 	PromotedObjectType                   *string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                     *string  `json:"promoted_object_id,omitempty"`
-	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
 	WechatAccountId                      *string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                       *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                    *float64 `json:"cost_deviation_rate,omitempty"`

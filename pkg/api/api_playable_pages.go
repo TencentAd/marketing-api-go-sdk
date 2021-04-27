@@ -29,7 +29,7 @@ var (
 type PlayablePagesApiService service
 
 /*
-PlayablePagesApiService 添加互动推广页
+PlayablePagesApiService 添加互动推广页（待废弃,详见公告）
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param playablePageName

@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**PlayablePagesAdd**](PlayablePagesApi.md#PlayablePagesAdd) | **Post** /playable_pages/add | 添加互动推广页
+[**PlayablePagesAdd**](PlayablePagesApi.md#PlayablePagesAdd) | **Post** /playable_pages/add | 添加互动推广页（待废弃,详见公告）
 [**PlayablePagesGet**](PlayablePagesApi.md#PlayablePagesGet) | **Get** /playable_pages/get | 获取互动推广页
 
 
 # **PlayablePagesAdd**
 > PlayablePagesAddResponse PlayablePagesAdd(ctx, accountId, playablePageName, materialFile)
-添加互动推广页
+添加互动推广页（待废弃,详见公告）
 
 ### Required Parameters
 
