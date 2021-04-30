@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **ProfileId** | **int64** |  | [optional] [default to null]
 **DynamicAdcreativeSpec** | [***DynamicAdcreativeSpecForDc**](dynamic_adcreative_spec_for_dc.md) |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
+**BarrageList** | [**[]BarrageListCreateStruct**](barrage_list_create_struct.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

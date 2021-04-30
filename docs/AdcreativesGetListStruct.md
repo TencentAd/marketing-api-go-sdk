@@ -45,6 +45,7 @@ Name | Type | Description | Notes
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
+**BarrageList** | [**[]BarrageListReadStruct**](barrage_list_read_struct.md) |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
 

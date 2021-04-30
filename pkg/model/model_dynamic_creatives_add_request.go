@@ -28,5 +28,6 @@ type DynamicCreativesAddRequest struct {
 	ProfileId                 *int64                      `json:"profile_id,omitempty"`
 	DynamicAdcreativeSpec     *DynamicAdcreativeSpecForDc `json:"dynamic_adcreative_spec,omitempty"`
 	VideoEndPage              *VideoEndPageSpec           `json:"video_end_page,omitempty"`
+	BarrageList               *[]BarrageListCreateStruct  `json:"barrage_list,omitempty"`
 	AccountId                 *int64                      `json:"account_id,omitempty"`
 }

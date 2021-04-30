@@ -102,6 +102,10 @@ type APIClient struct {
 
 	AuthorizationApi *AuthorizationApiService
 
+	BarrageApi *BarrageApiService
+
+	BarrageRecommendApi *BarrageRecommendApiService
+
 	BatchAsyncRequestSpecificationApi *BatchAsyncRequestSpecificationApiService
 
 	BatchAsyncRequestsApi *BatchAsyncRequestsApiService
@@ -372,6 +376,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AsyncTasksApi = (*AsyncTasksApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
 	c.AuthorizationApi = (*AuthorizationApiService)(&c.common)
+	c.BarrageApi = (*BarrageApiService)(&c.common)
+	c.BarrageRecommendApi = (*BarrageRecommendApiService)(&c.common)
 	c.BatchAsyncRequestSpecificationApi = (*BatchAsyncRequestSpecificationApiService)(&c.common)
 	c.BatchAsyncRequestsApi = (*BatchAsyncRequestsApiService)(&c.common)
 	c.BatchOperationApi = (*BatchOperationApiService)(&c.common)

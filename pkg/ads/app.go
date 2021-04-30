@@ -121,6 +121,14 @@ func (c *SDKClient) Authorization() *api.AuthorizationApiService {
 	return c.Client.AuthorizationApi
 }
 
+func (c *SDKClient) Barrage() *api.BarrageApiService {
+	return c.Client.BarrageApi
+}
+
+func (c *SDKClient) BarrageRecommend() *api.BarrageRecommendApiService {
+	return c.Client.BarrageRecommendApi
+}
+
 func (c *SDKClient) BatchAsyncRequestSpecification() *api.BatchAsyncRequestSpecificationApiService {
 	return c.Client.BatchAsyncRequestSpecificationApi
 }
