@@ -20,12 +20,11 @@ func (d *DiffHostMiddleware) Handle(
 		if specialUrl.Host != "" {
 			u, _ := url.Parse(specialUrl.Host)
 			req.Header.Set("Host", u.Host)
-			uri := u.Host + u.Path
-			req.URL.Host = uri
-			req.Host = uri
-		}
-		if specialUrl.Path != "" {
-			req.URL.Path = specialUrl.Path
+			req.URL.Host = u.Host
+			req.Host = u.Host
+			if specialUrl.Path != "" {
+				req.URL.Path = u.Path + specialUrl.Path
+			}
 		}
 	}
 	rsp, err = next(req)

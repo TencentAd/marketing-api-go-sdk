@@ -57,7 +57,7 @@ func (e *GetAccessTokenExample) RunExample() {
 		}
 	} else {
 		// 从返回里获得AccessToken并设置到tads中
-		tads.SetAccessToken(response.AccessToken)
+		tads.SetAccessToken(*response.AccessToken)
 	}
 }
 
