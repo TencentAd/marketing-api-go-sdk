@@ -32,7 +32,6 @@ Name | Type | Description | Notes
 **UniversalLink** | **string** |  | [optional] [default to null]
 **AdditionalUniversalLink** | **string** |  | [optional] [default to null]
 **ProductShortName** | **string** |  | [optional] [default to null]
-**ProductSaleStatus** | [***ProductSaleStatus**](ProductSaleStatus.md) |  | [optional] [default to null]
 **Price** | **float64** |  | [optional] [default to null]
 **OriginalPrice** | **float64** |  | [optional] [default to null]
 **Discount** | **float64** |  | [optional] [default to null]

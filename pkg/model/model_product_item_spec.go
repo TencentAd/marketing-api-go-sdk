@@ -40,7 +40,6 @@ type ProductItemSpec struct {
 	UniversalLink             *string               `json:"universal_link,omitempty"`
 	AdditionalUniversalLink   *string               `json:"additional_universal_link,omitempty"`
 	ProductShortName          *string               `json:"product_short_name,omitempty"`
-	ProductSaleStatus         ProductSaleStatus     `json:"product_sale_status,omitempty"`
 	Price                     *float64              `json:"price,omitempty"`
 	OriginalPrice             *float64              `json:"original_price,omitempty"`
 	Discount                  *float64              `json:"discount,omitempty"`

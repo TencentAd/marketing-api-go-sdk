@@ -25,4 +25,5 @@ type ConversionsGetListStruct struct {
 	SiteSetEnable                *bool                      `json:"site_set_enable,omitempty"`
 	IsDeleted                    *bool                      `json:"is_deleted,omitempty"`
 	AccessStatus                 AccessStatus               `json:"access_status,omitempty"`
+	CreateSourceType             CreateSourceType           `json:"create_source_type,omitempty"`
 }

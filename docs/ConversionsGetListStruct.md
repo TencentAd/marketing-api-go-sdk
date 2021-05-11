@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **SiteSetEnable** | **bool** |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **AccessStatus** | [***AccessStatus**](AccessStatus.md) |  | [optional] [default to null]
+**CreateSourceType** | [***CreateSourceType**](CreateSourceType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
