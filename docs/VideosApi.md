@@ -5,6 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**VideosAdd**](VideosApi.md#VideosAdd) | **Post** /videos/add | 添加视频文件
+[**VideosDelete**](VideosApi.md#VideosDelete) | **Post** /videos/delete | 删除视频
 [**VideosGet**](VideosApi.md#VideosGet) | **Get** /videos/get | 获取视频文件
 [**VideosUpdate**](VideosApi.md#VideosUpdate) | **Post** /videos/update | 修改视频信息
 
@@ -45,6 +46,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **VideosDelete**
+> VideosDeleteResponse VideosDelete(ctx, data)
+删除视频
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**VideosDeleteRequest**](VideosDeleteRequest.md)|  | 
+
+### Return type
+
+[**VideosDeleteResponse**](VideosDeleteResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

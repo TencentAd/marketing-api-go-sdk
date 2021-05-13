@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int64** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]
-**Desc** | **string** |  | [optional] [default to null]
+**Description** | **string** |  | [optional] [default to null]
 **ParentId** | **int64** |  | [optional] [default to null]
 **TargetingName** | **string** |  | [optional] [default to null]
 

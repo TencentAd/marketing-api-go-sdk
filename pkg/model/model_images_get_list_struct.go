@@ -24,6 +24,7 @@ type ImagesGetListStruct struct {
 	SourceReferenceId *string         `json:"source_reference_id,omitempty"`
 	OwnerAccountId    *string         `json:"owner_account_id,omitempty"`
 	Status            MediaStatusType `json:"status,omitempty"`
+	SampleAspectRatio *string         `json:"sample_aspect_ratio,omitempty"`
 	Width             *int64          `json:"width,omitempty"`
 	Height            *int64          `json:"height,omitempty"`
 	FileSize          *int64          `json:"file_size,omitempty"`

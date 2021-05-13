@@ -5,6 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ImagesAdd**](ImagesApi.md#ImagesAdd) | **Post** /images/add | 添加图片文件
+[**ImagesDelete**](ImagesApi.md#ImagesDelete) | **Post** /images/delete | 删除图片
 [**ImagesGet**](ImagesApi.md#ImagesGet) | **Get** /images/get | 获取图片信息
 [**ImagesUpdate**](ImagesApi.md#ImagesUpdate) | **Post** /images/update | 修改图片信息
 
@@ -47,6 +48,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **ImagesDelete**
+> ImagesDeleteResponse ImagesDelete(ctx, data)
+删除图片
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ImagesDeleteRequest**](ImagesDeleteRequest.md)|  | 
+
+### Return type
+
+[**ImagesDeleteResponse**](ImagesDeleteResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

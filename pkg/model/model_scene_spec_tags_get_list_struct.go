@@ -13,7 +13,7 @@ package model
 type SceneSpecTagsGetListStruct struct {
 	Id            *int64  `json:"id,omitempty"`
 	Name          *string `json:"name,omitempty"`
-	Desc          *string `json:"desc,omitempty"`
+	Description   *string `json:"description,omitempty"`
 	ParentId      *int64  `json:"parent_id,omitempty"`
 	TargetingName *string `json:"targeting_name,omitempty"`
 }

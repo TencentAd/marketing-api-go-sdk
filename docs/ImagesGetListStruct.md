@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **SourceReferenceId** | **string** |  | [optional] [default to null]
 **OwnerAccountId** | **string** |  | [optional] [default to null]
 **Status** | [***MediaStatusType**](MediaStatusType.md) |  | [optional] [default to null]
+**SampleAspectRatio** | **string** |  | [optional] [default to null]
 **Width** | **int64** |  | [optional] [default to null]
 **Height** | **int64** |  | [optional] [default to null]
 **FileSize** | **int64** |  | [optional] [default to null]
