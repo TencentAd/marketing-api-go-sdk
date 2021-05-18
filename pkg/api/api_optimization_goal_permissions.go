@@ -35,14 +35,16 @@ OptimizationGoalPermissionsApiService 查询优化目标权限
  * @param promotedObjectType
  * @param optional nil or *OptimizationGoalPermissionsGetOpts - Optional Parameters:
      * @param "BidMode" (optional.String) -
+     * @param "PromotedObjectId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return OptimizationGoalPermissionsGetResponse
 */
 
 type OptimizationGoalPermissionsGetOpts struct {
-	BidMode optional.String
-	Fields  optional.Interface
+	BidMode          optional.String
+	PromotedObjectId optional.String
+	Fields           optional.Interface
 }
 
 func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, accountId int64, siteSet []string, promotedObjectType string, localVarOptionals *OptimizationGoalPermissionsGetOpts) (OptimizationGoalPermissionsGetResponseData, http.Header, error) {
@@ -69,6 +71,9 @@ func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, account
 		localVarQueryParams.Add("bid_mode", parameterToString(localVarOptionals.BidMode.Value(), ""))
 	}
 	localVarQueryParams.Add("promoted_object_type", parameterToString(promotedObjectType, ""))
+	if localVarOptionals != nil && localVarOptionals.PromotedObjectId.IsSet() {
+		localVarQueryParams.Add("promoted_object_id", parameterToString(localVarOptionals.PromotedObjectId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

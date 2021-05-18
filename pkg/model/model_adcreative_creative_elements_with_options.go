@@ -22,6 +22,7 @@ type AdcreativeCreativeElementsWithOptions struct {
 	TitleOptions               *[]string                          `json:"title_options,omitempty"`
 	DescriptionOptions         *[]string                          `json:"description_options,omitempty"`
 	VideoOptions               *[]string                          `json:"video_options,omitempty"`
+	DeepLinkType               *string                            `json:"deep_link_type,omitempty"`
 	LinkNameType               LinkNameTypeMp                     `json:"link_name_type,omitempty"`
 	ImageList                  *[]string                          `json:"image_list,omitempty"`
 	ElementStory               *[]AdcreativeElementStoryArrayItem `json:"element_story,omitempty"`
@@ -43,6 +44,7 @@ type AdcreativeCreativeElementsWithOptions struct {
 	CardContent                *AdcreativeCardContent             `json:"card_content,omitempty"`
 	VideoPopupUrl              *string                            `json:"video_popup_url,omitempty"`
 	VideoPopupButton           *AdcreativeVideoPopupButton        `json:"video_popup_button,omitempty"`
+	ButtonUrl                  *string                            `json:"button_url,omitempty"`
 	Brand                      *AdCreativeBrand                   `json:"brand,omitempty"`
 	Caption                    *string                            `json:"caption,omitempty"`
 	LabelledImg                *AdcreativeLabelledImg             `json:"labelled_img,omitempty"`

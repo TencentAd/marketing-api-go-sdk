@@ -18,6 +18,7 @@ type AdcreativeCreativeElementsReadMp struct {
 	Description                *string                            `json:"description,omitempty"`
 	Corporate                  *AdcreativeCorporate               `json:"corporate,omitempty"`
 	Video                      *string                            `json:"video,omitempty"`
+	DeepLinkType               *string                            `json:"deep_link_type,omitempty"`
 	LinkNameType               LinkNameTypeMp                     `json:"link_name_type,omitempty"`
 	ImageList                  *[]string                          `json:"image_list,omitempty"`
 	ElementStory               *[]AdcreativeElementStoryArrayItem `json:"element_story,omitempty"`
@@ -39,6 +40,7 @@ type AdcreativeCreativeElementsReadMp struct {
 	VideoPopupButton           *AdcreativeVideoPopupButton        `json:"video_popup_button,omitempty"`
 	VideoPopupButtonText       *string                            `json:"video_popup_button_text,omitempty"`
 	VideoPopupButtonUrl        *string                            `json:"video_popup_button_url,omitempty"`
+	ButtonUrl                  *string                            `json:"button_url,omitempty"`
 	LongVideo1                 *string                            `json:"long_video1,omitempty"`
 	LongVideo2                 *string                            `json:"long_video2,omitempty"`
 	ShortVideoStruct           *ShortVideoStruct                  `json:"short_video_struct,omitempty"`
