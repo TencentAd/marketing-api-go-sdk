@@ -26,4 +26,5 @@ const (
 	ProductPromotedObjectTypeSelect_MINI_GAME_WECHAT           ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT"
 	ProductPromotedObjectTypeSelect_MINI_GAME_QQ               ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_MINI_GAME_QQ"
 	ProductPromotedObjectTypeSelect_JD                         ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_JD"
+	ProductPromotedObjectTypeSelect_WECHAT_OFFICIAL_ACCOUNT    ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT"
 )

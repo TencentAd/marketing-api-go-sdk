@@ -33,4 +33,5 @@ const (
 	DestinationTypeRead_WEIMOB_PROMOTION                DestinationTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationTypeRead_WEIMOB_PRODUCT                  DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationTypeRead_WEIMOB_H5                       DestinationTypeRead = "PAGE_TYPE_WEIMOB_H5"
+	DestinationTypeRead_WECHAT_OFFICIAL_ACCOUNT_DETAIL  DestinationTypeRead = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
 )

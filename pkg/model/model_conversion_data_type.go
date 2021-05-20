@@ -14,9 +14,10 @@ type ConversionDataType string
 
 // List of ConversionDataType
 const (
-	ConversionDataType_DEFAULT      ConversionDataType = "CONVERSION_DATA_DEFAULT"
-	ConversionDataType_FRIEND_PLAY  ConversionDataType = "CONVERSION_DATA_FRIEND_PLAY"
-	ConversionDataType_APP_DOWNLOAD ConversionDataType = "CONVERSION_DATA_APP_DOWNLOAD"
-	ConversionDataType_ONSHOP       ConversionDataType = "CONVERSION_DATA_ONSHOP"
-	ConversionDataType_ADMETRIC     ConversionDataType = "CONVERSION_DATA_ADMETRIC"
+	ConversionDataType_DEFAULT       ConversionDataType = "CONVERSION_DATA_DEFAULT"
+	ConversionDataType_FRIEND_PLAY   ConversionDataType = "CONVERSION_DATA_FRIEND_PLAY"
+	ConversionDataType_APP_DOWNLOAD  ConversionDataType = "CONVERSION_DATA_APP_DOWNLOAD"
+	ConversionDataType_ONSHOP        ConversionDataType = "CONVERSION_DATA_ONSHOP"
+	ConversionDataType_ADMETRIC      ConversionDataType = "CONVERSION_DATA_ADMETRIC"
+	ConversionDataType_FRIEND_FOLLOW ConversionDataType = "CONVERSION_DATA_FRIEND_FOLLOW"
 )

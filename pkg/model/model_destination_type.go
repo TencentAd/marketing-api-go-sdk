@@ -43,4 +43,5 @@ const (
 	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
 	DestinationType_TSA_OTT                         DestinationType = "PAGE_TYPE_TSA_OTT"
+	DestinationType_WECHAT_OFFICIAL_ACCOUNT_DETAIL  DestinationType = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
 )

@@ -43,4 +43,5 @@ const (
 	PageTypeRead_WEIMOB_PROMOTION                PageTypeRead = "PAGE_TYPE_WEIMOB_PROMOTION"
 	PageTypeRead_WEIMOB_PRODUCT                  PageTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	PageTypeRead_WEIMOB_H5                       PageTypeRead = "PAGE_TYPE_WEIMOB_H5"
+	PageTypeRead_WECHAT_OFFICIAL_ACCOUNT_DETAIL  PageTypeRead = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
 )

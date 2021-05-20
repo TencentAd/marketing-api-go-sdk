@@ -41,5 +41,6 @@ const (
 	PromotedObjectType_COUPON_WECHAT              PromotedObjectType = "PROMOTED_OBJECT_TYPE_COUPON_WECHAT"
 	PromotedObjectType_APP_PROMOTION              PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_PROMOTION"
 	PromotedObjectType_WECHAT_CHANNELS            PromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS"
+	PromotedObjectType_WECHAT_OFFICIAL_ACCOUNT    PromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT"
 	PromotedObjectType_MINI_PROGRAM_WECHAT        PromotedObjectType = "PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT"
 )

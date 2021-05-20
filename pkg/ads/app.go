@@ -413,6 +413,10 @@ func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
 }
 
+func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewResultsApiService {
+	return c.Client.ReviewElementPrereviewResultsApi
+}
+
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
