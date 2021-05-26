@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **ElementGoods** | [***ElementGoods**](element_goods.md) |  | [optional] [default to null]
 **ElementSwipe** | [***ElementSwipe**](element_swipe.md) |  | [optional] [default to null]
 **ElementWebview** | [***ElementWebview**](element_webview.md) |  | [optional] [default to null]
+**ElementAnimateFloat** | [***ElementAnimateFloat**](element_animate_float.md) |  | [optional] [default to null]
 **ImageSpec** | [***ElementImage**](element_image.md) |  | [optional] [default to null]
 **VideoSpec** | [***ElementVideo**](element_video.md) |  | [optional] [default to null]
 **TextSpec** | [***ElementText**](element_text.md) |  | [optional] [default to null]

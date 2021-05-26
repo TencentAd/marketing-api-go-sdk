@@ -303,6 +303,10 @@ type TargetingTagReportsGetListStruct struct {
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
 	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
+	KeyBehaviorConversionsCount          *int64   `json:"key_behavior_conversions_count,omitempty"`
+	KeyBehaviorConversionsCost           *int64   `json:"key_behavior_conversions_cost,omitempty"`
+	KeyBehaviorConversionsRate           *float64 `json:"key_behavior_conversions_rate,omitempty"`
+	FirstDayOrderRoi                     *float64 `json:"first_day_order_roi,omitempty"`
 	Age                                  *string  `json:"age,omitempty"`
 	RegionId                             *int64   `json:"region_id,omitempty"`
 	CityId                               *int64   `json:"city_id,omitempty"`

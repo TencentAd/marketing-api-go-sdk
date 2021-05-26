@@ -76,8 +76,6 @@ type APIClient struct {
 
 	AgencyInnerTransferApi *AgencyInnerTransferApiService
 
-	AgencyPeerTransferApi *AgencyPeerTransferApiService
-
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
 	AndroidChannelPackagesApi *AndroidChannelPackagesApiService
@@ -248,8 +246,6 @@ type APIClient struct {
 
 	ReportApi *ReportApiService
 
-	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
-
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
 	ShopApi *ShopApiService
@@ -367,7 +363,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
 	c.AgencyInnerTransferApi = (*AgencyInnerTransferApiService)(&c.common)
-	c.AgencyPeerTransferApi = (*AgencyPeerTransferApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelPackagesApi = (*AndroidChannelPackagesApiService)(&c.common)
 	c.AndroidUnionChannelPackagesApi = (*AndroidUnionChannelPackagesApiService)(&c.common)
@@ -453,7 +448,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReportApi = (*ReportApiService)(&c.common)
-	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)

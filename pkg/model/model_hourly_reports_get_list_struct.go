@@ -301,6 +301,10 @@ type HourlyReportsGetListStruct struct {
 	WechatShallowConversionsCountStage1  *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
 	WechatShallowConversionsCountStage2  *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
 	ActivateRegisterRate                 *float64 `json:"activate_register_rate,omitempty"`
+	KeyBehaviorConversionsCount          *int64   `json:"key_behavior_conversions_count,omitempty"`
+	KeyBehaviorConversionsCost           *int64   `json:"key_behavior_conversions_cost,omitempty"`
+	KeyBehaviorConversionsRate           *float64 `json:"key_behavior_conversions_rate,omitempty"`
+	FirstDayOrderRoi                     *float64 `json:"first_day_order_roi,omitempty"`
 	RequestConversionsCount              *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost               *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                           *int64   `json:"income_val_1,omitempty"`

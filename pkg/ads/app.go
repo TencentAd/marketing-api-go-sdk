@@ -69,10 +69,6 @@ func (c *SDKClient) AgencyInnerTransfer() *api.AgencyInnerTransferApiService {
 	return c.Client.AgencyInnerTransferApi
 }
 
-func (c *SDKClient) AgencyPeerTransfer() *api.AgencyPeerTransferApiService {
-	return c.Client.AgencyPeerTransferApi
-}
-
 func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
@@ -411,10 +407,6 @@ func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {
 
 func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
-}
-
-func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewResultsApiService {
-	return c.Client.ReviewElementPrereviewResultsApi
 }
 
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
