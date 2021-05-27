@@ -35,13 +35,13 @@ XijingPageListApiService 蹊径-获取落地页列表
      * @param "PageId" (optional.Int64) -
      * @param "PageServiceId" (optional.String) -
      * @param "PageName" (optional.String) -
-     * @param "PageType" (optional.String) -
+     * @param "PageType" (optional.Interface of []string) -
      * @param "PageLastModifyStartTime" (optional.String) -
      * @param "PageLastModifyEndTime" (optional.String) -
      * @param "PageSize" (optional.Int64) -
      * @param "PageIndex" (optional.Int64) -
-     * @param "PagePublishStatus" (optional.String) -
-     * @param "PageStatus" (optional.String) -
+     * @param "PagePublishStatus" (optional.Interface of []string) -
+     * @param "PageStatus" (optional.Interface of []string) -
      * @param "PageSource" (optional.String) -
      * @param "PageOwnerId" (optional.Int64) -
      * @param "AppId" (optional.Int64) -
@@ -56,13 +56,13 @@ type XijingPageListGetOpts struct {
 	PageId                  optional.Int64
 	PageServiceId           optional.String
 	PageName                optional.String
-	PageType                optional.String
+	PageType                optional.Interface
 	PageLastModifyStartTime optional.String
 	PageLastModifyEndTime   optional.String
 	PageSize                optional.Int64
 	PageIndex               optional.Int64
-	PagePublishStatus       optional.String
-	PageStatus              optional.String
+	PagePublishStatus       optional.Interface
+	PageStatus              optional.Interface
 	PageSource              optional.String
 	PageOwnerId             optional.Int64
 	AppId                   optional.Int64
@@ -100,7 +100,7 @@ func (a *XijingPageListApiService) Get(ctx context.Context, accountId int64, loc
 		localVarQueryParams.Add("page_name", parameterToString(localVarOptionals.PageName.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageType.IsSet() {
-		localVarQueryParams.Add("page_type", parameterToString(localVarOptionals.PageType.Value(), ""))
+		localVarQueryParams.Add("page_type", parameterToString(localVarOptionals.PageType.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageLastModifyStartTime.IsSet() {
 		localVarQueryParams.Add("page_last_modify_start_time", parameterToString(localVarOptionals.PageLastModifyStartTime.Value(), ""))
@@ -115,10 +115,10 @@ func (a *XijingPageListApiService) Get(ctx context.Context, accountId int64, loc
 		localVarQueryParams.Add("page_index", parameterToString(localVarOptionals.PageIndex.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.PagePublishStatus.IsSet() {
-		localVarQueryParams.Add("page_publish_status", parameterToString(localVarOptionals.PagePublishStatus.Value(), ""))
+		localVarQueryParams.Add("page_publish_status", parameterToString(localVarOptionals.PagePublishStatus.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageStatus.IsSet() {
-		localVarQueryParams.Add("page_status", parameterToString(localVarOptionals.PageStatus.Value(), ""))
+		localVarQueryParams.Add("page_status", parameterToString(localVarOptionals.PageStatus.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSource.IsSet() {
 		localVarQueryParams.Add("page_source", parameterToString(localVarOptionals.PageSource.Value(), ""))

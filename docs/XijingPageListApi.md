@@ -28,13 +28,13 @@ Name | Type | Description  | Notes
  **pageId** | **optional.Int64**|  | 
  **pageServiceId** | **optional.String**|  | 
  **pageName** | **optional.String**|  | 
- **pageType** | **optional.String**|  | 
+ **pageType** | [**optional.Interface of []string**](string.md)|  | 
  **pageLastModifyStartTime** | **optional.String**|  | 
  **pageLastModifyEndTime** | **optional.String**|  | 
  **pageSize** | **optional.Int64**|  | 
  **pageIndex** | **optional.Int64**|  | 
- **pagePublishStatus** | **optional.String**|  | 
- **pageStatus** | **optional.String**|  | 
+ **pagePublishStatus** | [**optional.Interface of []string**](string.md)|  | 
+ **pageStatus** | [**optional.Interface of []string**](string.md)|  | 
  **pageSource** | **optional.String**|  | 
  **pageOwnerId** | **optional.Int64**|  | 
  **appId** | **optional.Int64**|  | 
