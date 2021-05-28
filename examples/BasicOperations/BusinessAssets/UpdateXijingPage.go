@@ -35,7 +35,7 @@ func (e *XijingPageUpdateExample) Init() {
 	e.Data = model.XijingPageUpdateRequest{}
 }
 
-func (e *XijingPageUpdateExample) RunExample() (model.XijingPageUpdateResponseData, http.Header, error) {
+func (e *XijingPageUpdateExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

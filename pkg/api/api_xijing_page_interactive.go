@@ -48,14 +48,14 @@ type XijingPageInteractiveAddOpts struct {
 	File optional.Interface
 }
 
-func (a *XijingPageInteractiveApiService) Add(ctx context.Context, accountId int64, isAutoSubmit int64, pageType string, interactivePageType string, pageTitle string, pageName string, mobileAppId string, localVarOptionals *XijingPageInteractiveAddOpts) (XijingPageInteractiveAddResponseData, http.Header, error) {
+func (a *XijingPageInteractiveApiService) Add(ctx context.Context, accountId int64, isAutoSubmit int64, pageType string, interactivePageType string, pageTitle string, pageName string, mobileAppId string, localVarOptionals *XijingPageInteractiveAddOpts) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue XijingPageInteractiveAddResponseData
+		localVarReturnValue interface{}
 		localVarResponse    XijingPageInteractiveAddResponse
 	)
 
@@ -140,7 +140,7 @@ func (a *XijingPageInteractiveApiService) Add(ctx context.Context, accountId int
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

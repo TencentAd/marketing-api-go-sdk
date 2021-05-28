@@ -9,6 +9,8 @@
 
 package model
 
-type XijingPageUpdateResponseData struct {
-	List *[]PageOperateResponses `json:"list,omitempty"`
+// 广告创意
+type TaskAdcreative struct {
+	PageType DestinationType `json:"page_type,omitempty"`
+	PageSpec *TaskPageSpec   `json:"page_spec,omitempty"`
 }

@@ -21,10 +21,6 @@ func (c *SDKClient) AdLabel() *api.AdLabelApiService {
 	return c.Client.AdLabelApi
 }
 
-func (c *SDKClient) AdParam() *api.AdParamApiService {
-	return c.Client.AdParamApi
-}
-
 func (c *SDKClient) AdcreativePreviews() *api.AdcreativePreviewsApiService {
 	return c.Client.AdcreativePreviewsApi
 }
@@ -551,10 +547,6 @@ func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 
 func (c *SDKClient) WechatQualifications() *api.WechatQualificationsApiService {
 	return c.Client.WechatQualificationsApi
-}
-
-func (c *SDKClient) Wildcards() *api.WildcardsApiService {
-	return c.Client.WildcardsApi
 }
 
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {

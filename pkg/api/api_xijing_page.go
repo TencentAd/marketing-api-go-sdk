@@ -33,14 +33,14 @@ XijingPageApiService 蹊径-基于模板创建落地页
 
 @return XijingPageAddResponse
 */
-func (a *XijingPageApiService) Add(ctx context.Context, data XijingPageAddRequest) (XijingPageAddResponseData, http.Header, error) {
+func (a *XijingPageApiService) Add(ctx context.Context, data XijingPageAddRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue XijingPageAddResponseData
+		localVarReturnValue interface{}
 		localVarResponse    XijingPageAddResponse
 	)
 
@@ -98,7 +98,7 @@ func (a *XijingPageApiService) Add(ctx context.Context, data XijingPageAddReques
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -134,14 +134,14 @@ XijingPageApiService 蹊径-删除落地页
 
 @return XijingPageDeleteResponse
 */
-func (a *XijingPageApiService) Delete(ctx context.Context, data XijingPageDeleteRequest) (XijingPageDeleteResponseData, http.Header, error) {
+func (a *XijingPageApiService) Delete(ctx context.Context, data XijingPageDeleteRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue XijingPageDeleteResponseData
+		localVarReturnValue interface{}
 		localVarResponse    XijingPageDeleteResponse
 	)
 
@@ -199,7 +199,7 @@ func (a *XijingPageApiService) Delete(ctx context.Context, data XijingPageDelete
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -235,14 +235,14 @@ XijingPageApiService 蹊径-送审落地页
 
 @return XijingPageUpdateResponse
 */
-func (a *XijingPageApiService) Update(ctx context.Context, data XijingPageUpdateRequest) (XijingPageUpdateResponseData, http.Header, error) {
+func (a *XijingPageApiService) Update(ctx context.Context, data XijingPageUpdateRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue XijingPageUpdateResponseData
+		localVarReturnValue interface{}
 		localVarResponse    XijingPageUpdateResponse
 	)
 
@@ -300,7 +300,7 @@ func (a *XijingPageApiService) Update(ctx context.Context, data XijingPageUpdate
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

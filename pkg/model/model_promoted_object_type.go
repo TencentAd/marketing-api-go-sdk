@@ -9,7 +9,7 @@
 
 package model
 
-// PromotedObjectType : 支持商品类型
+// PromotedObjectType : 推广目标类型
 type PromotedObjectType string
 
 // List of PromotedObjectType

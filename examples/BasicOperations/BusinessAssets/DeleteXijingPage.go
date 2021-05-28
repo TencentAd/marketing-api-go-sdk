@@ -35,7 +35,7 @@ func (e *XijingPageDeleteExample) Init() {
 	e.Data = model.XijingPageDeleteRequest{}
 }
 
-func (e *XijingPageDeleteExample) RunExample() (model.XijingPageDeleteResponseData, http.Header, error) {
+func (e *XijingPageDeleteExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

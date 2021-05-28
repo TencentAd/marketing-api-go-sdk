@@ -52,8 +52,6 @@ type APIClient struct {
 
 	AdLabelApi *AdLabelApiService
 
-	AdParamApi *AdParamApiService
-
 	AdcreativePreviewsApi *AdcreativePreviewsApiService
 
 	AdcreativeTemplateDetailApi *AdcreativeTemplateDetailApiService
@@ -318,8 +316,6 @@ type APIClient struct {
 
 	WechatQualificationsApi *WechatQualificationsApiService
 
-	WildcardsApi *WildcardsApiService
-
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
@@ -351,7 +347,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	// API Services
 	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
 	c.AdLabelApi = (*AdLabelApiService)(&c.common)
-	c.AdParamApi = (*AdParamApiService)(&c.common)
 	c.AdcreativePreviewsApi = (*AdcreativePreviewsApiService)(&c.common)
 	c.AdcreativeTemplateDetailApi = (*AdcreativeTemplateDetailApiService)(&c.common)
 	c.AdcreativeTemplatePreviewApi = (*AdcreativeTemplatePreviewApiService)(&c.common)
@@ -484,7 +479,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
-	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
 	c.XijingPageInteractiveApi = (*XijingPageInteractiveApiService)(&c.common)

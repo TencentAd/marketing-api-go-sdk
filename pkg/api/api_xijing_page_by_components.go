@@ -33,14 +33,14 @@ XijingPageByComponentsApiService 蹊径-基于组件创建落地页
 
 @return XijingPageByComponentsAddResponse
 */
-func (a *XijingPageByComponentsApiService) Add(ctx context.Context, data XijingPageByComponentsAddRequest) (XijingPageByComponentsAddResponseData, http.Header, error) {
+func (a *XijingPageByComponentsApiService) Add(ctx context.Context, data XijingPageByComponentsAddRequest) (interface{}, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue XijingPageByComponentsAddResponseData
+		localVarReturnValue interface{}
 		localVarResponse    XijingPageByComponentsAddResponse
 	)
 
@@ -98,7 +98,7 @@ func (a *XijingPageByComponentsApiService) Add(ctx context.Context, data XijingP
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			return localVarReturnValue, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

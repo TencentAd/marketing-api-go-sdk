@@ -18,7 +18,6 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type XijingPageInteractiveAddExample struct {
@@ -50,7 +49,7 @@ func (e *XijingPageInteractiveAddExample) Init() {
 	e.XijingPageInteractiveAddOpts = &api.XijingPageInteractiveAddOpts{}
 }
 
-func (e *XijingPageInteractiveAddExample) RunExample() (model.XijingPageInteractiveAddResponseData, http.Header, error) {
+func (e *XijingPageInteractiveAddExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
