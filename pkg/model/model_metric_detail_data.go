@@ -11,12 +11,22 @@ package model
 
 // 报表效果数据
 type MetricDetailData struct {
-	Cost                  *int64 `json:"cost,omitempty"`
-	ExpPv                 *int64 `json:"exp_pv,omitempty"`
-	CanvasCpnCouponsGetPv *int64 `json:"canvas_cpn_coupons_get_pv,omitempty"`
-	CanvasCpnCouponsCost  *int64 `json:"canvas_cpn_coupons_cost,omitempty"`
-	CanvasCpnCouponsUsePv *int64 `json:"canvas_cpn_coupons_use_pv,omitempty"`
-	Purchase              *int64 `json:"purchase,omitempty"`
-	PromotionClaimOfferPv *int64 `json:"promotion_claim_offer_pv,omitempty"`
-	PageVisitStorePv      *int64 `json:"page_visit_store_pv,omitempty"`
+	Cost                    *int64 `json:"cost,omitempty"`
+	ExpPv                   *int64 `json:"exp_pv,omitempty"`
+	CanvasCpnCouponsGetPv   *int64 `json:"canvas_cpn_coupons_get_pv,omitempty"`
+	CanvasCpnCouponsCost    *int64 `json:"canvas_cpn_coupons_cost,omitempty"`
+	CanvasCpnCouponsUsePv   *int64 `json:"canvas_cpn_coupons_use_pv,omitempty"`
+	Purchase                *int64 `json:"purchase,omitempty"`
+	PromotionClaimOfferPv   *int64 `json:"promotion_claim_offer_pv,omitempty"`
+	PageVisitStorePv        *int64 `json:"page_visit_store_pv,omitempty"`
+	WeappExpPv              *int64 `json:"weapp_exp_pv,omitempty"`
+	PromotionClaimOfferCost *int64 `json:"promotion_claim_offer_cost,omitempty"`
+	PageVisitStoreAmount    *int64 `json:"page_visit_store_amount,omitempty"`
+	BuyCouponsPv            *int64 `json:"buy_coupons_pv,omitempty"`
+	BuyCouponsCost          *int64 `json:"buy_coupons_cost,omitempty"`
+	QuestReservationUv      *int64 `json:"quest_reservation_uv,omitempty"`
+	CvsExpPv                *int64 `json:"cvs_exp_pv,omitempty"`
+	CvsExpCost              *int64 `json:"cvs_exp_cost,omitempty"`
+	WeappExpCost            *int64 `json:"weapp_exp_cost,omitempty"`
+	QuestReservationUvCost  *int64 `json:"quest_reservation_uv_cost,omitempty"`
 }

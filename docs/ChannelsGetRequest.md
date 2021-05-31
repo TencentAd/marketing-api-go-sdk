@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
-**DateRange** | [***DateRange**](date_range.md) |  | [optional] [default to null]
+**DateRange** | [***DpDateRange**](dp_date_range.md) |  | [optional] [default to null]
 **Filtering** | [**[]FilteringStruct**](filtering_struct.md) |  | [optional] [default to null]
 **Level** | [***DpApiReportLevel**](DpApiReportLevel.md) |  | [optional] [default to null]
 **Page** | **int64** |  | [optional] [default to null]

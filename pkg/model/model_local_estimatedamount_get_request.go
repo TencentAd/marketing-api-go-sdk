@@ -10,7 +10,16 @@
 package model
 
 type LocalEstimatedamountGetRequest struct {
-	AccountId    *int64       `json:"account_id,omitempty"`
-	CityLevel    CityLevel    `json:"city_level,omitempty"`
-	PackageLevel PackageLevel `json:"package_level,omitempty"`
+	AccountId         *int64               `json:"account_id,omitempty"`
+	CityLevel         CityLevel            `json:"city_level,omitempty"`
+	PackageLevel      PackageLevel         `json:"package_level,omitempty"`
+	PoiList           *[]string            `json:"poi_list,omitempty"`
+	OptimizationGoal  OptimizationGoal     `json:"optimization_goal,omitempty"`
+	Radius            *int64               `json:"radius,omitempty"`
+	Age               *[]AgeStruct         `json:"age,omitempty"`
+	Gender            *[]string            `json:"gender,omitempty"`
+	BeginTime         *string              `json:"begin_time,omitempty"`
+	EndTime           *string              `json:"end_time,omitempty"`
+	Budget            *int64               `json:"budget,omitempty"`
+	LocalBusinessMode EcoLocalBusinessMode `json:"local_business_mode,omitempty"`
 }

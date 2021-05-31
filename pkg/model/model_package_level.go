@@ -9,7 +9,7 @@
 
 package model
 
-// PackageLevel : 套餐级别
+// PackageLevel : 套餐等级, 设置总预算和广告结束时间后该字段可不填
 type PackageLevel string
 
 // List of PackageLevel

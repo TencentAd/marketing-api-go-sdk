@@ -15,6 +15,4 @@ type AdCreativeCreateSpec struct {
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 	PageType           DestinationType                 `json:"page_type,omitempty"`
 	PageSpec           *DpPageSpec                     `json:"page_spec,omitempty"`
-	ButtonTips         *string                         `json:"button_tips,omitempty"`
-	CouponTitle        *string                         `json:"coupon_title,omitempty"`
 }

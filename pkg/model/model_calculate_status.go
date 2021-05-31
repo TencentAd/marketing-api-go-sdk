@@ -45,6 +45,7 @@ const (
 	CalculateStatus_PART_ACTIVE            CalculateStatus = "CALCULATE_STATUS_PART_ACTIVE"
 	CalculateStatus_PART_PREPARE           CalculateStatus = "CALCULATE_STATUS_PART_PREPARE"
 	CalculateStatus_PART_INVALID           CalculateStatus = "CALCULATE_STATUS_PART_INVALID"
+	CalculateStatus_LOCAL_WEPAY_PENDING    CalculateStatus = "CALCULATE_STATUS_LOCAL_WEPAY_PENDING"
 	CalculateStatus_AD_PARTIAL_NORMAL      CalculateStatus = "CALCULATE_STATUS_AD_PARTIAL_NORMAL"
 	CalculateStatus_AD_PARTIAL_PENDING     CalculateStatus = "CALCULATE_STATUS_AD_PARTIAL_PENDING"
 	CalculateStatus_UNKNOWN                CalculateStatus = "CALCULATE_STATUS_UNKNOWN"

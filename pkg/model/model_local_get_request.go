@@ -11,7 +11,7 @@ package model
 
 type LocalGetRequest struct {
 	AccountId *int64             `json:"account_id,omitempty"`
-	DateRange *DateRange         `json:"date_range,omitempty"`
+	DateRange *DpDateRange       `json:"date_range,omitempty"`
 	Filtering *[]FilteringStruct `json:"filtering,omitempty"`
 	Level     DpApiReportLevel   `json:"level,omitempty"`
 	Page      *int64             `json:"page,omitempty"`

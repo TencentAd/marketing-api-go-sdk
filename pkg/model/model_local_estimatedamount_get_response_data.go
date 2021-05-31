@@ -10,6 +10,9 @@
 package model
 
 type LocalEstimatedamountGetResponseData struct {
-	EstimatedViews        *int64 `json:"estimated_views,omitempty"`
-	EstimatedCouponAmount *int64 `json:"estimated_coupon_amount,omitempty"`
+	MinEstimatedExposure *int64  `json:"min_estimated_exposure,omitempty"`
+	MaxEstimatedExposure *int64  `json:"max_estimated_exposure,omitempty"`
+	MinEstimatedConv     *int64  `json:"min_estimated_conv,omitempty"`
+	MaxEstimatedConv     *int64  `json:"max_estimated_conv,omitempty"`
+	Suggestion           *string `json:"suggestion,omitempty"`
 }

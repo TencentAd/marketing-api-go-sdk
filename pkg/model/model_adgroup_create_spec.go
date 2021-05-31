@@ -13,8 +13,12 @@ package model
 type AdgroupCreateSpec struct {
 	AdgroupName       *string                  `json:"adgroup_name,omitempty"`
 	BeginDate         *string                  `json:"begin_date,omitempty"`
+	EndDate           *string                  `json:"end_date,omitempty"`
+	OptimizationGoal  OptimizationGoal         `json:"optimization_goal,omitempty"`
+	TotalBudget       *int64                   `json:"total_budget,omitempty"`
 	Targeting         *DpWriteTargetingSetting `json:"targeting,omitempty"`
 	PoiList           *[]string                `json:"poi_list,omitempty"`
+	PoiRadius         *int64                   `json:"poi_radius,omitempty"`
 	PackageLevel      PackageLevel             `json:"package_level,omitempty"`
-	ColdStartAudience *[]int64                 `json:"cold_start_audience,omitempty"`
+	LocalBusinessMode EcoLocalBusinessMode     `json:"local_business_mode,omitempty"`
 }
