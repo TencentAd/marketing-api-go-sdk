@@ -22,6 +22,7 @@ type AdcreativeTemplateDetailGetAdcreativeTemplateListStruct struct {
 	AdcreativeElements                    *[]AdcreativeElement           `json:"adcreative_elements,omitempty"`
 	SupportBillingSpecList                *[]SupportBillingSpec          `json:"support_billing_spec_list,omitempty"`
 	SupportPageType                       *[]string                      `json:"support_page_type,omitempty"`
+	LandingPageConfig                     *LandingPageConfig             `json:"landing_page_config,omitempty"`
 	UnsupportBillingSpecList              *[]UnsupportBillingSpec        `json:"unsupport_billing_spec_list,omitempty"`
 	UnsupportAdAttributesSpecList         *[]UnsupportSpec               `json:"unsupport_ad_attributes_spec_list,omitempty"`
 	UnsupportAdcreativeAttributesSpecList *[]UnsupportSpec               `json:"unsupport_adcreative_attributes_spec_list,omitempty"`

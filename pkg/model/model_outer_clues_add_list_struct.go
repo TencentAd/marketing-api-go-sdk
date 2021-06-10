@@ -11,5 +11,6 @@ package model
 
 // 返回结构
 type OuterCluesAddListStruct struct {
+	Index        *int64  `json:"index,omitempty"`
 	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
 }

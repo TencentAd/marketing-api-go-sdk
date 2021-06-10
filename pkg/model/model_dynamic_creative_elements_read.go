@@ -32,6 +32,9 @@ type DynamicCreativeElementsRead struct {
 	ButtonText                 *string                            `json:"button_text,omitempty"`
 	BottomText                 *string                            `json:"bottom_text,omitempty"`
 	ActivityType               *string                            `json:"activity_type,omitempty"`
+	CountdownBegin             *int64                             `json:"countdown_begin,omitempty"`
+	CountdownPrice             *string                            `json:"countdown_price,omitempty"`
+	CountdownTimeType          AdCreativeCountdownTimeType        `json:"countdown_time_type,omitempty"`
 	MiniProgramId              *string                            `json:"mini_program_id,omitempty"`
 	MiniProgramPath            *string                            `json:"mini_program_path,omitempty"`
 	Label                      *[]CreativeLabel                   `json:"label,omitempty"`

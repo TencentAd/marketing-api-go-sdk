@@ -26,4 +26,5 @@ type ConversionsGetListStruct struct {
 	IsDeleted                    *bool                      `json:"is_deleted,omitempty"`
 	AccessStatus                 AccessStatus               `json:"access_status,omitempty"`
 	CreateSourceType             CreateSourceType           `json:"create_source_type,omitempty"`
+	AppAndroidChannelPackageId   *string                    `json:"app_android_channel_package_id,omitempty"`
 }

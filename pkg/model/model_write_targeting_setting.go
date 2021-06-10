@@ -43,4 +43,5 @@ type WriteTargetingSetting struct {
 	BehaviorOrInterest            *BehaviorOrInterest                `json:"behavior_or_interest,omitempty"`
 	WechatOfficialAccountCategory *[]int64                           `json:"wechat_official_account_category,omitempty"`
 	MobileUnionCategory           *[]int64                           `json:"mobile_union_category,omitempty"`
+	ExcludedConvertedAudience     *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
 }

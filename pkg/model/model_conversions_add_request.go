@@ -15,6 +15,7 @@ type ConversionsAddRequest struct {
 	AccessType                   AccessType                 `json:"access_type,omitempty"`
 	ConversionScene              ConversionScene            `json:"conversion_scene,omitempty"`
 	PromotedObjectId             *string                    `json:"promoted_object_id,omitempty"`
+	AppAndroidChannelPackageId   *string                    `json:"app_android_channel_package_id,omitempty"`
 	ClaimType                    ClaimType                  `json:"claim_type,omitempty"`
 	FeedbackUrl                  *string                    `json:"feedback_url,omitempty"`
 	LandingPageUrl               *string                    `json:"landing_page_url,omitempty"`

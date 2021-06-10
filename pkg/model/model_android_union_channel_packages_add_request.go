@@ -10,8 +10,9 @@
 package model
 
 type AndroidUnionChannelPackagesAddRequest struct {
-	AndroidUnionAppId *int64  `json:"android_union_app_id,omitempty"`
-	PackageName       *string `json:"package_name,omitempty"`
-	PackageOriginUrl  *string `json:"package_origin_url,omitempty"`
-	AccountId         *int64  `json:"account_id,omitempty"`
+	AndroidUnionAppId   *int64  `json:"android_union_app_id,omitempty"`
+	PackageName         *string `json:"package_name,omitempty"`
+	PackageOriginUrl    *string `json:"package_origin_url,omitempty"`
+	CustomizedChannelId *string `json:"customized_channel_id,omitempty"`
+	AccountId           *int64  `json:"account_id,omitempty"`
 }

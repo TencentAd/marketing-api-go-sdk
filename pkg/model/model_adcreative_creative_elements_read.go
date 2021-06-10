@@ -25,6 +25,9 @@ type AdcreativeCreativeElementsRead struct {
 	Url                        *string                            `json:"url,omitempty"`
 	ButtonText                 *string                            `json:"button_text,omitempty"`
 	BottomText                 *string                            `json:"bottom_text,omitempty"`
+	CountdownBegin             *int64                             `json:"countdown_begin,omitempty"`
+	CountdownPrice             *string                            `json:"countdown_price,omitempty"`
+	CountdownTimeType          AdCreativeCountdownTimeType        `json:"countdown_time_type,omitempty"`
 	Label                      *[]CreativeLabel                   `json:"label,omitempty"`
 	ProductTags                *[]string                          `json:"product_tags,omitempty"`
 	LogoDescription            *string                            `json:"logo_description,omitempty"`

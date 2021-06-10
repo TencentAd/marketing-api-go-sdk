@@ -128,7 +128,7 @@ func (a *OuterCluesApiService) Add(ctx context.Context, data OuterCluesAddReques
 }
 
 /*
-OuterCluesApiService 回传线索状态
+OuterCluesApiService 更新线索状态
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

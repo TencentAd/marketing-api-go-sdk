@@ -11,5 +11,6 @@ package model
 
 type OuterCluesContactUpdateRequest struct {
 	AccountId        *int64                    `json:"account_id,omitempty"`
+	MatchType        LeadsMatchType            `json:"match_type,omitempty"`
 	LeadsContactList *[]LeadsContactInfoStruct `json:"leads_contact_list,omitempty"`
 }

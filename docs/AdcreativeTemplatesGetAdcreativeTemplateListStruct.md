@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **AdcreativeAttributes** | [**[]AdcreativeElement**](adcreative_element.md) |  | [optional] [default to null]
 **AdcreativeElements** | [**[]AdcreativeElement**](adcreative_element.md) |  | [optional] [default to null]
 **SupportPageType** | **[]string** |  | [optional] [default to null]
+**LandingPageConfig** | [***LandingPageConfig**](landing_page_config.md) |  | [optional] [default to null]
 **SupportBillingSpecList** | [**[]SupportBillingSpec**](support_billing_spec.md) |  | [optional] [default to null]
 **SupportDynamicAbilitySpecList** | [***SupportDynamicAbilitySpecList**](support_dynamic_ability_spec_list.md) |  | [optional] [default to null]
 **SupportBidModeList** | **[]string** |  | [optional] [default to null]

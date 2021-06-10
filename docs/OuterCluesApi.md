@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**OuterCluesAdd**](OuterCluesApi.md#OuterCluesAdd) | **Post** /outer_clues/add | 第三方线索导入
-[**OuterCluesUpdate**](OuterCluesApi.md#OuterCluesUpdate) | **Post** /outer_clues/update | 回传线索状态
+[**OuterCluesUpdate**](OuterCluesApi.md#OuterCluesUpdate) | **Post** /outer_clues/update | 更新线索状态
 
 
 # **OuterCluesAdd**
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **OuterCluesUpdate**
 > OuterCluesUpdateResponse OuterCluesUpdate(ctx, data)
-回传线索状态
+更新线索状态
 
 ### Required Parameters
 

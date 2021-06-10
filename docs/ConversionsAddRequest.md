@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **AccessType** | [***AccessType**](AccessType.md) |  | [optional] [default to null]
 **ConversionScene** | [***ConversionScene**](ConversionScene.md) |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
+**AppAndroidChannelPackageId** | **string** |  | [optional] [default to null]
 **ClaimType** | [***ClaimType**](ClaimType.md) |  | [optional] [default to null]
 **FeedbackUrl** | **string** |  | [optional] [default to null]
 **LandingPageUrl** | **string** |  | [optional] [default to null]

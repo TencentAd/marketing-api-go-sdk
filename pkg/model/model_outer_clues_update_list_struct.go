@@ -11,4 +11,5 @@ package model
 
 // 返回结构
 type OuterCluesUpdateListStruct struct {
+	Index *int64 `json:"index,omitempty"`
 }

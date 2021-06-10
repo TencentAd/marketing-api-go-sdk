@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **SystemStatus** | [***UnionPackageSysStatus**](UnionPackageSysStatus.md) |  | [optional] [default to null]
 **SystemMessage** | **string** |  | [optional] [default to null]
+**CustomizedChannelId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -76,4 +76,5 @@ const (
 	OptimizationGoal_LEAVE_INFORMATION                   OptimizationGoal = "OPTIMIZATIONGOAL_LEAVE_INFORMATION"
 	OptimizationGoal_CORE_ACTION                         OptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 	OptimizationGoal_ONE_DAY_RETENTION_RATIO             OptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
+	OptimizationGoal_PROMOTION_READ_ARTICLE              OptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE"
 )

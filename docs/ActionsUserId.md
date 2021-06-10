@@ -4,13 +4,16 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **HashImei** | **string** |  | [optional] [default to null]
+**Md5Sha256Imei** | **string** |  | [optional] [default to null]
 **HashIdfa** | **string** |  | [optional] [default to null]
+**Md5Sha256Idfa** | **string** |  | [optional] [default to null]
 **GdtOpenid** | **string** |  | [optional] [default to null]
 **HashPhone** | **string** |  | [optional] [default to null]
 **Sha256Phone** | **string** |  | [optional] [default to null]
 **HashAndroidId** | **string** |  | [optional] [default to null]
 **HashMac** | **string** |  | [optional] [default to null]
 **Oaid** | **string** |  | [optional] [default to null]
+**Md5Sha256Oaid** | **string** |  | [optional] [default to null]
 **WechatOpenid** | **string** |  | [optional] [default to null]
 **WechatUnionid** | **string** |  | [optional] [default to null]
 **WechatAppId** | **string** |  | [optional] [default to null]

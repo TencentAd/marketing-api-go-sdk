@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **AdcreativeElements** | [**[]AdcreativeElement**](adcreative_element.md) |  | [optional] [default to null]
 **SupportBillingSpecList** | [**[]SupportBillingSpec**](support_billing_spec.md) |  | [optional] [default to null]
 **SupportPageType** | **[]string** |  | [optional] [default to null]
+**LandingPageConfig** | [***LandingPageConfig**](landing_page_config.md) |  | [optional] [default to null]
 **UnsupportBillingSpecList** | [**[]UnsupportBillingSpec**](unsupport_billing_spec.md) |  | [optional] [default to null]
 **UnsupportAdAttributesSpecList** | [**[]UnsupportSpec**](unsupport_spec.md) |  | [optional] [default to null]
 **UnsupportAdcreativeAttributesSpecList** | [**[]UnsupportSpec**](unsupport_spec.md) |  | [optional] [default to null]

@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OuterLeadsId** | **string** |  | [optional] [default to null]
+**LeadsId** | **int64** |  | [optional] [default to null]
+**ClickId** | **string** |  | [optional] [default to null]
 **LeadsUserType** | [***LeadsUserType**](LeadsUserType.md) |  | [optional] [default to null]
 **LeadsUserWechatAppid** | **string** |  | [optional] [default to null]
 **LeadsUserId** | **string** |  | [optional] [default to null]

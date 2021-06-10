@@ -11,6 +11,7 @@ package model
 
 // 返回结构
 type SuccessLeadsIdListRespStruct struct {
+	Index        *int64  `json:"index,omitempty"`
 	OuterLeadsId *string `json:"outer_leads_id,omitempty"`
 	LeadsId      *int64  `json:"leads_id,omitempty"`
 }
