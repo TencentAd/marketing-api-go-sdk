@@ -140,8 +140,6 @@ type APIClient struct {
 
 	CustomAudiencesApi *CustomAudiencesApiService
 
-	CustomDataSaltApi *CustomDataSaltApiService
-
 	CustomFeaturesApi *CustomFeaturesApiService
 
 	CustomTagFilesApi *CustomTagFilesApiService
@@ -391,7 +389,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomAudienceInsightsApi = (*CustomAudienceInsightsApiService)(&c.common)
 	c.CustomAudienceReportsApi = (*CustomAudienceReportsApiService)(&c.common)
 	c.CustomAudiencesApi = (*CustomAudiencesApiService)(&c.common)
-	c.CustomDataSaltApi = (*CustomDataSaltApiService)(&c.common)
 	c.CustomFeaturesApi = (*CustomFeaturesApiService)(&c.common)
 	c.CustomTagFilesApi = (*CustomTagFilesApiService)(&c.common)
 	c.CustomTagsApi = (*CustomTagsApiService)(&c.common)

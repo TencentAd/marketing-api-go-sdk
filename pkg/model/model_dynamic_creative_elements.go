@@ -19,7 +19,7 @@ type DynamicCreativeElements struct {
 	Corporate                  *AdcreativeCorporate               `json:"corporate,omitempty"`
 	Video                      *string                            `json:"video,omitempty"`
 	ImageOptions               *[]string                          `json:"image_options,omitempty"`
-	ImageListOptions           *[]ImageListOptions                `json:"image_list_options,omitempty"`
+	ImageListOptions           *[]AdcreativeImageList             `json:"image_list_options,omitempty"`
 	TitleOptions               *[]string                          `json:"title_options,omitempty"`
 	DescriptionOptions         *[]string                          `json:"description_options,omitempty"`
 	VideoOptions               *[]string                          `json:"video_options,omitempty"`

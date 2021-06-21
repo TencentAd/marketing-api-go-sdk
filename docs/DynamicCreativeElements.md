@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **Corporate** | [***AdcreativeCorporate**](adcreative_corporate.md) |  | [optional] [default to null]
 **Video** | **string** |  | [optional] [default to null]
 **ImageOptions** | **[]string** |  | [optional] [default to null]
-**ImageListOptions** | [**[]ImageListOptions**](image_list_options.md) |  | [optional] [default to null]
+**ImageListOptions** | [**[]AdcreativeImageList**](adcreative_image_list.md) |  | [optional] [default to null]
 **TitleOptions** | **[]string** |  | [optional] [default to null]
 **DescriptionOptions** | **[]string** |  | [optional] [default to null]
 **VideoOptions** | **[]string** |  | [optional] [default to null]

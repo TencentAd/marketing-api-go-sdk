@@ -197,10 +197,6 @@ func (c *SDKClient) CustomAudiences() *api.CustomAudiencesApiService {
 	return c.Client.CustomAudiencesApi
 }
 
-func (c *SDKClient) CustomDataSalt() *api.CustomDataSaltApiService {
-	return c.Client.CustomDataSaltApi
-}
-
 func (c *SDKClient) CustomFeatures() *api.CustomFeaturesApiService {
 	return c.Client.CustomFeaturesApi
 }
