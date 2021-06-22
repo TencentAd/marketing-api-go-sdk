@@ -14,8 +14,9 @@ type WechatLocalBusinessQualificationType string
 
 // List of WechatLocalBusinessQualificationType
 const (
-	WechatLocalBusinessQualificationType_BUSINESS_LICENSE       WechatLocalBusinessQualificationType = "STUFF_BUSINESS_LICENSE"
-	WechatLocalBusinessQualificationType_ID_CARD_FRONT          WechatLocalBusinessQualificationType = "STUFF_ID_CARD_FRONT"
-	WechatLocalBusinessQualificationType_ID_CARD_REVERSE        WechatLocalBusinessQualificationType = "STUFF_ID_CARD_REVERSE"
-	WechatLocalBusinessQualificationType_INDUSTRY_QUALIFICATION WechatLocalBusinessQualificationType = "STUFF_INDUSTRY_QUALIFICATION"
+	WechatLocalBusinessQualificationType_BUSINESS_LICENSE          WechatLocalBusinessQualificationType = "STUFF_BUSINESS_LICENSE"
+	WechatLocalBusinessQualificationType_ID_CARD_FRONT             WechatLocalBusinessQualificationType = "STUFF_ID_CARD_FRONT"
+	WechatLocalBusinessQualificationType_ID_CARD_REVERSE           WechatLocalBusinessQualificationType = "STUFF_ID_CARD_REVERSE"
+	WechatLocalBusinessQualificationType_INDUSTRY_QUALIFICATION    WechatLocalBusinessQualificationType = "STUFF_INDUSTRY_QUALIFICATION"
+	WechatLocalBusinessQualificationType_ADDIITIONAL_QUALIFICATION WechatLocalBusinessQualificationType = "STUFF_ADDIITIONAL_QUALIFICATION"
 )

@@ -19,7 +19,7 @@ type AdcreativeCreativeElementsReadMp struct {
 	Corporate                  *AdcreativeCorporate               `json:"corporate,omitempty"`
 	Video                      *string                            `json:"video,omitempty"`
 	DeepLinkType               *string                            `json:"deep_link_type,omitempty"`
-	LinkNameType               LinkNameTypeMp                     `json:"link_name_type,omitempty"`
+	LinkNameType               LinkNameType                       `json:"link_name_type,omitempty"`
 	ImageList                  *[]string                          `json:"image_list,omitempty"`
 	ElementStory               *[]AdcreativeElementStoryArrayItem `json:"element_story,omitempty"`
 	Url                        *string                            `json:"url,omitempty"`

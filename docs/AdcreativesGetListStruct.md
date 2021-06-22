@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **PageType** | [***PageTypeRead**](PageTypeRead.md) |  | [optional] [default to null]
 **PageSpec** | [***PageSpec**](page_spec.md) |  | [optional] [default to null]
 **LinkPageType** | [***LinkPageType**](LinkPageType.md) |  | [optional] [default to null]
-**LinkNameType** | [***LinkNameTypeMp**](LinkNameTypeMP.md) |  | [optional] [default to null]
+**LinkNameType** | [***LinkNameType**](LinkNameType.md) |  | [optional] [default to null]
 **LinkPageSpec** | [***LinkPageSpec**](link_page_spec.md) |  | [optional] [default to null]
 **ConversionDataType** | [***ConversionDataType**](ConversionDataType.md) |  | [optional] [default to null]
 **ConversionTargetType** | [***ConversionTargetType**](ConversionTargetType.md) |  | [optional] [default to null]

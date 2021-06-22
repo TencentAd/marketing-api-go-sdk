@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **Corporate** | [***AdcreativeCorporate**](adcreative_corporate.md) |  | [optional] [default to null]
 **Video** | **string** |  | [optional] [default to null]
 **DeepLinkType** | **string** |  | [optional] [default to null]
-**LinkNameType** | [***LinkNameTypeMp**](LinkNameTypeMP.md) |  | [optional] [default to null]
+**LinkNameType** | [***LinkNameType**](LinkNameType.md) |  | [optional] [default to null]
 **ImageList** | **[]string** |  | [optional] [default to null]
 **ElementStory** | [**[]AdcreativeElementStoryArrayItem**](adcreative_element_story_array_item.md) |  | [optional] [default to null]
 **Url** | **string** |  | [optional] [default to null]
