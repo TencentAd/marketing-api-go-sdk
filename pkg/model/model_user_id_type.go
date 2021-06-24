@@ -26,6 +26,7 @@ const (
 	UserIdType_MOBILE_QQ_OPENID    UserIdType = "MOBILE_QQ_OPENID"
 	UserIdType_QQ                  UserIdType = "QQ"
 	UserIdType_WX_OPENID           UserIdType = "WX_OPENID"
+	UserIdType_WX_UNIONID          UserIdType = "WX_UNIONID"
 	UserIdType_WECHAT_OPENID       UserIdType = "WECHAT_OPENID"
 	UserIdType_SALTED_HASH_IMEI    UserIdType = "SALTED_HASH_IMEI"
 	UserIdType_SALTED_HASH_IDFA    UserIdType = "SALTED_HASH_IDFA"
