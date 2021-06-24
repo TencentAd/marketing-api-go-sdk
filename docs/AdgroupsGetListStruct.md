@@ -60,6 +60,7 @@ Name | Type | Description | Notes
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 **SmartBidType** | [***SmartBidType**](SmartBidType.md) |  | [optional] [default to null]
 **SmartCostCap** | **int64** |  | [optional] [default to null]
+**MarketingScene** | [***MarketingScene**](MarketingScene.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

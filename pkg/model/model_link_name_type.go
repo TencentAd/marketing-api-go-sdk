@@ -49,6 +49,8 @@ const (
 	LinkNameType_GO_TO_KUAISHOU                  LinkNameType = "GO_TO_KUAISHOU"
 	LinkNameType_WATCH_LIVE                      LinkNameType = "WATCH_LIVE"
 	LinkNameType_RESERVE_NOW                     LinkNameType = "RESERVE_NOW"
+	LinkNameType_FOLLOW_CHANNELS                 LinkNameType = "FOLLOW_CHANNELS"
+	LinkNameType_MORE_ABOUT_CHANNELS             LinkNameType = "MORE_ABOUT_CHANNELS"
 	LinkNameType_OPEN_APP                        LinkNameType = "OPEN_APP"
 	LinkNameType_ALREADY_INSTALL                 LinkNameType = "ALREADY_INSTALL"
 	LinkNameType_RESERVE_LIVE                    LinkNameType = "RESERVE_LIVE"
@@ -56,8 +58,6 @@ const (
 	LinkNameType_SECKILL_NOW                     LinkNameType = "SECKILL_NOW"
 	LinkNameType_TRY_PLAY_NOW                    LinkNameType = "TRY_PLAY_NOW"
 	LinkNameType_INSTALL_NOW                     LinkNameType = "INSTALL_NOW"
-	LinkNameType_FOLLOW_CHANNELS                 LinkNameType = "FOLLOW_CHANNELS"
-	LinkNameType_MORE_ABOUT_CHANNELS             LinkNameType = "MORE_ABOUT_CHANNELS"
 	LinkNameType_MORE_ABOUT_OFFICIAL_ACCOUNT_CHT LinkNameType = "MORE_ABOUT_OFFICIAL_ACCOUNT_CHT"
 	LinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
 )

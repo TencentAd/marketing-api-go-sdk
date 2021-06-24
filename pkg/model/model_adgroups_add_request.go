@@ -53,5 +53,6 @@ type AdgroupsAddRequest struct {
 	CreativeDisplayType        CreativeDisplayType              `json:"creative_display_type,omitempty"`
 	AutoDerivedCreativeEnabled *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	SmartBidType               SmartBidType                     `json:"smart_bid_type,omitempty"`
+	MarketingScene             MarketingScene                   `json:"marketing_scene,omitempty"`
 	AccountId                  *int64                           `json:"account_id,omitempty"`
 }

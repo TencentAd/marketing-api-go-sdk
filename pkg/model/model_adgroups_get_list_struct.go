@@ -68,4 +68,5 @@ type AdgroupsGetListStruct struct {
 	AutoDerivedCreativeEnabled        *bool                           `json:"auto_derived_creative_enabled,omitempty"`
 	SmartBidType                      SmartBidType                    `json:"smart_bid_type,omitempty"`
 	SmartCostCap                      *int64                          `json:"smart_cost_cap,omitempty"`
+	MarketingScene                    MarketingScene                  `json:"marketing_scene,omitempty"`
 }

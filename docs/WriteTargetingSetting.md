@@ -33,8 +33,6 @@ Name | Type | Description | Notes
 **CustomAudience** | **[]int64** |  | [optional] [default to null]
 **ExcludedCustomAudience** | **[]int64** |  | [optional] [default to null]
 **BehaviorOrInterest** | [***BehaviorOrInterest**](behavior_or_interest.md) |  | [optional] [default to null]
-**WechatOfficialAccountCategory** | **[]int64** |  | [optional] [default to null]
-**MobileUnionCategory** | **[]int64** |  | [optional] [default to null]
 **ExcludedConvertedAudience** | [***ExcludedConvertedAudienceStruct**](excluded_converted_audience_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
