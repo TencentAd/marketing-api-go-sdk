@@ -128,7 +128,7 @@ func (a *LeadCluesApiService) Get(ctx context.Context, data LeadCluesGetRequest)
 }
 
 /*
-LeadCluesApiService 回传线索信息
+LeadCluesApiService 回传线索状态
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

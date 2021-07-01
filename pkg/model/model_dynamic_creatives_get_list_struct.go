@@ -34,4 +34,5 @@ type DynamicCreativesGetListStruct struct {
 	UnionMarketSwitch         *bool                        `json:"union_market_switch,omitempty"`
 	VideoEndPage              *VideoEndPageSpec            `json:"video_end_page,omitempty"`
 	BarrageList               *[]BarrageListReadStruct     `json:"barrage_list,omitempty"`
+	DynamicCreativeGroupUsed  DynamicCreativeGroupUsed     `json:"dynamic_creative_group_used,omitempty"`
 }

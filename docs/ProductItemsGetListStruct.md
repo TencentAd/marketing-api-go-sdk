@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **BrandId** | **int64** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **CustomData** | **string** |  | [optional] [default to null]
-**IsVideo** | **string** |  | [optional] [default to null]
+**IsVideo** | **bool** |  | [optional] [default to null]
 **DataSource** | **string** |  | [optional] [default to null]
 **ProductSelectScore** | **float64** |  | [optional] [default to null]
 

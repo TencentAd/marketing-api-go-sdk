@@ -18,7 +18,7 @@ type AdcreativesGetListStruct struct {
 	PageType                      PageTypeRead                      `json:"page_type,omitempty"`
 	PageSpec                      *PageSpec                         `json:"page_spec,omitempty"`
 	LinkPageType                  LinkPageType                      `json:"link_page_type,omitempty"`
-	LinkNameType                  LinkNameType                      `json:"link_name_type,omitempty"`
+	LinkNameType                  LinkUrlLinkNameType               `json:"link_name_type,omitempty"`
 	LinkPageSpec                  *LinkPageSpec                     `json:"link_page_spec,omitempty"`
 	ConversionDataType            ConversionDataType                `json:"conversion_data_type,omitempty"`
 	ConversionTargetType          ConversionTargetType              `json:"conversion_target_type,omitempty"`

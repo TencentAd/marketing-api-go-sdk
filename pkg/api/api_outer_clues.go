@@ -27,7 +27,7 @@ var (
 type OuterCluesApiService service
 
 /*
-OuterCluesApiService 第三方线索导入
+OuterCluesApiService 外部线索数据导入
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -128,7 +128,7 @@ func (a *OuterCluesApiService) Add(ctx context.Context, data OuterCluesAddReques
 }
 
 /*
-OuterCluesApiService 更新线索状态
+OuterCluesApiService 外部线索状态更新
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**LeadCluesGet**](LeadCluesApi.md#LeadCluesGet) | **Post** /lead_clues/get | 获取线索列表
-[**LeadCluesUpdate**](LeadCluesApi.md#LeadCluesUpdate) | **Post** /lead_clues/update | 回传线索信息
+[**LeadCluesUpdate**](LeadCluesApi.md#LeadCluesUpdate) | **Post** /lead_clues/update | 回传线索状态
 
 
 # **LeadCluesGet**
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **LeadCluesUpdate**
 > LeadCluesUpdateResponse LeadCluesUpdate(ctx, data)
-回传线索信息
+回传线索状态
 
 ### Required Parameters
 

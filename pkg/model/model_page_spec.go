@@ -16,4 +16,5 @@ type PageSpec struct {
 	MiniProgramSpec          *AdcreativeMiniProgramSpec `json:"mini_program_spec,omitempty"`
 	MiniGameSpec             *MiniGameSpec              `json:"mini_game_spec,omitempty"`
 	OverrideCanvasHeadOption OverrideCanvasHeadOption   `json:"override_canvas_head_option,omitempty"`
+	DynamicProductSpec       *DynamicProductSpec        `json:"dynamic_product_spec,omitempty"`
 }
