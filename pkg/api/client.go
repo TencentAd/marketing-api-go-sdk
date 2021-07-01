@@ -208,8 +208,6 @@ type APIClient struct {
 
 	OuterCluesApi *OuterCluesApiService
 
-	OuterCluesClaiminfoApi *OuterCluesClaiminfoApiService
-
 	OuterCluesContactApi *OuterCluesContactApiService
 
 	PagesApi *PagesApiService
@@ -423,7 +421,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OuterCluesApi = (*OuterCluesApiService)(&c.common)
-	c.OuterCluesClaiminfoApi = (*OuterCluesClaiminfoApiService)(&c.common)
 	c.OuterCluesContactApi = (*OuterCluesContactApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
 	c.PlayablePagesApi = (*PlayablePagesApiService)(&c.common)
