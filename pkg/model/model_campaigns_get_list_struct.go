@@ -17,6 +17,7 @@ type CampaignsGetListStruct struct {
 	CampaignType       CampaignType       `json:"campaign_type,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
 	DailyBudget        *int64             `json:"daily_budget,omitempty"`
+	TotalBudget        *int64             `json:"total_budget,omitempty"`
 	BudgetReachDate    *int64             `json:"budget_reach_date,omitempty"`
 	CreatedTime        *int64             `json:"created_time,omitempty"`
 	LastModifiedTime   *int64             `json:"last_modified_time,omitempty"`

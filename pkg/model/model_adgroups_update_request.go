@@ -43,5 +43,6 @@ type AdgroupsUpdateRequest struct {
 	AutoDerivedCreativeEnabled *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	UserActionSets             *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
 	DynamicAdSpec              *DynamicAdSpec                   `json:"dynamic_ad_spec,omitempty"`
+	DeepOptimizationType       DeepOptimizationType             `json:"deep_optimization_type,omitempty"`
 	AccountId                  *int64                           `json:"account_id,omitempty"`
 }

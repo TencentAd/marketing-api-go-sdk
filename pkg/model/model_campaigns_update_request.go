@@ -14,6 +14,7 @@ type CampaignsUpdateRequest struct {
 	CampaignId       *int64    `json:"campaign_id,omitempty"`
 	CampaignName     *string   `json:"campaign_name,omitempty"`
 	DailyBudget      *int64    `json:"daily_budget,omitempty"`
+	TotalBudget      *int64    `json:"total_budget,omitempty"`
 	ConfiguredStatus AdStatus  `json:"configured_status,omitempty"`
 	SpeedMode        SpeedMode `json:"speed_mode,omitempty"`
 	BeginDate        *string   `json:"begin_date,omitempty"`

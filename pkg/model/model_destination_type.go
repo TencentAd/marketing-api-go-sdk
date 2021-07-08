@@ -31,6 +31,7 @@ const (
 	DestinationType_FULL_SCREEN_WECHAT              DestinationType = "PAGE_TYPE_FULL_SCREEN_WECHAT"
 	DestinationType_YUEBAO_QUICKAPP                 DestinationType = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationType_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationType = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationType_XIJING_QUICK                    DestinationType = "PAGE_TYPE_XIJING_QUICK"
 	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
 	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"

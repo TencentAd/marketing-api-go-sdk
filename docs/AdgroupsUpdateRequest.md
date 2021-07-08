@@ -36,6 +36,7 @@ Name | Type | Description | Notes
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
+**DeepOptimizationType** | [***DeepOptimizationType**](DeepOptimizationType.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

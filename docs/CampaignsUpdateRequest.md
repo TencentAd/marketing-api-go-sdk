@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **CampaignId** | **int64** |  | [optional] [default to null]
 **CampaignName** | **string** |  | [optional] [default to null]
 **DailyBudget** | **int64** |  | [optional] [default to null]
+**TotalBudget** | **int64** |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **SpeedMode** | [***SpeedMode**](SpeedMode.md) |  | [optional] [default to null]
 **BeginDate** | **string** |  | [optional] [default to null]

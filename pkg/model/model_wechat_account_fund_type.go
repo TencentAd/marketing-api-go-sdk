@@ -9,7 +9,7 @@
 
 package model
 
-// WechatAccountFundType : 微信资金账户类型
+// WechatAccountFundType : 微信资金账户类型，注意非资金类型
 type WechatAccountFundType string
 
 // List of WechatAccountFundType

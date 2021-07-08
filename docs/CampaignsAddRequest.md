@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **CampaignType** | [***CampaignType**](CampaignType.md) |  | [optional] [default to null]
 **PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
 **DailyBudget** | **int64** |  | [optional] [default to null]
+**TotalBudget** | **int64** |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **SpeedMode** | [***SpeedMode**](SpeedMode.md) |  | [optional] [default to null]
 

@@ -15,6 +15,7 @@ type CampaignsAddRequest struct {
 	CampaignType       CampaignType       `json:"campaign_type,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
 	DailyBudget        *int64             `json:"daily_budget,omitempty"`
+	TotalBudget        *int64             `json:"total_budget,omitempty"`
 	ConfiguredStatus   AdStatus           `json:"configured_status,omitempty"`
 	SpeedMode          SpeedMode          `json:"speed_mode,omitempty"`
 }

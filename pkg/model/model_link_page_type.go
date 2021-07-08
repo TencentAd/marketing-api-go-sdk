@@ -31,4 +31,5 @@ const (
 	LinkPageType_CHANNELS_RESERVE_LIVE        LinkPageType = "LINK_PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 	LinkPageType_CHANNELS_FOLLOW_CARD         LinkPageType = "LINK_PAGE_TYPE_CHANNELS_FOLLOW_CARD"
 	LinkPageType_WECHAT_FOCUS_DAILOG          LinkPageType = "LINK_PAGE_TYPE_WECHAT_FOCUS_DAILOG"
+	LinkPageType_XJ_QUICK                     LinkPageType = "LINK_PAGE_TYPE_XJ_QUICK"
 )

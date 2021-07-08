@@ -22,6 +22,7 @@ const (
 	DestinationTypeRead_FENGYE_EC_WECHAT_MINIPROGRAM    DestinationTypeRead = "PAGE_TYPE_FENGYE_EC_WECHAT_MINIPROGRAM"
 	DestinationTypeRead_YUEBAO_QUICKAPP                 DestinationTypeRead = "PAGE_TYPE_YUEBAO_QUICKAPP"
 	DestinationTypeRead_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE DestinationTypeRead = "PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
+	DestinationTypeRead_XIJING_QUICK                    DestinationTypeRead = "PAGE_TYPE_XIJING_QUICK"
 	DestinationTypeRead_WECHAT_CHANNELS                 DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS"
 	DestinationTypeRead_CHANNELS_WATCH_LIVE             DestinationTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	DestinationTypeRead_CHANNELS_RESERVE_LIVE           DestinationTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
