@@ -22,8 +22,6 @@ Name | Type | Description | Notes
 **ComponentId** | **int64** |  | [optional] [default to null]
 **OnlineEnabled** | **bool** |  | [optional] [default to null]
 **RevisedAdcreativeSpec** | [***RevisedAdcreativeSpec**](revised_adcreative_spec.md) |  | [optional] [default to null]
-**Category** | **[]int64** |  | [optional] [default to null]
-**Label** | **[]string** |  | [optional] [default to null]
 **UnionMarketSwitch** | **bool** |  | [optional] [default to null]
 **PlayablePageMaterialId** | **string** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]

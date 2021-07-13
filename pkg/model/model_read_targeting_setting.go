@@ -31,7 +31,6 @@ type ReadTargetingSetting struct {
 	Temperature                      *[]TemperatureStruct               `json:"temperature,omitempty"`
 	AirQualityIndex                  *[]string                          `json:"air_quality_index,omitempty"`
 	AppInstallStatus                 *[]string                          `json:"app_install_status,omitempty"`
-	MiniGameQqStatus                 *[]string                          `json:"mini_game_qq_status,omitempty"`
 	ConsumptionStatus                *[]string                          `json:"consumption_status,omitempty"`
 	GameConsumptionLevel             *[]string                          `json:"game_consumption_level,omitempty"`
 	ResidentialCommunityPrice        *[]ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`

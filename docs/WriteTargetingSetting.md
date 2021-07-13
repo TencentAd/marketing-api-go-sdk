@@ -23,7 +23,6 @@ Name | Type | Description | Notes
 **Temperature** | [**[]TemperatureStruct**](temperature_struct.md) |  | [optional] [default to null]
 **AirQualityIndex** | **[]string** |  | [optional] [default to null]
 **AppInstallStatus** | **[]string** |  | [optional] [default to null]
-**MiniGameQqStatus** | **[]string** |  | [optional] [default to null]
 **ConsumptionStatus** | **[]string** |  | [optional] [default to null]
 **GameConsumptionLevel** | **[]string** |  | [optional] [default to null]
 **ResidentialCommunityPrice** | [**[]ResidentialCommunityPriceStruct**](residential_community_price_struct.md) |  | [optional] [default to null]

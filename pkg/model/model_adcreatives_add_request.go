@@ -32,8 +32,6 @@ type AdcreativesAddRequest struct {
 	ShareContentSpec              *ShareContentSpec             `json:"share_content_spec,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec        `json:"dynamic_adcreative_spec,omitempty"`
 	ComponentId                   *int64                        `json:"component_id,omitempty"`
-	Category                      *[]int64                      `json:"category,omitempty"`
-	Label                         *[]string                     `json:"label,omitempty"`
 	UnionMarketSwitch             *bool                         `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        *string                       `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec             `json:"video_end_page,omitempty"`

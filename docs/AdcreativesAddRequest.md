@@ -25,8 +25,6 @@ Name | Type | Description | Notes
 **ShareContentSpec** | [***ShareContentSpec**](share_content_spec.md) |  | [optional] [default to null]
 **DynamicAdcreativeSpec** | [***DynamicAdcreativeSpec**](dynamic_adcreative_spec.md) |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]
-**Category** | **[]int64** |  | [optional] [default to null]
-**Label** | **[]string** |  | [optional] [default to null]
 **UnionMarketSwitch** | **bool** |  | [optional] [default to null]
 **PlayablePageMaterialId** | **string** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]

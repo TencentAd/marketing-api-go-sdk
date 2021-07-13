@@ -29,8 +29,6 @@ type AdcreativesUpdateRequest struct {
 	ComponentId                   *int64                        `json:"component_id,omitempty"`
 	OnlineEnabled                 *bool                         `json:"online_enabled,omitempty"`
 	RevisedAdcreativeSpec         *RevisedAdcreativeSpec        `json:"revised_adcreative_spec,omitempty"`
-	Category                      *[]int64                      `json:"category,omitempty"`
-	Label                         *[]string                     `json:"label,omitempty"`
 	UnionMarketSwitch             *bool                         `json:"union_market_switch,omitempty"`
 	PlayablePageMaterialId        *string                       `json:"playable_page_material_id,omitempty"`
 	VideoEndPage                  *VideoEndPageSpec             `json:"video_end_page,omitempty"`
