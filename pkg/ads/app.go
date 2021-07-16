@@ -421,6 +421,10 @@ func (c *SDKClient) TargetingTags() *api.TargetingTagsApiService {
 	return c.Client.TargetingTagsApi
 }
 
+func (c *SDKClient) TargetingTagsUv() *api.TargetingTagsUvApiService {
+	return c.Client.TargetingTagsUvApi
+}
+
 func (c *SDKClient) Targetings() *api.TargetingsApiService {
 	return c.Client.TargetingsApi
 }

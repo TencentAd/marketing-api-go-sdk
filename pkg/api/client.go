@@ -252,6 +252,8 @@ type APIClient struct {
 
 	TargetingTagsApi *TargetingTagsApiService
 
+	TargetingTagsUvApi *TargetingTagsUvApiService
+
 	TargetingsApi *TargetingsApiService
 
 	TargetingsShareApi *TargetingsShareApiService
@@ -443,6 +445,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
+	c.TargetingTagsUvApi = (*TargetingTagsUvApiService)(&c.common)
 	c.TargetingsApi = (*TargetingsApiService)(&c.common)
 	c.TargetingsShareApi = (*TargetingsShareApiService)(&c.common)
 	c.TrackingReportsApi = (*TrackingReportsApiService)(&c.common)

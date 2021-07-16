@@ -114,6 +114,11 @@ type TargetingTagReportsGetListStruct struct {
 	AppAdPayingUsers                     *int64   `json:"app_ad_paying_users,omitempty"`
 	AdPurValWeb                          *int64   `json:"ad_pur_val_web,omitempty"`
 	AdPurValApp                          *int64   `json:"ad_pur_val_app,omitempty"`
+	Order24hCount                        *int64   `json:"order_24h_count,omitempty"`
+	Order24hRate                         *float64 `json:"order_24h_rate,omitempty"`
+	Order24hCost                         *int64   `json:"order_24h_cost,omitempty"`
+	Order24hAmount                       *int64   `json:"order_24h_amount,omitempty"`
+	Order24hRoi                          *float64 `json:"order_24h_roi,omitempty"`
 	GameCreateRoleCount                  *int64   `json:"game_create_role_count,omitempty"`
 	GameAuthorizeCount                   *int64   `json:"game_authorize_count,omitempty"`
 	GameTutorialFinishCount              *int64   `json:"game_tutorial_finish_count,omitempty"`
@@ -310,7 +315,7 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameAdMonetizationCost           *int64   `json:"mini_game_ad_monetization_cost,omitempty"`
 	MiniGameAdMonetizationRoi            *float64 `json:"mini_game_ad_monetization_roi,omitempty"`
 	MiniGameAdMonetizationArpu           *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
-	MiniGamePayingRoi                    *int64   `json:"mini_game_paying_roi,omitempty"`
+	MiniGamePayingRoi                    *float64 `json:"mini_game_paying_roi,omitempty"`
 	MiniGamePayingArpu                   *int64   `json:"mini_game_paying_arpu,omitempty"`
 	Age                                  *string  `json:"age,omitempty"`
 	RegionId                             *int64   `json:"region_id,omitempty"`

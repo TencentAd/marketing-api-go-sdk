@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [optional] [default to null]
 **ButtonText** | **string** |  | [optional] [default to null]
 **BottomText** | **string** |  | [optional] [default to null]
+**ExcitationText** | **string** |  | [optional] [default to null]
 **CountdownBegin** | **int64** |  | [optional] [default to null]
 **CountdownPrice** | **string** |  | [optional] [default to null]
 **CountdownTimeType** | [***AdCreativeCountdownTimeType**](AdCreativeCountdownTimeType.md) |  | [optional] [default to null]
