@@ -146,6 +146,8 @@ type APIClient struct {
 
 	CustomTagsApi *CustomTagsApiService
 
+	DailyBalanceReportApi *DailyBalanceReportApiService
+
 	DailyCostApi *DailyCostApiService
 
 	DailyReportsApi *DailyReportsApiService
@@ -392,6 +394,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomFeaturesApi = (*CustomFeaturesApiService)(&c.common)
 	c.CustomTagFilesApi = (*CustomTagFilesApiService)(&c.common)
 	c.CustomTagsApi = (*CustomTagsApiService)(&c.common)
+	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyCostApi = (*DailyCostApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)

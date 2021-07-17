@@ -209,6 +209,10 @@ func (c *SDKClient) CustomTags() *api.CustomTagsApiService {
 	return c.Client.CustomTagsApi
 }
 
+func (c *SDKClient) DailyBalanceReport() *api.DailyBalanceReportApiService {
+	return c.Client.DailyBalanceReportApi
+}
+
 func (c *SDKClient) DailyCost() *api.DailyCostApiService {
 	return c.Client.DailyCostApi
 }
