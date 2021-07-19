@@ -18,5 +18,6 @@ const (
 	BidMode_CPA  BidMode = "BID_MODE_CPA"
 	BidMode_CPM  BidMode = "BID_MODE_CPM"
 	BidMode_OCPC BidMode = "BID_MODE_OCPC"
+	BidMode_OCPA BidMode = "BID_MODE_OCPA"
 	BidMode_OCPM BidMode = "BID_MODE_OCPM"
 )
