@@ -47,6 +47,7 @@ Name | Type | Description | Notes
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 **SmartBidType** | [***SmartBidType**](SmartBidType.md) |  | [optional] [default to null]
 **MarketingScene** | [***MarketingScene**](MarketingScene.md) |  | [optional] [default to null]
+**CustomAdgroupTag** | **[]string** |  | [optional] [default to null]
 **DeepOptimizationType** | [***DeepOptimizationType**](DeepOptimizationType.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 

@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
 **BarrageList** | [**[]BarrageListCreateStruct**](barrage_list_create_struct.md) |  | [optional] [default to null]
 **DynamicCreativeGroupUsed** | [***DynamicCreativeGroupUsed**](DynamicCreativeGroupUsed.md) |  | [optional] [default to null]
+**AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

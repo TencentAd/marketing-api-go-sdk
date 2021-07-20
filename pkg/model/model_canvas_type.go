@@ -14,9 +14,11 @@ type CanvasType string
 
 // List of CanvasType
 const (
-	CanvasType_VIDEO            CanvasType = "CANVAS_TYPE_VIDEO"
-	CanvasType_IMAGE            CanvasType = "CANVAS_TYPE_IMAGE"
-	CanvasType_PORTRAIT_VIDEO   CanvasType = "CANVAS_TYPE_PORTRAIT_VIDEO"
-	CanvasType_PORTRAIT_VIDEO_2 CanvasType = "CANVAS_TYPE_PORTRAIT_VIDEO_2"
-	CanvasType_COMMON_PAGE      CanvasType = "CANVAS_TYPE_COMMON_PAGE"
+	CanvasType_VIDEO                  CanvasType = "CANVAS_TYPE_VIDEO"
+	CanvasType_IMAGE                  CanvasType = "CANVAS_TYPE_IMAGE"
+	CanvasType_REWARD                 CanvasType = "CANVAS_TYPE_REWARD"
+	CanvasType_PORTRAIT_VIDEO         CanvasType = "CANVAS_TYPE_PORTRAIT_VIDEO"
+	CanvasType_PORTRAIT_VIDEO_2       CanvasType = "CANVAS_TYPE_PORTRAIT_VIDEO_2"
+	CanvasType_COMMON_PAGE            CanvasType = "CANVAS_TYPE_COMMON_PAGE"
+	CanvasType_VERTICAL_VIDEO_NEW_916 CanvasType = "CANVAS_TYPE_VERTICAL_VIDEO_NEW_916"
 )

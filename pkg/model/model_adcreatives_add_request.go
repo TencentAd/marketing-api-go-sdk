@@ -43,6 +43,7 @@ type AdcreativesAddRequest struct {
 	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
 	PageTrackUrl                  *string                       `json:"page_track_url,omitempty"`
 	BarrageList                   *[]BarrageListCreateStruct    `json:"barrage_list,omitempty"`
+	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeTemplateId          *int64                        `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`

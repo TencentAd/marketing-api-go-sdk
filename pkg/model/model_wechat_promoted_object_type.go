@@ -23,4 +23,5 @@ const (
 	WechatPromotedObjectType_MINI_GAME_WECHAT        WechatPromotedObjectType = "PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT"
 	WechatPromotedObjectType_MINI_PROGRAM_WECHAT     WechatPromotedObjectType = "PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT"
 	WechatPromotedObjectType_WECHAT_OFFICIAL_ACCOUNT WechatPromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT"
+	WechatPromotedObjectType_WECHAT_CHANNELS         WechatPromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS"
 )

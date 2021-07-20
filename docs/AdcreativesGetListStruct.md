@@ -44,6 +44,7 @@ Name | Type | Description | Notes
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **BarrageList** | [**[]BarrageListReadStruct**](barrage_list_read_struct.md) |  | [optional] [default to null]
+**AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
 

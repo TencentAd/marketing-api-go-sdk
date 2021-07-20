@@ -21,5 +21,6 @@ type DynamicCreativesUpdateRequest struct {
 	ProfileId                 *int64                     `json:"profile_id,omitempty"`
 	VideoEndPage              *VideoEndPageSpec          `json:"video_end_page,omitempty"`
 	BarrageList               *[]BarrageListCreateStruct `json:"barrage_list,omitempty"`
+	AppGiftPackCode           *AppGiftPackCode           `json:"app_gift_pack_code,omitempty"`
 	AccountId                 *int64                     `json:"account_id,omitempty"`
 }

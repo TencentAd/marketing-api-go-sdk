@@ -30,5 +30,6 @@ type DynamicCreativesAddRequest struct {
 	VideoEndPage              *VideoEndPageSpec           `json:"video_end_page,omitempty"`
 	BarrageList               *[]BarrageListCreateStruct  `json:"barrage_list,omitempty"`
 	DynamicCreativeGroupUsed  DynamicCreativeGroupUsed    `json:"dynamic_creative_group_used,omitempty"`
+	AppGiftPackCode           *AppGiftPackCode            `json:"app_gift_pack_code,omitempty"`
 	AccountId                 *int64                      `json:"account_id,omitempty"`
 }
