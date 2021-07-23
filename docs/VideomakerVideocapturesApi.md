@@ -29,6 +29,7 @@ Name | Type | Description  | Notes
  **videoFile** | **optional.Interface of *os.File**|  | 
  **signature** | **optional.String**|  | 
  **number** | **optional.Int64**|  | 
+ **returnImageIds** | **optional.Bool**|  | 
 
 ### Return type
 

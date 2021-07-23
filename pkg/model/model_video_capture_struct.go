@@ -13,4 +13,5 @@ package model
 type VideoCaptureStruct struct {
 	ImageUrl  *string               `json:"image_url,omitempty"`
 	ImageType VideoCaptureImageType `json:"image_type,omitempty"`
+	ImageId   *string               `json:"image_id,omitempty"`
 }

@@ -11,14 +11,16 @@ package model
 
 // 返回结构
 type PagesGetListStruct struct {
-	PageId           *int64              `json:"page_id,omitempty"`
-	PageName         *string             `json:"page_name,omitempty"`
-	PreviewUrl       *string             `json:"preview_url,omitempty"`
-	CreatedTime      *int64              `json:"created_time,omitempty"`
-	LastModifiedTime *int64              `json:"last_modified_time,omitempty"`
-	PromotedObjectId *string             `json:"promoted_object_id,omitempty"`
-	ProductCatalogId *int64              `json:"product_catalog_id,omitempty"`
-	PageType         DestinationTypeRead `json:"page_type,omitempty"`
-	PlayableType     PlayableType        `json:"playable_type,omitempty"`
-	PageStatus       PageStatus          `json:"page_status,omitempty"`
+	PageId           *int64                   `json:"page_id,omitempty"`
+	PageName         *string                  `json:"page_name,omitempty"`
+	PreviewUrl       *string                  `json:"preview_url,omitempty"`
+	CreatedTime      *int64                   `json:"created_time,omitempty"`
+	LastModifiedTime *int64                   `json:"last_modified_time,omitempty"`
+	PromotedObjectId *string                  `json:"promoted_object_id,omitempty"`
+	ProductCatalogId *int64                   `json:"product_catalog_id,omitempty"`
+	PageType         DestinationTypeRead      `json:"page_type,omitempty"`
+	PlayableType     PlayableType             `json:"playable_type,omitempty"`
+	PageStatus       PageStatus               `json:"page_status,omitempty"`
+	FengyeSubType    LandingPageFengyeSubType `json:"fengye_sub_type,omitempty"`
+	OwnerUid         *int64                   `json:"owner_uid,omitempty"`
 }

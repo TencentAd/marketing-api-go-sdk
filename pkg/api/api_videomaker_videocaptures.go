@@ -37,15 +37,17 @@ VideomakerVideocapturesApiService 生成视频封面图
      * @param "VideoFile" (optional.Interface of *os.File) -
      * @param "Signature" (optional.String) -
      * @param "Number" (optional.Int64) -
+     * @param "ReturnImageIds" (optional.Bool) -
 
 @return VideomakerVideocapturesAddResponse
 */
 
 type VideomakerVideocapturesAddOpts struct {
-	VideoId   optional.String
-	VideoFile optional.Interface
-	Signature optional.String
-	Number    optional.Int64
+	VideoId        optional.String
+	VideoFile      optional.Interface
+	Signature      optional.String
+	Number         optional.Int64
+	ReturnImageIds optional.Bool
 }
 
 func (a *VideomakerVideocapturesApiService) Add(ctx context.Context, accountId int64, localVarOptionals *VideomakerVideocapturesAddOpts) (VideomakerVideocapturesAddResponseData, http.Header, error) {
@@ -114,6 +116,9 @@ func (a *VideomakerVideocapturesApiService) Add(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.Number.IsSet() {
 		localVarFormParams.Add("number", parameterToString(localVarOptionals.Number.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ReturnImageIds.IsSet() {
+		localVarFormParams.Add("return_image_ids", parameterToString(localVarOptionals.ReturnImageIds.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
