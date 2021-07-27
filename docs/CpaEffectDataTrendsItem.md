@@ -1,4 +1,4 @@
-# CpaEffectDataTrends
+# CpaEffectDataTrendsItem
 
 ## Properties
 Name | Type | Description | Notes

@@ -34,7 +34,6 @@ type AdgroupsAddRequest struct {
 	UserActionSets             *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
 	AdditionalUserActionSets   *[]UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
 	DynamicCreativeId          *int64                           `json:"dynamic_creative_id,omitempty"`
-	IsRewardedVideoAd          *bool                            `json:"is_rewarded_video_ad,omitempty"`
 	BidStrategy                BidStrategy                      `json:"bid_strategy,omitempty"`
 	ColdStartAudience          *[]int64                         `json:"cold_start_audience,omitempty"`
 	AutoAudience               *bool                            `json:"auto_audience,omitempty"`

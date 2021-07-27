@@ -1,4 +1,4 @@
-# CpaEffectDataStruct
+# CpaEffectDataItem
 
 ## Properties
 Name | Type | Description | Notes

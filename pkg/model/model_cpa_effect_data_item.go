@@ -9,8 +9,8 @@
 
 package model
 
-// 效果数据（成本）
-type CpaEffectDataStruct struct {
+// 深浅效果数据（成本）
+type CpaEffectDataItem struct {
 	Rank                 *int64   `json:"rank,omitempty"`
 	ConversionCount      *int64   `json:"conversion_count,omitempty"`
 	Cvr                  *float64 `json:"cvr,omitempty"`

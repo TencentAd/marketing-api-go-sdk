@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **AccountId** | **int64** |  | [optional] [default to null]
 **OwnerAccountId** | **int64** |  | [optional] [default to null]
 **AssetId** | **int64** |  | [optional] [default to null]
+**AssetName** | **string** |  | [optional] [default to null]
 **AssetType** | [***AssetType**](AssetType.md) |  | [optional] [default to null]
 **PathId** | **int64** |  | [optional] [default to null]
 **PathType** | [***PathType**](PathType.md) |  | [optional] [default to null]

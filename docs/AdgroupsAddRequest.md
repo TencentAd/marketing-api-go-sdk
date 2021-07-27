@@ -27,7 +27,6 @@ Name | Type | Description | Notes
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **AdditionalUserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]
-**IsRewardedVideoAd** | **bool** |  | [optional] [default to null]
 **BidStrategy** | [***BidStrategy**](BidStrategy.md) |  | [optional] [default to null]
 **ColdStartAudience** | **[]int64** |  | [optional] [default to null]
 **AutoAudience** | **bool** |  | [optional] [default to null]

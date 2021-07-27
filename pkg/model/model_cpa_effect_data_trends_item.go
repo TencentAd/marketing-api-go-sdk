@@ -9,8 +9,8 @@
 
 package model
 
-// 成本趋势
-type CpaEffectDataTrends struct {
+// 深浅成本趋势
+type CpaEffectDataTrendsItem struct {
 	Rank      *int64         `json:"rank,omitempty"`
 	TargetCpa *[]PointStruct `json:"target_cpa,omitempty"`
 	RealCpa   *[]PointStruct `json:"real_cpa,omitempty"`

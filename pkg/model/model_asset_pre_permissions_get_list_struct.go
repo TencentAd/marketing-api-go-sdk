@@ -14,6 +14,7 @@ type AssetPrePermissionsGetListStruct struct {
 	AccountId      *int64       `json:"account_id,omitempty"`
 	OwnerAccountId *int64       `json:"owner_account_id,omitempty"`
 	AssetId        *int64       `json:"asset_id,omitempty"`
+	AssetName      *string      `json:"asset_name,omitempty"`
 	AssetType      AssetType    `json:"asset_type,omitempty"`
 	PathId         *int64       `json:"path_id,omitempty"`
 	PathType       PathType     `json:"path_type,omitempty"`

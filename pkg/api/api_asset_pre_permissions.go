@@ -33,6 +33,8 @@ AssetPrePermissionsApiService 获取待确认接收授权列表接口
  * @param accountId
  * @param assetType
  * @param optional nil or *AssetPrePermissionsGetOpts - Optional Parameters:
+     * @param "AssetId" (optional.Int64) -
+     * @param "AssetName" (optional.String) -
      * @param "PathType" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -42,10 +44,12 @@ AssetPrePermissionsApiService 获取待确认接收授权列表接口
 */
 
 type AssetPrePermissionsGetOpts struct {
-	PathType optional.String
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	AssetId   optional.Int64
+	AssetName optional.String
+	PathType  optional.String
+	Page      optional.Int64
+	PageSize  optional.Int64
+	Fields    optional.Interface
 }
 
 func (a *AssetPrePermissionsApiService) Get(ctx context.Context, accountId int64, assetType string, localVarOptionals *AssetPrePermissionsGetOpts) (AssetPrePermissionsGetResponseData, http.Header, error) {
@@ -68,6 +72,12 @@ func (a *AssetPrePermissionsApiService) Get(ctx context.Context, accountId int64
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("asset_type", parameterToString(assetType, ""))
+	if localVarOptionals != nil && localVarOptionals.AssetId.IsSet() {
+		localVarQueryParams.Add("asset_id", parameterToString(localVarOptionals.AssetId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AssetName.IsSet() {
+		localVarQueryParams.Add("asset_name", parameterToString(localVarOptionals.AssetName.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.PathType.IsSet() {
 		localVarQueryParams.Add("path_type", parameterToString(localVarOptionals.PathType.Value(), ""))
 	}

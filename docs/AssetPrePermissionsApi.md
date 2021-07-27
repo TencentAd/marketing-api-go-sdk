@@ -28,6 +28,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
+ **assetId** | **optional.Int64**|  | 
+ **assetName** | **optional.String**|  | 
  **pathType** | **optional.String**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
