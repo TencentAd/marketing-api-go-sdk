@@ -29,6 +29,7 @@ type AdvertiserGetListStruct struct {
 	MdmName                          *string                      `json:"mdm_name,omitempty"`
 	AgencyAccountId                  *int64                       `json:"agency_account_id,omitempty"`
 	Operators                        *[]AdvertiserOperatorStruct  `json:"operators,omitempty"`
+	Memo                             *string                      `json:"memo,omitempty"`
 	AccountId                        *int64                       `json:"account_id,omitempty"`
 	AdQualificationImage             *[]string                    `json:"ad_qualification_image,omitempty"`
 	CertificationImage               *string                      `json:"certification_image,omitempty"`
