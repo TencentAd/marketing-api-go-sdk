@@ -26,6 +26,7 @@ type DynamicCreativesGetListStruct struct {
 	ProfileId                 *int64                       `json:"profile_id,omitempty"`
 	CreatedTime               *int64                       `json:"created_time,omitempty"`
 	LastModifiedTime          *int64                       `json:"last_modified_time,omitempty"`
+	DynamicAdcreativeSpec     *DynamicAdcreativeSpecForDc  `json:"dynamic_adcreative_spec,omitempty"`
 	IsDeleted                 *bool                        `json:"is_deleted,omitempty"`
 	CampaignType              CampaignType                 `json:"campaign_type,omitempty"`
 	ImpressionTrackingUrl     *string                      `json:"impression_tracking_url,omitempty"`

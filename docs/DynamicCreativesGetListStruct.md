@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **ProfileId** | **int64** |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
+**DynamicAdcreativeSpec** | [***DynamicAdcreativeSpecForDc**](dynamic_adcreative_spec_for_dc.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **CampaignType** | [***CampaignType**](CampaignType.md) |  | [optional] [default to null]
 **ImpressionTrackingUrl** | **string** |  | [optional] [default to null]

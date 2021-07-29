@@ -31,4 +31,5 @@ const (
 	CompeteAttribution_BUDGET               CompeteAttribution = "ATTRIBUTE_BUDGET"
 	CompeteAttribution_INNER_COMPETE        CompeteAttribution = "ATTRIBUTE_INNER_COMPETE"
 	CompeteAttribution_PCVR                 CompeteAttribution = "ATTRIBUTE_PCVR"
+	CompeteAttribution_OPT_KNOCK_OUT        CompeteAttribution = "ATTRIBUTE_OPT_KNOCK_OUT"
 )

@@ -18,4 +18,6 @@ const (
 	OperateSuggestion_OPERATION   OperateSuggestion = "OPERATE_SUGGESTION_OPERATION"
 	OperateSuggestion_PAUSE       OperateSuggestion = "OPERATE_SUGGESTION_PAUSE"
 	OperateSuggestion_FINE_PLAY   OperateSuggestion = "OPERATE_SUGGESTION_FINE_PLAY"
+	OperateSuggestion_SUSPEND     OperateSuggestion = "OPERATE_SUGGESTION_SUSPEND"
+	OperateSuggestion_TRAFFIC     OperateSuggestion = "OPERATE_SUGGESTION_TRAFFIC"
 )
