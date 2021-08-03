@@ -28,7 +28,8 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 	version := "1.7.8"
 	apiVersion := "v1.1"
 	ctx := context.Background()
-	nonce := uuid.NewV4().String()
+	uuidObj, _ := uuid.NewV4()
+	nonce := uuidObj.String()
 	apiKey := config.APIKey{
 		AccessToken: cfg.AccessToken,
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),

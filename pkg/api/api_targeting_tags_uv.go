@@ -28,7 +28,7 @@ var (
 type TargetingTagsUvApiService service
 
 /*
-TargetingTagsUvApiService 获取行为,兴趣,意向标签覆盖人群数
+TargetingTagsUvApiService 获取行为/兴趣/意向标签覆盖人群数
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param categoryType

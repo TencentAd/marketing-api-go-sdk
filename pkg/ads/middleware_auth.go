@@ -19,7 +19,8 @@ func (a *AuthMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),
 ) (rsp *http.Response, err error) {
-	nonce := uuid.NewV4().String()
+	uuidObj, _ := uuid.NewV4()
+	nonce := uuidObj.String()
 	apiKey := config.APIKey{
 		AccessToken: a.tads.GetAccessToken(),
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),

@@ -27,4 +27,5 @@ const (
 	AssetType_CONVERSION_SPEC       AssetType = "ASSET_TYPE_CONVERSION_SPEC"
 	AssetType_UNION_PACKAGE         AssetType = "ASSET_TYPE_UNION_PACKAGE"
 	AssetType_ACCOUNT_WECHAT_CANVAS AssetType = "ASSET_TYPE_ACCOUNT_WECHAT_CANVAS"
+	AssetType_PROFILE               AssetType = "ASSET_TYPE_PROFILE"
 )

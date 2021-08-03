@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**TargetingTagsUvGet**](TargetingTagsUvApi.md#TargetingTagsUvGet) | **Get** /targeting_tags_uv/get | 获取行为,兴趣,意向标签覆盖人群数
+[**TargetingTagsUvGet**](TargetingTagsUvApi.md#TargetingTagsUvGet) | **Get** /targeting_tags_uv/get | 获取行为/兴趣/意向标签覆盖人群数
 
 
 # **TargetingTagsUvGet**
 > TargetingTagsUvGetResponse TargetingTagsUvGet(ctx, accountId, categoryType, optional)
-获取行为,兴趣,意向标签覆盖人群数
+获取行为/兴趣/意向标签覆盖人群数
 
 ### Required Parameters
 

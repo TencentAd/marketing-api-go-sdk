@@ -101,9 +101,6 @@ type HourlyReportsGetListStruct struct {
 	CouponUsageCost                            *int64   `json:"coupon_usage_cost,omitempty"`
 	CouponUsageRate                            *float64 `json:"coupon_usage_rate,omitempty"`
 	CouponPurchaseRate                         *float64 `json:"coupon_purchase_rate,omitempty"`
-	CouponGetCountByPlatform                   *int64   `json:"coupon_get_count_by_platform,omitempty"`
-	CouponGetCostByPlatform                    *int64   `json:"coupon_get_cost_by_platform,omitempty"`
-	CouponGetRate                              *float64 `json:"coupon_get_rate,omitempty"`
 	FollowCount                                *int64   `json:"follow_count,omitempty"`
 	FollowCost                                 *int64   `json:"follow_cost,omitempty"`
 	ForwardCount                               *int64   `json:"forward_count,omitempty"`
@@ -371,7 +368,7 @@ type HourlyReportsGetListStruct struct {
 	MiniGameMixedMonetizationRoiD1             *float64 `json:"mini_game_mixed_monetization_roi_d1,omitempty"`
 	MiniGameMixedMonetizationRoiD1ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d1_by_reporting,omitempty"`
 	MiniGameMixedMonetizationRoiD3             *float64 `json:"mini_game_mixed_monetization_roi_d3,omitempty"`
-	MiniGameMixedMonetizationRoiD3Reporting    *float64 `json:"mini_game_mixed_monetization_roi_d3_reporting,omitempty"`
+	MiniGameMixedMonetizationRoiD3ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d3_by_reporting,omitempty"`
 	MiniGameMixedMonetizationRoiD7             *float64 `json:"mini_game_mixed_monetization_roi_d7,omitempty"`
 	MiniGameMixedMonetizationRoiD7ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d7_by_reporting,omitempty"`
 	MiniGameMixedMonetizationRoiD14            *float64 `json:"mini_game_mixed_monetization_roi_d14,omitempty"`
@@ -457,6 +454,7 @@ type HourlyReportsGetListStruct struct {
 	OfficialAccountCreditApplyUserCount        *int64   `json:"official_account_credit_apply_user_count,omitempty"`
 	OfficialAccountCreditUserCount             *int64   `json:"official_account_credit_user_count,omitempty"`
 	CouponGetCost                              *int64   `json:"coupon_get_cost,omitempty"`
+	CouponGetRate                              *float64 `json:"coupon_get_rate,omitempty"`
 	CouponUseCount                             *int64   `json:"coupon_use_count,omitempty"`
 	ForwardUserCount                           *int64   `json:"forward_user_count,omitempty"`
 	VideoOuterPlayUserCount                    *int64   `json:"video_outer_play_user_count,omitempty"`
