@@ -18,4 +18,6 @@ const (
 	ConversionScene_IOS                 ConversionScene = "CONVERSION_SCENE_IOS"
 	ConversionScene_WEB                 ConversionScene = "CONVERSION_SCENE_WEB"
 	ConversionScene_WECHAT_MINI_PROGRAM ConversionScene = "CONVERSION_SCENE_WECHAT_MINI_PROGRAM"
+	ConversionScene_WECHAT_MINI_GAME    ConversionScene = "CONVERSION_SCENE_WECHAT_MINI_GAME"
+	ConversionScene_QQ_MINI_GAME        ConversionScene = "CONVERSION_SCENE_QQ_MINI_GAME"
 )
