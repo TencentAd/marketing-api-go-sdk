@@ -14,4 +14,5 @@ type CustomAudiencesUpdateRequest struct {
 	AudienceId  *int64  `json:"audience_id,omitempty"`
 	Name        *string `json:"name,omitempty"`
 	Description *string `json:"description,omitempty"`
+	Cooperated  *bool   `json:"cooperated,omitempty"`
 }

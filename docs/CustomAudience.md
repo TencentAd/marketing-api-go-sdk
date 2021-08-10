@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **AccountId** | **int64** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
+**Cooperated** | **bool** |  | [optional] [default to null]
 **Type_** | [***AudienceType**](AudienceType.md) |  | [optional] [default to null]
 **Status** | [***ProcessStatus**](ProcessStatus.md) |  | [optional] [default to null]
 **ErrorCode** | **int64** |  | [optional] [default to null]

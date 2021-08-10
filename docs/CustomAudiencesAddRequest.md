@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | [optional] [default to null]
 **Type_** | [***AudienceType**](AudienceType.md) |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
+**Cooperated** | **bool** |  | [optional] [default to null]
 **AudienceSpec** | [***AudienceSpec**](audience_spec.md) |  | [optional] [default to null]
 **Platform** | [***DataPlatform**](DataPlatform.md) |  | [optional] [default to null]
 **ExternalAudienceId** | **string** |  | [optional] [default to null]

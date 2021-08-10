@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Cost** | **int64** |  | [optional] [default to null]
+**ValidClickCount** | **int64** |  | [optional] [default to null]
+**Ctr** | **float64** |  | [optional] [default to null]
 **ExpPv** | **int64** |  | [optional] [default to null]
 **CanvasCpnCouponsGetPv** | **int64** |  | [optional] [default to null]
 **CanvasCpnCouponsCost** | **int64** |  | [optional] [default to null]

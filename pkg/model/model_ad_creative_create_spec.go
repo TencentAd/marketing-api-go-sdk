@@ -15,4 +15,5 @@ type AdCreativeCreateSpec struct {
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 	PageType           DestinationType                 `json:"page_type,omitempty"`
 	PageSpec           *DpPageSpec                     `json:"page_spec,omitempty"`
+	ProfileId          *int64                          `json:"profile_id,omitempty"`
 }

@@ -14,6 +14,7 @@ type CustomAudiencesAddRequest struct {
 	Name               *string       `json:"name,omitempty"`
 	Type_              AudienceType  `json:"type,omitempty"`
 	Description        *string       `json:"description,omitempty"`
+	Cooperated         *bool         `json:"cooperated,omitempty"`
 	AudienceSpec       *AudienceSpec `json:"audience_spec,omitempty"`
 	Platform           DataPlatform  `json:"platform,omitempty"`
 	ExternalAudienceId *string       `json:"external_audience_id,omitempty"`

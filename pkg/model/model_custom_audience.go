@@ -15,6 +15,7 @@ type CustomAudience struct {
 	AccountId          *int64        `json:"account_id,omitempty"`
 	Name               *string       `json:"name,omitempty"`
 	Description        *string       `json:"description,omitempty"`
+	Cooperated         *bool         `json:"cooperated,omitempty"`
 	Type_              AudienceType  `json:"type,omitempty"`
 	Status             ProcessStatus `json:"status,omitempty"`
 	ErrorCode          *int64        `json:"error_code,omitempty"`
