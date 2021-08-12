@@ -9,7 +9,7 @@
 
 package model
 
-// WechatPageSourceType : 视频/图片等素材的创建来源类型
+// WechatPageSourceType : 视频/图片/原生页等素材的创建来源类型
 type WechatPageSourceType string
 
 // List of WechatPageSourceType
