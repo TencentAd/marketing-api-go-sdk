@@ -43,7 +43,7 @@ func (e *AssetPermissionsAddExample) Init() {
 	}
 }
 
-func (e *AssetPermissionsAddExample) RunExample() (interface{}, http.Header, error) {
+func (e *AssetPermissionsAddExample) RunExample() (model.AssetPermissionsAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

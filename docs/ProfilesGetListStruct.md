@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**OwnerId** | **int64** |  | [optional] [default to null]
 **ProfileType** | [***ProfileType**](ProfileType.md) |  | [optional] [default to null]
 **ProfileId** | **int64** |  | [optional] [default to null]
 **PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]

@@ -11,6 +11,7 @@ package model
 
 // 返回结构
 type ProfilesGetListStruct struct {
+	OwnerId            *int64             `json:"owner_id,omitempty"`
 	ProfileType        ProfileType        `json:"profile_type,omitempty"`
 	ProfileId          *int64             `json:"profile_id,omitempty"`
 	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`

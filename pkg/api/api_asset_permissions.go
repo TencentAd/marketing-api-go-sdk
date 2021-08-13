@@ -33,14 +33,14 @@ AssetPermissionsApiService 资产权限授予
 
 @return AssetPermissionsAddResponse
 */
-func (a *AssetPermissionsApiService) Add(ctx context.Context, data AssetPermissionsAddRequest) (interface{}, http.Header, error) {
+func (a *AssetPermissionsApiService) Add(ctx context.Context, data AssetPermissionsAddRequest) (AssetPermissionsAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
+		localVarReturnValue AssetPermissionsAddResponseData
 		localVarResponse    AssetPermissionsAddResponse
 	)
 
@@ -98,7 +98,7 @@ func (a *AssetPermissionsApiService) Add(ctx context.Context, data AssetPermissi
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse.Header, err
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
