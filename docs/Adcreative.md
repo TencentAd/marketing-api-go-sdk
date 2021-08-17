@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **PlayablePageMaterialId** | **string** |  | [optional] [default to null]
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
+**EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsRead**](adcreative_creative_elements_read.md) |  | [optional] [default to null]
 

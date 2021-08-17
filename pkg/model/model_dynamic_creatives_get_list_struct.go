@@ -37,4 +37,5 @@ type DynamicCreativesGetListStruct struct {
 	BarrageList               *[]BarrageListReadStruct     `json:"barrage_list,omitempty"`
 	DynamicCreativeGroupUsed  DynamicCreativeGroupUsed     `json:"dynamic_creative_group_used,omitempty"`
 	AppGiftPackCode           *AppGiftPackCode             `json:"app_gift_pack_code,omitempty"`
+	EnableBreakthroughSiteset *bool                        `json:"enable_breakthrough_siteset,omitempty"`
 }

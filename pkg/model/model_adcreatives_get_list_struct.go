@@ -53,6 +53,7 @@ type AdcreativesGetListStruct struct {
 	PageTrackUrl                  *string                           `json:"page_track_url,omitempty"`
 	BarrageList                   *[]BarrageListReadStruct          `json:"barrage_list,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode                  `json:"app_gift_pack_code,omitempty"`
+	EnableBreakthroughSiteset     *bool                             `json:"enable_breakthrough_siteset,omitempty"`
 	AdcreativeTemplateId          *int64                            `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

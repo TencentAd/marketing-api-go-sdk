@@ -31,5 +31,6 @@ type DynamicCreativesAddRequest struct {
 	BarrageList               *[]BarrageListCreateStruct  `json:"barrage_list,omitempty"`
 	DynamicCreativeGroupUsed  DynamicCreativeGroupUsed    `json:"dynamic_creative_group_used,omitempty"`
 	AppGiftPackCode           *AppGiftPackCode            `json:"app_gift_pack_code,omitempty"`
+	EnableBreakthroughSiteset *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	AccountId                 *int64                      `json:"account_id,omitempty"`
 }
