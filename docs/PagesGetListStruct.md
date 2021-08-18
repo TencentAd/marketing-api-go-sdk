@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **PageStatus** | [***PageStatus**](PageStatus.md) |  | [optional] [default to null]
 **FengyeSubType** | [***LandingPageFengyeSubType**](LandingPageFengyeSubType.md) |  | [optional] [default to null]
 **OwnerUid** | **int64** |  | [optional] [default to null]
+**QuoteCreativeMaterial** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

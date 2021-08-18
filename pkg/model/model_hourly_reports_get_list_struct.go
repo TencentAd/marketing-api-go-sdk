@@ -394,9 +394,7 @@ type HourlyReportsGetListStruct struct {
 	WechatAgencyId                             *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                          *float64 `json:"cost_deviation_rate,omitempty"`
 	CompensationAmount                         *int64   `json:"compensation_amount,omitempty"`
-	ViewUserCount                              *int64   `json:"view_user_count,omitempty"`
 	AvgViewPerUser                             *float64 `json:"avg_view_per_user,omitempty"`
-	ClickUserCount                             *int64   `json:"click_user_count,omitempty"`
 	ImageClickUserCount                        *int64   `json:"image_click_user_count,omitempty"`
 	VideoClickUserCount                        *int64   `json:"video_click_user_count,omitempty"`
 	LinkClickUserCount                         *int64   `json:"link_click_user_count,omitempty"`
