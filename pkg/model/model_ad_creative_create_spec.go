@@ -12,6 +12,7 @@ package model
 // 广告创意结构
 type AdCreativeCreateSpec struct {
 	AdcreativeName     *string                         `json:"adcreative_name,omitempty"`
+	CreativeTemplateId *int64                          `json:"creative_template_id,omitempty"`
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 	PageType           DestinationType                 `json:"page_type,omitempty"`
 	PageSpec           *DpPageSpec                     `json:"page_spec,omitempty"`

@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AdcreativeId** | **int64** |  | [optional] [default to null]
 **AdcreativeName** | **string** |  | [optional] [default to null]
+**CreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***DpAdcreativeCreativeElementsMp**](dp_adcreative_creative_elements_mp.md) |  | [optional] [default to null]
 **PageType** | [***DestinationType**](DestinationType.md) |  | [optional] [default to null]
 **PageSpec** | [***DpPageSpec**](dp_page_spec.md) |  | [optional] [default to null]
