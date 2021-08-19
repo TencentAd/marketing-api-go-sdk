@@ -11,6 +11,7 @@ package model
 
 // 定向详细设置
 type DpWriteTargetingSetting struct {
-	Age    *[]AgeStruct `json:"age,omitempty"`
-	Gender *[]string    `json:"gender,omitempty"`
+	Age       *[]AgeStruct `json:"age,omitempty"`
+	Gender    *[]string    `json:"gender,omitempty"`
+	Education *[]string    `json:"education,omitempty"`
 }
