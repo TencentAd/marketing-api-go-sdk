@@ -76,6 +76,7 @@ type HourlyReportsGetListStruct struct {
 	ActivatedCost                              *int64   `json:"activated_cost,omitempty"`
 	RetentionCount                             *int64   `json:"retention_count,omitempty"`
 	RetentionRate                              *float64 `json:"retention_rate,omitempty"`
+	AppKeyPageRetentionRate                    *float64 `json:"app_key_page_retention_rate,omitempty"`
 	RetentionCost                              *int64   `json:"retention_cost,omitempty"`
 	KeyPageViewCount                           *int64   `json:"key_page_view_count,omitempty"`
 	AppCommodityPageViewCount                  *int64   `json:"app_commodity_page_view_count,omitempty"`

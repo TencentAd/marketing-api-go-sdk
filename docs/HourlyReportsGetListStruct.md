@@ -68,6 +68,7 @@ Name | Type | Description | Notes
 **ActivatedCost** | **int64** |  | [optional] [default to null]
 **RetentionCount** | **int64** |  | [optional] [default to null]
 **RetentionRate** | **float64** |  | [optional] [default to null]
+**AppKeyPageRetentionRate** | **float64** |  | [optional] [default to null]
 **RetentionCost** | **int64** |  | [optional] [default to null]
 **KeyPageViewCount** | **int64** |  | [optional] [default to null]
 **AppCommodityPageViewCount** | **int64** |  | [optional] [default to null]
