@@ -70,5 +70,4 @@ type AdgroupsGetListStruct struct {
 	SmartCostCap                      *int64                          `json:"smart_cost_cap,omitempty"`
 	MarketingScene                    MarketingScene                  `json:"marketing_scene,omitempty"`
 	CustomAdgroupTag                  *[]string                       `json:"custom_adgroup_tag,omitempty"`
-	DeepOptimizationType              DeepOptimizationType            `json:"deep_optimization_type,omitempty"`
 }

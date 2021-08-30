@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **DynamicAdTemplateId** | **int64** |  | [optional] [default to null]
 **DynamicAdTemplateName** | **string** |  | [optional] [default to null]
 **DynamicAdTemplateType** | [***DynamicAdTemplateType**](DynamicAdTemplateType.md) |  | [optional] [default to null]
-**ProductItemDisplayQuantity** | [***ProductMode**](ProductMode.md) |  | [optional] [default to null]
+**ProductItemDisplayQuantity** | [***AdNum**](AdNum.md) |  | [optional] [default to null]
 **DynamicAdTemplateWidth** | **int64** |  | [optional] [default to null]
 **DynamicAdTemplateHeight** | **int64** |  | [optional] [default to null]
 **ImageUrl** | **string** |  | [optional] [default to null]

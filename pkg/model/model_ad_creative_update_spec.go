@@ -14,4 +14,5 @@ type AdCreativeUpdateSpec struct {
 	AdcreativeName     *string                         `json:"adcreative_name,omitempty"`
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 	PageSpec           *DpPageSpec                     `json:"page_spec,omitempty"`
+	ProfileId          *int64                          `json:"profile_id,omitempty"`
 }

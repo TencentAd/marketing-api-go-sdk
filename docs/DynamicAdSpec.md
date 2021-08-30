@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ProductCatalogId** | **int64** |  | [optional] [default to null]
-**ProductMode** | [***ProductMode**](ProductMode.md) |  | [optional] [default to null]
+**ProductMode** | [***AdNum**](AdNum.md) |  | [optional] [default to null]
 **ProductSource** | **string** |  | [optional] [default to null]
 **ProductRecommendMethods** | **[]int64** |  | [optional] [default to null]
 

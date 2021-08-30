@@ -11,8 +11,8 @@ package model
 
 // 动态商品广告属性
 type DynamicAdSpec struct {
-	ProductCatalogId        *int64      `json:"product_catalog_id,omitempty"`
-	ProductMode             ProductMode `json:"product_mode,omitempty"`
-	ProductSource           *string     `json:"product_source,omitempty"`
-	ProductRecommendMethods *[]int64    `json:"product_recommend_methods,omitempty"`
+	ProductCatalogId        *int64   `json:"product_catalog_id,omitempty"`
+	ProductMode             AdNum    `json:"product_mode,omitempty"`
+	ProductSource           *string  `json:"product_source,omitempty"`
+	ProductRecommendMethods *[]int64 `json:"product_recommend_methods,omitempty"`
 }

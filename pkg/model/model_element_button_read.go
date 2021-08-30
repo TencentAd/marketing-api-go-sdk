@@ -23,4 +23,5 @@ type ElementButtonRead struct {
 	ServiceSpec         *ServiceSpec         `json:"service_spec,omitempty"`
 	WecomSpec           *WecomSpec           `json:"wecom_spec,omitempty"`
 	UseIcon             *int64               `json:"use_icon,omitempty"`
+	TelSpec             *TelSpec             `json:"tel_spec,omitempty"`
 }

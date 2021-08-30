@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **ServiceSpec** | [***ServiceSpec**](service_spec.md) |  | [optional] [default to null]
 **WecomSpec** | [***WecomSpec**](wecom_spec.md) |  | [optional] [default to null]
 **UseIcon** | **int64** |  | [optional] [default to null]
+**TelSpec** | [***TelSpec**](tel_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

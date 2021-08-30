@@ -27,4 +27,6 @@ type ConversionsGetListStruct struct {
 	AccessStatus                 AccessStatus               `json:"access_status,omitempty"`
 	CreateSourceType             CreateSourceType           `json:"create_source_type,omitempty"`
 	AppAndroidChannelPackageId   *string                    `json:"app_android_channel_package_id,omitempty"`
+	PromotedObjectId             *string                    `json:"promoted_object_id,omitempty"`
+	ConversionScene              ConversionScene            `json:"conversion_scene,omitempty"`
 }
