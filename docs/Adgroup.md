@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CampaignType** | [***CampaignType**](CampaignType.md) |  | [optional] [default to null]
 **BillingEvent** | [***BillingEvent**](BillingEvent.md) |  | [optional] [default to null]
-**SceneSpec** | [***SceneTargeting**](scene_targeting.md) |  | [optional] [default to null]
+**SceneSpec** | [***SceneTargetingForWrite**](scene_targeting_for_write.md) |  | [optional] [default to null]
 **PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
 

@@ -11,9 +11,9 @@ package model
 
 // 广告组信息
 type Adgroup struct {
-	CampaignType       CampaignType       `json:"campaign_type,omitempty"`
-	BillingEvent       BillingEvent       `json:"billing_event,omitempty"`
-	SceneSpec          *SceneTargeting    `json:"scene_spec,omitempty"`
-	PromotedObjectType PromotedObjectType `json:"promoted_object_type,omitempty"`
-	PromotedObjectId   *string            `json:"promoted_object_id,omitempty"`
+	CampaignType       CampaignType            `json:"campaign_type,omitempty"`
+	BillingEvent       BillingEvent            `json:"billing_event,omitempty"`
+	SceneSpec          *SceneTargetingForWrite `json:"scene_spec,omitempty"`
+	PromotedObjectType PromotedObjectType      `json:"promoted_object_type,omitempty"`
+	PromotedObjectId   *string                 `json:"promoted_object_id,omitempty"`
 }

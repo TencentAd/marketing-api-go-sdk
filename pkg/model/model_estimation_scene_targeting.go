@@ -13,7 +13,5 @@ package model
 type EstimationSceneTargeting struct {
 	DisplayScene        *[]string `json:"display_scene,omitempty"`
 	MobileUnionCategory *[]int64  `json:"mobile_union_category,omitempty"`
-	MobileUnion         *[]string `json:"mobile_union,omitempty"`
-	ExcludeMobileUnion  *[]string `json:"exclude_mobile_union,omitempty"`
 	MobileUnionIndustry *[]string `json:"mobile_union_industry,omitempty"`
 }
