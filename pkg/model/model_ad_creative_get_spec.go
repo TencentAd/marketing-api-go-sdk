@@ -18,4 +18,5 @@ type AdCreativeGetSpec struct {
 	PageType             DestinationType                 `json:"page_type,omitempty"`
 	PageSpec             *DpPageSpec                     `json:"page_spec,omitempty"`
 	ProfileId            *int64                          `json:"profile_id,omitempty"`
+	ProfileType          LocalProfileType                `json:"profile_type,omitempty"`
 }

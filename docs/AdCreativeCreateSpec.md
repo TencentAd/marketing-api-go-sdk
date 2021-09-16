@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **PageType** | [***DestinationType**](DestinationType.md) |  | [optional] [default to null]
 **PageSpec** | [***DpPageSpec**](dp_page_spec.md) |  | [optional] [default to null]
 **ProfileId** | **int64** |  | [optional] [default to null]
+**ProfileType** | [***LocalProfileType**](LocalProfileType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
