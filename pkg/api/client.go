@@ -254,6 +254,8 @@ type APIClient struct {
 
 	SplitTestsApi *SplitTestsApiService
 
+	SubcustomerTransferApi *SubcustomerTransferApiService
+
 	SystemStatusApi *SystemStatusApiService
 
 	TargetingTagReportsApi *TargetingTagReportsApiService
@@ -454,6 +456,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
+	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)

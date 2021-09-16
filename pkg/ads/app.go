@@ -425,6 +425,10 @@ func (c *SDKClient) SplitTests() *api.SplitTestsApiService {
 	return c.Client.SplitTestsApi
 }
 
+func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
+	return c.Client.SubcustomerTransferApi
+}
+
 func (c *SDKClient) SystemStatus() *api.SystemStatusApiService {
 	return c.Client.SystemStatusApi
 }
