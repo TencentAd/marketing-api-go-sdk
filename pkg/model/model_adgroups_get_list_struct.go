@@ -29,6 +29,7 @@ type AdgroupsGetListStruct struct {
 	TargetingTranslation              *string                         `json:"targeting_translation,omitempty"`
 	IsIncludeUnsupportedTargeting     *bool                           `json:"is_include_unsupported_targeting,omitempty"`
 	SceneSpec                         *SceneTargeting                 `json:"scene_spec,omitempty"`
+	FlowOptimizationEnabled           *bool                           `json:"flow_optimization_enabled,omitempty"`
 	BeginDate                         *string                         `json:"begin_date,omitempty"`
 	FirstDayBeginTime                 *string                         `json:"first_day_begin_time,omitempty"`
 	EndDate                           *string                         `json:"end_date,omitempty"`

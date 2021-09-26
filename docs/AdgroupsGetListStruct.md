@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **TargetingTranslation** | **string** |  | [optional] [default to null]
 **IsIncludeUnsupportedTargeting** | **bool** |  | [optional] [default to null]
 **SceneSpec** | [***SceneTargeting**](scene_targeting.md) |  | [optional] [default to null]
+**FlowOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **BeginDate** | **string** |  | [optional] [default to null]
 **FirstDayBeginTime** | **string** |  | [optional] [default to null]
 **EndDate** | **string** |  | [optional] [default to null]

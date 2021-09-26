@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **TargetingId** | **int64** |  | [optional] [default to null]
 **Targeting** | [***WriteTargetingSettingForAdgroup**](write_targeting_setting_for_adgroup.md) |  | [optional] [default to null]
 **SceneSpec** | [***SceneTargetingForWrite**](scene_targeting_for_write.md) |  | [optional] [default to null]
+**FlowOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **CustomizedCategory** | **string** |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]

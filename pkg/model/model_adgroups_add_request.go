@@ -28,6 +28,7 @@ type AdgroupsAddRequest struct {
 	TargetingId                *int64                           `json:"targeting_id,omitempty"`
 	Targeting                  *WriteTargetingSettingForAdgroup `json:"targeting,omitempty"`
 	SceneSpec                  *SceneTargetingForWrite          `json:"scene_spec,omitempty"`
+	FlowOptimizationEnabled    *bool                            `json:"flow_optimization_enabled,omitempty"`
 	ConfiguredStatus           AdStatus                         `json:"configured_status,omitempty"`
 	CustomizedCategory         *string                          `json:"customized_category,omitempty"`
 	DynamicAdSpec              *DynamicAdSpec                   `json:"dynamic_ad_spec,omitempty"`
