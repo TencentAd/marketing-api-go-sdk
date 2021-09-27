@@ -10,5 +10,6 @@
 package model
 
 type AdvertiserUpdateDailyBudgetResponseData struct {
-	List *[]AdvertiserUpdateDailyBudgetListStruct `json:"list,omitempty"`
+	List       *[]AdvertiserUpdateDailyBudgetListStruct `json:"list,omitempty"`
+	FailIdList *[]int64                                 `json:"fail_id_list,omitempty"`
 }

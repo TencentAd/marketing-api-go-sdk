@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	uuid "github.com/satori/go.uuid"
+	uuid "github.com/google/uuid"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 )
@@ -28,7 +28,7 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 	version := "1.7.10"
 	apiVersion := "v1.1"
 	ctx := context.Background()
-	nonce := uuid.NewV4().String()
+	nonce := uuid.New().String()
 	apiKey := config.APIKey{
 		AccessToken: cfg.AccessToken,
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),
@@ -55,6 +55,7 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 	return sdkClient
 }
 
+// SetIpPort set ip port in Host
 func (tads *SDKClient) SetIpPort(ip string, port int, schema string) {
 	ipPort := fmt.Sprintf("%s:%d", ip, port)
 	tads.SetHost(ipPort, schema)

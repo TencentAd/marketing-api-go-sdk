@@ -10,5 +10,6 @@
 package model
 
 type AdgroupsUpdateBidAmountResponseData struct {
-	List *[]AdgroupsUpdateBidAmountListStruct `json:"list,omitempty"`
+	List       *[]AdgroupsUpdateBidAmountListStruct `json:"list,omitempty"`
+	FailIdList *[]int64                             `json:"fail_id_list,omitempty"`
 }

@@ -2,7 +2,7 @@ package ads
 
 import (
 	"context"
-	uuid "github.com/satori/go.uuid"
+	uuid "github.com/google/uuid"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"net/http"
 	"strconv"
@@ -19,7 +19,8 @@ func (a *AuthMiddleware) Handle(
 	req *http.Request,
 	next func(req *http.Request) (rsp *http.Response, err error),
 ) (rsp *http.Response, err error) {
-	nonce := uuid.NewV4().String()
+
+	nonce := uuid.New().String()
 	apiKey := config.APIKey{
 		AccessToken: a.tads.GetAccessToken(),
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),

@@ -41,6 +41,7 @@ func (e *GetAccessTokenExample) Init() {
 // RunExample ...
 func (e *GetAccessTokenExample) RunExample() {
 	tads := e.TAds
+
 	// change ctx as needed
 	ctx := *tads.Ctx
 	response, _, err := tads.Oauth().Token(ctx, e.ClientId, e.ClientSecret, e.GrantType, e.OauthTokenOpts)

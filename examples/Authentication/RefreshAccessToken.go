@@ -40,12 +40,12 @@ func (e *RefreshAccessTokenExample) Init() {
 // RunExample ...
 func (e *RefreshAccessTokenExample) RunExample() {
 	tads := e.TAds
+
 	// change ctx as needed
 	ctx := *tads.Ctx
 	response, _, err := tads.Oauth().Token(ctx, e.ClientId, e.ClientSecret, e.GrantType, e.OauthTokenOpts)
 
 	if err != nil {
-		//
 		if resErr, ok := err.(errors.ResponseError); ok {
 			// When Api returns an error
 			errStr, _ := json.Marshal(resErr)
