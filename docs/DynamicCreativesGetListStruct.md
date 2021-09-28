@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **DynamicCreativeGroupUsed** | [***DynamicCreativeGroupUsed**](DynamicCreativeGroupUsed.md) |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
+**CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
