@@ -9,7 +9,8 @@
 
 package model
 
-type LocalStoresAddResponseData struct {
-	PoiList *[]string                   `json:"poi_list,omitempty"`
-	List    *[]LocalStoresAddListStruct `json:"list,omitempty"`
+// 校验成功的门店poi信息
+type CreateLocalStoreStruct struct {
+	PoiId    *string `json:"poi_id,omitempty"`
+	OldPoiId *string `json:"old_poi_id,omitempty"`
 }

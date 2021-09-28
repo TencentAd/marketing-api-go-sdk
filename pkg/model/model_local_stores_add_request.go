@@ -10,6 +10,7 @@
 package model
 
 type LocalStoresAddRequest struct {
-	AccountId *int64    `json:"account_id,omitempty"`
-	PoiList   *[]string `json:"poi_list,omitempty"`
+	AccountId      *int64                    `json:"account_id,omitempty"`
+	PoiList        *[]string                 `json:"poi_list,omitempty"`
+	LocalStoreList *[]CreateLocalStoreStruct `json:"local_store_list,omitempty"`
 }
