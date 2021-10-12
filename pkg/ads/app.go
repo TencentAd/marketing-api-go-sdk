@@ -393,6 +393,14 @@ func (c *SDKClient) PromotedObjects() *api.PromotedObjectsApiService {
 	return c.Client.PromotedObjectsApi
 }
 
+func (c *SDKClient) PropertyFileSessions() *api.PropertyFileSessionsApiService {
+	return c.Client.PropertyFileSessionsApi
+}
+
+func (c *SDKClient) PropertyFiles() *api.PropertyFilesApiService {
+	return c.Client.PropertyFilesApi
+}
+
 func (c *SDKClient) PropertySetSchemas() *api.PropertySetSchemasApiService {
 	return c.Client.PropertySetSchemasApi
 }

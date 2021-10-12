@@ -238,6 +238,10 @@ type APIClient struct {
 
 	PromotedObjectsApi *PromotedObjectsApiService
 
+	PropertyFileSessionsApi *PropertyFileSessionsApiService
+
+	PropertyFilesApi *PropertyFilesApiService
+
 	PropertySetSchemasApi *PropertySetSchemasApiService
 
 	PropertySetsApi *PropertySetsApiService
@@ -448,6 +452,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
+	c.PropertyFileSessionsApi = (*PropertyFileSessionsApiService)(&c.common)
+	c.PropertyFilesApi = (*PropertyFilesApiService)(&c.common)
 	c.PropertySetSchemasApi = (*PropertySetSchemasApiService)(&c.common)
 	c.PropertySetsApi = (*PropertySetsApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
