@@ -46,6 +46,7 @@ type DailyReportsGetListStruct struct {
 	WebApplicationCount                        *int64   `json:"web_application_count,omitempty"`
 	WebApplicationCost                         *int64   `json:"web_application_cost,omitempty"`
 	PageReservationCount                       *int64   `json:"page_reservation_count,omitempty"`
+	PageReservationByDisplayCount              *int64   `json:"page_reservation_by_display_count,omitempty"`
 	PageReservationRate                        *float64 `json:"page_reservation_rate,omitempty"`
 	PageReservationCost                        *int64   `json:"page_reservation_cost,omitempty"`
 	PageReservationCostWithPeople              *int64   `json:"page_reservation_cost_with_people,omitempty"`
@@ -57,15 +58,20 @@ type DailyReportsGetListStruct struct {
 	PlatformCouponGetCount                     *int64   `json:"platform_coupon_get_count,omitempty"`
 	PlatformCouponGetCost                      *int64   `json:"platform_coupon_get_cost,omitempty"`
 	WebOrderCount                              *int64   `json:"web_order_count,omitempty"`
+	OrderByDisplayCount                        *int64   `json:"order_by_display_count,omitempty"`
 	WebOrderRate                               *float64 `json:"web_order_rate,omitempty"`
+	OrderByDisplayRate                         *float64 `json:"order_by_display_rate,omitempty"`
 	AppOrderRate                               *float64 `json:"app_order_rate,omitempty"`
 	WebOrderCost                               *int64   `json:"web_order_cost,omitempty"`
+	OrderByDisplayCost                         *int64   `json:"order_by_display_cost,omitempty"`
 	WebCheckoutAmount                          *int64   `json:"web_checkout_amount,omitempty"`
 	WebCheckoutCount                           *int64   `json:"web_checkout_count,omitempty"`
 	WebCheckoutCost                            *int64   `json:"web_checkout_cost,omitempty"`
 	OrderAmount                                *int64   `json:"order_amount,omitempty"`
+	OrderByDisplayAmount                       *int64   `json:"order_by_display_amount,omitempty"`
 	OrderUnitPrice                             *int64   `json:"order_unit_price,omitempty"`
 	OrderRoi                                   *float64 `json:"order_roi,omitempty"`
+	OrderByDisplayRoi                          *float64 `json:"order_by_display_roi,omitempty"`
 	DeliverCount                               *int64   `json:"deliver_count,omitempty"`
 	DeliverCost                                *int64   `json:"deliver_cost,omitempty"`
 	SignInCount                                *int64   `json:"sign_in_count,omitempty"`
@@ -81,11 +87,14 @@ type DailyReportsGetListStruct struct {
 	AppKeyPageRetentionRate                    *float64 `json:"app_key_page_retention_rate,omitempty"`
 	RetentionCost                              *int64   `json:"retention_cost,omitempty"`
 	KeyPageViewCount                           *int64   `json:"key_page_view_count,omitempty"`
+	KeyPageViewByDisplayCount                  *int64   `json:"key_page_view_by_display_count,omitempty"`
 	AppCommodityPageViewCount                  *int64   `json:"app_commodity_page_view_count,omitempty"`
+	AppCommodityPageViewByDisplayCount         *int64   `json:"app_commodity_page_view_by_display_count,omitempty"`
 	AppCommodityPageViewRate                   *float64 `json:"app_commodity_page_view_rate,omitempty"`
 	WebCommodityPageViewRate                   *float64 `json:"web_commodity_page_view_rate,omitempty"`
 	AppCommodityPageViewCost                   *int64   `json:"app_commodity_page_view_cost,omitempty"`
 	AppRegisterCount                           *int64   `json:"app_register_count,omitempty"`
+	RegisterByDisplayCount                     *int64   `json:"register_by_display_count,omitempty"`
 	AppRegisterCost                            *int64   `json:"app_register_cost,omitempty"`
 	WebRegisterCost                            *int64   `json:"web_register_cost,omitempty"`
 	AppApplicationCount                        *int64   `json:"app_application_count,omitempty"`
@@ -96,6 +105,7 @@ type DailyReportsGetListStruct struct {
 	AppOrderCount                              *int64   `json:"app_order_count,omitempty"`
 	AppOrderCost                               *int64   `json:"app_order_cost,omitempty"`
 	AppCheckoutCount                           *int64   `json:"app_checkout_count,omitempty"`
+	AppCheckoutByDisplayCount                  *int64   `json:"app_checkout_by_display_count,omitempty"`
 	AppCheckoutAmount                          *int64   `json:"app_checkout_amount,omitempty"`
 	AppCheckoutCost                            *int64   `json:"app_checkout_cost,omitempty"`
 	PlatformCouponClickCount                   *int64   `json:"platform_coupon_click_count,omitempty"`
@@ -121,10 +131,13 @@ type DailyReportsGetListStruct struct {
 	AdPurValWeb                                *int64   `json:"ad_pur_val_web,omitempty"`
 	AdPurValApp                                *int64   `json:"ad_pur_val_app,omitempty"`
 	Order24hCount                              *int64   `json:"order_24h_count,omitempty"`
+	Order24hByDisplayCount                     *int64   `json:"order_24h_by_display_count,omitempty"`
 	Order24hRate                               *float64 `json:"order_24h_rate,omitempty"`
 	Order24hCost                               *int64   `json:"order_24h_cost,omitempty"`
 	Order24hAmount                             *int64   `json:"order_24h_amount,omitempty"`
+	Order24hByDisplayAmount                    *int64   `json:"order_24h_by_display_amount,omitempty"`
 	Order24hRoi                                *float64 `json:"order_24h_roi,omitempty"`
+	Order24hByDisplayRoi                       *float64 `json:"order_24h_by_display_roi,omitempty"`
 	GameCreateRoleCount                        *int64   `json:"game_create_role_count,omitempty"`
 	GameAuthorizeCount                         *int64   `json:"game_authorize_count,omitempty"`
 	GameTutorialFinishCount                    *int64   `json:"game_tutorial_finish_count,omitempty"`
@@ -166,7 +179,9 @@ type DailyReportsGetListStruct struct {
 	CheoutOmReward                             *float64 `json:"cheout_om_reward,omitempty"`
 	CheoutTotalReward                          *float64 `json:"cheout_total_reward,omitempty"`
 	FromFollowUv                               *int64   `json:"from_follow_uv,omitempty"`
+	FromFollowByDisplayUv                      *int64   `json:"from_follow_by_display_uv,omitempty"`
 	FromFollowCost                             *int64   `json:"from_follow_cost,omitempty"`
+	FromFollowByDisplayCost                    *int64   `json:"from_follow_by_display_cost,omitempty"`
 	AddDesktopPv                               *int64   `json:"add_desktop_pv,omitempty"`
 	AddDesktopCost                             *int64   `json:"add_desktop_cost,omitempty"`
 	FirstPayCount                              *int64   `json:"first_pay_count,omitempty"`
@@ -197,8 +212,11 @@ type DailyReportsGetListStruct struct {
 	LotteryLeadsCount                          *int64   `json:"lottery_leads_count,omitempty"`
 	LotteryLeadsCost                           *int64   `json:"lottery_leads_cost,omitempty"`
 	ConversionsCount                           *int64   `json:"conversions_count,omitempty"`
+	ConversionsByDisplayCount                  *int64   `json:"conversions_by_display_count,omitempty"`
 	ConversionsRate                            *float64 `json:"conversions_rate,omitempty"`
+	ConversionsByDisplayRate                   *float64 `json:"conversions_by_display_rate,omitempty"`
 	ConversionsCost                            *int64   `json:"conversions_cost,omitempty"`
+	ConversionsByDisplayCost                   *int64   `json:"conversions_by_display_cost,omitempty"`
 	DeepConversionsCount                       *int64   `json:"deep_conversions_count,omitempty"`
 	DeepConversionsRate                        *float64 `json:"deep_conversions_rate,omitempty"`
 	DeepConversionsCost                        *int64   `json:"deep_conversions_cost,omitempty"`
@@ -252,7 +270,9 @@ type DailyReportsGetListStruct struct {
 	WechatAppRegisterUv                        *int64   `json:"wechat_app_register_uv,omitempty"`
 	NoInterestCount                            *int64   `json:"no_interest_count,omitempty"`
 	FirstDayOrderCount                         *int64   `json:"first_day_order_count,omitempty"`
+	FirstDayOrderByDisplayCount                *int64   `json:"first_day_order_by_display_count,omitempty"`
 	FirstDayOrderAmount                        *int64   `json:"first_day_order_amount,omitempty"`
+	FirstDayOrderByDisplayAmount               *int64   `json:"first_day_order_by_display_amount,omitempty"`
 	AddWishlistCount                           *int64   `json:"add_wishlist_count,omitempty"`
 	VideoOuterPlay10Count                      *int64   `json:"video_outer_play10_count,omitempty"`
 	VideoOuterPlay25Count                      *int64   `json:"video_outer_play25_count,omitempty"`
