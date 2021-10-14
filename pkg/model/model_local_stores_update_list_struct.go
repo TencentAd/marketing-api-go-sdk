@@ -10,7 +10,7 @@
 package model
 
 // 返回结构
-type LocalStoresSearchInfoGetListStruct struct {
+type LocalStoresUpdateListStruct struct {
 	PoiId                   *string                  `json:"poi_id,omitempty"`
 	LocalStoreName          *string                  `json:"local_store_name,omitempty"`
 	LocalStoreProvince      *string                  `json:"local_store_province,omitempty"`

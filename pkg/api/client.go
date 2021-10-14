@@ -204,7 +204,11 @@ type APIClient struct {
 
 	LocalStoresAddressParsingResultApi *LocalStoresAddressParsingResultApiService
 
+	LocalStoresCategoriesApi *LocalStoresCategoriesApiService
+
 	LocalStoresSearchInfoApi *LocalStoresSearchInfoApiService
+
+	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
 
 	OauthApi *OauthApiService
 
@@ -435,7 +439,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalEstimatedamountApi = (*LocalEstimatedamountApiService)(&c.common)
 	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
 	c.LocalStoresAddressParsingResultApi = (*LocalStoresAddressParsingResultApiService)(&c.common)
+	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
+	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OuterCluesApi = (*OuterCluesApiService)(&c.common)

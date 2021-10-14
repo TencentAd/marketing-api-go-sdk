@@ -325,8 +325,16 @@ func (c *SDKClient) LocalStoresAddressParsingResult() *api.LocalStoresAddressPar
 	return c.Client.LocalStoresAddressParsingResultApi
 }
 
+func (c *SDKClient) LocalStoresCategories() *api.LocalStoresCategoriesApiService {
+	return c.Client.LocalStoresCategoriesApi
+}
+
 func (c *SDKClient) LocalStoresSearchInfo() *api.LocalStoresSearchInfoApiService {
 	return c.Client.LocalStoresSearchInfoApi
+}
+
+func (c *SDKClient) LocalStoresWxpayMerchants() *api.LocalStoresWxpayMerchantsApiService {
+	return c.Client.LocalStoresWxpayMerchantsApi
 }
 
 func (c *SDKClient) Oauth() *api.OauthApiService {

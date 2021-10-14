@@ -11,6 +11,7 @@ package model
 
 // 校验成功的门店poi信息
 type CreateLocalStoreStruct struct {
-	PoiId    *string `json:"poi_id,omitempty"`
-	OldPoiId *string `json:"old_poi_id,omitempty"`
+	PoiId                   *string                  `json:"poi_id,omitempty"`
+	LocalStoreBizInfo       *LocalStoreBizInfoStruct `json:"local_store_biz_info,omitempty"`
+	WechatEcosystemAccounts *WechatEcosystemAccounts `json:"wechat_ecosystem_accounts,omitempty"`
 }
