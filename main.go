@@ -1,1 +1,1 @@
-package marketing-api-go-sdk
+package marketing_api_go_sdk
