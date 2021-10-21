@@ -53,5 +53,6 @@ type DynamicCreativeElements struct {
 	Caption                    *string                            `json:"caption,omitempty"`
 	ShopImage                  *string                            `json:"shop_image,omitempty"`
 	HeadLine                   *string                            `json:"head_line,omitempty"`
+	ShopImageStruct            *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

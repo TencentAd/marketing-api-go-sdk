@@ -11,7 +11,8 @@ package model
 
 // 小程序信息
 type MiniProgramSpec struct {
-	Title           *string `json:"title,omitempty"`
-	MiniProgramId   *string `json:"mini_program_id,omitempty"`
-	MiniProgramPath *string `json:"mini_program_path,omitempty"`
+	Title            *string   `json:"title,omitempty"`
+	MiniProgramId    *string   `json:"mini_program_id,omitempty"`
+	MiniProgramPath  *string   `json:"mini_program_path,omitempty"`
+	MiniProgramPaths *[]string `json:"mini_program_paths,omitempty"`
 }

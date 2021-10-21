@@ -32,6 +32,7 @@ type RevisedAdcreativeElements struct {
 	CountdownTimeType AdCreativeCountdownTimeType        `json:"countdown_time_type,omitempty"`
 	MiniProgramId     *string                            `json:"mini_program_id,omitempty"`
 	MiniProgramPath   *string                            `json:"mini_program_path,omitempty"`
+	MiniProgramPaths  *[]string                          `json:"mini_program_paths,omitempty"`
 	Label             *[]CreativeLabel                   `json:"label,omitempty"`
 	ProductTags       *[]string                          `json:"product_tags,omitempty"`
 	LogoDescription   *string                            `json:"logo_description,omitempty"`
@@ -54,4 +55,5 @@ type RevisedAdcreativeElements struct {
 	EndPage           *AdCreativeEndPage                 `json:"end_page,omitempty"`
 	ShopImage         *string                            `json:"shop_image,omitempty"`
 	HeadLine          *string                            `json:"head_line,omitempty"`
+	ShopImageStruct   *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 }

@@ -42,6 +42,7 @@ Name | Type | Description | Notes
 **EndPage** | [***AdCreativeEndPage**](ad_creative_end_page.md) |  | [optional] [default to null]
 **ShopImage** | **string** |  | [optional] [default to null]
 **HeadLine** | **string** |  | [optional] [default to null]
+**ShopImageStruct** | [***AdCreativeShopImageStruct**](ad_creative_shop_image_struct.md) |  | [optional] [default to null]
 **CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
