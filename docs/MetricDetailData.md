@@ -23,6 +23,13 @@ Name | Type | Description | Notes
 **CvsExpCost** | **int64** |  | [optional] [default to null]
 **WeappExpCost** | **int64** |  | [optional] [default to null]
 **QuestReservationUvCost** | **int64** |  | [optional] [default to null]
+**ReachStorePayGmv** | **int64** |  | [optional] [default to null]
+**ReachStorePayUv** | **int64** |  | [optional] [default to null]
+**ReachStorePayPv** | **int64** |  | [optional] [default to null]
+**ReachStorePayRoi** | **float64** |  | [optional] [default to null]
+**ClkPvAvg** | **float64** |  | [optional] [default to null]
+**ReachStorePayArpu** | **float64** |  | [optional] [default to null]
+**ClickUserCount** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

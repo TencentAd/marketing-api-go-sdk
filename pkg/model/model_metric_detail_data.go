@@ -31,4 +31,11 @@ type MetricDetailData struct {
 	CvsExpCost              *int64   `json:"cvs_exp_cost,omitempty"`
 	WeappExpCost            *int64   `json:"weapp_exp_cost,omitempty"`
 	QuestReservationUvCost  *int64   `json:"quest_reservation_uv_cost,omitempty"`
+	ReachStorePayGmv        *int64   `json:"reach_store_pay_gmv,omitempty"`
+	ReachStorePayUv         *int64   `json:"reach_store_pay_uv,omitempty"`
+	ReachStorePayPv         *int64   `json:"reach_store_pay_pv,omitempty"`
+	ReachStorePayRoi        *float64 `json:"reach_store_pay_roi,omitempty"`
+	ClkPvAvg                *float64 `json:"clk_pv_avg,omitempty"`
+	ReachStorePayArpu       *float64 `json:"reach_store_pay_arpu,omitempty"`
+	ClickUserCount          *int64   `json:"click_user_count,omitempty"`
 }

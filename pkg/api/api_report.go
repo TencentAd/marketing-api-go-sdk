@@ -229,6 +229,107 @@ func (a *ReportApiService) ConversionsPredict(ctx context.Context, data ReportCo
 }
 
 /*
+ReportApiService 落地页报表数据接口
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param data
+
+@return ReportLandingPageResponse
+*/
+func (a *ReportApiService) LandingPage(ctx context.Context, data ReportLandingPageRequest) (ReportLandingPageResponseData, http.Header, error) {
+	var (
+		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarFileKey     string
+		localVarReturnValue ReportLandingPageResponseData
+		localVarResponse    ReportLandingPageResponse
+	)
+
+	// create path and map variables
+	localVarPath := a.client.Cfg.BasePath + "/report/landing_page"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+
+	// set Content-Type header
+	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
+	if localVarHttpContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHttpContentType
+	}
+
+	// to determine the Accept header
+	localVarHttpHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
+	if localVarHttpHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	// body params
+	localVarPostBody = &data
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarHttpResponse, err := a.client.callAPI(r)
+	if err != nil || localVarHttpResponse == nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
+	defer localVarHttpResponse.Body.Close()
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	if localVarHttpResponse.StatusCode < 300 {
+		// If we succeed, return the data, otherwise pass on to decode error.
+		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
+			if *localVarResponse.Code != 0 {
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			}
+			return *localVarResponse.Data, localVarHttpResponse.Header, err
+		} else {
+			return localVarReturnValue, localVarHttpResponse.Header, err
+		}
+	}
+
+	if localVarHttpResponse.StatusCode >= 300 {
+		newErr := GenericSwaggerError{
+			body:  localVarBody,
+			error: localVarHttpResponse.Status,
+		}
+
+		if localVarHttpResponse.StatusCode == 200 {
+			var v ReportLandingPageResponse
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
+		}
+
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
+	}
+
+	return localVarReturnValue, localVarHttpResponse.Header, nil
+}
+
+/*
 ReportApiService 视频流失分析接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data

@@ -371,6 +371,26 @@ type HourlyReportsGetListStruct struct {
 	FirstDayAdPurArppuCost                     *int64   `json:"first_day_ad_pur_arppu_cost,omitempty"`
 	FirstDayPayAmountArpu                      *int64   `json:"first_day_pay_amount_arpu,omitempty"`
 	FirstDayPayAmountArppu                     *int64   `json:"first_day_pay_amount_arppu,omitempty"`
+	MiniGameFirstPayAmount                     *int64   `json:"mini_game_first_pay_amount,omitempty"`
+	MiniGamePayingUsersPlaD1                   *int64   `json:"mini_game_paying_users_pla_d1,omitempty"`
+	MiniGameFirstPayPlaAmount                  *int64   `json:"mini_game_first_pay_pla_amount,omitempty"`
+	MiniGamePayD1PlaUv                         *int64   `json:"mini_game_pay_d1_pla_uv,omitempty"`
+	MiniGamePayD3Uv                            *int64   `json:"mini_game_pay_d3_uv,omitempty"`
+	MiniGamePayD7Uv                            *int64   `json:"mini_game_pay_d7_uv,omitempty"`
+	MiniGamePayD14Uv                           *int64   `json:"mini_game_pay_d14_uv,omitempty"`
+	MiniGamePayD30Uv                           *int64   `json:"mini_game_pay_d30_uv,omitempty"`
+	MiniGamePayD3PlaUv                         *int64   `json:"mini_game_pay_d3_pla_uv,omitempty"`
+	MiniGamePayD7PlaUv                         *int64   `json:"mini_game_pay_d7_pla_uv,omitempty"`
+	MiniGamePayD14PlaUv                        *int64   `json:"mini_game_pay_d14_pla_uv,omitempty"`
+	MiniGamePayD30PlaUv                        *int64   `json:"mini_game_pay_d30_pla_uv,omitempty"`
+	MiniGameD3PayCount                         *int64   `json:"mini_game_d3_pay_count,omitempty"`
+	MiniGameD7PayCount                         *int64   `json:"mini_game_d7_pay_count,omitempty"`
+	MiniGameD14PayCount                        *int64   `json:"mini_game_d14_pay_count,omitempty"`
+	MiniGameD30PayCount                        *int64   `json:"mini_game_d30_pay_count,omitempty"`
+	MiniGameD3PayPlaCount                      *int64   `json:"mini_game_d3_pay_pla_count,omitempty"`
+	MiniGameD7PayPlaCount                      *int64   `json:"mini_game_d7_pay_pla_count,omitempty"`
+	MiniGameD14PayPlaCount                     *int64   `json:"mini_game_d14_pay_pla_count,omitempty"`
+	MiniGameD30PayPlaCount                     *int64   `json:"mini_game_d30_pay_pla_count,omitempty"`
 	RoiActivatedD30                            *float64 `json:"roi_activated_d30,omitempty"`
 	FirstDayFirstPayRate                       *float64 `json:"first_day_first_pay_rate,omitempty"`
 	MiniGameFirstDayAdMonetizationUsers        *int64   `json:"mini_game_first_day_ad_monetization_users,omitempty"`
@@ -380,8 +400,16 @@ type HourlyReportsGetListStruct struct {
 	MiniGameFirstDayAdPayingArpu               *int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
 	MiniGamePayingUsersD1                      *int64   `json:"mini_game_paying_users_d1,omitempty"`
 	MiniGamePayingAmountD1                     *int64   `json:"mini_game_paying_amount_d1,omitempty"`
+	MiniGamePayingAmountD3                     *int64   `json:"mini_game_paying_amount_d3,omitempty"`
+	MiniGamePayingAmountD7                     *int64   `json:"mini_game_paying_amount_d7,omitempty"`
+	MiniGamePayingAmountD14                    *int64   `json:"mini_game_paying_amount_d14,omitempty"`
+	MiniGamePayingAmountD30                    *int64   `json:"mini_game_paying_amount_d30,omitempty"`
 	MiniGameFirstDayPayingRoi                  *float64 `json:"mini_game_first_day_paying_roi,omitempty"`
 	MiniGamePayingAmountD1ByUpload             *int64   `json:"mini_game_paying_amount_d1_by_upload,omitempty"`
+	MiniGamePayingAmountD3ByUpload             *int64   `json:"mini_game_paying_amount_d3_by_upload,omitempty"`
+	MiniGamePayingAmountD7ByUpload             *int64   `json:"mini_game_paying_amount_d7_by_upload,omitempty"`
+	MiniGamePayingAmountD14ByUpload            *int64   `json:"mini_game_paying_amount_d14_by_upload,omitempty"`
+	MiniGamePayD30PlaAmount                    *int64   `json:"mini_game_pay_d30_pla_amount,omitempty"`
 	MixedMonetizationRoiD1                     *float64 `json:"mixed_monetization_roi_d1,omitempty"`
 	MixedMonetizationRoiD3                     *float64 `json:"mixed_monetization_roi_d3,omitempty"`
 	MixedMonetizationRoiD7                     *float64 `json:"mixed_monetization_roi_d7,omitempty"`
@@ -398,6 +426,9 @@ type HourlyReportsGetListStruct struct {
 	AdPayingCostD1                             *int64   `json:"ad_paying_cost_d1,omitempty"`
 	AdPurArpuCostD1                            *int64   `json:"ad_pur_arpu_cost_d1,omitempty"`
 	AdMonetizationPenetrationRatD1             *float64 `json:"ad_monetization_penetration_rat_d1,omitempty"`
+	MiniGameAdMonetizationAmountD3             *int64   `json:"mini_game_ad_monetization_amount_d3,omitempty"`
+	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
+	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
 	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
 	CampaignName                               *string  `json:"campaign_name,omitempty"`
