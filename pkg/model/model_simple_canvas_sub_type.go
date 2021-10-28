@@ -20,4 +20,5 @@ const (
 	SimpleCanvasSubType_SLIDE_UP     SimpleCanvasSubType = "SIMPLE_CANVAS_SUB_TYPE_SLIDE_UP"
 	SimpleCanvasSubType_WEB_STORE    SimpleCanvasSubType = "SIMPLE_CANVAS_SUB_TYPE_WEB_STORE"
 	SimpleCanvasSubType_RESERVE_LIVE SimpleCanvasSubType = "SIMPLE_CANVAS_SUB_TYPE_RESERVE_LIVE"
+	SimpleCanvasSubType_CHOOSE       SimpleCanvasSubType = "SIMPLE_CANVAS_SUB_TYPE_CHOOSE"
 )

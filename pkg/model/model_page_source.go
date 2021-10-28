@@ -9,7 +9,7 @@
 
 package model
 
-// PageSource : 查询类型
+// PageSource : 查询类型,默认值OWNER。
 type PageSource string
 
 // List of PageSource

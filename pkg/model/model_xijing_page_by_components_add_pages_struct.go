@@ -15,6 +15,7 @@ type XijingPageByComponentsAddPagesStruct struct {
 	PageName          *string            `json:"page_name,omitempty"`
 	PageTitle         *string            `json:"page_title,omitempty"`
 	Clipboard         *string            `json:"clipboard,omitempty"`
+	PageDeeplink      *string            `json:"page_deeplink,omitempty"`
 	MobileAppId       *string            `json:"mobile_app_id,omitempty"`
 	BgColor           *string            `json:"bg_color,omitempty"`
 	BgImageId         *string            `json:"bg_image_id,omitempty"`

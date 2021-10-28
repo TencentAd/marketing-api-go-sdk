@@ -72,5 +72,6 @@ type AdcreativeCreativeElementsReadMp struct {
 	ShopImage                  *string                            `json:"shop_image,omitempty"`
 	HeadLine                   *string                            `json:"head_line,omitempty"`
 	ShopImageStruct            *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
+	ChosenButton               *ChosenButton                      `json:"chosen_button,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

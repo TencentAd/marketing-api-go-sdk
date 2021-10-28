@@ -48,6 +48,7 @@ Name | Type | Description | Notes
 **ShopImage** | **string** |  | [optional] [default to null]
 **HeadLine** | **string** |  | [optional] [default to null]
 **ShopImageStruct** | [***AdCreativeShopImageStruct**](ad_creative_shop_image_struct.md) |  | [optional] [default to null]
+**ChosenButton** | [***ChosenButton**](chosen_button.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

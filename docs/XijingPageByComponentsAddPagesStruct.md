@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **PageName** | **string** |  | [optional] [default to null]
 **PageTitle** | **string** |  | [optional] [default to null]
 **Clipboard** | **string** |  | [optional] [default to null]
+**PageDeeplink** | **string** |  | [optional] [default to null]
 **MobileAppId** | **string** |  | [optional] [default to null]
 **BgColor** | **string** |  | [optional] [default to null]
 **BgImageId** | **string** |  | [optional] [default to null]
