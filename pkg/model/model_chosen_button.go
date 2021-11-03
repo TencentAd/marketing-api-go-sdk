@@ -11,8 +11,8 @@ package model
 
 // 选择按钮
 type ChosenButton struct {
-	LeftButtonTxt          *string               `json:"left_button_txt,omitempty"`
-	LeftButtonLandingPage  *LandingPageStructure `json:"left_button_landing_page,omitempty"`
-	RightButtonTxt         *string               `json:"right_button_txt,omitempty"`
-	RightButtonLandingPage *LandingPageStructure `json:"right_button_landing_page,omitempty"`
+	ChosenButtonText1        *string               `json:"chosen_button_text1,omitempty"`
+	ChosenButtonLandingPage1 *LandingPageStructure `json:"chosen_button_landing_page1,omitempty"`
+	ChosenButtonText2        *string               `json:"chosen_button_text2,omitempty"`
+	ChosenButtonLandingPage2 *LandingPageStructure `json:"chosen_button_landing_page2,omitempty"`
 }

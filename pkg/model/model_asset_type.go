@@ -28,4 +28,5 @@ const (
 	AssetType_UNION_PACKAGE         AssetType = "ASSET_TYPE_UNION_PACKAGE"
 	AssetType_ACCOUNT_WECHAT_CANVAS AssetType = "ASSET_TYPE_ACCOUNT_WECHAT_CANVAS"
 	AssetType_PROFILE               AssetType = "ASSET_TYPE_PROFILE"
+	AssetType_LOCAL_STORE           AssetType = "ASSET_TYPE_LOCAL_STORE"
 )

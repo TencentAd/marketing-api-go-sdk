@@ -41,7 +41,6 @@ type WriteTargetingSettingForAdgroup struct {
 	ExcludedCustomAudience        *[]int64                           `json:"excluded_custom_audience,omitempty"`
 	BehaviorOrInterest            *BehaviorOrInterest                `json:"behavior_or_interest,omitempty"`
 	WechatOfficialAccountCategory *[]int64                           `json:"wechat_official_account_category,omitempty"`
-	MobileUnionCategory           *[]int64                           `json:"mobile_union_category,omitempty"`
 	MiniGameQqStatus              *[]string                          `json:"mini_game_qq_status,omitempty"`
 	ExcludedConvertedAudience     *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
 }

@@ -33,7 +33,6 @@ Name | Type | Description | Notes
 **ExcludedCustomAudience** | **[]int64** |  | [optional] [default to null]
 **BehaviorOrInterest** | [***BehaviorOrInterest**](behavior_or_interest.md) |  | [optional] [default to null]
 **WechatOfficialAccountCategory** | **[]int64** |  | [optional] [default to null]
-**MobileUnionCategory** | **[]int64** |  | [optional] [default to null]
 **MiniGameQqStatus** | **[]string** |  | [optional] [default to null]
 **ExcludedConvertedAudience** | [***ExcludedConvertedAudienceStruct**](excluded_converted_audience_struct.md) |  | [optional] [default to null]
 

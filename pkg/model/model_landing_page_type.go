@@ -14,6 +14,7 @@ type LandingPageType string
 
 // List of LandingPageType
 const (
+	LandingPageType_LANDING_PAGE_TYPE_UNKNOWN                         LandingPageType = "LANDING_PAGE_TYPE_UNKNOWN"
 	LandingPageType_LANDING_PAGE_TYPE_ANDROID_APP                     LandingPageType = "LANDING_PAGE_TYPE_ANDROID_APP"
 	LandingPageType_LANDING_PAGE_TYPE_IOS_APP                         LandingPageType = "LANDING_PAGE_TYPE_IOS_APP"
 	LandingPageType_LANDING_PAGE_TYPE_FENGYE_WEB                      LandingPageType = "LANDING_PAGE_TYPE_FENGYE_WEB"
@@ -84,5 +85,4 @@ const (
 	LandingPageType_DEFAULT                                           LandingPageType = "DEFAULT"
 	LandingPageType_DEEP_LINK_IOS                                     LandingPageType = "DEEP_LINK_IOS"
 	LandingPageType_DEEP_LINK_ANDROID                                 LandingPageType = "DEEP_LINK_ANDROID"
-	LandingPageType_LANDING_PAGE_TYPE_UNKNOWN                         LandingPageType = "LANDING_PAGE_TYPE_UNKNOWN"
 )
