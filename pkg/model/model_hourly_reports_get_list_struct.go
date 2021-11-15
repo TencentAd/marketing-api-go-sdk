@@ -183,6 +183,10 @@ type HourlyReportsGetListStruct struct {
 	AddDesktopPv                               *int64   `json:"add_desktop_pv,omitempty"`
 	AddDesktopCost                             *int64   `json:"add_desktop_cost,omitempty"`
 	FirstPayCount                              *int64   `json:"first_pay_count,omitempty"`
+	WechatLocalPayCount                        *int64   `json:"wechat_local_pay_count,omitempty"`
+	WechatLocalPayuserCount                    *int64   `json:"wechat_local_payuser_count,omitempty"`
+	WechatLocalPayAmount                       *int64   `json:"wechat_local_pay_amount,omitempty"`
+	WechatLocalPayRoi                          *int64   `json:"wechat_local_pay_roi,omitempty"`
 	FirstPayRate                               *float64 `json:"first_pay_rate,omitempty"`
 	PreCreWeb                                  *int64   `json:"pre_cre_web,omitempty"`
 	PreCreApp                                  *int64   `json:"pre_cre_app,omitempty"`
