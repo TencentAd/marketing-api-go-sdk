@@ -19,8 +19,7 @@ type ActionsUserId struct {
 	HashPhone     *string `json:"hash_phone,omitempty"`
 	Sha256Phone   *string `json:"sha256_phone,omitempty"`
 	HashAndroidId *string `json:"hash_android_id,omitempty"`
-	HashMac       *string `json:"hash_mac,omitempty"`
-	Oaid          *string `json:"oaid,omitempty"`
+	HashOaid      *string `json:"hash_oaid,omitempty"`
 	Md5Sha256Oaid *string `json:"md5_sha256_oaid,omitempty"`
 	WechatOpenid  *string `json:"wechat_openid,omitempty"`
 	WechatUnionid *string `json:"wechat_unionid,omitempty"`
