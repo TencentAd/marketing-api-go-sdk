@@ -347,6 +347,28 @@ type HourlyReportsGetListStruct struct {
 	MiniGameAdMonetizationArpu                 *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
 	MiniGamePayingRoi                          *float64 `json:"mini_game_paying_roi,omitempty"`
 	MiniGamePayingArpu                         *int64   `json:"mini_game_paying_arpu,omitempty"`
+	MiniGameBfUv                               *int64   `json:"mini_game_bf_uv,omitempty"`
+	MiniGameBfCost                             *int64   `json:"mini_game_bf_cost,omitempty"`
+	MiniGameBfIncomeUv                         *int64   `json:"mini_game_bf_income_uv,omitempty"`
+	MiniGameBfIncomeAmount                     *int64   `json:"mini_game_bf_income_amount,omitempty"`
+	MiniGameBfIncomeCost                       *int64   `json:"mini_game_bf_income_cost,omitempty"`
+	MiniGameBfIncomeRoi                        *float64 `json:"mini_game_bf_income_roi,omitempty"`
+	MiniGameBfIncomeArpu                       *int64   `json:"mini_game_bf_income_arpu,omitempty"`
+	MiniGameBfIncomeD1Uv                       *int64   `json:"mini_game_bf_income_d1_uv,omitempty"`
+	MiniGameBfIncomeD1Amount                   *int64   `json:"mini_game_bf_income_d1_amount,omitempty"`
+	MiniGameBfIncomeD1Cost                     *int64   `json:"mini_game_bf_income_d1_cost,omitempty"`
+	MiniGameBfIncomeD1Roi                      *float64 `json:"mini_game_bf_income_d1_roi,omitempty"`
+	MiniGameBfIncomeD1Arpu                     *int64   `json:"mini_game_bf_income_d1_arpu,omitempty"`
+	MiniGameBfPurchaseUv                       *int64   `json:"mini_game_bf_purchase_uv,omitempty"`
+	MiniGameBfPurchaseAmount                   *int64   `json:"mini_game_bf_purchase_amount,omitempty"`
+	MiniGameBfPurchaseCost                     *int64   `json:"mini_game_bf_purchase_cost,omitempty"`
+	MiniGameBfPurchaseRoi                      *float64 `json:"mini_game_bf_purchase_roi,omitempty"`
+	MiniGameBfPurchaseArpu                     *int64   `json:"mini_game_bf_purchase_arpu,omitempty"`
+	MiniGameBfPurchaseD1Uv                     *int64   `json:"mini_game_bf_purchase_d1_uv,omitempty"`
+	MiniGameBfPurchaseD1Amount                 *int64   `json:"mini_game_bf_purchase_d1_amount,omitempty"`
+	MiniGameBfPurchaseD1Cost                   *int64   `json:"mini_game_bf_purchase_d1_cost,omitempty"`
+	MiniGameBfPurchaseD1Roi                    *float64 `json:"mini_game_bf_purchase_d1_roi,omitempty"`
+	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
