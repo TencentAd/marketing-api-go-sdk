@@ -15,10 +15,9 @@ type AssetAccountType string
 // List of AssetAccountType
 const (
 	AssetAccountType_ACCOUNT_BM           AssetAccountType = "ASSET_TYPE_ACCOUNT_BM"
-	AssetAccountType_ACCOUNT_AGENCY       AssetAccountType = "ASSET_TYPE_ACCOUNT_AGENCY"
 	AssetAccountType_ACCOUNT_MDM          AssetAccountType = "ASSET_TYPE_ACCOUNT_MDM"
 	AssetAccountType_GROUP_BM             AssetAccountType = "ASSET_TYPE_GROUP_BM"
-	AssetAccountType_GROUP_AGENCY         AssetAccountType = "ASSET_TYPE_GROUP_AGENCY"
 	AssetAccountType_GROUP_MDM            AssetAccountType = "ASSET_TYPE_GROUP_MDM"
 	AssetAccountType_GROUP_POINT_TO_POINT AssetAccountType = "ASSET_TYPE_GROUP_POINT_TO_POINT"
+	AssetAccountType_AGENCY               AssetAccountType = "ASSET_TYPE_AGENCY"
 )

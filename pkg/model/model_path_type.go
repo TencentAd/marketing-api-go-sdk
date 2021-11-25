@@ -15,7 +15,7 @@ type PathType string
 // List of PathType
 const (
 	PathType_BM             PathType = "PATH_TYPE_BM"
-	PathType_AGENCY         PathType = "PATH_TYPE_AGENCY"
 	PathType_MDM            PathType = "PATH_TYPE_MDM"
 	PathType_POINT_TO_POINT PathType = "PATH_TYPE_POINT_TO_POINT"
+	PathType_AGENCY         PathType = "PATH_TYPE_AGENCY"
 )

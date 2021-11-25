@@ -371,6 +371,8 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Cost                   *int64   `json:"mini_game_bf_purchase_d1_cost,omitempty"`
 	MiniGameBfPurchaseD1Roi                    *float64 `json:"mini_game_bf_purchase_d1_roi,omitempty"`
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
+	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
+	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
@@ -491,4 +493,5 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
 	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
+	MiniGamePayD1PlaRate                       *float64 `json:"mini_game_pay_d1_pla_rate,omitempty"`
 }

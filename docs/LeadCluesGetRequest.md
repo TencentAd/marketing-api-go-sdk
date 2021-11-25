@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**TimeType** | [***TimeType**](TimeType.md) |  | [optional] [default to null]
 **TimeRange** | [***TimeRange**](time_range.md) |  | [optional] [default to null]
 **Filtering** | [**[]FilteringStruct**](filtering_struct.md) |  | [optional] [default to null]
 **Page** | **int64** |  | [optional] [default to null]

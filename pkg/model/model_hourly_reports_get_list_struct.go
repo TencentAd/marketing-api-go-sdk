@@ -369,6 +369,8 @@ type HourlyReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Cost                   *int64   `json:"mini_game_bf_purchase_d1_cost,omitempty"`
 	MiniGameBfPurchaseD1Roi                    *float64 `json:"mini_game_bf_purchase_d1_roi,omitempty"`
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
+	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
+	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
@@ -456,6 +458,7 @@ type HourlyReportsGetListStruct struct {
 	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
 	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
+	MiniGamePayD1PlaRate                       *float64 `json:"mini_game_pay_d1_pla_rate,omitempty"`
 	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
 	CampaignName                               *string  `json:"campaign_name,omitempty"`
 	WebAddToCartCount                          *int64   `json:"web_add_to_cart_count,omitempty"`

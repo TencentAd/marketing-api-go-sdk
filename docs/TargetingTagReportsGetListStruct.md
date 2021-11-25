@@ -363,6 +363,8 @@ Name | Type | Description | Notes
 **MiniGameBfPurchaseD1Cost** | **int64** |  | [optional] [default to null]
 **MiniGameBfPurchaseD1Roi** | **float64** |  | [optional] [default to null]
 **MiniGameBfPurchaseD1Arpu** | **int64** |  | [optional] [default to null]
+**MiniGameCreateRoleRate** | **float64** |  | [optional] [default to null]
+**ConsultUvCount** | **int64** |  | [optional] [default to null]
 **Age** | **string** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
@@ -483,6 +485,7 @@ Name | Type | Description | Notes
 **MiniGameAdMonetizationAmountD7** | **int64** |  | [optional] [default to null]
 **MiniGameAdMonetizationAmountD14** | **int64** |  | [optional] [default to null]
 **MiniGamePayingArpuD1** | **int64** |  | [optional] [default to null]
+**MiniGamePayD1PlaRate** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

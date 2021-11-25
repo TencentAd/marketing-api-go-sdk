@@ -57,4 +57,5 @@ type RevisedAdcreativeElements struct {
 	HeadLine          *string                            `json:"head_line,omitempty"`
 	ShopImageStruct   *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 	ChosenButton      *ChosenButton                      `json:"chosen_button,omitempty"`
+	LivingDescStruct  *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
 }

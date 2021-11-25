@@ -9,7 +9,7 @@
 
 package model
 
-// IntOptimizationGoal : 优化目标类型，支持的优化目标及对应的深度优化目标可通过“<a href='/docs/api/tools/capabilities/optimization_goal_permissions_get' target='_blank'>查询优化目标权限</a>”接口进行查询
+// IntOptimizationGoal : 优化目标类型，支持的优化目标及对应的深度优化目标可通过“<a target='_blank' href='/docs/api/tools/capabilities/optimization_goal_permissions_get' >查询优化目标权限</a>”接口进行查询
 type IntOptimizationGoal string
 
 // List of IntOptimizationGoal
