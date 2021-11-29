@@ -467,6 +467,7 @@ type HourlyReportsGetListStruct struct {
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	PreviewConversionsCount                    *int64   `json:"preview_conversions_count,omitempty"`
 	PreviewDeepConversionsCount                *int64   `json:"preview_deep_conversions_count,omitempty"`
+	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
 	AdId                                       *int64   `json:"ad_id,omitempty"`
 	AdName                                     *string  `json:"ad_name,omitempty"`
 	PromotedObjectType                         *string  `json:"promoted_object_type,omitempty"`

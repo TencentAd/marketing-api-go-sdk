@@ -459,6 +459,7 @@ Name | Type | Description | Notes
 **AdgroupName** | **string** |  | [optional] [default to null]
 **PreviewConversionsCount** | **int64** |  | [optional] [default to null]
 **PreviewDeepConversionsCount** | **int64** |  | [optional] [default to null]
+**AcquisitionCost** | **int64** |  | [optional] [default to null]
 **AdId** | **int64** |  | [optional] [default to null]
 **AdName** | **string** |  | [optional] [default to null]
 **PromotedObjectType** | **string** |  | [optional] [default to null]
