@@ -61,4 +61,5 @@ const (
 	LinkUrlLinkNameType_INSTALL_NOW                     LinkUrlLinkNameType = "INSTALL_NOW"
 	LinkUrlLinkNameType_MORE_ABOUT_OFFICIAL_ACCOUNT_CHT LinkUrlLinkNameType = "MORE_ABOUT_OFFICIAL_ACCOUNT_CHT"
 	LinkUrlLinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkUrlLinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
+	LinkUrlLinkNameType_GET_FOR_FREE                    LinkUrlLinkNameType = "GET_FOR_FREE"
 )

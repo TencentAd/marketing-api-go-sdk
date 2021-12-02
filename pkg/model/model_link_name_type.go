@@ -60,4 +60,5 @@ const (
 	LinkNameType_INSTALL_NOW                     LinkNameType = "INSTALL_NOW"
 	LinkNameType_MORE_ABOUT_OFFICIAL_ACCOUNT_CHT LinkNameType = "MORE_ABOUT_OFFICIAL_ACCOUNT_CHT"
 	LinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
+	LinkNameType_GET_FOR_FREE                    LinkNameType = "GET_FOR_FREE"
 )
