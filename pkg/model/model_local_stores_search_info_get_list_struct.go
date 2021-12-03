@@ -11,11 +11,11 @@ package model
 
 // 返回结构
 type LocalStoresSearchInfoGetListStruct struct {
-	PoiId                   *string                  `json:"poi_id,omitempty"`
-	LocalStoreName          *string                  `json:"local_store_name,omitempty"`
-	LocalStoreProvince      *string                  `json:"local_store_province,omitempty"`
-	LocalStoreCity          *string                  `json:"local_store_city,omitempty"`
-	LocalStoreAddress       *string                  `json:"local_store_address,omitempty"`
-	LocalStoreBizInfo       *LocalStoreBizInfoStruct `json:"local_store_biz_info,omitempty"`
-	WechatEcosystemAccounts *WechatEcosystemAccounts `json:"wechat_ecosystem_accounts,omitempty"`
+	PoiId                   *string                     `json:"poi_id,omitempty"`
+	LocalStoreName          *string                     `json:"local_store_name,omitempty"`
+	LocalStoreProvince      *string                     `json:"local_store_province,omitempty"`
+	LocalStoreCity          *string                     `json:"local_store_city,omitempty"`
+	LocalStoreAddress       *string                     `json:"local_store_address,omitempty"`
+	LocalStoreBizInfo       *LocalStoreBizInfoStructRsp `json:"local_store_biz_info,omitempty"`
+	WechatEcosystemAccounts *WechatEcosystemAccounts    `json:"wechat_ecosystem_accounts,omitempty"`
 }
