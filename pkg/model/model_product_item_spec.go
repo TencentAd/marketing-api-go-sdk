@@ -118,4 +118,5 @@ type ProductItemSpec struct {
 	MaxQuota                  *float64              `json:"max_quota,omitempty"`
 	AnnualizedRateOfReturn    *float64              `json:"annualized_rate_of_return,omitempty"`
 	RiskType                  RiskTypeStatus        `json:"risk_type,omitempty"`
+	Artist                    *[]string             `json:"artist,omitempty"`
 }

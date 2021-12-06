@@ -486,6 +486,14 @@ Name | Type | Description | Notes
 **MiniGameAdMonetizationAmountD14** | **int64** |  | [optional] [default to null]
 **MiniGamePayingArpuD1** | **int64** |  | [optional] [default to null]
 **MiniGamePayD1PlaRate** | **float64** |  | [optional] [default to null]
+**ActiveD3PayCount** | **int64** |  | [optional] [default to null]
+**ActiveD7PayCount** | **int64** |  | [optional] [default to null]
+**ActiveD14PayCount** | **int64** |  | [optional] [default to null]
+**ActiveD30PayCount** | **int64** |  | [optional] [default to null]
+**ActiveD7ClickPayRate** | **float64** |  | [optional] [default to null]
+**ActiveD7ActivePayRate** | **float64** |  | [optional] [default to null]
+**ActiveD7PayCost** | **int64** |  | [optional] [default to null]
+**MiniGameFirstDayPayingPlaRoi** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

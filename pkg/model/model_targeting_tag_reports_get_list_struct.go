@@ -494,4 +494,12 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
 	MiniGamePayD1PlaRate                       *float64 `json:"mini_game_pay_d1_pla_rate,omitempty"`
+	ActiveD3PayCount                           *int64   `json:"active_d3_pay_count,omitempty"`
+	ActiveD7PayCount                           *int64   `json:"active_d7_pay_count,omitempty"`
+	ActiveD14PayCount                          *int64   `json:"active_d14_pay_count,omitempty"`
+	ActiveD30PayCount                          *int64   `json:"active_d30_pay_count,omitempty"`
+	ActiveD7ClickPayRate                       *float64 `json:"active_d7_click_pay_rate,omitempty"`
+	ActiveD7ActivePayRate                      *float64 `json:"active_d7_active_pay_rate,omitempty"`
+	ActiveD7PayCost                            *int64   `json:"active_d7_pay_cost,omitempty"`
+	MiniGameFirstDayPayingPlaRoi               *float64 `json:"mini_game_first_day_paying_pla_roi,omitempty"`
 }
