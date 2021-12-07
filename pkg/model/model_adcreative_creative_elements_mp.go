@@ -53,5 +53,6 @@ type AdcreativeCreativeElementsMp struct {
 	ShopImageStruct            *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 	ChosenButton               *ChosenButton                      `json:"chosen_button,omitempty"`
 	LivingDescStruct           *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
+	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

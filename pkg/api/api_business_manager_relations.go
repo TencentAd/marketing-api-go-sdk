@@ -33,15 +33,17 @@ BusinessManagerRelationsApiService 查询商务管家账号下广告主信息
  * @param optional nil or *BusinessManagerRelationsGetOpts - Optional Parameters:
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "AdvertiserType" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return BusinessManagerRelationsGetResponse
 */
 
 type BusinessManagerRelationsGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	Page           optional.Int64
+	PageSize       optional.Int64
+	AdvertiserType optional.Int64
+	Fields         optional.Interface
 }
 
 func (a *BusinessManagerRelationsApiService) Get(ctx context.Context, localVarOptionals *BusinessManagerRelationsGetOpts) (BusinessManagerRelationsGetResponseData, http.Header, error) {
@@ -67,6 +69,9 @@ func (a *BusinessManagerRelationsApiService) Get(ctx context.Context, localVarOp
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdvertiserType.IsSet() {
+		localVarQueryParams.Add("advertiser_type", parameterToString(localVarOptionals.AdvertiserType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
