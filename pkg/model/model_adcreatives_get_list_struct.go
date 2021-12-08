@@ -55,6 +55,7 @@ type AdcreativesGetListStruct struct {
 	AppGiftPackCode               *AppGiftPackCode                  `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset     *bool                             `json:"enable_breakthrough_siteset,omitempty"`
 	CreativeTemplateVersionType   CreativeTemplateVersionType       `json:"creative_template_version_type,omitempty"`
+	IndustryLabel                 *string                           `json:"industry_label,omitempty"`
 	AdcreativeTemplateId          *int64                            `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

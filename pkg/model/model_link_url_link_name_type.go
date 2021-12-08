@@ -9,7 +9,7 @@
 
 package model
 
-// LinkUrlLinkNameType : 链接名称类型
+// LinkUrlLinkNameType : 转化引导文案
 type LinkUrlLinkNameType string
 
 // List of LinkUrlLinkNameType

@@ -43,6 +43,12 @@ const (
 	DestinationType_WEIMOB_PROMOTION                DestinationType = "PAGE_TYPE_WEIMOB_PROMOTION"
 	DestinationType_WEIMOB_PRODUCT                  DestinationType = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
+	DestinationType_WEIMOB_WECHAT_MINIPROGRAM       DestinationType = "PAGE_TYPE_WEIMOB_WECHAT_MINIPROGRAM"
 	DestinationType_TSA_OTT                         DestinationType = "PAGE_TYPE_TSA_OTT"
 	DestinationType_WECHAT_OFFICIAL_ACCOUNT_DETAIL  DestinationType = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
+	DestinationType_WECHAT_FOCUS_DAILOG             DestinationType = "PAGE_TYPE_WECHAT_FOCUS_DAILOG"
+	DestinationType_WECHAT_MOMENTS_SCAN_PHOTO       DestinationType = "PAGE_TYPE_WECHAT_MOMENTS_SCAN_PHOTO"
+	DestinationType_WECHAT_MOMENTS_SUBSCRIPTION     DestinationType = "PAGE_TYPE_WECHAT_MOMENTS_SUBSCRIPTION"
+	DestinationType_WECHAT_RED_PACKET_COVER         DestinationType = "PAGE_TYPE_WECHAT_RED_PACKET_COVER"
+	DestinationType_WECHAT_VIDEO_TOPIC              DestinationType = "PAGE_TYPE_WECHAT_VIDEO_TOPIC"
 )

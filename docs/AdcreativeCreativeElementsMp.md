@@ -45,6 +45,10 @@ Name | Type | Description | Notes
 **ShopImageStruct** | [***AdCreativeShopImageStruct**](ad_creative_shop_image_struct.md) |  | [optional] [default to null]
 **ChosenButton** | [***ChosenButton**](chosen_button.md) |  | [optional] [default to null]
 **LivingDescStruct** | [***AdCreativeLivingDescStruct**](ad_creative_living_desc_struct.md) |  | [optional] [default to null]
+**LeftButton** | **string** |  | [optional] [default to null]
+**RightButton** | **string** |  | [optional] [default to null]
+**LeftCanvas** | **string** |  | [optional] [default to null]
+**RightCanvas** | **string** |  | [optional] [default to null]
 **FloatingZoneStruct** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 

@@ -45,6 +45,7 @@ type AdcreativesAddRequest struct {
 	BarrageList                   *[]BarrageListCreateStruct    `json:"barrage_list,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset     *bool                         `json:"enable_breakthrough_siteset,omitempty"`
+	IndustryLabel                 *string                       `json:"industry_label,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeTemplateId          *int64                        `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`

@@ -29,4 +29,5 @@ const (
 	LandingPagePlatform_QQ_BROWSER     LandingPagePlatform = "LANDING_PAGE_PLATFORM_QQ_BROWSER"
 	LandingPagePlatform_PLAY           LandingPagePlatform = "LANDING_PAGE_PLATFORM_PLAY"
 	LandingPagePlatform_YUEBAO         LandingPagePlatform = "LANDING_PAGE_PLATFORM_YUEBAO"
+	LandingPagePlatform_W_EIMOB        LandingPagePlatform = "LANDING_PAGE_PLATFORM_wEIMOB"
 )

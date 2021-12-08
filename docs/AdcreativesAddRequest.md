@@ -38,6 +38,7 @@ Name | Type | Description | Notes
 **BarrageList** | [**[]BarrageListCreateStruct**](barrage_list_create_struct.md) |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
+**IndustryLabel** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]

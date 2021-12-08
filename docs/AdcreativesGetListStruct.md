@@ -47,6 +47,7 @@ Name | Type | Description | Notes
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
+**IndustryLabel** | **string** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
 

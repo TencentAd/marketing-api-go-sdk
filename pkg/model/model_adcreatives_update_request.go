@@ -41,6 +41,7 @@ type AdcreativesUpdateRequest struct {
 	BarrageList                   *[]BarrageListCreateStruct    `json:"barrage_list,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec        `json:"dynamic_adcreative_spec,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`
+	IndustryLabel                 *string                       `json:"industry_label,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 }
