@@ -42,6 +42,7 @@ Name | Type | Description | Notes
 **FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
+**Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **BarrageList** | [**[]BarrageListReadStruct**](barrage_list_read_struct.md) |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]

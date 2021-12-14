@@ -19,4 +19,5 @@ const (
 	MediaSourceType_API             MediaSourceType = "SOURCE_TYPE_API"
 	MediaSourceType_VIDEO_MAKER_XSJ MediaSourceType = "SOURCE_TYPE_VIDEO_MAKER_XSJ"
 	MediaSourceType_TCC             MediaSourceType = "SOURCE_TYPE_TCC"
+	MediaSourceType_DERIVE          MediaSourceType = "SOURCE_TYPE_DERIVE"
 )
