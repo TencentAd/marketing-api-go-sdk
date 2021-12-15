@@ -99,7 +99,11 @@ func (a *PromotedObjectsApiService) Add(ctx context.Context, data PromotedObject
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -224,7 +228,11 @@ func (a *PromotedObjectsApiService) Get(ctx context.Context, accountId int64, lo
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -325,7 +333,11 @@ func (a *PromotedObjectsApiService) Update(ctx context.Context, data PromotedObj
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

@@ -115,7 +115,11 @@ func (a *TargetingTagsUvApiService) Get(ctx context.Context, accountId int64, ca
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

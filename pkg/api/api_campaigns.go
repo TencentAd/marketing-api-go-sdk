@@ -99,7 +99,11 @@ func (a *CampaignsApiService) Add(ctx context.Context, data CampaignsAddRequest)
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -200,7 +204,11 @@ func (a *CampaignsApiService) Delete(ctx context.Context, data CampaignsDeleteRe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -330,7 +338,11 @@ func (a *CampaignsApiService) Get(ctx context.Context, accountId int64, localVar
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -431,7 +443,11 @@ func (a *CampaignsApiService) Update(ctx context.Context, data CampaignsUpdateRe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -532,7 +548,11 @@ func (a *CampaignsApiService) UpdateConfiguredStatus(ctx context.Context, data C
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -633,7 +653,11 @@ func (a *CampaignsApiService) UpdateDailyBudget(ctx context.Context, data Campai
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

@@ -99,7 +99,11 @@ func (a *AdgroupsApiService) Add(ctx context.Context, data AdgroupsAddRequest) (
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -200,7 +204,11 @@ func (a *AdgroupsApiService) Delete(ctx context.Context, data AdgroupsDeleteRequ
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -330,7 +338,11 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -431,7 +443,11 @@ func (a *AdgroupsApiService) Update(ctx context.Context, data AdgroupsUpdateRequ
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -532,7 +548,11 @@ func (a *AdgroupsApiService) UpdateBidAmount(ctx context.Context, data AdgroupsU
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -633,7 +653,11 @@ func (a *AdgroupsApiService) UpdateConfiguredStatus(ctx context.Context, data Ad
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -734,7 +758,11 @@ func (a *AdgroupsApiService) UpdateDailyBudget(ctx context.Context, data Adgroup
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -835,7 +863,11 @@ func (a *AdgroupsApiService) UpdateDatetime(ctx context.Context, data AdgroupsUp
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return *localVarResponse.Data, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

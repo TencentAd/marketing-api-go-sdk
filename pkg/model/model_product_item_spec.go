@@ -119,4 +119,44 @@ type ProductItemSpec struct {
 	AnnualizedRateOfReturn    *float64              `json:"annualized_rate_of_return,omitempty"`
 	RiskType                  RiskTypeStatus        `json:"risk_type,omitempty"`
 	Artist                    *[]string             `json:"artist,omitempty"`
+	Trends                    *int64                `json:"trends,omitempty"`
+	PayStatus                 PayStatus             `json:"pay_status,omitempty"`
+	WordCount                 *int64                `json:"word_count,omitempty"`
+	SerialStatus              SerialStatus          `json:"serial_status,omitempty"`
+	BookJson                  *BookJson             `json:"book_json,omitempty"`
+	Ratings                   *float64              `json:"ratings,omitempty"`
+	ReaderCount               *int64                `json:"reader_count,omitempty"`
+	RecommendedVotesCount     *int64                `json:"recommended_votes_count,omitempty"`
+	RewardCount               *int64                `json:"reward_count,omitempty"`
+	Ranking                   *int64                `json:"ranking,omitempty"`
+	Space                     BookLength            `json:"space,omitempty"`
+	IfNewBook                 *string               `json:"if_new_book,omitempty"`
+	ChapterCount              *int64                `json:"chapter_count,omitempty"`
+	StartedPayChapter         *int64                `json:"started_pay_chapter,omitempty"`
+	PayCount                  *int64                `json:"pay_count,omitempty"`
+	PayAmount                 *float64              `json:"pay_amount,omitempty"`
+	FirstPayAmount            *float64              `json:"first_pay_amount,omitempty"`
+	LeastPayAmount            *float64              `json:"least_pay_amount,omitempty"`
+	OnetimePayAmount          *float64              `json:"onetime_pay_amount,omitempty"`
+	LatestRenewTime           *string               `json:"latest_renew_time,omitempty"`
+	LatestRenewChapter        *int64                `json:"latest_renew_chapter,omitempty"`
+	ShareCount                *int64                `json:"share_count,omitempty"`
+	DownloadCount             *int64                `json:"download_count,omitempty"`
+	PayingReaderCount         *int64                `json:"paying_reader_count,omitempty"`
+	StorySchool               *string               `json:"story_school,omitempty"`
+	StoryRoleIdentity         *string               `json:"story_role_identity,omitempty"`
+	StoryRoleImage            *string               `json:"story_role_image,omitempty"`
+	StoryEra                  *string               `json:"story_era,omitempty"`
+	StoryScene                *string               `json:"story_scene,omitempty"`
+	StoryPlot                 *string               `json:"story_plot,omitempty"`
+	StoryStyle                *string               `json:"story_style,omitempty"`
+	AuthorizationStatus       AuthorizationStatus   `json:"authorization_status,omitempty"`
+	Originality               Originality           `json:"originality,omitempty"`
+	UpdateFrequency           UpdateFrequency       `json:"update_frequency,omitempty"`
+	PlayForm                  PlayForm              `json:"play_form,omitempty"`
+	PlayAuthor                *string               `json:"play_author,omitempty"`
+	PlayVoice                 PlayVoice             `json:"play_voice,omitempty"`
+	ProductionSource          ProductionSource      `json:"production_source,omitempty"`
+	ProductionPlace           ProductionPlace       `json:"production_place,omitempty"`
+	CartoonColor              CartoonColor          `json:"cartoon_color,omitempty"`
 }
