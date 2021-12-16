@@ -14,4 +14,5 @@ type AdgroupsUpdateDailyBudgetListStruct struct {
 	Code      *int64  `json:"code,omitempty"`
 	Message   *string `json:"message,omitempty"`
 	MessageCn *string `json:"message_cn,omitempty"`
+	AdgroupId *int64  `json:"adgroup_id,omitempty"`
 }

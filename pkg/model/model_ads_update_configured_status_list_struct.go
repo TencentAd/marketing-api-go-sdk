@@ -14,4 +14,5 @@ type AdsUpdateConfiguredStatusListStruct struct {
 	Code      *int64  `json:"code,omitempty"`
 	Message   *string `json:"message,omitempty"`
 	MessageCn *string `json:"message_cn,omitempty"`
+	AdId      *int64  `json:"ad_id,omitempty"`
 }

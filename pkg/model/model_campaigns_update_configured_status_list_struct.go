@@ -11,7 +11,8 @@ package model
 
 // 返回结构
 type CampaignsUpdateConfiguredStatusListStruct struct {
-	Code      *int64  `json:"code,omitempty"`
-	Message   *string `json:"message,omitempty"`
-	MessageCn *string `json:"message_cn,omitempty"`
+	Code       *int64  `json:"code,omitempty"`
+	Message    *string `json:"message,omitempty"`
+	MessageCn  *string `json:"message_cn,omitempty"`
+	CampaignId *int64  `json:"campaign_id,omitempty"`
 }
