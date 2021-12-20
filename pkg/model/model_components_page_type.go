@@ -14,5 +14,6 @@ type ComponentsPageType string
 
 // List of ComponentsPageType
 const (
-	ComponentsPageType_PAGE_TYPE_XIJING_ANDROID ComponentsPageType = "PAGE_TYPE_XIJING_ANDROID"
+	ComponentsPageType_ANDROID ComponentsPageType = "PAGE_TYPE_XIJING_ANDROID"
+	ComponentsPageType_IOS     ComponentsPageType = "PAGE_TYPE_XIJING_IOS"
 )
