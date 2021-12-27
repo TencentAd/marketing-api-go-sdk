@@ -29,4 +29,5 @@ const (
 	CatalogIndustry_MERCHANTS                    CatalogIndustry = "INDUSTRY_TYPE_MERCHANTS"
 	CatalogIndustry_BUSINESS_SERVICE             CatalogIndustry = "INDUSTRY_TYPE_BUSINESS_SERVICE"
 	CatalogIndustry_DECORATION_BUILDING_MATERIAL CatalogIndustry = "INDUSTRY_TYPE_DECORATION_BUILDING_MATERIAL"
+	CatalogIndustry_HOTEL                        CatalogIndustry = "INDUSTRY_TYPE_HOTEL"
 )

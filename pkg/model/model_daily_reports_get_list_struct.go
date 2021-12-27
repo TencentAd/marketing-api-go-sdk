@@ -469,6 +469,15 @@ type DailyReportsGetListStruct struct {
 	ActiveD7ActivePayRate                      *float64 `json:"active_d7_active_pay_rate,omitempty"`
 	ActiveD7PayCost                            *int64   `json:"active_d7_pay_cost,omitempty"`
 	MiniGameFirstDayPayingPlaRoi               *float64 `json:"mini_game_first_day_paying_pla_roi,omitempty"`
+	MiniGameFirstPayPlaCost                    *int64   `json:"mini_game_first_pay_pla_cost,omitempty"`
+	MiniGamePayD3Roi                           *float64 `json:"mini_game_pay_d3_roi,omitempty"`
+	MiniGamePayD7Roi                           *int64   `json:"mini_game_pay_d7_roi,omitempty"`
+	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
+	MiniGamePayD30Roi                          *float64 `json:"mini_game_pay_d30_roi,omitempty"`
+	MiniGamePayD3PlaRoi                        *float64 `json:"mini_game_pay_d3_pla_roi,omitempty"`
+	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
+	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
+	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
 	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
 	CampaignName                               *string  `json:"campaign_name,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`

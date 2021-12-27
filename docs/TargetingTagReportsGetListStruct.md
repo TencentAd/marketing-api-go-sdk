@@ -494,6 +494,15 @@ Name | Type | Description | Notes
 **ActiveD7ActivePayRate** | **float64** |  | [optional] [default to null]
 **ActiveD7PayCost** | **int64** |  | [optional] [default to null]
 **MiniGameFirstDayPayingPlaRoi** | **float64** |  | [optional] [default to null]
+**MiniGameFirstPayPlaCost** | **int64** |  | [optional] [default to null]
+**MiniGamePayD3Roi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD7Roi** | **int64** |  | [optional] [default to null]
+**MiniGamePayD14Roi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD30Roi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD3PlaRoi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD7PlaRoi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD14PlaRoi** | **float64** |  | [optional] [default to null]
+**MiniGamePayD30PlaRoi** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
