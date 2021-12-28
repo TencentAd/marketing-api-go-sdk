@@ -166,6 +166,8 @@ type APIClient struct {
 
 	DynamicAdVideoApi *DynamicAdVideoApiService
 
+	DynamicAdVideoTemplatesApi *DynamicAdVideoTemplatesApiService
+
 	DynamicCreativesApi *DynamicCreativesApiService
 
 	EcommerceOrderApi *EcommerceOrderApiService
@@ -426,6 +428,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
 	c.DynamicAdTemplatesApi = (*DynamicAdTemplatesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)
+	c.DynamicAdVideoTemplatesApi = (*DynamicAdVideoTemplatesApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)

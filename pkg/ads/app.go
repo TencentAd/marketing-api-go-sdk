@@ -249,6 +249,10 @@ func (c *SDKClient) DynamicAdVideo() *api.DynamicAdVideoApiService {
 	return c.Client.DynamicAdVideoApi
 }
 
+func (c *SDKClient) DynamicAdVideoTemplates() *api.DynamicAdVideoTemplatesApiService {
+	return c.Client.DynamicAdVideoTemplatesApi
+}
+
 func (c *SDKClient) DynamicCreatives() *api.DynamicCreativesApiService {
 	return c.Client.DynamicCreativesApi
 }
