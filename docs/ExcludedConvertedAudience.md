@@ -1,4 +1,4 @@
-# ExcludedConvertedAudienceStruct
+# ExcludedConvertedAudience
 
 ## Properties
 Name | Type | Description | Notes

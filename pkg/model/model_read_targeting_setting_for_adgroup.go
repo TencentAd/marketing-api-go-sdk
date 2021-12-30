@@ -50,5 +50,5 @@ type ReadTargetingSettingForAdgroup struct {
 	DeprecatedExcludedCustomAudience *[]int64                           `json:"deprecated_excluded_custom_audience,omitempty"`
 	DeprecatedRegion                 *[]int64                           `json:"deprecated_region,omitempty"`
 	MiniGameQqStatus                 *[]string                          `json:"mini_game_qq_status,omitempty"`
-	ExcludedConvertedAudience        *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
+	ExcludedConvertedAudience        *ExcludedConvertedAudience         `json:"excluded_converted_audience,omitempty"`
 }

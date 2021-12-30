@@ -40,5 +40,5 @@ type WriteTargetingSetting struct {
 	CustomAudience            *[]int64                           `json:"custom_audience,omitempty"`
 	ExcludedCustomAudience    *[]int64                           `json:"excluded_custom_audience,omitempty"`
 	BehaviorOrInterest        *BehaviorOrInterest                `json:"behavior_or_interest,omitempty"`
-	ExcludedConvertedAudience *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
+	ExcludedConvertedAudience *ExcludedConvertedAudience         `json:"excluded_converted_audience,omitempty"`
 }

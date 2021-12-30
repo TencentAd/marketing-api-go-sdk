@@ -49,5 +49,5 @@ type ReadTargetingSetting struct {
 	DeprecatedCustomAudience         *[]int64                           `json:"deprecated_custom_audience,omitempty"`
 	DeprecatedExcludedCustomAudience *[]int64                           `json:"deprecated_excluded_custom_audience,omitempty"`
 	DeprecatedRegion                 *[]int64                           `json:"deprecated_region,omitempty"`
-	ExcludedConvertedAudience        *ExcludedConvertedAudienceStruct   `json:"excluded_converted_audience,omitempty"`
+	ExcludedConvertedAudience        *ExcludedConvertedAudience         `json:"excluded_converted_audience,omitempty"`
 }
