@@ -14,7 +14,8 @@ type MarketingScene string
 
 // List of MarketingScene
 const (
-	MarketingScene_DEFAULT          MarketingScene = "DEFAULT"
-	MarketingScene_GAME_RESERVATION MarketingScene = "GAME_RESERVATION"
-	MarketingScene_GAME_PROMOTION   MarketingScene = "GAME_PROMOTION"
+	MarketingScene_DEFAULT              MarketingScene = "DEFAULT"
+	MarketingScene_GAME_RESERVATION     MarketingScene = "GAME_RESERVATION"
+	MarketingScene_GAME_PROMOTION       MarketingScene = "GAME_PROMOTION"
+	MarketingScene_APP_ACTIVE_PROMOTION MarketingScene = "APP_ACTIVE_PROMOTION"
 )
