@@ -14,10 +14,10 @@ type PayStatus string
 
 // List of PayStatus
 const (
-	PayStatus_STATUS_FREE   PayStatus = "PAY_STATUS_FREE"
-	PayStatus_STATUS_PAID   PayStatus = "PAY_STATUS_PAID"
-	PayStatus_STATUS_MEMBER PayStatus = "PAY_STATUS_MEMBER"
 	PayStatus_PENDING       PayStatus = "PAY_PENDING"
 	PayStatus_OK            PayStatus = "PAY_OK"
 	PayStatus_REFUND        PayStatus = "PAY_REFUND"
+	PayStatus_STATUS_FREE   PayStatus = "PAY_STATUS_FREE"
+	PayStatus_STATUS_PAID   PayStatus = "PAY_STATUS_PAID"
+	PayStatus_STATUS_MEMBER PayStatus = "PAY_STATUS_MEMBER"
 )
