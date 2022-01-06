@@ -24,5 +24,5 @@ type LocalStoresGetListStruct struct {
 	WechatEcosystemAccounts *WechatEcosystemAccounts    `json:"wechat_ecosystem_accounts,omitempty"`
 	CreatedTime             *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime        *int64                      `json:"last_modified_time,omitempty"`
-	SystemStatus            SysStatus                   `json:"system_status,omitempty"`
+	SystemStatus            AdStatus                    `json:"system_status,omitempty"`
 }

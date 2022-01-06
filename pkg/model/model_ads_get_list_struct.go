@@ -18,7 +18,7 @@ type AdsGetListStruct struct {
 	AdcreativeId            *int64             `json:"adcreative_id,omitempty"`
 	Adcreative              *Adcreative        `json:"adcreative,omitempty"`
 	ConfiguredStatus        AdStatus           `json:"configured_status,omitempty"`
-	SystemStatus            SysStatus          `json:"system_status,omitempty"`
+	SystemStatus            AdStatus           `json:"system_status,omitempty"`
 	AuditSpec               *[]AuditSpecStruct `json:"audit_spec,omitempty"`
 	ImpressionTrackingUrl   *string            `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl        *string            `json:"click_tracking_url,omitempty"`

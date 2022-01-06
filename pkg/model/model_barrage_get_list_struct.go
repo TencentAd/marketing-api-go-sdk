@@ -11,7 +11,7 @@ package model
 
 // 返回结构
 type BarrageGetListStruct struct {
-	Id           *int64    `json:"id,omitempty"`
-	Text         *string   `json:"text,omitempty"`
-	ReviewStatus SysStatus `json:"review_status,omitempty"`
+	Id           *int64   `json:"id,omitempty"`
+	Text         *string  `json:"text,omitempty"`
+	ReviewStatus AdStatus `json:"review_status,omitempty"`
 }

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **AdcreativeId** | **int64** |  | [optional] [default to null]
 **Adcreative** | [***Adcreative**](adcreative.md) |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
-**SystemStatus** | [***SysStatus**](SysStatus.md) |  | [optional] [default to null]
+**SystemStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **AuditSpec** | [**[]AuditSpecStruct**](audit_spec_struct.md) |  | [optional] [default to null]
 **ImpressionTrackingUrl** | **string** |  | [optional] [default to null]
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
