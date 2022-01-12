@@ -11,6 +11,6 @@ package model
 
 // 返回结构
 type WechatPagesCsgrouplistGetListStruct struct {
-	Groupid   *int64  `json:"groupid,omitempty"`
-	Groupname *string `json:"groupname,omitempty"`
+	GroupId   *int64  `json:"group_id,omitempty"`
+	GroupName *string `json:"group_name,omitempty"`
 }

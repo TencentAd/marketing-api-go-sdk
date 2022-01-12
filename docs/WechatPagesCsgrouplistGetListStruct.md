@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Groupid** | **int64** |  | [optional] [default to null]
-**Groupname** | **string** |  | [optional] [default to null]
+**GroupId** | **int64** |  | [optional] [default to null]
+**GroupName** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
