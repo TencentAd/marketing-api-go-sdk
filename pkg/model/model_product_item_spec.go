@@ -19,6 +19,7 @@ type ProductItemSpec struct {
 	ExpirationTime            *string               `json:"expiration_time,omitempty"`
 	ImageUrl                  *string               `json:"image_url,omitempty"`
 	AdditionalImageUrl        *[]string             `json:"additional_image_url,omitempty"`
+	HiddenLandingImgUrl       *[]string             `json:"hidden_landing_img_url,omitempty"`
 	VideoDuration             *string               `json:"video_duration,omitempty"`
 	VideoUrl                  *string               `json:"video_url,omitempty"`
 	PlayCount                 *int64                `json:"play_count,omitempty"`
@@ -159,4 +160,5 @@ type ProductItemSpec struct {
 	ProductionSource          ProductionSource      `json:"production_source,omitempty"`
 	ProductionPlace           ProductionPlace       `json:"production_place,omitempty"`
 	CartoonColor              CartoonColor          `json:"cartoon_color,omitempty"`
+	MaxQuotaV2                MaxQuotaEnum          `json:"max_quota_v2,omitempty"`
 }

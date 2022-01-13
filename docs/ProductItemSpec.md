@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **ExpirationTime** | **string** |  | [optional] [default to null]
 **ImageUrl** | **string** |  | [optional] [default to null]
 **AdditionalImageUrl** | **[]string** |  | [optional] [default to null]
+**HiddenLandingImgUrl** | **[]string** |  | [optional] [default to null]
 **VideoDuration** | **string** |  | [optional] [default to null]
 **VideoUrl** | **string** |  | [optional] [default to null]
 **PlayCount** | **int64** |  | [optional] [default to null]
@@ -151,6 +152,7 @@ Name | Type | Description | Notes
 **ProductionSource** | [***ProductionSource**](ProductionSource.md) |  | [optional] [default to null]
 **ProductionPlace** | [***ProductionPlace**](ProductionPlace.md) |  | [optional] [default to null]
 **CartoonColor** | [***CartoonColor**](CartoonColor.md) |  | [optional] [default to null]
+**MaxQuotaV2** | [***MaxQuotaEnum**](MaxQuotaEnum.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
