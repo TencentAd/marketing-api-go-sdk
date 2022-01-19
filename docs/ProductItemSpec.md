@@ -153,6 +153,9 @@ Name | Type | Description | Notes
 **ProductionPlace** | [***ProductionPlace**](ProductionPlace.md) |  | [optional] [default to null]
 **CartoonColor** | [***CartoonColor**](CartoonColor.md) |  | [optional] [default to null]
 **MaxQuotaV2** | [***MaxQuotaEnum**](MaxQuotaEnum.md) |  | [optional] [default to null]
+**CustomUrl** | **string** |  | [optional] [default to null]
+**AdditionalCustomUrl** | **string** |  | [optional] [default to null]
+**ProductBarcode** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

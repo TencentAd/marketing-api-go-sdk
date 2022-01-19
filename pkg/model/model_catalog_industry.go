@@ -30,4 +30,7 @@ const (
 	CatalogIndustry_BUSINESS_SERVICE             CatalogIndustry = "INDUSTRY_TYPE_BUSINESS_SERVICE"
 	CatalogIndustry_DECORATION_BUILDING_MATERIAL CatalogIndustry = "INDUSTRY_TYPE_DECORATION_BUILDING_MATERIAL"
 	CatalogIndustry_HOTEL                        CatalogIndustry = "INDUSTRY_TYPE_HOTEL"
+	CatalogIndustry_CAR_ONLINE_PLATFORM          CatalogIndustry = "INDUSTRY_TYPE_CAR_ONLINE_PLATFORM"
+	CatalogIndustry_CAR_AFTERMARKET              CatalogIndustry = "INDUSTRY_TYPE_CAR_AFTERMARKET"
+	CatalogIndustry_CAR_TRAVEL_SERVICE           CatalogIndustry = "INDUSTRY_TYPE_CAR_TRAVEL_SERVICE"
 )

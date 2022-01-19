@@ -340,6 +340,8 @@ type APIClient struct {
 
 	WildcardsApi *WildcardsApiService
 
+	XijingComplexTemplateApi *XijingComplexTemplateApiService
+
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
@@ -349,6 +351,8 @@ type APIClient struct {
 	XijingPageListApi *XijingPageListApiService
 
 	XijingTemplateApi *XijingTemplateApiService
+
+	XijingTemplateListApi *XijingTemplateListApiService
 }
 
 type service struct {
@@ -515,11 +519,13 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
+	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
 	c.XijingPageInteractiveApi = (*XijingPageInteractiveApiService)(&c.common)
 	c.XijingPageListApi = (*XijingPageListApiService)(&c.common)
 	c.XijingTemplateApi = (*XijingTemplateApiService)(&c.common)
+	c.XijingTemplateListApi = (*XijingTemplateListApiService)(&c.common)
 
 	return c
 }

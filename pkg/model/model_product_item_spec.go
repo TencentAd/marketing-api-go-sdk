@@ -161,4 +161,7 @@ type ProductItemSpec struct {
 	ProductionPlace           ProductionPlace       `json:"production_place,omitempty"`
 	CartoonColor              CartoonColor          `json:"cartoon_color,omitempty"`
 	MaxQuotaV2                MaxQuotaEnum          `json:"max_quota_v2,omitempty"`
+	CustomUrl                 *string               `json:"custom_url,omitempty"`
+	AdditionalCustomUrl       *string               `json:"additional_custom_url,omitempty"`
+	ProductBarcode            *string               `json:"product_barcode,omitempty"`
 }

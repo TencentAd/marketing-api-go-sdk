@@ -11,5 +11,6 @@ package model
 
 // 动态多商品广告落地页信息
 type DynamicProductSpec struct {
-	PageUrl *string `json:"page_url,omitempty"`
+	PageUrl          *string   `json:"page_url,omitempty"`
+	MiniProgramPaths *[]string `json:"mini_program_paths,omitempty"`
 }

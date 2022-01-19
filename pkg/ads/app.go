@@ -597,6 +597,10 @@ func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
 }
 
+func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
+	return c.Client.XijingComplexTemplateApi
+}
+
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {
 	return c.Client.XijingPageApi
 }
@@ -615,4 +619,8 @@ func (c *SDKClient) XijingPageList() *api.XijingPageListApiService {
 
 func (c *SDKClient) XijingTemplate() *api.XijingTemplateApiService {
 	return c.Client.XijingTemplateApi
+}
+
+func (c *SDKClient) XijingTemplateList() *api.XijingTemplateListApiService {
+	return c.Client.XijingTemplateListApi
 }
