@@ -62,4 +62,5 @@ const (
 	LinkUrlLinkNameType_MORE_ABOUT_OFFICIAL_ACCOUNT_CHT LinkUrlLinkNameType = "MORE_ABOUT_OFFICIAL_ACCOUNT_CHT"
 	LinkUrlLinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkUrlLinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
 	LinkUrlLinkNameType_GET_FOR_FREE                    LinkUrlLinkNameType = "GET_FOR_FREE"
+	LinkUrlLinkNameType_WATCH_VIDEO                     LinkUrlLinkNameType = "WATCH_VIDEO"
 )
