@@ -57,6 +57,7 @@ type AdcreativesGetListStruct struct {
 	EnableBreakthroughSiteset     *bool                             `json:"enable_breakthrough_siteset,omitempty"`
 	CreativeTemplateVersionType   CreativeTemplateVersionType       `json:"creative_template_version_type,omitempty"`
 	IndustryLabel                 *string                           `json:"industry_label,omitempty"`
+	CreativeTemplateCategory      *string                           `json:"creative_template_category,omitempty"`
 	AdcreativeTemplateId          *int64                            `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }
