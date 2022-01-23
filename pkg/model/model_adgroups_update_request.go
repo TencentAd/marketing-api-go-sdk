@@ -27,7 +27,7 @@ type AdgroupsUpdateRequest struct {
 	FlowOptimizationEnabled    *bool                            `json:"flow_optimization_enabled,omitempty"`
 	ConfiguredStatus           AdStatus                         `json:"configured_status,omitempty"`
 	CustomizedCategory         *string                          `json:"customized_category,omitempty"`
-	AdditionalUserActionSets   *[]UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
+	AdditionalUserActionSets   *[]AdditionalUserActionSetStruct `json:"additional_user_action_sets,omitempty"`
 	BidStrategy                BidStrategy                      `json:"bid_strategy,omitempty"`
 	ColdStartAudience          *[]int64                         `json:"cold_start_audience,omitempty"`
 	AutoAudience               *bool                            `json:"auto_audience,omitempty"`

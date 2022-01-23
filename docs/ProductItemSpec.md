@@ -153,6 +153,7 @@ Name | Type | Description | Notes
 **ProductionPlace** | [***ProductionPlace**](ProductionPlace.md) |  | [optional] [default to null]
 **CartoonColor** | [***CartoonColor**](CartoonColor.md) |  | [optional] [default to null]
 **MaxQuotaV2** | [***MaxQuotaEnum**](MaxQuotaEnum.md) |  | [optional] [default to null]
+**StandardCatalogProductHashId** | **int64** |  | [optional] [default to null]
 **CustomUrl** | **string** |  | [optional] [default to null]
 **AdditionalCustomUrl** | **string** |  | [optional] [default to null]
 **ProductBarcode** | **string** |  | [optional] [default to null]

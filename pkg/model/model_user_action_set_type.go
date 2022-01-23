@@ -14,7 +14,10 @@ type UserActionSetType string
 
 // List of UserActionSetType
 const (
-	UserActionSetType_WEB     UserActionSetType = "USER_ACTION_SET_TYPE_WEB"
-	UserActionSetType_IOS     UserActionSetType = "USER_ACTION_SET_TYPE_IOS"
-	UserActionSetType_ANDROID UserActionSetType = "USER_ACTION_SET_TYPE_ANDROID"
+	UserActionSetType_WEB                 UserActionSetType = "USER_ACTION_SET_TYPE_WEB"
+	UserActionSetType_IOS                 UserActionSetType = "USER_ACTION_SET_TYPE_IOS"
+	UserActionSetType_ANDROID             UserActionSetType = "USER_ACTION_SET_TYPE_ANDROID"
+	UserActionSetType_WECHAT              UserActionSetType = "USER_ACTION_SET_TYPE_WECHAT"
+	UserActionSetType_WECHAT_MINI_PROGRAM UserActionSetType = "USER_ACTION_SET_TYPE_WECHAT_MINI_PROGRAM"
+	UserActionSetType_WECHAT_MINI_GAME    UserActionSetType = "USER_ACTION_SET_TYPE_WECHAT_MINI_GAME"
 )

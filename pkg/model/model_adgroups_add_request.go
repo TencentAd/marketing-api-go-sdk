@@ -33,7 +33,7 @@ type AdgroupsAddRequest struct {
 	CustomizedCategory         *string                          `json:"customized_category,omitempty"`
 	DynamicAdSpec              *DynamicAdSpec                   `json:"dynamic_ad_spec,omitempty"`
 	UserActionSets             *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
-	AdditionalUserActionSets   *[]UserActionSetStruct           `json:"additional_user_action_sets,omitempty"`
+	AdditionalUserActionSets   *[]AdditionalUserActionSetStruct `json:"additional_user_action_sets,omitempty"`
 	DynamicCreativeId          *int64                           `json:"dynamic_creative_id,omitempty"`
 	BidStrategy                BidStrategy                      `json:"bid_strategy,omitempty"`
 	ColdStartAudience          *[]int64                         `json:"cold_start_audience,omitempty"`
