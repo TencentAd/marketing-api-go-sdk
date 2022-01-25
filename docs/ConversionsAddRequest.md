@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **OptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
 **DeepBehaviorOptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
 **DeepWorthOptimizationGoal** | [***ConversionOptimizationGoal**](ConversionOptimizationGoal.md) |  | [optional] [default to null]
+**DeepWorthAdvancedGoal** | [***ConversionOptimizationGoal**](ConversionOptimizationGoal.md) |  | [optional] [default to null]
 **UserActionSetId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
