@@ -371,6 +371,21 @@ type HourlyReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
+	VideoFollowCount                           *int64   `json:"video_follow_count,omitempty"`
+	VideoHeartCount                            *int64   `json:"video_heart_count,omitempty"`
+	VideoCommentCount                          *int64   `json:"video_comment_count,omitempty"`
+	VideoLiveSubscribeCount                    *int64   `json:"video_live_subscribe_count,omitempty"`
+	VideoLiveExpCount                          *int64   `json:"video_live_exp_count,omitempty"`
+	VideoLiveHeartCount                        *int64   `json:"video_live_heart_count,omitempty"`
+	VideoLiveCommentCount                      *int64   `json:"video_live_comment_count,omitempty"`
+	VideoLiveShareCount                        *int64   `json:"video_live_share_count,omitempty"`
+	VideoLiveCickCommodityCount                *int64   `json:"video_live_cick_commodity_count,omitempty"`
+	VideoLiveExpUserCount                      *int64   `json:"video_live_exp_user_count,omitempty"`
+	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
+	VideoLiveCommentUserCount                  *int64   `json:"video_live_comment_user_count,omitempty"`
+	VideoLiveShareUserCount                    *int64   `json:"video_live_share_user_count,omitempty"`
+	VideoLiveClickCommodityUserCount           *int64   `json:"video_live_click_commodity_user_count,omitempty"`
+	VideoLiveCommodityBubbleExpCount           *int64   `json:"video_live_commodity_bubble_exp_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
