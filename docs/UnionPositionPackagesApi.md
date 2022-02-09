@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**UnionPositionPackagesAdd**](UnionPositionPackagesApi.md#UnionPositionPackagesAdd) | **Post** /union_position_packages/add | 联盟流量包模块
 [**UnionPositionPackagesDelete**](UnionPositionPackagesApi.md#UnionPositionPackagesDelete) | **Post** /union_position_packages/delete | 联盟流量包删除接口
 [**UnionPositionPackagesGet**](UnionPositionPackagesApi.md#UnionPositionPackagesGet) | **Get** /union_position_packages/get | 联盟流量包获取接口
+[**UnionPositionPackagesUpdate**](UnionPositionPackagesApi.md#UnionPositionPackagesUpdate) | **Post** /union_position_packages/update | 联盟流量包模块
 
 
 # **UnionPositionPackagesAdd**
@@ -95,6 +96,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: text/plain
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **UnionPositionPackagesUpdate**
+> UnionPositionPackagesUpdateResponse UnionPositionPackagesUpdate(ctx, data)
+联盟流量包模块
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**UnionPositionPackagesUpdateRequest**](UnionPositionPackagesUpdateRequest.md)|  | 
+
+### Return type
+
+[**UnionPositionPackagesUpdateResponse**](UnionPositionPackagesUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
