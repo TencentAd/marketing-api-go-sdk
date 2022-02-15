@@ -24,13 +24,6 @@ type ReadTargetingSetting struct {
 	NetworkType                      *[]string                          `json:"network_type,omitempty"`
 	NetworkOperator                  *[]string                          `json:"network_operator,omitempty"`
 	NetworkScene                     *[]string                          `json:"network_scene,omitempty"`
-	DressingIndex                    *[]string                          `json:"dressing_index,omitempty"`
-	UvIndex                          *[]string                          `json:"uv_index,omitempty"`
-	MakeupIndex                      *[]string                          `json:"makeup_index,omitempty"`
-	Climate                          *[]string                          `json:"climate,omitempty"`
-	Temperature                      *[]TemperatureStruct               `json:"temperature,omitempty"`
-	AirQualityIndex                  *[]string                          `json:"air_quality_index,omitempty"`
-	AppInstallStatus                 *[]string                          `json:"app_install_status,omitempty"`
 	ConsumptionStatus                *[]string                          `json:"consumption_status,omitempty"`
 	GameConsumptionLevel             *[]string                          `json:"game_consumption_level,omitempty"`
 	ResidentialCommunityPrice        *[]ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`

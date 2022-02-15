@@ -39,6 +39,7 @@ Name | Type | Description | Notes
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
 **CustomAdgroupTag** | **[]string** |  | [optional] [default to null]
+**SmartTargeting** | [***SmartTargeting**](smart_targeting.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -55,5 +55,6 @@ type AdgroupsAddRequest struct {
 	SmartBidType               SmartBidType                     `json:"smart_bid_type,omitempty"`
 	MarketingScene             MarketingScene                   `json:"marketing_scene,omitempty"`
 	CustomAdgroupTag           *[]string                        `json:"custom_adgroup_tag,omitempty"`
+	SmartTargeting             *SmartTargeting                  `json:"smart_targeting,omitempty"`
 	AccountId                  *int64                           `json:"account_id,omitempty"`
 }

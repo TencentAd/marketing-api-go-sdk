@@ -71,4 +71,5 @@ type AdgroupsGetListStruct struct {
 	SmartCostCap                      *int64                           `json:"smart_cost_cap,omitempty"`
 	MarketingScene                    MarketingScene                   `json:"marketing_scene,omitempty"`
 	CustomAdgroupTag                  *[]string                        `json:"custom_adgroup_tag,omitempty"`
+	SmartTargeting                    *SmartTargeting                  `json:"smart_targeting,omitempty"`
 }

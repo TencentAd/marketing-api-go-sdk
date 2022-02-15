@@ -46,5 +46,6 @@ type AdgroupsUpdateRequest struct {
 	UserActionSets             *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
 	DynamicAdSpec              *DynamicAdSpec                   `json:"dynamic_ad_spec,omitempty"`
 	CustomAdgroupTag           *[]string                        `json:"custom_adgroup_tag,omitempty"`
+	SmartTargeting             *SmartTargeting                  `json:"smart_targeting,omitempty"`
 	AccountId                  *int64                           `json:"account_id,omitempty"`
 }

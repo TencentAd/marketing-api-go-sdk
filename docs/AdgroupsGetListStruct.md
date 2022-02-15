@@ -63,6 +63,7 @@ Name | Type | Description | Notes
 **SmartCostCap** | **int64** |  | [optional] [default to null]
 **MarketingScene** | [***MarketingScene**](MarketingScene.md) |  | [optional] [default to null]
 **CustomAdgroupTag** | **[]string** |  | [optional] [default to null]
+**SmartTargeting** | [***SmartTargeting**](smart_targeting.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
