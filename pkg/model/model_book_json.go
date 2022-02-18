@@ -11,4 +11,5 @@ package model
 
 // 小说章节内容
 type BookJson struct {
+	Chapters *[]Chapter `json:"chapters,omitempty"`
 }

@@ -78,6 +78,10 @@ const (
 	ActionType_ADD_CUSTOMER_PAGE_INTERACTIVE       ActionType = "ADD_CUSTOMER_PAGE_INTERACTIVE"
 	ActionType_CUSTOMER_PROMOTION_PAGE_VIEW        ActionType = "CUSTOMER_PROMOTION_PAGE_VIEW"
 	ActionType_CUSTOMER_PROMOTION_PAGE_INTERACTIVE ActionType = "CUSTOMER_PROMOTION_PAGE_INTERACTIVE"
+	ActionType_ABNORMAL_ACTION                     ActionType = "ABNORMAL_ACTION"
+	ActionType_APP_MSDK_ADCOST                     ActionType = "APP_MSDK_ADCOST"
+	ActionType_LIVE_STREAM                         ActionType = "LIVE_STREAM"
+	ActionType_SCANCODE_WX                         ActionType = "SCANCODE_WX"
 	ActionType_AD_CLICK                            ActionType = "AD_CLICK"
 	ActionType_AD_IMPRESSION                       ActionType = "AD_IMPRESSION"
 )
