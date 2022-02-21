@@ -50,6 +50,7 @@ Name | Type | Description | Notes
 **ConversionId** | **int64** |  | [optional] [default to null]
 **DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
 **DeepConversionWorthRate** | **float64** |  | [optional] [default to null]
+**DeepConversionWorthAdvancedRate** | **float64** |  | [optional] [default to null]
 **AndroidChannelPackageAuditMessage** | **string** |  | [optional] [default to null]
 **SystemStatus** | [***AdgroupSysStatus**](AdgroupSysStatus.md) |  | [optional] [default to null]
 **BidMode** | [***BidMode**](BidMode.md) |  | [optional] [default to null]
