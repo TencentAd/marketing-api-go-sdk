@@ -58,7 +58,11 @@ type APIClient struct {
 
 	AdcreativePreviewsQrcodeApi *AdcreativePreviewsQrcodeApiService
 
+	AdcreativeTemplateApi *AdcreativeTemplateApiService
+
 	AdcreativeTemplateDetailApi *AdcreativeTemplateDetailApiService
+
+	AdcreativeTemplateListApi *AdcreativeTemplateListApiService
 
 	AdcreativeTemplatePreviewApi *AdcreativeTemplatePreviewApiService
 
@@ -378,7 +382,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdParamApi = (*AdParamApiService)(&c.common)
 	c.AdcreativePreviewsApi = (*AdcreativePreviewsApiService)(&c.common)
 	c.AdcreativePreviewsQrcodeApi = (*AdcreativePreviewsQrcodeApiService)(&c.common)
+	c.AdcreativeTemplateApi = (*AdcreativeTemplateApiService)(&c.common)
 	c.AdcreativeTemplateDetailApi = (*AdcreativeTemplateDetailApiService)(&c.common)
+	c.AdcreativeTemplateListApi = (*AdcreativeTemplateListApiService)(&c.common)
 	c.AdcreativeTemplatePreviewApi = (*AdcreativeTemplatePreviewApiService)(&c.common)
 	c.AdcreativeTemplatePreviewsApi = (*AdcreativeTemplatePreviewsApiService)(&c.common)
 	c.AdcreativeTemplatesApi = (*AdcreativeTemplatesApiService)(&c.common)

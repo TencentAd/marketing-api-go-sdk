@@ -33,8 +33,16 @@ func (c *SDKClient) AdcreativePreviewsQrcode() *api.AdcreativePreviewsQrcodeApiS
 	return c.Client.AdcreativePreviewsQrcodeApi
 }
 
+func (c *SDKClient) AdcreativeTemplate() *api.AdcreativeTemplateApiService {
+	return c.Client.AdcreativeTemplateApi
+}
+
 func (c *SDKClient) AdcreativeTemplateDetail() *api.AdcreativeTemplateDetailApiService {
 	return c.Client.AdcreativeTemplateDetailApi
+}
+
+func (c *SDKClient) AdcreativeTemplateList() *api.AdcreativeTemplateListApiService {
+	return c.Client.AdcreativeTemplateListApi
 }
 
 func (c *SDKClient) AdcreativeTemplatePreview() *api.AdcreativeTemplatePreviewApiService {
