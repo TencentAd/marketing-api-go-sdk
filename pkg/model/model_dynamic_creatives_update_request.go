@@ -42,5 +42,6 @@ type DynamicCreativesUpdateRequest struct {
 	BarrageList                   *[]BarrageListCreateStruct `json:"barrage_list,omitempty"`
 	CountdownSwitch               *bool                      `json:"countdown_switch,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode           `json:"app_gift_pack_code,omitempty"`
+	UnionMarketSpec               *UnionMarketSpec           `json:"union_market_spec,omitempty"`
 	AccountId                     *int64                     `json:"account_id,omitempty"`
 }

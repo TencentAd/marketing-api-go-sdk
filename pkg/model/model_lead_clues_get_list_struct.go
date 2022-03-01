@@ -24,6 +24,10 @@ type LeadCluesGetListStruct struct {
 	AdgroupName              *string             `json:"adgroup_name,omitempty"`
 	CreativeId               *string             `json:"creative_id,omitempty"`
 	CreativeName             *string             `json:"creative_name,omitempty"`
+	AdId                     *int64              `json:"ad_id,omitempty"`
+	AdName                   *string             `json:"ad_name,omitempty"`
+	AdcreativeId             *int64              `json:"adcreative_id,omitempty"`
+	AdcreativeName           *string             `json:"adcreative_name,omitempty"`
 	ComponentId              *string             `json:"component_id,omitempty"`
 	ComponentName            *string             `json:"component_name,omitempty"`
 	PageId                   *string             `json:"page_id,omitempty"`

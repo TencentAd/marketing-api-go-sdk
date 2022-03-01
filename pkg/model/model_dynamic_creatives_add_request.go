@@ -48,5 +48,6 @@ type DynamicCreativesAddRequest struct {
 	CountdownSwitch               *bool                       `json:"countdown_switch,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode            `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset     *bool                       `json:"enable_breakthrough_siteset,omitempty"`
+	UnionMarketSpec               *UnionMarketSpec            `json:"union_market_spec,omitempty"`
 	AccountId                     *int64                      `json:"account_id,omitempty"`
 }

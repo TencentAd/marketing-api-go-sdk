@@ -39,5 +39,6 @@ type DynamicCreativesGetListStruct struct {
 	AppGiftPackCode             *AppGiftPackCode             `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset   *bool                        `json:"enable_breakthrough_siteset,omitempty"`
 	CreativeTemplateVersionType CreativeTemplateVersionType  `json:"creative_template_version_type,omitempty"`
+	UnionMarketSpec             *UnionMarketSpec             `json:"union_market_spec,omitempty"`
 	CreativeTemplateCategory    *string                      `json:"creative_template_category,omitempty"`
 }

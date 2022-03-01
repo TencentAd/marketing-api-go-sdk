@@ -49,6 +49,7 @@ Name | Type | Description | Notes
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
 **IndustryLabel** | **string** |  | [optional] [default to null]
+**UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **CreativeTemplateCategory** | **string** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
