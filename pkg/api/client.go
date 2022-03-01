@@ -202,6 +202,8 @@ type APIClient struct {
 
 	LeadsFormListApi *LeadsFormListApiService
 
+	LeadsInvalidPayApi *LeadsInvalidPayApiService
+
 	LocalApi *LocalApiService
 
 	LocalEndadsmanuallyApi *LocalEndadsmanuallyApiService
@@ -454,6 +456,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
+	c.LeadsInvalidPayApi = (*LeadsInvalidPayApiService)(&c.common)
 	c.LocalApi = (*LocalApiService)(&c.common)
 	c.LocalEndadsmanuallyApi = (*LocalEndadsmanuallyApiService)(&c.common)
 	c.LocalEstimatedamountApi = (*LocalEstimatedamountApiService)(&c.common)

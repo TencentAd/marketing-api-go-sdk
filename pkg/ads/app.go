@@ -321,6 +321,10 @@ func (c *SDKClient) LeadsFormList() *api.LeadsFormListApiService {
 	return c.Client.LeadsFormListApi
 }
 
+func (c *SDKClient) LeadsInvalidPay() *api.LeadsInvalidPayApiService {
+	return c.Client.LeadsInvalidPayApi
+}
+
 func (c *SDKClient) Local() *api.LocalApiService {
 	return c.Client.LocalApi
 }
