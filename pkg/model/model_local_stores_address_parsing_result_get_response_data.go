@@ -10,6 +10,7 @@
 package model
 
 type LocalStoresAddressParsingResultGetResponseData struct {
-	SuccessList *[]SuccessPoiInfoStruct `json:"success_list,omitempty"`
-	FailList    *[]string               `json:"fail_list,omitempty"`
+	SuccessList   *[]SuccessPoiInfoStruct `json:"success_list,omitempty"`
+	FailList      *[]string               `json:"fail_list,omitempty"`
+	SensitiveList *[]string               `json:"sensitive_list,omitempty"`
 }
