@@ -24,6 +24,7 @@ type Adcreative struct {
 	PlayablePageMaterialId    *string                         `json:"playable_page_material_id,omitempty"`
 	VideoEndPage              *VideoEndPageSpec               `json:"video_end_page,omitempty"`
 	EnableBreakthroughSiteset *bool                           `json:"enable_breakthrough_siteset,omitempty"`
+	CreativeTemplateCategory  *string                         `json:"creative_template_category,omitempty"`
 	AdcreativeTemplateId      *int64                          `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements        *AdcreativeCreativeElementsRead `json:"adcreative_elements,omitempty"`
 }

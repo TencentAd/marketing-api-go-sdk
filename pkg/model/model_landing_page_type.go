@@ -79,6 +79,7 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE LandingPageType = "LANDING_PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
 	LandingPageType_LANDING_PAGE_TYPE_XJ_QUICK                        LandingPageType = "LANDING_PAGE_TYPE_XJ_QUICK"
 	LandingPageType_LANDING_PAGE_TYPE_QQ_MINI_GAME                    LandingPageType = "LANDING_PAGE_TYPE_QQ_MINI_GAME"
+	LandingPageType_LANDING_PAGE_TYPE_WECHAT_APPOINTMENT_CARD         LandingPageType = "LANDING_PAGE_TYPE_WECHAT_APPOINTMENT_CARD"
 	LandingPageType_DEEP_LINK                                         LandingPageType = "DEEP_LINK"
 	LandingPageType_H5                                                LandingPageType = "H5"
 	LandingPageType_MINI_PROGRAM                                      LandingPageType = "MINI_PROGRAM"
