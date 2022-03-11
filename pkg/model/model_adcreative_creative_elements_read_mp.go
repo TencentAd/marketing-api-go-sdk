@@ -75,5 +75,6 @@ type AdcreativeCreativeElementsReadMp struct {
 	ChosenButton               *ChosenButton                      `json:"chosen_button,omitempty"`
 	LivingDescStruct           *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
+	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

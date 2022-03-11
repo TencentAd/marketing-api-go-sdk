@@ -67,6 +67,7 @@ Name | Type | Description | Notes
 **ChosenButton** | [***ChosenButton**](chosen_button.md) |  | [optional] [default to null]
 **LivingDescStruct** | [***AdCreativeLivingDescStruct**](ad_creative_living_desc_struct.md) |  | [optional] [default to null]
 **FloatingZoneStruct** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
+**CanvasShareImage** | **string** |  | [optional] [default to null]
 **CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

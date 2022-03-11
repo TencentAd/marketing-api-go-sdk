@@ -57,5 +57,6 @@ type AdcreativeCreativeElements struct {
 	RightButton                *string                            `json:"right_button,omitempty"`
 	LeftCanvas                 *string                            `json:"left_canvas,omitempty"`
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
+	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

@@ -58,5 +58,6 @@ type AdcreativeCreativeElementsMp struct {
 	LeftCanvas                 *string                            `json:"left_canvas,omitempty"`
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
+	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }
