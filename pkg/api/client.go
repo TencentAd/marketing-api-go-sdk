@@ -266,6 +266,10 @@ type APIClient struct {
 
 	ReportApi *ReportApiService
 
+	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
+
+	ReviewUrgeCreativesApi *ReviewUrgeCreativesApiService
+
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
 	ShopApi *ShopApiService
@@ -333,6 +337,8 @@ type APIClient struct {
 	WechatFundsApi *WechatFundsApiService
 
 	WechatPagesApi *WechatPagesApiService
+
+	WechatPagesCsgroupStatusApi *WechatPagesCsgroupStatusApiService
 
 	WechatPagesCsgroupUserApi *WechatPagesCsgroupUserApiService
 
@@ -488,6 +494,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReportApi = (*ReportApiService)(&c.common)
+	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
+	c.ReviewUrgeCreativesApi = (*ReviewUrgeCreativesApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
@@ -522,6 +530,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatFundTransferApi = (*WechatFundTransferApiService)(&c.common)
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
+	c.WechatPagesCsgroupStatusApi = (*WechatPagesCsgroupStatusApiService)(&c.common)
 	c.WechatPagesCsgroupUserApi = (*WechatPagesCsgroupUserApiService)(&c.common)
 	c.WechatPagesCsgrouplistApi = (*WechatPagesCsgrouplistApiService)(&c.common)
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)

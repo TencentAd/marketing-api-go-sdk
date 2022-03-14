@@ -10,7 +10,6 @@
 package model
 
 // 小游戏落地页信息
-type MiniGameSpec struct {
+type LinkMiniGameSpec struct {
 	MiniGameTrackingParameter *string `json:"mini_game_tracking_parameter,omitempty"`
-	MiniGameOpenlink          *string `json:"mini_game_openlink,omitempty"`
 }

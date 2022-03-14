@@ -449,6 +449,14 @@ func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
 }
 
+func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewResultsApiService {
+	return c.Client.ReviewElementPrereviewResultsApi
+}
+
+func (c *SDKClient) ReviewUrgeCreatives() *api.ReviewUrgeCreativesApiService {
+	return c.Client.ReviewUrgeCreativesApi
+}
+
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
@@ -583,6 +591,10 @@ func (c *SDKClient) WechatFunds() *api.WechatFundsApiService {
 
 func (c *SDKClient) WechatPages() *api.WechatPagesApiService {
 	return c.Client.WechatPagesApi
+}
+
+func (c *SDKClient) WechatPagesCsgroupStatus() *api.WechatPagesCsgroupStatusApiService {
+	return c.Client.WechatPagesCsgroupStatusApi
 }
 
 func (c *SDKClient) WechatPagesCsgroupUser() *api.WechatPagesCsgroupUserApiService {

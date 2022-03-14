@@ -14,5 +14,5 @@ type LinkPageSpec struct {
 	PageId          *int64                     `json:"page_id,omitempty"`
 	PageUrl         *string                    `json:"page_url,omitempty"`
 	MiniProgramSpec *AdcreativeMiniProgramSpec `json:"mini_program_spec,omitempty"`
-	MiniGameSpec    *MiniGameSpec              `json:"mini_game_spec,omitempty"`
+	MiniGameSpec    *LinkMiniGameSpec          `json:"mini_game_spec,omitempty"`
 }
