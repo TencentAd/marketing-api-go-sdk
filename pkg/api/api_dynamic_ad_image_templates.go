@@ -25,42 +25,47 @@ var (
 	_ context.Context
 )
 
-type DynamicAdVideoTemplatesApiService service
+type DynamicAdImageTemplatesApiService service
 
 /*
-DynamicAdVideoTemplatesApiService 获取动态商品视频模板
+DynamicAdImageTemplatesApiService 获取动态商品图片模板
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param productCatalogId
- * @param adcreativeTemplateId
  * @param productMode
- * @param optional nil or *DynamicAdVideoTemplatesGetOpts - Optional Parameters:
+ * @param dynamicAdTemplateWidth
+ * @param dynamicAdTemplateHeight
+ * @param optional nil or *DynamicAdImageTemplatesGetOpts - Optional Parameters:
+     * @param "DynamicAdTemplateOwnershipType" (optional.String) -
+     * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
-@return DynamicAdVideoTemplatesGetResponse
+@return DynamicAdImageTemplatesGetResponse
 */
 
-type DynamicAdVideoTemplatesGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+type DynamicAdImageTemplatesGetOpts struct {
+	DynamicAdTemplateOwnershipType optional.String
+	Filtering                      optional.Interface
+	Page                           optional.Int64
+	PageSize                       optional.Int64
+	Fields                         optional.Interface
 }
 
-func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, adcreativeTemplateId int64, productMode string, localVarOptionals *DynamicAdVideoTemplatesGetOpts) (DynamicAdVideoTemplatesGetResponseData, http.Header, error) {
+func (a *DynamicAdImageTemplatesApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, productMode string, dynamicAdTemplateWidth int64, dynamicAdTemplateHeight int64, localVarOptionals *DynamicAdImageTemplatesGetOpts) (DynamicAdImageTemplatesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue DynamicAdVideoTemplatesGetResponseData
-		localVarResponse    DynamicAdVideoTemplatesGetResponse
+		localVarReturnValue DynamicAdImageTemplatesGetResponseData
+		localVarResponse    DynamicAdImageTemplatesGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/dynamic_ad_video_templates/get"
+	localVarPath := a.client.Cfg.BasePath + "/dynamic_ad_image_templates/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -68,8 +73,15 @@ func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId i
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("product_catalog_id", parameterToString(productCatalogId, ""))
-	localVarQueryParams.Add("adcreative_template_id", parameterToString(adcreativeTemplateId, ""))
 	localVarQueryParams.Add("product_mode", parameterToString(productMode, ""))
+	if localVarOptionals != nil && localVarOptionals.DynamicAdTemplateOwnershipType.IsSet() {
+		localVarQueryParams.Add("dynamic_ad_template_ownership_type", parameterToString(localVarOptionals.DynamicAdTemplateOwnershipType.Value(), ""))
+	}
+	localVarQueryParams.Add("dynamic_ad_template_width", parameterToString(dynamicAdTemplateWidth, ""))
+	localVarQueryParams.Add("dynamic_ad_template_height", parameterToString(dynamicAdTemplateHeight, ""))
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}
@@ -141,7 +153,7 @@ func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId i
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v DynamicAdVideoTemplatesGetResponse
+			var v DynamicAdImageTemplatesGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

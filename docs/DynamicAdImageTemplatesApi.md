@@ -1,15 +1,15 @@
-# TencentAds\DynamicAdVideoTemplatesApi
+# TencentAds\DynamicAdImageTemplatesApi
 
 All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DynamicAdVideoTemplatesGet**](DynamicAdVideoTemplatesApi.md#DynamicAdVideoTemplatesGet) | **Get** /dynamic_ad_video_templates/get | 获取动态商品视频模板
+[**DynamicAdImageTemplatesGet**](DynamicAdImageTemplatesApi.md#DynamicAdImageTemplatesGet) | **Get** /dynamic_ad_image_templates/get | 获取动态商品图片模板
 
 
-# **DynamicAdVideoTemplatesGet**
-> DynamicAdVideoTemplatesGetResponse DynamicAdVideoTemplatesGet(ctx, accountId, productCatalogId, adcreativeTemplateId, productMode, optional)
-获取动态商品视频模板
+# **DynamicAdImageTemplatesGet**
+> DynamicAdImageTemplatesGetResponse DynamicAdImageTemplatesGet(ctx, accountId, productCatalogId, productMode, dynamicAdTemplateWidth, dynamicAdTemplateHeight, optional)
+获取动态商品图片模板
 
 ### Required Parameters
 
@@ -18,12 +18,13 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
   **productCatalogId** | **int64**|  | 
-  **adcreativeTemplateId** | **int64**|  | 
   **productMode** | **string**|  | 
- **optional** | ***DynamicAdVideoTemplatesApiDynamicAdVideoTemplatesGetOpts** | optional parameters | nil if no parameters
+  **dynamicAdTemplateWidth** | **int64**|  | 
+  **dynamicAdTemplateHeight** | **int64**|  | 
+ **optional** | ***DynamicAdImageTemplatesApiDynamicAdImageTemplatesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DynamicAdVideoTemplatesApiDynamicAdVideoTemplatesGetOpts struct
+Optional parameters are passed through a pointer to a DynamicAdImageTemplatesApiDynamicAdImageTemplatesGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -31,13 +32,16 @@ Name | Type | Description  | Notes
 
 
 
+
+ **dynamicAdTemplateOwnershipType** | **optional.String**|  | 
+ **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
 
-[**DynamicAdVideoTemplatesGetResponse**](DynamicAdVideoTemplatesGetResponse.md)
+[**DynamicAdImageTemplatesGetResponse**](DynamicAdImageTemplatesGetResponse.md)
 
 ### Authorization
 

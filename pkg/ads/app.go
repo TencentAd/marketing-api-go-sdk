@@ -245,6 +245,10 @@ func (c *SDKClient) DplabelAdLabel() *api.DplabelAdLabelApiService {
 	return c.Client.DplabelAdLabelApi
 }
 
+func (c *SDKClient) DynamicAdImageTemplates() *api.DynamicAdImageTemplatesApiService {
+	return c.Client.DynamicAdImageTemplatesApi
+}
+
 func (c *SDKClient) DynamicAdImages() *api.DynamicAdImagesApiService {
 	return c.Client.DynamicAdImagesApi
 }

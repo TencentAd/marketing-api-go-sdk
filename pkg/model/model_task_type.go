@@ -46,6 +46,7 @@ const (
 	TaskType_TASK_TYPE_PRODUCT_ADGROUP_DATA                                        TaskType = "TASK_TYPE_PRODUCT_ADGROUP_DATA"
 	TaskType_TASK_TYPE_PRODUCT_AD_DATA                                             TaskType = "TASK_TYPE_PRODUCT_AD_DATA"
 	TaskType_TASK_TYPE_DOWNLOAD_OPERATION_LOG                                      TaskType = "TASK_TYPE_DOWNLOAD_OPERATION_LOG"
+	TaskType_TASK_TYPE_CAMPAIGN_DATA                                               TaskType = "TASK_TYPE_CAMPAIGN_DATA"
 	TaskType_TASK_TYPE_BATCH_REQUEST                                               TaskType = "TASK_TYPE_BATCH_REQUEST"
 	TaskType_TASK_TYPE_CLICK_FORWARDED_DATA                                        TaskType = "TASK_TYPE_CLICK_FORWARDED_DATA"
 	TaskType_TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE                               TaskType = "TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE"

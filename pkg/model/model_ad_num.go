@@ -9,7 +9,7 @@
 
 package model
 
-// AdNum : 用于投放的的商品数量
+// AdNum : 动态商品广告（DPA）类型
 type AdNum string
 
 // List of AdNum

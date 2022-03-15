@@ -164,6 +164,8 @@ type APIClient struct {
 
 	DplabelAdLabelApi *DplabelAdLabelApiService
 
+	DynamicAdImageTemplatesApi *DynamicAdImageTemplatesApiService
+
 	DynamicAdImagesApi *DynamicAdImagesApiService
 
 	DynamicAdTemplatesApi *DynamicAdTemplatesApiService
@@ -443,6 +445,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
+	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
 	c.DynamicAdTemplatesApi = (*DynamicAdTemplatesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)

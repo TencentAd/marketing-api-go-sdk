@@ -21,17 +21,18 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type DynamicAdVideoTemplatesGetExample struct {
+type DynamicAdImageTemplatesGetExample struct {
 	TAds                           *ads.SDKClient
 	AccessToken                    string
 	AccountId                      int64
 	ProductCatalogId               int64
-	AdcreativeTemplateId           int64
 	ProductMode                    string
-	DynamicAdVideoTemplatesGetOpts *api.DynamicAdVideoTemplatesGetOpts
+	DynamicAdTemplateWidth         int64
+	DynamicAdTemplateHeight        int64
+	DynamicAdImageTemplatesGetOpts *api.DynamicAdImageTemplatesGetOpts
 }
 
-func (e *DynamicAdVideoTemplatesGetExample) Init() {
+func (e *DynamicAdImageTemplatesGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
@@ -39,20 +40,21 @@ func (e *DynamicAdVideoTemplatesGetExample) Init() {
 	})
 	e.AccountId = 789
 	e.ProductCatalogId = 789
-	e.AdcreativeTemplateId = 789
 	e.ProductMode = "productMode_example"
-	e.DynamicAdVideoTemplatesGetOpts = &api.DynamicAdVideoTemplatesGetOpts{}
+	e.DynamicAdTemplateWidth = 789
+	e.DynamicAdTemplateHeight = 789
+	e.DynamicAdImageTemplatesGetOpts = &api.DynamicAdImageTemplatesGetOpts{}
 }
 
-func (e *DynamicAdVideoTemplatesGetExample) RunExample() (model.DynamicAdVideoTemplatesGetResponseData, http.Header, error) {
+func (e *DynamicAdImageTemplatesGetExample) RunExample() (model.DynamicAdImageTemplatesGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.DynamicAdVideoTemplates().Get(ctx, e.AccountId, e.ProductCatalogId, e.AdcreativeTemplateId, e.ProductMode, e.DynamicAdVideoTemplatesGetOpts)
+	return tads.DynamicAdImageTemplates().Get(ctx, e.AccountId, e.ProductCatalogId, e.ProductMode, e.DynamicAdTemplateWidth, e.DynamicAdTemplateHeight, e.DynamicAdImageTemplatesGetOpts)
 }
 
 func main() {
-	e := &DynamicAdVideoTemplatesGetExample{}
+	e := &DynamicAdImageTemplatesGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {
