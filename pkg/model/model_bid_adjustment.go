@@ -11,5 +11,6 @@ package model
 
 // 出价系数设置内容，仅当投放oCPC、oCPM广告时可使用
 type BidAdjustment struct {
-	SiteSetPackage *[]SiteSetPackageStruct `json:"site_set_package,omitempty"`
+	SiteSetPackage     *[]SiteSetPackageStruct     `json:"site_set_package,omitempty"`
+	RegionGroupPackage *[]RegionGroupPackageStruct `json:"region_group_package,omitempty"`
 }

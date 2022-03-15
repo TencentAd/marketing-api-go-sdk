@@ -64,6 +64,7 @@ const (
 	IntOptimizationGoal_RESERVATION                            IntOptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION"
 	IntOptimizationGoal_FIRST_ECOMMERCE_ORDER                  IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER"
 	IntOptimizationGoal_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER"
+	IntOptimizationGoal_ECOMMERCE_SCANCODE_WX                  IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX"
 	IntOptimizationGoal_LIKE                                   IntOptimizationGoal = "OPTIMIZATIONGOAL_LIKE"
 	IntOptimizationGoal_EXTERNAL_LINK_CLICK                    IntOptimizationGoal = "OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK"
 	IntOptimizationGoal_BUY_COUPONS                            IntOptimizationGoal = "OPTIMIZATIONGOAL_BUY_COUPONS"
