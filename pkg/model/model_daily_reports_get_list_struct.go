@@ -417,6 +417,10 @@ type DailyReportsGetListStruct struct {
 	VideoLiveShareUserCount                    *int64   `json:"video_live_share_user_count,omitempty"`
 	VideoLiveClickCommodityUserCount           *int64   `json:"video_live_click_commodity_user_count,omitempty"`
 	VideoLiveCommodityBubbleExpCount           *int64   `json:"video_live_commodity_bubble_exp_count,omitempty"`
+	ScanCodeAddFansUv                          *int64   `json:"scan_code_add_fans_uv,omitempty"`
+	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
+	ScanCodeAddFansUvCost                      *int64   `json:"scan_code_add_fans_uv_cost,omitempty"`
+	ScanCodeAddFansCountCost                   *int64   `json:"scan_code_add_fans_count_cost,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

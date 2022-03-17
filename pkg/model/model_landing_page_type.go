@@ -84,6 +84,7 @@ const (
 	LandingPageType_H5                                                LandingPageType = "H5"
 	LandingPageType_MINI_PROGRAM                                      LandingPageType = "MINI_PROGRAM"
 	LandingPageType_UNIVERSAL_LINK                                    LandingPageType = "UNIVERSAL_LINK"
+	LandingPageType_LANDING_PAGE_TYPE_FENGSHU_MINI_PROGRAM            LandingPageType = "LANDING_PAGE_TYPE_FENGSHU_MINI_PROGRAM"
 	LandingPageType_DEFAULT                                           LandingPageType = "DEFAULT"
 	LandingPageType_DEEP_LINK_IOS                                     LandingPageType = "DEEP_LINK_IOS"
 	LandingPageType_DEEP_LINK_ANDROID                                 LandingPageType = "DEEP_LINK_ANDROID"

@@ -402,6 +402,10 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
+	ScanCodeAddFansUv                          *int64   `json:"scan_code_add_fans_uv,omitempty"`
+	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
+	ScanCodeAddFansUvCost                      *int64   `json:"scan_code_add_fans_uv_cost,omitempty"`
+	ScanCodeAddFansCountCost                   *int64   `json:"scan_code_add_fans_count_cost,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
