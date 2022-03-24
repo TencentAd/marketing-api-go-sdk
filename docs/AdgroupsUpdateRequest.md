@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **FlowOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **ConfiguredStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
 **CustomizedCategory** | **string** |  | [optional] [default to null]
-**AdditionalUserActionSets** | [**[]AdditionalUserActionSetStruct**](additional_user_action_set_struct.md) |  | [optional] [default to null]
+**AdditionalUserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **BidStrategy** | [***BidStrategy**](BidStrategy.md) |  | [optional] [default to null]
 **ColdStartAudience** | **[]int64** |  | [optional] [default to null]
 **AutoAudience** | **bool** |  | [optional] [default to null]

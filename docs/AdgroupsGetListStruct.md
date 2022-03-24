@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 **AdCount** | **int64** |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
-**AdditionalUserActionSets** | [**[]AdditionalUserActionSetStruct**](additional_user_action_set_struct.md) |  | [optional] [default to null]
+**AdditionalUserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]
 **IsRewardedVideoAd** | **bool** |  | [optional] [default to null]
