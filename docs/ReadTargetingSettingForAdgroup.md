@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **NetworkType** | **[]string** |  | [optional] [default to null]
 **NetworkOperator** | **[]string** |  | [optional] [default to null]
 **NetworkScene** | **[]string** |  | [optional] [default to null]
+**AppInstallStatus** | **[]string** |  | [optional] [default to null]
 **ConsumptionStatus** | **[]string** |  | [optional] [default to null]
 **GameConsumptionLevel** | **[]string** |  | [optional] [default to null]
 **ResidentialCommunityPrice** | [**[]ResidentialCommunityPriceStruct**](residential_community_price_struct.md) |  | [optional] [default to null]

@@ -23,6 +23,7 @@ type EstimationReadTargetingSetting struct {
 	NetworkType                      *[]string                          `json:"network_type,omitempty"`
 	NetworkOperator                  *[]string                          `json:"network_operator,omitempty"`
 	NetworkScene                     *[]string                          `json:"network_scene,omitempty"`
+	AppInstallStatus                 *[]string                          `json:"app_install_status,omitempty"`
 	MiniGameQqStatus                 *[]string                          `json:"mini_game_qq_status,omitempty"`
 	ConsumptionStatus                *[]string                          `json:"consumption_status,omitempty"`
 	GameConsumptionLevel             *[]string                          `json:"game_consumption_level,omitempty"`

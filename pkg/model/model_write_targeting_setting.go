@@ -24,6 +24,7 @@ type WriteTargetingSetting struct {
 	NetworkType               *[]string                          `json:"network_type,omitempty"`
 	NetworkOperator           *[]string                          `json:"network_operator,omitempty"`
 	NetworkScene              *[]string                          `json:"network_scene,omitempty"`
+	AppInstallStatus          *[]string                          `json:"app_install_status,omitempty"`
 	ConsumptionStatus         *[]string                          `json:"consumption_status,omitempty"`
 	GameConsumptionLevel      *[]string                          `json:"game_consumption_level,omitempty"`
 	ResidentialCommunityPrice *[]ResidentialCommunityPriceStruct `json:"residential_community_price,omitempty"`
