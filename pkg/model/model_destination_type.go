@@ -45,6 +45,7 @@ const (
 	DestinationType_WEIMOB_H5                       DestinationType = "PAGE_TYPE_WEIMOB_H5"
 	DestinationType_WEIMOB_WECHAT_MINIPROGRAM       DestinationType = "PAGE_TYPE_WEIMOB_WECHAT_MINIPROGRAM"
 	DestinationType_TSA_OTT                         DestinationType = "PAGE_TYPE_TSA_OTT"
+	DestinationType_FENGSHU_MINI_PROGRAM            DestinationType = "PAGE_TYPE_FENGSHU_MINI_PROGRAM"
 	DestinationType_WECHAT_OFFICIAL_ACCOUNT_DETAIL  DestinationType = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
 	DestinationType_WECHAT_FOCUS_DAILOG             DestinationType = "PAGE_TYPE_WECHAT_FOCUS_DAILOG"
 	DestinationType_WECHAT_MOMENTS_SCAN_PHOTO       DestinationType = "PAGE_TYPE_WECHAT_MOMENTS_SCAN_PHOTO"
