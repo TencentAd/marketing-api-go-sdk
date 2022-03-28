@@ -74,4 +74,5 @@ type AdgroupsGetListStruct struct {
 	CustomAdgroupTag                  *[]string                       `json:"custom_adgroup_tag,omitempty"`
 	SmartTargeting                    *SmartTargeting                 `json:"smart_targeting,omitempty"`
 	DynamicCreativeIdSet              *[]int64                        `json:"dynamic_creative_id_set,omitempty"`
+	SystemStatusExplanation           *string                         `json:"system_status_explanation,omitempty"`
 }
