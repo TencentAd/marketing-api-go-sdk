@@ -457,10 +457,6 @@ func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewR
 	return c.Client.ReviewElementPrereviewResultsApi
 }
 
-func (c *SDKClient) ReviewUrgeCreatives() *api.ReviewUrgeCreativesApiService {
-	return c.Client.ReviewUrgeCreativesApi
-}
-
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }

@@ -27,7 +27,7 @@ var (
 type ComplianceValidationApiService service
 
 /*
-ComplianceValidationApiService 获取广告素材预审结果
+ComplianceValidationApiService 获取广告素材预审结果(待废弃)
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

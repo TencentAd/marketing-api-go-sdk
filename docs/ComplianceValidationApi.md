@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ComplianceValidationGet**](ComplianceValidationApi.md#ComplianceValidationGet) | **Post** /compliance_validation/get | 获取广告素材预审结果
+[**ComplianceValidationGet**](ComplianceValidationApi.md#ComplianceValidationGet) | **Post** /compliance_validation/get | 获取广告素材预审结果(待废弃)
 
 
 # **ComplianceValidationGet**
 > ComplianceValidationGetResponse ComplianceValidationGet(ctx, data)
-获取广告素材预审结果
+获取广告素材预审结果(待废弃)
 
 ### Required Parameters
 
