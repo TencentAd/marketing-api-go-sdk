@@ -20,4 +20,5 @@ const (
 	CampaignType_WECHAT_OFFICIAL_ACCOUNTS CampaignType = "CAMPAIGN_TYPE_WECHAT_OFFICIAL_ACCOUNTS"
 	CampaignType_WECHAT_MOMENTS           CampaignType = "CAMPAIGN_TYPE_WECHAT_MOMENTS"
 	CampaignType_UNSUPPORTED              CampaignType = "CAMPAIGN_TYPE_UNSUPPORTED"
+	CampaignType_REWARDQUEST              CampaignType = "CAMPAIGN_TYPE_REWARDQUEST"
 )

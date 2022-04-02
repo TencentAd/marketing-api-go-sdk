@@ -43,6 +43,7 @@ type AdcreativesUpdateRequest struct {
 	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`
 	IndustryLabel                 *string                       `json:"industry_label,omitempty"`
 	UnionMarketSpec               *UnionMarketSpec              `json:"union_market_spec,omitempty"`
+	AndroidQuickAppSpec           *AndroidQuickAppSpec          `json:"android_quick_app_spec,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 }

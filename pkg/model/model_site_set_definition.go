@@ -54,4 +54,5 @@ const (
 	SiteSetDefinition_MINI_GAME_QQ         SiteSetDefinition = "SITE_SET_MINI_GAME_QQ"
 	SiteSetDefinition_MOBILE_GAME          SiteSetDefinition = "SITE_SET_MOBILE_GAME"
 	SiteSetDefinition_TENCENT_VIDEO_OTT    SiteSetDefinition = "SITE_SET_TENCENT_VIDEO_OTT"
+	SiteSetDefinition_CHANNELS             SiteSetDefinition = "SITE_SET_CHANNELS"
 )

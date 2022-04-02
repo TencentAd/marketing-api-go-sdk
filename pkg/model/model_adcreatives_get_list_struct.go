@@ -59,6 +59,7 @@ type AdcreativesGetListStruct struct {
 	IndustryLabel                 *string                           `json:"industry_label,omitempty"`
 	UnionMarketSpec               *UnionMarketSpec                  `json:"union_market_spec,omitempty"`
 	CreativeTemplateCategory      *string                           `json:"creative_template_category,omitempty"`
+	AndroidQuickAppSpec           *AndroidQuickAppSpec              `json:"android_quick_app_spec,omitempty"`
 	AdcreativeTemplateId          *int64                            `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }
