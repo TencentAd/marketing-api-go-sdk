@@ -27,6 +27,7 @@ type AdcreativeCreativeElementsRead struct {
 	BottomText                 *string                            `json:"bottom_text,omitempty"`
 	ExcitationText             *string                            `json:"excitation_text,omitempty"`
 	CountdownBegin             *int64                             `json:"countdown_begin,omitempty"`
+	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 	CountdownPrice             *string                            `json:"countdown_price,omitempty"`
 	CountdownTimeType          AdCreativeCountdownTimeType        `json:"countdown_time_type,omitempty"`
 	Label                      *[]CreativeLabel                   `json:"label,omitempty"`
@@ -69,12 +70,10 @@ type AdcreativeCreativeElementsRead struct {
 	FullScreenImage            *string                            `json:"full_screen_image,omitempty"`
 	ZipUrl                     *string                            `json:"zip_url,omitempty"`
 	EndPage                    *AdCreativeEndPage                 `json:"end_page,omitempty"`
-	ShopImage                  *string                            `json:"shop_image,omitempty"`
 	HeadLine                   *string                            `json:"head_line,omitempty"`
 	ShopImageStruct            *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 	ChosenButton               *ChosenButton                      `json:"chosen_button,omitempty"`
 	LivingDescStruct           *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
-	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

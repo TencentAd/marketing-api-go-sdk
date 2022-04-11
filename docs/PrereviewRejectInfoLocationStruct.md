@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Y** | **int64** |  | [optional] [default to null]
 **Width** | **int64** |  | [optional] [default to null]
 **Height** | **int64** |  | [optional] [default to null]
-**TimeSecond** | **int64** |  | [optional] [default to null]
+**TimeSecond** | **float64** |  | [optional] [default to null]
 **LocationImgUrl** | **string** |  | [optional] [default to null]
 **ImgUrl** | **string** |  | [optional] [default to null]
 **RelatedImgUrl** | **string** |  | [optional] [default to null]

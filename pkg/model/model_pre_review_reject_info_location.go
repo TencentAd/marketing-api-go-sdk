@@ -10,7 +10,7 @@
 package model
 
 // 标注位置信息
-type RejectInfoLocation struct {
+type PreReviewRejectInfoLocation struct {
 	X              *int64   `json:"x,omitempty"`
 	Y              *int64   `json:"y,omitempty"`
 	Width          *int64   `json:"width,omitempty"`

@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **TaskTypeCreateAndroidUnionChannelPackageSpec** | [***TaskTypeCreateAndroidUnionChannelPackageSpec**](task_type_create_android_union_channel_package_spec.md) |  | [optional] [default to null]
 **TaskTypeUpdateAndroidUnionChannelPackageSpec** | [***TaskTypeUpdateAndroidUnionChannelPackageSpec**](task_type_update_android_union_channel_package_spec.md) |  | [optional] [default to null]
 **TaskTypeUnionPositionReportSpec** | [***TaskTypeUnionPositionReportSpec**](task_type_union_position_report_spec.md) |  | [optional] [default to null]
+**TaskTypeReviewElementPrereviewResultSpec** | [***TaskTypeReviewElementPrereviewResultSpec**](task_type_review_element_prereview_result_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

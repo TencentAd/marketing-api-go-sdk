@@ -406,6 +406,59 @@ type TargetingTagReportsGetListStruct struct {
 	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
 	ScanCodeAddFansUvCost                      *int64   `json:"scan_code_add_fans_uv_cost,omitempty"`
 	ScanCodeAddFansCountCost                   *int64   `json:"scan_code_add_fans_count_cost,omitempty"`
+	BizFollowCount                             *int64   `json:"biz_follow_count,omitempty"`
+	BizFollowUv                                *int64   `json:"biz_follow_uv,omitempty"`
+	BizFollowCost                              *int64   `json:"biz_follow_cost,omitempty"`
+	BizFollowRate                              *float64 `json:"biz_follow_rate,omitempty"`
+	BizRegCount                                *int64   `json:"biz_reg_count,omitempty"`
+	BizRegUv                                   *int64   `json:"biz_reg_uv,omitempty"`
+	BizRegRate                                 *float64 `json:"biz_reg_rate,omitempty"`
+	BizRegCost                                 *int64   `json:"biz_reg_cost,omitempty"`
+	BizRegOrderAmount                          *int64   `json:"biz_reg_order_amount,omitempty"`
+	BizRegRoi                                  *float64 `json:"biz_reg_roi,omitempty"`
+	BizReservationCount                        *int64   `json:"biz_reservation_count,omitempty"`
+	BizReservationUv                           *int64   `json:"biz_reservation_uv,omitempty"`
+	BizReservationRate                         *float64 `json:"biz_reservation_rate,omitempty"`
+	BizReservationCost                         *int64   `json:"biz_reservation_cost,omitempty"`
+	BizReservationAmount                       *int64   `json:"biz_reservation_amount,omitempty"`
+	BizReservationRoi                          *float64 `json:"biz_reservation_roi,omitempty"`
+	BizOrderCount                              *int64   `json:"biz_order_count,omitempty"`
+	BizOrderUv                                 *int64   `json:"biz_order_uv,omitempty"`
+	BizOrderRate                               *float64 `json:"biz_order_rate,omitempty"`
+	BizOrderCost                               *int64   `json:"biz_order_cost,omitempty"`
+	BizOrderRoi                                *float64 `json:"biz_order_roi,omitempty"`
+	BizOrderAmount                             *int64   `json:"biz_order_amount,omitempty"`
+	Biz1dOrderCount                            *int64   `json:"biz_1d_order_count,omitempty"`
+	Biz1dOrderAmount                           *int64   `json:"biz_1d_order_amount,omitempty"`
+	BizPurchaseCount                           *int64   `json:"biz_purchase_count,omitempty"`
+	BizPurchaseAmount                          *int64   `json:"biz_purchase_amount,omitempty"`
+	BizPurchaseRoi                             *float64 `json:"biz_purchase_roi,omitempty"`
+	BizConsultCount                            *int64   `json:"biz_consult_count,omitempty"`
+	BizReadingCount                            *int64   `json:"biz_reading_count,omitempty"`
+	BizPageApplyCount                          *int64   `json:"biz_page_apply_count,omitempty"`
+	BizPageApplyUv                             *int64   `json:"biz_page_apply_uv,omitempty"`
+	BizPageApplyCost                           *int64   `json:"biz_page_apply_cost,omitempty"`
+	BizPageApplyRate                           *float64 `json:"biz_page_apply_rate,omitempty"`
+	BizCreditCount                             *int64   `json:"biz_credit_count,omitempty"`
+	BizCreditCost                              *int64   `json:"biz_credit_cost,omitempty"`
+	BizCreditRate                              *float64 `json:"biz_credit_rate,omitempty"`
+	BizCreditUv                                *int64   `json:"biz_credit_uv,omitempty"`
+	BizDepositCount                            *int64   `json:"biz_deposit_count,omitempty"`
+	Biz1dPurchaseCount                         *int64   `json:"biz_1d_purchase_count,omitempty"`
+	Biz1dPurchaseAmount                        *int64   `json:"biz_1d_purchase_amount,omitempty"`
+	Biz3dPurchaseCount                         *int64   `json:"biz_3d_purchase_count,omitempty"`
+	Biz3dPurchaseAmount                        *int64   `json:"biz_3d_purchase_amount,omitempty"`
+	Biz7dPurchaseCount                         *int64   `json:"biz_7d_purchase_count,omitempty"`
+	Biz7dPurchaseAmount                        *int64   `json:"biz_7d_purchase_amount,omitempty"`
+	Biz15dPurchaseCount                        *int64   `json:"biz_15d_purchase_count,omitempty"`
+	Biz15dPurchaseAmount                       *int64   `json:"biz_15d_purchase_amount,omitempty"`
+	Biz30dPurchaseCount                        *int64   `json:"biz_30d_purchase_count,omitempty"`
+	Biz30dPurchaseAmount                       *int64   `json:"biz_30d_purchase_amount,omitempty"`
+	Biz1dPurchaseRoi                           *float64 `json:"biz_1d_purchase_roi,omitempty"`
+	Biz3dPurchaseRoi                           *float64 `json:"biz_3d_purchase_roi,omitempty"`
+	Biz7dPurchaseRoi                           *float64 `json:"biz_7d_purchase_roi,omitempty"`
+	Biz15dPurchaseRoi                          *float64 `json:"biz_15d_purchase_roi,omitempty"`
+	Biz30dPurchaseRoi                          *float64 `json:"biz_30d_purchase_roi,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`

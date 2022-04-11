@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **BottomText** | **string** |  | [optional] [default to null]
 **ActivityType** | **string** |  | [optional] [default to null]
 **CountdownBegin** | **int64** |  | [optional] [default to null]
+**CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 **CountdownPrice** | **string** |  | [optional] [default to null]
 **CountdownTimeType** | [***AdCreativeCountdownTimeType**](AdCreativeCountdownTimeType.md) |  | [optional] [default to null]
 **MiniProgramId** | **string** |  | [optional] [default to null]
@@ -69,14 +70,12 @@ Name | Type | Description | Notes
 **LongVideoStruct** | [***LongVideoStruct**](long_video_struct.md) |  | [optional] [default to null]
 **BannerContent** | [***AdcreativeBannerContent**](adcreative_banner_content.md) |  | [optional] [default to null]
 **CardContent** | [***AdcreativeCardContent**](adcreative_card_content.md) |  | [optional] [default to null]
-**ShopImage** | **string** |  | [optional] [default to null]
 **HeadLine** | **string** |  | [optional] [default to null]
 **ShopImageStruct** | [***AdCreativeShopImageStruct**](ad_creative_shop_image_struct.md) |  | [optional] [default to null]
 **ChosenButton** | [***ChosenButton**](chosen_button.md) |  | [optional] [default to null]
 **LivingDescStruct** | [***AdCreativeLivingDescStruct**](ad_creative_living_desc_struct.md) |  | [optional] [default to null]
 **FloatingZoneStruct** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **CanvasShareImage** | **string** |  | [optional] [default to null]
-**CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

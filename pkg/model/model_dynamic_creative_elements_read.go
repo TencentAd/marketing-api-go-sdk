@@ -33,6 +33,7 @@ type DynamicCreativeElementsRead struct {
 	BottomText                 *string                            `json:"bottom_text,omitempty"`
 	ActivityType               *string                            `json:"activity_type,omitempty"`
 	CountdownBegin             *int64                             `json:"countdown_begin,omitempty"`
+	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 	CountdownPrice             *string                            `json:"countdown_price,omitempty"`
 	CountdownTimeType          AdCreativeCountdownTimeType        `json:"countdown_time_type,omitempty"`
 	MiniProgramId              *string                            `json:"mini_program_id,omitempty"`
@@ -77,12 +78,10 @@ type DynamicCreativeElementsRead struct {
 	LongVideoStruct            *LongVideoStruct                   `json:"long_video_struct,omitempty"`
 	BannerContent              *AdcreativeBannerContent           `json:"banner_content,omitempty"`
 	CardContent                *AdcreativeCardContent             `json:"card_content,omitempty"`
-	ShopImage                  *string                            `json:"shop_image,omitempty"`
 	HeadLine                   *string                            `json:"head_line,omitempty"`
 	ShopImageStruct            *AdCreativeShopImageStruct         `json:"shop_image_struct,omitempty"`
 	ChosenButton               *ChosenButton                      `json:"chosen_button,omitempty"`
 	LivingDescStruct           *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
-	CountdownExpiringTimestamp *int64                             `json:"countdown_expiring_timestamp,omitempty"`
 }

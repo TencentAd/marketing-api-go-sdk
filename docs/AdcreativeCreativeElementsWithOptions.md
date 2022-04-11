@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **BottomText** | **string** |  | [optional] [default to null]
 **ExcitationText** | **string** |  | [optional] [default to null]
 **CountdownBegin** | **int64** |  | [optional] [default to null]
+**CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 **CountdownPrice** | **string** |  | [optional] [default to null]
 **CountdownTimeType** | [***AdCreativeCountdownTimeType**](AdCreativeCountdownTimeType.md) |  | [optional] [default to null]
 **MiniProgramId** | **string** |  | [optional] [default to null]
@@ -47,7 +48,6 @@ Name | Type | Description | Notes
 **FullScreenImage** | **string** |  | [optional] [default to null]
 **ZipUrl** | **string** |  | [optional] [default to null]
 **EndPage** | [***AdCreativeEndPage**](ad_creative_end_page.md) |  | [optional] [default to null]
-**ShopImage** | **string** |  | [optional] [default to null]
 **HeadLine** | **string** |  | [optional] [default to null]
 **ShopImageStruct** | [***AdCreativeShopImageStruct**](ad_creative_shop_image_struct.md) |  | [optional] [default to null]
 **ChosenButton** | [***ChosenButton**](chosen_button.md) |  | [optional] [default to null]
@@ -57,7 +57,6 @@ Name | Type | Description | Notes
 **RightButton** | **string** |  | [optional] [default to null]
 **LeftCanvas** | **string** |  | [optional] [default to null]
 **RightCanvas** | **string** |  | [optional] [default to null]
-**CountdownExpiringTimestamp** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

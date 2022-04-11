@@ -53,5 +53,4 @@ const (
 	IntSiteSetDefinition_MINI_GAME_QQ         IntSiteSetDefinition = "SITE_SET_MINI_GAME_QQ"
 	IntSiteSetDefinition_MOBILE_GAME          IntSiteSetDefinition = "SITE_SET_MOBILE_GAME"
 	IntSiteSetDefinition_QQSHOPPING           IntSiteSetDefinition = "SITE_SET_QQSHOPPING"
-	IntSiteSetDefinition_TENCENT_VIDEO_OTT    IntSiteSetDefinition = "SITE_SET_TENCENT_VIDEO_OTT"
 )

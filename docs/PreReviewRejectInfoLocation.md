@@ -1,4 +1,4 @@
-# RejectInfoLocation
+# PreReviewRejectInfoLocation
 
 ## Properties
 Name | Type | Description | Notes
