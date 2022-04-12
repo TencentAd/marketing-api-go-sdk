@@ -31,4 +31,5 @@ type ConversionsGetListStruct struct {
 	ConversionScene              ConversionScene            `json:"conversion_scene,omitempty"`
 	OwnerId                      *int64                     `json:"owner_id,omitempty"`
 	DeepWorthAdvancedGoal        ConversionOptimizationGoal `json:"deep_worth_advanced_goal,omitempty"`
+	ConversionLinkId             *int64                     `json:"conversion_link_id,omitempty"`
 }

@@ -26,4 +26,5 @@ type ConversionsAddRequest struct {
 	DeepWorthOptimizationGoal    ConversionOptimizationGoal `json:"deep_worth_optimization_goal,omitempty"`
 	DeepWorthAdvancedGoal        ConversionOptimizationGoal `json:"deep_worth_advanced_goal,omitempty"`
 	UserActionSetId              *int64                     `json:"user_action_set_id,omitempty"`
+	ConversionLinkId             *int64                     `json:"conversion_link_id,omitempty"`
 }
