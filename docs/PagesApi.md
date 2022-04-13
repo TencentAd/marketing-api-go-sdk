@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **PagesGet**
-> PagesGetResponse PagesGet(ctx, accountId, promotedObjectType, optional)
+> PagesGetResponse PagesGet(ctx, accountId, optional)
 获取落地页列表
 
 ### Required Parameters
@@ -17,7 +17,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **promotedObjectType** | **string**|  | 
  **optional** | ***PagesApiPagesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -26,7 +25,7 @@ Optional parameters are passed through a pointer to a PagesApiPagesGetOpts struc
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
-
+ **promotedObjectType** | **optional.String**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

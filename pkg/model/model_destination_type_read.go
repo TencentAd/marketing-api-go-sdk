@@ -35,6 +35,7 @@ const (
 	DestinationTypeRead_WEIMOB_PRODUCT                  DestinationTypeRead = "PAGE_TYPE_WEIMOB_PRODUCT"
 	DestinationTypeRead_WEIMOB_H5                       DestinationTypeRead = "PAGE_TYPE_WEIMOB_H5"
 	DestinationTypeRead_WEIMOB_WECHAT_MINIPROGRAM       DestinationTypeRead = "PAGE_TYPE_WEIMOB_WECHAT_MINIPROGRAM"
+	DestinationTypeRead_FENGSHU_MINI_PROGRAM            DestinationTypeRead = "PAGE_TYPE_FENGSHU_MINI_PROGRAM"
 	DestinationTypeRead_WECHAT_OFFICIAL_ACCOUNT_DETAIL  DestinationTypeRead = "PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL"
 	DestinationTypeRead_WECHAT_FOCUS_DAILOG             DestinationTypeRead = "PAGE_TYPE_WECHAT_FOCUS_DAILOG"
 	DestinationTypeRead_WECHAT_MOMENTS_SCAN_PHOTO       DestinationTypeRead = "PAGE_TYPE_WECHAT_MOMENTS_SCAN_PHOTO"

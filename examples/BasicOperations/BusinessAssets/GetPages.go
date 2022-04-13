@@ -23,11 +23,10 @@ import (
 )
 
 type PagesGetExample struct {
-	TAds               *ads.SDKClient
-	AccessToken        string
-	AccountId          int64
-	PromotedObjectType string
-	PagesGetOpts       *api.PagesGetOpts
+	TAds         *ads.SDKClient
+	AccessToken  string
+	AccountId    int64
+	PagesGetOpts *api.PagesGetOpts
 }
 
 func (e *PagesGetExample) Init() {
@@ -37,8 +36,9 @@ func (e *PagesGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = int64(0)
-	e.PromotedObjectType = "PROMOTED_OBJECT_TYPE_LINK"
 	e.PagesGetOpts = &api.PagesGetOpts{
+
+		PromotedObjectType: optional.NewString("PROMOTED_OBJECT_TYPE_LINK"),
 
 		Fields: optional.NewInterface([]string{"page_id", "page_name", "preview_url", "created_time", "last_modified_time", "promoted_object_id", "page_type"}),
 	}
@@ -48,7 +48,7 @@ func (e *PagesGetExample) RunExample() (model.PagesGetResponseData, http.Header,
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Pages().Get(ctx, e.AccountId, e.PromotedObjectType, e.PagesGetOpts)
+	return tads.Pages().Get(ctx, e.AccountId, e.PagesGetOpts)
 }
 
 func main() {
