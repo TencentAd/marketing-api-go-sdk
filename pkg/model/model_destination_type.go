@@ -52,4 +52,5 @@ const (
 	DestinationType_WECHAT_MOMENTS_SUBSCRIPTION     DestinationType = "PAGE_TYPE_WECHAT_MOMENTS_SUBSCRIPTION"
 	DestinationType_WECHAT_RED_PACKET_COVER         DestinationType = "PAGE_TYPE_WECHAT_RED_PACKET_COVER"
 	DestinationType_WECHAT_VIDEO_TOPIC              DestinationType = "PAGE_TYPE_WECHAT_VIDEO_TOPIC"
+	DestinationType_CHANNELS_HALF_CARD              DestinationType = "PAGE_TYPE_CHANNELS_HALF_CARD"
 )

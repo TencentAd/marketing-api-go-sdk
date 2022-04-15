@@ -14,11 +14,12 @@ type MarketingScene string
 
 // List of MarketingScene
 const (
-	MarketingScene_DEFAULT                                MarketingScene = "DEFAULT"
-	MarketingScene_GAME_RESERVATION                       MarketingScene = "GAME_RESERVATION"
-	MarketingScene_GAME_PROMOTION                         MarketingScene = "GAME_PROMOTION"
-	MarketingScene_APP_ACTIVE_PROMOTION                   MarketingScene = "APP_ACTIVE_PROMOTION"
-	MarketingScene_ECOMMERCE_GOODS_DIRECT_PURCHASE_DAILY  MarketingScene = "ECOMMERCE_GOODS_DIRECT_PURCHASE_DAILY"
-	MarketingScene_ECOMMERCE_CONSUMER_COLLECT_CLUES_DAILY MarketingScene = "ECOMMERCE_CONSUMER_COLLECT_CLUES_DAILY"
-	MarketingScene_ECOMMERCE_CONSUMER_ADD_FOLLOWERS_DAILY MarketingScene = "ECOMMERCE_CONSUMER_ADD_FOLLOWERS_DAILY"
+	MarketingScene_DEFAULT                                    MarketingScene = "DEFAULT"
+	MarketingScene_GAME_RESERVATION                           MarketingScene = "GAME_RESERVATION"
+	MarketingScene_GAME_PROMOTION                             MarketingScene = "GAME_PROMOTION"
+	MarketingScene_APP_ACTIVE_PROMOTION                       MarketingScene = "APP_ACTIVE_PROMOTION"
+	MarketingScene_ECOMMERCE_GOODS_DIRECT_PURCHASE_DAILY      MarketingScene = "ECOMMERCE_GOODS_DIRECT_PURCHASE_DAILY"
+	MarketingScene_ECOMMERCE_CONSUMER_COLLECT_CLUES_DAILY     MarketingScene = "ECOMMERCE_CONSUMER_COLLECT_CLUES_DAILY"
+	MarketingScene_ECOMMERCE_CONSUMER_ADD_FOLLOWERS_DAILY     MarketingScene = "ECOMMERCE_CONSUMER_ADD_FOLLOWERS_DAILY"
+	MarketingScene_ECOMMERCE_CONSUMER_OFFICIAL_ACCOUNTS_DAILY MarketingScene = "ECOMMERCE_CONSUMER_OFFICIAL_ACCOUNTS_DAILY"
 )

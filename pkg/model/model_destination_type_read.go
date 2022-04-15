@@ -43,4 +43,5 @@ const (
 	DestinationTypeRead_WECHAT_RED_PACKET_COVER         DestinationTypeRead = "PAGE_TYPE_WECHAT_RED_PACKET_COVER"
 	DestinationTypeRead_WECHAT_VIDEO_TOPIC              DestinationTypeRead = "PAGE_TYPE_WECHAT_VIDEO_TOPIC"
 	DestinationTypeRead_ARTICAL_WECHAT                  DestinationTypeRead = "PAGE_TYPE_ARTICAL_WECHAT"
+	DestinationTypeRead_CHANNELS_HALF_CARD              DestinationTypeRead = "PAGE_TYPE_CHANNELS_HALF_CARD"
 )
