@@ -59,4 +59,5 @@ type RevisedAdcreativeElements struct {
 	LivingDescStruct           *AdCreativeLivingDescStruct        `json:"living_desc_struct,omitempty"`
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
+	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
 }

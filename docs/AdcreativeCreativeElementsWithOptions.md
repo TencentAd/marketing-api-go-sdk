@@ -57,6 +57,7 @@ Name | Type | Description | Notes
 **RightButton** | **string** |  | [optional] [default to null]
 **LeftCanvas** | **string** |  | [optional] [default to null]
 **RightCanvas** | **string** |  | [optional] [default to null]
+**WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

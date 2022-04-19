@@ -58,4 +58,5 @@ type AdcreativeCreativeElements struct {
 	LeftCanvas                 *string                            `json:"left_canvas,omitempty"`
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
+	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
 }

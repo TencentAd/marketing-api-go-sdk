@@ -65,4 +65,5 @@ type AdcreativeCreativeElementsWithOptions struct {
 	RightButton                *string                            `json:"right_button,omitempty"`
 	LeftCanvas                 *string                            `json:"left_canvas,omitempty"`
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
+	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
 }
