@@ -24,4 +24,6 @@ type ActionsUserId struct {
 	WechatOpenid  *string `json:"wechat_openid,omitempty"`
 	WechatUnionid *string `json:"wechat_unionid,omitempty"`
 	WechatAppId   *string `json:"wechat_app_id,omitempty"`
+	Caid          *string `json:"caid,omitempty"`
+	CaidVersion   *int64  `json:"caid_version,omitempty"`
 }

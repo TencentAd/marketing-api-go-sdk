@@ -25,4 +25,5 @@ type LocalStoreBizInfoStruct struct {
 	PeakPeriod         *[]PeakPeriod           `json:"peak_period,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
 	Star               *float64                `json:"star,omitempty"`
+	Level              LocalStoreLevel         `json:"level,omitempty"`
 }

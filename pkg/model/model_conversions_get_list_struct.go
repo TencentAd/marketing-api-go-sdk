@@ -32,4 +32,6 @@ type ConversionsGetListStruct struct {
 	OwnerId                      *int64                     `json:"owner_id,omitempty"`
 	DeepWorthAdvancedGoal        ConversionOptimizationGoal `json:"deep_worth_advanced_goal,omitempty"`
 	ConversionLinkId             *int64                     `json:"conversion_link_id,omitempty"`
+	ImpressionFeedbackUrl        *string                    `json:"impression_feedback_url,omitempty"`
+	AttributionWindow            *int64                     `json:"attribution_window,omitempty"`
 }
