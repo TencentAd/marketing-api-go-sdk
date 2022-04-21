@@ -361,6 +361,22 @@ func (c *SDKClient) LocalStoresWxpayMerchants() *api.LocalStoresWxpayMerchantsAp
 	return c.Client.LocalStoresWxpayMerchantsApi
 }
 
+func (c *SDKClient) MergeFundTypeDailyBalanceReport() *api.MergeFundTypeDailyBalanceReportApiService {
+	return c.Client.MergeFundTypeDailyBalanceReportApi
+}
+
+func (c *SDKClient) MergeFundTypeFundStatementsDetailed() *api.MergeFundTypeFundStatementsDetailedApiService {
+	return c.Client.MergeFundTypeFundStatementsDetailedApi
+}
+
+func (c *SDKClient) MergeFundTypeFunds() *api.MergeFundTypeFundsApiService {
+	return c.Client.MergeFundTypeFundsApi
+}
+
+func (c *SDKClient) MergeFundTypeSubcustomerTransfer() *api.MergeFundTypeSubcustomerTransferApiService {
+	return c.Client.MergeFundTypeSubcustomerTransferApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }

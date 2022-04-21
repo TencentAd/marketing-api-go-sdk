@@ -222,6 +222,14 @@ type APIClient struct {
 
 	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
 
+	MergeFundTypeDailyBalanceReportApi *MergeFundTypeDailyBalanceReportApiService
+
+	MergeFundTypeFundStatementsDetailedApi *MergeFundTypeFundStatementsDetailedApiService
+
+	MergeFundTypeFundsApi *MergeFundTypeFundsApiService
+
+	MergeFundTypeSubcustomerTransferApi *MergeFundTypeSubcustomerTransferApiService
+
 	OauthApi *OauthApiService
 
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
@@ -472,6 +480,10 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
+	c.MergeFundTypeDailyBalanceReportApi = (*MergeFundTypeDailyBalanceReportApiService)(&c.common)
+	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)
+	c.MergeFundTypeFundsApi = (*MergeFundTypeFundsApiService)(&c.common)
+	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OuterCluesApi = (*OuterCluesApiService)(&c.common)
