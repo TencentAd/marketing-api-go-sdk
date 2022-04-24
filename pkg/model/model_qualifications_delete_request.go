@@ -10,7 +10,8 @@
 package model
 
 type QualificationsDeleteRequest struct {
-	QualificationType QualificationType `json:"qualification_type,omitempty"`
-	QualificationId   *int64            `json:"qualification_id,omitempty"`
-	AccountId         *int64            `json:"account_id,omitempty"`
+	QualificationType   QualificationType `json:"qualification_type,omitempty"`
+	QualificationId     *int64            `json:"qualification_id,omitempty"`
+	QualificationIdList *[]int64          `json:"qualification_id_list,omitempty"`
+	AccountId           *int64            `json:"account_id,omitempty"`
 }

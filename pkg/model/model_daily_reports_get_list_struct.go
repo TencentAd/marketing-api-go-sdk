@@ -206,7 +206,7 @@ type DailyReportsGetListStruct struct {
 	WechatLocalPayCount                        *int64   `json:"wechat_local_pay_count,omitempty"`
 	WechatLocalPayuserCount                    *int64   `json:"wechat_local_payuser_count,omitempty"`
 	WechatLocalPayAmount                       *int64   `json:"wechat_local_pay_amount,omitempty"`
-	WechatLocalPayRoi                          *int64   `json:"wechat_local_pay_roi,omitempty"`
+	WechatLocalPayRoi                          *float64 `json:"wechat_local_pay_roi,omitempty"`
 	FirstPayRate                               *float64 `json:"first_pay_rate,omitempty"`
 	PreCreWeb                                  *int64   `json:"pre_cre_web,omitempty"`
 	PreCreApp                                  *int64   `json:"pre_cre_app,omitempty"`
@@ -575,7 +575,7 @@ type DailyReportsGetListStruct struct {
 	MiniGameFirstDayPayingPlaRoi               *float64 `json:"mini_game_first_day_paying_pla_roi,omitempty"`
 	MiniGameFirstPayPlaCost                    *int64   `json:"mini_game_first_pay_pla_cost,omitempty"`
 	MiniGamePayD3Roi                           *float64 `json:"mini_game_pay_d3_roi,omitempty"`
-	MiniGamePayD7Roi                           *int64   `json:"mini_game_pay_d7_roi,omitempty"`
+	MiniGamePayD7Roi                           *float64 `json:"mini_game_pay_d7_roi,omitempty"`
 	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
 	MiniGamePayD30Roi                          *float64 `json:"mini_game_pay_d30_roi,omitempty"`
 	MiniGamePayD3PlaRoi                        *float64 `json:"mini_game_pay_d3_pla_roi,omitempty"`
