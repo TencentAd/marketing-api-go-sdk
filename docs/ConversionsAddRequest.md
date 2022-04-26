@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **DeepWorthAdvancedGoal** | [***ConversionOptimizationGoal**](ConversionOptimizationGoal.md) |  | [optional] [default to null]
 **UserActionSetId** | **int64** |  | [optional] [default to null]
 **ConversionLinkId** | **int64** |  | [optional] [default to null]
+**ImpressionFeedbackUrl** | **string** |  | [optional] [default to null]
+**AttributionWindow** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
