@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **AgencyAccountId** | **int64** |  | [optional] [default to null]
 **Operators** | [**[]AdvertiserOperatorStruct**](advertiser_operator_struct.md) |  | [optional] [default to null]
 **Memo** | **string** |  | [optional] [default to null]
+**AreaCode** | **int64** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdQualificationImage** | **[]string** |  | [optional] [default to null]
 **CertificationImage** | **string** |  | [optional] [default to null]

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **ContactPersonTelephone** | **string** |  | [optional] [default to null]
 **ContactPersonMobile** | **string** |  | [optional] [default to null]
 **CertificationNumber** | **string** |  | [optional] [default to null]
+**AreaCode** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

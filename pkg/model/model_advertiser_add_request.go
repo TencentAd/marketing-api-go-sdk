@@ -19,4 +19,5 @@ type AdvertiserAddRequest struct {
 	ContactPersonTelephone  *string                  `json:"contact_person_telephone,omitempty"`
 	ContactPersonMobile     *string                  `json:"contact_person_mobile,omitempty"`
 	CertificationNumber     *string                  `json:"certification_number,omitempty"`
+	AreaCode                *int64                   `json:"area_code,omitempty"`
 }

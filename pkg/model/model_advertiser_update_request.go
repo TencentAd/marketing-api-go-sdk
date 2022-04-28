@@ -22,4 +22,5 @@ type AdvertiserUpdateRequest struct {
 	ContactPersonMobile     *string                  `json:"contact_person_mobile,omitempty"`
 	WechatSpec              *MpInfoUpdate            `json:"wechat_spec,omitempty"`
 	Websites                *[]WebsiteUpdateStruct   `json:"websites,omitempty"`
+	AreaCode                *int64                   `json:"area_code,omitempty"`
 }
