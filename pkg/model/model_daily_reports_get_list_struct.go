@@ -474,6 +474,9 @@ type DailyReportsGetListStruct struct {
 	Biz7dPurchaseRoi                           *float64 `json:"biz_7d_purchase_roi,omitempty"`
 	Biz15dPurchaseRoi                          *float64 `json:"biz_15d_purchase_roi,omitempty"`
 	Biz30dPurchaseRoi                          *float64 `json:"biz_30d_purchase_roi,omitempty"`
+	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
+	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
+	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
@@ -687,5 +690,5 @@ type DailyReportsGetListStruct struct {
 	ChannelsMatchHeartPv                       *int64   `json:"channels_match_heart_pv,omitempty"`
 	ChannelsMatchCommentPv                     *int64   `json:"channels_match_comment_pv,omitempty"`
 	ChannelsMatchSharePv                       *int64   `json:"channels_match_share_pv,omitempty"`
-	ExportId                                   *int64   `json:"export_id,omitempty"`
+	ExportId                                   *string  `json:"export_id,omitempty"`
 }

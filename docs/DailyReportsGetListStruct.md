@@ -466,6 +466,9 @@ Name | Type | Description | Notes
 **Biz7dPurchaseRoi** | **float64** |  | [optional] [default to null]
 **Biz15dPurchaseRoi** | **float64** |  | [optional] [default to null]
 **Biz30dPurchaseRoi** | **float64** |  | [optional] [default to null]
+**StayPay7dPv** | **int64** |  | [optional] [default to null]
+**StayPay15dPv** | **int64** |  | [optional] [default to null]
+**StayPay30dPv** | **int64** |  | [optional] [default to null]
 **RequestConversionsCount** | **int64** |  | [optional] [default to null]
 **RequestConversionsCost** | **int64** |  | [optional] [default to null]
 **IncomeVal1** | **int64** |  | [optional] [default to null]
@@ -679,7 +682,7 @@ Name | Type | Description | Notes
 **ChannelsMatchHeartPv** | **int64** |  | [optional] [default to null]
 **ChannelsMatchCommentPv** | **int64** |  | [optional] [default to null]
 **ChannelsMatchSharePv** | **int64** |  | [optional] [default to null]
-**ExportId** | **int64** |  | [optional] [default to null]
+**ExportId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

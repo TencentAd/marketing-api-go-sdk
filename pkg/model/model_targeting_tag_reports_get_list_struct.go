@@ -459,6 +459,9 @@ type TargetingTagReportsGetListStruct struct {
 	Biz7dPurchaseRoi                           *float64 `json:"biz_7d_purchase_roi,omitempty"`
 	Biz15dPurchaseRoi                          *float64 `json:"biz_15d_purchase_roi,omitempty"`
 	Biz30dPurchaseRoi                          *float64 `json:"biz_30d_purchase_roi,omitempty"`
+	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
+	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
+	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`

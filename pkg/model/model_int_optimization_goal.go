@@ -65,6 +65,8 @@ const (
 	IntOptimizationGoal_FIRST_ECOMMERCE_ORDER                  IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER"
 	IntOptimizationGoal_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER"
 	IntOptimizationGoal_ECOMMERCE_SCANCODE_WX                  IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_SCANCODE_WX"
+	IntOptimizationGoal_CLASS_PARTICIPATED                     IntOptimizationGoal = "OPTIMIZATIONGOAL_CLASS_PARTICIPATED"
+	IntOptimizationGoal_INSURANCE_PURCHASE                     IntOptimizationGoal = "OPTIMIZATIONGOAL_INSURANCE_PURCHASE"
 	IntOptimizationGoal_MOBILE_APP_SEVEN_DAYS_RETENTION        IntOptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_SEVEN_DAYS_RETENTION"
 	IntOptimizationGoal_LIKE                                   IntOptimizationGoal = "OPTIMIZATIONGOAL_LIKE"
 	IntOptimizationGoal_EXTERNAL_LINK_CLICK                    IntOptimizationGoal = "OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK"
