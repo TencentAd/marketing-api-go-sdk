@@ -55,4 +55,5 @@ const (
 	SiteSetDefinition_MOBILE_GAME          SiteSetDefinition = "SITE_SET_MOBILE_GAME"
 	SiteSetDefinition_TENCENT_VIDEO_OTT    SiteSetDefinition = "SITE_SET_TENCENT_VIDEO_OTT"
 	SiteSetDefinition_CHANNELS             SiteSetDefinition = "SITE_SET_CHANNELS"
+	SiteSetDefinition_OVERSEAS_UNION       SiteSetDefinition = "SITE_SET_OVERSEAS_UNION"
 )

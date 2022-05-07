@@ -93,6 +93,10 @@ const (
 	ActionType_DROP_OUT                            ActionType = "DROP_OUT"
 	ActionType_CONFIRM_DELIVERY_ORDER              ActionType = "CONFIRM_DELIVERY_ORDER"
 	ActionType_CANCEL_DELIVERY_ORDER               ActionType = "CANCEL_DELIVERY_ORDER"
+	ActionType_OPEN_ACCOUNT                        ActionType = "OPEN_ACCOUNT"
+	ActionType_DEPOSIT                             ActionType = "DEPOSIT"
+	ActionType_TRADE                               ActionType = "TRADE"
+	ActionType_SECURITY_NEGATIVE                   ActionType = "SECURITY_NEGATIVE"
 	ActionType_AD_CLICK                            ActionType = "AD_CLICK"
 	ActionType_AD_IMPRESSION                       ActionType = "AD_IMPRESSION"
 )
