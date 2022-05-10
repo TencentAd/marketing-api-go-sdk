@@ -15,6 +15,7 @@ type PromotedObjectType string
 // List of PromotedObjectType
 const (
 	PromotedObjectType_APP_ANDROID                PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_ANDROID"
+	PromotedObjectType_APP_ANDROID_GOOGLE_PLAY    PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_ANDROID_GOOGLE_PLAY"
 	PromotedObjectType_APP_IOS                    PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_IOS"
 	PromotedObjectType_DIANPING_SHOP              PromotedObjectType = "PROMOTED_OBJECT_TYPE_DIANPING_SHOP"
 	PromotedObjectType_ECOMMERCE                  PromotedObjectType = "PROMOTED_OBJECT_TYPE_ECOMMERCE"

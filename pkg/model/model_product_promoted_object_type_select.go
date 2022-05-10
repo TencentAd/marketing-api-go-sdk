@@ -15,6 +15,7 @@ type ProductPromotedObjectTypeSelect string
 // List of ProductPromotedObjectTypeSelect
 const (
 	ProductPromotedObjectTypeSelect_APP_ANDROID                ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_APP_ANDROID"
+	ProductPromotedObjectTypeSelect_APP_ANDROID_GOOGLE_PLAY    ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_APP_ANDROID_GOOGLE_PLAY"
 	ProductPromotedObjectTypeSelect_APP_IOS                    ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_APP_IOS"
 	ProductPromotedObjectTypeSelect_APP_ANDROID_MYAPP          ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_APP_ANDROID_MYAPP"
 	ProductPromotedObjectTypeSelect_APP_ANDROID_UNION          ProductPromotedObjectTypeSelect = "PROMOTED_OBJECT_TYPE_APP_ANDROID_UNION"

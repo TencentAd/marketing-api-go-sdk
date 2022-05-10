@@ -15,6 +15,7 @@ type PromotedObjectTypeWithoutJd string
 // List of PromotedObjectTypeWithoutJd
 const (
 	PromotedObjectTypeWithoutJd_APP_ANDROID                PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_APP_ANDROID"
+	PromotedObjectTypeWithoutJd_APP_ANDROID_GOOGLE_PLAY    PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_APP_ANDROID_GOOGLE_PLAY"
 	PromotedObjectTypeWithoutJd_APP_IOS                    PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_APP_IOS"
 	PromotedObjectTypeWithoutJd_DIANPING_SHOP              PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_DIANPING_SHOP"
 	PromotedObjectTypeWithoutJd_ECOMMERCE                  PromotedObjectTypeWithoutJd = "PROMOTED_OBJECT_TYPE_ECOMMERCE"

@@ -11,12 +11,14 @@ package model
 
 // IOS应用信息
 type PromotedObjectAppIosSpec struct {
-	Packname           *string   `json:"packname,omitempty"`
-	Version            *string   `json:"version,omitempty"`
-	Icon               *string   `json:"icon,omitempty"`
-	Icon512            *string   `json:"icon_512,omitempty"`
-	AverageRating      *string   `json:"average_rating,omitempty"`
-	PackageSize        *string   `json:"package_size,omitempty"`
-	Genres             *[]string `json:"genres,omitempty"`
-	PackageDownloadUrl *string   `json:"package_download_url,omitempty"`
+	Packname                  *string                   `json:"packname,omitempty"`
+	Version                   *string                   `json:"version,omitempty"`
+	Icon                      *string                   `json:"icon,omitempty"`
+	Icon512                   *string                   `json:"icon_512,omitempty"`
+	IconImageId               *string                   `json:"icon_image_id,omitempty"`
+	AverageRating             *string                   `json:"average_rating,omitempty"`
+	PackageSize               *string                   `json:"package_size,omitempty"`
+	Genres                    *[]string                 `json:"genres,omitempty"`
+	PackageDownloadUrl        *string                   `json:"package_download_url,omitempty"`
+	ChildrenPrivacyProtection ChildrenPrivacyProtection `json:"children_privacy_protection,omitempty"`
 }
