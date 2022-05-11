@@ -1,4 +1,4 @@
-# LocalStoreLevel
+# TargetingSourceType
 
 ## Properties
 Name | Type | Description | Notes

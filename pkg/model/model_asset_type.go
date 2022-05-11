@@ -30,4 +30,5 @@ const (
 	AssetType_PROFILE                      AssetType = "ASSET_TYPE_PROFILE"
 	AssetType_LOCAL_STORE                  AssetType = "ASSET_TYPE_LOCAL_STORE"
 	AssetType_INTERACTIVE_PRIVATE_TEMPLATE AssetType = "ASSET_TYPE_INTERACTIVE_PRIVATE_TEMPLATE"
+	AssetType_UNION_APP_URL_CHANNEL        AssetType = "ASSET_TYPE_UNION_APP_URL_CHANNEL"
 )

@@ -11,17 +11,17 @@ package model
 
 // 返回结构
 type TargetingsGetListStruct struct {
-	TargetingId                   *int64                 `json:"targeting_id,omitempty"`
-	TargetingName                 *string                `json:"targeting_name,omitempty"`
-	IsIncludeUnsupportedTargeting *bool                  `json:"is_include_unsupported_targeting,omitempty"`
-	Description                   *string                `json:"description,omitempty"`
-	IsDeleted                     *bool                  `json:"is_deleted,omitempty"`
-	CreatedTime                   *int64                 `json:"created_time,omitempty"`
-	LastModifiedTime              *int64                 `json:"last_modified_time,omitempty"`
-	AdLockStatus                  AdLockStatus           `json:"ad_lock_status,omitempty"`
-	TargetingTranslation          *string                `json:"targeting_translation,omitempty"`
-	TargetingSourceType           TargetingPkgSourceType `json:"targeting_source_type,omitempty"`
-	ShareFromAccountId            *int64                 `json:"share_from_account_id,omitempty"`
-	ShareFromTargetingId          *int64                 `json:"share_from_targeting_id,omitempty"`
-	Targeting                     *ReadTargetingSetting  `json:"targeting,omitempty"`
+	TargetingId                   *int64                `json:"targeting_id,omitempty"`
+	TargetingName                 *string               `json:"targeting_name,omitempty"`
+	IsIncludeUnsupportedTargeting *bool                 `json:"is_include_unsupported_targeting,omitempty"`
+	Description                   *string               `json:"description,omitempty"`
+	IsDeleted                     *bool                 `json:"is_deleted,omitempty"`
+	CreatedTime                   *int64                `json:"created_time,omitempty"`
+	LastModifiedTime              *int64                `json:"last_modified_time,omitempty"`
+	AdLockStatus                  AdLockStatus          `json:"ad_lock_status,omitempty"`
+	TargetingTranslation          *string               `json:"targeting_translation,omitempty"`
+	TargetingSourceType           TargetingSourceType   `json:"targeting_source_type,omitempty"`
+	ShareFromAccountId            *int64                `json:"share_from_account_id,omitempty"`
+	ShareFromTargetingId          *int64                `json:"share_from_targeting_id,omitempty"`
+	Targeting                     *ReadTargetingSetting `json:"targeting,omitempty"`
 }

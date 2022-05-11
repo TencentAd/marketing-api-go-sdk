@@ -24,5 +24,4 @@ type LocalStoreBizInfoStructRsp struct {
 	FourthCategoryName *string                 `json:"fourth_category_name,omitempty"`
 	PeakPeriod         *[]PeakPeriod           `json:"peak_period,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
-	Level              LocalStoreLevel         `json:"level,omitempty"`
 }

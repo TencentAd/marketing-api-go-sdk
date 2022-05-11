@@ -21,4 +21,5 @@ const (
 	TaskScope_SCHEDULED_TASK TaskScope = "TASK_SCOPE_SCHEDULED_TASK"
 	TaskScope_AD             TaskScope = "TASK_SCOPE_AD"
 	TaskScope_ADCREATIVE     TaskScope = "TASK_SCOPE_ADCREATIVE"
+	TaskScope_PROJECT        TaskScope = "TASK_SCOPE_PROJECT"
 )

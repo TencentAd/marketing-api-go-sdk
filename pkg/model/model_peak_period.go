@@ -9,7 +9,7 @@
 
 package model
 
-// 门店高峰时间段
+// 门店高峰时间段信息结构
 type PeakPeriod struct {
 	TimeSeries *string                  `json:"time_series,omitempty"`
 	Date       LocalStorePeakPeriodDate `json:"date,omitempty"`

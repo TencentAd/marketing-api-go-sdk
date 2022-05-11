@@ -18,4 +18,5 @@ const (
 	EcoLocalBusinessMode_LEADS_COUPON      EcoLocalBusinessMode = "LOCAL_BUSINESS_MODE_LEADS_COUPON"
 	EcoLocalBusinessMode_LEADS_RESERVATION EcoLocalBusinessMode = "LOCAL_BUSINESS_MODE_LEADS_RESERVATION"
 	EcoLocalBusinessMode_SHOP_VOUCHER      EcoLocalBusinessMode = "LOCAL_BUSINESS_MODE_SHOP_VOUCHER"
+	EcoLocalBusinessMode_TAKEAWAY          EcoLocalBusinessMode = "LOCAL_BUSINESS_MODE_TAKEAWAY"
 )

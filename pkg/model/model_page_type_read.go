@@ -54,4 +54,5 @@ const (
 	PageTypeRead_WECHAT_VIDEO_TOPIC              PageTypeRead = "PAGE_TYPE_WECHAT_VIDEO_TOPIC"
 	PageTypeRead_ARTICAL_WECHAT                  PageTypeRead = "PAGE_TYPE_ARTICAL_WECHAT"
 	PageTypeRead_CHANNELS_HALF_CARD              PageTypeRead = "PAGE_TYPE_CHANNELS_HALF_CARD"
+	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
 )

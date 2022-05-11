@@ -245,7 +245,7 @@ LocalStoresApiService 查询门店信息
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -
+     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return LocalStoresGetResponse
 */
