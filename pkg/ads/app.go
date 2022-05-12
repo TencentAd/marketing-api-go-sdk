@@ -561,10 +561,6 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 	return c.Client.VideosApi
 }
 
-func (c *SDKClient) WechatAdFollowers() *api.WechatAdFollowersApiService {
-	return c.Client.WechatAdFollowersApi
-}
-
 func (c *SDKClient) WechatAdLabels() *api.WechatAdLabelsApiService {
 	return c.Client.WechatAdLabelsApi
 }

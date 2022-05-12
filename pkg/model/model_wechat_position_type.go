@@ -9,7 +9,7 @@
 
 package model
 
-// WechatPositionType : 微信广告位信息
+// WechatPositionType : 微信广告位
 type WechatPositionType string
 
 // List of WechatPositionType

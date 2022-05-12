@@ -322,8 +322,6 @@ type APIClient struct {
 
 	VideosApi *VideosApiService
 
-	WechatAdFollowersApi *WechatAdFollowersApiService
-
 	WechatAdLabelsApi *WechatAdLabelsApiService
 
 	WechatAdvertiserApi *WechatAdvertiserApiService
@@ -530,7 +528,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideomakerTasksApi = (*VideomakerTasksApiService)(&c.common)
 	c.VideomakerVideocapturesApi = (*VideomakerVideocapturesApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
-	c.WechatAdFollowersApi = (*WechatAdFollowersApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
 	c.WechatAdvertiserApi = (*WechatAdvertiserApiService)(&c.common)
 	c.WechatAdvertiserDetailApi = (*WechatAdvertiserDetailApiService)(&c.common)
