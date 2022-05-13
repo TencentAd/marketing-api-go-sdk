@@ -14,7 +14,7 @@ type LocalProfileType string
 
 // List of LocalProfileType
 const (
-	LocalProfileType_INVAILD    LocalProfileType = "LOCAL_PROFILE_TYPE_INVAILD"
 	LocalProfileType_DEFAULT    LocalProfileType = "LOCAL_PROFILE_TYPE_DEFAULT"
 	LocalProfileType_CUSTOMIZED LocalProfileType = "LOCAL_PROFILE_TYPE_CUSTOMIZED"
+	LocalProfileType_INVAILD    LocalProfileType = "LOCAL_PROFILE_TYPE_INVAILD"
 )

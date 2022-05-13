@@ -156,8 +156,6 @@ type APIClient struct {
 
 	DailyBalanceReportApi *DailyBalanceReportApiService
 
-	DailyCostApi *DailyCostApiService
-
 	DailyReportsApi *DailyReportsApiService
 
 	DiagnosisApi *DiagnosisApiService
@@ -324,17 +322,7 @@ type APIClient struct {
 
 	WechatAdLabelsApi *WechatAdLabelsApiService
 
-	WechatAdvertiserApi *WechatAdvertiserApiService
-
-	WechatAdvertiserDetailApi *WechatAdvertiserDetailApiService
-
 	WechatAdvertiserLocalBusinessApi *WechatAdvertiserLocalBusinessApiService
-
-	WechatAdvertiserSpecificationApi *WechatAdvertiserSpecificationApiService
-
-	WechatAgencyApi *WechatAgencyApiService
-
-	WechatDailyCostApi *WechatDailyCostApiService
 
 	WechatFundStatementsDetailedApi *WechatFundStatementsDetailedApiService
 
@@ -445,7 +433,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomTagFilesApi = (*CustomTagFilesApiService)(&c.common)
 	c.CustomTagsApi = (*CustomTagsApiService)(&c.common)
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
-	c.DailyCostApi = (*DailyCostApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
@@ -529,12 +516,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideomakerVideocapturesApi = (*VideomakerVideocapturesApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
-	c.WechatAdvertiserApi = (*WechatAdvertiserApiService)(&c.common)
-	c.WechatAdvertiserDetailApi = (*WechatAdvertiserDetailApiService)(&c.common)
 	c.WechatAdvertiserLocalBusinessApi = (*WechatAdvertiserLocalBusinessApiService)(&c.common)
-	c.WechatAdvertiserSpecificationApi = (*WechatAdvertiserSpecificationApiService)(&c.common)
-	c.WechatAgencyApi = (*WechatAgencyApiService)(&c.common)
-	c.WechatDailyCostApi = (*WechatDailyCostApiService)(&c.common)
 	c.WechatFundStatementsDetailedApi = (*WechatFundStatementsDetailedApiService)(&c.common)
 	c.WechatFundTransferApi = (*WechatFundTransferApiService)(&c.common)
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)

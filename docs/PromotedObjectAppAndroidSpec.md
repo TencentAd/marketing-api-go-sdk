@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **Packname** | **string** |  | [optional] [default to null]
 **Version** | **string** |  | [optional] [default to null]
 **Icon** | **string** |  | [optional] [default to null]
-**IconImageId** | **string** |  | [optional] [default to null]
 **AverageRating** | **string** |  | [optional] [default to null]
 **PackageSize** | **string** |  | [optional] [default to null]
 **Genres** | **[]string** |  | [optional] [default to null]

@@ -14,7 +14,6 @@ type PromotedObjectAppAndroidSpec struct {
 	Packname                  *string                     `json:"packname,omitempty"`
 	Version                   *string                     `json:"version,omitempty"`
 	Icon                      *string                     `json:"icon,omitempty"`
-	IconImageId               *string                     `json:"icon_image_id,omitempty"`
 	AverageRating             *string                     `json:"average_rating,omitempty"`
 	PackageSize               *string                     `json:"package_size,omitempty"`
 	Genres                    *[]string                   `json:"genres,omitempty"`

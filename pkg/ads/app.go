@@ -229,10 +229,6 @@ func (c *SDKClient) DailyBalanceReport() *api.DailyBalanceReportApiService {
 	return c.Client.DailyBalanceReportApi
 }
 
-func (c *SDKClient) DailyCost() *api.DailyCostApiService {
-	return c.Client.DailyCostApi
-}
-
 func (c *SDKClient) DailyReports() *api.DailyReportsApiService {
 	return c.Client.DailyReportsApi
 }
@@ -565,28 +561,8 @@ func (c *SDKClient) WechatAdLabels() *api.WechatAdLabelsApiService {
 	return c.Client.WechatAdLabelsApi
 }
 
-func (c *SDKClient) WechatAdvertiser() *api.WechatAdvertiserApiService {
-	return c.Client.WechatAdvertiserApi
-}
-
-func (c *SDKClient) WechatAdvertiserDetail() *api.WechatAdvertiserDetailApiService {
-	return c.Client.WechatAdvertiserDetailApi
-}
-
 func (c *SDKClient) WechatAdvertiserLocalBusiness() *api.WechatAdvertiserLocalBusinessApiService {
 	return c.Client.WechatAdvertiserLocalBusinessApi
-}
-
-func (c *SDKClient) WechatAdvertiserSpecification() *api.WechatAdvertiserSpecificationApiService {
-	return c.Client.WechatAdvertiserSpecificationApi
-}
-
-func (c *SDKClient) WechatAgency() *api.WechatAgencyApiService {
-	return c.Client.WechatAgencyApi
-}
-
-func (c *SDKClient) WechatDailyCost() *api.WechatDailyCostApiService {
-	return c.Client.WechatDailyCostApi
 }
 
 func (c *SDKClient) WechatFundStatementsDetailed() *api.WechatFundStatementsDetailedApiService {
