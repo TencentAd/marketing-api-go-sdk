@@ -11,7 +11,6 @@ package api
 
 import (
 	"context"
-	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	"io/ioutil"
@@ -25,58 +24,35 @@ var (
 	_ context.Context
 )
 
-type MergeFundTypeDailyBalanceReportApiService service
+type ProgrammedTemplateApiService service
 
 /*
-MergeFundTypeDailyBalanceReportApiService 获取资金合并类型资金账户日结明细
+ProgrammedTemplateApiService 获取模板列表接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param dateRange
- * @param optional nil or *MergeFundTypeDailyBalanceReportGetOpts - Optional Parameters:
-     * @param "Page" (optional.Int64) -
-     * @param "PageSize" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
-@return MergeFundTypeDailyBalanceReportGetResponse
+@return ProgrammedTemplateGetResponse
 */
-
-type MergeFundTypeDailyBalanceReportGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
-}
-
-func (a *MergeFundTypeDailyBalanceReportApiService) Get(ctx context.Context, accountId int64, dateRange DateRangeTransaction, localVarOptionals *MergeFundTypeDailyBalanceReportGetOpts) (MergeFundTypeDailyBalanceReportGetResponseData, http.Header, error) {
+func (a *ProgrammedTemplateApiService) Get(ctx context.Context, data ProgrammedTemplateGetRequest) (ProgrammedTemplateGetResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue MergeFundTypeDailyBalanceReportGetResponseData
-		localVarResponse    MergeFundTypeDailyBalanceReportGetResponse
+		localVarReturnValue ProgrammedTemplateGetResponseData
+		localVarResponse    ProgrammedTemplateGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/merge_fund_type_daily_balance_report/get"
+	localVarPath := a.client.Cfg.BasePath + "/programmed_template/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
-	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
-		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
-		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -92,6 +68,8 @@ func (a *MergeFundTypeDailyBalanceReportApiService) Get(ctx context.Context, acc
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -137,7 +115,7 @@ func (a *MergeFundTypeDailyBalanceReportApiService) Get(ctx context.Context, acc
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v MergeFundTypeDailyBalanceReportGetResponse
+			var v ProgrammedTemplateGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

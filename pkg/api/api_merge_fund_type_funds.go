@@ -28,7 +28,7 @@ var (
 type MergeFundTypeFundsApiService service
 
 /*
-MergeFundTypeFundsApiService 获取资金合并类资金账户信息
+MergeFundTypeFundsApiService 获取资金合并类型资金账户信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *MergeFundTypeFundsGetOpts - Optional Parameters:

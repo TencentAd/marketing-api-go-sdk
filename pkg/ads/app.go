@@ -433,6 +433,14 @@ func (c *SDKClient) Profiles() *api.ProfilesApiService {
 	return c.Client.ProfilesApi
 }
 
+func (c *SDKClient) Programmed() *api.ProgrammedApiService {
+	return c.Client.ProgrammedApi
+}
+
+func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
+	return c.Client.ProgrammedTemplateApi
+}
+
 func (c *SDKClient) PromotedObjects() *api.PromotedObjectsApiService {
 	return c.Client.PromotedObjectsApi
 }

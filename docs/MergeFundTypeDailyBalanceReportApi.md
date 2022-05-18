@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**MergeFundTypeDailyBalanceReportGet**](MergeFundTypeDailyBalanceReportApi.md#MergeFundTypeDailyBalanceReportGet) | **Get** /merge_fund_type_daily_balance_report/get | 获取资金合并类资金账户日结明细
+[**MergeFundTypeDailyBalanceReportGet**](MergeFundTypeDailyBalanceReportApi.md#MergeFundTypeDailyBalanceReportGet) | **Get** /merge_fund_type_daily_balance_report/get | 获取资金合并类型资金账户日结明细
 
 
 # **MergeFundTypeDailyBalanceReportGet**
 > MergeFundTypeDailyBalanceReportGetResponse MergeFundTypeDailyBalanceReportGet(ctx, accountId, dateRange, optional)
-获取资金合并类资金账户日结明细
+获取资金合并类型资金账户日结明细
 
 ### Required Parameters
 

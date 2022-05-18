@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**MergeFundTypeFundsGet**](MergeFundTypeFundsApi.md#MergeFundTypeFundsGet) | **Get** /merge_fund_type_funds/get | 获取资金合并类资金账户信息
+[**MergeFundTypeFundsGet**](MergeFundTypeFundsApi.md#MergeFundTypeFundsGet) | **Get** /merge_fund_type_funds/get | 获取资金合并类型资金账户信息
 
 
 # **MergeFundTypeFundsGet**
 > MergeFundTypeFundsGetResponse MergeFundTypeFundsGet(ctx, accountId, optional)
-获取资金合并类资金账户信息
+获取资金合并类型资金账户信息
 
 ### Required Parameters
 
