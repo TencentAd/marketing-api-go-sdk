@@ -75,4 +75,7 @@ const (
 	IntOptimizationGoal_CORE_ACTION                            IntOptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 	IntOptimizationGoal_ONE_DAY_RETENTION_RATIO                IntOptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 	IntOptimizationGoal_PROMOTION_READ_ARTICLE                 IntOptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE"
+	IntOptimizationGoal_RESERVATION_CHECK                      IntOptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION_CHECK"
+	IntOptimizationGoal_OPEN_ACCOUNT                           IntOptimizationGoal = "OPTIMIZATIONGOAL_OPEN_ACCOUNT"
+	IntOptimizationGoal_SEVEN_DAY_ECOMMERCE_ORDER              IntOptimizationGoal = "OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER"
 )

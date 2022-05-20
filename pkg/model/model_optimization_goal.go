@@ -82,4 +82,7 @@ const (
 	OptimizationGoal_CORE_ACTION                            OptimizationGoal = "OPTIMIZATIONGOAL_CORE_ACTION"
 	OptimizationGoal_ONE_DAY_RETENTION_RATIO                OptimizationGoal = "OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO"
 	OptimizationGoal_PROMOTION_READ_ARTICLE                 OptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE"
+	OptimizationGoal_RESERVATION_CHECK                      OptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION_CHECK"
+	OptimizationGoal_OPEN_ACCOUNT                           OptimizationGoal = "OPTIMIZATIONGOAL_OPEN_ACCOUNT"
+	OptimizationGoal_SEVEN_DAY_ECOMMERCE_ORDER              OptimizationGoal = "OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER"
 )
