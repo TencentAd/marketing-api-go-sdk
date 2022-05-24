@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **PackageSize** | **string** |  | [optional] [default to null]
 **Genres** | **[]string** |  | [optional] [default to null]
 **PackageDownloadUrl** | **string** |  | [optional] [default to null]
-**ChildrenPrivacyProtection** | [***ChildrenPrivacyProtection**](ChildrenPrivacyProtection.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

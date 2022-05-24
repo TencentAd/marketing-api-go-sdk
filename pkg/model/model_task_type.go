@@ -147,5 +147,6 @@ const (
 	TaskType_TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE"
 	TaskType_TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE"
 	TaskType_TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS                                  TaskType = "TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS"
+	TaskType_TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA                                   TaskType = "TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA"
 	TaskType_UNKNOWN                                                               TaskType = "UNKNOWN"
 )
