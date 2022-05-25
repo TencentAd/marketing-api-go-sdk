@@ -15,4 +15,6 @@ type ChannelPackageStruct struct {
 	PackageName                *string               `json:"package_name,omitempty"`
 	SystemStatus               UnionPackageSysStatus `json:"system_status,omitempty"`
 	PackageOriginUrl           *string               `json:"package_origin_url,omitempty"`
+	CreatedTime                *int64                `json:"created_time,omitempty"`
+	LastModifiedTime           *int64                `json:"last_modified_time,omitempty"`
 }
