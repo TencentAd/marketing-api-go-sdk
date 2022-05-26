@@ -595,6 +595,17 @@ Name | Type | Description | Notes
 **MiniGamePayD7PlaRoi** | **float64** |  | [optional] [default to null]
 **MiniGamePayD14PlaRoi** | **float64** |  | [optional] [default to null]
 **MiniGamePayD30PlaRoi** | **float64** |  | [optional] [default to null]
+**Minigame1dPayCount** | **int64** |  | [optional] [default to null]
+**Minigame3dIncomeUv** | **int64** |  | [optional] [default to null]
+**Minigame3dIncomeCount** | **int64** |  | [optional] [default to null]
+**Minigame7dIncomeUv** | **int64** |  | [optional] [default to null]
+**Minigame7dIncomeCount** | **int64** |  | [optional] [default to null]
+**Minigame3dIncomeRoi** | **float64** |  | [optional] [default to null]
+**Minigame7dIncomeRoi** | **float64** |  | [optional] [default to null]
+**Minigame24hPayUv** | **int64** |  | [optional] [default to null]
+**Minigame24hPayAmount** | **int64** |  | [optional] [default to null]
+**Minigame24hPayRoi** | **float64** |  | [optional] [default to null]
+**Minigame24hPayArpu** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

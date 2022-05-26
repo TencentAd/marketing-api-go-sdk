@@ -17,6 +17,7 @@ type XijingPageAddPagesStruct struct {
 	Clipboard         *string           `json:"clipboard,omitempty"`
 	PageDeeplink      *string           `json:"page_deeplink,omitempty"`
 	MobileAppId       *string           `json:"mobile_app_id,omitempty"`
+	FormId            *string           `json:"form_id,omitempty"`
 	PageTemplateId    *string           `json:"page_template_id,omitempty"`
 	ComponentSpecList *[]string         `json:"component_spec_list,omitempty"`
 }

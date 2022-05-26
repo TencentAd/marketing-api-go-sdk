@@ -585,6 +585,17 @@ type DailyReportsGetListStruct struct {
 	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
 	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
 	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
+	Minigame1dPayCount                         *int64   `json:"minigame_1d_pay_count,omitempty"`
+	Minigame3dIncomeUv                         *int64   `json:"minigame_3d_income_uv,omitempty"`
+	Minigame3dIncomeCount                      *int64   `json:"minigame_3d_income_count,omitempty"`
+	Minigame7dIncomeUv                         *int64   `json:"minigame_7d_income_uv,omitempty"`
+	Minigame7dIncomeCount                      *int64   `json:"minigame_7d_income_count,omitempty"`
+	Minigame3dIncomeRoi                        *float64 `json:"minigame_3d_income_roi,omitempty"`
+	Minigame7dIncomeRoi                        *float64 `json:"minigame_7d_income_roi,omitempty"`
+	Minigame24hPayUv                           *int64   `json:"minigame_24h_pay_uv,omitempty"`
+	Minigame24hPayAmount                       *int64   `json:"minigame_24h_pay_amount,omitempty"`
+	Minigame24hPayRoi                          *float64 `json:"minigame_24h_pay_roi,omitempty"`
+	Minigame24hPayArpu                         *int64   `json:"minigame_24h_pay_arpu,omitempty"`
 	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
 	CampaignName                               *string  `json:"campaign_name,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
