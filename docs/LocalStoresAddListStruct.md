@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **LocalStoreBusinessArea** | **string** |  | [optional] [default to null]
 **LocalStoreDistrict** | **string** |  | [optional] [default to null]
 **LocalStoreLocation** | [***LocalStoreLocation**](local_store_location.md) |  | [optional] [default to null]
+**LocalStoreRemark** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

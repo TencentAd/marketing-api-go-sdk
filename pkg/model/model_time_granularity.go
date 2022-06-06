@@ -16,6 +16,6 @@ type TimeGranularity string
 const (
 	TimeGranularity_DAILY   TimeGranularity = "DAILY"
 	TimeGranularity_HOURLY  TimeGranularity = "HOURLY"
-	TimeGranularity_SUMMARY TimeGranularity = "SUMMARY"
 	TimeGranularity_UNKNOWN TimeGranularity = "UNKNOWN"
+	TimeGranularity_SUMMARY TimeGranularity = "SUMMARY"
 )

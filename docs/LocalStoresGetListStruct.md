@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **LocalStoreDistrict** | **string** |  | [optional] [default to null]
 **LocalStoreStreet** | **string** |  | [optional] [default to null]
 **LocalStoreBusinessArea** | **string** |  | [optional] [default to null]
+**LocalStoreRemark** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

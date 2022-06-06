@@ -28,4 +28,5 @@ type LocalStoresGetListStruct struct {
 	LocalStoreDistrict      *string                     `json:"local_store_district,omitempty"`
 	LocalStoreStreet        *string                     `json:"local_store_street,omitempty"`
 	LocalStoreBusinessArea  *string                     `json:"local_store_business_area,omitempty"`
+	LocalStoreRemark        *string                     `json:"local_store_remark,omitempty"`
 }

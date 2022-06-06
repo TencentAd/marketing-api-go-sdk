@@ -62,5 +62,10 @@ const (
 	LinkUrlLinkNameType_MORE_ABOUT_OFFICIAL_ACCOUNT_CHT LinkUrlLinkNameType = "MORE_ABOUT_OFFICIAL_ACCOUNT_CHT"
 	LinkUrlLinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkUrlLinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
 	LinkUrlLinkNameType_GET_FOR_FREE                    LinkUrlLinkNameType = "GET_FOR_FREE"
+	LinkUrlLinkNameType_CARNIVAL_618                    LinkUrlLinkNameType = "CARNIVAL_618"
+	LinkUrlLinkNameType_SURPRISE_618                    LinkUrlLinkNameType = "SURPRISE_618"
+	LinkUrlLinkNameType_DISCOUNT_618                    LinkUrlLinkNameType = "DISCOUNT_618"
+	LinkUrlLinkNameType_GO_618_VENUE                    LinkUrlLinkNameType = "GO_618_VENUE"
+	LinkUrlLinkNameType_GET_618_WELFARE                 LinkUrlLinkNameType = "GET_618_WELFARE"
 	LinkUrlLinkNameType_WATCH_VIDEO                     LinkUrlLinkNameType = "WATCH_VIDEO"
 )

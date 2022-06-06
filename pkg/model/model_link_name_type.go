@@ -62,4 +62,9 @@ const (
 	LinkNameType_FOLLOW_OFFICIAL_ACCOUNT_CHT     LinkNameType = "FOLLOW_OFFICIAL_ACCOUNT_CHT"
 	LinkNameType_GET_FOR_FREE                    LinkNameType = "GET_FOR_FREE"
 	LinkNameType_WATCH_VIDEO                     LinkNameType = "WATCH_VIDEO"
+	LinkNameType_CARNIVAL_618                    LinkNameType = "CARNIVAL_618"
+	LinkNameType_SURPRISE_618                    LinkNameType = "SURPRISE_618"
+	LinkNameType_DISCOUNT_618                    LinkNameType = "DISCOUNT_618"
+	LinkNameType_GO_618_VENUE                    LinkNameType = "GO_618_VENUE"
+	LinkNameType_GET_618_WELFARE                 LinkNameType = "GET_618_WELFARE"
 )

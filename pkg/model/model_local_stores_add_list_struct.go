@@ -25,4 +25,5 @@ type LocalStoresAddListStruct struct {
 	LocalStoreBusinessArea  *string                     `json:"local_store_business_area,omitempty"`
 	LocalStoreDistrict      *string                     `json:"local_store_district,omitempty"`
 	LocalStoreLocation      *LocalStoreLocation         `json:"local_store_location,omitempty"`
+	LocalStoreRemark        *string                     `json:"local_store_remark,omitempty"`
 }

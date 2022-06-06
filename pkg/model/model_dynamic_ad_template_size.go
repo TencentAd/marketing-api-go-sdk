@@ -40,4 +40,5 @@ const (
 	DynamicAdTemplateSize_240180   DynamicAdTemplateSize = "SIZE_240_180"
 	DynamicAdTemplateSize_230152   DynamicAdTemplateSize = "SIZE_230_152"
 	DynamicAdTemplateSize_147147   DynamicAdTemplateSize = "SIZE_147_147"
+	DynamicAdTemplateSize_540276   DynamicAdTemplateSize = "SIZE_540_276"
 )
