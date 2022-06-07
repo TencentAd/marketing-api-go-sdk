@@ -56,4 +56,5 @@ const (
 	SiteSetDefinition_TENCENT_VIDEO_OTT    SiteSetDefinition = "SITE_SET_TENCENT_VIDEO_OTT"
 	SiteSetDefinition_CHANNELS             SiteSetDefinition = "SITE_SET_CHANNELS"
 	SiteSetDefinition_OVERSEAS_UNION       SiteSetDefinition = "SITE_SET_OVERSEAS_UNION"
+	SiteSetDefinition_WECHAT_SEARCH        SiteSetDefinition = "SITE_SET_WECHAT_SEARCH"
 )
