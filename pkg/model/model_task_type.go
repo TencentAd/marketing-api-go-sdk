@@ -48,6 +48,7 @@ const (
 	TaskType_TASK_TYPE_DOWNLOAD_OPERATION_LOG                                      TaskType = "TASK_TYPE_DOWNLOAD_OPERATION_LOG"
 	TaskType_TASK_TYPE_CAMPAIGN_DATA                                               TaskType = "TASK_TYPE_CAMPAIGN_DATA"
 	TaskType_TASK_TYPE_REVIEW_ELEMENT_PREREVIEW_RESULT                             TaskType = "TASK_TYPE_REVIEW_ELEMENT_PREREVIEW_RESULT"
+	TaskType_TASK_TYPE_INTEGRATED_DATA                                             TaskType = "TASK_TYPE_INTEGRATED_DATA"
 	TaskType_TASK_TYPE_BATCH_REQUEST                                               TaskType = "TASK_TYPE_BATCH_REQUEST"
 	TaskType_TASK_TYPE_CLICK_FORWARDED_DATA                                        TaskType = "TASK_TYPE_CLICK_FORWARDED_DATA"
 	TaskType_TASK_TYPE_ADP_OFFLINE_RPT                                             TaskType = "TASK_TYPE_ADP_OFFLINE_RPT"

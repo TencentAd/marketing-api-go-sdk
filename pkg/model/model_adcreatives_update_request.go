@@ -38,6 +38,8 @@ type AdcreativesUpdateRequest struct {
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       *string                       `json:"marketing_pendant_image_id,omitempty"`
 	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
+	HeadClickType                 HeadClickType                 `json:"head_click_type,omitempty"`
+	HeadClickSpec                 *HeadClickSpec                `json:"head_click_spec,omitempty"`
 	BarrageList                   *[]BarrageListCreateStruct    `json:"barrage_list,omitempty"`
 	DynamicAdcreativeSpec         *DynamicAdcreativeSpec        `json:"dynamic_adcreative_spec,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`

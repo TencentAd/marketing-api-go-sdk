@@ -52,6 +52,8 @@ type AdcreativesGetListStruct struct {
 	CountdownSwitch               *bool                             `json:"countdown_switch,omitempty"`
 	Source                        AdCreativeSource                  `json:"source,omitempty"`
 	PageTrackUrl                  *string                           `json:"page_track_url,omitempty"`
+	HeadClickType                 HeadClickType                     `json:"head_click_type,omitempty"`
+	HeadClickSpec                 *HeadClickSpec                    `json:"head_click_spec,omitempty"`
 	BarrageList                   *[]BarrageListReadStruct          `json:"barrage_list,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode                  `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset     *bool                             `json:"enable_breakthrough_siteset,omitempty"`

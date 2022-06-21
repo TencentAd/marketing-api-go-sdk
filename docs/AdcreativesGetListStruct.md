@@ -44,6 +44,8 @@ Name | Type | Description | Notes
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
 **Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
+**HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
+**HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 **BarrageList** | [**[]BarrageListReadStruct**](barrage_list_read_struct.md) |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]

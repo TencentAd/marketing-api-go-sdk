@@ -33,6 +33,8 @@ Name | Type | Description | Notes
 **CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **CreativeTemplateCategory** | **string** |  | [optional] [default to null]
+**HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
+**HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

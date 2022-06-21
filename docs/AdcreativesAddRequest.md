@@ -34,6 +34,8 @@ Name | Type | Description | Notes
 **FloatingZone** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **MarketingPendantImageId** | **string** |  | [optional] [default to null]
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
+**HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
+**HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **BarrageList** | [**[]BarrageListCreateStruct**](barrage_list_create_struct.md) |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]

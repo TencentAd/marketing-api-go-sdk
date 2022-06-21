@@ -41,6 +41,8 @@ type AdcreativesAddRequest struct {
 	FloatingZone                  *FloatingZone                 `json:"floating_zone,omitempty"`
 	MarketingPendantImageId       *string                       `json:"marketing_pendant_image_id,omitempty"`
 	CountdownSwitch               *bool                         `json:"countdown_switch,omitempty"`
+	HeadClickType                 HeadClickType                 `json:"head_click_type,omitempty"`
+	HeadClickSpec                 *HeadClickSpec                `json:"head_click_spec,omitempty"`
 	PageTrackUrl                  *string                       `json:"page_track_url,omitempty"`
 	BarrageList                   *[]BarrageListCreateStruct    `json:"barrage_list,omitempty"`
 	AppGiftPackCode               *AppGiftPackCode              `json:"app_gift_pack_code,omitempty"`
