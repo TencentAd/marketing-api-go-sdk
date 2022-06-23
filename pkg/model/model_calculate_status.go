@@ -55,6 +55,7 @@ const (
 	CalculateStatus_CAM_TOTAL_LIMIT         CalculateStatus = "CALCULATE_STATUS_CAM_TOTAL_LIMIT"
 	CalculateStatus_ACTIVE_LATEOFFLINE      CalculateStatus = "CALCULATE_STATUS_ACTIVE_LATEOFFLINE"
 	CalculateStatus_PART_ACTIVE_LATEOFFLINE CalculateStatus = "CALCULATE_STATUS_PART_ACTIVE_LATEOFFLINE"
+	CalculateStatus_TRACKING_URL_SUSPEND    CalculateStatus = "CALCULATE_STATUS_TRACKING_URL_SUSPEND"
 	CalculateStatus_ENABLE                  CalculateStatus = "CALCULATE_STATUS_ENABLE"
 	CalculateStatus_EXCLUDE_DEL             CalculateStatus = "CALCULATE_STATUS_EXCLUDE_DEL"
 	CalculateStatus_AD_PARTIAL_NORMAL       CalculateStatus = "CALCULATE_STATUS_AD_PARTIAL_NORMAL"

@@ -59,4 +59,5 @@ type AdcreativeCreativeElements struct {
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
+	SearchBrandArea            *SearchBrandAreaStruct             `json:"search_brand_area,omitempty"`
 }

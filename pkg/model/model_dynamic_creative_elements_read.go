@@ -85,4 +85,5 @@ type DynamicCreativeElementsRead struct {
 	FloatingZoneStruct         *FloatingZone                      `json:"floating_zone_struct,omitempty"`
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
+	SearchBrandArea            *SearchBrandAreaStruct             `json:"search_brand_area,omitempty"`
 }

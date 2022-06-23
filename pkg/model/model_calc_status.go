@@ -32,6 +32,7 @@ const (
 	CalcStatus_ACTIVE_AD_LIMIT         CalcStatus = "STATUS_ACTIVE_AD_LIMIT"
 	CalcStatus_PART_READY              CalcStatus = "STATUS_PART_READY"
 	CalcStatus_PART_ACTIVE             CalcStatus = "STATUS_PART_ACTIVE"
+	CalcStatus_TRACKING_URL_SUSPEND    CalcStatus = "STATUS_TRACKING_URL_SUSPEND"
 	CalcStatus_TO_LOCK_FLOW            CalcStatus = "STATUS_TO_LOCK_FLOW"
 	CalcStatus_LOCKING_FLOW            CalcStatus = "STATUS_LOCKING_FLOW"
 	CalcStatus_LOCK_FLOW_SUCCESS       CalcStatus = "STATUS_LOCK_FLOW_SUCCESS"
