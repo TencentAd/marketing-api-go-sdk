@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **VideoSpec** | [***VideoSpec**](video_spec.md) |  | [optional] [default to null]
 **TextSpec** | [***TextSpec**](text_spec.md) |  | [optional] [default to null]
 **AppDownloadSpec** | [***CanvasAppDownloadSpecType**](canvas_app_download_spec_type.md) |  | [optional] [default to null]
+**WeappSpec** | [***WeappSpec**](weapp_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

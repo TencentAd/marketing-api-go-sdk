@@ -22,4 +22,5 @@ const (
 	CanvasPageElementType_VIDEO        CanvasPageElementType = "VIDEO"
 	CanvasPageElementType_TEXT         CanvasPageElementType = "TEXT"
 	CanvasPageElementType_APP_DOWNLOAD CanvasPageElementType = "APP_DOWNLOAD"
+	CanvasPageElementType_WEAPP        CanvasPageElementType = "WEAPP"
 )

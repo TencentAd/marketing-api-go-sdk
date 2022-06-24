@@ -20,4 +20,5 @@ type PageElementsSpecListStruct struct {
 	VideoSpec       *VideoSpec                 `json:"video_spec,omitempty"`
 	TextSpec        *TextSpec                  `json:"text_spec,omitempty"`
 	AppDownloadSpec *CanvasAppDownloadSpecType `json:"app_download_spec,omitempty"`
+	WeappSpec       *WeappSpec                 `json:"weapp_spec,omitempty"`
 }
