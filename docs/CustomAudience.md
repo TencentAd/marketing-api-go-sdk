@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] [default to null]
 **Cooperated** | **bool** |  | [optional] [default to null]
 **Type_** | [***AudienceType**](AudienceType.md) |  | [optional] [default to null]
+**Source** | [***AudienceSource**](AudienceSource.md) |  | [optional] [default to null]
 **Status** | [***ProcessStatus**](ProcessStatus.md) |  | [optional] [default to null]
 **ErrorCode** | **int64** |  | [optional] [default to null]
 **UserCount** | **int64** |  | [optional] [default to null]

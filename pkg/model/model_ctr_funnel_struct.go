@@ -11,10 +11,10 @@ package model
 
 // 点击率分析
 type CtrFunnelStruct struct {
-	Value              *float64 `json:"value,omitempty"`
-	Score              *int64   `json:"score,omitempty"`
-	ScoreDesc          *string  `json:"score_desc,omitempty"`
-	RankCategory       *int64   `json:"rank_category,omitempty"`
-	RankSecondCategory *int64   `json:"rank_second_category,omitempty"`
-	RankOverall        *int64   `json:"rank_overall,omitempty"`
+	Value              *string `json:"value,omitempty"`
+	Score              *string `json:"score,omitempty"`
+	ScoreDesc          *string `json:"score_desc,omitempty"`
+	RankCategory       *string `json:"rank_category,omitempty"`
+	RankSecondCategory *string `json:"rank_second_category,omitempty"`
+	RankOverall        *string `json:"rank_overall,omitempty"`
 }

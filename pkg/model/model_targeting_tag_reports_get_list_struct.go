@@ -378,6 +378,10 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameAdMonetizationArpu                 *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
 	MiniGamePayingRoi                          *float64 `json:"mini_game_paying_roi,omitempty"`
 	MiniGamePayingArpu                         *int64   `json:"mini_game_paying_arpu,omitempty"`
+	ZoneHeaderClickCount                       *int64   `json:"zone_header_click_count,omitempty"`
+	BasicInfoClientCount                       *int64   `json:"basic_info_client_count,omitempty"`
+	AccountInfoClickCount                      *int64   `json:"account_info_click_count,omitempty"`
+	ActivityInfoClickCount                     *int64   `json:"activity_info_click_count,omitempty"`
 	MiniGameBfUv                               *int64   `json:"mini_game_bf_uv,omitempty"`
 	MiniGameBfCost                             *int64   `json:"mini_game_bf_cost,omitempty"`
 	MiniGameBfIncomeUv                         *int64   `json:"mini_game_bf_income_uv,omitempty"`
