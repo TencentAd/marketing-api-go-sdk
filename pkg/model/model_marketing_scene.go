@@ -9,7 +9,7 @@
 
 package model
 
-// MarketingScene : 营销场景
+// MarketingScene : 营销目标
 type MarketingScene string
 
 // List of MarketingScene
