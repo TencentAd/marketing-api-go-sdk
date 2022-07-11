@@ -37,7 +37,6 @@ const (
 	IntOptimizationGoal_MESSAGE_AFTER_FOLLOW                   IntOptimizationGoal = "OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW"
 	IntOptimizationGoal_CLICK_MENU_AFTER_FOLLOW                IntOptimizationGoal = "OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW"
 	IntOptimizationGoal_PAGE_EFFECTIVE_ONLINE_CONSULT          IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT"
-	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 	IntOptimizationGoal_CONFIRM_EFFECTIVE_LEADS_CONSULT        IntOptimizationGoal = "OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT"
 	IntOptimizationGoal_CONFIRM_EFFECTIVE_LEADS_PHONE          IntOptimizationGoal = "OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE"
 	IntOptimizationGoal_LEADS_COLLECT                          IntOptimizationGoal = "OPTIMIZATIONGOAL_LEADS_COLLECT"
@@ -78,4 +77,6 @@ const (
 	IntOptimizationGoal_RESERVATION_CHECK                      IntOptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION_CHECK"
 	IntOptimizationGoal_OPEN_ACCOUNT                           IntOptimizationGoal = "OPTIMIZATIONGOAL_OPEN_ACCOUNT"
 	IntOptimizationGoal_SEVEN_DAY_ECOMMERCE_ORDER              IntOptimizationGoal = "OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER"
+	IntOptimizationGoal_ADD_WECHAT                             IntOptimizationGoal = "OPTIMIZATIONGOAL_ADD_WECHAT"
+	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

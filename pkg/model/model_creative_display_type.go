@@ -9,7 +9,7 @@
 
 package model
 
-// CreativeDisplayType : 创意展示类型
+// CreativeDisplayType : 创意展示类型，不填该字段默认优选模式
 type CreativeDisplayType string
 
 // List of CreativeDisplayType

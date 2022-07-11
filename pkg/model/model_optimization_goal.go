@@ -37,7 +37,6 @@ const (
 	OptimizationGoal_MESSAGE_AFTER_FOLLOW                   OptimizationGoal = "OPTIMIZATIONGOAL_MESSAGE_AFTER_FOLLOW"
 	OptimizationGoal_CLICK_MENU_AFTER_FOLLOW                OptimizationGoal = "OPTIMIZATIONGOAL_CLICK_MENU_AFTER_FOLLOW"
 	OptimizationGoal_PAGE_EFFECTIVE_ONLINE_CONSULT          OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_ONLINE_CONSULT"
-	OptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 	OptimizationGoal_CLICK_KEY_PAGE                         OptimizationGoal = "OPTIMIZATIONGOAL_CLICK_KEY_PAGE"
 	OptimizationGoal_MOBILE_APP_START                       OptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_START"
 	OptimizationGoal_PAGE_DELIVER                           OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_DELIVER"
@@ -45,6 +44,7 @@ const (
 	OptimizationGoal_PAGE_ONLINE_CONSULT                    OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT"
 	OptimizationGoal_MOBILE_APP_CHECKOUT                    OptimizationGoal = "OPTIMIZATIONGOAL_MOBILE_APP_CHECKOUT"
 	OptimizationGoal_APP_INSTALL                            OptimizationGoal = "OPTIMIZATIONGOAL_APP_INSTALL"
+	OptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 	OptimizationGoal_CONFIRM_EFFECTIVE_LEADS_CONSULT        OptimizationGoal = "OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_CONSULT"
 	OptimizationGoal_CONFIRM_EFFECTIVE_LEADS_PHONE          OptimizationGoal = "OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_PHONE"
 	OptimizationGoal_LEADS_COLLECT                          OptimizationGoal = "OPTIMIZATIONGOAL_LEADS_COLLECT"
@@ -85,4 +85,5 @@ const (
 	OptimizationGoal_RESERVATION_CHECK                      OptimizationGoal = "OPTIMIZATIONGOAL_RESERVATION_CHECK"
 	OptimizationGoal_OPEN_ACCOUNT                           OptimizationGoal = "OPTIMIZATIONGOAL_OPEN_ACCOUNT"
 	OptimizationGoal_SEVEN_DAY_ECOMMERCE_ORDER              OptimizationGoal = "OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER"
+	OptimizationGoal_ADD_WECHAT                             OptimizationGoal = "OPTIMIZATIONGOAL_ADD_WECHAT"
 )
