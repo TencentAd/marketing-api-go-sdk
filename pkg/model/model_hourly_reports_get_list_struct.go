@@ -479,6 +479,16 @@ type HourlyReportsGetListStruct struct {
 	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
 	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
 	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
+	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
+	LiveStreamCommodityShopListExpPv           *int64   `json:"live_stream_commodity_shop_list_exp_pv,omitempty"`
+	LiveStreamCommodityBubbleClkPv             *int64   `json:"live_stream_commodity_bubble_clk_pv,omitempty"`
+	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
+	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
+	BizPreCreditPv                             *int64   `json:"biz_pre_credit_pv,omitempty"`
+	BizPreCreditUv                             *int64   `json:"biz_pre_credit_uv,omitempty"`
+	BizPreCreditUvCost                         *int64   `json:"biz_pre_credit_uv_cost,omitempty"`
+	BizWithdrawDepositsUv                      *int64   `json:"biz_withdraw_deposits_uv,omitempty"`
+	BizWithdrawDepositsUvCost                  *int64   `json:"biz_withdraw_deposits_uv_cost,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
