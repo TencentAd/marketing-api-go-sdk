@@ -26,7 +26,6 @@ type AdcreativeTemplateGetExample struct {
 	AccessToken               string
 	AccountId                 int64
 	PromotedObjectType        string
-	AdcreativeTemplateId      int64
 	AdcreativeTemplateGetOpts *api.AdcreativeTemplateGetOpts
 }
 
@@ -38,7 +37,6 @@ func (e *AdcreativeTemplateGetExample) Init() {
 	})
 	e.AccountId = 789
 	e.PromotedObjectType = "promotedObjectType_example"
-	e.AdcreativeTemplateId = 789
 	e.AdcreativeTemplateGetOpts = &api.AdcreativeTemplateGetOpts{}
 }
 
@@ -46,7 +44,7 @@ func (e *AdcreativeTemplateGetExample) RunExample() (model.AdcreativeTemplateGet
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AdcreativeTemplate().Get(ctx, e.AccountId, e.PromotedObjectType, e.AdcreativeTemplateId, e.AdcreativeTemplateGetOpts)
+	return tads.AdcreativeTemplate().Get(ctx, e.AccountId, e.PromotedObjectType, e.AdcreativeTemplateGetOpts)
 }
 
 func main() {

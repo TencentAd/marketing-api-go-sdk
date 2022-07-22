@@ -11,14 +11,16 @@ package model
 
 // 页面组件列表, 页面顺序与生成的原生页的顺序一致
 type PageElementsSpecListStruct struct {
-	ElementType     CanvasPageElementType      `json:"element_type,omitempty"`
-	TopImageSpec    *TopImageSpec              `json:"top_image_spec,omitempty"`
-	TopSliderSpec   *TopSliderSpec             `json:"top_slider_spec,omitempty"`
-	TopVideoSpec    *TopVideoSpec              `json:"top_video_spec,omitempty"`
-	ImageSpec       *ImageSpec                 `json:"image_spec,omitempty"`
-	SliderSpec      *SliderSpec                `json:"slider_spec,omitempty"`
-	VideoSpec       *VideoSpec                 `json:"video_spec,omitempty"`
-	TextSpec        *TextSpec                  `json:"text_spec,omitempty"`
-	AppDownloadSpec *CanvasAppDownloadSpecType `json:"app_download_spec,omitempty"`
-	WeappSpec       *WeappSpec                 `json:"weapp_spec,omitempty"`
+	ElementType      CanvasPageElementType      `json:"element_type,omitempty"`
+	TopImageSpec     *TopImageSpec              `json:"top_image_spec,omitempty"`
+	TopSliderSpec    *TopSliderSpec             `json:"top_slider_spec,omitempty"`
+	TopVideoSpec     *TopVideoSpec              `json:"top_video_spec,omitempty"`
+	ImageSpec        *ImageSpec                 `json:"image_spec,omitempty"`
+	SliderSpec       *SliderSpec                `json:"slider_spec,omitempty"`
+	VideoSpec        *VideoSpec                 `json:"video_spec,omitempty"`
+	TextSpec         *TextSpec                  `json:"text_spec,omitempty"`
+	AppDownloadSpec  *CanvasAppDownloadSpecType `json:"app_download_spec,omitempty"`
+	WeappSpec        *WeappSpec                 `json:"weapp_spec,omitempty"`
+	GhSpec           *GhSpec                    `json:"gh_spec,omitempty"`
+	EnterpriseWxSpec *EnterpriseWxSpec          `json:"enterprise_wx_spec,omitempty"`
 }

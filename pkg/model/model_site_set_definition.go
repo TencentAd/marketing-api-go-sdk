@@ -57,4 +57,5 @@ const (
 	SiteSetDefinition_CHANNELS             SiteSetDefinition = "SITE_SET_CHANNELS"
 	SiteSetDefinition_OVERSEAS_UNION       SiteSetDefinition = "SITE_SET_OVERSEAS_UNION"
 	SiteSetDefinition_WECHAT_SEARCH        SiteSetDefinition = "SITE_SET_WECHAT_SEARCH"
+	SiteSetDefinition_WECHAT_PLUGIN        SiteSetDefinition = "SITE_SET_WECHAT_PLUGIN"
 )

@@ -14,13 +14,15 @@ type CanvasPageElementType string
 
 // List of CanvasPageElementType
 const (
-	CanvasPageElementType_TOP_IMAGE    CanvasPageElementType = "TOP_IMAGE"
-	CanvasPageElementType_TOP_SLIDER   CanvasPageElementType = "TOP_SLIDER"
-	CanvasPageElementType_TOP_VIDEO    CanvasPageElementType = "TOP_VIDEO"
-	CanvasPageElementType_IMAGE        CanvasPageElementType = "IMAGE"
-	CanvasPageElementType_SLIDER       CanvasPageElementType = "SLIDER"
-	CanvasPageElementType_VIDEO        CanvasPageElementType = "VIDEO"
-	CanvasPageElementType_TEXT         CanvasPageElementType = "TEXT"
-	CanvasPageElementType_APP_DOWNLOAD CanvasPageElementType = "APP_DOWNLOAD"
-	CanvasPageElementType_WEAPP        CanvasPageElementType = "WEAPP"
+	CanvasPageElementType_TOP_IMAGE     CanvasPageElementType = "TOP_IMAGE"
+	CanvasPageElementType_TOP_SLIDER    CanvasPageElementType = "TOP_SLIDER"
+	CanvasPageElementType_TOP_VIDEO     CanvasPageElementType = "TOP_VIDEO"
+	CanvasPageElementType_IMAGE         CanvasPageElementType = "IMAGE"
+	CanvasPageElementType_SLIDER        CanvasPageElementType = "SLIDER"
+	CanvasPageElementType_VIDEO         CanvasPageElementType = "VIDEO"
+	CanvasPageElementType_TEXT          CanvasPageElementType = "TEXT"
+	CanvasPageElementType_APP_DOWNLOAD  CanvasPageElementType = "APP_DOWNLOAD"
+	CanvasPageElementType_WEAPP         CanvasPageElementType = "WEAPP"
+	CanvasPageElementType_GH            CanvasPageElementType = "GH"
+	CanvasPageElementType_ENTERPRISE_WX CanvasPageElementType = "ENTERPRISE_WX"
 )

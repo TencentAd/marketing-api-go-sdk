@@ -32,11 +32,12 @@ AdcreativeTemplateApiService 获取创意规格详情
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param promotedObjectType
- * @param adcreativeTemplateId
  * @param optional nil or *AdcreativeTemplateGetOpts - Optional Parameters:
      * @param "SiteSet" (optional.Interface of []string) -
      * @param "AutomaticSiteEnabled" (optional.Bool) -
      * @param "IsDynamicCreative" (optional.Bool) -
+     * @param "AdcreativeTemplateId" (optional.Int64) -
+     * @param "DynamicCreativeType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdcreativeTemplateGetResponse
@@ -46,10 +47,12 @@ type AdcreativeTemplateGetOpts struct {
 	SiteSet              optional.Interface
 	AutomaticSiteEnabled optional.Bool
 	IsDynamicCreative    optional.Bool
+	AdcreativeTemplateId optional.Int64
+	DynamicCreativeType  optional.String
 	Fields               optional.Interface
 }
 
-func (a *AdcreativeTemplateApiService) Get(ctx context.Context, accountId int64, promotedObjectType string, adcreativeTemplateId int64, localVarOptionals *AdcreativeTemplateGetOpts) (AdcreativeTemplateGetResponseData, http.Header, error) {
+func (a *AdcreativeTemplateApiService) Get(ctx context.Context, accountId int64, promotedObjectType string, localVarOptionals *AdcreativeTemplateGetOpts) (AdcreativeTemplateGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -78,7 +81,12 @@ func (a *AdcreativeTemplateApiService) Get(ctx context.Context, accountId int64,
 	if localVarOptionals != nil && localVarOptionals.IsDynamicCreative.IsSet() {
 		localVarQueryParams.Add("is_dynamic_creative", parameterToString(localVarOptionals.IsDynamicCreative.Value(), ""))
 	}
-	localVarQueryParams.Add("adcreative_template_id", parameterToString(adcreativeTemplateId, ""))
+	if localVarOptionals != nil && localVarOptionals.AdcreativeTemplateId.IsSet() {
+		localVarQueryParams.Add("adcreative_template_id", parameterToString(localVarOptionals.AdcreativeTemplateId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.DynamicCreativeType.IsSet() {
+		localVarQueryParams.Add("dynamic_creative_type", parameterToString(localVarOptionals.DynamicCreativeType.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

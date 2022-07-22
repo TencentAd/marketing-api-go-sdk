@@ -135,6 +135,7 @@ WechatPagesCsgrouplistApiService 获取企业微信客服组列表
  * @param optional nil or *WechatPagesCsgrouplistGetOpts - Optional Parameters:
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "CropId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatPagesCsgrouplistGetResponse
@@ -143,6 +144,7 @@ WechatPagesCsgrouplistApiService 获取企业微信客服组列表
 type WechatPagesCsgrouplistGetOpts struct {
 	Page     optional.Int64
 	PageSize optional.Int64
+	CropId   optional.String
 	Fields   optional.Interface
 }
 
@@ -170,6 +172,9 @@ func (a *WechatPagesCsgrouplistApiService) Get(ctx context.Context, accountId in
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.CropId.IsSet() {
+		localVarQueryParams.Add("crop_id", parameterToString(localVarOptionals.CropId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

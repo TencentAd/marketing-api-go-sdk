@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AdcreativeTemplateGet**
-> AdcreativeTemplateGetResponse AdcreativeTemplateGet(ctx, accountId, promotedObjectType, adcreativeTemplateId, optional)
+> AdcreativeTemplateGetResponse AdcreativeTemplateGet(ctx, accountId, promotedObjectType, optional)
 获取创意规格详情
 
 ### Required Parameters
@@ -18,7 +18,6 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
   **promotedObjectType** | **string**|  | 
-  **adcreativeTemplateId** | **int64**|  | 
  **optional** | ***AdcreativeTemplateApiAdcreativeTemplateGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -28,10 +27,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
  **siteSet** | [**optional.Interface of []string**](string.md)|  | 
  **automaticSiteEnabled** | **optional.Bool**|  | 
  **isDynamicCreative** | **optional.Bool**|  | 
+ **adcreativeTemplateId** | **optional.Int64**|  | 
+ **dynamicCreativeType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
