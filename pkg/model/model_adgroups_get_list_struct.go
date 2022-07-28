@@ -75,4 +75,5 @@ type AdgroupsGetListStruct struct {
 	SmartTargeting                    *SmartTargeting                 `json:"smart_targeting,omitempty"`
 	DynamicCreativeIdSet              *[]int64                        `json:"dynamic_creative_id_set,omitempty"`
 	SystemStatusExplanation           *string                         `json:"system_status_explanation,omitempty"`
+	AutoDerivedLandingPageSwitch      *bool                           `json:"auto_derived_landing_page_switch,omitempty"`
 }

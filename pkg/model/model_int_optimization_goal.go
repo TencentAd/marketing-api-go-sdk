@@ -78,5 +78,6 @@ const (
 	IntOptimizationGoal_OPEN_ACCOUNT                           IntOptimizationGoal = "OPTIMIZATIONGOAL_OPEN_ACCOUNT"
 	IntOptimizationGoal_SEVEN_DAY_ECOMMERCE_ORDER              IntOptimizationGoal = "OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER"
 	IntOptimizationGoal_ADD_WECHAT                             IntOptimizationGoal = "OPTIMIZATIONGOAL_ADD_WECHAT"
+	IntOptimizationGoal_WECOM_CONSULT                          IntOptimizationGoal = "OPTIMIZATIONGOAL_WECOM_CONSULT"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

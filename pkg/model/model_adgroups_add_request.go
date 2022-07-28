@@ -58,5 +58,6 @@ type AdgroupsAddRequest struct {
 	CustomAdgroupTag                *[]string                        `json:"custom_adgroup_tag,omitempty"`
 	SmartTargeting                  *SmartTargeting                  `json:"smart_targeting,omitempty"`
 	DynamicCreativeIdSet            *[]int64                         `json:"dynamic_creative_id_set,omitempty"`
+	AutoDerivedLandingPageSwitch    *bool                            `json:"auto_derived_landing_page_switch,omitempty"`
 	AccountId                       *int64                           `json:"account_id,omitempty"`
 }

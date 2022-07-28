@@ -13,5 +13,6 @@ type ProgrammedAddRequest struct {
 	AccountId                        *int64                       `json:"account_id,omitempty"`
 	AdMetadata                       *AdMetadataStruct            `json:"ad_metadata,omitempty"`
 	AutoDerivedProgramCreativeSwitch *bool                        `json:"auto_derived_program_creative_switch,omitempty"`
+	StandardSwitch                   *bool                        `json:"standard_switch,omitempty"`
 	CreateMaterialGroups             *[]MaterialGroupCreateStruct `json:"create_material_groups,omitempty"`
 }

@@ -11,7 +11,9 @@ package model
 
 // 素材信息
 type MaterialStruct struct {
-	Type_        MaterialTypeEnum `json:"type,omitempty"`
-	MediaId      *string          `json:"media_id,omitempty"`
-	MaterialName *string          `json:"material_name,omitempty"`
+	Type_         MaterialTypeEnum `json:"type,omitempty"`
+	MediaId       *string          `json:"media_id,omitempty"`
+	MaterialName  *string          `json:"material_name,omitempty"`
+	OriginMediaId *string          `json:"origin_media_id,omitempty"`
+	Url           *string          `json:"url,omitempty"`
 }

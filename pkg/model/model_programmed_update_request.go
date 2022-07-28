@@ -13,5 +13,6 @@ type ProgrammedUpdateRequest struct {
 	AccountId                        *int64                       `json:"account_id,omitempty"`
 	MaterialDeriveId                 *int64                       `json:"material_derive_id,omitempty"`
 	AutoDerivedProgramCreativeSwitch *bool                        `json:"auto_derived_program_creative_switch,omitempty"`
+	StandardSwitch                   *bool                        `json:"standard_switch,omitempty"`
 	UpdateMaterialGroups             *[]MaterialGroupUpdateStruct `json:"update_material_groups,omitempty"`
 }
