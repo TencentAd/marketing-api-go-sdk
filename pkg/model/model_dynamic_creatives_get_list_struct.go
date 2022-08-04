@@ -41,6 +41,8 @@ type DynamicCreativesGetListStruct struct {
 	CreativeTemplateVersionType CreativeTemplateVersionType  `json:"creative_template_version_type,omitempty"`
 	UnionMarketSpec             *UnionMarketSpec             `json:"union_market_spec,omitempty"`
 	CreativeTemplateCategory    *string                      `json:"creative_template_category,omitempty"`
+	ProgramCreativeInfo         *ProgramCreativeInfo         `json:"program_creative_info,omitempty"`
+	DynamicCreativeType         DynamicCreativeType          `json:"dynamic_creative_type,omitempty"`
 	HeadClickType               HeadClickType                `json:"head_click_type,omitempty"`
 	HeadClickSpec               *HeadClickSpec               `json:"head_click_spec,omitempty"`
 }

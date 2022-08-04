@@ -26,6 +26,8 @@ Name | Type | Description | Notes
 **PageName** | **string** |  | [optional] [default to null]
 **PageUrl** | **string** |  | [optional] [default to null]
 **LeadsType** | [***LeadCluesLeadsType**](LeadCluesLeadsType.md) |  | [optional] [default to null]
+**LeadsSubType** | **string** |  | [optional] [default to null]
+**ChatId** | **string** |  | [optional] [default to null]
 **LeadsSource** | **string** |  | [optional] [default to null]
 **LeadsPotentialScore** | **string** |  | [optional] [default to null]
 **LeadsFollowTag** | **string** |  | [optional] [default to null]
@@ -55,6 +57,14 @@ Name | Type | Description | Notes
 **LeadsTags** | **string** |  | [optional] [default to null]
 **ShopName** | **string** |  | [optional] [default to null]
 **ShopAddress** | **string** |  | [optional] [default to null]
+**CallMiddleNum** | **string** |  | [optional] [default to null]
+**CallConsumerHotline** | **string** |  | [optional] [default to null]
+**CallTouchTag** | **string** |  | [optional] [default to null]
+**CallDuration** | **string** |  | [optional] [default to null]
+**CallRecordUrl** | **string** |  | [optional] [default to null]
+**LayerFormContent** | **string** |  | [optional] [default to null]
+**NickName** | **string** |  | [optional] [default to null]
+**IsBroadCastLeads** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

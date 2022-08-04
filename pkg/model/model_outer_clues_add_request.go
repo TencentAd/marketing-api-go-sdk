@@ -10,7 +10,8 @@
 package model
 
 type OuterCluesAddRequest struct {
-	AccountId     *int64                   `json:"account_id,omitempty"`
-	MatchType     LeadsMatchType           `json:"match_type,omitempty"`
-	LeadsInfoList *[]LeadsImportInfoStruct `json:"leads_info_list,omitempty"`
+	AccountId      *int64                   `json:"account_id,omitempty"`
+	MatchType      LeadsMatchType           `json:"match_type,omitempty"`
+	LeadsInfoList  *[]LeadsImportInfoStruct `json:"leads_info_list,omitempty"`
+	CustomizedTags *[]CustomizedTagsStruct  `json:"customized_tags,omitempty"`
 }

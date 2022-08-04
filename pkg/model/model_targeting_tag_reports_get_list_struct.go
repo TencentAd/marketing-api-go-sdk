@@ -476,6 +476,18 @@ type TargetingTagReportsGetListStruct struct {
 	BizPreCreditUvCost                         *int64   `json:"biz_pre_credit_uv_cost,omitempty"`
 	BizWithdrawDepositsUv                      *int64   `json:"biz_withdraw_deposits_uv,omitempty"`
 	BizWithdrawDepositsUvCost                  *int64   `json:"biz_withdraw_deposits_uv_cost,omitempty"`
+	CheoutPv1d                                 *int64   `json:"cheout_pv_1d,omitempty"`
+	CheoutPv3d                                 *int64   `json:"cheout_pv_3d,omitempty"`
+	CheoutPv5d                                 *int64   `json:"cheout_pv_5d,omitempty"`
+	CheoutPv7d                                 *int64   `json:"cheout_pv_7d,omitempty"`
+	Cheout1dCost                               *int64   `json:"cheout_1d_cost,omitempty"`
+	Cheout3dCost                               *int64   `json:"cheout_3d_cost,omitempty"`
+	Cheout5dCost                               *int64   `json:"cheout_5d_cost,omitempty"`
+	Cheout7dCost                               *int64   `json:"cheout_7d_cost,omitempty"`
+	Cheout1dRate                               *float64 `json:"cheout_1d_rate,omitempty"`
+	Cheout3dRate                               *float64 `json:"cheout_3d_rate,omitempty"`
+	Cheout5dRate                               *float64 `json:"cheout_5d_rate,omitempty"`
+	Cheout7dRate                               *float64 `json:"cheout_7d_rate,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`

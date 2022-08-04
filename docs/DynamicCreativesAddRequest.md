@@ -42,6 +42,8 @@ Name | Type | Description | Notes
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
+**ProgramCreativeInfo** | [***ProgramCreativeInfo**](program_creative_info.md) |  | [optional] [default to null]
+**DynamicCreativeType** | [***DynamicCreativeType**](DynamicCreativeType.md) |  | [optional] [default to null]
 **HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
 **HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]

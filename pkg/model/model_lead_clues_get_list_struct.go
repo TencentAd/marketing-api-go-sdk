@@ -34,6 +34,8 @@ type LeadCluesGetListStruct struct {
 	PageName                 *string             `json:"page_name,omitempty"`
 	PageUrl                  *string             `json:"page_url,omitempty"`
 	LeadsType                LeadCluesLeadsType  `json:"leads_type,omitempty"`
+	LeadsSubType             *string             `json:"leads_sub_type,omitempty"`
+	ChatId                   *string             `json:"chat_id,omitempty"`
 	LeadsSource              *string             `json:"leads_source,omitempty"`
 	LeadsPotentialScore      *string             `json:"leads_potential_score,omitempty"`
 	LeadsFollowTag           *string             `json:"leads_follow_tag,omitempty"`
@@ -63,4 +65,12 @@ type LeadCluesGetListStruct struct {
 	LeadsTags                *string             `json:"leads_tags,omitempty"`
 	ShopName                 *string             `json:"shop_name,omitempty"`
 	ShopAddress              *string             `json:"shop_address,omitempty"`
+	CallMiddleNum            *string             `json:"call_middle_num,omitempty"`
+	CallConsumerHotline      *string             `json:"call_consumer_hotline,omitempty"`
+	CallTouchTag             *string             `json:"call_touch_tag,omitempty"`
+	CallDuration             *string             `json:"call_duration,omitempty"`
+	CallRecordUrl            *string             `json:"call_record_url,omitempty"`
+	LayerFormContent         *string             `json:"layer_form_content,omitempty"`
+	NickName                 *string             `json:"nick_name,omitempty"`
+	IsBroadCastLeads         *string             `json:"is_broad_cast_leads,omitempty"`
 }

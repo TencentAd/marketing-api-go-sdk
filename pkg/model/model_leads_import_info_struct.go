@@ -21,6 +21,7 @@ type LeadsImportInfoStruct struct {
 	LeadsUserId              *string             `json:"leads_user_id,omitempty"`
 	LeadsUserType            LeadsUserType       `json:"leads_user_type,omitempty"`
 	LeadsUserWechatAppid     *string             `json:"leads_user_wechat_appid,omitempty"`
+	LeadsActionTime          *string             `json:"leads_action_time,omitempty"`
 	LeadsName                *string             `json:"leads_name,omitempty"`
 	LeadsGender              LeadCluesGenderType `json:"leads_gender,omitempty"`
 	LeadsEmail               *string             `json:"leads_email,omitempty"`
@@ -30,4 +31,15 @@ type LeadsImportInfoStruct struct {
 	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
 	OuterLeadsComefrom       ActionChannelType   `json:"outer_leads_comefrom,omitempty"`
 	Memo                     *string             `json:"memo,omitempty"`
+	WechatAgencyId           *string             `json:"wechat_agency_id,omitempty"`
+	LeadsAge                 *string             `json:"leads_age,omitempty"`
+	LeadsIdNumber            *string             `json:"leads_id_number,omitempty"`
+	LeadsNationality         *string             `json:"leads_nationality,omitempty"`
+	LeadsAddress             *string             `json:"leads_address,omitempty"`
+	LeadsCompany             *string             `json:"leads_company,omitempty"`
+	LeadsProfession          *string             `json:"leads_profession,omitempty"`
+	LeadsWorkingYears        *string             `json:"leads_working_years,omitempty"`
+	LeadsPageId              *string             `json:"leads_page_id,omitempty"`
+	LeadsPageName            *string             `json:"leads_page_name,omitempty"`
+	LeadsPageUrl             *string             `json:"leads_page_url,omitempty"`
 }
