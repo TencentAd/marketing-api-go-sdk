@@ -39,15 +39,21 @@ ImagesApiService 添加图片文件
      * @param "Bytes" (optional.String) -
      * @param "ImageUsage" (optional.String) -
      * @param "Description" (optional.String) -
+     * @param "ResizeWidth" (optional.Int64) -
+     * @param "ResizeHeight" (optional.Int64) -
+     * @param "ResizeFileSize" (optional.Int64) -
 
 @return ImagesAddResponse
 */
 
 type ImagesAddOpts struct {
-	File        optional.Interface
-	Bytes       optional.String
-	ImageUsage  optional.String
-	Description optional.String
+	File           optional.Interface
+	Bytes          optional.String
+	ImageUsage     optional.String
+	Description    optional.String
+	ResizeWidth    optional.Int64
+	ResizeHeight   optional.Int64
+	ResizeFileSize optional.Int64
 }
 
 func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType string, signature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
@@ -118,6 +124,15 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 	}
 	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
 		localVarFormParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeWidth.IsSet() {
+		localVarFormParams.Add("resize_width", parameterToString(localVarOptionals.ResizeWidth.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeHeight.IsSet() {
+		localVarFormParams.Add("resize_height", parameterToString(localVarOptionals.ResizeHeight.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeFileSize.IsSet() {
+		localVarFormParams.Add("resize_file_size", parameterToString(localVarOptionals.ResizeFileSize.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {

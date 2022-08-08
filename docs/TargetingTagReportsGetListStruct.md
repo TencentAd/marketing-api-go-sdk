@@ -297,6 +297,7 @@ Name | Type | Description | Notes
 **VideoOuterPlay25Count** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay50Count** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay75Count** | **int64** |  | [optional] [default to null]
+**VideoOuterPlay90Count** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay95Count** | **int64** |  | [optional] [default to null]
 **VideoOuterPlay100Count** | **int64** |  | [optional] [default to null]
 **VideoOuterPlayTimeCount** | **float64** |  | [optional] [default to null]

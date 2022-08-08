@@ -305,6 +305,7 @@ type TargetingTagReportsGetListStruct struct {
 	VideoOuterPlay25Count                      *int64   `json:"video_outer_play25_count,omitempty"`
 	VideoOuterPlay50Count                      *int64   `json:"video_outer_play50_count,omitempty"`
 	VideoOuterPlay75Count                      *int64   `json:"video_outer_play75_count,omitempty"`
+	VideoOuterPlay90Count                      *int64   `json:"video_outer_play90_count,omitempty"`
 	VideoOuterPlay95Count                      *int64   `json:"video_outer_play95_count,omitempty"`
 	VideoOuterPlay100Count                     *int64   `json:"video_outer_play100_count,omitempty"`
 	VideoOuterPlayTimeCount                    *float64 `json:"video_outer_play_time_count,omitempty"`

@@ -36,6 +36,9 @@ Name | Type | Description  | Notes
  **bytes** | **optional.String**|  | 
  **imageUsage** | **optional.String**|  | 
  **description** | **optional.String**|  | 
+ **resizeWidth** | **optional.Int64**|  | 
+ **resizeHeight** | **optional.Int64**|  | 
+ **resizeFileSize** | **optional.Int64**|  | 
 
 ### Return type
 
