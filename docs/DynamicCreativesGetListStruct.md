@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **CreativeTemplateCategory** | **string** |  | [optional] [default to null]
+**AutoDerivedProgramCreativeSwitch** | **bool** |  | [optional] [default to null]
 **ProgramCreativeInfo** | [***ProgramCreativeInfo**](program_creative_info.md) |  | [optional] [default to null]
 **DynamicCreativeType** | [***DynamicCreativeType**](DynamicCreativeType.md) |  | [optional] [default to null]
 **HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]

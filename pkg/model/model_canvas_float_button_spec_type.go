@@ -11,15 +11,18 @@ package model
 
 // 悬浮组件元素
 type CanvasFloatButtonSpecType struct {
-	StyleType       *int64                 `json:"style_type,omitempty"`
-	ImageId         *string                `json:"image_id,omitempty"`
-	Title           *string                `json:"title,omitempty"`
-	TitleColor      *string                `json:"title_color,omitempty"`
-	Desc            *string                `json:"desc,omitempty"`
-	DescColor       *string                `json:"desc_color,omitempty"`
-	AppearType      *int64                 `json:"appear_type,omitempty"`
-	DisappearType   *int64                 `json:"disappear_type,omitempty"`
-	ForbidPageList  *[]int64               `json:"forbid_page_list,omitempty"`
-	ElementType     CanvasFloatElementType `json:"element_type,omitempty"`
-	AppDownloadSpec *FloatAppDownloadSpec  `json:"app_download_spec,omitempty"`
+	StyleType        *int64                 `json:"style_type,omitempty"`
+	ImageId          *string                `json:"image_id,omitempty"`
+	Title            *string                `json:"title,omitempty"`
+	TitleColor       *string                `json:"title_color,omitempty"`
+	Desc             *string                `json:"desc,omitempty"`
+	DescColor        *string                `json:"desc_color,omitempty"`
+	AppearType       *int64                 `json:"appear_type,omitempty"`
+	DisappearType    *int64                 `json:"disappear_type,omitempty"`
+	ForbidPageList   *[]int64               `json:"forbid_page_list,omitempty"`
+	ElementType      CanvasFloatElementType `json:"element_type,omitempty"`
+	AppDownloadSpec  *FloatAppDownloadSpec  `json:"app_download_spec,omitempty"`
+	WeappSpec        *FloatWeappSpec        `json:"weapp_spec,omitempty"`
+	GhSpec           *FloatGhSpec           `json:"gh_spec,omitempty"`
+	EnterpriseWxSpec *FloatEnterpriseWxSpec `json:"enterprise_wx_spec,omitempty"`
 }

@@ -472,6 +472,7 @@ Name | Type | Description | Notes
 **StayPay7dPv** | **int64** |  | [optional] [default to null]
 **StayPay15dPv** | **int64** |  | [optional] [default to null]
 **StayPay30dPv** | **int64** |  | [optional] [default to null]
+**LiveStreamCrtClickCnt** | **int64** |  | [optional] [default to null]
 **LiveStreamCommodityShopBagClkPv** | **int64** |  | [optional] [default to null]
 **LiveStreamCommodityShopListExpPv** | **int64** |  | [optional] [default to null]
 **LiveStreamCommodityBubbleClkPv** | **int64** |  | [optional] [default to null]

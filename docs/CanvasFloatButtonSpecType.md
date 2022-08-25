@@ -14,6 +14,9 @@ Name | Type | Description | Notes
 **ForbidPageList** | **[]int64** |  | [optional] [default to null]
 **ElementType** | [***CanvasFloatElementType**](CanvasFloatElementType.md) |  | [optional] [default to null]
 **AppDownloadSpec** | [***FloatAppDownloadSpec**](float_app_download_spec.md) |  | [optional] [default to null]
+**WeappSpec** | [***FloatWeappSpec**](float_weapp_spec.md) |  | [optional] [default to null]
+**GhSpec** | [***FloatGhSpec**](float_gh_spec.md) |  | [optional] [default to null]
+**EnterpriseWxSpec** | [***FloatEnterpriseWxSpec**](float_enterprise_wx_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

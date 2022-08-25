@@ -14,5 +14,8 @@ type CanvasFloatElementType string
 
 // List of CanvasFloatElementType
 const (
-	CanvasFloatElementType_APP_DOWNLOAD CanvasFloatElementType = "APP_DOWNLOAD"
+	CanvasFloatElementType_APP_DOWNLOAD  CanvasFloatElementType = "APP_DOWNLOAD"
+	CanvasFloatElementType_WEAPP         CanvasFloatElementType = "WEAPP"
+	CanvasFloatElementType_GH            CanvasFloatElementType = "GH"
+	CanvasFloatElementType_ENTERPRISE_WX CanvasFloatElementType = "ENTERPRISE_WX"
 )

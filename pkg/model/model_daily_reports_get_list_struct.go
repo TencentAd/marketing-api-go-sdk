@@ -417,6 +417,7 @@ type DailyReportsGetListStruct struct {
 	VideoLiveShareCount                        *int64   `json:"video_live_share_count,omitempty"`
 	VideoLiveCickCommodityCount                *int64   `json:"video_live_cick_commodity_count,omitempty"`
 	VideoLiveExpUserCount                      *int64   `json:"video_live_exp_user_count,omitempty"`
+	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
 	VideoLiveCommentUserCount                  *int64   `json:"video_live_comment_user_count,omitempty"`
 	VideoLiveShareUserCount                    *int64   `json:"video_live_share_user_count,omitempty"`
@@ -482,6 +483,8 @@ type DailyReportsGetListStruct struct {
 	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
 	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
 	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
+	LiveStreamCrtClickCnt                      *int64   `json:"live_stream_crt_click_cnt,omitempty"`
+	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
 	LiveStreamCommodityShopListExpPv           *int64   `json:"live_stream_commodity_shop_list_exp_pv,omitempty"`
 	LiveStreamCommodityBubbleClkPv             *int64   `json:"live_stream_commodity_bubble_clk_pv,omitempty"`

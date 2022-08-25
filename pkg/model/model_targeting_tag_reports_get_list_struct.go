@@ -407,6 +407,7 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
+	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	ScanCodeAddFansUv                          *int64   `json:"scan_code_add_fans_uv,omitempty"`
 	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
 	ScanCodeAddFansUvCost                      *int64   `json:"scan_code_add_fans_uv_cost,omitempty"`
@@ -467,6 +468,8 @@ type TargetingTagReportsGetListStruct struct {
 	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
 	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
 	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
+	LiveStreamCrtClickCnt                      *int64   `json:"live_stream_crt_click_cnt,omitempty"`
+	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
 	LiveStreamCommodityShopListExpPv           *int64   `json:"live_stream_commodity_shop_list_exp_pv,omitempty"`
 	LiveStreamCommodityBubbleClkPv             *int64   `json:"live_stream_commodity_bubble_clk_pv,omitempty"`
