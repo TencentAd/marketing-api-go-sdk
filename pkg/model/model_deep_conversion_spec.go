@@ -11,8 +11,9 @@ package model
 
 // oCPC/oCPM深度优化内容
 type DeepConversionSpec struct {
-	DeepConversionType              DeepConversionType               `json:"deep_conversion_type,omitempty"`
-	DeepConversionBehaviorSpec      *DeepConversionBehaviorSpec      `json:"deep_conversion_behavior_spec,omitempty"`
-	DeepConversionWorthSpec         *DeepConversionWorthSpec         `json:"deep_conversion_worth_spec,omitempty"`
-	DeepConversionWorthAdvancedSpec *DeepConversionWorthAdvancedSpec `json:"deep_conversion_worth_advanced_spec,omitempty"`
+	DeepConversionType                 DeepConversionType                  `json:"deep_conversion_type,omitempty"`
+	DeepConversionBehaviorSpec         *DeepConversionBehaviorSpec         `json:"deep_conversion_behavior_spec,omitempty"`
+	DeepConversionWorthSpec            *DeepConversionWorthSpec            `json:"deep_conversion_worth_spec,omitempty"`
+	DeepConversionWorthAdvancedSpec    *DeepConversionWorthAdvancedSpec    `json:"deep_conversion_worth_advanced_spec,omitempty"`
+	DeepConversionBehaviorAdvancedSpec *DeepConversionBehaviorAdvancedSpec `json:"deep_conversion_behavior_advanced_spec,omitempty"`
 }

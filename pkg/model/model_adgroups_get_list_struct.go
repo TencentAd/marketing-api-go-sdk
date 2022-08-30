@@ -59,6 +59,7 @@ type AdgroupsGetListStruct struct {
 	DeepConversionBehaviorBid         *int64                          `json:"deep_conversion_behavior_bid,omitempty"`
 	DeepConversionWorthRate           *float64                        `json:"deep_conversion_worth_rate,omitempty"`
 	DeepConversionWorthAdvancedRate   *float64                        `json:"deep_conversion_worth_advanced_rate,omitempty"`
+	DeepConversionBehaviorAdvancedBid *int64                          `json:"deep_conversion_behavior_advanced_bid,omitempty"`
 	AndroidChannelPackageAuditMessage *string                         `json:"android_channel_package_audit_message,omitempty"`
 	SystemStatus                      AdgroupSysStatus                `json:"system_status,omitempty"`
 	BidMode                           BidMode                         `json:"bid_mode,omitempty"`

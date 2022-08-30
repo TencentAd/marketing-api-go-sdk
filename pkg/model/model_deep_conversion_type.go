@@ -14,7 +14,8 @@ type DeepConversionType string
 
 // List of DeepConversionType
 const (
-	DeepConversionType_WORTH          DeepConversionType = "DEEP_CONVERSION_WORTH"
-	DeepConversionType_BEHAVIOR       DeepConversionType = "DEEP_CONVERSION_BEHAVIOR"
-	DeepConversionType_WORTH_ADVANCED DeepConversionType = "DEEP_CONVERSION_WORTH_ADVANCED"
+	DeepConversionType_WORTH             DeepConversionType = "DEEP_CONVERSION_WORTH"
+	DeepConversionType_BEHAVIOR          DeepConversionType = "DEEP_CONVERSION_BEHAVIOR"
+	DeepConversionType_WORTH_ADVANCED    DeepConversionType = "DEEP_CONVERSION_WORTH_ADVANCED"
+	DeepConversionType_BEHAVIOR_ADVANCED DeepConversionType = "DEEP_CONVERSION_BEHAVIOR_ADVANCED"
 )
