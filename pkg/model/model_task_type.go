@@ -157,6 +157,8 @@ const (
 	TaskType_TASK_TYPE_REFRESH_CONTENT_TOKEN                                       TaskType = "TASK_TYPE_REFRESH_CONTENT_TOKEN"
 	TaskType_TASK_TYPE_REFRESH_CONTENT_CONTENT                                     TaskType = "TASK_TYPE_REFRESH_CONTENT_CONTENT"
 	TaskType_TASK_TYPE_WXGAME_GAUSS_CREATIVE                                       TaskType = "TASK_TYPE_WXGAME_GAUSS_CREATIVE"
+	TaskType_TASK_TYPE_UPDATE_COVER_IMAGE_DATA                                     TaskType = "TASK_TYPE_UPDATE_COVER_IMAGE_DATA"
+	TaskType_TASK_TYPE_PROCESS_USER_PAGE_OBJECT                                    TaskType = "TASK_TYPE_PROCESS_USER_PAGE_OBJECT"
 	TaskType_TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE"
 	TaskType_TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE"
 	TaskType_TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS                                  TaskType = "TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS"
