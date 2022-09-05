@@ -1,4 +1,4 @@
-# ProductSaleStatus
+# ProductSaleOnlineStatus
 
 ## Properties
 Name | Type | Description | Notes

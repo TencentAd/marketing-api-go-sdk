@@ -77,6 +77,7 @@ Name | Type | Description | Notes
 **FloatingZoneStruct** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **CanvasShareImage** | **string** |  | [optional] [default to null]
 **WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
+**FinderObjectVisibility** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

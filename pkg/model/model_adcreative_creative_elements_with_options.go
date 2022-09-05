@@ -67,4 +67,5 @@ type AdcreativeCreativeElementsWithOptions struct {
 	RightCanvas                *string                            `json:"right_canvas,omitempty"`
 	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
 	WechatChannelsSpec         *AdCreativeWechatChannelsSpec      `json:"wechat_channels_spec,omitempty"`
+	FinderObjectVisibility     *bool                              `json:"finder_object_visibility,omitempty"`
 }
