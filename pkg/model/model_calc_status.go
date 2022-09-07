@@ -39,4 +39,5 @@ const (
 	CalcStatus_LOCK_FLOW_SUCCESS       CalcStatus = "STATUS_LOCK_FLOW_SUCCESS"
 	CalcStatus_LOCK_FLOW_FAIL          CalcStatus = "STATUS_LOCK_FLOW_FAIL"
 	CalcStatus_FLOW_CANCELLED          CalcStatus = "STATUS_FLOW_CANCELLED"
+	CalcStatus_CAMPAIGN_SUSPEND        CalcStatus = "STATUS_CAMPAIGN_SUSPEND"
 )

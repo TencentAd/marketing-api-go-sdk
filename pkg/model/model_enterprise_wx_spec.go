@@ -11,7 +11,7 @@ package model
 
 // 添加商家微信组件元素
 type EnterpriseWxSpec struct {
-	CropId              *string `json:"crop_id,omitempty"`
+	CorpId              *string `json:"corp_id,omitempty"`
 	GroupId             *int64  `json:"group_id,omitempty"`
 	BtnTitle            *string `json:"btn_title,omitempty"`
 	FontColor           *string `json:"font_color,omitempty"`

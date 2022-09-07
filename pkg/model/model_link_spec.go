@@ -11,6 +11,8 @@ package model
 
 // 外链信息
 type LinkSpec struct {
-	Title *string `json:"title,omitempty"`
-	Url   *string `json:"url,omitempty"`
+	Title               *string                 `json:"title,omitempty"`
+	Url                 *string                 `json:"url,omitempty"`
+	DeepLinkAndroidSpec *DeepLinkAppAndroidSpec `json:"deep_link_android_spec,omitempty"`
+	DeepLinkIosSpec     *DeepLinkAppIosSpec     `json:"deep_link_ios_spec,omitempty"`
 }

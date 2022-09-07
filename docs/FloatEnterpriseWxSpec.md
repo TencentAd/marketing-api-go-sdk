@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CropId** | **string** |  | [optional] [default to null]
+**CorpId** | **string** |  | [optional] [default to null]
 **GroupId** | **int64** |  | [optional] [default to null]
 **BtnTitle** | **string** |  | [optional] [default to null]
 **FontColor** | **string** |  | [optional] [default to null]

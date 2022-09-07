@@ -80,5 +80,6 @@ const (
 	IntOptimizationGoal_ADD_WECHAT                             IntOptimizationGoal = "OPTIMIZATIONGOAL_ADD_WECHAT"
 	IntOptimizationGoal_WECOM_CONSULT                          IntOptimizationGoal = "OPTIMIZATIONGOAL_WECOM_CONSULT"
 	IntOptimizationGoal_ADD_GROUP                              IntOptimizationGoal = "OPTIMIZATIONGOAL_ADD_GROUP"
+	IntOptimizationGoal_QUICK_ORDER                            IntOptimizationGoal = "OPTIMIZATIONGOAL_QUICK_ORDER"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

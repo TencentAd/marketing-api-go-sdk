@@ -13,6 +13,7 @@ package model
 type ElementButtonRead struct {
 	Title               *string              `json:"title,omitempty"`
 	Url                 *string              `json:"url,omitempty"`
+	LinkSpec            *LinkSpec            `json:"link_spec,omitempty"`
 	AppIosSpec          *AppIosSpec          `json:"app_ios_spec,omitempty"`
 	AppAndroidSpec      *AppAndroidSpec      `json:"app_android_spec,omitempty"`
 	MiniProgramSpec     *MiniProgramSpec     `json:"mini_program_spec,omitempty"`
