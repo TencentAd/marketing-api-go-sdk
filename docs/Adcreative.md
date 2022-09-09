@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **VideoEndPage** | [***VideoEndPageSpec**](video_end_page_spec.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **CreativeTemplateCategory** | **string** |  | [optional] [default to null]
+**KeywordIdList** | **[]int64** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsRead**](adcreative_creative_elements_read.md) |  | [optional] [default to null]
 
