@@ -29,4 +29,6 @@ type ConversionsAddRequest struct {
 	ConversionLinkId             *int64                     `json:"conversion_link_id,omitempty"`
 	ImpressionFeedbackUrl        *string                    `json:"impression_feedback_url,omitempty"`
 	AttributionWindow            *int64                     `json:"attribution_window,omitempty"`
+	DeepBehaviorAdvancedGoal     IntOptimizationGoal        `json:"deep_behavior_advanced_goal,omitempty"`
+	DeepOptimizationGoalType     DeepOptimizationGoalType   `json:"deep_optimization_goal_type,omitempty"`
 }

@@ -26,6 +26,10 @@ Name | Type | Description | Notes
 **ConversionLinkId** | **int64** |  | [optional] [default to null]
 **ImpressionFeedbackUrl** | **string** |  | [optional] [default to null]
 **AttributionWindow** | **int64** |  | [optional] [default to null]
+**DeepBehaviorAdvancedGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
+**DeepBehaviorAdvancedGoalMinPrice** | **int64** |  | [optional] [default to null]
+**DeepBehaviorAdvancedGoalMaxPrice** | **int64** |  | [optional] [default to null]
+**DeepOptimizationGoalType** | [***DeepOptimizationGoalType**](DeepOptimizationGoalType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
