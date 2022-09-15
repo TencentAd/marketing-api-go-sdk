@@ -13,5 +13,5 @@ package model
 type WechatPagesGrantinfoGetListStruct struct {
 	OwnerAccountId   *int64  `json:"owner_account_id,omitempty"`
 	OwnerAccountName *string `json:"owner_account_name,omitempty"`
-	CreatedTime      *int64  `json:"created_time,omitempty"`
+	CreatedTime      *string `json:"created_time,omitempty"`
 }

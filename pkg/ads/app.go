@@ -617,6 +617,14 @@ func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
 }
 
+func (c *SDKClient) WxPackageAccount() *api.WxPackageAccountApiService {
+	return c.Client.WxPackageAccountApi
+}
+
+func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
+	return c.Client.WxPackagePackageApi
+}
+
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
 	return c.Client.XijingComplexTemplateApi
 }

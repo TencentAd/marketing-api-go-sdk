@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **OptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **BillingEvent** | [***BillingEvent**](BillingEvent.md) |  | [optional] [default to null]
 **BidAmount** | **int64** |  | [optional] [default to null]
+**TotalBudget** | **int64** |  | [optional] [default to null]
 **DailyBudget** | **int64** |  | [optional] [default to null]
 **PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]

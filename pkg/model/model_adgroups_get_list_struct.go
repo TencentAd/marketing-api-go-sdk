@@ -19,6 +19,7 @@ type AdgroupsGetListStruct struct {
 	OptimizationGoal                  OptimizationGoal                `json:"optimization_goal,omitempty"`
 	BillingEvent                      BillingEvent                    `json:"billing_event,omitempty"`
 	BidAmount                         *int64                          `json:"bid_amount,omitempty"`
+	TotalBudget                       *int64                          `json:"total_budget,omitempty"`
 	DailyBudget                       *int64                          `json:"daily_budget,omitempty"`
 	PromotedObjectType                PromotedObjectType              `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                  *string                         `json:"promoted_object_id,omitempty"`
