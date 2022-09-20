@@ -408,7 +408,6 @@ Name | Type | Description | Notes
 **VideoLiveCommentCount** | **int64** |  | [optional] [default to null]
 **VideoLiveShareCount** | **int64** |  | [optional] [default to null]
 **VideoLiveCickCommodityCount** | **int64** |  | [optional] [default to null]
-**VideoLiveExpUserCount** | **int64** |  | [optional] [default to null]
 **LiveStreamExpUv** | **int64** |  | [optional] [default to null]
 **VideoLiveHeartUserCount** | **int64** |  | [optional] [default to null]
 **VideoLiveCommentUserCount** | **int64** |  | [optional] [default to null]

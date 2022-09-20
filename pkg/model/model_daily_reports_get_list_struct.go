@@ -416,7 +416,6 @@ type DailyReportsGetListStruct struct {
 	VideoLiveCommentCount                      *int64   `json:"video_live_comment_count,omitempty"`
 	VideoLiveShareCount                        *int64   `json:"video_live_share_count,omitempty"`
 	VideoLiveCickCommodityCount                *int64   `json:"video_live_cick_commodity_count,omitempty"`
-	VideoLiveExpUserCount                      *int64   `json:"video_live_exp_user_count,omitempty"`
 	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
 	VideoLiveCommentUserCount                  *int64   `json:"video_live_comment_user_count,omitempty"`
