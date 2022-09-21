@@ -42,4 +42,5 @@ const (
 	ElementType_ANIMATION_EFFECT            ElementType = "ANIMATION_EFFECT"
 	ElementType_LABEL                       ElementType = "LABEL"
 	ElementType_LANDING_PAGE_STRUCT         ElementType = "LANDING_PAGE_STRUCT"
+	ElementType_COMPONENT                   ElementType = "COMPONENT"
 )

@@ -50,6 +50,7 @@ const (
 	TaskType_TASK_TYPE_REVIEW_ELEMENT_PREREVIEW_RESULT                             TaskType = "TASK_TYPE_REVIEW_ELEMENT_PREREVIEW_RESULT"
 	TaskType_TASK_TYPE_INTEGRATED_DATA                                             TaskType = "TASK_TYPE_INTEGRATED_DATA"
 	TaskType_TASK_TYPE_AD_EDITOR_DOWNLOAD                                          TaskType = "TASK_TYPE_AD_EDITOR_DOWNLOAD"
+	TaskType_TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA                               TaskType = "TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA"
 	TaskType_TASK_TYPE_BATCH_REQUEST                                               TaskType = "TASK_TYPE_BATCH_REQUEST"
 	TaskType_TASK_TYPE_CLICK_FORWARDED_DATA                                        TaskType = "TASK_TYPE_CLICK_FORWARDED_DATA"
 	TaskType_TASK_TYPE_ADP_OFFLINE_RPT                                             TaskType = "TASK_TYPE_ADP_OFFLINE_RPT"
@@ -172,6 +173,5 @@ const (
 	TaskType_TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE"
 	TaskType_TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS                                  TaskType = "TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS"
 	TaskType_TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA                                   TaskType = "TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA"
-	TaskType_TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA                               TaskType = "TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA"
 	TaskType_UNKNOWN                                                               TaskType = "UNKNOWN"
 )

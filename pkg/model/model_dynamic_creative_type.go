@@ -14,6 +14,7 @@ type DynamicCreativeType string
 
 // List of DynamicCreativeType
 const (
-	DynamicCreativeType_COMMON  DynamicCreativeType = "DYNAMIC_CREATIVE_TYPE_COMMON"
-	DynamicCreativeType_PROGRAM DynamicCreativeType = "DYNAMIC_CREATIVE_TYPE_PROGRAM"
+	DynamicCreativeType_COMMON    DynamicCreativeType = "DYNAMIC_CREATIVE_TYPE_COMMON"
+	DynamicCreativeType_PROGRAM   DynamicCreativeType = "DYNAMIC_CREATIVE_TYPE_PROGRAM"
+	DynamicCreativeType_COMPONENT DynamicCreativeType = "DYNAMIC_CREATIVE_TYPE_COMPONENT"
 )
