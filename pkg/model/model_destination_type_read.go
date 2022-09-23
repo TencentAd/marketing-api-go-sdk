@@ -45,4 +45,5 @@ const (
 	DestinationTypeRead_ARTICAL_WECHAT                  DestinationTypeRead = "PAGE_TYPE_ARTICAL_WECHAT"
 	DestinationTypeRead_CHANNELS_HALF_CARD              DestinationTypeRead = "PAGE_TYPE_CHANNELS_HALF_CARD"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
+	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 )

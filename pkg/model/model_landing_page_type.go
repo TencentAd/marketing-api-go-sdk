@@ -107,6 +107,7 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_RED_PACKET_COVER         LandingPageType = "LANDING_PAGE_TYPE_WECHAT_RED_PACKET_COVER"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_CHANNELS_HALF_CARD       LandingPageType = "LANDING_PAGE_TYPE_WECHAT_CHANNELS_HALF_CARD"
 	LandingPageType_LANDING_PAGE_TYPE_CHANNELS_USER_PROFILE           LandingPageType = "LANDING_PAGE_TYPE_CHANNELS_USER_PROFILE"
+	LandingPageType_LANDING_PAGE_TYPE_NOT_USED                        LandingPageType = "LANDING_PAGE_TYPE_NOT_USED"
 	LandingPageType_DEFAULT                                           LandingPageType = "DEFAULT"
 	LandingPageType_DEEP_LINK_IOS                                     LandingPageType = "DEEP_LINK_IOS"
 	LandingPageType_DEEP_LINK_ANDROID                                 LandingPageType = "DEEP_LINK_ANDROID"
