@@ -20,30 +20,30 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type AndroidUnionChannelPackagesAddExample struct {
+type XijingDeriveRoleGetExample struct {
 	TAds        *ads.SDKClient
 	AccessToken string
-	Data        model.AndroidUnionChannelPackagesAddRequest
+	Data        model.XijingDeriveRoleGetRequest
 }
 
-func (e *AndroidUnionChannelPackagesAddExample) Init() {
+func (e *XijingDeriveRoleGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.AndroidUnionChannelPackagesAddRequest{}
+	e.Data = model.XijingDeriveRoleGetRequest{}
 }
 
-func (e *AndroidUnionChannelPackagesAddExample) RunExample() (model.AndroidUnionChannelPackagesAddResponseData, http.Header, error) {
+func (e *XijingDeriveRoleGetExample) RunExample() (model.XijingDeriveRoleGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AndroidUnionChannelPackages().Add(ctx, e.Data)
+	return tads.XijingDeriveRole().Get(ctx, e.Data)
 }
 
 func main() {
-	e := &AndroidUnionChannelPackagesAddExample{}
+	e := &XijingDeriveRoleGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

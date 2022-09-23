@@ -54,5 +54,6 @@ type DynamicCreativesAddRequest struct {
 	DynamicCreativeType              DynamicCreativeType         `json:"dynamic_creative_type,omitempty"`
 	HeadClickType                    HeadClickType               `json:"head_click_type,omitempty"`
 	HeadClickSpec                    *HeadClickSpec              `json:"head_click_spec,omitempty"`
+	CampaignId                       *int64                      `json:"campaign_id,omitempty"`
 	AccountId                        *int64                      `json:"account_id,omitempty"`
 }

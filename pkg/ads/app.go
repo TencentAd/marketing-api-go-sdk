@@ -89,10 +89,6 @@ func (c *SDKClient) AndroidChannelPackages() *api.AndroidChannelPackagesApiServi
 	return c.Client.AndroidChannelPackagesApi
 }
 
-func (c *SDKClient) AndroidUnionChannelPackages() *api.AndroidUnionChannelPackagesApiService {
-	return c.Client.AndroidUnionChannelPackagesApi
-}
-
 func (c *SDKClient) AppAndroidChannelPackages() *api.AppAndroidChannelPackagesApiService {
 	return c.Client.AppAndroidChannelPackagesApi
 }
@@ -627,6 +623,14 @@ func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
 
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
 	return c.Client.XijingComplexTemplateApi
+}
+
+func (c *SDKClient) XijingDeriveRole() *api.XijingDeriveRoleApiService {
+	return c.Client.XijingDeriveRoleApi
+}
+
+func (c *SDKClient) XijingDeriveTempToken() *api.XijingDeriveTempTokenApiService {
+	return c.Client.XijingDeriveTempTokenApi
 }
 
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {

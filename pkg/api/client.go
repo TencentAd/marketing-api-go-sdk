@@ -86,8 +86,6 @@ type APIClient struct {
 
 	AndroidChannelPackagesApi *AndroidChannelPackagesApiService
 
-	AndroidUnionChannelPackagesApi *AndroidUnionChannelPackagesApiService
-
 	AppAndroidChannelPackagesApi *AppAndroidChannelPackagesApiService
 
 	AssetPermissionsApi *AssetPermissionsApiService
@@ -356,6 +354,10 @@ type APIClient struct {
 
 	XijingComplexTemplateApi *XijingComplexTemplateApiService
 
+	XijingDeriveRoleApi *XijingDeriveRoleApiService
+
+	XijingDeriveTempTokenApi *XijingDeriveTempTokenApiService
+
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
@@ -406,7 +408,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AgencyInnerTransferApi = (*AgencyInnerTransferApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelPackagesApi = (*AndroidChannelPackagesApiService)(&c.common)
-	c.AndroidUnionChannelPackagesApi = (*AndroidUnionChannelPackagesApiService)(&c.common)
 	c.AppAndroidChannelPackagesApi = (*AppAndroidChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
 	c.AssetPrePermissionsApi = (*AssetPrePermissionsApiService)(&c.common)
@@ -541,6 +542,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
 	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
+	c.XijingDeriveRoleApi = (*XijingDeriveRoleApiService)(&c.common)
+	c.XijingDeriveTempTokenApi = (*XijingDeriveTempTokenApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
 	c.XijingPageInteractiveApi = (*XijingPageInteractiveApiService)(&c.common)

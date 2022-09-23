@@ -9,7 +9,7 @@
 
 package model
 
-// UnionPackageSysStatus : 渠道包状态
+// UnionPackageSysStatus : 广告包渠道包状态
 type UnionPackageSysStatus string
 
 // List of UnionPackageSysStatus

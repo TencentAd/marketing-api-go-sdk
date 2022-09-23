@@ -1,10 +1,12 @@
-# AndroidUnionChannelPackagesGetResponseData
+# Layout
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**List** | [**[]UnionChannelPackageData**](union_channel_package_data.md) |  | [optional] [default to null]
-**PageInfo** | [***Conf**](conf.md) |  | [optional] [default to null]
+**X** | **int64** |  | [optional] [default to null]
+**Y** | **int64** |  | [optional] [default to null]
+**W** | **int64** |  | [optional] [default to null]
+**H** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

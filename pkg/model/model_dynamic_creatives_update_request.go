@@ -46,5 +46,6 @@ type DynamicCreativesUpdateRequest struct {
 	AutoDerivedProgramCreativeSwitch *bool                      `json:"auto_derived_program_creative_switch,omitempty"`
 	HeadClickType                    HeadClickType              `json:"head_click_type,omitempty"`
 	HeadClickSpec                    *HeadClickSpec             `json:"head_click_spec,omitempty"`
+	CampaignId                       *int64                     `json:"campaign_id,omitempty"`
 	AccountId                        *int64                     `json:"account_id,omitempty"`
 }

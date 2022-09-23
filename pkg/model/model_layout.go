@@ -9,6 +9,10 @@
 
 package model
 
-type AndroidUnionChannelPackagesUpdateResponseData struct {
-	TaskId *int64 `json:"task_id,omitempty"`
+// 虚拟人坐标
+type Layout struct {
+	X *int64 `json:"x,omitempty"`
+	Y *int64 `json:"y,omitempty"`
+	W *int64 `json:"w,omitempty"`
+	H *int64 `json:"h,omitempty"`
 }

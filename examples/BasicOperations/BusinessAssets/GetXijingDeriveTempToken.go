@@ -15,40 +15,35 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type AndroidUnionChannelPackagesGetExample struct {
-	TAds                               *ads.SDKClient
-	AccessToken                        string
-	AccountId                          int64
-	AndroidUnionAppId                  int64
-	AndroidUnionChannelPackagesGetOpts *api.AndroidUnionChannelPackagesGetOpts
+type XijingDeriveTempTokenGetExample struct {
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.XijingDeriveTempTokenGetRequest
 }
 
-func (e *AndroidUnionChannelPackagesGetExample) Init() {
+func (e *XijingDeriveTempTokenGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.AndroidUnionAppId = 789
-	e.AndroidUnionChannelPackagesGetOpts = &api.AndroidUnionChannelPackagesGetOpts{}
+	e.Data = model.XijingDeriveTempTokenGetRequest{}
 }
 
-func (e *AndroidUnionChannelPackagesGetExample) RunExample() (model.AndroidUnionChannelPackagesGetResponseData, http.Header, error) {
+func (e *XijingDeriveTempTokenGetExample) RunExample() (model.XijingDeriveTempTokenGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AndroidUnionChannelPackages().Get(ctx, e.AccountId, e.AndroidUnionAppId, e.AndroidUnionChannelPackagesGetOpts)
+	return tads.XijingDeriveTempToken().Get(ctx, e.Data)
 }
 
 func main() {
-	e := &AndroidUnionChannelPackagesGetExample{}
+	e := &XijingDeriveTempTokenGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {
