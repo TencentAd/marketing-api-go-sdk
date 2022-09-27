@@ -174,6 +174,8 @@ type APIClient struct {
 
 	EstimationApi *EstimationApiService
 
+	ExtendPackageApi *ExtendPackageApiService
+
 	FundStatementsDailyApi *FundStatementsDailyApiService
 
 	FundStatementsDetailedApi *FundStatementsDetailedApiService
@@ -352,6 +354,8 @@ type APIClient struct {
 
 	XijingComplexTemplateApi *XijingComplexTemplateApiService
 
+	XijingDeriveClickEffectApi *XijingDeriveClickEffectApiService
+
 	XijingDeriveRoleApi *XijingDeriveRoleApiService
 
 	XijingDeriveTempTokenApi *XijingDeriveTempTokenApiService
@@ -450,6 +454,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
+	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)
 	c.FundStatementsDailyApi = (*FundStatementsDailyApiService)(&c.common)
 	c.FundStatementsDetailedApi = (*FundStatementsDetailedApiService)(&c.common)
 	c.FundTransferApi = (*FundTransferApiService)(&c.common)
@@ -539,6 +544,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
 	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
+	c.XijingDeriveClickEffectApi = (*XijingDeriveClickEffectApiService)(&c.common)
 	c.XijingDeriveRoleApi = (*XijingDeriveRoleApiService)(&c.common)
 	c.XijingDeriveTempTokenApi = (*XijingDeriveTempTokenApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)

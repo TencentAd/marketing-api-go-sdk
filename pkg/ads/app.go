@@ -265,6 +265,10 @@ func (c *SDKClient) Estimation() *api.EstimationApiService {
 	return c.Client.EstimationApi
 }
 
+func (c *SDKClient) ExtendPackage() *api.ExtendPackageApiService {
+	return c.Client.ExtendPackageApi
+}
+
 func (c *SDKClient) FundStatementsDaily() *api.FundStatementsDailyApiService {
 	return c.Client.FundStatementsDailyApi
 }
@@ -619,6 +623,10 @@ func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
 
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
 	return c.Client.XijingComplexTemplateApi
+}
+
+func (c *SDKClient) XijingDeriveClickEffect() *api.XijingDeriveClickEffectApiService {
+	return c.Client.XijingDeriveClickEffectApi
 }
 
 func (c *SDKClient) XijingDeriveRole() *api.XijingDeriveRoleApiService {
