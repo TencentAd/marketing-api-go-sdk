@@ -85,10 +85,6 @@ func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
 
-func (c *SDKClient) AndroidChannelPackages() *api.AndroidChannelPackagesApiService {
-	return c.Client.AndroidChannelPackagesApi
-}
-
 func (c *SDKClient) AppAndroidChannelPackages() *api.AppAndroidChannelPackagesApiService {
 	return c.Client.AppAndroidChannelPackagesApi
 }
