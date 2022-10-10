@@ -21,4 +21,5 @@ type SceneTargeting struct {
 	TencentNews                 *[]string    `json:"tencent_news,omitempty"`
 	WechatScene                 *WechatScene `json:"wechat_scene,omitempty"`
 	WechatPosition              *[]int64     `json:"wechat_position,omitempty"`
+	QbsearchScene               *[]string    `json:"qbsearch_scene,omitempty"`
 }
