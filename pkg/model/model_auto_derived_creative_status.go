@@ -18,4 +18,5 @@ const (
 	AutoDerivedCreativeStatus_INITIATED AutoDerivedCreativeStatus = "AUTO_DERIVED_CREATIVE_STATUS_INITIATED"
 	AutoDerivedCreativeStatus_SUCCESS   AutoDerivedCreativeStatus = "AUTO_DERIVED_CREATIVE_STATUS_SUCCESS"
 	AutoDerivedCreativeStatus_FAIL      AutoDerivedCreativeStatus = "AUTO_DERIVED_CREATIVE_STATUS_FAIL"
+	AutoDerivedCreativeStatus_RUNNING   AutoDerivedCreativeStatus = "AUTO_DERIVED_CREATIVE_STATUS_RUNNING"
 )
