@@ -19,4 +19,5 @@ const (
 	LabelType_PROMOTIONAL   LabelType = "LABEL_TYPE_PROMOTIONAL"
 	LabelType_CUSTOMIZETEXT LabelType = "LABEL_TYPE_CUSTOMIZETEXT"
 	LabelType_ICON          LabelType = "LABEL_TYPE_ICON"
+	LabelType_DYNAMIC       LabelType = "LABEL_TYPE_DYNAMIC"
 )

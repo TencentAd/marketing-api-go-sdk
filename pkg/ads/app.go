@@ -437,6 +437,10 @@ func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
 }
 
+func (c *SDKClient) PromotedObjectAuthorization() *api.PromotedObjectAuthorizationApiService {
+	return c.Client.PromotedObjectAuthorizationApi
+}
+
 func (c *SDKClient) PromotedObjects() *api.PromotedObjectsApiService {
 	return c.Client.PromotedObjectsApi
 }

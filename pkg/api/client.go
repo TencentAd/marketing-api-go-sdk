@@ -260,6 +260,8 @@ type APIClient struct {
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
+	PromotedObjectAuthorizationApi *PromotedObjectAuthorizationApiService
+
 	PromotedObjectsApi *PromotedObjectsApiService
 
 	PropertyFileSessionsApi *PropertyFileSessionsApiService
@@ -497,6 +499,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.PromotedObjectAuthorizationApi = (*PromotedObjectAuthorizationApiService)(&c.common)
 	c.PromotedObjectsApi = (*PromotedObjectsApiService)(&c.common)
 	c.PropertyFileSessionsApi = (*PropertyFileSessionsApiService)(&c.common)
 	c.PropertyFilesApi = (*PropertyFilesApiService)(&c.common)

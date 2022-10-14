@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **LabelType** | [***LabelType**](LabelType.md) |  | [optional] [default to null]
 **LabelTypeName** | **string** |  | [optional] [default to null]
 **LabelRemark** | [**[]LabelRemarkItem**](label_remark_item.md) |  | [optional] [default to null]
+**LabelStructs** | [**[]LabelStruct**](label_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

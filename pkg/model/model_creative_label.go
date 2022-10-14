@@ -11,6 +11,7 @@ package model
 
 // 标签
 type CreativeLabel struct {
-	Content *string   `json:"content,omitempty"`
-	Type_   LabelType `json:"type,omitempty"`
+	Content        *string   `json:"content,omitempty"`
+	Type_          LabelType `json:"type,omitempty"`
+	DisplayContent *string   `json:"display_content,omitempty"`
 }

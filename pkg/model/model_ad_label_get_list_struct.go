@@ -17,4 +17,5 @@ type AdLabelGetListStruct struct {
 	LabelType     LabelType          `json:"label_type,omitempty"`
 	LabelTypeName *string            `json:"label_type_name,omitempty"`
 	LabelRemark   *[]LabelRemarkItem `json:"label_remark,omitempty"`
+	LabelStructs  *[]LabelStruct     `json:"label_structs,omitempty"`
 }

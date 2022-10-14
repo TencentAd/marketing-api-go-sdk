@@ -18,5 +18,4 @@ const (
 	TaskDetailResultType_FAIL         TaskDetailResultType = "TASK_DETAIL_RESULT_TYPE_FAIL"
 	TaskDetailResultType_SUCCESS      TaskDetailResultType = "TASK_DETAIL_RESULT_TYPE_SUCCESS"
 	TaskDetailResultType_SYSTEM_ERROR TaskDetailResultType = "TASK_DETAIL_RESULT_TYPE_SYSTEM_ERROR"
-	TaskDetailResultType_PROCESSING   TaskDetailResultType = "TASK_DETAIL_RESULT_TYPE_PROCESSING"
 )

@@ -5,6 +5,8 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**PromotedObjectsAdd**](PromotedObjectsApi.md#PromotedObjectsAdd) | **Post** /promoted_objects/add | 创建推广目标
+[**PromotedObjectsAuthorize**](PromotedObjectsApi.md#PromotedObjectsAuthorize) | **Post** /promoted_objects/authorize | 推广目标授权接口
+[**PromotedObjectsDelete**](PromotedObjectsApi.md#PromotedObjectsDelete) | **Post** /promoted_objects/delete | 删除推广目标
 [**PromotedObjectsGet**](PromotedObjectsApi.md#PromotedObjectsGet) | **Get** /promoted_objects/get | 获取推广目标
 [**PromotedObjectsUpdate**](PromotedObjectsApi.md#PromotedObjectsUpdate) | **Post** /promoted_objects/update | 更新推广目标
 
@@ -23,6 +25,58 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PromotedObjectsAddResponse**](PromotedObjectsAddResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **PromotedObjectsAuthorize**
+> PromotedObjectsAuthorizeResponse PromotedObjectsAuthorize(ctx, data)
+推广目标授权接口
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**PromotedObjectsAuthorizeRequest**](PromotedObjectsAuthorizeRequest.md)|  | 
+
+### Return type
+
+[**PromotedObjectsAuthorizeResponse**](PromotedObjectsAuthorizeResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **PromotedObjectsDelete**
+> PromotedObjectsDeleteResponse PromotedObjectsDelete(ctx, data)
+删除推广目标
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**PromotedObjectsDeleteRequest**](PromotedObjectsDeleteRequest.md)|  | 
+
+### Return type
+
+[**PromotedObjectsDeleteResponse**](PromotedObjectsDeleteResponse.md)
 
 ### Authorization
 
