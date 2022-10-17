@@ -22,4 +22,5 @@ const (
 	HeadClickType_LIVE_EVENT        HeadClickType = "HEAD_CLICK_TYPE_LIVE_EVENT"
 	HeadClickType_BRAND_PROGRAM     HeadClickType = "HEAD_CLICK_TYPE_BRAND_PROGRAM"
 	HeadClickType_CNY_PROFILE       HeadClickType = "HEAD_CLICK_TYPE_CNY_PROFILE"
+	HeadClickType_SEARCH_BRAND_AREA HeadClickType = "HEAD_CLICK_TYPE_SEARCH_BRAND_AREA"
 )

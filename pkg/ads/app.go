@@ -613,6 +613,10 @@ func (c *SDKClient) WechatQualifications() *api.WechatQualificationsApiService {
 	return c.Client.WechatQualificationsApi
 }
 
+func (c *SDKClient) WeixinOfficialAccountsUpgradeStatus() *api.WeixinOfficialAccountsUpgradeStatusApiService {
+	return c.Client.WeixinOfficialAccountsUpgradeStatusApi
+}
+
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
 }
