@@ -247,18 +247,20 @@ AdcreativesApiService 获取广告创意
      * @param "PageSize" (optional.Int64) -
      * @param "IsDeleted" (optional.Bool) -
      * @param "LinkPageTypeCompatible" (optional.Bool) -
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdcreativesGetResponse
 */
 
 type AdcreativesGetOpts struct {
-	Filtering              optional.Interface
-	Page                   optional.Int64
-	PageSize               optional.Int64
-	IsDeleted              optional.Bool
-	LinkPageTypeCompatible optional.Bool
-	Fields                 optional.Interface
+	Filtering                            optional.Interface
+	Page                                 optional.Int64
+	PageSize                             optional.Int64
+	IsDeleted                            optional.Bool
+	LinkPageTypeCompatible               optional.Bool
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	Fields                               optional.Interface
 }
 
 func (a *AdcreativesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AdcreativesGetOpts) (AdcreativesGetResponseData, http.Header, error) {
@@ -294,6 +296,9 @@ func (a *AdcreativesApiService) Get(ctx context.Context, accountId int64, localV
 	}
 	if localVarOptionals != nil && localVarOptionals.LinkPageTypeCompatible.IsSet() {
 		localVarQueryParams.Add("link_page_type_compatible", parameterToString(localVarOptionals.LinkPageTypeCompatible.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

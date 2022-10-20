@@ -42,20 +42,22 @@ TargetingTagReportsApiService 获取定向标签报表
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "TimeLine" (optional.String) -
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return TargetingTagReportsGetResponse
 */
 
 type TargetingTagReportsGetOpts struct {
-	PosType   optional.String
-	Filtering optional.Interface
-	GroupBy   optional.Interface
-	OrderBy   optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	TimeLine  optional.String
-	Fields    optional.Interface
+	PosType                              optional.String
+	Filtering                            optional.Interface
+	GroupBy                              optional.Interface
+	OrderBy                              optional.Interface
+	Page                                 optional.Int64
+	PageSize                             optional.Int64
+	TimeLine                             optional.String
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	Fields                               optional.Interface
 }
 
 func (a *TargetingTagReportsApiService) Get(ctx context.Context, accountId int64, type_ string, level string, dateRange ReportDateRange, localVarOptionals *TargetingTagReportsGetOpts) (TargetingTagReportsGetResponseData, http.Header, error) {
@@ -100,6 +102,9 @@ func (a *TargetingTagReportsApiService) Get(ctx context.Context, accountId int64
 	}
 	if localVarOptionals != nil && localVarOptionals.TimeLine.IsSet() {
 		localVarQueryParams.Add("time_line", parameterToString(localVarOptionals.TimeLine.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

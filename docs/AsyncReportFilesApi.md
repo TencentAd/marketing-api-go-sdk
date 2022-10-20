@@ -29,6 +29,7 @@ Name | Type | Description  | Notes
 
 
 
+ **weixinOfficialAccountsUpgradeEnabled** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

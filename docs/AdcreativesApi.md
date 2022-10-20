@@ -85,6 +85,7 @@ Name | Type | Description  | Notes
  **pageSize** | **optional.Int64**|  | 
  **isDeleted** | **optional.Bool**|  | 
  **linkPageTypeCompatible** | **optional.Bool**|  | 
+ **weixinOfficialAccountsUpgradeEnabled** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

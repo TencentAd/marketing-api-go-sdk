@@ -36,6 +36,7 @@ Name | Type | Description  | Notes
  **pageSize** | **optional.Int64**|  | 
  **timeLine** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)|  | 
+ **weixinOfficialAccountsUpgradeEnabled** | **optional.Bool**|  | 
 
 ### Return type
 

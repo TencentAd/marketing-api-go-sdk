@@ -41,18 +41,20 @@ HourlyReportsApiService 获取小时报表
      * @param "PageSize" (optional.Int64) -
      * @param "TimeLine" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
 
 @return HourlyReportsGetResponse
 */
 
 type HourlyReportsGetOpts struct {
-	Filtering optional.Interface
-	GroupBy   optional.Interface
-	OrderBy   optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	TimeLine  optional.String
-	Fields    optional.Interface
+	Filtering                            optional.Interface
+	GroupBy                              optional.Interface
+	OrderBy                              optional.Interface
+	Page                                 optional.Int64
+	PageSize                             optional.Int64
+	TimeLine                             optional.String
+	Fields                               optional.Interface
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
 }
 
 func (a *HourlyReportsApiService) Get(ctx context.Context, accountId int64, level string, dateRange DateRange, localVarOptionals *HourlyReportsGetOpts) (HourlyReportsGetResponseData, http.Header, error) {
@@ -96,6 +98,9 @@ func (a *HourlyReportsApiService) Get(ctx context.Context, accountId int64, leve
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

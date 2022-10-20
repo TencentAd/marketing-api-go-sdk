@@ -32,13 +32,15 @@ AsyncReportFilesApiService 获取文件接口
  * @param taskId
  * @param fileId
  * @param optional nil or *AsyncReportFilesGetOpts - Optional Parameters:
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return string
 */
 
 type AsyncReportFilesGetOpts struct {
-	Fields optional.Interface
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	Fields                               optional.Interface
 }
 
 func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, taskId int64, fileId int64, localVarOptionals *AsyncReportFilesGetOpts) (string, http.Header, error) {
@@ -61,6 +63,9 @@ func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, t
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("task_id", parameterToString(taskId, ""))
 	localVarQueryParams.Add("file_id", parameterToString(fileId, ""))
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

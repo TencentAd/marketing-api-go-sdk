@@ -246,17 +246,19 @@ AdsApiService 获取广告
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "IsDeleted" (optional.Bool) -
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdsGetResponse
 */
 
 type AdsGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	IsDeleted optional.Bool
-	Fields    optional.Interface
+	Filtering                            optional.Interface
+	Page                                 optional.Int64
+	PageSize                             optional.Int64
+	IsDeleted                            optional.Bool
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	Fields                               optional.Interface
 }
 
 func (a *AdsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AdsGetOpts) (AdsGetResponseData, http.Header, error) {
@@ -289,6 +291,9 @@ func (a *AdsApiService) Get(ctx context.Context, accountId int64, localVarOption
 	}
 	if localVarOptionals != nil && localVarOptionals.IsDeleted.IsSet() {
 		localVarQueryParams.Add("is_deleted", parameterToString(localVarOptionals.IsDeleted.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -89,4 +89,5 @@ const (
 	OptimizationGoal_WECOM_CONSULT                          OptimizationGoal = "OPTIMIZATIONGOAL_WECOM_CONSULT"
 	OptimizationGoal_ADD_GROUP                              OptimizationGoal = "OPTIMIZATIONGOAL_ADD_GROUP"
 	OptimizationGoal_QUICK_ORDER                            OptimizationGoal = "OPTIMIZATIONGOAL_QUICK_ORDER"
+	OptimizationGoal_PRE_PAY                                OptimizationGoal = "OPTIMIZATIONGOAL_PRE_PAY"
 )

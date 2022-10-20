@@ -140,16 +140,18 @@ AsyncReportsApiService 获取异步报表任务
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AsyncReportsGetResponse
 */
 
 type AsyncReportsGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	Fields    optional.Interface
+	Filtering                            optional.Interface
+	Page                                 optional.Int64
+	PageSize                             optional.Int64
+	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	Fields                               optional.Interface
 }
 
 func (a *AsyncReportsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AsyncReportsGetOpts) (AsyncReportsGetResponseData, http.Header, error) {
@@ -179,6 +181,9 @@ func (a *AsyncReportsApiService) Get(ctx context.Context, accountId int64, local
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

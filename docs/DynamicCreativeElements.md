@@ -52,6 +52,22 @@ Name | Type | Description | Notes
 **CanvasShareImage** | **string** |  | [optional] [default to null]
 **WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
+**TitleComponentOptions** | [**[]TextComponentOption**](text_component_option.md) |  | [optional] [default to null]
+**DescriptionComponentOptions** | [**[]TextComponentOption**](text_component_option.md) |  | [optional] [default to null]
+**ImageComponentOptions** | [**[]ImageComponentOption**](image_component_option.md) |  | [optional] [default to null]
+**ImageListComponentOptions** | [**[]ImageListComponentOption**](image_list_component_option.md) |  | [optional] [default to null]
+**ImageTextListComponentOptions** | [**[]ImageTextListComponentOption**](image_text_list_component_option.md) |  | [optional] [default to null]
+**Image2ComponentOptions** | [**[]ImageComponentOption**](image_component_option.md) |  | [optional] [default to null]
+**LandingPageComponentOptions** | [**[]LandingPageComponentOption**](landing_page_component_option.md) |  | [optional] [default to null]
+**BrandComponentOptions** | [**[]BrandComponentOption**](brand_component_option.md) |  | [optional] [default to null]
+**LongSublinkComponentOptions** | [**[]LongSublinkComponentOption**](long_sublink_component_option.md) |  | [optional] [default to null]
+**LongSublinkListComponentOptions** | [**[]LongSublinkListComponentOption**](long_sublink_list_component_option.md) |  | [optional] [default to null]
+**ShortSublinkComponentOptions** | [**[]ShortSublinkComponentOption**](short_sublink_component_option.md) |  | [optional] [default to null]
+**ShortSublinkListComponentOptions** | [**[]ShortSublinkListComponentOption**](short_sublink_list_component_option.md) |  | [optional] [default to null]
+**VideoComponentOptions** | [**[]VideoComponentOption**](video_component_option.md) |  | [optional] [default to null]
+**ConsultComponentOptions** | [**[]ConsultComponentOption**](consult_component_option.md) |  | [optional] [default to null]
+**PhoneComponentOptions** | [**[]PhoneComponentOption**](phone_component_option.md) |  | [optional] [default to null]
+**FormComponentOptions** | [**[]FormComponentOption**](form_component_option.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
