@@ -26,4 +26,5 @@ const (
 	CostType_COSTTYPE_CPM     CostType = "COSTTYPE_CPM"
 	CostType_COSTTYPE_CPD     CostType = "COSTTYPE_CPD"
 	CostType_COSTTYPE_CPT     CostType = "COSTTYPE_CPT"
+	CostType_BID_TYPE_CPO     CostType = "BID_TYPE_CPO"
 )

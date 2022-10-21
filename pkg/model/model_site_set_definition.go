@@ -59,4 +59,5 @@ const (
 	SiteSetDefinition_WECHAT_SEARCH        SiteSetDefinition = "SITE_SET_WECHAT_SEARCH"
 	SiteSetDefinition_WECHAT_PLUGIN        SiteSetDefinition = "SITE_SET_WECHAT_PLUGIN"
 	SiteSetDefinition_QBSEARCH             SiteSetDefinition = "SITE_SET_QBSEARCH"
+	SiteSetDefinition_FREETRADE            SiteSetDefinition = "SITE_SET_FREETRADE"
 )

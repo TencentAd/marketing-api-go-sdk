@@ -68,6 +68,7 @@ Name | Type | Description | Notes
 **ConsultComponentOptions** | [**[]ConsultComponentOption**](consult_component_option.md) |  | [optional] [default to null]
 **PhoneComponentOptions** | [**[]PhoneComponentOption**](phone_component_option.md) |  | [optional] [default to null]
 **FormComponentOptions** | [**[]FormComponentOption**](form_component_option.md) |  | [optional] [default to null]
+**ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

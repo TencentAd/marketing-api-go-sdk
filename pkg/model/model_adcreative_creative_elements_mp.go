@@ -61,4 +61,5 @@ type AdcreativeCreativeElementsMp struct {
 	CanvasShareImage           *string                            `json:"canvas_share_image,omitempty"`
 	WegameInfoSpec             *WegameInfoSpec                    `json:"wegame_info_spec,omitempty"`
 	FinderObjectVisibility     *bool                              `json:"finder_object_visibility,omitempty"`
+	ImageListJumpInfo          *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
 }

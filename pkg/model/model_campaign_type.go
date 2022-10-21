@@ -22,4 +22,5 @@ const (
 	CampaignType_UNSUPPORTED              CampaignType = "CAMPAIGN_TYPE_UNSUPPORTED"
 	CampaignType_REWARDQUEST              CampaignType = "CAMPAIGN_TYPE_REWARDQUEST"
 	CampaignType_OVERSEAS                 CampaignType = "CAMPAIGN_TYPE_OVERSEAS"
+	CampaignType_FREETRADE                CampaignType = "CAMPAIGN_TYPE_FREETRADE"
 )

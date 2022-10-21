@@ -11,6 +11,7 @@ package model
 
 // 礼包码，微信朋友圈广告创意形式需要填写
 type AppGiftPackCode struct {
-	Code *string `json:"code,omitempty"`
-	Tips *string `json:"tips,omitempty"`
+	Code        *string `json:"code,omitempty"`
+	Tips        *string `json:"tips,omitempty"`
+	Description *string `json:"description,omitempty"`
 }

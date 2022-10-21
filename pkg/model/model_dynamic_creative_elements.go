@@ -76,4 +76,5 @@ type DynamicCreativeElements struct {
 	ConsultComponentOptions          *[]ConsultComponentOption          `json:"consult_component_options,omitempty"`
 	PhoneComponentOptions            *[]PhoneComponentOption            `json:"phone_component_options,omitempty"`
 	FormComponentOptions             *[]FormComponentOption             `json:"form_component_options,omitempty"`
+	ImageListJumpInfo                *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
 }
