@@ -9,8 +9,9 @@
 
 package model
 
-// 返回结构
+// 授权信息
 type AuthSpec struct {
 	CertificationList *[]Certification               `json:"certification_list,omitempty"`
 	Relationship      PromotedObjectAuthRelationship `json:"relationship,omitempty"`
+	AuthScope         WechatAuthScope                `json:"auth_scope,omitempty"`
 }
