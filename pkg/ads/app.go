@@ -65,6 +65,10 @@ func (c *SDKClient) AdcreativesRelatedCapability() *api.AdcreativesRelatedCapabi
 	return c.Client.AdcreativesRelatedCapabilityApi
 }
 
+func (c *SDKClient) AdgroupNegativewords() *api.AdgroupNegativewordsApiService {
+	return c.Client.AdgroupNegativewordsApi
+}
+
 func (c *SDKClient) Adgroups() *api.AdgroupsApiService {
 	return c.Client.AdgroupsApi
 }
@@ -149,6 +153,14 @@ func (c *SDKClient) BidSimulation() *api.BidSimulationApiService {
 	return c.Client.BidSimulationApi
 }
 
+func (c *SDKClient) Bidword() *api.BidwordApiService {
+	return c.Client.BidwordApi
+}
+
+func (c *SDKClient) BidwordRpt() *api.BidwordRptApiService {
+	return c.Client.BidwordRptApi
+}
+
 func (c *SDKClient) Brand() *api.BrandApiService {
 	return c.Client.BrandApi
 }
@@ -159,6 +171,10 @@ func (c *SDKClient) BusinessManagerRelations() *api.BusinessManagerRelationsApiS
 
 func (c *SDKClient) BusinessMdmAccountRelations() *api.BusinessMdmAccountRelationsApiService {
 	return c.Client.BusinessMdmAccountRelationsApi
+}
+
+func (c *SDKClient) CampaignNegativewords() *api.CampaignNegativewordsApiService {
+	return c.Client.CampaignNegativewordsApi
 }
 
 func (c *SDKClient) Campaigns() *api.CampaignsApiService {
@@ -179,6 +195,10 @@ func (c *SDKClient) ComplianceValidation() *api.ComplianceValidationApiService {
 
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
+}
+
+func (c *SDKClient) CreativeComponents() *api.CreativeComponentsApiService {
+	return c.Client.CreativeComponentsApi
 }
 
 func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
@@ -463,6 +483,10 @@ func (c *SDKClient) PropertySets() *api.PropertySetsApiService {
 
 func (c *SDKClient) Qualifications() *api.QualificationsApiService {
 	return c.Client.QualificationsApi
+}
+
+func (c *SDKClient) QuerywordRpt() *api.QuerywordRptApiService {
+	return c.Client.QuerywordRptApi
 }
 
 func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {

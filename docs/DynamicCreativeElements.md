@@ -51,6 +51,7 @@ Name | Type | Description | Notes
 **FloatingZoneStruct** | [***FloatingZone**](floating_zone.md) |  | [optional] [default to null]
 **CanvasShareImage** | **string** |  | [optional] [default to null]
 **WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
+**WechatChannelsSpec** | [***AdCreativeWechatChannelsSpec**](ad_creative_wechat_channels_spec.md) |  | [optional] [default to null]
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
 **TitleComponentOptions** | [**[]TextComponentOption**](text_component_option.md) |  | [optional] [default to null]
 **DescriptionComponentOptions** | [**[]TextComponentOption**](text_component_option.md) |  | [optional] [default to null]

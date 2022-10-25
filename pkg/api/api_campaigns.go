@@ -133,6 +133,111 @@ func (a *CampaignsApiService) Add(ctx context.Context, data CampaignsAddRequest)
 }
 
 /*
+CampaignsApiService 新增推广计划否定词
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param data
+
+@return CampaignsAddNegativewordResponse
+*/
+func (a *CampaignsApiService) AddNegativeword(ctx context.Context, data CampaignsAddNegativewordRequest) (CampaignsAddNegativewordResponseData, http.Header, error) {
+	var (
+		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarFileKey     string
+		localVarReturnValue CampaignsAddNegativewordResponseData
+		localVarResponse    CampaignsAddNegativewordResponse
+	)
+
+	// create path and map variables
+	localVarPath := a.client.Cfg.BasePath + "/campaigns/add_negativeword"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+
+	// set Content-Type header
+	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
+	if localVarHttpContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHttpContentType
+	}
+
+	// to determine the Accept header
+	localVarHttpHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
+	if localVarHttpHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	// body params
+	localVarPostBody = &data
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarHttpResponse, err := a.client.callAPI(r)
+	if err != nil || localVarHttpResponse == nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
+	defer localVarHttpResponse.Body.Close()
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	if localVarHttpResponse.StatusCode < 300 {
+		// If we succeed, return the data, otherwise pass on to decode error.
+		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
+			if *localVarResponse.Code != 0 {
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			}
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
+		} else {
+			return localVarReturnValue, localVarHttpResponse.Header, err
+		}
+	}
+
+	if localVarHttpResponse.StatusCode >= 300 {
+		newErr := GenericSwaggerError{
+			body:  localVarBody,
+			error: localVarHttpResponse.Status,
+		}
+
+		if localVarHttpResponse.StatusCode == 200 {
+			var v CampaignsAddNegativewordResponse
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
+		}
+
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
+	}
+
+	return localVarReturnValue, localVarHttpResponse.Header, nil
+}
+
+/*
 CampaignsApiService 删除推广计划
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
@@ -361,6 +466,111 @@ func (a *CampaignsApiService) Get(ctx context.Context, accountId int64, localVar
 
 		if localVarHttpResponse.StatusCode == 200 {
 			var v CampaignsGetResponse
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
+		}
+
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
+	}
+
+	return localVarReturnValue, localVarHttpResponse.Header, nil
+}
+
+/*
+CampaignsApiService 查询推广计划否定词
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param data
+
+@return CampaignsGetNegativewordResponse
+*/
+func (a *CampaignsApiService) GetNegativeword(ctx context.Context, data CampaignsGetNegativewordRequest) (CampaignsGetNegativewordResponseData, http.Header, error) {
+	var (
+		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarFileKey     string
+		localVarReturnValue CampaignsGetNegativewordResponseData
+		localVarResponse    CampaignsGetNegativewordResponse
+	)
+
+	// create path and map variables
+	localVarPath := a.client.Cfg.BasePath + "/campaigns/get_negativeword"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+
+	// set Content-Type header
+	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
+	if localVarHttpContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHttpContentType
+	}
+
+	// to determine the Accept header
+	localVarHttpHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
+	if localVarHttpHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	// body params
+	localVarPostBody = &data
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarHttpResponse, err := a.client.callAPI(r)
+	if err != nil || localVarHttpResponse == nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
+	defer localVarHttpResponse.Body.Close()
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	if localVarHttpResponse.StatusCode < 300 {
+		// If we succeed, return the data, otherwise pass on to decode error.
+		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
+			if *localVarResponse.Code != 0 {
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			}
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
+		} else {
+			return localVarReturnValue, localVarHttpResponse.Header, err
+		}
+	}
+
+	if localVarHttpResponse.StatusCode >= 300 {
+		newErr := GenericSwaggerError{
+			body:  localVarBody,
+			error: localVarHttpResponse.Status,
+		}
+
+		if localVarHttpResponse.StatusCode == 200 {
+			var v CampaignsGetNegativewordResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -676,6 +886,111 @@ func (a *CampaignsApiService) UpdateDailyBudget(ctx context.Context, data Campai
 
 		if localVarHttpResponse.StatusCode == 200 {
 			var v CampaignsUpdateDailyBudgetResponse
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
+				return localVarReturnValue, localVarHttpResponse.Header, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse.Header, newErr
+		}
+
+		return localVarReturnValue, localVarHttpResponse.Header, newErr
+	}
+
+	return localVarReturnValue, localVarHttpResponse.Header, nil
+}
+
+/*
+CampaignsApiService 修改推广计划否定词
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param data
+
+@return CampaignsUpdateNegativewordResponse
+*/
+func (a *CampaignsApiService) UpdateNegativeword(ctx context.Context, data CampaignsUpdateNegativewordRequest) (CampaignsUpdateNegativewordResponseData, http.Header, error) {
+	var (
+		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarFileKey     string
+		localVarReturnValue CampaignsUpdateNegativewordResponseData
+		localVarResponse    CampaignsUpdateNegativewordResponse
+	)
+
+	// create path and map variables
+	localVarPath := a.client.Cfg.BasePath + "/campaigns/update_negativeword"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+
+	// set Content-Type header
+	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
+	if localVarHttpContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHttpContentType
+	}
+
+	// to determine the Accept header
+	localVarHttpHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
+	if localVarHttpHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	// body params
+	localVarPostBody = &data
+	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarHttpResponse, err := a.client.callAPI(r)
+	if err != nil || localVarHttpResponse == nil {
+		return localVarReturnValue, nil, err
+	}
+
+	localVarBody, err := ioutil.ReadAll(localVarHttpResponse.Body)
+	defer localVarHttpResponse.Body.Close()
+	if err != nil {
+		return localVarReturnValue, nil, err
+	}
+
+	if localVarHttpResponse.StatusCode < 300 {
+		// If we succeed, return the data, otherwise pass on to decode error.
+		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
+			if *localVarResponse.Code != 0 {
+				var localVarResponseErrors []ApiErrorStruct
+				if localVarResponse.Errors != nil {
+					localVarResponseErrors = *localVarResponse.Errors
+				}
+				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			}
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
+		} else {
+			return localVarReturnValue, localVarHttpResponse.Header, err
+		}
+	}
+
+	if localVarHttpResponse.StatusCode >= 300 {
+		newErr := GenericSwaggerError{
+			body:  localVarBody,
+			error: localVarHttpResponse.Status,
+		}
+
+		if localVarHttpResponse.StatusCode == 200 {
+			var v CampaignsUpdateNegativewordResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

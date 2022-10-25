@@ -51,6 +51,7 @@ Name | Type | Description | Notes
 **RightCanvas** | **string** |  | [optional] [default to null]
 **CanvasShareImage** | **string** |  | [optional] [default to null]
 **WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
+**WechatChannelsSpec** | [***AdCreativeWechatChannelsSpec**](ad_creative_wechat_channels_spec.md) |  | [optional] [default to null]
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
 **ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 

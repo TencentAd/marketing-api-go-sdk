@@ -74,6 +74,8 @@ type APIClient struct {
 
 	AdcreativesRelatedCapabilityApi *AdcreativesRelatedCapabilityApiService
 
+	AdgroupNegativewordsApi *AdgroupNegativewordsApiService
+
 	AdgroupsApi *AdgroupsApiService
 
 	AdsApi *AdsApiService
@@ -116,11 +118,17 @@ type APIClient struct {
 
 	BidSimulationApi *BidSimulationApiService
 
+	BidwordApi *BidwordApiService
+
+	BidwordRptApi *BidwordRptApiService
+
 	BrandApi *BrandApiService
 
 	BusinessManagerRelationsApi *BusinessManagerRelationsApiService
 
 	BusinessMdmAccountRelationsApi *BusinessMdmAccountRelationsApiService
+
+	CampaignNegativewordsApi *CampaignNegativewordsApiService
 
 	CampaignsApi *CampaignsApiService
 
@@ -131,6 +139,8 @@ type APIClient struct {
 	ComplianceValidationApi *ComplianceValidationApiService
 
 	ConversionsApi *ConversionsApiService
+
+	CreativeComponentsApi *CreativeComponentsApiService
 
 	CreativetoolsTextApi *CreativetoolsTextApiService
 
@@ -274,6 +284,8 @@ type APIClient struct {
 
 	QualificationsApi *QualificationsApiService
 
+	QuerywordRptApi *QuerywordRptApiService
+
 	RealtimeCostApi *RealtimeCostApiService
 
 	ReportApi *ReportApiService
@@ -408,6 +420,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdcreativeTemplatesApi = (*AdcreativeTemplatesApiService)(&c.common)
 	c.AdcreativesApi = (*AdcreativesApiService)(&c.common)
 	c.AdcreativesRelatedCapabilityApi = (*AdcreativesRelatedCapabilityApiService)(&c.common)
+	c.AdgroupNegativewordsApi = (*AdgroupNegativewordsApiService)(&c.common)
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
@@ -429,14 +442,18 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BatchOperationApi = (*BatchOperationApiService)(&c.common)
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
 	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
+	c.BidwordApi = (*BidwordApiService)(&c.common)
+	c.BidwordRptApi = (*BidwordRptApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)
 	c.BusinessMdmAccountRelationsApi = (*BusinessMdmAccountRelationsApiService)(&c.common)
+	c.CampaignNegativewordsApi = (*CampaignNegativewordsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
 	c.ChannelsApi = (*ChannelsApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
+	c.CreativeComponentsApi = (*CreativeComponentsApiService)(&c.common)
 	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
 	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
@@ -508,6 +525,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.PropertySetSchemasApi = (*PropertySetSchemasApiService)(&c.common)
 	c.PropertySetsApi = (*PropertySetsApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
+	c.QuerywordRptApi = (*QuerywordRptApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReportApi = (*ReportApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
