@@ -67,6 +67,7 @@ const (
 	LinkUrlLinkNameType_DISCOUNT_618                    LinkUrlLinkNameType = "DISCOUNT_618"
 	LinkUrlLinkNameType_GO_618_VENUE                    LinkUrlLinkNameType = "GO_618_VENUE"
 	LinkUrlLinkNameType_GET_618_WELFARE                 LinkUrlLinkNameType = "GET_618_WELFARE"
+	LinkUrlLinkNameType_CHECK_IT_OUT                    LinkUrlLinkNameType = "CHECK_IT_OUT"
 	LinkUrlLinkNameType_WATCH_VIDEO                     LinkUrlLinkNameType = "WATCH_VIDEO"
 	LinkUrlLinkNameType_CONTACT_CUSTOMER_SERVICE        LinkUrlLinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkUrlLinkNameType_CONTACT_BUSINESS                LinkUrlLinkNameType = "CONTACT_BUSINESS"

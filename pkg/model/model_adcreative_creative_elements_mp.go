@@ -63,4 +63,5 @@ type AdcreativeCreativeElementsMp struct {
 	WechatChannelsSpec         *AdCreativeWechatChannelsSpec      `json:"wechat_channels_spec,omitempty"`
 	FinderObjectVisibility     *bool                              `json:"finder_object_visibility,omitempty"`
 	ImageListJumpInfo          *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
+	ButtonTextJumpInfo         *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
 }

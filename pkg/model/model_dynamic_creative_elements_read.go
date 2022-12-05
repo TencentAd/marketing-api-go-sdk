@@ -103,5 +103,7 @@ type DynamicCreativeElementsRead struct {
 	ConsultComponentOptions          *[]ConsultComponentOption          `json:"consult_component_options,omitempty"`
 	PhoneComponentOptions            *[]PhoneComponentOption            `json:"phone_component_options,omitempty"`
 	FormComponentOptions             *[]FormComponentOption             `json:"form_component_options,omitempty"`
+	HolidayLogoComponentOptions      *[]HolidayLogoComponentOption      `json:"holiday_logo_component_options,omitempty"`
 	ImageListJumpInfo                *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
+	ExcitationText                   *string                            `json:"excitation_text,omitempty"`
 }

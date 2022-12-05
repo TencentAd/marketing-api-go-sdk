@@ -35,6 +35,7 @@ const (
 	DestinationType_WECHAT_CHANNELS                 DestinationType = "PAGE_TYPE_WECHAT_CHANNELS"
 	DestinationType_CHANNELS_WATCH_LIVE             DestinationType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	DestinationType_CHANNELS_RESERVE_LIVE           DestinationType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
+	DestinationType_WECHAT_STATUS_FOOTER            DestinationType = "PAGE_TYPE_WECHAT_STATUS_FOOTER"
 	DestinationType_YOUZAN_SINGLE                   DestinationType = "PAGE_TYPE_YOUZAN_SINGLE"
 	DestinationType_YOUZAN_TOGETHER                 DestinationType = "PAGE_TYPE_YOUZAN_TOGETHER"
 	DestinationType_YOUZAN_WECHAT_MINIPROGRAM       DestinationType = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"

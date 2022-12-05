@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**BidwordAdd**](BidwordApi.md#BidwordAdd) | **Post** /bidword/add | 创建关键词
 [**BidwordDelete**](BidwordApi.md#BidwordDelete) | **Post** /bidword/delete | 删除关键词
-[**BidwordGet**](BidwordApi.md#BidwordGet) | **Post** /bidword/get | 
+[**BidwordGet**](BidwordApi.md#BidwordGet) | **Post** /bidword/get | 获取关键词
 [**BidwordUpdate**](BidwordApi.md#BidwordUpdate) | **Post** /bidword/update | 更新关键词
 
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 # **BidwordGet**
 > BidwordGetResponse BidwordGet(ctx, data)
-
+获取关键词
 
 ### Required Parameters
 

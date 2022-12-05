@@ -17,4 +17,5 @@ type ChannelPackageInfo struct {
 	ErrorCode        ChannelTaskError  `json:"error_code,omitempty"`
 	CreatedTime      *int64            `json:"created_time,omitempty"`
 	LastModifiedTime *int64            `json:"last_modified_time,omitempty"`
+	ChannelPackageId *string           `json:"channel_package_id,omitempty"`
 }

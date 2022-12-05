@@ -36,6 +36,7 @@ const (
 	PageTypeRead_WECHAT_CHANNELS                 PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS"
 	PageTypeRead_CHANNELS_WATCH_LIVE             PageTypeRead = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	PageTypeRead_CHANNELS_RESERVE_LIVE           PageTypeRead = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
+	PageTypeRead_WECHAT_STATUS_FOOTER            PageTypeRead = "PAGE_TYPE_WECHAT_STATUS_FOOTER"
 	PageTypeRead_YOUZAN_SINGLE                   PageTypeRead = "PAGE_TYPE_YOUZAN_SINGLE"
 	PageTypeRead_YOUZAN_TOGETHER                 PageTypeRead = "PAGE_TYPE_YOUZAN_TOGETHER"
 	PageTypeRead_YOUZAN_WECHAT_MINIPROGRAM       PageTypeRead = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"

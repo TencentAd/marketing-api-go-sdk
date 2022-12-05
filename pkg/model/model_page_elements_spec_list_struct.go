@@ -23,4 +23,5 @@ type PageElementsSpecListStruct struct {
 	WeappSpec        *WeappSpec                 `json:"weapp_spec,omitempty"`
 	GhSpec           *GhSpec                    `json:"gh_spec,omitempty"`
 	EnterpriseWxSpec *EnterpriseWxSpec          `json:"enterprise_wx_spec,omitempty"`
+	ImageTextSpec    *ImageTextSpec             `json:"image_text_spec,omitempty"`
 }

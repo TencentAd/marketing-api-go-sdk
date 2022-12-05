@@ -53,6 +53,8 @@ const (
 	TaskType_TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA                               TaskType = "TASK_TYPE_SEARCH_KEYWORD_RECOMMEND_DATA"
 	TaskType_TASK_TYPE_SEARCH_BIDWORD_REPORT_DATA                                  TaskType = "TASK_TYPE_SEARCH_BIDWORD_REPORT_DATA"
 	TaskType_TASK_TYPE_SEARCH_QUERYWORD_REPORT_DATA                                TaskType = "TASK_TYPE_SEARCH_QUERYWORD_REPORT_DATA"
+	TaskType_TASK_TYPE_BATCH_IMPORT                                                TaskType = "TASK_TYPE_BATCH_IMPORT"
+	TaskType_TASK_TYPE_WX_SEARCH_KEYWORD_DATA                                      TaskType = "TASK_TYPE_WX_SEARCH_KEYWORD_DATA"
 	TaskType_TASK_TYPE_BATCH_REQUEST                                               TaskType = "TASK_TYPE_BATCH_REQUEST"
 	TaskType_TASK_TYPE_CLICK_FORWARDED_DATA                                        TaskType = "TASK_TYPE_CLICK_FORWARDED_DATA"
 	TaskType_TASK_TYPE_ADP_OFFLINE_RPT                                             TaskType = "TASK_TYPE_ADP_OFFLINE_RPT"

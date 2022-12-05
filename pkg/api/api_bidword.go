@@ -237,7 +237,7 @@ func (a *BidwordApiService) Delete(ctx context.Context, data BidwordDeleteReques
 }
 
 /*
-BidwordApiService
+BidwordApiService 获取关键词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

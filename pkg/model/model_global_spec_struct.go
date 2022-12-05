@@ -11,6 +11,7 @@ package model
 
 // 全局组件
 type GlobalSpecStruct struct {
-	ElementType     CanvasGlobalElementType    `json:"element_type,omitempty"`
-	FloatButtonSpec *CanvasFloatButtonSpecType `json:"float_button_spec,omitempty"`
+	ElementType      CanvasGlobalElementType    `json:"element_type,omitempty"`
+	FloatButtonSpec  *CanvasFloatButtonSpecType `json:"float_button_spec,omitempty"`
+	SideBarFloatSpec *SideBarFloatSpecSpec      `json:"side_bar_float_spec,omitempty"`
 }

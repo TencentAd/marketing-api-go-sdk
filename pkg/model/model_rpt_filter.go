@@ -11,8 +11,8 @@ package model
 
 // 报表过滤器
 type RptFilter struct {
-	TimeRange     *TimeRange `json:"time_range,omitempty"`
-	ReportOnly    *int64     `json:"report_only,omitempty"`
-	TimeDimension *int64     `json:"time_dimension,omitempty"`
-	TimeLine      *int64     `json:"time_line,omitempty"`
+	TimeRange     *DateTimeRange `json:"time_range,omitempty"`
+	ReportOnly    *int64         `json:"report_only,omitempty"`
+	TimeDimension *int64         `json:"time_dimension,omitempty"`
+	TimeLine      *int64         `json:"time_line,omitempty"`
 }

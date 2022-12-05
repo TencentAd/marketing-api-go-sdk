@@ -25,4 +25,5 @@ const (
 	CanvasPageElementType_WEAPP         CanvasPageElementType = "WEAPP"
 	CanvasPageElementType_GH            CanvasPageElementType = "GH"
 	CanvasPageElementType_ENTERPRISE_WX CanvasPageElementType = "ENTERPRISE_WX"
+	CanvasPageElementType_IMAGE_TEXT    CanvasPageElementType = "IMAGE_TEXT"
 )

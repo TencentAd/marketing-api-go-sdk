@@ -26,6 +26,7 @@ const (
 	WechatPagePageType_WECHAT_CHANNELS                 WechatPagePageType = "PAGE_TYPE_WECHAT_CHANNELS"
 	WechatPagePageType_CHANNELS_WATCH_LIVE             WechatPagePageType = "PAGE_TYPE_CHANNELS_WATCH_LIVE"
 	WechatPagePageType_CHANNELS_RESERVE_LIVE           WechatPagePageType = "PAGE_TYPE_CHANNELS_RESERVE_LIVE"
+	WechatPagePageType_WECHAT_STATUS_FOOTER            WechatPagePageType = "PAGE_TYPE_WECHAT_STATUS_FOOTER"
 	WechatPagePageType_YOUZAN_SINGLE                   WechatPagePageType = "PAGE_TYPE_YOUZAN_SINGLE"
 	WechatPagePageType_YOUZAN_TOGETHER                 WechatPagePageType = "PAGE_TYPE_YOUZAN_TOGETHER"
 	WechatPagePageType_YOUZAN_WECHAT_MINIPROGRAM       WechatPagePageType = "PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"

@@ -14,5 +14,6 @@ type CanvasGlobalElementType string
 
 // List of CanvasGlobalElementType
 const (
-	CanvasGlobalElementType_FLOAT_BUTTON CanvasGlobalElementType = "FLOAT_BUTTON"
+	CanvasGlobalElementType_FLOAT_BUTTON          CanvasGlobalElementType = "FLOAT_BUTTON"
+	CanvasGlobalElementType_SIDE_BAR_FLOAT_BUTTON CanvasGlobalElementType = "SIDE_BAR_FLOAT_BUTTON"
 )

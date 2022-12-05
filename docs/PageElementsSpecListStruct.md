@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **WeappSpec** | [***WeappSpec**](weapp_spec.md) |  | [optional] [default to null]
 **GhSpec** | [***GhSpec**](gh_spec.md) |  | [optional] [default to null]
 **EnterpriseWxSpec** | [***EnterpriseWxSpec**](enterprise_wx_spec.md) |  | [optional] [default to null]
+**ImageTextSpec** | [***ImageTextSpec**](image_text_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
