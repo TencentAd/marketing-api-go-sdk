@@ -47,4 +47,6 @@ type DynamicCreativesGetListStruct struct {
 	HeadClickType                    HeadClickType                `json:"head_click_type,omitempty"`
 	HeadClickSpec                    *HeadClickSpec               `json:"head_click_spec,omitempty"`
 	AsyncJobStatus                   DcAsyncJobStatus             `json:"async_job_status,omitempty"`
+	PageTrackUrl                     *string                      `json:"page_track_url,omitempty"`
+	IndustryLabel                    *string                      `json:"industry_label,omitempty"`
 }

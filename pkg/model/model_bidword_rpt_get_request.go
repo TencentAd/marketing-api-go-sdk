@@ -18,4 +18,5 @@ type BidwordRptGetRequest struct {
 	PageSize  *int64                    `json:"page_size,omitempty"`
 	RptFilter *RptFilter                `json:"rpt_filter,omitempty"`
 	BizFilter *BizFilter                `json:"biz_filter,omitempty"`
+	QueryType *[]int64                  `json:"query_type,omitempty"`
 }

@@ -40,6 +40,7 @@ Name | Type | Description | Notes
 **HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
 **HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 **CampaignId** | **int64** |  | [optional] [default to null]
+**IndustryLabel** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
