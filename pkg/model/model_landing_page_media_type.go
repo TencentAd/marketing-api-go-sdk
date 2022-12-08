@@ -18,4 +18,6 @@ const (
 	LandingPageMediaType_ALL          LandingPageMediaType = "ALL"
 	LandingPageMediaType_SCREEN_PC    LandingPageMediaType = "SCREEN_PC"
 	LandingPageMediaType_SCREEN_PHONE LandingPageMediaType = "SCREEN_PHONE"
+	LandingPageMediaType_OS_ANDROID   LandingPageMediaType = "OS_ANDROID"
+	LandingPageMediaType_OS_IOS       LandingPageMediaType = "OS_IOS"
 )

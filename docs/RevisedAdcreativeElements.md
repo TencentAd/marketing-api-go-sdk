@@ -54,6 +54,9 @@ Name | Type | Description | Notes
 **WegameInfoSpec** | [***WegameInfoSpec**](wegame_info_spec.md) |  | [optional] [default to null]
 **WechatChannelsSpec** | [***AdCreativeWechatChannelsSpec**](ad_creative_wechat_channels_spec.md) |  | [optional] [default to null]
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
+**ActionButtonComponentOptions** | [**[]ActionButtonComponentOption**](action_button_component_option.md) |  | [optional] [default to null]
+**ChosenButtonComponentOptions** | [**[]ChosenButtonComponentOption**](chosen_button_component_option.md) |  | [optional] [default to null]
+**Video2ComponentOptions** | [**[]VideoComponentOption**](video_component_option.md) |  | [optional] [default to null]
 **ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

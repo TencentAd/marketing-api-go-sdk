@@ -1,11 +1,10 @@
-# CreateSplitChannelStruct
+# ActionButtonComponentOption
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ChannelId** | **string** |  | [optional] [default to null]
-**ChannelName** | **string** |  | [optional] [default to null]
-**CustomizedChannelId** | **string** |  | [optional] [default to null]
+**ComponentId** | **int64** |  | [optional] [default to null]
+**Value** | [***ActionButtonComponentValueStruct**](action_button_component_value_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

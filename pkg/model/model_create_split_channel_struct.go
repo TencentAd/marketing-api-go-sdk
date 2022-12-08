@@ -11,6 +11,7 @@ package model
 
 // 渠道号信息
 type CreateSplitChannelStruct struct {
-	ChannelId   *string `json:"channel_id,omitempty"`
-	ChannelName *string `json:"channel_name,omitempty"`
+	ChannelId           *string `json:"channel_id,omitempty"`
+	ChannelName         *string `json:"channel_name,omitempty"`
+	CustomizedChannelId *string `json:"customized_channel_id,omitempty"`
 }

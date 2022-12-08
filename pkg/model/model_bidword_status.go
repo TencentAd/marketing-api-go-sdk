@@ -20,4 +20,6 @@ const (
 	BidwordStatus_BID_PRICE_LOWER           BidwordStatus = "BIDWORD_STATUS_BID_PRICE_LOWER"
 	BidwordStatus_BID_PRICE_PARTIALLY_LOWER BidwordStatus = "BIDWORD_STATUS_BID_PRICE_PARTIALLY_LOWER"
 	BidwordStatus_NORMAL                    BidwordStatus = "BIDWORD_STATUS_NORMAL"
+	BidwordStatus_DISPLAY_LIMITED           BidwordStatus = "BIDWORD_STATUS_DISPLAY_LIMITED"
+	BidwordStatus_NORMAL_BUT_NOT_FILL       BidwordStatus = "BIDWORD_STATUS_NORMAL_BUT_NOT_FILL"
 )

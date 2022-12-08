@@ -70,6 +70,9 @@ Name | Type | Description | Notes
 **PhoneComponentOptions** | [**[]PhoneComponentOption**](phone_component_option.md) |  | [optional] [default to null]
 **FormComponentOptions** | [**[]FormComponentOption**](form_component_option.md) |  | [optional] [default to null]
 **HolidayLogoComponentOptions** | [**[]HolidayLogoComponentOption**](holiday_logo_component_option.md) |  | [optional] [default to null]
+**ActionButtonComponentOptions** | [**[]ActionButtonComponentOption**](action_button_component_option.md) |  | [optional] [default to null]
+**ChosenButtonComponentOptions** | [**[]ChosenButtonComponentOption**](chosen_button_component_option.md) |  | [optional] [default to null]
+**Video2ComponentOptions** | [**[]VideoComponentOption**](video_component_option.md) |  | [optional] [default to null]
 **ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 **ExcitationText** | **string** |  | [optional] [default to null]
 

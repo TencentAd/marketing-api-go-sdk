@@ -1,11 +1,10 @@
-# CreateSplitChannelStruct
+# ActionButtonComponentValueStruct
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ChannelId** | **string** |  | [optional] [default to null]
-**ChannelName** | **string** |  | [optional] [default to null]
-**CustomizedChannelId** | **string** |  | [optional] [default to null]
+**ButtonText** | **string** |  | [optional] [default to null]
+**JumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
