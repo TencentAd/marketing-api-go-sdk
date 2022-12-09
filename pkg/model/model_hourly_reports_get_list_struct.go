@@ -381,6 +381,18 @@ type HourlyReportsGetListStruct struct {
 	BasicInfoClientCount                       *int64   `json:"basic_info_client_count,omitempty"`
 	AccountInfoClickCount                      *int64   `json:"account_info_click_count,omitempty"`
 	ActivityInfoClickCount                     *int64   `json:"activity_info_click_count,omitempty"`
+	ClkRedpocketBtnGetPv                       *int64   `json:"clk_redpocket_btn_get_pv,omitempty"`
+	ClkRedpocketBtnSharePv                     *int64   `json:"clk_redpocket_btn_share_pv,omitempty"`
+	ClkRedpocketBtnJumpPv                      *int64   `json:"clk_redpocket_btn_jump_pv,omitempty"`
+	ClkGoodsHeaderPv                           *int64   `json:"clk_goods_header_pv,omitempty"`
+	ClkGoodsInfoPv                             *int64   `json:"clk_goods_info_pv,omitempty"`
+	ClkGoodsRecommendPv                        *int64   `json:"clk_goods_recommend_pv,omitempty"`
+	ClkMiddleShowwindowPv                      *int64   `json:"clk_middle_showwindow_pv,omitempty"`
+	ClkFooterPv                                *int64   `json:"clk_footer_pv,omitempty"`
+	ClkMiddleGoodsPv                           *int64   `json:"clk_middle_goods_pv,omitempty"`
+	ClkMiddleBtnPv                             *int64   `json:"clk_middle_btn_pv,omitempty"`
+	ClkMiddleSectionPv                         *int64   `json:"clk_middle_section_pv,omitempty"`
+	ClkMiddleGridviewPv                        *int64   `json:"clk_middle_gridview_pv,omitempty"`
 	MiniGameBfUv                               *int64   `json:"mini_game_bf_uv,omitempty"`
 	MiniGameBfCost                             *int64   `json:"mini_game_bf_cost,omitempty"`
 	MiniGameBfIncomeUv                         *int64   `json:"mini_game_bf_income_uv,omitempty"`
