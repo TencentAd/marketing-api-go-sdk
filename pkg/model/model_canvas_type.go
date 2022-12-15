@@ -37,4 +37,5 @@ const (
 	CanvasType_VIDEO_1280_720         CanvasType = "CANVAS_TYPE_VIDEO_1280_720"
 	CanvasType_VIDEO_1280_960         CanvasType = "CANVAS_TYPE_VIDEO_1280_960"
 	CanvasType_PC_EGG_PLOT            CanvasType = "CANVAS_TYPE_PC_EGG_PLOT"
+	CanvasType_EGGS_RANDOM_HALF       CanvasType = "CANVAS_TYPE_EGGS_RANDOM_HALF"
 )

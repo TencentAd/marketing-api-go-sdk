@@ -66,4 +66,6 @@ type RevisedAdcreativeElements struct {
 	ChosenButtonComponentOptions *[]ChosenButtonComponentOption     `json:"chosen_button_component_options,omitempty"`
 	Video2ComponentOptions       *[]VideoComponentOption            `json:"video2_component_options,omitempty"`
 	ImageListJumpInfo            *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
+	OriginVideo                  *string                            `json:"origin_video,omitempty"`
+	RedEnvelopeStruct            *RedEnvelopeStruct                 `json:"red_envelope_struct,omitempty"`
 }

@@ -83,4 +83,6 @@ type DynamicCreativeElements struct {
 	Video2ComponentOptions           *[]VideoComponentOption            `json:"video2_component_options,omitempty"`
 	ImageListJumpInfo                *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
 	ExcitationText                   *string                            `json:"excitation_text,omitempty"`
+	OriginVideo                      *string                            `json:"origin_video,omitempty"`
+	RedEnvelopeStruct                *RedEnvelopeStruct                 `json:"red_envelope_struct,omitempty"`
 }

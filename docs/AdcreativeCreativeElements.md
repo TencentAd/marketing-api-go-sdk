@@ -54,6 +54,8 @@ Name | Type | Description | Notes
 **WechatChannelsSpec** | [***AdCreativeWechatChannelsSpec**](ad_creative_wechat_channels_spec.md) |  | [optional] [default to null]
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
 **ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
+**OriginVideo** | **string** |  | [optional] [default to null]
+**RedEnvelopeStruct** | [***RedEnvelopeStruct**](red_envelope_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

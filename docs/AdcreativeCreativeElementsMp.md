@@ -56,6 +56,8 @@ Name | Type | Description | Notes
 **FinderObjectVisibility** | **bool** |  | [optional] [default to null]
 **ImageListJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 **ButtonTextJumpInfo** | [***LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
+**OriginVideo** | **string** |  | [optional] [default to null]
+**RedEnvelopeStruct** | [***RedEnvelopeStruct**](red_envelope_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
