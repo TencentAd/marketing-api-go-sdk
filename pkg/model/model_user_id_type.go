@@ -36,4 +36,5 @@ const (
 	UserIdType_MD5_SHA256_IMEI     UserIdType = "MD5_SHA256_IMEI"
 	UserIdType_MD5_SHA256_IDFA     UserIdType = "MD5_SHA256_IDFA"
 	UserIdType_MD5_SHA256_OAID     UserIdType = "MD5_SHA256_OAID"
+	UserIdType_CAID                UserIdType = "CAID"
 )
