@@ -14,6 +14,11 @@ Name | Type | Description | Notes
 **LocalStoreBusinessArea** | **string** |  | [optional] [default to null]
 **LocalStoreDistrict** | **string** |  | [optional] [default to null]
 **LocalStoreLocation** | [***LocalStoreLocation**](local_store_location.md) |  | [optional] [default to null]
+**WechatWorkCorpId** | **int64** |  | [optional] [default to null]
+**WechatCustomerServiceLink** | **string** |  | [optional] [default to null]
+**ImageSet** | [**[]ImageSetDataStruct**](image_set_data_struct.md) |  | [optional] [default to null]
+**RecommendWords** | [**[]RecommendWordStruct**](recommend_word_struct.md) |  | [optional] [default to null]
+**IsUseStandardizedName** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
