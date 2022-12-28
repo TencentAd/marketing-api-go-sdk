@@ -11,9 +11,10 @@ package model
 
 // 剧情红包组件
 type RedEnvelopeStruct struct {
-	RedEnvelopeSwitch          *bool   `json:"red_envelope_switch,omitempty"`
-	RedEnvelopeImageId         *string `json:"red_envelope_image_id,omitempty"`
-	RedEnvelopeExtraSceneId    *string `json:"red_envelope_extra_scene_id,omitempty"`
-	RedEnvelopeAppearTimeMs    *int64  `json:"red_envelope_appear_time_ms,omitempty"`
-	RedEnvelopeDisappearTimeMs *int64  `json:"red_envelope_disappear_time_ms,omitempty"`
+	RedEnvelopeSwitch             *bool   `json:"red_envelope_switch,omitempty"`
+	RedEnvelopeImageId            *string `json:"red_envelope_image_id,omitempty"`
+	RedEnvelopeExtraSceneId       *string `json:"red_envelope_extra_scene_id,omitempty"`
+	RedEnvelopeAppearTimeMs       *int64  `json:"red_envelope_appear_time_ms,omitempty"`
+	RedEnvelopeDisappearTimeMs    *int64  `json:"red_envelope_disappear_time_ms,omitempty"`
+	RedEnvelopeOriginExtraSceneId *string `json:"red_envelope_origin_extra_scene_id,omitempty"`
 }
