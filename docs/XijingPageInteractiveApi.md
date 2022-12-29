@@ -38,6 +38,8 @@ Name | Type | Description  | Notes
 
 
  **file** | **optional.Interface of *os.File**|  | 
+ **transformType** | **optional.String**|  | 
+ **pageConfig** | **optional.String**|  | 
 
 ### Return type
 
