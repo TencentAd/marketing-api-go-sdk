@@ -69,4 +69,5 @@ const (
 	LinkNameType_GET_618_WELFARE                 LinkNameType = "GET_618_WELFARE"
 	LinkNameType_CONTACT_CUSTOMER_SERVICE        LinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkNameType_CONTACT_BUSINESS                LinkNameType = "CONTACT_BUSINESS"
+	LinkNameType_GO_SCAN                         LinkNameType = "GO_SCAN"
 )
