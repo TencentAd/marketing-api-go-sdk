@@ -57,4 +57,5 @@ const (
 	PageTypeRead_CHANNELS_HALF_CARD              PageTypeRead = "PAGE_TYPE_CHANNELS_HALF_CARD"
 	PageTypeRead_NOT_USED                        PageTypeRead = "PAGE_TYPE_NOT_USED"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
+	PageTypeRead_APP_DEEP_LINK                   PageTypeRead = "PAGE_TYPE_APP_DEEP_LINK"
 )
