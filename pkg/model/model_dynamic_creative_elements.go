@@ -85,5 +85,6 @@ type DynamicCreativeElements struct {
 	ExcitationText                   *string                            `json:"excitation_text,omitempty"`
 	OriginVideo                      *string                            `json:"origin_video,omitempty"`
 	RedEnvelopeStruct                *RedEnvelopeStruct                 `json:"red_envelope_struct,omitempty"`
+	ButtonTextJumpInfo               *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
 	Image3ComponentOptions           *[]ImageComponentOption            `json:"image3_component_options,omitempty"`
 }

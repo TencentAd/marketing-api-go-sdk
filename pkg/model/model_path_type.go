@@ -18,5 +18,4 @@ const (
 	PathType_MDM            PathType = "PATH_TYPE_MDM"
 	PathType_POINT_TO_POINT PathType = "PATH_TYPE_POINT_TO_POINT"
 	PathType_AGENCY         PathType = "PATH_TYPE_AGENCY"
-	PathType_ACCOUNT        PathType = "PATH_TYPE_ACCOUNT"
 )

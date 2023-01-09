@@ -40,4 +40,5 @@ const (
 	LinkPageType_XJ_QUICK                       LinkPageType = "LINK_PAGE_TYPE_XJ_QUICK"
 	LinkPageType_YOUZAN_WECHAT_MINIPROGRAM      LinkPageType = "LINK_PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM"
 	LinkPageType_WEIMOB_WECHAT_MINIPROGRAM      LinkPageType = "LINK_PAGE_TYPE_WEIMOB_WECHAT_MINIPROGRAM"
+	LinkPageType_WECOM_CONSULT                  LinkPageType = "LINK_PAGE_TYPE_WECOM_CONSULT"
 )
