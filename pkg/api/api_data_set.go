@@ -33,14 +33,14 @@ DataSetApiService 添加数据集
 
 @return DataSetAddResponse
 */
-func (a *DataSetApiService) Add(ctx context.Context, data DataSetAddRequest) (interface{}, http.Header, error) {
+func (a *DataSetApiService) Add(ctx context.Context, data DataSetAddRequest) (DataSetAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
+		localVarReturnValue DataSetAddResponseData
 		localVarResponse    DataSetAddResponse
 	)
 
@@ -98,7 +98,11 @@ func (a *DataSetApiService) Add(ctx context.Context, data DataSetAddRequest) (in
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

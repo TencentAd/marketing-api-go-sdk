@@ -518,6 +518,8 @@ type DailyReportsGetListStruct struct {
 	Cheout3dRate                               *float64 `json:"cheout_3d_rate,omitempty"`
 	Cheout5dRate                               *float64 `json:"cheout_5d_rate,omitempty"`
 	Cheout7dRate                               *float64 `json:"cheout_7d_rate,omitempty"`
+	ClkRedpocketShakePv                        *int64   `json:"clk_redpocket_shake_pv,omitempty"`
+	ClkRedpocketShakeUv                        *int64   `json:"clk_redpocket_shake_uv,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

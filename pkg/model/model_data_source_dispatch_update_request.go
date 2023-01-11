@@ -10,5 +10,6 @@
 package model
 
 type DataSourceDispatchUpdateRequest struct {
-	AccountId *int64 `json:"account_id,omitempty"`
+	AccountId        *int64                    `json:"account_id,omitempty"`
+	DataSourceScenes *[]SingleDataSourceScenes `json:"data_source_scenes,omitempty"`
 }

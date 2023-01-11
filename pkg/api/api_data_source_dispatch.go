@@ -27,20 +27,20 @@ var (
 type DataSourceDispatchApiService service
 
 /*
-DataSourceDispatchApiService 数据源分发
+DataSourceDispatchApiService 数据源分发关系更新
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
 @return DataSourceDispatchUpdateResponse
 */
-func (a *DataSourceDispatchApiService) Update(ctx context.Context, data DataSourceDispatchUpdateRequest) (interface{}, http.Header, error) {
+func (a *DataSourceDispatchApiService) Update(ctx context.Context, data DataSourceDispatchUpdateRequest) (DataSourceDispatchUpdateResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
+		localVarReturnValue DataSourceDispatchUpdateResponseData
 		localVarResponse    DataSourceDispatchUpdateResponse
 	)
 
@@ -98,7 +98,11 @@ func (a *DataSourceDispatchApiService) Update(ctx context.Context, data DataSour
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

@@ -10,6 +10,9 @@
 package model
 
 type DataSourceAddRequest struct {
-	AccountId    *int64 `json:"account_id,omitempty"`
-	DataSourceId *int64 `json:"data_source_id,omitempty"`
+	AccountId   *int64         `json:"account_id,omitempty"`
+	Type_       DataSourceType `json:"type,omitempty"`
+	MobileAppId *int64         `json:"mobile_app_id,omitempty"`
+	WechatAppId *string        `json:"wechat_app_id,omitempty"`
+	Name        *string        `json:"name,omitempty"`
 }

@@ -35,7 +35,7 @@ func (e *DataSetAddExample) Init() {
 	e.Data = model.DataSetAddRequest{}
 }
 
-func (e *DataSetAddExample) RunExample() (interface{}, http.Header, error) {
+func (e *DataSetAddExample) RunExample() (model.DataSetAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

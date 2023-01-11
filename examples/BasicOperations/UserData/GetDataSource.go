@@ -15,15 +15,17 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type DataSourceGetExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.DataSourceGetRequest
+	TAds              *ads.SDKClient
+	AccessToken       string
+	AccountId         int64
+	DataSourceGetOpts *api.DataSourceGetOpts
 }
 
 func (e *DataSourceGetExample) Init() {
@@ -32,14 +34,15 @@ func (e *DataSourceGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.DataSourceGetRequest{}
+	e.AccountId = 789
+	e.DataSourceGetOpts = &api.DataSourceGetOpts{}
 }
 
-func (e *DataSourceGetExample) RunExample() (interface{}, http.Header, error) {
+func (e *DataSourceGetExample) RunExample() (model.DataSourceGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.DataSource().Get(ctx, e.Data)
+	return tads.DataSource().Get(ctx, e.AccountId, e.DataSourceGetOpts)
 }
 
 func main() {

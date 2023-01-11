@@ -9,7 +9,6 @@
 
 package model
 
-type DataSourceGetRequest struct {
-	AccountId    *int64 `json:"account_id,omitempty"`
+type DataSourceAddResponseData struct {
 	DataSourceId *int64 `json:"data_source_id,omitempty"`
 }

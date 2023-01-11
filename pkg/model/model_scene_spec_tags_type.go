@@ -19,4 +19,5 @@ const (
 	SceneSpecTagsType_MINI_PROGRAM_AND_MINI_GAME      SceneSpecTagsType = "MINI_PROGRAM_AND_MINI_GAME"
 	SceneSpecTagsType_PAY_SCENE                       SceneSpecTagsType = "PAY_SCENE"
 	SceneSpecTagsType_MOBILE_UNION_CATEGORY           SceneSpecTagsType = "MOBILE_UNION_CATEGORY"
+	SceneSpecTagsType_WECHAT_CHANNELS_SCENE           SceneSpecTagsType = "WECHAT_CHANNELS_SCENE"
 )

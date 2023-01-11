@@ -90,4 +90,5 @@ const (
 	OptimizationGoal_ADD_GROUP                              OptimizationGoal = "OPTIMIZATIONGOAL_ADD_GROUP"
 	OptimizationGoal_QUICK_ORDER                            OptimizationGoal = "OPTIMIZATIONGOAL_QUICK_ORDER"
 	OptimizationGoal_PRE_PAY                                OptimizationGoal = "OPTIMIZATIONGOAL_PRE_PAY"
+	OptimizationGoal_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG     OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG"
 )

@@ -35,7 +35,7 @@ func (e *DataSourceAddExample) Init() {
 	e.Data = model.DataSourceAddRequest{}
 }
 
-func (e *DataSourceAddExample) RunExample() (interface{}, http.Header, error) {
+func (e *DataSourceAddExample) RunExample() (model.DataSourceAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

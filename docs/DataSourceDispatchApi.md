@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DataSourceDispatchUpdate**](DataSourceDispatchApi.md#DataSourceDispatchUpdate) | **Post** /data_source_dispatch/update | 数据源分发
+[**DataSourceDispatchUpdate**](DataSourceDispatchApi.md#DataSourceDispatchUpdate) | **Post** /data_source_dispatch/update | 数据源分发关系更新
 
 
 # **DataSourceDispatchUpdate**
 > DataSourceDispatchUpdateResponse DataSourceDispatchUpdate(ctx, data)
-数据源分发
+数据源分发关系更新
 
 ### Required Parameters
 

@@ -510,6 +510,8 @@ Name | Type | Description | Notes
 **Cheout3dRate** | **float64** |  | [optional] [default to null]
 **Cheout5dRate** | **float64** |  | [optional] [default to null]
 **Cheout7dRate** | **float64** |  | [optional] [default to null]
+**ClkRedpocketShakePv** | **int64** |  | [optional] [default to null]
+**ClkRedpocketShakeUv** | **int64** |  | [optional] [default to null]
 **RequestConversionsCount** | **int64** |  | [optional] [default to null]
 **RequestConversionsCost** | **int64** |  | [optional] [default to null]
 **IncomeVal1** | **int64** |  | [optional] [default to null]

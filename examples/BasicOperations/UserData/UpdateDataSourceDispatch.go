@@ -35,7 +35,7 @@ func (e *DataSourceDispatchUpdateExample) Init() {
 	e.Data = model.DataSourceDispatchUpdateRequest{}
 }
 
-func (e *DataSourceDispatchUpdateExample) RunExample() (interface{}, http.Header, error) {
+func (e *DataSourceDispatchUpdateExample) RunExample() (model.DataSourceDispatchUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
