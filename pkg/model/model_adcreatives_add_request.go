@@ -50,6 +50,8 @@ type AdcreativesAddRequest struct {
 	IndustryLabel                 *string                       `json:"industry_label,omitempty"`
 	UnionMarketSpec               *UnionMarketSpec              `json:"union_market_spec,omitempty"`
 	AndroidQuickAppSpec           *AndroidQuickAppSpec          `json:"android_quick_app_spec,omitempty"`
+	LiveVideoMode                 LiveVideoMode                 `json:"live_video_mode,omitempty"`
+	LiveVideoSubMode              LiveVideoSubMode              `json:"live_video_sub_mode,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeTemplateId          *int64                        `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
