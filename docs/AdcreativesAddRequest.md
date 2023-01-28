@@ -43,6 +43,8 @@ Name | Type | Description | Notes
 **IndustryLabel** | **string** |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **AndroidQuickAppSpec** | [***AndroidQuickAppSpec**](android_quick_app_spec.md) |  | [optional] [default to null]
+**LiveVideoMode** | [***LiveVideoMode**](LiveVideoMode.md) |  | [optional] [default to null]
+**LiveVideoSubMode** | [***LiveVideoSubMode**](LiveVideoSubMode.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]

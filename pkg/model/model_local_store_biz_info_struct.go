@@ -23,6 +23,9 @@ type LocalStoreBizInfoStruct struct {
 	ThirdCategoryName  *string                 `json:"third_category_name,omitempty"`
 	FourthCategoryName *string                 `json:"fourth_category_name,omitempty"`
 	PeakPeriod         *[]PeakPeriod           `json:"peak_period,omitempty"`
+	OpeningHours       *[]OpeningHours         `json:"opening_hours,omitempty"`
+	Telephone          *string                 `json:"telephone,omitempty"`
+	SpecialService     *[]string               `json:"special_service,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
 	Star               *float64                `json:"star,omitempty"`
 }

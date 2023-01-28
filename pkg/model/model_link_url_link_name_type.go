@@ -71,4 +71,5 @@ const (
 	LinkUrlLinkNameType_WATCH_VIDEO                     LinkUrlLinkNameType = "WATCH_VIDEO"
 	LinkUrlLinkNameType_CONTACT_CUSTOMER_SERVICE        LinkUrlLinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkUrlLinkNameType_CONTACT_BUSINESS                LinkUrlLinkNameType = "CONTACT_BUSINESS"
+	LinkUrlLinkNameType_GO_SCAN                         LinkUrlLinkNameType = "GO_SCAN"
 )

@@ -58,6 +58,8 @@ const (
 	TaskType_TASK_TYPE_SEARCH_BIDWORD_DOWNLOAD                                     TaskType = "TASK_TYPE_SEARCH_BIDWORD_DOWNLOAD"
 	TaskType_TASK_TYPE_UPDATE_ACCOUNT_BIDWORD_PRICE                                TaskType = "TASK_TYPE_UPDATE_ACCOUNT_BIDWORD_PRICE"
 	TaskType_TASK_TYPE_UPDATE_ACCOUNT_BIDWORD_MATCH_TYPE                           TaskType = "TASK_TYPE_UPDATE_ACCOUNT_BIDWORD_MATCH_TYPE"
+	TaskType_TASK_TYPE_MASSIVE_KEYWORD_RECOMMEND                                   TaskType = "TASK_TYPE_MASSIVE_KEYWORD_RECOMMEND"
+	TaskType_TASK_TYPE_SUMMARY_REPORT_MOMENTS_DOWNLOAD                             TaskType = "TASK_TYPE_SUMMARY_REPORT_MOMENTS_DOWNLOAD"
 	TaskType_TASK_TYPE_BATCH_REQUEST                                               TaskType = "TASK_TYPE_BATCH_REQUEST"
 	TaskType_TASK_TYPE_CLICK_FORWARDED_DATA                                        TaskType = "TASK_TYPE_CLICK_FORWARDED_DATA"
 	TaskType_TASK_TYPE_ADP_OFFLINE_RPT                                             TaskType = "TASK_TYPE_ADP_OFFLINE_RPT"

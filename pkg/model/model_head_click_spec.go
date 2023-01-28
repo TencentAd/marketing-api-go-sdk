@@ -13,4 +13,5 @@ package model
 type HeadClickSpec struct {
 	BrandAppId             *string `json:"brand_app_id,omitempty"`
 	SearchBrandAreaKeyword *string `json:"search_brand_area_keyword,omitempty"`
+	FinderUsername         *string `json:"finder_username,omitempty"`
 }

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] [default to null]
 **ActivateStatus** | **bool** |  | [optional] [default to null]
 **CreatedTime** | **string** |  | [optional] [default to null]
-**AccessWay** | [***ActionSetAccessWayType**](ActionSetAccessWayType.md) |  | [optional] [default to null]
+**AccessWay** | [***DnFileAccessWayType**](DnFileAccessWayType.md) |  | [optional] [default to null]
 **Usages** | **[]string** |  | [optional] [default to null]
 **EnableConversionClaim** | **bool** |  | [optional] [default to null]
 **Permission** | [***Permission**](permission.md) |  | [optional] [default to null]

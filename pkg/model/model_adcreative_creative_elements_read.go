@@ -82,4 +82,5 @@ type AdcreativeCreativeElementsRead struct {
 	ImageListJumpInfo          *[]LandingPageStructure            `json:"image_list_jump_info,omitempty"`
 	OriginVideo                *string                            `json:"origin_video,omitempty"`
 	RedEnvelopeStruct          *RedEnvelopeStruct                 `json:"red_envelope_struct,omitempty"`
+	ButtonTextJumpInfo         *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
 }

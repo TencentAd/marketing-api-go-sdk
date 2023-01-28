@@ -40,12 +40,16 @@ XijingPageInteractiveApiService 蹊径-创建互动落地页
  * @param mobileAppId
  * @param optional nil or *XijingPageInteractiveAddOpts - Optional Parameters:
      * @param "File" (optional.Interface of *os.File) -
+     * @param "TransformType" (optional.String) -
+     * @param "PageConfig" (optional.String) -
 
 @return XijingPageInteractiveAddResponse
 */
 
 type XijingPageInteractiveAddOpts struct {
-	File optional.Interface
+	File          optional.Interface
+	TransformType optional.String
+	PageConfig    optional.String
 }
 
 func (a *XijingPageInteractiveApiService) Add(ctx context.Context, accountId int64, isAutoSubmit int64, pageType string, interactivePageType string, pageTitle string, pageName string, mobileAppId string, localVarOptionals *XijingPageInteractiveAddOpts) (interface{}, http.Header, error) {
@@ -111,6 +115,12 @@ func (a *XijingPageInteractiveApiService) Add(ctx context.Context, accountId int
 		}
 		localVarFileBytes = fbs
 		localVarFileName = localVarFile.Name()
+	}
+	if localVarOptionals != nil && localVarOptionals.TransformType.IsSet() {
+		localVarFormParams.Add("transform_type", parameterToString(localVarOptionals.TransformType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PageConfig.IsSet() {
+		localVarFormParams.Add("page_config", parameterToString(localVarOptionals.PageConfig.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {

@@ -97,6 +97,10 @@ func (c *SDKClient) AssetPermissions() *api.AssetPermissionsApiService {
 	return c.Client.AssetPermissionsApi
 }
 
+func (c *SDKClient) AssetPermissionsScenes() *api.AssetPermissionsScenesApiService {
+	return c.Client.AssetPermissionsScenesApi
+}
+
 func (c *SDKClient) AssetPrePermissions() *api.AssetPrePermissionsApiService {
 	return c.Client.AssetPrePermissionsApi
 }
@@ -245,6 +249,22 @@ func (c *SDKClient) DailyReports() *api.DailyReportsApiService {
 	return c.Client.DailyReportsApi
 }
 
+func (c *SDKClient) DataNexusFile() *api.DataNexusFileApiService {
+	return c.Client.DataNexusFileApi
+}
+
+func (c *SDKClient) DataSet() *api.DataSetApiService {
+	return c.Client.DataSetApi
+}
+
+func (c *SDKClient) DataSource() *api.DataSourceApiService {
+	return c.Client.DataSourceApi
+}
+
+func (c *SDKClient) DataSourceDispatch() *api.DataSourceDispatchApiService {
+	return c.Client.DataSourceDispatchApi
+}
+
 func (c *SDKClient) Diagnosis() *api.DiagnosisApiService {
 	return c.Client.DiagnosisApi
 }
@@ -287,6 +307,14 @@ func (c *SDKClient) Estimation() *api.EstimationApiService {
 
 func (c *SDKClient) ExtendPackage() *api.ExtendPackageApiService {
 	return c.Client.ExtendPackageApi
+}
+
+func (c *SDKClient) FileDispatch() *api.FileDispatchApiService {
+	return c.Client.FileDispatchApi
+}
+
+func (c *SDKClient) FileSchema() *api.FileSchemaApiService {
+	return c.Client.FileSchemaApi
 }
 
 func (c *SDKClient) FundStatementsDaily() *api.FundStatementsDailyApiService {

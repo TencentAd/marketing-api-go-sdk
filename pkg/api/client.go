@@ -90,6 +90,8 @@ type APIClient struct {
 
 	AssetPermissionsApi *AssetPermissionsApiService
 
+	AssetPermissionsScenesApi *AssetPermissionsScenesApiService
+
 	AssetPrePermissionsApi *AssetPrePermissionsApiService
 
 	AsyncReportFilesApi *AsyncReportFilesApiService
@@ -164,6 +166,14 @@ type APIClient struct {
 
 	DailyReportsApi *DailyReportsApiService
 
+	DataNexusFileApi *DataNexusFileApiService
+
+	DataSetApi *DataSetApiService
+
+	DataSourceApi *DataSourceApiService
+
+	DataSourceDispatchApi *DataSourceDispatchApiService
+
 	DiagnosisApi *DiagnosisApiService
 
 	DplabelAdLabelApi *DplabelAdLabelApiService
@@ -185,6 +195,10 @@ type APIClient struct {
 	EstimationApi *EstimationApiService
 
 	ExtendPackageApi *ExtendPackageApiService
+
+	FileDispatchApi *FileDispatchApiService
+
+	FileSchemaApi *FileSchemaApiService
 
 	FundStatementsDailyApi *FundStatementsDailyApiService
 
@@ -428,6 +442,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AppAndroidChannelPackagesApi = (*AppAndroidChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
+	c.AssetPermissionsScenesApi = (*AssetPermissionsScenesApiService)(&c.common)
 	c.AssetPrePermissionsApi = (*AssetPrePermissionsApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
@@ -465,6 +480,10 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomTagsApi = (*CustomTagsApiService)(&c.common)
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
+	c.DataNexusFileApi = (*DataNexusFileApiService)(&c.common)
+	c.DataSetApi = (*DataSetApiService)(&c.common)
+	c.DataSourceApi = (*DataSourceApiService)(&c.common)
+	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
 	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
@@ -476,6 +495,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
 	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)
+	c.FileDispatchApi = (*FileDispatchApiService)(&c.common)
+	c.FileSchemaApi = (*FileSchemaApiService)(&c.common)
 	c.FundStatementsDailyApi = (*FundStatementsDailyApiService)(&c.common)
 	c.FundStatementsDetailedApi = (*FundStatementsDetailedApiService)(&c.common)
 	c.FundTransferApi = (*FundTransferApiService)(&c.common)
