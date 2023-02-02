@@ -515,6 +515,10 @@ type HourlyReportsGetListStruct struct {
 	Cheout5dRate                               *float64 `json:"cheout_5d_rate,omitempty"`
 	Cheout7dRate                               *float64 `json:"cheout_7d_rate,omitempty"`
 	ClkRedpocketShakePv                        *int64   `json:"clk_redpocket_shake_pv,omitempty"`
+	RegAllDedupPv                              *int64   `json:"reg_all_dedup_pv,omitempty"`
+	RegDedupPv                                 *int64   `json:"reg_dedup_pv,omitempty"`
+	RegCostPla                                 *int64   `json:"reg_cost_pla,omitempty"`
+	RegClickRatePla                            *float64 `json:"reg_click_rate_pla,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

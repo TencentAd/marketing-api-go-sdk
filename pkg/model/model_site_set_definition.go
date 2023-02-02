@@ -62,5 +62,7 @@ const (
 	SiteSetDefinition_SITE_SET_QBSEARCH             SiteSetDefinition = "SITE_SET_QBSEARCH"
 	SiteSetDefinition_SITE_SET_FREETRADE_FINDER     SiteSetDefinition = "SITE_SET_FREETRADE_FINDER"
 	SiteSetDefinition_SITE_SET_BROWSER_MOBILE       SiteSetDefinition = "SITE_SET_BROWSER_MOBILE"
+	SiteSetDefinition_SITE_SET_SEARCH_SCENE         SiteSetDefinition = "SITE_SET_SEARCH_SCENE"
+	SiteSetDefinition_SITE_SET_BROWSER_PC           SiteSetDefinition = "SITE_SET_BROWSER_PC"
 	SiteSetDefinition_SITESET_WECHAT_PLUGIN         SiteSetDefinition = "SITESET_WECHAT_PLUGIN"
 )

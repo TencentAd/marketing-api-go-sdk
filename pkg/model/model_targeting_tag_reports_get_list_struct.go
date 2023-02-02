@@ -492,6 +492,10 @@ type TargetingTagReportsGetListStruct struct {
 	Cheout3dRate                               *float64 `json:"cheout_3d_rate,omitempty"`
 	Cheout5dRate                               *float64 `json:"cheout_5d_rate,omitempty"`
 	Cheout7dRate                               *float64 `json:"cheout_7d_rate,omitempty"`
+	RegAllDedupPv                              *int64   `json:"reg_all_dedup_pv,omitempty"`
+	RegDedupPv                                 *int64   `json:"reg_dedup_pv,omitempty"`
+	RegCostPla                                 *int64   `json:"reg_cost_pla,omitempty"`
+	RegClickRatePla                            *float64 `json:"reg_click_rate_pla,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
