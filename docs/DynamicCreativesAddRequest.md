@@ -50,6 +50,8 @@ Name | Type | Description | Notes
 **CampaignId** | **int64** |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **IndustryLabel** | **string** |  | [optional] [default to null]
+**SublinkSwitch** | [***AdvertiserSublinkSwitch**](AdvertiserSublinkSwitch.md) |  | [optional] [default to null]
+**PicMaterialSwitch** | [***AdvertiserPicMaterialSwitch**](AdvertiserPicMaterialSwitch.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

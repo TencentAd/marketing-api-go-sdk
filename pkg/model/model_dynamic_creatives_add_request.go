@@ -57,5 +57,7 @@ type DynamicCreativesAddRequest struct {
 	CampaignId                       *int64                      `json:"campaign_id,omitempty"`
 	PageTrackUrl                     *string                     `json:"page_track_url,omitempty"`
 	IndustryLabel                    *string                     `json:"industry_label,omitempty"`
+	SublinkSwitch                    AdvertiserSublinkSwitch     `json:"sublink_switch,omitempty"`
+	PicMaterialSwitch                AdvertiserPicMaterialSwitch `json:"pic_material_switch,omitempty"`
 	AccountId                        *int64                      `json:"account_id,omitempty"`
 }
