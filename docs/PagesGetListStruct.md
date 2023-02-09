@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
 **ProductCatalogId** | **int64** |  | [optional] [default to null]
-**PageType** | [***WechatPagePageType**](WechatPagePageType.md) |  | [optional] [default to null]
+**PageType** | [***DestinationTypeRead**](DestinationTypeRead.md) |  | [optional] [default to null]
 **PlayableType** | [***PlayableType**](PlayableType.md) |  | [optional] [default to null]
 **PageStatus** | [***PageStatus**](PageStatus.md) |  | [optional] [default to null]
 **FengyeSubType** | [***LandingPageFengyeSubType**](LandingPageFengyeSubType.md) |  | [optional] [default to null]

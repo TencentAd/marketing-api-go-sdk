@@ -20,44 +20,30 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type AdcreativeTemplatePreviewGetExample struct {
+type BidwordFlowGetExample struct {
 	TAds        *ads.SDKClient
 	AccessToken string
-	Data        model.AdcreativeTemplatePreviewGetRequest
+	Data        model.BidwordFlowGetRequest
 }
 
-func (e *AdcreativeTemplatePreviewGetExample) Init() {
+func (e *BidwordFlowGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.AdcreativeTemplatePreviewGetRequest{
-		AccountId: int64(0),
-		PreviewSpec: &model.AdcreativePreviewSpec{
-			AdcreativeTemplateId: int64(133),
-			SiteSet:              &[]string{"SITE_SET_WECHAT"},
-			PromotedObjectType:   model.PromotedObjectType_LINK_WECHAT,
-			AdcreativeElements: &model.AdcreativeCreativeElements{
-				Image: "YOUR AD IMAGE ID",
-			},
-			PageType: model.DestinationType_DEFAULT,
-			PageSpec: &model.PreviewPageSpec{
-				PageUrl: "YOUR AD PAGE URL",
-			},
-		},
-	}
+	e.Data = model.BidwordFlowGetRequest{}
 }
 
-func (e *AdcreativeTemplatePreviewGetExample) RunExample() (model.AdcreativeTemplatePreviewGetResponseData, http.Header, error) {
+func (e *BidwordFlowGetExample) RunExample() (model.BidwordFlowGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AdcreativeTemplatePreview().Get(ctx, e.Data)
+	return tads.BidwordFlow().Get(ctx, e.Data)
 }
 
 func main() {
-	e := &AdcreativeTemplatePreviewGetExample{}
+	e := &BidwordFlowGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

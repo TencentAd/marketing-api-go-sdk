@@ -122,6 +122,8 @@ type APIClient struct {
 
 	BidwordApi *BidwordApiService
 
+	BidwordFlowApi *BidwordFlowApiService
+
 	BidwordRptApi *BidwordRptApiService
 
 	BrandApi *BrandApiService
@@ -458,6 +460,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
 	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
 	c.BidwordApi = (*BidwordApiService)(&c.common)
+	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BidwordRptApi = (*BidwordRptApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)

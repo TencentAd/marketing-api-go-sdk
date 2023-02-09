@@ -161,6 +161,10 @@ func (c *SDKClient) Bidword() *api.BidwordApiService {
 	return c.Client.BidwordApi
 }
 
+func (c *SDKClient) BidwordFlow() *api.BidwordFlowApiService {
+	return c.Client.BidwordFlowApi
+}
+
 func (c *SDKClient) BidwordRpt() *api.BidwordRptApiService {
 	return c.Client.BidwordRptApi
 }

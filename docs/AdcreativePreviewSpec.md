@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **SiteSet** | **[]string** |  | [optional] [default to null]
-**PromotedObjectType** | [***WechatPromotedObjectType**](WechatPromotedObjectType.md) |  | [optional] [default to null]
+**PromotedObjectType** | [***PromotedObjectType**](PromotedObjectType.md) |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElements**](adcreative_creative_elements.md) |  | [optional] [default to null]
 **PromotedObjectId** | **string** |  | [optional] [default to null]
 **PageType** | [***DestinationType**](DestinationType.md) |  | [optional] [default to null]

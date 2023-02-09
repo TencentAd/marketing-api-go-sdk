@@ -1,4 +1,4 @@
-# WechatPagePageType
+# DestinationTypeRead
 
 ## Properties
 Name | Type | Description | Notes
