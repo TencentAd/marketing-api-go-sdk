@@ -83,5 +83,6 @@ const (
 	IntOptimizationGoal_QUICK_ORDER                            IntOptimizationGoal = "OPTIMIZATIONGOAL_QUICK_ORDER"
 	IntOptimizationGoal_PRE_PAY                                IntOptimizationGoal = "OPTIMIZATIONGOAL_PRE_PAY"
 	IntOptimizationGoal_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG     IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG"
+	IntOptimizationGoal_CALL_DURATION_THIRTY_SECONDS           IntOptimizationGoal = "OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )
