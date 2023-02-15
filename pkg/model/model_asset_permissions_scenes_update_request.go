@@ -10,10 +10,10 @@
 package model
 
 type AssetPermissionsScenesUpdateRequest struct {
-	AccountId          *int64    `json:"account_id,omitempty"`
-	AssetType          AssetType `json:"asset_type,omitempty"`
-	AssetId            *int64    `json:"asset_id,omitempty"`
-	LicensingAccountId *int64    `json:"licensing_account_id,omitempty"`
-	PathType           PathType  `json:"path_type,omitempty"`
-	PermissionList     *[]string `json:"permission_list,omitempty"`
+	AccountId          *int64      `json:"account_id,omitempty"`
+	AssetType          DnAssetType `json:"asset_type,omitempty"`
+	AssetId            *int64      `json:"asset_id,omitempty"`
+	LicensingAccountId *int64      `json:"licensing_account_id,omitempty"`
+	PathType           PathType    `json:"path_type,omitempty"`
+	PermissionList     *[]string   `json:"permission_list,omitempty"`
 }

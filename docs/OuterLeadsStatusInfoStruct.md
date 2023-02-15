@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **LeadsQq** | **int64** |  | [optional] [default to null]
 **LeadsWechat** | **string** |  | [optional] [default to null]
 **ClickId** | **string** |  | [optional] [default to null]
+**LeadsConvertType** | **string** |  | [optional] [default to null]
+**LeadsIneffectReason** | **string** |  | [optional] [default to null]
 **OuterLeadsConvertType** | **string** |  | [optional] [default to null]
 **OuterLeadsIneffectReason** | **string** |  | [optional] [default to null]
 **CustomizedTags** | [**[]CustomizedTagsStruct**](customized_tags_struct.md) |  | [optional] [default to null]

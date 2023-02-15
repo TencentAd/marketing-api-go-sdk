@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**LeadsCallVirtualNumberGet**](LeadsCallVirtualNumberApi.md#LeadsCallVirtualNumberGet) | **Post** /leads_call_virtual_number/get | 
+[**LeadsCallVirtualNumberGet**](LeadsCallVirtualNumberApi.md#LeadsCallVirtualNumberGet) | **Post** /leads_call_virtual_number/get | 获取中间号
 
 
 # **LeadsCallVirtualNumberGet**
 > LeadsCallVirtualNumberGetResponse LeadsCallVirtualNumberGet(ctx, data)
-
+获取中间号
 
 ### Required Parameters
 

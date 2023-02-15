@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**LeadsCallRecordGet**](LeadsCallRecordApi.md#LeadsCallRecordGet) | **Post** /leads_call_record/get | 
+[**LeadsCallRecordGet**](LeadsCallRecordApi.md#LeadsCallRecordGet) | **Post** /leads_call_record/get | 获取通话结果
 
 
 # **LeadsCallRecordGet**
 > LeadsCallRecordGetResponse LeadsCallRecordGet(ctx, data)
-
+获取通话结果
 
 ### Required Parameters
 

@@ -27,6 +27,8 @@ type LeadsImportInfoStruct struct {
 	LeadsEmail               *string             `json:"leads_email,omitempty"`
 	LeadsArea                *string             `json:"leads_area,omitempty"`
 	Bundle                   *string             `json:"bundle,omitempty"`
+	LeadsConvertType         *string             `json:"leads_convert_type,omitempty"`
+	LeadsIneffectReason      *string             `json:"leads_ineffect_reason,omitempty"`
 	OuterLeadsConvertType    *string             `json:"outer_leads_convert_type,omitempty"`
 	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
 	OuterLeadsComefrom       ActionChannelType   `json:"outer_leads_comefrom,omitempty"`

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
-**AssetType** | [***AssetType**](AssetType.md) |  | [optional] [default to null]
+**AssetType** | [***DnAssetType**](DnAssetType.md) |  | [optional] [default to null]
 **AssetId** | **int64** |  | [optional] [default to null]
 **LicensingAccountId** | **int64** |  | [optional] [default to null]
 **PathType** | [***PathType**](PathType.md) |  | [optional] [default to null]

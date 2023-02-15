@@ -27,7 +27,7 @@ var (
 type LeadsCallRecordApiService service
 
 /*
-LeadsCallRecordApiService
+LeadsCallRecordApiService 获取通话结果
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

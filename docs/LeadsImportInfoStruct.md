@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **LeadsEmail** | **string** |  | [optional] [default to null]
 **LeadsArea** | **string** |  | [optional] [default to null]
 **Bundle** | **string** |  | [optional] [default to null]
+**LeadsConvertType** | **string** |  | [optional] [default to null]
+**LeadsIneffectReason** | **string** |  | [optional] [default to null]
 **OuterLeadsConvertType** | **string** |  | [optional] [default to null]
 **OuterLeadsIneffectReason** | **string** |  | [optional] [default to null]
 **OuterLeadsComefrom** | [***ActionChannelType**](ActionChannelType.md) |  | [optional] [default to null]

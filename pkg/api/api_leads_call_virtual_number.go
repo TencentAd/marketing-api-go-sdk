@@ -27,7 +27,7 @@ var (
 type LeadsCallVirtualNumberApiService service
 
 /*
-LeadsCallVirtualNumberApiService
+LeadsCallVirtualNumberApiService 获取中间号
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

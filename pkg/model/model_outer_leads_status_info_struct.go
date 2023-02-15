@@ -17,6 +17,8 @@ type OuterLeadsStatusInfoStruct struct {
 	LeadsQq                  *int64                  `json:"leads_qq,omitempty"`
 	LeadsWechat              *string                 `json:"leads_wechat,omitempty"`
 	ClickId                  *string                 `json:"click_id,omitempty"`
+	LeadsConvertType         *string                 `json:"leads_convert_type,omitempty"`
+	LeadsIneffectReason      *string                 `json:"leads_ineffect_reason,omitempty"`
 	OuterLeadsConvertType    *string                 `json:"outer_leads_convert_type,omitempty"`
 	OuterLeadsIneffectReason *string                 `json:"outer_leads_ineffect_reason,omitempty"`
 	CustomizedTags           *[]CustomizedTagsStruct `json:"customized_tags,omitempty"`
