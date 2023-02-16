@@ -65,6 +65,8 @@ Name | Type | Description | Notes
 **LayerFormContent** | **string** |  | [optional] [default to null]
 **NickName** | **string** |  | [optional] [default to null]
 **IsBroadCastLeads** | **string** |  | [optional] [default to null]
+**OwnerName** | **string** |  | [optional] [default to null]
+**AllFollowRecords** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

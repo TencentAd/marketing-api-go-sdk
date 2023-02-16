@@ -73,4 +73,6 @@ type LeadCluesGetListStruct struct {
 	LayerFormContent         *string             `json:"layer_form_content,omitempty"`
 	NickName                 *string             `json:"nick_name,omitempty"`
 	IsBroadCastLeads         *string             `json:"is_broad_cast_leads,omitempty"`
+	OwnerName                *string             `json:"owner_name,omitempty"`
+	AllFollowRecords         *string             `json:"all_follow_records,omitempty"`
 }
