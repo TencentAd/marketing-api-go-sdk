@@ -41,7 +41,7 @@ type AdgroupsGetListStruct struct {
 	LastModifiedTime                  *int64                          `json:"last_modified_time,omitempty"`
 	AdCount                           *int64                          `json:"ad_count,omitempty"`
 	DynamicAdSpec                     *DynamicAdSpec                  `json:"dynamic_ad_spec,omitempty"`
-	UserActionSets                    *[]UserActionSetStruct          `json:"user_action_sets,omitempty"`
+	UserActionSets                    *[]UserActionSetStructDn        `json:"user_action_sets,omitempty"`
 	AdditionalUserActionSets          *[]UserActionSetStruct          `json:"additional_user_action_sets,omitempty"`
 	IsDeleted                         *bool                           `json:"is_deleted,omitempty"`
 	DynamicCreativeId                 *int64                          `json:"dynamic_creative_id,omitempty"`

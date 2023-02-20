@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **AdCount** | **int64** |  | [optional] [default to null]
 **DynamicAdSpec** | [***DynamicAdSpec**](dynamic_ad_spec.md) |  | [optional] [default to null]
-**UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
+**UserActionSets** | [**[]UserActionSetStructDn**](user_action_set_struct_dn.md) |  | [optional] [default to null]
 **AdditionalUserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]
