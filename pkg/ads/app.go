@@ -81,6 +81,10 @@ func (c *SDKClient) Advertiser() *api.AdvertiserApiService {
 	return c.Client.AdvertiserApi
 }
 
+func (c *SDKClient) AdvertiserDailyBudget() *api.AdvertiserDailyBudgetApiService {
+	return c.Client.AdvertiserDailyBudgetApi
+}
+
 func (c *SDKClient) AgencyInnerTransfer() *api.AgencyInnerTransferApiService {
 	return c.Client.AgencyInnerTransferApi
 }

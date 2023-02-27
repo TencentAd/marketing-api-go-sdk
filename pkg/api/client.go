@@ -82,6 +82,8 @@ type APIClient struct {
 
 	AdvertiserApi *AdvertiserApiService
 
+	AdvertiserDailyBudgetApi *AdvertiserDailyBudgetApiService
+
 	AgencyInnerTransferApi *AgencyInnerTransferApiService
 
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
@@ -444,6 +446,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
+	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
 	c.AgencyInnerTransferApi = (*AgencyInnerTransferApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AppAndroidChannelPackagesApi = (*AppAndroidChannelPackagesApiService)(&c.common)
