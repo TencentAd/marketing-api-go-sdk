@@ -32,6 +32,8 @@ Name | Type | Description | Notes
 **ThousandDisplayPrice** | **string** |  | [optional] [default to null]
 **PlacementGroupId** | **int64** |  | [optional] [default to null]
 **PlacementGroupName** | **string** |  | [optional] [default to null]
+**MatchType** | **int64** |  | [optional] [default to null]
+**MatchTypeName** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -39,4 +39,6 @@ type BidwordRptGetListStruct struct {
 	DeepConversionsRate       *string `json:"deep_conversions_rate,omitempty"`
 	DeepConversionsCost       *string `json:"deep_conversions_cost,omitempty"`
 	ThousandDisplayPrice      *string `json:"thousand_display_price,omitempty"`
+	MatchType                 *int64  `json:"match_type,omitempty"`
+	MatchTypeName             *string `json:"match_type_name,omitempty"`
 }

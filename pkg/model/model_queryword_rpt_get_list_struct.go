@@ -40,4 +40,6 @@ type QuerywordRptGetListStruct struct {
 	ThousandDisplayPrice      *string `json:"thousand_display_price,omitempty"`
 	PlacementGroupId          *int64  `json:"placement_group_id,omitempty"`
 	PlacementGroupName        *string `json:"placement_group_name,omitempty"`
+	MatchType                 *int64  `json:"match_type,omitempty"`
+	MatchTypeName             *string `json:"match_type_name,omitempty"`
 }

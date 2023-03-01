@@ -519,6 +519,16 @@ type HourlyReportsGetListStruct struct {
 	RegDedupPv                                 *int64   `json:"reg_dedup_pv,omitempty"`
 	RegCostPla                                 *int64   `json:"reg_cost_pla,omitempty"`
 	RegClickRatePla                            *float64 `json:"reg_click_rate_pla,omitempty"`
+	IncomeVal24h                               *int64   `json:"income_val_24h,omitempty"`
+	AdPayingUsers24h                           *int64   `json:"ad_paying_users_24h,omitempty"`
+	IncomeRoi124h                              *float64 `json:"income_roi_1_24h,omitempty"`
+	AdPurArpuCostD124h                         *int64   `json:"ad_pur_arpu_cost_d1_24h,omitempty"`
+	FirstDayAdPurArppuCost24h                  *int64   `json:"first_day_ad_pur_arppu_cost_24h,omitempty"`
+	IncomeVal24hPla                            *int64   `json:"income_val_24h_pla,omitempty"`
+	AdPayingUsers24hPla                        *int64   `json:"ad_paying_users_24h_pla,omitempty"`
+	IncomeRoi124hPla                           *float64 `json:"income_roi_1_24h_pla,omitempty"`
+	AdPurArpuCostD124hPla                      *int64   `json:"ad_pur_arpu_cost_d1_24h_pla,omitempty"`
+	FirstDayAdPurArppuCost24hPla               *int64   `json:"first_day_ad_pur_arppu_cost_24h_pla,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

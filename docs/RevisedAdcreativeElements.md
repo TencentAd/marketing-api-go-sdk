@@ -61,6 +61,8 @@ Name | Type | Description | Notes
 **OriginVideo** | **string** |  | [optional] [default to null]
 **RedEnvelopeStruct** | [***RedEnvelopeStruct**](red_envelope_struct.md) |  | [optional] [default to null]
 **ButtonTextJumpInfo** | [***LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
+**PromotionSublinkComponentOptions** | [**[]PromotionSublinkComponentOption**](promotion_sublink_component_option.md) |  | [optional] [default to null]
+**WxgamePlayablePageSpec** | [***WxgamePlayablePageSpec**](wxgame_playable_page_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

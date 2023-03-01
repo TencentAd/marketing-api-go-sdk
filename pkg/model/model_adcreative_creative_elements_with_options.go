@@ -72,4 +72,5 @@ type AdcreativeCreativeElementsWithOptions struct {
 	OriginVideo                *string                            `json:"origin_video,omitempty"`
 	RedEnvelopeStruct          *RedEnvelopeStruct                 `json:"red_envelope_struct,omitempty"`
 	ButtonTextJumpInfo         *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
+	WxgamePlayablePageSpec     *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
 }
