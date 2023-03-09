@@ -26,4 +26,5 @@ type TaskSpec struct {
 	TaskTypeUpdateAndroidUnionChannelPackageSpec *TaskTypeUpdateAndroidUnionChannelPackageSpec `json:"task_type_update_android_union_channel_package_spec,omitempty"`
 	TaskTypeUnionPositionReportSpec              *TaskTypeUnionPositionReportSpec              `json:"task_type_union_position_report_spec,omitempty"`
 	TaskTypeReviewElementPrereviewResultSpec     *TaskTypeReviewElementPrereviewResultSpec     `json:"task_type_review_element_prereview_result_spec,omitempty"`
+	TaskTypeSearchDownloadAllSpec                *TaskTypeSearchDownloadAllSpec                `json:"task_type_search_download_all_spec,omitempty"`
 }
