@@ -21,4 +21,5 @@ type AuthListStruct struct {
 	AuditMsg           *string            `json:"audit_msg,omitempty"`
 	AuthType           WechatAuthType     `json:"auth_type,omitempty"`
 	AuthScope          WechatAuthScope    `json:"auth_scope,omitempty"`
+	IsAdAcct           *bool              `json:"is_ad_acct,omitempty"`
 }

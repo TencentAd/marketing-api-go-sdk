@@ -250,6 +250,8 @@ type APIClient struct {
 
 	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
 
+	MaterialLabelsApi *MaterialLabelsApiService
+
 	MergeFundTypeDailyBalanceReportApi *MergeFundTypeDailyBalanceReportApiService
 
 	MergeFundTypeFundStatementsDetailedApi *MergeFundTypeFundStatementsDetailedApiService
@@ -530,6 +532,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
+	c.MaterialLabelsApi = (*MaterialLabelsApiService)(&c.common)
 	c.MergeFundTypeDailyBalanceReportApi = (*MergeFundTypeDailyBalanceReportApiService)(&c.common)
 	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)
 	c.MergeFundTypeFundsApi = (*MergeFundTypeFundsApiService)(&c.common)
