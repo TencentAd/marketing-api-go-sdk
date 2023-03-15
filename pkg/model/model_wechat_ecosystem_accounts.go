@@ -11,5 +11,8 @@ package model
 
 // 门店微信生态账户
 type WechatEcosystemAccounts struct {
-	WxpayMerchantId *[]int64 `json:"wxpay_merchant_id,omitempty"`
+	WxpayMerchantId         *[]int64 `json:"wxpay_merchant_id,omitempty"`
+	WechatOfficialAccountId *string  `json:"wechat_official_account_id,omitempty"`
+	WechatMiniProgramId     *string  `json:"wechat_mini_program_id,omitempty"`
+	WechatChannelsId        *string  `json:"wechat_channels_id,omitempty"`
 }

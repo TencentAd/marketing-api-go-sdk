@@ -113,6 +113,8 @@ const (
 	TaskType_TASK_TYPE_UPDATE_CAMPAIGN_NEGATIVE_WORD                               TaskType = "TASK_TYPE_UPDATE_CAMPAIGN_NEGATIVE_WORD"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_NEGATIVE_WORD                                TaskType = "TASK_TYPE_UPDATE_ADGROUP_NEGATIVE_WORD"
 	TaskType_TASK_TYPE_SYNC_ANDROID_CHANNEL_PACKAGE_DATA                           TaskType = "TASK_TYPE_SYNC_ANDROID_CHANNEL_PACKAGE_DATA"
+	TaskType_TASK_TYPE_MPCONTRACT_HOTUPDATE                                        TaskType = "TASK_TYPE_MPCONTRACT_HOTUPDATE"
+	TaskType_TASK_TYPE_MPCONTRACT_HOTUPDATE_SUB_TASK                               TaskType = "TASK_TYPE_MPCONTRACT_HOTUPDATE_SUB_TASK"
 	TaskType_TASK_TYPE_COPY_ORDER_DELETE                                           TaskType = "TASK_TYPE_COPY_ORDER_DELETE"
 	TaskType_TASK_TYPE_INVOICE_CONSUME                                             TaskType = "TASK_TYPE_INVOICE_CONSUME"
 	TaskType_TASK_TYPE_AD_STATUS_CALC                                              TaskType = "TASK_TYPE_AD_STATUS_CALC"

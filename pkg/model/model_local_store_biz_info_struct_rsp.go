@@ -27,4 +27,5 @@ type LocalStoreBizInfoStructRsp struct {
 	Telephone          *string                 `json:"telephone,omitempty"`
 	SpecialService     *[]string               `json:"special_service,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
+	Intro              *string                 `json:"intro,omitempty"`
 }

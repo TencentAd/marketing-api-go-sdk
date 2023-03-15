@@ -20,4 +20,5 @@ type SuccessPoiInfoStruct struct {
 	LocalStoreBusinessArea *string `json:"local_store_business_area,omitempty"`
 	LocalStoreStreet       *string `json:"local_store_street,omitempty"`
 	LocalStoreDistrict     *string `json:"local_store_district,omitempty"`
+	Telephone              *string `json:"telephone,omitempty"`
 }

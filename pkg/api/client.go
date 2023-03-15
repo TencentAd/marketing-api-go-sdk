@@ -226,6 +226,8 @@ type APIClient struct {
 
 	LeadsCallRecordApi *LeadsCallRecordApiService
 
+	LeadsCallRecordsApi *LeadsCallRecordsApiService
+
 	LeadsCallVirtualNumberApi *LeadsCallVirtualNumberApiService
 
 	LeadsFormApi *LeadsFormApiService
@@ -520,6 +522,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LabelsApi = (*LabelsApiService)(&c.common)
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
 	c.LeadsCallRecordApi = (*LeadsCallRecordApiService)(&c.common)
+	c.LeadsCallRecordsApi = (*LeadsCallRecordsApiService)(&c.common)
 	c.LeadsCallVirtualNumberApi = (*LeadsCallVirtualNumberApiService)(&c.common)
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)

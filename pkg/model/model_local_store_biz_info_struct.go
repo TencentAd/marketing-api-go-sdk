@@ -28,4 +28,5 @@ type LocalStoreBizInfoStruct struct {
 	SpecialService     *[]string               `json:"special_service,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
 	Star               *float64                `json:"star,omitempty"`
+	Intro              *string                 `json:"intro,omitempty"`
 }

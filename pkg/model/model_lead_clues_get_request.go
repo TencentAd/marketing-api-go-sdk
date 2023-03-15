@@ -11,7 +11,6 @@ package model
 
 type LeadCluesGetRequest struct {
 	AccountId             *int64             `json:"account_id,omitempty"`
-	TimeType              TimeType           `json:"time_type,omitempty"`
 	TimeRange             *TimeRange         `json:"time_range,omitempty"`
 	Filtering             *[]FilteringStruct `json:"filtering,omitempty"`
 	Page                  *int64             `json:"page,omitempty"`

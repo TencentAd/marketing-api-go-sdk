@@ -369,6 +369,10 @@ func (c *SDKClient) LeadsCallRecord() *api.LeadsCallRecordApiService {
 	return c.Client.LeadsCallRecordApi
 }
 
+func (c *SDKClient) LeadsCallRecords() *api.LeadsCallRecordsApiService {
+	return c.Client.LeadsCallRecordsApi
+}
+
 func (c *SDKClient) LeadsCallVirtualNumber() *api.LeadsCallVirtualNumberApiService {
 	return c.Client.LeadsCallVirtualNumberApi
 }
