@@ -56,7 +56,7 @@ const (
 	DestinationType_WECHAT_RED_PACKET_COVER         DestinationType = "PAGE_TYPE_WECHAT_RED_PACKET_COVER"
 	DestinationType_WECHAT_VIDEO_TOPIC              DestinationType = "PAGE_TYPE_WECHAT_VIDEO_TOPIC"
 	DestinationType_CHANNELS_HALF_CARD              DestinationType = "PAGE_TYPE_CHANNELS_HALF_CARD"
-	DestinationType_NOT_USED                        DestinationType = "PAGE_TYPE_NOT_USED"
 	DestinationType_APP_DEEP_LINK                   DestinationType = "PAGE_TYPE_APP_DEEP_LINK"
 	DestinationType_UNIVERSAL_LINK                  DestinationType = "PAGE_TYPE_UNIVERSAL_LINK"
+	DestinationType_NOT_USED                        DestinationType = "PAGE_TYPE_NOT_USED"
 )

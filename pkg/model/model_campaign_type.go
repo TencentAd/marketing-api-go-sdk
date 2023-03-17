@@ -23,4 +23,5 @@ const (
 	CampaignType_REWARDQUEST              CampaignType = "CAMPAIGN_TYPE_REWARDQUEST"
 	CampaignType_OVERSEAS                 CampaignType = "CAMPAIGN_TYPE_OVERSEAS"
 	CampaignType_FREETRADE                CampaignType = "CAMPAIGN_TYPE_FREETRADE"
+	CampaignType_CONTENT_PROMOTION        CampaignType = "CAMPAIGN_TYPE_CONTENT_PROMOTION"
 )

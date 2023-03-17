@@ -115,4 +115,5 @@ type DynamicCreativeElementsRead struct {
 	Image3ComponentOptions           *[]ImageComponentOption            `json:"image3_component_options,omitempty"`
 	PromotionSublinkComponentOptions *[]PromotionSublinkComponentOption `json:"promotion_sublink_component_options,omitempty"`
 	WxgamePlayablePageSpec           *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
+	MainJumpInfo                     *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
 }

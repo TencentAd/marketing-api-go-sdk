@@ -62,5 +62,6 @@ type AdgroupsAddRequest struct {
 	AutoDerivedLandingPageSwitch      *bool                            `json:"auto_derived_landing_page_switch,omitempty"`
 	SearchExpansionSwitch             SearchExpansionSwitch            `json:"search_expansion_switch,omitempty"`
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch      `json:"search_expand_targeting_switch,omitempty"`
+	BidScene                          BidScene                         `json:"bid_scene,omitempty"`
 	AccountId                         *int64                           `json:"account_id,omitempty"`
 }

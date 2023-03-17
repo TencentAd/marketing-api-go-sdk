@@ -81,4 +81,5 @@ type AdgroupsGetListStruct struct {
 	SearchExpansionSwitch             SearchExpansionSwitch           `json:"search_expansion_switch,omitempty"`
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch     `json:"search_expand_targeting_switch,omitempty"`
 	AutoAcquisitionStatus             AutoAcquisitionStatus           `json:"auto_acquisition_status,omitempty"`
+	BidScene                          BidScene                        `json:"bid_scene,omitempty"`
 }

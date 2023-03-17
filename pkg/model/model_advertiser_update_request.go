@@ -14,6 +14,7 @@ type AdvertiserUpdateRequest struct {
 	DailyBudget             *int64                   `json:"daily_budget,omitempty"`
 	SystemIndustryId        *int64                   `json:"system_industry_id,omitempty"`
 	CorporationName         *string                  `json:"corporation_name,omitempty"`
+	CorporationLicence      *string                  `json:"corporation_licence,omitempty"`
 	CertificationImageId    *string                  `json:"certification_image_id,omitempty"`
 	CorporateImageName      *string                  `json:"corporate_image_name,omitempty"`
 	IndividualQualification *IndividualQualification `json:"individual_qualification,omitempty"`

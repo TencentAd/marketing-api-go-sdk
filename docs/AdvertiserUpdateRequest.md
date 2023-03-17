@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **DailyBudget** | **int64** |  | [optional] [default to null]
 **SystemIndustryId** | **int64** |  | [optional] [default to null]
 **CorporationName** | **string** |  | [optional] [default to null]
+**CorporationLicence** | **string** |  | [optional] [default to null]
 **CertificationImageId** | **string** |  | [optional] [default to null]
 **CorporateImageName** | **string** |  | [optional] [default to null]
 **IndividualQualification** | [***IndividualQualification**](individual_qualification.md) |  | [optional] [default to null]

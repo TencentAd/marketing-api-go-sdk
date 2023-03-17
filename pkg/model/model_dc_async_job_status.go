@@ -19,4 +19,5 @@ const (
 	DcAsyncJobStatus_SUCCESS      DcAsyncJobStatus = "DC_ASYNC_JOB_STATUS_SUCCESS"
 	DcAsyncJobStatus_SYSTEM_ERROR DcAsyncJobStatus = "DC_ASYNC_JOB_STATUS_SYSTEM_ERROR"
 	DcAsyncJobStatus_PROCESSING   DcAsyncJobStatus = "DC_ASYNC_JOB_STATUS_PROCESSING"
+	DcAsyncJobStatus_RETRYING     DcAsyncJobStatus = "DC_ASYNC_JOB_STATUS_RETRYING"
 )

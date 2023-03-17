@@ -71,4 +71,5 @@ type RevisedAdcreativeElements struct {
 	ButtonTextJumpInfo               *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
 	PromotionSublinkComponentOptions *[]PromotionSublinkComponentOption `json:"promotion_sublink_component_options,omitempty"`
 	WxgamePlayablePageSpec           *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
+	MainJumpInfo                     *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
 }
