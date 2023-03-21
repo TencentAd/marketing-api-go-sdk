@@ -92,4 +92,8 @@ const (
 	OptimizationGoal_PRE_PAY                                OptimizationGoal = "OPTIMIZATIONGOAL_PRE_PAY"
 	OptimizationGoal_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG     OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG"
 	OptimizationGoal_CALL_DURATION_THIRTY_SECONDS           OptimizationGoal = "OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS"
+	OptimizationGoal_CLAIM_COURSE                           OptimizationGoal = "OPTIMIZATIONGOAL_CLAIM_COURSE"
+	OptimizationGoal_QUIT_GROUP                             OptimizationGoal = "OPTIMIZATIONGOAL_QUIT_GROUP"
+	OptimizationGoal_VIEW_ACQUISITION_CONTENT               OptimizationGoal = "OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT"
+	OptimizationGoal_BACK_FLOW                              OptimizationGoal = "OPTIMIZATIONGOAL_BACK_FLOW"
 )

@@ -84,5 +84,9 @@ const (
 	IntOptimizationGoal_PRE_PAY                                IntOptimizationGoal = "OPTIMIZATIONGOAL_PRE_PAY"
 	IntOptimizationGoal_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG     IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG"
 	IntOptimizationGoal_CALL_DURATION_THIRTY_SECONDS           IntOptimizationGoal = "OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS"
+	IntOptimizationGoal_CLAIM_COURSE                           IntOptimizationGoal = "OPTIMIZATIONGOAL_CLAIM_COURSE"
+	IntOptimizationGoal_QUIT_GROUP                             IntOptimizationGoal = "OPTIMIZATIONGOAL_QUIT_GROUP"
+	IntOptimizationGoal_VIEW_ACQUISITION_CONTENT               IntOptimizationGoal = "OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT"
+	IntOptimizationGoal_BACK_FLOW                              IntOptimizationGoal = "OPTIMIZATIONGOAL_BACK_FLOW"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

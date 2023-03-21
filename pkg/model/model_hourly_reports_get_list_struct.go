@@ -529,6 +529,12 @@ type HourlyReportsGetListStruct struct {
 	IncomeRoi124hPla                           *float64 `json:"income_roi_1_24h_pla,omitempty"`
 	AdPurArpuCostD124hPla                      *int64   `json:"ad_pur_arpu_cost_d1_24h_pla,omitempty"`
 	FirstDayAdPurArppuCost24hPla               *int64   `json:"first_day_ad_pur_arppu_cost_24h_pla,omitempty"`
+	ClkRelatedVideoPv                          *int64   `json:"clk_related_video_pv,omitempty"`
+	ClkBrandPediaPv                            *int64   `json:"clk_brand_pedia_pv,omitempty"`
+	ClkActivityNewsPv                          *int64   `json:"clk_activity_news_pv,omitempty"`
+	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
+	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
+	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

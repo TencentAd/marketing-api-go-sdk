@@ -11,6 +11,7 @@ package model
 
 // 短视频结构
 type ShortVideoStruct struct {
-	ShortVideo1 *int64 `json:"short_video1,omitempty"`
-	ShortVideo2 *int64 `json:"short_video2,omitempty"`
+	ShortVideo1     *int64  `json:"short_video1,omitempty"`
+	ShortVideo2     *int64  `json:"short_video2,omitempty"`
+	VideoCoverImgId *string `json:"video_cover_img_id,omitempty"`
 }
