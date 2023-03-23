@@ -65,5 +65,6 @@ const (
 	SiteSetDefinition_SITE_SET_SEARCH_SCENE               SiteSetDefinition = "SITE_SET_SEARCH_SCENE"
 	SiteSetDefinition_SITE_SET_BROWSER_PC                 SiteSetDefinition = "SITE_SET_BROWSER_PC"
 	SiteSetDefinition_SITE_SET_CHANNELS_CONTENT_PROMOTION SiteSetDefinition = "SITE_SET_CHANNELS_CONTENT_PROMOTION"
+	SiteSetDefinition_SITE_SET_FREETRADE_WEAPP            SiteSetDefinition = "SITE_SET_FREETRADE_WEAPP"
 	SiteSetDefinition_SITESET_WECHAT_PLUGIN               SiteSetDefinition = "SITESET_WECHAT_PLUGIN"
 )
