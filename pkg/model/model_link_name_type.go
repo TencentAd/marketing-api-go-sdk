@@ -70,4 +70,5 @@ const (
 	LinkNameType_CONTACT_CUSTOMER_SERVICE        LinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkNameType_CONTACT_BUSINESS                LinkNameType = "CONTACT_BUSINESS"
 	LinkNameType_GO_SCAN                         LinkNameType = "GO_SCAN"
+	LinkNameType_LINK_NAME_TEXT_TEMPLATE         LinkNameType = "LINK_NAME_TEXT_TEMPLATE"
 )

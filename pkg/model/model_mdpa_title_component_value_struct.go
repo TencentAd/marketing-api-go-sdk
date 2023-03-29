@@ -9,7 +9,7 @@
 
 package model
 
-type LeadsCallRecordGetResponseData struct {
-	CallRecords *[]CallListStructs `json:"call_records,omitempty"`
-	RequestId   *string            `json:"request_id,omitempty"`
+// 商品标题组件
+type MdpaTitleComponentValueStruct struct {
+	Title *string `json:"title,omitempty"`
 }

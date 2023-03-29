@@ -12,4 +12,5 @@ package model
 type LeadsCallVirtualNumberGetResponseData struct {
 	VirtualNumber *string `json:"virtual_number,omitempty"`
 	RequestId     *string `json:"request_id,omitempty"`
+	ContactId     *string `json:"contact_id,omitempty"`
 }

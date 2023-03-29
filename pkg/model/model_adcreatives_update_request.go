@@ -46,6 +46,7 @@ type AdcreativesUpdateRequest struct {
 	IndustryLabel                 *string                       `json:"industry_label,omitempty"`
 	UnionMarketSpec               *UnionMarketSpec              `json:"union_market_spec,omitempty"`
 	AndroidQuickAppSpec           *AndroidQuickAppSpec          `json:"android_quick_app_spec,omitempty"`
+	LinkNameText                  *string                       `json:"link_name_text,omitempty"`
 	AccountId                     *int64                        `json:"account_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 }

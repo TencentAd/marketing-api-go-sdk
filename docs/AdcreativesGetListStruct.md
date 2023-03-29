@@ -56,6 +56,7 @@ Name | Type | Description | Notes
 **AndroidQuickAppSpec** | [***AndroidQuickAppSpec**](android_quick_app_spec.md) |  | [optional] [default to null]
 **LiveVideoMode** | [***LiveVideoMode**](LiveVideoMode.md) |  | [optional] [default to null]
 **LiveVideoSubMode** | [***LiveVideoSubMode**](LiveVideoSubMode.md) |  | [optional] [default to null]
+**LinkNameText** | **string** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
 

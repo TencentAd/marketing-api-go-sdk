@@ -72,4 +72,5 @@ const (
 	LinkUrlLinkNameType_CONTACT_CUSTOMER_SERVICE        LinkUrlLinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkUrlLinkNameType_CONTACT_BUSINESS                LinkUrlLinkNameType = "CONTACT_BUSINESS"
 	LinkUrlLinkNameType_GO_SCAN                         LinkUrlLinkNameType = "GO_SCAN"
+	LinkUrlLinkNameType_LINK_NAME_TEXT_TEMPLATE         LinkUrlLinkNameType = "LINK_NAME_TEXT_TEMPLATE"
 )

@@ -9,9 +9,8 @@
 
 package model
 
-type LeadsCallRecordGetRequest struct {
+type LeadsCallTokenGetRequest struct {
 	AccountId *int64  `json:"account_id,omitempty"`
-	LeadsId   *int64  `json:"leads_id,omitempty"`
+	UserId    *int64  `json:"user_id,omitempty"`
 	RequestId *string `json:"request_id,omitempty"`
-	ContactId *string `json:"contact_id,omitempty"`
 }

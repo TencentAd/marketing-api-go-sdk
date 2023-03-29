@@ -50,5 +50,6 @@ type DynamicCreativesUpdateRequest struct {
 	IndustryLabel                    *string                     `json:"industry_label,omitempty"`
 	SublinkSwitch                    AdvertiserSublinkSwitch     `json:"sublink_switch,omitempty"`
 	PicMaterialSwitch                AdvertiserPicMaterialSwitch `json:"pic_material_switch,omitempty"`
+	LinkNameText                     *string                     `json:"link_name_text,omitempty"`
 	AccountId                        *int64                      `json:"account_id,omitempty"`
 }

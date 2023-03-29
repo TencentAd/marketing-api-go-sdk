@@ -365,12 +365,20 @@ func (c *SDKClient) LeadClues() *api.LeadCluesApiService {
 	return c.Client.LeadCluesApi
 }
 
+func (c *SDKClient) LeadsCall() *api.LeadsCallApiService {
+	return c.Client.LeadsCallApi
+}
+
 func (c *SDKClient) LeadsCallRecord() *api.LeadsCallRecordApiService {
 	return c.Client.LeadsCallRecordApi
 }
 
 func (c *SDKClient) LeadsCallRecords() *api.LeadsCallRecordsApiService {
 	return c.Client.LeadsCallRecordsApi
+}
+
+func (c *SDKClient) LeadsCallToken() *api.LeadsCallTokenApiService {
+	return c.Client.LeadsCallTokenApi
 }
 
 func (c *SDKClient) LeadsCallVirtualNumber() *api.LeadsCallVirtualNumberApiService {

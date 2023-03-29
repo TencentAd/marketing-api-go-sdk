@@ -11,5 +11,7 @@ package model
 
 // 关键词过滤器
 type BizFilter struct {
-	BidwordIdList *[]int64 `json:"bidword_id_list,omitempty"`
+	BidwordIdList *[]int64     `json:"bidword_id_list,omitempty"`
+	CampaignType  CampaignType `json:"campaign_type,omitempty"`
+	BidwordList   *[]string    `json:"bidword_list,omitempty"`
 }

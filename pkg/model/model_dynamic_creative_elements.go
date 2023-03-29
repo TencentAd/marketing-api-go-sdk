@@ -90,4 +90,6 @@ type DynamicCreativeElements struct {
 	PromotionSublinkComponentOptions *[]PromotionSublinkComponentOption `json:"promotion_sublink_component_options,omitempty"`
 	WxgamePlayablePageSpec           *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
 	MainJumpInfo                     *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
+	MdpaTitleComponentOptions        *[]MdpaTitleComponentOption        `json:"mdpa_title_component_options,omitempty"`
+	MdpaDescComponentOptions         *[]MdpaDescComponentOption         `json:"mdpa_desc_component_options,omitempty"`
 }

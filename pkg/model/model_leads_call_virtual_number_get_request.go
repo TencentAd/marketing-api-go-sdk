@@ -14,4 +14,5 @@ type LeadsCallVirtualNumberGetRequest struct {
 	LeadsId   *int64  `json:"leads_id,omitempty"`
 	Caller    *string `json:"caller,omitempty"`
 	Callee    *string `json:"callee,omitempty"`
+	RequestId *string `json:"request_id,omitempty"`
 }

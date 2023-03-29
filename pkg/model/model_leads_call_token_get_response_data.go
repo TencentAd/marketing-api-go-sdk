@@ -9,7 +9,7 @@
 
 package model
 
-type LeadsCallRecordGetResponseData struct {
-	CallRecords *[]CallListStructs `json:"call_records,omitempty"`
-	RequestId   *string            `json:"request_id,omitempty"`
+type LeadsCallTokenGetResponseData struct {
+	Token     *string `json:"token,omitempty"`
+	RequestId *string `json:"request_id,omitempty"`
 }
