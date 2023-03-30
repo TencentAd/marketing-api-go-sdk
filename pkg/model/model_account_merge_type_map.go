@@ -26,11 +26,13 @@ const (
 	AccountMergeTypeMap_COMPENSATE_VIRTUAL             AccountMergeTypeMap = "FUND_TYPE_COMPENSATE_VIRTUAL"
 	AccountMergeTypeMap_INTERNAL_QUOTA                 AccountMergeTypeMap = "FUND_TYPE_INTERNAL_QUOTA"
 	AccountMergeTypeMap_TEST_VIRTUAL                   AccountMergeTypeMap = "FUND_TYPE_TEST_VIRTUAL"
+	AccountMergeTypeMap_TCC_GIFT                       AccountMergeTypeMap = "FUND_TYPE_TCC_GIFT"
 	AccountMergeTypeMap_SPECIAL_GIFT                   AccountMergeTypeMap = "FUND_TYPE_SPECIAL_GIFT"
 	AccountMergeTypeMap_MP_GAME_DEVELOPER_WORKING_FUND AccountMergeTypeMap = "FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND"
 	AccountMergeTypeMap_MP_GAME_DEVELOPER_GIFT         AccountMergeTypeMap = "FUND_TYPE_MP_GAME_DEVELOPER_GIFT"
 	AccountMergeTypeMap_FLOW_SOURCE_AD_FUND            AccountMergeTypeMap = "FUND_TYPE_FLOW_SOURCE_AD_FUND"
 	AccountMergeTypeMap_ANDROID_ORIENTED_GIFT          AccountMergeTypeMap = "FUND_TYPE_ANDROID_ORIENTED_GIFT"
 	AccountMergeTypeMap_LOCATION_PROMOTION_REWARDS     AccountMergeTypeMap = "FUND_TYPE_LOCATION_PROMOTION_REWARDS"
+	AccountMergeTypeMap_GIFT_RESTRICT                  AccountMergeTypeMap = "FUND_TYPE_GIFT_RESTRICT"
 	AccountMergeTypeMap_UNSUPPORTED                    AccountMergeTypeMap = "FUND_TYPE_UNSUPPORTED"
 )

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **LandingPageInfo** | [***LandingPageInfo**](landing_page_info.md) |  | [optional] [default to null]
 **MediaQuery** | [***LandingPageMediaQuery**](landing_page_media_query.md) |  | [optional] [default to null]
 **LinkNameText** | **string** |  | [optional] [default to null]
+**LandingPageUrlType** | [***LandingPageUrlType**](LandingPageUrlType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

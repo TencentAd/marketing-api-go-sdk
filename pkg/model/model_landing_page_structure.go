@@ -18,4 +18,5 @@ type LandingPageStructure struct {
 	LandingPageInfo     *LandingPageInfo       `json:"landing_page_info,omitempty"`
 	MediaQuery          *LandingPageMediaQuery `json:"media_query,omitempty"`
 	LinkNameText        *string                `json:"link_name_text,omitempty"`
+	LandingPageUrlType  LandingPageUrlType     `json:"landing_page_url_type,omitempty"`
 }

@@ -30,6 +30,7 @@ const (
 	AccountTypeMap_INTERNAL_QUOTA                 AccountTypeMap = "FUND_TYPE_INTERNAL_QUOTA"
 	AccountTypeMap_TEST_VIRTUAL                   AccountTypeMap = "FUND_TYPE_TEST_VIRTUAL"
 	AccountTypeMap_UNSUPPORTED                    AccountTypeMap = "FUND_TYPE_UNSUPPORTED"
+	AccountTypeMap_TCC_GIFT                       AccountTypeMap = "FUND_TYPE_TCC_GIFT"
 	AccountTypeMap_JD_PRIVILEGE                   AccountTypeMap = "FUND_TYPE_JD_PRIVILEGE"
 	AccountTypeMap_JD_WIRELESS_CASH               AccountTypeMap = "FUND_TYPE_JD_WIRELESS_CASH"
 	AccountTypeMap_SPECIAL_GIFT                   AccountTypeMap = "FUND_TYPE_SPECIAL_GIFT"
@@ -38,4 +39,7 @@ const (
 	AccountTypeMap_FLOW_SOURCE_AD_FUND            AccountTypeMap = "FUND_TYPE_FLOW_SOURCE_AD_FUND"
 	AccountTypeMap_ANDROID_ORIENTED_GIFT          AccountTypeMap = "FUND_TYPE_ANDROID_ORIENTED_GIFT"
 	AccountTypeMap_LOCATION_PROMOTION_REWARDS     AccountTypeMap = "FUND_TYPE_LOCATION_PROMOTION_REWARDS"
+	AccountTypeMap_GIFT_RESTRICT                  AccountTypeMap = "FUND_TYPE_GIFT_RESTRICT"
+	AccountTypeMap_DEBT_FIXED                     AccountTypeMap = "FUND_TYPE_DEBT_FIXED"
+	AccountTypeMap_DEBT_TEMP                      AccountTypeMap = "FUND_TYPE_DEBT_TEMP"
 )
