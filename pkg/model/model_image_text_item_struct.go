@@ -20,6 +20,6 @@ type ImageTextItemStruct struct {
 	Title            *string                    `json:"title,omitempty"`
 	Desc             *string                    `json:"desc,omitempty"`
 	SubElemType      CanvasImageTextElementType `json:"sub_elem_type,omitempty"`
-	GhSpec           *GhSpec                    `json:"gh_spec,omitempty"`
-	EnterpriseWxSpec *EnterpriseWxSpec          `json:"enterprise_wx_spec,omitempty"`
+	GhSpec           *FloatGhSpec               `json:"gh_spec,omitempty"`
+	EnterpriseWxSpec *FloatEnterpriseWxSpec     `json:"enterprise_wx_spec,omitempty"`
 }

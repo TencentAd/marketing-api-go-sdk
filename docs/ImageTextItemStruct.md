@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **Title** | **string** |  | [optional] [default to null]
 **Desc** | **string** |  | [optional] [default to null]
 **SubElemType** | [***CanvasImageTextElementType**](CanvasImageTextElementType.md) |  | [optional] [default to null]
-**GhSpec** | [***GhSpec**](gh_spec.md) |  | [optional] [default to null]
-**EnterpriseWxSpec** | [***EnterpriseWxSpec**](enterprise_wx_spec.md) |  | [optional] [default to null]
+**GhSpec** | [***FloatGhSpec**](float_gh_spec.md) |  | [optional] [default to null]
+**EnterpriseWxSpec** | [***FloatEnterpriseWxSpec**](float_enterprise_wx_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
