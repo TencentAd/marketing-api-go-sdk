@@ -30,4 +30,6 @@ const (
 	ReportLevel_CAMPAIGN_WECHAT          ReportLevel = "REPORT_LEVEL_CAMPAIGN_WECHAT"
 	ReportLevel_ADGROUP_WECHAT           ReportLevel = "REPORT_LEVEL_ADGROUP_WECHAT"
 	ReportLevel_AD_WECHAT                ReportLevel = "REPORT_LEVEL_AD_WECHAT"
+	ReportLevel_BIDWORD                  ReportLevel = "REPORT_LEVEL_BIDWORD"
+	ReportLevel_QUERYWORD                ReportLevel = "REPORT_LEVEL_QUERYWORD"
 )

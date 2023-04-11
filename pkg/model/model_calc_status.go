@@ -50,4 +50,6 @@ const (
 	CalcStatus_FLOW_CANCELLED          CalcStatus = "STATUS_FLOW_CANCELLED"
 	CalcStatus_CAMPAIGN_SUSPEND        CalcStatus = "STATUS_CAMPAIGN_SUSPEND"
 	CalcStatus_GUARANTEED              CalcStatus = "STATUS_GUARANTEED"
+	CalcStatus_VERIFYING               CalcStatus = "STATUS_VERIFYING"
+	CalcStatus_SETTLED_ACCOUNT         CalcStatus = "STATUS_SETTLED_ACCOUNT"
 )

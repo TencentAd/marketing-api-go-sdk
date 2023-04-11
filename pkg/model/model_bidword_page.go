@@ -11,6 +11,10 @@ package model
 
 // 落地页信息
 type BidwordPage struct {
-	PageType PageTypeRead `json:"page_type,omitempty"`
-	PageUrl  *string      `json:"page_url,omitempty"`
+	PageType          PageTypeRead             `json:"page_type,omitempty"`
+	PageUrl           *string                  `json:"page_url,omitempty"`
+	MiniProgramSpec   *MiniProgramSpecStruct   `json:"mini_program_spec,omitempty"`
+	DeepLinkSpec      *DeepLinkSpecStruct      `json:"deep_link_spec,omitempty"`
+	UniversalLinkSpec *UniversalLinkSpecStruct `json:"universal_link_spec,omitempty"`
+	XijingSpec        *XijingSpecStruct        `json:"xijing_spec,omitempty"`
 }

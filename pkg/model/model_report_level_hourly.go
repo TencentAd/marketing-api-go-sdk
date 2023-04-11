@@ -23,4 +23,5 @@ const (
 	ReportLevelHourly_CAMPAIGN_WECHAT   ReportLevelHourly = "REPORT_LEVEL_CAMPAIGN_WECHAT"
 	ReportLevelHourly_ADGROUP_WECHAT    ReportLevelHourly = "REPORT_LEVEL_ADGROUP_WECHAT"
 	ReportLevelHourly_AD_WECHAT         ReportLevelHourly = "REPORT_LEVEL_AD_WECHAT"
+	ReportLevelHourly_BIDWORD           ReportLevelHourly = "REPORT_LEVEL_BIDWORD"
 )
