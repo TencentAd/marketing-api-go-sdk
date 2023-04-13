@@ -14,6 +14,4 @@ type QualificationSpec struct {
 	IndustrySpec           *IndustryQualificationsSpec           `json:"industry_spec,omitempty"`
 	AdSpec                 *AdQualificationsSpec                 `json:"ad_spec,omitempty"`
 	AdditionalIndustrySpec *AdditionalIndustryQualificationsSpec `json:"additional_industry_spec,omitempty"`
-	IndustryWechatSpec     *WechatIndustryQualificationsSpec     `json:"industry_wechat_spec,omitempty"`
-	AdWechatSpec           *WechatAdQualificationsSpec           `json:"ad_wechat_spec,omitempty"`
 }

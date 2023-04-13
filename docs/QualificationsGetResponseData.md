@@ -6,8 +6,6 @@ Name | Type | Description | Notes
 **IndustryQualifications** | [**[]IndustryQualificationsStruct**](industry_qualifications_struct.md) |  | [optional] [default to null]
 **AdQualifications** | [**[]AdQualificationsStruct**](ad_qualifications_struct.md) |  | [optional] [default to null]
 **AdditionalIndustryQualifications** | [**[]AdditionalIndustryQualificationsStruct**](additional_industry_qualifications_struct.md) |  | [optional] [default to null]
-**IndustryQualificationsWechat** | [**[]WechatIndustryQualificationsStruct**](wechat_industry_qualifications_struct.md) |  | [optional] [default to null]
-**AdQualificationsWechat** | [**[]WechatAdQualificationsStruct**](wechat_ad_qualifications_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

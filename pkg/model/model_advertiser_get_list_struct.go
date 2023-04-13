@@ -23,7 +23,6 @@ type AdvertiserGetListStruct struct {
 	ContactPersonEmail               *string                      `json:"contact_person_email,omitempty"`
 	ContactPersonTelephone           *string                      `json:"contact_person_telephone,omitempty"`
 	ContactPersonMobile              *string                      `json:"contact_person_mobile,omitempty"`
-	WechatSpec                       *MpInfoRead                  `json:"wechat_spec,omitempty"`
 	Websites                         *[]WebsiteReadStruct         `json:"websites,omitempty"`
 	MdmId                            *int64                       `json:"mdm_id,omitempty"`
 	MdmName                          *string                      `json:"mdm_name,omitempty"`
@@ -31,6 +30,7 @@ type AdvertiserGetListStruct struct {
 	Operators                        *[]AdvertiserOperatorStruct  `json:"operators,omitempty"`
 	Memo                             *string                      `json:"memo,omitempty"`
 	AreaCode                         *int64                       `json:"area_code,omitempty"`
+	IsLocalBusiness                  *bool                        `json:"is_local_business,omitempty"`
 	AccountId                        *int64                       `json:"account_id,omitempty"`
 	AdQualificationImage             *[]string                    `json:"ad_qualification_image,omitempty"`
 	CertificationImage               *string                      `json:"certification_image,omitempty"`

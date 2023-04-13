@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **IntroductionUrl** | **string** |  | [optional] [default to null]
 **ContactPersonTelephone** | **string** |  | [optional] [default to null]
 **ContactPersonMobile** | **string** |  | [optional] [default to null]
-**WechatSpec** | [***MpInfoUpdate**](mp_info_update.md) |  | [optional] [default to null]
 **Websites** | [**[]WebsiteUpdateStruct**](website_update_struct.md) |  | [optional] [default to null]
 **AreaCode** | **int64** |  | [optional] [default to null]
 

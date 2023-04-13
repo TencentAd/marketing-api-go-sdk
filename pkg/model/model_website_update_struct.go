@@ -9,7 +9,7 @@
 
 package model
 
-// 推广站点结构
+// 推广链接结构
 type WebsiteUpdateStruct struct {
 	WebsiteDomain *string `json:"website_domain,omitempty"`
 	IcpImageId    *string `json:"icp_image_id,omitempty"`

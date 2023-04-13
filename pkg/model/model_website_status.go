@@ -9,7 +9,7 @@
 
 package model
 
-// WebsiteStatus : 推广版位系统状态
+// WebsiteStatus : 推广链接系统状态
 type WebsiteStatus string
 
 // List of WebsiteStatus
