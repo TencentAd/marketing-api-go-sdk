@@ -14,8 +14,12 @@ type CityLevel string
 
 // List of CityLevel
 const (
-	CityLevel_FIRST  CityLevel = "CITY_LEVEL_FIRST"
-	CityLevel_SECOND CityLevel = "CITY_LEVEL_SECOND"
-	CityLevel_THIRD  CityLevel = "CITY_LEVEL_THIRD"
-	CityLevel_NONE   CityLevel = "CITY_LEVEL_NONE"
+	CityLevel_FIRST     CityLevel = "CITY_LEVEL_FIRST"
+	CityLevel_SECOND    CityLevel = "CITY_LEVEL_SECOND"
+	CityLevel_THIRD     CityLevel = "CITY_LEVEL_THIRD"
+	CityLevel_NONE      CityLevel = "CITY_LEVEL_NONE"
+	CityLevel_UNKNOW    CityLevel = "CITY_LEVEL_UNKNOW"
+	CityLevel_CORE      CityLevel = "CITY_LEVEL_CORE"
+	CityLevel_IMPORTANT CityLevel = "CITY_LEVEL_IMPORTANT"
+	CityLevel_OTHER     CityLevel = "CITY_LEVEL_OTHER"
 )
