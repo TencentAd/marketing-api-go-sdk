@@ -73,6 +73,10 @@ func (c *SDKClient) Adgroups() *api.AdgroupsApiService {
 	return c.Client.AdgroupsApi
 }
 
+func (c *SDKClient) AdqReportsUpgradeStatus() *api.AdqReportsUpgradeStatusApiService {
+	return c.Client.AdqReportsUpgradeStatusApi
+}
+
 func (c *SDKClient) Ads() *api.AdsApiService {
 	return c.Client.AdsApi
 }

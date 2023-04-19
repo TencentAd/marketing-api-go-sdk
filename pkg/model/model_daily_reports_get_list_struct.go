@@ -689,6 +689,13 @@ type DailyReportsGetListStruct struct {
 	FirstCategoryId                            *int64   `json:"first_category_id,omitempty"`
 	SecondCategoryId                           *int64   `json:"second_category_id,omitempty"`
 	ThirdCategoryId                            *int64   `json:"third_category_id,omitempty"`
+	MatchType                                  *int64   `json:"match_type,omitempty"`
+	PlacementGroupId                           *int64   `json:"placement_group_id,omitempty"`
+	BidwordId                                  *int64   `json:"bidword_id,omitempty"`
+	Bidword                                    *string  `json:"bidword,omitempty"`
+	PlacementGroupName                         *string  `json:"placement_group_name,omitempty"`
+	Queryword                                  *string  `json:"queryword,omitempty"`
+	Hour                                       *int64   `json:"hour,omitempty"`
 	WechatAccountId                            *string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                             *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                          *float64 `json:"cost_deviation_rate,omitempty"`

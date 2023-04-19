@@ -667,6 +667,14 @@ type HourlyReportsGetListStruct struct {
 	AdName                                     *string  `json:"ad_name,omitempty"`
 	PromotedObjectType                         *string  `json:"promoted_object_type,omitempty"`
 	PromotedObjectId                           *string  `json:"promoted_object_id,omitempty"`
+	Date                                       *string  `json:"date,omitempty"`
+	MatchType                                  *int64   `json:"match_type,omitempty"`
+	PlacementGroupId                           *int64   `json:"placement_group_id,omitempty"`
+	BidwordId                                  *int64   `json:"bidword_id,omitempty"`
+	Bidword                                    *string  `json:"bidword,omitempty"`
+	PlacementGroupName                         *string  `json:"placement_group_name,omitempty"`
+	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
+	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	WechatAccountId                            *string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                             *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                          *float64 `json:"cost_deviation_rate,omitempty"`

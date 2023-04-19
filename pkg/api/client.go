@@ -78,6 +78,8 @@ type APIClient struct {
 
 	AdgroupsApi *AdgroupsApiService
 
+	AdqReportsUpgradeStatusApi *AdqReportsUpgradeStatusApiService
+
 	AdsApi *AdsApiService
 
 	AdvertiserApi *AdvertiserApiService
@@ -452,6 +454,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdcreativesRelatedCapabilityApi = (*AdcreativesRelatedCapabilityApiService)(&c.common)
 	c.AdgroupNegativewordsApi = (*AdgroupNegativewordsApiService)(&c.common)
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
+	c.AdqReportsUpgradeStatusApi = (*AdqReportsUpgradeStatusApiService)(&c.common)
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
 	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
