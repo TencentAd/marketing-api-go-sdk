@@ -36,4 +36,6 @@ const (
 	AsyncReportLevel_CITY_VISITED_IN    AsyncReportLevel = "REPORT_LEVEL_CITY_VISITED_IN"
 	AsyncReportLevel_CITY_LIVE_IN       AsyncReportLevel = "REPORT_LEVEL_CITY_LIVE_IN"
 	AsyncReportLevel_CITY_TRAVEL_IN     AsyncReportLevel = "REPORT_LEVEL_CITY_TRAVEL_IN"
+	AsyncReportLevel_BIDWORD            AsyncReportLevel = "REPORT_LEVEL_BIDWORD"
+	AsyncReportLevel_QUERYWORD          AsyncReportLevel = "REPORT_LEVEL_QUERYWORD"
 )

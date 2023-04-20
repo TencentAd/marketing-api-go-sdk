@@ -19,9 +19,9 @@ const (
 	ReportLevelHourly_ADGROUP           ReportLevelHourly = "REPORT_LEVEL_ADGROUP"
 	ReportLevelHourly_AD                ReportLevelHourly = "REPORT_LEVEL_AD"
 	ReportLevelHourly_PROMOTED_OBJECT   ReportLevelHourly = "REPORT_LEVEL_PROMOTED_OBJECT"
+	ReportLevelHourly_BIDWORD           ReportLevelHourly = "REPORT_LEVEL_BIDWORD"
 	ReportLevelHourly_ADVERTISER_WECHAT ReportLevelHourly = "REPORT_LEVEL_ADVERTISER_WECHAT"
 	ReportLevelHourly_CAMPAIGN_WECHAT   ReportLevelHourly = "REPORT_LEVEL_CAMPAIGN_WECHAT"
 	ReportLevelHourly_ADGROUP_WECHAT    ReportLevelHourly = "REPORT_LEVEL_ADGROUP_WECHAT"
 	ReportLevelHourly_AD_WECHAT         ReportLevelHourly = "REPORT_LEVEL_AD_WECHAT"
-	ReportLevelHourly_BIDWORD           ReportLevelHourly = "REPORT_LEVEL_BIDWORD"
 )

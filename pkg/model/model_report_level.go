@@ -26,10 +26,10 @@ const (
 	ReportLevel_MATERIAL_VIDEO           ReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 	ReportLevel_MATERIAL_IMAGE           ReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
 	ReportLevel_PRODUCT_CATELOG          ReportLevel = "REPORT_LEVEL_PRODUCT_CATELOG"
+	ReportLevel_BIDWORD                  ReportLevel = "REPORT_LEVEL_BIDWORD"
+	ReportLevel_QUERYWORD                ReportLevel = "REPORT_LEVEL_QUERYWORD"
 	ReportLevel_ADVERTISER_WECHAT        ReportLevel = "REPORT_LEVEL_ADVERTISER_WECHAT"
 	ReportLevel_CAMPAIGN_WECHAT          ReportLevel = "REPORT_LEVEL_CAMPAIGN_WECHAT"
 	ReportLevel_ADGROUP_WECHAT           ReportLevel = "REPORT_LEVEL_ADGROUP_WECHAT"
 	ReportLevel_AD_WECHAT                ReportLevel = "REPORT_LEVEL_AD_WECHAT"
-	ReportLevel_BIDWORD                  ReportLevel = "REPORT_LEVEL_BIDWORD"
-	ReportLevel_QUERYWORD                ReportLevel = "REPORT_LEVEL_QUERYWORD"
 )
