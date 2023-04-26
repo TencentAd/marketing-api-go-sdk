@@ -88,5 +88,8 @@ const (
 	IntOptimizationGoal_QUIT_GROUP                             IntOptimizationGoal = "OPTIMIZATIONGOAL_QUIT_GROUP"
 	IntOptimizationGoal_VIEW_ACQUISITION_CONTENT               IntOptimizationGoal = "OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT"
 	IntOptimizationGoal_BACK_FLOW                              IntOptimizationGoal = "OPTIMIZATIONGOAL_BACK_FLOW"
+	IntOptimizationGoal_PAGE_ONLINE_CONSULT_THREE_MSG          IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG"
+	IntOptimizationGoal_RENEWAL                                IntOptimizationGoal = "OPTIMIZATIONGOAL_RENEWAL"
+	IntOptimizationGoal_LOW_PRICE_COURSE                       IntOptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_COURSE"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

@@ -183,6 +183,7 @@ const (
 	TaskType_TASK_TYPE_PROCESS_USER_PAGE_OBJECT                                    TaskType = "TASK_TYPE_PROCESS_USER_PAGE_OBJECT"
 	TaskType_TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_CREATE_ADCREATIVE"
 	TaskType_TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE                                  TaskType = "TASK_TYPE_DC_BATCH_UPDATE_ADCREATIVE"
+	TaskType_TASK_TYPE_DATA_MODEL_CHECKER                                          TaskType = "TASK_TYPE_DATA_MODEL_CHECKER"
 	TaskType_TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS                                  TaskType = "TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS"
 	TaskType_TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA                                   TaskType = "TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA"
 	TaskType_UNKNOWN                                                               TaskType = "UNKNOWN"

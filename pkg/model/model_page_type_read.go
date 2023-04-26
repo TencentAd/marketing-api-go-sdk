@@ -61,4 +61,5 @@ const (
 	PageTypeRead_UNIVERSAL_LINK                  PageTypeRead = "PAGE_TYPE_UNIVERSAL_LINK"
 	PageTypeRead_NOT_USED                        PageTypeRead = "PAGE_TYPE_NOT_USED"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
+	PageTypeRead_CUSTOM_TV                       PageTypeRead = "PAGE_TYPE_CUSTOM_TV"
 )

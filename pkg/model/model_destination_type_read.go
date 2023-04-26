@@ -51,4 +51,5 @@ const (
 	DestinationTypeRead_UNIVERSAL_LINK                  DestinationTypeRead = "PAGE_TYPE_UNIVERSAL_LINK"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
+	DestinationTypeRead_CUSTOM_TV                       DestinationTypeRead = "PAGE_TYPE_CUSTOM_TV"
 )

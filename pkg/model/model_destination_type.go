@@ -59,4 +59,5 @@ const (
 	DestinationType_APP_DEEP_LINK                   DestinationType = "PAGE_TYPE_APP_DEEP_LINK"
 	DestinationType_UNIVERSAL_LINK                  DestinationType = "PAGE_TYPE_UNIVERSAL_LINK"
 	DestinationType_NOT_USED                        DestinationType = "PAGE_TYPE_NOT_USED"
+	DestinationType_CUSTOM_TV                       DestinationType = "PAGE_TYPE_CUSTOM_TV"
 )

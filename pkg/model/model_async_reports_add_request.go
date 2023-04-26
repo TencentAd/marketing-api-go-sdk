@@ -20,4 +20,5 @@ type AsyncReportsAddRequest struct {
 	Granularity                          TimeGranularity                `json:"granularity,omitempty"`
 	Date                                 *string                        `json:"date,omitempty"`
 	WeixinOfficialAccountsUpgradeEnabled *bool                          `json:"weixin_official_accounts_upgrade_enabled,omitempty"`
+	AdqAccountsUpgradeEnabled            *bool                          `json:"adq_accounts_upgrade_enabled,omitempty"`
 }

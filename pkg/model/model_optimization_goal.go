@@ -96,4 +96,7 @@ const (
 	OptimizationGoal_QUIT_GROUP                             OptimizationGoal = "OPTIMIZATIONGOAL_QUIT_GROUP"
 	OptimizationGoal_VIEW_ACQUISITION_CONTENT               OptimizationGoal = "OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT"
 	OptimizationGoal_BACK_FLOW                              OptimizationGoal = "OPTIMIZATIONGOAL_BACK_FLOW"
+	OptimizationGoal_PAGE_ONLINE_CONSULT_THREE_MSG          OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG"
+	OptimizationGoal_RENEWAL                                OptimizationGoal = "OPTIMIZATIONGOAL_RENEWAL"
+	OptimizationGoal_LOW_PRICE_COURSE                       OptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_COURSE"
 )
