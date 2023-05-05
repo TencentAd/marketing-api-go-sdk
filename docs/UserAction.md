@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [optional] [default to null]
 **ProductInform** | [***ProductInform**](product_inform.md) |  | [optional] [default to null]
 **Channel** | [***ActionChannelType**](ActionChannelType.md) |  | [optional] [default to null]
+**ExtInfo** | [***DeviceInfo**](device_info.md) |  | [optional] [default to null]
 **ExternalActionId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

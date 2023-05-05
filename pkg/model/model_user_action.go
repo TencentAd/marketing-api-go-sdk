@@ -20,5 +20,6 @@ type UserAction struct {
 	Url              *string                `json:"url,omitempty"`
 	ProductInform    *ProductInform         `json:"product_inform,omitempty"`
 	Channel          ActionChannelType      `json:"channel,omitempty"`
+	ExtInfo          *DeviceInfo            `json:"ext_info,omitempty"`
 	ExternalActionId *string                `json:"external_action_id,omitempty"`
 }

@@ -535,6 +535,20 @@ type HourlyReportsGetListStruct struct {
 	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
 	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
 	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
+	ReservationCheckUv                         *int64   `json:"reservation_check_uv,omitempty"`
+	ReservationCheckUvCost                     *int64   `json:"reservation_check_uv_cost,omitempty"`
+	ReservationCheckUvRate                     *float64 `json:"reservation_check_uv_rate,omitempty"`
+	TryOutIntentionUv                          *int64   `json:"try_out_intention_uv,omitempty"`
+	IneffectiveLeadsUv                         *int64   `json:"ineffective_leads_uv,omitempty"`
+	ClassParticipatedFisrtUv                   *int64   `json:"class_participated_fisrt_uv,omitempty"`
+	ClassParticipatedFisrtUvCost               *int64   `json:"class_participated_fisrt_uv_cost,omitempty"`
+	ClassParticipatedFisrtUvRate               *float64 `json:"class_participated_fisrt_uv_rate,omitempty"`
+	AdPurArpuCostD124hReg                      *int64   `json:"ad_pur_arpu_cost_d1_24h_reg,omitempty"`
+	AdPurArpuCostD124hRegPla                   *int64   `json:"ad_pur_arpu_cost_d1_24h_reg_pla,omitempty"`
+	QuitChatGroupAmount                        *int64   `json:"quit_chat_group_amount,omitempty"`
+	QuitChatGroupRate                          *float64 `json:"quit_chat_group_rate,omitempty"`
+	CreApplicationRateWeb                      *float64 `json:"cre_application_rate_web,omitempty"`
+	CreApplicationRateApp                      *float64 `json:"cre_application_rate_app,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
