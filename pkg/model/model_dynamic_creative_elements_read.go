@@ -118,4 +118,6 @@ type DynamicCreativeElementsRead struct {
 	MainJumpInfo                     *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
 	MdpaTitleComponentOptions        *[]MdpaTitleComponentOption        `json:"mdpa_title_component_options,omitempty"`
 	MdpaDescComponentOptions         *[]MdpaDescComponentOption         `json:"mdpa_desc_component_options,omitempty"`
+	ListSublinkComponentOptions      *[]ListSublinkComponentOption      `json:"list_sublink_component_options,omitempty"`
+	ImageList3ComponentOptions       *[]ImageListComponentOption        `json:"image_list3_component_options,omitempty"`
 }
