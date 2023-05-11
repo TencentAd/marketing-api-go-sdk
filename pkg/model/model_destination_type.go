@@ -60,4 +60,5 @@ const (
 	DestinationType_UNIVERSAL_LINK                  DestinationType = "PAGE_TYPE_UNIVERSAL_LINK"
 	DestinationType_NOT_USED                        DestinationType = "PAGE_TYPE_NOT_USED"
 	DestinationType_CUSTOM_TV                       DestinationType = "PAGE_TYPE_CUSTOM_TV"
+	DestinationType_ANDROID_DIRECT_DOWNLOAD         DestinationType = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 )

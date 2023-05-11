@@ -49,7 +49,8 @@ const (
 	DestinationTypeRead_CHANNELS_HALF_CARD              DestinationTypeRead = "PAGE_TYPE_CHANNELS_HALF_CARD"
 	DestinationTypeRead_APP_DEEP_LINK                   DestinationTypeRead = "PAGE_TYPE_APP_DEEP_LINK"
 	DestinationTypeRead_UNIVERSAL_LINK                  DestinationTypeRead = "PAGE_TYPE_UNIVERSAL_LINK"
+	DestinationTypeRead_CUSTOM_TV                       DestinationTypeRead = "PAGE_TYPE_CUSTOM_TV"
+	DestinationTypeRead_ANDROID_DIRECT_DOWNLOAD         DestinationTypeRead = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
-	DestinationTypeRead_CUSTOM_TV                       DestinationTypeRead = "PAGE_TYPE_CUSTOM_TV"
 )

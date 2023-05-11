@@ -33,6 +33,7 @@ const (
 	AccountTypeMap_TCC_GIFT                       AccountTypeMap = "FUND_TYPE_TCC_GIFT"
 	AccountTypeMap_JD_PRIVILEGE                   AccountTypeMap = "FUND_TYPE_JD_PRIVILEGE"
 	AccountTypeMap_JD_WIRELESS_CASH               AccountTypeMap = "FUND_TYPE_JD_WIRELESS_CASH"
+	AccountTypeMap_CONTRACT_CREDIT                AccountTypeMap = "FUND_TYPE_CONTRACT_CREDIT"
 	AccountTypeMap_SPECIAL_GIFT                   AccountTypeMap = "FUND_TYPE_SPECIAL_GIFT"
 	AccountTypeMap_MP_GAME_DEVELOPER_WORKING_FUND AccountTypeMap = "FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND"
 	AccountTypeMap_MP_GAME_DEVELOPER_GIFT         AccountTypeMap = "FUND_TYPE_MP_GAME_DEVELOPER_GIFT"

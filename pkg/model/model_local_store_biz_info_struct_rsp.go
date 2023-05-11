@@ -28,4 +28,5 @@ type LocalStoreBizInfoStructRsp struct {
 	SpecialService     *[]string               `json:"special_service,omitempty"`
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
 	Intro              *string                 `json:"intro,omitempty"`
+	HidePoi            *bool                   `json:"hide_poi,omitempty"`
 }

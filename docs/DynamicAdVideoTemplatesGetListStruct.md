@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **CoverImageUrl** | **string** |  | [optional] [default to null]
 **IntroVideoUrl** | **string** |  | [optional] [default to null]
 **DeliveryVideoUrl** | **string** |  | [optional] [default to null]
+**SupportChannel** | **bool** |  | [optional] [default to null]
+**Extra** | [***Extra**](extra.md) |  | [optional] [default to null]
 **SubTemplateList** | [**[]SubTemplateStruct**](sub_template_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -29,4 +29,5 @@ type LocalStoreBizInfoStruct struct {
 	OpeningStatus      LocalStoreOpeningStatus `json:"opening_status,omitempty"`
 	Star               *float64                `json:"star,omitempty"`
 	Intro              *string                 `json:"intro,omitempty"`
+	HidePoi            *bool                   `json:"hide_poi,omitempty"`
 }

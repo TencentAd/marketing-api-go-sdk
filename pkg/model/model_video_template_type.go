@@ -14,6 +14,7 @@ type VideoTemplateType string
 
 // List of VideoTemplateType
 const (
-	VideoTemplateType_IMG_TRANSFORM VideoTemplateType = "VIDEO_TEMPLATE_TYPE_IMG_TRANSFORM"
-	VideoTemplateType_TRANSPARENT   VideoTemplateType = "VIDEO_TEMPLATE_TYPE_TRANSPARENT"
+	VideoTemplateType_IMG_TRANSFORM       VideoTemplateType = "VIDEO_TEMPLATE_TYPE_IMG_TRANSFORM"
+	VideoTemplateType_TRANSPARENT         VideoTemplateType = "VIDEO_TEMPLATE_TYPE_TRANSPARENT"
+	VideoTemplateType_CHANNEL_TRANSPARENT VideoTemplateType = "VIDEO_TEMPLATE_TYPE_CHANNEL_TRANSPARENT"
 )
