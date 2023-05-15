@@ -10,11 +10,12 @@
 package model
 
 type FundTransferAddRequest struct {
-	Amount          *int64         `json:"amount,omitempty"`
-	TransferType    *string        `json:"transfer_type,omitempty"`
-	ExternalBillNo  *string        `json:"external_bill_no,omitempty"`
-	Memo            *string        `json:"memo,omitempty"`
-	TransferTryBest *int64         `json:"transfer_try_best,omitempty"`
-	AccountId       *int64         `json:"account_id,omitempty"`
-	FundType        AccountTypeMap `json:"fund_type,omitempty"`
+	Amount                *int64         `json:"amount,omitempty"`
+	TransferType          *string        `json:"transfer_type,omitempty"`
+	ExternalBillNo        *string        `json:"external_bill_no,omitempty"`
+	Memo                  *string        `json:"memo,omitempty"`
+	TransferTryBest       *int64         `json:"transfer_try_best,omitempty"`
+	HighFrequencyTransfer *int64         `json:"high_frequency_transfer,omitempty"`
+	AccountId             *int64         `json:"account_id,omitempty"`
+	FundType              AccountTypeMap `json:"fund_type,omitempty"`
 }

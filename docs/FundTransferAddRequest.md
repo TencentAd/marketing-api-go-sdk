@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **ExternalBillNo** | **string** |  | [optional] [default to null]
 **Memo** | **string** |  | [optional] [default to null]
 **TransferTryBest** | **int64** |  | [optional] [default to null]
+**HighFrequencyTransfer** | **int64** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **FundType** | [***AccountTypeMap**](AccountTypeMap.md) |  | [optional] [default to null]
 
