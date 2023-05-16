@@ -91,5 +91,6 @@ const (
 	IntOptimizationGoal_PAGE_ONLINE_CONSULT_THREE_MSG          IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG"
 	IntOptimizationGoal_RENEWAL                                IntOptimizationGoal = "OPTIMIZATIONGOAL_RENEWAL"
 	IntOptimizationGoal_LOW_PRICE_COURSE                       IntOptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_COURSE"
+	IntOptimizationGoal_CONSULT_INTENTION                      IntOptimizationGoal = "OPTIMIZATIONGOAL_CONSULT_INTENTION"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

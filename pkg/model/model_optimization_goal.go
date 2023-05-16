@@ -99,4 +99,5 @@ const (
 	OptimizationGoal_PAGE_ONLINE_CONSULT_THREE_MSG          OptimizationGoal = "OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG"
 	OptimizationGoal_RENEWAL                                OptimizationGoal = "OPTIMIZATIONGOAL_RENEWAL"
 	OptimizationGoal_LOW_PRICE_COURSE                       OptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_COURSE"
+	OptimizationGoal_CONSULT_INTENTION                      OptimizationGoal = "OPTIMIZATIONGOAL_CONSULT_INTENTION"
 )
