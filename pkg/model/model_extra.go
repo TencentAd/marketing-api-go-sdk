@@ -11,9 +11,11 @@ package model
 
 // 模板扩展信息
 type Extra struct {
-	ImageTemplateId       *int64  `json:"image_template_id,omitempty"`
-	ImageTemplateIntroUrl *int64  `json:"image_template_intro_url,omitempty"`
-	Desc                  *string `json:"desc,omitempty"`
-	FloatingZoneName      *string `json:"floating_zone_name,omitempty"`
-	FloatingZoneDesc      *string `json:"floating_zone_desc,omitempty"`
+	CoverImageTemplateId       *int64  `json:"cover_image_template_id,omitempty"`
+	CoverImageTemplateIntroUrl *string `json:"cover_image_template_intro_url,omitempty"`
+	ImageTemplateId            *int64  `json:"image_template_id,omitempty"`
+	ImageTemplateIntroUrl      *string `json:"image_template_intro_url,omitempty"`
+	Desc                       *string `json:"desc,omitempty"`
+	FloatingZoneName           *string `json:"floating_zone_name,omitempty"`
+	FloatingZoneDesc           *string `json:"floating_zone_desc,omitempty"`
 }
