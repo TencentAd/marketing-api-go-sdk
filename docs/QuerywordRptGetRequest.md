@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **RptFilter** | [***RptFilterQueryword**](rpt_filter_queryword.md) |  | [optional] [default to null]
 **BizFilter** | [***BizFilter**](biz_filter.md) |  | [optional] [default to null]
 **QueryType** | **[]int64** |  | [optional] [default to null]
+**Fields** | **[]string** |  | [optional] [default to null]
+**UseUnifiedReport** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

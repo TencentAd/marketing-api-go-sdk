@@ -99,4 +99,26 @@ type Total struct {
 	ClkMiddleBtnPv                   *string `json:"clk_middle_btn_pv,omitempty"`
 	ClkMiddleSectionPv               *string `json:"clk_middle_section_pv,omitempty"`
 	ClkMiddleGridviewPv              *string `json:"clk_middle_gridview_pv,omitempty"`
+	PageReservationCount             *string `json:"page_reservation_count,omitempty"`
+	ReservationAmount                *string `json:"reservation_amount,omitempty"`
+	OrderPv                          *string `json:"order_pv,omitempty"`
+	OrderAmount                      *string `json:"order_amount,omitempty"`
+	OrderFollow1dPv                  *string `json:"order_follow_1d_pv,omitempty"`
+	OrderFollow1dAmount              *string `json:"order_follow_1d_amount,omitempty"`
+	PurchasePv                       *string `json:"purchase_pv,omitempty"`
+	PurchaseAmount                   *string `json:"purchase_amount,omitempty"`
+	ApplyPv                          *string `json:"apply_pv,omitempty"`
+	CreditPv                         *string `json:"credit_pv,omitempty"`
+	WithdrawDepositPv                *string `json:"withdraw_deposit_pv,omitempty"`
+	CheoutPv1d                       *string `json:"cheout_pv_1d,omitempty"`
+	CheoutFd                         *string `json:"cheout_fd,omitempty"`
+	CheoutPv3d                       *string `json:"cheout_pv_3d,omitempty"`
+	CheoutTd                         *string `json:"cheout_td,omitempty"`
+	CheoutPv7d                       *string `json:"cheout_pv_7d,omitempty"`
+	CheoutOw                         *string `json:"cheout_ow,omitempty"`
+	PurchaseClk15dPv                 *string `json:"purchase_clk_15d_pv,omitempty"`
+	Cheout15d                        *string `json:"cheout_15d,omitempty"`
+	PurchaseClk30dPv                 *string `json:"purchase_clk_30d_pv,omitempty"`
+	CheoutOm                         *string `json:"cheout_om,omitempty"`
+	PreCreditPv                      *string `json:"pre_credit_pv,omitempty"`
 }

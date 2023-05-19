@@ -10,13 +10,15 @@
 package model
 
 type QuerywordRptGetRequest struct {
-	AccountId *int64                    `json:"account_id,omitempty"`
-	Filtering *[]BidwordFilteringStruct `json:"filtering,omitempty"`
-	GroupBy   *[]string                 `json:"group_by,omitempty"`
-	OrderBy   *[]OrderByReportStruct    `json:"order_by,omitempty"`
-	Page      *int64                    `json:"page,omitempty"`
-	PageSize  *int64                    `json:"page_size,omitempty"`
-	RptFilter *RptFilterQueryword       `json:"rpt_filter,omitempty"`
-	BizFilter *BizFilter                `json:"biz_filter,omitempty"`
-	QueryType *[]int64                  `json:"query_type,omitempty"`
+	AccountId        *int64                    `json:"account_id,omitempty"`
+	Filtering        *[]BidwordFilteringStruct `json:"filtering,omitempty"`
+	GroupBy          *[]string                 `json:"group_by,omitempty"`
+	OrderBy          *[]OrderByReportStruct    `json:"order_by,omitempty"`
+	Page             *int64                    `json:"page,omitempty"`
+	PageSize         *int64                    `json:"page_size,omitempty"`
+	RptFilter        *RptFilterQueryword       `json:"rpt_filter,omitempty"`
+	BizFilter        *BizFilter                `json:"biz_filter,omitempty"`
+	QueryType        *[]int64                  `json:"query_type,omitempty"`
+	Fields           *[]string                 `json:"fields,omitempty"`
+	UseUnifiedReport *bool                     `json:"use_unified_report,omitempty"`
 }
