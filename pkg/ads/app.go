@@ -189,6 +189,10 @@ func (c *SDKClient) BusinessMdmAccountRelations() *api.BusinessMdmAccountRelatio
 	return c.Client.BusinessMdmAccountRelationsApi
 }
 
+func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
+	return c.Client.BusinessPointApi
+}
+
 func (c *SDKClient) CampaignNegativewords() *api.CampaignNegativewordsApiService {
 	return c.Client.CampaignNegativewordsApi
 }
@@ -355,6 +359,10 @@ func (c *SDKClient) ImageProcessing() *api.ImageProcessingApiService {
 
 func (c *SDKClient) Images() *api.ImagesApiService {
 	return c.Client.ImagesApi
+}
+
+func (c *SDKClient) KeywordRecommend() *api.KeywordRecommendApiService {
+	return c.Client.KeywordRecommendApi
 }
 
 func (c *SDKClient) LabelAudiences() *api.LabelAudiencesApiService {

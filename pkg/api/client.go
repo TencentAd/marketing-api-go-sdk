@@ -136,6 +136,8 @@ type APIClient struct {
 
 	BusinessMdmAccountRelationsApi *BusinessMdmAccountRelationsApiService
 
+	BusinessPointApi *BusinessPointApiService
+
 	CampaignNegativewordsApi *CampaignNegativewordsApiService
 
 	CampaignsApi *CampaignsApiService
@@ -219,6 +221,8 @@ type APIClient struct {
 	ImageProcessingApi *ImageProcessingApiService
 
 	ImagesApi *ImagesApiService
+
+	KeywordRecommendApi *KeywordRecommendApiService
 
 	LabelAudiencesApi *LabelAudiencesApiService
 
@@ -483,6 +487,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessManagerRelationsApi = (*BusinessManagerRelationsApiService)(&c.common)
 	c.BusinessMdmAccountRelationsApi = (*BusinessMdmAccountRelationsApiService)(&c.common)
+	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
 	c.CampaignNegativewordsApi = (*CampaignNegativewordsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
@@ -525,6 +530,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
+	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
 	c.LabelAudiencesApi = (*LabelAudiencesApiService)(&c.common)
 	c.LabelsApi = (*LabelsApiService)(&c.common)
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
