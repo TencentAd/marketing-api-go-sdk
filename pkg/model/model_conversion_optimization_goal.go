@@ -27,4 +27,5 @@ const (
 	ConversionOptimizationGoal_3DAYMONETIZATIONROAS  ConversionOptimizationGoal = "GOAL_3DAY_MONETIZATION_ROAS"
 	ConversionOptimizationGoal_7DAYMONETIZATIONROAS  ConversionOptimizationGoal = "GOAL_7DAY_MONETIZATION_ROAS"
 	ConversionOptimizationGoal_15DAYMONETIZATIONROAS ConversionOptimizationGoal = "GOAL_15DAY_MONETIZATION_ROAS"
+	ConversionOptimizationGoal_7DAYRETENTIONTIMES    ConversionOptimizationGoal = "GOAL_7DAY_RETENTION_TIMES"
 )
