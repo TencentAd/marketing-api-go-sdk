@@ -465,6 +465,10 @@ func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
 
+func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
+	return c.Client.ObjectCommentFlagApi
+}
+
 func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissionsApiService {
 	return c.Client.OptimizationGoalPermissionsApi
 }

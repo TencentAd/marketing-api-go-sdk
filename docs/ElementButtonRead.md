@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Title** | **string** |  | [optional] [default to null]
 **Url** | **string** |  | [optional] [default to null]
-**LinkSpec** | [***LinkSpec**](link_spec.md) |  | [optional] [default to null]
+**LinkSpec** | [***ElementButtonLinkSpec**](element_button_link_spec.md) |  | [optional] [default to null]
 **AppIosSpec** | [***AppIosSpec**](app_ios_spec.md) |  | [optional] [default to null]
 **AppAndroidSpec** | [***AppAndroidSpec**](app_android_spec.md) |  | [optional] [default to null]
 **MiniProgramSpec** | [***MiniProgramSpec**](mini_program_spec.md) |  | [optional] [default to null]
