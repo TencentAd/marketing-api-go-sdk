@@ -520,6 +520,12 @@ type TargetingTagReportsGetListStruct struct {
 	QuitChatGroupRate                          *float64 `json:"quit_chat_group_rate,omitempty"`
 	CreApplicationRateWeb                      *float64 `json:"cre_application_rate_web,omitempty"`
 	CreApplicationRateApp                      *float64 `json:"cre_application_rate_app,omitempty"`
+	IncomePv24hPla                             *int64   `json:"income_pv_24h_pla,omitempty"`
+	IncomePv1dPla                              *int64   `json:"income_pv_1d_pla,omitempty"`
+	IncomePvPla                                *int64   `json:"income_pv_pla,omitempty"`
+	VideoOuterPlay3sRate                       *float64 `json:"video_outer_play3s_rate,omitempty"`
+	AppRetentionLt7                            *float64 `json:"app_retention_lt7,omitempty"`
+	AppRetentionLt7Cost                        *int64   `json:"app_retention_lt7_cost,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
