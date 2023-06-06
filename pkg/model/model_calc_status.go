@@ -52,4 +52,5 @@ const (
 	CalcStatus_GUARANTEED              CalcStatus = "STATUS_GUARANTEED"
 	CalcStatus_VERIFYING               CalcStatus = "STATUS_VERIFYING"
 	CalcStatus_SETTLED_ACCOUNT         CalcStatus = "STATUS_SETTLED_ACCOUNT"
+	CalcStatus_PRE_LOCK                CalcStatus = "STATUS_PRE_LOCK"
 )

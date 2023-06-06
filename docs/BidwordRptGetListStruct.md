@@ -129,6 +129,10 @@ Name | Type | Description | Notes
 **PurchaseClk30dPv** | **string** |  | [optional] [default to null]
 **CheoutOm** | **string** |  | [optional] [default to null]
 **PreCreditPv** | **string** |  | [optional] [default to null]
+**ExpAvgRank** | **string** |  | [optional] [default to null]
+**ExpOverallTopPv** | **string** |  | [optional] [default to null]
+**ClkTopPv** | **string** |  | [optional] [default to null]
+**RealCostTop** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

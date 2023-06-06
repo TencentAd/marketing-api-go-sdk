@@ -137,4 +137,8 @@ type BidwordRptGetListStruct struct {
 	PurchaseClk30dPv                 *string `json:"purchase_clk_30d_pv,omitempty"`
 	CheoutOm                         *string `json:"cheout_om,omitempty"`
 	PreCreditPv                      *string `json:"pre_credit_pv,omitempty"`
+	ExpAvgRank                       *string `json:"exp_avg_rank,omitempty"`
+	ExpOverallTopPv                  *string `json:"exp_overall_top_pv,omitempty"`
+	ClkTopPv                         *string `json:"clk_top_pv,omitempty"`
+	RealCostTop                      *string `json:"real_cost_top,omitempty"`
 }
