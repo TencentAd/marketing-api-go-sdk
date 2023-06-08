@@ -712,6 +712,10 @@ type DailyReportsGetListStruct struct {
 	MatchType                                  *int64   `json:"match_type,omitempty"`
 	BidwordId                                  *int64   `json:"bidword_id,omitempty"`
 	Bidword                                    *string  `json:"bidword,omitempty"`
+	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
+	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
+	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
 	Hour                                       *int64   `json:"hour,omitempty"`
 	WechatAccountId                            *string  `json:"wechat_account_id,omitempty"`

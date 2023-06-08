@@ -693,6 +693,10 @@ type HourlyReportsGetListStruct struct {
 	Bidword                                    *string  `json:"bidword,omitempty"`
 	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
+	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
+	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
+	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	WechatAccountId                            *string  `json:"wechat_account_id,omitempty"`
 	WechatAgencyId                             *string  `json:"wechat_agency_id,omitempty"`
 	CostDeviationRate                          *float64 `json:"cost_deviation_rate,omitempty"`
