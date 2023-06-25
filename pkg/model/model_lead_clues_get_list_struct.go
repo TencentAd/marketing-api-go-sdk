@@ -76,4 +76,5 @@ type LeadCluesGetListStruct struct {
 	OwnerName                *string             `json:"owner_name,omitempty"`
 	OwnerId                  *int64              `json:"owner_id,omitempty"`
 	AllFollowRecords         *string             `json:"all_follow_records,omitempty"`
+	ClaimAdvertiserId        *int64              `json:"claim_advertiser_id,omitempty"`
 }
