@@ -66,6 +66,7 @@ const (
 	TaskType_TASK_TYPE_ADP_OFFLINE_RPT                                             TaskType = "TASK_TYPE_ADP_OFFLINE_RPT"
 	TaskType_TASK_TYPE_AGENCY_OFFLINE_RPT                                          TaskType = "TASK_TYPE_AGENCY_OFFLINE_RPT"
 	TaskType_TASK_TYPE_TRANSCODE_TWENTY_EIGHT_TASK                                 TaskType = "TASK_TYPE_TRANSCODE_TWENTY_EIGHT_TASK"
+	TaskType_TASK_TYPE_TRANSCODE_SIXTY_NINE_TASK                                   TaskType = "TASK_TYPE_TRANSCODE_SIXTY_NINE_TASK"
 	TaskType_TASK_TYPE_MULTI_ACCOUNT_INTEGRATED_DATA                               TaskType = "TASK_TYPE_MULTI_ACCOUNT_INTEGRATED_DATA"
 	TaskType_TASK_TYPE_LANDING_PAGE_RPT                                            TaskType = "TASK_TYPE_LANDING_PAGE_RPT"
 	TaskType_TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE                               TaskType = "TASK_TYPE_UPDATE_UNION_POSITION_PACKAGE"

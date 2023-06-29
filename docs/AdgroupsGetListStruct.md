@@ -70,7 +70,6 @@ Name | Type | Description | Notes
 **DynamicCreativeIdSet** | **[]int64** |  | [optional] [default to null]
 **SystemStatusExplanation** | **string** |  | [optional] [default to null]
 **AutoDerivedLandingPageSwitch** | **bool** |  | [optional] [default to null]
-**SearchExpansionSwitch** | [***SearchExpansionSwitch**](SearchExpansionSwitch.md) |  | [optional] [default to null]
 **SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **AutoAcquisitionStatus** | [***AutoAcquisitionStatus**](AutoAcquisitionStatus.md) |  | [optional] [default to null]
 **BidScene** | [***BidScene**](BidScene.md) |  | [optional] [default to null]
