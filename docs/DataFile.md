@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **OperationType** | [***OperationType**](OperationType.md) |  | [optional] [default to null]
 **OpenAppId** | **string** |  | [optional] [default to null]
 **SaltId** | **string** |  | [optional] [default to null]
-**ProcessStatus** | [***FileProcessStatus**](FileProcessStatus.md) |  | [optional] [default to null]
+**ProcessStatus** | **int64** |  | [optional] [default to null]
 **ProcessCode** | **int64** |  | [optional] [default to null]
 **ErrorMessage** | **string** |  | [optional] [default to null]
 **LineCount** | **int64** |  | [optional] [default to null]

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
-**Type_** | [***AmUserActionSetType**](AmUserActionSetType.md) |  | [optional] [default to null]
+**Type_** | [***DataSourceType**](DataSourceType.md) |  | [optional] [default to null]
 **MobileAppId** | **int64** |  | [optional] [default to null]
 **WechatAppId** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]

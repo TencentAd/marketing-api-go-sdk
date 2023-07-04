@@ -12,7 +12,7 @@ package model
 // UserActionSet返回结构
 type UserActionSet struct {
 	UserActionSetId       *int64              `json:"user_action_set_id,omitempty"`
-	Type_                 AmUserActionSetType `json:"type,omitempty"`
+	Type_                 DataSourceType      `json:"type,omitempty"`
 	MobileAppId           *int64              `json:"mobile_app_id,omitempty"`
 	Name                  *string             `json:"name,omitempty"`
 	Description           *string             `json:"description,omitempty"`

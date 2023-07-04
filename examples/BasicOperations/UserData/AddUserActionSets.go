@@ -35,7 +35,7 @@ func (e *UserActionSetsAddExample) Init() {
 	e.Data = model.UserActionSetsAddRequest{
 		AccountId: int64(0),
 		Name:      "SDK数据源5ede252f5d953",
-		Type_:     model.AmUserActionSetType_WEB,
+		Type_:     model.DataSourceType_WEB,
 	}
 }
 

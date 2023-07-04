@@ -9,7 +9,7 @@
 
 package model
 
-// DataSourceType : 数据源类型标识，枚举列表：{ WEB, ANDROID, IOS, OFFLINE, WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME }
+// DataSourceType : 用户行为源类型
 type DataSourceType string
 
 // List of DataSourceType
