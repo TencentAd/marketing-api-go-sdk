@@ -42,4 +42,8 @@ type QuerywordRptGetListStruct struct {
 	PlacementGroupName        *string `json:"placement_group_name,omitempty"`
 	MatchType                 *int64  `json:"match_type,omitempty"`
 	MatchTypeName             *string `json:"match_type_name,omitempty"`
+	QuerywordStatus           *int64  `json:"queryword_status,omitempty"`
+	QuerywordStatusCn         *string `json:"queryword_status_cn,omitempty"`
+	BidAmount                 *int64  `json:"bid_amount,omitempty"`
+	BidMode                   *string `json:"bid_mode,omitempty"`
 }

@@ -189,5 +189,6 @@ const (
 	TaskType_TASK_TYPE_DATA_MODEL_CHECKER                                          TaskType = "TASK_TYPE_DATA_MODEL_CHECKER"
 	TaskType_TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS                                  TaskType = "TASK_TYPE_UPDATE_CREATIVE_WARNSTATUS"
 	TaskType_TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA                                   TaskType = "TASK_TYPE_MULTI_ACCOUNT_REPORT_DATA"
+	TaskType_TASK_TYPE_UPDATE_LANDING_PAGE_VIDEO_TRANSCODE_STATUS                  TaskType = "TASK_TYPE_UPDATE_LANDING_PAGE_VIDEO_TRANSCODE_STATUS"
 	TaskType_UNKNOWN                                                               TaskType = "UNKNOWN"
 )

@@ -18,4 +18,5 @@ const (
 	FloatingZoneType_IMAGE_TEXT   FloatingZoneType = "FLOATING_ZONE_TYPE_IMAGE_TEXT"
 	FloatingZoneType_SINGLE_IMAGE FloatingZoneType = "FLOATING_ZONE_TYPE_SINGLE_IMAGE"
 	FloatingZoneType_MULTI_BUTTON FloatingZoneType = "FLOATING_ZONE_TYPE_MULTI_BUTTON"
+	FloatingZoneType_SLIDER_CARD  FloatingZoneType = "FLOATING_ZONE_TYPE_SLIDER_CARD"
 )

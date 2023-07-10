@@ -9,7 +9,7 @@
 
 package model
 
-// FileDispatchSwitch : 是否开启自动分发，如打开开关，文件上传后会自动分发给所选应用场景
+// FileDispatchSwitch : 批量分发开关标识，SWITCH_ON开启，SWITCH_OFF关闭
 type FileDispatchSwitch string
 
 // List of FileDispatchSwitch

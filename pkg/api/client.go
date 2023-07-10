@@ -176,6 +176,10 @@ type APIClient struct {
 
 	DataNexusFileApi *DataNexusFileApiService
 
+	DataSetApi *DataSetApiService
+
+	DataSourceDispatchApi *DataSourceDispatchApiService
+
 	DiagnosisApi *DiagnosisApiService
 
 	DplabelAdLabelApi *DplabelAdLabelApiService
@@ -503,6 +507,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DataNexusFileApi = (*DataNexusFileApiService)(&c.common)
+	c.DataSetApi = (*DataSetApiService)(&c.common)
+	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
 	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)

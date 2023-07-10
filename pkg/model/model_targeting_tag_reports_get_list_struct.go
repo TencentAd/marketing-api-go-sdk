@@ -526,6 +526,13 @@ type TargetingTagReportsGetListStruct struct {
 	VideoOuterPlay3sRate                       *float64 `json:"video_outer_play3s_rate,omitempty"`
 	AppRetentionLt7                            *float64 `json:"app_retention_lt7,omitempty"`
 	AppRetentionLt7Cost                        *int64   `json:"app_retention_lt7_cost,omitempty"`
+	ClkAccountLivingStatusPv                   *int64   `json:"clk_account_living_status_pv,omitempty"`
+	WecomAddPersonalDedupPv                    *int64   `json:"wecom_add_personal_dedup_pv,omitempty"`
+	WecomAddPersonalDedupPvCost                *int64   `json:"wecom_add_personal_dedup_pv_cost,omitempty"`
+	AfterAddWecomConsultDedupPv                *int64   `json:"after_add_wecom_consult_dedup_pv,omitempty"`
+	AfterAddWecomConsultDedupPvCost            *int64   `json:"after_add_wecom_consult_dedup_pv_cost,omitempty"`
+	AfterAddWecomIntentionDedupPv              *int64   `json:"after_add_wecom_intention_dedup_pv,omitempty"`
+	AfterAddWecomIntentionDedupPvCost          *int64   `json:"after_add_wecom_intention_dedup_pv_cost,omitempty"`
 	Age                                        *string  `json:"age,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`

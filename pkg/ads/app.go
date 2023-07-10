@@ -269,6 +269,14 @@ func (c *SDKClient) DataNexusFile() *api.DataNexusFileApiService {
 	return c.Client.DataNexusFileApi
 }
 
+func (c *SDKClient) DataSet() *api.DataSetApiService {
+	return c.Client.DataSetApi
+}
+
+func (c *SDKClient) DataSourceDispatch() *api.DataSourceDispatchApiService {
+	return c.Client.DataSourceDispatchApi
+}
+
 func (c *SDKClient) Diagnosis() *api.DiagnosisApiService {
 	return c.Client.DiagnosisApi
 }

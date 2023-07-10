@@ -555,6 +555,14 @@ type HourlyReportsGetListStruct struct {
 	VideoOuterPlay3sRate                       *float64 `json:"video_outer_play3s_rate,omitempty"`
 	AppRetentionLt7                            *float64 `json:"app_retention_lt7,omitempty"`
 	AppRetentionLt7Cost                        *int64   `json:"app_retention_lt7_cost,omitempty"`
+	ClkBreakPv                                 *int64   `json:"clk_break_pv,omitempty"`
+	ClkAccountLivingStatusPv                   *int64   `json:"clk_account_living_status_pv,omitempty"`
+	WecomAddPersonalDedupPv                    *int64   `json:"wecom_add_personal_dedup_pv,omitempty"`
+	WecomAddPersonalDedupPvCost                *int64   `json:"wecom_add_personal_dedup_pv_cost,omitempty"`
+	AfterAddWecomConsultDedupPv                *int64   `json:"after_add_wecom_consult_dedup_pv,omitempty"`
+	AfterAddWecomConsultDedupPvCost            *int64   `json:"after_add_wecom_consult_dedup_pv_cost,omitempty"`
+	AfterAddWecomIntentionDedupPv              *int64   `json:"after_add_wecom_intention_dedup_pv,omitempty"`
+	AfterAddWecomIntentionDedupPvCost          *int64   `json:"after_add_wecom_intention_dedup_pv_cost,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`

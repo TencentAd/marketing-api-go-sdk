@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **FloatingZoneButtonText** | **string** |  | [optional] [default to null]
 **FloatingZoneType** | [***FloatingZoneType**](FloatingZoneType.md) |  | [optional] [default to null]
 **FloatingZoneSingleImageId** | **string** |  | [optional] [default to null]
+**FloatingZoneBgcolor** | **string** |  | [optional] [default to null]
+**FloatingZoneJumpInfo** | [**[]LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

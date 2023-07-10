@@ -14,7 +14,8 @@ type OverrideCanvasHeadOption string
 
 // List of OverrideCanvasHeadOption
 const (
-	OverrideCanvasHeadOption_CANVAS_OVERRIDE_CREATIVE OverrideCanvasHeadOption = "OPTION_CANVAS_OVERRIDE_CREATIVE"
-	OverrideCanvasHeadOption_CREATIVE_OVERRIDE_CANVAS OverrideCanvasHeadOption = "OPTION_CREATIVE_OVERRIDE_CANVAS"
-	OverrideCanvasHeadOption_KEEP_DIFFERENT           OverrideCanvasHeadOption = "OPTION_KEEP_DIFFERENT"
+	OverrideCanvasHeadOption_CANVAS_OVERRIDE_CREATIVE         OverrideCanvasHeadOption = "OPTION_CANVAS_OVERRIDE_CREATIVE"
+	OverrideCanvasHeadOption_CREATIVE_OVERRIDE_CANVAS         OverrideCanvasHeadOption = "OPTION_CREATIVE_OVERRIDE_CANVAS"
+	OverrideCanvasHeadOption_KEEP_DIFFERENT                   OverrideCanvasHeadOption = "OPTION_KEEP_DIFFERENT"
+	OverrideCanvasHeadOption_CREATIVE_OVERRIDE_CANVAS_DYNAMIC OverrideCanvasHeadOption = "OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC"
 )

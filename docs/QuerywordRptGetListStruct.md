@@ -34,6 +34,10 @@ Name | Type | Description | Notes
 **PlacementGroupName** | **string** |  | [optional] [default to null]
 **MatchType** | **int64** |  | [optional] [default to null]
 **MatchTypeName** | **string** |  | [optional] [default to null]
+**QuerywordStatus** | **int64** |  | [optional] [default to null]
+**QuerywordStatusCn** | **string** |  | [optional] [default to null]
+**BidAmount** | **int64** |  | [optional] [default to null]
+**BidMode** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
