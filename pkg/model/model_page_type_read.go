@@ -62,5 +62,7 @@ const (
 	PageTypeRead_NOT_USED                        PageTypeRead = "PAGE_TYPE_NOT_USED"
 	PageTypeRead_CUSTOM_TV                       PageTypeRead = "PAGE_TYPE_CUSTOM_TV"
 	PageTypeRead_ANDROID_DIRECT_DOWNLOAD         PageTypeRead = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
+	PageTypeRead_LINGQUE_H5                      PageTypeRead = "PAGE_TYPE_LINGQUE_H5"
+	PageTypeRead_LINGQUE_MINI_PROGRAM            PageTypeRead = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
 )

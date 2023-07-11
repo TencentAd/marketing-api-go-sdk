@@ -51,6 +51,8 @@ const (
 	DestinationTypeRead_UNIVERSAL_LINK                  DestinationTypeRead = "PAGE_TYPE_UNIVERSAL_LINK"
 	DestinationTypeRead_CUSTOM_TV                       DestinationTypeRead = "PAGE_TYPE_CUSTOM_TV"
 	DestinationTypeRead_ANDROID_DIRECT_DOWNLOAD         DestinationTypeRead = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
+	DestinationTypeRead_LINGQUE_H5                      DestinationTypeRead = "PAGE_TYPE_LINGQUE_H5"
+	DestinationTypeRead_LINGQUE_MINI_PROGRAM            DestinationTypeRead = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 )

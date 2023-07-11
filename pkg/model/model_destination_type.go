@@ -61,4 +61,6 @@ const (
 	DestinationType_NOT_USED                        DestinationType = "PAGE_TYPE_NOT_USED"
 	DestinationType_CUSTOM_TV                       DestinationType = "PAGE_TYPE_CUSTOM_TV"
 	DestinationType_ANDROID_DIRECT_DOWNLOAD         DestinationType = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
+	DestinationType_LINGQUE_H5                      DestinationType = "PAGE_TYPE_LINGQUE_H5"
+	DestinationType_LINGQUE_MINI_PROGRAM            DestinationType = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 )

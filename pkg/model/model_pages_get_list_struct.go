@@ -24,4 +24,6 @@ type PagesGetListStruct struct {
 	FengyeSubType         LandingPageFengyeSubType `json:"fengye_sub_type,omitempty"`
 	OwnerUid              *int64                   `json:"owner_uid,omitempty"`
 	QuoteCreativeMaterial *bool                    `json:"quote_creative_material,omitempty"`
+	DisableCode           *int64                   `json:"disable_code,omitempty"`
+	DisableMessage        *string                  `json:"disable_message,omitempty"`
 }

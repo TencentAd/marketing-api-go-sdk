@@ -87,6 +87,8 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_CHANNELS_RESERVE_LIVE           LandingPageType = "LANDING_PAGE_TYPE_CHANNELS_RESERVE_LIVE"
 	LandingPageType_LANDING_PAGE_TYPE_CHANNELS_FOLLOW_CARD            LandingPageType = "LANDING_PAGE_TYPE_CHANNELS_FOLLOW_CARD"
 	LandingPageType_LANDING_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD         LandingPageType = "LANDING_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
+	LandingPageType_LANDING_PAGE_TYPE_LINGQUE_H5                      LandingPageType = "LANDING_PAGE_TYPE_LINGQUE_H5"
+	LandingPageType_LANDING_PAGE_TYPE_LINGQUE_MINI_PROGRAM            LandingPageType = "LANDING_PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 	LandingPageType_DEEP_LINK                                         LandingPageType = "DEEP_LINK"
 	LandingPageType_H5                                                LandingPageType = "H5"
 	LandingPageType_MINI_PROGRAM                                      LandingPageType = "MINI_PROGRAM"
