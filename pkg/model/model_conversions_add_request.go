@@ -31,4 +31,5 @@ type ConversionsAddRequest struct {
 	AttributionWindow            *int64                     `json:"attribution_window,omitempty"`
 	DeepBehaviorAdvancedGoal     IntOptimizationGoal        `json:"deep_behavior_advanced_goal,omitempty"`
 	DeepOptimizationGoalType     DeepOptimizationGoalType   `json:"deep_optimization_goal_type,omitempty"`
+	ForwardLinkAssist            IntOptimizationGoal        `json:"forward_link_assist,omitempty"`
 }
