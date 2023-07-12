@@ -101,4 +101,5 @@ const (
 	OptimizationGoal_LOW_PRICE_COURSE                       OptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_COURSE"
 	OptimizationGoal_CONSULT_INTENTION                      OptimizationGoal = "OPTIMIZATIONGOAL_CONSULT_INTENTION"
 	OptimizationGoal_EVERY_DAY_RETENTION                    OptimizationGoal = "OPTIMIZATIONGOAL_EVERY_DAY_RETENTION"
+	OptimizationGoal_PROMOTION_VIEW_KEY_PAGE_UV             OptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV"
 )

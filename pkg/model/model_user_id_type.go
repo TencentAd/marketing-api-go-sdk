@@ -14,17 +14,11 @@ type UserIdType string
 
 // List of UserIdType
 const (
-	UserIdType_GDT_OPENID          UserIdType = "GDT_OPENID"
 	UserIdType_HASH_IDFA           UserIdType = "HASH_IDFA"
 	UserIdType_HASH_IMEI           UserIdType = "HASH_IMEI"
-	UserIdType_HASH_MAC            UserIdType = "HASH_MAC"
 	UserIdType_HASH_MOBILE_PHONE   UserIdType = "HASH_MOBILE_PHONE"
-	UserIdType_HASH_QQ             UserIdType = "HASH_QQ"
 	UserIdType_IDFA                UserIdType = "IDFA"
 	UserIdType_IMEI                UserIdType = "IMEI"
-	UserIdType_MAC                 UserIdType = "MAC"
-	UserIdType_MOBILE_QQ_OPENID    UserIdType = "MOBILE_QQ_OPENID"
-	UserIdType_QQ                  UserIdType = "QQ"
 	UserIdType_WX_OPENID           UserIdType = "WX_OPENID"
 	UserIdType_WX_UNIONID          UserIdType = "WX_UNIONID"
 	UserIdType_WECHAT_OPENID       UserIdType = "WECHAT_OPENID"
@@ -37,4 +31,10 @@ const (
 	UserIdType_MD5_SHA256_IDFA     UserIdType = "MD5_SHA256_IDFA"
 	UserIdType_MD5_SHA256_OAID     UserIdType = "MD5_SHA256_OAID"
 	UserIdType_CAID                UserIdType = "CAID"
+	UserIdType_GDT_OPENID          UserIdType = "GDT_OPENID"
+	UserIdType_HASH_MAC            UserIdType = "HASH_MAC"
+	UserIdType_HASH_QQ             UserIdType = "HASH_QQ"
+	UserIdType_MAC                 UserIdType = "MAC"
+	UserIdType_MOBILE_QQ_OPENID    UserIdType = "MOBILE_QQ_OPENID"
+	UserIdType_QQ                  UserIdType = "QQ"
 )
