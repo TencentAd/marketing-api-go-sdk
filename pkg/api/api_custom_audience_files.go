@@ -38,7 +38,6 @@ CustomAudienceFilesApiService 上传客户人群数据文件
  * @param optional nil or *CustomAudienceFilesAddOpts - Optional Parameters:
      * @param "OperationType" (optional.String) -
      * @param "OpenAppId" (optional.String) -
-     * @param "SaltId" (optional.String) -
 
 @return CustomAudienceFilesAddResponse
 */
@@ -46,7 +45,6 @@ CustomAudienceFilesApiService 上传客户人群数据文件
 type CustomAudienceFilesAddOpts struct {
 	OperationType optional.String
 	OpenAppId     optional.String
-	SaltId        optional.String
 }
 
 func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64, audienceId int64, userIdType string, file *os.File, localVarOptionals *CustomAudienceFilesAddOpts) (CustomAudienceFilesAddResponseData, http.Header, error) {
@@ -107,9 +105,6 @@ func (a *CustomAudienceFilesApiService) Add(ctx context.Context, accountId int64
 	}
 	if localVarOptionals != nil && localVarOptionals.OpenAppId.IsSet() {
 		localVarFormParams.Add("open_app_id", parameterToString(localVarOptionals.OpenAppId.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.SaltId.IsSet() {
-		localVarFormParams.Add("salt_id", parameterToString(localVarOptionals.SaltId.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {

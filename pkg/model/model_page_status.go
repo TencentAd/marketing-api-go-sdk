@@ -16,4 +16,5 @@ type PageStatus string
 const (
 	PageStatus_NORMAL  PageStatus = "NORMAL"
 	PageStatus_DELETED PageStatus = "DELETED"
+	PageStatus_PENDING PageStatus = "PENDING"
 )

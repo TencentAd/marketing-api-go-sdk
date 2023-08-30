@@ -11,10 +11,13 @@ package model
 
 // 返回结构
 type DynamicAdImageTemplatesGetListStruct struct {
-	DynamicAdTemplateId        *int64  `json:"dynamic_ad_template_id,omitempty"`
-	DynamicAdTemplateName      *string `json:"dynamic_ad_template_name,omitempty"`
-	ProductItemDisplayQuantity AdNum   `json:"product_item_display_quantity,omitempty"`
-	DynamicAdTemplateWidth     *int64  `json:"dynamic_ad_template_width,omitempty"`
-	DynamicAdTemplateHeight    *int64  `json:"dynamic_ad_template_height,omitempty"`
-	ImageUrl                   *string `json:"image_url,omitempty"`
+	DynamicAdTemplateId        *int64                `json:"dynamic_ad_template_id,omitempty"`
+	DynamicAdTemplateName      *string               `json:"dynamic_ad_template_name,omitempty"`
+	ProductItemDisplayQuantity AdNum                 `json:"product_item_display_quantity,omitempty"`
+	DynamicAdTemplateWidth     *int64                `json:"dynamic_ad_template_width,omitempty"`
+	DynamicAdTemplateHeight    *int64                `json:"dynamic_ad_template_height,omitempty"`
+	ImageUrl                   *string               `json:"image_url,omitempty"`
+	ImageProductFields         *[]string             `json:"image_product_fields,omitempty"`
+	FillType                   TemplateImageFillType `json:"fill_type,omitempty"`
+	Coverage                   *float64              `json:"coverage,omitempty"`
 }

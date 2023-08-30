@@ -37,6 +37,8 @@ Name | Type | Description  | Notes
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **templateIdList** | [**optional.Interface of []int64**](int64.md)|  | 
+ **templateName** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

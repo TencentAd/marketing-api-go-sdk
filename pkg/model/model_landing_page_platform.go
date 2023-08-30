@@ -33,5 +33,6 @@ const (
 	LandingPagePlatform_HELIANG        LandingPagePlatform = "LANDING_PAGE_PLATFORM_HELIANG"
 	LandingPagePlatform_MADAO          LandingPagePlatform = "LANDING_PAGE_PLATFORM_MADAO"
 	LandingPagePlatform_ZHONGZHI       LandingPagePlatform = "LANDING_PAGE_PLATFORM_ZHONGZHI"
+	LandingPagePlatform_LINGQUE        LandingPagePlatform = "LANDING_PAGE_PLATFORM_LINGQUE"
 	LandingPagePlatform_W_EIMOB        LandingPagePlatform = "LANDING_PAGE_PLATFORM_wEIMOB"
 )

@@ -20,6 +20,11 @@ type DynamicAdVideoTemplatesGetListStruct struct {
 	IntroVideoUrl        *string              `json:"intro_video_url,omitempty"`
 	DeliveryVideoUrl     *string              `json:"delivery_video_url,omitempty"`
 	SupportChannel       *bool                `json:"support_channel,omitempty"`
+	Coverage             *float64             `json:"coverage,omitempty"`
+	MinVideoDuration     *float64             `json:"min_video_duration,omitempty"`
+	MaxVideoDuration     *float64             `json:"max_video_duration,omitempty"`
+	VideoProductFields   *[]string            `json:"video_product_fields,omitempty"`
+	ImageProductFields   *[]string            `json:"image_product_fields,omitempty"`
 	Extra                *Extra               `json:"extra,omitempty"`
 	SubTemplateList      *[]SubTemplateStruct `json:"sub_template_list,omitempty"`
 }

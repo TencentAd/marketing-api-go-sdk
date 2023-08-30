@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **UpdateAdgroupAutoAcquisitionSpec** | [**[]UpdateAdgroupAutoAcquisitionItem**](update_adgroup_auto_acquisition_item.md) |  | [optional] [default to null]
 **UpdateAdcreativeLandingPageSpec** | [**[]UpdateAdcreativeLandingPageItem**](update_adcreative_landing_page_item.md) |  | [optional] [default to null]
 **UpdateAdgroupDeepConversionWorthAdvancedRateSpec** | [**[]UpdateAdgroupDeepConversionWorthAdvancedRateItem**](update_adgroup_deep_conversion_worth_advanced_rate_item.md) |  | [optional] [default to null]
+**UpdateDeepConversionBehaviorAdvancedBidSpec** | [**[]UpdateDeepConversionBehaviorAdvancedBidItem**](update_deep_conversion_behavior_advanced_bid_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -102,4 +102,6 @@ const (
 	OptimizationGoal_CONSULT_INTENTION                      OptimizationGoal = "OPTIMIZATIONGOAL_CONSULT_INTENTION"
 	OptimizationGoal_EVERY_DAY_RETENTION                    OptimizationGoal = "OPTIMIZATIONGOAL_EVERY_DAY_RETENTION"
 	OptimizationGoal_PROMOTION_VIEW_KEY_PAGE_UV             OptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV"
+	OptimizationGoal_LIVE_STREAM_DURATION_1_MIN             OptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN"
+	OptimizationGoal_LIVE_STREAM_INTERACTION                OptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION"
 )

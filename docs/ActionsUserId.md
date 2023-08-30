@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **Md5Sha256Imei** | **string** |  | [optional] [default to null]
 **HashIdfa** | **string** |  | [optional] [default to null]
 **Md5Sha256Idfa** | **string** |  | [optional] [default to null]
-**GdtOpenid** | **string** |  | [optional] [default to null]
 **HashPhone** | **string** |  | [optional] [default to null]
 **Sha256Phone** | **string** |  | [optional] [default to null]
 **HashAndroidId** | **string** |  | [optional] [default to null]

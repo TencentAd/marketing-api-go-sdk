@@ -38,6 +38,8 @@ DynamicAdVideoTemplatesApiService 获取动态商品视频模板
      * @param "SupportChannel" (optional.Bool) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "TemplateIdList" (optional.Interface of []int64) -
+     * @param "TemplateName" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return DynamicAdVideoTemplatesGetResponse
@@ -47,6 +49,8 @@ type DynamicAdVideoTemplatesGetOpts struct {
 	SupportChannel optional.Bool
 	Page           optional.Int64
 	PageSize       optional.Int64
+	TemplateIdList optional.Interface
+	TemplateName   optional.String
 	Fields         optional.Interface
 }
 
@@ -80,6 +84,12 @@ func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.TemplateIdList.IsSet() {
+		localVarQueryParams.Add("template_id_list", parameterToString(localVarOptionals.TemplateIdList.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.TemplateName.IsSet() {
+		localVarQueryParams.Add("template_name", parameterToString(localVarOptionals.TemplateName.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

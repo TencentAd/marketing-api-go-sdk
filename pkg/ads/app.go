@@ -13,6 +13,10 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 )
 
+func (c *SDKClient) AdAppealQuota() *api.AdAppealQuotaApiService {
+	return c.Client.AdAppealQuotaApi
+}
+
 func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
 	return c.Client.AdDiagnosisApi
 }
@@ -221,6 +225,10 @@ func (c *SDKClient) CreativeComponents() *api.CreativeComponentsApiService {
 	return c.Client.CreativeComponentsApi
 }
 
+func (c *SDKClient) CreativeSampleProducts() *api.CreativeSampleProductsApiService {
+	return c.Client.CreativeSampleProductsApi
+}
+
 func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
 	return c.Client.CreativetoolsTextApi
 }
@@ -265,10 +273,6 @@ func (c *SDKClient) DailyReports() *api.DailyReportsApiService {
 	return c.Client.DailyReportsApi
 }
 
-func (c *SDKClient) DataNexusFile() *api.DataNexusFileApiService {
-	return c.Client.DataNexusFileApi
-}
-
 func (c *SDKClient) DataSet() *api.DataSetApiService {
 	return c.Client.DataSetApi
 }
@@ -291,10 +295,6 @@ func (c *SDKClient) DynamicAdImageTemplates() *api.DynamicAdImageTemplatesApiSer
 
 func (c *SDKClient) DynamicAdImages() *api.DynamicAdImagesApiService {
 	return c.Client.DynamicAdImagesApi
-}
-
-func (c *SDKClient) DynamicAdTemplates() *api.DynamicAdTemplatesApiService {
-	return c.Client.DynamicAdTemplatesApi
 }
 
 func (c *SDKClient) DynamicAdVideo() *api.DynamicAdVideoApiService {
@@ -321,14 +321,6 @@ func (c *SDKClient) ExtendPackage() *api.ExtendPackageApiService {
 	return c.Client.ExtendPackageApi
 }
 
-func (c *SDKClient) FileDispatch() *api.FileDispatchApiService {
-	return c.Client.FileDispatchApi
-}
-
-func (c *SDKClient) FileSchema() *api.FileSchemaApiService {
-	return c.Client.FileSchemaApi
-}
-
 func (c *SDKClient) FundStatementsDaily() *api.FundStatementsDailyApiService {
 	return c.Client.FundStatementsDailyApi
 }
@@ -343,6 +335,14 @@ func (c *SDKClient) FundTransfer() *api.FundTransferApiService {
 
 func (c *SDKClient) Funds() *api.FundsApiService {
 	return c.Client.FundsApi
+}
+
+func (c *SDKClient) GameFeature() *api.GameFeatureApiService {
+	return c.Client.GameFeatureApi
+}
+
+func (c *SDKClient) GameFeatureTags() *api.GameFeatureTagsApiService {
+	return c.Client.GameFeatureTagsApi
 }
 
 func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
@@ -569,6 +569,10 @@ func (c *SDKClient) Report() *api.ReportApiService {
 	return c.Client.ReportApi
 }
 
+func (c *SDKClient) ReviewAdAppeal() *api.ReviewAdAppealApiService {
+	return c.Client.ReviewAdAppealApi
+}
+
 func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewResultsApiService {
 	return c.Client.ReviewElementPrereviewResultsApi
 }
@@ -591,6 +595,10 @@ func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
 
 func (c *SDKClient) SystemStatus() *api.SystemStatusApiService {
 	return c.Client.SystemStatusApi
+}
+
+func (c *SDKClient) TargetcpaTag() *api.TargetcpaTagApiService {
+	return c.Client.TargetcpaTagApi
 }
 
 func (c *SDKClient) TargetingTagReports() *api.TargetingTagReportsApiService {

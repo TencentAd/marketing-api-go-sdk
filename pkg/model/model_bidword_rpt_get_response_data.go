@@ -10,7 +10,8 @@
 package model
 
 type BidwordRptGetResponseData struct {
-	Conf  *Conf                      `json:"conf,omitempty"`
-	List  *[]BidwordRptGetListStruct `json:"list,omitempty"`
-	Total *Total                     `json:"total,omitempty"`
+	Conf         *Conf                      `json:"conf,omitempty"`
+	List         *[]BidwordRptGetListStruct `json:"list,omitempty"`
+	Total        *Total                     `json:"total,omitempty"`
+	Reportv3List *[]ReportStructV3          `json:"reportv3_list,omitempty"`
 }

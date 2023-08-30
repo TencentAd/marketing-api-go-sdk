@@ -14,4 +14,5 @@ type MiniGameSpec struct {
 	MiniGameTrackingParameter *string                             `json:"mini_game_tracking_parameter,omitempty"`
 	MiniGameOpenlink          *string                             `json:"mini_game_openlink,omitempty"`
 	MiniGameOpenlinkPageSpec  *AdCreativeMiniGameOpenlinkPageSpec `json:"mini_game_openlink_page_spec,omitempty"`
+	MiniGameOpenlinkSwitch    *bool                               `json:"mini_game_openlink_switch,omitempty"`
 }

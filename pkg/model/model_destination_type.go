@@ -63,4 +63,8 @@ const (
 	DestinationType_ANDROID_DIRECT_DOWNLOAD         DestinationType = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 	DestinationType_LINGQUE_H5                      DestinationType = "PAGE_TYPE_LINGQUE_H5"
 	DestinationType_LINGQUE_MINI_PROGRAM            DestinationType = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
+	DestinationType_WECHAT_APPOINTMENT_CARD         DestinationType = "PAGE_TYPE_WECHAT_APPOINTMENT_CARD"
+	DestinationType_H5_PROFILE                      DestinationType = "PAGE_TYPE_H5_PROFILE"
+	DestinationType_SEARCH_BRAND_AREA               DestinationType = "PAGE_TYPE_SEARCH_BRAND_AREA"
+	DestinationType_WECHAT_CHANNELS_PROFILE         DestinationType = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 )

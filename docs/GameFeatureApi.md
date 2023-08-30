@@ -1,0 +1,102 @@
+# TencentAds\GameFeatureApi
+
+All URIs are relative to *https://sandbox-api.e.qq.com/v1.3*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**GameFeatureAdd**](GameFeatureApi.md#GameFeatureAdd) | **Post** /game_feature/add | 新增游戏app特征
+[**GameFeatureGet**](GameFeatureApi.md#GameFeatureGet) | **Get** /game_feature/get | 获取游戏app特征
+[**GameFeatureUpdate**](GameFeatureApi.md#GameFeatureUpdate) | **Post** /game_feature/update | 更新游戏app特征
+
+
+# **GameFeatureAdd**
+> GameFeatureAddResponse GameFeatureAdd(ctx, data)
+新增游戏app特征
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**GameFeatureAddRequest**](GameFeatureAddRequest.md)|  | 
+
+### Return type
+
+[**GameFeatureAddResponse**](GameFeatureAddResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **GameFeatureGet**
+> GameFeatureGetResponse GameFeatureGet(ctx, accountId, promotedObjectType, promotedObjectId, optional)
+获取游戏app特征
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **accountId** | **int64**|  | 
+  **promotedObjectType** | **string**|  | 
+  **promotedObjectId** | **string**|  | 
+ **optional** | ***GameFeatureApiGameFeatureGetOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a pointer to a GameFeatureApiGameFeatureGetOpts struct
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+
+ **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+
+### Return type
+
+[**GameFeatureGetResponse**](GameFeatureGetResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: text/plain
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **GameFeatureUpdate**
+> GameFeatureUpdateResponse GameFeatureUpdate(ctx, data)
+更新游戏app特征
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**GameFeatureUpdateRequest**](GameFeatureUpdateRequest.md)|  | 
+
+### Return type
+
+[**GameFeatureUpdateResponse**](GameFeatureUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

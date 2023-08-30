@@ -53,6 +53,7 @@ const (
 	DestinationTypeRead_ANDROID_DIRECT_DOWNLOAD         DestinationTypeRead = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 	DestinationTypeRead_LINGQUE_H5                      DestinationTypeRead = "PAGE_TYPE_LINGQUE_H5"
 	DestinationTypeRead_LINGQUE_MINI_PROGRAM            DestinationTypeRead = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
+	DestinationTypeRead_WECHAT_APPOINTMENT_CARD         DestinationTypeRead = "PAGE_TYPE_WECHAT_APPOINTMENT_CARD"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 )

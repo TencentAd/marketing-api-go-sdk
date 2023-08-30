@@ -203,6 +203,14 @@ type TargetingTagReportsGetListStruct struct {
 	AddDesktopPv                               *int64   `json:"add_desktop_pv,omitempty"`
 	AddDesktopCost                             *int64   `json:"add_desktop_cost,omitempty"`
 	FirstPayCount                              *int64   `json:"first_pay_count,omitempty"`
+	MiniGamePayD3Uv                            *int64   `json:"mini_game_pay_d3_uv,omitempty"`
+	MiniGamePayD7Uv                            *int64   `json:"mini_game_pay_d7_uv,omitempty"`
+	MiniGamePayD14Uv                           *int64   `json:"mini_game_pay_d14_uv,omitempty"`
+	MiniGamePayD30Uv                           *int64   `json:"mini_game_pay_d30_uv,omitempty"`
+	MiniGameD3PayCount                         *int64   `json:"mini_game_d3_pay_count,omitempty"`
+	MiniGameD7PayCount                         *int64   `json:"mini_game_d7_pay_count,omitempty"`
+	MiniGameD14PayCount                        *int64   `json:"mini_game_d14_pay_count,omitempty"`
+	MiniGameD30PayCount                        *int64   `json:"mini_game_d30_pay_count,omitempty"`
 	WechatLocalPayCount                        *int64   `json:"wechat_local_pay_count,omitempty"`
 	WechatLocalPayuserCount                    *int64   `json:"wechat_local_payuser_count,omitempty"`
 	WechatLocalPayAmount                       *int64   `json:"wechat_local_pay_amount,omitempty"`
@@ -339,9 +347,21 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameRegisterCost                       *int64   `json:"mini_game_register_cost,omitempty"`
 	MiniGameRegisterRate                       *float64 `json:"mini_game_register_rate,omitempty"`
 	MiniGameAdMonetizationUsers                *int64   `json:"mini_game_ad_monetization_users,omitempty"`
+	MiniGameFirstDayAdMonetizationUsers        *int64   `json:"mini_game_first_day_ad_monetization_users,omitempty"`
+	MiniGameFirstDayAdMonetizationAmount       *int64   `json:"mini_game_first_day_ad_monetization_amount,omitempty"`
+	MiniGameFirstDayAdPayingCost               *int64   `json:"mini_game_first_day_ad_paying_cost,omitempty"`
+	MiniGameIncomeRoi1                         *float64 `json:"mini_game_income_roi_1,omitempty"`
+	MiniGameFirstDayAdPayingArpu               *int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
 	MiniGamePayingCount                        *int64   `json:"mini_game_paying_count,omitempty"`
 	MiniGamePayingAmount                       *int64   `json:"mini_game_paying_amount,omitempty"`
+	MiniGamePayingUsersD1                      *int64   `json:"mini_game_paying_users_d1,omitempty"`
+	MiniGamePayingAmountD1                     *int64   `json:"mini_game_paying_amount_d1,omitempty"`
+	MiniGamePayingAmountD3                     *int64   `json:"mini_game_paying_amount_d3,omitempty"`
+	MiniGamePayingAmountD7                     *int64   `json:"mini_game_paying_amount_d7,omitempty"`
+	MiniGamePayingAmountD14                    *int64   `json:"mini_game_paying_amount_d14,omitempty"`
+	MiniGamePayingAmountD30                    *int64   `json:"mini_game_paying_amount_d30,omitempty"`
 	MiniGameFirstPayingUsers                   *int64   `json:"mini_game_first_paying_users,omitempty"`
+	MiniGameFirstDayPayingRoi                  *float64 `json:"mini_game_first_day_paying_roi,omitempty"`
 	MiniGameCreateRoleUsers                    *int64   `json:"mini_game_create_role_users,omitempty"`
 	MiniGameCreateRoleCost                     *int64   `json:"mini_game_create_role_cost,omitempty"`
 	MiniGameRetentionD1                        *int64   `json:"mini_game_retention_d1,omitempty"`
@@ -374,6 +394,13 @@ type TargetingTagReportsGetListStruct struct {
 	KeyBehaviorConversionsCost                 *int64   `json:"key_behavior_conversions_cost,omitempty"`
 	KeyBehaviorConversionsRate                 *float64 `json:"key_behavior_conversions_rate,omitempty"`
 	FirstDayOrderRoi                           *float64 `json:"first_day_order_roi,omitempty"`
+	MiniGameMixedMonetizationRoiD1             *float64 `json:"mini_game_mixed_monetization_roi_d1,omitempty"`
+	MiniGameMixedMonetizationRoiD3             *float64 `json:"mini_game_mixed_monetization_roi_d3,omitempty"`
+	MiniGameMixedMonetizationRoiD7             *float64 `json:"mini_game_mixed_monetization_roi_d7,omitempty"`
+	MiniGameMixedMonetizationRoiD14            *float64 `json:"mini_game_mixed_monetization_roi_d14,omitempty"`
+	MiniGameAdMonetizationAmountD3             *int64   `json:"mini_game_ad_monetization_amount_d3,omitempty"`
+	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
+	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGameAdMonetizationCost                 *int64   `json:"mini_game_ad_monetization_cost,omitempty"`
 	MiniGameAdMonetizationRoi                  *float64 `json:"mini_game_ad_monetization_roi,omitempty"`
 	MiniGameAdMonetizationArpu                 *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
@@ -407,6 +434,10 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameCreateRoleRate                     *float64 `json:"mini_game_create_role_rate,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
+	MiniGamePayD3Roi                           *float64 `json:"mini_game_pay_d3_roi,omitempty"`
+	MiniGamePayD7Roi                           *float64 `json:"mini_game_pay_d7_roi,omitempty"`
+	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
+	MiniGamePayD30Roi                          *float64 `json:"mini_game_pay_d30_roi,omitempty"`
 	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	ScanCodeAddFansUv                          *int64   `json:"scan_code_add_fans_uv,omitempty"`
 	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
@@ -468,6 +499,17 @@ type TargetingTagReportsGetListStruct struct {
 	StayPay7dPv                                *int64   `json:"stay_pay_7d_pv,omitempty"`
 	StayPay15dPv                               *int64   `json:"stay_pay_15d_pv,omitempty"`
 	StayPay30dPv                               *int64   `json:"stay_pay_30d_pv,omitempty"`
+	Minigame1dPayCount                         *int64   `json:"minigame_1d_pay_count,omitempty"`
+	Minigame3dIncomeUv                         *int64   `json:"minigame_3d_income_uv,omitempty"`
+	Minigame3dIncomeCount                      *int64   `json:"minigame_3d_income_count,omitempty"`
+	Minigame7dIncomeUv                         *int64   `json:"minigame_7d_income_uv,omitempty"`
+	Minigame7dIncomeCount                      *int64   `json:"minigame_7d_income_count,omitempty"`
+	Minigame3dIncomeRoi                        *float64 `json:"minigame_3d_income_roi,omitempty"`
+	Minigame7dIncomeRoi                        *float64 `json:"minigame_7d_income_roi,omitempty"`
+	Minigame24hPayUv                           *int64   `json:"minigame_24h_pay_uv,omitempty"`
+	Minigame24hPayAmount                       *int64   `json:"minigame_24h_pay_amount,omitempty"`
+	Minigame24hPayRoi                          *float64 `json:"minigame_24h_pay_roi,omitempty"`
+	Minigame24hPayArpu                         *int64   `json:"minigame_24h_pay_arpu,omitempty"`
 	LiveStreamCrtClickCnt                      *int64   `json:"live_stream_crt_click_cnt,omitempty"`
 	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
@@ -599,18 +641,10 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGamePayingUsersPlaD1                   *int64   `json:"mini_game_paying_users_pla_d1,omitempty"`
 	MiniGameFirstPayPlaAmount                  *int64   `json:"mini_game_first_pay_pla_amount,omitempty"`
 	MiniGamePayD1PlaUv                         *int64   `json:"mini_game_pay_d1_pla_uv,omitempty"`
-	MiniGamePayD3Uv                            *int64   `json:"mini_game_pay_d3_uv,omitempty"`
-	MiniGamePayD7Uv                            *int64   `json:"mini_game_pay_d7_uv,omitempty"`
-	MiniGamePayD14Uv                           *int64   `json:"mini_game_pay_d14_uv,omitempty"`
-	MiniGamePayD30Uv                           *int64   `json:"mini_game_pay_d30_uv,omitempty"`
 	MiniGamePayD3PlaUv                         *int64   `json:"mini_game_pay_d3_pla_uv,omitempty"`
 	MiniGamePayD7PlaUv                         *int64   `json:"mini_game_pay_d7_pla_uv,omitempty"`
 	MiniGamePayD14PlaUv                        *int64   `json:"mini_game_pay_d14_pla_uv,omitempty"`
 	MiniGamePayD30PlaUv                        *int64   `json:"mini_game_pay_d30_pla_uv,omitempty"`
-	MiniGameD3PayCount                         *int64   `json:"mini_game_d3_pay_count,omitempty"`
-	MiniGameD7PayCount                         *int64   `json:"mini_game_d7_pay_count,omitempty"`
-	MiniGameD14PayCount                        *int64   `json:"mini_game_d14_pay_count,omitempty"`
-	MiniGameD30PayCount                        *int64   `json:"mini_game_d30_pay_count,omitempty"`
 	MiniGameD3PayPlaCount                      *int64   `json:"mini_game_d3_pay_pla_count,omitempty"`
 	MiniGameD7PayPlaCount                      *int64   `json:"mini_game_d7_pay_pla_count,omitempty"`
 	MiniGameD14PayPlaCount                     *int64   `json:"mini_game_d14_pay_pla_count,omitempty"`
@@ -618,18 +652,6 @@ type TargetingTagReportsGetListStruct struct {
 	RoiActivatedD30                            *float64 `json:"roi_activated_d30,omitempty"`
 	FirstDayFirstPayRate                       *float64 `json:"first_day_first_pay_rate,omitempty"`
 	ActiveD5FirstPayCost                       *int64   `json:"active_d5_first_pay_cost,omitempty"`
-	MiniGameFirstDayAdMonetizationUsers        *int64   `json:"mini_game_first_day_ad_monetization_users,omitempty"`
-	MiniGameFirstDayAdMonetizationAmount       *int64   `json:"mini_game_first_day_ad_monetization_amount,omitempty"`
-	MiniGameFirstDayAdPayingCost               *int64   `json:"mini_game_first_day_ad_paying_cost,omitempty"`
-	MiniGameIncomeRoi1                         *float64 `json:"mini_game_income_roi_1,omitempty"`
-	MiniGameFirstDayAdPayingArpu               *int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
-	MiniGamePayingUsersD1                      *int64   `json:"mini_game_paying_users_d1,omitempty"`
-	MiniGamePayingAmountD1                     *int64   `json:"mini_game_paying_amount_d1,omitempty"`
-	MiniGamePayingAmountD3                     *int64   `json:"mini_game_paying_amount_d3,omitempty"`
-	MiniGamePayingAmountD7                     *int64   `json:"mini_game_paying_amount_d7,omitempty"`
-	MiniGamePayingAmountD14                    *int64   `json:"mini_game_paying_amount_d14,omitempty"`
-	MiniGamePayingAmountD30                    *int64   `json:"mini_game_paying_amount_d30,omitempty"`
-	MiniGameFirstDayPayingRoi                  *float64 `json:"mini_game_first_day_paying_roi,omitempty"`
 	MiniGamePayingAmountD1ByUpload             *int64   `json:"mini_game_paying_amount_d1_by_upload,omitempty"`
 	MiniGamePayingAmountD3ByUpload             *int64   `json:"mini_game_paying_amount_d3_by_upload,omitempty"`
 	MiniGamePayingAmountD7ByUpload             *int64   `json:"mini_game_paying_amount_d7_by_upload,omitempty"`
@@ -639,21 +661,14 @@ type TargetingTagReportsGetListStruct struct {
 	MixedMonetizationRoiD3                     *float64 `json:"mixed_monetization_roi_d3,omitempty"`
 	MixedMonetizationRoiD7                     *float64 `json:"mixed_monetization_roi_d7,omitempty"`
 	MixedMonetizationRoiD14                    *float64 `json:"mixed_monetization_roi_d14,omitempty"`
-	MiniGameMixedMonetizationRoiD1             *float64 `json:"mini_game_mixed_monetization_roi_d1,omitempty"`
 	MiniGameMixedMonetizationRoiD1ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d1_by_reporting,omitempty"`
-	MiniGameMixedMonetizationRoiD3             *float64 `json:"mini_game_mixed_monetization_roi_d3,omitempty"`
 	MiniGameMixedMonetizationRoiD3ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d3_by_reporting,omitempty"`
-	MiniGameMixedMonetizationRoiD7             *float64 `json:"mini_game_mixed_monetization_roi_d7,omitempty"`
 	MiniGameMixedMonetizationRoiD7ByReporting  *float64 `json:"mini_game_mixed_monetization_roi_d7_by_reporting,omitempty"`
-	MiniGameMixedMonetizationRoiD14            *float64 `json:"mini_game_mixed_monetization_roi_d14,omitempty"`
 	MiniGameMixedMonetizationRoiD14ByReporting *float64 `json:"mini_game_mixed_monetization_roi_d14_by_reporting,omitempty"`
 	AdPayingUsersD1                            *int64   `json:"ad_paying_users_d1,omitempty"`
 	AdPayingCostD1                             *int64   `json:"ad_paying_cost_d1,omitempty"`
 	AdPurArpuCostD1                            *int64   `json:"ad_pur_arpu_cost_d1,omitempty"`
 	AdMonetizationPenetrationRatD1             *float64 `json:"ad_monetization_penetration_rat_d1,omitempty"`
-	MiniGameAdMonetizationAmountD3             *int64   `json:"mini_game_ad_monetization_amount_d3,omitempty"`
-	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
-	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
 	MiniGamePayingArpuD1                       *int64   `json:"mini_game_paying_arpu_d1,omitempty"`
 	MiniGamePayD1PlaRate                       *float64 `json:"mini_game_pay_d1_pla_rate,omitempty"`
 	ActiveD5ClickFirstPayRate                  *float64 `json:"active_d5_click_first_pay_rate,omitempty"`
@@ -666,23 +681,8 @@ type TargetingTagReportsGetListStruct struct {
 	ActiveD7PayCost                            *int64   `json:"active_d7_pay_cost,omitempty"`
 	MiniGameFirstDayPayingPlaRoi               *float64 `json:"mini_game_first_day_paying_pla_roi,omitempty"`
 	MiniGameFirstPayPlaCost                    *int64   `json:"mini_game_first_pay_pla_cost,omitempty"`
-	MiniGamePayD3Roi                           *float64 `json:"mini_game_pay_d3_roi,omitempty"`
-	MiniGamePayD7Roi                           *float64 `json:"mini_game_pay_d7_roi,omitempty"`
-	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
-	MiniGamePayD30Roi                          *float64 `json:"mini_game_pay_d30_roi,omitempty"`
 	MiniGamePayD3PlaRoi                        *float64 `json:"mini_game_pay_d3_pla_roi,omitempty"`
 	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
 	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
 	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
-	Minigame1dPayCount                         *int64   `json:"minigame_1d_pay_count,omitempty"`
-	Minigame3dIncomeUv                         *int64   `json:"minigame_3d_income_uv,omitempty"`
-	Minigame3dIncomeCount                      *int64   `json:"minigame_3d_income_count,omitempty"`
-	Minigame7dIncomeUv                         *int64   `json:"minigame_7d_income_uv,omitempty"`
-	Minigame7dIncomeCount                      *int64   `json:"minigame_7d_income_count,omitempty"`
-	Minigame3dIncomeRoi                        *float64 `json:"minigame_3d_income_roi,omitempty"`
-	Minigame7dIncomeRoi                        *float64 `json:"minigame_7d_income_roi,omitempty"`
-	Minigame24hPayUv                           *int64   `json:"minigame_24h_pay_uv,omitempty"`
-	Minigame24hPayAmount                       *int64   `json:"minigame_24h_pay_amount,omitempty"`
-	Minigame24hPayRoi                          *float64 `json:"minigame_24h_pay_roi,omitempty"`
-	Minigame24hPayArpu                         *int64   `json:"minigame_24h_pay_arpu,omitempty"`
 }

@@ -51,5 +51,7 @@ type AdgroupsUpdateRequest struct {
 	SmartTargeting                    *SmartTargeting                  `json:"smart_targeting,omitempty"`
 	DynamicCreativeIdSet              *[]int64                         `json:"dynamic_creative_id_set,omitempty"`
 	AutoDerivedLandingPageSwitch      *bool                            `json:"auto_derived_landing_page_switch,omitempty"`
+	EcomPkamSwitch                    EcomPkamSwitch                   `json:"ecom_pkam_switch,omitempty"`
+	ForwardLinkAssist                 OptimizationGoal                 `json:"forward_link_assist,omitempty"`
 	AccountId                         *int64                           `json:"account_id,omitempty"`
 }

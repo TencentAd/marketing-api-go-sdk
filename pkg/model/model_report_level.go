@@ -33,4 +33,8 @@ const (
 	ReportLevel_ADGROUP_WECHAT           ReportLevel = "REPORT_LEVEL_ADGROUP_WECHAT"
 	ReportLevel_AD_WECHAT                ReportLevel = "REPORT_LEVEL_AD_WECHAT"
 	ReportLevel_PROJECT                  ReportLevel = "REPORT_LEVEL_PROJECT"
+	ReportLevel_AGE                      ReportLevel = "REPORT_LEVEL_AGE"
+	ReportLevel_GENDER                   ReportLevel = "REPORT_LEVEL_GENDER"
+	ReportLevel_REGION                   ReportLevel = "REPORT_LEVEL_REGION"
+	ReportLevel_CITY                     ReportLevel = "REPORT_LEVEL_CITY"
 )

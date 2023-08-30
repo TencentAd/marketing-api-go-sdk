@@ -74,4 +74,5 @@ type AdcreativeCreativeElementsWithOptions struct {
 	ButtonTextJumpInfo         *LandingPageStructure              `json:"button_text_jump_info,omitempty"`
 	WxgamePlayablePageSpec     *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
 	MainJumpInfo               *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
+	EggsJumpInfo               *[]LandingPageStructure            `json:"eggs_jump_info,omitempty"`
 }

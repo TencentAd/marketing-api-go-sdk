@@ -48,6 +48,8 @@ type APIClient struct {
 
 	// API Services
 
+	AdAppealQuotaApi *AdAppealQuotaApiService
+
 	AdDiagnosisApi *AdDiagnosisApiService
 
 	AdLabelApi *AdLabelApiService
@@ -152,6 +154,8 @@ type APIClient struct {
 
 	CreativeComponentsApi *CreativeComponentsApiService
 
+	CreativeSampleProductsApi *CreativeSampleProductsApiService
+
 	CreativetoolsTextApi *CreativetoolsTextApiService
 
 	CustomAudienceEstimationsApi *CustomAudienceEstimationsApiService
@@ -174,8 +178,6 @@ type APIClient struct {
 
 	DailyReportsApi *DailyReportsApiService
 
-	DataNexusFileApi *DataNexusFileApiService
-
 	DataSetApi *DataSetApiService
 
 	DataSourceDispatchApi *DataSourceDispatchApiService
@@ -187,8 +189,6 @@ type APIClient struct {
 	DynamicAdImageTemplatesApi *DynamicAdImageTemplatesApiService
 
 	DynamicAdImagesApi *DynamicAdImagesApiService
-
-	DynamicAdTemplatesApi *DynamicAdTemplatesApiService
 
 	DynamicAdVideoApi *DynamicAdVideoApiService
 
@@ -202,10 +202,6 @@ type APIClient struct {
 
 	ExtendPackageApi *ExtendPackageApiService
 
-	FileDispatchApi *FileDispatchApiService
-
-	FileSchemaApi *FileSchemaApiService
-
 	FundStatementsDailyApi *FundStatementsDailyApiService
 
 	FundStatementsDetailedApi *FundStatementsDetailedApiService
@@ -213,6 +209,10 @@ type APIClient struct {
 	FundTransferApi *FundTransferApiService
 
 	FundsApi *FundsApiService
+
+	GameFeatureApi *GameFeatureApiService
+
+	GameFeatureTagsApi *GameFeatureTagsApiService
 
 	HourlyReportsApi *HourlyReportsApiService
 
@@ -326,6 +326,8 @@ type APIClient struct {
 
 	ReportApi *ReportApiService
 
+	ReviewAdAppealApi *ReviewAdAppealApiService
+
 	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
 
 	SceneSpecTagsApi *SceneSpecTagsApiService
@@ -337,6 +339,8 @@ type APIClient struct {
 	SubcustomerTransferApi *SubcustomerTransferApiService
 
 	SystemStatusApi *SystemStatusApiService
+
+	TargetcpaTagApi *TargetcpaTagApiService
 
 	TargetingTagReportsApi *TargetingTagReportsApiService
 
@@ -443,6 +447,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.common.client = c
 
 	// API Services
+	c.AdAppealQuotaApi = (*AdAppealQuotaApiService)(&c.common)
 	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
 	c.AdLabelApi = (*AdLabelApiService)(&c.common)
 	c.AdParamApi = (*AdParamApiService)(&c.common)
@@ -495,6 +500,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeComponentsApi = (*CreativeComponentsApiService)(&c.common)
+	c.CreativeSampleProductsApi = (*CreativeSampleProductsApiService)(&c.common)
 	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
 	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
@@ -506,26 +512,24 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomTagsApi = (*CustomTagsApiService)(&c.common)
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
-	c.DataNexusFileApi = (*DataNexusFileApiService)(&c.common)
 	c.DataSetApi = (*DataSetApiService)(&c.common)
 	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
 	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
 	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
-	c.DynamicAdTemplatesApi = (*DynamicAdTemplatesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)
 	c.DynamicAdVideoTemplatesApi = (*DynamicAdVideoTemplatesApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
 	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)
-	c.FileDispatchApi = (*FileDispatchApiService)(&c.common)
-	c.FileSchemaApi = (*FileSchemaApiService)(&c.common)
 	c.FundStatementsDailyApi = (*FundStatementsDailyApiService)(&c.common)
 	c.FundStatementsDetailedApi = (*FundStatementsDetailedApiService)(&c.common)
 	c.FundTransferApi = (*FundTransferApiService)(&c.common)
 	c.FundsApi = (*FundsApiService)(&c.common)
+	c.GameFeatureApi = (*GameFeatureApiService)(&c.common)
+	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
@@ -582,12 +586,14 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.QuerywordRptApi = (*QuerywordRptApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReportApi = (*ReportApiService)(&c.common)
+	c.ReviewAdAppealApi = (*ReviewAdAppealApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
+	c.TargetcpaTagApi = (*TargetcpaTagApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
 	c.TargetingTagsUvApi = (*TargetingTagsUvApiService)(&c.common)

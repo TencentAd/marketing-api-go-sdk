@@ -14,6 +14,9 @@ type DimensionType string
 
 // List of DimensionType
 const (
+	DimensionType_CONTENT                  DimensionType = "CONTENT"
+	DimensionType_RESOURCE_ID              DimensionType = "RESOURCE_ID"
+	DimensionType_HYPERLINK                DimensionType = "HYPERLINK"
 	DimensionType_AGE                      DimensionType = "AGE"
 	DimensionType_GENDER                   DimensionType = "GENDER"
 	DimensionType_EDUCATION                DimensionType = "EDUCATION"

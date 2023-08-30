@@ -32,4 +32,5 @@ type BatchAsyncRequestTaskSpec struct {
 	UpdateAdgroupAutoAcquisitionSpec                 *[]UpdateAdgroupAutoAcquisitionItem                 `json:"update_adgroup_auto_acquisition_spec,omitempty"`
 	UpdateAdcreativeLandingPageSpec                  *[]UpdateAdcreativeLandingPageItem                  `json:"update_adcreative_landing_page_spec,omitempty"`
 	UpdateAdgroupDeepConversionWorthAdvancedRateSpec *[]UpdateAdgroupDeepConversionWorthAdvancedRateItem `json:"update_adgroup_deep_conversion_worth_advanced_rate_spec,omitempty"`
+	UpdateDeepConversionBehaviorAdvancedBidSpec      *[]UpdateDeepConversionBehaviorAdvancedBidItem      `json:"update_deep_conversion_behavior_advanced_bid_spec,omitempty"`
 }

@@ -66,4 +66,5 @@ const (
 	SiteSetDefinition_BROWSER_PC                 SiteSetDefinition = "SITE_SET_BROWSER_PC"
 	SiteSetDefinition_CHANNELS_CONTENT_PROMOTION SiteSetDefinition = "SITE_SET_CHANNELS_CONTENT_PROMOTION"
 	SiteSetDefinition_FREETRADE_WEAPP            SiteSetDefinition = "SITE_SET_FREETRADE_WEAPP"
+	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
 )

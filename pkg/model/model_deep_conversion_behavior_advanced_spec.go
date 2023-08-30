@@ -9,7 +9,7 @@
 
 package model
 
-// oCPC/oCPM 加强转化行为配置
+// oCPC/oCPM 深度辅助优化-优化转化行为
 type DeepConversionBehaviorAdvancedSpec struct {
 	Goal      OptimizationGoal `json:"goal,omitempty"`
 	BidAmount *int64           `json:"bid_amount,omitempty"`

@@ -21,5 +21,6 @@ const (
 	DynamicAdTemplateOwnershipType_ALL                   DynamicAdTemplateOwnershipType = "ALL"
 	DynamicAdTemplateOwnershipType_SELF_OWNED            DynamicAdTemplateOwnershipType = "SELF_OWNED"
 	DynamicAdTemplateOwnershipType_GRANTED               DynamicAdTemplateOwnershipType = "GRANTED"
+	DynamicAdTemplateOwnershipType_COMMON                DynamicAdTemplateOwnershipType = "COMMON"
 	DynamicAdTemplateOwnershipType_PRODUCT_CATALOG_OWNED DynamicAdTemplateOwnershipType = "PRODUCT_CATALOG_OWNED"
 )

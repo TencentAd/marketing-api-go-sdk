@@ -9,7 +9,7 @@
 
 package model
 
-// BidScene : 出价场景，游戏行业投放端又称\"投放场景\"，该能力与出价类型(smart_bid_type)/出价策略(bid_strategy)互斥使用用
+// BidScene : 出价场景，游戏行业投放端又称\"投放场景\"，该能力与出价类型(smart_bid_type)/出价策略(bid_strategy)互斥使用
 type BidScene string
 
 // List of BidScene

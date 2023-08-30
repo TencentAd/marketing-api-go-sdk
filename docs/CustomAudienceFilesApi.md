@@ -34,7 +34,6 @@ Name | Type | Description  | Notes
 
  **operationType** | **optional.String**|  | 
  **openAppId** | **optional.String**|  | 
- **saltId** | **optional.String**|  | 
 
 ### Return type
 
