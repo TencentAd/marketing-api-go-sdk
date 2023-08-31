@@ -685,4 +685,6 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
 	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
 	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
+	ProjectId                                  *int64   `json:"project_id,omitempty"`
+	ProjectName                                *string  `json:"project_name,omitempty"`
 }

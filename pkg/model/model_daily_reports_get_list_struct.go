@@ -802,4 +802,6 @@ type DailyReportsGetListStruct struct {
 	ChannelsMatchCommentPv                     *int64   `json:"channels_match_comment_pv,omitempty"`
 	ChannelsMatchSharePv                       *int64   `json:"channels_match_share_pv,omitempty"`
 	ExportId                                   *string  `json:"export_id,omitempty"`
+	ProjectId                                  *int64   `json:"project_id,omitempty"`
+	ProjectName                                *string  `json:"project_name,omitempty"`
 }

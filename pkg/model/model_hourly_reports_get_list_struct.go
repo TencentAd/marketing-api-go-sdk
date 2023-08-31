@@ -773,4 +773,6 @@ type HourlyReportsGetListStruct struct {
 	VideoOuterPlayUserCount                    *int64   `json:"video_outer_play_user_count,omitempty"`
 	VideoInnerPlayUserCount                    *int64   `json:"video_inner_play_user_count,omitempty"`
 	PoiId                                      *string  `json:"poi_id,omitempty"`
+	ProjectId                                  *int64   `json:"project_id,omitempty"`
+	ProjectName                                *string  `json:"project_name,omitempty"`
 }

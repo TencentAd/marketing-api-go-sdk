@@ -209,10 +209,6 @@ func (c *SDKClient) Capabilities() *api.CapabilitiesApiService {
 	return c.Client.CapabilitiesApi
 }
 
-func (c *SDKClient) Channels() *api.ChannelsApiService {
-	return c.Client.ChannelsApi
-}
-
 func (c *SDKClient) ComplianceValidation() *api.ComplianceValidationApiService {
 	return c.Client.ComplianceValidationApi
 }
@@ -405,18 +401,6 @@ func (c *SDKClient) LeadsInvalidPay() *api.LeadsInvalidPayApiService {
 	return c.Client.LeadsInvalidPayApi
 }
 
-func (c *SDKClient) Local() *api.LocalApiService {
-	return c.Client.LocalApi
-}
-
-func (c *SDKClient) LocalEndadsmanually() *api.LocalEndadsmanuallyApiService {
-	return c.Client.LocalEndadsmanuallyApi
-}
-
-func (c *SDKClient) LocalEstimatedamount() *api.LocalEstimatedamountApiService {
-	return c.Client.LocalEstimatedamountApi
-}
-
 func (c *SDKClient) LocalStores() *api.LocalStoresApiService {
 	return c.Client.LocalStoresApi
 }
@@ -581,10 +565,6 @@ func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
 
-func (c *SDKClient) Shop() *api.ShopApiService {
-	return c.Client.ShopApi
-}
-
 func (c *SDKClient) SplitTests() *api.SplitTestsApiService {
 	return c.Client.SplitTestsApi
 }
@@ -673,16 +653,8 @@ func (c *SDKClient) WechatAdLabels() *api.WechatAdLabelsApiService {
 	return c.Client.WechatAdLabelsApi
 }
 
-func (c *SDKClient) WechatAdvertiserLocalBusiness() *api.WechatAdvertiserLocalBusinessApiService {
-	return c.Client.WechatAdvertiserLocalBusinessApi
-}
-
 func (c *SDKClient) WechatFundStatementsDetailed() *api.WechatFundStatementsDetailedApiService {
 	return c.Client.WechatFundStatementsDetailedApi
-}
-
-func (c *SDKClient) WechatFundTransfer() *api.WechatFundTransferApiService {
-	return c.Client.WechatFundTransferApi
 }
 
 func (c *SDKClient) WechatFunds() *api.WechatFundsApiService {
@@ -711,10 +683,6 @@ func (c *SDKClient) WechatPagesCustom() *api.WechatPagesCustomApiService {
 
 func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 	return c.Client.WechatPagesGrantinfoApi
-}
-
-func (c *SDKClient) WechatQualifications() *api.WechatQualificationsApiService {
-	return c.Client.WechatQualificationsApi
 }
 
 func (c *SDKClient) WeixinOfficialAccountsUpgradeStatus() *api.WeixinOfficialAccountsUpgradeStatusApiService {

@@ -146,8 +146,6 @@ type APIClient struct {
 
 	CapabilitiesApi *CapabilitiesApiService
 
-	ChannelsApi *ChannelsApiService
-
 	ComplianceValidationApi *ComplianceValidationApiService
 
 	ConversionsApi *ConversionsApiService
@@ -244,12 +242,6 @@ type APIClient struct {
 
 	LeadsInvalidPayApi *LeadsInvalidPayApiService
 
-	LocalApi *LocalApiService
-
-	LocalEndadsmanuallyApi *LocalEndadsmanuallyApiService
-
-	LocalEstimatedamountApi *LocalEstimatedamountApiService
-
 	LocalStoresApi *LocalStoresApiService
 
 	LocalStoresAddressParsingResultApi *LocalStoresAddressParsingResultApiService
@@ -332,8 +324,6 @@ type APIClient struct {
 
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
-	ShopApi *ShopApiService
-
 	SplitTestsApi *SplitTestsApiService
 
 	SubcustomerTransferApi *SubcustomerTransferApiService
@@ -378,11 +368,7 @@ type APIClient struct {
 
 	WechatAdLabelsApi *WechatAdLabelsApiService
 
-	WechatAdvertiserLocalBusinessApi *WechatAdvertiserLocalBusinessApiService
-
 	WechatFundStatementsDetailedApi *WechatFundStatementsDetailedApiService
-
-	WechatFundTransferApi *WechatFundTransferApiService
 
 	WechatFundsApi *WechatFundsApiService
 
@@ -397,8 +383,6 @@ type APIClient struct {
 	WechatPagesCustomApi *WechatPagesCustomApiService
 
 	WechatPagesGrantinfoApi *WechatPagesGrantinfoApiService
-
-	WechatQualificationsApi *WechatQualificationsApiService
 
 	WeixinOfficialAccountsUpgradeStatusApi *WeixinOfficialAccountsUpgradeStatusApiService
 
@@ -496,7 +480,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CampaignNegativewordsApi = (*CampaignNegativewordsApiService)(&c.common)
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
-	c.ChannelsApi = (*ChannelsApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeComponentsApi = (*CreativeComponentsApiService)(&c.common)
@@ -545,9 +528,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LeadsFormApi = (*LeadsFormApiService)(&c.common)
 	c.LeadsFormListApi = (*LeadsFormListApiService)(&c.common)
 	c.LeadsInvalidPayApi = (*LeadsInvalidPayApiService)(&c.common)
-	c.LocalApi = (*LocalApiService)(&c.common)
-	c.LocalEndadsmanuallyApi = (*LocalEndadsmanuallyApiService)(&c.common)
-	c.LocalEstimatedamountApi = (*LocalEstimatedamountApiService)(&c.common)
 	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
 	c.LocalStoresAddressParsingResultApi = (*LocalStoresAddressParsingResultApiService)(&c.common)
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
@@ -589,7 +569,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ReviewAdAppealApi = (*ReviewAdAppealApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
-	c.ShopApi = (*ShopApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
@@ -612,9 +591,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideomakerVideocapturesApi = (*VideomakerVideocapturesApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
-	c.WechatAdvertiserLocalBusinessApi = (*WechatAdvertiserLocalBusinessApiService)(&c.common)
 	c.WechatFundStatementsDetailedApi = (*WechatFundStatementsDetailedApiService)(&c.common)
-	c.WechatFundTransferApi = (*WechatFundTransferApiService)(&c.common)
 	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.WechatPagesCsgroupStatusApi = (*WechatPagesCsgroupStatusApiService)(&c.common)
@@ -622,7 +599,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesCsgrouplistApi = (*WechatPagesCsgrouplistApiService)(&c.common)
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
-	c.WechatQualificationsApi = (*WechatQualificationsApiService)(&c.common)
 	c.WeixinOfficialAccountsUpgradeStatusApi = (*WeixinOfficialAccountsUpgradeStatusApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
