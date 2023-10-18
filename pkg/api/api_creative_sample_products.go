@@ -11,6 +11,7 @@ package api
 
 import (
 	"context"
+	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	"io/ioutil"
@@ -29,13 +30,37 @@ type CreativeSampleProductsApiService service
 /*
 CreativeSampleProductsApiService 获取创意示例商品列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param data
+ * @param accountId
+ * @param productCatalogId
+ * @param optional nil or *CreativeSampleProductsGetOpts - Optional Parameters:
+     * @param "ProductOuterIds" (optional.Interface of []string) -
+     * @param "ProductSeriesId" (optional.Int64) -
+     * @param "TemplateId" (optional.Int64) -
+     * @param "TemplateType" (optional.String) -
+     * @param "ImageId" (optional.String) -
+     * @param "VideoId" (optional.String) -
+     * @param "ProductFields" (optional.Interface of []string) -
+     * @param "Limit" (optional.Int64) -
+     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeSampleProductsGetResponse
 */
-func (a *CreativeSampleProductsApiService) Get(ctx context.Context, data CreativeSampleProductsGetRequest) (CreativeSampleProductsGetResponseData, http.Header, error) {
+
+type CreativeSampleProductsGetOpts struct {
+	ProductOuterIds optional.Interface
+	ProductSeriesId optional.Int64
+	TemplateId      optional.Int64
+	TemplateType    optional.String
+	ImageId         optional.String
+	VideoId         optional.String
+	ProductFields   optional.Interface
+	Limit           optional.Int64
+	Fields          optional.Interface
+}
+
+func (a *CreativeSampleProductsApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, localVarOptionals *CreativeSampleProductsGetOpts) (CreativeSampleProductsGetResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -51,8 +76,37 @@ func (a *CreativeSampleProductsApiService) Get(ctx context.Context, data Creativ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	localVarQueryParams.Add("product_catalog_id", parameterToString(productCatalogId, ""))
+	if localVarOptionals != nil && localVarOptionals.ProductOuterIds.IsSet() {
+		localVarQueryParams.Add("product_outer_ids", parameterToString(localVarOptionals.ProductOuterIds.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.ProductSeriesId.IsSet() {
+		localVarQueryParams.Add("product_series_id", parameterToString(localVarOptionals.ProductSeriesId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.TemplateId.IsSet() {
+		localVarQueryParams.Add("template_id", parameterToString(localVarOptionals.TemplateId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.TemplateType.IsSet() {
+		localVarQueryParams.Add("template_type", parameterToString(localVarOptionals.TemplateType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ImageId.IsSet() {
+		localVarQueryParams.Add("image_id", parameterToString(localVarOptionals.ImageId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.VideoId.IsSet() {
+		localVarQueryParams.Add("video_id", parameterToString(localVarOptionals.VideoId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ProductFields.IsSet() {
+		localVarQueryParams.Add("product_fields", parameterToString(localVarOptionals.ProductFields.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.Limit.IsSet() {
+		localVarQueryParams.Add("limit", parameterToString(localVarOptionals.Limit.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
+		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+	localVarHttpContentTypes := []string{"text/plain"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -68,8 +122,6 @@ func (a *CreativeSampleProductsApiService) Get(ctx context.Context, data Creativ
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	// body params
-	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err

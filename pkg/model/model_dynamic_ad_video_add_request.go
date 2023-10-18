@@ -14,6 +14,8 @@ type DynamicAdVideoAddRequest struct {
 	ProductCatalogId    *int64  `json:"product_catalog_id,omitempty"`
 	ProductMode         AdNum   `json:"product_mode,omitempty"`
 	ProductSource       *string `json:"product_source,omitempty"`
+	ProductOuterId      *string `json:"product_outer_id,omitempty"`
+	ProductSeriesId     *int64  `json:"product_series_id,omitempty"`
 	VideoMaxDuration    *int64  `json:"video_max_duration,omitempty"`
 	DynamicAdTemplateId *int64  `json:"dynamic_ad_template_id,omitempty"`
 }

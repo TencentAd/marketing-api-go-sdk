@@ -15,15 +15,18 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 type CreativeSampleProductsGetExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.CreativeSampleProductsGetRequest
+	TAds                          *ads.SDKClient
+	AccessToken                   string
+	AccountId                     int64
+	ProductCatalogId              int64
+	CreativeSampleProductsGetOpts *api.CreativeSampleProductsGetOpts
 }
 
 func (e *CreativeSampleProductsGetExample) Init() {
@@ -32,14 +35,16 @@ func (e *CreativeSampleProductsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.CreativeSampleProductsGetRequest{}
+	e.AccountId = 789
+	e.ProductCatalogId = 789
+	e.CreativeSampleProductsGetOpts = &api.CreativeSampleProductsGetOpts{}
 }
 
 func (e *CreativeSampleProductsGetExample) RunExample() (model.CreativeSampleProductsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.CreativeSampleProducts().Get(ctx, e.Data)
+	return tads.CreativeSampleProducts().Get(ctx, e.AccountId, e.ProductCatalogId, e.CreativeSampleProductsGetOpts)
 }
 
 func main() {

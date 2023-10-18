@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ScopeObjectId** | **int64** |  | [optional] [default to null]
+**ScopeObjectIdStr** | **string** |  | [optional] [default to null]
 **ScopeObjectName** | **string** |  | [optional] [default to null]
 **DetailResultType** | [***TaskDetailResultType**](TaskDetailResultType.md) |  | [optional] [default to null]
 **Message** | **string** |  | [optional] [default to null]

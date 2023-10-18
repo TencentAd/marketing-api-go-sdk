@@ -96,5 +96,6 @@ const (
 	IntOptimizationGoal_PROMOTION_VIEW_KEY_PAGE_UV             IntOptimizationGoal = "OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV"
 	IntOptimizationGoal_LIVE_STREAM_DURATION_1_MIN             IntOptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN"
 	IntOptimizationGoal_LIVE_STREAM_INTERACTION                IntOptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION"
+	IntOptimizationGoal_ECOMMERCE_CANCEL_ORDER                 IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

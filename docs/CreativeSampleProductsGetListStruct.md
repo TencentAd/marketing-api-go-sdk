@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **AdvertisementPortraitImages** | **[]string** |  | [optional] [default to null]
 **VideoUrl** | **string** |  | [optional] [default to null]
 **AdDirectVideos** | **[]string** |  | [optional] [default to null]
-**AdDirectLandscapeVideos** | **[]string** |  | [optional] [default to null]
-**AdDirectPortraitVideos** | **[]string** |  | [optional] [default to null]
+**AdDirectLandscapeVideo** | **string** |  | [optional] [default to null]
+**AdDirectPortraitVideo** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

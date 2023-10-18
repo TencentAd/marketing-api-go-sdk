@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **LeadsIneffectReason** | **string** |  | [optional] [default to null]
 **OuterLeadsConvertType** | **string** |  | [optional] [default to null]
 **OuterLeadsIneffectReason** | **string** |  | [optional] [default to null]
-**OuterLeadsComefrom** | [***ActionChannelType**](ActionChannelType.md) |  | [optional] [default to null]
+**OuterLeadsComefrom** | [***OuterLeadsComeFrom**](OuterLeadsComeFrom.md) |  | [optional] [default to null]
 **Memo** | **string** |  | [optional] [default to null]
 **WechatAgencyId** | **string** |  | [optional] [default to null]
 **LeadsAge** | **string** |  | [optional] [default to null]

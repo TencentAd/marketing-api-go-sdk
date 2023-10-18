@@ -11,7 +11,7 @@ package model
 
 // 元素预审结果明细
 type PreReviewResultDetailStruct struct {
-	SiteSet            IntSiteSetDefinition                       `json:"site_set,omitempty"`
+	SiteSet            PreReviewSiteSetDefinitionString           `json:"site_set,omitempty"`
 	PreReviewResult    GroupRiskLevel                             `json:"pre_review_result,omitempty"`
 	RejectReasonDetail *[]PreReviewResultRejectReasonDetailStruct `json:"reject_reason_detail,omitempty"`
 }

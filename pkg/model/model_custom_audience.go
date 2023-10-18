@@ -11,18 +11,20 @@ package model
 
 // custom_audience返回结构
 type CustomAudience struct {
-	AudienceId         *int64         `json:"audience_id,omitempty"`
-	AccountId          *int64         `json:"account_id,omitempty"`
-	Name               *string        `json:"name,omitempty"`
-	Description        *string        `json:"description,omitempty"`
-	Cooperated         *bool          `json:"cooperated,omitempty"`
-	Type_              AudienceType   `json:"type,omitempty"`
-	Source             AudienceSource `json:"source,omitempty"`
-	Status             ProcessStatus  `json:"status,omitempty"`
-	ErrorCode          *int64         `json:"error_code,omitempty"`
-	UserCount          *int64         `json:"user_count,omitempty"`
-	CreatedTime        *string        `json:"created_time,omitempty"`
-	LastModifiedTime   *string        `json:"last_modified_time,omitempty"`
-	AudienceSpec       *AudienceSpec  `json:"audience_spec,omitempty"`
-	ExternalAudienceId *string        `json:"external_audience_id,omitempty"`
+	AudienceId         *int64               `json:"audience_id,omitempty"`
+	AccountId          *int64               `json:"account_id,omitempty"`
+	Name               *string              `json:"name,omitempty"`
+	Description        *string              `json:"description,omitempty"`
+	Cooperated         *bool                `json:"cooperated,omitempty"`
+	Type_              AudienceType         `json:"type,omitempty"`
+	Source             AudienceSource       `json:"source,omitempty"`
+	Status             ProcessStatus        `json:"status,omitempty"`
+	OnlineStatus       AudienceOnlineStatus `json:"online_status,omitempty"`
+	IsOwn              *bool                `json:"is_own,omitempty"`
+	ErrorCode          *int64               `json:"error_code,omitempty"`
+	UserCount          *int64               `json:"user_count,omitempty"`
+	CreatedTime        *string              `json:"created_time,omitempty"`
+	LastModifiedTime   *string              `json:"last_modified_time,omitempty"`
+	AudienceSpec       *AudienceSpec        `json:"audience_spec,omitempty"`
+	ExternalAudienceId *string              `json:"external_audience_id,omitempty"`
 }

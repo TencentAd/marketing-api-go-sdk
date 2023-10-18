@@ -11,8 +11,11 @@ package model
 
 // 海量拓词任务请求参数
 type MassiveKeywordRecommendDataInfo struct {
-	SeedWords              *[]string            `json:"seed_words,omitempty"`
-	IsFilterPurchasedWords FilterPurchasedWords `json:"is_filter_purchased_words,omitempty"`
-	SiteSets               *[]string            `json:"site_sets,omitempty"`
-	ExcludeWords           *[]string            `json:"exclude_words,omitempty"`
+	SeedWords                *[]string            `json:"seed_words,omitempty"`
+	IsFilterPurchasedWords   FilterPurchasedWords `json:"is_filter_purchased_words,omitempty"`
+	SiteSets                 *[]string            `json:"site_sets,omitempty"`
+	ExcludeWords             *[]string            `json:"exclude_words,omitempty"`
+	ContainsNonRegionalWords ContainsRegionWords  `json:"contains_non_regional_words,omitempty"`
+	WordProvince             *[]int64             `json:"word_province,omitempty"`
+	WordCity                 *[]int64             `json:"word_city,omitempty"`
 }

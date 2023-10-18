@@ -23,4 +23,5 @@ const (
 	TaskScope_ADCREATIVE     TaskScope = "TASK_SCOPE_ADCREATIVE"
 	TaskScope_PROJECT        TaskScope = "TASK_SCOPE_PROJECT"
 	TaskScope_BIDWORD        TaskScope = "TASK_SCOPE_BIDWORD"
+	TaskScope_COMMENT        TaskScope = "TASK_SCOPE_COMMENT"
 )

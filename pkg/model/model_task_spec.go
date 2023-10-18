@@ -28,4 +28,6 @@ type TaskSpec struct {
 	TaskTypeReviewElementPrereviewResultSpec     *TaskTypeReviewElementPrereviewResultSpec     `json:"task_type_review_element_prereview_result_spec,omitempty"`
 	TaskTypeMassiveKeywordRecommendSpec          *TaskTypeMassiveKeywordRecommendSpec          `json:"task_type_massive_keyword_recommend_spec,omitempty"`
 	TaskTypeSearchDownloadAllSpec                *TaskTypeSearchDownloadAllSpec                `json:"task_type_search_download_all_spec,omitempty"`
+	AdcleanerUpdateAdgroupConfiguredStatusSpec   *AdcleanerUpdateAdgroupConfiguredStatusSpec   `json:"adcleaner_update_adgroup_configured_status_spec,omitempty"`
+	AdcleanerDeleteAdgroupSpec                   *AdcleanerDeleteAdgroupSpec                   `json:"adcleaner_delete_adgroup_spec,omitempty"`
 }

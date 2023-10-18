@@ -37,4 +37,12 @@ const (
 	ReportLevel_GENDER                   ReportLevel = "REPORT_LEVEL_GENDER"
 	ReportLevel_REGION                   ReportLevel = "REPORT_LEVEL_REGION"
 	ReportLevel_CITY                     ReportLevel = "REPORT_LEVEL_CITY"
+	ReportLevel_REGION_RECENTLY_IN       ReportLevel = "REPORT_LEVEL_REGION_RECENTLY_IN"
+	ReportLevel_REGION_VISITED_IN        ReportLevel = "REPORT_LEVEL_REGION_VISITED_IN"
+	ReportLevel_REGION_LIVE_IN           ReportLevel = "REPORT_LEVEL_REGION_LIVE_IN"
+	ReportLevel_REGION_TRAVEL_IN         ReportLevel = "REPORT_LEVEL_REGION_TRAVEL_IN"
+	ReportLevel_CITY_RECENTLY_IN         ReportLevel = "REPORT_LEVEL_CITY_RECENTLY_IN"
+	ReportLevel_CITY_VISITED_IN          ReportLevel = "REPORT_LEVEL_CITY_VISITED_IN"
+	ReportLevel_CITY_LIVE_IN             ReportLevel = "REPORT_LEVEL_CITY_LIVE_IN"
+	ReportLevel_CITY_TRAVEL_IN           ReportLevel = "REPORT_LEVEL_CITY_TRAVEL_IN"
 )

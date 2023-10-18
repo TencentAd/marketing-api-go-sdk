@@ -180,8 +180,6 @@ type APIClient struct {
 
 	DataSourceDispatchApi *DataSourceDispatchApiService
 
-	DiagnosisApi *DiagnosisApiService
-
 	DplabelAdLabelApi *DplabelAdLabelApiService
 
 	DynamicAdImageTemplatesApi *DynamicAdImageTemplatesApiService
@@ -327,8 +325,6 @@ type APIClient struct {
 	SplitTestsApi *SplitTestsApiService
 
 	SubcustomerTransferApi *SubcustomerTransferApiService
-
-	SystemStatusApi *SystemStatusApiService
 
 	TargetcpaTagApi *TargetcpaTagApiService
 
@@ -497,7 +493,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DataSetApi = (*DataSetApiService)(&c.common)
 	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
-	c.DiagnosisApi = (*DiagnosisApiService)(&c.common)
 	c.DplabelAdLabelApi = (*DplabelAdLabelApiService)(&c.common)
 	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
@@ -571,7 +566,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
-	c.SystemStatusApi = (*SystemStatusApiService)(&c.common)
 	c.TargetcpaTagApi = (*TargetcpaTagApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)

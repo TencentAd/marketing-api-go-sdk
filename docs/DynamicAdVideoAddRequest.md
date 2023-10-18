@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **ProductCatalogId** | **int64** |  | [optional] [default to null]
 **ProductMode** | [***AdNum**](AdNum.md) |  | [optional] [default to null]
 **ProductSource** | **string** |  | [optional] [default to null]
+**ProductOuterId** | **string** |  | [optional] [default to null]
+**ProductSeriesId** | **int64** |  | [optional] [default to null]
 **VideoMaxDuration** | **int64** |  | [optional] [default to null]
 **DynamicAdTemplateId** | **int64** |  | [optional] [default to null]
 

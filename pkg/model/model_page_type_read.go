@@ -64,5 +64,8 @@ const (
 	PageTypeRead_ANDROID_DIRECT_DOWNLOAD         PageTypeRead = "PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 	PageTypeRead_LINGQUE_H5                      PageTypeRead = "PAGE_TYPE_LINGQUE_H5"
 	PageTypeRead_LINGQUE_MINI_PROGRAM            PageTypeRead = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
+	PageTypeRead_H5_PROFILE                      PageTypeRead = "PAGE_TYPE_H5_PROFILE"
+	PageTypeRead_SEARCH_BRAND_AREA               PageTypeRead = "PAGE_TYPE_SEARCH_BRAND_AREA"
+	PageTypeRead_WECHAT_CHANNELS_PROFILE         PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
 )

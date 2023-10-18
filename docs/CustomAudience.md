@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **Type_** | [***AudienceType**](AudienceType.md) |  | [optional] [default to null]
 **Source** | [***AudienceSource**](AudienceSource.md) |  | [optional] [default to null]
 **Status** | [***ProcessStatus**](ProcessStatus.md) |  | [optional] [default to null]
+**OnlineStatus** | [***AudienceOnlineStatus**](AudienceOnlineStatus.md) |  | [optional] [default to null]
+**IsOwn** | **bool** |  | [optional] [default to null]
 **ErrorCode** | **int64** |  | [optional] [default to null]
 **UserCount** | **int64** |  | [optional] [default to null]
 **CreatedTime** | **string** |  | [optional] [default to null]

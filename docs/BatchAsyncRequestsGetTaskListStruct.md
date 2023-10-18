@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **EndTime** | **int64** |  | [optional] [default to null]
 **ScopeObjectIdList** | **[]int64** |  | [optional] [default to null]
+**ScopeObjectIdStrList** | **[]string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

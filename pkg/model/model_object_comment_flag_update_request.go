@@ -13,4 +13,5 @@ type ObjectCommentFlagUpdateRequest struct {
 	AccountId    *int64                     `json:"account_id,omitempty"`
 	AdcreativeId *int64                     `json:"adcreative_id,omitempty"`
 	OpType       SetObjectCommentFlagOpType `json:"op_type,omitempty"`
+	CommentId    *string                    `json:"comment_id,omitempty"`
 }

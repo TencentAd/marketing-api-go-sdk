@@ -33,4 +33,6 @@ type BatchAsyncRequestTaskSpec struct {
 	UpdateAdcreativeLandingPageSpec                  *[]UpdateAdcreativeLandingPageItem                  `json:"update_adcreative_landing_page_spec,omitempty"`
 	UpdateAdgroupDeepConversionWorthAdvancedRateSpec *[]UpdateAdgroupDeepConversionWorthAdvancedRateItem `json:"update_adgroup_deep_conversion_worth_advanced_rate_spec,omitempty"`
 	UpdateDeepConversionBehaviorAdvancedBidSpec      *[]UpdateDeepConversionBehaviorAdvancedBidItem      `json:"update_deep_conversion_behavior_advanced_bid_spec,omitempty"`
+	ReplyFinderObjectCommentSpec                     *[]ReplyFinderObjectCommentItem                     `json:"reply_finder_object_comment_spec,omitempty"`
+	UpdateFinderObjectCommentFlagSpec                *[]UpdateFinderObjectCommentFlagItem                `json:"update_finder_object_comment_flag_spec,omitempty"`
 }

@@ -12,6 +12,7 @@ package model
 // 返回结构
 type DetailListStruct struct {
 	ScopeObjectId    *int64               `json:"scope_object_id,omitempty"`
+	ScopeObjectIdStr *string              `json:"scope_object_id_str,omitempty"`
 	ScopeObjectName  *string              `json:"scope_object_name,omitempty"`
 	DetailResultType TaskDetailResultType `json:"detail_result_type,omitempty"`
 	Message          *string              `json:"message,omitempty"`

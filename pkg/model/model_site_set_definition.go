@@ -9,7 +9,7 @@
 
 package model
 
-// SiteSetDefinition : 版位信息
+// SiteSetDefinition : 投放站点集合
 type SiteSetDefinition string
 
 // List of SiteSetDefinition

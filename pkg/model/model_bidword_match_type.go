@@ -14,7 +14,8 @@ type BidwordMatchType string
 
 // List of BidwordMatchType
 const (
-	BidwordMatchType_EXACT_MATCH BidwordMatchType = "EXACT_MATCH"
-	BidwordMatchType_WIDE_MATCH  BidwordMatchType = "WIDE_MATCH"
-	BidwordMatchType_WORD_MATCH  BidwordMatchType = "WORD_MATCH"
+	BidwordMatchType_EXACT_MATCH  BidwordMatchType = "EXACT_MATCH"
+	BidwordMatchType_WIDE_MATCH   BidwordMatchType = "WIDE_MATCH"
+	BidwordMatchType_WORD_MATCH   BidwordMatchType = "WORD_MATCH"
+	BidwordMatchType_PHRASE_MATCH BidwordMatchType = "PHRASE_MATCH"
 )

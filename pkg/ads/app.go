@@ -277,10 +277,6 @@ func (c *SDKClient) DataSourceDispatch() *api.DataSourceDispatchApiService {
 	return c.Client.DataSourceDispatchApi
 }
 
-func (c *SDKClient) Diagnosis() *api.DiagnosisApiService {
-	return c.Client.DiagnosisApi
-}
-
 func (c *SDKClient) DplabelAdLabel() *api.DplabelAdLabelApiService {
 	return c.Client.DplabelAdLabelApi
 }
@@ -571,10 +567,6 @@ func (c *SDKClient) SplitTests() *api.SplitTestsApiService {
 
 func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
 	return c.Client.SubcustomerTransferApi
-}
-
-func (c *SDKClient) SystemStatus() *api.SystemStatusApiService {
-	return c.Client.SystemStatusApi
 }
 
 func (c *SDKClient) TargetcpaTag() *api.TargetcpaTagApiService {

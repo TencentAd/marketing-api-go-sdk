@@ -42,6 +42,7 @@ DailyReportsApiService 获取日报表
      * @param "TimeLine" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -
      * @param "WeixinOfficialAccountsUpgradeEnabled" (optional.Bool) -
+     * @param "AdqAccountsUpgradeEnabled" (optional.Bool) -
 
 @return DailyReportsGetResponse
 */
@@ -55,6 +56,7 @@ type DailyReportsGetOpts struct {
 	TimeLine                             optional.String
 	Fields                               optional.Interface
 	WeixinOfficialAccountsUpgradeEnabled optional.Bool
+	AdqAccountsUpgradeEnabled            optional.Bool
 }
 
 func (a *DailyReportsApiService) Get(ctx context.Context, accountId int64, level string, dateRange ReportDateRange, localVarOptionals *DailyReportsGetOpts) (DailyReportsGetResponseData, http.Header, error) {
@@ -101,6 +103,9 @@ func (a *DailyReportsApiService) Get(ctx context.Context, accountId int64, level
 	}
 	if localVarOptionals != nil && localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.IsSet() {
 		localVarQueryParams.Add("weixin_official_accounts_upgrade_enabled", parameterToString(localVarOptionals.WeixinOfficialAccountsUpgradeEnabled.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdqAccountsUpgradeEnabled.IsSet() {
+		localVarQueryParams.Add("adq_accounts_upgrade_enabled", parameterToString(localVarOptionals.AdqAccountsUpgradeEnabled.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

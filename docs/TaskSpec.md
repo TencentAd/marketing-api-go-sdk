@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **TaskTypeReviewElementPrereviewResultSpec** | [***TaskTypeReviewElementPrereviewResultSpec**](task_type_review_element_prereview_result_spec.md) |  | [optional] [default to null]
 **TaskTypeMassiveKeywordRecommendSpec** | [***TaskTypeMassiveKeywordRecommendSpec**](task_type_massive_keyword_recommend_spec.md) |  | [optional] [default to null]
 **TaskTypeSearchDownloadAllSpec** | [***TaskTypeSearchDownloadAllSpec**](task_type_search_download_all_spec.md) |  | [optional] [default to null]
+**AdcleanerUpdateAdgroupConfiguredStatusSpec** | [***AdcleanerUpdateAdgroupConfiguredStatusSpec**](adcleaner_update_adgroup_configured_status_spec.md) |  | [optional] [default to null]
+**AdcleanerDeleteAdgroupSpec** | [***AdcleanerDeleteAdgroupSpec**](adcleaner_delete_adgroup_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

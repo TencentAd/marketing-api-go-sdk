@@ -9,7 +9,7 @@
 
 package model
 
-// LandingPageType : 落地页页面类型
+// LandingPageType : openlink 落地页页面类型
 type LandingPageType string
 
 // List of LandingPageType
@@ -75,6 +75,7 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_TENCENT_NEWS_SOFT_ARTICLE       LandingPageType = "LANDING_PAGE_TYPE_TENCENT_NEWS_SOFT_ARTICLE"
 	LandingPageType_LANDING_PAGE_TYPE_TENCENT_NEWS_LIVE               LandingPageType = "LANDING_PAGE_TYPE_TENCENT_NEWS_LIVE"
 	LandingPageType_LANDING_PAGE_TYPE_XJ_OTT                          LandingPageType = "LANDING_PAGE_TYPE_XJ_OTT"
+	LandingPageType_LANDING_PAGE_TYPE_WECHAT_STATUS_FOOTER            LandingPageType = "LANDING_PAGE_TYPE_WECHAT_STATUS_FOOTER"
 	LandingPageType_LANDING_PAGE_TYPE_YUEBAO_QUICKAPP                 LandingPageType = "LANDING_PAGE_TYPE_YUEBAO_QUICKAPP"
 	LandingPageType_LANDING_PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE LandingPageType = "LANDING_PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE"
 	LandingPageType_LANDING_PAGE_TYPE_XJ_QUICK                        LandingPageType = "LANDING_PAGE_TYPE_XJ_QUICK"
@@ -89,6 +90,9 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD         LandingPageType = "LANDING_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD"
 	LandingPageType_LANDING_PAGE_TYPE_LINGQUE_H5                      LandingPageType = "LANDING_PAGE_TYPE_LINGQUE_H5"
 	LandingPageType_LANDING_PAGE_TYPE_LINGQUE_MINI_PROGRAM            LandingPageType = "LANDING_PAGE_TYPE_LINGQUE_MINI_PROGRAM"
+	LandingPageType_LANDING_PAGE_TYPE_H5_PROFILE                      LandingPageType = "LANDING_PAGE_TYPE_H5_PROFILE"
+	LandingPageType_LANDING_PAGE_TYPE_SEARCH_BRAND_AREA               LandingPageType = "LANDING_PAGE_TYPE_SEARCH_BRAND_AREA"
+	LandingPageType_LANDING_PAGE_TYPE_WECHAT_CHANNELS_PROFILE         LandingPageType = "LANDING_PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	LandingPageType_DEEP_LINK                                         LandingPageType = "DEEP_LINK"
 	LandingPageType_H5                                                LandingPageType = "H5"
 	LandingPageType_MINI_PROGRAM                                      LandingPageType = "MINI_PROGRAM"
@@ -106,7 +110,6 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_NATIVE_WEBVIEW           LandingPageType = "LANDING_PAGE_TYPE_WECHAT_NATIVE_WEBVIEW"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_MOMENTS_SCAN_PHOTO       LandingPageType = "LANDING_PAGE_TYPE_WECHAT_MOMENTS_SCAN_PHOTO"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_MOMENTS_SUBSCRIPTION     LandingPageType = "LANDING_PAGE_TYPE_WECHAT_MOMENTS_SUBSCRIPTION"
-	LandingPageType_LANDING_PAGE_TYPE_WECHAT_STATUS_FOOTER            LandingPageType = "LANDING_PAGE_TYPE_WECHAT_STATUS_FOOTER"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_XJ_IOS_APP_H5            LandingPageType = "LANDING_PAGE_TYPE_WECHAT_XJ_IOS_APP_H5"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_VIDEO_TOPIC              LandingPageType = "LANDING_PAGE_TYPE_WECHAT_VIDEO_TOPIC"
 	LandingPageType_LANDING_PAGE_TYPE_WECHAT_XJ_ANDROID_APP_H5        LandingPageType = "LANDING_PAGE_TYPE_WECHAT_XJ_ANDROID_APP_H5"
@@ -116,10 +119,8 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_CHANNELS_USER_PROFILE           LandingPageType = "LANDING_PAGE_TYPE_CHANNELS_USER_PROFILE"
 	LandingPageType_LANDING_PAGE_TYPE_NOT_USED                        LandingPageType = "LANDING_PAGE_TYPE_NOT_USED"
 	LandingPageType_LANDING_PAGE_TYPE_CUSTOM_TV                       LandingPageType = "LANDING_PAGE_TYPE_CUSTOM_TV"
-	LandingPageType_LANDING_PAGE_TYPE_H5_PROFILE                      LandingPageType = "LANDING_PAGE_TYPE_H5_PROFILE"
-	LandingPageType_LANDING_PAGE_TYPE_SEARCH_BRAND_AREA               LandingPageType = "LANDING_PAGE_TYPE_SEARCH_BRAND_AREA"
-	LandingPageType_LANDING_PAGE_TYPE_WECHAT_CHANNELS_PROFILE         LandingPageType = "LANDING_PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	LandingPageType_DEFAULT                                           LandingPageType = "DEFAULT"
 	LandingPageType_DEEP_LINK_IOS                                     LandingPageType = "DEEP_LINK_IOS"
 	LandingPageType_DEEP_LINK_ANDROID                                 LandingPageType = "DEEP_LINK_ANDROID"
+	LandingPageType_LANDING_PAGE_TYPE_ST_HELIANG_H5                   LandingPageType = "LANDING_PAGE_TYPE_ST_HELIANG_H5"
 )

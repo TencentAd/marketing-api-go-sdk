@@ -18,4 +18,6 @@ type ReviewAdAppealGetResponseData struct {
 	HistoryApprovalAdId *int64       `json:"history_approval_ad_id,omitempty"`
 	AppealResult        *string      `json:"appeal_result,omitempty"`
 	AppealStatus        AppealStatus `json:"appeal_status,omitempty"`
+	Description         *string      `json:"description,omitempty"`
+	ImageList           *[]string    `json:"image_list,omitempty"`
 }

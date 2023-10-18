@@ -10,10 +10,12 @@
 package model
 
 type ReviewAdAppealAddRequest struct {
-	AccountId           *int64  `json:"account_id,omitempty"`
-	AdgroupId           *int64  `json:"adgroup_id,omitempty"`
-	AdId                *int64  `json:"ad_id,omitempty"`
-	AppealDemand        *string `json:"appeal_demand,omitempty"`
-	AppealReason        *string `json:"appeal_reason,omitempty"`
-	HistoryApprovalAdId *int64  `json:"history_approval_ad_id,omitempty"`
+	AccountId           *int64    `json:"account_id,omitempty"`
+	AdgroupId           *int64    `json:"adgroup_id,omitempty"`
+	AdId                *int64    `json:"ad_id,omitempty"`
+	AppealDemand        *string   `json:"appeal_demand,omitempty"`
+	AppealReason        *string   `json:"appeal_reason,omitempty"`
+	HistoryApprovalAdId *int64    `json:"history_approval_ad_id,omitempty"`
+	Description         *string   `json:"description,omitempty"`
+	ImageList           *[]string `json:"image_list,omitempty"`
 }

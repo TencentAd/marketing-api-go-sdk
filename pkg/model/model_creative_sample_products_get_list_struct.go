@@ -25,6 +25,6 @@ type CreativeSampleProductsGetListStruct struct {
 	AdvertisementPortraitImages  *[]string `json:"advertisement_portrait_images,omitempty"`
 	VideoUrl                     *string   `json:"video_url,omitempty"`
 	AdDirectVideos               *[]string `json:"ad_direct_videos,omitempty"`
-	AdDirectLandscapeVideos      *[]string `json:"ad_direct_landscape_videos,omitempty"`
-	AdDirectPortraitVideos       *[]string `json:"ad_direct_portrait_videos,omitempty"`
+	AdDirectLandscapeVideo       *string   `json:"ad_direct_landscape_video,omitempty"`
+	AdDirectPortraitVideo        *string   `json:"ad_direct_portrait_video,omitempty"`
 }

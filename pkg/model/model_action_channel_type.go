@@ -21,5 +21,6 @@ const (
 	ActionChannelType_ALIBABA   ActionChannelType = "ALIBABA"
 	ActionChannelType_BAIDU     ActionChannelType = "BAIDU"
 	ActionChannelType_OTHERS    ActionChannelType = "OTHERS"
+	ActionChannelType_MULTIPLE  ActionChannelType = "MULTIPLE"
 	ActionChannelType_UNKNOWN   ActionChannelType = "UNKNOWN"
 )

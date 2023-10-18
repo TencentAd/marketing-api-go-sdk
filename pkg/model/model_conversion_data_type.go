@@ -24,4 +24,5 @@ const (
 	ConversionDataType_INDUSTRY_LABEL ConversionDataType = "CONVERSION_DATA_INDUSTRY_LABEL"
 	ConversionDataType_SHOP           ConversionDataType = "CONVERSION_DATA_SHOP"
 	ConversionDataType_FORM           ConversionDataType = "CONVERSION_DATA_FORM"
+	ConversionDataType_PRODUCT_DATA   ConversionDataType = "CONVERSION_DATA_PRODUCT_DATA"
 )

@@ -31,7 +31,7 @@ type LeadsImportInfoStruct struct {
 	LeadsIneffectReason      *string             `json:"leads_ineffect_reason,omitempty"`
 	OuterLeadsConvertType    *string             `json:"outer_leads_convert_type,omitempty"`
 	OuterLeadsIneffectReason *string             `json:"outer_leads_ineffect_reason,omitempty"`
-	OuterLeadsComefrom       ActionChannelType   `json:"outer_leads_comefrom,omitempty"`
+	OuterLeadsComefrom       OuterLeadsComeFrom  `json:"outer_leads_comefrom,omitempty"`
 	Memo                     *string             `json:"memo,omitempty"`
 	WechatAgencyId           *string             `json:"wechat_agency_id,omitempty"`
 	LeadsAge                 *string             `json:"leads_age,omitempty"`

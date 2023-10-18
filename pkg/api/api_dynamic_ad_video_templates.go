@@ -40,18 +40,20 @@ DynamicAdVideoTemplatesApiService 获取动态商品视频模板
      * @param "PageSize" (optional.Int64) -
      * @param "TemplateIdList" (optional.Interface of []int64) -
      * @param "TemplateName" (optional.String) -
+     * @param "DynamicAdTemplateOwnershipType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return DynamicAdVideoTemplatesGetResponse
 */
 
 type DynamicAdVideoTemplatesGetOpts struct {
-	SupportChannel optional.Bool
-	Page           optional.Int64
-	PageSize       optional.Int64
-	TemplateIdList optional.Interface
-	TemplateName   optional.String
-	Fields         optional.Interface
+	SupportChannel                 optional.Bool
+	Page                           optional.Int64
+	PageSize                       optional.Int64
+	TemplateIdList                 optional.Interface
+	TemplateName                   optional.String
+	DynamicAdTemplateOwnershipType optional.String
+	Fields                         optional.Interface
 }
 
 func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId int64, productCatalogId int64, adcreativeTemplateId int64, productMode string, localVarOptionals *DynamicAdVideoTemplatesGetOpts) (DynamicAdVideoTemplatesGetResponseData, http.Header, error) {
@@ -90,6 +92,9 @@ func (a *DynamicAdVideoTemplatesApiService) Get(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.TemplateName.IsSet() {
 		localVarQueryParams.Add("template_name", parameterToString(localVarOptionals.TemplateName.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.DynamicAdTemplateOwnershipType.IsSet() {
+		localVarQueryParams.Add("dynamic_ad_template_ownership_type", parameterToString(localVarOptionals.DynamicAdTemplateOwnershipType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -38,4 +38,6 @@ const (
 	ConversionTargetType_EXPERIENCE ConversionTargetType = "CONVERSION_TARGET_EXPERIENCE"
 	ConversionTargetType_SETUP      ConversionTargetType = "CONVERSION_TARGET_SETUP"
 	ConversionTargetType_SECKILL    ConversionTargetType = "CONVERSION_TARGET_SECKILL"
+	ConversionTargetType_ADD_WECOM  ConversionTargetType = "CONVERSION_TARGET_ADD_WECOM"
+	ConversionTargetType_LIKE       ConversionTargetType = "CONVERSION_TARGET_LIKE"
 )

@@ -37,6 +37,7 @@ Name | Type | Description  | Notes
  **timeLine** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)|  | 
  **weixinOfficialAccountsUpgradeEnabled** | **optional.Bool**|  | 
+ **adqAccountsUpgradeEnabled** | **optional.Bool**|  | 
 
 ### Return type
 

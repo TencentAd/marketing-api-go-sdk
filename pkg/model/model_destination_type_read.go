@@ -54,6 +54,9 @@ const (
 	DestinationTypeRead_LINGQUE_H5                      DestinationTypeRead = "PAGE_TYPE_LINGQUE_H5"
 	DestinationTypeRead_LINGQUE_MINI_PROGRAM            DestinationTypeRead = "PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 	DestinationTypeRead_WECHAT_APPOINTMENT_CARD         DestinationTypeRead = "PAGE_TYPE_WECHAT_APPOINTMENT_CARD"
+	DestinationTypeRead_H5_PROFILE                      DestinationTypeRead = "PAGE_TYPE_H5_PROFILE"
+	DestinationTypeRead_SEARCH_BRAND_AREA               DestinationTypeRead = "PAGE_TYPE_SEARCH_BRAND_AREA"
+	DestinationTypeRead_WECHAT_CHANNELS_PROFILE         DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 )
