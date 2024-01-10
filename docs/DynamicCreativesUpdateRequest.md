@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **BarrageList** | [**[]BarrageListCreateStruct**](barrage_list_create_struct.md) |  | [optional] [default to null]
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
+**LandingPageOptions** | [**[]DynamicLandingPageInfo**](dynamic_landing_page_info.md) |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **AutoDerivedProgramCreativeSwitch** | **bool** |  | [optional] [default to null]
 **HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]

@@ -86,6 +86,7 @@ Name | Type | Description | Notes
 **MdpaDescComponentOptions** | [**[]MdpaDescComponentOption**](mdpa_desc_component_option.md) |  | [optional] [default to null]
 **ListSublinkComponentOptions** | [**[]ListSublinkComponentOption**](list_sublink_component_option.md) |  | [optional] [default to null]
 **ImageList3ComponentOptions** | [**[]ImageListComponentOption**](image_list_component_option.md) |  | [optional] [default to null]
+**WechatChannelsCoverImgShowType** | [***WechatChannelsCoverImgShowType**](WechatChannelsCoverImgShowType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

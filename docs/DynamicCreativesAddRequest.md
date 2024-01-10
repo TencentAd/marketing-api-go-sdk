@@ -41,6 +41,7 @@ Name | Type | Description | Notes
 **CountdownSwitch** | **bool** |  | [optional] [default to null]
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
+**LandingPageOptions** | [**[]DynamicLandingPageInfo**](dynamic_landing_page_info.md) |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **AutoDerivedProgramCreativeSwitch** | **bool** |  | [optional] [default to null]
 **ProgramCreativeInfo** | [***ProgramCreativeInfo**](program_creative_info.md) |  | [optional] [default to null]

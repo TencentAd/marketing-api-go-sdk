@@ -2,11 +2,12 @@ package ads
 
 import (
 	"context"
-	uuid "github.com/google/uuid"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 	"net/http"
 	"strconv"
 	"time"
+
+	uuid "github.com/google/uuid"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/config"
 )
 
 // AuthMiddleware ...

@@ -21,4 +21,5 @@ const (
 	ImageSourceType_QUICK_DRAW      ImageSourceType = "SOURCE_TYPE_QUICK_DRAW"
 	ImageSourceType_VIDEO_SNAPSHOTS ImageSourceType = "SOURCE_TYPE_VIDEO_SNAPSHOTS"
 	ImageSourceType_TCC             ImageSourceType = "SOURCE_TYPE_TCC"
+	ImageSourceType_AIGC            ImageSourceType = "SOURCE_TYPE_AIGC"
 )

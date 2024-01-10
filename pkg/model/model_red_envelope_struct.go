@@ -17,4 +17,5 @@ type RedEnvelopeStruct struct {
 	RedEnvelopeAppearTimeMs       *int64  `json:"red_envelope_appear_time_ms,omitempty"`
 	RedEnvelopeDisappearTimeMs    *int64  `json:"red_envelope_disappear_time_ms,omitempty"`
 	RedEnvelopeOriginExtraSceneId *string `json:"red_envelope_origin_extra_scene_id,omitempty"`
+	RedBarrageSwitch              *bool   `json:"red_barrage_switch,omitempty"`
 }

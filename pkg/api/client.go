@@ -88,8 +88,6 @@ type APIClient struct {
 
 	AdvertiserDailyBudgetApi *AdvertiserDailyBudgetApiService
 
-	AgencyInnerTransferApi *AgencyInnerTransferApiService
-
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
 	AppAndroidChannelPackagesApi *AppAndroidChannelPackagesApiService
@@ -197,8 +195,6 @@ type APIClient struct {
 	EstimationApi *EstimationApiService
 
 	ExtendPackageApi *ExtendPackageApiService
-
-	FundStatementsDailyApi *FundStatementsDailyApiService
 
 	FundStatementsDetailedApi *FundStatementsDetailedApiService
 
@@ -322,6 +318,8 @@ type APIClient struct {
 
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
+	SeedElementQuotaApi *SeedElementQuotaApiService
+
 	SplitTestsApi *SplitTestsApiService
 
 	SubcustomerTransferApi *SubcustomerTransferApiService
@@ -352,6 +350,14 @@ type APIClient struct {
 
 	UserPropertySetsApi *UserPropertySetsApiService
 
+	VideoChannelDealerDataApi *VideoChannelDealerDataApiService
+
+	VideoChannelFansDataApi *VideoChannelFansDataApiService
+
+	VideoChannelLeadsDataApi *VideoChannelLeadsDataApiService
+
+	VideoChannelLiveDataApi *VideoChannelLiveDataApiService
+
 	VideomakerAutoadjustmentsApi *VideomakerAutoadjustmentsApiService
 
 	VideomakerSubtitlesApi *VideomakerSubtitlesApiService
@@ -363,10 +369,6 @@ type APIClient struct {
 	VideosApi *VideosApiService
 
 	WechatAdLabelsApi *WechatAdLabelsApiService
-
-	WechatFundStatementsDetailedApi *WechatFundStatementsDetailedApiService
-
-	WechatFundsApi *WechatFundsApiService
 
 	WechatPagesApi *WechatPagesApiService
 
@@ -447,7 +449,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdsApi = (*AdsApiService)(&c.common)
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
 	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
-	c.AgencyInnerTransferApi = (*AgencyInnerTransferApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AppAndroidChannelPackagesApi = (*AppAndroidChannelPackagesApiService)(&c.common)
 	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
@@ -502,7 +503,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
 	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)
-	c.FundStatementsDailyApi = (*FundStatementsDailyApiService)(&c.common)
 	c.FundStatementsDetailedApi = (*FundStatementsDetailedApiService)(&c.common)
 	c.FundTransferApi = (*FundTransferApiService)(&c.common)
 	c.FundsApi = (*FundsApiService)(&c.common)
@@ -564,6 +564,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ReviewAdAppealApi = (*ReviewAdAppealApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
+	c.SeedElementQuotaApi = (*SeedElementQuotaApiService)(&c.common)
 	c.SplitTestsApi = (*SplitTestsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.TargetcpaTagApi = (*TargetcpaTagApiService)(&c.common)
@@ -579,14 +580,16 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.UserActionsApi = (*UserActionsApiService)(&c.common)
 	c.UserPropertiesApi = (*UserPropertiesApiService)(&c.common)
 	c.UserPropertySetsApi = (*UserPropertySetsApiService)(&c.common)
+	c.VideoChannelDealerDataApi = (*VideoChannelDealerDataApiService)(&c.common)
+	c.VideoChannelFansDataApi = (*VideoChannelFansDataApiService)(&c.common)
+	c.VideoChannelLeadsDataApi = (*VideoChannelLeadsDataApiService)(&c.common)
+	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideomakerAutoadjustmentsApi = (*VideomakerAutoadjustmentsApiService)(&c.common)
 	c.VideomakerSubtitlesApi = (*VideomakerSubtitlesApiService)(&c.common)
 	c.VideomakerTasksApi = (*VideomakerTasksApiService)(&c.common)
 	c.VideomakerVideocapturesApi = (*VideomakerVideocapturesApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatAdLabelsApi = (*WechatAdLabelsApiService)(&c.common)
-	c.WechatFundStatementsDetailedApi = (*WechatFundStatementsDetailedApiService)(&c.common)
-	c.WechatFundsApi = (*WechatFundsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.WechatPagesCsgroupStatusApi = (*WechatPagesCsgroupStatusApiService)(&c.common)
 	c.WechatPagesCsgroupUserApi = (*WechatPagesCsgroupUserApiService)(&c.common)

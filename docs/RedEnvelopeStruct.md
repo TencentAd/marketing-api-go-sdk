@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **RedEnvelopeAppearTimeMs** | **int64** |  | [optional] [default to null]
 **RedEnvelopeDisappearTimeMs** | **int64** |  | [optional] [default to null]
 **RedEnvelopeOriginExtraSceneId** | **string** |  | [optional] [default to null]
+**RedBarrageSwitch** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

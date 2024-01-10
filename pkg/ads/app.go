@@ -93,10 +93,6 @@ func (c *SDKClient) AdvertiserDailyBudget() *api.AdvertiserDailyBudgetApiService
 	return c.Client.AdvertiserDailyBudgetApi
 }
 
-func (c *SDKClient) AgencyInnerTransfer() *api.AgencyInnerTransferApiService {
-	return c.Client.AgencyInnerTransferApi
-}
-
 func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
@@ -311,10 +307,6 @@ func (c *SDKClient) Estimation() *api.EstimationApiService {
 
 func (c *SDKClient) ExtendPackage() *api.ExtendPackageApiService {
 	return c.Client.ExtendPackageApi
-}
-
-func (c *SDKClient) FundStatementsDaily() *api.FundStatementsDailyApiService {
-	return c.Client.FundStatementsDailyApi
 }
 
 func (c *SDKClient) FundStatementsDetailed() *api.FundStatementsDetailedApiService {
@@ -561,6 +553,10 @@ func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
 
+func (c *SDKClient) SeedElementQuota() *api.SeedElementQuotaApiService {
+	return c.Client.SeedElementQuotaApi
+}
+
 func (c *SDKClient) SplitTests() *api.SplitTestsApiService {
 	return c.Client.SplitTestsApi
 }
@@ -621,6 +617,22 @@ func (c *SDKClient) UserPropertySets() *api.UserPropertySetsApiService {
 	return c.Client.UserPropertySetsApi
 }
 
+func (c *SDKClient) VideoChannelDealerData() *api.VideoChannelDealerDataApiService {
+	return c.Client.VideoChannelDealerDataApi
+}
+
+func (c *SDKClient) VideoChannelFansData() *api.VideoChannelFansDataApiService {
+	return c.Client.VideoChannelFansDataApi
+}
+
+func (c *SDKClient) VideoChannelLeadsData() *api.VideoChannelLeadsDataApiService {
+	return c.Client.VideoChannelLeadsDataApi
+}
+
+func (c *SDKClient) VideoChannelLiveData() *api.VideoChannelLiveDataApiService {
+	return c.Client.VideoChannelLiveDataApi
+}
+
 func (c *SDKClient) VideomakerAutoadjustments() *api.VideomakerAutoadjustmentsApiService {
 	return c.Client.VideomakerAutoadjustmentsApi
 }
@@ -643,14 +655,6 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 
 func (c *SDKClient) WechatAdLabels() *api.WechatAdLabelsApiService {
 	return c.Client.WechatAdLabelsApi
-}
-
-func (c *SDKClient) WechatFundStatementsDetailed() *api.WechatFundStatementsDetailedApiService {
-	return c.Client.WechatFundStatementsDetailedApi
-}
-
-func (c *SDKClient) WechatFunds() *api.WechatFundsApiService {
-	return c.Client.WechatFundsApi
 }
 
 func (c *SDKClient) WechatPages() *api.WechatPagesApiService {

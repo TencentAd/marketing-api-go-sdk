@@ -11,7 +11,8 @@ package model
 
 // 小程序落地页，mini_program_id和mini_program_path要同时填写
 type AdcreativeMiniProgramSpec struct {
-	MiniProgramId    *string   `json:"mini_program_id,omitempty"`
-	MiniProgramPath  *string   `json:"mini_program_path,omitempty"`
-	MiniProgramPaths *[]string `json:"mini_program_paths,omitempty"`
+	MiniProgramId             *string                   `json:"mini_program_id,omitempty"`
+	MiniProgramPath           *string                   `json:"mini_program_path,omitempty"`
+	MiniProgramPaths          *[]string                 `json:"mini_program_paths,omitempty"`
+	MiniProgramOpenlinkOption MiniProgramOpenLinkOption `json:"mini_program_openlink_option,omitempty"`
 }

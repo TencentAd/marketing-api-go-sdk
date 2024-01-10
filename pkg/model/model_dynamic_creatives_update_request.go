@@ -42,6 +42,7 @@ type DynamicCreativesUpdateRequest struct {
 	BarrageList                      *[]BarrageListCreateStruct  `json:"barrage_list,omitempty"`
 	CountdownSwitch                  *bool                       `json:"countdown_switch,omitempty"`
 	AppGiftPackCode                  *AppGiftPackCode            `json:"app_gift_pack_code,omitempty"`
+	LandingPageOptions               *[]DynamicLandingPageInfo   `json:"landing_page_options,omitempty"`
 	UnionMarketSpec                  *UnionMarketSpec            `json:"union_market_spec,omitempty"`
 	AutoDerivedProgramCreativeSwitch *bool                       `json:"auto_derived_program_creative_switch,omitempty"`
 	HeadClickType                    HeadClickType               `json:"head_click_type,omitempty"`

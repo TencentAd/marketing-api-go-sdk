@@ -24,4 +24,5 @@ const (
 	AccountType_TDC               AccountType = "ACCOUNT_TYPE_TDC"
 	AccountType_TONE              AccountType = "ACCOUNT_TYPE_TONE"
 	AccountType_BM                AccountType = "ACCOUNT_TYPE_BM"
+	AccountType_DATA_NEXUS        AccountType = "ACCOUNT_TYPE_DATA_NEXUS"
 )

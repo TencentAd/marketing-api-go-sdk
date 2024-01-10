@@ -10,9 +10,10 @@
 package model
 
 type AdcreativeTemplatePreviewsGetRequest struct {
-	AdgroupId *int64   `json:"adgroup_id,omitempty"`
-	AdIdList  *[]int64 `json:"ad_id_list,omitempty"`
-	Adgroup   *Adgroup `json:"adgroup,omitempty"`
-	AdList    *[]Ad    `json:"ad_list,omitempty"`
-	AccountId *int64   `json:"account_id,omitempty"`
+	AdgroupId         *int64   `json:"adgroup_id,omitempty"`
+	AdIdList          *[]int64 `json:"ad_id_list,omitempty"`
+	DynamicCreativeId *int64   `json:"dynamic_creative_id,omitempty"`
+	Adgroup           *Adgroup `json:"adgroup,omitempty"`
+	AdList            *[]Ad    `json:"ad_list,omitempty"`
+	AccountId         *int64   `json:"account_id,omitempty"`
 }

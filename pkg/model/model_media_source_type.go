@@ -21,4 +21,5 @@ const (
 	MediaSourceType_TCC             MediaSourceType = "SOURCE_TYPE_TCC"
 	MediaSourceType_DERIVE          MediaSourceType = "SOURCE_TYPE_DERIVE"
 	MediaSourceType_DERIVATION      MediaSourceType = "SOURCE_TYPE_DERIVATION"
+	MediaSourceType_AIGC            MediaSourceType = "SOURCE_TYPE_AIGC"
 )

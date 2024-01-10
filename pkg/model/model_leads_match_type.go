@@ -9,7 +9,7 @@
 
 package model
 
-// LeadsMatchType : 线索匹配类型，不填认为是NONE
+// LeadsMatchType : 线索匹配类型，不填认为时OUTERLEADSID
 type LeadsMatchType string
 
 // List of LeadsMatchType

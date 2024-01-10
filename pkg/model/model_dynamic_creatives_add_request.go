@@ -48,6 +48,7 @@ type DynamicCreativesAddRequest struct {
 	CountdownSwitch                  *bool                       `json:"countdown_switch,omitempty"`
 	AppGiftPackCode                  *AppGiftPackCode            `json:"app_gift_pack_code,omitempty"`
 	EnableBreakthroughSiteset        *bool                       `json:"enable_breakthrough_siteset,omitempty"`
+	LandingPageOptions               *[]DynamicLandingPageInfo   `json:"landing_page_options,omitempty"`
 	UnionMarketSpec                  *UnionMarketSpec            `json:"union_market_spec,omitempty"`
 	AutoDerivedProgramCreativeSwitch *bool                       `json:"auto_derived_program_creative_switch,omitempty"`
 	ProgramCreativeInfo              *ProgramCreativeInfo        `json:"program_creative_info,omitempty"`

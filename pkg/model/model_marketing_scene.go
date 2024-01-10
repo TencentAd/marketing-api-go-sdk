@@ -29,5 +29,6 @@ const (
 	MarketingScene_ECOMMERCE_CONSUMER_IOS_NEW_DAILY           MarketingScene = "ECOMMERCE_CONSUMER_IOS_NEW_DAILY"
 	MarketingScene_ECOMMERCE_CONTENT_BRAND_DAILY              MarketingScene = "ECOMMERCE_CONTENT_BRAND_DAILY"
 	MarketingScene_ECOMMERCE_CONSUMER_LIVE_FOLLOW_DAILY       MarketingScene = "ECOMMERCE_CONSUMER_LIVE_FOLLOW_DAILY"
+	MarketingScene_DELIVERY_V3                                MarketingScene = "DELIVERY_V3"
 	MarketingScene_ECOMMERCE_CONSUMER_APP_ACTIVATION_DAILY    MarketingScene = "ECOMMERCE_CONSUMER_APP_ACTIVATION_DAILY"
 )

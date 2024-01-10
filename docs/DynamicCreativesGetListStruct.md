@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **AppGiftPackCode** | [***AppGiftPackCode**](app_gift_pack_code.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **CreativeTemplateVersionType** | [***CreativeTemplateVersionType**](CreativeTemplateVersionType.md) |  | [optional] [default to null]
+**LandingPageOptions** | [**[]DynamicLandingPageInfoRead**](dynamic_landing_page_info_read.md) |  | [optional] [default to null]
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **CreativeTemplateCategory** | **string** |  | [optional] [default to null]
 **AutoDerivedProgramCreativeSwitch** | **bool** |  | [optional] [default to null]

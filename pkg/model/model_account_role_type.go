@@ -18,4 +18,5 @@ const (
 	AccountRoleType_AGENCY           AccountRoleType = "ACCOUNT_ROLE_TYPE_AGENCY"
 	AccountRoleType_T1               AccountRoleType = "ACCOUNT_ROLE_TYPE_T1"
 	AccountRoleType_BUSINESS_MANAGER AccountRoleType = "ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER"
+	AccountRoleType_DATA_NEXUS       AccountRoleType = "ACCOUNT_ROLE_TYPE_DATA_NEXUS"
 )

@@ -11,13 +11,14 @@ package api
 
 import (
 	"context"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
-	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"os"
 	"strings"
+
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
 // Linger please

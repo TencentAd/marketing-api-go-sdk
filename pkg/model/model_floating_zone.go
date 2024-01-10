@@ -20,4 +20,5 @@ type FloatingZone struct {
 	FloatingZoneSingleImageId *string                 `json:"floating_zone_single_image_id,omitempty"`
 	FloatingZoneBgcolor       *string                 `json:"floating_zone_bgcolor,omitempty"`
 	FloatingZoneJumpInfo      *[]LandingPageStructure `json:"floating_zone_jump_info,omitempty"`
+	FloatingZoneInfoType      FloatingZoneInfoType    `json:"floating_zone_info_type,omitempty"`
 }

@@ -40,4 +40,6 @@ const (
 	ConversionTargetType_SECKILL    ConversionTargetType = "CONVERSION_TARGET_SECKILL"
 	ConversionTargetType_ADD_WECOM  ConversionTargetType = "CONVERSION_TARGET_ADD_WECOM"
 	ConversionTargetType_LIKE       ConversionTargetType = "CONVERSION_TARGET_LIKE"
+	ConversionTargetType_DONATION   ConversionTargetType = "CONVERSION_TARGET_DONATION"
+	ConversionTargetType_GOOD_DEED  ConversionTargetType = "CONVERSION_TARGET_GOOD_DEED"
 )

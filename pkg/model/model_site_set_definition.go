@@ -67,4 +67,5 @@ const (
 	SiteSetDefinition_CHANNELS_CONTENT_PROMOTION SiteSetDefinition = "SITE_SET_CHANNELS_CONTENT_PROMOTION"
 	SiteSetDefinition_FREETRADE_WEAPP            SiteSetDefinition = "SITE_SET_FREETRADE_WEAPP"
 	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
+	SiteSetDefinition_FREETRADE_QQ               SiteSetDefinition = "SITE_SET_FREETRADE_QQ"
 )

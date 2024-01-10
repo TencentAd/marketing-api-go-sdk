@@ -35,4 +35,5 @@ type BatchAsyncRequestTaskSpec struct {
 	UpdateDeepConversionBehaviorAdvancedBidSpec      *[]UpdateDeepConversionBehaviorAdvancedBidItem      `json:"update_deep_conversion_behavior_advanced_bid_spec,omitempty"`
 	ReplyFinderObjectCommentSpec                     *[]ReplyFinderObjectCommentItem                     `json:"reply_finder_object_comment_spec,omitempty"`
 	UpdateFinderObjectCommentFlagSpec                *[]UpdateFinderObjectCommentFlagItem                `json:"update_finder_object_comment_flag_spec,omitempty"`
+	DeleteFinderObjectCommentSpec                    *[]DeleteFinderObjectCommentItem                    `json:"delete_finder_object_comment_spec,omitempty"`
 }

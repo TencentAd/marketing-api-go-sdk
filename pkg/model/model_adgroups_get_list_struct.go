@@ -16,6 +16,8 @@ type AdgroupsGetListStruct struct {
 	AdgroupName                       *string                         `json:"adgroup_name,omitempty"`
 	SiteSet                           *[]string                       `json:"site_set,omitempty"`
 	AutomaticSiteEnabled              *bool                           `json:"automatic_site_enabled,omitempty"`
+	ExplorationStrategy               SiteSetExplorationStrategy      `json:"exploration_strategy,omitempty"`
+	PrioritySiteSet                   *[]string                       `json:"priority_site_set,omitempty"`
 	OptimizationGoal                  OptimizationGoal                `json:"optimization_goal,omitempty"`
 	BillingEvent                      BillingEvent                    `json:"billing_event,omitempty"`
 	BidAmount                         *int64                          `json:"bid_amount,omitempty"`
@@ -83,4 +85,6 @@ type AdgroupsGetListStruct struct {
 	EcomPkamSwitch                    EcomPkamSwitch                  `json:"ecom_pkam_switch,omitempty"`
 	BidScene                          BidScene                        `json:"bid_scene,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal                `json:"forward_link_assist,omitempty"`
+	ShortPlayPayType                  ShortPlayPayType                `json:"short_play_pay_type,omitempty"`
+	SellStrategyId                    *int64                          `json:"sell_strategy_id,omitempty"`
 }
