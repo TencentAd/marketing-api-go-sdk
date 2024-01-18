@@ -11,19 +11,20 @@ package model
 
 // 定向详细设置
 type WriteTargetingSetting struct {
-	GeoLocation            *GeoLocations     `json:"geo_location,omitempty"`
-	Gender                 *[]string         `json:"gender,omitempty"`
-	Age                    *[]AgeStruct      `json:"age,omitempty"`
-	Education              *[]string         `json:"education,omitempty"`
-	AppInstallStatus       *[]string         `json:"app_install_status,omitempty"`
-	MaritalStatus          *[]string         `json:"marital_status,omitempty"`
-	CustomAudience         *[]int64          `json:"custom_audience,omitempty"`
-	ExcludedCustomAudience *[]int64          `json:"excluded_custom_audience,omitempty"`
-	DeviceBrandModel       *DeviceBrandModel `json:"device_brand_model,omitempty"`
-	UserOs                 *[]string         `json:"user_os,omitempty"`
-	NetworkType            *[]string         `json:"network_type,omitempty"`
-	DevicePrice            *[]string         `json:"device_price,omitempty"`
-	WechatAdBehavior       *WechatAdBehavior `json:"wechat_ad_behavior,omitempty"`
-	GameConsumptionLevel   *[]string         `json:"game_consumption_level,omitempty"`
-	ExcludedOs             *[]string         `json:"excluded_os,omitempty"`
+	GeoLocation               *GeoLocations              `json:"geo_location,omitempty"`
+	Gender                    *[]string                  `json:"gender,omitempty"`
+	Age                       *[]AgeStruct               `json:"age,omitempty"`
+	Education                 *[]string                  `json:"education,omitempty"`
+	AppInstallStatus          *[]string                  `json:"app_install_status,omitempty"`
+	MaritalStatus             *[]string                  `json:"marital_status,omitempty"`
+	ExcludedConvertedAudience *ExcludedConvertedAudience `json:"excluded_converted_audience,omitempty"`
+	CustomAudience            *[]int64                   `json:"custom_audience,omitempty"`
+	ExcludedCustomAudience    *[]int64                   `json:"excluded_custom_audience,omitempty"`
+	DeviceBrandModel          *DeviceBrandModel          `json:"device_brand_model,omitempty"`
+	UserOs                    *[]string                  `json:"user_os,omitempty"`
+	NetworkType               *[]string                  `json:"network_type,omitempty"`
+	DevicePrice               *[]string                  `json:"device_price,omitempty"`
+	WechatAdBehavior          *WechatAdBehavior          `json:"wechat_ad_behavior,omitempty"`
+	GameConsumptionLevel      *[]string                  `json:"game_consumption_level,omitempty"`
+	ExcludedOs                *[]string                  `json:"excluded_os,omitempty"`
 }

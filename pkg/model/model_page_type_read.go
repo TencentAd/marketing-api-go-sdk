@@ -68,4 +68,5 @@ const (
 	PageTypeRead_SEARCH_BRAND_AREA               PageTypeRead = "PAGE_TYPE_SEARCH_BRAND_AREA"
 	PageTypeRead_WECHAT_CHANNELS_PROFILE         PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
+	PageTypeRead_WECHAT_CHANNELS_SHOP_PRODUCT    PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 )

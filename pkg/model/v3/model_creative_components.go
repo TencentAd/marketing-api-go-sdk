@@ -31,11 +31,11 @@ type CreativeComponents struct {
 	Barrage            *[]BarrageComponent            `json:"barrage,omitempty"`
 	FloatingZone       *[]FloatingZoneComponent       `json:"floating_zone,omitempty"`
 	TextLink           *[]TextLinkComponent           `json:"text_link,omitempty"`
-	JumpInfo           *[]JumpinfoComponent           `json:"jump_info,omitempty"`
 	EndPage            *[]EndPageComponent            `json:"end_page,omitempty"`
 	LivingDesc         *[]LivingDescComponent         `json:"living_desc,omitempty"`
 	WechatChannels     *[]WechatChannelsComponent     `json:"wechat_channels,omitempty"`
 	ShortVideo         *[]ShortVideoComponent         `json:"short_video,omitempty"`
 	ElementStory       *[]ElementStoryComponent       `json:"element_story,omitempty"`
 	WxgamePlayablePage *[]WxgamePlayablePageComponent `json:"wxgame_playable_page,omitempty"`
+	MainJumpInfo       *[]JumpinfoComponent           `json:"main_jump_info,omitempty"`
 }

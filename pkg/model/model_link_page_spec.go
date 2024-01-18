@@ -11,8 +11,9 @@ package model
 
 // 文字链跳转信息
 type LinkPageSpec struct {
-	PageId          *int64                     `json:"page_id,omitempty"`
-	PageUrl         *string                    `json:"page_url,omitempty"`
-	MiniProgramSpec *AdcreativeMiniProgramSpec `json:"mini_program_spec,omitempty"`
-	MiniGameSpec    *LinkMiniGameSpec          `json:"mini_game_spec,omitempty"`
+	PageId                  *int64                     `json:"page_id,omitempty"`
+	PageUrl                 *string                    `json:"page_url,omitempty"`
+	MiniProgramSpec         *AdcreativeMiniProgramSpec `json:"mini_program_spec,omitempty"`
+	MiniGameSpec            *LinkMiniGameSpec          `json:"mini_game_spec,omitempty"`
+	ChannelsShopProductSpec *ChannelsShopProductSpec   `json:"channels_shop_product_spec,omitempty"`
 }

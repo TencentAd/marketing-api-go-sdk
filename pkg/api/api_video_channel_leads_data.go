@@ -17,6 +17,7 @@ import (
 	"strings"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
@@ -92,7 +93,7 @@ func (a *VideoChannelLeadsDataApiService) Get(ctx context.Context, data VideoCha
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

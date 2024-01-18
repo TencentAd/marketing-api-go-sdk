@@ -4,10 +4,10 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ImagesAdd**](ImagesApi.md#ImagesAdd) | **Get** /images/add | 添加图片文件
-[**ImagesDelete**](ImagesApi.md#ImagesDelete) | **Get** /images/delete | 删除图片
+[**ImagesAdd**](ImagesApi.md#ImagesAdd) | **Post** /images/add | 添加图片文件
+[**ImagesDelete**](ImagesApi.md#ImagesDelete) | **Post** /images/delete | 删除图片
 [**ImagesGet**](ImagesApi.md#ImagesGet) | **Get** /images/get | 获取图片信息
-[**ImagesUpdate**](ImagesApi.md#ImagesUpdate) | **Get** /images/update | 修改图片信息
+[**ImagesUpdate**](ImagesApi.md#ImagesUpdate) | **Post** /images/update | 修改图片信息
 
 
 # **ImagesAdd**
@@ -39,7 +39,6 @@ Name | Type | Description  | Notes
  **resizeWidth** | **optional.Int64**|  | 
  **resizeHeight** | **optional.Int64**|  | 
  **resizeFileSize** | **optional.Int64**|  | 
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
 
@@ -51,13 +50,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ImagesDelete**
-> ImagesDeleteResponse ImagesDelete(ctx, advertiserId, imageId, optional)
+> ImagesDeleteResponse ImagesDelete(ctx, data)
 删除图片
 
 ### Required Parameters
@@ -65,18 +64,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
-  **imageId** | **string**|  | 
- **optional** | ***ImagesApiImagesDeleteOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a ImagesApiImagesDeleteOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**ImagesDeleteRequest**](ImagesDeleteRequest.md)|  | 
 
 ### Return type
 
@@ -88,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -134,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ImagesUpdate**
-> ImagesUpdateResponse ImagesUpdate(ctx, advertiserId, imageId, description, optional)
+> ImagesUpdateResponse ImagesUpdate(ctx, data)
 修改图片信息
 
 ### Required Parameters
@@ -142,20 +130,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
-  **imageId** | **string**|  | 
-  **description** | **string**|  | 
- **optional** | ***ImagesApiImagesUpdateOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a ImagesApiImagesUpdateOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
-
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**ImagesUpdateRequest**](ImagesUpdateRequest.md)|  | 
 
 ### Return type
 
@@ -167,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

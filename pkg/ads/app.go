@@ -409,6 +409,10 @@ func (c *SDKClient) LocalStoresWxpayMerchants() *api.LocalStoresWxpayMerchantsAp
 	return c.Client.LocalStoresWxpayMerchantsApi
 }
 
+func (c *SDKClient) MaterialAudit() *api.MaterialAuditApiService {
+	return c.Client.MaterialAuditApi
+}
+
 func (c *SDKClient) MaterialLabels() *api.MaterialLabelsApiService {
 	return c.Client.MaterialLabelsApi
 }

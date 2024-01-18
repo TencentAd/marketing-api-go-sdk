@@ -21,7 +21,7 @@ const (
 	MarketingTargetType_PRODUCT                          MarketingTargetType = "MARKETING_TARGET_TYPE_PRODUCT"
 	MarketingTargetType_TRAFFIC                          MarketingTargetType = "MARKETING_TARGET_TYPE_TRAFFIC"
 	MarketingTargetType_HOUSE_PROPERTY                   MarketingTargetType = "MARKETING_TARGET_TYPE_HOUSE_PROPERTY"
-	MarketingTargetType_TELECOM                          MarketingTargetType = "MARKETING_TARGET_TYPE_TELECOM"
+	MarketingTargetType_LOCAL_STORE                      MarketingTargetType = "MARKETING_TARGET_TYPE_LOCAL_STORE"
 	MarketingTargetType_WECHAT_MINI_GAME                 MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_MINI_GAME"
 	MarketingTargetType_CONSUMER_PRODUCT                 MarketingTargetType = "MARKETING_TARGET_TYPE_CONSUMER_PRODUCT"
 	MarketingTargetType_WECHAT_CHANNELS                  MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_CHANNELS"
@@ -49,4 +49,5 @@ const (
 	MarketingTargetType_RENOVATION_SERVICES              MarketingTargetType = "MARKETING_TARGET_TYPE_RENOVATION_SERVICES"
 	MarketingTargetType_FURNITURE_AND_BUILDING_MATERIALS MarketingTargetType = "MARKETING_TARGET_TYPE_FURNITURE_AND_BUILDING_MATERIALS"
 	MarketingTargetType_EXHIBITION_SALES                 MarketingTargetType = "MARKETING_TARGET_TYPE_EXHIBITION_SALES"
+	MarketingTargetType_MEDICINE_INDUSTRY_COMMERCIAL     MarketingTargetType = "MARKETING_TARGET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL"
 )

@@ -9,7 +9,7 @@
 
 package model
 
-// 落地页组件
+// 主跳转组件
 type JumpinfoComponent struct {
 	ComponentId *int64          `json:"component_id,omitempty"`
 	Value       *JumpinfoStruct `json:"value,omitempty"`

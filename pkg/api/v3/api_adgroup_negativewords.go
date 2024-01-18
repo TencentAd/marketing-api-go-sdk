@@ -16,7 +16,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/antihax/optional"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
@@ -92,7 +94,7 @@ func (a *AdgroupNegativewordsApiService) Add(ctx context.Context, data AdgroupNe
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -135,13 +137,21 @@ func (a *AdgroupNegativewordsApiService) Add(ctx context.Context, data AdgroupNe
 /*
 AdgroupNegativewordsApiService 查询广告组否定词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param data
+ * @param accountId
+ * @param adgroupIds
+ * @param optional nil or *AdgroupNegativewordsGetOpts - Optional Parameters:
+     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdgroupNegativewordsGetResponse
 */
-func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, data AdgroupNegativewordsGetRequest) (AdgroupNegativewordsGetResponseData, http.Header, error) {
+
+type AdgroupNegativewordsGetOpts struct {
+	Fields optional.Interface
+}
+
+func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, accountId int64, adgroupIds []int64, localVarOptionals *AdgroupNegativewordsGetOpts) (AdgroupNegativewordsGetResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -157,8 +167,13 @@ func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, data AdgroupNe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	localVarQueryParams.Add("adgroup_ids", parameterToString(adgroupIds, "multi"))
+	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
+		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"application/json", "application/xml"}
+	localVarHttpContentTypes := []string{"text/plain"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -174,8 +189,6 @@ func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, data AdgroupNe
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	// body params
-	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -197,7 +210,7 @@ func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, data AdgroupNe
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -302,7 +315,7 @@ func (a *AdgroupNegativewordsApiService) Update(ctx context.Context, data Adgrou
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

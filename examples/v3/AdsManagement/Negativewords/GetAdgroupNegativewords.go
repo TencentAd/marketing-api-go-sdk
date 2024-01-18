@@ -15,15 +15,18 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type AdgroupNegativewordsGetExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.AdgroupNegativewordsGetRequest
+	TAds                        *ads.SDKClient
+	AccessToken                 string
+	AccountId                   int64
+	AdgroupIds                  []int64
+	AdgroupNegativewordsGetOpts *api.AdgroupNegativewordsGetOpts
 }
 
 func (e *AdgroupNegativewordsGetExample) Init() {
@@ -32,14 +35,16 @@ func (e *AdgroupNegativewordsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.AdgroupNegativewordsGetRequest{}
+	e.AccountId = 789
+	e.AdgroupIds = []int64{}
+	e.AdgroupNegativewordsGetOpts = &api.AdgroupNegativewordsGetOpts{}
 }
 
 func (e *AdgroupNegativewordsGetExample) RunExample() (model.AdgroupNegativewordsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AdgroupNegativewords().Get(ctx, e.Data)
+	return tads.AdgroupNegativewords().Get(ctx, e.AccountId, e.AdgroupIds, e.AdgroupNegativewordsGetOpts)
 }
 
 func main() {

@@ -17,7 +17,7 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 )
 
 // RefreshAccessTokenExample ...
@@ -36,7 +36,7 @@ func (e *RefreshAccessTokenExample) Init() {
 		IsDebug: true,
 	})
 	// oauth/token不提供沙箱环境
-	e.TAds.UseProduction()
+	e.TAds.SetHost("api.e.qq.com", "https")
 	// YOUR CLIENT ID
 	e.ClientId = int64(0)
 	e.ClientSecret = "YOUR CLIENT SECRET"

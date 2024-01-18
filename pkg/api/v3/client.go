@@ -30,7 +30,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	apierrors "github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	apierrors "github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"golang.org/x/oauth2"
 )
 
@@ -63,6 +63,14 @@ type APIClient struct {
 	AsyncReportsApi *AsyncReportsApiService
 
 	AudienceGrantRelationsApi *AudienceGrantRelationsApiService
+
+	BidwordApi *BidwordApiService
+
+	BidwordFlowApi *BidwordFlowApiService
+
+	BrandApi *BrandApiService
+
+	BusinessPointApi *BusinessPointApiService
 
 	ConversionsApi *ConversionsApiService
 
@@ -98,7 +106,21 @@ type APIClient struct {
 
 	ImagesApi *ImagesApiService
 
-	MarketingTargetApi *MarketingTargetApiService
+	KeywordRecommendApi *KeywordRecommendApiService
+
+	LocalStoresApi *LocalStoresApiService
+
+	LocalStoresAddressParsingResultApi *LocalStoresAddressParsingResultApiService
+
+	LocalStoresCategoriesApi *LocalStoresCategoriesApiService
+
+	LocalStoresSearchInfoApi *LocalStoresSearchInfoApiService
+
+	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
+
+	MarketingTargetAssetsApi *MarketingTargetAssetsApiService
+
+	MarketingTargetTypesApi *MarketingTargetTypesApiService
 
 	MaterialLabelsApi *MaterialLabelsApiService
 
@@ -161,6 +183,10 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
+	c.BidwordApi = (*BidwordApiService)(&c.common)
+	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
+	c.BrandApi = (*BrandApiService)(&c.common)
+	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)
@@ -178,7 +204,14 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
-	c.MarketingTargetApi = (*MarketingTargetApiService)(&c.common)
+	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
+	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
+	c.LocalStoresAddressParsingResultApi = (*LocalStoresAddressParsingResultApiService)(&c.common)
+	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
+	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
+	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
+	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
+	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
 	c.MaterialLabelsApi = (*MaterialLabelsApiService)(&c.common)
 	c.MergeFundTypeDailyBalanceReportApi = (*MergeFundTypeDailyBalanceReportApiService)(&c.common)
 	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)

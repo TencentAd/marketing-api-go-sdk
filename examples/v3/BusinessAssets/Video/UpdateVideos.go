@@ -15,19 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type VideosUpdateExample struct {
-	TAds             *ads.SDKClient
-	AccessToken      string
-	AccountId        int64
-	VideoId          int64
-	Description      string
-	VideosUpdateOpts *api.VideosUpdateOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.VideosUpdateRequest
 }
 
 func (e *VideosUpdateExample) Init() {
@@ -36,17 +32,14 @@ func (e *VideosUpdateExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.VideoId = 789
-	e.Description = "description_example"
-	e.VideosUpdateOpts = &api.VideosUpdateOpts{}
+	e.Data = model.VideosUpdateRequest{}
 }
 
 func (e *VideosUpdateExample) RunExample() (model.VideosUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Videos().Update(ctx, e.AccountId, e.VideoId, e.Description, e.VideosUpdateOpts)
+	return tads.Videos().Update(ctx, e.Data)
 }
 
 func main() {

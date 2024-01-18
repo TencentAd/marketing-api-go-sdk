@@ -23,13 +23,13 @@ Name | Type | Description | Notes
 **Barrage** | [**[]BarrageComponent**](barrage_component.md) |  | [optional] [default to null]
 **FloatingZone** | [**[]FloatingZoneComponent**](floating_zone_component.md) |  | [optional] [default to null]
 **TextLink** | [**[]TextLinkComponent**](text_link_component.md) |  | [optional] [default to null]
-**JumpInfo** | [**[]JumpinfoComponent**](jumpinfo_component.md) |  | [optional] [default to null]
 **EndPage** | [**[]EndPageComponent**](end_page_component.md) |  | [optional] [default to null]
 **LivingDesc** | [**[]LivingDescComponent**](living_desc_component.md) |  | [optional] [default to null]
 **WechatChannels** | [**[]WechatChannelsComponent**](wechat_channels_component.md) |  | [optional] [default to null]
 **ShortVideo** | [**[]ShortVideoComponent**](short_video_component.md) |  | [optional] [default to null]
 **ElementStory** | [**[]ElementStoryComponent**](element_story_component.md) |  | [optional] [default to null]
 **WxgamePlayablePage** | [**[]WxgamePlayablePageComponent**](wxgame_playable_page_component.md) |  | [optional] [default to null]
+**MainJumpInfo** | [**[]JumpinfoComponent**](jumpinfo_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

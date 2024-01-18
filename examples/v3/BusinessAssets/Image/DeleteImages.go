@@ -15,18 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type ImagesDeleteExample struct {
-	TAds             *ads.SDKClient
-	AccessToken      string
-	AdvertiserId     int64
-	ImageId          string
-	ImagesDeleteOpts *api.ImagesDeleteOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ImagesDeleteRequest
 }
 
 func (e *ImagesDeleteExample) Init() {
@@ -35,16 +32,14 @@ func (e *ImagesDeleteExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
-	e.ImageId = "imageId_example"
-	e.ImagesDeleteOpts = &api.ImagesDeleteOpts{}
+	e.Data = model.ImagesDeleteRequest{}
 }
 
 func (e *ImagesDeleteExample) RunExample() (model.ImagesDeleteResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Images().Delete(ctx, e.AdvertiserId, e.ImageId, e.ImagesDeleteOpts)
+	return tads.Images().Delete(ctx, e.Data)
 }
 
 func main() {

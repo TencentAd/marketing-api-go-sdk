@@ -9,9 +9,13 @@
 
 package model
 
+import (
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
+)
+
 type CustomAudiencesDeleteResponse struct {
-	Code      *int64            `json:"code,omitempty"`
-	Message   *string           `json:"message,omitempty"`
-	MessageCn *string           `json:"message_cn,omitempty"`
-	Errors    *[]ApiErrorStruct `json:"errors,omitempty"`
+	Code      *int64                  `json:"code,omitempty"`
+	Message   *string                 `json:"message,omitempty"`
+	MessageCn *string                 `json:"message_cn,omitempty"`
+	Errors    *[]model.ApiErrorStruct `json:"errors,omitempty"`
 }

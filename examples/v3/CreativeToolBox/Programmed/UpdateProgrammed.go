@@ -15,18 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type ProgrammedUpdateExample struct {
-	TAds                 *ads.SDKClient
-	AccessToken          string
-	AccountId            int64
-	MaterialDeriveId     int64
-	ProgrammedUpdateOpts *api.ProgrammedUpdateOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ProgrammedUpdateRequest
 }
 
 func (e *ProgrammedUpdateExample) Init() {
@@ -35,16 +32,14 @@ func (e *ProgrammedUpdateExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.MaterialDeriveId = 789
-	e.ProgrammedUpdateOpts = &api.ProgrammedUpdateOpts{}
+	e.Data = model.ProgrammedUpdateRequest{}
 }
 
 func (e *ProgrammedUpdateExample) RunExample() (model.ProgrammedUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Programmed().Update(ctx, e.AccountId, e.MaterialDeriveId, e.ProgrammedUpdateOpts)
+	return tads.Programmed().Update(ctx, e.Data)
 }
 
 func main() {

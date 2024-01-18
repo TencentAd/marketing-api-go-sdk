@@ -16,8 +16,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/antihax/optional"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
@@ -31,26 +31,13 @@ type ProgrammedApiService service
 /*
 ProgrammedApiService 创建模板预览接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param adgroupId
- * @param createMaterialGroups
- * @param optional nil or *ProgrammedAddOpts - Optional Parameters:
-     * @param "AutoDerivedProgramCreativeSwitch" (optional.Bool) -
-     * @param "StandardSwitch" (optional.Bool) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ProgrammedAddResponse
 */
-
-type ProgrammedAddOpts struct {
-	AutoDerivedProgramCreativeSwitch optional.Bool
-	StandardSwitch                   optional.Bool
-	Fields                           optional.Interface
-}
-
-func (a *ProgrammedApiService) Add(ctx context.Context, accountId int64, adgroupId int64, createMaterialGroups []MaterialGroupCreateStruct, localVarOptionals *ProgrammedAddOpts) (ProgrammedAddResponseData, http.Header, error) {
+func (a *ProgrammedApiService) Add(ctx context.Context, data ProgrammedAddRequest) (ProgrammedAddResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -66,20 +53,8 @@ func (a *ProgrammedApiService) Add(ctx context.Context, accountId int64, adgroup
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("adgroup_id", parameterToString(adgroupId, ""))
-	if localVarOptionals != nil && localVarOptionals.AutoDerivedProgramCreativeSwitch.IsSet() {
-		localVarQueryParams.Add("auto_derived_program_creative_switch", parameterToString(localVarOptionals.AutoDerivedProgramCreativeSwitch.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.StandardSwitch.IsSet() {
-		localVarQueryParams.Add("standard_switch", parameterToString(localVarOptionals.StandardSwitch.Value(), ""))
-	}
-	localVarQueryParams.Add("create_material_groups", parameterToString(createMaterialGroups, "multi"))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -95,6 +70,8 @@ func (a *ProgrammedApiService) Add(ctx context.Context, accountId int64, adgroup
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -116,7 +93,7 @@ func (a *ProgrammedApiService) Add(ctx context.Context, accountId int64, adgroup
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -159,21 +136,13 @@ func (a *ProgrammedApiService) Add(ctx context.Context, accountId int64, adgroup
 /*
 ProgrammedApiService 获取模板预览接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param materialDeriveId
- * @param optional nil or *ProgrammedGetOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ProgrammedGetResponse
 */
-
-type ProgrammedGetOpts struct {
-	Fields optional.Interface
-}
-
-func (a *ProgrammedApiService) Get(ctx context.Context, accountId int64, materialDeriveId int64, localVarOptionals *ProgrammedGetOpts) (ProgrammedGetResponseData, http.Header, error) {
+func (a *ProgrammedApiService) Get(ctx context.Context, data ProgrammedGetRequest) (ProgrammedGetResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -189,13 +158,8 @@ func (a *ProgrammedApiService) Get(ctx context.Context, accountId int64, materia
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("material_derive_id", parameterToString(materialDeriveId, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -211,6 +175,8 @@ func (a *ProgrammedApiService) Get(ctx context.Context, accountId int64, materia
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -232,7 +198,7 @@ func (a *ProgrammedApiService) Get(ctx context.Context, accountId int64, materia
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -275,27 +241,13 @@ func (a *ProgrammedApiService) Get(ctx context.Context, accountId int64, materia
 /*
 ProgrammedApiService 更新模板预览接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param materialDeriveId
- * @param optional nil or *ProgrammedUpdateOpts - Optional Parameters:
-     * @param "AutoDerivedProgramCreativeSwitch" (optional.Bool) -
-     * @param "StandardSwitch" (optional.Bool) -
-     * @param "UpdateMaterialGroups" (optional.Interface of []MaterialGroupUpdateStruct) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ProgrammedUpdateResponse
 */
-
-type ProgrammedUpdateOpts struct {
-	AutoDerivedProgramCreativeSwitch optional.Bool
-	StandardSwitch                   optional.Bool
-	UpdateMaterialGroups             optional.Interface
-	Fields                           optional.Interface
-}
-
-func (a *ProgrammedApiService) Update(ctx context.Context, accountId int64, materialDeriveId int64, localVarOptionals *ProgrammedUpdateOpts) (ProgrammedUpdateResponseData, http.Header, error) {
+func (a *ProgrammedApiService) Update(ctx context.Context, data ProgrammedUpdateRequest) (ProgrammedUpdateResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -311,22 +263,8 @@ func (a *ProgrammedApiService) Update(ctx context.Context, accountId int64, mate
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("material_derive_id", parameterToString(materialDeriveId, ""))
-	if localVarOptionals != nil && localVarOptionals.AutoDerivedProgramCreativeSwitch.IsSet() {
-		localVarQueryParams.Add("auto_derived_program_creative_switch", parameterToString(localVarOptionals.AutoDerivedProgramCreativeSwitch.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.StandardSwitch.IsSet() {
-		localVarQueryParams.Add("standard_switch", parameterToString(localVarOptionals.StandardSwitch.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.UpdateMaterialGroups.IsSet() {
-		localVarQueryParams.Add("update_material_groups", parameterToString(localVarOptionals.UpdateMaterialGroups.Value(), "multi"))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -342,6 +280,8 @@ func (a *ProgrammedApiService) Update(ctx context.Context, accountId int64, mate
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -363,7 +303,7 @@ func (a *ProgrammedApiService) Update(ctx context.Context, accountId int64, mate
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SiteSet** | [***PreReviewSiteSetDefinitionString**](PreReviewSiteSetDefinitionString.md) |  | [optional] [default to null]
+**SiteSet** | [***IntSiteSetDefinition**](IntSiteSetDefinition.md) |  | [optional] [default to null]
 **PreReviewResult** | [***GroupRiskLevel**](GroupRiskLevel.md) |  | [optional] [default to null]
 **RejectReasonDetail** | [**[]PreReviewResultRejectReasonDetailStruct**](pre_review_result_reject_reason_detail_struct.md) |  | [optional] [default to null]
 

@@ -14,10 +14,12 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 
 	"github.com/antihax/optional"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
@@ -42,7 +44,6 @@ ImagesApiService 添加图片文件
      * @param "ResizeWidth" (optional.Int64) -
      * @param "ResizeHeight" (optional.Int64) -
      * @param "ResizeFileSize" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ImagesAddResponse
 */
@@ -55,12 +56,11 @@ type ImagesAddOpts struct {
 	ResizeWidth    optional.Int64
 	ResizeHeight   optional.Int64
 	ResizeFileSize optional.Int64
-	Fields         optional.Interface
 }
 
 func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadType string, imageSignature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -76,35 +76,8 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
-	localVarQueryParams.Add("upload_type", parameterToString(uploadType, ""))
-	localVarQueryParams.Add("image_signature", parameterToString(imageSignature, ""))
-	if localVarOptionals != nil && localVarOptionals.ImageFile.IsSet() {
-		localVarQueryParams.Add("image_file", parameterToString(localVarOptionals.ImageFile.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Bytes.IsSet() {
-		localVarQueryParams.Add("bytes", parameterToString(localVarOptionals.Bytes.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.ImageUsage.IsSet() {
-		localVarQueryParams.Add("image_usage", parameterToString(localVarOptionals.ImageUsage.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
-		localVarQueryParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.ResizeWidth.IsSet() {
-		localVarQueryParams.Add("resize_width", parameterToString(localVarOptionals.ResizeWidth.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.ResizeHeight.IsSet() {
-		localVarQueryParams.Add("resize_height", parameterToString(localVarOptionals.ResizeHeight.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.ResizeFileSize.IsSet() {
-		localVarQueryParams.Add("resize_file_size", parameterToString(localVarOptionals.ResizeFileSize.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"multipart/form-data"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -119,6 +92,49 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	localVarFormParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarFormParams.Add("upload_type", parameterToString(uploadType, ""))
+	localVarFormParams.Add("image_signature", parameterToString(imageSignature, ""))
+	var localVarFile *os.File
+	localVarFileKey = "image_file"
+	if localVarOptionals != nil && localVarOptionals.ImageFile.IsSet() {
+		localVarFileOk := false
+		localVarFile, localVarFileOk = localVarOptionals.ImageFile.Value().(*os.File)
+		if !localVarFileOk {
+			return localVarReturnValue, nil, reportError("imageFile should be *os.File")
+		}
+	}
+	if localVarFile != nil {
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		localVarFileBytes = fbs
+		localVarFileName = localVarFile.Name()
+	}
+	if localVarOptionals != nil && localVarOptionals.Bytes.IsSet() {
+		localVarFormParams.Add("bytes", parameterToString(localVarOptionals.Bytes.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ImageUsage.IsSet() {
+		localVarFormParams.Add("image_usage", parameterToString(localVarOptionals.ImageUsage.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
+		localVarFormParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeWidth.IsSet() {
+		localVarFormParams.Add("resize_width", parameterToString(localVarOptionals.ResizeWidth.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeHeight.IsSet() {
+		localVarFormParams.Add("resize_height", parameterToString(localVarOptionals.ResizeHeight.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ResizeFileSize.IsSet() {
+		localVarFormParams.Add("resize_file_size", parameterToString(localVarOptionals.ResizeFileSize.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
@@ -141,7 +157,7 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -184,21 +200,13 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 /*
 ImagesApiService 删除图片
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
- * @param imageId
- * @param optional nil or *ImagesDeleteOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ImagesDeleteResponse
 */
-
-type ImagesDeleteOpts struct {
-	Fields optional.Interface
-}
-
-func (a *ImagesApiService) Delete(ctx context.Context, advertiserId int64, imageId string, localVarOptionals *ImagesDeleteOpts) (ImagesDeleteResponseData, http.Header, error) {
+func (a *ImagesApiService) Delete(ctx context.Context, data ImagesDeleteRequest) (ImagesDeleteResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -214,13 +222,8 @@ func (a *ImagesApiService) Delete(ctx context.Context, advertiserId int64, image
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
-	localVarQueryParams.Add("image_id", parameterToString(imageId, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -236,6 +239,8 @@ func (a *ImagesApiService) Delete(ctx context.Context, advertiserId int64, image
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -257,7 +262,7 @@ func (a *ImagesApiService) Delete(ctx context.Context, advertiserId int64, image
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -396,7 +401,7 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -439,22 +444,13 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 /*
 ImagesApiService 修改图片信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
- * @param imageId
- * @param description
- * @param optional nil or *ImagesUpdateOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ImagesUpdateResponse
 */
-
-type ImagesUpdateOpts struct {
-	Fields optional.Interface
-}
-
-func (a *ImagesApiService) Update(ctx context.Context, advertiserId int64, imageId string, description string, localVarOptionals *ImagesUpdateOpts) (ImagesUpdateResponseData, http.Header, error) {
+func (a *ImagesApiService) Update(ctx context.Context, data ImagesUpdateRequest) (ImagesUpdateResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -470,14 +466,8 @@ func (a *ImagesApiService) Update(ctx context.Context, advertiserId int64, image
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
-	localVarQueryParams.Add("image_id", parameterToString(imageId, ""))
-	localVarQueryParams.Add("description", parameterToString(description, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -493,6 +483,8 @@ func (a *ImagesApiService) Update(ctx context.Context, advertiserId int64, image
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -514,7 +506,7 @@ func (a *ImagesApiService) Update(ctx context.Context, advertiserId int64, image
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

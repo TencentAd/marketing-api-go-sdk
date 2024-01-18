@@ -14,10 +14,12 @@ type ReportDailyLevel string
 
 // List of ReportDailyLevel
 const (
-	ReportDailyLevel_ADVERTISER        ReportDailyLevel = "REPORT_LEVEL_ADVERTISER"
-	ReportDailyLevel_ADGROUP           ReportDailyLevel = "REPORT_LEVEL_ADGROUP"
-	ReportDailyLevel_DYNAMIC_CREATIVE  ReportDailyLevel = "REPORT_LEVEL_DYNAMIC_CREATIVE"
-	ReportDailyLevel_DYNAMIC_COMPONENT ReportDailyLevel = "REPORT_LEVEL_DYNAMIC_COMPONENT"
-	ReportDailyLevel_CHANNEL           ReportDailyLevel = "REPORT_LEVEL_CHANNEL"
-	ReportDailyLevel_BIDWORD           ReportDailyLevel = "REPORT_LEVEL_BIDWORD"
+	ReportDailyLevel_ADVERTISER       ReportDailyLevel = "REPORT_LEVEL_ADVERTISER"
+	ReportDailyLevel_ADGROUP          ReportDailyLevel = "REPORT_LEVEL_ADGROUP"
+	ReportDailyLevel_DYNAMIC_CREATIVE ReportDailyLevel = "REPORT_LEVEL_DYNAMIC_CREATIVE"
+	ReportDailyLevel_COMPONENT        ReportDailyLevel = "REPORT_LEVEL_COMPONENT"
+	ReportDailyLevel_CHANNEL          ReportDailyLevel = "REPORT_LEVEL_CHANNEL"
+	ReportDailyLevel_BIDWORD          ReportDailyLevel = "REPORT_LEVEL_BIDWORD"
+	ReportDailyLevel_MATERIAL_IMAGE   ReportDailyLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
+	ReportDailyLevel_MATERIAL_VIDEO   ReportDailyLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 )

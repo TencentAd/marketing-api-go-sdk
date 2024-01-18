@@ -15,20 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type ProgrammedTemplateGetExample struct {
-	TAds                      *ads.SDKClient
-	AccessToken               string
-	AccountId                 int64
-	MaterialDeriveId          int64
-	MaterialGroupId           int64
-	MaterialDerivePreviewId   int64
-	ProgrammedTemplateGetOpts *api.ProgrammedTemplateGetOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ProgrammedTemplateGetRequest
 }
 
 func (e *ProgrammedTemplateGetExample) Init() {
@@ -37,18 +32,14 @@ func (e *ProgrammedTemplateGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.MaterialDeriveId = 789
-	e.MaterialGroupId = 789
-	e.MaterialDerivePreviewId = 789
-	e.ProgrammedTemplateGetOpts = &api.ProgrammedTemplateGetOpts{}
+	e.Data = model.ProgrammedTemplateGetRequest{}
 }
 
 func (e *ProgrammedTemplateGetExample) RunExample() (model.ProgrammedTemplateGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.ProgrammedTemplate().Get(ctx, e.AccountId, e.MaterialDeriveId, e.MaterialGroupId, e.MaterialDerivePreviewId, e.ProgrammedTemplateGetOpts)
+	return tads.ProgrammedTemplate().Get(ctx, e.Data)
 }
 
 func main() {

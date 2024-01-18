@@ -45,6 +45,22 @@ func (c *SDKClient) AudienceGrantRelations() *api.AudienceGrantRelationsApiServi
 	return c.Client.AudienceGrantRelationsApi
 }
 
+func (c *SDKClient) Bidword() *api.BidwordApiService {
+	return c.Client.BidwordApi
+}
+
+func (c *SDKClient) BidwordFlow() *api.BidwordFlowApiService {
+	return c.Client.BidwordFlowApi
+}
+
+func (c *SDKClient) Brand() *api.BrandApiService {
+	return c.Client.BrandApi
+}
+
+func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
+	return c.Client.BusinessPointApi
+}
+
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
 }
@@ -113,8 +129,36 @@ func (c *SDKClient) Images() *api.ImagesApiService {
 	return c.Client.ImagesApi
 }
 
-func (c *SDKClient) MarketingTarget() *api.MarketingTargetApiService {
-	return c.Client.MarketingTargetApi
+func (c *SDKClient) KeywordRecommend() *api.KeywordRecommendApiService {
+	return c.Client.KeywordRecommendApi
+}
+
+func (c *SDKClient) LocalStores() *api.LocalStoresApiService {
+	return c.Client.LocalStoresApi
+}
+
+func (c *SDKClient) LocalStoresAddressParsingResult() *api.LocalStoresAddressParsingResultApiService {
+	return c.Client.LocalStoresAddressParsingResultApi
+}
+
+func (c *SDKClient) LocalStoresCategories() *api.LocalStoresCategoriesApiService {
+	return c.Client.LocalStoresCategoriesApi
+}
+
+func (c *SDKClient) LocalStoresSearchInfo() *api.LocalStoresSearchInfoApiService {
+	return c.Client.LocalStoresSearchInfoApi
+}
+
+func (c *SDKClient) LocalStoresWxpayMerchants() *api.LocalStoresWxpayMerchantsApiService {
+	return c.Client.LocalStoresWxpayMerchantsApi
+}
+
+func (c *SDKClient) MarketingTargetAssets() *api.MarketingTargetAssetsApiService {
+	return c.Client.MarketingTargetAssetsApi
+}
+
+func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
+	return c.Client.MarketingTargetTypesApi
 }
 
 func (c *SDKClient) MaterialLabels() *api.MaterialLabelsApiService {

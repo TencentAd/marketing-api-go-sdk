@@ -15,18 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type ProgrammedGetExample struct {
-	TAds              *ads.SDKClient
-	AccessToken       string
-	AccountId         int64
-	MaterialDeriveId  int64
-	ProgrammedGetOpts *api.ProgrammedGetOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ProgrammedGetRequest
 }
 
 func (e *ProgrammedGetExample) Init() {
@@ -35,16 +32,14 @@ func (e *ProgrammedGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.MaterialDeriveId = 789
-	e.ProgrammedGetOpts = &api.ProgrammedGetOpts{}
+	e.Data = model.ProgrammedGetRequest{}
 }
 
 func (e *ProgrammedGetExample) RunExample() (model.ProgrammedGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Programmed().Get(ctx, e.AccountId, e.MaterialDeriveId, e.ProgrammedGetOpts)
+	return tads.Programmed().Get(ctx, e.Data)
 }
 
 func main() {

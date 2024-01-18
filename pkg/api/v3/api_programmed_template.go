@@ -16,8 +16,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/antihax/optional"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
@@ -31,31 +31,13 @@ type ProgrammedTemplateApiService service
 /*
 ProgrammedTemplateApiService 获取模板列表接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param materialDeriveId
- * @param materialGroupId
- * @param materialDerivePreviewId
- * @param optional nil or *ProgrammedTemplateGetOpts - Optional Parameters:
-     * @param "TemplateIdList" (optional.Interface of []int64) -
-     * @param "KeyWord" (optional.String) -
-     * @param "SortBy" (optional.Interface of []SortByStruct) -
-     * @param "PageInfo" (optional.Interface of PageInfoStruct) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return ProgrammedTemplateGetResponse
 */
-
-type ProgrammedTemplateGetOpts struct {
-	TemplateIdList optional.Interface
-	KeyWord        optional.String
-	SortBy         optional.Interface
-	PageInfo       optional.Interface
-	Fields         optional.Interface
-}
-
-func (a *ProgrammedTemplateApiService) Get(ctx context.Context, accountId int64, materialDeriveId int64, materialGroupId int64, materialDerivePreviewId int64, localVarOptionals *ProgrammedTemplateGetOpts) (ProgrammedTemplateGetResponseData, http.Header, error) {
+func (a *ProgrammedTemplateApiService) Get(ctx context.Context, data ProgrammedTemplateGetRequest) (ProgrammedTemplateGetResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -71,27 +53,8 @@ func (a *ProgrammedTemplateApiService) Get(ctx context.Context, accountId int64,
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("material_derive_id", parameterToString(materialDeriveId, ""))
-	localVarQueryParams.Add("material_group_id", parameterToString(materialGroupId, ""))
-	localVarQueryParams.Add("material_derive_preview_id", parameterToString(materialDerivePreviewId, ""))
-	if localVarOptionals != nil && localVarOptionals.TemplateIdList.IsSet() {
-		localVarQueryParams.Add("template_id_list", parameterToString(localVarOptionals.TemplateIdList.Value(), "multi"))
-	}
-	if localVarOptionals != nil && localVarOptionals.KeyWord.IsSet() {
-		localVarQueryParams.Add("key_word", parameterToString(localVarOptionals.KeyWord.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.SortBy.IsSet() {
-		localVarQueryParams.Add("sort_by", parameterToString(localVarOptionals.SortBy.Value(), "multi"))
-	}
-	if localVarOptionals != nil && localVarOptionals.PageInfo.IsSet() {
-		localVarQueryParams.Add("page_info", parameterToString(localVarOptionals.PageInfo.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -107,6 +70,8 @@ func (a *ProgrammedTemplateApiService) Get(ctx context.Context, accountId int64,
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -128,7 +93,7 @@ func (a *ProgrammedTemplateApiService) Get(ctx context.Context, accountId int64,
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

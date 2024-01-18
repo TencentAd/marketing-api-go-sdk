@@ -18,7 +18,8 @@ import (
 	"strings"
 
 	"github.com/antihax/optional"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 	. "github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
@@ -38,7 +39,6 @@ VideosApiService 添加视频文件
  * @param optional nil or *VideosAddOpts - Optional Parameters:
      * @param "Description" (optional.String) -
      * @param "AdcreativeTemplateId" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return VideosAddResponse
 */
@@ -46,12 +46,11 @@ VideosApiService 添加视频文件
 type VideosAddOpts struct {
 	Description          optional.String
 	AdcreativeTemplateId optional.Int64
-	Fields               optional.Interface
 }
 
 func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *os.File, signature string, localVarOptionals *VideosAddOpts) (VideosAddResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -67,20 +66,8 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("video_file", parameterToString(videoFile, ""))
-	localVarQueryParams.Add("signature", parameterToString(signature, ""))
-	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
-		localVarQueryParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.AdcreativeTemplateId.IsSet() {
-		localVarQueryParams.Add("adcreative_template_id", parameterToString(localVarOptionals.AdcreativeTemplateId.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"multipart/form-data"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -95,6 +82,29 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
+	}
+	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
+	localVarFile := videoFile
+	localVarFileKey = "video_file"
+	if localVarFile != nil {
+		localVarNewFile, localErr := os.Open(localVarFile.Name())
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		defer localVarNewFile.Close()
+		fbs, localErr := ioutil.ReadAll(localVarNewFile)
+		if localErr != nil {
+			return localVarReturnValue, nil, localErr
+		}
+		localVarFileBytes = fbs
+		localVarFileName = localVarFile.Name()
+	}
+	localVarFormParams.Add("signature", parameterToString(signature, ""))
+	if localVarOptionals != nil && localVarOptionals.Description.IsSet() {
+		localVarFormParams.Add("description", parameterToString(localVarOptionals.Description.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdcreativeTemplateId.IsSet() {
+		localVarFormParams.Add("adcreative_template_id", parameterToString(localVarOptionals.AdcreativeTemplateId.Value(), ""))
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
@@ -117,7 +127,7 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -160,21 +170,13 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 /*
 VideosApiService 删除视频
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param videoId
- * @param optional nil or *VideosDeleteOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return VideosDeleteResponse
 */
-
-type VideosDeleteOpts struct {
-	Fields optional.Interface
-}
-
-func (a *VideosApiService) Delete(ctx context.Context, accountId int64, videoId int64, localVarOptionals *VideosDeleteOpts) (VideosDeleteResponseData, http.Header, error) {
+func (a *VideosApiService) Delete(ctx context.Context, data VideosDeleteRequest) (VideosDeleteResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -190,13 +192,8 @@ func (a *VideosApiService) Delete(ctx context.Context, accountId int64, videoId 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("video_id", parameterToString(videoId, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -212,6 +209,8 @@ func (a *VideosApiService) Delete(ctx context.Context, accountId int64, videoId 
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -233,7 +232,7 @@ func (a *VideosApiService) Delete(ctx context.Context, accountId int64, videoId 
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -372,7 +371,7 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}
@@ -415,22 +414,13 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 /*
 VideosApiService 修改视频信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
- * @param videoId
- * @param description
- * @param optional nil or *VideosUpdateOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+ * @param data
 
 @return VideosUpdateResponse
 */
-
-type VideosUpdateOpts struct {
-	Fields optional.Interface
-}
-
-func (a *VideosApiService) Update(ctx context.Context, accountId int64, videoId int64, description string, localVarOptionals *VideosUpdateOpts) (VideosUpdateResponseData, http.Header, error) {
+func (a *VideosApiService) Update(ctx context.Context, data VideosUpdateRequest) (VideosUpdateResponseData, http.Header, error) {
 	var (
-		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
@@ -446,14 +436,8 @@ func (a *VideosApiService) Update(ctx context.Context, accountId int64, videoId 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("video_id", parameterToString(videoId, ""))
-	localVarQueryParams.Add("description", parameterToString(description, ""))
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{"text/plain"}
+	localVarHttpContentTypes := []string{"application/json", "application/xml"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -469,6 +453,8 @@ func (a *VideosApiService) Update(ctx context.Context, accountId int64, videoId 
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
+	// body params
+	localVarPostBody = &data
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes, localVarFileKey)
 	if err != nil {
 		return localVarReturnValue, nil, err
@@ -490,7 +476,7 @@ func (a *VideosApiService) Update(ctx context.Context, accountId int64, videoId 
 		err = a.client.decode(&localVarResponse, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 		if err == nil {
 			if *localVarResponse.Code != 0 {
-				var localVarResponseErrors []ApiErrorStruct
+				var localVarResponseErrors []model.ApiErrorStruct
 				if localVarResponse.Errors != nil {
 					localVarResponseErrors = *localVarResponse.Errors
 				}

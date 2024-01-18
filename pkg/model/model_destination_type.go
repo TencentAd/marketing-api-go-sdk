@@ -67,4 +67,5 @@ const (
 	DestinationType_H5_PROFILE                      DestinationType = "PAGE_TYPE_H5_PROFILE"
 	DestinationType_SEARCH_BRAND_AREA               DestinationType = "PAGE_TYPE_SEARCH_BRAND_AREA"
 	DestinationType_WECHAT_CHANNELS_PROFILE         DestinationType = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
+	DestinationType_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationType = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 )

@@ -9,7 +9,7 @@
 
 package model
 
-// SiteSetDefinition : 投放站点集合
+// SiteSetDefinition : 版位信息
 type SiteSetDefinition string
 
 // List of SiteSetDefinition
@@ -46,6 +46,7 @@ const (
 	SiteSetDefinition_THIRDPARTY                 SiteSetDefinition = "SITE_SET_THIRDPARTY"
 	SiteSetDefinition_JD_WAICAI                  SiteSetDefinition = "SITE_SET_JD_WAICAI"
 	SiteSetDefinition_PCQQ                       SiteSetDefinition = "SITE_SET_PCQQ"
+	SiteSetDefinition_PCAD                       SiteSetDefinition = "SITE_SET_PCAD"
 	SiteSetDefinition_KUAISHOU                   SiteSetDefinition = "SITE_SET_KUAISHOU"
 	SiteSetDefinition_KANDIAN                    SiteSetDefinition = "SITE_SET_KANDIAN"
 	SiteSetDefinition_QQ_MUSIC_GAME              SiteSetDefinition = "SITE_SET_QQ_MUSIC_GAME"

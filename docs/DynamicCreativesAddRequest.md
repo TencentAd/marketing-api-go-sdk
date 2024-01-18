@@ -49,6 +49,7 @@ Name | Type | Description | Notes
 **HeadClickType** | [***HeadClickType**](HeadClickType.md) |  | [optional] [default to null]
 **HeadClickSpec** | [***HeadClickSpec**](head_click_spec.md) |  | [optional] [default to null]
 **CampaignId** | **int64** |  | [optional] [default to null]
+**WechatChannelsTrackingSpec** | [***WechatChannelsTrackingSpec**](wechat_channels_tracking_spec.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **IndustryLabel** | **string** |  | [optional] [default to null]
 **SublinkSwitch** | [***AdvertiserSublinkSwitch**](AdvertiserSublinkSwitch.md) |  | [optional] [default to null]

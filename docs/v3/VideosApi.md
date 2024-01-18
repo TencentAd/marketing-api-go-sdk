@@ -4,10 +4,10 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**VideosAdd**](VideosApi.md#VideosAdd) | **Get** /videos/add | 添加视频文件
-[**VideosDelete**](VideosApi.md#VideosDelete) | **Get** /videos/delete | 删除视频
+[**VideosAdd**](VideosApi.md#VideosAdd) | **Post** /videos/add | 添加视频文件
+[**VideosDelete**](VideosApi.md#VideosDelete) | **Post** /videos/delete | 删除视频
 [**VideosGet**](VideosApi.md#VideosGet) | **Get** /videos/get | 获取视频文件
-[**VideosUpdate**](VideosApi.md#VideosUpdate) | **Get** /videos/update | 修改视频信息
+[**VideosUpdate**](VideosApi.md#VideosUpdate) | **Post** /videos/update | 修改视频信息
 
 
 # **VideosAdd**
@@ -34,7 +34,6 @@ Name | Type | Description  | Notes
 
  **description** | **optional.String**|  | 
  **adcreativeTemplateId** | **optional.Int64**|  | 
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
 
@@ -46,13 +45,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VideosDelete**
-> VideosDeleteResponse VideosDelete(ctx, accountId, videoId, optional)
+> VideosDeleteResponse VideosDelete(ctx, data)
 删除视频
 
 ### Required Parameters
@@ -60,18 +59,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
-  **videoId** | **int64**|  | 
- **optional** | ***VideosApiVideosDeleteOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a VideosApiVideosDeleteOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**VideosDeleteRequest**](VideosDeleteRequest.md)|  | 
 
 ### Return type
 
@@ -83,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -129,7 +117,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VideosUpdate**
-> VideosUpdateResponse VideosUpdate(ctx, accountId, videoId, description, optional)
+> VideosUpdateResponse VideosUpdate(ctx, data)
 修改视频信息
 
 ### Required Parameters
@@ -137,20 +125,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
-  **videoId** | **int64**|  | 
-  **description** | **string**|  | 
- **optional** | ***VideosApiVideosUpdateOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a VideosApiVideosUpdateOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
-
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**VideosUpdateRequest**](VideosUpdateRequest.md)|  | 
 
 ### Return type
 
@@ -162,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

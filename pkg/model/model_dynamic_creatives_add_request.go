@@ -56,6 +56,7 @@ type DynamicCreativesAddRequest struct {
 	HeadClickType                    HeadClickType               `json:"head_click_type,omitempty"`
 	HeadClickSpec                    *HeadClickSpec              `json:"head_click_spec,omitempty"`
 	CampaignId                       *int64                      `json:"campaign_id,omitempty"`
+	WechatChannelsTrackingSpec       *WechatChannelsTrackingSpec `json:"wechat_channels_tracking_spec,omitempty"`
 	PageTrackUrl                     *string                     `json:"page_track_url,omitempty"`
 	IndustryLabel                    *string                     `json:"industry_label,omitempty"`
 	SublinkSwitch                    AdvertiserSublinkSwitch     `json:"sublink_switch,omitempty"`

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Education** | **[]string** |  | [optional] [default to null]
 **AppInstallStatus** | **[]string** |  | [optional] [default to null]
 **MaritalStatus** | **[]string** |  | [optional] [default to null]
+**ExcludedConvertedAudience** | [***ExcludedConvertedAudience**](excluded_converted_audience.md) |  | [optional] [default to null]
 **CustomAudience** | **[]int64** |  | [optional] [default to null]
 **ExcludedCustomAudience** | **[]int64** |  | [optional] [default to null]
 **DeviceBrandModel** | [***DeviceBrandModel**](device_brand_model.md) |  | [optional] [default to null]

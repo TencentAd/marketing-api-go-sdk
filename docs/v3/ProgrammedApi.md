@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ProgrammedAdd**](ProgrammedApi.md#ProgrammedAdd) | **Get** /programmed/add | 创建模板预览接口
-[**ProgrammedGet**](ProgrammedApi.md#ProgrammedGet) | **Get** /programmed/get | 获取模板预览接口
-[**ProgrammedUpdate**](ProgrammedApi.md#ProgrammedUpdate) | **Get** /programmed/update | 更新模板预览接口
+[**ProgrammedAdd**](ProgrammedApi.md#ProgrammedAdd) | **Post** /programmed/add | 创建模板预览接口
+[**ProgrammedGet**](ProgrammedApi.md#ProgrammedGet) | **Post** /programmed/get | 获取模板预览接口
+[**ProgrammedUpdate**](ProgrammedApi.md#ProgrammedUpdate) | **Post** /programmed/update | 更新模板预览接口
 
 
 # **ProgrammedAdd**
-> ProgrammedAddResponse ProgrammedAdd(ctx, accountId, adgroupId, createMaterialGroups, optional)
+> ProgrammedAddResponse ProgrammedAdd(ctx, data)
 创建模板预览接口
 
 ### Required Parameters
@@ -18,22 +18,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
-  **adgroupId** | **int64**|  | 
-  **createMaterialGroups** | [**[]MaterialGroupCreateStruct**](MaterialGroupCreateStruct.md)|  | 
- **optional** | ***ProgrammedApiProgrammedAddOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a ProgrammedApiProgrammedAddOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
-
- **autoDerivedProgramCreativeSwitch** | **optional.Bool**|  | 
- **standardSwitch** | **optional.Bool**|  | 
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**ProgrammedAddRequest**](ProgrammedAddRequest.md)|  | 
 
 ### Return type
 
@@ -45,13 +30,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ProgrammedGet**
-> ProgrammedGetResponse ProgrammedGet(ctx, accountId, materialDeriveId, optional)
+> ProgrammedGetResponse ProgrammedGet(ctx, data)
 获取模板预览接口
 
 ### Required Parameters
@@ -59,18 +44,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
-  **materialDeriveId** | **int64**|  | 
- **optional** | ***ProgrammedApiProgrammedGetOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a ProgrammedApiProgrammedGetOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**ProgrammedGetRequest**](ProgrammedGetRequest.md)|  | 
 
 ### Return type
 
@@ -82,13 +56,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ProgrammedUpdate**
-> ProgrammedUpdateResponse ProgrammedUpdate(ctx, accountId, materialDeriveId, optional)
+> ProgrammedUpdateResponse ProgrammedUpdate(ctx, data)
 更新模板预览接口
 
 ### Required Parameters
@@ -96,21 +70,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
-  **materialDeriveId** | **int64**|  | 
- **optional** | ***ProgrammedApiProgrammedUpdateOpts** | optional parameters | nil if no parameters
-
-### Optional Parameters
-Optional parameters are passed through a pointer to a ProgrammedApiProgrammedUpdateOpts struct
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
-
- **autoDerivedProgramCreativeSwitch** | **optional.Bool**|  | 
- **standardSwitch** | **optional.Bool**|  | 
- **updateMaterialGroups** | [**optional.Interface of []MaterialGroupUpdateStruct**](MaterialGroupUpdateStruct.md)|  | 
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+  **data** | [**ProgrammedUpdateRequest**](ProgrammedUpdateRequest.md)|  | 
 
 ### Return type
 
@@ -122,7 +82,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

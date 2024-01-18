@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **MiniGameSpec** | [***MiniGameSpec**](mini_game_spec.md) |  | [optional] [default to null]
 **OverrideCanvasHeadOption** | [***OverrideCanvasHeadOption**](OverrideCanvasHeadOption.md) |  | [optional] [default to null]
 **DynamicProductSpec** | [***DynamicProductSpec**](dynamic_product_spec.md) |  | [optional] [default to null]
+**ChannelsShopProductSpec** | [***ChannelsShopProductSpec**](channels_shop_product_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

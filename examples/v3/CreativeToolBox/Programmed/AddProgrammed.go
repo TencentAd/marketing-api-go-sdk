@@ -15,19 +15,15 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/errors/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
 type ProgrammedAddExample struct {
-	TAds                 *ads.SDKClient
-	AccessToken          string
-	AccountId            int64
-	AdgroupId            int64
-	CreateMaterialGroups []model.MaterialGroupCreateStruct
-	ProgrammedAddOpts    *api.ProgrammedAddOpts
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ProgrammedAddRequest
 }
 
 func (e *ProgrammedAddExample) Init() {
@@ -36,17 +32,14 @@ func (e *ProgrammedAddExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
-	e.AdgroupId = 789
-	e.CreateMaterialGroups = []model.MaterialGroupCreateStruct{}
-	e.ProgrammedAddOpts = &api.ProgrammedAddOpts{}
+	e.Data = model.ProgrammedAddRequest{}
 }
 
 func (e *ProgrammedAddExample) RunExample() (model.ProgrammedAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Programmed().Add(ctx, e.AccountId, e.AdgroupId, e.CreateMaterialGroups, e.ProgrammedAddOpts)
+	return tads.Programmed().Add(ctx, e.Data)
 }
 
 func main() {
