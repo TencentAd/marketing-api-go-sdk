@@ -9,7 +9,7 @@
 
 package model
 
-// 落地页内容结构定义
+// 兜底落地页内容结构定义
 type BackupsJumpinfoStruct struct {
 	PageType PageType  `json:"page_type,omitempty"`
 	PageSpec *PageSpec `json:"page_spec,omitempty"`

@@ -14,10 +14,11 @@ type OperateSuggestion string
 
 // List of OperateSuggestion
 const (
-	OperateSuggestion_OBSERVATION OperateSuggestion = "OPERATE_SUGGESTION_OBSERVATION"
-	OperateSuggestion_OPERATION   OperateSuggestion = "OPERATE_SUGGESTION_OPERATION"
-	OperateSuggestion_PAUSE       OperateSuggestion = "OPERATE_SUGGESTION_PAUSE"
-	OperateSuggestion_FINE_PLAY   OperateSuggestion = "OPERATE_SUGGESTION_FINE_PLAY"
-	OperateSuggestion_SUSPEND     OperateSuggestion = "OPERATE_SUGGESTION_SUSPEND"
-	OperateSuggestion_TRAFFIC     OperateSuggestion = "OPERATE_SUGGESTION_TRAFFIC"
+	OperateSuggestion_OBSERVATION  OperateSuggestion = "OPERATE_SUGGESTION_OBSERVATION"
+	OperateSuggestion_OPERATION    OperateSuggestion = "OPERATE_SUGGESTION_OPERATION"
+	OperateSuggestion_PAUSE        OperateSuggestion = "OPERATE_SUGGESTION_PAUSE"
+	OperateSuggestion_FINE_PLAY    OperateSuggestion = "OPERATE_SUGGESTION_FINE_PLAY"
+	OperateSuggestion_SUSPEND      OperateSuggestion = "OPERATE_SUGGESTION_SUSPEND"
+	OperateSuggestion_TRAFFIC      OperateSuggestion = "OPERATE_SUGGESTION_TRAFFIC"
+	OperateSuggestion_LOWPOTENTIAL OperateSuggestion = "OPERATE_SUGGESTION_LOWPOTENTIAL"
 )

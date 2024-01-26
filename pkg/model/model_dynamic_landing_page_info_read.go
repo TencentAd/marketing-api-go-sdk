@@ -22,4 +22,5 @@ type DynamicLandingPageInfoRead struct {
 	SimpleCanvasSubType           SimpleCanvasSubType      `json:"simple_canvas_sub_type,omitempty"`
 	LinkNameText                  *string                  `json:"link_name_text,omitempty"`
 	ButtonTextJumpInfo            *LandingPageStructure    `json:"button_text_jump_info,omitempty"`
+	ChannelsShopProductSpec       *ChannelsShopProductSpec `json:"channels_shop_product_spec,omitempty"`
 }

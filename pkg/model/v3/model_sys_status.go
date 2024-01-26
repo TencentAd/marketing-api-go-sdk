@@ -9,7 +9,7 @@
 
 package model
 
-// SysStatus : 门店状态
+// SysStatus : 朋友圈头像及昵称跳转页状态
 type SysStatus string
 
 // List of SysStatus

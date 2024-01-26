@@ -68,4 +68,5 @@ type AdcreativeCreativeElements struct {
 	WxgamePlayablePageSpec         *WxgamePlayablePageSpec            `json:"wxgame_playable_page_spec,omitempty"`
 	MainJumpInfo                   *[]LandingPageStructure            `json:"main_jump_info,omitempty"`
 	WechatChannelsCoverImgShowType WechatChannelsCoverImgShowType     `json:"wechat_channels_cover_img_show_type,omitempty"`
+	MiniCardLink                   *AdCreativeMiniCardLink            `json:"mini_card_link,omitempty"`
 }

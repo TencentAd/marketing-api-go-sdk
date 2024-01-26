@@ -66,6 +66,7 @@ Name | Type | Description | Notes
 **EcomPkamSwitch** | [***EcomPkamSwitch**](EcomPkamSwitch.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ConversionName** | **string** |  | [optional] [default to null]
+**AutoAcquisitionStatus** | [***AutoAcquisitionStatus**](AutoAcquisitionStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

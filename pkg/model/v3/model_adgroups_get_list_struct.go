@@ -74,4 +74,5 @@ type AdgroupsGetListStruct struct {
 	EcomPkamSwitch                    EcomPkamSwitch              `json:"ecom_pkam_switch,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal            `json:"forward_link_assist,omitempty"`
 	ConversionName                    *string                     `json:"conversion_name,omitempty"`
+	AutoAcquisitionStatus             AutoAcquisitionStatus       `json:"auto_acquisition_status,omitempty"`
 }

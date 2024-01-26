@@ -23,4 +23,7 @@ const (
 	AsyncReportLevel_CITY             AsyncReportLevel = "REPORT_LEVEL_CITY"
 	AsyncReportLevel_DYNAMIC_CREATIVE AsyncReportLevel = "REPORT_LEVEL_DYNAMIC_CREATIVE"
 	AsyncReportLevel_COMPONENT        AsyncReportLevel = "REPORT_LEVEL_COMPONENT"
+	AsyncReportLevel_MATERIAL_IMAGE   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
+	AsyncReportLevel_MATERIAL_VIDEO   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
+	AsyncReportLevel_CHANNEL          AsyncReportLevel = "REPORT_LEVEL_CHANNEL"
 )

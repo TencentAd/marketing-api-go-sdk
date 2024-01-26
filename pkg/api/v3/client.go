@@ -136,6 +136,8 @@ type APIClient struct {
 
 	PagesApi *PagesApiService
 
+	ProfilesApi *ProfilesApiService
+
 	ProgrammedApi *ProgrammedApiService
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
@@ -219,6 +221,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
+	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)

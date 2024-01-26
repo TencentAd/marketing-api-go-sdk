@@ -14,8 +14,6 @@ type ReportGranularity string
 
 // List of ReportGranularity
 const (
-	ReportGranularity_UNKNOWN ReportGranularity = "UNKNOWN"
-	ReportGranularity_HOURLY  ReportGranularity = "HOURLY"
-	ReportGranularity_SUMMARY ReportGranularity = "SUMMARY"
-	ReportGranularity_DAILY   ReportGranularity = "DAILY"
+	ReportGranularity_HOURLY ReportGranularity = "HOURLY"
+	ReportGranularity_DAILY  ReportGranularity = "DAILY"
 )

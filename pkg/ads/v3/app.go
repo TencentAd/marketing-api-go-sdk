@@ -189,6 +189,10 @@ func (c *SDKClient) Pages() *api.PagesApiService {
 	return c.Client.PagesApi
 }
 
+func (c *SDKClient) Profiles() *api.ProfilesApiService {
+	return c.Client.ProfilesApi
+}
+
 func (c *SDKClient) Programmed() *api.ProgrammedApiService {
 	return c.Client.ProgrammedApi
 }

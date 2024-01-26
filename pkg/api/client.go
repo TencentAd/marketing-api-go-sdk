@@ -218,6 +218,8 @@ type APIClient struct {
 
 	LabelsApi *LabelsApiService
 
+	LandingPageSellStrategyApi *LandingPageSellStrategyApiService
+
 	LeadCluesApi *LeadCluesApiService
 
 	LeadsCallApi *LeadsCallApiService
@@ -516,6 +518,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
 	c.LabelAudiencesApi = (*LabelAudiencesApiService)(&c.common)
 	c.LabelsApi = (*LabelsApiService)(&c.common)
+	c.LandingPageSellStrategyApi = (*LandingPageSellStrategyApiService)(&c.common)
 	c.LeadCluesApi = (*LeadCluesApiService)(&c.common)
 	c.LeadsCallApi = (*LeadsCallApiService)(&c.common)
 	c.LeadsCallRecordApi = (*LeadsCallRecordApiService)(&c.common)

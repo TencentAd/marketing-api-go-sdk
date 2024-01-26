@@ -76,4 +76,5 @@ type RevisedAdcreativeElements struct {
 	MdpaDescComponentOptions         *[]MdpaDescComponentOption         `json:"mdpa_desc_component_options,omitempty"`
 	ListSublinkComponentOptions      *[]ListSublinkComponentOption      `json:"list_sublink_component_options,omitempty"`
 	WechatChannelsCoverImgShowType   WechatChannelsCoverImgShowType     `json:"wechat_channels_cover_img_show_type,omitempty"`
+	MiniCardLink                     *AdCreativeMiniCardLink            `json:"mini_card_link,omitempty"`
 }

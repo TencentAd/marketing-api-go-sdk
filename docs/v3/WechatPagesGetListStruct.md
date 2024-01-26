@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **PageElements** | [**[]PageElementsStruct**](page_elements_struct.md) |  | [optional] [default to null]
 **ShareContentSpec** | [***ShareContentSpec**](share_content_spec.md) |  | [optional] [default to null]
 **PreviewUrl** | **string** |  | [optional] [default to null]
-**PageType** | [***PageTypeRead**](PageTypeRead.md) |  | [optional] [default to null]
+**PageType** | [***PageType**](PageType.md) |  | [optional] [default to null]
 **SourceType** | [***WechatPageSourceType**](WechatPageSourceType.md) |  | [optional] [default to null]
 **VideoResourceStatus** | [***WechatPageResourceStatus**](WechatPageResourceStatus.md) |  | [optional] [default to null]
 **CanvasType** | [***CanvasType**](CanvasType.md) |  | [optional] [default to null]

@@ -29,4 +29,5 @@ type DynamicLandingPageInfo struct {
 	UnionMarketSpec               *UnionMarketSpec         `json:"union_market_spec,omitempty"`
 	LinkNameText                  *string                  `json:"link_name_text,omitempty"`
 	ButtonTextJumpInfo            *LandingPageStructure    `json:"button_text_jump_info,omitempty"`
+	ChannelsShopProductSpec       *ChannelsShopProductSpec `json:"channels_shop_product_spec,omitempty"`
 }

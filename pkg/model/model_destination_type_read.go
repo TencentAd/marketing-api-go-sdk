@@ -57,7 +57,7 @@ const (
 	DestinationTypeRead_H5_PROFILE                      DestinationTypeRead = "PAGE_TYPE_H5_PROFILE"
 	DestinationTypeRead_SEARCH_BRAND_AREA               DestinationTypeRead = "PAGE_TYPE_SEARCH_BRAND_AREA"
 	DestinationTypeRead_WECHAT_CHANNELS_PROFILE         DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
+	DestinationTypeRead_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
-	DestinationTypeRead_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 )

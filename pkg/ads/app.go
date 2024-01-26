@@ -353,6 +353,10 @@ func (c *SDKClient) Labels() *api.LabelsApiService {
 	return c.Client.LabelsApi
 }
 
+func (c *SDKClient) LandingPageSellStrategy() *api.LandingPageSellStrategyApiService {
+	return c.Client.LandingPageSellStrategyApi
+}
+
 func (c *SDKClient) LeadClues() *api.LeadCluesApiService {
 	return c.Client.LeadCluesApi
 }
