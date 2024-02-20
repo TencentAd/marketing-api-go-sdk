@@ -97,5 +97,6 @@ const (
 	IntOptimizationGoal_LIVE_STREAM_DURATION_1_MIN             IntOptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN"
 	IntOptimizationGoal_LIVE_STREAM_INTERACTION                IntOptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION"
 	IntOptimizationGoal_ECOMMERCE_CANCEL_ORDER                 IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER"
+	IntOptimizationGoal_REGULAR_PRICE_COURSE                   IntOptimizationGoal = "OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

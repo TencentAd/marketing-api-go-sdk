@@ -50,6 +50,10 @@ type APIClient struct {
 
 	AdDiagnosisApi *AdDiagnosisApiService
 
+	AdcreativePreviewsApi *AdcreativePreviewsApiService
+
+	AdcreativePreviewsQrcodeApi *AdcreativePreviewsQrcodeApiService
+
 	AdgroupNegativewordsApi *AdgroupNegativewordsApiService
 
 	AdgroupsApi *AdgroupsApiService
@@ -85,6 +89,8 @@ type APIClient struct {
 	DailyBalanceReportApi *DailyBalanceReportApiService
 
 	DailyReportsApi *DailyReportsApiService
+
+	DynamicCreativeReviewResultsApi *DynamicCreativeReviewResultsApiService
 
 	DynamicCreativesApi *DynamicCreativesApiService
 
@@ -178,6 +184,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 
 	// API Services
 	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
+	c.AdcreativePreviewsApi = (*AdcreativePreviewsApiService)(&c.common)
+	c.AdcreativePreviewsQrcodeApi = (*AdcreativePreviewsQrcodeApiService)(&c.common)
 	c.AdgroupNegativewordsApi = (*AdgroupNegativewordsApiService)(&c.common)
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
@@ -196,6 +204,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CustomAudiencesApi = (*CustomAudiencesApiService)(&c.common)
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
+	c.DynamicCreativeReviewResultsApi = (*DynamicCreativeReviewResultsApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
 	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)

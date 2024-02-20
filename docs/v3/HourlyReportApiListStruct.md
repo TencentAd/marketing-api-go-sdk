@@ -809,6 +809,7 @@ Name | Type | Description | Notes
 **InviteFriendsToWatchFireworksPv** | **int64** |  | [optional] [default to null]
 **ClkBlessingCardPv** | **int64** |  | [optional] [default to null]
 **ClkShortcutMenusPv** | **int64** |  | [optional] [default to null]
+**ChannelsDetailBtnPv** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]

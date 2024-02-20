@@ -735,6 +735,7 @@ Name | Type | Description | Notes
 **ClkRedpocketBtnSubscribePv** | **int64** |  | [optional] [default to null]
 **InviteFriendsToWatchFireworksPv** | **int64** |  | [optional] [default to null]
 **ClkBlessingCardPv** | **int64** |  | [optional] [default to null]
+**ChannelsDetailBtnPv** | **int64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

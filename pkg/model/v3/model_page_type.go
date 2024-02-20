@@ -45,6 +45,7 @@ const (
 	PageType_WECHAT_CHANNELS_PROFILE        PageType = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	PageType_H5                             PageType = "PAGE_TYPE_H5"
 	PageType_WECHAT_CHANNELS_FOLLOW_ACCOUNT PageType = "PAGE_TYPE_WECHAT_CHANNELS_FOLLOW_ACCOUNT"
+	PageType_WECHAT_CHANNELS_SHOP_PRODUCT   PageType = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	PageType_OFFICIAL                       PageType = "PAGE_TYPE_OFFICIAL"
 	PageType_NOT_USED                       PageType = "PAGE_TYPE_NOT_USED"
 )

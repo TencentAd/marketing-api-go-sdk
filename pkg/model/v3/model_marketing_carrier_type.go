@@ -26,4 +26,5 @@ const (
 	MarketingCarrierType_MINI_PROGRAM_WECHAT              MarketingCarrierType = "MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT"
 	MarketingCarrierType_APP_QUICK_APP                    MarketingCarrierType = "MARKETING_CARRIER_TYPE_APP_QUICK_APP"
 	MarketingCarrierType_JUMP_PAGE2                       MarketingCarrierType = "MARKETING_CARRIER_TYPE_JUMP_PAGE2"
+	MarketingCarrierType_MINI_PROGRAM_WECHAT2             MarketingCarrierType = "MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT2"
 )

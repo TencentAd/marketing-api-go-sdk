@@ -50,4 +50,6 @@ const (
 	MarketingTargetType_FURNITURE_AND_BUILDING_MATERIALS MarketingTargetType = "MARKETING_TARGET_TYPE_FURNITURE_AND_BUILDING_MATERIALS"
 	MarketingTargetType_EXHIBITION_SALES                 MarketingTargetType = "MARKETING_TARGET_TYPE_EXHIBITION_SALES"
 	MarketingTargetType_MEDICINE_INDUSTRY_COMMERCIAL     MarketingTargetType = "MARKETING_TARGET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL"
+	MarketingTargetType_FINANCE                          MarketingTargetType = "MARKETING_TARGET_TYPE_FINANCE"
+	MarketingTargetType_LOCAL_STORE_PACKAGE              MarketingTargetType = "MARKETING_TARGET_TYPE_LOCAL_STORE_PACKAGE"
 )

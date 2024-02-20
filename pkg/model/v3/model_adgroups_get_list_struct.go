@@ -75,4 +75,6 @@ type AdgroupsGetListStruct struct {
 	ForwardLinkAssist                 OptimizationGoal            `json:"forward_link_assist,omitempty"`
 	ConversionName                    *string                     `json:"conversion_name,omitempty"`
 	AutoAcquisitionStatus             AutoAcquisitionStatus       `json:"auto_acquisition_status,omitempty"`
+	AutoAcquisitionStatusText         *string                     `json:"auto_acquisition_status_text,omitempty"`
+	AutoAcquisitionStatusMessage      *string                     `json:"auto_acquisition_status_message,omitempty"`
 }

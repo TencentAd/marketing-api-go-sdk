@@ -743,6 +743,7 @@ type TargetReportApiListStruct struct {
 	ClkRedpocketBtnSubscribePv                 *int64   `json:"clk_redpocket_btn_subscribe_pv,omitempty"`
 	InviteFriendsToWatchFireworksPv            *int64   `json:"invite_friends_to_watch_fireworks_pv,omitempty"`
 	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
+	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

@@ -19,4 +19,5 @@ const (
 	ReportHourlyLevel_DYNAMIC_CREATIVE ReportHourlyLevel = "REPORT_LEVEL_DYNAMIC_CREATIVE"
 	ReportHourlyLevel_CHANNEL          ReportHourlyLevel = "REPORT_LEVEL_CHANNEL"
 	ReportHourlyLevel_BIDWORD          ReportHourlyLevel = "REPORT_LEVEL_BIDWORD"
+	ReportHourlyLevel_ADVERTISER_TOTAL ReportHourlyLevel = "REPORT_LEVEL_ADVERTISER_TOTAL"
 )

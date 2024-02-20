@@ -17,4 +17,5 @@ type KeywordLandingPageInfo struct {
 	DeepLinkSpec      *DeepLinkSpecStruct      `json:"deep_link_spec,omitempty"`
 	UniversalLinkSpec *UniversalLinkSpecStruct `json:"universal_link_spec,omitempty"`
 	XijingSpec        *XijingSpecStruct        `json:"xijing_spec,omitempty"`
+	LingqueSpec       *LingqueSpecStruct       `json:"lingque_spec,omitempty"`
 }

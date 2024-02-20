@@ -17,6 +17,14 @@ func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
 	return c.Client.AdDiagnosisApi
 }
 
+func (c *SDKClient) AdcreativePreviews() *api.AdcreativePreviewsApiService {
+	return c.Client.AdcreativePreviewsApi
+}
+
+func (c *SDKClient) AdcreativePreviewsQrcode() *api.AdcreativePreviewsQrcodeApiService {
+	return c.Client.AdcreativePreviewsQrcodeApi
+}
+
 func (c *SDKClient) AdgroupNegativewords() *api.AdgroupNegativewordsApiService {
 	return c.Client.AdgroupNegativewordsApi
 }
@@ -87,6 +95,10 @@ func (c *SDKClient) DailyBalanceReport() *api.DailyBalanceReportApiService {
 
 func (c *SDKClient) DailyReports() *api.DailyReportsApiService {
 	return c.Client.DailyReportsApi
+}
+
+func (c *SDKClient) DynamicCreativeReviewResults() *api.DynamicCreativeReviewResultsApiService {
+	return c.Client.DynamicCreativeReviewResultsApi
 }
 
 func (c *SDKClient) DynamicCreatives() *api.DynamicCreativesApiService {
