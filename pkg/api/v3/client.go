@@ -68,6 +68,8 @@ type APIClient struct {
 
 	AudienceGrantRelationsApi *AudienceGrantRelationsApiService
 
+	BatchRequestsApi *BatchRequestsApiService
+
 	BidwordApi *BidwordApiService
 
 	BidwordFlowApi *BidwordFlowApiService
@@ -193,6 +195,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
+	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
 	c.BidwordApi = (*BidwordApiService)(&c.common)
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)

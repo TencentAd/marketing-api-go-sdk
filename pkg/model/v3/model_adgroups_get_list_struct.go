@@ -13,14 +13,12 @@ package model
 type AdgroupsGetListStruct struct {
 	Targeting                         *ReadTargetingSetting       `json:"targeting,omitempty"`
 	AdgroupId                         *int64                      `json:"adgroup_id,omitempty"`
-	TargetingId                       *int64                      `json:"targeting_id,omitempty"`
 	TargetingTranslation              *string                     `json:"targeting_translation,omitempty"`
 	ConfiguredStatus                  ConfiguredStatus            `json:"configured_status,omitempty"`
 	CreatedTime                       *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime                  *int64                      `json:"last_modified_time,omitempty"`
 	IsDeleted                         *bool                       `json:"is_deleted,omitempty"`
 	SystemStatus                      CalcAdGroupStatus           `json:"system_status,omitempty"`
-	AccountId                         *int64                      `json:"account_id,omitempty"`
 	AdgroupName                       *string                     `json:"adgroup_name,omitempty"`
 	MarketingGoal                     MarketingGoal               `json:"marketing_goal,omitempty"`
 	MarketingSubGoal                  MarketingSubGoal            `json:"marketing_sub_goal,omitempty"`

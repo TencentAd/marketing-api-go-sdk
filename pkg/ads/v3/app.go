@@ -53,6 +53,10 @@ func (c *SDKClient) AudienceGrantRelations() *api.AudienceGrantRelationsApiServi
 	return c.Client.AudienceGrantRelationsApi
 }
 
+func (c *SDKClient) BatchRequests() *api.BatchRequestsApiService {
+	return c.Client.BatchRequestsApi
+}
+
 func (c *SDKClient) Bidword() *api.BidwordApiService {
 	return c.Client.BidwordApi
 }

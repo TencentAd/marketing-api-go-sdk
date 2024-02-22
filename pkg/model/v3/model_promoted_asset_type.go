@@ -54,4 +54,9 @@ const (
 	PromotedAssetType_LOCAL_STORE_PACKAGE              PromotedAssetType = "PROMOTED_ASSET_TYPE_LOCAL_STORE_PACKAGE"
 	PromotedAssetType_CATERING_AND_LEISURE             PromotedAssetType = "PROMOTED_ASSET_TYPE_CATERING_AND_LEISURE"
 	PromotedAssetType_CHAIN_RESTAURANT                 PromotedAssetType = "PROMOTED_ASSET_TYPE_CHAIN_RESTAURANT"
+	PromotedAssetType_COMMODITY_SET                    PromotedAssetType = "PROMOTED_ASSET_TYPE_COMMODITY_SET"
+	PromotedAssetType_TOURIST_TRAVEL_ROUTE             PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_TRAVEL_ROUTE"
+	PromotedAssetType_TOURIST_CRUISE_LINE              PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_CRUISE_LINE"
+	PromotedAssetType_TOURIST_HOTEL_SERVICE            PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_HOTEL_SERVICE"
+	PromotedAssetType_TOURIST_AIRLINE_TICKETS          PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_AIRLINE_TICKETS"
 )

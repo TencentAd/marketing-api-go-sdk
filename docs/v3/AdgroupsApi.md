@@ -8,6 +8,9 @@ Method | HTTP request | Description
 [**AdgroupsDelete**](AdgroupsApi.md#AdgroupsDelete) | **Post** /adgroups/delete | 删除广告组
 [**AdgroupsGet**](AdgroupsApi.md#AdgroupsGet) | **Get** /adgroups/get | 获取广告组
 [**AdgroupsUpdate**](AdgroupsApi.md#AdgroupsUpdate) | **Post** /adgroups/update | 更新广告组
+[**AdgroupsUpdateBidAmount**](AdgroupsApi.md#AdgroupsUpdateBidAmount) | **Post** /adgroups/update_bid_amount | 更新广告组出价
+[**AdgroupsUpdateConfiguredStatus**](AdgroupsApi.md#AdgroupsUpdateConfiguredStatus) | **Post** /adgroups/update_configured_status | 更新广告组状态
+[**AdgroupsUpdateDailyBudget**](AdgroupsApi.md#AdgroupsUpdateDailyBudget) | **Post** /adgroups/update_daily_budget | 更新广告组日限额信息
 
 
 # **AdgroupsAdd**
@@ -115,6 +118,84 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AdgroupsUpdateResponse**](AdgroupsUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **AdgroupsUpdateBidAmount**
+> AdgroupsUpdateBidAmountResponse AdgroupsUpdateBidAmount(ctx, data)
+更新广告组出价
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**AdgroupsUpdateBidAmountRequest**](AdgroupsUpdateBidAmountRequest.md)|  | 
+
+### Return type
+
+[**AdgroupsUpdateBidAmountResponse**](AdgroupsUpdateBidAmountResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **AdgroupsUpdateConfiguredStatus**
+> AdgroupsUpdateConfiguredStatusResponse AdgroupsUpdateConfiguredStatus(ctx, data)
+更新广告组状态
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**AdgroupsUpdateConfiguredStatusRequest**](AdgroupsUpdateConfiguredStatusRequest.md)|  | 
+
+### Return type
+
+[**AdgroupsUpdateConfiguredStatusResponse**](AdgroupsUpdateConfiguredStatusResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **AdgroupsUpdateDailyBudget**
+> AdgroupsUpdateDailyBudgetResponse AdgroupsUpdateDailyBudget(ctx, data)
+更新广告组日限额信息
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**AdgroupsUpdateDailyBudgetRequest**](AdgroupsUpdateDailyBudgetRequest.md)|  | 
+
+### Return type
+
+[**AdgroupsUpdateDailyBudgetResponse**](AdgroupsUpdateDailyBudgetResponse.md)
 
 ### Authorization
 

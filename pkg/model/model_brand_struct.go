@@ -11,7 +11,8 @@ package model
 
 // 品牌形象结构
 type BrandStruct struct {
-	BrandImg         *string `json:"brand_img,omitempty"`
-	BrandName        *string `json:"brand_name,omitempty"`
-	BrandDescription *string `json:"brand_description,omitempty"`
+	BrandImg         *string                 `json:"brand_img,omitempty"`
+	BrandName        *string                 `json:"brand_name,omitempty"`
+	BrandDescription *string                 `json:"brand_description,omitempty"`
+	MainJumpInfo     *[]LandingPageStructure `json:"main_jump_info,omitempty"`
 }

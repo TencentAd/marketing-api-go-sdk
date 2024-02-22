@@ -10,13 +10,14 @@
 package model
 
 type ReportAdUnionRequest struct {
-	Filtering *[]FilteringStruct `json:"filtering,omitempty"`
-	DateRange *DateRange         `json:"date_range,omitempty"`
-	GroupBy   *[]string          `json:"group_by,omitempty"`
-	OrderBy   *[]OrderByStruct   `json:"order_by,omitempty"`
-	Page      *int64             `json:"page,omitempty"`
-	PageSize  *int64             `json:"page_size,omitempty"`
-	Fields    *[]string          `json:"fields,omitempty"`
-	Async     *int64             `json:"async,omitempty"`
-	AccountId *int64             `json:"account_id,omitempty"`
+	Filtering                 *[]FilteringStruct `json:"filtering,omitempty"`
+	DateRange                 *DateRange         `json:"date_range,omitempty"`
+	GroupBy                   *[]string          `json:"group_by,omitempty"`
+	OrderBy                   *[]OrderByStruct   `json:"order_by,omitempty"`
+	Page                      *int64             `json:"page,omitempty"`
+	PageSize                  *int64             `json:"page_size,omitempty"`
+	Fields                    *[]string          `json:"fields,omitempty"`
+	Async                     *int64             `json:"async,omitempty"`
+	AdqAccountsUpgradeEnabled *bool              `json:"adq_accounts_upgrade_enabled,omitempty"`
+	AccountId                 *int64             `json:"account_id,omitempty"`
 }

@@ -11,7 +11,8 @@ package model
 
 // 品牌形象
 type AdCreativeBrand struct {
-	BrandName        *string `json:"brand_name,omitempty"`
-	BrandImg         *string `json:"brand_img,omitempty"`
-	BrandDescription *string `json:"brand_description,omitempty"`
+	BrandName        *string                 `json:"brand_name,omitempty"`
+	BrandImg         *string                 `json:"brand_img,omitempty"`
+	BrandDescription *string                 `json:"brand_description,omitempty"`
+	MainJumpInfo     *[]LandingPageStructure `json:"main_jump_info,omitempty"`
 }

@@ -52,4 +52,11 @@ const (
 	MarketingTargetType_MEDICINE_INDUSTRY_COMMERCIAL     MarketingTargetType = "MARKETING_TARGET_TYPE_MEDICINE_INDUSTRY_COMMERCIAL"
 	MarketingTargetType_FINANCE                          MarketingTargetType = "MARKETING_TARGET_TYPE_FINANCE"
 	MarketingTargetType_LOCAL_STORE_PACKAGE              MarketingTargetType = "MARKETING_TARGET_TYPE_LOCAL_STORE_PACKAGE"
+	MarketingTargetType_CATERING_AND_LEISURE             MarketingTargetType = "MARKETING_TARGET_TYPE_CATERING_AND_LEISURE"
+	MarketingTargetType_CHAIN_RESTAURANT                 MarketingTargetType = "MARKETING_TARGET_TYPE_CHAIN_RESTAURANT"
+	MarketingTargetType_COMMODITY_SET                    MarketingTargetType = "MARKETING_TARGET_TYPE_COMMODITY_SET"
+	MarketingTargetType_TOURIST_TRAVEL_ROUTE             MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_TRAVEL_ROUTE"
+	MarketingTargetType_TOURIST_CRUISE_LINE              MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_CRUISE_LINE"
+	MarketingTargetType_TOURIST_HOTEL_SERVICE            MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_HOTEL_SERVICE"
+	MarketingTargetType_TOURIST_AIRLINE_TICKETS          MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_AIRLINE_TICKETS"
 )

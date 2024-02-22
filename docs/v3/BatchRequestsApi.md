@@ -1,0 +1,35 @@
+# TencentAds\BatchRequestsApi
+
+All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**BatchRequestsAdd**](BatchRequestsApi.md#BatchRequestsAdd) | **Post** /batch_requests/add | 创建批量请求
+
+
+# **BatchRequestsAdd**
+> BatchRequestsAddResponse BatchRequestsAdd(ctx, data)
+创建批量请求
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**BatchRequestsAddRequest**](BatchRequestsAddRequest.md)|  | 
+
+### Return type
+
+[**BatchRequestsAddResponse**](BatchRequestsAddResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
