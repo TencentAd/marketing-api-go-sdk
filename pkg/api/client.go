@@ -264,8 +264,6 @@ type APIClient struct {
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
 
-	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
-
 	OuterCluesApi *OuterCluesApiService
 
 	OuterCluesContactApi *OuterCluesContactApiService
@@ -541,7 +539,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
-	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OuterCluesApi = (*OuterCluesApiService)(&c.common)
 	c.OuterCluesContactApi = (*OuterCluesContactApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)

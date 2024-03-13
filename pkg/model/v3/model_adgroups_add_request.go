@@ -54,4 +54,7 @@ type AdgroupsAddRequest struct {
 	PrioritySiteSet                   *[]string                   `json:"priority_site_set,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch              `json:"ecom_pkam_switch,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal            `json:"forward_link_assist,omitempty"`
+	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
+	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
+	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
 }

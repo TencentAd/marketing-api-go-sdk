@@ -11,5 +11,6 @@ package model
 
 // 电话组件
 type PhoneComponent struct {
-	Value *PhoneStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *PhoneStruct `json:"value,omitempty"`
 }

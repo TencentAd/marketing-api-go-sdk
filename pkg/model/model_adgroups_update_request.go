@@ -45,6 +45,8 @@ type AdgroupsUpdateRequest struct {
 	AutoAcquisitionBudget             *int64                           `json:"auto_acquisition_budget,omitempty"`
 	AutoDerivedCreativeEnabled        *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	AutoDerivedCreativeStatus         AutoDerivedCreativeStatus        `json:"auto_derived_creative_status,omitempty"`
+	LiveVideoMode                     LiveVideoMode                    `json:"live_video_mode,omitempty"`
+	LiveVideoSubMode                  LiveVideoSubMode                 `json:"live_video_sub_mode,omitempty"`
 	UserActionSets                    *[]UserActionSetStruct           `json:"user_action_sets,omitempty"`
 	DynamicAdSpec                     *DynamicAdSpec                   `json:"dynamic_ad_spec,omitempty"`
 	CustomAdgroupTag                  *[]string                        `json:"custom_adgroup_tag,omitempty"`

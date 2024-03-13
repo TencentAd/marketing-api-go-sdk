@@ -75,4 +75,7 @@ type AdgroupsGetListStruct struct {
 	AutoAcquisitionStatus             AutoAcquisitionStatus       `json:"auto_acquisition_status,omitempty"`
 	AutoAcquisitionStatusText         *string                     `json:"auto_acquisition_status_text,omitempty"`
 	AutoAcquisitionStatusMessage      *string                     `json:"auto_acquisition_status_message,omitempty"`
+	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
+	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
+	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
 }

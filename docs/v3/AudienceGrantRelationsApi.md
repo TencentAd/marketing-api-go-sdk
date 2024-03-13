@@ -52,7 +52,7 @@ Optional parameters are passed through a pointer to a AudienceGrantRelationsApiA
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **filtering** | [**optional.Interface of []SingleFilter**](SingleFilter.md)|  | 
+ **filtering** | [**optional.Interface of []AudienceGrantRelationsGetSingleFilter**](AudienceGrantRelationsGetSingleFilter.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 

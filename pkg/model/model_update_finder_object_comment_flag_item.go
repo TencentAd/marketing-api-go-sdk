@@ -15,4 +15,5 @@ type UpdateFinderObjectCommentFlagItem struct {
 	OpType       SetObjectCommentFlagOpType `json:"op_type,omitempty"`
 	AccountId    *int64                     `json:"account_id,omitempty"`
 	CommentId    *string                    `json:"comment_id,omitempty"`
+	CommentLevel *int64                     `json:"comment_level,omitempty"`
 }

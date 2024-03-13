@@ -11,5 +11,6 @@ package model
 
 // 标签组件
 type LabelComponent struct {
-	Value *LabelStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *LabelStruct `json:"value,omitempty"`
 }

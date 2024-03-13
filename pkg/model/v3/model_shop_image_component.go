@@ -11,5 +11,6 @@ package model
 
 // 卖点图组件
 type ShopImageComponent struct {
-	Value *ShopImageStruct `json:"value,omitempty"`
+	ComponentId *int64           `json:"component_id,omitempty"`
+	Value       *ShopImageStruct `json:"value,omitempty"`
 }

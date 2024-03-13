@@ -51,6 +51,8 @@ Name | Type | Description | Notes
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
 **SmartBidType** | [***SmartBidType**](SmartBidType.md) |  | [optional] [default to null]
 **MarketingScene** | [***MarketingScene**](MarketingScene.md) |  | [optional] [default to null]
+**LiveVideoMode** | [***LiveVideoMode**](LiveVideoMode.md) |  | [optional] [default to null]
+**LiveVideoSubMode** | [***LiveVideoSubMode**](LiveVideoSubMode.md) |  | [optional] [default to null]
 **CustomAdgroupTag** | **[]string** |  | [optional] [default to null]
 **SmartTargeting** | [***SmartTargeting**](smart_targeting.md) |  | [optional] [default to null]
 **DynamicCreativeIdSet** | **[]int64** |  | [optional] [default to null]

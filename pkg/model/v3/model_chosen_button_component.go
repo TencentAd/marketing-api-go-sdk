@@ -11,5 +11,6 @@ package model
 
 // 选择按钮组件
 type ChosenButtonComponent struct {
-	Value *ChosenButtonStruct `json:"value,omitempty"`
+	ComponentId *int64              `json:"component_id,omitempty"`
+	Value       *ChosenButtonStruct `json:"value,omitempty"`
 }

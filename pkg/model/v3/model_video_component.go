@@ -11,5 +11,6 @@ package model
 
 // 视频组件
 type VideoComponent struct {
-	Value *VideoStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *VideoStruct `json:"value,omitempty"`
 }

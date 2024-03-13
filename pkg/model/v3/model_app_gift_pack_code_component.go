@@ -11,5 +11,6 @@ package model
 
 // 礼包码组件
 type AppGiftPackCodeComponent struct {
-	Value *AppGiftPackCodeStruct `json:"value,omitempty"`
+	ComponentId *int64                 `json:"component_id,omitempty"`
+	Value       *AppGiftPackCodeStruct `json:"value,omitempty"`
 }

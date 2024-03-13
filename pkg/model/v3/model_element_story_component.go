@@ -11,5 +11,6 @@ package model
 
 // 集装箱创意组合组件
 type ElementStoryComponent struct {
-	Value *ElementStoryStruct `json:"value,omitempty"`
+	ComponentId *int64              `json:"component_id,omitempty"`
+	Value       *ElementStoryStruct `json:"value,omitempty"`
 }

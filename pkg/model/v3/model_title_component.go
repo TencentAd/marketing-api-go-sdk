@@ -11,5 +11,6 @@ package model
 
 // 标题组件
 type TitleComponent struct {
-	Value *TitleStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *TitleStruct `json:"value,omitempty"`
 }

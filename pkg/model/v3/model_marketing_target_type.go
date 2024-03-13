@@ -59,4 +59,13 @@ const (
 	MarketingTargetType_TOURIST_CRUISE_LINE              MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_CRUISE_LINE"
 	MarketingTargetType_TOURIST_HOTEL_SERVICE            MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_HOTEL_SERVICE"
 	MarketingTargetType_TOURIST_AIRLINE_TICKETS          MarketingTargetType = "MARKETING_TARGET_TYPE_TOURIST_AIRLINE_TICKETS"
+	MarketingTargetType_LOCAL_STORE_COMBINE_WITH_PRODUCT MarketingTargetType = "MARKETING_TARGET_TYPE_LOCAL_STORE_COMBINE_WITH_PRODUCT"
+	MarketingTargetType_ACTIVITY                         MarketingTargetType = "MARKETING_TARGET_TYPE_ACTIVITY"
+	MarketingTargetType_STORE                            MarketingTargetType = "MARKETING_TARGET_TYPE_STORE"
+	MarketingTargetType_MINI_GAME_QQ                     MarketingTargetType = "MARKETING_TARGET_TYPE_MINI_GAME_QQ"
+	MarketingTargetType_APP_GAME_ANDROID                 MarketingTargetType = "MARKETING_TARGET_TYPE_APP_GAME_ANDROID"
+	MarketingTargetType_APP_GAME_IOS                     MarketingTargetType = "MARKETING_TARGET_TYPE_APP_GAME_IOS"
+	MarketingTargetType_PC_GAME                          MarketingTargetType = "MARKETING_TARGET_TYPE_PC_GAME"
+	MarketingTargetType_WECHAT_WORK                      MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_WORK"
+	MarketingTargetType_LIVE_STREAM_ROOM                 MarketingTargetType = "MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM"
 )

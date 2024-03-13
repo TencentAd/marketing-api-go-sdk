@@ -11,5 +11,6 @@ package model
 
 // 表单组件
 type FormComponent struct {
-	Value *FormStruct `json:"value,omitempty"`
+	ComponentId *int64      `json:"component_id,omitempty"`
+	Value       *FormStruct `json:"value,omitempty"`
 }

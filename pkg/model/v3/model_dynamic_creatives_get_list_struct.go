@@ -11,22 +11,23 @@ package model
 
 // 返回结构
 type DynamicCreativesGetListStruct struct {
-	AdgroupId                 *int64                `json:"adgroup_id,omitempty"`
-	DynamicCreativeId         *int64                `json:"dynamic_creative_id,omitempty"`
-	DynamicCreativeName       *string               `json:"dynamic_creative_name,omitempty"`
-	CreativeTemplateId        *int64                `json:"creative_template_id,omitempty"`
-	DeliveryMode              DeliveryMode          `json:"delivery_mode,omitempty"`
-	DynamicCreativeType       DynamicCreativeType   `json:"dynamic_creative_type,omitempty"`
-	CreativeComponents        *CreativeComponents   `json:"creative_components,omitempty"`
-	ImpressionTrackingUrl     *string               `json:"impression_tracking_url,omitempty"`
-	ClickTrackingUrl          *string               `json:"click_tracking_url,omitempty"`
-	PageTrackUrl              *string               `json:"page_track_url,omitempty"`
-	ConfiguredStatus          ConfiguredStatus      `json:"configured_status,omitempty"`
-	EnableBreakthroughSiteset *bool                 `json:"enable_breakthrough_siteset,omitempty"`
-	IsDeleted                 *bool                 `json:"is_deleted,omitempty"`
-	SystemStatus              DynamicCreativeStatus `json:"system_status,omitempty"`
-	CreatedTime               *int64                `json:"created_time,omitempty"`
-	LastModifiedTime          *int64                `json:"last_modified_time,omitempty"`
-	DynamicCreativeStatusInfo *[]DcInfoStruct       `json:"dynamic_creative_status_info,omitempty"`
-	SystemStatusExplanation   *string               `json:"system_status_explanation,omitempty"`
+	AdgroupId                  *int64                      `json:"adgroup_id,omitempty"`
+	DynamicCreativeId          *int64                      `json:"dynamic_creative_id,omitempty"`
+	DynamicCreativeName        *string                     `json:"dynamic_creative_name,omitempty"`
+	CreativeTemplateId         *int64                      `json:"creative_template_id,omitempty"`
+	DeliveryMode               DeliveryMode                `json:"delivery_mode,omitempty"`
+	DynamicCreativeType        DynamicCreativeType         `json:"dynamic_creative_type,omitempty"`
+	CreativeComponents         *CreativeComponents         `json:"creative_components,omitempty"`
+	ImpressionTrackingUrl      *string                     `json:"impression_tracking_url,omitempty"`
+	ClickTrackingUrl           *string                     `json:"click_tracking_url,omitempty"`
+	PageTrackUrl               *string                     `json:"page_track_url,omitempty"`
+	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
+	EnableBreakthroughSiteset  *bool                       `json:"enable_breakthrough_siteset,omitempty"`
+	IsDeleted                  *bool                       `json:"is_deleted,omitempty"`
+	SystemStatus               DynamicCreativeStatus       `json:"system_status,omitempty"`
+	CreatedTime                *int64                      `json:"created_time,omitempty"`
+	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
+	DynamicCreativeStatusInfo  *[]DcInfoStruct             `json:"dynamic_creative_status_info,omitempty"`
+	SystemStatusExplanation    *string                     `json:"system_status_explanation,omitempty"`
+	MarketingAssetVerification *MarketingAssetVerification `json:"marketing_asset_verification,omitempty"`
 }

@@ -11,5 +11,6 @@ package model
 
 // 行动按钮组件
 type ActionButtonComponent struct {
-	Value *ActionButtonStruct `json:"value,omitempty"`
+	ComponentId *int64              `json:"component_id,omitempty"`
+	Value       *ActionButtonStruct `json:"value,omitempty"`
 }

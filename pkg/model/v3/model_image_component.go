@@ -11,5 +11,6 @@ package model
 
 // 单图组件
 type ImageComponent struct {
-	Value *ImageStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *ImageStruct `json:"value,omitempty"`
 }

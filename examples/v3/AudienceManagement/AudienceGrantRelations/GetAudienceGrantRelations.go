@@ -38,7 +38,7 @@ func (e *AudienceGrantRelationsGetExample) Init() {
 	e.AccountId = int64(0)
 	e.AudienceGrantRelationsGetOpts = &api.AudienceGrantRelationsGetOpts{
 
-		Filtering: optional.NewInterface([]model.SingleFilter{{
+		Filtering: optional.NewInterface([]model.AudienceGrantRelationsGetSingleFilter{{
 			Field:    "audience_id",
 			Operator: model.FilterOperator_IN,
 			Values:   &[]int64{int64(0)},

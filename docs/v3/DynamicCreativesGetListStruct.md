@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **DynamicCreativeStatusInfo** | [**[]DcInfoStruct**](dc_info_struct.md) |  | [optional] [default to null]
 **SystemStatusExplanation** | **string** |  | [optional] [default to null]
+**MarketingAssetVerification** | [***MarketingAssetVerification**](marketing_asset_verification.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

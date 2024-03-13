@@ -11,11 +11,12 @@ package model
 
 // 简版原生页相关信息
 type SimpleCanvasWechatSpec struct {
-	SimpleCanvasWebviewType     SimpleCanvasWebviewType `json:"simple_canvas_webview_type,omitempty"`
-	SimpleCanvasWebviewPageId   *string                 `json:"simple_canvas_webview_page_id,omitempty"`
-	SimpleCanvasSubType         SimpleCanvasSubType     `json:"simple_canvas_sub_type,omitempty"`
-	SimpleCanvasShareTitle      *string                 `json:"simple_canvas_share_title,omitempty"`
-	SimpleCanvasShareDesc       *string                 `json:"simple_canvas_share_desc,omitempty"`
-	SimpleCanvasWebviewUrl      *string                 `json:"simple_canvas_webview_url,omitempty"`
-	WechatChannelsLiveReserveId *string                 `json:"wechat_channels_live_reserve_id,omitempty"`
+	SimpleCanvasWebviewType           SimpleCanvasWebviewType `json:"simple_canvas_webview_type,omitempty"`
+	SimpleCanvasWebviewPageId         *string                 `json:"simple_canvas_webview_page_id,omitempty"`
+	SimpleCanvasSubType               SimpleCanvasSubType     `json:"simple_canvas_sub_type,omitempty"`
+	SimpleCanvasShareTitle            *string                 `json:"simple_canvas_share_title,omitempty"`
+	SimpleCanvasShareDesc             *string                 `json:"simple_canvas_share_desc,omitempty"`
+	SimpleCanvasWebviewUrl            *string                 `json:"simple_canvas_webview_url,omitempty"`
+	WechatChannelsLiveReserveId       *string                 `json:"wechat_channels_live_reserve_id,omitempty"`
+	MpaSimpleCanvasWebviewWildcardUrl *string                 `json:"mpa_simple_canvas_webview_wildcard_url,omitempty"`
 }

@@ -11,5 +11,6 @@ package model
 
 // 弹幕组件
 type BarrageComponent struct {
-	Value *BarrageStruct `json:"value,omitempty"`
+	ComponentId *int64         `json:"component_id,omitempty"`
+	Value       *BarrageStruct `json:"value,omitempty"`
 }

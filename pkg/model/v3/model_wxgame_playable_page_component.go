@@ -11,5 +11,6 @@ package model
 
 // 小游戏试玩页组件
 type WxgamePlayablePageComponent struct {
-	Value *WxgamePlayablePageStruct `json:"value,omitempty"`
+	ComponentId *int64                    `json:"component_id,omitempty"`
+	Value       *WxgamePlayablePageStruct `json:"value,omitempty"`
 }

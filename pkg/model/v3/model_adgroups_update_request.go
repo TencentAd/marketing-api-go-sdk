@@ -39,4 +39,6 @@ type AdgroupsUpdateRequest struct {
 	FlowOptimizationEnabled           *bool                   `json:"flow_optimization_enabled,omitempty"`
 	PoiList                           *[]string               `json:"poi_list,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch          `json:"ecom_pkam_switch,omitempty"`
+	CostConstraintScene               CostConstraintScene     `json:"cost_constraint_scene,omitempty"`
+	CustomCostCap                     *int64                  `json:"custom_cost_cap,omitempty"`
 }

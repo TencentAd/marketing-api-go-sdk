@@ -11,5 +11,6 @@ package model
 
 // 文字链组件
 type TextLinkComponent struct {
-	Value *TextLinkStruct `json:"value,omitempty"`
+	ComponentId *int64          `json:"component_id,omitempty"`
+	Value       *TextLinkStruct `json:"value,omitempty"`
 }

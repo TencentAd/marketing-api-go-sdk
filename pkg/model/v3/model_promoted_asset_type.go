@@ -59,4 +59,13 @@ const (
 	PromotedAssetType_TOURIST_CRUISE_LINE              PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_CRUISE_LINE"
 	PromotedAssetType_TOURIST_HOTEL_SERVICE            PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_HOTEL_SERVICE"
 	PromotedAssetType_TOURIST_AIRLINE_TICKETS          PromotedAssetType = "PROMOTED_ASSET_TYPE_TOURIST_AIRLINE_TICKETS"
+	PromotedAssetType_LOCAL_STORE_COMBINE_WITH_PRODUCT PromotedAssetType = "PROMOTED_ASSET_TYPE_LOCAL_STORE_COMBINE_WITH_PRODUCT"
+	PromotedAssetType_ACTIVITY                         PromotedAssetType = "PROMOTED_ASSET_TYPE_ACTIVITY"
+	PromotedAssetType_STORE                            PromotedAssetType = "PROMOTED_ASSET_TYPE_STORE"
+	PromotedAssetType_MINI_GAME_QQ                     PromotedAssetType = "PROMOTED_ASSET_TYPE_MINI_GAME_QQ"
+	PromotedAssetType_APP_GAME_ANDROID                 PromotedAssetType = "PROMOTED_ASSET_TYPE_APP_GAME_ANDROID"
+	PromotedAssetType_APP_GAME_IOS                     PromotedAssetType = "PROMOTED_ASSET_TYPE_APP_GAME_IOS"
+	PromotedAssetType_PC_GAME                          PromotedAssetType = "PROMOTED_ASSET_TYPE_PC_GAME"
+	PromotedAssetType_WECHAT_WORK                      PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_WORK"
+	PromotedAssetType_LIVE_STREAM_ROOM                 PromotedAssetType = "PROMOTED_ASSET_TYPE_LIVE_STREAM_ROOM"
 )

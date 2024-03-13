@@ -445,10 +445,6 @@ func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
 	return c.Client.ObjectCommentFlagApi
 }
 
-func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissionsApiService {
-	return c.Client.OptimizationGoalPermissionsApi
-}
-
 func (c *SDKClient) OuterClues() *api.OuterCluesApiService {
 	return c.Client.OuterCluesApi
 }

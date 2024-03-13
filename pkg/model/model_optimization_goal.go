@@ -105,5 +105,7 @@ const (
 	OptimizationGoal_LIVE_STREAM_DURATION_1_MIN             OptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN"
 	OptimizationGoal_LIVE_STREAM_INTERACTION                OptimizationGoal = "OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION"
 	OptimizationGoal_ECOMMERCE_CANCEL_ORDER                 OptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER"
+	OptimizationGoal_CLICK_LEADS_COMPONENT                  OptimizationGoal = "OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT"
 	OptimizationGoal_REGULAR_PRICE_COURSE                   OptimizationGoal = "OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE"
+	OptimizationGoal_VISIT_STROE                            OptimizationGoal = "OPTIMIZATIONGOAL_VISIT_STROE"
 )

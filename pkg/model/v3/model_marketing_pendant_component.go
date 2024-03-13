@@ -11,5 +11,6 @@ package model
 
 // 营销挂件组件
 type MarketingPendantComponent struct {
-	Value *MarketingPendantStruct `json:"value,omitempty"`
+	ComponentId *int64                  `json:"component_id,omitempty"`
+	Value       *MarketingPendantStruct `json:"value,omitempty"`
 }

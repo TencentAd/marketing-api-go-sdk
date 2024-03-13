@@ -11,5 +11,6 @@ package model
 
 // 视频结束页组件
 type EndPageComponent struct {
-	Value *EndPageStruct `json:"value,omitempty"`
+	ComponentId *int64         `json:"component_id,omitempty"`
+	Value       *EndPageStruct `json:"value,omitempty"`
 }

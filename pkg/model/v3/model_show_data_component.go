@@ -11,5 +11,6 @@ package model
 
 // 数据外显组件
 type ShowDataComponent struct {
-	Value *ShowDataStruct `json:"value,omitempty"`
+	ComponentId *int64          `json:"component_id,omitempty"`
+	Value       *ShowDataStruct `json:"value,omitempty"`
 }

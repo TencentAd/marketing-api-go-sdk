@@ -11,5 +11,6 @@ package model
 
 // 文本组件
 type DescriptionComponent struct {
-	Value *DescriptionStruct `json:"value,omitempty"`
+	ComponentId *int64             `json:"component_id,omitempty"`
+	Value       *DescriptionStruct `json:"value,omitempty"`
 }

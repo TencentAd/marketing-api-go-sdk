@@ -58,6 +58,8 @@ type AdgroupsAddRequest struct {
 	AutoDerivedCreativeEnabled        *bool                            `json:"auto_derived_creative_enabled,omitempty"`
 	SmartBidType                      SmartBidType                     `json:"smart_bid_type,omitempty"`
 	MarketingScene                    MarketingScene                   `json:"marketing_scene,omitempty"`
+	LiveVideoMode                     LiveVideoMode                    `json:"live_video_mode,omitempty"`
+	LiveVideoSubMode                  LiveVideoSubMode                 `json:"live_video_sub_mode,omitempty"`
 	CustomAdgroupTag                  *[]string                        `json:"custom_adgroup_tag,omitempty"`
 	SmartTargeting                    *SmartTargeting                  `json:"smart_targeting,omitempty"`
 	DynamicCreativeIdSet              *[]int64                         `json:"dynamic_creative_id_set,omitempty"`

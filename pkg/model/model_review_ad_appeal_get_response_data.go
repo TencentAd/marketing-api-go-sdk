@@ -20,4 +20,5 @@ type ReviewAdAppealGetResponseData struct {
 	AppealStatus        AppealStatus `json:"appeal_status,omitempty"`
 	Description         *string      `json:"description,omitempty"`
 	ImageList           *[]string    `json:"image_list,omitempty"`
+	ReplyImageUrlList   *[]string    `json:"reply_image_url_list,omitempty"`
 }

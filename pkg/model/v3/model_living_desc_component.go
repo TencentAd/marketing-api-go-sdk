@@ -11,5 +11,6 @@ package model
 
 // 轮播文案组件
 type LivingDescComponent struct {
-	Value *LivingDescStruct `json:"value,omitempty"`
+	ComponentId *int64            `json:"component_id,omitempty"`
+	Value       *LivingDescStruct `json:"value,omitempty"`
 }

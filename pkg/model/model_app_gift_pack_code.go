@@ -15,6 +15,5 @@ type AppGiftPackCode struct {
 	Tips            *string `json:"tips,omitempty"`
 	Description     *string `json:"description,omitempty"`
 	GameGiftId      *string `json:"game_gift_id,omitempty"`
-	GameActId       *string `json:"game_act_id,omitempty"`
 	GameGiftImageId *string `json:"game_gift_image_id,omitempty"`
 }

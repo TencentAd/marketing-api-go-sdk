@@ -11,5 +11,6 @@ package model
 
 // 视频号信息组件
 type WechatChannelsComponent struct {
-	Value *WechatChannelsStruct `json:"value,omitempty"`
+	ComponentId *int64                `json:"component_id,omitempty"`
+	Value       *WechatChannelsStruct `json:"value,omitempty"`
 }

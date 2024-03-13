@@ -11,5 +11,6 @@ package model
 
 // 品牌形象组件
 type BrandComponent struct {
-	Value *BrandStruct `json:"value,omitempty"`
+	ComponentId *int64       `json:"component_id,omitempty"`
+	Value       *BrandStruct `json:"value,omitempty"`
 }

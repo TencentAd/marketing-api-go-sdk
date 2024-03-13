@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ImageId** | **string** |  | [optional] [default to null]
+**VideoId** | **string** |  | [optional] [default to null]
 **ElementName** | **string** |  | [optional] [default to null]
 **ElementValue** | **string** |  | [optional] [default to null]
 **ElementType** | [***ReviewElementType**](ReviewElementType.md) |  | [optional] [default to null]

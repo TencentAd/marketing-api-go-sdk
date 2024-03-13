@@ -11,5 +11,6 @@ package model
 
 // 咨询组件
 type ConsultComponent struct {
-	Value *ConsultStruct `json:"value,omitempty"`
+	ComponentId *int64         `json:"component_id,omitempty"`
+	Value       *ConsultStruct `json:"value,omitempty"`
 }

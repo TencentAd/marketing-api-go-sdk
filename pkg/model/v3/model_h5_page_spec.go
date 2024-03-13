@@ -11,5 +11,6 @@ package model
 
 // 自定义落地页
 type H5PageSpec struct {
-	PageUrl *string `json:"page_url,omitempty"`
+	PageUrl          *string `json:"page_url,omitempty"`
+	MpaH5WildcardUrl *string `json:"mpa_h5_wildcard_url,omitempty"`
 }

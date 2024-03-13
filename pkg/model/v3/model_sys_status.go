@@ -9,7 +9,7 @@
 
 package model
 
-// SysStatus : 朋友圈头像及昵称跳转页状态
+// SysStatus : 组件状态
 type SysStatus string
 
 // List of SysStatus
@@ -23,4 +23,5 @@ const (
 	SysStatus_PREPARE           SysStatus = "AD_STATUS_PREPARE"
 	SysStatus_DELETED           SysStatus = "AD_STATUS_DELETED"
 	SysStatus_INVALID           SysStatus = "AD_STATUS_INVALID"
+	SysStatus_SUSPEND           SysStatus = "AD_STATUS_SUSPEND"
 )

@@ -17,6 +17,14 @@ func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
 	return c.Client.AdDiagnosisApi
 }
 
+func (c *SDKClient) AdParam() *api.AdParamApiService {
+	return c.Client.AdParamApi
+}
+
+func (c *SDKClient) AdUnionReports() *api.AdUnionReportsApiService {
+	return c.Client.AdUnionReportsApi
+}
+
 func (c *SDKClient) AdcreativePreviews() *api.AdcreativePreviewsApiService {
 	return c.Client.AdcreativePreviewsApi
 }
@@ -57,6 +65,10 @@ func (c *SDKClient) BatchRequests() *api.BatchRequestsApiService {
 	return c.Client.BatchRequestsApi
 }
 
+func (c *SDKClient) BidSimulation() *api.BidSimulationApiService {
+	return c.Client.BidSimulationApi
+}
+
 func (c *SDKClient) Bidword() *api.BidwordApiService {
 	return c.Client.BidwordApi
 }
@@ -85,6 +97,10 @@ func (c *SDKClient) CreativeTemplateList() *api.CreativeTemplateListApiService {
 	return c.Client.CreativeTemplateListApi
 }
 
+func (c *SDKClient) CreativetoolsText() *api.CreativetoolsTextApiService {
+	return c.Client.CreativetoolsTextApi
+}
+
 func (c *SDKClient) CustomAudienceFiles() *api.CustomAudienceFilesApiService {
 	return c.Client.CustomAudienceFilesApi
 }
@@ -107,6 +123,10 @@ func (c *SDKClient) DynamicCreativeReviewResults() *api.DynamicCreativeReviewRes
 
 func (c *SDKClient) DynamicCreatives() *api.DynamicCreativesApiService {
 	return c.Client.DynamicCreativesApi
+}
+
+func (c *SDKClient) EcommerceOrder() *api.EcommerceOrderApiService {
+	return c.Client.EcommerceOrderApi
 }
 
 func (c *SDKClient) Estimation() *api.EstimationApiService {
@@ -147,6 +167,14 @@ func (c *SDKClient) Images() *api.ImagesApiService {
 
 func (c *SDKClient) KeywordRecommend() *api.KeywordRecommendApiService {
 	return c.Client.KeywordRecommendApi
+}
+
+func (c *SDKClient) LiveRoomComponentStatus() *api.LiveRoomComponentStatusApiService {
+	return c.Client.LiveRoomComponentStatusApi
+}
+
+func (c *SDKClient) LiveRoomComponents() *api.LiveRoomComponentsApiService {
+	return c.Client.LiveRoomComponentsApi
 }
 
 func (c *SDKClient) LocalStores() *api.LocalStoresApiService {
@@ -199,6 +227,10 @@ func (c *SDKClient) MergeFundTypeSubcustomerTransfer() *api.MergeFundTypeSubcust
 
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
+}
+
+func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissionsApiService {
+	return c.Client.OptimizationGoalPermissionsApi
 }
 
 func (c *SDKClient) Pages() *api.PagesApiService {
