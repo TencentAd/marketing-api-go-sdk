@@ -68,4 +68,5 @@ const (
 	MarketingTargetType_PC_GAME                          MarketingTargetType = "MARKETING_TARGET_TYPE_PC_GAME"
 	MarketingTargetType_WECHAT_WORK                      MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_WORK"
 	MarketingTargetType_LIVE_STREAM_ROOM                 MarketingTargetType = "MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM"
+	MarketingTargetType_PERSONAL_STORE                   MarketingTargetType = "MARKETING_TARGET_TYPE_PERSONAL_STORE"
 )

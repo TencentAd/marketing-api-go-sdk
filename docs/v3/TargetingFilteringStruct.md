@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Field** | **[]string** |  | [optional] [default to null]
+**Field** | **string** |  | [optional] [default to null]
 **Operator** | [***FilterOperator**](FilterOperator.md) |  | [optional] [default to null]
 **Values** | **[]string** |  | [optional] [default to null]
 

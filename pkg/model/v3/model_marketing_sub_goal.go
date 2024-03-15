@@ -23,4 +23,9 @@ const (
 	MarketingSubGoal_MINI_GAME_RETURN_CUSTOMER_ENGAGEMENT MarketingSubGoal = "MARKETING_SUB_GOAL_MINI_GAME_RETURN_CUSTOMER_ENGAGEMENT"
 	MarketingSubGoal_APP_ACQUISITION                      MarketingSubGoal = "MARKETING_SUB_GOAL_APP_ACQUISITION"
 	MarketingSubGoal_APP_ACTIVATION                       MarketingSubGoal = "MARKETING_SUB_GOAL_APP_ACTIVATION"
+	MarketingSubGoal_NOT_INSTALL_USER                     MarketingSubGoal = "MARKETING_SUB_GOAL_NOT_INSTALL_USER"
+	MarketingSubGoal_PRE_INSTALL_USER                     MarketingSubGoal = "MARKETING_SUB_GOAL_PRE_INSTALL_USER"
+	MarketingSubGoal_UNLOADED_USER                        MarketingSubGoal = "MARKETING_SUB_GOAL_UNLOADED_USER"
+	MarketingSubGoal_SHORT_INACTIVE_USER                  MarketingSubGoal = "MARKETING_SUB_GOAL_SHORT_INACTIVE_USER"
+	MarketingSubGoal_LONG_INACTIVE_USER                   MarketingSubGoal = "MARKETING_SUB_GOAL_LONG_INACTIVE_USER"
 )

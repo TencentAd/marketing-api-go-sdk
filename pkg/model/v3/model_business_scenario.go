@@ -14,6 +14,7 @@ type BusinessScenario string
 
 // List of BusinessScenario
 const (
+	BusinessScenario_UNKNOWN  BusinessScenario = "BUSINESS_SCENARIO_UNKNOWN"
 	BusinessScenario_CONTENT  BusinessScenario = "BUSINESS_SCENARIO_CONTENT"
 	BusinessScenario_DELIVERY BusinessScenario = "BUSINESS_SCENARIO_DELIVERY"
 )

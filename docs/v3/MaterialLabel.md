@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **LabelSource** | [***MaterialLabelSource**](MaterialLabelSource.md) |  | [optional] [default to null]
 **RelationImageCount** | **int64** |  | [optional] [default to null]
 **RelationMediaCount** | **int64** |  | [optional] [default to null]
-**BusinessScenario** | **int64** |  | [optional] [default to null]
+**BusinessScenarioVal** | [***BusinessScenario**](BusinessScenario.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

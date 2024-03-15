@@ -22,5 +22,5 @@ type MaterialLabel struct {
 	LabelSource          MaterialLabelSource `json:"label_source,omitempty"`
 	RelationImageCount   *int64              `json:"relation_image_count,omitempty"`
 	RelationMediaCount   *int64              `json:"relation_media_count,omitempty"`
-	BusinessScenario     *int64              `json:"business_scenario,omitempty"`
+	BusinessScenarioVal  BusinessScenario    `json:"business_scenario_val,omitempty"`
 }
