@@ -13,7 +13,7 @@ package model
 type MaterialGroupStruct struct {
 	MaterialGroupId           *int64                     `json:"material_group_id,omitempty"`
 	Ratio                     *string                    `json:"ratio,omitempty"`
-	MaterialType              ProgrammedMaterialType     `json:"material_type,omitempty"`
+	MaterialType              TemplateType               `json:"material_type,omitempty"`
 	Materials                 *[]MaterialStruct          `json:"materials,omitempty"`
 	OriginalCreativeTemplates *[]DimensionStruct         `json:"original_creative_templates,omitempty"`
 	TargetCreativeTemplates   *[]DimensionStruct         `json:"target_creative_templates,omitempty"`

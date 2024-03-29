@@ -10,7 +10,7 @@
 package model
 
 type FundTransferAddRequest struct {
-	AdvertiserId          *int64         `json:"advertiser_id,omitempty"`
+	AccountId             *int64         `json:"account_id,omitempty"`
 	FundType              AccountTypeMap `json:"fund_type,omitempty"`
 	Amount                *int64         `json:"amount,omitempty"`
 	TransferType          *string        `json:"transfer_type,omitempty"`

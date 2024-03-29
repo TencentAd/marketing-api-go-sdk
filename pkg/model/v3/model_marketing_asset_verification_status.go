@@ -19,4 +19,6 @@ const (
 	MarketingAssetVerificationStatus_CONSISTENT      MarketingAssetVerificationStatus = "MARKETING_ASSET_VERIFICATION_STATUS_CONSISTENT"
 	MarketingAssetVerificationStatus_PART_CONSISTENT MarketingAssetVerificationStatus = "MARKETING_ASSET_VERIFICATION_STATUS_PART_CONSISTENT"
 	MarketingAssetVerificationStatus_INCONSISTENT    MarketingAssetVerificationStatus = "MARKETING_ASSET_VERIFICATION_STATUS_INCONSISTENT"
+	MarketingAssetVerificationStatus_NO_VERIFY       MarketingAssetVerificationStatus = "MARKETING_ASSET_VERIFICATION_STATUS_NO_VERIFY"
+	MarketingAssetVerificationStatus_FAILED          MarketingAssetVerificationStatus = "MARKETING_ASSET_VERIFICATION_STATUS_FAILED"
 )

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **MergeFundTypeFundsGet**
-> MergeFundTypeFundsGetResponse MergeFundTypeFundsGet(ctx, advertiserId, optional)
+> MergeFundTypeFundsGetResponse MergeFundTypeFundsGet(ctx, accountId, optional)
 获取资金合并类型资金账户信息
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
  **optional** | ***MergeFundTypeFundsApiMergeFundTypeFundsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters

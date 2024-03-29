@@ -10,6 +10,6 @@
 package model
 
 type WechatPagesDeleteRequest struct {
-	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
-	PageId       *int64 `json:"page_id,omitempty"`
+	AccountId *int64 `json:"account_id,omitempty"`
+	PageId    *int64 `json:"page_id,omitempty"`
 }

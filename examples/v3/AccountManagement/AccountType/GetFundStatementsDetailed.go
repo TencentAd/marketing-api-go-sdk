@@ -25,7 +25,7 @@ import (
 type FundStatementsDetailedGetExample struct {
 	TAds                          *ads.SDKClient
 	AccessToken                   string
-	AdvertiserId                  int64
+	AccountId                     int64
 	FundType                      string
 	DateRange                     model.DateRangeTransaction
 	FundStatementsDetailedGetOpts *api.FundStatementsDetailedGetOpts
@@ -37,7 +37,7 @@ func (e *FundStatementsDetailedGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = int64(0)
 	e.FundType = "FUND_TYPE_GIFT"
 	e.DateRange = model.DateRangeTransaction{
 		StartDate: "REPORT START DATE",
@@ -53,7 +53,7 @@ func (e *FundStatementsDetailedGetExample) RunExample() (model.FundStatementsDet
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.FundStatementsDetailed().Get(ctx, e.AdvertiserId, e.FundType, e.DateRange, e.FundStatementsDetailedGetOpts)
+	return tads.FundStatementsDetailed().Get(ctx, e.AccountId, e.FundType, e.DateRange, e.FundStatementsDetailedGetOpts)
 }
 
 func main() {

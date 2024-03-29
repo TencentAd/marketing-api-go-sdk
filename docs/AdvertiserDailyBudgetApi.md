@@ -25,7 +25,7 @@ Optional parameters are passed through a pointer to a AdvertiserDailyBudgetApiAd
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
+ **fields** | [**optional.Interface of []string**](string.md)|  | 
 
 ### Return type
 

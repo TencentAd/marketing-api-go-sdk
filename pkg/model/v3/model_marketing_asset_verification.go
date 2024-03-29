@@ -11,8 +11,6 @@ package model
 
 // 资产验真结果
 type MarketingAssetVerification struct {
-	MarketingAssetName                 *string                                        `json:"marketing_asset_name,omitempty"`
-	MarketingTargetAttr                *MarketingTargetAttr                           `json:"marketing_target_attr,omitempty"`
 	MarketingAssetVerificationStatus   MarketingAssetVerificationStatus               `json:"marketing_asset_verification_status,omitempty"`
 	MarketingAssetVerificationStatusCn *string                                        `json:"marketing_asset_verification_status_cn,omitempty"`
 	LandingPageList                    *[]MarketingAssetVerificationLandingPageStruct `json:"landing_page_list,omitempty"`

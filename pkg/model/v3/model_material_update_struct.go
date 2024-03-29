@@ -11,6 +11,6 @@ package model
 
 // 素材信息
 type MaterialUpdateStruct struct {
-	Type_   ProgrammedMaterialType `json:"type,omitempty"`
-	MediaId *int64                 `json:"media_id,omitempty"`
+	Type_   TemplateType `json:"type,omitempty"`
+	MediaId *int64       `json:"media_id,omitempty"`
 }

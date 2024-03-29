@@ -17,6 +17,7 @@ const (
 	AsyncReportLevel_ADVERTISER       AsyncReportLevel = "REPORT_LEVEL_ADVERTISER"
 	AsyncReportLevel_ADGROUP          AsyncReportLevel = "REPORT_LEVEL_ADGROUP"
 	AsyncReportLevel_BIDWORD          AsyncReportLevel = "REPORT_LEVEL_BIDWORD"
+	AsyncReportLevel_QUERYWORD        AsyncReportLevel = "REPORT_LEVEL_QUERYWORD"
 	AsyncReportLevel_AGE              AsyncReportLevel = "REPORT_LEVEL_AGE"
 	AsyncReportLevel_GENDER           AsyncReportLevel = "REPORT_LEVEL_GENDER"
 	AsyncReportLevel_REGION           AsyncReportLevel = "REPORT_LEVEL_REGION"
@@ -26,4 +27,5 @@ const (
 	AsyncReportLevel_MATERIAL_IMAGE   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
 	AsyncReportLevel_MATERIAL_VIDEO   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 	AsyncReportLevel_CHANNEL          AsyncReportLevel = "REPORT_LEVEL_CHANNEL"
+	AsyncReportLevel_MARKETING_ASSET  AsyncReportLevel = "REPORT_LEVEL_MARKETING_ASSET"
 )

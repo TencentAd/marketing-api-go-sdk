@@ -11,14 +11,26 @@ package model
 
 // 返回结构
 type AdvertiserGetListStruct struct {
+	AccountId                        *int64                       `json:"account_id,omitempty"`
 	DailyBudget                      *int64                       `json:"daily_budget,omitempty"`
 	SystemStatus                     CustomerSystemStatus         `json:"system_status,omitempty"`
+	RejectMessage                    *string                      `json:"reject_message,omitempty"`
 	CorporationName                  *string                      `json:"corporation_name,omitempty"`
+	CorporationLicence               *string                      `json:"corporation_licence,omitempty"`
 	CertificationImageId             *string                      `json:"certification_image_id,omitempty"`
+	CertificationImage               *string                      `json:"certification_image,omitempty"`
+	IdentityNumber                   *string                      `json:"identity_number,omitempty"`
 	IndividualQualification          *IndividualQualificationRead `json:"individual_qualification,omitempty"`
+	CorporateImageName               *string                      `json:"corporate_image_name,omitempty"`
+	CorporateImageLogo               *string                      `json:"corporate_image_logo,omitempty"`
+	SystemIndustryId                 *int64                       `json:"system_industry_id,omitempty"`
+	CustomizedIndustry               *string                      `json:"customized_industry,omitempty"`
 	IntroductionUrl                  *string                      `json:"introduction_url,omitempty"`
+	CorporateBrandName               *string                      `json:"corporate_brand_name,omitempty"`
 	IndustryQualificationImageIdList *[]string                    `json:"industry_qualification_image_id_list,omitempty"`
+	IndustryQualificationImage       *[]string                    `json:"industry_qualification_image,omitempty"`
 	AdQualificationImageIdList       *[]string                    `json:"ad_qualification_image_id_list,omitempty"`
+	AdQualificationImage             *[]string                    `json:"ad_qualification_image,omitempty"`
 	ContactPerson                    *string                      `json:"contact_person,omitempty"`
 	ContactPersonEmail               *string                      `json:"contact_person_email,omitempty"`
 	ContactPersonTelephone           *string                      `json:"contact_person_telephone,omitempty"`
@@ -31,15 +43,4 @@ type AdvertiserGetListStruct struct {
 	Memo                             *string                      `json:"memo,omitempty"`
 	AreaCode                         *int64                       `json:"area_code,omitempty"`
 	IsLocalBusiness                  *bool                        `json:"is_local_business,omitempty"`
-	AccountId                        *int64                       `json:"account_id,omitempty"`
-	AdQualificationImage             *[]string                    `json:"ad_qualification_image,omitempty"`
-	CertificationImage               *string                      `json:"certification_image,omitempty"`
-	IndustryQualificationImage       *[]string                    `json:"industry_qualification_image,omitempty"`
-	CorporateImageName               *string                      `json:"corporate_image_name,omitempty"`
-	CorporateImageLogo               *string                      `json:"corporate_image_logo,omitempty"`
-	CorporationLicence               *string                      `json:"corporation_licence,omitempty"`
-	CustomizedIndustry               *string                      `json:"customized_industry,omitempty"`
-	IdentityNumber                   *string                      `json:"identity_number,omitempty"`
-	SystemIndustryId                 *int64                       `json:"system_industry_id,omitempty"`
-	RejectMessage                    *string                      `json:"reject_message,omitempty"`
 }

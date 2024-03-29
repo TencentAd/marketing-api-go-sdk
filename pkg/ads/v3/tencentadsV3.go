@@ -179,5 +179,3 @@ func (tads *SDKClient) GenMiddlewareHandleFunc(
 		return middleware.Handle(req, beforeFunc)
 	}
 }
-
-// SetNameService ...

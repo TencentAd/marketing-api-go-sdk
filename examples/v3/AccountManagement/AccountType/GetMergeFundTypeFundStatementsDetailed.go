@@ -24,7 +24,7 @@ import (
 type MergeFundTypeFundStatementsDetailedGetExample struct {
 	TAds                                       *ads.SDKClient
 	AccessToken                                string
-	AdvertiserId                               int64
+	AccountId                                  int64
 	FundType                                   string
 	DateRange                                  model.DateRangeTransaction
 	MergeFundTypeFundStatementsDetailedGetOpts *api.MergeFundTypeFundStatementsDetailedGetOpts
@@ -36,7 +36,7 @@ func (e *MergeFundTypeFundStatementsDetailedGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = 789
 	e.FundType = "fundType_example"
 	e.DateRange = model.DateRangeTransaction{}
 	e.MergeFundTypeFundStatementsDetailedGetOpts = &api.MergeFundTypeFundStatementsDetailedGetOpts{}
@@ -46,7 +46,7 @@ func (e *MergeFundTypeFundStatementsDetailedGetExample) RunExample() (model.Merg
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MergeFundTypeFundStatementsDetailed().Get(ctx, e.AdvertiserId, e.FundType, e.DateRange, e.MergeFundTypeFundStatementsDetailedGetOpts)
+	return tads.MergeFundTypeFundStatementsDetailed().Get(ctx, e.AccountId, e.FundType, e.DateRange, e.MergeFundTypeFundStatementsDetailedGetOpts)
 }
 
 func main() {

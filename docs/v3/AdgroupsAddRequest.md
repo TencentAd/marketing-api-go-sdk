@@ -50,6 +50,7 @@ Name | Type | Description | Notes
 **MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **CustomCostCap** | **int64** |  | [optional] [default to null]
+**DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

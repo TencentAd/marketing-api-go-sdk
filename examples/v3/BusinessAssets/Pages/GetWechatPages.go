@@ -25,7 +25,7 @@ import (
 type WechatPagesGetExample struct {
 	TAds               *ads.SDKClient
 	AccessToken        string
-	AdvertiserId       int64
+	AccountId          int64
 	WechatPagesGetOpts *api.WechatPagesGetOpts
 }
 
@@ -35,7 +35,7 @@ func (e *WechatPagesGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = int64(0)
 	e.WechatPagesGetOpts = &api.WechatPagesGetOpts{
 
 		Fields: optional.NewInterface([]string{"page_id", "page_name", "created_time", "last_modified_time", "page_template_id", "page_elements_spec_list", "share_content_spec", "preview_url", "page_type"}),
@@ -46,7 +46,7 @@ func (e *WechatPagesGetExample) RunExample() (model.WechatPagesGetResponseData, 
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.WechatPages().Get(ctx, e.AdvertiserId, e.WechatPagesGetOpts)
+	return tads.WechatPages().Get(ctx, e.AccountId, e.WechatPagesGetOpts)
 }
 
 func main() {

@@ -53,4 +53,6 @@ const (
 	MarketingAssetType_TOURIST_HOTEL_SERVICE_SERVICE                          MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_HOTEL_SERVICE_SERVICE"
 	MarketingAssetType_TOURIST_AIRLINE_TICKETS_AIRLINE                        MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_AIRLINE_TICKETS_AIRLINE"
 	MarketingAssetType_TOURIST_AIRLINE_TICKETS_TICKETS                        MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_AIRLINE_TICKETS_TICKETS"
+	MarketingAssetType_PLATFORM_CHANNEL_APP_ANDROID                           MarketingAssetType = "MARKETING_ASSET_TYPE_PLATFORM_CHANNEL_APP_ANDROID"
+	MarketingAssetType_PLATFORM_CHANNEL_APP_IOS                               MarketingAssetType = "MARKETING_ASSET_TYPE_PLATFORM_CHANNEL_APP_IOS"
 )

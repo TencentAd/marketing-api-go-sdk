@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **WechatMiniProgramSpec** | [***WechatMiniProgramPageSpec**](wechat_mini_program_page_spec.md) |  | [optional] [default to null]
 **WechatCanvasMiniProgramSpec** | [***CanvasWechatPageSpec**](canvas_wechat_page_spec.md) |  | [optional] [default to null]
 **QqAppMiniProgramSpec** | [***QqAppMiniProgramPageSpec**](qq_app_mini_program_page_spec.md) |  | [optional] [default to null]
+**QqMiniGameSpec** | [***QqMiniGamePageSpec**](qq_mini_game_page_spec.md) |  | [optional] [default to null]
 **SimpleWechatCanvasSpec** | [***SimpleCanvasWechatSpec**](simple_canvas_wechat_spec.md) |  | [optional] [default to null]
 **WechatFocusDialogSpec** | [***WechatFocusDialog**](wechat_focus_dialog.md) |  | [optional] [default to null]
 **WechatConsultSpec** | [***WechatConsultPageSpec**](wechat_consult_page_spec.md) |  | [optional] [default to null]

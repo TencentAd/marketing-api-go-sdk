@@ -33,6 +33,7 @@ func (e *WechatPagesAddExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.WechatPagesAddRequest{
+		AccountId:      int64(0),
 		PageName:       "SDK原生页5ede252bee1a8",
 		PageTemplateId: int64(0),
 		ShareContentSpec: &model.ShareContentSpec{

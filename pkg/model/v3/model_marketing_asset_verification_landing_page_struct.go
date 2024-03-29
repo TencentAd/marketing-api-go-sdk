@@ -14,4 +14,5 @@ type MarketingAssetVerificationLandingPageStruct struct {
 	LandingPageName                    *string                          `json:"landing_page_name,omitempty"`
 	MarketingAssetVerificationStatus   MarketingAssetVerificationStatus `json:"marketing_asset_verification_status,omitempty"`
 	MarketingAssetVerificationStatusCn *string                          `json:"marketing_asset_verification_status_cn,omitempty"`
+	JumpInfo                           *JumpinfoComponent               `json:"jump_info,omitempty"`
 }

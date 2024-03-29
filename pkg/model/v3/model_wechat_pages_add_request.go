@@ -10,7 +10,7 @@
 package model
 
 type WechatPagesAddRequest struct {
-	AdvertiserId     *int64                `json:"advertiser_id,omitempty"`
+	AccountId        *int64                `json:"account_id,omitempty"`
 	PageName         *string               `json:"page_name,omitempty"`
 	PageTemplateId   *int64                `json:"page_template_id,omitempty"`
 	PageElements     *[]PageElementsStruct `json:"page_elements,omitempty"`

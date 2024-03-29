@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AdvertiserId** | **int64** |  | [optional] [default to null]
+**AccountId** | **int64** |  | [optional] [default to null]
 **FundType** | [***AccountTypeMap**](AccountTypeMap.md) |  | [optional] [default to null]
 **Amount** | **int64** |  | [optional] [default to null]
 **TransferType** | **string** |  | [optional] [default to null]

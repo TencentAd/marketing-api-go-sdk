@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**CustomAudiencesAdd**](CustomAudiencesApi.md#CustomAudiencesAdd) | **Post** /custom_audiences/add | 创建客户人群
 [**CustomAudiencesDelete**](CustomAudiencesApi.md#CustomAudiencesDelete) | **Post** /custom_audiences/delete | 删除客户人群
 [**CustomAudiencesGet**](CustomAudiencesApi.md#CustomAudiencesGet) | **Get** /custom_audiences/get | 获取客户人群
+[**CustomAudiencesUpdate**](CustomAudiencesApi.md#CustomAudiencesUpdate) | **Post** /custom_audiences/update | 更新客户人群
 
 
 # **CustomAudiencesAdd**
@@ -95,6 +96,32 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: text/plain
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **CustomAudiencesUpdate**
+> CustomAudiencesUpdateResponse CustomAudiencesUpdate(ctx, data)
+更新客户人群
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**CustomAudiencesUpdateRequest**](CustomAudiencesUpdateRequest.md)|  | 
+
+### Return type
+
+[**CustomAudiencesUpdateResponse**](CustomAudiencesUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

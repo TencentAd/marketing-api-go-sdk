@@ -32,7 +32,7 @@ type MergeFundTypeFundStatementsDetailedApiService service
 /*
 MergeFundTypeFundStatementsDetailedApiService 获取资金合并类型资金流水
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param fundType
  * @param dateRange
  * @param optional nil or *MergeFundTypeFundStatementsDetailedGetOpts - Optional Parameters:
@@ -49,7 +49,7 @@ type MergeFundTypeFundStatementsDetailedGetOpts struct {
 	Fields   optional.Interface
 }
 
-func (a *MergeFundTypeFundStatementsDetailedApiService) Get(ctx context.Context, advertiserId int64, fundType string, dateRange DateRangeTransaction, localVarOptionals *MergeFundTypeFundStatementsDetailedGetOpts) (MergeFundTypeFundStatementsDetailedGetResponseData, http.Header, error) {
+func (a *MergeFundTypeFundStatementsDetailedApiService) Get(ctx context.Context, accountId int64, fundType string, dateRange DateRangeTransaction, localVarOptionals *MergeFundTypeFundStatementsDetailedGetOpts) (MergeFundTypeFundStatementsDetailedGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -67,7 +67,7 @@ func (a *MergeFundTypeFundStatementsDetailedApiService) Get(ctx context.Context,
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("fund_type", parameterToString(fundType, ""))
 	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {

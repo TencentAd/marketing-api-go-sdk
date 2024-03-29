@@ -69,4 +69,5 @@ const (
 	MarketingTargetType_WECHAT_WORK                      MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_WORK"
 	MarketingTargetType_LIVE_STREAM_ROOM                 MarketingTargetType = "MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM"
 	MarketingTargetType_PERSONAL_STORE                   MarketingTargetType = "MARKETING_TARGET_TYPE_PERSONAL_STORE"
+	MarketingTargetType_PLATFORM_CHANNEL                 MarketingTargetType = "MARKETING_TARGET_TYPE_PLATFORM_CHANNEL"
 )

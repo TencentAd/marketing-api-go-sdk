@@ -20,7 +20,9 @@ const (
 	ReportDailyLevel_COMPONENT        ReportDailyLevel = "REPORT_LEVEL_COMPONENT"
 	ReportDailyLevel_CHANNEL          ReportDailyLevel = "REPORT_LEVEL_CHANNEL"
 	ReportDailyLevel_BIDWORD          ReportDailyLevel = "REPORT_LEVEL_BIDWORD"
+	ReportDailyLevel_QUERYWORD        ReportDailyLevel = "REPORT_LEVEL_QUERYWORD"
 	ReportDailyLevel_MATERIAL_IMAGE   ReportDailyLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
 	ReportDailyLevel_MATERIAL_VIDEO   ReportDailyLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 	ReportDailyLevel_ADVERTISER_TOTAL ReportDailyLevel = "REPORT_LEVEL_ADVERTISER_TOTAL"
+	ReportDailyLevel_MARKETING_ASSET  ReportDailyLevel = "REPORT_LEVEL_MARKETING_ASSET"
 )

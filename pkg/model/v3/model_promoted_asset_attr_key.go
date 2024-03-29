@@ -9,7 +9,7 @@
 
 package model
 
-// PromotedAssetAttrKey : 营销资产属性key
+// PromotedAssetAttrKey : 推广资产属性名称
 type PromotedAssetAttrKey string
 
 // List of PromotedAssetAttrKey
@@ -282,6 +282,7 @@ const (
 	PromotedAssetAttrKey_FINANCE_SUBJECT_MATTER                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_SUBJECT_MATTER"
 	PromotedAssetAttrKey_FINANCE_FUND_TYPE                                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_TYPE"
 	PromotedAssetAttrKey_FINANCE_FUND_AGENCY_NAME                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_AGENCY_NAME"
+	PromotedAssetAttrKey_FINANCE_FUND_CURRENCY                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_CURRENCY"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_POI_FINGERPRINT                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_POI_FINGERPRINT"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_ID                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_ID"
 	PromotedAssetAttrKey_CATERING_AND_LEISURE_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CATERING_AND_LEISURE_CATE_NAME"
@@ -354,9 +355,11 @@ const (
 	PromotedAssetAttrKey_STORE_HOMEPAGE_ADDRESS                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_STORE_HOMEPAGE_ADDRESS"
 	PromotedAssetAttrKey_MINI_GAME_QQ_ID                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINI_GAME_QQ_ID"
 	PromotedAssetAttrKey_PC_GAME_DOMAIN                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PC_GAME_DOMAIN"
+	PromotedAssetAttrKey_WECHAT_WORK_CORP_ID                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_WORK_CORP_ID"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_CATE_NAME                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_CATE_NAME"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_PLATFORM                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_PLATFORM"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_NAME                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_NAME"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_HOMEPAGE_ADDRESS                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_HOMEPAGE_ADDRESS"
 	PromotedAssetAttrKey_PERSONAL_STORE_COMPANY_ENTITY                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PERSONAL_STORE_COMPANY_ENTITY"
+	PromotedAssetAttrKey_PLATFORM_CHANNEL_CATEGORY_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_CATEGORY_NAME"
 )

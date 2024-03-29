@@ -22,6 +22,7 @@ type PageSpec struct {
 	WechatMiniProgramSpec           *WechatMiniProgramPageSpec           `json:"wechat_mini_program_spec,omitempty"`
 	WechatCanvasMiniProgramSpec     *CanvasWechatPageSpec                `json:"wechat_canvas_mini_program_spec,omitempty"`
 	QqAppMiniProgramSpec            *QqAppMiniProgramPageSpec            `json:"qq_app_mini_program_spec,omitempty"`
+	QqMiniGameSpec                  *QqMiniGamePageSpec                  `json:"qq_mini_game_spec,omitempty"`
 	SimpleWechatCanvasSpec          *SimpleCanvasWechatSpec              `json:"simple_wechat_canvas_spec,omitempty"`
 	WechatFocusDialogSpec           *WechatFocusDialog                   `json:"wechat_focus_dialog_spec,omitempty"`
 	WechatConsultSpec               *WechatConsultPageSpec               `json:"wechat_consult_spec,omitempty"`

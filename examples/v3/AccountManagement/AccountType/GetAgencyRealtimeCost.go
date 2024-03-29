@@ -24,7 +24,7 @@ import (
 type AgencyRealtimeCostGetExample struct {
 	TAds                      *ads.SDKClient
 	AccessToken               string
-	AdvertiserId              int64
+	AccountId                 int64
 	AgencyRealtimeCostGetOpts *api.AgencyRealtimeCostGetOpts
 }
 
@@ -34,7 +34,7 @@ func (e *AgencyRealtimeCostGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = 789
 	e.AgencyRealtimeCostGetOpts = &api.AgencyRealtimeCostGetOpts{}
 }
 
@@ -42,7 +42,7 @@ func (e *AgencyRealtimeCostGetExample) RunExample() (model.AgencyRealtimeCostGet
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AgencyRealtimeCost().Get(ctx, e.AdvertiserId, e.AgencyRealtimeCostGetOpts)
+	return tads.AgencyRealtimeCost().Get(ctx, e.AccountId, e.AgencyRealtimeCostGetOpts)
 }
 
 func main() {

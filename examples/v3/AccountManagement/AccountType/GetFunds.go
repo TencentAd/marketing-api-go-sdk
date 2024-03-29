@@ -25,7 +25,7 @@ import (
 type FundsGetExample struct {
 	TAds         *ads.SDKClient
 	AccessToken  string
-	AdvertiserId int64
+	AccountId    int64
 	FundsGetOpts *api.FundsGetOpts
 }
 
@@ -35,7 +35,7 @@ func (e *FundsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = int64(0)
 	e.FundsGetOpts = &api.FundsGetOpts{
 
 		Fields: optional.NewInterface([]string{"fund_type", "balance", "fund_status", "realtime_cost"}),
@@ -46,7 +46,7 @@ func (e *FundsGetExample) RunExample() (model.FundsGetResponseData, http.Header,
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Funds().Get(ctx, e.AdvertiserId, e.FundsGetOpts)
+	return tads.Funds().Get(ctx, e.AccountId, e.FundsGetOpts)
 }
 
 func main() {

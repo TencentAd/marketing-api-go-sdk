@@ -62,6 +62,12 @@ type APIClient struct {
 
 	AdgroupsApi *AdgroupsApiService
 
+	AdvertiserApi *AdvertiserApiService
+
+	AdvertiserDailyBudgetApi *AdvertiserDailyBudgetApiService
+
+	AgencyApi *AgencyApiService
+
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
 	AndroidChannelApi *AndroidChannelApiService
@@ -70,7 +76,13 @@ type APIClient struct {
 
 	AsyncReportsApi *AsyncReportsApiService
 
+	AsyncTasksApi *AsyncTasksApiService
+
 	AudienceGrantRelationsApi *AudienceGrantRelationsApiService
+
+	BatchAsyncRequestSpecificationApi *BatchAsyncRequestSpecificationApiService
+
+	BatchAsyncRequestsApi *BatchAsyncRequestsApiService
 
 	BatchRequestsApi *BatchRequestsApiService
 
@@ -84,13 +96,19 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	ComponentReviewResultsApi *ComponentReviewResultsApiService
+
 	ConversionsApi *ConversionsApiService
 
 	CreativeTemplateApi *CreativeTemplateApiService
 
 	CreativeTemplateListApi *CreativeTemplateListApiService
 
+	CreativeTemplatePreviewsApi *CreativeTemplatePreviewsApiService
+
 	CreativetoolsTextApi *CreativetoolsTextApiService
+
+	CustomAudienceEstimationsApi *CustomAudienceEstimationsApiService
 
 	CustomAudienceFilesApi *CustomAudienceFilesApiService
 
@@ -99,6 +117,16 @@ type APIClient struct {
 	DailyBalanceReportApi *DailyBalanceReportApiService
 
 	DailyReportsApi *DailyReportsApiService
+
+	DataSourceDispatchApi *DataSourceDispatchApiService
+
+	DynamicAdImageTemplatesApi *DynamicAdImageTemplatesApiService
+
+	DynamicAdImagesApi *DynamicAdImagesApiService
+
+	DynamicAdVideoApi *DynamicAdVideoApiService
+
+	DynamicAdVideoTemplatesApi *DynamicAdVideoTemplatesApiService
 
 	DynamicCreativeReviewResultsApi *DynamicCreativeReviewResultsApiService
 
@@ -126,6 +154,32 @@ type APIClient struct {
 
 	KeywordRecommendApi *KeywordRecommendApiService
 
+	LabelsApi *LabelsApiService
+
+	LandingPageSellStrategyApi *LandingPageSellStrategyApiService
+
+	LeadsApi *LeadsApiService
+
+	LeadsActionTypeReportApi *LeadsActionTypeReportApiService
+
+	LeadsCallRecordApi *LeadsCallRecordApiService
+
+	LeadsCallRecordsApi *LeadsCallRecordsApiService
+
+	LeadsCallVirtualNumberApi *LeadsCallVirtualNumberApiService
+
+	LeadsClaimApi *LeadsClaimApiService
+
+	LeadsInvalidPayApi *LeadsInvalidPayApiService
+
+	LeadsListApi *LeadsListApiService
+
+	LeadsStatusApi *LeadsStatusApiService
+
+	LeadsVoipCallApi *LeadsVoipCallApiService
+
+	LeadsVoipCallTokenApi *LeadsVoipCallTokenApiService
+
 	LiveRoomComponentStatusApi *LiveRoomComponentStatusApiService
 
 	LiveRoomComponentsApi *LiveRoomComponentsApiService
@@ -140,9 +194,19 @@ type APIClient struct {
 
 	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
 
+	MarketingTargetAssetCategoriesApi *MarketingTargetAssetCategoriesApiService
+
+	MarketingTargetAssetDetailApi *MarketingTargetAssetDetailApiService
+
+	MarketingTargetAssetPropertiesApi *MarketingTargetAssetPropertiesApiService
+
+	MarketingTargetAssetPropertyValuesApi *MarketingTargetAssetPropertyValuesApiService
+
 	MarketingTargetAssetsApi *MarketingTargetAssetsApiService
 
 	MarketingTargetTypesApi *MarketingTargetTypesApiService
+
+	MaterialDcatagApi *MaterialDcatagApiService
 
 	MaterialLabelsApi *MaterialLabelsApiService
 
@@ -158,7 +222,15 @@ type APIClient struct {
 
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
 
+	OrganizationAccountRelationApi *OrganizationAccountRelationApiService
+
 	PagesApi *PagesApiService
+
+	ProductCatalogsApi *ProductCatalogsApiService
+
+	ProductItemsApi *ProductItemsApiService
+
+	ProductSeriesApi *ProductSeriesApiService
 
 	ProfilesApi *ProfilesApiService
 
@@ -166,13 +238,37 @@ type APIClient struct {
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
+	QualificationsApi *QualificationsApiService
+
 	RealtimeCostApi *RealtimeCostApiService
+
+	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
+
+	SceneSpecTagsApi *SceneSpecTagsApiService
 
 	SubcustomerTransferApi *SubcustomerTransferApiService
 
 	TargetingTagReportsApi *TargetingTagReportsApiService
 
+	TargetingTagsApi *TargetingTagsApiService
+
+	TargetingTagsUvApi *TargetingTagsUvApiService
+
 	UnionPositionPackagesApi *UnionPositionPackagesApiService
+
+	UserActionSetReportsApi *UserActionSetReportsApiService
+
+	UserActionSetsApi *UserActionSetsApiService
+
+	UserActionsApi *UserActionsApiService
+
+	VideoChannelDealerDataApi *VideoChannelDealerDataApiService
+
+	VideoChannelFansDataApi *VideoChannelFansDataApiService
+
+	VideoChannelLeadsDataApi *VideoChannelLeadsDataApiService
+
+	VideoChannelLiveDataApi *VideoChannelLiveDataApiService
 
 	VideosApi *VideosApiService
 
@@ -180,7 +276,25 @@ type APIClient struct {
 
 	WechatPagesCustomApi *WechatPagesCustomApiService
 
+	WechatPagesGrantinfoApi *WechatPagesGrantinfoApiService
+
 	WildcardsApi *WildcardsApiService
+
+	WxPackageAccountApi *WxPackageAccountApiService
+
+	WxPackagePackageApi *WxPackagePackageApiService
+
+	XijingComplexTemplateApi *XijingComplexTemplateApiService
+
+	XijingPageApi *XijingPageApiService
+
+	XijingPageByComponentsApi *XijingPageByComponentsApiService
+
+	XijingPageListApi *XijingPageListApiService
+
+	XijingTemplateApi *XijingTemplateApiService
+
+	XijingTemplateListApi *XijingTemplateListApiService
 }
 
 type service struct {
@@ -208,25 +322,39 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdcreativePreviewsQrcodeApi = (*AdcreativePreviewsQrcodeApiService)(&c.common)
 	c.AdgroupNegativewordsApi = (*AdgroupNegativewordsApiService)(&c.common)
 	c.AdgroupsApi = (*AdgroupsApiService)(&c.common)
+	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
+	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
+	c.AgencyApi = (*AgencyApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelApi = (*AndroidChannelApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
+	c.AsyncTasksApi = (*AsyncTasksApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
+	c.BatchAsyncRequestSpecificationApi = (*BatchAsyncRequestSpecificationApiService)(&c.common)
+	c.BatchAsyncRequestsApi = (*BatchAsyncRequestsApiService)(&c.common)
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
 	c.BidSimulationApi = (*BidSimulationApiService)(&c.common)
 	c.BidwordApi = (*BidwordApiService)(&c.common)
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)
+	c.CreativeTemplatePreviewsApi = (*CreativeTemplatePreviewsApiService)(&c.common)
 	c.CreativetoolsTextApi = (*CreativetoolsTextApiService)(&c.common)
+	c.CustomAudienceEstimationsApi = (*CustomAudienceEstimationsApiService)(&c.common)
 	c.CustomAudienceFilesApi = (*CustomAudienceFilesApiService)(&c.common)
 	c.CustomAudiencesApi = (*CustomAudiencesApiService)(&c.common)
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
+	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
+	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
+	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
+	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)
+	c.DynamicAdVideoTemplatesApi = (*DynamicAdVideoTemplatesApiService)(&c.common)
 	c.DynamicCreativeReviewResultsApi = (*DynamicCreativeReviewResultsApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
@@ -240,6 +368,19 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
 	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
+	c.LabelsApi = (*LabelsApiService)(&c.common)
+	c.LandingPageSellStrategyApi = (*LandingPageSellStrategyApiService)(&c.common)
+	c.LeadsApi = (*LeadsApiService)(&c.common)
+	c.LeadsActionTypeReportApi = (*LeadsActionTypeReportApiService)(&c.common)
+	c.LeadsCallRecordApi = (*LeadsCallRecordApiService)(&c.common)
+	c.LeadsCallRecordsApi = (*LeadsCallRecordsApiService)(&c.common)
+	c.LeadsCallVirtualNumberApi = (*LeadsCallVirtualNumberApiService)(&c.common)
+	c.LeadsClaimApi = (*LeadsClaimApiService)(&c.common)
+	c.LeadsInvalidPayApi = (*LeadsInvalidPayApiService)(&c.common)
+	c.LeadsListApi = (*LeadsListApiService)(&c.common)
+	c.LeadsStatusApi = (*LeadsStatusApiService)(&c.common)
+	c.LeadsVoipCallApi = (*LeadsVoipCallApiService)(&c.common)
+	c.LeadsVoipCallTokenApi = (*LeadsVoipCallTokenApiService)(&c.common)
 	c.LiveRoomComponentStatusApi = (*LiveRoomComponentStatusApiService)(&c.common)
 	c.LiveRoomComponentsApi = (*LiveRoomComponentsApiService)(&c.common)
 	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
@@ -247,8 +388,13 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
+	c.MarketingTargetAssetCategoriesApi = (*MarketingTargetAssetCategoriesApiService)(&c.common)
+	c.MarketingTargetAssetDetailApi = (*MarketingTargetAssetDetailApiService)(&c.common)
+	c.MarketingTargetAssetPropertiesApi = (*MarketingTargetAssetPropertiesApiService)(&c.common)
+	c.MarketingTargetAssetPropertyValuesApi = (*MarketingTargetAssetPropertyValuesApiService)(&c.common)
 	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
 	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
+	c.MaterialDcatagApi = (*MaterialDcatagApiService)(&c.common)
 	c.MaterialLabelsApi = (*MaterialLabelsApiService)(&c.common)
 	c.MergeFundTypeDailyBalanceReportApi = (*MergeFundTypeDailyBalanceReportApiService)(&c.common)
 	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)
@@ -256,18 +402,43 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
+	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
+	c.ProductCatalogsApi = (*ProductCatalogsApiService)(&c.common)
+	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
+	c.ProductSeriesApi = (*ProductSeriesApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
+	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
+	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
+	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
+	c.TargetingTagsUvApi = (*TargetingTagsUvApiService)(&c.common)
 	c.UnionPositionPackagesApi = (*UnionPositionPackagesApiService)(&c.common)
+	c.UserActionSetReportsApi = (*UserActionSetReportsApiService)(&c.common)
+	c.UserActionSetsApi = (*UserActionSetsApiService)(&c.common)
+	c.UserActionsApi = (*UserActionsApiService)(&c.common)
+	c.VideoChannelDealerDataApi = (*VideoChannelDealerDataApiService)(&c.common)
+	c.VideoChannelFansDataApi = (*VideoChannelFansDataApiService)(&c.common)
+	c.VideoChannelLeadsDataApi = (*VideoChannelLeadsDataApiService)(&c.common)
+	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
+	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
+	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
+	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
+	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
+	c.XijingPageApi = (*XijingPageApiService)(&c.common)
+	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
+	c.XijingPageListApi = (*XijingPageListApiService)(&c.common)
+	c.XijingTemplateApi = (*XijingTemplateApiService)(&c.common)
+	c.XijingTemplateListApi = (*XijingTemplateListApiService)(&c.common)
 
 	return c
 }

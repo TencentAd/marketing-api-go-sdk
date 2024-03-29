@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **RealtimeCostGet**
-> RealtimeCostGetResponse RealtimeCostGet(ctx, advertiserId, level, date, optional)
+> RealtimeCostGetResponse RealtimeCostGet(ctx, accountId, level, date, optional)
 获取实时消耗
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
   **level** | **string**|  | 
   **date** | **string**|  | 
  **optional** | ***RealtimeCostApiRealtimeCostGetOpts** | optional parameters | nil if no parameters

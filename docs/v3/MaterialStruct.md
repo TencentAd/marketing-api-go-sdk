@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type_** | [***ProgrammedMaterialType**](ProgrammedMaterialType.md) |  | [optional] [default to null]
+**Type_** | [***TemplateType**](TemplateType.md) |  | [optional] [default to null]
 **MediaId** | **string** |  | [optional] [default to null]
 **MaterialName** | **string** |  | [optional] [default to null]
 **OriginMediaId** | **string** |  | [optional] [default to null]

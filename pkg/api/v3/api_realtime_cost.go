@@ -32,7 +32,7 @@ type RealtimeCostApiService service
 /*
 RealtimeCostApiService 获取实时消耗
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param level
  * @param date
  * @param optional nil or *RealtimeCostGetOpts - Optional Parameters:
@@ -51,7 +51,7 @@ type RealtimeCostGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *RealtimeCostApiService) Get(ctx context.Context, advertiserId int64, level string, date string, localVarOptionals *RealtimeCostGetOpts) (RealtimeCostGetResponseData, http.Header, error) {
+func (a *RealtimeCostApiService) Get(ctx context.Context, accountId int64, level string, date string, localVarOptionals *RealtimeCostGetOpts) (RealtimeCostGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -69,7 +69,7 @@ func (a *RealtimeCostApiService) Get(ctx context.Context, advertiserId int64, le
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("level", parameterToString(level, ""))
 	localVarQueryParams.Add("date", parameterToString(date, ""))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {

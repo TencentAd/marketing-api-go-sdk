@@ -14,6 +14,7 @@ type ElementRejectDetailInfoListStruct struct {
 	ElementName        *string                         `json:"element_name,omitempty"`
 	ElementType        ReviewElementType               `json:"element_type,omitempty"`
 	ElementValue       *string                         `json:"element_value,omitempty"`
+	ComponentInfo      *ComponentInfoCanEmpty          `json:"component_info,omitempty"`
 	Reason             *string                         `json:"reason,omitempty"`
 	ReviewStatus       ReviewResultStatus              `json:"review_status,omitempty"`
 	RejectInfoLocation *[]RejectInfoLocationListStruct `json:"reject_info_location,omitempty"`

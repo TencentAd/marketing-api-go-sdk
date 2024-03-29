@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **FundStatementsDetailedGet**
-> FundStatementsDetailedGetResponse FundStatementsDetailedGet(ctx, advertiserId, fundType, dateRange, optional)
+> FundStatementsDetailedGetResponse FundStatementsDetailedGet(ctx, accountId, fundType, dateRange, optional)
 获取资金流水
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
   **fundType** | **string**|  | 
   **dateRange** | [**DateRangeTransaction**](DateRangeTransaction.md)|  | 
  **optional** | ***FundStatementsDetailedApiFundStatementsDetailedGetOpts** | optional parameters | nil if no parameters

@@ -837,6 +837,9 @@ type DailyReportApiListStruct struct {
 	ExpOverallTopPosition                      *int64   `json:"exp_overall_top_position,omitempty"`
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	Queryword                                  *string  `json:"queryword,omitempty"`
+	AdId                                       *int64   `json:"ad_id,omitempty"`
+	TriggerType                                *int64   `json:"trigger_type,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`

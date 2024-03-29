@@ -32,7 +32,7 @@ type AgencyRealtimeCostApiService service
 /*
 AgencyRealtimeCostApiService 服务商当日分账户实时消耗
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param optional nil or *AgencyRealtimeCostGetOpts - Optional Parameters:
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
@@ -43,7 +43,7 @@ type AgencyRealtimeCostGetOpts struct {
 	Fields optional.Interface
 }
 
-func (a *AgencyRealtimeCostApiService) Get(ctx context.Context, advertiserId int64, localVarOptionals *AgencyRealtimeCostGetOpts) (AgencyRealtimeCostGetResponseData, http.Header, error) {
+func (a *AgencyRealtimeCostApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AgencyRealtimeCostGetOpts) (AgencyRealtimeCostGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -61,7 +61,7 @@ func (a *AgencyRealtimeCostApiService) Get(ctx context.Context, advertiserId int
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

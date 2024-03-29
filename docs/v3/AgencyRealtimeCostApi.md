@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AgencyRealtimeCostGet**
-> AgencyRealtimeCostGetResponse AgencyRealtimeCostGet(ctx, advertiserId, optional)
+> AgencyRealtimeCostGetResponse AgencyRealtimeCostGet(ctx, accountId, optional)
 服务商当日分账户实时消耗
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
  **optional** | ***AgencyRealtimeCostApiAgencyRealtimeCostGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters

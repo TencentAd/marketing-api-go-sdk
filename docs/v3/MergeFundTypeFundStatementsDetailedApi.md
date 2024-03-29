@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **MergeFundTypeFundStatementsDetailedGet**
-> MergeFundTypeFundStatementsDetailedGetResponse MergeFundTypeFundStatementsDetailedGet(ctx, advertiserId, fundType, dateRange, optional)
+> MergeFundTypeFundStatementsDetailedGetResponse MergeFundTypeFundStatementsDetailedGet(ctx, accountId, fundType, dateRange, optional)
 获取资金合并类型资金流水
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
   **fundType** | **string**|  | 
   **dateRange** | [**DateRangeTransaction**](DateRangeTransaction.md)|  | 
  **optional** | ***MergeFundTypeFundStatementsDetailedApiMergeFundTypeFundStatementsDetailedGetOpts** | optional parameters | nil if no parameters

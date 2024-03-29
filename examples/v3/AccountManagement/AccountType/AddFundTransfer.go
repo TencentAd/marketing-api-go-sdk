@@ -34,6 +34,7 @@ func (e *FundTransferAddExample) Init() {
 	})
 	e.Data = model.FundTransferAddRequest{
 		Amount:       int64(0),
+		AccountId:    int64(0),
 		FundType:     model.AccountTypeMap_GIFT,
 		TransferType: "AGENCY_TO_ADVERTISER",
 	}

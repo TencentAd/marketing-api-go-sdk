@@ -24,7 +24,7 @@ import (
 type MergeFundTypeFundsGetExample struct {
 	TAds                      *ads.SDKClient
 	AccessToken               string
-	AdvertiserId              int64
+	AccountId                 int64
 	MergeFundTypeFundsGetOpts *api.MergeFundTypeFundsGetOpts
 }
 
@@ -34,7 +34,7 @@ func (e *MergeFundTypeFundsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = 789
 	e.MergeFundTypeFundsGetOpts = &api.MergeFundTypeFundsGetOpts{}
 }
 
@@ -42,7 +42,7 @@ func (e *MergeFundTypeFundsGetExample) RunExample() (model.MergeFundTypeFundsGet
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MergeFundTypeFunds().Get(ctx, e.AdvertiserId, e.MergeFundTypeFundsGetOpts)
+	return tads.MergeFundTypeFunds().Get(ctx, e.AccountId, e.MergeFundTypeFundsGetOpts)
 }
 
 func main() {

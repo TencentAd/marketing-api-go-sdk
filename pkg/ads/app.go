@@ -93,6 +93,10 @@ func (c *SDKClient) AdvertiserDailyBudget() *api.AdvertiserDailyBudgetApiService
 	return c.Client.AdvertiserDailyBudgetApi
 }
 
+func (c *SDKClient) Agency() *api.AgencyApiService {
+	return c.Client.AgencyApi
+}
+
 func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }

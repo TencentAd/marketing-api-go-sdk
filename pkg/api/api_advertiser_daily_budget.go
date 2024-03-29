@@ -34,7 +34,7 @@ AdvertiserDailyBudgetApiService 获取竞价广告账户日预算
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AdvertiserDailyBudgetGetOpts - Optional Parameters:
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+     * @param "Fields" (optional.Interface of []string) -
 
 @return AdvertiserDailyBudgetGetResponse
 */

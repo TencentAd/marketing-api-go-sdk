@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **WechatPagesGet**
-> WechatPagesGetResponse WechatPagesGet(ctx, advertiserId, optional)
+> WechatPagesGetResponse WechatPagesGet(ctx, accountId, optional)
 获取微信落地页列表
 
 ### Required Parameters
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
  **optional** | ***WechatPagesApiWechatPagesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters

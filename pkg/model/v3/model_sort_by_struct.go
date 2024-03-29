@@ -11,6 +11,6 @@ package model
 
 // 排序
 type SortByStruct struct {
-	Field *string    `json:"field,omitempty"`
-	Desc  SortedType `json:"desc,omitempty"`
+	Field *string `json:"field,omitempty"`
+	Desc  Sort    `json:"desc,omitempty"`
 }

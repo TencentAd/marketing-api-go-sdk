@@ -11,13 +11,14 @@ package model
 
 type AdvertiserAddRequest struct {
 	CorporationName         *string                  `json:"corporation_name,omitempty"`
+	CorporationLicence      *string                  `json:"corporation_licence,omitempty"`
 	CertificationImageId    *string                  `json:"certification_image_id,omitempty"`
-	SystemIndustryId        *int64                   `json:"system_industry_id,omitempty"`
-	IntroductionUrl         *string                  `json:"introduction_url,omitempty"`
 	IndividualQualification *IndividualQualification `json:"individual_qualification,omitempty"`
+	SystemIndustryId        *int64                   `json:"system_industry_id,omitempty"`
+	AreaCode                *int64                   `json:"area_code,omitempty"`
 	CorporateImageName      *string                  `json:"corporate_image_name,omitempty"`
+	IntroductionUrl         *string                  `json:"introduction_url,omitempty"`
+	CorporateBrandName      *string                  `json:"corporate_brand_name,omitempty"`
 	ContactPersonTelephone  *string                  `json:"contact_person_telephone,omitempty"`
 	ContactPersonMobile     *string                  `json:"contact_person_mobile,omitempty"`
-	CertificationNumber     *string                  `json:"certification_number,omitempty"`
-	AreaCode                *int64                   `json:"area_code,omitempty"`
 }

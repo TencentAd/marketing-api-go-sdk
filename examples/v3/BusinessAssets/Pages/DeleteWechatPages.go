@@ -33,7 +33,8 @@ func (e *WechatPagesDeleteExample) Init() {
 		IsDebug:     true,
 	})
 	e.Data = model.WechatPagesDeleteRequest{
-		PageId: int64(0),
+		PageId:    int64(0),
+		AccountId: int64(0),
 	}
 }
 

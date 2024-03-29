@@ -242,7 +242,7 @@ func (a *WechatPagesApiService) Delete(ctx context.Context, data WechatPagesDele
 /*
 WechatPagesApiService 获取微信落地页列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param optional nil or *WechatPagesGetOpts - Optional Parameters:
      * @param "OwnerUid" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
@@ -261,7 +261,7 @@ type WechatPagesGetOpts struct {
 	Fields    optional.Interface
 }
 
-func (a *WechatPagesApiService) Get(ctx context.Context, advertiserId int64, localVarOptionals *WechatPagesGetOpts) (WechatPagesGetResponseData, http.Header, error) {
+func (a *WechatPagesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WechatPagesGetOpts) (WechatPagesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -279,7 +279,7 @@ func (a *WechatPagesApiService) Get(ctx context.Context, advertiserId int64, loc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	if localVarOptionals != nil && localVarOptionals.OwnerUid.IsSet() {
 		localVarQueryParams.Add("owner_uid", parameterToString(localVarOptionals.OwnerUid.Value(), ""))
 	}

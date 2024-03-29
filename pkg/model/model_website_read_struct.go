@@ -9,7 +9,7 @@
 
 package model
 
-// 推广版位结构
+// 推广链接结构
 type WebsiteReadStruct struct {
 	WebsiteDomain *string       `json:"website_domain,omitempty"`
 	IcpImageId    *string       `json:"icp_image_id,omitempty"`

@@ -52,11 +52,14 @@ Optional parameters are passed through a pointer to a AdvertiserApiAdvertiserGet
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **agencyId** | **optional.Int64**|  | 
  **accountId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)|  | 
+ **paginationMode** | **optional.String**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **cursor** | **optional.Int64**|  | 
 
 ### Return type
 

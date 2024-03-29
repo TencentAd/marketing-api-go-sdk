@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AdvertiserId** | **int64** |  | [optional] [default to null]
+**AccountId** | **int64** |  | [optional] [default to null]
 **PageName** | **string** |  | [optional] [default to null]
 **PageTemplateId** | **int64** |  | [optional] [default to null]
 **PageElements** | [**[]PageElementsStruct**](page_elements_struct.md) |  | [optional] [default to null]

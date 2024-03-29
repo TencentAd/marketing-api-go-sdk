@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **FundsGet**
-> FundsGetResponse FundsGet(ctx, advertiserId, optional)
+> FundsGetResponse FundsGet(ctx, accountId, optional)
 获取资金账户信息
 
 ### Required Parameters
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **advertiserId** | **int64**|  | 
+  **accountId** | **int64**|  | 
  **optional** | ***FundsApiFundsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters

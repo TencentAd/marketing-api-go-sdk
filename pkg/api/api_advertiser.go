@@ -138,21 +138,27 @@ func (a *AdvertiserApiService) Add(ctx context.Context, data AdvertiserAddReques
 AdvertiserApiService 查询腾讯广告广告主信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *AdvertiserGetOpts - Optional Parameters:
+     * @param "AgencyId" (optional.Int64) -
      * @param "AccountId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Fields" (optional.Interface of []string) -
+     * @param "PaginationMode" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "Cursor" (optional.Int64) -
 
 @return AdvertiserGetResponse
 */
 
 type AdvertiserGetOpts struct {
-	AccountId optional.Int64
-	Filtering optional.Interface
-	Fields    optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
+	AgencyId       optional.Int64
+	AccountId      optional.Int64
+	Filtering      optional.Interface
+	Fields         optional.Interface
+	PaginationMode optional.String
+	Page           optional.Int64
+	PageSize       optional.Int64
+	Cursor         optional.Int64
 }
 
 func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *AdvertiserGetOpts) (AdvertiserGetResponseData, http.Header, error) {
@@ -173,6 +179,9 @@ func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *Adver
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
+	if localVarOptionals != nil && localVarOptionals.AgencyId.IsSet() {
+		localVarQueryParams.Add("agency_id", parameterToString(localVarOptionals.AgencyId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
 		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
 	}
@@ -182,11 +191,17 @@ func (a *AdvertiserApiService) Get(ctx context.Context, localVarOptionals *Adver
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
+	if localVarOptionals != nil && localVarOptionals.PaginationMode.IsSet() {
+		localVarQueryParams.Add("pagination_mode", parameterToString(localVarOptionals.PaginationMode.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Cursor.IsSet() {
+		localVarQueryParams.Add("cursor", parameterToString(localVarOptionals.Cursor.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

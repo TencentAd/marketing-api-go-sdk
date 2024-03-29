@@ -23,6 +23,7 @@ const (
 	PageType_FENGYE_ECOMMERCE               PageType = "PAGE_TYPE_FENGYE_ECOMMERCE"
 	PageType_XJ_QUICK                       PageType = "PAGE_TYPE_XJ_QUICK"
 	PageType_QQ_APP_MINI_PROGRAM            PageType = "PAGE_TYPE_QQ_APP_MINI_PROGRAM"
+	PageType_QQ_MINI_GAME                   PageType = "PAGE_TYPE_QQ_MINI_GAME"
 	PageType_APP_DEEP_LINK                  PageType = "PAGE_TYPE_APP_DEEP_LINK"
 	PageType_APP_MARKET                     PageType = "PAGE_TYPE_APP_MARKET"
 	PageType_ANDROID_QUICK_APP              PageType = "PAGE_TYPE_ANDROID_QUICK_APP"
