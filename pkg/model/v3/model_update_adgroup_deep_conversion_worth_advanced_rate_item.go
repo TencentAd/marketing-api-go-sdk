@@ -13,5 +13,4 @@ package model
 type UpdateAdgroupDeepConversionWorthAdvancedRateItem struct {
 	AdgroupId                       *int64   `json:"adgroup_id,omitempty"`
 	DeepConversionWorthAdvancedRate *float64 `json:"deep_conversion_worth_advanced_rate,omitempty"`
-	AccountId                       *int64   `json:"account_id,omitempty"`
 }

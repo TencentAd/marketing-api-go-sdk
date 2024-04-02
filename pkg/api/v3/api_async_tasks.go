@@ -139,7 +139,7 @@ AsyncTasksApiService 获取异步任务
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AsyncTasksGetOpts - Optional Parameters:
-     * @param "Filtering" (optional.Interface of []FilteringStruct) -
+     * @param "Filtering" (optional.Interface of []AsyncTaskFilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表

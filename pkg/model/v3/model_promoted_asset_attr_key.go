@@ -362,4 +362,6 @@ const (
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_HOMEPAGE_ADDRESS                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_HOMEPAGE_ADDRESS"
 	PromotedAssetAttrKey_PERSONAL_STORE_COMPANY_ENTITY                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PERSONAL_STORE_COMPANY_ENTITY"
 	PromotedAssetAttrKey_PLATFORM_CHANNEL_CATEGORY_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_CATEGORY_NAME"
+	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_BRAND_NAME                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_BRAND_NAME"
+	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_CATE_NAME                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_CATE_NAME"
 )

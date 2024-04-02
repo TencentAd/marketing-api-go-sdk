@@ -22,4 +22,10 @@ type TaskSpec struct {
 	UpdateAdgroupAutoAcquisitionSpec                 *[]UpdateAdgroupAutoAcquisitionItem                 `json:"update_adgroup_auto_acquisition_spec,omitempty"`
 	UpdateAdgroupDeepConversionWorthAdvancedRateSpec *[]UpdateAdgroupDeepConversionWorthAdvancedRateItem `json:"update_adgroup_deep_conversion_worth_advanced_rate_spec,omitempty"`
 	UpdateDeepConversionBehaviorAdvancedBidSpec      *[]UpdateDeepConversionBehaviorAdvancedBidItem      `json:"update_deep_conversion_behavior_advanced_bid_spec,omitempty"`
+	ReplyFinderObjectCommentSpec                     *[]ReplyFinderObjectCommentItem                     `json:"reply_finder_object_comment_spec,omitempty"`
+	DeleteFinderObjectCommentSpec                    *[]DeleteFinderObjectCommentItem                    `json:"delete_finder_object_comment_spec,omitempty"`
+	UpdateFinderObjectCommentFlagSpec                *[]UpdateFinderObjectCommentFlagItem                `json:"update_finder_object_comment_flag_spec,omitempty"`
+	UpdateAdgroupTimeSpec                            *[]UpdateAdgroupTimeItem                            `json:"update_adgroup_time_spec,omitempty"`
+	UpdateAdgroupDateSpec                            *[]UpdateAdgroupDateItem                            `json:"update_adgroup_date_spec,omitempty"`
+	UpdateAdgroupBidAmountSpec                       *[]UpdateAdgroupBidAmountItem                       `json:"update_adgroup_bid_amount_spec,omitempty"`
 }

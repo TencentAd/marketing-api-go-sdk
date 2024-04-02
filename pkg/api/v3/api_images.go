@@ -33,7 +33,7 @@ type ImagesApiService service
 /*
 ImagesApiService 添加图片文件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param uploadType
  * @param imageSignature
  * @param optional nil or *ImagesAddOpts - Optional Parameters:
@@ -58,7 +58,7 @@ type ImagesAddOpts struct {
 	ResizeFileSize optional.Int64
 }
 
-func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadType string, imageSignature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
+func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType string, imageSignature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -93,7 +93,7 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	localVarFormParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	localVarFormParams.Add("upload_type", parameterToString(uploadType, ""))
 	localVarFormParams.Add("image_signature", parameterToString(imageSignature, ""))
 	var localVarFile *os.File

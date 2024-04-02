@@ -10,6 +10,6 @@
 package model
 
 type MarketingTargetAssetPropertyValuesGetResponseData struct {
-	List     *[]GetPropertyListStruct `json:"list,omitempty"`
-	PageInfo *PageInfo                `json:"page_info,omitempty"`
+	List     *[]MarketingTargetAssetPropertyValuesGetGetPropertyListStruct `json:"list,omitempty"`
+	PageInfo *PageInfo                                                     `json:"page_info,omitempty"`
 }

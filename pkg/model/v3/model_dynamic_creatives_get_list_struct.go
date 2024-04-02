@@ -24,7 +24,6 @@ type DynamicCreativesGetListStruct struct {
 	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
 	EnableBreakthroughSiteset  *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	IsDeleted                  *bool                       `json:"is_deleted,omitempty"`
-	SystemStatus               DynamicCreativeStatus       `json:"system_status,omitempty"`
 	CreatedTime                *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
 	DynamicCreativeStatusInfo  *[]DcInfoStruct             `json:"dynamic_creative_status_info,omitempty"`

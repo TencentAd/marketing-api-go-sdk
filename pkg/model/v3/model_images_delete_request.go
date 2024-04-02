@@ -10,6 +10,6 @@
 package model
 
 type ImagesDeleteRequest struct {
-	AdvertiserId *int64  `json:"advertiser_id,omitempty"`
-	ImageId      *string `json:"image_id,omitempty"`
+	AccountId *int64  `json:"account_id,omitempty"`
+	ImageId   *string `json:"image_id,omitempty"`
 }

@@ -16,7 +16,6 @@ Name | Type | Description | Notes
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
-**SystemStatus** | [***DynamicCreativeStatus**](DynamicCreativeStatus.md) |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **DynamicCreativeStatusInfo** | [**[]DcInfoStruct**](dc_info_struct.md) |  | [optional] [default to null]

@@ -57,5 +57,7 @@ type AdgroupsAddRequest struct {
 	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
 	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
 	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
+	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
+	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
 }

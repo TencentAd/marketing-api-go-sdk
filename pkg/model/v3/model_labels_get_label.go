@@ -10,7 +10,7 @@
 package model
 
 // label返回结构
-type Label struct {
+type LabelsGetLabel struct {
 	LabelId          *int64  `json:"label_id,omitempty"`
 	AudienceId       *int64  `json:"audience_id,omitempty"`
 	DisplayLabelName *string `json:"display_label_name,omitempty"`

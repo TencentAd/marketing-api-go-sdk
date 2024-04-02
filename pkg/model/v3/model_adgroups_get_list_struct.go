@@ -78,4 +78,6 @@ type AdgroupsGetListStruct struct {
 	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
 	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
 	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
+	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
+	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 }

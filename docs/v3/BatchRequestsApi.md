@@ -24,7 +24,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
 
 ### HTTP request headers
 

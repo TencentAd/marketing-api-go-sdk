@@ -13,5 +13,4 @@ package model
 type UpdateAdgroupDailyBudgetItem struct {
 	AdgroupId   *int64 `json:"adgroup_id,omitempty"`
 	DailyBudget *int64 `json:"daily_budget,omitempty"`
-	AccountId   *int64 `json:"account_id,omitempty"`
 }

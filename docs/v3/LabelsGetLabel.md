@@ -1,4 +1,4 @@
-# Label
+# LabelsGetLabel
 
 ## Properties
 Name | Type | Description | Notes

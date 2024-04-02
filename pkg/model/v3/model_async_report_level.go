@@ -27,5 +27,6 @@ const (
 	AsyncReportLevel_MATERIAL_IMAGE   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_IMAGE"
 	AsyncReportLevel_MATERIAL_VIDEO   AsyncReportLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 	AsyncReportLevel_CHANNEL          AsyncReportLevel = "REPORT_LEVEL_CHANNEL"
+	AsyncReportLevel_LANDING_PAGE     AsyncReportLevel = "REPORT_LEVEL_LANDING_PAGE"
 	AsyncReportLevel_MARKETING_ASSET  AsyncReportLevel = "REPORT_LEVEL_MARKETING_ASSET"
 )

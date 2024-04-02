@@ -241,6 +241,7 @@ MarketingTargetAssetsApiService 获取可投放推广内容资产列表
  * @param accountId
  * @param marketingTargetType
  * @param optional nil or *MarketingTargetAssetsGetOpts - Optional Parameters:
+     * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
@@ -249,9 +250,10 @@ MarketingTargetAssetsApiService 获取可投放推广内容资产列表
 */
 
 type MarketingTargetAssetsGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	Filtering optional.Interface
+	Page      optional.Int64
+	PageSize  optional.Int64
+	Fields    optional.Interface
 }
 
 func (a *MarketingTargetAssetsApiService) Get(ctx context.Context, accountId int64, marketingTargetType string, localVarOptionals *MarketingTargetAssetsGetOpts) (MarketingTargetAssetsGetResponseData, http.Header, error) {
@@ -274,6 +276,9 @@ func (a *MarketingTargetAssetsApiService) Get(ctx context.Context, accountId int
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
+	}
 	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
 		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
 	}

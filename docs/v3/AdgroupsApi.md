@@ -8,10 +8,10 @@ Method | HTTP request | Description
 [**AdgroupsDelete**](AdgroupsApi.md#AdgroupsDelete) | **Post** /adgroups/delete | 删除广告组
 [**AdgroupsGet**](AdgroupsApi.md#AdgroupsGet) | **Get** /adgroups/get | 获取广告组
 [**AdgroupsUpdate**](AdgroupsApi.md#AdgroupsUpdate) | **Post** /adgroups/update | 更新广告组
-[**AdgroupsUpdateBidAmount**](AdgroupsApi.md#AdgroupsUpdateBidAmount) | **Post** /adgroups/update_bid_amount | 更新广告组出价
-[**AdgroupsUpdateConfiguredStatus**](AdgroupsApi.md#AdgroupsUpdateConfiguredStatus) | **Post** /adgroups/update_configured_status | 更新广告组状态
-[**AdgroupsUpdateDailyBudget**](AdgroupsApi.md#AdgroupsUpdateDailyBudget) | **Post** /adgroups/update_daily_budget | 更新广告组日限额信息
-[**AdgroupsUpdateDatetime**](AdgroupsApi.md#AdgroupsUpdateDatetime) | **Post** /adgroups/update_datetime | 更新广告组投放时间
+[**AdgroupsUpdateBidAmount**](AdgroupsApi.md#AdgroupsUpdateBidAmount) | **Post** /adgroups/update_bid_amount | 批量修改广告组出价
+[**AdgroupsUpdateConfiguredStatus**](AdgroupsApi.md#AdgroupsUpdateConfiguredStatus) | **Post** /adgroups/update_configured_status | 批量修改广告组开启/暂停状态
+[**AdgroupsUpdateDailyBudget**](AdgroupsApi.md#AdgroupsUpdateDailyBudget) | **Post** /adgroups/update_daily_budget | 批量修改广告组日限额
+[**AdgroupsUpdateDatetime**](AdgroupsApi.md#AdgroupsUpdateDatetime) | **Post** /adgroups/update_datetime | 批量修改广告组投放起止时间
 
 
 # **AdgroupsAdd**
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateBidAmount**
 > AdgroupsUpdateBidAmountResponse AdgroupsUpdateBidAmount(ctx, data)
-更新广告组出价
+批量修改广告组出价
 
 ### Required Parameters
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateConfiguredStatus**
 > AdgroupsUpdateConfiguredStatusResponse AdgroupsUpdateConfiguredStatus(ctx, data)
-更新广告组状态
+批量修改广告组开启/暂停状态
 
 ### Required Parameters
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateDailyBudget**
 > AdgroupsUpdateDailyBudgetResponse AdgroupsUpdateDailyBudget(ctx, data)
-更新广告组日限额信息
+批量修改广告组日限额
 
 ### Required Parameters
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateDatetime**
 > AdgroupsUpdateDatetimeResponse AdgroupsUpdateDatetime(ctx, data)
-更新广告组投放时间
+批量修改广告组投放起止时间
 
 ### Required Parameters
 

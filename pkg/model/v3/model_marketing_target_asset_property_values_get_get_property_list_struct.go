@@ -10,7 +10,7 @@
 package model
 
 // 返回信息结构
-type GetPropertyListStruct struct {
+type MarketingTargetAssetPropertyValuesGetGetPropertyListStruct struct {
 	Properties      *[]DetailPropertyStruct `json:"properties,omitempty"`
 	ExtraProperties *[]ExtraProperty        `json:"extra_properties,omitempty"`
 }

@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
@@ -39,7 +40,10 @@ func (e *AdvertiserGetExample) Init() {
 	e.Fields = []string{"account_id", "daily_budget", "system_status", "reject_message", "corporation_name", "corporation_licence", "certification_image_id", "certification_image", "identity_number", "individual_qualification", "corporate_image_name", "corporate_image_logo", "system_industry_id", "customized_industry", "introduction_url", "industry_qualification_image_id_list", "industry_qualification_image", "ad_qualification_image_id_list", "ad_qualification_image", "contact_person", "contact_person_email", "contact_person_telephone", "contact_person_mobile", "wechat_spec", "websites"}
 	e.PaginationMode = "paginationMode_example"
 	e.PageSize = 789
-	e.AdvertiserGetOpts = &api.AdvertiserGetOpts{}
+	e.AdvertiserGetOpts = &api.AdvertiserGetOpts{
+
+		AccountId: optional.NewInt64(int64(0)),
+	}
 }
 
 func (e *AdvertiserGetExample) RunExample() (model.AdvertiserGetResponseData, http.Header, error) {

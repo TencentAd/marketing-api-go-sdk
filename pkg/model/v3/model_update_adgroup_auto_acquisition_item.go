@@ -14,5 +14,4 @@ type UpdateAdgroupAutoAcquisitionItem struct {
 	AdgroupId              *int64 `json:"adgroup_id,omitempty"`
 	AutoAcquisitionEnabled *bool  `json:"auto_acquisition_enabled,omitempty"`
 	AutoAcquisitionBudget  *int64 `json:"auto_acquisition_budget,omitempty"`
-	AccountId              *int64 `json:"account_id,omitempty"`
 }

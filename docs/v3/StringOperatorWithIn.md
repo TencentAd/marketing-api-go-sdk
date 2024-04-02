@@ -1,4 +1,4 @@
-# TaskType
+# StringOperatorWithIn
 
 ## Properties
 Name | Type | Description | Notes

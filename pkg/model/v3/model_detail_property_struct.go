@@ -18,4 +18,5 @@ type DetailPropertyStruct struct {
 	PropertyClass MarketingAssetAttrClass `json:"property_class,omitempty"`
 	PropertyType  *string                 `json:"property_type,omitempty"`
 	PropertyValue *[]string               `json:"property_value,omitempty"`
+	Recordable    *bool                   `json:"recordable,omitempty"`
 }

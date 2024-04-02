@@ -373,12 +373,24 @@ func (c *SDKClient) ProductCatalogs() *api.ProductCatalogsApiService {
 	return c.Client.ProductCatalogsApi
 }
 
+func (c *SDKClient) ProductCategoriesList() *api.ProductCategoriesListApiService {
+	return c.Client.ProductCategoriesListApi
+}
+
 func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 	return c.Client.ProductItemsApi
 }
 
+func (c *SDKClient) ProductItemsDetail() *api.ProductItemsDetailApiService {
+	return c.Client.ProductItemsDetailApi
+}
+
 func (c *SDKClient) ProductSeries() *api.ProductSeriesApiService {
 	return c.Client.ProductSeriesApi
+}
+
+func (c *SDKClient) ProductsSystemStatus() *api.ProductsSystemStatusApiService {
+	return c.Client.ProductsSystemStatusApi
 }
 
 func (c *SDKClient) Profiles() *api.ProfilesApiService {
@@ -423,6 +435,10 @@ func (c *SDKClient) TargetingTags() *api.TargetingTagsApiService {
 
 func (c *SDKClient) TargetingTagsUv() *api.TargetingTagsUvApiService {
 	return c.Client.TargetingTagsUvApi
+}
+
+func (c *SDKClient) Targetings() *api.TargetingsApiService {
+	return c.Client.TargetingsApi
 }
 
 func (c *SDKClient) UnionPositionPackages() *api.UnionPositionPackagesApiService {

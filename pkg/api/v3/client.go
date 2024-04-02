@@ -228,9 +228,15 @@ type APIClient struct {
 
 	ProductCatalogsApi *ProductCatalogsApiService
 
+	ProductCategoriesListApi *ProductCategoriesListApiService
+
 	ProductItemsApi *ProductItemsApiService
 
+	ProductItemsDetailApi *ProductItemsDetailApiService
+
 	ProductSeriesApi *ProductSeriesApiService
+
+	ProductsSystemStatusApi *ProductsSystemStatusApiService
 
 	ProfilesApi *ProfilesApiService
 
@@ -253,6 +259,8 @@ type APIClient struct {
 	TargetingTagsApi *TargetingTagsApiService
 
 	TargetingTagsUvApi *TargetingTagsUvApiService
+
+	TargetingsApi *TargetingsApiService
 
 	UnionPositionPackagesApi *UnionPositionPackagesApiService
 
@@ -405,8 +413,11 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
 	c.ProductCatalogsApi = (*ProductCatalogsApiService)(&c.common)
+	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
+	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
 	c.ProductSeriesApi = (*ProductSeriesApiService)(&c.common)
+	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
@@ -418,6 +429,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
 	c.TargetingTagsUvApi = (*TargetingTagsUvApiService)(&c.common)
+	c.TargetingsApi = (*TargetingsApiService)(&c.common)
 	c.UnionPositionPackagesApi = (*UnionPositionPackagesApiService)(&c.common)
 	c.UserActionSetReportsApi = (*UserActionSetReportsApiService)(&c.common)
 	c.UserActionSetsApi = (*UserActionSetsApiService)(&c.common)

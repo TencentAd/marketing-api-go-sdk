@@ -139,7 +139,7 @@ BatchAsyncRequestsApiService 获取批量异步请求任务列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *BatchAsyncRequestsGetOpts - Optional Parameters:
-     * @param "Filtering" (optional.Interface of []FilteringStruct) -
+     * @param "Filtering" (optional.Interface of []BatchAsyncTaskFilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表

@@ -13,5 +13,4 @@ package model
 type UpdateAdgroupConfiguredStatusItem struct {
 	AdgroupId        *int64           `json:"adgroup_id,omitempty"`
 	ConfiguredStatus ConfiguredStatus `json:"configured_status,omitempty"`
-	AccountId        *int64           `json:"account_id,omitempty"`
 }

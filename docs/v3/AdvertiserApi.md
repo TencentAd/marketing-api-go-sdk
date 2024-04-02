@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**AdvertiserAdd**](AdvertiserApi.md#AdvertiserAdd) | **Post** /advertiser/add | 添加腾讯广告服务商子客
 [**AdvertiserGet**](AdvertiserApi.md#AdvertiserGet) | **Get** /advertiser/get | 查询腾讯广告广告主信息
 [**AdvertiserUpdate**](AdvertiserApi.md#AdvertiserUpdate) | **Post** /advertiser/update | 更新腾讯广告广告主信息
-[**AdvertiserUpdateDailyBudget**](AdvertiserApi.md#AdvertiserUpdateDailyBudget) | **Post** /advertiser/update_daily_budget | 更新广告主日限额信息
+[**AdvertiserUpdateDailyBudget**](AdvertiserApi.md#AdvertiserUpdateDailyBudget) | **Post** /advertiser/update_daily_budget | 批量修改广告主日限额
 
 
 # **AdvertiserAdd**
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 
  **agencyId** | **optional.Int64**|  | 
- **advertiserId** | **optional.Int64**|  | 
+ **accountId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **cursor** | **optional.Int64**|  | 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserUpdateDailyBudget**
 > AdvertiserUpdateDailyBudgetResponse AdvertiserUpdateDailyBudget(ctx, data)
-更新广告主日限额信息
+批量修改广告主日限额
 
 ### Required Parameters
 

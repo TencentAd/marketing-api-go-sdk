@@ -16,4 +16,5 @@ type ProductCatalogsAddRequest struct {
 	CatalogType      DpaApiCatalogType  `json:"catalog_type,omitempty"`
 	IndustryType     DpaCatalogIndustry `json:"industry_type,omitempty"`
 	CatalogVersion   *int64             `json:"catalog_version,omitempty"`
+	BusinessUnitId   *int64             `json:"business_unit_id,omitempty"`
 }

@@ -142,7 +142,7 @@ AdvertiserApiService 查询腾讯广告广告主信息
  * @param pageSize
  * @param optional nil or *AdvertiserGetOpts - Optional Parameters:
      * @param "AgencyId" (optional.Int64) -
-     * @param "AdvertiserId" (optional.Int64) -
+     * @param "AccountId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "Cursor" (optional.Int64) -
@@ -151,11 +151,11 @@ AdvertiserApiService 查询腾讯广告广告主信息
 */
 
 type AdvertiserGetOpts struct {
-	AgencyId     optional.Int64
-	AdvertiserId optional.Int64
-	Filtering    optional.Interface
-	Page         optional.Int64
-	Cursor       optional.Int64
+	AgencyId  optional.Int64
+	AccountId optional.Int64
+	Filtering optional.Interface
+	Page      optional.Int64
+	Cursor    optional.Int64
 }
 
 func (a *AdvertiserApiService) Get(ctx context.Context, fields []string, paginationMode string, pageSize int64, localVarOptionals *AdvertiserGetOpts) (AdvertiserGetResponseData, http.Header, error) {
@@ -179,8 +179,8 @@ func (a *AdvertiserApiService) Get(ctx context.Context, fields []string, paginat
 	if localVarOptionals != nil && localVarOptionals.AgencyId.IsSet() {
 		localVarQueryParams.Add("agency_id", parameterToString(localVarOptionals.AgencyId.Value(), ""))
 	}
-	if localVarOptionals != nil && localVarOptionals.AdvertiserId.IsSet() {
-		localVarQueryParams.Add("advertiser_id", parameterToString(localVarOptionals.AdvertiserId.Value(), ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
@@ -378,7 +378,7 @@ func (a *AdvertiserApiService) Update(ctx context.Context, data AdvertiserUpdate
 }
 
 /*
-AdvertiserApiService 更新广告主日限额信息
+AdvertiserApiService 批量修改广告主日限额
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

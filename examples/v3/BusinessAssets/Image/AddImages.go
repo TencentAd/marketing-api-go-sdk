@@ -24,7 +24,7 @@ import (
 type ImagesAddExample struct {
 	TAds           *ads.SDKClient
 	AccessToken    string
-	AdvertiserId   int64
+	AccountId      int64
 	UploadType     string
 	ImageSignature string
 	ImagesAddOpts  *api.ImagesAddOpts
@@ -36,7 +36,7 @@ func (e *ImagesAddExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AdvertiserId = 789
+	e.AccountId = int64(0)
 	e.UploadType = "UPLOAD_TYPE_FILE"
 	e.ImageSignature = "imageSignature_example"
 	e.ImagesAddOpts = &api.ImagesAddOpts{}
@@ -46,7 +46,7 @@ func (e *ImagesAddExample) RunExample() (model.ImagesAddResponseData, http.Heade
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Images().Add(ctx, e.AdvertiserId, e.UploadType, e.ImageSignature, e.ImagesAddOpts)
+	return tads.Images().Add(ctx, e.AccountId, e.UploadType, e.ImageSignature, e.ImagesAddOpts)
 }
 
 func main() {

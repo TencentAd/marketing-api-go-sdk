@@ -11,8 +11,7 @@ package model
 
 // 定向包分享结构
 type TargetingsShareItem struct {
-	TargetingId         *int64             `json:"targeting_id,omitempty"`
-	ShareToAccountId    *int64             `json:"share_to_account_id,omitempty"`
-	ShareType           TargetingShareType `json:"share_type,omitempty"`
-	IsDataModelVersion3 *bool              `json:"is_data_model_version3,omitempty"`
+	TargetingId      *int64             `json:"targeting_id,omitempty"`
+	ShareToAccountId *int64             `json:"share_to_account_id,omitempty"`
+	ShareType        TargetingShareType `json:"share_type,omitempty"`
 }
