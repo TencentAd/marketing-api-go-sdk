@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ImageId** | **string** |  | [optional] [default to null]
+**ImageIdList** | **string** |  | [optional] [default to null]
 **Width** | **int64** |  | [optional] [default to null]
 **Height** | **int64** |  | [optional] [default to null]
 **PaddingTop** | **int64** |  | [optional] [default to null]

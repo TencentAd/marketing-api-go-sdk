@@ -28,6 +28,7 @@ Name | Type | Description  | Notes
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **adContext** | [**optional.Interface of AdContext**](AdContext.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

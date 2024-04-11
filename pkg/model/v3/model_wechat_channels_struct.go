@@ -11,10 +11,7 @@ package model
 
 // 视频号信息组件
 type WechatChannelsStruct struct {
-	LivePromotedType       LivePromotedType               `json:"live_promoted_type,omitempty"`
-	ExportId               *string                        `json:"export_id,omitempty"`
-	Username               *string                        `json:"username,omitempty"`
-	ExportIdHashValue      *int64                         `json:"export_id_hash_value,omitempty"`
-	FinderObjectVisibility *bool                          `json:"finder_object_visibility,omitempty"`
-	CoverImgShowType       WechatChannelsCoverImgShowType `json:"cover_img_show_type,omitempty"`
+	LivePromotedType       LivePromotedType `json:"live_promoted_type,omitempty"`
+	Username               *string          `json:"username,omitempty"`
+	FinderObjectVisibility *bool            `json:"finder_object_visibility,omitempty"`
 }

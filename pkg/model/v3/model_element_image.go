@@ -11,5 +11,5 @@ package model
 
 // 图片组件元素
 type ElementImage struct {
-	ImageId *[]string `json:"image_id,omitempty"`
+	ImageIdList *[]string `json:"image_id_list,omitempty"`
 }

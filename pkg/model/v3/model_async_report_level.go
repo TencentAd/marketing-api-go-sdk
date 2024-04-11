@@ -29,4 +29,5 @@ const (
 	AsyncReportLevel_CHANNEL          AsyncReportLevel = "REPORT_LEVEL_CHANNEL"
 	AsyncReportLevel_LANDING_PAGE     AsyncReportLevel = "REPORT_LEVEL_LANDING_PAGE"
 	AsyncReportLevel_MARKETING_ASSET  AsyncReportLevel = "REPORT_LEVEL_MARKETING_ASSET"
+	AsyncReportLevel_AD_UNION         AsyncReportLevel = "REPORT_LEVEL_AD_UNION"
 )

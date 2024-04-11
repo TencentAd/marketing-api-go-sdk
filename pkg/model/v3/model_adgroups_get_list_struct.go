@@ -80,4 +80,5 @@ type AdgroupsGetListStruct struct {
 	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
+	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
 }

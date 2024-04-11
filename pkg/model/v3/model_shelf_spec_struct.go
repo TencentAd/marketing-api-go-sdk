@@ -12,7 +12,7 @@ package model
 // 图文复合组件
 type ShelfSpecStruct struct {
 	ShelfButtonSpec *ShelfButtonSpec `json:"shelf_button_spec,omitempty"`
-	ImageId         *string          `json:"image_id,omitempty"`
+	ImageIdList     *string          `json:"image_id_list,omitempty"`
 	Title           *string          `json:"title,omitempty"`
 	Desc            *string          `json:"desc,omitempty"`
 }

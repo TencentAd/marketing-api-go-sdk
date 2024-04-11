@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StyleType** | **int64** |  | [optional] [default to null]
-**ImageId** | **string** |  | [optional] [default to null]
+**ImageIdList** | **string** |  | [optional] [default to null]
 **Title** | **string** |  | [optional] [default to null]
 **TitleColor** | **string** |  | [optional] [default to null]
 **Desc** | **string** |  | [optional] [default to null]

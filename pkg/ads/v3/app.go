@@ -13,8 +13,16 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 )
 
+func (c *SDKClient) AccountVersion() *api.AccountVersionApiService {
+	return c.Client.AccountVersionApi
+}
+
 func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
 	return c.Client.AdDiagnosisApi
+}
+
+func (c *SDKClient) AdLabel() *api.AdLabelApiService {
+	return c.Client.AdLabelApi
 }
 
 func (c *SDKClient) AdParam() *api.AdParamApiService {
@@ -75,6 +83,14 @@ func (c *SDKClient) AsyncTasks() *api.AsyncTasksApiService {
 
 func (c *SDKClient) AudienceGrantRelations() *api.AudienceGrantRelationsApiService {
 	return c.Client.AudienceGrantRelationsApi
+}
+
+func (c *SDKClient) Barrage() *api.BarrageApiService {
+	return c.Client.BarrageApi
+}
+
+func (c *SDKClient) BarrageRecommend() *api.BarrageRecommendApiService {
+	return c.Client.BarrageRecommendApi
 }
 
 func (c *SDKClient) BatchAsyncRequestSpecification() *api.BatchAsyncRequestSpecificationApiService {
@@ -217,6 +233,10 @@ func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
 	return c.Client.HourlyReportsApi
 }
 
+func (c *SDKClient) ImageProcessing() *api.ImageProcessingApiService {
+	return c.Client.ImageProcessingApi
+}
+
 func (c *SDKClient) Images() *api.ImagesApiService {
 	return c.Client.ImagesApi
 }
@@ -305,6 +325,10 @@ func (c *SDKClient) LocalStoresWxpayMerchants() *api.LocalStoresWxpayMerchantsAp
 	return c.Client.LocalStoresWxpayMerchantsApi
 }
 
+func (c *SDKClient) MarketingRules() *api.MarketingRulesApiService {
+	return c.Client.MarketingRulesApi
+}
+
 func (c *SDKClient) MarketingTargetAssetCategories() *api.MarketingTargetAssetCategoriesApiService {
 	return c.Client.MarketingTargetAssetCategoriesApi
 }
@@ -357,6 +381,10 @@ func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
 
+func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
+	return c.Client.ObjectCommentFlagApi
+}
+
 func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissionsApiService {
 	return c.Client.OptimizationGoalPermissionsApi
 }
@@ -383,6 +411,10 @@ func (c *SDKClient) ProductItems() *api.ProductItemsApiService {
 
 func (c *SDKClient) ProductItemsDetail() *api.ProductItemsDetailApiService {
 	return c.Client.ProductItemsDetailApi
+}
+
+func (c *SDKClient) ProductItemsVerticals() *api.ProductItemsVerticalsApiService {
+	return c.Client.ProductItemsVerticalsApi
 }
 
 func (c *SDKClient) ProductSeries() *api.ProductSeriesApiService {
@@ -415,6 +447,30 @@ func (c *SDKClient) RealtimeCost() *api.RealtimeCostApiService {
 
 func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewResultsApiService {
 	return c.Client.ReviewElementPrereviewResultsApi
+}
+
+func (c *SDKClient) Rta() *api.RtaApiService {
+	return c.Client.RtaApi
+}
+
+func (c *SDKClient) Rtaexp() *api.RtaexpApiService {
+	return c.Client.RtaexpApi
+}
+
+func (c *SDKClient) RtaexpDataRoi() *api.RtaexpDataRoiApiService {
+	return c.Client.RtaexpDataRoiApi
+}
+
+func (c *SDKClient) RtaexpDspTagData() *api.RtaexpDspTagDataApiService {
+	return c.Client.RtaexpDspTagDataApi
+}
+
+func (c *SDKClient) Rtatarget() *api.RtatargetApiService {
+	return c.Client.RtatargetApi
+}
+
+func (c *SDKClient) RtatargetBind() *api.RtatargetBindApiService {
+	return c.Client.RtatargetBindApi
 }
 
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
@@ -477,8 +533,48 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 	return c.Client.VideosApi
 }
 
+func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {
+	return c.Client.WechatChannelsAccountsApi
+}
+
+func (c *SDKClient) WechatChannelsAdAccount() *api.WechatChannelsAdAccountApiService {
+	return c.Client.WechatChannelsAdAccountApi
+}
+
+func (c *SDKClient) WechatChannelsAdAccountCertificationFile() *api.WechatChannelsAdAccountCertificationFileApiService {
+	return c.Client.WechatChannelsAdAccountCertificationFileApi
+}
+
+func (c *SDKClient) WechatChannelsAdAccountValidation() *api.WechatChannelsAdAccountValidationApiService {
+	return c.Client.WechatChannelsAdAccountValidationApi
+}
+
+func (c *SDKClient) WechatChannelsAdAccountWechatBinding() *api.WechatChannelsAdAccountWechatBindingApiService {
+	return c.Client.WechatChannelsAdAccountWechatBindingApi
+}
+
+func (c *SDKClient) WechatChannelsAuthorization() *api.WechatChannelsAuthorizationApiService {
+	return c.Client.WechatChannelsAuthorizationApi
+}
+
+func (c *SDKClient) WechatOfficialAccounts() *api.WechatOfficialAccountsApiService {
+	return c.Client.WechatOfficialAccountsApi
+}
+
 func (c *SDKClient) WechatPages() *api.WechatPagesApiService {
 	return c.Client.WechatPagesApi
+}
+
+func (c *SDKClient) WechatPagesCsgroupStatus() *api.WechatPagesCsgroupStatusApiService {
+	return c.Client.WechatPagesCsgroupStatusApi
+}
+
+func (c *SDKClient) WechatPagesCsgroupUser() *api.WechatPagesCsgroupUserApiService {
+	return c.Client.WechatPagesCsgroupUserApi
+}
+
+func (c *SDKClient) WechatPagesCsgrouplist() *api.WechatPagesCsgrouplistApiService {
+	return c.Client.WechatPagesCsgrouplistApi
 }
 
 func (c *SDKClient) WechatPagesCustom() *api.WechatPagesCustomApiService {
@@ -511,6 +607,10 @@ func (c *SDKClient) XijingPage() *api.XijingPageApiService {
 
 func (c *SDKClient) XijingPageByComponents() *api.XijingPageByComponentsApiService {
 	return c.Client.XijingPageByComponentsApi
+}
+
+func (c *SDKClient) XijingPageInteractive() *api.XijingPageInteractiveApiService {
+	return c.Client.XijingPageInteractiveApi
 }
 
 func (c *SDKClient) XijingPageList() *api.XijingPageListApiService {

@@ -9,7 +9,7 @@
 
 package model
 
-// 推广内容资产外部ID数据
+// 产品外部ID数据
 type MarketingAssetOuterSpec struct {
 	MarketingTargetType      MarketingTargetType `json:"marketing_target_type,omitempty"`
 	MarketingAssetOuterId    *string             `json:"marketing_asset_outer_id,omitempty"`

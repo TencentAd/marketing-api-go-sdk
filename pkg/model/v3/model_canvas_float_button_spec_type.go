@@ -12,7 +12,7 @@ package model
 // 悬浮组件元素
 type CanvasFloatButtonSpecType struct {
 	StyleType        *int64                 `json:"style_type,omitempty"`
-	ImageId          *string                `json:"image_id,omitempty"`
+	ImageIdList      *string                `json:"image_id_list,omitempty"`
 	Title            *string                `json:"title,omitempty"`
 	TitleColor       *string                `json:"title_color,omitempty"`
 	Desc             *string                `json:"desc,omitempty"`

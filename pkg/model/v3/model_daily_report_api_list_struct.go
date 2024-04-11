@@ -818,6 +818,7 @@ type DailyReportApiListStruct struct {
 	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
+	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -838,8 +839,6 @@ type DailyReportApiListStruct struct {
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
-	AdId                                       *int64   `json:"ad_id,omitempty"`
-	TriggerType                                *int64   `json:"trigger_type,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`

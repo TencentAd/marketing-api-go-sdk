@@ -11,18 +11,18 @@ package model
 
 // 返回结构
 type WechatPagesGetListStruct struct {
-	PageId              *int64                   `json:"page_id,omitempty"`
-	PageName            *string                  `json:"page_name,omitempty"`
-	CreatedTime         *int64                   `json:"created_time,omitempty"`
-	LastModifiedTime    *int64                   `json:"last_modified_time,omitempty"`
-	PageTemplateId      *int64                   `json:"page_template_id,omitempty"`
-	PageElements        *[]PageElementsStruct    `json:"page_elements,omitempty"`
-	ShareContentSpec    *ShareContentSpec        `json:"share_content_spec,omitempty"`
-	PreviewUrl          *string                  `json:"preview_url,omitempty"`
-	PageType            PageType                 `json:"page_type,omitempty"`
-	SourceType          WechatPageSourceType     `json:"source_type,omitempty"`
-	VideoResourceStatus WechatPageResourceStatus `json:"video_resource_status,omitempty"`
-	CanvasType          CanvasType               `json:"canvas_type,omitempty"`
-	OwnerUid            *int64                   `json:"owner_uid,omitempty"`
-	PageStatus          PageStatus               `json:"page_status,omitempty"`
+	PageId               *int64                   `json:"page_id,omitempty"`
+	PageName             *string                  `json:"page_name,omitempty"`
+	CreatedTime          *int64                   `json:"created_time,omitempty"`
+	LastModifiedTime     *int64                   `json:"last_modified_time,omitempty"`
+	PageTemplateId       *int64                   `json:"page_template_id,omitempty"`
+	PageElementsSpecList *[]PageElementsStruct    `json:"page_elements_spec_list,omitempty"`
+	ShareContentSpec     *ShareContentSpec        `json:"share_content_spec,omitempty"`
+	PreviewUrl           *string                  `json:"preview_url,omitempty"`
+	PageType             PageType                 `json:"page_type,omitempty"`
+	SourceType           WechatPageSourceType     `json:"source_type,omitempty"`
+	VideoResourceStatus  WechatPageResourceStatus `json:"video_resource_status,omitempty"`
+	CanvasType           CanvasType               `json:"canvas_type,omitempty"`
+	OwnerUid             *int64                   `json:"owner_uid,omitempty"`
+	PageStatus           PageStatus               `json:"page_status,omitempty"`
 }

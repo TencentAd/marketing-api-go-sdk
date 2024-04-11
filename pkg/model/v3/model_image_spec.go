@@ -11,7 +11,7 @@ package model
 
 // 基础图片组件元素
 type ImageSpec struct {
-	ImageId       *string `json:"image_id,omitempty"`
+	ImageIdList   *string `json:"image_id_list,omitempty"`
 	Width         *int64  `json:"width,omitempty"`
 	Height        *int64  `json:"height,omitempty"`
 	PaddingTop    *int64  `json:"padding_top,omitempty"`

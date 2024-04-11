@@ -11,7 +11,7 @@ package model
 
 // 动画悬浮组件
 type ElementAnimateFloat struct {
-	ImageId                *string                 `json:"image_id,omitempty"`
+	ImageIdList            *string                 `json:"image_id_list,omitempty"`
 	Title                  *string                 `json:"title,omitempty"`
 	Desc                   *string                 `json:"desc,omitempty"`
 	AnimateFloatButtonSpec *AnimateFloatButtonSpec `json:"animate_float_button_spec,omitempty"`

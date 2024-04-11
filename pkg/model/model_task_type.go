@@ -244,5 +244,6 @@ const (
 	TaskType_TASK_TYPE_MULTI_ACCOUNT_INTEGRATED_DATA_V3                                TaskType = "TASK_TYPE_MULTI_ACCOUNT_INTEGRATED_DATA_V3"
 	TaskType_TASK_TYPE_CREATE_ASYNC_REPORT_V3                                          TaskType = "TASK_TYPE_CREATE_ASYNC_REPORT_V3"
 	TaskType_TASK_TYPE_VIDEO_COMPONENT_TRANSCODE                                       TaskType = "TASK_TYPE_VIDEO_COMPONENT_TRANSCODE"
+	TaskType_TASK_TYPE_CREATE_ASYNC_ASSET                                              TaskType = "TASK_TYPE_CREATE_ASYNC_ASSET"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )

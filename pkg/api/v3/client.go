@@ -48,7 +48,11 @@ type APIClient struct {
 
 	// API Services
 
+	AccountVersionApi *AccountVersionApiService
+
 	AdDiagnosisApi *AdDiagnosisApiService
+
+	AdLabelApi *AdLabelApiService
 
 	AdParamApi *AdParamApiService
 
@@ -79,6 +83,10 @@ type APIClient struct {
 	AsyncTasksApi *AsyncTasksApiService
 
 	AudienceGrantRelationsApi *AudienceGrantRelationsApiService
+
+	BarrageApi *BarrageApiService
+
+	BarrageRecommendApi *BarrageRecommendApiService
 
 	BatchAsyncRequestSpecificationApi *BatchAsyncRequestSpecificationApiService
 
@@ -150,6 +158,8 @@ type APIClient struct {
 
 	HourlyReportsApi *HourlyReportsApiService
 
+	ImageProcessingApi *ImageProcessingApiService
+
 	ImagesApi *ImagesApiService
 
 	KeywordRecommendApi *KeywordRecommendApiService
@@ -194,6 +204,8 @@ type APIClient struct {
 
 	LocalStoresWxpayMerchantsApi *LocalStoresWxpayMerchantsApiService
 
+	MarketingRulesApi *MarketingRulesApiService
+
 	MarketingTargetAssetCategoriesApi *MarketingTargetAssetCategoriesApiService
 
 	MarketingTargetAssetDetailApi *MarketingTargetAssetDetailApiService
@@ -220,6 +232,8 @@ type APIClient struct {
 
 	OauthApi *OauthApiService
 
+	ObjectCommentFlagApi *ObjectCommentFlagApiService
+
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
 
 	OrganizationAccountRelationApi *OrganizationAccountRelationApiService
@@ -233,6 +247,8 @@ type APIClient struct {
 	ProductItemsApi *ProductItemsApiService
 
 	ProductItemsDetailApi *ProductItemsDetailApiService
+
+	ProductItemsVerticalsApi *ProductItemsVerticalsApiService
 
 	ProductSeriesApi *ProductSeriesApiService
 
@@ -249,6 +265,18 @@ type APIClient struct {
 	RealtimeCostApi *RealtimeCostApiService
 
 	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
+
+	RtaApi *RtaApiService
+
+	RtaexpApi *RtaexpApiService
+
+	RtaexpDataRoiApi *RtaexpDataRoiApiService
+
+	RtaexpDspTagDataApi *RtaexpDspTagDataApiService
+
+	RtatargetApi *RtatargetApiService
+
+	RtatargetBindApi *RtatargetBindApiService
 
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
@@ -280,7 +308,27 @@ type APIClient struct {
 
 	VideosApi *VideosApiService
 
+	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
+
+	WechatChannelsAdAccountApi *WechatChannelsAdAccountApiService
+
+	WechatChannelsAdAccountCertificationFileApi *WechatChannelsAdAccountCertificationFileApiService
+
+	WechatChannelsAdAccountValidationApi *WechatChannelsAdAccountValidationApiService
+
+	WechatChannelsAdAccountWechatBindingApi *WechatChannelsAdAccountWechatBindingApiService
+
+	WechatChannelsAuthorizationApi *WechatChannelsAuthorizationApiService
+
+	WechatOfficialAccountsApi *WechatOfficialAccountsApiService
+
 	WechatPagesApi *WechatPagesApiService
+
+	WechatPagesCsgroupStatusApi *WechatPagesCsgroupStatusApiService
+
+	WechatPagesCsgroupUserApi *WechatPagesCsgroupUserApiService
+
+	WechatPagesCsgrouplistApi *WechatPagesCsgrouplistApiService
 
 	WechatPagesCustomApi *WechatPagesCustomApiService
 
@@ -297,6 +345,8 @@ type APIClient struct {
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
+
+	XijingPageInteractiveApi *XijingPageInteractiveApiService
 
 	XijingPageListApi *XijingPageListApiService
 
@@ -323,7 +373,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.common.client = c
 
 	// API Services
+	c.AccountVersionApi = (*AccountVersionApiService)(&c.common)
 	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
+	c.AdLabelApi = (*AdLabelApiService)(&c.common)
 	c.AdParamApi = (*AdParamApiService)(&c.common)
 	c.AdUnionReportsApi = (*AdUnionReportsApiService)(&c.common)
 	c.AdcreativePreviewsApi = (*AdcreativePreviewsApiService)(&c.common)
@@ -339,6 +391,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
 	c.AsyncTasksApi = (*AsyncTasksApiService)(&c.common)
 	c.AudienceGrantRelationsApi = (*AudienceGrantRelationsApiService)(&c.common)
+	c.BarrageApi = (*BarrageApiService)(&c.common)
+	c.BarrageRecommendApi = (*BarrageRecommendApiService)(&c.common)
 	c.BatchAsyncRequestSpecificationApi = (*BatchAsyncRequestSpecificationApiService)(&c.common)
 	c.BatchAsyncRequestsApi = (*BatchAsyncRequestsApiService)(&c.common)
 	c.BatchRequestsApi = (*BatchRequestsApiService)(&c.common)
@@ -374,6 +428,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.GameFeatureApi = (*GameFeatureApiService)(&c.common)
 	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
+	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
 	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
 	c.LabelsApi = (*LabelsApiService)(&c.common)
@@ -396,6 +451,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
 	c.LocalStoresSearchInfoApi = (*LocalStoresSearchInfoApiService)(&c.common)
 	c.LocalStoresWxpayMerchantsApi = (*LocalStoresWxpayMerchantsApiService)(&c.common)
+	c.MarketingRulesApi = (*MarketingRulesApiService)(&c.common)
 	c.MarketingTargetAssetCategoriesApi = (*MarketingTargetAssetCategoriesApiService)(&c.common)
 	c.MarketingTargetAssetDetailApi = (*MarketingTargetAssetDetailApiService)(&c.common)
 	c.MarketingTargetAssetPropertiesApi = (*MarketingTargetAssetPropertiesApiService)(&c.common)
@@ -409,6 +465,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeFundsApi = (*MergeFundTypeFundsApiService)(&c.common)
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
+	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
@@ -416,6 +473,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProductCategoriesListApi = (*ProductCategoriesListApiService)(&c.common)
 	c.ProductItemsApi = (*ProductItemsApiService)(&c.common)
 	c.ProductItemsDetailApi = (*ProductItemsDetailApiService)(&c.common)
+	c.ProductItemsVerticalsApi = (*ProductItemsVerticalsApiService)(&c.common)
 	c.ProductSeriesApi = (*ProductSeriesApiService)(&c.common)
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
@@ -424,6 +482,12 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
+	c.RtaApi = (*RtaApiService)(&c.common)
+	c.RtaexpApi = (*RtaexpApiService)(&c.common)
+	c.RtaexpDataRoiApi = (*RtaexpDataRoiApiService)(&c.common)
+	c.RtaexpDspTagDataApi = (*RtaexpDspTagDataApiService)(&c.common)
+	c.RtatargetApi = (*RtatargetApiService)(&c.common)
+	c.RtatargetBindApi = (*RtatargetBindApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
@@ -439,7 +503,17 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideoChannelLeadsDataApi = (*VideoChannelLeadsDataApiService)(&c.common)
 	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
+	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
+	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)
+	c.WechatChannelsAdAccountCertificationFileApi = (*WechatChannelsAdAccountCertificationFileApiService)(&c.common)
+	c.WechatChannelsAdAccountValidationApi = (*WechatChannelsAdAccountValidationApiService)(&c.common)
+	c.WechatChannelsAdAccountWechatBindingApi = (*WechatChannelsAdAccountWechatBindingApiService)(&c.common)
+	c.WechatChannelsAuthorizationApi = (*WechatChannelsAuthorizationApiService)(&c.common)
+	c.WechatOfficialAccountsApi = (*WechatOfficialAccountsApiService)(&c.common)
 	c.WechatPagesApi = (*WechatPagesApiService)(&c.common)
+	c.WechatPagesCsgroupStatusApi = (*WechatPagesCsgroupStatusApiService)(&c.common)
+	c.WechatPagesCsgroupUserApi = (*WechatPagesCsgroupUserApiService)(&c.common)
+	c.WechatPagesCsgrouplistApi = (*WechatPagesCsgrouplistApiService)(&c.common)
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
@@ -448,6 +522,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
+	c.XijingPageInteractiveApi = (*XijingPageInteractiveApiService)(&c.common)
 	c.XijingPageListApi = (*XijingPageListApiService)(&c.common)
 	c.XijingTemplateApi = (*XijingTemplateApiService)(&c.common)
 	c.XijingTemplateListApi = (*XijingTemplateListApiService)(&c.common)

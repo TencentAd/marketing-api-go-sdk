@@ -818,6 +818,7 @@ type HourlyReportApiListStruct struct {
 	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
+	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

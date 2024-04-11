@@ -810,6 +810,7 @@ Name | Type | Description | Notes
 **ClkBlessingCardPv** | **int64** |  | [optional] [default to null]
 **ClkShortcutMenusPv** | **int64** |  | [optional] [default to null]
 **ChannelsDetailBtnPv** | **int64** |  | [optional] [default to null]
+**ZoneHeaderLiveClickCnt** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]

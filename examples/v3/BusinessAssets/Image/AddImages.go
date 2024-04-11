@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
@@ -22,12 +23,12 @@ import (
 )
 
 type ImagesAddExample struct {
-	TAds           *ads.SDKClient
-	AccessToken    string
-	AccountId      int64
-	UploadType     string
-	ImageSignature string
-	ImagesAddOpts  *api.ImagesAddOpts
+	TAds          *ads.SDKClient
+	AccessToken   string
+	AccountId     int64
+	UploadType    string
+	Signature     string
+	ImagesAddOpts *api.ImagesAddOpts
 }
 
 func (e *ImagesAddExample) Init() {
@@ -38,15 +39,18 @@ func (e *ImagesAddExample) Init() {
 	})
 	e.AccountId = int64(0)
 	e.UploadType = "UPLOAD_TYPE_FILE"
-	e.ImageSignature = "imageSignature_example"
-	e.ImagesAddOpts = &api.ImagesAddOpts{}
+	e.Signature = "signature_example"
+	e.ImagesAddOpts = &api.ImagesAddOpts{
+
+		File: optional.NewInterface("YOUR IMAGE FILE PATH"),
+	}
 }
 
 func (e *ImagesAddExample) RunExample() (model.ImagesAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Images().Add(ctx, e.AccountId, e.UploadType, e.ImageSignature, e.ImagesAddOpts)
+	return tads.Images().Add(ctx, e.AccountId, e.UploadType, e.Signature, e.ImagesAddOpts)
 }
 
 func main() {

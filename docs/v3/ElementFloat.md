@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ImageId** | **string** |  | [optional] [default to null]
+**ImageIdList** | **string** |  | [optional] [default to null]
 **Title** | **string** |  | [optional] [default to null]
 **Desc** | **string** |  | [optional] [default to null]
 **FloatButtonSpec** | [***FloatButtonSpec**](float_button_spec.md) |  | [optional] [default to null]

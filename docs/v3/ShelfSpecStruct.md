@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ShelfButtonSpec** | [***ShelfButtonSpec**](shelf_button_spec.md) |  | [optional] [default to null]
-**ImageId** | **string** |  | [optional] [default to null]
+**ImageIdList** | **string** |  | [optional] [default to null]
 **Title** | **string** |  | [optional] [default to null]
 **Desc** | **string** |  | [optional] [default to null]
 

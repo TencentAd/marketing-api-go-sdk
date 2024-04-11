@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **PageTemplateId** | **int64** |  | [optional] [default to null]
-**PageElements** | [**[]PageElementsStruct**](page_elements_struct.md) |  | [optional] [default to null]
+**PageElementsSpecList** | [**[]PageElementsStruct**](page_elements_struct.md) |  | [optional] [default to null]
 **ShareContentSpec** | [***ShareContentSpec**](share_content_spec.md) |  | [optional] [default to null]
 **PreviewUrl** | **string** |  | [optional] [default to null]
 **PageType** | [***PageType**](PageType.md) |  | [optional] [default to null]

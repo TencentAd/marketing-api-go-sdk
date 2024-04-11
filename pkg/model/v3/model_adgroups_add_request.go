@@ -60,4 +60,5 @@ type AdgroupsAddRequest struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
+	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
 }

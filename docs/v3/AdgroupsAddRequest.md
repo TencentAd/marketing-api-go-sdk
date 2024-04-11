@@ -53,6 +53,7 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
+**OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

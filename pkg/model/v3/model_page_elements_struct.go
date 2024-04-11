@@ -11,12 +11,12 @@ package model
 
 // 组件素材内容
 type PageElementsStruct struct {
-	ElementsType        PageElementsType     `json:"elements_type,omitempty"`
-	ElementImage        *ElementImage        `json:"element_image,omitempty"`
-	ElementVideo        *ElementVideo        `json:"element_video,omitempty"`
-	ElementText         *ElementText         `json:"element_text,omitempty"`
-	ElementButton       *ElementButtonRead   `json:"element_button,omitempty"`
-	ElementForm         *ElementForm         `json:"element_form,omitempty"`
+	ElementType         PageElementsType     `json:"element_type,omitempty"`
+	ImageSpec           *ElementImage        `json:"image_spec,omitempty"`
+	VideoSpec           *ElementVideo        `json:"video_spec,omitempty"`
+	TextSpec            *ElementText         `json:"text_spec,omitempty"`
+	ButtonSpec          *ElementButtonRead   `json:"button_spec,omitempty"`
+	FormSpec            *ElementForm         `json:"form_spec,omitempty"`
 	ElementShelf        *ElementShelf        `json:"element_shelf,omitempty"`
 	ElementFloat        *ElementFloat        `json:"element_float,omitempty"`
 	ElementGoods        *ElementGoods        `json:"element_goods,omitempty"`

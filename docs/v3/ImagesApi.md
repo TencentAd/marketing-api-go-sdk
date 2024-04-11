@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **ImagesAdd**
-> ImagesAddResponse ImagesAdd(ctx, accountId, uploadType, imageSignature, optional)
+> ImagesAddResponse ImagesAdd(ctx, accountId, uploadType, signature, optional)
 添加图片文件
 
 ### Required Parameters
@@ -21,7 +21,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
   **uploadType** | **string**|  | 
-  **imageSignature** | **string**|  | 
+  **signature** | **string**|  | 
  **optional** | ***ImagesApiImagesAddOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -32,7 +32,7 @@ Name | Type | Description  | Notes
 
 
 
- **imageFile** | **optional.Interface of *os.File**|  | 
+ **file** | **optional.Interface of *os.File**|  | 
  **bytes** | **optional.String**|  | 
  **imageUsage** | **optional.String**|  | 
  **description** | **optional.String**|  | 

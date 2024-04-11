@@ -16,7 +16,7 @@ type ImagesGetListStruct struct {
 	ImageHeight       *int64          `json:"image_height,omitempty"`
 	ImageFileSize     *int64          `json:"image_file_size,omitempty"`
 	ImageType         ImageType       `json:"image_type,omitempty"`
-	ImageSignature    *string         `json:"image_signature,omitempty"`
+	Signature         *string         `json:"signature,omitempty"`
 	Description       *string         `json:"description,omitempty"`
 	SourceSignature   *string         `json:"source_signature,omitempty"`
 	PreviewUrl        *string         `json:"preview_url,omitempty"`

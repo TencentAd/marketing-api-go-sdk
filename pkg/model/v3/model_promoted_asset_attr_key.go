@@ -9,7 +9,7 @@
 
 package model
 
-// PromotedAssetAttrKey : 推广资产属性名称
+// PromotedAssetAttrKey : 属性名称
 type PromotedAssetAttrKey string
 
 // List of PromotedAssetAttrKey
@@ -215,6 +215,7 @@ const (
 	PromotedAssetAttrKey_REAL_ESTATE_REAL_ESTATE_ALIAS                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_REAL_ESTATE_REAL_ESTATE_ALIAS"
 	PromotedAssetAttrKey_REAL_ESTATE_RIGHTS_PERIOD                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_REAL_ESTATE_RIGHTS_PERIOD"
 	PromotedAssetAttrKey_REAL_ESTATE_RENOVATION_SITUATION                                          PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_REAL_ESTATE_RENOVATION_SITUATION"
+	PromotedAssetAttrKey_REAL_ESTATE_REAL_ESTATE_LOCATION_CN                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_REAL_ESTATE_REAL_ESTATE_LOCATION_CN"
 	PromotedAssetAttrKey_TELECOMMUNICATIONS_OPERATOR_CATE_NAME                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TELECOMMUNICATIONS_OPERATOR_CATE_NAME"
 	PromotedAssetAttrKey_TELECOMMUNICATIONS_OPERATOR_ISSUING_PROVINCE                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TELECOMMUNICATIONS_OPERATOR_ISSUING_PROVINCE"
 	PromotedAssetAttrKey_TELECOMMUNICATIONS_OPERATOR_MONTHLY_FEE                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TELECOMMUNICATIONS_OPERATOR_MONTHLY_FEE"
@@ -283,6 +284,16 @@ const (
 	PromotedAssetAttrKey_FINANCE_FUND_TYPE                                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_TYPE"
 	PromotedAssetAttrKey_FINANCE_FUND_AGENCY_NAME                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_AGENCY_NAME"
 	PromotedAssetAttrKey_FINANCE_FUND_CURRENCY                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_CURRENCY"
+	PromotedAssetAttrKey_FINANCE_PRODUCT_NAME                                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_PRODUCT_NAME"
+	PromotedAssetAttrKey_FINANCE_RIGHTS_AND_INTERESTS                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_RIGHTS_AND_INTERESTS"
+	PromotedAssetAttrKey_FINANCE_ANNUAL_FEE_BRACKETS                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_ANNUAL_FEE_BRACKETS"
+	PromotedAssetAttrKey_FINANCE_CARD_LEVEL                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_CARD_LEVEL"
+	PromotedAssetAttrKey_FINANCE_ANNUAL_FEE_POLICY                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_ANNUAL_FEE_POLICY"
+	PromotedAssetAttrKey_FINANCE_FUND_COMPANY_MANAGER                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_COMPANY_MANAGER"
+	PromotedAssetAttrKey_FINANCE_FUND_PRODUCT_NAME                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_PRODUCT_NAME"
+	PromotedAssetAttrKey_FINANCE_FUND_RISK_LEVEL                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_RISK_LEVEL"
+	PromotedAssetAttrKey_FINANCE_COVERED_BRAND                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_COVERED_BRAND"
+	PromotedAssetAttrKey_FINANCE_REGISTRATION_PRODUCT_NAME                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_REGISTRATION_PRODUCT_NAME"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_POI_FINGERPRINT                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_POI_FINGERPRINT"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_ID                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_ID"
 	PromotedAssetAttrKey_CATERING_AND_LEISURE_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CATERING_AND_LEISURE_CATE_NAME"

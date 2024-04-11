@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ElementsType** | [***PageElementsType**](PageElementsType.md) |  | [optional] [default to null]
-**ElementImage** | [***ElementImage**](element_image.md) |  | [optional] [default to null]
-**ElementVideo** | [***ElementVideo**](element_video.md) |  | [optional] [default to null]
-**ElementText** | [***ElementText**](element_text.md) |  | [optional] [default to null]
-**ElementButton** | [***ElementButtonRead**](element_button_read.md) |  | [optional] [default to null]
-**ElementForm** | [***ElementForm**](element_form.md) |  | [optional] [default to null]
+**ElementType** | [***PageElementsType**](PageElementsType.md) |  | [optional] [default to null]
+**ImageSpec** | [***ElementImage**](element_image.md) |  | [optional] [default to null]
+**VideoSpec** | [***ElementVideo**](element_video.md) |  | [optional] [default to null]
+**TextSpec** | [***ElementText**](element_text.md) |  | [optional] [default to null]
+**ButtonSpec** | [***ElementButtonRead**](element_button_read.md) |  | [optional] [default to null]
+**FormSpec** | [***ElementForm**](element_form.md) |  | [optional] [default to null]
 **ElementShelf** | [***ElementShelf**](element_shelf.md) |  | [optional] [default to null]
 **ElementFloat** | [***ElementFloat**](element_float.md) |  | [optional] [default to null]
 **ElementGoods** | [***ElementGoods**](element_goods.md) |  | [optional] [default to null]

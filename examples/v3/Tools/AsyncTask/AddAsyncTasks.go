@@ -35,8 +35,12 @@ func (e *AsyncTasksAddExample) Init() {
 	e.Data = model.AsyncTasksAddRequest{
 		TaskName:  "SDK异步任务5ede252e2f1db",
 		AccountId: int64(0),
-		TaskType:  "TASK_TYPE_AD_HOURLY_REPORT",
-		TaskSpec:  &model.ApiTaskSpec{},
+		TaskType:  "TASK_TYPE_CREATE_ANDROID_CHANNEL_PACKAGE",
+		TaskSpec: &model.ApiTaskSpec{
+			TaskTypeCreateAndroidChannelPackageSpec: &model.TaskTypeCreateAndroidChannelPackageSpec{
+				AndroidAppId: int64(123),
+			},
+		},
 	}
 }
 

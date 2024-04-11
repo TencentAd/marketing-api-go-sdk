@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **ImageHeight** | **int64** |  | [optional] [default to null]
 **ImageFileSize** | **int64** |  | [optional] [default to null]
 **ImageType** | [***ImageType**](ImageType.md) |  | [optional] [default to null]
-**ImageSignature** | **string** |  | [optional] [default to null]
+**Signature** | **string** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **SourceSignature** | **string** |  | [optional] [default to null]
 **PreviewUrl** | **string** |  | [optional] [default to null]
