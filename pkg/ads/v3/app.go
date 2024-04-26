@@ -17,10 +17,6 @@ func (c *SDKClient) AccountVersion() *api.AccountVersionApiService {
 	return c.Client.AccountVersionApi
 }
 
-func (c *SDKClient) AdDiagnosis() *api.AdDiagnosisApiService {
-	return c.Client.AdDiagnosisApi
-}
-
 func (c *SDKClient) AdLabel() *api.AdLabelApiService {
 	return c.Client.AdLabelApi
 }
@@ -125,6 +121,14 @@ func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
 	return c.Client.BusinessPointApi
 }
 
+func (c *SDKClient) CommentList() *api.CommentListApiService {
+	return c.Client.CommentListApi
+}
+
+func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReviewApiService {
+	return c.Client.ComponentElementUrgeReviewApi
+}
+
 func (c *SDKClient) ComponentReviewResults() *api.ComponentReviewResultsApiService {
 	return c.Client.ComponentReviewResultsApi
 }
@@ -201,12 +205,24 @@ func (c *SDKClient) EcommerceOrder() *api.EcommerceOrderApiService {
 	return c.Client.EcommerceOrderApi
 }
 
+func (c *SDKClient) ElementAppealQuota() *api.ElementAppealQuotaApiService {
+	return c.Client.ElementAppealQuotaApi
+}
+
+func (c *SDKClient) ElementAppealReview() *api.ElementAppealReviewApiService {
+	return c.Client.ElementAppealReviewApi
+}
+
 func (c *SDKClient) Estimation() *api.EstimationApiService {
 	return c.Client.EstimationApi
 }
 
 func (c *SDKClient) ExtendPackage() *api.ExtendPackageApiService {
 	return c.Client.ExtendPackageApi
+}
+
+func (c *SDKClient) FinderAdObjectList() *api.FinderAdObjectListApiService {
+	return c.Client.FinderAdObjectListApi
 }
 
 func (c *SDKClient) FundStatementsDetailed() *api.FundStatementsDetailedApiService {
@@ -227,6 +243,10 @@ func (c *SDKClient) GameFeature() *api.GameFeatureApiService {
 
 func (c *SDKClient) GameFeatureTags() *api.GameFeatureTagsApiService {
 	return c.Client.GameFeatureTagsApi
+}
+
+func (c *SDKClient) GetWxGameAppGiftPack() *api.GetWxGameAppGiftPackApiService {
+	return c.Client.GetWxGameAppGiftPackApi
 }
 
 func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
@@ -305,6 +325,10 @@ func (c *SDKClient) LiveRoomComponents() *api.LiveRoomComponentsApiService {
 	return c.Client.LiveRoomComponentsApi
 }
 
+func (c *SDKClient) LocalStorePackages() *api.LocalStorePackagesApiService {
+	return c.Client.LocalStorePackagesApi
+}
+
 func (c *SDKClient) LocalStores() *api.LocalStoresApiService {
 	return c.Client.LocalStoresApi
 }
@@ -377,6 +401,14 @@ func (c *SDKClient) MergeFundTypeSubcustomerTransfer() *api.MergeFundTypeSubcust
 	return c.Client.MergeFundTypeSubcustomerTransferApi
 }
 
+func (c *SDKClient) MuseAiMaterial() *api.MuseAiMaterialApiService {
+	return c.Client.MuseAiMaterialApi
+}
+
+func (c *SDKClient) MuseAiTask() *api.MuseAiTaskApiService {
+	return c.Client.MuseAiTaskApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
@@ -431,6 +463,10 @@ func (c *SDKClient) Profiles() *api.ProfilesApiService {
 
 func (c *SDKClient) Programmed() *api.ProgrammedApiService {
 	return c.Client.ProgrammedApi
+}
+
+func (c *SDKClient) ProgrammedMaterialMappings() *api.ProgrammedMaterialMappingsApiService {
+	return c.Client.ProgrammedMaterialMappingsApi
 }
 
 func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {

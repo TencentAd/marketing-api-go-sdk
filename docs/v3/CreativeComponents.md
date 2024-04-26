@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **ElementStory** | [**[]ElementStoryComponent**](element_story_component.md) |  | [optional] [default to null]
 **WxgamePlayablePage** | [**[]WxgamePlayablePageComponent**](wxgame_playable_page_component.md) |  | [optional] [default to null]
 **MainJumpInfo** | [**[]JumpinfoComponent**](jumpinfo_component.md) |  | [optional] [default to null]
+**AppPromotionVideo** | [**[]AppPromotionVideoComponent**](app_promotion_video_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

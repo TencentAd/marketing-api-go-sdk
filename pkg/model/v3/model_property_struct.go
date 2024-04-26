@@ -11,6 +11,7 @@ package model
 
 // 推广资产属性信息
 type PropertyStruct struct {
-	PropertyName  PromotedAssetAttrKey `json:"property_name,omitempty"`
-	PropertyValue *[]string            `json:"property_value,omitempty"`
+	PropertyName  PromotedAssetAttrKey    `json:"property_name,omitempty"`
+	PropertyValue *[]string               `json:"property_value,omitempty"`
+	PropertyClass MarketingAssetAttrClass `json:"property_class,omitempty"`
 }

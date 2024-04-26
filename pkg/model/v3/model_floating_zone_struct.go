@@ -21,4 +21,5 @@ type FloatingZoneStruct struct {
 	FloatingZoneSingleImageId         *string                  `json:"floating_zone_single_image_id,omitempty"`
 	ButtonBaseText                    *string                  `json:"button_base_text,omitempty"`
 	JumpInfo                          *JumpinfoStruct          `json:"jump_info,omitempty"`
+	FloatingZoneInfoType              FloatingZoneInfoType     `json:"floating_zone_info_type,omitempty"`
 }

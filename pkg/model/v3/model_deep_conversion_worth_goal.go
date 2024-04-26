@@ -14,15 +14,16 @@ type DeepConversionWorthGoal string
 
 // List of DeepConversionWorthGoal
 const (
-	DeepConversionWorthGoal_7DAYPURCHASEROAS          DeepConversionWorthGoal = "GOAL_7DAY_PURCHASE_ROAS"
-	DeepConversionWorthGoal_30DAYPURCHASEROAS         DeepConversionWorthGoal = "GOAL_30DAY_PURCHASE_ROAS"
-	DeepConversionWorthGoal_30DAYMONETIZATIONROAS     DeepConversionWorthGoal = "GOAL_30DAY_MONETIZATION_ROAS"
-	DeepConversionWorthGoal_30DAYORDERROAS            DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
-	DeepConversionWorthGoal_1DAYPURCHASEROAS          DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
-	DeepConversionWorthGoal_1DAYMONETIZATIONROAS      DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"
-	DeepConversionWorthGoal_7DAYMONETIZATIONROAS      DeepConversionWorthGoal = "GOAL_7DAY_MONETIZATION_ROAS"
-	DeepConversionWorthGoal_7DAYRETENTIONTIMES        DeepConversionWorthGoal = "GOAL_7DAY_RETENTION_TIMES"
-	DeepConversionWorthGoal_7DAYLONGTERMPURCHASEROAS  DeepConversionWorthGoal = "GOAL_7DAY_LONGTERM_PURCHASE_ROAS"
-	DeepConversionWorthGoal_14DAYLONGTERMPURCHASEROAS DeepConversionWorthGoal = "GOAL_14DAY_LONGTERM_PURCHASE_ROAS"
-	DeepConversionWorthGoal_30DAYLONGTERMPURCHASEROAS DeepConversionWorthGoal = "GOAL_30DAY_LONGTERM_PURCHASE_ROAS"
+	DeepConversionWorthGoal_7DAYPURCHASEROAS                DeepConversionWorthGoal = "GOAL_7DAY_PURCHASE_ROAS"
+	DeepConversionWorthGoal_30DAYPURCHASEROAS               DeepConversionWorthGoal = "GOAL_30DAY_PURCHASE_ROAS"
+	DeepConversionWorthGoal_30DAYMONETIZATIONROAS           DeepConversionWorthGoal = "GOAL_30DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_30DAYORDERROAS                  DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
+	DeepConversionWorthGoal_1DAYPURCHASEROAS                DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"
+	DeepConversionWorthGoal_1DAYMONETIZATIONROAS            DeepConversionWorthGoal = "GOAL_1DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_7DAYMONETIZATIONROAS            DeepConversionWorthGoal = "GOAL_7DAY_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_7DAYRETENTIONTIMES              DeepConversionWorthGoal = "GOAL_7DAY_RETENTION_TIMES"
+	DeepConversionWorthGoal_7DAYLONGTERMPURCHASEROAS        DeepConversionWorthGoal = "GOAL_7DAY_LONGTERM_PURCHASE_ROAS"
+	DeepConversionWorthGoal_14DAYLONGTERMPURCHASEROAS       DeepConversionWorthGoal = "GOAL_14DAY_LONGTERM_PURCHASE_ROAS"
+	DeepConversionWorthGoal_30DAYLONGTERMPURCHASEROAS       DeepConversionWorthGoal = "GOAL_30DAY_LONGTERM_PURCHASE_ROAS"
+	DeepConversionWorthGoal_QYT_7_DAY_LIVE_STREAM_DEAL_ROAS DeepConversionWorthGoal = "GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS"
 )

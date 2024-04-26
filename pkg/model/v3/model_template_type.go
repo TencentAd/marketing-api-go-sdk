@@ -9,7 +9,7 @@
 
 package model
 
-// TemplateType : 待衍生的素材类型
+// TemplateType : 妙思素材类型
 type TemplateType string
 
 // List of TemplateType

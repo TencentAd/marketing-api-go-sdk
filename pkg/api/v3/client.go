@@ -50,8 +50,6 @@ type APIClient struct {
 
 	AccountVersionApi *AccountVersionApiService
 
-	AdDiagnosisApi *AdDiagnosisApiService
-
 	AdLabelApi *AdLabelApiService
 
 	AdParamApi *AdParamApiService
@@ -104,6 +102,10 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	CommentListApi *CommentListApiService
+
+	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
+
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
 
 	ConversionsApi *ConversionsApiService
@@ -142,9 +144,15 @@ type APIClient struct {
 
 	EcommerceOrderApi *EcommerceOrderApiService
 
+	ElementAppealQuotaApi *ElementAppealQuotaApiService
+
+	ElementAppealReviewApi *ElementAppealReviewApiService
+
 	EstimationApi *EstimationApiService
 
 	ExtendPackageApi *ExtendPackageApiService
+
+	FinderAdObjectListApi *FinderAdObjectListApiService
 
 	FundStatementsDetailedApi *FundStatementsDetailedApiService
 
@@ -155,6 +163,8 @@ type APIClient struct {
 	GameFeatureApi *GameFeatureApiService
 
 	GameFeatureTagsApi *GameFeatureTagsApiService
+
+	GetWxGameAppGiftPackApi *GetWxGameAppGiftPackApiService
 
 	HourlyReportsApi *HourlyReportsApiService
 
@@ -194,6 +204,8 @@ type APIClient struct {
 
 	LiveRoomComponentsApi *LiveRoomComponentsApiService
 
+	LocalStorePackagesApi *LocalStorePackagesApiService
+
 	LocalStoresApi *LocalStoresApiService
 
 	LocalStoresAddressParsingResultApi *LocalStoresAddressParsingResultApiService
@@ -230,6 +242,10 @@ type APIClient struct {
 
 	MergeFundTypeSubcustomerTransferApi *MergeFundTypeSubcustomerTransferApiService
 
+	MuseAiMaterialApi *MuseAiMaterialApiService
+
+	MuseAiTaskApi *MuseAiTaskApiService
+
 	OauthApi *OauthApiService
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
@@ -257,6 +273,8 @@ type APIClient struct {
 	ProfilesApi *ProfilesApiService
 
 	ProgrammedApi *ProgrammedApiService
+
+	ProgrammedMaterialMappingsApi *ProgrammedMaterialMappingsApiService
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
@@ -374,7 +392,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 
 	// API Services
 	c.AccountVersionApi = (*AccountVersionApiService)(&c.common)
-	c.AdDiagnosisApi = (*AdDiagnosisApiService)(&c.common)
 	c.AdLabelApi = (*AdLabelApiService)(&c.common)
 	c.AdParamApi = (*AdParamApiService)(&c.common)
 	c.AdUnionReportsApi = (*AdUnionReportsApiService)(&c.common)
@@ -401,6 +418,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.CommentListApi = (*CommentListApiService)(&c.common)
+	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
@@ -420,13 +439,17 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DynamicCreativeReviewResultsApi = (*DynamicCreativeReviewResultsApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
+	c.ElementAppealQuotaApi = (*ElementAppealQuotaApiService)(&c.common)
+	c.ElementAppealReviewApi = (*ElementAppealReviewApiService)(&c.common)
 	c.EstimationApi = (*EstimationApiService)(&c.common)
 	c.ExtendPackageApi = (*ExtendPackageApiService)(&c.common)
+	c.FinderAdObjectListApi = (*FinderAdObjectListApiService)(&c.common)
 	c.FundStatementsDetailedApi = (*FundStatementsDetailedApiService)(&c.common)
 	c.FundTransferApi = (*FundTransferApiService)(&c.common)
 	c.FundsApi = (*FundsApiService)(&c.common)
 	c.GameFeatureApi = (*GameFeatureApiService)(&c.common)
 	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
+	c.GetWxGameAppGiftPackApi = (*GetWxGameAppGiftPackApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
@@ -446,6 +469,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.LeadsVoipCallTokenApi = (*LeadsVoipCallTokenApiService)(&c.common)
 	c.LiveRoomComponentStatusApi = (*LiveRoomComponentStatusApiService)(&c.common)
 	c.LiveRoomComponentsApi = (*LiveRoomComponentsApiService)(&c.common)
+	c.LocalStorePackagesApi = (*LocalStorePackagesApiService)(&c.common)
 	c.LocalStoresApi = (*LocalStoresApiService)(&c.common)
 	c.LocalStoresAddressParsingResultApi = (*LocalStoresAddressParsingResultApiService)(&c.common)
 	c.LocalStoresCategoriesApi = (*LocalStoresCategoriesApiService)(&c.common)
@@ -464,6 +488,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)
 	c.MergeFundTypeFundsApi = (*MergeFundTypeFundsApiService)(&c.common)
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
+	c.MuseAiMaterialApi = (*MuseAiMaterialApiService)(&c.common)
+	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
@@ -478,6 +504,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
+	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)

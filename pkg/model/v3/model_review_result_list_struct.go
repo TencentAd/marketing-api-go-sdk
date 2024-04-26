@@ -14,4 +14,5 @@ type ReviewResultListStruct struct {
 	DynamicCreativeId *int64                     `json:"dynamic_creative_id,omitempty"`
 	ElementResultList *[]ElementResultListStruct `json:"element_result_list,omitempty"`
 	SiteSetResultList *[]SiteSetResultListStruct `json:"site_set_result_list,omitempty"`
+	RejectMessageList *[]string                  `json:"reject_message_list,omitempty"`
 }

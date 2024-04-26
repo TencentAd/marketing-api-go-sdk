@@ -4,10 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ImageId** | **string** |  | [optional] [default to null]
-**ImageWidth** | **int64** |  | [optional] [default to null]
-**ImageHeight** | **int64** |  | [optional] [default to null]
-**ImageFileSize** | **int64** |  | [optional] [default to null]
-**ImageType** | [***ImageType**](ImageType.md) |  | [optional] [default to null]
+**Width** | **int64** |  | [optional] [default to null]
+**Height** | **int64** |  | [optional] [default to null]
+**FileSize** | **int64** |  | [optional] [default to null]
+**Type_** | [***ImageType**](ImageType.md) |  | [optional] [default to null]
 **Signature** | **string** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **SourceSignature** | **string** |  | [optional] [default to null]

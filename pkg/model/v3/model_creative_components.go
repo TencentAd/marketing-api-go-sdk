@@ -38,4 +38,5 @@ type CreativeComponents struct {
 	ElementStory       *[]ElementStoryComponent       `json:"element_story,omitempty"`
 	WxgamePlayablePage *[]WxgamePlayablePageComponent `json:"wxgame_playable_page,omitempty"`
 	MainJumpInfo       *[]JumpinfoComponent           `json:"main_jump_info,omitempty"`
+	AppPromotionVideo  *[]AppPromotionVideoComponent  `json:"app_promotion_video,omitempty"`
 }

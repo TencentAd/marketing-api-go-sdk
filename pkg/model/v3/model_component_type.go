@@ -42,6 +42,7 @@ const (
 	ComponentType_SHORT_VIDEO                ComponentType = "SHORT_VIDEO"
 	ComponentType_ELEMENT_STORY              ComponentType = "ELEMENT_STORY"
 	ComponentType_WXGAME_PLAYABLE_PAGE       ComponentType = "WXGAME_PLAYABLE_PAGE"
+	ComponentType_APP_PROMOTION_VIDEO        ComponentType = "APP_PROMOTION_VIDEO"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"

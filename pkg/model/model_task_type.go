@@ -245,5 +245,6 @@ const (
 	TaskType_TASK_TYPE_CREATE_ASYNC_REPORT_V3                                          TaskType = "TASK_TYPE_CREATE_ASYNC_REPORT_V3"
 	TaskType_TASK_TYPE_VIDEO_COMPONENT_TRANSCODE                                       TaskType = "TASK_TYPE_VIDEO_COMPONENT_TRANSCODE"
 	TaskType_TASK_TYPE_CREATE_ASYNC_ASSET                                              TaskType = "TASK_TYPE_CREATE_ASYNC_ASSET"
+	TaskType_TASK_TYPE_UPDATE_ASSET_NAME                                               TaskType = "TASK_TYPE_UPDATE_ASSET_NAME"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )

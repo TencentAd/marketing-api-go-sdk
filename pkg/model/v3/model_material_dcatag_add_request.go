@@ -10,9 +10,10 @@
 package model
 
 type MaterialDcatagAddRequest struct {
-	AccountId        *int64    `json:"account_id,omitempty"`
-	ImageIdList      *[]int64  `json:"image_id_list,omitempty"`
-	MediaIdList      *[]int64  `json:"media_id_list,omitempty"`
-	MarketingAssetId *int64    `json:"marketing_asset_id,omitempty"`
-	DcatagList       *[]Dactag `json:"dcatag_list,omitempty"`
+	AccountId           *int64              `json:"account_id,omitempty"`
+	ImageIdList         *[]int64            `json:"image_id_list,omitempty"`
+	MediaIdList         *[]int64            `json:"media_id_list,omitempty"`
+	MarketingAssetId    *int64              `json:"marketing_asset_id,omitempty"`
+	MarketingTargetType MarketingTargetType `json:"marketing_target_type,omitempty"`
+	DcatagList          *[]Dactag           `json:"dcatag_list,omitempty"`
 }

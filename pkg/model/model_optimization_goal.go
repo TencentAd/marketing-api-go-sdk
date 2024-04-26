@@ -108,4 +108,11 @@ const (
 	OptimizationGoal_CLICK_LEADS_COMPONENT                  OptimizationGoal = "OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT"
 	OptimizationGoal_REGULAR_PRICE_COURSE                   OptimizationGoal = "OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE"
 	OptimizationGoal_VISIT_STROE                            OptimizationGoal = "OPTIMIZATIONGOAL_VISIT_STROE"
+	OptimizationGoal_EFFECTIVE_ENTRY                        OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_ENTRY"
+	OptimizationGoal_CREDIT_RATIO                           OptimizationGoal = "OPTIMIZATIONGOAL_CREDIT_RATIO"
+	OptimizationGoal_QYT_LIVE_STREAM_DEAL                   OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL"
+	OptimizationGoal_QYT_LIVE_STREAM_PRODUCT_CLICK          OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK"
+	OptimizationGoal_QYT_LIVE_STREAM_AUDIENCE               OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE"
+	OptimizationGoal_QYT_LIVE_STREAM_COMMENT                OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT"
+	OptimizationGoal_QYT_LIVE_STREAM_FANS                   OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS"
 )

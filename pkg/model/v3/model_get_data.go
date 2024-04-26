@@ -11,10 +11,11 @@ package model
 
 // 已绑定信息
 type GetData struct {
-	ImageId          *int64    `json:"image_id,omitempty"`
-	MediaId          *int64    `json:"media_id,omitempty"`
-	MarketingAssetId *int64    `json:"marketing_asset_id,omitempty"`
-	AuditStatus      *int64    `json:"audit_status,omitempty"`
-	AuditMsg         *string   `json:"audit_msg,omitempty"`
-	DcatagList       *[]Dactag `json:"dcatag_list,omitempty"`
+	ImageId             *int64              `json:"image_id,omitempty"`
+	MediaId             *int64              `json:"media_id,omitempty"`
+	MarketingAssetId    *int64              `json:"marketing_asset_id,omitempty"`
+	MarketingTargetType MarketingTargetType `json:"marketing_target_type,omitempty"`
+	AuditStatus         *int64              `json:"audit_status,omitempty"`
+	AuditMsg            *string             `json:"audit_msg,omitempty"`
+	DcatagList          *[]Dactag           `json:"dcatag_list,omitempty"`
 }

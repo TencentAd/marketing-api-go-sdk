@@ -65,8 +65,6 @@ Name | Type | Description | Notes
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ConversionName** | **string** |  | [optional] [default to null]
 **AutoAcquisitionStatus** | [***AutoAcquisitionStatus**](AutoAcquisitionStatus.md) |  | [optional] [default to null]
-**AutoAcquisitionStatusText** | **string** |  | [optional] [default to null]
-**AutoAcquisitionStatusMessage** | **string** |  | [optional] [default to null]
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **CustomCostCap** | **int64** |  | [optional] [default to null]
 **MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]

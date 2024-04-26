@@ -12,10 +12,10 @@ package model
 // 返回结构
 type ImagesGetListStruct struct {
 	ImageId           *string         `json:"image_id,omitempty"`
-	ImageWidth        *int64          `json:"image_width,omitempty"`
-	ImageHeight       *int64          `json:"image_height,omitempty"`
-	ImageFileSize     *int64          `json:"image_file_size,omitempty"`
-	ImageType         ImageType       `json:"image_type,omitempty"`
+	Width             *int64          `json:"width,omitempty"`
+	Height            *int64          `json:"height,omitempty"`
+	FileSize          *int64          `json:"file_size,omitempty"`
+	Type_             ImageType       `json:"type,omitempty"`
 	Signature         *string         `json:"signature,omitempty"`
 	Description       *string         `json:"description,omitempty"`
 	SourceSignature   *string         `json:"source_signature,omitempty"`

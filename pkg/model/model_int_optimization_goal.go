@@ -100,5 +100,12 @@ const (
 	IntOptimizationGoal_CLICK_LEADS_COMPONENT                  IntOptimizationGoal = "OPTIMIZATIONGOAL_CLICK_LEADS_COMPONENT"
 	IntOptimizationGoal_REGULAR_PRICE_COURSE                   IntOptimizationGoal = "OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE"
 	IntOptimizationGoal_VISIT_STROE                            IntOptimizationGoal = "OPTIMIZATIONGOAL_VISIT_STROE"
+	IntOptimizationGoal_EFFECTIVE_ENTRY                        IntOptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_ENTRY"
+	IntOptimizationGoal_CREDIT_RATIO                           IntOptimizationGoal = "OPTIMIZATIONGOAL_CREDIT_RATIO"
+	IntOptimizationGoal_QYT_LIVE_STREAM_DEAL                   IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_DEAL"
+	IntOptimizationGoal_QYT_LIVE_STREAM_PRODUCT_CLICK          IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_PRODUCT_CLICK"
+	IntOptimizationGoal_QYT_LIVE_STREAM_AUDIENCE               IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE"
+	IntOptimizationGoal_QYT_LIVE_STREAM_COMMENT                IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT"
+	IntOptimizationGoal_QYT_LIVE_STREAM_FANS                   IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

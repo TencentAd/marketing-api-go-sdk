@@ -819,6 +819,11 @@ type DailyReportApiListStruct struct {
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
 	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
+	ClkSliderCardProductPv                     *int64   `json:"clk_slider_card_product_pv,omitempty"`
+	ClkSliderCardProductUv                     *int64   `json:"clk_slider_card_product_uv,omitempty"`
+	AfterAddWecomNegativePv                    *int64   `json:"after_add_wecom_negative_pv,omitempty"`
+	SecurityLowPriceOrderPv                    *int64   `json:"security_low_price_order_pv,omitempty"`
+	SecurityHighPriceOrderPv                   *int64   `json:"security_high_price_order_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

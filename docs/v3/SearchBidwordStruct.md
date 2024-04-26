@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CampaignId** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **Bidword** | **string** |  | [optional] [default to null]
 **BidPrice** | **int64** |  | [optional] [default to null]

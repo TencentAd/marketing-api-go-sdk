@@ -11,7 +11,6 @@ package model
 
 // 关键词信息
 type SearchBidwordStruct struct {
-	CampaignId       *int64            `json:"campaign_id,omitempty"`
 	AdgroupId        *int64            `json:"adgroup_id,omitempty"`
 	Bidword          *string           `json:"bidword,omitempty"`
 	BidPrice         *int64            `json:"bid_price,omitempty"`
