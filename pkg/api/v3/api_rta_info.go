@@ -26,28 +26,28 @@ var (
 	_ context.Context
 )
 
-type RtaApiService service
+type RtaInfoApiService service
 
 /*
-RtaApiService 基本信息查询
+RtaInfoApiService 基本信息查询
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
-@return RtaInfoResponse
+@return RtaInfoGetResponse
 */
-func (a *RtaApiService) Info(ctx context.Context, data RtaInfoRequest) (RtaInfoResponseData, http.Header, error) {
+func (a *RtaInfoApiService) Get(ctx context.Context, data RtaInfoGetRequest) (RtaInfoGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue RtaInfoResponseData
-		localVarResponse    RtaInfoResponse
+		localVarReturnValue RtaInfoGetResponseData
+		localVarResponse    RtaInfoGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/rta/info"
+	localVarPath := a.client.Cfg.BasePath + "/rta_info/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -117,7 +117,7 @@ func (a *RtaApiService) Info(ctx context.Context, data RtaInfoRequest) (RtaInfoR
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v RtaInfoResponse
+			var v RtaInfoGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

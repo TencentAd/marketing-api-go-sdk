@@ -9,7 +9,7 @@
 
 package model
 
-// LabelType : 创意标签类型
+// LabelType : 标签类型
 type LabelType string
 
 // List of LabelType

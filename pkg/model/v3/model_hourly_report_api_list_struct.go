@@ -51,11 +51,8 @@ type HourlyReportApiListStruct struct {
 	PreviewDeepConversionsCount                *int64   `json:"preview_deep_conversions_count,omitempty"`
 	VideoOuterPlayCount                        *int64   `json:"video_outer_play_count,omitempty"`
 	VideoOuterPlayUserCount                    *int64   `json:"video_outer_play_user_count,omitempty"`
-	VideoTimeTotalCount                        *float64 `json:"video_time_total_count,omitempty"`
-	VideoOuterPlayTotalTimeCount               *float64 `json:"video_outer_play_total_time_count,omitempty"`
 	AvgUserPlayCount                           *float64 `json:"avg_user_play_count,omitempty"`
 	VideoOuterPlayTimeCount                    *float64 `json:"video_outer_play_time_count,omitempty"`
-	VideoOuterPlayTimeAvg                      *float64 `json:"video_outer_play_time_avg,omitempty"`
 	VideoOuterPlayTimeAvgRate                  *float64 `json:"video_outer_play_time_avg_rate,omitempty"`
 	VideoOuterPlayRate                         *float64 `json:"video_outer_play_rate,omitempty"`
 	VideoOuterPlayCost                         *int64   `json:"video_outer_play_cost,omitempty"`
@@ -82,7 +79,6 @@ type HourlyReportApiListStruct struct {
 	NoInterestCount                            *int64   `json:"no_interest_count,omitempty"`
 	LiveStreamCrtClickCnt                      *int64   `json:"live_stream_crt_click_cnt,omitempty"`
 	ClickImageCount                            *int64   `json:"click_image_count,omitempty"`
-	ClickNickCount                             *int64   `json:"click_nick_count,omitempty"`
 	ClickHeadCount                             *int64   `json:"click_head_count,omitempty"`
 	ClickDetailCount                           *int64   `json:"click_detail_count,omitempty"`
 	ClickPoiCount                              *int64   `json:"click_poi_count,omitempty"`
@@ -134,8 +130,6 @@ type HourlyReportApiListStruct struct {
 	GuideToFollowPageViewers                   *int64   `json:"guide_to_follow_page_viewers,omitempty"`
 	GuideToFollowPageInteractionAmount         *int64   `json:"guide_to_follow_page_interaction_amount,omitempty"`
 	GuideToFollowPageInteractionUsers          *int64   `json:"guide_to_follow_page_interaction_users,omitempty"`
-	SpecialPageExpUv                           *int64   `json:"special_page_exp_uv,omitempty"`
-	SpecialPageExpCost                         *int64   `json:"special_page_exp_cost,omitempty"`
 	LandingPageViewCount                       *int64   `json:"landing_page_view_count,omitempty"`
 	LandingPageEffectiveRate                   *float64 `json:"landing_page_effective_rate,omitempty"`
 	LandingPageUserCount                       *int64   `json:"landing_page_user_count,omitempty"`
@@ -328,18 +322,12 @@ type HourlyReportApiListStruct struct {
 	RetentionCount                             *int64   `json:"retention_count,omitempty"`
 	RetentionCost                              *int64   `json:"retention_cost,omitempty"`
 	RetentionRate                              *float64 `json:"retention_rate,omitempty"`
-	AppRetentionD2Pv                           *int64   `json:"app_retention_d2_pv,omitempty"`
-	AppRetentionD3Pv                           *int64   `json:"app_retention_d3_pv,omitempty"`
 	AppRetentionD3Uv                           *int64   `json:"app_retention_d3_uv,omitempty"`
 	AppRetentionD3Cost                         *int64   `json:"app_retention_d3_cost,omitempty"`
 	AppRetentionD3Rate                         *float64 `json:"app_retention_d3_rate,omitempty"`
-	AppRetentionD4Pv                           *int64   `json:"app_retention_d4_pv,omitempty"`
-	AppRetentionD5Pv                           *int64   `json:"app_retention_d5_pv,omitempty"`
 	AppRetentionD5Uv                           *int64   `json:"app_retention_d5_uv,omitempty"`
 	AppRetentionD5Cost                         *int64   `json:"app_retention_d5_cost,omitempty"`
 	AppRetentionD5Rate                         *float64 `json:"app_retention_d5_rate,omitempty"`
-	AppRetentionD6Pv                           *int64   `json:"app_retention_d6_pv,omitempty"`
-	AppRetentionD7Pv                           *int64   `json:"app_retention_d7_pv,omitempty"`
 	AppRetentionD7Uv                           *int64   `json:"app_retention_d7_uv,omitempty"`
 	AppRetentionD7Cost                         *int64   `json:"app_retention_d7_cost,omitempty"`
 	AppRetentionD7Rate                         *float64 `json:"app_retention_d7_rate,omitempty"`
@@ -634,45 +622,23 @@ type HourlyReportApiListStruct struct {
 	LiveStreamCommodityBubbleClkPv             *int64   `json:"live_stream_commodity_bubble_clk_pv,omitempty"`
 	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
 	LiveStreamCommodityShopListExpPv           *int64   `json:"live_stream_commodity_shop_list_exp_pv,omitempty"`
-	ChannelsLiveExitPlaUv                      *int64   `json:"channels_live_exit_pla_uv,omitempty"`
 	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
-	FollowCount                                *int64   `json:"follow_count,omitempty"`
-	FollowCost                                 *int64   `json:"follow_cost,omitempty"`
 	FromFollowUv                               *int64   `json:"from_follow_uv,omitempty"`
 	FromFollowCost                             *int64   `json:"from_follow_cost,omitempty"`
 	FromFollowByDisplayUv                      *int64   `json:"from_follow_by_display_uv,omitempty"`
 	FromFollowByDisplayCost                    *int64   `json:"from_follow_by_display_cost,omitempty"`
 	FromFollowByClickUv                        *int64   `json:"from_follow_by_click_uv,omitempty"`
 	FromFollowByClickCost                      *int64   `json:"from_follow_by_click_cost,omitempty"`
-	BizFollowCount                             *int64   `json:"biz_follow_count,omitempty"`
 	BizFollowRate                              *float64 `json:"biz_follow_rate,omitempty"`
 	BizFollowCost                              *int64   `json:"biz_follow_cost,omitempty"`
 	BizFollowUv                                *int64   `json:"biz_follow_uv,omitempty"`
 	BizConsultCount                            *int64   `json:"biz_consult_count,omitempty"`
 	BizReadingCount                            *int64   `json:"biz_reading_count,omitempty"`
-	BreakFrameExpPv                            *int64   `json:"break_frame_exp_pv,omitempty"`
-	BreakFrameExpUv                            *int64   `json:"break_frame_exp_uv,omitempty"`
 	BreakFramePlayPv                           *int64   `json:"break_frame_play_pv,omitempty"`
 	BreakFramePlayUv                           *int64   `json:"break_frame_play_uv,omitempty"`
-	BreakFramePlayDuration                     *float64 `json:"break_frame_play_duration,omitempty"`
 	AvgBreakFramePlayPerUser                   *float64 `json:"avg_break_frame_play_per_user,omitempty"`
-	BreakFrameIpExpPv                          *int64   `json:"break_frame_ip_exp_pv,omitempty"`
-	BreakFrameIpExpUv                          *int64   `json:"break_frame_ip_exp_uv,omitempty"`
 	BreakFrameIpClkPv                          *int64   `json:"break_frame_ip_clk_pv,omitempty"`
 	BreakFrameIpClkUv                          *int64   `json:"break_frame_ip_clk_uv,omitempty"`
-	OverallBrandExposure                       *int64   `json:"overall_brand_exposure,omitempty"`
-	ExpHasCostPv                               *int64   `json:"exp_has_cost_pv,omitempty"`
-	FreeExposurePv                             *int64   `json:"free_exposure_pv,omitempty"`
-	BrandShareExposurePv                       *int64   `json:"brand_share_exposure_pv,omitempty"`
-	BrandShareExposureUv                       *int64   `json:"brand_share_exposure_uv,omitempty"`
-	CvsShareExpToFriendPv                      *int64   `json:"cvs_share_exp_to_friend_pv,omitempty"`
-	CvsShareExpToFeedPv                        *int64   `json:"cvs_share_exp_to_feed_pv,omitempty"`
-	CvsShareExpToFriendUv                      *int64   `json:"cvs_share_exp_to_friend_uv,omitempty"`
-	CvsShareExpToFeedUv                        *int64   `json:"cvs_share_exp_to_feed_uv,omitempty"`
-	RealCpmCost                                *int64   `json:"real_cpm_cost,omitempty"`
-	ExpRootUv                                  *int64   `json:"exp_root_uv,omitempty"`
-	ExpFirstSpreadUv                           *int64   `json:"exp_first_spread_uv,omitempty"`
-	ExpSecondSpreadUv                          *int64   `json:"exp_second_spread_uv,omitempty"`
 	ClkMaterialUv                              *int64   `json:"clk_material_uv,omitempty"`
 	ClkMaterialRate                            *float64 `json:"clk_material_rate,omitempty"`
 	ClkNickPv                                  *int64   `json:"clk_nick_pv,omitempty"`
@@ -681,101 +647,28 @@ type HourlyReportApiListStruct struct {
 	ClkActionBtnPv                             *int64   `json:"clk_action_btn_pv,omitempty"`
 	ClkActionBtnUv                             *int64   `json:"clk_action_btn_uv,omitempty"`
 	ClkTagCommentPv                            *int64   `json:"clk_tag_comment_pv,omitempty"`
-	ClkTagCommentUv                            *int64   `json:"clk_tag_comment_uv,omitempty"`
 	ClkTagContentPv                            *int64   `json:"clk_tag_content_pv,omitempty"`
-	ClkTagContentUv                            *int64   `json:"clk_tag_content_uv,omitempty"`
 	ClkPoiPv                                   *int64   `json:"clk_poi_pv,omitempty"`
-	ClkPoiUv                                   *int64   `json:"clk_poi_uv,omitempty"`
-	ClkChoiceLeftPv                            *int64   `json:"clk_choice_left_pv,omitempty"`
-	ClkChoiceLeftUv                            *int64   `json:"clk_choice_left_uv,omitempty"`
-	ClkChoiceRightPv                           *int64   `json:"clk_choice_right_pv,omitempty"`
-	ClkChoiceRightUv                           *int64   `json:"clk_choice_right_uv,omitempty"`
-	ClkCardTagPv                               *int64   `json:"clk_card_tag_pv,omitempty"`
-	ClkCardTagUv                               *int64   `json:"clk_card_tag_uv,omitempty"`
 	ClkDetailUv                                *int64   `json:"clk_detail_uv,omitempty"`
 	ClkDetailRate                              *float64 `json:"clk_detail_rate,omitempty"`
 	ClkSliderCardBtnPv                         *int64   `json:"clk_slider_card_btn_pv,omitempty"`
-	ClkSliderCardBtnUv                         *int64   `json:"clk_slider_card_btn_uv,omitempty"`
 	CvsBubbleShareClkPv                        *int64   `json:"cvs_bubble_share_clk_pv,omitempty"`
 	CvsBubbleShareClkUv                        *int64   `json:"cvs_bubble_share_clk_uv,omitempty"`
 	LpStarPageExpPv                            *int64   `json:"lp_star_page_exp_pv,omitempty"`
-	LpStarPageExpUv                            *int64   `json:"lp_star_page_exp_uv,omitempty"`
-	LpStarPageClkPv                            *int64   `json:"lp_star_page_clk_pv,omitempty"`
-	LpStarPageClkUv                            *int64   `json:"lp_star_page_clk_uv,omitempty"`
-	LpStarPageClkRate                          *float64 `json:"lp_star_page_clk_rate,omitempty"`
 	FinderTopicSliderPv                        *int64   `json:"finder_topic_slider_pv,omitempty"`
-	FinderTopicSliderUv                        *int64   `json:"finder_topic_slider_uv,omitempty"`
-	FinderTopicSliderAutoPv                    *int64   `json:"finder_topic_slider_auto_pv,omitempty"`
-	FinderTopicSliderAutoUv                    *int64   `json:"finder_topic_slider_auto_uv,omitempty"`
 	FinderTopicSliderPerUser                   *float64 `json:"finder_topic_slider_per_user,omitempty"`
 	FinderTopicSliderManualPv                  *int64   `json:"finder_topic_slider_manual_pv,omitempty"`
-	FinderTopicSliderManualUv                  *int64   `json:"finder_topic_slider_manual_uv,omitempty"`
-	FullsrcSlidePv                             *int64   `json:"fullsrc_slide_pv,omitempty"`
-	GalleryCardSliderPv                        *int64   `json:"gallery_card_slider_pv,omitempty"`
-	GalleryCardSliderUv                        *int64   `json:"gallery_card_slider_uv,omitempty"`
-	ShareUv                                    *int64   `json:"share_uv,omitempty"`
 	ShareFriendPv                              *int64   `json:"share_friend_pv,omitempty"`
 	ShareFeedPv                                *int64   `json:"share_feed_pv,omitempty"`
 	PraiseUv                                   *int64   `json:"praise_uv,omitempty"`
 	CommentUv                                  *int64   `json:"comment_uv,omitempty"`
-	PraiseCommentPv                            *int64   `json:"praise_comment_pv,omitempty"`
-	PraiseCommentRate                          *float64 `json:"praise_comment_rate,omitempty"`
-	PraiseCommentSharePv                       *int64   `json:"praise_comment_share_pv,omitempty"`
-	PraiseCommentShareUv                       *int64   `json:"praise_comment_share_uv,omitempty"`
-	CommentAtFriendPv                          *int64   `json:"comment_at_friend_pv,omitempty"`
-	CommentAtFriendUv                          *int64   `json:"comment_at_friend_uv,omitempty"`
-	CommentReplyFristPv                        *int64   `json:"comment_reply_frist_pv,omitempty"`
-	CommentReplyFristUv                        *int64   `json:"comment_reply_frist_uv,omitempty"`
-	CvsFavPv                                   *int64   `json:"cvs_fav_pv,omitempty"`
 	EngagePv                                   *int64   `json:"engage_pv,omitempty"`
-	EngageUv                                   *int64   `json:"engage_uv,omitempty"`
-	OverallEngageUvRate                        *float64 `json:"overall_engage_uv_rate,omitempty"`
-	OverallEngagePvRate                        *float64 `json:"overall_engage_pv_rate,omitempty"`
 	InteractSuccPv                             *int64   `json:"interact_succ_pv,omitempty"`
-	InteractSuccUv                             *int64   `json:"interact_succ_uv,omitempty"`
-	InteractRootUv                             *int64   `json:"interact_root_uv,omitempty"`
-	InteractFirstSpreadUv                      *int64   `json:"interact_first_spread_uv,omitempty"`
-	InteractSecondSpreadUv                     *int64   `json:"interact_second_spread_uv,omitempty"`
-	InteractRootRate                           *float64 `json:"interact_root_rate,omitempty"`
-	InteractFirstSpreadRate                    *float64 `json:"interact_first_spread_rate,omitempty"`
-	InteractSecondSpreadRate                   *float64 `json:"interact_second_spread_rate,omitempty"`
-	FinderTopicSliderCardExpPv                 *int64   `json:"finder_topic_slider_card_exp_pv,omitempty"`
-	FinderTopicSliderCardClkPv                 *int64   `json:"finder_topic_slider_card_clk_pv,omitempty"`
-	FinderTopicSliderVideoPlayPv               *int64   `json:"finder_topic_slider_video_play_pv,omitempty"`
-	FinderTopicSliderVideoPlayUv               *int64   `json:"finder_topic_slider_video_play_uv,omitempty"`
-	StayDurationAll                            *float64 `json:"stay_duration_all,omitempty"`
 	DurationPerUser                            *float64 `json:"duration_per_user,omitempty"`
-	ShortVideoAvgStayTime                      *float64 `json:"short_video_avg_stay_time,omitempty"`
-	StayDurationOuter                          *float64 `json:"stay_duration_outer,omitempty"`
 	DurationOuterPerUser                       *float64 `json:"duration_outer_per_user,omitempty"`
-	ShortVideoAvgViewStayTime                  *float64 `json:"short_video_avg_view_stay_time,omitempty"`
-	StayDurationCvs                            *float64 `json:"stay_duration_cvs,omitempty"`
 	DurationKeyPagePerUser                     *float64 `json:"duration_key_page_per_user,omitempty"`
-	StayDurationAll02Uv                        *int64   `json:"stay_duration_all_0_2_uv,omitempty"`
-	StayDurationAll02Rate                      *float64 `json:"stay_duration_all_0_2_rate,omitempty"`
-	StayDurationAll34Uv                        *int64   `json:"stay_duration_all_3_4_uv,omitempty"`
-	StayDurationAll34Rate                      *float64 `json:"stay_duration_all_3_4_rate,omitempty"`
-	StayDurationAll510Uv                       *int64   `json:"stay_duration_all_5_10_uv,omitempty"`
-	StayDurationAll510Rate                     *float64 `json:"stay_duration_all_5_10_rate,omitempty"`
-	StayDurationAllAbove10Uv                   *int64   `json:"stay_duration_all_above_10_uv,omitempty"`
-	StayDurationAllAbove10Rate                 *float64 `json:"stay_duration_all_above_10_rate,omitempty"`
-	StayDurationAllAbove5Uv                    *int64   `json:"stay_duration_all_above_5_uv,omitempty"`
-	StayDurationAllAbove5Rate                  *float64 `json:"stay_duration_all_above_5_rate,omitempty"`
-	StayDurationCvs02Uv                        *int64   `json:"stay_duration_cvs_0_2_uv,omitempty"`
-	StayDurationCvs02Rate                      *float64 `json:"stay_duration_cvs_0_2_rate,omitempty"`
-	StayDurationCvs39Uv                        *int64   `json:"stay_duration_cvs_3_9_uv,omitempty"`
-	StayDurationCvs39Rate                      *float64 `json:"stay_duration_cvs_3_9_rate,omitempty"`
-	StayDurationCvs1029Uv                      *int64   `json:"stay_duration_cvs_10_29_uv,omitempty"`
-	StayDurationCvs1029Rate                    *float64 `json:"stay_duration_cvs_10_29_rate,omitempty"`
-	StayDurationCvsAbove30Uv                   *int64   `json:"stay_duration_cvs_above_30_uv,omitempty"`
-	StayDurationCvsAbove30Rate                 *float64 `json:"stay_duration_cvs_above_30_rate,omitempty"`
-	StayDurationCvsAbove10Uv                   *int64   `json:"stay_duration_cvs_above_10_uv,omitempty"`
-	StayDurationCvsAbove10Rate                 *float64 `json:"stay_duration_cvs_above_10_rate,omitempty"`
-	ClkBtnFollowPv                             *int64   `json:"clk_btn_follow_pv,omitempty"`
 	ClkAdElementPv                             *int64   `json:"clk_ad_element_pv,omitempty"`
-	ClkReadCommentPv                           *int64   `json:"clk_read_comment_pv,omitempty"`
 	ChannelsPraisePlaPv                        *int64   `json:"channels_praise_pla_pv,omitempty"`
-	ExpSpreadPv                                *int64   `json:"exp_spread_pv,omitempty"`
 	ChannelsLiveOutEnterPlaUv                  *int64   `json:"channels_live_out_enter_pla_uv,omitempty"`
 	ClkRedpocketBtnGetPv                       *int64   `json:"clk_redpocket_btn_get_pv,omitempty"`
 	ClkRedpocketBtnSharePv                     *int64   `json:"clk_redpocket_btn_share_pv,omitempty"`
@@ -790,8 +683,6 @@ type HourlyReportApiListStruct struct {
 	ClkMiddleSectionPv                         *int64   `json:"clk_middle_section_pv,omitempty"`
 	ClkMiddleGridviewPv                        *int64   `json:"clk_middle_gridview_pv,omitempty"`
 	ClkBreakPv                                 *int64   `json:"clk_break_pv,omitempty"`
-	ClkStoryBtnPv                              *int64   `json:"clk_story_btn_pv,omitempty"`
-	ClkStoryBtnUv                              *int64   `json:"clk_story_btn_uv,omitempty"`
 	ClkRedpocketShakePv                        *int64   `json:"clk_redpocket_shake_pv,omitempty"`
 	ClkRedpocketShakeUv                        *int64   `json:"clk_redpocket_shake_uv,omitempty"`
 	ClkRelatedVideoPv                          *int64   `json:"clk_related_video_pv,omitempty"`
@@ -800,22 +691,13 @@ type HourlyReportApiListStruct struct {
 	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
 	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
 	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
-	CheerBannerExpPv                           *int64   `json:"cheer_banner_exp_pv,omitempty"`
-	CheerStatusSetSuccPv                       *int64   `json:"cheer_status_set_succ_pv,omitempty"`
-	CheerStatusSetSuccUv                       *int64   `json:"cheer_status_set_succ_uv,omitempty"`
-	CheerStatusClkPv                           *int64   `json:"cheer_status_clk_pv,omitempty"`
-	CheerStatusClkUv                           *int64   `json:"cheer_status_clk_uv,omitempty"`
 	AdMonetizationCost                         *float64 `json:"ad_monetization_cost,omitempty"`
 	AdMonetizationRoi                          *float64 `json:"ad_monetization_roi,omitempty"`
 	AdMonetizationActive3dPv                   *int64   `json:"ad_monetization_active_3d_pv,omitempty"`
 	AdMonetizationDedupActive3dPv              *int64   `json:"ad_monetization_dedup_active_3d_pv,omitempty"`
 	AdMonetizationActive7dPv                   *int64   `json:"ad_monetization_active_7d_pv,omitempty"`
 	AdMonetizationDedupActive7dPv              *int64   `json:"ad_monetization_dedup_active_7d_pv,omitempty"`
-	PostBarragePv                              *int64   `json:"post_barrage_pv,omitempty"`
-	PostBarrageUv                              *int64   `json:"post_barrage_uv,omitempty"`
 	ClkRedpocketBtnSubscribePv                 *int64   `json:"clk_redpocket_btn_subscribe_pv,omitempty"`
-	InviteFriendsToWatchFireworksPv            *int64   `json:"invite_friends_to_watch_fireworks_pv,omitempty"`
-	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
 	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
@@ -836,7 +718,6 @@ type HourlyReportApiListStruct struct {
 	MatchType                                  *int64   `json:"match_type,omitempty"`
 	Device                                     *int64   `json:"device,omitempty"`
 	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
-	ExpOverallTopPosition                      *int64   `json:"exp_overall_top_position,omitempty"`
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`

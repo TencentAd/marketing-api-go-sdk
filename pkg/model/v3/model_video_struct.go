@@ -11,6 +11,7 @@ package model
 
 // 视频组件
 type VideoStruct struct {
-	VideoId *string `json:"video_id,omitempty"`
-	CoverId *string `json:"cover_id,omitempty"`
+	VideoId  *string         `json:"video_id,omitempty"`
+	CoverId  *string         `json:"cover_id,omitempty"`
+	JumpInfo *JumpinfoStruct `json:"jump_info,omitempty"`
 }

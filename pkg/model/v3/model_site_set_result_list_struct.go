@@ -11,7 +11,7 @@ package model
 
 // 版位粒度审核结果
 type SiteSetResultListStruct struct {
-	SiteSet                 *[]string                            `json:"site_set,omitempty"`
+	SiteSet                 SiteSetDefinition                    `json:"site_set,omitempty"`
 	SystemStatus            ReviewResultStatus                   `json:"system_status,omitempty"`
 	RejectMessage           *string                              `json:"reject_message,omitempty"`
 	ElementRejectDetailInfo *[]ElementRejectDetailInfoListStruct `json:"element_reject_detail_info,omitempty"`

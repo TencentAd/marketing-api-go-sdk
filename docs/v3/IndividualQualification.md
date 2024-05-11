@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Name** | **string** |  | [optional] [default to null]
+**IdentificationNumber** | **string** |  | [optional] [default to null]
 **IdentificationFrontImageId** | **string** |  | [optional] [default to null]
 **IdentificationBackImageId** | **string** |  | [optional] [default to null]
 

@@ -15,5 +15,6 @@ type OptimizationBidMode string
 // List of OptimizationBidMode
 const (
 	OptimizationBidMode_OCPC OptimizationBidMode = "BID_MODE_OCPC"
+	OptimizationBidMode_OCPA OptimizationBidMode = "BID_MODE_OCPA"
 	OptimizationBidMode_OCPM OptimizationBidMode = "BID_MODE_OCPM"
 )

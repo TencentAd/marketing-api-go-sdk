@@ -9,7 +9,7 @@
 
 package model
 
-type RtaInfoResponseData struct {
+type RtaInfoGetResponseData struct {
 	RtaId          *int64    `json:"RtaId,omitempty"`
 	RtaName        *string   `json:"RtaName,omitempty"`
 	RtaCompanyName *string   `json:"RtaCompanyName,omitempty"`

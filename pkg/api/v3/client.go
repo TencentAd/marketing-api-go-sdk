@@ -172,6 +172,8 @@ type APIClient struct {
 
 	ImagesApi *ImagesApiService
 
+	JointBudgetRulesApi *JointBudgetRulesApiService
+
 	KeywordRecommendApi *KeywordRecommendApiService
 
 	LabelsApi *LabelsApiService
@@ -278,13 +280,15 @@ type APIClient struct {
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
+	QualificationStructureApi *QualificationStructureApiService
+
 	QualificationsApi *QualificationsApiService
 
 	RealtimeCostApi *RealtimeCostApiService
 
 	ReviewElementPrereviewResultsApi *ReviewElementPrereviewResultsApiService
 
-	RtaApi *RtaApiService
+	RtaInfoApi *RtaInfoApiService
 
 	RtaexpApi *RtaexpApiService
 
@@ -453,6 +457,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
+	c.JointBudgetRulesApi = (*JointBudgetRulesApiService)(&c.common)
 	c.KeywordRecommendApi = (*KeywordRecommendApiService)(&c.common)
 	c.LabelsApi = (*LabelsApiService)(&c.common)
 	c.LandingPageSellStrategyApi = (*LandingPageSellStrategyApiService)(&c.common)
@@ -506,10 +511,11 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.QualificationStructureApi = (*QualificationStructureApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)
 	c.ReviewElementPrereviewResultsApi = (*ReviewElementPrereviewResultsApiService)(&c.common)
-	c.RtaApi = (*RtaApiService)(&c.common)
+	c.RtaInfoApi = (*RtaInfoApiService)(&c.common)
 	c.RtaexpApi = (*RtaexpApiService)(&c.common)
 	c.RtaexpDataRoiApi = (*RtaexpDataRoiApiService)(&c.common)
 	c.RtaexpDspTagDataApi = (*RtaexpDspTagDataApiService)(&c.common)

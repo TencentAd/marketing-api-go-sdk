@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SiteSet** | **[]string** |  | [optional] [default to null]
+**SiteSet** | [***SiteSetDefinition**](SiteSetDefinition.md) |  | [optional] [default to null]
 **SystemStatus** | [***ReviewResultStatus**](ReviewResultStatus.md) |  | [optional] [default to null]
 **RejectMessage** | **string** |  | [optional] [default to null]
 **ElementRejectDetailInfo** | [**[]ElementRejectDetailInfoListStruct**](element_reject_detail_info_list_struct.md) |  | [optional] [default to null]

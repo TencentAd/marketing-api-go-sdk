@@ -1,4 +1,4 @@
-# RtaInfoResponseData
+# RtaInfoGetResponseData
 
 ## Properties
 Name | Type | Description | Notes

@@ -10,8 +10,9 @@
 package model
 
 type QualificationsUpdateRequest struct {
-	AccountId         *int64            `json:"account_id,omitempty"`
-	QualificationType QualificationType `json:"qualification_type,omitempty"`
-	QualificationId   *int64            `json:"qualification_id,omitempty"`
-	ImageIdList       *[]string         `json:"image_id_list,omitempty"`
+	AccountId         *int64               `json:"account_id,omitempty"`
+	QualificationType QualificationType    `json:"qualification_type,omitempty"`
+	QualificationId   *int64               `json:"qualification_id,omitempty"`
+	ImageIdList       *[]string            `json:"image_id_list,omitempty"`
+	ExpandFieldList   *[]ExpandFieldStruct `json:"expand_field_list,omitempty"`
 }

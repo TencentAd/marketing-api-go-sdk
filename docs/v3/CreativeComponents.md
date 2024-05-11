@@ -31,6 +31,9 @@ Name | Type | Description | Notes
 **WxgamePlayablePage** | [**[]WxgamePlayablePageComponent**](wxgame_playable_page_component.md) |  | [optional] [default to null]
 **MainJumpInfo** | [**[]JumpinfoComponent**](jumpinfo_component.md) |  | [optional] [default to null]
 **AppPromotionVideo** | [**[]AppPromotionVideoComponent**](app_promotion_video_component.md) |  | [optional] [default to null]
+**VideoShowcase** | [**[]VideoShowcaseComponent**](video_showcase_component.md) |  | [optional] [default to null]
+**ImageShowcase** | [**[]ImageShowcaseComponent**](image_showcase_component.md) |  | [optional] [default to null]
+**MiniCardLink** | [**[]MiniCardLinkComponent**](mini_card_link_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -13,10 +13,10 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model"
 )
 
-type RtaInfoResponse struct {
+type RtaInfoGetResponse struct {
 	Code      *int64                  `json:"code,omitempty"`
 	Message   *string                 `json:"message,omitempty"`
 	MessageCn *string                 `json:"message_cn,omitempty"`
 	Errors    *[]model.ApiErrorStruct `json:"errors,omitempty"`
-	Data      *RtaInfoResponseData    `json:"data,omitempty"`
+	Data      *RtaInfoGetResponseData `json:"data,omitempty"`
 }

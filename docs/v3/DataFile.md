@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **UserIdType** | [***UserIdType**](UserIdType.md) |  | [optional] [default to null]
 **OperationType** | [***OperationType**](OperationType.md) |  | [optional] [default to null]
 **OpenAppId** | **string** |  | [optional] [default to null]
-**ProcessStatus** | **int64** |  | [optional] [default to null]
+**ProcessStatus** | [***FileProcessStatus**](FileProcessStatus.md) |  | [optional] [default to null]
 **ProcessCode** | **int64** |  | [optional] [default to null]
 **ErrorMessage** | **string** |  | [optional] [default to null]
 **LineCount** | **int64** |  | [optional] [default to null]

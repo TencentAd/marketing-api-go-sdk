@@ -9,6 +9,8 @@
 
 package model
 
-type RtaInfoRequest struct {
-	RtaId *int64 `json:"RtaId,omitempty"`
+// 橱窗图片结构
+type ImageShowcaseStruct struct {
+	Image     *ImageStruct     `json:"image,omitempty"`
+	ImageList *ImageListStruct `json:"image_list,omitempty"`
 }

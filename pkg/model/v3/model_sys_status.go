@@ -9,7 +9,7 @@
 
 package model
 
-// SysStatus : 组件状态
+// SysStatus : 审核状态
 type SysStatus string
 
 // List of SysStatus

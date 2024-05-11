@@ -11,6 +11,7 @@ package model
 
 // 图片结构
 type ImageStruct struct {
-	ImageId  *string `json:"image_id,omitempty"`
-	ImageUrl *string `json:"image_url,omitempty"`
+	ImageId  *string         `json:"image_id,omitempty"`
+	ImageUrl *string         `json:"image_url,omitempty"`
+	JumpInfo *JumpinfoStruct `json:"jump_info,omitempty"`
 }

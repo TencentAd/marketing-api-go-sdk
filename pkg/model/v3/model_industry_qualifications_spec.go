@@ -11,8 +11,9 @@ package model
 
 // 行业资质信息
 type IndustryQualificationsSpec struct {
-	SystemIndustryId  *int64    `json:"system_industry_id,omitempty"`
-	BusinessScopeId   *int64    `json:"business_scope_id,omitempty"`
-	QualificationCode *string   `json:"qualification_code,omitempty"`
-	ImageIdList       *[]string `json:"image_id_list,omitempty"`
+	SystemIndustryId  *int64               `json:"system_industry_id,omitempty"`
+	BusinessScopeId   *int64               `json:"business_scope_id,omitempty"`
+	QualificationCode *string              `json:"qualification_code,omitempty"`
+	ImageIdList       *[]string            `json:"image_id_list,omitempty"`
+	ExpandFieldList   *[]ExpandFieldStruct `json:"expand_field_list,omitempty"`
 }

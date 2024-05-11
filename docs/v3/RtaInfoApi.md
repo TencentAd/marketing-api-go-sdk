@@ -1,14 +1,14 @@
-# TencentAds\RtaApi
+# TencentAds\RtaInfoApi
 
 All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**RtaInfo**](RtaApi.md#RtaInfo) | **Post** /rta/info | 基本信息查询
+[**RtaInfoGet**](RtaInfoApi.md#RtaInfoGet) | **Post** /rta_info/get | 基本信息查询
 
 
-# **RtaInfo**
-> RtaInfoResponse RtaInfo(ctx, data)
+# **RtaInfoGet**
+> RtaInfoGetResponse RtaInfoGet(ctx, data)
 基本信息查询
 
 ### Required Parameters
@@ -16,11 +16,11 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **data** | [**RtaInfoRequest**](RtaInfoRequest.md)|  | 
+  **data** | [**RtaInfoGetRequest**](RtaInfoGetRequest.md)|  | 
 
 ### Return type
 
-[**RtaInfoResponse**](RtaInfoResponse.md)
+[**RtaInfoGetResponse**](RtaInfoGetResponse.md)
 
 ### Authorization
 

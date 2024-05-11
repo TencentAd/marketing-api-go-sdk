@@ -20,30 +20,30 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type RtaInfoExample struct {
+type RtaInfoGetExample struct {
 	TAds        *ads.SDKClient
 	AccessToken string
-	Data        model.RtaInfoRequest
+	Data        model.RtaInfoGetRequest
 }
 
-func (e *RtaInfoExample) Init() {
+func (e *RtaInfoGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.RtaInfoRequest{}
+	e.Data = model.RtaInfoGetRequest{}
 }
 
-func (e *RtaInfoExample) RunExample() (model.RtaInfoResponseData, http.Header, error) {
+func (e *RtaInfoGetExample) RunExample() (model.RtaInfoGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Rta().Info(ctx, e.Data)
+	return tads.RtaInfo().Get(ctx, e.Data)
 }
 
 func main() {
-	e := &RtaInfoExample{}
+	e := &RtaInfoGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

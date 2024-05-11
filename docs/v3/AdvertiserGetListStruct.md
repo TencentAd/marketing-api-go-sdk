@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **CorporationLicence** | **string** |  | [optional] [default to null]
 **CertificationImageId** | **string** |  | [optional] [default to null]
 **CertificationImage** | **string** |  | [optional] [default to null]
-**IdentityNumber** | **string** |  | [optional] [default to null]
 **IndividualQualification** | [***IndividualQualification**](individual_qualification.md) |  | [optional] [default to null]
 **SystemIndustryId** | **int64** |  | [optional] [default to null]
 **CustomizedIndustry** | **string** |  | [optional] [default to null]

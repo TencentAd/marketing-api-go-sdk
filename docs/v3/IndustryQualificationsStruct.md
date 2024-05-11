@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **BusinessScopeId** | **int64** |  | [optional] [default to null]
 **QualificationCode** | **string** |  | [optional] [default to null]
 **ImageIdList** | **[]string** |  | [optional] [default to null]
+**ExpandFieldList** | [**[]ExpandFieldStruct**](expand_field_struct.md) |  | [optional] [default to null]
 **QualificationStatus** | [***QualificationStatus**](QualificationStatus.md) |  | [optional] [default to null]
 **ExpiredDate** | **string** |  | [optional] [default to null]
 **RejectMessage** | **string** |  | [optional] [default to null]

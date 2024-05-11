@@ -261,6 +261,10 @@ func (c *SDKClient) Images() *api.ImagesApiService {
 	return c.Client.ImagesApi
 }
 
+func (c *SDKClient) JointBudgetRules() *api.JointBudgetRulesApiService {
+	return c.Client.JointBudgetRulesApi
+}
+
 func (c *SDKClient) KeywordRecommend() *api.KeywordRecommendApiService {
 	return c.Client.KeywordRecommendApi
 }
@@ -473,6 +477,10 @@ func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
 }
 
+func (c *SDKClient) QualificationStructure() *api.QualificationStructureApiService {
+	return c.Client.QualificationStructureApi
+}
+
 func (c *SDKClient) Qualifications() *api.QualificationsApiService {
 	return c.Client.QualificationsApi
 }
@@ -485,8 +493,8 @@ func (c *SDKClient) ReviewElementPrereviewResults() *api.ReviewElementPrereviewR
 	return c.Client.ReviewElementPrereviewResultsApi
 }
 
-func (c *SDKClient) Rta() *api.RtaApiService {
-	return c.Client.RtaApi
+func (c *SDKClient) RtaInfo() *api.RtaInfoApiService {
+	return c.Client.RtaInfoApi
 }
 
 func (c *SDKClient) Rtaexp() *api.RtaexpApiService {

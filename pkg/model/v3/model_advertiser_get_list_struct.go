@@ -19,7 +19,6 @@ type AdvertiserGetListStruct struct {
 	CorporationLicence      *string                     `json:"corporation_licence,omitempty"`
 	CertificationImageId    *string                     `json:"certification_image_id,omitempty"`
 	CertificationImage      *string                     `json:"certification_image,omitempty"`
-	IdentityNumber          *string                     `json:"identity_number,omitempty"`
 	IndividualQualification *IndividualQualification    `json:"individual_qualification,omitempty"`
 	SystemIndustryId        *int64                      `json:"system_industry_id,omitempty"`
 	CustomizedIndustry      *string                     `json:"customized_industry,omitempty"`

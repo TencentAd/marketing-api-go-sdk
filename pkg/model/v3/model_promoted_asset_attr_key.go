@@ -39,6 +39,8 @@ const (
 	PromotedAssetAttrKey_EDUCATION_INTENDED_CROWD                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_INTENDED_CROWD"
 	PromotedAssetAttrKey_EDUCATION_TEACHING_AID_TYPE                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_TEACHING_AID_TYPE"
 	PromotedAssetAttrKey_EDUCATION_LEVEL                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_LEVEL"
+	PromotedAssetAttrKey_EDUCATION_FAMOUS_TEACHER_NAME                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_FAMOUS_TEACHER_NAME"
+	PromotedAssetAttrKey_EDUCATION_FAMOUS_TEACHER_DESC                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_FAMOUS_TEACHER_DESC"
 	PromotedAssetAttrKey_TRAFFIC_CAR_BRANDE_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_BRANDE_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_SERIES_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_SERIES_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_MODEL_NAME                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_NAME"
@@ -375,4 +377,7 @@ const (
 	PromotedAssetAttrKey_PLATFORM_CHANNEL_CATEGORY_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_CATEGORY_NAME"
 	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_BRAND_NAME                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_BRAND_NAME"
 	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_CATE_NAME                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_CATE_NAME"
+	PromotedAssetAttrKey_CAR_ECOLOGY_CATE_NAME                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_CATE_NAME"
+	PromotedAssetAttrKey_CAR_ECOLOGY_COMPANY_NAME                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_COMPANY_NAME"
+	PromotedAssetAttrKey_CAR_ECOLOGY_SERVICE_TYPE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_SERVICE_TYPE"
 )
