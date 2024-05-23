@@ -248,6 +248,8 @@ type APIClient struct {
 
 	MuseAiTaskApi *MuseAiTaskApiService
 
+	MuseAiUgcApi *MuseAiUgcApiService
+
 	OauthApi *OauthApiService
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
@@ -495,6 +497,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
 	c.MuseAiMaterialApi = (*MuseAiMaterialApiService)(&c.common)
 	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
+	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)

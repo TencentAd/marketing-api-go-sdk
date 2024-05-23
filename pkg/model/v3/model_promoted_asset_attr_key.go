@@ -296,6 +296,7 @@ const (
 	PromotedAssetAttrKey_FINANCE_FUND_RISK_LEVEL                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_RISK_LEVEL"
 	PromotedAssetAttrKey_FINANCE_COVERED_BRAND                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_COVERED_BRAND"
 	PromotedAssetAttrKey_FINANCE_REGISTRATION_PRODUCT_NAME                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_REGISTRATION_PRODUCT_NAME"
+	PromotedAssetAttrKey_FINANCE_FUND_CODE                                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FINANCE_FUND_CODE"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_POI_FINGERPRINT                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_POI_FINGERPRINT"
 	PromotedAssetAttrKey_LOCAL_STORE_PACKAGE_ID                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_PACKAGE_ID"
 	PromotedAssetAttrKey_CATERING_AND_LEISURE_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CATERING_AND_LEISURE_CATE_NAME"

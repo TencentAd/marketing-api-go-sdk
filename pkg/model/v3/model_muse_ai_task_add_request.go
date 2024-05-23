@@ -10,9 +10,10 @@
 package model
 
 type MuseAiTaskAddRequest struct {
-	AccountId      *int64          `json:"account_id,omitempty"`
-	TaskType       MuseAiTaskType  `json:"task_type,omitempty"`
-	OutputImageNum *int64          `json:"output_image_num,omitempty"`
-	Img2img        *Img2imgStruct  `json:"img2img,omitempty"`
-	Text2img       *Text2imgStruct `json:"text2img,omitempty"`
+	AccountId      *int64             `json:"account_id,omitempty"`
+	TaskType       MuseAiTaskType     `json:"task_type,omitempty"`
+	OutputImageNum *int64             `json:"output_image_num,omitempty"`
+	Img2img        *Img2imgStruct     `json:"img2img,omitempty"`
+	Text2img       *Text2imgStruct    `json:"text2img,omitempty"`
+	Img2caption    *Img2captionStruct `json:"img2caption,omitempty"`
 }

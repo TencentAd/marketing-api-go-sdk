@@ -47,6 +47,7 @@ const (
 	ComponentType_IMAGE_SHOWCASE             ComponentType = "IMAGE_SHOWCASE"
 	ComponentType_SOCIAL_SKILL               ComponentType = "SOCIAL_SKILL"
 	ComponentType_MINI_CARD_LINK             ComponentType = "MINI_CARD_LINK"
+	ComponentType_SUBLINK                    ComponentType = "SUBLINK"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"

@@ -42,4 +42,5 @@ type CreativeComponents struct {
 	VideoShowcase      *[]VideoShowcaseComponent      `json:"video_showcase,omitempty"`
 	ImageShowcase      *[]ImageShowcaseComponent      `json:"image_showcase,omitempty"`
 	MiniCardLink       *[]MiniCardLinkComponent       `json:"mini_card_link,omitempty"`
+	FloatingZoneList   *[]FloatingZoneListComponent   `json:"floating_zone_list,omitempty"`
 }

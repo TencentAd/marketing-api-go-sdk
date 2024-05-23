@@ -14,6 +14,7 @@ type MuseAiTaskType string
 
 // List of MuseAiTaskType
 const (
-	MuseAiTaskType_TEXT2_IMG MuseAiTaskType = "MUSE_AI_TASK_TYPE_TEXT2IMG"
-	MuseAiTaskType_IMG2_IMG  MuseAiTaskType = "MUSE_AI_TASK_TYPE_IMG2IMG"
+	MuseAiTaskType_TEXT2_IMG    MuseAiTaskType = "MUSE_AI_TASK_TYPE_TEXT2IMG"
+	MuseAiTaskType_IMG2_IMG     MuseAiTaskType = "MUSE_AI_TASK_TYPE_IMG2IMG"
+	MuseAiTaskType_IMG2_CAPTION MuseAiTaskType = "MUSE_AI_TASK_TYPE_IMG2CAPTION"
 )

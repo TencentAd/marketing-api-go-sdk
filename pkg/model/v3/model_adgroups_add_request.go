@@ -54,9 +54,12 @@ type AdgroupsAddRequest struct {
 	PrioritySiteSet                   *[]string                   `json:"priority_site_set,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch              `json:"ecom_pkam_switch,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal            `json:"forward_link_assist,omitempty"`
+	RtaId                             *int64                      `json:"rta_id,omitempty"`
+	RtaTargetId                       *string                     `json:"rta_target_id,omitempty"`
 	MpaSpec                           *MpaSpec                    `json:"mpa_spec,omitempty"`
 	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
 	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
+	FeedbackId                        *int64                      `json:"feedback_id,omitempty"`
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`

@@ -14,7 +14,8 @@ type ReviewResultStatus string
 
 // List of ReviewResultStatus
 const (
-	ReviewResultStatus_NORMAL  ReviewResultStatus = "AD_STATUS_NORMAL"
-	ReviewResultStatus_PENDING ReviewResultStatus = "AD_STATUS_PENDING"
-	ReviewResultStatus_DENIED  ReviewResultStatus = "AD_STATUS_DENIED"
+	ReviewResultStatus_NORMAL           ReviewResultStatus = "AD_STATUS_NORMAL"
+	ReviewResultStatus_PENDING          ReviewResultStatus = "AD_STATUS_PENDING"
+	ReviewResultStatus_DENIED           ReviewResultStatus = "AD_STATUS_DENIED"
+	ReviewResultStatus_PARTIALLY_NORMAL ReviewResultStatus = "AD_STATUS_PARTIALLY_NORMAL"
 )

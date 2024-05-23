@@ -413,6 +413,10 @@ func (c *SDKClient) MuseAiTask() *api.MuseAiTaskApiService {
 	return c.Client.MuseAiTaskApi
 }
 
+func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
+	return c.Client.MuseAiUgcApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }

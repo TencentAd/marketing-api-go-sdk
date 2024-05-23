@@ -11,11 +11,12 @@ package model
 
 // 任务结果信息
 type MuseAiResultItem struct {
-	MuseMaterialId *int64       `json:"muse_material_id,omitempty"`
-	MaterialType   TemplateType `json:"material_type,omitempty"`
-	RatioWidth     *int64       `json:"ratio_width,omitempty"`
-	RatioHeight    *int64       `json:"ratio_height,omitempty"`
-	Width          *int64       `json:"width,omitempty"`
-	Height         *int64       `json:"height,omitempty"`
-	Url            *string      `json:"url,omitempty"`
+	MuseMaterialId *int64         `json:"muse_material_id,omitempty"`
+	MaterialType   TemplateType   `json:"material_type,omitempty"`
+	RatioWidth     *int64         `json:"ratio_width,omitempty"`
+	RatioHeight    *int64         `json:"ratio_height,omitempty"`
+	Width          *int64         `json:"width,omitempty"`
+	Height         *int64         `json:"height,omitempty"`
+	Url            *string        `json:"url,omitempty"`
+	CaptionResult  *CaptionResult `json:"caption_result,omitempty"`
 }

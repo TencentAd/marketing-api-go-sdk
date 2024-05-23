@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **VideoShowcase** | [**[]VideoShowcaseComponent**](video_showcase_component.md) |  | [optional] [default to null]
 **ImageShowcase** | [**[]ImageShowcaseComponent**](image_showcase_component.md) |  | [optional] [default to null]
 **MiniCardLink** | [**[]MiniCardLinkComponent**](mini_card_link_component.md) |  | [optional] [default to null]
+**FloatingZoneList** | [**[]FloatingZoneListComponent**](floating_zone_list_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
