@@ -15,6 +15,7 @@ type ElementResultListStruct struct {
 	VideoId                 *string                                       `json:"video_id,omitempty"`
 	ElementName             *string                                       `json:"element_name,omitempty"`
 	ElementValue            *string                                       `json:"element_value,omitempty"`
+	ElementFingerprint      *string                                       `json:"element_fingerprint,omitempty"`
 	ComponentInfo           *ComponentInfoCanEmpty                        `json:"component_info,omitempty"`
 	ElementType             ReviewElementType                             `json:"element_type,omitempty"`
 	ReviewStatus            ReviewResultStatus                            `json:"review_status,omitempty"`

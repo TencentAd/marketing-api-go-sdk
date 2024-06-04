@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **UpdateAdgroupTimeSpec** | [**[]UpdateAdgroupTimeItem**](update_adgroup_time_item.md) |  | [optional] [default to null]
 **UpdateAdgroupDateSpec** | [**[]UpdateAdgroupDateItem**](update_adgroup_date_item.md) |  | [optional] [default to null]
 **UpdateAdgroupBidAmountSpec** | [**[]UpdateAdgroupBidAmountItem**](update_adgroup_bid_amount_item.md) |  | [optional] [default to null]
+**UpdateAdgroupBindRtaPolicySpec** | [**[]UpdateAdgroupBindRtaPolicyItem**](update_adgroup_bind_rta_policy_item.md) |  | [optional] [default to null]
+**UpdateAdcreativeObjectCommentFlagSpec** | [**[]UpdateAdcreativeObjectCommentFlagItem**](update_adcreative_object_comment_flag_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

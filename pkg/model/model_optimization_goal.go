@@ -115,4 +115,6 @@ const (
 	OptimizationGoal_QYT_LIVE_STREAM_AUDIENCE               OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE"
 	OptimizationGoal_QYT_LIVE_STREAM_COMMENT                OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT"
 	OptimizationGoal_QYT_LIVE_STREAM_FANS                   OptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS"
+	OptimizationGoal_24HFIRSTPAY                            OptimizationGoal = "OPTIMIZATIONGOAL_24H_FIRSTPAY"
+	OptimizationGoal_STORE_STAY                             OptimizationGoal = "OPTIMIZATIONGOAL_STORE_STAY"
 )

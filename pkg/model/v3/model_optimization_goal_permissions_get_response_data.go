@@ -16,4 +16,5 @@ type OptimizationGoalPermissionsGetResponseData struct {
 	DeepBehaviorAdvancedGoalPermissionList     *[]DeepBehaviorAdvancedGoalPermissionStruct     `json:"deep_behavior_advanced_goal_permission_list,omitempty"`
 	DeepWorthAdvancedGoalPermissionList        *[]DeepWorthAdvancedGoalPermissionStruct        `json:"deep_worth_advanced_goal_permission_list,omitempty"`
 	ForwardLinkAssistPermissionList            *[]ForwardLinkAssistPermissionStruct            `json:"forward_link_assist_permission_list,omitempty"`
+	ConversionLinkOgInfo                       *[]ConversionLinkOgItem                         `json:"conversion_link_og_info,omitempty"`
 }

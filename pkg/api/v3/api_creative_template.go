@@ -43,18 +43,20 @@ CreativeTemplateApiService 获取创意规格详情
      * @param "SiteSet" (optional.Interface of []string) -
      * @param "DynamicCreativeType" (optional.String) -
      * @param "CreativeTemplateId" (optional.Int64) -
+     * @param "ConversionLinkAssetId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeTemplateGetResponse
 */
 
 type CreativeTemplateGetOpts struct {
-	MarketingSubGoal     optional.String
-	AutomaticSiteEnabled optional.Bool
-	SiteSet              optional.Interface
-	DynamicCreativeType  optional.String
-	CreativeTemplateId   optional.Int64
-	Fields               optional.Interface
+	MarketingSubGoal      optional.String
+	AutomaticSiteEnabled  optional.Bool
+	SiteSet               optional.Interface
+	DynamicCreativeType   optional.String
+	CreativeTemplateId    optional.Int64
+	ConversionLinkAssetId optional.Int64
+	Fields                optional.Interface
 }
 
 func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, marketingGoal string, marketingTargetType string, marketingCarrierType string, deliveryMode string, localVarOptionals *CreativeTemplateGetOpts) (CreativeTemplateGetResponseData, http.Header, error) {
@@ -94,6 +96,9 @@ func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, m
 	}
 	if localVarOptionals != nil && localVarOptionals.CreativeTemplateId.IsSet() {
 		localVarQueryParams.Add("creative_template_id", parameterToString(localVarOptionals.CreativeTemplateId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ConversionLinkAssetId.IsSet() {
+		localVarQueryParams.Add("conversion_link_asset_id", parameterToString(localVarOptionals.ConversionLinkAssetId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

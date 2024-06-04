@@ -57,6 +57,22 @@ func (c *SDKClient) Agency() *api.AgencyApiService {
 	return c.Client.AgencyApi
 }
 
+func (c *SDKClient) AgencyBusinessUnit() *api.AgencyBusinessUnitApiService {
+	return c.Client.AgencyBusinessUnitApi
+}
+
+func (c *SDKClient) AgencyBusinessUnitList() *api.AgencyBusinessUnitListApiService {
+	return c.Client.AgencyBusinessUnitListApi
+}
+
+func (c *SDKClient) AgencyBusinessUnitListAccount() *api.AgencyBusinessUnitListAccountApiService {
+	return c.Client.AgencyBusinessUnitListAccountApi
+}
+
+func (c *SDKClient) AgencyBusinessUnitListByAccount() *api.AgencyBusinessUnitListByAccountApiService {
+	return c.Client.AgencyBusinessUnitListByAccountApi
+}
+
 func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
@@ -131,6 +147,14 @@ func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReview
 
 func (c *SDKClient) ComponentReviewResults() *api.ComponentReviewResultsApiService {
 	return c.Client.ComponentReviewResultsApi
+}
+
+func (c *SDKClient) ConversionLinkAssets() *api.ConversionLinkAssetsApiService {
+	return c.Client.ConversionLinkAssetsApi
+}
+
+func (c *SDKClient) ConversionLinks() *api.ConversionLinksApiService {
+	return c.Client.ConversionLinksApi
 }
 
 func (c *SDKClient) Conversions() *api.ConversionsApiService {

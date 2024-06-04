@@ -17,7 +17,7 @@ type UserActionSet struct {
 	Name                  *string                `json:"name,omitempty"`
 	Description           *string                `json:"description,omitempty"`
 	ActivateStatus        *bool                  `json:"activate_status,omitempty"`
-	CreatedTime           *int64                 `json:"created_time,omitempty"`
+	CreatedTime           *string                `json:"created_time,omitempty"`
 	AccessWay             ActionSetAccessWayType `json:"access_way,omitempty"`
 	Usages                *[]string              `json:"usages,omitempty"`
 	EnableConversionClaim *bool                  `json:"enable_conversion_claim,omitempty"`

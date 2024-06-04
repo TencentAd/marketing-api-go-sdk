@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **VideoId** | **string** |  | [optional] [default to null]
 **ElementName** | **string** |  | [optional] [default to null]
 **ElementValue** | **string** |  | [optional] [default to null]
+**ElementFingerprint** | **string** |  | [optional] [default to null]
 **ComponentInfo** | [***ComponentInfoCanEmpty**](component_info_can_empty.md) |  | [optional] [default to null]
 **ElementType** | [***ReviewElementType**](ReviewElementType.md) |  | [optional] [default to null]
 **ReviewStatus** | [***ReviewResultStatus**](ReviewResultStatus.md) |  | [optional] [default to null]

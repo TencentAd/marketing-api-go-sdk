@@ -14,4 +14,5 @@ type PropertyStruct struct {
 	PropertyName  PromotedAssetAttrKey    `json:"property_name,omitempty"`
 	PropertyValue *[]string               `json:"property_value,omitempty"`
 	PropertyClass MarketingAssetAttrClass `json:"property_class,omitempty"`
+	PropertyCn    *string                 `json:"property_cn,omitempty"`
 }

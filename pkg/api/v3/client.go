@@ -70,6 +70,14 @@ type APIClient struct {
 
 	AgencyApi *AgencyApiService
 
+	AgencyBusinessUnitApi *AgencyBusinessUnitApiService
+
+	AgencyBusinessUnitListApi *AgencyBusinessUnitListApiService
+
+	AgencyBusinessUnitListAccountApi *AgencyBusinessUnitListAccountApiService
+
+	AgencyBusinessUnitListByAccountApi *AgencyBusinessUnitListByAccountApiService
+
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
 	AndroidChannelApi *AndroidChannelApiService
@@ -107,6 +115,10 @@ type APIClient struct {
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
+
+	ConversionLinkAssetsApi *ConversionLinkAssetsApiService
+
+	ConversionLinksApi *ConversionLinksApiService
 
 	ConversionsApi *ConversionsApiService
 
@@ -408,6 +420,10 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AdvertiserApi = (*AdvertiserApiService)(&c.common)
 	c.AdvertiserDailyBudgetApi = (*AdvertiserDailyBudgetApiService)(&c.common)
 	c.AgencyApi = (*AgencyApiService)(&c.common)
+	c.AgencyBusinessUnitApi = (*AgencyBusinessUnitApiService)(&c.common)
+	c.AgencyBusinessUnitListApi = (*AgencyBusinessUnitListApiService)(&c.common)
+	c.AgencyBusinessUnitListAccountApi = (*AgencyBusinessUnitListAccountApiService)(&c.common)
+	c.AgencyBusinessUnitListByAccountApi = (*AgencyBusinessUnitListByAccountApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AndroidChannelApi = (*AndroidChannelApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
@@ -427,6 +443,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
+	c.ConversionLinkAssetsApi = (*ConversionLinkAssetsApiService)(&c.common)
+	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)

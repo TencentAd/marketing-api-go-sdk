@@ -28,4 +28,6 @@ type TaskSpec struct {
 	UpdateAdgroupTimeSpec                            *[]UpdateAdgroupTimeItem                            `json:"update_adgroup_time_spec,omitempty"`
 	UpdateAdgroupDateSpec                            *[]UpdateAdgroupDateItem                            `json:"update_adgroup_date_spec,omitempty"`
 	UpdateAdgroupBidAmountSpec                       *[]UpdateAdgroupBidAmountItem                       `json:"update_adgroup_bid_amount_spec,omitempty"`
+	UpdateAdgroupBindRtaPolicySpec                   *[]UpdateAdgroupBindRtaPolicyItem                   `json:"update_adgroup_bind_rta_policy_spec,omitempty"`
+	UpdateAdcreativeObjectCommentFlagSpec            *[]UpdateAdcreativeObjectCommentFlagItem            `json:"update_adcreative_object_comment_flag_spec,omitempty"`
 }
