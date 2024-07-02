@@ -64,4 +64,5 @@ type AdgroupsAddRequest struct {
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
 	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
+	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
 }

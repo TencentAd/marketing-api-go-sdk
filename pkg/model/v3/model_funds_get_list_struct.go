@@ -11,9 +11,9 @@ package model
 
 // 返回结构
 type FundsGetListStruct struct {
-	FundType     AccountTypeMap `json:"fund_type,omitempty"`
-	Balance      *int64         `json:"balance,omitempty"`
-	FundStatus   FundStatus     `json:"fund_status,omitempty"`
-	RealtimeCost *int64         `json:"realtime_cost,omitempty"`
-	EffectFunds  *[]string      `json:"effect_funds,omitempty"`
+	FundType     AccountTypeMap      `json:"fund_type,omitempty"`
+	Balance      *int64              `json:"balance,omitempty"`
+	FundStatus   FundStatus          `json:"fund_status,omitempty"`
+	RealtimeCost *int64              `json:"realtime_cost,omitempty"`
+	EffectFunds  *[]EffectListStruct `json:"effect_funds,omitempty"`
 }

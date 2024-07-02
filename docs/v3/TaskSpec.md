@@ -22,6 +22,11 @@ Name | Type | Description | Notes
 **UpdateAdgroupBidAmountSpec** | [**[]UpdateAdgroupBidAmountItem**](update_adgroup_bid_amount_item.md) |  | [optional] [default to null]
 **UpdateAdgroupBindRtaPolicySpec** | [**[]UpdateAdgroupBindRtaPolicyItem**](update_adgroup_bind_rta_policy_item.md) |  | [optional] [default to null]
 **UpdateAdcreativeObjectCommentFlagSpec** | [**[]UpdateAdcreativeObjectCommentFlagItem**](update_adcreative_object_comment_flag_item.md) |  | [optional] [default to null]
+**UpdateDynamicCreativeConfiguredStatusSpec** | [**[]UpdateDynamicCreativeConfiguredStatusItem**](update_dynamic_creative_configured_status_item.md) |  | [optional] [default to null]
+**DeleteDynamicCreativeSpec** | [**[]DeleteDynamicCreativeItem**](delete_dynamic_creative_item.md) |  | [optional] [default to null]
+**ProcessUserPageObjectSpec** | [**[]ProcessUserPageObjectItem**](process_user_page_object_item.md) |  | [optional] [default to null]
+**CreateScheduledUpdateAdgroupDailyBudgetSpec** | [**[]CreateScheduledUpdateAdgroupDailyBudgetItem**](create_scheduled_update_adgroup_daily_budget_item.md) |  | [optional] [default to null]
+**DeleteScheduledTaskSpec** | [**[]DeleteScheduledTaskItem**](delete_scheduled_task_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -57,6 +57,7 @@ Name | Type | Description | Notes
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
 **OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
+**CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

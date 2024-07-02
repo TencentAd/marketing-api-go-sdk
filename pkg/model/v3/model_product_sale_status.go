@@ -9,7 +9,7 @@
 
 package model
 
-// ProductSaleStatus : 商品状态
+// ProductSaleStatus : 商品在线状态
 type ProductSaleStatus string
 
 // List of ProductSaleStatus

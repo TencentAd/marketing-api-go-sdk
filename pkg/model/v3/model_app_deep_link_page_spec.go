@@ -19,4 +19,5 @@ type AppDeepLinkPageSpec struct {
 	MpaAndroidDeepLinkWildcardUrl *string `json:"mpa_android_deep_link_wildcard_url,omitempty"`
 	MpaIosDeepLinkWildcardUrl     *string `json:"mpa_ios_deep_link_wildcard_url,omitempty"`
 	MpaUniversalLinkWildcardUrl   *string `json:"mpa_universal_link_wildcard_url,omitempty"`
+	DeepLinkUrl                   *string `json:"deep_link_url,omitempty"`
 }

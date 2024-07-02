@@ -79,4 +79,5 @@ const (
 	ComponentType_V2_LIST_SUBLINK            ComponentType = "V2_LIST_SUBLINK"
 	ComponentType_V2_MDPA_TITLE              ComponentType = "V2_MDPA_TITLE"
 	ComponentType_V2_MDPA_DESCRIPTION        ComponentType = "V2_MDPA_DESCRIPTION"
+	ComponentType_SEARCH_ALGORITHM_GEN       ComponentType = "SEARCH_ALGORITHM_GEN"
 )

@@ -47,6 +47,7 @@ Name | Type | Description | Notes
 **DynamicCreativeIdSet** | **[]int64** |  | [optional] [default to null]
 **AutoDerivedLandingPageSwitch** | **bool** |  | [optional] [default to null]
 **EcomPkamSwitch** | [***EcomPkamSwitch**](EcomPkamSwitch.md) |  | [optional] [default to null]
+**SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -109,5 +109,9 @@ const (
 	IntOptimizationGoal_QYT_LIVE_STREAM_FANS                   IntOptimizationGoal = "OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS"
 	IntOptimizationGoal_24HFIRSTPAY                            IntOptimizationGoal = "OPTIMIZATIONGOAL_24H_FIRSTPAY"
 	IntOptimizationGoal_STORE_STAY                             IntOptimizationGoal = "OPTIMIZATIONGOAL_STORE_STAY"
+	IntOptimizationGoal_R3                                     IntOptimizationGoal = "OPTIMIZATIONGOAL_R3"
+	IntOptimizationGoal_LOW_PRICE_INSURANCE_PAYMENT            IntOptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT"
+	IntOptimizationGoal_UNDERWRITING                           IntOptimizationGoal = "OPTIMIZATIONGOAL_UNDERWRITING"
+	IntOptimizationGoal_FIRST_WITHDRAW                         IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_WITHDRAW"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

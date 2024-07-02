@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **MpaAndroidDeepLinkWildcardUrl** | **string** |  | [optional] [default to null]
 **MpaIosDeepLinkWildcardUrl** | **string** |  | [optional] [default to null]
 **MpaUniversalLinkWildcardUrl** | **string** |  | [optional] [default to null]
+**DeepLinkUrl** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

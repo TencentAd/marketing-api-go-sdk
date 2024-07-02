@@ -15,4 +15,6 @@ type WechatChannelsAccountStruct struct {
 	WechatChannelsAccountName *string `json:"wechat_channels_account_name,omitempty"`
 	CreatedTime               *int64  `json:"created_time,omitempty"`
 	LastModifiedTime          *int64  `json:"last_modified_time,omitempty"`
+	WechatChannelsSpamBlock   *bool   `json:"wechat_channels_spam_block,omitempty"`
+	WechatChannelsSpamSlient  *bool   `json:"wechat_channels_spam_slient,omitempty"`
 }

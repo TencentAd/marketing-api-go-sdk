@@ -30,4 +30,9 @@ type TaskSpec struct {
 	UpdateAdgroupBidAmountSpec                       *[]UpdateAdgroupBidAmountItem                       `json:"update_adgroup_bid_amount_spec,omitempty"`
 	UpdateAdgroupBindRtaPolicySpec                   *[]UpdateAdgroupBindRtaPolicyItem                   `json:"update_adgroup_bind_rta_policy_spec,omitempty"`
 	UpdateAdcreativeObjectCommentFlagSpec            *[]UpdateAdcreativeObjectCommentFlagItem            `json:"update_adcreative_object_comment_flag_spec,omitempty"`
+	UpdateDynamicCreativeConfiguredStatusSpec        *[]UpdateDynamicCreativeConfiguredStatusItem        `json:"update_dynamic_creative_configured_status_spec,omitempty"`
+	DeleteDynamicCreativeSpec                        *[]DeleteDynamicCreativeItem                        `json:"delete_dynamic_creative_spec,omitempty"`
+	ProcessUserPageObjectSpec                        *[]ProcessUserPageObjectItem                        `json:"process_user_page_object_spec,omitempty"`
+	CreateScheduledUpdateAdgroupDailyBudgetSpec      *[]CreateScheduledUpdateAdgroupDailyBudgetItem      `json:"create_scheduled_update_adgroup_daily_budget_spec,omitempty"`
+	DeleteScheduledTaskSpec                          *[]DeleteScheduledTaskItem                          `json:"delete_scheduled_task_spec,omitempty"`
 }

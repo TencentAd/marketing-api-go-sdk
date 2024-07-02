@@ -716,6 +716,43 @@ type DailyReportApiListStruct struct {
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`
+	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
+	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
+	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	CvsExpPv                                   *int64   `json:"cvs_exp_pv,omitempty"`
+	CvsExpUv                                   *int64   `json:"cvs_exp_uv,omitempty"`
+	CvsCpnClkPv                                *int64   `json:"cvs_cpn_clk_pv,omitempty"`
+	CvsCpnClkUv                                *int64   `json:"cvs_cpn_clk_uv,omitempty"`
+	CvsCpnExpPv                                *int64   `json:"cvs_cpn_exp_pv,omitempty"`
+	CvsCpnExpUv                                *int64   `json:"cvs_cpn_exp_uv,omitempty"`
+	CvsCpnExpDuration                          *float64 `json:"cvs_cpn_exp_duration,omitempty"`
+	CvsCpnBtnClkPv                             *int64   `json:"cvs_cpn_btn_clk_pv,omitempty"`
+	CvsCpnBtnClkUv                             *int64   `json:"cvs_cpn_btn_clk_uv,omitempty"`
+	CvsCpnClkDedupPv                           *int64   `json:"cvs_cpn_clk_dedup_pv,omitempty"`
+	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
+	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
+	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
+	CvsCpnVideoPlayHalfUv                      *int64   `json:"cvs_cpn_video_play_half_uv,omitempty"`
+	CvsCpnVideoPlayFinUv                       *int64   `json:"cvs_cpn_video_play_fin_uv,omitempty"`
+	CvsCpnMediaPlayPv                          *int64   `json:"cvs_cpn_media_play_pv,omitempty"`
+	CvsCpnMediaPlayUv                          *int64   `json:"cvs_cpn_media_play_uv,omitempty"`
+	CvsCpnMediaPlayDuration                    *float64 `json:"cvs_cpn_media_play_duration,omitempty"`
+	CvsCpnMediaPlayHalfUv                      *int64   `json:"cvs_cpn_media_play_half_uv,omitempty"`
+	CvsCpnMediaPlayFinUv                       *int64   `json:"cvs_cpn_media_play_fin_uv,omitempty"`
+	AvgCvsViewtime                             *float64 `json:"avg_cvs_viewtime,omitempty"`
+	AvgCpnexpViewtime                          *float64 `json:"avg_cpnexp_viewtime,omitempty"`
+	AvgCpnplayVideoTime                        *float64 `json:"avg_cpnplay_video_time,omitempty"`
+	AvgCpnplayMediaTime                        *float64 `json:"avg_cpnplay_media_time,omitempty"`
+	CpnclkButtonPvRate                         *float64 `json:"cpnclk_button_pv_rate,omitempty"`
+	CpnplayVideoAndMediaPv                     *int64   `json:"cpnplay_video_and_media_pv,omitempty"`
+	CpnplayVideoAndMediaUv                     *int64   `json:"cpnplay_video_and_media_uv,omitempty"`
+	CpnplayVideoAndMediaFinUv                  *int64   `json:"cpnplay_video_and_media_fin_uv,omitempty"`
+	CpnplayVideoAndMediaTime                   *float64 `json:"cpnplay_video_and_media_time,omitempty"`
+	AvgCpnplayVideoAndMediaTime                *float64 `json:"avg_cpnplay_video_and_media_time,omitempty"`
+	CanvasHbSingleReceiveExpPv                 *int64   `json:"canvas_hb_single_receive_exp_pv,omitempty"`
+	CanvasHbSingleSendExpPv                    *int64   `json:"canvas_hb_single_send_exp_pv,omitempty"`
+	CanvasHbDoubleReceiveExpPv                 *int64   `json:"canvas_hb_double_receive_exp_pv,omitempty"`
+	CanvasHbDoubleSendExpPv                    *int64   `json:"canvas_hb_double_send_exp_pv,omitempty"`
 	Hour                                       *int64   `json:"hour,omitempty"`
 	ChannelId                                  *string  `json:"channel_id,omitempty"`
 	BuyingType                                 *string  `json:"buying_type,omitempty"`
@@ -723,9 +760,6 @@ type DailyReportApiListStruct struct {
 	Bidword                                    *string  `json:"bidword,omitempty"`
 	MatchType                                  *int64   `json:"match_type,omitempty"`
 	Device                                     *int64   `json:"device,omitempty"`
-	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
-	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
-	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`

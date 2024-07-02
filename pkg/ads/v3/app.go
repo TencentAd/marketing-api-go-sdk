@@ -137,6 +137,18 @@ func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
 	return c.Client.BusinessPointApi
 }
 
+func (c *SDKClient) ChannelsFinderobject() *api.ChannelsFinderobjectApiService {
+	return c.Client.ChannelsFinderobjectApi
+}
+
+func (c *SDKClient) ChannelsLivenoticeinfo() *api.ChannelsLivenoticeinfoApiService {
+	return c.Client.ChannelsLivenoticeinfoApi
+}
+
+func (c *SDKClient) ChannelsUserpageobjects() *api.ChannelsUserpageobjectsApiService {
+	return c.Client.ChannelsUserpageobjectsApi
+}
+
 func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
@@ -503,6 +515,10 @@ func (c *SDKClient) ProgrammedMaterialMappings() *api.ProgrammedMaterialMappings
 
 func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
+}
+
+func (c *SDKClient) QualificationImages() *api.QualificationImagesApiService {
+	return c.Client.QualificationImagesApi
 }
 
 func (c *SDKClient) QualificationStructure() *api.QualificationStructureApiService {

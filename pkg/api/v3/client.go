@@ -110,6 +110,12 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	ChannelsFinderobjectApi *ChannelsFinderobjectApiService
+
+	ChannelsLivenoticeinfoApi *ChannelsLivenoticeinfoApiService
+
+	ChannelsUserpageobjectsApi *ChannelsUserpageobjectsApiService
+
 	CommentListApi *CommentListApiService
 
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
@@ -294,6 +300,8 @@ type APIClient struct {
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
+	QualificationImagesApi *QualificationImagesApiService
+
 	QualificationStructureApi *QualificationStructureApiService
 
 	QualificationsApi *QualificationsApiService
@@ -440,6 +448,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.ChannelsFinderobjectApi = (*ChannelsFinderobjectApiService)(&c.common)
+	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
+	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
@@ -532,6 +543,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.QualificationImagesApi = (*QualificationImagesApiService)(&c.common)
 	c.QualificationStructureApi = (*QualificationStructureApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
 	c.RealtimeCostApi = (*RealtimeCostApiService)(&c.common)

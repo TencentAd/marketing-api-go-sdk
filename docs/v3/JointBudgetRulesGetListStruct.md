@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **CompletedTime** | **int64** |  | [optional] [default to null]
 **Bldate** | **int64** |  | [optional] [default to null]
 **AdgroupIdList** | **[]int64** |  | [optional] [default to null]
+**JointBudgetRuleType** | [***JointBudgetRuleType**](JointBudgetRuleType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

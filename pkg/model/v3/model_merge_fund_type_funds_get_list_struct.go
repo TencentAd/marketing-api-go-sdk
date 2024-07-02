@@ -15,5 +15,5 @@ type MergeFundTypeFundsGetListStruct struct {
 	Balance      *int64              `json:"balance,omitempty"`
 	FundStatus   FundStatus          `json:"fund_status,omitempty"`
 	RealtimeCost *int64              `json:"realtime_cost,omitempty"`
-	EffectFunds  *[]string           `json:"effect_funds,omitempty"`
+	EffectFunds  *[]EffectListStruct `json:"effect_funds,omitempty"`
 }
