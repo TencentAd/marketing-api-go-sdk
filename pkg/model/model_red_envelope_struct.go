@@ -11,11 +11,19 @@ package model
 
 // 剧情红包组件
 type RedEnvelopeStruct struct {
-	RedEnvelopeSwitch             *bool   `json:"red_envelope_switch,omitempty"`
-	RedEnvelopeImageId            *string `json:"red_envelope_image_id,omitempty"`
-	RedEnvelopeExtraSceneId       *string `json:"red_envelope_extra_scene_id,omitempty"`
-	RedEnvelopeAppearTimeMs       *int64  `json:"red_envelope_appear_time_ms,omitempty"`
-	RedEnvelopeDisappearTimeMs    *int64  `json:"red_envelope_disappear_time_ms,omitempty"`
-	RedEnvelopeOriginExtraSceneId *string `json:"red_envelope_origin_extra_scene_id,omitempty"`
-	RedBarrageSwitch              *bool   `json:"red_barrage_switch,omitempty"`
+	RedEnvelopeSwitch             *bool                 `json:"red_envelope_switch,omitempty"`
+	RedEnvelopeImageId            *string               `json:"red_envelope_image_id,omitempty"`
+	RedEnvelopeExtraSceneId       *string               `json:"red_envelope_extra_scene_id,omitempty"`
+	RedEnvelopeAppearTimeMs       *int64                `json:"red_envelope_appear_time_ms,omitempty"`
+	RedEnvelopeDisappearTimeMs    *int64                `json:"red_envelope_disappear_time_ms,omitempty"`
+	RedEnvelopeOriginExtraSceneId *string               `json:"red_envelope_origin_extra_scene_id,omitempty"`
+	RedBarrageSwitch              *bool                 `json:"red_barrage_switch,omitempty"`
+	PlotType                      PlotType              `json:"plot_type,omitempty"`
+	PlotWechatStatusFooterSwitch  *bool                 `json:"plot_wechat_status_footer_switch,omitempty"`
+	PlotFrameColor                *string               `json:"plot_frame_color,omitempty"`
+	PlotSendWord                  *string               `json:"plot_send_word,omitempty"`
+	PlotSignText                  *string               `json:"plot_sign_text,omitempty"`
+	PlotSignImage                 *string               `json:"plot_sign_image,omitempty"`
+	PlotBrandLogo                 *string               `json:"plot_brand_logo,omitempty"`
+	PlotOriginalMaterial          *PlotOriginalMaterial `json:"plot_original_material,omitempty"`
 }

@@ -21,6 +21,7 @@ const (
 	DeepConversionWorthGoal_14DAYLONGTERMPURCHASEROAS       DeepConversionWorthGoal = "GOAL_14DAY_LONGTERM_PURCHASE_ROAS"
 	DeepConversionWorthGoal_30DAYLONGTERMPURCHASEROAS       DeepConversionWorthGoal = "GOAL_30DAY_LONGTERM_PURCHASE_ROAS"
 	DeepConversionWorthGoal_QYT_7_DAY_LIVE_STREAM_DEAL_ROAS DeepConversionWorthGoal = "GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS"
+	DeepConversionWorthGoal_WITHDRAW_DEPOSITS_ROAS          DeepConversionWorthGoal = "GOAL_WITHDRAW_DEPOSITS_ROAS"
 	DeepConversionWorthGoal_7DAYPURCHASEROAS                DeepConversionWorthGoal = "GOAL_7DAY_PURCHASE_ROAS"
 	DeepConversionWorthGoal_30DAYORDERROAS                  DeepConversionWorthGoal = "GOAL_30DAY_ORDER_ROAS"
 	DeepConversionWorthGoal_1DAYPURCHASEROAS                DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_ROAS"

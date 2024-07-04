@@ -14,4 +14,7 @@ type FinderAdObjectListGetListStruct struct {
 	FinderAdObjectId  *int64              `json:"finder_ad_object_id,omitempty"`
 	FinderObject      *FinderObjectStruct `json:"finder_object,omitempty"`
 	DynamicCreativeId *int64              `json:"dynamic_creative_id,omitempty"`
+	VisibilityCode    VisibilityCode      `json:"visibility_code,omitempty"`
+	JumpInfo          *JumpinfoComponent  `json:"jump_info,omitempty"`
+	AdExportId        *string             `json:"ad_export_id,omitempty"`
 }

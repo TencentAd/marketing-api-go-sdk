@@ -37,6 +37,8 @@ Name | Type | Description | Notes
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **CustomCostCap** | **int64** |  | [optional] [default to null]
 **FeedbackId** | **int64** |  | [optional] [default to null]
+**SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
+**CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

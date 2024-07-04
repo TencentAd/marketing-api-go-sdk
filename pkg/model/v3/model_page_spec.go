@@ -40,4 +40,5 @@ type PageSpec struct {
 	WechatChannelsFeedSpec          *WechatChannelsFeedPageSpec          `json:"wechat_channels_feed_spec,omitempty"`
 	WechatChannelsReserveSpec       *WechatChannelsReserveLivePageSpec   `json:"wechat_channels_reserve_spec,omitempty"`
 	AndroidQuickAppSpec             *AndroidQuickAppPageSpec             `json:"android_quick_app_spec,omitempty"`
+	WechatChannelsShopProductSpec   *ChannelsShopProductSpec             `json:"wechat_channels_shop_product_spec,omitempty"`
 }

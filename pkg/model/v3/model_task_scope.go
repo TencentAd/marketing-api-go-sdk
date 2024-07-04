@@ -14,14 +14,16 @@ type TaskScope string
 
 // List of TaskScope
 const (
-	TaskScope_UNKNOWN        TaskScope = "TASK_SCOPE_UNKNOWN"
-	TaskScope_CAMPAIGN       TaskScope = "TASK_SCOPE_CAMPAIGN"
-	TaskScope_ADGROUP        TaskScope = "TASK_SCOPE_ADGROUP"
-	TaskScope_ADVERTISER     TaskScope = "TASK_SCOPE_ADVERTISER"
-	TaskScope_SCHEDULED_TASK TaskScope = "TASK_SCOPE_SCHEDULED_TASK"
-	TaskScope_AD             TaskScope = "TASK_SCOPE_AD"
-	TaskScope_ADCREATIVE     TaskScope = "TASK_SCOPE_ADCREATIVE"
-	TaskScope_PROJECT        TaskScope = "TASK_SCOPE_PROJECT"
-	TaskScope_BIDWORD        TaskScope = "TASK_SCOPE_BIDWORD"
-	TaskScope_COMMENT        TaskScope = "TASK_SCOPE_COMMENT"
+	TaskScope_UNKNOWN          TaskScope = "TASK_SCOPE_UNKNOWN"
+	TaskScope_CAMPAIGN         TaskScope = "TASK_SCOPE_CAMPAIGN"
+	TaskScope_ADGROUP          TaskScope = "TASK_SCOPE_ADGROUP"
+	TaskScope_ADVERTISER       TaskScope = "TASK_SCOPE_ADVERTISER"
+	TaskScope_SCHEDULED_TASK   TaskScope = "TASK_SCOPE_SCHEDULED_TASK"
+	TaskScope_AD               TaskScope = "TASK_SCOPE_AD"
+	TaskScope_ADCREATIVE       TaskScope = "TASK_SCOPE_ADCREATIVE"
+	TaskScope_PROJECT          TaskScope = "TASK_SCOPE_PROJECT"
+	TaskScope_BIDWORD          TaskScope = "TASK_SCOPE_BIDWORD"
+	TaskScope_COMMENT          TaskScope = "TASK_SCOPE_COMMENT"
+	TaskScope_DYNAMIC_CREATIVE TaskScope = "TASK_SCOPE_DYNAMIC_CREATIVE"
+	TaskScope_ADEXPORT         TaskScope = "TASK_SCOPE_ADEXPORT"
 )
