@@ -9,7 +9,10 @@
 
 package config
 
-import "net/http"
+import (
+	"net/http"
+	"time"
+)
 
 // SDKConfig ...
 type SDKConfig struct {
@@ -20,6 +23,7 @@ type SDKConfig struct {
 	SkipMonitor  bool
 	IsStrictMode bool
 	GlobalConfig GlobalConfig
+	Timeout      time.Duration
 }
 
 // GlobalConfig ...
