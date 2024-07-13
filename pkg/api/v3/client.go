@@ -122,6 +122,10 @@ type APIClient struct {
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
 
+	ComponentsApi *ComponentsApiService
+
+	ComponentsMetadataApi *ComponentsMetadataApiService
+
 	ConversionLinkAssetsApi *ConversionLinkAssetsApiService
 
 	ConversionLinksApi *ConversionLinksApiService
@@ -249,6 +253,8 @@ type APIClient struct {
 	MarketingTargetAssetsApi *MarketingTargetAssetsApiService
 
 	MarketingTargetTypesApi *MarketingTargetTypesApiService
+
+	MaterialDcasetApi *MaterialDcasetApiService
 
 	MaterialDcatagApi *MaterialDcatagApiService
 
@@ -454,6 +460,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
+	c.ComponentsApi = (*ComponentsApiService)(&c.common)
+	c.ComponentsMetadataApi = (*ComponentsMetadataApiService)(&c.common)
 	c.ConversionLinkAssetsApi = (*ConversionLinkAssetsApiService)(&c.common)
 	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
@@ -518,6 +526,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MarketingTargetAssetPropertyValuesApi = (*MarketingTargetAssetPropertyValuesApiService)(&c.common)
 	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
 	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
+	c.MaterialDcasetApi = (*MaterialDcasetApiService)(&c.common)
 	c.MaterialDcatagApi = (*MaterialDcatagApiService)(&c.common)
 	c.MaterialLabelsApi = (*MaterialLabelsApiService)(&c.common)
 	c.MergeFundTypeDailyBalanceReportApi = (*MergeFundTypeDailyBalanceReportApiService)(&c.common)

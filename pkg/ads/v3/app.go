@@ -161,6 +161,14 @@ func (c *SDKClient) ComponentReviewResults() *api.ComponentReviewResultsApiServi
 	return c.Client.ComponentReviewResultsApi
 }
 
+func (c *SDKClient) Components() *api.ComponentsApiService {
+	return c.Client.ComponentsApi
+}
+
+func (c *SDKClient) ComponentsMetadata() *api.ComponentsMetadataApiService {
+	return c.Client.ComponentsMetadataApi
+}
+
 func (c *SDKClient) ConversionLinkAssets() *api.ConversionLinkAssetsApiService {
 	return c.Client.ConversionLinkAssetsApi
 }
@@ -415,6 +423,10 @@ func (c *SDKClient) MarketingTargetAssets() *api.MarketingTargetAssetsApiService
 
 func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
 	return c.Client.MarketingTargetTypesApi
+}
+
+func (c *SDKClient) MaterialDcaset() *api.MaterialDcasetApiService {
+	return c.Client.MaterialDcasetApi
 }
 
 func (c *SDKClient) MaterialDcatag() *api.MaterialDcatagApiService {

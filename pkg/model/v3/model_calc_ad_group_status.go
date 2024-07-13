@@ -26,4 +26,7 @@ const (
 	CalcAdGroupStatus_CREATIVE_EMPTY             CalcAdGroupStatus = "ADGROUP_STATUS_CREATIVE_EMPTY"
 	CalcAdGroupStatus_JOINT_BUDGET_REACHED       CalcAdGroupStatus = "ADGROUP_STATUS_JOINT_BUDGET_REACHED"
 	CalcAdGroupStatus_TOTAL_BUDGET_REACHED       CalcAdGroupStatus = "ADGROUP_STATUS_TOTAL_BUDGET_REACHED"
+	CalcAdGroupStatus_PRE_LOCK                   CalcAdGroupStatus = "ADGROUP_STATUS_PRE_LOCK"
+	CalcAdGroupStatus_UNLOCKING                  CalcAdGroupStatus = "ADGROUP_STATUS_UNLOCKING"
+	CalcAdGroupStatus_STOP                       CalcAdGroupStatus = "ADGROUP_STATUS_STOP"
 )
