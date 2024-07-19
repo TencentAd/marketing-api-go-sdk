@@ -12,4 +12,6 @@ package model
 // 动态商品广告属性
 type MpaSpec struct {
 	RecommendMethodIds *[]int64 `json:"recommend_method_ids,omitempty"`
+	ProductCatalogId   *string  `json:"product_catalog_id,omitempty"`
+	ProductSeriesId    *string  `json:"product_series_id,omitempty"`
 }

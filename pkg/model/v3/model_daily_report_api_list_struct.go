@@ -712,7 +712,6 @@ type DailyReportApiListStruct struct {
 	DynamicCreativeName                        *string  `json:"dynamic_creative_name,omitempty"`
 	ComponentId                                *int64   `json:"component_id,omitempty"`
 	SiteSet                                    *string  `json:"site_set,omitempty"`
-	ComponentName                              *string  `json:"component_name,omitempty"`
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`

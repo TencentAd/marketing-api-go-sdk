@@ -9,7 +9,7 @@
 
 package model
 
-// 属性
+// 素材标签
 type Dactag struct {
 	TagName  *string `json:"tag_name,omitempty"`
 	TagValue *string `json:"tag_value,omitempty"`

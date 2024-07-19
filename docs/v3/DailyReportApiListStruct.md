@@ -704,7 +704,6 @@ Name | Type | Description | Notes
 **DynamicCreativeName** | **string** |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]
 **SiteSet** | **string** |  | [optional] [default to null]
-**ComponentName** | **string** |  | [optional] [default to null]
 **ComponentType** | **string** |  | [optional] [default to null]
 **ImageIds** | **string** |  | [optional] [default to null]
 **VideoIds** | **string** |  | [optional] [default to null]
