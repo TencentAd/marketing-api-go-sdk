@@ -27,4 +27,5 @@ type DynamicCreativesGetListStruct struct {
 	CreatedTime                *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
 	MarketingAssetVerification *MarketingAssetVerification `json:"marketing_asset_verification,omitempty"`
+	SystemStatus               *string                     `json:"system_status,omitempty"`
 }
