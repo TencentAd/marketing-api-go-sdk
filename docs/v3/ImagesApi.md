@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **ImagesAdd**
-> ImagesAddResponse ImagesAdd(ctx, accountId, uploadType, signature, optional)
+> ImagesAddResponse ImagesAdd(ctx, uploadType, signature, optional)
 添加图片文件
 
 ### Required Parameters
@@ -19,7 +19,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **uploadType** | **string**|  | 
   **signature** | **string**|  | 
  **optional** | ***ImagesApiImagesAddOpts** | optional parameters | nil if no parameters
@@ -31,7 +30,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **file** | **optional.Interface of *os.File**|  | 
  **bytes** | **optional.String**|  | 
  **imageUsage** | **optional.String**|  | 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ImagesGet**
-> ImagesGetResponse ImagesGet(ctx, accountId, optional)
+> ImagesGetResponse ImagesGet(ctx, optional)
 获取图片信息
 
 ### Required Parameters
@@ -90,7 +90,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***ImagesApiImagesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -98,7 +97,8 @@ Optional parameters are passed through a pointer to a ImagesApiImagesGetOpts str
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

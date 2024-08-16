@@ -60,9 +60,11 @@ Name | Type | Description | Notes
 **SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **EcomPkamSwitch** | [***EcomPkamSwitch**](EcomPkamSwitch.md) |  | [optional] [default to null]
 **BidScene** | [***BidScene**](BidScene.md) |  | [optional] [default to null]
+**SearchIntelligentExtension** | [***ModelSwitch**](Switch.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
+**FeedbackId** | **int64** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

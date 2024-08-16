@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**RegistrationType** | [***CustomerRegistrationType**](CustomerRegistrationType.md) |  | [optional] [default to null]
 **DailyBudget** | **int64** |  | [optional] [default to null]
 **SystemStatus** | [***CustomerSystemStatus**](CustomerSystemStatus.md) |  | [optional] [default to null]
 **RejectMessage** | **string** |  | [optional] [default to null]
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **CorporationLicence** | **string** |  | [optional] [default to null]
 **CertificationImageId** | **string** |  | [optional] [default to null]
 **CertificationImage** | **string** |  | [optional] [default to null]
-**IndividualQualification** | [***IndividualQualification**](individual_qualification.md) |  | [optional] [default to null]
+**IndividualQualification** | [***IndividualQualificationRsp**](individual_qualification_rsp.md) |  | [optional] [default to null]
 **SystemIndustryId** | **int64** |  | [optional] [default to null]
 **CustomizedIndustry** | **string** |  | [optional] [default to null]
 **IntroductionUrl** | **string** |  | [optional] [default to null]

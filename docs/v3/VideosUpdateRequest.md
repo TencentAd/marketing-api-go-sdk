@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**OrganizationId** | **int64** |  | [optional] [default to null]
 **VideoId** | **int64** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 

@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **ProcessUserPageObjectSpec** | [**[]ProcessUserPageObjectItem**](process_user_page_object_item.md) |  | [optional] [default to null]
 **CreateScheduledUpdateAdgroupDailyBudgetSpec** | [**[]CreateScheduledUpdateAdgroupDailyBudgetItem**](create_scheduled_update_adgroup_daily_budget_item.md) |  | [optional] [default to null]
 **DeleteScheduledTaskSpec** | [**[]DeleteScheduledTaskItem**](delete_scheduled_task_item.md) |  | [optional] [default to null]
+**UpdateAdgroupTargetingTaskSpec** | [**[]UpdateAdgroupTargetingTaskItem**](update_adgroup_targeting_task_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

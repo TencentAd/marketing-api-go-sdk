@@ -10,6 +10,7 @@
 package model
 
 type DynamicCreativesGetResponseData struct {
-	List     *[]DynamicCreativesGetListStruct `json:"list,omitempty"`
-	PageInfo *PageInfo                        `json:"page_info,omitempty"`
+	List           *[]DynamicCreativesGetListStruct `json:"list,omitempty"`
+	PageInfo       *PageInfo                        `json:"page_info,omitempty"`
+	CursorPageInfo *CursorPageInfoStruct            `json:"cursor_page_info,omitempty"`
 }

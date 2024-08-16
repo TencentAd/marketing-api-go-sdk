@@ -67,8 +67,10 @@ type AdgroupsAddRequest struct {
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch      `json:"search_expand_targeting_switch,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch                   `json:"ecom_pkam_switch,omitempty"`
 	BidScene                          BidScene                         `json:"bid_scene,omitempty"`
+	SearchIntelligentExtension        ModelSwitch                      `json:"search_intelligent_extension,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal                 `json:"forward_link_assist,omitempty"`
 	ShortPlayPayType                  ShortPlayPayType                 `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                           `json:"sell_strategy_id,omitempty"`
+	FeedbackId                        *int64                           `json:"feedback_id,omitempty"`
 	AccountId                         *int64                           `json:"account_id,omitempty"`
 }

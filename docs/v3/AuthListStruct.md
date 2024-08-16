@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **AuthorizationType** | [***WechatChannelsAuthType**](WechatChannelsAuthType.md) |  | [optional] [default to null]
 **AuthorizationScope** | [***WechatChannelsAuthScope**](WechatChannelsAuthScope.md) |  | [optional] [default to null]
 **IsAdAcct** | **bool** |  | [optional] [default to null]
+**WechatChannelsAccountIcon** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

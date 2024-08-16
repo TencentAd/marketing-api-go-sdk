@@ -11,7 +11,8 @@ package model
 
 // 解绑成功的记录
 type RtaTargetBindDeleteRecordSuccess struct {
-	Id         *int64 `json:"Id,omitempty"`
-	TargetType *int64 `json:"TargetType,omitempty"`
-	IsMp       *int64 `json:"IsMp,omitempty"`
+	Id            *int64  `json:"Id,omitempty"`
+	TargetType    *int64  `json:"TargetType,omitempty"`
+	IsMp          *int64  `json:"IsMp,omitempty"`
+	OuterTargetId *string `json:"OuterTargetId,omitempty"`
 }

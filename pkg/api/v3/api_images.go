@@ -33,10 +33,11 @@ type ImagesApiService service
 /*
 ImagesApiService 添加图片文件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param uploadType
  * @param signature
  * @param optional nil or *ImagesAddOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "File" (optional.Interface of *os.File) -
      * @param "Bytes" (optional.String) -
      * @param "ImageUsage" (optional.String) -
@@ -49,6 +50,8 @@ ImagesApiService 添加图片文件
 */
 
 type ImagesAddOpts struct {
+	AccountId      optional.Int64
+	OrganizationId optional.Int64
 	File           optional.Interface
 	Bytes          optional.String
 	ImageUsage     optional.String
@@ -58,7 +61,7 @@ type ImagesAddOpts struct {
 	ResizeFileSize optional.Int64
 }
 
-func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType string, signature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
+func (a *ImagesApiService) Add(ctx context.Context, uploadType string, signature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -93,7 +96,12 @@ func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType 
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarFormParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarFormParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	localVarFormParams.Add("upload_type", parameterToString(uploadType, ""))
 	localVarFormParams.Add("signature", parameterToString(signature, ""))
 	var localVarFile *os.File
@@ -305,8 +313,9 @@ func (a *ImagesApiService) Delete(ctx context.Context, data ImagesDeleteRequest)
 /*
 ImagesApiService 获取图片信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *ImagesGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -318,6 +327,8 @@ ImagesApiService 获取图片信息
 */
 
 type ImagesGetOpts struct {
+	AccountId        optional.Int64
+	OrganizationId   optional.Int64
 	Filtering        optional.Interface
 	Page             optional.Int64
 	PageSize         optional.Int64
@@ -326,7 +337,7 @@ type ImagesGetOpts struct {
 	Fields           optional.Interface
 }
 
-func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *ImagesGetOpts) (ImagesGetResponseData, http.Header, error) {
+func (a *ImagesApiService) Get(ctx context.Context, localVarOptionals *ImagesGetOpts) (ImagesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -344,7 +355,12 @@ func (a *ImagesApiService) Get(ctx context.Context, accountId int64, localVarOpt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

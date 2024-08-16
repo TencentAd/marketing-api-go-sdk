@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **MarketingTargetAssetDetailGet**
-> MarketingTargetAssetDetailGetResponse MarketingTargetAssetDetailGet(ctx, accountId, marketingAssetId, marketingTargetType, optional)
+> MarketingTargetAssetDetailGetResponse MarketingTargetAssetDetailGet(ctx, marketingAssetId, marketingTargetType, optional)
 获取推广内容资产详情
 
 ### Required Parameters
@@ -16,7 +16,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **marketingAssetId** | **int64**|  | 
   **marketingTargetType** | **string**|  | 
  **optional** | ***MarketingTargetAssetDetailApiMarketingTargetAssetDetailGetOpts** | optional parameters | nil if no parameters
@@ -28,7 +27,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

@@ -79,6 +79,7 @@ type AdgroupsGetListStruct struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
+	ConversionLinkAssetId             *int64                      `json:"conversion_link_asset_id,omitempty"`
 	CostGuaranteeStatus               CostGuaranteeStatus         `json:"cost_guarantee_status,omitempty"`
 	CostGuaranteeMoney                *int64                      `json:"cost_guarantee_money,omitempty"`
 }

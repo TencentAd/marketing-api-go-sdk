@@ -85,6 +85,8 @@ Name | Type | Description  | Notes
  **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)|  | 
  **isDeleted** | **optional.Bool**|  | 
+ **paginationMode** | **optional.String**|  | 
+ **cursor** | **optional.String**|  | 
 
 ### Return type
 

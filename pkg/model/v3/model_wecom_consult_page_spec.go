@@ -11,5 +11,6 @@ package model
 
 // 企业微信客服落地页
 type WecomConsultPageSpec struct {
-	PageId *int64 `json:"page_id,omitempty"`
+	PageId    *int64    `json:"page_id,omitempty"`
+	GroupType GroupType `json:"group_type,omitempty"`
 }

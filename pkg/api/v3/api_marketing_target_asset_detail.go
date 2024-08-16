@@ -32,20 +32,23 @@ type MarketingTargetAssetDetailApiService service
 /*
 MarketingTargetAssetDetailApiService 获取推广内容资产详情
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param marketingAssetId
  * @param marketingTargetType
  * @param optional nil or *MarketingTargetAssetDetailGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return MarketingTargetAssetDetailGetResponse
 */
 
 type MarketingTargetAssetDetailGetOpts struct {
-	Fields optional.Interface
+	AccountId      optional.Int64
+	OrganizationId optional.Int64
+	Fields         optional.Interface
 }
 
-func (a *MarketingTargetAssetDetailApiService) Get(ctx context.Context, accountId int64, marketingAssetId int64, marketingTargetType string, localVarOptionals *MarketingTargetAssetDetailGetOpts) (MarketingTargetAssetDetailGetResponseData, http.Header, error) {
+func (a *MarketingTargetAssetDetailApiService) Get(ctx context.Context, marketingAssetId int64, marketingTargetType string, localVarOptionals *MarketingTargetAssetDetailGetOpts) (MarketingTargetAssetDetailGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -63,9 +66,14 @@ func (a *MarketingTargetAssetDetailApiService) Get(ctx context.Context, accountI
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
 	localVarQueryParams.Add("marketing_asset_id", parameterToString(marketingAssetId, ""))
 	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

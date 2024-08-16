@@ -12,6 +12,7 @@ package model
 // 返回结构
 type AdvertiserGetListStruct struct {
 	AccountId               *int64                      `json:"account_id,omitempty"`
+	RegistrationType        CustomerRegistrationType    `json:"registration_type,omitempty"`
 	DailyBudget             *int64                      `json:"daily_budget,omitempty"`
 	SystemStatus            CustomerSystemStatus        `json:"system_status,omitempty"`
 	RejectMessage           *string                     `json:"reject_message,omitempty"`
@@ -19,7 +20,7 @@ type AdvertiserGetListStruct struct {
 	CorporationLicence      *string                     `json:"corporation_licence,omitempty"`
 	CertificationImageId    *string                     `json:"certification_image_id,omitempty"`
 	CertificationImage      *string                     `json:"certification_image,omitempty"`
-	IndividualQualification *IndividualQualification    `json:"individual_qualification,omitempty"`
+	IndividualQualification *IndividualQualificationRsp `json:"individual_qualification,omitempty"`
 	SystemIndustryId        *int64                      `json:"system_industry_id,omitempty"`
 	CustomizedIndustry      *string                     `json:"customized_industry,omitempty"`
 	IntroductionUrl         *string                     `json:"introduction_url,omitempty"`

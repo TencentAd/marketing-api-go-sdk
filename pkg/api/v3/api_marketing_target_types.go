@@ -32,18 +32,21 @@ type MarketingTargetTypesApiService service
 /*
 MarketingTargetTypesApiService 获取可投放推广内容资产类型名称
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *MarketingTargetTypesGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return MarketingTargetTypesGetResponse
 */
 
 type MarketingTargetTypesGetOpts struct {
-	Fields optional.Interface
+	AccountId      optional.Int64
+	OrganizationId optional.Int64
+	Fields         optional.Interface
 }
 
-func (a *MarketingTargetTypesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *MarketingTargetTypesGetOpts) (MarketingTargetTypesGetResponseData, http.Header, error) {
+func (a *MarketingTargetTypesApiService) Get(ctx context.Context, localVarOptionals *MarketingTargetTypesGetOpts) (MarketingTargetTypesGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -61,7 +64,12 @@ func (a *MarketingTargetTypesApiService) Get(ctx context.Context, accountId int6
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

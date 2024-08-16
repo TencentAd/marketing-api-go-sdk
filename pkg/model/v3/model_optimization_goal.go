@@ -112,4 +112,6 @@ const (
 	OptimizationGoal_LOW_PRICE_INSURANCE_PAYMENT            OptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT"
 	OptimizationGoal_UNDERWRITING                           OptimizationGoal = "OPTIMIZATIONGOAL_UNDERWRITING"
 	OptimizationGoal_FIRST_WITHDRAW                         OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_WITHDRAW"
+	OptimizationGoal_R3                                     OptimizationGoal = "OPTIMIZATIONGOAL_R3"
+	OptimizationGoal_BRIDGING_COURSE_COMPLETED              OptimizationGoal = "OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED"
 )

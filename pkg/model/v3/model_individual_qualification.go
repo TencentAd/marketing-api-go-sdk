@@ -9,7 +9,7 @@
 
 package model
 
-// 个人身份证明
+// 身份证明
 type IndividualQualification struct {
 	Name                       *string `json:"name,omitempty"`
 	IdentificationNumber       *string `json:"identification_number,omitempty"`

@@ -25,7 +25,6 @@ import (
 type VideosGetExample struct {
 	TAds          *ads.SDKClient
 	AccessToken   string
-	AccountId     int64
 	VideosGetOpts *api.VideosGetOpts
 }
 
@@ -35,8 +34,8 @@ func (e *VideosGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = int64(0)
 	e.VideosGetOpts = &api.VideosGetOpts{
+		AccountId: optional.NewInt64(int64(0)),
 
 		Filtering: optional.NewInterface([]model.FilteringStruct{{
 			Field:    "media_id",
@@ -52,7 +51,7 @@ func (e *VideosGetExample) RunExample() (model.VideosGetResponseData, http.Heade
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Videos().Get(ctx, e.AccountId, e.VideosGetOpts)
+	return tads.Videos().Get(ctx, e.VideosGetOpts)
 }
 
 func main() {

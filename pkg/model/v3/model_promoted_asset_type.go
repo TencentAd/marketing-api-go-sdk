@@ -9,7 +9,7 @@
 
 package model
 
-// PromotedAssetType : 推广类容类型
+// PromotedAssetType : 推广内容类型
 type PromotedAssetType string
 
 // List of PromotedAssetType

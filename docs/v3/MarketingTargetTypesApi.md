@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **MarketingTargetTypesGet**
-> MarketingTargetTypesGetResponse MarketingTargetTypesGet(ctx, accountId, optional)
+> MarketingTargetTypesGetResponse MarketingTargetTypesGet(ctx, optional)
 获取可投放推广内容资产类型名称
 
 ### Required Parameters
@@ -16,7 +16,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***MarketingTargetTypesApiMarketingTargetTypesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -24,7 +23,8 @@ Optional parameters are passed through a pointer to a MarketingTargetTypesApiMar
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

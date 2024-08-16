@@ -71,6 +71,7 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
+**ConversionLinkAssetId** | **int64** |  | [optional] [default to null]
 **CostGuaranteeStatus** | [***CostGuaranteeStatus**](CostGuaranteeStatus.md) |  | [optional] [default to null]
 **CostGuaranteeMoney** | **int64** |  | [optional] [default to null]
 

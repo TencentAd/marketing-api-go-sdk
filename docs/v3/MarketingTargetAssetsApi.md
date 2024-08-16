@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **MarketingTargetAssetsGet**
-> MarketingTargetAssetsGetResponse MarketingTargetAssetsGet(ctx, accountId, marketingTargetType, optional)
+> MarketingTargetAssetsGetResponse MarketingTargetAssetsGet(ctx, marketingTargetType, optional)
 获取可投放推广内容资产列表
 
 ### Required Parameters
@@ -71,7 +71,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **marketingTargetType** | **string**|  | 
  **optional** | ***MarketingTargetAssetsApiMarketingTargetAssetsGetOpts** | optional parameters | nil if no parameters
 
@@ -81,10 +80,11 @@ Optional parameters are passed through a pointer to a MarketingTargetAssetsApiMa
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
-
+ **accountId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

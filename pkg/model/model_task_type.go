@@ -264,5 +264,6 @@ const (
 	TaskType_TASK_TYPE_CREATE_ASYNC_ASSET                                              TaskType = "TASK_TYPE_CREATE_ASYNC_ASSET"
 	TaskType_TASK_TYPE_UPDATE_ASSET_NAME                                               TaskType = "TASK_TYPE_UPDATE_ASSET_NAME"
 	TaskType_TASK_TYPE_RISK_CONTROL_STRATEGY_FULL_RECONCILE                            TaskType = "TASK_TYPE_RISK_CONTROL_STRATEGY_FULL_RECONCILE"
+	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING                                        TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )

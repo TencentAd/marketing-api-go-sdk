@@ -10,6 +10,7 @@
 package model
 
 type AdgroupsGetResponseData struct {
-	List     *[]AdgroupsGetListStruct `json:"list,omitempty"`
-	PageInfo *Conf                    `json:"page_info,omitempty"`
+	List           *[]AdgroupsGetListStruct `json:"list,omitempty"`
+	PageInfo       *Conf                    `json:"page_info,omitempty"`
+	CursorPageInfo *CursorPageInfoStruct    `json:"cursor_page_info,omitempty"`
 }

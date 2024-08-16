@@ -56,6 +56,7 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
+**ConversionLinkAssetId** | **int64** |  | [optional] [default to null]
 **OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 

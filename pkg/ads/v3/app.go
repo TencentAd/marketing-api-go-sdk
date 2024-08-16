@@ -137,6 +137,18 @@ func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
 	return c.Client.BusinessPointApi
 }
 
+func (c *SDKClient) Categories() *api.CategoriesApiService {
+	return c.Client.CategoriesApi
+}
+
+func (c *SDKClient) CategoriesAttribute() *api.CategoriesAttributeApiService {
+	return c.Client.CategoriesAttributeApi
+}
+
+func (c *SDKClient) ChannelsComment() *api.ChannelsCommentApiService {
+	return c.Client.ChannelsCommentApi
+}
+
 func (c *SDKClient) ChannelsFinderobject() *api.ChannelsFinderobjectApiService {
 	return c.Client.ChannelsFinderobjectApi
 }
@@ -167,6 +179,10 @@ func (c *SDKClient) Components() *api.ComponentsApiService {
 
 func (c *SDKClient) ComponentsMetadata() *api.ComponentsMetadataApiService {
 	return c.Client.ComponentsMetadataApi
+}
+
+func (c *SDKClient) ConversionLinkAssetAvailable() *api.ConversionLinkAssetAvailableApiService {
+	return c.Client.ConversionLinkAssetAvailableApi
 }
 
 func (c *SDKClient) ConversionLinkAssets() *api.ConversionLinkAssetsApiService {
@@ -473,6 +489,10 @@ func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
 	return c.Client.ObjectCommentFlagApi
 }
 
+func (c *SDKClient) OperationLogList() *api.OperationLogListApiService {
+	return c.Client.OperationLogListApi
+}
+
 func (c *SDKClient) OptimizationGoalPermissions() *api.OptimizationGoalPermissionsApiService {
 	return c.Client.OptimizationGoalPermissionsApi
 }
@@ -633,6 +653,10 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 	return c.Client.VideosApi
 }
 
+func (c *SDKClient) Wallet() *api.WalletApiService {
+	return c.Client.WalletApi
+}
+
 func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {
 	return c.Client.WechatChannelsAccountsApi
 }
@@ -687,6 +711,10 @@ func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
+}
+
+func (c *SDKClient) WxGamePlayablePage() *api.WxGamePlayablePageApiService {
+	return c.Client.WxGamePlayablePageApi
 }
 
 func (c *SDKClient) WxPackageAccount() *api.WxPackageAccountApiService {

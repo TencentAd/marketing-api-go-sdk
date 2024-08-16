@@ -19,4 +19,7 @@ type AdcreativeTemplateStructAdpermit struct {
 	CreativeComponents            *[]AdcreativeElement           `json:"creative_components,omitempty"`
 	UnsupportSitesetDetailSpec    *[]UnsupportSiteAdpermit       `json:"unsupport_siteset_detail_spec,omitempty"`
 	SupportDynamicAbilitySpecList *SupportDynamicAbilitySpecList `json:"support_dynamic_ability_spec_list,omitempty"`
+	SupportMpa                    *bool                          `json:"support_mpa,omitempty"`
+	SupportMpaImageTemplate       *bool                          `json:"support_mpa_image_template,omitempty"`
+	SupportMpaVideoTemplate       *bool                          `json:"support_mpa_video_template,omitempty"`
 }

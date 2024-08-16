@@ -33,10 +33,11 @@ type VideosApiService service
 /*
 VideosApiService 添加视频文件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param videoFile
  * @param signature
  * @param optional nil or *VideosAddOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Description" (optional.String) -
      * @param "AdcreativeTemplateId" (optional.Int64) -
 
@@ -44,11 +45,13 @@ VideosApiService 添加视频文件
 */
 
 type VideosAddOpts struct {
+	AccountId            optional.Int64
+	OrganizationId       optional.Int64
 	Description          optional.String
 	AdcreativeTemplateId optional.Int64
 }
 
-func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *os.File, signature string, localVarOptionals *VideosAddOpts) (VideosAddResponseData, http.Header, error) {
+func (a *VideosApiService) Add(ctx context.Context, videoFile *os.File, signature string, localVarOptionals *VideosAddOpts) (VideosAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -83,7 +86,12 @@ func (a *VideosApiService) Add(ctx context.Context, accountId int64, videoFile *
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarFormParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarFormParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	localVarFile := videoFile
 	localVarFileKey = "video_file"
 	if localVarFile != nil {
@@ -275,8 +283,9 @@ func (a *VideosApiService) Delete(ctx context.Context, data VideosDeleteRequest)
 /*
 VideosApiService 获取视频文件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *VideosGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -288,6 +297,8 @@ VideosApiService 获取视频文件
 */
 
 type VideosGetOpts struct {
+	AccountId        optional.Int64
+	OrganizationId   optional.Int64
 	Filtering        optional.Interface
 	Page             optional.Int64
 	PageSize         optional.Int64
@@ -296,7 +307,7 @@ type VideosGetOpts struct {
 	Fields           optional.Interface
 }
 
-func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOptionals *VideosGetOpts) (VideosGetResponseData, http.Header, error) {
+func (a *VideosApiService) Get(ctx context.Context, localVarOptionals *VideosGetOpts) (VideosGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -314,7 +325,12 @@ func (a *VideosApiService) Get(ctx context.Context, accountId int64, localVarOpt
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

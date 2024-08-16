@@ -130,9 +130,6 @@ type HourlyReportApiListStruct struct {
 	GuideToFollowPageViewers                   *int64   `json:"guide_to_follow_page_viewers,omitempty"`
 	GuideToFollowPageInteractionAmount         *int64   `json:"guide_to_follow_page_interaction_amount,omitempty"`
 	GuideToFollowPageInteractionUsers          *int64   `json:"guide_to_follow_page_interaction_users,omitempty"`
-	LandingPageViewCount                       *int64   `json:"landing_page_view_count,omitempty"`
-	LandingPageEffectiveRate                   *float64 `json:"landing_page_effective_rate,omitempty"`
-	LandingPageUserCount                       *int64   `json:"landing_page_user_count,omitempty"`
 	PlatformKeyPageViewUserCount               *int64   `json:"platform_key_page_view_user_count,omitempty"`
 	PageConsultCount                           *int64   `json:"page_consult_count,omitempty"`
 	ConsultUvCount                             *int64   `json:"consult_uv_count,omitempty"`
@@ -706,6 +703,30 @@ type HourlyReportApiListStruct struct {
 	AfterAddWecomNegativePv                    *int64   `json:"after_add_wecom_negative_pv,omitempty"`
 	SecurityLowPriceOrderPv                    *int64   `json:"security_low_price_order_pv,omitempty"`
 	SecurityHighPriceOrderPv                   *int64   `json:"security_high_price_order_pv,omitempty"`
+	MiniGameRate                               *float64 `json:"mini_game_rate,omitempty"`
+	RetentionPlaDedupPv                        *int64   `json:"retention_pla_dedup_pv,omitempty"`
+	RetentionPlaDedupRate                      *float64 `json:"retention_pla_dedup_rate,omitempty"`
+	AdMonetizationPlaDedupPv                   *int64   `json:"ad_monetization_pla_dedup_pv,omitempty"`
+	AdMonetizationPlaDedupActive1dPv           *int64   `json:"ad_monetization_pla_dedup_active_1d_pv,omitempty"`
+	AdMonetizationPlaDedupActive3dPv           *int64   `json:"ad_monetization_pla_dedup_active_3d_pv,omitempty"`
+	AdMonetizationPlaDedupActive7dPv           *int64   `json:"ad_monetization_pla_dedup_active_7d_pv,omitempty"`
+	AdMonetizationBkPlaDedupPv                 *int64   `json:"ad_monetization_bk_pla_dedup_pv,omitempty"`
+	MiniGameBfIncomePlaRoi                     *float64 `json:"mini_game_bf_income_pla_roi,omitempty"`
+	MiniGameBfIncomePlaArpu                    *int64   `json:"mini_game_bf_income_pla_arpu,omitempty"`
+	AdMonetizationBkPlaCost                    *int64   `json:"ad_monetization_bk_pla_cost,omitempty"`
+	AdMonetizationBkPlaDedupActive1dPv         *int64   `json:"ad_monetization_bk_pla_dedup_active_1d_pv,omitempty"`
+	AdMonetizationBkPlaActive24hAmount         *int64   `json:"ad_monetization_bk_pla_active_24h_amount,omitempty"`
+	AdMonetizationBkPlaDedupActive24hPv        *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_pv,omitempty"`
+	AdMonetizationBkPlaDedupActive24hRoi       *float64 `json:"ad_monetization_bk_pla_dedup_active_24h_roi,omitempty"`
+	AdMonetizationBkPlaDedupActive24hArpu      *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_arpu,omitempty"`
+	AdMonetizationBkPlaDedupActive24hCost      *int64   `json:"ad_monetization_bk_pla_dedup_active_24h_cost,omitempty"`
+	AdMonetizationBkPlaActive3dAmount          *int64   `json:"ad_monetization_bk_pla_active_3d_amount,omitempty"`
+	AdMonetizationBkPlaActive3dRoi             *float64 `json:"ad_monetization_bk_pla_active_3d_roi,omitempty"`
+	AdMonetizationBkPlaActive7dAmount          *int64   `json:"ad_monetization_bk_pla_active_7d_amount,omitempty"`
+	AdMonetizationBkPlaActive14dAmount         *int64   `json:"ad_monetization_bk_pla_active_14d_amount,omitempty"`
+	AdMonetizationBkPlaActive7dRoi             *float64 `json:"ad_monetization_bk_pla_active_7d_roi,omitempty"`
+	AdMonetizationBkPlaActive14dRoi            *float64 `json:"ad_monetization_bk_pla_active_14d_roi,omitempty"`
+	ClkAppservicePv                            *int64   `json:"clk_appservice_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

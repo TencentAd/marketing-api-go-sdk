@@ -54,6 +54,8 @@ type AdgroupsUpdateRequest struct {
 	DynamicCreativeIdSet              *[]int64                         `json:"dynamic_creative_id_set,omitempty"`
 	AutoDerivedLandingPageSwitch      *bool                            `json:"auto_derived_landing_page_switch,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch                   `json:"ecom_pkam_switch,omitempty"`
+	SearchIntelligentExtension        ModelSwitch                      `json:"search_intelligent_extension,omitempty"`
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch      `json:"search_expand_targeting_switch,omitempty"`
+	FeedbackId                        *int64                           `json:"feedback_id,omitempty"`
 	AccountId                         *int64                           `json:"account_id,omitempty"`
 }

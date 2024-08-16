@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **MarketingAssetVerification** | [***MarketingAssetVerification**](marketing_asset_verification.md) |  | [optional] [default to null]
+**Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
+**AssetInconsistentStatus** | [***AssetInconsistentStatus**](AssetInconsistentStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

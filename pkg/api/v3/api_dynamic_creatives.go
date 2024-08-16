@@ -249,16 +249,20 @@ DynamicCreativesApiService 获取动态创意
      * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -
      * @param "IsDeleted" (optional.Bool) -
+     * @param "PaginationMode" (optional.String) -
+     * @param "Cursor" (optional.String) -
 
 @return DynamicCreativesGetResponse
 */
 
 type DynamicCreativesGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	Fields    optional.Interface
-	IsDeleted optional.Bool
+	Filtering      optional.Interface
+	Page           optional.Int64
+	PageSize       optional.Int64
+	Fields         optional.Interface
+	IsDeleted      optional.Bool
+	PaginationMode optional.String
+	Cursor         optional.String
 }
 
 func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *DynamicCreativesGetOpts) (DynamicCreativesGetResponseData, http.Header, error) {
@@ -294,6 +298,12 @@ func (a *DynamicCreativesApiService) Get(ctx context.Context, accountId int64, l
 	}
 	if localVarOptionals != nil && localVarOptionals.IsDeleted.IsSet() {
 		localVarQueryParams.Add("is_deleted", parameterToString(localVarOptionals.IsDeleted.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PaginationMode.IsSet() {
+		localVarQueryParams.Add("pagination_mode", parameterToString(localVarOptionals.PaginationMode.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Cursor.IsSet() {
+		localVarQueryParams.Add("cursor", parameterToString(localVarOptionals.Cursor.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}
