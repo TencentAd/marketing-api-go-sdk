@@ -26,6 +26,8 @@ Name | Type | Description | Notes
 **DeepOptimizationGoalType** | [***DeepOptimizationGoalType**](DeepOptimizationGoalType.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **IncubationOptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
+**ConversionTemplateId** | **int64** |  | [optional] [default to null]
+**CustomReportIndex** | **[]int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

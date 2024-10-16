@@ -38,17 +38,19 @@ ChannelsUserpageobjectsApiService 获取视频号动态列表
      * @param "Nickname" (optional.String) -
      * @param "LastBuffer" (optional.String) -
      * @param "Count" (optional.Int64) -
+     * @param "WechatChannelsAccountId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ChannelsUserpageobjectsGetResponse
 */
 
 type ChannelsUserpageobjectsGetOpts struct {
-	FinderUsername optional.String
-	Nickname       optional.String
-	LastBuffer     optional.String
-	Count          optional.Int64
-	Fields         optional.Interface
+	FinderUsername          optional.String
+	Nickname                optional.String
+	LastBuffer              optional.String
+	Count                   optional.Int64
+	WechatChannelsAccountId optional.String
+	Fields                  optional.Interface
 }
 
 func (a *ChannelsUserpageobjectsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *ChannelsUserpageobjectsGetOpts) (ChannelsUserpageobjectsGetResponseData, http.Header, error) {
@@ -81,6 +83,9 @@ func (a *ChannelsUserpageobjectsApiService) Get(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.Count.IsSet() {
 		localVarQueryParams.Add("count", parameterToString(localVarOptionals.Count.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsAccountId.IsSet() {
+		localVarQueryParams.Add("wechat_channels_account_id", parameterToString(localVarOptionals.WechatChannelsAccountId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

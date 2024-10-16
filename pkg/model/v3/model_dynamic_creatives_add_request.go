@@ -23,5 +23,4 @@ type DynamicCreativesAddRequest struct {
 	PageTrackUrl                     *string              `json:"page_track_url,omitempty"`
 	AutoDerivedProgramCreativeSwitch *bool                `json:"auto_derived_program_creative_switch,omitempty"`
 	ConfiguredStatus                 ConfiguredStatus     `json:"configured_status,omitempty"`
-	EnableBreakthroughSiteset        *bool                `json:"enable_breakthrough_siteset,omitempty"`
 }

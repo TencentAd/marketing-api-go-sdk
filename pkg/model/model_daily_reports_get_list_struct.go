@@ -804,4 +804,6 @@ type DailyReportsGetListStruct struct {
 	ExportId                                   *string  `json:"export_id,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
+	PurchasePv                                 *int64   `json:"purchase_pv,omitempty"`
+	RegPv                                      *int64   `json:"reg_pv,omitempty"`
 }

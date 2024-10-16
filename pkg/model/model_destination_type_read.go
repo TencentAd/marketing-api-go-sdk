@@ -60,4 +60,5 @@ const (
 	DestinationTypeRead_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	DestinationTypeRead_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
+	DestinationTypeRead_WECHAT_QUERY_PAGE               DestinationTypeRead = "PAGE_TYPE_WECHAT_QUERY_PAGE"
 )

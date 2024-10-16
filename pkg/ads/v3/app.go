@@ -173,6 +173,10 @@ func (c *SDKClient) ComponentReviewResults() *api.ComponentReviewResultsApiServi
 	return c.Client.ComponentReviewResultsApi
 }
 
+func (c *SDKClient) ComponentSharing() *api.ComponentSharingApiService {
+	return c.Client.ComponentSharingApi
+}
+
 func (c *SDKClient) Components() *api.ComponentsApiService {
 	return c.Client.ComponentsApi
 }

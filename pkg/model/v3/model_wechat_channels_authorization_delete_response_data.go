@@ -10,6 +10,7 @@
 package model
 
 type WechatChannelsAuthorizationDeleteResponseData struct {
-	AuthorizationId *string `json:"authorization_id,omitempty"`
-	FinderUsername  *string `json:"finder_username,omitempty"`
+	AuthorizationId         *string `json:"authorization_id,omitempty"`
+	FinderUsername          *string `json:"finder_username,omitempty"`
+	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
 }

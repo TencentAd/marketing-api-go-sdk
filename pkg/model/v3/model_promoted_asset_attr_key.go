@@ -41,6 +41,7 @@ const (
 	PromotedAssetAttrKey_EDUCATION_LEVEL                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_LEVEL"
 	PromotedAssetAttrKey_EDUCATION_FAMOUS_TEACHER_NAME                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_FAMOUS_TEACHER_NAME"
 	PromotedAssetAttrKey_EDUCATION_FAMOUS_TEACHER_DESC                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_FAMOUS_TEACHER_DESC"
+	PromotedAssetAttrKey_EDUCATION_PRODUCT_DESC                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_PRODUCT_DESC"
 	PromotedAssetAttrKey_TRAFFIC_CAR_BRANDE_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_BRANDE_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_SERIES_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_SERIES_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_MODEL_NAME                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_NAME"
@@ -370,6 +371,9 @@ const (
 	PromotedAssetAttrKey_ACTIVITY_MECHANISM                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_MECHANISM"
 	PromotedAssetAttrKey_ACTIVITY_CONSUMER_BRAND                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_CONSUMER_BRAND"
 	PromotedAssetAttrKey_ACTIVITY_PRODUCT_SELECTION_RANGE                                          PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_PRODUCT_SELECTION_RANGE"
+	PromotedAssetAttrKey_ACTIVITY_PRICE_TYPE                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_PRICE_TYPE"
+	PromotedAssetAttrKey_ACTIVITY_PRICE                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_PRICE"
+	PromotedAssetAttrKey_ACTIVITY_DESC                                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ACTIVITY_DESC"
 	PromotedAssetAttrKey_STORE_CATE_NAME                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_STORE_CATE_NAME"
 	PromotedAssetAttrKey_STORE_ELECTRONIC_BUSINESS_PLATFORM                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_STORE_ELECTRONIC_BUSINESS_PLATFORM"
 	PromotedAssetAttrKey_STORE_MAIN_CATEGORIES                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_STORE_MAIN_CATEGORIES"
@@ -391,4 +395,5 @@ const (
 	PromotedAssetAttrKey_CAR_ECOLOGY_CATE_NAME                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_CATE_NAME"
 	PromotedAssetAttrKey_CAR_ECOLOGY_COMPANY_NAME                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_COMPANY_NAME"
 	PromotedAssetAttrKey_CAR_ECOLOGY_SERVICE_TYPE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_SERVICE_TYPE"
+	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_CATE_NAME"
 )

@@ -36,15 +36,17 @@ ChannelsLivenoticeinfoApiService 获取视频号当前的预约直播信息
  * @param optional nil or *ChannelsLivenoticeinfoGetOpts - Optional Parameters:
      * @param "FinderUsername" (optional.String) -
      * @param "Nickname" (optional.String) -
+     * @param "WechatChannelsAccountId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ChannelsLivenoticeinfoGetResponse
 */
 
 type ChannelsLivenoticeinfoGetOpts struct {
-	FinderUsername optional.String
-	Nickname       optional.String
-	Fields         optional.Interface
+	FinderUsername          optional.String
+	Nickname                optional.String
+	WechatChannelsAccountId optional.String
+	Fields                  optional.Interface
 }
 
 func (a *ChannelsLivenoticeinfoApiService) Get(ctx context.Context, accountId int64, localVarOptionals *ChannelsLivenoticeinfoGetOpts) (ChannelsLivenoticeinfoGetResponseData, http.Header, error) {
@@ -71,6 +73,9 @@ func (a *ChannelsLivenoticeinfoApiService) Get(ctx context.Context, accountId in
 	}
 	if localVarOptionals != nil && localVarOptionals.Nickname.IsSet() {
 		localVarQueryParams.Add("nickname", parameterToString(localVarOptionals.Nickname.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsAccountId.IsSet() {
+		localVarQueryParams.Add("wechat_channels_account_id", parameterToString(localVarOptionals.WechatChannelsAccountId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
-**EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]
 **LastModifiedTime** | **int64** |  | [optional] [default to null]

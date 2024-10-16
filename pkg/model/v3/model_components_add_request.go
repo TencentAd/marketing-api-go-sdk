@@ -14,4 +14,5 @@ type ComponentsAddRequest struct {
 	ComponentCustomName *string          `json:"component_custom_name,omitempty"`
 	ComponentValue      *ComponentValue  `json:"component_value,omitempty"`
 	ComponentSubType    ComponentSubType `json:"component_sub_type,omitempty"`
+	OrganizationId      *int64           `json:"organization_id,omitempty"`
 }

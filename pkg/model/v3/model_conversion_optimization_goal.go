@@ -9,7 +9,7 @@
 
 package model
 
-// ConversionOptimizationGoal : 深度优化ROI目标
+// ConversionOptimizationGoal : ROI目标
 type ConversionOptimizationGoal string
 
 // List of ConversionOptimizationGoal

@@ -11,12 +11,13 @@ package model
 
 // 推广资产信息
 type CategoryInfo struct {
-	Cate1Id   *string `json:"cate1_id,omitempty"`
-	Cate1Name *string `json:"cate1_name,omitempty"`
-	Cate2Id   *string `json:"cate2_id,omitempty"`
-	Cate2Name *string `json:"cate2_name,omitempty"`
-	Cate3Id   *string `json:"cate3_id,omitempty"`
-	Cate3Name *string `json:"cate3_name,omitempty"`
-	Cate4Id   *string `json:"cate4_id,omitempty"`
-	Cate4Name *string `json:"cate4_name,omitempty"`
+	Cate1Id       *string `json:"cate1_id,omitempty"`
+	Cate1Name     *string `json:"cate1_name,omitempty"`
+	Cate2Id       *string `json:"cate2_id,omitempty"`
+	Cate2Name     *string `json:"cate2_name,omitempty"`
+	Cate3Id       *string `json:"cate3_id,omitempty"`
+	Cate3Name     *string `json:"cate3_name,omitempty"`
+	Cate4Id       *string `json:"cate4_id,omitempty"`
+	Cate4Name     *string `json:"cate4_name,omitempty"`
+	Cate3Disabled *bool   `json:"cate3_disabled,omitempty"`
 }

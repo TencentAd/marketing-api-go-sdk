@@ -35,13 +35,15 @@ ConversionLinksApiService 获取营销链路模板
  * @param accountId
  * @param secondCategoryType
  * @param optional nil or *ConversionLinksGetOpts - Optional Parameters:
+     * @param "OptimizationGoalStruct" (optional.Interface of LinkOptimizationGoalStruct) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ConversionLinksGetResponse
 */
 
 type ConversionLinksGetOpts struct {
-	Fields optional.Interface
+	OptimizationGoalStruct optional.Interface
+	Fields                 optional.Interface
 }
 
 func (a *ConversionLinksApiService) Get(ctx context.Context, accountId int64, secondCategoryType string, localVarOptionals *ConversionLinksGetOpts) (ConversionLinksGetResponseData, http.Header, error) {
@@ -64,6 +66,9 @@ func (a *ConversionLinksApiService) Get(ctx context.Context, accountId int64, se
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("second_category_type", parameterToString(secondCategoryType, ""))
+	if localVarOptionals != nil && localVarOptionals.OptimizationGoalStruct.IsSet() {
+		localVarQueryParams.Add("optimization_goal_struct", parameterToString(localVarOptionals.OptimizationGoalStruct.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

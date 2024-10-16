@@ -22,4 +22,7 @@ type AuthListStruct struct {
 	AuthorizationScope        WechatChannelsAuthScope  `json:"authorization_scope,omitempty"`
 	IsAdAcct                  *bool                    `json:"is_ad_acct,omitempty"`
 	WechatChannelsAccountIcon *string                  `json:"wechat_channels_account_icon,omitempty"`
+	WechatChannelsAccountId   *string                  `json:"wechat_channels_account_id,omitempty"`
+	IsBlocked                 *bool                    `json:"is_blocked,omitempty"`
+	IsPrivate                 *bool                    `json:"is_private,omitempty"`
 }

@@ -12,6 +12,7 @@ package model
 // 返回结构
 type ComponentsGetListStruct struct {
 	AccountId           *int64                  `json:"account_id,omitempty"`
+	OrganizationId      *int64                  `json:"organization_id,omitempty"`
 	ComponentId         *int64                  `json:"component_id,omitempty"`
 	ComponentValue      *ComponentValue         `json:"component_value,omitempty"`
 	CreatedTime         *int64                  `json:"created_time,omitempty"`

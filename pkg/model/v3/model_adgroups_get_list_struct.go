@@ -38,7 +38,6 @@ type AdgroupsGetListStruct struct {
 	DailyBudget                       *int64                      `json:"daily_budget,omitempty"`
 	SceneSpec                         *SceneTargetingForWrite     `json:"scene_spec,omitempty"`
 	UserActionSets                    *[]UserActionSetStruct      `json:"user_action_sets,omitempty"`
-	BidStrategy                       BidStrategy                 `json:"bid_strategy,omitempty"`
 	DeepConversionSpec                *DeepConversionSpec         `json:"deep_conversion_spec,omitempty"`
 	ConversionId                      *int64                      `json:"conversion_id,omitempty"`
 	DeepConversionBehaviorBid         *int64                      `json:"deep_conversion_behavior_bid,omitempty"`
@@ -79,7 +78,8 @@ type AdgroupsGetListStruct struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
-	ConversionLinkAssetId             *int64                      `json:"conversion_link_asset_id,omitempty"`
 	CostGuaranteeStatus               CostGuaranteeStatus         `json:"cost_guarantee_status,omitempty"`
 	CostGuaranteeMoney                *int64                      `json:"cost_guarantee_money,omitempty"`
+	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
+	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 }

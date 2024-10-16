@@ -22,7 +22,6 @@ type DynamicCreativesGetListStruct struct {
 	ClickTrackingUrl           *string                     `json:"click_tracking_url,omitempty"`
 	PageTrackUrl               *string                     `json:"page_track_url,omitempty"`
 	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
-	EnableBreakthroughSiteset  *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	IsDeleted                  *bool                       `json:"is_deleted,omitempty"`
 	CreatedTime                *int64                      `json:"created_time,omitempty"`
 	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`

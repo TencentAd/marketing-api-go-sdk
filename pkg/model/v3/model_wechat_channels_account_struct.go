@@ -11,11 +11,16 @@ package model
 
 // 视频号列表
 type WechatChannelsAccountStruct struct {
-	WechatChannelsAccountId   *string `json:"wechat_channels_account_id,omitempty"`
-	WechatChannelsAccountName *string `json:"wechat_channels_account_name,omitempty"`
-	CreatedTime               *int64  `json:"created_time,omitempty"`
-	LastModifiedTime          *int64  `json:"last_modified_time,omitempty"`
-	WechatChannelsSpamBlock   *bool   `json:"wechat_channels_spam_block,omitempty"`
-	WechatChannelsSpamSlient  *bool   `json:"wechat_channels_spam_slient,omitempty"`
-	WechatChannelsAccountIcon *string `json:"wechat_channels_account_icon,omitempty"`
+	WechatChannelsAccountId   *string                 `json:"wechat_channels_account_id,omitempty"`
+	WechatChannelsAccountName *string                 `json:"wechat_channels_account_name,omitempty"`
+	CreatedTime               *int64                  `json:"created_time,omitempty"`
+	LastModifiedTime          *int64                  `json:"last_modified_time,omitempty"`
+	WechatChannelsSpamBlock   *bool                   `json:"wechat_channels_spam_block,omitempty"`
+	WechatChannelsSpamSlient  *bool                   `json:"wechat_channels_spam_slient,omitempty"`
+	WechatChannelsAccountIcon *string                 `json:"wechat_channels_account_icon,omitempty"`
+	AuthorizationType         WechatChannelsAuthType  `json:"authorization_type,omitempty"`
+	AuthorizationScope        WechatChannelsAuthScope `json:"authorization_scope,omitempty"`
+	IsBlocked                 *bool                   `json:"is_blocked,omitempty"`
+	IsPrivate                 *bool                   `json:"is_private,omitempty"`
+	IsAdAcct                  *bool                   `json:"is_ad_acct,omitempty"`
 }

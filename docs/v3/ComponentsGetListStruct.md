@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**OrganizationId** | **int64** |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]
 **ComponentValue** | [***ComponentValue**](component_value.md) |  | [optional] [default to null]
 **CreatedTime** | **int64** |  | [optional] [default to null]

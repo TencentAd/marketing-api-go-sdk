@@ -11,11 +11,14 @@ package model
 
 // 落地页信息
 type PageSpec struct {
-	PageId                   *int64                     `json:"page_id,omitempty"`
-	PageUrl                  *string                    `json:"page_url,omitempty"`
-	MiniProgramSpec          *AdcreativeMiniProgramSpec `json:"mini_program_spec,omitempty"`
-	MiniGameSpec             *MiniGameSpec              `json:"mini_game_spec,omitempty"`
-	OverrideCanvasHeadOption OverrideCanvasHeadOption   `json:"override_canvas_head_option,omitempty"`
-	DynamicProductSpec       *DynamicProductSpec        `json:"dynamic_product_spec,omitempty"`
-	ChannelsShopProductSpec  *ChannelsShopProductSpec   `json:"channels_shop_product_spec,omitempty"`
+	PageId                    *int64                                `json:"page_id,omitempty"`
+	PageUrl                   *string                               `json:"page_url,omitempty"`
+	MiniProgramSpec           *AdcreativeMiniProgramSpec            `json:"mini_program_spec,omitempty"`
+	MiniGameSpec              *MiniGameSpec                         `json:"mini_game_spec,omitempty"`
+	WechatChannelsSpec        *WechatChannelsSpec                   `json:"wechat_channels_spec,omitempty"`
+	OverrideCanvasHeadOption  OverrideCanvasHeadOption              `json:"override_canvas_head_option,omitempty"`
+	DynamicProductSpec        *DynamicProductSpec                   `json:"dynamic_product_spec,omitempty"`
+	WechatOfficialAccountSpec *LandingPageWechatOfficialAccountSpec `json:"wechat_official_account_spec,omitempty"`
+	SearchBrandAreaSpec       *SearchBrandAreaSpec                  `json:"search_brand_area_spec,omitempty"`
+	ChannelsShopProductSpec   *ChannelsShopProductSpec              `json:"channels_shop_product_spec,omitempty"`
 }

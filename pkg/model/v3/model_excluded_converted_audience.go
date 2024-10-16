@@ -13,4 +13,5 @@ package model
 type ExcludedConvertedAudience struct {
 	ExcludedDimension      ExcludedDimension `json:"excluded_dimension,omitempty"`
 	ConversionBehaviorList *[]string         `json:"conversion_behavior_list,omitempty"`
+	ExcludedDay            ExcludedDay       `json:"excluded_day,omitempty"`
 }

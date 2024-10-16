@@ -689,6 +689,34 @@ type TargetReportApiListStruct struct {
 	AdMonetizationBkPlaActive7dRoi             *float64 `json:"ad_monetization_bk_pla_active_7d_roi,omitempty"`
 	AdMonetizationBkPlaActive14dRoi            *float64 `json:"ad_monetization_bk_pla_active_14d_roi,omitempty"`
 	ClkAppservicePv                            *int64   `json:"clk_appservice_pv,omitempty"`
+	PurchaseBkActive1dAmount                   *int64   `json:"purchase_bk_active_1d_amount,omitempty"`
+	PurchaseDedupBkActive1dPv                  *int64   `json:"purchase_dedup_bk_active_1d_pv,omitempty"`
+	PurchaseDedupPv                            *int64   `json:"purchase_dedup_pv,omitempty"`
+	MixPurchaseAmount                          *int64   `json:"mix_purchase_amount,omitempty"`
+	MixPayArpu                                 *int64   `json:"mix_pay_arpu,omitempty"`
+	MixPayCost                                 *int64   `json:"mix_pay_cost,omitempty"`
+	MixPayRoi                                  *float64 `json:"mix_pay_roi,omitempty"`
+	MixPurchaseActive24hAmount                 *int64   `json:"mix_purchase_active_24h_amount,omitempty"`
+	MixPayActive24hRoi                         *float64 `json:"mix_pay_active_24h_roi,omitempty"`
+	MixPurchaseAmountFirstDay                  *int64   `json:"mix_purchase_amount_first_day,omitempty"`
+	MixPayRoiFirstDay                          *float64 `json:"mix_pay_roi_first_day,omitempty"`
+	MixPurchaseActive3dAmount                  *int64   `json:"mix_purchase_active_3d_amount,omitempty"`
+	MixPayActive3dRoi                          *float64 `json:"mix_pay_active_3d_roi,omitempty"`
+	MixPurchaseActive7dAmount                  *int64   `json:"mix_purchase_active_7d_amount,omitempty"`
+	MixPayActive7dRoi                          *float64 `json:"mix_pay_active_7d_roi,omitempty"`
+	MixPurchaseActive14dAmount                 *int64   `json:"mix_purchase_active_14d_amount,omitempty"`
+	MixPayActive14dRoi                         *float64 `json:"mix_pay_active_14d_roi,omitempty"`
+	MixPurchaseDedupPv                         *int64   `json:"mix_purchase_dedup_pv,omitempty"`
+	PurchaseRegAmount                          *int64   `json:"purchase_reg_amount,omitempty"`
+	PurchaseDedupRegPv                         *int64   `json:"purchase_dedup_reg_pv,omitempty"`
+	PurchaseRegActive24hAmount                 *int64   `json:"purchase_reg_active_24h_amount,omitempty"`
+	PurchaseRegActive3dAmount                  *int64   `json:"purchase_reg_active_3d_amount,omitempty"`
+	PurchaseRegActive7dAmount                  *int64   `json:"purchase_reg_active_7d_amount,omitempty"`
+	PurchaseRegActive14dAmount                 *int64   `json:"purchase_reg_active_14d_amount,omitempty"`
+	PurchaseRegActive1dPv                      *int64   `json:"purchase_reg_active_1d_pv,omitempty"`
+	PurchaseDedupRegActive1dPv                 *int64   `json:"purchase_dedup_reg_active_1d_pv,omitempty"`
+	PurchaseRegActive1dAmount                  *int64   `json:"purchase_reg_active_1d_amount,omitempty"`
+	SecurityNegativeDedupPv                    *int64   `json:"security_negative_dedup_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

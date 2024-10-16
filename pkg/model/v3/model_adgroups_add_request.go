@@ -28,7 +28,6 @@ type AdgroupsAddRequest struct {
 	Targeting                         *WriteTargetingSetting      `json:"targeting,omitempty"`
 	SceneSpec                         *SceneTargetingForWrite     `json:"scene_spec,omitempty"`
 	UserActionSets                    *[]UserActionSetStruct      `json:"user_action_sets,omitempty"`
-	BidStrategy                       BidStrategy                 `json:"bid_strategy,omitempty"`
 	DeepConversionSpec                *DeepConversionSpec         `json:"deep_conversion_spec,omitempty"`
 	ConversionId                      *int64                      `json:"conversion_id,omitempty"`
 	DeepConversionBehaviorBid         *int64                      `json:"deep_conversion_behavior_bid,omitempty"`
@@ -63,7 +62,7 @@ type AdgroupsAddRequest struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
-	ConversionLinkAssetId             *int64                      `json:"conversion_link_asset_id,omitempty"`
-	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
 	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
+	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
+	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 }

@@ -11,8 +11,14 @@ package model
 
 // 审核结果
 type ReviewResultListStruct struct {
-	DynamicCreativeId *int64                     `json:"dynamic_creative_id,omitempty"`
-	ElementResultList *[]ElementResultListStruct `json:"element_result_list,omitempty"`
-	SiteSetResultList *[]SiteSetResultListStruct `json:"site_set_result_list,omitempty"`
-	RejectMessageList *[]string                  `json:"reject_message_list,omitempty"`
+	DynamicCreativeId              *int64                              `json:"dynamic_creative_id,omitempty"`
+	ElementResultList              *[]ElementResultListStruct          `json:"element_result_list,omitempty"`
+	SiteSetResultList              *[]SiteSetResultListStruct          `json:"site_set_result_list,omitempty"`
+	RejectMessageList              *[]string                           `json:"reject_message_list,omitempty"`
+	DelayMessageList               *[]string                           `json:"delay_message_list,omitempty"`
+	IsAllComponentComposePending   *bool                               `json:"is_all_component_compose_pending,omitempty"`
+	TotalComponentComposeCount     *int64                              `json:"total_component_compose_count,omitempty"`
+	RejectComponentComposeCount    *int64                              `json:"reject_component_compose_count,omitempty"`
+	PassComponentComposeCount      *int64                              `json:"pass_component_compose_count,omitempty"`
+	RejectComponentComposeInfoList *[]RejectComponentComposeInfoStruct `json:"reject_component_compose_info_list,omitempty"`
 }

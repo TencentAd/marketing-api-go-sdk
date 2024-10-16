@@ -11,6 +11,7 @@ package model
 
 // 组件元素粒度审核结果
 type ComponentElementResultListStruct struct {
+	ElementId               *int64                                        `json:"element_id,omitempty"`
 	ImageId                 *string                                       `json:"image_id,omitempty"`
 	VideoId                 *string                                       `json:"video_id,omitempty"`
 	ElementName             *string                                       `json:"element_name,omitempty"`

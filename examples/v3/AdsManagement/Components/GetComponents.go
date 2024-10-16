@@ -24,7 +24,6 @@ import (
 type ComponentsGetExample struct {
 	TAds              *ads.SDKClient
 	AccessToken       string
-	AccountId         int64
 	ComponentsGetOpts *api.ComponentsGetOpts
 }
 
@@ -34,7 +33,6 @@ func (e *ComponentsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.ComponentsGetOpts = &api.ComponentsGetOpts{}
 }
 
@@ -42,7 +40,7 @@ func (e *ComponentsGetExample) RunExample() (model.ComponentsGetResponseData, ht
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Components().Get(ctx, e.AccountId, e.ComponentsGetOpts)
+	return tads.Components().Get(ctx, e.ComponentsGetOpts)
 }
 
 func main() {

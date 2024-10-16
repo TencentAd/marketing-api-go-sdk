@@ -128,6 +128,8 @@ type APIClient struct {
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
 
+	ComponentSharingApi *ComponentSharingApiService
+
 	ComponentsApi *ComponentsApiService
 
 	ComponentsMetadataApi *ComponentsMetadataApiService
@@ -477,6 +479,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
+	c.ComponentSharingApi = (*ComponentSharingApiService)(&c.common)
 	c.ComponentsApi = (*ComponentsApiService)(&c.common)
 	c.ComponentsMetadataApi = (*ComponentsMetadataApiService)(&c.common)
 	c.ConversionLinkAssetAvailableApi = (*ConversionLinkAssetAvailableApiService)(&c.common)

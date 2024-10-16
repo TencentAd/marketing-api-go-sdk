@@ -41,7 +41,6 @@ OptimizationGoalPermissionsApiService 查询优化目标权限
  * @param optional nil or *OptimizationGoalPermissionsGetOpts - Optional Parameters:
      * @param "BidMode" (optional.String) -
      * @param "MarketingCarrierDetail" (optional.Interface of MarketingCarrierDetail) -
-     * @param "ConversionLinkAssetId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return OptimizationGoalPermissionsGetResponse
@@ -50,7 +49,6 @@ OptimizationGoalPermissionsApiService 查询优化目标权限
 type OptimizationGoalPermissionsGetOpts struct {
 	BidMode                optional.String
 	MarketingCarrierDetail optional.Interface
-	ConversionLinkAssetId  optional.Int64
 	Fields                 optional.Interface
 }
 
@@ -83,9 +81,6 @@ func (a *OptimizationGoalPermissionsApiService) Get(ctx context.Context, account
 	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
 	if localVarOptionals != nil && localVarOptionals.MarketingCarrierDetail.IsSet() {
 		localVarQueryParams.Add("marketing_carrier_detail", parameterToString(localVarOptionals.MarketingCarrierDetail.Value(), ""))
-	}
-	if localVarOptionals != nil && localVarOptionals.ConversionLinkAssetId.IsSet() {
-		localVarQueryParams.Add("conversion_link_asset_id", parameterToString(localVarOptionals.ConversionLinkAssetId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

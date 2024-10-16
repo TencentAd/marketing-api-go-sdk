@@ -11,7 +11,6 @@ package model
 
 // 批量修改定向任务
 type UpdateAdgroupTargetingTaskItem struct {
-	TaskId                 *int64        `json:"task_id,omitempty"`
 	AccountId              *int64        `json:"account_id,omitempty"`
 	AdgroupId              *int64        `json:"adgroup_id,omitempty"`
 	NeedUpgradeTargeting   *[]string     `json:"need_upgrade_targeting,omitempty"`

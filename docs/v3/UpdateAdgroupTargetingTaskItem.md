@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TaskId** | **int64** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **NeedUpgradeTargeting** | **[]string** |  | [optional] [default to null]

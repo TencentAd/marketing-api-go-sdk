@@ -25,4 +25,5 @@ const (
 	ReportDailyLevel_MATERIAL_VIDEO   ReportDailyLevel = "REPORT_LEVEL_MATERIAL_VIDEO"
 	ReportDailyLevel_ADVERTISER_TOTAL ReportDailyLevel = "REPORT_LEVEL_ADVERTISER_TOTAL"
 	ReportDailyLevel_MARKETING_ASSET  ReportDailyLevel = "REPORT_LEVEL_MARKETING_ASSET"
+	ReportDailyLevel_PRODUCT_CATALOG  ReportDailyLevel = "REPORT_LEVEL_PRODUCT_CATALOG"
 )

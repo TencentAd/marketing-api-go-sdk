@@ -118,5 +118,4 @@ const (
 	ActionType_TERMINATION                         ActionType = "TERMINATION"
 	ActionType_RENEWAL                             ActionType = "RENEWAL"
 	ActionType_CONSULT_INTENTION                   ActionType = "CONSULT_INTENTION"
-	ActionType_CLICK_LEADS_COMPONENT               ActionType = "CLICK_LEADS_COMPONENT"
 )
