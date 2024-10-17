@@ -43,6 +43,8 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),
 		Nonce:       nonce[0:8] + nonce[9:13] + nonce[14:18],
 	}
+	ctx, cancel := context.WithTimeout(ctx, cfg.Timeout)
+	defer cancel()
 	ctx = context.WithValue(ctx, config.ContextAPIKey, apiKey)
 	client := api.NewAPIClient(cfg)
 	sdkClient := &SDKClient{
