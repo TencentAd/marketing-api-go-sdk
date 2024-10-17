@@ -14,10 +14,11 @@ type ExcludedDimension string
 
 // List of ExcludedDimension
 const (
-	ExcludedDimension_CAMPAIGN         ExcludedDimension = "EXCLUDED_DIMENSION_CAMPAIGN"
-	ExcludedDimension_UID              ExcludedDimension = "EXCLUDED_DIMENSION_UID"
-	ExcludedDimension_BUSINESS_MANAGER ExcludedDimension = "EXCLUDED_DIMENSION_BUSINESS_MANAGER"
-	ExcludedDimension_COMPANY_ACCOUNT  ExcludedDimension = "EXCLUDED_DIMENSION_COMPANY_ACCOUNT"
-	ExcludedDimension_APP              ExcludedDimension = "EXCLUDED_DIMENSION_APP"
-	ExcludedDimension_PRODUCT          ExcludedDimension = "EXCLUDED_DIMENSION_PRODUCT"
+	ExcludedDimension_EXCLUDED_DIMENSION_CAMPAIGN         ExcludedDimension = "EXCLUDED_DIMENSION_CAMPAIGN"
+	ExcludedDimension_EXCLUDED_DIMENSION_UID              ExcludedDimension = "EXCLUDED_DIMENSION_UID"
+	ExcludedDimension_EXCLUDED_DIMENSION_BUSINESS_MANAGER ExcludedDimension = "EXCLUDED_DIMENSION_BUSINESS_MANAGER"
+	ExcludedDimension_EXCLUDED_DIMENSION_COMPANY_ACCOUNT  ExcludedDimension = "EXCLUDED_DIMENSION_COMPANY_ACCOUNT"
+	ExcludedDimension_EXCLUDED_DIMENSION_APP              ExcludedDimension = "EXCLUDED_DIMENSION_APP"
+	ExcludedDimension_EXCLUDED_DIMENSION_PRODUCT          ExcludedDimension = "EXCLUDED_DIMENSION_PRODUCT"
+	ExcludedDimension_EXCLUDE_DIMENSION_WORKTABLE         ExcludedDimension = "EXCLUDE_DIMENSION_WORKTABLE"
 )

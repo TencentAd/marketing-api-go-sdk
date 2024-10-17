@@ -110,6 +110,12 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	CategoriesApi *CategoriesApiService
+
+	CategoriesAttributeApi *CategoriesAttributeApiService
+
+	ChannelsCommentApi *ChannelsCommentApiService
+
 	ChannelsFinderobjectApi *ChannelsFinderobjectApiService
 
 	ChannelsLivenoticeinfoApi *ChannelsLivenoticeinfoApiService
@@ -122,9 +128,13 @@ type APIClient struct {
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
 
+	ComponentSharingApi *ComponentSharingApiService
+
 	ComponentsApi *ComponentsApiService
 
 	ComponentsMetadataApi *ComponentsMetadataApiService
+
+	ConversionLinkAssetAvailableApi *ConversionLinkAssetAvailableApiService
 
 	ConversionLinkAssetsApi *ConversionLinkAssetsApiService
 
@@ -278,6 +288,8 @@ type APIClient struct {
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
 
+	OperationLogListApi *OperationLogListApiService
+
 	OptimizationGoalPermissionsApi *OptimizationGoalPermissionsApiService
 
 	OrganizationAccountRelationApi *OrganizationAccountRelationApiService
@@ -358,6 +370,8 @@ type APIClient struct {
 
 	VideosApi *VideosApiService
 
+	WalletApi *WalletApiService
+
 	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
 
 	WechatChannelsAdAccountApi *WechatChannelsAdAccountApiService
@@ -385,6 +399,8 @@ type APIClient struct {
 	WechatPagesGrantinfoApi *WechatPagesGrantinfoApiService
 
 	WildcardsApi *WildcardsApiService
+
+	WxGamePlayablePageApi *WxGamePlayablePageApiService
 
 	WxPackageAccountApi *WxPackageAccountApiService
 
@@ -454,14 +470,19 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.CategoriesApi = (*CategoriesApiService)(&c.common)
+	c.CategoriesAttributeApi = (*CategoriesAttributeApiService)(&c.common)
+	c.ChannelsCommentApi = (*ChannelsCommentApiService)(&c.common)
 	c.ChannelsFinderobjectApi = (*ChannelsFinderobjectApiService)(&c.common)
 	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
+	c.ComponentSharingApi = (*ComponentSharingApiService)(&c.common)
 	c.ComponentsApi = (*ComponentsApiService)(&c.common)
 	c.ComponentsMetadataApi = (*ComponentsMetadataApiService)(&c.common)
+	c.ConversionLinkAssetAvailableApi = (*ConversionLinkAssetAvailableApiService)(&c.common)
 	c.ConversionLinkAssetsApi = (*ConversionLinkAssetsApiService)(&c.common)
 	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
@@ -538,6 +559,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
+	c.OperationLogListApi = (*OperationLogListApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)
 	c.PagesApi = (*PagesApiService)(&c.common)
@@ -578,6 +600,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideoChannelLeadsDataApi = (*VideoChannelLeadsDataApiService)(&c.common)
 	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
+	c.WalletApi = (*WalletApiService)(&c.common)
 	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
 	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)
 	c.WechatChannelsAdAccountCertificationFileApi = (*WechatChannelsAdAccountCertificationFileApiService)(&c.common)
@@ -592,6 +615,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
+	c.WxGamePlayablePageApi = (*WxGamePlayablePageApiService)(&c.common)
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
 	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)

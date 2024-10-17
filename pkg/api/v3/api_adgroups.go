@@ -249,16 +249,20 @@ AdgroupsApiService 获取广告组
      * @param "PageSize" (optional.Int64) -
      * @param "IsDeleted" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -
+     * @param "PaginationMode" (optional.String) -
+     * @param "Cursor" (optional.String) -
 
 @return AdgroupsGetResponse
 */
 
 type AdgroupsGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	IsDeleted optional.Bool
-	Fields    optional.Interface
+	Filtering      optional.Interface
+	Page           optional.Int64
+	PageSize       optional.Int64
+	IsDeleted      optional.Bool
+	Fields         optional.Interface
+	PaginationMode optional.String
+	Cursor         optional.String
 }
 
 func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AdgroupsGetOpts) (AdgroupsGetResponseData, http.Header, error) {
@@ -294,6 +298,12 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.PaginationMode.IsSet() {
+		localVarQueryParams.Add("pagination_mode", parameterToString(localVarOptionals.PaginationMode.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Cursor.IsSet() {
+		localVarQueryParams.Add("cursor", parameterToString(localVarOptionals.Cursor.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

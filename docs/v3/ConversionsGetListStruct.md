@@ -31,6 +31,15 @@ Name | Type | Description | Notes
 **DeepBehaviorAdvancedGoalMaxPrice** | **int64** |  | [optional] [default to null]
 **DeepOptimizationGoalType** | [***DeepOptimizationGoalType**](DeepOptimizationGoalType.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
+**IncubationOptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
+**ConversionLinkInfo** | [***ConversionLinkInfo**](conversion_link_info.md) |  | [optional] [default to null]
+**DisableCode** | **int64** |  | [optional] [default to null]
+**DisableMessage** | **string** |  | [optional] [default to null]
+**InspectionFreeSwitch** | **bool** |  | [optional] [default to null]
+**CustomReportNodeList** | **[]int64** |  | [optional] [default to null]
+**MustReportNodeList** | **[]int64** |  | [optional] [default to null]
+**RecommendReportNodeList** | **[]int64** |  | [optional] [default to null]
+**ConversionLinkNodes** | [**[]LinkNodeStruct**](link_node_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

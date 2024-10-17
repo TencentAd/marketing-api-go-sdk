@@ -11,8 +11,5 @@ package model
 
 // 处理操作信息
 type OperationSpec struct {
-	CropCustomizedSpec          *CropCustomizedSpec          `json:"crop_customized_spec,omitempty"`
-	CropSmartSpec               *CropSmartSpec               `json:"crop_smart_spec,omitempty"`
-	ResizeSpec                  *ResizeSpec                  `json:"resize_spec,omitempty"`
-	CropCustomizedSpecAndResize *CropCustomizedSpecAndResize `json:"crop_customized_spec_and_resize,omitempty"`
+	ResizeSpec *ResizeSpec `json:"resize_spec,omitempty"`
 }

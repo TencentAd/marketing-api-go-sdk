@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ElementId** | **int64** |  | [optional] [default to null]
 **ImageId** | **string** |  | [optional] [default to null]
 **VideoId** | **string** |  | [optional] [default to null]
 **ElementName** | **string** |  | [optional] [default to null]

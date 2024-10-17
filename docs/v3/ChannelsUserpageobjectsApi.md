@@ -29,6 +29,7 @@ Name | Type | Description  | Notes
  **nickname** | **optional.String**|  | 
  **lastBuffer** | **optional.String**|  | 
  **count** | **optional.Int64**|  | 
+ **wechatChannelsAccountId** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

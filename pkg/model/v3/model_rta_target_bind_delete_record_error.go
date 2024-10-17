@@ -11,8 +11,9 @@ package model
 
 // 解绑失败的记录
 type RtaTargetBindDeleteRecordError struct {
-	Id         *int64  `json:"Id,omitempty"`
-	TargetType *int64  `json:"TargetType,omitempty"`
-	IsMp       *int64  `json:"IsMp,omitempty"`
-	Reason     *string `json:"reason,omitempty"`
+	Id            *int64  `json:"Id,omitempty"`
+	TargetType    *int64  `json:"TargetType,omitempty"`
+	IsMp          *int64  `json:"IsMp,omitempty"`
+	OuterTargetId *string `json:"OuterTargetId,omitempty"`
+	Reason        *string `json:"reason,omitempty"`
 }

@@ -15,6 +15,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
@@ -25,7 +26,6 @@ import (
 type VideosAddExample struct {
 	TAds          *ads.SDKClient
 	AccessToken   string
-	AccountId     int64
 	VideoFile     *os.File
 	Signature     string
 	VideosAddOpts *api.VideosAddOpts
@@ -37,20 +37,22 @@ func (e *VideosAddExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = int64(0)
 	file, err := os.Open("YOUR FILE PATH")
 	if err != nil {
 		e.VideoFile = file
 	}
 	e.Signature = "signature_example"
-	e.VideosAddOpts = &api.VideosAddOpts{}
+	e.VideosAddOpts = &api.VideosAddOpts{
+
+		AccountId: optional.NewInt64(int64(0)),
+	}
 }
 
 func (e *VideosAddExample) RunExample() (model.VideosAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Videos().Add(ctx, e.AccountId, e.VideoFile, e.Signature, e.VideosAddOpts)
+	return tads.Videos().Add(ctx, e.VideoFile, e.Signature, e.VideosAddOpts)
 }
 
 func main() {

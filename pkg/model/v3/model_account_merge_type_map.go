@@ -37,6 +37,7 @@ const (
 	AccountMergeTypeMap_DEBT_FIXED                        AccountMergeTypeMap = "FUND_TYPE_DEBT_FIXED"
 	AccountMergeTypeMap_DEBT_TEMP                         AccountMergeTypeMap = "FUND_TYPE_DEBT_TEMP"
 	AccountMergeTypeMap_SHORT_PLAY_GIFT                   AccountMergeTypeMap = "FUND_TYPE_SHORT_PLAY_GIFT"
+	AccountMergeTypeMap_SHORT_PLAY_PUBLISHER_GIFT         AccountMergeTypeMap = "FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT"
 	AccountMergeTypeMap_GAME_CHARGE_INDIRECT_REWARDS_GIFT AccountMergeTypeMap = "FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT"
 	AccountMergeTypeMap_GAME_CHARGE_DIRECT_REWARDS_GIFT   AccountMergeTypeMap = "FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT"
 	AccountMergeTypeMap_UNSUPPORTED                       AccountMergeTypeMap = "FUND_TYPE_UNSUPPORTED"

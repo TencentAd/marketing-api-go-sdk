@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **VideosAdd**
-> VideosAddResponse VideosAdd(ctx, accountId, videoFile, signature, optional)
+> VideosAddResponse VideosAdd(ctx, videoFile, signature, optional)
 添加视频文件
 
 ### Required Parameters
@@ -19,7 +19,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **videoFile** | ***os.File**|  | 
   **signature** | **string**|  | 
  **optional** | ***VideosApiVideosAddOpts** | optional parameters | nil if no parameters
@@ -31,7 +30,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **description** | **optional.String**|  | 
  **adcreativeTemplateId** | **optional.Int64**|  | 
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VideosGet**
-> VideosGetResponse VideosGet(ctx, accountId, optional)
+> VideosGetResponse VideosGet(ctx, optional)
 获取视频文件
 
 ### Required Parameters
@@ -85,7 +85,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***VideosApiVideosGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -93,7 +92,8 @@ Optional parameters are passed through a pointer to a VideosApiVideosGetOpts str
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

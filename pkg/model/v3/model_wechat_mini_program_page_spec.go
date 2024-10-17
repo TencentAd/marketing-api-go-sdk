@@ -11,9 +11,8 @@ package model
 
 // 小程序落地页
 type WechatMiniProgramPageSpec struct {
-	MiniProgramId             *string      `json:"mini_program_id,omitempty"`
-	MiniProgramPath           *string      `json:"mini_program_path,omitempty"`
-	MiniProgramPaths          *[]string    `json:"mini_program_paths,omitempty"`
-	BackupOption              BackUpOption `json:"backup_option,omitempty"`
-	MpaMiniProgramWildcardUrl *string      `json:"mpa_mini_program_wildcard_url,omitempty"`
+	MiniProgramId             *string   `json:"mini_program_id,omitempty"`
+	MiniProgramPath           *string   `json:"mini_program_path,omitempty"`
+	MiniProgramPaths          *[]string `json:"mini_program_paths,omitempty"`
+	MpaMiniProgramWildcardUrl *string   `json:"mpa_mini_program_wildcard_url,omitempty"`
 }

@@ -13,6 +13,11 @@ Name | Type | Description | Notes
 **CreditModify** | **int64** |  | [optional] [default to null]
 **Balance** | **int64** |  | [optional] [default to null]
 **PreauthBalance** | **int64** |  | [optional] [default to null]
+**PreauthOutPay** | **int64** |  | [optional] [default to null]
+**PreauthInRefund** | **int64** |  | [optional] [default to null]
+**AcctOutPay** | **int64** |  | [optional] [default to null]
+**AcctOutPayShare** | **int64** |  | [optional] [default to null]
+**ShareOutPay** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

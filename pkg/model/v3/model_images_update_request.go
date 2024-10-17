@@ -10,7 +10,8 @@
 package model
 
 type ImagesUpdateRequest struct {
-	AccountId   *int64  `json:"account_id,omitempty"`
-	ImageId     *string `json:"image_id,omitempty"`
-	Description *string `json:"description,omitempty"`
+	AccountId      *int64  `json:"account_id,omitempty"`
+	OrganizationId *int64  `json:"organization_id,omitempty"`
+	ImageId        *string `json:"image_id,omitempty"`
+	Description    *string `json:"description,omitempty"`
 }

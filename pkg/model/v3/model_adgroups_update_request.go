@@ -23,7 +23,6 @@ type AdgroupsUpdateRequest struct {
 	Targeting                         *WriteTargetingSetting      `json:"targeting,omitempty"`
 	SceneSpec                         *SceneTargetingForWrite     `json:"scene_spec,omitempty"`
 	UserActionSets                    *[]UserActionSetStruct      `json:"user_action_sets,omitempty"`
-	BidStrategy                       BidStrategy                 `json:"bid_strategy,omitempty"`
 	DeepConversionSpec                *DeepConversionSpec         `json:"deep_conversion_spec,omitempty"`
 	ConversionId                      *int64                      `json:"conversion_id,omitempty"`
 	DeepConversionBehaviorBid         *int64                      `json:"deep_conversion_behavior_bid,omitempty"`

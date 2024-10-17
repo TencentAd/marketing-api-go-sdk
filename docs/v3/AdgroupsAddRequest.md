@@ -21,7 +21,6 @@ Name | Type | Description | Notes
 **Targeting** | [***WriteTargetingSetting**](write_targeting_setting.md) |  | [optional] [default to null]
 **SceneSpec** | [***SceneTargetingForWrite**](scene_targeting_for_write.md) |  | [optional] [default to null]
 **UserActionSets** | [**[]UserActionSetStruct**](user_action_set_struct.md) |  | [optional] [default to null]
-**BidStrategy** | [***BidStrategy**](BidStrategy.md) |  | [optional] [default to null]
 **DeepConversionSpec** | [***DeepConversionSpec**](deep_conversion_spec.md) |  | [optional] [default to null]
 **ConversionId** | **int64** |  | [optional] [default to null]
 **DeepConversionBehaviorBid** | **int64** |  | [optional] [default to null]
@@ -56,8 +55,9 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
-**OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
+**AdditionalProductSpec** | [***AdditionalProductSpec**](additional_product_spec.md) |  | [optional] [default to null]
+**EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -9,7 +9,7 @@
 
 package model
 
-// PromotedAssetType : 推广类容类型
+// PromotedAssetType : 推广内容类型
 type PromotedAssetType string
 
 // List of PromotedAssetType
@@ -73,4 +73,5 @@ const (
 	PromotedAssetType_TWO_WHEEL_VEHICLE                PromotedAssetType = "PROMOTED_ASSET_TYPE_TWO_WHEEL_VEHICLE"
 	PromotedAssetType_GOVERNMENT_AFFAIRS               PromotedAssetType = "PROMOTED_ASSET_TYPE_GOVERNMENT_AFFAIRS"
 	PromotedAssetType_CAR_ECOLOGY                      PromotedAssetType = "PROMOTED_ASSET_TYPE_CAR_ECOLOGY"
+	PromotedAssetType_WECHAT_STORE_PRODUCT             PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT"
 )

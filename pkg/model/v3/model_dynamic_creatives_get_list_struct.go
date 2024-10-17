@@ -28,4 +28,6 @@ type DynamicCreativesGetListStruct struct {
 	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
 	MarketingAssetVerification *MarketingAssetVerification `json:"marketing_asset_verification,omitempty"`
 	SystemStatus               *string                     `json:"system_status,omitempty"`
+	Source                     AdCreativeSource            `json:"source,omitempty"`
+	AssetInconsistentStatus    AssetInconsistentStatus     `json:"asset_inconsistent_status,omitempty"`
 }

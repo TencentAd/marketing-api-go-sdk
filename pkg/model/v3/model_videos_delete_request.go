@@ -10,6 +10,7 @@
 package model
 
 type VideosDeleteRequest struct {
-	AccountId *int64 `json:"account_id,omitempty"`
-	VideoId   *int64 `json:"video_id,omitempty"`
+	AccountId      *int64 `json:"account_id,omitempty"`
+	OrganizationId *int64 `json:"organization_id,omitempty"`
+	VideoId        *int64 `json:"video_id,omitempty"`
 }

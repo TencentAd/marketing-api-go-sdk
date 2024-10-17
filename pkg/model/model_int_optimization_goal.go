@@ -113,5 +113,6 @@ const (
 	IntOptimizationGoal_LOW_PRICE_INSURANCE_PAYMENT            IntOptimizationGoal = "OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT"
 	IntOptimizationGoal_UNDERWRITING                           IntOptimizationGoal = "OPTIMIZATIONGOAL_UNDERWRITING"
 	IntOptimizationGoal_FIRST_WITHDRAW                         IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_WITHDRAW"
+	IntOptimizationGoal_BRIDGING_COURSE_COMPLETED              IntOptimizationGoal = "OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

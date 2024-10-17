@@ -17,4 +17,5 @@ type WechatChannelsAdAccountUpdateRequest struct {
 	HeadImageId               *string                   `json:"head_image_id,omitempty"`
 	CertificationList         *[]AdAccountCertification `json:"certification_list,omitempty"`
 	ExportUsername            *string                   `json:"export_username,omitempty"`
+	WechatChannelsAccountId   *string                   `json:"wechat_channels_account_id,omitempty"`
 }

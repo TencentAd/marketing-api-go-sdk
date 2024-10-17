@@ -10,9 +10,10 @@
 package model
 
 type JointBudgetRulesAddRequest struct {
-	AccountId           *int64   `json:"account_id,omitempty"`
-	JointBudgetRuleName *string  `json:"joint_budget_rule_name,omitempty"`
-	DailyBudget         *int64   `json:"daily_budget,omitempty"`
-	TotalBudget         *int64   `json:"total_budget,omitempty"`
-	AdgroupIdList       *[]int64 `json:"adgroup_id_list,omitempty"`
+	AccountId           *int64              `json:"account_id,omitempty"`
+	JointBudgetRuleName *string             `json:"joint_budget_rule_name,omitempty"`
+	DailyBudget         *int64              `json:"daily_budget,omitempty"`
+	TotalBudget         *int64              `json:"total_budget,omitempty"`
+	AdgroupIdList       *[]int64            `json:"adgroup_id_list,omitempty"`
+	JointBudgetRuleType JointBudgetRuleType `json:"joint_budget_rule_type,omitempty"`
 }

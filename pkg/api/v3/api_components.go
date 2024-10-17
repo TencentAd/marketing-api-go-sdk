@@ -242,8 +242,9 @@ func (a *ComponentsApiService) Delete(ctx context.Context, data ComponentsDelete
 /*
 ComponentsApiService 获取创意组件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *ComponentsGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -254,14 +255,16 @@ ComponentsApiService 获取创意组件
 */
 
 type ComponentsGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	IsDeleted optional.Bool
-	Fields    optional.Interface
+	AccountId      optional.Int64
+	OrganizationId optional.Int64
+	Filtering      optional.Interface
+	Page           optional.Int64
+	PageSize       optional.Int64
+	IsDeleted      optional.Bool
+	Fields         optional.Interface
 }
 
-func (a *ComponentsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *ComponentsGetOpts) (ComponentsGetResponseData, http.Header, error) {
+func (a *ComponentsApiService) Get(ctx context.Context, localVarOptionals *ComponentsGetOpts) (ComponentsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -279,7 +282,12 @@ func (a *ComponentsApiService) Get(ctx context.Context, accountId int64, localVa
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
 		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}

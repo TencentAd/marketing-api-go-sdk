@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PageId** | **int64** |  | [optional] [default to null]
+**PageType** | [***PageType**](PageType.md) |  | [optional] [default to null]
 **Title** | **string** |  | [optional] [default to null]
 **ImgUrl** | **string** |  | [optional] [default to null]
 **ImgId** | **string** |  | [optional] [default to null]

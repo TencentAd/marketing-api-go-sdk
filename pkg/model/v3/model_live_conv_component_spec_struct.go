@@ -11,10 +11,11 @@ package model
 
 // 直播间转化组件详情
 type LiveConvComponentSpecStruct struct {
-	PageId     *int64  `json:"page_id,omitempty"`
-	Title      *string `json:"title,omitempty"`
-	ImgUrl     *string `json:"img_url,omitempty"`
-	ImgId      *string `json:"img_id,omitempty"`
-	Desc       *string `json:"desc,omitempty"`
-	ButtonText *string `json:"button_text,omitempty"`
+	PageId     *int64   `json:"page_id,omitempty"`
+	PageType   PageType `json:"page_type,omitempty"`
+	Title      *string  `json:"title,omitempty"`
+	ImgUrl     *string  `json:"img_url,omitempty"`
+	ImgId      *string  `json:"img_id,omitempty"`
+	Desc       *string  `json:"desc,omitempty"`
+	ButtonText *string  `json:"button_text,omitempty"`
 }

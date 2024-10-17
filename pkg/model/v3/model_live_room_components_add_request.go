@@ -10,9 +10,10 @@
 package model
 
 type LiveRoomComponentsAddRequest struct {
-	AccountId      *int64                       `json:"account_id,omitempty"`
-	ComponentName  *string                      `json:"component_name,omitempty"`
-	ComponentType  CreativeComponentType        `json:"component_type,omitempty"`
-	FinderUsername *string                      `json:"finder_username,omitempty"`
-	ComponentSpec  *LiveRoomComponentSpecStruct `json:"component_spec,omitempty"`
+	AccountId               *int64                       `json:"account_id,omitempty"`
+	ComponentName           *string                      `json:"component_name,omitempty"`
+	ComponentType           CreativeComponentType        `json:"component_type,omitempty"`
+	FinderUsername          *string                      `json:"finder_username,omitempty"`
+	ComponentSpec           *LiveRoomComponentSpecStruct `json:"component_spec,omitempty"`
+	WechatChannelsAccountId *string                      `json:"wechat_channels_account_id,omitempty"`
 }

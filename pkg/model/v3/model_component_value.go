@@ -41,6 +41,7 @@ type ComponentValue struct {
 	AppPromotionVideo  *AppPromotionVideoComponent  `json:"app_promotion_video,omitempty"`
 	VideoShowcase      *VideoShowcaseComponent      `json:"video_showcase,omitempty"`
 	ImageShowcase      *ImageShowcaseComponent      `json:"image_showcase,omitempty"`
+	SocialSkill        *SocialSkillComponent        `json:"social_skill,omitempty"`
 	MiniCardLink       *MiniCardLinkComponent       `json:"mini_card_link,omitempty"`
 	FloatingZoneList   *FloatingZoneListComponent   `json:"floating_zone_list,omitempty"`
 }

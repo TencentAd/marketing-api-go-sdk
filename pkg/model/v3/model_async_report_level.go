@@ -30,4 +30,5 @@ const (
 	AsyncReportLevel_LANDING_PAGE     AsyncReportLevel = "REPORT_LEVEL_LANDING_PAGE"
 	AsyncReportLevel_MARKETING_ASSET  AsyncReportLevel = "REPORT_LEVEL_MARKETING_ASSET"
 	AsyncReportLevel_AD_UNION         AsyncReportLevel = "REPORT_LEVEL_AD_UNION"
+	AsyncReportLevel_PRODUCT_CATALOG  AsyncReportLevel = "REPORT_LEVEL_PRODUCT_CATALOG"
 )

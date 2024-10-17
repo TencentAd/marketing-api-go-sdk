@@ -14,4 +14,5 @@ type RtaTargetBindList struct {
 	Page          *int64  `json:"Page,omitempty"`
 	Size          *int64  `json:"Size,omitempty"`
 	OuterTargetId *string `json:"OuterTargetId,omitempty"`
+	UId           *int64  `json:"UId,omitempty"`
 }

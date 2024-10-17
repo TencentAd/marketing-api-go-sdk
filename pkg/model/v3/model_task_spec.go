@@ -35,4 +35,7 @@ type TaskSpec struct {
 	ProcessUserPageObjectSpec                        *[]ProcessUserPageObjectItem                        `json:"process_user_page_object_spec,omitempty"`
 	CreateScheduledUpdateAdgroupDailyBudgetSpec      *[]CreateScheduledUpdateAdgroupDailyBudgetItem      `json:"create_scheduled_update_adgroup_daily_budget_spec,omitempty"`
 	DeleteScheduledTaskSpec                          *[]DeleteScheduledTaskItem                          `json:"delete_scheduled_task_spec,omitempty"`
+	UpdateAdgroupTargetingTaskSpec                   *[]UpdateAdgroupTargetingTaskItem                   `json:"update_adgroup_targeting_task_spec,omitempty"`
+	UpdateAdgroupEcomPkamSpec                        *[]UpdateAdgroupEcomPkamItem                        `json:"update_adgroup_ecom_pkam_spec,omitempty"`
+	UpdateAdgroupDeriveConfSpec                      *[]UpdateAdgroupDeriveConfItem                      `json:"update_adgroup_derive_conf_spec,omitempty"`
 }

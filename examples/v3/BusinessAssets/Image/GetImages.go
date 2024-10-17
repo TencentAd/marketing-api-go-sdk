@@ -25,7 +25,6 @@ import (
 type ImagesGetExample struct {
 	TAds          *ads.SDKClient
 	AccessToken   string
-	AccountId     int64
 	ImagesGetOpts *api.ImagesGetOpts
 }
 
@@ -35,8 +34,8 @@ func (e *ImagesGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = int64(0)
 	e.ImagesGetOpts = &api.ImagesGetOpts{
+		AccountId: optional.NewInt64(int64(0)),
 
 		Filtering: optional.NewInterface([]model.FilteringStruct{{
 			Field:    "image_id",
@@ -52,7 +51,7 @@ func (e *ImagesGetExample) RunExample() (model.ImagesGetResponseData, http.Heade
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Images().Get(ctx, e.AccountId, e.ImagesGetOpts)
+	return tads.Images().Get(ctx, e.ImagesGetOpts)
 }
 
 func main() {

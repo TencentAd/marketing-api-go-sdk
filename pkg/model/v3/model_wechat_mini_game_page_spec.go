@@ -11,7 +11,6 @@ package model
 
 // 小游戏落地页信息
 type WechatMiniGamePageSpec struct {
-	MiniGameTrackingParameter *string      `json:"mini_game_tracking_parameter,omitempty"`
-	BackupOption              BackUpOption `json:"backup_option,omitempty"`
-	MiniGameId                *string      `json:"mini_game_id,omitempty"`
+	MiniGameTrackingParameter *string `json:"mini_game_tracking_parameter,omitempty"`
+	MiniGameId                *string `json:"mini_game_id,omitempty"`
 }

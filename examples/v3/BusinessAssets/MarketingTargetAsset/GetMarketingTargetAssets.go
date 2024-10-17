@@ -24,7 +24,6 @@ import (
 type MarketingTargetAssetsGetExample struct {
 	TAds                         *ads.SDKClient
 	AccessToken                  string
-	AccountId                    int64
 	MarketingTargetType          string
 	MarketingTargetAssetsGetOpts *api.MarketingTargetAssetsGetOpts
 }
@@ -35,7 +34,6 @@ func (e *MarketingTargetAssetsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.MarketingTargetType = "marketingTargetType_example"
 	e.MarketingTargetAssetsGetOpts = &api.MarketingTargetAssetsGetOpts{}
 }
@@ -44,7 +42,7 @@ func (e *MarketingTargetAssetsGetExample) RunExample() (model.MarketingTargetAss
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MarketingTargetAssets().Get(ctx, e.AccountId, e.MarketingTargetType, e.MarketingTargetAssetsGetOpts)
+	return tads.MarketingTargetAssets().Get(ctx, e.MarketingTargetType, e.MarketingTargetAssetsGetOpts)
 }
 
 func main() {

@@ -15,4 +15,5 @@ type WechatChannelsAuthorizationAddResponseData struct {
 	AuthorizationDescription *string `json:"authorization_description,omitempty"`
 	AuthorizationExpiredTime *int64  `json:"authorization_expired_time,omitempty"`
 	AuthorizationAgreement   *string `json:"authorization_agreement,omitempty"`
+	WechatChannelsAccountId  *string `json:"wechat_channels_account_id,omitempty"`
 }
