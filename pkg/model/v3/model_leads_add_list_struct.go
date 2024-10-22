@@ -13,6 +13,6 @@ package model
 type LeadsAddListStruct struct {
 	Index           *int64  `json:"index,omitempty"`
 	OuterLeadsId    *string `json:"outer_leads_id,omitempty"`
-	DetailedErrCode *string `json:"detailed_err_code,omitempty"`
+	DetailedErrCode *int64  `json:"detailed_err_code,omitempty"`
 	DetailedErrMsg  *string `json:"detailed_err_msg,omitempty"`
 }

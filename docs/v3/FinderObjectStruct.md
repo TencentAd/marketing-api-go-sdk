@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **Medias** | [***Medias**](medias.md) |  | [optional] [default to null]
 **Flag** | **int64** |  | [optional] [default to null]
 **WechatChannelsAccountId** | **string** |  | [optional] [default to null]
+**BulletCommentOpen** | [***BulletCommentStatus**](BulletCommentStatus.md) |  | [optional] [default to null]
+**WechatChannelsAccountName** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

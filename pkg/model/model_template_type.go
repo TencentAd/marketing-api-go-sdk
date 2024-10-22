@@ -9,7 +9,7 @@
 
 package model
 
-// TemplateType : 模板类型，传入模板ID时，该值必填
+// TemplateType : 竖屏卡片素材类型
 type TemplateType string
 
 // List of TemplateType

@@ -21,6 +21,7 @@ const (
 	PromotedAssetAttrKey_MARKETING_ASSET_ID                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MARKETING_ASSET_ID"
 	PromotedAssetAttrKey_MARKETING_TARGET_ID                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MARKETING_TARGET_ID"
 	PromotedAssetAttrKey_CATALOG_ID                                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CATALOG_ID"
+	PromotedAssetAttrKey_WECHAT_STORE_ID                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_ID"
 	PromotedAssetAttrKey_APP_ANDROID_ID                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_ANDROID_ID"
 	PromotedAssetAttrKey_APP_IOS_ID                                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_IOS_ID"
 	PromotedAssetAttrKey_WECHAT_OFFICIAL_ACCOUNT_ID                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_OFFICIAL_ACCOUNT_ID"
