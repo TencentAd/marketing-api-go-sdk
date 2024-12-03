@@ -10,7 +10,7 @@
 package model
 
 // 返回信息
-type ResponseStruct struct {
+type BatchRequestsAddResponseStruct struct {
 	HttpCode *int64          `json:"http_code,omitempty"`
 	Headers  *[]HeaderStruct `json:"headers,omitempty"`
 	Body     *string         `json:"body,omitempty"`

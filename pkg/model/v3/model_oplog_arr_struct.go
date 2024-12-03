@@ -11,11 +11,12 @@ package model
 
 // 操作日志结构
 type OplogArrStruct struct {
-	OperationAction     OperationActionType  `json:"operation_action,omitempty"`
-	FrontedOperator     *string              `json:"fronted_operator,omitempty"`
-	OperationObjectId   *int64               `json:"operation_object_id,omitempty"`
-	OperationObjectName *string              `json:"operation_object_name,omitempty"`
-	OperatorPlatform    OperatorPlatformType `json:"operator_platform,omitempty"`
-	OperationLog        *[]string            `json:"operation_log,omitempty"`
-	CreatedTime         *int64               `json:"created_time,omitempty"`
+	OperationAction     OperationActionType        `json:"operation_action,omitempty"`
+	FrontedOperator     *string                    `json:"fronted_operator,omitempty"`
+	OperationObjectId   *int64                     `json:"operation_object_id,omitempty"`
+	OperationObjectName *string                    `json:"operation_object_name,omitempty"`
+	OperatorPlatform    OperatorPlatformType       `json:"operator_platform,omitempty"`
+	OperationLog        *[]string                  `json:"operation_log,omitempty"`
+	CreatedTime         *int64                     `json:"created_time,omitempty"`
+	OperationInfoList   *[]OperationInfoListStruct `json:"operation_info_list,omitempty"`
 }

@@ -758,6 +758,9 @@ type HourlyReportApiListStruct struct {
 	ClkHotElementUv                            *int64   `json:"clk_hot_element_uv,omitempty"`
 	HotElementCtr                              *float64 `json:"hot_element_ctr,omitempty"`
 	SecurityNegativeDedupPv                    *int64   `json:"security_negative_dedup_pv,omitempty"`
+	ClkInterpageBtnPv                          *int64   `json:"clk_interpage_btn_pv,omitempty"`
+	AdMonetizationPlaRegActive1dMixRoi         *float64 `json:"ad_monetization_pla_reg_active_1d_mix_roi,omitempty"`
+	AdMonetizationPlaRegActive24hMixRoi        *float64 `json:"ad_monetization_pla_reg_active_24h_mix_roi,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

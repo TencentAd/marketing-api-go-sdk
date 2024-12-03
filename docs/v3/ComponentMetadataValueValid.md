@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **MaxDuration** | **int64** |  | [optional] [default to null]
 **MinHeight** | **int64** |  | [optional] [default to null]
 **MinWidth** | **int64** |  | [optional] [default to null]
+**Joint** | [***ComponentMetadataValueValidJoint**](component_metadata_value_valid_joint.md) |  | [optional] [default to null]
+**DefaultBoolValue** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

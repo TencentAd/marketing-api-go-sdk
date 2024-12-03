@@ -29,20 +29,23 @@ type AsyncReportFilesApiService service
 /*
 AsyncReportFilesApiService 获取文件接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param taskId
  * @param fileId
  * @param optional nil or *AsyncReportFilesGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return string
 */
 
 type AsyncReportFilesGetOpts struct {
-	Fields optional.Interface
+	AccountId      optional.Int64
+	OrganizationId optional.Int64
+	Fields         optional.Interface
 }
 
-func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, taskId int64, fileId int64, localVarOptionals *AsyncReportFilesGetOpts) (string, http.Header, error) {
+func (a *AsyncReportFilesApiService) Get(ctx context.Context, taskId int64, fileId int64, localVarOptionals *AsyncReportFilesGetOpts) (string, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -59,9 +62,14 @@ func (a *AsyncReportFilesApiService) Get(ctx context.Context, accountId int64, t
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
 	localVarQueryParams.Add("task_id", parameterToString(taskId, ""))
 	localVarQueryParams.Add("file_id", parameterToString(fileId, ""))
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

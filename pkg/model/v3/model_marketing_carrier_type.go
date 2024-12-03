@@ -29,4 +29,5 @@ const (
 	MarketingCarrierType_MINI_PROGRAM_WECHAT2             MarketingCarrierType = "MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT2"
 	MarketingCarrierType_PC_GAME                          MarketingCarrierType = "MARKETING_CARRIER_TYPE_PC_GAME"
 	MarketingCarrierType_QQ_MINI_GAME                     MarketingCarrierType = "MARKETING_CARRIER_TYPE_QQ_MINI_GAME"
+	MarketingCarrierType_APP_HARMONY                      MarketingCarrierType = "MARKETING_CARRIER_TYPE_APP_HARMONY"
 )

@@ -709,6 +709,8 @@ Name | Type | Description | Notes
 **PurchaseDedupRegActive1dPv** | **int64** |  | [optional] [default to null]
 **PurchaseRegActive1dAmount** | **int64** |  | [optional] [default to null]
 **SecurityNegativeDedupPv** | **int64** |  | [optional] [default to null]
+**AdMonetizationPlaRegActive1dMixRoi** | **float64** |  | [optional] [default to null]
+**AdMonetizationPlaRegActive24hMixRoi** | **float64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

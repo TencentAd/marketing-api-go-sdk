@@ -14,9 +14,10 @@ type AdCreativeSource string
 
 // List of AdCreativeSource
 const (
-	AdCreativeSource_SOURCE_NORMAL    AdCreativeSource = "AD_CREATIVE_SOURCE_NORMAL"
-	AdCreativeSource_AUTO_DERIVE      AdCreativeSource = "AD_CREATIVE_AUTO_DERIVE"
-	AdCreativeSource_AUTO_GENERATE    AdCreativeSource = "AD_CREATIVE_AUTO_GENERATE"
-	AdCreativeSource_PAGE_DERIVE      AdCreativeSource = "AD_CREATIVE_PAGE_DERIVE"
-	AdCreativeSource_SEARCH_EXPANSION AdCreativeSource = "AD_CREATIVE_SEARCH_EXPANSION"
+	AdCreativeSource_SOURCE_NORMAL     AdCreativeSource = "AD_CREATIVE_SOURCE_NORMAL"
+	AdCreativeSource_AUTO_DERIVE       AdCreativeSource = "AD_CREATIVE_AUTO_DERIVE"
+	AdCreativeSource_AUTO_GENERATE     AdCreativeSource = "AD_CREATIVE_AUTO_GENERATE"
+	AdCreativeSource_PAGE_DERIVE       AdCreativeSource = "AD_CREATIVE_PAGE_DERIVE"
+	AdCreativeSource_SEARCH_EXPANSION  AdCreativeSource = "AD_CREATIVE_SEARCH_EXPANSION"
+	AdCreativeSource_INTEREST_GENERATE AdCreativeSource = "AD_CREATIVE_INTEREST_GENERATE"
 )

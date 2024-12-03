@@ -11,11 +11,12 @@ package model
 
 // 视频号动态
 type FinderObjectStruct struct {
-	FinderUsername            *string             `json:"finder_username,omitempty"`
-	Description               *string             `json:"description,omitempty"`
-	Medias                    *Medias             `json:"medias,omitempty"`
-	Flag                      *int64              `json:"flag,omitempty"`
-	WechatChannelsAccountId   *string             `json:"wechat_channels_account_id,omitempty"`
-	BulletCommentOpen         BulletCommentStatus `json:"bullet_comment_open,omitempty"`
-	WechatChannelsAccountName *string             `json:"wechat_channels_account_name,omitempty"`
+	FinderUsername            *string `json:"finder_username,omitempty"`
+	Description               *string `json:"description,omitempty"`
+	Medias                    *Medias `json:"medias,omitempty"`
+	Flag                      *int64  `json:"flag,omitempty"`
+	WechatChannelsAccountId   *string `json:"wechat_channels_account_id,omitempty"`
+	WechatChannelsAccountName *string `json:"wechat_channels_account_name,omitempty"`
+	BulletCommentSwitchOpen   *bool   `json:"bullet_comment_switch_open,omitempty"`
+	BulletCommentSupported    *bool   `json:"bullet_comment_supported,omitempty"`
 }

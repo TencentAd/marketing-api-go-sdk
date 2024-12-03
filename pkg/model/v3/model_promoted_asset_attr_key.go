@@ -22,6 +22,9 @@ const (
 	PromotedAssetAttrKey_MARKETING_TARGET_ID                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MARKETING_TARGET_ID"
 	PromotedAssetAttrKey_CATALOG_ID                                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CATALOG_ID"
 	PromotedAssetAttrKey_WECHAT_STORE_ID                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_ID"
+	PromotedAssetAttrKey_APP_HARMONY_ID                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_HARMONY_ID"
+	PromotedAssetAttrKey_APP_NAME                                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_NAME"
+	PromotedAssetAttrKey_APP_ICON                                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_ICON"
 	PromotedAssetAttrKey_APP_ANDROID_ID                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_ANDROID_ID"
 	PromotedAssetAttrKey_APP_IOS_ID                                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_IOS_ID"
 	PromotedAssetAttrKey_WECHAT_OFFICIAL_ACCOUNT_ID                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_OFFICIAL_ACCOUNT_ID"
@@ -384,6 +387,7 @@ const (
 	PromotedAssetAttrKey_STORE_HOMEPAGE_ADDRESS                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_STORE_HOMEPAGE_ADDRESS"
 	PromotedAssetAttrKey_MINI_GAME_QQ_ID                                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINI_GAME_QQ_ID"
 	PromotedAssetAttrKey_PC_GAME_DOMAIN                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PC_GAME_DOMAIN"
+	PromotedAssetAttrKey_PC_GAME_DIRECTORY                                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PC_GAME_DIRECTORY"
 	PromotedAssetAttrKey_WECHAT_WORK_CORP_ID                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_WORK_CORP_ID"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_CATE_NAME                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_CATE_NAME"
 	PromotedAssetAttrKey_LIVE_STREAM_ROOM_PLATFORM                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LIVE_STREAM_ROOM_PLATFORM"
@@ -397,4 +401,5 @@ const (
 	PromotedAssetAttrKey_CAR_ECOLOGY_COMPANY_NAME                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_COMPANY_NAME"
 	PromotedAssetAttrKey_CAR_ECOLOGY_SERVICE_TYPE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_SERVICE_TYPE"
 	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_CATE_NAME"
+	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_PRODUCT_HASH_ID                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_PRODUCT_HASH_ID"
 )

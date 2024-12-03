@@ -14,11 +14,12 @@ type WechatChannelsAuthStatus string
 
 // List of WechatChannelsAuthStatus
 const (
-	WechatChannelsAuthStatus_PENDING       WechatChannelsAuthStatus = "PENDING"
-	WechatChannelsAuthStatus_AUTHORIZED    WechatChannelsAuthStatus = "AUTHORIZED"
-	WechatChannelsAuthStatus_CANCELLED     WechatChannelsAuthStatus = "CANCELLED"
-	WechatChannelsAuthStatus_REFUSED       WechatChannelsAuthStatus = "REFUSED"
-	WechatChannelsAuthStatus_EXPIRED       WechatChannelsAuthStatus = "EXPIRED"
-	WechatChannelsAuthStatus_AUDIT_PENDING WechatChannelsAuthStatus = "AUDIT_PENDING"
-	WechatChannelsAuthStatus_AUDIT_REFUSED WechatChannelsAuthStatus = "AUDIT_REFUSED"
+	WechatChannelsAuthStatus_PENDING         WechatChannelsAuthStatus = "PENDING"
+	WechatChannelsAuthStatus_AUTHORIZED      WechatChannelsAuthStatus = "AUTHORIZED"
+	WechatChannelsAuthStatus_CANCELLED       WechatChannelsAuthStatus = "CANCELLED"
+	WechatChannelsAuthStatus_REFUSED         WechatChannelsAuthStatus = "REFUSED"
+	WechatChannelsAuthStatus_EXPIRED         WechatChannelsAuthStatus = "EXPIRED"
+	WechatChannelsAuthStatus_AUDIT_PENDING   WechatChannelsAuthStatus = "AUDIT_PENDING"
+	WechatChannelsAuthStatus_AUDIT_REFUSED   WechatChannelsAuthStatus = "AUDIT_REFUSED"
+	WechatChannelsAuthStatus_PENDING_CONFIRM WechatChannelsAuthStatus = "PENDING_CONFIRM"
 )

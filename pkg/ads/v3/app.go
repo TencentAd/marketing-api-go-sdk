@@ -545,6 +545,14 @@ func (c *SDKClient) Programmed() *api.ProgrammedApiService {
 	return c.Client.ProgrammedApi
 }
 
+func (c *SDKClient) ProgrammedCommponentPreview() *api.ProgrammedCommponentPreviewApiService {
+	return c.Client.ProgrammedCommponentPreviewApi
+}
+
+func (c *SDKClient) ProgrammedCommponentResult() *api.ProgrammedCommponentResultApiService {
+	return c.Client.ProgrammedCommponentResultApi
+}
+
 func (c *SDKClient) ProgrammedMaterialMappings() *api.ProgrammedMaterialMappingsApiService {
 	return c.Client.ProgrammedMaterialMappingsApi
 }
@@ -711,6 +719,22 @@ func (c *SDKClient) WechatPagesCustom() *api.WechatPagesCustomApiService {
 
 func (c *SDKClient) WechatPagesGrantinfo() *api.WechatPagesGrantinfoApiService {
 	return c.Client.WechatPagesGrantinfoApi
+}
+
+func (c *SDKClient) WechatShop() *api.WechatShopApiService {
+	return c.Client.WechatShopApi
+}
+
+func (c *SDKClient) WechatShopAuthorization() *api.WechatShopAuthorizationApiService {
+	return c.Client.WechatShopAuthorizationApi
+}
+
+func (c *SDKClient) WechatShopAuthorizationStatus() *api.WechatShopAuthorizationStatusApiService {
+	return c.Client.WechatShopAuthorizationStatusApi
+}
+
+func (c *SDKClient) WechatShopAuthorizationValidation() *api.WechatShopAuthorizationValidationApiService {
+	return c.Client.WechatShopAuthorizationValidationApi
 }
 
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {

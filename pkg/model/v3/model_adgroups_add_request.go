@@ -62,7 +62,10 @@ type AdgroupsAddRequest struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
+	AoiOptimizationStrategy           *AoiOptimizationStrategy    `json:"aoi_optimization_strategy,omitempty"`
 	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
 	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
 	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
+	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
+	SearchExpansionSwitch             SearchExpansionSwitch       `json:"search_expansion_switch,omitempty"`
 }

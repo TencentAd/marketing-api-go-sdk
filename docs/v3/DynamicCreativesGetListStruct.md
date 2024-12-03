@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **CreativeComponents** | [***CreativeComponents**](creative_components.md) |  | [optional] [default to null]
 **ImpressionTrackingUrl** | **string** |  | [optional] [default to null]
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
+**ProgramCreativeInfo** | [***ProgramCreativeInfo**](program_creative_info.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
@@ -20,6 +21,7 @@ Name | Type | Description | Notes
 **MarketingAssetVerification** | [***MarketingAssetVerification**](marketing_asset_verification.md) |  | [optional] [default to null]
 **Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
 **AssetInconsistentStatus** | [***AssetInconsistentStatus**](AssetInconsistentStatus.md) |  | [optional] [default to null]
+**PotentialStatus** | [***DynamicCreativePotentialStatus**](DynamicCreativePotentialStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -24,7 +24,6 @@ import (
 type AsyncReportsGetExample struct {
 	TAds                *ads.SDKClient
 	AccessToken         string
-	AccountId           int64
 	AsyncReportsGetOpts *api.AsyncReportsGetOpts
 }
 
@@ -34,7 +33,6 @@ func (e *AsyncReportsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.AsyncReportsGetOpts = &api.AsyncReportsGetOpts{}
 }
 
@@ -42,7 +40,7 @@ func (e *AsyncReportsGetExample) RunExample() (model.AsyncReportsGetResponseData
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AsyncReports().Get(ctx, e.AccountId, e.AsyncReportsGetOpts)
+	return tads.AsyncReports().Get(ctx, e.AsyncReportsGetOpts)
 }
 
 func main() {

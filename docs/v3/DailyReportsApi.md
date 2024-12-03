@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **DailyReportsGet**
-> DailyReportsGetResponse DailyReportsGet(ctx, accountId, level, dateRange, groupBy, fields, optional)
+> DailyReportsGetResponse DailyReportsGet(ctx, level, dateRange, groupBy, fields, optional)
 获取日报表
 
 ### Required Parameters
@@ -16,7 +16,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **level** | **string**|  | 
   **dateRange** | [**ReportDateRange**](ReportDateRange.md)|  | 
   **groupBy** | [**[]string**](string.md)|  | 
@@ -32,12 +31,13 @@ Name | Type | Description  | Notes
 
 
 
-
- **filtering** | [**optional.Interface of []IntegratedListApiFilteringStruct**](IntegratedListApiFilteringStruct.md)|  | 
+ **accountId** | **optional.Int64**|  | 
+ **filtering** | [**optional.Interface of []DailyReportsFilteringStruct**](DailyReportsFilteringStruct.md)|  | 
  **orderBy** | [**optional.Interface of []OrderByStruct**](OrderByStruct.md)|  | 
  **timeLine** | **optional.String**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
 
 ### Return type
 

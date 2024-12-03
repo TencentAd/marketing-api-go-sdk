@@ -717,6 +717,8 @@ type TargetReportApiListStruct struct {
 	PurchaseDedupRegActive1dPv                 *int64   `json:"purchase_dedup_reg_active_1d_pv,omitempty"`
 	PurchaseRegActive1dAmount                  *int64   `json:"purchase_reg_active_1d_amount,omitempty"`
 	SecurityNegativeDedupPv                    *int64   `json:"security_negative_dedup_pv,omitempty"`
+	AdMonetizationPlaRegActive1dMixRoi         *float64 `json:"ad_monetization_pla_reg_active_1d_mix_roi,omitempty"`
+	AdMonetizationPlaRegActive24hMixRoi        *float64 `json:"ad_monetization_pla_reg_active_24h_mix_roi,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

@@ -8,6 +8,9 @@ Name | Type | Description | Notes
 **CreativeTemplateAppellation** | **string** |  | [optional] [default to null]
 **CreativeSampleImage** | **string** |  | [optional] [default to null]
 **SiteSet** | [***SiteSetDefinition**](SiteSetDefinition.md) |  | [optional] [default to null]
+**CreativeTemplateSize** | **string** |  | [optional] [default to null]
+**SupportBidModeList** | **[]string** |  | [optional] [default to null]
+**SupportSiteSetInfo** | [**[]SupportSiteSetStruct**](support_site_set_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

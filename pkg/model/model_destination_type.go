@@ -69,4 +69,5 @@ const (
 	DestinationType_WECHAT_CHANNELS_PROFILE         DestinationType = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	DestinationType_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationType = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	DestinationType_WECHAT_QUERY_PAGE               DestinationType = "PAGE_TYPE_WECHAT_QUERY_PAGE"
+	DestinationType_APP_HARMONY                     DestinationType = "PAGE_TYPE_APP_HARMONY"
 )

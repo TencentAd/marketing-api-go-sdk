@@ -32,30 +32,33 @@ type DailyReportsApiService service
 /*
 DailyReportsApiService 获取日报表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param level
  * @param dateRange
  * @param groupBy
  * @param fields
  * @param optional nil or *DailyReportsGetOpts - Optional Parameters:
-     * @param "Filtering" (optional.Interface of []IntegratedListApiFilteringStruct) -
+     * @param "AccountId" (optional.Int64) -
+     * @param "Filtering" (optional.Interface of []DailyReportsFilteringStruct) -
      * @param "OrderBy" (optional.Interface of []OrderByStruct) -
      * @param "TimeLine" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -
 
 @return DailyReportsGetResponse
 */
 
 type DailyReportsGetOpts struct {
-	Filtering optional.Interface
-	OrderBy   optional.Interface
-	TimeLine  optional.String
-	Page      optional.Int64
-	PageSize  optional.Int64
+	AccountId      optional.Int64
+	Filtering      optional.Interface
+	OrderBy        optional.Interface
+	TimeLine       optional.String
+	Page           optional.Int64
+	PageSize       optional.Int64
+	OrganizationId optional.Int64
 }
 
-func (a *DailyReportsApiService) Get(ctx context.Context, accountId int64, level string, dateRange ReportDateRange, groupBy []string, fields []string, localVarOptionals *DailyReportsGetOpts) (DailyReportsGetResponseData, http.Header, error) {
+func (a *DailyReportsApiService) Get(ctx context.Context, level string, dateRange ReportDateRange, groupBy []string, fields []string, localVarOptionals *DailyReportsGetOpts) (DailyReportsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -73,7 +76,9 @@ func (a *DailyReportsApiService) Get(ctx context.Context, accountId int64, level
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
 	localVarQueryParams.Add("level", parameterToString(level, ""))
 	localVarQueryParams.Add("date_range", parameterToString(dateRange, ""))
 	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
@@ -93,6 +98,9 @@ func (a *DailyReportsApiService) Get(ctx context.Context, accountId int64, level
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
 	}
 	localVarQueryParams.Add("fields", parameterToString(fields, "multi"))
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}
 

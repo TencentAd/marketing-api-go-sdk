@@ -14,15 +14,8 @@ type LeadsType string
 
 // List of LeadsType
 const (
-	LeadsType_FORM                LeadsType = "LEADS_TYPE_FORM"
-	LeadsType_ONLINE_CONSULT      LeadsType = "LEADS_TYPE_ONLINE_CONSULT"
-	LeadsType_MAKE_PHONE_CALL     LeadsType = "LEADS_TYPE_MAKE_PHONE_CALL"
-	LeadsType_PHONE               LeadsType = "LEADS_TYPE_PHONE"
-	LeadsType_PROMOTION_COUPON    LeadsType = "LEADS_TYPE_PROMOTION_COUPON"
-	LeadsType_INTELLIGENT_TOOL    LeadsType = "LEADS_TYPE_INTELLIGENT_TOOL"
-	LeadsType_LOTTERY             LeadsType = "LEADS_TYPE_LOTTERY"
-	LeadsType_LANDING_PAGE_CLICK  LeadsType = "LEADS_TYPE_LANDING_PAGE_CLICK"
-	LeadsType_ONE_CLICK_AUTHORIZE LeadsType = "LEADS_TYPE_ONE_CLICK_AUTHORIZE"
-	LeadsType_PAGE_SCAN_CODE      LeadsType = "LEADS_TYPE_PAGE_SCAN_CODE"
-	LeadsType_PROMOTION_FOLLOW    LeadsType = "LEADS_TYPE_PROMOTION_FOLLOW"
+	LeadsType_FORM             LeadsType = "LEADS_TYPE_FORM"
+	LeadsType_MAKE_PHONE_CALL  LeadsType = "LEADS_TYPE_MAKE_PHONE_CALL"
+	LeadsType_PAGE_SCAN_CODE   LeadsType = "LEADS_TYPE_PAGE_SCAN_CODE"
+	LeadsType_PROMOTION_FOLLOW LeadsType = "LEADS_TYPE_PROMOTION_FOLLOW"
 )

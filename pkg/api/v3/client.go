@@ -314,6 +314,10 @@ type APIClient struct {
 
 	ProgrammedApi *ProgrammedApiService
 
+	ProgrammedCommponentPreviewApi *ProgrammedCommponentPreviewApiService
+
+	ProgrammedCommponentResultApi *ProgrammedCommponentResultApiService
+
 	ProgrammedMaterialMappingsApi *ProgrammedMaterialMappingsApiService
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
@@ -397,6 +401,14 @@ type APIClient struct {
 	WechatPagesCustomApi *WechatPagesCustomApiService
 
 	WechatPagesGrantinfoApi *WechatPagesGrantinfoApiService
+
+	WechatShopApi *WechatShopApiService
+
+	WechatShopAuthorizationApi *WechatShopAuthorizationApiService
+
+	WechatShopAuthorizationStatusApi *WechatShopAuthorizationStatusApiService
+
+	WechatShopAuthorizationValidationApi *WechatShopAuthorizationValidationApiService
 
 	WildcardsApi *WildcardsApiService
 
@@ -572,6 +584,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProductsSystemStatusApi = (*ProductsSystemStatusApiService)(&c.common)
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
+	c.ProgrammedCommponentPreviewApi = (*ProgrammedCommponentPreviewApiService)(&c.common)
+	c.ProgrammedCommponentResultApi = (*ProgrammedCommponentResultApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
 	c.QualificationImagesApi = (*QualificationImagesApiService)(&c.common)
@@ -614,6 +628,10 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesCsgrouplistApi = (*WechatPagesCsgrouplistApiService)(&c.common)
 	c.WechatPagesCustomApi = (*WechatPagesCustomApiService)(&c.common)
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
+	c.WechatShopApi = (*WechatShopApiService)(&c.common)
+	c.WechatShopAuthorizationApi = (*WechatShopAuthorizationApiService)(&c.common)
+	c.WechatShopAuthorizationStatusApi = (*WechatShopAuthorizationStatusApiService)(&c.common)
+	c.WechatShopAuthorizationValidationApi = (*WechatShopAuthorizationValidationApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.WxGamePlayablePageApi = (*WxGamePlayablePageApiService)(&c.common)
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)

@@ -11,21 +11,23 @@ package model
 
 // 返回结构
 type DynamicCreativesGetListStruct struct {
-	AdgroupId                  *int64                      `json:"adgroup_id,omitempty"`
-	DynamicCreativeId          *int64                      `json:"dynamic_creative_id,omitempty"`
-	DynamicCreativeName        *string                     `json:"dynamic_creative_name,omitempty"`
-	CreativeTemplateId         *int64                      `json:"creative_template_id,omitempty"`
-	DeliveryMode               DeliveryMode                `json:"delivery_mode,omitempty"`
-	DynamicCreativeType        DynamicCreativeType         `json:"dynamic_creative_type,omitempty"`
-	CreativeComponents         *CreativeComponents         `json:"creative_components,omitempty"`
-	ImpressionTrackingUrl      *string                     `json:"impression_tracking_url,omitempty"`
-	ClickTrackingUrl           *string                     `json:"click_tracking_url,omitempty"`
-	PageTrackUrl               *string                     `json:"page_track_url,omitempty"`
-	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
-	IsDeleted                  *bool                       `json:"is_deleted,omitempty"`
-	CreatedTime                *int64                      `json:"created_time,omitempty"`
-	LastModifiedTime           *int64                      `json:"last_modified_time,omitempty"`
-	MarketingAssetVerification *MarketingAssetVerification `json:"marketing_asset_verification,omitempty"`
-	Source                     AdCreativeSource            `json:"source,omitempty"`
-	AssetInconsistentStatus    AssetInconsistentStatus     `json:"asset_inconsistent_status,omitempty"`
+	AdgroupId                  *int64                         `json:"adgroup_id,omitempty"`
+	DynamicCreativeId          *int64                         `json:"dynamic_creative_id,omitempty"`
+	DynamicCreativeName        *string                        `json:"dynamic_creative_name,omitempty"`
+	CreativeTemplateId         *int64                         `json:"creative_template_id,omitempty"`
+	DeliveryMode               DeliveryMode                   `json:"delivery_mode,omitempty"`
+	DynamicCreativeType        DynamicCreativeType            `json:"dynamic_creative_type,omitempty"`
+	CreativeComponents         *CreativeComponents            `json:"creative_components,omitempty"`
+	ImpressionTrackingUrl      *string                        `json:"impression_tracking_url,omitempty"`
+	ClickTrackingUrl           *string                        `json:"click_tracking_url,omitempty"`
+	ProgramCreativeInfo        *ProgramCreativeInfo           `json:"program_creative_info,omitempty"`
+	PageTrackUrl               *string                        `json:"page_track_url,omitempty"`
+	ConfiguredStatus           ConfiguredStatus               `json:"configured_status,omitempty"`
+	IsDeleted                  *bool                          `json:"is_deleted,omitempty"`
+	CreatedTime                *int64                         `json:"created_time,omitempty"`
+	LastModifiedTime           *int64                         `json:"last_modified_time,omitempty"`
+	MarketingAssetVerification *MarketingAssetVerification    `json:"marketing_asset_verification,omitempty"`
+	Source                     AdCreativeSource               `json:"source,omitempty"`
+	AssetInconsistentStatus    AssetInconsistentStatus        `json:"asset_inconsistent_status,omitempty"`
+	PotentialStatus            DynamicCreativePotentialStatus `json:"potential_status,omitempty"`
 }

@@ -14,4 +14,5 @@ type ProgramCreativeInfo struct {
 	MaterialDeriveId   *int64                      `json:"material_derive_id,omitempty"`
 	MaterialDeriveInfo *[]MaterialDeriveInfoStruct `json:"material_derive_info,omitempty"`
 	BidMode            BidMode                     `json:"bid_mode,omitempty"`
+	DeriveVersion      DeriveVersionType           `json:"derive_version,omitempty"`
 }

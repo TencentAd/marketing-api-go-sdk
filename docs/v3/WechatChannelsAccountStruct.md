@@ -15,6 +15,10 @@ Name | Type | Description | Notes
 **IsBlocked** | **bool** |  | [optional] [default to null]
 **IsPrivate** | **bool** |  | [optional] [default to null]
 **IsAdAcct** | **bool** |  | [optional] [default to null]
+**AuthorizationBeginTime** | **int64** |  | [optional] [default to null]
+**AuthorizationTtl** | **int64** |  | [optional] [default to null]
+**IsDisable** | **bool** |  | [optional] [default to null]
+**DisableMessage** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -17,5 +17,6 @@ const (
 	ComponentMetadataFieldType_UNKNOWN   ComponentMetadataFieldType = "UNKNOWN"
 	ComponentMetadataFieldType_STRING    ComponentMetadataFieldType = "STRING"
 	ComponentMetadataFieldType_INT       ComponentMetadataFieldType = "INT"
+	ComponentMetadataFieldType_BOOL      ComponentMetadataFieldType = "BOOL"
 	ComponentMetadataFieldType_STRUCTURE ComponentMetadataFieldType = "STRUCTURE"
 )

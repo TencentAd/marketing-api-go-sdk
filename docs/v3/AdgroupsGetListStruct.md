@@ -70,10 +70,12 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
+**AoiOptimizationStrategy** | [***AoiOptimizationStrategy**](aoi_optimization_strategy.md) |  | [optional] [default to null]
 **CostGuaranteeStatus** | [***CostGuaranteeStatus**](CostGuaranteeStatus.md) |  | [optional] [default to null]
 **CostGuaranteeMoney** | **int64** |  | [optional] [default to null]
 **AdditionalProductSpec** | [***AdditionalProductSpec**](additional_product_spec.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
+**LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -16,4 +16,5 @@ type ComponentMetadataValueField struct {
 	Structure *[]ComponentMetadataValueFieldStructureField `json:"structure,omitempty"`
 	IsArray   *bool                                        `json:"is_array,omitempty"`
 	Valid     *ComponentMetadataValueValid                 `json:"valid,omitempty"`
+	Label     *string                                      `json:"label,omitempty"`
 }

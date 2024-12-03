@@ -43,6 +43,8 @@ type AdgroupsUpdateRequest struct {
 	CostConstraintScene               CostConstraintScene         `json:"cost_constraint_scene,omitempty"`
 	CustomCostCap                     *int64                      `json:"custom_cost_cap,omitempty"`
 	FeedbackId                        *int64                      `json:"feedback_id,omitempty"`
+	AoiOptimizationStrategy           *AoiOptimizationStrategy    `json:"aoi_optimization_strategy,omitempty"`
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch `json:"search_expand_targeting_switch,omitempty"`
 	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
+	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
 }
