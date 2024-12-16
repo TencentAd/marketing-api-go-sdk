@@ -114,4 +114,6 @@ const (
 	OptimizationGoal_FIRST_WITHDRAW                         OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_WITHDRAW"
 	OptimizationGoal_R3                                     OptimizationGoal = "OPTIMIZATIONGOAL_R3"
 	OptimizationGoal_BRIDGING_COURSE_COMPLETED              OptimizationGoal = "OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED"
+	OptimizationGoal_THIRTY_SECONDS_SCANCODE_WX             OptimizationGoal = "OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX"
+	OptimizationGoal_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE     OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE"
 )

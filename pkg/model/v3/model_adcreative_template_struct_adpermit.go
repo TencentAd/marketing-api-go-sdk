@@ -9,7 +9,7 @@
 
 package model
 
-// 创意规格和投放权限数据结构
+// 创意形式和投放权限数据结构
 type AdcreativeTemplateStructAdpermit struct {
 	CreativeTemplateId            *int64                         `json:"creative_template_id,omitempty"`
 	CreativeTemplateStyle         *string                        `json:"creative_template_style,omitempty"`

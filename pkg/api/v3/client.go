@@ -170,6 +170,8 @@ type APIClient struct {
 
 	DynamicAdVideoTemplatesApi *DynamicAdVideoTemplatesApiService
 
+	DynamicCreativePreviewsApi *DynamicCreativePreviewsApiService
+
 	DynamicCreativeReviewResultsApi *DynamicCreativeReviewResultsApiService
 
 	DynamicCreativesApi *DynamicCreativesApiService
@@ -316,6 +318,8 @@ type APIClient struct {
 
 	ProgrammedCommponentPreviewApi *ProgrammedCommponentPreviewApiService
 
+	ProgrammedCommponentPreviewTemplateApi *ProgrammedCommponentPreviewTemplateApiService
+
 	ProgrammedCommponentResultApi *ProgrammedCommponentResultApiService
 
 	ProgrammedMaterialMappingsApi *ProgrammedMaterialMappingsApiService
@@ -409,6 +413,10 @@ type APIClient struct {
 	WechatShopAuthorizationStatusApi *WechatShopAuthorizationStatusApiService
 
 	WechatShopAuthorizationValidationApi *WechatShopAuthorizationValidationApiService
+
+	WechatStoreCatalogsApi *WechatStoreCatalogsApiService
+
+	WechatStoreProductItemsApi *WechatStoreProductItemsApiService
 
 	WildcardsApi *WildcardsApiService
 
@@ -512,6 +520,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)
 	c.DynamicAdVideoTemplatesApi = (*DynamicAdVideoTemplatesApiService)(&c.common)
+	c.DynamicCreativePreviewsApi = (*DynamicCreativePreviewsApiService)(&c.common)
 	c.DynamicCreativeReviewResultsApi = (*DynamicCreativeReviewResultsApiService)(&c.common)
 	c.DynamicCreativesApi = (*DynamicCreativesApiService)(&c.common)
 	c.EcommerceOrderApi = (*EcommerceOrderApiService)(&c.common)
@@ -585,6 +594,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProfilesApi = (*ProfilesApiService)(&c.common)
 	c.ProgrammedApi = (*ProgrammedApiService)(&c.common)
 	c.ProgrammedCommponentPreviewApi = (*ProgrammedCommponentPreviewApiService)(&c.common)
+	c.ProgrammedCommponentPreviewTemplateApi = (*ProgrammedCommponentPreviewTemplateApiService)(&c.common)
 	c.ProgrammedCommponentResultApi = (*ProgrammedCommponentResultApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
@@ -632,6 +642,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatShopAuthorizationApi = (*WechatShopAuthorizationApiService)(&c.common)
 	c.WechatShopAuthorizationStatusApi = (*WechatShopAuthorizationStatusApiService)(&c.common)
 	c.WechatShopAuthorizationValidationApi = (*WechatShopAuthorizationValidationApiService)(&c.common)
+	c.WechatStoreCatalogsApi = (*WechatStoreCatalogsApiService)(&c.common)
+	c.WechatStoreProductItemsApi = (*WechatStoreProductItemsApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.WxGamePlayablePageApi = (*WxGamePlayablePageApiService)(&c.common)
 	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)

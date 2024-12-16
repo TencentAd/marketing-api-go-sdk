@@ -30,7 +30,7 @@ var (
 type CreativeTemplateListApiService service
 
 /*
-CreativeTemplateListApiService 获取创意规格列表
+CreativeTemplateListApiService 获取创意形式列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param marketingGoal

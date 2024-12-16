@@ -257,6 +257,10 @@ func (c *SDKClient) DynamicAdVideoTemplates() *api.DynamicAdVideoTemplatesApiSer
 	return c.Client.DynamicAdVideoTemplatesApi
 }
 
+func (c *SDKClient) DynamicCreativePreviews() *api.DynamicCreativePreviewsApiService {
+	return c.Client.DynamicCreativePreviewsApi
+}
+
 func (c *SDKClient) DynamicCreativeReviewResults() *api.DynamicCreativeReviewResultsApiService {
 	return c.Client.DynamicCreativeReviewResultsApi
 }
@@ -549,6 +553,10 @@ func (c *SDKClient) ProgrammedCommponentPreview() *api.ProgrammedCommponentPrevi
 	return c.Client.ProgrammedCommponentPreviewApi
 }
 
+func (c *SDKClient) ProgrammedCommponentPreviewTemplate() *api.ProgrammedCommponentPreviewTemplateApiService {
+	return c.Client.ProgrammedCommponentPreviewTemplateApi
+}
+
 func (c *SDKClient) ProgrammedCommponentResult() *api.ProgrammedCommponentResultApiService {
 	return c.Client.ProgrammedCommponentResultApi
 }
@@ -735,6 +743,14 @@ func (c *SDKClient) WechatShopAuthorizationStatus() *api.WechatShopAuthorization
 
 func (c *SDKClient) WechatShopAuthorizationValidation() *api.WechatShopAuthorizationValidationApiService {
 	return c.Client.WechatShopAuthorizationValidationApi
+}
+
+func (c *SDKClient) WechatStoreCatalogs() *api.WechatStoreCatalogsApiService {
+	return c.Client.WechatStoreCatalogsApi
+}
+
+func (c *SDKClient) WechatStoreProductItems() *api.WechatStoreProductItemsApiService {
+	return c.Client.WechatStoreProductItemsApi
 }
 
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {

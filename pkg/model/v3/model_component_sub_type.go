@@ -145,4 +145,5 @@ const (
 	ComponentSubType_JUMP_INFO_ANDROID_QUICK_APP              ComponentSubType = "JUMP_INFO_ANDROID_QUICK_APP"
 	ComponentSubType_JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT   ComponentSubType = "JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT"
 	ComponentSubType_JUMP_INFO_QQ_MINI_GAME                   ComponentSubType = "JUMP_INFO_QQ_MINI_GAME"
+	ComponentSubType_JUMP_INFO_APP_HARMONY                    ComponentSubType = "JUMP_INFO_APP_HARMONY"
 )

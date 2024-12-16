@@ -16,4 +16,5 @@ type PreviewItemStruct struct {
 	TemplateId                      *int64                           `json:"template_id,omitempty"`
 	Type_                           *string                          `json:"type,omitempty"`
 	TemplatePreviewUrl              *string                          `json:"template_preview_url,omitempty"`
+	RecommendTemplates              *[]int64                         `json:"recommend_templates,omitempty"`
 }
