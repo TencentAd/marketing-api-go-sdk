@@ -9,11 +9,8 @@
 
 package model
 
-// OsV2 : 操作系统
-type OsV2 string
-
-// List of OsV2
-const (
-	OsV2_IOS     OsV2 = "IOS"
-	OsV2_ANDROID OsV2 = "ANDROID"
-)
+// 日期范围
+type HourlyReportDateRange struct {
+	StartDate *string `json:"start_date,omitempty"`
+	EndDate   *string `json:"end_date,omitempty"`
+}

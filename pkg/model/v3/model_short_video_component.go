@@ -9,7 +9,7 @@
 
 package model
 
-// 视频结束页组件
+// 短视频组件
 type ShortVideoComponent struct {
 	ComponentId *int64            `json:"component_id,omitempty"`
 	Value       *ShortVideoStruct `json:"value,omitempty"`

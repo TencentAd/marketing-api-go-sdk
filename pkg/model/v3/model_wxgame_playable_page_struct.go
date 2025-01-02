@@ -11,8 +11,12 @@ package model
 
 // 小游戏试玩页组件
 type WxgamePlayablePageStruct struct {
-	WxgamePlayablePageSwitch      *bool   `json:"wxgame_playable_page_switch,omitempty"`
-	WxgamePlayablePagePath        *string `json:"wxgame_playable_page_path,omitempty"`
-	WxgamePlayablePageEndCoverImg *string `json:"wxgame_playable_page_end_cover_img,omitempty"`
-	WxgamePlayablePageEndDesc     *string `json:"wxgame_playable_page_end_desc,omitempty"`
+	WxgamePlayablePageSwitch              *bool     `json:"wxgame_playable_page_switch,omitempty"`
+	WxgamePlayablePagePath                *string   `json:"wxgame_playable_page_path,omitempty"`
+	WxgamePlayablePageEndCoverImg         *string   `json:"wxgame_playable_page_end_cover_img,omitempty"`
+	WxgamePlayablePageEndDesc             *string   `json:"wxgame_playable_page_end_desc,omitempty"`
+	WxgamePlayablePageTriggerTypes        *[]string `json:"wxgame_playable_page_trigger_types,omitempty"`
+	WxgamePlayablePageTriggerText         *string   `json:"wxgame_playable_page_trigger_text,omitempty"`
+	WxgamePlayablePageCardLinkImage       *string   `json:"wxgame_playable_page_card_link_image,omitempty"`
+	WxgamePlayablePageCardLinkDescription *string   `json:"wxgame_playable_page_card_link_description,omitempty"`
 }

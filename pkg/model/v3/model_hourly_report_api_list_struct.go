@@ -761,6 +761,19 @@ type HourlyReportApiListStruct struct {
 	ClkInterpageBtnPv                          *int64   `json:"clk_interpage_btn_pv,omitempty"`
 	AdMonetizationPlaRegActive1dMixRoi         *float64 `json:"ad_monetization_pla_reg_active_1d_mix_roi,omitempty"`
 	AdMonetizationPlaRegActive24hMixRoi        *float64 `json:"ad_monetization_pla_reg_active_24h_mix_roi,omitempty"`
+	RealCostAppAutoDownload                    *int64   `json:"real_cost_app_auto_download,omitempty"`
+	WechatAddFansAfterV30sDedupPv              *int64   `json:"wechat_add_fans_after_v30s_dedup_pv,omitempty"`
+	VisitStorePv                               *int64   `json:"visit_store_pv,omitempty"`
+	VisitStoreDedupPvCost                      *int64   `json:"visit_store_dedup_pv_cost,omitempty"`
+	VisitStorePvCost                           *int64   `json:"visit_store_pv_cost,omitempty"`
+	ChannelsLiveEleConvExpPlaPv                *int64   `json:"channels_live_ele_conv_exp_pla_pv,omitempty"`
+	ChannelsLiveEleConvClkPlaPv                *int64   `json:"channels_live_ele_conv_clk_pla_pv,omitempty"`
+	AuthorizePv                                *int64   `json:"authorize_pv,omitempty"`
+	RetentionPlaPv                             *int64   `json:"retention_pla_pv,omitempty"`
+	RetentionD1UvRate                          *float64 `json:"retention_d1_uv_rate,omitempty"`
+	PurchaseFirstAllDedupTouch24hPv            *int64   `json:"purchase_first_all_dedup_touch_24h_pv,omitempty"`
+	PurchaseFirstAllDedupTouch24hAmount        *int64   `json:"purchase_first_all_dedup_touch_24h_amount,omitempty"`
+	PurchaseFirstAllDedupTouch24hUnitPrice     *int64   `json:"purchase_first_all_dedup_touch_24h_unit_price,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

@@ -761,14 +761,6 @@ func (c *SDKClient) WxGamePlayablePage() *api.WxGamePlayablePageApiService {
 	return c.Client.WxGamePlayablePageApi
 }
 
-func (c *SDKClient) WxPackageAccount() *api.WxPackageAccountApiService {
-	return c.Client.WxPackageAccountApi
-}
-
-func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
-	return c.Client.WxPackagePackageApi
-}
-
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
 	return c.Client.XijingComplexTemplateApi
 }

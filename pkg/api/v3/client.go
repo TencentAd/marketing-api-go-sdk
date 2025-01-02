@@ -422,10 +422,6 @@ type APIClient struct {
 
 	WxGamePlayablePageApi *WxGamePlayablePageApiService
 
-	WxPackageAccountApi *WxPackageAccountApiService
-
-	WxPackagePackageApi *WxPackagePackageApiService
-
 	XijingComplexTemplateApi *XijingComplexTemplateApiService
 
 	XijingPageApi *XijingPageApiService
@@ -646,8 +642,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatStoreProductItemsApi = (*WechatStoreProductItemsApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.WxGamePlayablePageApi = (*WxGamePlayablePageApiService)(&c.common)
-	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
-	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)

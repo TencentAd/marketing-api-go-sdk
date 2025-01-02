@@ -390,10 +390,6 @@ type APIClient struct {
 
 	WildcardsApi *WildcardsApiService
 
-	WxPackageAccountApi *WxPackageAccountApiService
-
-	WxPackagePackageApi *WxPackagePackageApiService
-
 	XijingComplexTemplateApi *XijingComplexTemplateApiService
 
 	XijingDeriveClickEffectApi *XijingDeriveClickEffectApiService
@@ -604,8 +600,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WechatPagesGrantinfoApi = (*WechatPagesGrantinfoApiService)(&c.common)
 	c.WeixinOfficialAccountsUpgradeStatusApi = (*WeixinOfficialAccountsUpgradeStatusApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
-	c.WxPackageAccountApi = (*WxPackageAccountApiService)(&c.common)
-	c.WxPackagePackageApi = (*WxPackagePackageApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
 	c.XijingDeriveClickEffectApi = (*XijingDeriveClickEffectApiService)(&c.common)
 	c.XijingDeriveRoleApi = (*XijingDeriveRoleApiService)(&c.common)

@@ -9,11 +9,6 @@
 
 package model
 
-// OsV2 : 操作系统
-type OsV2 string
-
-// List of OsV2
-const (
-	OsV2_IOS     OsV2 = "IOS"
-	OsV2_ANDROID OsV2 = "ANDROID"
-)
+type ComponentSharingUpdateResponseData struct {
+	ComponentId *int64 `json:"component_id,omitempty"`
+}

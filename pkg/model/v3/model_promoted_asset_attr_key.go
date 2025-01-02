@@ -61,6 +61,8 @@ const (
 	PromotedAssetAttrKey_TRAFFIC_CAR_NUMBER_OF_SEATS                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_NUMBER_OF_SEATS"
 	PromotedAssetAttrKey_TRAFFIC_CAR_INTAKE_FORM                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_INTAKE_FORM"
 	PromotedAssetAttrKey_TRAFFIC_CAR_VENDOR                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_VENDOR"
+	PromotedAssetAttrKey_TRAFFIC_CAR_GUIDING_PRICE                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_GUIDING_PRICE"
+	PromotedAssetAttrKey_TRAFFIC_CAR_LISTING_DATE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_LISTING_DATE"
 	PromotedAssetAttrKey_LOCAL_STORE_POI_ID                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_POI_ID"
 	PromotedAssetAttrKey_MINIGAME_ID                                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINIGAME_ID"
 	PromotedAssetAttrKey_CONSUMER_PRODUCT_COMMODITY_TRADING_URL                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_URL"

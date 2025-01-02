@@ -9,7 +9,7 @@
 
 package model
 
-// PageStatus : 状态
+// PageStatus : 落地页状态
 type PageStatus string
 
 // List of PageStatus

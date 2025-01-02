@@ -1,11 +1,11 @@
-# ParamMatcher
+# ComponentSharingUpdateRequest
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ParamName** | **string** |  | [optional] [default to null]
-**ParamValue** | **string** |  | [optional] [default to null]
-**Operator** | [***Operator**](Operator.md) |  | [optional] [default to null]
+**OrganizationId** | **int64** |  | [optional] [default to null]
+**SharedAccountList** | [**[]SharedAccountStruct**](shared_account_struct.md) |  | [optional] [default to null]
+**ComponentId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

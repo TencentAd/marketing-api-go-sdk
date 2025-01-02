@@ -276,5 +276,6 @@ const (
 	TaskType_TASK_TYPE_RISK_CONTROL_STRATEGY_FULL_RECONCILE                            TaskType = "TASK_TYPE_RISK_CONTROL_STRATEGY_FULL_RECONCILE"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING                                        TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK                               TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK"
+	TaskType_TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD                                      TaskType = "TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )

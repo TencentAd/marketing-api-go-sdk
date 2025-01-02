@@ -11,5 +11,6 @@ package model
 
 // 组件list内容联合校验
 type ComponentMetadataValueValidJoint struct {
-	TotalLength *[]ComponentMetadataValueValidJointTotalLengthItem `json:"total_length,omitempty"`
+	TotalLength  *[]ComponentMetadataValueValidJointTotalLengthItem  `json:"total_length,omitempty"`
+	UniqueLength *[]ComponentMetadataValueValidJointUniqueLengthItem `json:"unique_length,omitempty"`
 }

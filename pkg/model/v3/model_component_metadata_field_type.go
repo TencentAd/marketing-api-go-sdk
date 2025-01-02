@@ -14,9 +14,12 @@ type ComponentMetadataFieldType string
 
 // List of ComponentMetadataFieldType
 const (
-	ComponentMetadataFieldType_UNKNOWN   ComponentMetadataFieldType = "UNKNOWN"
-	ComponentMetadataFieldType_STRING    ComponentMetadataFieldType = "STRING"
-	ComponentMetadataFieldType_INT       ComponentMetadataFieldType = "INT"
-	ComponentMetadataFieldType_BOOL      ComponentMetadataFieldType = "BOOL"
-	ComponentMetadataFieldType_STRUCTURE ComponentMetadataFieldType = "STRUCTURE"
+	ComponentMetadataFieldType_UNKNOWN         ComponentMetadataFieldType = "UNKNOWN"
+	ComponentMetadataFieldType_STRING          ComponentMetadataFieldType = "STRING"
+	ComponentMetadataFieldType_INT             ComponentMetadataFieldType = "INT"
+	ComponentMetadataFieldType_BOOL            ComponentMetadataFieldType = "BOOL"
+	ComponentMetadataFieldType_STRING_ARRAY    ComponentMetadataFieldType = "STRING_ARRAY"
+	ComponentMetadataFieldType_INT_ARRAY       ComponentMetadataFieldType = "INT_ARRAY"
+	ComponentMetadataFieldType_STRUCTURE       ComponentMetadataFieldType = "STRUCTURE"
+	ComponentMetadataFieldType_STRUCTURE_ARRAY ComponentMetadataFieldType = "STRUCTURE_ARRAY"
 )

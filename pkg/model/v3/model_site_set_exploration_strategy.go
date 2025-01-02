@@ -9,7 +9,7 @@
 
 package model
 
-// SiteSetExplorationStrategy : 自动版位探索策略
+// SiteSetExplorationStrategy :
 type SiteSetExplorationStrategy string
 
 // List of SiteSetExplorationStrategy
