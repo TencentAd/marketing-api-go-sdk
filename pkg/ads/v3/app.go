@@ -77,6 +77,10 @@ func (c *SDKClient) AgencyRealtimeCost() *api.AgencyRealtimeCostApiService {
 	return c.Client.AgencyRealtimeCostApi
 }
 
+func (c *SDKClient) AgencyWalletList() *api.AgencyWalletListApiService {
+	return c.Client.AgencyWalletListApi
+}
+
 func (c *SDKClient) AndroidChannel() *api.AndroidChannelApiService {
 	return c.Client.AndroidChannelApi
 }
@@ -675,6 +679,10 @@ func (c *SDKClient) Videos() *api.VideosApiService {
 
 func (c *SDKClient) Wallet() *api.WalletApiService {
 	return c.Client.WalletApi
+}
+
+func (c *SDKClient) WalletTransfer() *api.WalletTransferApiService {
+	return c.Client.WalletTransferApi
 }
 
 func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {

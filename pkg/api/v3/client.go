@@ -80,6 +80,8 @@ type APIClient struct {
 
 	AgencyRealtimeCostApi *AgencyRealtimeCostApiService
 
+	AgencyWalletListApi *AgencyWalletListApiService
+
 	AndroidChannelApi *AndroidChannelApiService
 
 	AsyncReportFilesApi *AsyncReportFilesApiService
@@ -380,6 +382,8 @@ type APIClient struct {
 
 	WalletApi *WalletApiService
 
+	WalletTransferApi *WalletTransferApiService
+
 	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
 
 	WechatChannelsAdAccountApi *WechatChannelsAdAccountApiService
@@ -471,6 +475,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AgencyBusinessUnitListAccountApi = (*AgencyBusinessUnitListAccountApiService)(&c.common)
 	c.AgencyBusinessUnitListByAccountApi = (*AgencyBusinessUnitListByAccountApiService)(&c.common)
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
+	c.AgencyWalletListApi = (*AgencyWalletListApiService)(&c.common)
 	c.AndroidChannelApi = (*AndroidChannelApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
@@ -621,6 +626,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WalletApi = (*WalletApiService)(&c.common)
+	c.WalletTransferApi = (*WalletTransferApiService)(&c.common)
 	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
 	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)
 	c.WechatChannelsAdAccountCertificationFileApi = (*WechatChannelsAdAccountCertificationFileApiService)(&c.common)

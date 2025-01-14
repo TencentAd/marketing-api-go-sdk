@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ProductItemsAdd**](ProductItemsApi.md#ProductItemsAdd) | **Post** /product_items/add | 添加商品
 [**ProductItemsBatchUpdate**](ProductItemsApi.md#ProductItemsBatchUpdate) | **Post** /product_items/batch_update | 批量更新商品信息
+[**ProductItemsDelete**](ProductItemsApi.md#ProductItemsDelete) | **Post** /product_items/delete | 删除商品信息
 [**ProductItemsGet**](ProductItemsApi.md#ProductItemsGet) | **Get** /product_items/get | 获取商品
 [**ProductItemsUpdate**](ProductItemsApi.md#ProductItemsUpdate) | **Post** /product_items/update | 更新商品信息
 
@@ -50,6 +51,32 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductItemsBatchUpdateResponse**](ProductItemsBatchUpdateResponse.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **ProductItemsDelete**
+> ProductItemsDeleteResponse ProductItemsDelete(ctx, data)
+删除商品信息
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **data** | [**ProductItemsDeleteRequest**](ProductItemsDeleteRequest.md)|  | 
+
+### Return type
+
+[**ProductItemsDeleteResponse**](ProductItemsDeleteResponse.md)
 
 ### Authorization
 

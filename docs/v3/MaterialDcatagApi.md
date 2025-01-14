@@ -35,7 +35,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **MaterialDcatagGet**
-> MaterialDcatagGetResponse MaterialDcatagGet(ctx, accountId, optional)
+> MaterialDcatagGetResponse MaterialDcatagGet(ctx, optional)
 素材DCA标签绑定查询
 
 ### Required Parameters
@@ -43,7 +43,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***MaterialDcatagApiMaterialDcatagGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -51,9 +50,14 @@ Optional parameters are passed through a pointer to a MaterialDcatagApiMaterialD
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
  **imageIdList** | [**optional.Interface of []int64**](int64.md)|  | 
  **mediaIdList** | [**optional.Interface of []int64**](int64.md)|  | 
+ **marketingAssetId** | **optional.Int64**|  | 
+ **marketingTargetType** | **optional.String**|  | 
+ **marketingAssetOuterSpec** | [**optional.Interface of MarketingAssetOuterSpecV1**](MarketingAssetOuterSpecV1.md)|  | 
+ **page** | **optional.Int64**|  | 
+ **pageSize** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

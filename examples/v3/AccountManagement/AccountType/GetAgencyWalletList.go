@@ -21,30 +21,32 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type MaterialDcatagGetExample struct {
-	TAds                  *ads.SDKClient
-	AccessToken           string
-	MaterialDcatagGetOpts *api.MaterialDcatagGetOpts
+type AgencyWalletListGetExample struct {
+	TAds                    *ads.SDKClient
+	AccessToken             string
+	AccountId               int64
+	AgencyWalletListGetOpts *api.AgencyWalletListGetOpts
 }
 
-func (e *MaterialDcatagGetExample) Init() {
+func (e *AgencyWalletListGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.MaterialDcatagGetOpts = &api.MaterialDcatagGetOpts{}
+	e.AccountId = 789
+	e.AgencyWalletListGetOpts = &api.AgencyWalletListGetOpts{}
 }
 
-func (e *MaterialDcatagGetExample) RunExample() (model.MaterialDcatagGetResponseData, http.Header, error) {
+func (e *AgencyWalletListGetExample) RunExample() (model.AgencyWalletListGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialDcatag().Get(ctx, e.MaterialDcatagGetOpts)
+	return tads.AgencyWalletList().Get(ctx, e.AccountId, e.AgencyWalletListGetOpts)
 }
 
 func main() {
-	e := &MaterialDcatagGetExample{}
+	e := &AgencyWalletListGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

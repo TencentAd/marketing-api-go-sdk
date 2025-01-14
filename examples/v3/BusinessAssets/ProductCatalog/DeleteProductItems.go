@@ -15,36 +15,35 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type MaterialDcatagGetExample struct {
-	TAds                  *ads.SDKClient
-	AccessToken           string
-	MaterialDcatagGetOpts *api.MaterialDcatagGetOpts
+type ProductItemsDeleteExample struct {
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.ProductItemsDeleteRequest
 }
 
-func (e *MaterialDcatagGetExample) Init() {
+func (e *ProductItemsDeleteExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.MaterialDcatagGetOpts = &api.MaterialDcatagGetOpts{}
+	e.Data = model.ProductItemsDeleteRequest{}
 }
 
-func (e *MaterialDcatagGetExample) RunExample() (model.MaterialDcatagGetResponseData, http.Header, error) {
+func (e *ProductItemsDeleteExample) RunExample() (interface{}, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialDcatag().Get(ctx, e.MaterialDcatagGetOpts)
+	return tads.ProductItems().Delete(ctx, e.Data)
 }
 
 func main() {
-	e := &MaterialDcatagGetExample{}
+	e := &ProductItemsDeleteExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

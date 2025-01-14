@@ -21,4 +21,5 @@ type GetData struct {
 	AuditStatus           *int64      `json:"audit_status,omitempty"`
 	AuditMsg              *string     `json:"audit_msg,omitempty"`
 	DcatagList            *[]Dactag   `json:"dcatag_list,omitempty"`
+	PageInfo              *PageInfo   `json:"page_info,omitempty"`
 }

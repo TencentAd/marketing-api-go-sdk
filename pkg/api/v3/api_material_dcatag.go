@@ -137,22 +137,33 @@ func (a *MaterialDcatagApiService) Add(ctx context.Context, data MaterialDcatagA
 /*
 MaterialDcatagApiService 素材DCA标签绑定查询
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *MaterialDcatagGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
      * @param "ImageIdList" (optional.Interface of []int64) -
      * @param "MediaIdList" (optional.Interface of []int64) -
+     * @param "MarketingAssetId" (optional.Int64) -
+     * @param "MarketingTargetType" (optional.String) -
+     * @param "MarketingAssetOuterSpec" (optional.Interface of MarketingAssetOuterSpecV1) -
+     * @param "Page" (optional.Int64) -
+     * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return MaterialDcatagGetResponse
 */
 
 type MaterialDcatagGetOpts struct {
-	ImageIdList optional.Interface
-	MediaIdList optional.Interface
-	Fields      optional.Interface
+	AccountId               optional.Int64
+	ImageIdList             optional.Interface
+	MediaIdList             optional.Interface
+	MarketingAssetId        optional.Int64
+	MarketingTargetType     optional.String
+	MarketingAssetOuterSpec optional.Interface
+	Page                    optional.Int64
+	PageSize                optional.Int64
+	Fields                  optional.Interface
 }
 
-func (a *MaterialDcatagApiService) Get(ctx context.Context, accountId int64, localVarOptionals *MaterialDcatagGetOpts) (MaterialDcatagGetResponseData, http.Header, error) {
+func (a *MaterialDcatagApiService) Get(ctx context.Context, localVarOptionals *MaterialDcatagGetOpts) (MaterialDcatagGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -170,12 +181,29 @@ func (a *MaterialDcatagApiService) Get(ctx context.Context, accountId int64, loc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.ImageIdList.IsSet() {
 		localVarQueryParams.Add("image_id_list", parameterToString(localVarOptionals.ImageIdList.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.MediaIdList.IsSet() {
 		localVarQueryParams.Add("media_id_list", parameterToString(localVarOptionals.MediaIdList.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingAssetId.IsSet() {
+		localVarQueryParams.Add("marketing_asset_id", parameterToString(localVarOptionals.MarketingAssetId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingTargetType.IsSet() {
+		localVarQueryParams.Add("marketing_target_type", parameterToString(localVarOptionals.MarketingTargetType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingAssetOuterSpec.IsSet() {
+		localVarQueryParams.Add("marketing_asset_outer_spec", parameterToString(localVarOptionals.MarketingAssetOuterSpec.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
+		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
+		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

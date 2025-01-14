@@ -40,6 +40,7 @@ Name | Type | Description | Notes
 **SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
+**CustomCostRoiCap** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

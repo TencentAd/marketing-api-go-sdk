@@ -15,36 +15,35 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
-	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type MaterialDcatagGetExample struct {
-	TAds                  *ads.SDKClient
-	AccessToken           string
-	MaterialDcatagGetOpts *api.MaterialDcatagGetOpts
+type WalletTransferAddExample struct {
+	TAds        *ads.SDKClient
+	AccessToken string
+	Data        model.WalletTransferAddRequest
 }
 
-func (e *MaterialDcatagGetExample) Init() {
+func (e *WalletTransferAddExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.MaterialDcatagGetOpts = &api.MaterialDcatagGetOpts{}
+	e.Data = model.WalletTransferAddRequest{}
 }
 
-func (e *MaterialDcatagGetExample) RunExample() (model.MaterialDcatagGetResponseData, http.Header, error) {
+func (e *WalletTransferAddExample) RunExample() (model.WalletTransferAddResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialDcatag().Get(ctx, e.MaterialDcatagGetOpts)
+	return tads.WalletTransfer().Add(ctx, e.Data)
 }
 
 func main() {
-	e := &MaterialDcatagGetExample{}
+	e := &WalletTransferAddExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

@@ -67,5 +67,6 @@ type AdgroupsAddRequest struct {
 	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
 	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
+	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
 	SearchExpansionSwitch             SearchExpansionSwitch       `json:"search_expansion_switch,omitempty"`
 }

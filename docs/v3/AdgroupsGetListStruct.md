@@ -76,6 +76,7 @@ Name | Type | Description | Notes
 **AdditionalProductSpec** | [***AdditionalProductSpec**](additional_product_spec.md) |  | [optional] [default to null]
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
+**CustomCostRoiCap** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
