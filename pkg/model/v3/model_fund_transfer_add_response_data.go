@@ -10,9 +10,10 @@
 package model
 
 type FundTransferAddResponseData struct {
-	FundType       AccountTypeMap `json:"fund_type,omitempty"`
-	Amount         *int64         `json:"amount,omitempty"`
-	ExternalBillNo *string        `json:"external_bill_no,omitempty"`
-	Time           *int64         `json:"time,omitempty"`
-	IsRepeated     *bool          `json:"is_repeated,omitempty"`
+	FundType        AccountTypeMap `json:"fund_type,omitempty"`
+	Amount          *int64         `json:"amount,omitempty"`
+	ExternalBillNo  *string        `json:"external_bill_no,omitempty"`
+	Time            *int64         `json:"time,omitempty"`
+	IsRepeated      *bool          `json:"is_repeated,omitempty"`
+	RecommendAmount *int64         `json:"recommend_amount,omitempty"`
 }

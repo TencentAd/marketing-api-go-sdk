@@ -55,4 +55,5 @@ const (
 	PreReviewSiteSetDefinitionString_QQSHOPPING           PreReviewSiteSetDefinitionString = "SITE_SET_QQSHOPPING"
 	PreReviewSiteSetDefinitionString_PCAD                 PreReviewSiteSetDefinitionString = "SITE_SET_PCAD"
 	PreReviewSiteSetDefinitionString_YUNXUAN              PreReviewSiteSetDefinitionString = "SITE_SET_YUNXUAN"
+	PreReviewSiteSetDefinitionString_EXPAND               PreReviewSiteSetDefinitionString = "SITE_SET_EXPAND"
 )

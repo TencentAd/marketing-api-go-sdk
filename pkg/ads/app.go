@@ -701,18 +701,6 @@ func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService
 	return c.Client.XijingComplexTemplateApi
 }
 
-func (c *SDKClient) XijingDeriveClickEffect() *api.XijingDeriveClickEffectApiService {
-	return c.Client.XijingDeriveClickEffectApi
-}
-
-func (c *SDKClient) XijingDeriveRole() *api.XijingDeriveRoleApiService {
-	return c.Client.XijingDeriveRoleApi
-}
-
-func (c *SDKClient) XijingDeriveTempToken() *api.XijingDeriveTempTokenApiService {
-	return c.Client.XijingDeriveTempTokenApi
-}
-
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {
 	return c.Client.XijingPageApi
 }

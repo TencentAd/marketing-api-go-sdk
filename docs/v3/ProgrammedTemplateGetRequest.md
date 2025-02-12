@@ -5,8 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
 **MaterialDeriveId** | **int64** |  | [optional] [default to null]
-**MaterialGroupId** | **int64** |  | [optional] [default to null]
-**MaterialDerivePreviewId** | **int64** |  | [optional] [default to null]
+**MaterialPreviewId** | **int64** |  | [optional] [default to null]
 **TemplateIdList** | **[]int64** |  | [optional] [default to null]
 **KeyWord** | **string** |  | [optional] [default to null]
 **SortBy** | [**[]SortByStruct**](sort_by_struct.md) |  | [optional] [default to null]

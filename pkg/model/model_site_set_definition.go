@@ -70,4 +70,5 @@ const (
 	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
 	SiteSetDefinition_FREETRADE_QQ               SiteSetDefinition = "SITE_SET_FREETRADE_QQ"
 	SiteSetDefinition_YUNXUAN                    SiteSetDefinition = "SITE_SET_YUNXUAN"
+	SiteSetDefinition_EXPAND                     SiteSetDefinition = "SITE_SET_EXPAND"
 )

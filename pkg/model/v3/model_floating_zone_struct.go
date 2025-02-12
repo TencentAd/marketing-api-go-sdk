@@ -9,7 +9,7 @@
 
 package model
 
-// 轮播组件
+// 浮层卡片结构
 type FloatingZoneStruct struct {
 	FloatingZoneSwitch                *bool                    `json:"floating_zone_switch,omitempty"`
 	FloatingZoneImageId               *string                  `json:"floating_zone_image_id,omitempty"`

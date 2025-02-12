@@ -9,7 +9,7 @@
 
 package model
 
-// 轮播集
+// 多卡轮播结构
 type FloatingZoneListStruct struct {
 	List *[]FloatingZoneStruct `json:"list,omitempty"`
 }

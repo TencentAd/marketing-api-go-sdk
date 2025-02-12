@@ -72,5 +72,9 @@ const (
 	LinkUrlLinkNameType_CONTACT_CUSTOMER_SERVICE        LinkUrlLinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkUrlLinkNameType_CONTACT_BUSINESS                LinkUrlLinkNameType = "CONTACT_BUSINESS"
 	LinkUrlLinkNameType_GO_SCAN                         LinkUrlLinkNameType = "GO_SCAN"
+	LinkUrlLinkNameType_PICK_GIFT                       LinkUrlLinkNameType = "PICK_GIFT"
+	LinkUrlLinkNameType_SELECT_GIFT                     LinkUrlLinkNameType = "SELECT_GIFT"
+	LinkUrlLinkNameType_GIVING_GIFT                     LinkUrlLinkNameType = "GIVING_GIFT"
+	LinkUrlLinkNameType_GIVE_FRIEND                     LinkUrlLinkNameType = "GIVE_FRIEND"
 	LinkUrlLinkNameType_LINK_NAME_TEXT_TEMPLATE         LinkUrlLinkNameType = "LINK_NAME_TEXT_TEMPLATE"
 )

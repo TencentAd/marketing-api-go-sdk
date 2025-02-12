@@ -21,4 +21,5 @@ type ComponentsGetListStruct struct {
 	ComponentCustomName *string                 `json:"component_custom_name,omitempty"`
 	GenerationType      ComponentGenerationType `json:"generation_type,omitempty"`
 	IsDeleted           *bool                   `json:"is_deleted,omitempty"`
+	PotentialStatus     CommonPotentialStatus   `json:"potential_status,omitempty"`
 }

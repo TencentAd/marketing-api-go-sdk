@@ -14,7 +14,7 @@ type ConversionLinkNodeStruct struct {
 	ConversionLinkNodeId     *int64                       `json:"conversion_link_node_id,omitempty"`
 	ConversionLinkNodeName   *string                      `json:"conversion_link_node_name,omitempty"`
 	ConversionLinkNodeIndex  *int64                       `json:"conversion_link_node_index,omitempty"`
-	ConversionLinkActionType ActionType                   `json:"conversion_link_action_type,omitempty"`
+	ConversionLinkActionType *[]string                    `json:"conversion_link_action_type,omitempty"`
 	CarrierId                *int64                       `json:"carrier_id,omitempty"`
 	CarrierName              *string                      `json:"carrier_name,omitempty"`
 	DataSource               ConversionLinkNodeDataSource `json:"data_source,omitempty"`

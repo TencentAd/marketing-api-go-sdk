@@ -10,5 +10,5 @@
 package model
 
 type WalletGetResponseData struct {
-	WalletInfo *WalletInfo `json:"wallet_info,omitempty"`
+	WalletInfo *WalletGetWalletInfo `json:"wallet_info,omitempty"`
 }

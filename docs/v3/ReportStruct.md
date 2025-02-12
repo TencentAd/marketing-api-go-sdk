@@ -766,6 +766,7 @@ Name | Type | Description | Notes
 **PurchaseFirstAllDedupTouch24hPv** | **int64** |  | [optional] [default to null]
 **PurchaseFirstAllDedupTouch24hAmount** | **int64** |  | [optional] [default to null]
 **PurchaseFirstAllDedupTouch24hUnitPrice** | **int64** |  | [optional] [default to null]
+**PayingUsersD1Cost** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]

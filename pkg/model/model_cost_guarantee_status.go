@@ -20,4 +20,5 @@ const (
 	CostGuaranteeStatus_FINISHED   CostGuaranteeStatus = "COST_GUARANTEE_STATUS_FINISHED"
 	CostGuaranteeStatus_CONFIRMING CostGuaranteeStatus = "COST_GUARANTEE_STATUS_CONFIRMING"
 	CostGuaranteeStatus_SUCCEEDED  CostGuaranteeStatus = "COST_GUARANTEE_STATUS_SUCCEEDED"
+	CostGuaranteeStatus_FROZEN     CostGuaranteeStatus = "COST_GUARANTEE_STATUS_FROZEN"
 )

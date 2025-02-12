@@ -22,4 +22,5 @@ const (
 	ConversionScene_QQ_MINI_GAME        ConversionScene = "CONVERSION_SCENE_QQ_MINI_GAME"
 	ConversionScene_QUICK_APP           ConversionScene = "CONVERSION_SCENE_QUICK_APP"
 	ConversionScene_WE_COM              ConversionScene = "CONVERSION_SCENE_WE_COM"
+	ConversionScene_HARMONY             ConversionScene = "CONVERSION_SCENE_HARMONY"
 )

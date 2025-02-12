@@ -55,4 +55,5 @@ const (
 	IntSiteSetDefinition_QQSHOPPING           IntSiteSetDefinition = "SITE_SET_QQSHOPPING"
 	IntSiteSetDefinition_PCAD                 IntSiteSetDefinition = "SITE_SET_PCAD"
 	IntSiteSetDefinition_YUNXUAN              IntSiteSetDefinition = "SITE_SET_YUNXUAN"
+	IntSiteSetDefinition_EXPAND               IntSiteSetDefinition = "SITE_SET_EXPAND"
 )

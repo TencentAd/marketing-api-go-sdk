@@ -9,7 +9,7 @@
 
 package model
 
-// 轮播组件
+// 浮层卡片组件
 type FloatingZoneComponent struct {
 	ComponentId *int64              `json:"component_id,omitempty"`
 	Value       *FloatingZoneStruct `json:"value,omitempty"`

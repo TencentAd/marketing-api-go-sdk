@@ -49,6 +49,7 @@ const (
 	ComponentType_MINI_CARD_LINK             ComponentType = "MINI_CARD_LINK"
 	ComponentType_SUBLINK                    ComponentType = "SUBLINK"
 	ComponentType_CONSULT_LINK               ComponentType = "CONSULT_LINK"
+	ComponentType_SHOP_PRODUCT_CARD          ComponentType = "SHOP_PRODUCT_CARD"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"

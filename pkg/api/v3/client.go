@@ -382,6 +382,12 @@ type APIClient struct {
 
 	WalletApi *WalletApiService
 
+	WalletBasicInfoApi *WalletBasicInfoApiService
+
+	WalletGetBindingAdvertiserApi *WalletGetBindingAdvertiserApiService
+
+	WalletInvoiceApi *WalletInvoiceApiService
+
 	WalletTransferApi *WalletTransferApiService
 
 	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
@@ -626,6 +632,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideoChannelLiveDataApi = (*VideoChannelLiveDataApiService)(&c.common)
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WalletApi = (*WalletApiService)(&c.common)
+	c.WalletBasicInfoApi = (*WalletBasicInfoApiService)(&c.common)
+	c.WalletGetBindingAdvertiserApi = (*WalletGetBindingAdvertiserApiService)(&c.common)
+	c.WalletInvoiceApi = (*WalletInvoiceApiService)(&c.common)
 	c.WalletTransferApi = (*WalletTransferApiService)(&c.common)
 	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
 	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)

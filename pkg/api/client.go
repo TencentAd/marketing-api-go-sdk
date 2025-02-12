@@ -392,12 +392,6 @@ type APIClient struct {
 
 	XijingComplexTemplateApi *XijingComplexTemplateApiService
 
-	XijingDeriveClickEffectApi *XijingDeriveClickEffectApiService
-
-	XijingDeriveRoleApi *XijingDeriveRoleApiService
-
-	XijingDeriveTempTokenApi *XijingDeriveTempTokenApiService
-
 	XijingPageApi *XijingPageApiService
 
 	XijingPageByComponentsApi *XijingPageByComponentsApiService
@@ -601,9 +595,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WeixinOfficialAccountsUpgradeStatusApi = (*WeixinOfficialAccountsUpgradeStatusApiService)(&c.common)
 	c.WildcardsApi = (*WildcardsApiService)(&c.common)
 	c.XijingComplexTemplateApi = (*XijingComplexTemplateApiService)(&c.common)
-	c.XijingDeriveClickEffectApi = (*XijingDeriveClickEffectApiService)(&c.common)
-	c.XijingDeriveRoleApi = (*XijingDeriveRoleApiService)(&c.common)
-	c.XijingDeriveTempTokenApi = (*XijingDeriveTempTokenApiService)(&c.common)
 	c.XijingPageApi = (*XijingPageApiService)(&c.common)
 	c.XijingPageByComponentsApi = (*XijingPageByComponentsApiService)(&c.common)
 	c.XijingPageInteractiveApi = (*XijingPageInteractiveApiService)(&c.common)

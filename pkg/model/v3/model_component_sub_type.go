@@ -112,6 +112,7 @@ const (
 	ComponentSubType_MINI_CARD_LINK                           ComponentSubType = "MINI_CARD_LINK"
 	ComponentSubType_FLOATING_ZONE_IMAGE_TEXT_LIST            ComponentSubType = "FLOATING_ZONE_IMAGE_TEXT_LIST"
 	ComponentSubType_CONSULT_LINK                             ComponentSubType = "CONSULT_LINK"
+	ComponentSubType_SHOP_PRODUCT_CARD                        ComponentSubType = "SHOP_PRODUCT_CARD"
 	ComponentSubType_BRAND                                    ComponentSubType = "BRAND"
 	ComponentSubType_BRAND_PAGE                               ComponentSubType = "BRAND_PAGE"
 	ComponentSubType_BRAND_SEARCH                             ComponentSubType = "BRAND_SEARCH"

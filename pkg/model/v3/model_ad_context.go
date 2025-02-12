@@ -20,4 +20,5 @@ type AdContext struct {
 	SiteSet                *[]string               `json:"site_set,omitempty"`
 	CreativeTemplateId     *int64                  `json:"creative_template_id,omitempty"`
 	PromotedAssetType      PromotedAssetType       `json:"promoted_asset_type,omitempty"`
+	ComponentType          ComponentType           `json:"component_type,omitempty"`
 }
