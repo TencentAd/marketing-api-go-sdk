@@ -169,6 +169,10 @@ func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
 
+func (c *SDKClient) ComponentDefaultSharing() *api.ComponentDefaultSharingApiService {
+	return c.Client.ComponentDefaultSharingApi
+}
+
 func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReviewApiService {
 	return c.Client.ComponentElementUrgeReviewApi
 }

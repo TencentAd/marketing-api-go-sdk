@@ -15,35 +15,38 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type ProgrammedAddExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.ProgrammedAddRequest
+type ComponentDefaultSharingGetExample struct {
+	TAds                           *ads.SDKClient
+	AccessToken                    string
+	OrganizationId                 int64
+	ComponentDefaultSharingGetOpts *api.ComponentDefaultSharingGetOpts
 }
 
-func (e *ProgrammedAddExample) Init() {
+func (e *ComponentDefaultSharingGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.ProgrammedAddRequest{}
+	e.OrganizationId = 789
+	e.ComponentDefaultSharingGetOpts = &api.ComponentDefaultSharingGetOpts{}
 }
 
-func (e *ProgrammedAddExample) RunExample() (model.ProgrammedAddResponseData, http.Header, error) {
+func (e *ComponentDefaultSharingGetExample) RunExample() (model.ComponentDefaultSharingGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Programmed().Add(ctx, e.Data)
+	return tads.ComponentDefaultSharing().Get(ctx, e.OrganizationId, e.ComponentDefaultSharingGetOpts)
 }
 
 func main() {
-	e := &ProgrammedAddExample{}
+	e := &ComponentDefaultSharingGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

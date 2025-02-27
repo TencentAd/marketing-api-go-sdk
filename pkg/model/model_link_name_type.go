@@ -70,9 +70,9 @@ const (
 	LinkNameType_CONTACT_CUSTOMER_SERVICE        LinkNameType = "CONTACT_CUSTOMER_SERVICE"
 	LinkNameType_CONTACT_BUSINESS                LinkNameType = "CONTACT_BUSINESS"
 	LinkNameType_GO_SCAN                         LinkNameType = "GO_SCAN"
-	LinkNameType_LINK_NAME_TEXT_TEMPLATE         LinkNameType = "LINK_NAME_TEXT_TEMPLATE"
 	LinkNameType_PICK_GIFT                       LinkNameType = "PICK_GIFT"
 	LinkNameType_SELECT_GIFT                     LinkNameType = "SELECT_GIFT"
 	LinkNameType_GIVING_GIFT                     LinkNameType = "GIVING_GIFT"
 	LinkNameType_GIVE_FRIEND                     LinkNameType = "GIVE_FRIEND"
+	LinkNameType_LINK_NAME_TEXT_TEMPLATE         LinkNameType = "LINK_NAME_TEXT_TEMPLATE"
 )

@@ -1,4 +1,4 @@
-# ProgrammedAddResponse
+# ComponentDefaultSharingGetResponse
 
 ## Properties
 Name | Type | Description | Notes
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Message** | **string** |  | [optional] [default to null]
 **MessageCn** | **string** |  | [optional] [default to null]
 **Errors** | [**[]ApiErrorStruct**](api_error_struct.md) |  | [optional] [default to null]
-**Data** | [***ProgrammedAddResponseData**](ProgrammedAddResponseData.md) |  | [optional] [default to null]
+**Data** | [***ComponentDefaultSharingGetResponseData**](ComponentDefaultSharingGetResponseData.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -20,30 +20,30 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type ProgrammedUpdateExample struct {
+type ComponentDefaultSharingUpdateExample struct {
 	TAds        *ads.SDKClient
 	AccessToken string
-	Data        model.ProgrammedUpdateRequest
+	Data        model.ComponentDefaultSharingUpdateRequest
 }
 
-func (e *ProgrammedUpdateExample) Init() {
+func (e *ComponentDefaultSharingUpdateExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.ProgrammedUpdateRequest{}
+	e.Data = model.ComponentDefaultSharingUpdateRequest{}
 }
 
-func (e *ProgrammedUpdateExample) RunExample() (model.ProgrammedUpdateResponseData, http.Header, error) {
+func (e *ComponentDefaultSharingUpdateExample) RunExample() (model.ComponentDefaultSharingUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Programmed().Update(ctx, e.Data)
+	return tads.ComponentDefaultSharing().Update(ctx, e.Data)
 }
 
 func main() {
-	e := &ProgrammedUpdateExample{}
+	e := &ComponentDefaultSharingUpdateExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

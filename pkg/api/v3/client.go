@@ -126,6 +126,8 @@ type APIClient struct {
 
 	CommentListApi *CommentListApiService
 
+	ComponentDefaultSharingApi *ComponentDefaultSharingApiService
+
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
@@ -504,6 +506,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
+	c.ComponentDefaultSharingApi = (*ComponentDefaultSharingApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
 	c.ComponentSharingApi = (*ComponentSharingApiService)(&c.common)

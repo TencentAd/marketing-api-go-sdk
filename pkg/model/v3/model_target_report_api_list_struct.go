@@ -733,6 +733,11 @@ type TargetReportApiListStruct struct {
 	PurchaseFirstAllDedupTouch24hAmount        *int64   `json:"purchase_first_all_dedup_touch_24h_amount,omitempty"`
 	PurchaseFirstAllDedupTouch24hUnitPrice     *int64   `json:"purchase_first_all_dedup_touch_24h_unit_price,omitempty"`
 	PayingUsersD1Cost                          *int64   `json:"paying_users_d1_cost,omitempty"`
+	ChannelsLiveEleCommodityClkPlaPv           *int64   `json:"channels_live_ele_commodity_clk_pla_pv,omitempty"`
+	ChannelsLiveEleCommodityClkPlaDedupPv      *int64   `json:"channels_live_ele_commodity_clk_pla_dedup_pv,omitempty"`
+	ClkWechatShopPv                            *int64   `json:"clk_wechat_shop_pv,omitempty"`
+	ClkTopicinfoPv                             *int64   `json:"clk_topicinfo_pv,omitempty"`
+	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

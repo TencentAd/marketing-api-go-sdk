@@ -9,6 +9,6 @@
 
 package model
 
-type ProgrammedUpdateResponseData struct {
-	MaterialDeriveId *int64 `json:"material_derive_id,omitempty"`
+type ComponentDefaultSharingUpdateResponseData struct {
+	DefaultSharedType DefaultSharedType `json:"default_shared_type,omitempty"`
 }

@@ -9,7 +9,6 @@
 
 package model
 
-// 素材组信息
-type MaterialGroupCreateStruct struct {
-	Materials *[]MaterialUpdateStruct `json:"materials,omitempty"`
+type ComponentDefaultSharingGetResponseData struct {
+	DefaultSharedType DefaultSharedType `json:"default_shared_type,omitempty"`
 }

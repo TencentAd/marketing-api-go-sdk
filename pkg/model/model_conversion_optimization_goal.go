@@ -33,4 +33,5 @@ const (
 	ConversionOptimizationGoal_30DAYLONGTERMPURCHASEROAS       ConversionOptimizationGoal = "GOAL_30DAY_LONGTERM_PURCHASE_ROAS"
 	ConversionOptimizationGoal_QYT_7_DAY_LIVE_STREAM_DEAL_ROAS ConversionOptimizationGoal = "GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS"
 	ConversionOptimizationGoal_WITHDRAW_DEPOSITS_ROAS          ConversionOptimizationGoal = "GOAL_WITHDRAW_DEPOSITS_ROAS"
+	ConversionOptimizationGoal_1DAYPURCHASEMONETIZATIONROAS    ConversionOptimizationGoal = "GOAL_1DAY_PURCHASE_MONETIZATION_ROAS"
 )
