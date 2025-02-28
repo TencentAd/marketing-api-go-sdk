@@ -774,6 +774,8 @@ Name | Type | Description | Notes
 **ClkLearnMorePv** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
+**OpenAccountPv** | **int64** |  | [optional] [default to null]
+**OpenAccountPvCost** | **int64** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]
 **DynamicCreativeName** | **string** |  | [optional] [default to null]
 **ComponentId** | **int64** |  | [optional] [default to null]

@@ -782,6 +782,8 @@ type ReportStruct struct {
 	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
+	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
+	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
 	DynamicCreativeName                        *string  `json:"dynamic_creative_name,omitempty"`
 	ComponentId                                *int64   `json:"component_id,omitempty"`

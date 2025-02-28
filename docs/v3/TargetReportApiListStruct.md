@@ -730,6 +730,8 @@ Name | Type | Description | Notes
 **ClkWechatShopPv** | **int64** |  | [optional] [default to null]
 **ClkTopicinfoPv** | **int64** |  | [optional] [default to null]
 **ClkLearnMorePv** | **int64** |  | [optional] [default to null]
+**OpenAccountPv** | **int64** |  | [optional] [default to null]
+**OpenAccountPvCost** | **int64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

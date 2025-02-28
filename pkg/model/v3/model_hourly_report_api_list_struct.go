@@ -780,6 +780,8 @@ type HourlyReportApiListStruct struct {
 	ClkWechatShopPv                            *int64   `json:"clk_wechat_shop_pv,omitempty"`
 	ClkTopicinfoPv                             *int64   `json:"clk_topicinfo_pv,omitempty"`
 	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
+	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
+	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

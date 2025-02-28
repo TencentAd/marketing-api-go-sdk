@@ -22,4 +22,5 @@ type ComponentsGetListStruct struct {
 	GenerationType      ComponentGenerationType `json:"generation_type,omitempty"`
 	IsDeleted           *bool                   `json:"is_deleted,omitempty"`
 	PotentialStatus     CommonPotentialStatus   `json:"potential_status,omitempty"`
+	DisableMessage      *string                 `json:"disable_message,omitempty"`
 }

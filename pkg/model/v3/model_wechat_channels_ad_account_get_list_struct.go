@@ -26,4 +26,5 @@ type WechatChannelsAdAccountGetListStruct struct {
 	FinderFailMsg             *string                                 `json:"finder_fail_msg,omitempty"`
 	FinderFailRet             *int64                                  `json:"finder_fail_ret,omitempty"`
 	WechatChannelsAccountId   *string                                 `json:"wechat_channels_account_id,omitempty"`
+	LogoutTimeSecond          *int64                                  `json:"logout_time_second,omitempty"`
 }
