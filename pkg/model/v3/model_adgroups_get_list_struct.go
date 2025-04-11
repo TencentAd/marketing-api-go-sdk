@@ -85,4 +85,6 @@ type AdgroupsGetListStruct struct {
 	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
 	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
 	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
+	EnableSteadyExploration           *bool                       `json:"enable_steady_exploration,omitempty"`
+	AdxRealtimeType                   AdxRealtimeType             `json:"adx_realtime_type,omitempty"`
 }

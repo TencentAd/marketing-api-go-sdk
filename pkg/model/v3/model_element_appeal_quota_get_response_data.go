@@ -10,8 +10,9 @@
 package model
 
 type ElementAppealQuotaGetResponseData struct {
-	AccountId    *int64 `json:"account_id,omitempty"`
-	HasPrivilege *int64 `json:"has_privilege,omitempty"`
-	DailyQuota   *int64 `json:"daily_quota,omitempty"`
-	LeaveQuota   *int64 `json:"leave_quota,omitempty"`
+	AccountId          *int64  `json:"account_id,omitempty"`
+	HasPrivilege       *int64  `json:"has_privilege,omitempty"`
+	DailyQuota         *int64  `json:"daily_quota,omitempty"`
+	LeaveQuota         *int64  `json:"leave_quota,omitempty"`
+	QuotaCalculateRule *string `json:"quota_calculate_rule,omitempty"`
 }

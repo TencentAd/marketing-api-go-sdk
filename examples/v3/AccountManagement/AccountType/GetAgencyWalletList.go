@@ -25,6 +25,8 @@ type AgencyWalletListGetExample struct {
 	TAds                    *ads.SDKClient
 	AccessToken             string
 	AccountId               int64
+	Page                    int64
+	PageSize                int64
 	AgencyWalletListGetOpts *api.AgencyWalletListGetOpts
 }
 
@@ -35,6 +37,8 @@ func (e *AgencyWalletListGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = 789
+	e.Page = 789
+	e.PageSize = 789
 	e.AgencyWalletListGetOpts = &api.AgencyWalletListGetOpts{}
 }
 
@@ -42,7 +46,7 @@ func (e *AgencyWalletListGetExample) RunExample() (model.AgencyWalletListGetResp
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AgencyWalletList().Get(ctx, e.AccountId, e.AgencyWalletListGetOpts)
+	return tads.AgencyWalletList().Get(ctx, e.AccountId, e.Page, e.PageSize, e.AgencyWalletListGetOpts)
 }
 
 func main() {

@@ -124,6 +124,7 @@ const (
 	LandingPageType_LANDING_PAGE_TYPE_NOT_USED                        LandingPageType = "LANDING_PAGE_TYPE_NOT_USED"
 	LandingPageType_LANDING_PAGE_TYPE_CUSTOM_TV                       LandingPageType = "LANDING_PAGE_TYPE_CUSTOM_TV"
 	LandingPageType_LANDING_PAGE_TYPE_APP_HARMONY                     LandingPageType = "LANDING_PAGE_TYPE_APP_HARMONY"
+	LandingPageType_LANDING_PAGE_TYPE_WECHAT_SHOP                     LandingPageType = "LANDING_PAGE_TYPE_WECHAT_SHOP"
 	LandingPageType_DEFAULT                                           LandingPageType = "DEFAULT"
 	LandingPageType_DEEP_LINK_IOS                                     LandingPageType = "DEEP_LINK_IOS"
 	LandingPageType_DEEP_LINK_ANDROID                                 LandingPageType = "DEEP_LINK_ANDROID"

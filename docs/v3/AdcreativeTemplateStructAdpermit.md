@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **SupportMpa** | **bool** |  | [optional] [default to null]
 **SupportMpaImageTemplate** | **bool** |  | [optional] [default to null]
 **SupportMpaVideoTemplate** | **bool** |  | [optional] [default to null]
+**CreativePermissions** | [***CreativePermissions**](creative_permissions.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

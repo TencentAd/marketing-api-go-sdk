@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AgencyWalletListGet**
-> AgencyWalletListGetResponse AgencyWalletListGet(ctx, accountId, optional)
+> AgencyWalletListGetResponse AgencyWalletListGet(ctx, accountId, page, pageSize, optional)
 获取代理商创建的共享钱包信息列表
 
 ### Required Parameters
@@ -17,6 +17,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
+  **page** | **int64**|  | 
+  **pageSize** | **int64**|  | 
  **optional** | ***AgencyWalletListApiAgencyWalletListGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -24,6 +26,8 @@ Optional parameters are passed through a pointer to a AgencyWalletListApiAgencyW
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+
+
 
  **mdmId** | **optional.Int64**|  | 
  **walletId** | **optional.Int64**|  | 

@@ -689,6 +689,18 @@ func (c *SDKClient) WalletBasicInfo() *api.WalletBasicInfoApiService {
 	return c.Client.WalletBasicInfoApi
 }
 
+func (c *SDKClient) WalletBindAdvertiser() *api.WalletBindAdvertiserApiService {
+	return c.Client.WalletBindAdvertiserApi
+}
+
+func (c *SDKClient) WalletCreate() *api.WalletCreateApiService {
+	return c.Client.WalletCreateApi
+}
+
+func (c *SDKClient) WalletEdit() *api.WalletEditApiService {
+	return c.Client.WalletEditApi
+}
+
 func (c *SDKClient) WalletGetBindingAdvertiser() *api.WalletGetBindingAdvertiserApiService {
 	return c.Client.WalletGetBindingAdvertiserApi
 }

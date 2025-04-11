@@ -63,6 +63,9 @@ const (
 	PromotedAssetAttrKey_TRAFFIC_CAR_VENDOR                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_VENDOR"
 	PromotedAssetAttrKey_TRAFFIC_CAR_GUIDING_PRICE                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_GUIDING_PRICE"
 	PromotedAssetAttrKey_TRAFFIC_CAR_LISTING_DATE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_LISTING_DATE"
+	PromotedAssetAttrKey_TRAFFIC_CAR_BRAND_ID                                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_BRAND_ID"
+	PromotedAssetAttrKey_TRAFFIC_CAR_ENERGY_TYPE_SUBDIVISION                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_ENERGY_TYPE_SUBDIVISION"
+	PromotedAssetAttrKey_TRAFFIC_CAR_MODEL_LEVEL_SUBDIVISION                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_LEVEL_SUBDIVISION"
 	PromotedAssetAttrKey_LOCAL_STORE_POI_ID                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LOCAL_STORE_POI_ID"
 	PromotedAssetAttrKey_MINIGAME_ID                                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINIGAME_ID"
 	PromotedAssetAttrKey_CONSUMER_PRODUCT_COMMODITY_TRADING_URL                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_URL"
@@ -187,6 +190,7 @@ const (
 	PromotedAssetAttrKey_ENTERPRISE_SERVICES_DEMANDS                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ENTERPRISE_SERVICES_DEMANDS"
 	PromotedAssetAttrKey_ENTERPRISE_SERVICES_TICKET_TYPE                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ENTERPRISE_SERVICES_TICKET_TYPE"
 	PromotedAssetAttrKey_ENTERPRISE_SERVICES_EXHIBITION_TIME                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ENTERPRISE_SERVICES_EXHIBITION_TIME"
+	PromotedAssetAttrKey_ENTERPRISE_SERVICES_TARGET_AREA                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_ENTERPRISE_SERVICES_TARGET_AREA"
 	PromotedAssetAttrKey_EXHIBITION_BOOTH_DESIGN_CATE_NAME                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EXHIBITION_BOOTH_DESIGN_CATE_NAME"
 	PromotedAssetAttrKey_EXHIBITION_BOOTH_DESIGN_TICKET_TYPE                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EXHIBITION_BOOTH_DESIGN_TICKET_TYPE"
 	PromotedAssetAttrKey_EXHIBITION_BOOTH_DESIGN_START_TIME                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EXHIBITION_BOOTH_DESIGN_START_TIME"
@@ -404,4 +408,5 @@ const (
 	PromotedAssetAttrKey_CAR_ECOLOGY_SERVICE_TYPE                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_SERVICE_TYPE"
 	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_CATE_NAME                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_CATE_NAME"
 	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_PRODUCT_HASH_ID                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_PRODUCT_HASH_ID"
+	PromotedAssetAttrKey_WECHAT_STORE_PRODUCT_SET_ID                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_STORE_PRODUCT_SET_ID"
 )

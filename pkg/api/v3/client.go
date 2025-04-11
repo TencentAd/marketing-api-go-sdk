@@ -386,6 +386,12 @@ type APIClient struct {
 
 	WalletBasicInfoApi *WalletBasicInfoApiService
 
+	WalletBindAdvertiserApi *WalletBindAdvertiserApiService
+
+	WalletCreateApi *WalletCreateApiService
+
+	WalletEditApi *WalletEditApiService
+
 	WalletGetBindingAdvertiserApi *WalletGetBindingAdvertiserApiService
 
 	WalletInvoiceApi *WalletInvoiceApiService
@@ -636,6 +642,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.VideosApi = (*VideosApiService)(&c.common)
 	c.WalletApi = (*WalletApiService)(&c.common)
 	c.WalletBasicInfoApi = (*WalletBasicInfoApiService)(&c.common)
+	c.WalletBindAdvertiserApi = (*WalletBindAdvertiserApiService)(&c.common)
+	c.WalletCreateApi = (*WalletCreateApiService)(&c.common)
+	c.WalletEditApi = (*WalletEditApiService)(&c.common)
 	c.WalletGetBindingAdvertiserApi = (*WalletGetBindingAdvertiserApiService)(&c.common)
 	c.WalletInvoiceApi = (*WalletInvoiceApiService)(&c.common)
 	c.WalletTransferApi = (*WalletTransferApiService)(&c.common)

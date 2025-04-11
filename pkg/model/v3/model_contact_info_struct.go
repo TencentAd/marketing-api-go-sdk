@@ -13,4 +13,5 @@ package model
 type ContactInfoStruct struct {
 	AvatarName *string `json:"avatar_name,omitempty"`
 	Contact    *string `json:"contact,omitempty"`
+	Status     *int64  `json:"status,omitempty"`
 }

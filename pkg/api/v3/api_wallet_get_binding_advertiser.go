@@ -34,6 +34,8 @@ WalletGetBindingAdvertiserApiService 查询单个共享钱包下的关联账户�
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param walletId
+ * @param page
+ * @param pageSize
  * @param optional nil or *WalletGetBindingAdvertiserGetOpts - Optional Parameters:
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
@@ -44,7 +46,7 @@ type WalletGetBindingAdvertiserGetOpts struct {
 	Fields optional.Interface
 }
 
-func (a *WalletGetBindingAdvertiserApiService) Get(ctx context.Context, accountId int64, walletId int64, localVarOptionals *WalletGetBindingAdvertiserGetOpts) (WalletGetBindingAdvertiserGetResponseData, http.Header, error) {
+func (a *WalletGetBindingAdvertiserApiService) Get(ctx context.Context, accountId int64, walletId int64, page int64, pageSize int64, localVarOptionals *WalletGetBindingAdvertiserGetOpts) (WalletGetBindingAdvertiserGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -64,6 +66,8 @@ func (a *WalletGetBindingAdvertiserApiService) Get(ctx context.Context, accountI
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("wallet_id", parameterToString(walletId, ""))
+	localVarQueryParams.Add("page", parameterToString(page, ""))
+	localVarQueryParams.Add("page_size", parameterToString(pageSize, ""))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

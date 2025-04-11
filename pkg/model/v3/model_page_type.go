@@ -48,6 +48,7 @@ const (
 	PageType_WECHAT_CHANNELS_FOLLOW_ACCOUNT PageType = "PAGE_TYPE_WECHAT_CHANNELS_FOLLOW_ACCOUNT"
 	PageType_WECHAT_CHANNELS_SHOP_PRODUCT   PageType = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	PageType_APP_HARMONY                    PageType = "PAGE_TYPE_APP_HARMONY"
+	PageType_WECHAT_SHOP                    PageType = "PAGE_TYPE_WECHAT_SHOP"
 	PageType_OFFICIAL                       PageType = "PAGE_TYPE_OFFICIAL"
 	PageType_NOT_USED                       PageType = "PAGE_TYPE_NOT_USED"
 )

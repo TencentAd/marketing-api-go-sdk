@@ -33,19 +33,18 @@ type WalletBasicInfoApiService service
 WalletBasicInfoApiService 通过钱包id去查询共享钱包基础信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
+ * @param walletId
  * @param optional nil or *WalletBasicInfoGetOpts - Optional Parameters:
-     * @param "WalletId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WalletBasicInfoGetResponse
 */
 
 type WalletBasicInfoGetOpts struct {
-	WalletId optional.Int64
-	Fields   optional.Interface
+	Fields optional.Interface
 }
 
-func (a *WalletBasicInfoApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WalletBasicInfoGetOpts) (WalletBasicInfoGetResponseData, http.Header, error) {
+func (a *WalletBasicInfoApiService) Get(ctx context.Context, accountId int64, walletId int64, localVarOptionals *WalletBasicInfoGetOpts) (WalletBasicInfoGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -64,9 +63,7 @@ func (a *WalletBasicInfoApiService) Get(ctx context.Context, accountId int64, lo
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	if localVarOptionals != nil && localVarOptionals.WalletId.IsSet() {
-		localVarQueryParams.Add("wallet_id", parameterToString(localVarOptionals.WalletId.Value(), ""))
-	}
+	localVarQueryParams.Add("wallet_id", parameterToString(walletId, ""))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

@@ -62,6 +62,7 @@ type AdgroupsAddRequest struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
+	DspId                             *int64                      `json:"dsp_id,omitempty"`
 	AoiOptimizationStrategy           *AoiOptimizationStrategy    `json:"aoi_optimization_strategy,omitempty"`
 	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
 	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
@@ -69,4 +70,6 @@ type AdgroupsAddRequest struct {
 	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
 	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
 	SearchExpansionSwitch             SearchExpansionSwitch       `json:"search_expansion_switch,omitempty"`
+	AdxRealtimeType                   AdxRealtimeType             `json:"adx_realtime_type,omitempty"`
+	EnableSteadyExploration           *bool                       `json:"enable_steady_exploration,omitempty"`
 }

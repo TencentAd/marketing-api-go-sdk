@@ -25,7 +25,7 @@ type SDKClient struct {
 
 // Init ...
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.7.65"
+	version := "1.7.66"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.New().String()

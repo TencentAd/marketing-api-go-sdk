@@ -142,7 +142,7 @@ ConversionsApiService 获取转化归因
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
+     * @param "Fields" (optional.Interface of []string) -
 
 @return ConversionsGetResponse
 */

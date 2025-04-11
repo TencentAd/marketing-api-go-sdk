@@ -77,6 +77,8 @@ Name | Type | Description | Notes
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
+**EnableSteadyExploration** | **bool** |  | [optional] [default to null]
+**AdxRealtimeType** | [***AdxRealtimeType**](AdxRealtimeType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

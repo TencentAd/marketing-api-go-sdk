@@ -30,4 +30,5 @@ const (
 	CalcAdGroupStatus_PRE_LOCK                   CalcAdGroupStatus = "ADGROUP_STATUS_PRE_LOCK"
 	CalcAdGroupStatus_UNLOCKING                  CalcAdGroupStatus = "ADGROUP_STATUS_UNLOCKING"
 	CalcAdGroupStatus_STOP                       CalcAdGroupStatus = "ADGROUP_STATUS_STOP"
+	CalcAdGroupStatus_LIVE_NOT_ACTIVE            CalcAdGroupStatus = "ADGROUP_STATUS_LIVE_NOT_ACTIVE"
 )

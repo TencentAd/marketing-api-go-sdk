@@ -11,6 +11,7 @@ package model
 
 // 返回
 type CollectionStruct struct {
-	UserId     *string      `json:"user_id,omitempty"`
-	UserIdType ViewerIdType `json:"user_id_type,omitempty"`
+	UserId      *string      `json:"user_id,omitempty"`
+	UserIdType  ViewerIdType `json:"user_id_type,omitempty"`
+	IsPreviewed *bool        `json:"is_previewed,omitempty"`
 }

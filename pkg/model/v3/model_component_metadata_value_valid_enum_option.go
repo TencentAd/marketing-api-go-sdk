@@ -14,4 +14,5 @@ type ComponentMetadataValueValidEnumOption struct {
 	Value        *string `json:"value,omitempty"`
 	Desc         *string `json:"desc,omitempty"`
 	Support3link *bool   `json:"support_3link,omitempty"`
+	Required     *bool   `json:"required,omitempty"`
 }

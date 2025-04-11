@@ -20,4 +20,5 @@ type SceneTargetingForWrite struct {
 	QbsearchScene               *[]string    `json:"qbsearch_scene,omitempty"`
 	WechatChannelsScene         *[]int64     `json:"wechat_channels_scene,omitempty"`
 	WechatSearchScene           *[]string    `json:"wechat_search_scene,omitempty"`
+	PcScene                     *[]string    `json:"pc_scene,omitempty"`
 }

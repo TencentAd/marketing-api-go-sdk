@@ -38,6 +38,7 @@ Name | Type | Description  | Notes
  **siteSet** | [**optional.Interface of []string**](string.md)|  | 
  **dynamicCreativeType** | **optional.String**|  | 
  **creativeTemplateId** | **optional.Int64**|  | 
+ **useNewVersion** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

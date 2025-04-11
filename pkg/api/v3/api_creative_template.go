@@ -43,6 +43,7 @@ CreativeTemplateApiService 获取创意形式详情
      * @param "SiteSet" (optional.Interface of []string) -
      * @param "DynamicCreativeType" (optional.String) -
      * @param "CreativeTemplateId" (optional.Int64) -
+     * @param "UseNewVersion" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeTemplateGetResponse
@@ -54,6 +55,7 @@ type CreativeTemplateGetOpts struct {
 	SiteSet              optional.Interface
 	DynamicCreativeType  optional.String
 	CreativeTemplateId   optional.Int64
+	UseNewVersion        optional.Bool
 	Fields               optional.Interface
 }
 
@@ -94,6 +96,9 @@ func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, m
 	}
 	if localVarOptionals != nil && localVarOptionals.CreativeTemplateId.IsSet() {
 		localVarQueryParams.Add("creative_template_id", parameterToString(localVarOptionals.CreativeTemplateId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.UseNewVersion.IsSet() {
+		localVarQueryParams.Add("use_new_version", parameterToString(localVarOptionals.UseNewVersion.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

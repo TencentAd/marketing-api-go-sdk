@@ -26,6 +26,8 @@ type WalletGetBindingAdvertiserGetExample struct {
 	AccessToken                       string
 	AccountId                         int64
 	WalletId                          int64
+	Page                              int64
+	PageSize                          int64
 	WalletGetBindingAdvertiserGetOpts *api.WalletGetBindingAdvertiserGetOpts
 }
 
@@ -37,6 +39,8 @@ func (e *WalletGetBindingAdvertiserGetExample) Init() {
 	})
 	e.AccountId = 789
 	e.WalletId = 789
+	e.Page = 789
+	e.PageSize = 789
 	e.WalletGetBindingAdvertiserGetOpts = &api.WalletGetBindingAdvertiserGetOpts{}
 }
 
@@ -44,7 +48,7 @@ func (e *WalletGetBindingAdvertiserGetExample) RunExample() (model.WalletGetBind
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.WalletGetBindingAdvertiser().Get(ctx, e.AccountId, e.WalletId, e.WalletGetBindingAdvertiserGetOpts)
+	return tads.WalletGetBindingAdvertiser().Get(ctx, e.AccountId, e.WalletId, e.Page, e.PageSize, e.WalletGetBindingAdvertiserGetOpts)
 }
 
 func main() {

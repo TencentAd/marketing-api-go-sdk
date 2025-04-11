@@ -55,6 +55,7 @@ Name | Type | Description | Notes
 **ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
 **SellStrategyId** | **int64** |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
+**DspId** | **int64** |  | [optional] [default to null]
 **AoiOptimizationStrategy** | [***AoiOptimizationStrategy**](aoi_optimization_strategy.md) |  | [optional] [default to null]
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 **AdditionalProductSpec** | [***AdditionalProductSpec**](additional_product_spec.md) |  | [optional] [default to null]
@@ -62,6 +63,8 @@ Name | Type | Description | Notes
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
 **SearchExpansionSwitch** | [***SearchExpansionSwitch**](SearchExpansionSwitch.md) |  | [optional] [default to null]
+**AdxRealtimeType** | [***AdxRealtimeType**](AdxRealtimeType.md) |  | [optional] [default to null]
+**EnableSteadyExploration** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

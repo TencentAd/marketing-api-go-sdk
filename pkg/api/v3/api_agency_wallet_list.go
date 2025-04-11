@@ -33,6 +33,8 @@ type AgencyWalletListApiService service
 AgencyWalletListApiService 获取代理商创建的共享钱包信息列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
+ * @param page
+ * @param pageSize
  * @param optional nil or *AgencyWalletListGetOpts - Optional Parameters:
      * @param "MdmId" (optional.Int64) -
      * @param "WalletId" (optional.Int64) -
@@ -47,7 +49,7 @@ type AgencyWalletListGetOpts struct {
 	Fields   optional.Interface
 }
 
-func (a *AgencyWalletListApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AgencyWalletListGetOpts) (AgencyWalletListGetResponseData, http.Header, error) {
+func (a *AgencyWalletListApiService) Get(ctx context.Context, accountId int64, page int64, pageSize int64, localVarOptionals *AgencyWalletListGetOpts) (AgencyWalletListGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -72,6 +74,8 @@ func (a *AgencyWalletListApiService) Get(ctx context.Context, accountId int64, l
 	if localVarOptionals != nil && localVarOptionals.WalletId.IsSet() {
 		localVarQueryParams.Add("wallet_id", parameterToString(localVarOptionals.WalletId.Value(), ""))
 	}
+	localVarQueryParams.Add("page", parameterToString(page, ""))
+	localVarQueryParams.Add("page_size", parameterToString(pageSize, ""))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

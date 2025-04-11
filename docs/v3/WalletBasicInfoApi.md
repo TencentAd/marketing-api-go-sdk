@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **WalletBasicInfoGet**
-> WalletBasicInfoGetResponse WalletBasicInfoGet(ctx, accountId, optional)
+> WalletBasicInfoGetResponse WalletBasicInfoGet(ctx, accountId, walletId, optional)
 通过钱包id去查询共享钱包基础信息
 
 ### Required Parameters
@@ -17,6 +17,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
+  **walletId** | **int64**|  | 
  **optional** | ***WalletBasicInfoApiWalletBasicInfoGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -25,7 +26,7 @@ Optional parameters are passed through a pointer to a WalletBasicInfoApiWalletBa
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **walletId** | **optional.Int64**|  | 
+
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

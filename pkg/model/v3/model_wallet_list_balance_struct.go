@@ -12,5 +12,5 @@ package model
 // 返回结构
 type WalletListBalanceStruct struct {
 	FundType AccountTypeMap `json:"fund_type,omitempty"`
-	Amount   *int64         `json:"amount,omitempty"`
+	Balance  *int64         `json:"balance,omitempty"`
 }

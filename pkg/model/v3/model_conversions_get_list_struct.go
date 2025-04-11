@@ -48,4 +48,5 @@ type ConversionsGetListStruct struct {
 	MustReportNodeList               *[]int64                   `json:"must_report_node_list,omitempty"`
 	RecommendReportNodeList          *[]int64                   `json:"recommend_report_node_list,omitempty"`
 	ConversionLinkNodes              *[]LinkNodeStruct          `json:"conversion_link_nodes,omitempty"`
+	CreatedByActionSet               *bool                      `json:"created_by_action_set,omitempty"`
 }

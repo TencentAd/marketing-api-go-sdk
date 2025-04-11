@@ -13,8 +13,10 @@ Name | Type | Description | Notes
 **ComponentCustomName** | **string** |  | [optional] [default to null]
 **GenerationType** | [***ComponentGenerationType**](ComponentGenerationType.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]
+**SimilarityStatus** | [***SimilarityStatus**](SimilarityStatus.md) |  | [optional] [default to null]
 **PotentialStatus** | [***CommonPotentialStatus**](CommonPotentialStatus.md) |  | [optional] [default to null]
 **DisableMessage** | **string** |  | [optional] [default to null]
+**FirstPublicationStatus** | [***FirstPublicationStatus**](FirstPublicationStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **WalletGetBindingAdvertiserGet**
-> WalletGetBindingAdvertiserGetResponse WalletGetBindingAdvertiserGet(ctx, accountId, walletId, optional)
+> WalletGetBindingAdvertiserGetResponse WalletGetBindingAdvertiserGet(ctx, accountId, walletId, page, pageSize, optional)
 查询单个共享钱包下的关联账户信息
 
 ### Required Parameters
@@ -18,6 +18,8 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
   **walletId** | **int64**|  | 
+  **page** | **int64**|  | 
+  **pageSize** | **int64**|  | 
  **optional** | ***WalletGetBindingAdvertiserApiWalletGetBindingAdvertiserGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -25,6 +27,8 @@ Optional parameters are passed through a pointer to a WalletGetBindingAdvertiser
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+
+
 
 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 

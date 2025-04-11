@@ -9,7 +9,7 @@
 
 package model
 
-//
+// 云选相关参数
 type CloudUnionSpec struct {
 	RoiGoal     DeepConversionWorthGoal `json:"roi_goal,omitempty"`
 	ExpectedRoi *float64                `json:"expected_roi,omitempty"`

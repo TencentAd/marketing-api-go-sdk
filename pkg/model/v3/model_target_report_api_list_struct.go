@@ -740,6 +740,7 @@ type TargetReportApiListStruct struct {
 	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
 	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
 	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
+	VideoOuterPlay5sRate                       *float64 `json:"video_outer_play5s_rate,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

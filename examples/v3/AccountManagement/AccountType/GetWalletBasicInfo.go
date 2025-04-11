@@ -25,6 +25,7 @@ type WalletBasicInfoGetExample struct {
 	TAds                   *ads.SDKClient
 	AccessToken            string
 	AccountId              int64
+	WalletId               int64
 	WalletBasicInfoGetOpts *api.WalletBasicInfoGetOpts
 }
 
@@ -35,6 +36,7 @@ func (e *WalletBasicInfoGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = 789
+	e.WalletId = 789
 	e.WalletBasicInfoGetOpts = &api.WalletBasicInfoGetOpts{}
 }
 
@@ -42,7 +44,7 @@ func (e *WalletBasicInfoGetExample) RunExample() (model.WalletBasicInfoGetRespon
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.WalletBasicInfo().Get(ctx, e.AccountId, e.WalletBasicInfoGetOpts)
+	return tads.WalletBasicInfo().Get(ctx, e.AccountId, e.WalletId, e.WalletBasicInfoGetOpts)
 }
 
 func main() {

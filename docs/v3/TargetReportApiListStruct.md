@@ -732,6 +732,7 @@ Name | Type | Description | Notes
 **ClkLearnMorePv** | **int64** |  | [optional] [default to null]
 **OpenAccountPv** | **int64** |  | [optional] [default to null]
 **OpenAccountPvCost** | **int64** |  | [optional] [default to null]
+**VideoOuterPlay5sRate** | **float64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

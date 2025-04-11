@@ -152,6 +152,7 @@ const (
 	TaskType_TASK_TYPE_CREATE_SCHEDULED_UPDATE_ADGROUP_DAILY_BUDGET_NEW                TaskType = "TASK_TYPE_CREATE_SCHEDULED_UPDATE_ADGROUP_DAILY_BUDGET_NEW"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW                                    TaskType = "TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW                                  TaskType = "TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW"
+	TaskType_TASK_TYPE_UPDATE_COMPONENT_SHARED                                         TaskType = "TASK_TYPE_UPDATE_COMPONENT_SHARED"
 	TaskType_TASK_TYPE_MPCONTRACT_HOTUPDATE                                            TaskType = "TASK_TYPE_MPCONTRACT_HOTUPDATE"
 	TaskType_TASK_TYPE_MPCONTRACT_HOTUPDATE_SUB_TASK                                   TaskType = "TASK_TYPE_MPCONTRACT_HOTUPDATE_SUB_TASK"
 	TaskType_TASK_TYPE_COPY_ORDER_DELETE                                               TaskType = "TASK_TYPE_COPY_ORDER_DELETE"
@@ -254,6 +255,7 @@ const (
 	TaskType_TASK_TYPE_DELETE_SCHEDULED_TASK_NEW_SUB_TASK                              TaskType = "TASK_TYPE_DELETE_SCHEDULED_TASK_NEW_SUB_TASK"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW_SUB_TASK                           TaskType = "TASK_TYPE_UPDATE_ADGROUP_ECOM_PKAM_NEW_SUB_TASK"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW_SUB_TASK                         TaskType = "TASK_TYPE_UPDATE_ADGROUP_DERIVE_CONF_NEW_SUB_TASK"
+	TaskType_TASK_TYPE_UPDATE_COMPONENT_SHARED_SUB_TASK                                TaskType = "TASK_TYPE_UPDATE_COMPONENT_SHARED_SUB_TASK"
 	TaskType_TASK_TYPE_REFRESH_CONTENT_TOKEN                                           TaskType = "TASK_TYPE_REFRESH_CONTENT_TOKEN"
 	TaskType_TASK_TYPE_REFRESH_CONTENT_CONTENT                                         TaskType = "TASK_TYPE_REFRESH_CONTENT_CONTENT"
 	TaskType_TASK_TYPE_WXGAME_GAUSS_CREATIVE                                           TaskType = "TASK_TYPE_WXGAME_GAUSS_CREATIVE"
@@ -277,5 +279,6 @@ const (
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING                                        TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING"
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK                               TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK"
 	TaskType_TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD                                      TaskType = "TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD"
+	TaskType_TASK_TYPE_INSIGHT_WECHAT_LIVE_DATA_DOWNLOAD                               TaskType = "TASK_TYPE_INSIGHT_WECHAT_LIVE_DATA_DOWNLOAD"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )
