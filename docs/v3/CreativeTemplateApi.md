@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreativeTemplateGet**](CreativeTemplateApi.md#CreativeTemplateGet) | **Get** /creative_template/get | 获取创意规格详情
+[**CreativeTemplateGet**](CreativeTemplateApi.md#CreativeTemplateGet) | **Get** /creative_template/get | 获取创意形式详情
 
 
 # **CreativeTemplateGet**
 > CreativeTemplateGetResponse CreativeTemplateGet(ctx, accountId, marketingGoal, marketingTargetType, marketingCarrierType, deliveryMode, optional)
-获取创意规格详情
+获取创意形式详情
 
 ### Required Parameters
 
@@ -38,6 +38,7 @@ Name | Type | Description  | Notes
  **siteSet** | [**optional.Interface of []string**](string.md)|  | 
  **dynamicCreativeType** | **optional.String**|  | 
  **creativeTemplateId** | **optional.Int64**|  | 
+ **useNewVersion** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

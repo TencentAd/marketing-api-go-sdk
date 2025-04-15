@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **WechatChannelsAccountId** | **string** |  | [optional] [default to null]
 **IsBlocked** | **bool** |  | [optional] [default to null]
 **IsPrivate** | **bool** |  | [optional] [default to null]
+**LogoutTimeSecond** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

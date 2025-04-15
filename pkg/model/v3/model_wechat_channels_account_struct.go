@@ -23,4 +23,8 @@ type WechatChannelsAccountStruct struct {
 	IsBlocked                 *bool                   `json:"is_blocked,omitempty"`
 	IsPrivate                 *bool                   `json:"is_private,omitempty"`
 	IsAdAcct                  *bool                   `json:"is_ad_acct,omitempty"`
+	AuthorizationBeginTime    *int64                  `json:"authorization_begin_time,omitempty"`
+	AuthorizationTtl          *int64                  `json:"authorization_ttl,omitempty"`
+	IsDisable                 *bool                   `json:"is_disable,omitempty"`
+	DisableMessage            *string                 `json:"disable_message,omitempty"`
 }

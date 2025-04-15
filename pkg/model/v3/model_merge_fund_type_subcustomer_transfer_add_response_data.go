@@ -10,8 +10,9 @@
 package model
 
 type MergeFundTypeSubcustomerTransferAddResponseData struct {
-	FundType       AccountMergeTypeMap `json:"fund_type,omitempty"`
-	Amount         *int64              `json:"amount,omitempty"`
-	ExternalBillNo *string             `json:"external_bill_no,omitempty"`
-	Time           *int64              `json:"time,omitempty"`
+	FundType        AccountMergeTypeMap `json:"fund_type,omitempty"`
+	Amount          *int64              `json:"amount,omitempty"`
+	ExternalBillNo  *string             `json:"external_bill_no,omitempty"`
+	Time            *int64              `json:"time,omitempty"`
+	RecommendAmount *int64              `json:"recommend_amount,omitempty"`
 }

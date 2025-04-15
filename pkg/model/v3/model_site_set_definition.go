@@ -9,7 +9,7 @@
 
 package model
 
-// SiteSetDefinition : 投放版位集合
+// SiteSetDefinition : 投放版位
 type SiteSetDefinition string
 
 // List of SiteSetDefinition
@@ -70,4 +70,6 @@ const (
 	SiteSetDefinition_FREETRADE_WEAPP            SiteSetDefinition = "SITE_SET_FREETRADE_WEAPP"
 	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
 	SiteSetDefinition_YUNXUAN                    SiteSetDefinition = "SITE_SET_YUNXUAN"
+	SiteSetDefinition_SEARCH_MOBILE_UNION        SiteSetDefinition = "SITE_SET_SEARCH_MOBILE_UNION"
+	SiteSetDefinition_EXPAND                     SiteSetDefinition = "SITE_SET_EXPAND"
 )

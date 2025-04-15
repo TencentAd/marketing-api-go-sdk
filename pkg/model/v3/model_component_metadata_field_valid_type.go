@@ -18,4 +18,8 @@ const (
 	ComponentMetadataFieldValidType_TEXT    ComponentMetadataFieldValidType = "TEXT"
 	ComponentMetadataFieldValidType_IMAGE   ComponentMetadataFieldValidType = "IMAGE"
 	ComponentMetadataFieldValidType_VIDEO   ComponentMetadataFieldValidType = "VIDEO"
+	ComponentMetadataFieldValidType_BARRAGE ComponentMetadataFieldValidType = "BARRAGE"
+	ComponentMetadataFieldValidType_ENUM    ComponentMetadataFieldValidType = "ENUM"
+	ComponentMetadataFieldValidType_URL     ComponentMetadataFieldValidType = "URL"
+	ComponentMetadataFieldValidType_LEADS   ComponentMetadataFieldValidType = "LEADS"
 )

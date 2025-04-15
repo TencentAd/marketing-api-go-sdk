@@ -23,7 +23,6 @@ import (
 type AsyncReportFilesGetExample struct {
 	TAds                    *ads.SDKClient
 	AccessToken             string
-	AccountId               int64
 	TaskId                  int64
 	FileId                  int64
 	AsyncReportFilesGetOpts *api.AsyncReportFilesGetOpts
@@ -35,7 +34,6 @@ func (e *AsyncReportFilesGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.TaskId = 789
 	e.FileId = 789
 	e.AsyncReportFilesGetOpts = &api.AsyncReportFilesGetOpts{}
@@ -45,7 +43,7 @@ func (e *AsyncReportFilesGetExample) RunExample() (interface{}, http.Header, err
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AsyncReportFiles().Get(ctx, e.AccountId, e.TaskId, e.FileId, e.AsyncReportFilesGetOpts)
+	return tads.AsyncReportFiles().Get(ctx, e.TaskId, e.FileId, e.AsyncReportFilesGetOpts)
 }
 
 func main() {

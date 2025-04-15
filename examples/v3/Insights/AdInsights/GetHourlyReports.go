@@ -26,7 +26,7 @@ type HourlyReportsGetExample struct {
 	AccessToken          string
 	AccountId            int64
 	Level                string
-	DateRange            model.ReportDateRange
+	DateRange            model.HourlyReportDateRange
 	GroupBy              []string
 	Fields               []string
 	HourlyReportsGetOpts *api.HourlyReportsGetOpts
@@ -40,7 +40,7 @@ func (e *HourlyReportsGetExample) Init() {
 	})
 	e.AccountId = int64(0)
 	e.Level = "REPORT_LEVEL_ADGROUP"
-	e.DateRange = model.ReportDateRange{
+	e.DateRange = model.HourlyReportDateRange{
 		StartDate: "REPORT DATE",
 		EndDate:   "REPORT DATE",
 	}

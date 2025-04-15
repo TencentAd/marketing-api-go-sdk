@@ -20,4 +20,5 @@ const (
 	SceneSpecTagsType_PAY_SCENE                       SceneSpecTagsType = "PAY_SCENE"
 	SceneSpecTagsType_MOBILE_UNION_CATEGORY           SceneSpecTagsType = "MOBILE_UNION_CATEGORY"
 	SceneSpecTagsType_WECHAT_CHANNELS_SCENE           SceneSpecTagsType = "WECHAT_CHANNELS_SCENE"
+	SceneSpecTagsType_PC_SCENE                        SceneSpecTagsType = "PC_SCENE"
 )

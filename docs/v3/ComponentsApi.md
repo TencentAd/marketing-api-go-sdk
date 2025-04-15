@@ -84,6 +84,7 @@ Name | Type | Description  | Notes
  **pageSize** | **optional.Int64**|  | 
  **isDeleted** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)|  | 
+ **componentIdFilteringMode** | **optional.String**|  | 
 
 ### Return type
 

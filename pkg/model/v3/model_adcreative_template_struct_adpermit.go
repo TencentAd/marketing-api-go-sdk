@@ -9,7 +9,7 @@
 
 package model
 
-// 创意规格和投放权限数据结构
+// 创意形式和投放权限数据结构
 type AdcreativeTemplateStructAdpermit struct {
 	CreativeTemplateId            *int64                         `json:"creative_template_id,omitempty"`
 	CreativeTemplateStyle         *string                        `json:"creative_template_style,omitempty"`
@@ -22,4 +22,5 @@ type AdcreativeTemplateStructAdpermit struct {
 	SupportMpa                    *bool                          `json:"support_mpa,omitempty"`
 	SupportMpaImageTemplate       *bool                          `json:"support_mpa_image_template,omitempty"`
 	SupportMpaVideoTemplate       *bool                          `json:"support_mpa_video_template,omitempty"`
+	CreativePermissions           *CreativePermissions           `json:"creative_permissions,omitempty"`
 }

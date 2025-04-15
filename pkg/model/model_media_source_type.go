@@ -22,4 +22,6 @@ const (
 	MediaSourceType_DERIVE          MediaSourceType = "SOURCE_TYPE_DERIVE"
 	MediaSourceType_DERIVATION      MediaSourceType = "SOURCE_TYPE_DERIVATION"
 	MediaSourceType_AIGC            MediaSourceType = "SOURCE_TYPE_AIGC"
+	MediaSourceType_HUXUAN          MediaSourceType = "SOURCE_TYPE_HUXUAN"
+	MediaSourceType_HUXUAN_DERIVE   MediaSourceType = "SOURCE_TYPE_HUXUAN_DERIVE"
 )

@@ -112,6 +112,10 @@ const (
 	ComponentSubType_MINI_CARD_LINK                           ComponentSubType = "MINI_CARD_LINK"
 	ComponentSubType_FLOATING_ZONE_IMAGE_TEXT_LIST            ComponentSubType = "FLOATING_ZONE_IMAGE_TEXT_LIST"
 	ComponentSubType_CONSULT_LINK                             ComponentSubType = "CONSULT_LINK"
+	ComponentSubType_SHOP_PRODUCT_CARD                        ComponentSubType = "SHOP_PRODUCT_CARD"
+	ComponentSubType_DYNAMIC_SHOWCASE_1                       ComponentSubType = "DYNAMIC_SHOWCASE_1"
+	ComponentSubType_DYNAMIC_SHOWCASE_2                       ComponentSubType = "DYNAMIC_SHOWCASE_2"
+	ComponentSubType_DYNAMIC_SHOWCASE_3                       ComponentSubType = "DYNAMIC_SHOWCASE_3"
 	ComponentSubType_BRAND                                    ComponentSubType = "BRAND"
 	ComponentSubType_BRAND_PAGE                               ComponentSubType = "BRAND_PAGE"
 	ComponentSubType_BRAND_SEARCH                             ComponentSubType = "BRAND_SEARCH"
@@ -145,4 +149,5 @@ const (
 	ComponentSubType_JUMP_INFO_ANDROID_QUICK_APP              ComponentSubType = "JUMP_INFO_ANDROID_QUICK_APP"
 	ComponentSubType_JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT   ComponentSubType = "JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT"
 	ComponentSubType_JUMP_INFO_QQ_MINI_GAME                   ComponentSubType = "JUMP_INFO_QQ_MINI_GAME"
+	ComponentSubType_JUMP_INFO_APP_HARMONY                    ComponentSubType = "JUMP_INFO_APP_HARMONY"
 )

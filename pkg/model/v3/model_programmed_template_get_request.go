@@ -10,12 +10,11 @@
 package model
 
 type ProgrammedTemplateGetRequest struct {
-	AccountId               *int64          `json:"account_id,omitempty"`
-	MaterialDeriveId        *int64          `json:"material_derive_id,omitempty"`
-	MaterialGroupId         *int64          `json:"material_group_id,omitempty"`
-	MaterialDerivePreviewId *int64          `json:"material_derive_preview_id,omitempty"`
-	TemplateIdList          *[]int64        `json:"template_id_list,omitempty"`
-	KeyWord                 *string         `json:"key_word,omitempty"`
-	SortBy                  *[]SortByStruct `json:"sort_by,omitempty"`
-	PageInfo                *PageInfoStruct `json:"page_info,omitempty"`
+	AccountId         *int64          `json:"account_id,omitempty"`
+	MaterialDeriveId  *int64          `json:"material_derive_id,omitempty"`
+	MaterialPreviewId *int64          `json:"material_preview_id,omitempty"`
+	TemplateIdList    *[]int64        `json:"template_id_list,omitempty"`
+	KeyWord           *string         `json:"key_word,omitempty"`
+	SortBy            *[]SortByStruct `json:"sort_by,omitempty"`
+	PageInfo          *PageInfoStruct `json:"page_info,omitempty"`
 }

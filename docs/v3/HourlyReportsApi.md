@@ -18,7 +18,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
   **level** | **string**|  | 
-  **dateRange** | [**ReportDateRange**](ReportDateRange.md)|  | 
+  **dateRange** | [**HourlyReportDateRange**](HourlyReportDateRange.md)|  | 
   **groupBy** | [**[]string**](string.md)|  | 
   **fields** | [**[]string**](string.md)|  | 
  **optional** | ***HourlyReportsApiHourlyReportsGetOpts** | optional parameters | nil if no parameters

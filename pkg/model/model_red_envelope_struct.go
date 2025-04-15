@@ -26,4 +26,5 @@ type RedEnvelopeStruct struct {
 	PlotSignImage                 *string               `json:"plot_sign_image,omitempty"`
 	PlotBrandLogo                 *string               `json:"plot_brand_logo,omitempty"`
 	PlotOriginalMaterial          *PlotOriginalMaterial `json:"plot_original_material,omitempty"`
+	RedEnvelopeBrandName          *string               `json:"red_envelope_brand_name,omitempty"`
 }

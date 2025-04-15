@@ -22,4 +22,5 @@ type SceneTargetingForWrite struct {
 	MobileUnionCategory         *[]int64     `json:"mobile_union_category,omitempty"`
 	QbsearchScene               *[]string    `json:"qbsearch_scene,omitempty"`
 	WechatChannelsScene         *[]int64     `json:"wechat_channels_scene,omitempty"`
+	PcScene                     *[]string    `json:"pc_scene,omitempty"`
 }

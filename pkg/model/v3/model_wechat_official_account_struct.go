@@ -15,4 +15,5 @@ type WechatOfficialAccountStruct struct {
 	WechatOfficialAccountName *string `json:"wechat_official_account_name,omitempty"`
 	CreatedTime               *int64  `json:"created_time,omitempty"`
 	LastModifiedTime          *int64  `json:"last_modified_time,omitempty"`
+	WechatOfficialAccountIcon *string `json:"wechat_official_account_icon,omitempty"`
 }

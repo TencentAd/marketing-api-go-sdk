@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **FundType** | [***AccountMergeTypeMap**](AccountMergeTypeMap.md) |  | [optional] [default to null]
 **Balance** | **int64** |  | [optional] [default to null]
+**BillDepositAmount** | **int64** |  | [optional] [default to null]
 **FundStatus** | [***FundStatus**](FundStatus.md) |  | [optional] [default to null]
 **RealtimeCost** | **int64** |  | [optional] [default to null]
 **EffectFunds** | [**[]EffectListStruct**](effect_list_struct.md) |  | [optional] [default to null]

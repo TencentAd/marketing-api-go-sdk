@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **WechatChannelsReserveSpec** | [***WechatChannelsReserveLivePageSpec**](wechat_channels_reserve_live_page_spec.md) |  | [optional] [default to null]
 **AndroidQuickAppSpec** | [***AndroidQuickAppPageSpec**](android_quick_app_page_spec.md) |  | [optional] [default to null]
 **WechatChannelsShopProductSpec** | [***ChannelsShopProductSpec**](channels_shop_product_spec.md) |  | [optional] [default to null]
+**WechatShopSpec** | [***WechatShopSpec**](wechat_shop_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

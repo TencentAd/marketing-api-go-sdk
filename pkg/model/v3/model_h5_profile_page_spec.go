@@ -11,5 +11,6 @@ package model
 
 // 品牌形象页
 type H5ProfilePageSpec struct {
-	PageId *int64 `json:"page_id,omitempty"`
+	PageId          *int64 `json:"page_id,omitempty"`
+	HideCompanyInfo *bool  `json:"hide_company_info,omitempty"`
 }

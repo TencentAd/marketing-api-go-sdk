@@ -681,6 +681,8 @@ Name | Type | Description | Notes
 **ProjectName** | **string** |  | [optional] [default to null]
 **PurchasePv** | **int64** |  | [optional] [default to null]
 **RegPv** | **int64** |  | [optional] [default to null]
+**OrderPv** | **int64** |  | [optional] [default to null]
+**OrderUv** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

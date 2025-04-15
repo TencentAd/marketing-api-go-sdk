@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **AsyncReportFilesGet**
-> string AsyncReportFilesGet(ctx, accountId, taskId, fileId, optional)
+> string AsyncReportFilesGet(ctx, taskId, fileId, optional)
 获取文件接口
 
 ### Required Parameters
@@ -16,7 +16,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
   **taskId** | **int64**|  | 
   **fileId** | **int64**|  | 
  **optional** | ***AsyncReportFilesApiAsyncReportFilesGetOpts** | optional parameters | nil if no parameters
@@ -28,7 +27,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

@@ -55,7 +55,7 @@ type HourlyReportsGetOpts struct {
 	PageSize  optional.Int64
 }
 
-func (a *HourlyReportsApiService) Get(ctx context.Context, accountId int64, level string, dateRange ReportDateRange, groupBy []string, fields []string, localVarOptionals *HourlyReportsGetOpts) (HourlyReportsGetResponseData, http.Header, error) {
+func (a *HourlyReportsApiService) Get(ctx context.Context, accountId int64, level string, dateRange HourlyReportDateRange, groupBy []string, fields []string, localVarOptionals *HourlyReportsGetOpts) (HourlyReportsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}

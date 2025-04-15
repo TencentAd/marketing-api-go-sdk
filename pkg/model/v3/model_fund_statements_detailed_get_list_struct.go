@@ -19,4 +19,5 @@ type FundStatementsDetailedGetListStruct struct {
 	TradeTypeExt   TradeTypeExt   `json:"trade_type_ext,omitempty"`
 	Amount         *int64         `json:"amount,omitempty"`
 	Description    *string        `json:"description,omitempty"`
+	PrimaryKey     *string        `json:"primary_key,omitempty"`
 }

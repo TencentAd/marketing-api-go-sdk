@@ -16,4 +16,5 @@ type SubcustomerTransferAddRequest struct {
 	FundType       AccountTypeMap `json:"fund_type,omitempty"`
 	ExternalBillNo *string        `json:"external_bill_no,omitempty"`
 	Memo           *string        `json:"memo,omitempty"`
+	PreFetchAmount *int64         `json:"pre_fetch_amount,omitempty"`
 }

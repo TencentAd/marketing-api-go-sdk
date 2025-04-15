@@ -25,4 +25,5 @@ type AuthListStruct struct {
 	WechatChannelsAccountId   *string                  `json:"wechat_channels_account_id,omitempty"`
 	IsBlocked                 *bool                    `json:"is_blocked,omitempty"`
 	IsPrivate                 *bool                    `json:"is_private,omitempty"`
+	LogoutTimeSecond          *int64                   `json:"logout_time_second,omitempty"`
 }

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **ConversionLinkNodeId** | **int64** |  | [optional] [default to null]
 **ConversionLinkNodeName** | **string** |  | [optional] [default to null]
 **ConversionLinkNodeIndex** | **int64** |  | [optional] [default to null]
-**ConversionLinkActionType** | [***ActionType**](ActionType.md) |  | [optional] [default to null]
+**ConversionLinkActionType** | **[]string** |  | [optional] [default to null]
 **CarrierId** | **int64** |  | [optional] [default to null]
 **CarrierName** | **string** |  | [optional] [default to null]
 **DataSource** | [***ConversionLinkNodeDataSource**](ConversionLinkNodeDataSource.md) |  | [optional] [default to null]

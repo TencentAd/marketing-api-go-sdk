@@ -24,7 +24,6 @@ import (
 type MaterialDcatagGetExample struct {
 	TAds                  *ads.SDKClient
 	AccessToken           string
-	AccountId             int64
 	MaterialDcatagGetOpts *api.MaterialDcatagGetOpts
 }
 
@@ -34,7 +33,6 @@ func (e *MaterialDcatagGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.MaterialDcatagGetOpts = &api.MaterialDcatagGetOpts{}
 }
 
@@ -42,7 +40,7 @@ func (e *MaterialDcatagGetExample) RunExample() (model.MaterialDcatagGetResponse
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialDcatag().Get(ctx, e.AccountId, e.MaterialDcatagGetOpts)
+	return tads.MaterialDcatag().Get(ctx, e.MaterialDcatagGetOpts)
 }
 
 func main() {

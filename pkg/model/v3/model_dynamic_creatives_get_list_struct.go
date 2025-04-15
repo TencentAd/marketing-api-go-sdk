@@ -20,6 +20,7 @@ type DynamicCreativesGetListStruct struct {
 	CreativeComponents         *CreativeComponents         `json:"creative_components,omitempty"`
 	ImpressionTrackingUrl      *string                     `json:"impression_tracking_url,omitempty"`
 	ClickTrackingUrl           *string                     `json:"click_tracking_url,omitempty"`
+	ProgramCreativeInfo        *ProgramCreativeInfo        `json:"program_creative_info,omitempty"`
 	PageTrackUrl               *string                     `json:"page_track_url,omitempty"`
 	ConfiguredStatus           ConfiguredStatus            `json:"configured_status,omitempty"`
 	EnableBreakthroughSiteset  *bool                       `json:"enable_breakthrough_siteset,omitempty"`

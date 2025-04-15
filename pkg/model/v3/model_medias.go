@@ -11,8 +11,9 @@ package model
 
 // 视频号动态视频
 type Medias struct {
-	ThumbUrl    *string `json:"thumb_url,omitempty"`
-	CoverUrl    *string `json:"cover_url,omitempty"`
-	Url         *string `json:"url,omitempty"`
-	Description *string `json:"description,omitempty"`
+	ThumbUrl     *string `json:"thumb_url,omitempty"`
+	CoverUrl     *string `json:"cover_url,omitempty"`
+	Url          *string `json:"url,omitempty"`
+	Description  *string `json:"description,omitempty"`
+	VideoPlayLen *int64  `json:"video_play_len,omitempty"`
 }

@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **AuditStatus** | **int64** |  | [optional] [default to null]
 **AuditMsg** | **string** |  | [optional] [default to null]
 **DcatagList** | [**[]Dactag**](dactag.md) |  | [optional] [default to null]
+**PageInfo** | [***PageInfo**](page_info.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

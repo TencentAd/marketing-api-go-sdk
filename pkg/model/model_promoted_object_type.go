@@ -47,4 +47,5 @@ const (
 	PromotedObjectType_APP_QUICK_APP              PromotedObjectType = "PROMOTED_OBJECT_TYPE_APP_QUICK_APP"
 	PromotedObjectType_WECHAT_ARTICLE             PromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_ARTICLE"
 	PromotedObjectType_WECHAT_PAY_COUPON          PromotedObjectType = "PROMOTED_OBJECT_TYPE_WECHAT_PAY_COUPON"
+	PromotedObjectType_HARMONY_APP                PromotedObjectType = "PROMOTED_OBJECT_TYPE_HARMONY_APP"
 )

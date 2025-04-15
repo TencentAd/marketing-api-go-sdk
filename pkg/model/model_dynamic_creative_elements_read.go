@@ -122,4 +122,5 @@ type DynamicCreativeElementsRead struct {
 	ImageList3ComponentOptions       *[]ImageListComponentOption        `json:"image_list3_component_options,omitempty"`
 	WechatChannelsCoverImgShowType   WechatChannelsCoverImgShowType     `json:"wechat_channels_cover_img_show_type,omitempty"`
 	MiniCardLink                     *AdCreativeMiniCardLink            `json:"mini_card_link,omitempty"`
+	RedEnvelopePacketList            *[]RedEnvelopePacketSpec           `json:"red_envelope_packet_list,omitempty"`
 }

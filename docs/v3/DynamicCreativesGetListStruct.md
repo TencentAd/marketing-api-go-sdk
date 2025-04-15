@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **CreativeComponents** | [***CreativeComponents**](creative_components.md) |  | [optional] [default to null]
 **ImpressionTrackingUrl** | **string** |  | [optional] [default to null]
 **ClickTrackingUrl** | **string** |  | [optional] [default to null]
+**ProgramCreativeInfo** | [***ProgramCreativeInfo**](program_creative_info.md) |  | [optional] [default to null]
 **PageTrackUrl** | **string** |  | [optional] [default to null]
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
 **IsDeleted** | **bool** |  | [optional] [default to null]

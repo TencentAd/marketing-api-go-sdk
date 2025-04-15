@@ -69,6 +69,7 @@ Name | Type | Description | Notes
 **ListSublinkComponentOptions** | [**[]ListSublinkComponentOption**](list_sublink_component_option.md) |  | [optional] [default to null]
 **WechatChannelsCoverImgShowType** | [***WechatChannelsCoverImgShowType**](WechatChannelsCoverImgShowType.md) |  | [optional] [default to null]
 **MiniCardLink** | [***AdCreativeMiniCardLink**](ad_creative_mini_card_link.md) |  | [optional] [default to null]
+**RedEnvelopePacketList** | [**[]RedEnvelopePacketSpec**](red_envelope_packet_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

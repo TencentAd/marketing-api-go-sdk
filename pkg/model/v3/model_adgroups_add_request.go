@@ -24,6 +24,8 @@ type AdgroupsAddRequest struct {
 	TimeSeries                        *string                     `json:"time_series,omitempty"`
 	AutomaticSiteEnabled              *bool                       `json:"automatic_site_enabled,omitempty"`
 	SiteSet                           *[]string                   `json:"site_set,omitempty"`
+	ExplorationStrategy               SiteSetExplorationStrategy  `json:"exploration_strategy,omitempty"`
+	PrioritySiteSet                   *[]string                   `json:"priority_site_set,omitempty"`
 	DailyBudget                       *int64                      `json:"daily_budget,omitempty"`
 	Targeting                         *WriteTargetingSetting      `json:"targeting,omitempty"`
 	SceneSpec                         *SceneTargetingForWrite     `json:"scene_spec,omitempty"`
@@ -49,8 +51,6 @@ type AdgroupsAddRequest struct {
 	MarketingAssetId                  *int64                      `json:"marketing_asset_id,omitempty"`
 	MarketingAssetOuterSpec           *MarketingAssetOuterSpec    `json:"marketing_asset_outer_spec,omitempty"`
 	PoiList                           *[]string                   `json:"poi_list,omitempty"`
-	ExplorationStrategy               SiteSetExplorationStrategy  `json:"exploration_strategy,omitempty"`
-	PrioritySiteSet                   *[]string                   `json:"priority_site_set,omitempty"`
 	EcomPkamSwitch                    EcomPkamSwitch              `json:"ecom_pkam_switch,omitempty"`
 	ForwardLinkAssist                 OptimizationGoal            `json:"forward_link_assist,omitempty"`
 	RtaId                             *int64                      `json:"rta_id,omitempty"`
@@ -62,7 +62,14 @@ type AdgroupsAddRequest struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	DynamicAdType                     DynamicAdType               `json:"dynamic_ad_type,omitempty"`
+	DspId                             *int64                      `json:"dsp_id,omitempty"`
+	AoiOptimizationStrategy           *AoiOptimizationStrategy    `json:"aoi_optimization_strategy,omitempty"`
 	CloudUnionSpec                    *CloudUnionSpec             `json:"cloud_union_spec,omitempty"`
 	AdditionalProductSpec             *AdditionalProductSpec      `json:"additional_product_spec,omitempty"`
 	EnableBreakthroughSiteset         *bool                       `json:"enable_breakthrough_siteset,omitempty"`
+	LiveRecommendStrategyEnabled      *bool                       `json:"live_recommend_strategy_enabled,omitempty"`
+	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
+	SearchExpansionSwitch             SearchExpansionSwitch       `json:"search_expansion_switch,omitempty"`
+	AdxRealtimeType                   AdxRealtimeType             `json:"adx_realtime_type,omitempty"`
+	EnableSteadyExploration           *bool                       `json:"enable_steady_exploration,omitempty"`
 }

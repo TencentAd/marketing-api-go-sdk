@@ -9,7 +9,7 @@
 
 package model
 
-// OsV2 : 蹊径落地页绑定的app 类型
+// OsV2 : 操作系统
 type OsV2 string
 
 // List of OsV2

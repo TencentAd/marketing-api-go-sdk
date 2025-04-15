@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/antihax/optional"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
@@ -24,7 +25,6 @@ import (
 type DailyReportsGetExample struct {
 	TAds                *ads.SDKClient
 	AccessToken         string
-	AccountId           int64
 	Level               string
 	DateRange           model.ReportDateRange
 	GroupBy             []string
@@ -38,7 +38,6 @@ func (e *DailyReportsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = int64(0)
 	e.Level = "REPORT_LEVEL_ADGROUP"
 	e.DateRange = model.ReportDateRange{
 		StartDate: "REPORT START DATE",
@@ -46,14 +45,17 @@ func (e *DailyReportsGetExample) Init() {
 	}
 	e.GroupBy = []string{}
 	e.Fields = []string{"date", "view_count", "valid_click_count", "ctr", "cpc", "cost"}
-	e.DailyReportsGetOpts = &api.DailyReportsGetOpts{}
+	e.DailyReportsGetOpts = &api.DailyReportsGetOpts{
+
+		AccountId: optional.NewInt64(int64(0)),
+	}
 }
 
 func (e *DailyReportsGetExample) RunExample() (model.DailyReportsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.DailyReports().Get(ctx, e.AccountId, e.Level, e.DateRange, e.GroupBy, e.Fields, e.DailyReportsGetOpts)
+	return tads.DailyReports().Get(ctx, e.Level, e.DateRange, e.GroupBy, e.Fields, e.DailyReportsGetOpts)
 }
 
 func main() {

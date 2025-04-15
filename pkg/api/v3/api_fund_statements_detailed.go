@@ -38,15 +38,17 @@ FundStatementsDetailedApiService 获取资金流水
  * @param optional nil or *FundStatementsDetailedGetOpts - Optional Parameters:
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "PrimaryKey" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return FundStatementsDetailedGetResponse
 */
 
 type FundStatementsDetailedGetOpts struct {
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	Page       optional.Int64
+	PageSize   optional.Int64
+	PrimaryKey optional.String
+	Fields     optional.Interface
 }
 
 func (a *FundStatementsDetailedApiService) Get(ctx context.Context, accountId int64, fundType string, dateRange DateRangeTransaction, localVarOptionals *FundStatementsDetailedGetOpts) (FundStatementsDetailedGetResponseData, http.Header, error) {
@@ -75,6 +77,9 @@ func (a *FundStatementsDetailedApiService) Get(ctx context.Context, accountId in
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PrimaryKey.IsSet() {
+		localVarQueryParams.Add("primary_key", parameterToString(localVarOptionals.PrimaryKey.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

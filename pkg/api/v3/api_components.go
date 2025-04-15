@@ -250,18 +250,20 @@ ComponentsApiService 获取创意组件
      * @param "PageSize" (optional.Int64) -
      * @param "IsDeleted" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -
+     * @param "ComponentIdFilteringMode" (optional.String) -
 
 @return ComponentsGetResponse
 */
 
 type ComponentsGetOpts struct {
-	AccountId      optional.Int64
-	OrganizationId optional.Int64
-	Filtering      optional.Interface
-	Page           optional.Int64
-	PageSize       optional.Int64
-	IsDeleted      optional.Bool
-	Fields         optional.Interface
+	AccountId                optional.Int64
+	OrganizationId           optional.Int64
+	Filtering                optional.Interface
+	Page                     optional.Int64
+	PageSize                 optional.Int64
+	IsDeleted                optional.Bool
+	Fields                   optional.Interface
+	ComponentIdFilteringMode optional.String
 }
 
 func (a *ComponentsApiService) Get(ctx context.Context, localVarOptionals *ComponentsGetOpts) (ComponentsGetResponseData, http.Header, error) {
@@ -302,6 +304,9 @@ func (a *ComponentsApiService) Get(ctx context.Context, localVarOptionals *Compo
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.ComponentIdFilteringMode.IsSet() {
+		localVarQueryParams.Add("component_id_filtering_mode", parameterToString(localVarOptionals.ComponentIdFilteringMode.Value(), ""))
 	}
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}

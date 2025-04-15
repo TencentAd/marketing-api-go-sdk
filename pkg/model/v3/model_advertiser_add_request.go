@@ -15,10 +15,12 @@ type AdvertiserAddRequest struct {
 	CorporationLicence      *string                  `json:"corporation_licence,omitempty"`
 	CertificationImageId    *string                  `json:"certification_image_id,omitempty"`
 	IndividualQualification *IndividualQualification `json:"individual_qualification,omitempty"`
-	SystemIndustryId        *int64                   `json:"system_industry_id,omitempty"`
 	AreaCode                *int64                   `json:"area_code,omitempty"`
+	SystemIndustryId        *int64                   `json:"system_industry_id,omitempty"`
 	IntroductionUrl         *string                  `json:"introduction_url,omitempty"`
+	DailyBudget             *int64                   `json:"daily_budget,omitempty"`
 	CorporateBrandName      *string                  `json:"corporate_brand_name,omitempty"`
+	IsAdx                   *bool                    `json:"is_adx,omitempty"`
 	ContactPersonTelephone  *string                  `json:"contact_person_telephone,omitempty"`
 	ContactPersonMobile     *string                  `json:"contact_person_mobile,omitempty"`
 }

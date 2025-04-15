@@ -35,4 +35,6 @@ type ConversionsAddRequest struct {
 	IncubationOptimizationGoal   OptimizationGoal           `json:"incubation_optimization_goal,omitempty"`
 	ConversionTemplateId         *int64                     `json:"conversion_template_id,omitempty"`
 	CustomReportIndex            *[]int64                   `json:"custom_report_index,omitempty"`
+	CreatedByActionSet           *bool                      `json:"created_by_action_set,omitempty"`
+	FeedbackId                   *int64                     `json:"feedback_id,omitempty"`
 }

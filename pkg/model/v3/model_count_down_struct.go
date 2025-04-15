@@ -11,8 +11,6 @@ package model
 
 // 倒计时组件
 type CountDownStruct struct {
-	Switch_           *bool                       `json:"switch,omitempty"`
-	BeginTimestamp    *int64                      `json:"begin_timestamp,omitempty"`
 	Price             *string                     `json:"price,omitempty"`
 	TimeType          AdCreativeCountdownTimeType `json:"time_type,omitempty"`
 	ExpiringTimestamp *int64                      `json:"expiring_timestamp,omitempty"`

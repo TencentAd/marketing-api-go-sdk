@@ -3,8 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Switch_** | **bool** |  | [optional] [default to null]
-**BeginTimestamp** | **int64** |  | [optional] [default to null]
 **Price** | **string** |  | [optional] [default to null]
 **TimeType** | [***AdCreativeCountdownTimeType**](AdCreativeCountdownTimeType.md) |  | [optional] [default to null]
 **ExpiringTimestamp** | **int64** |  | [optional] [default to null]

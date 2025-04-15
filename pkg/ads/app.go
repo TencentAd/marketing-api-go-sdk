@@ -697,28 +697,8 @@ func (c *SDKClient) Wildcards() *api.WildcardsApiService {
 	return c.Client.WildcardsApi
 }
 
-func (c *SDKClient) WxPackageAccount() *api.WxPackageAccountApiService {
-	return c.Client.WxPackageAccountApi
-}
-
-func (c *SDKClient) WxPackagePackage() *api.WxPackagePackageApiService {
-	return c.Client.WxPackagePackageApi
-}
-
 func (c *SDKClient) XijingComplexTemplate() *api.XijingComplexTemplateApiService {
 	return c.Client.XijingComplexTemplateApi
-}
-
-func (c *SDKClient) XijingDeriveClickEffect() *api.XijingDeriveClickEffectApiService {
-	return c.Client.XijingDeriveClickEffectApi
-}
-
-func (c *SDKClient) XijingDeriveRole() *api.XijingDeriveRoleApiService {
-	return c.Client.XijingDeriveRoleApi
-}
-
-func (c *SDKClient) XijingDeriveTempToken() *api.XijingDeriveTempTokenApiService {
-	return c.Client.XijingDeriveTempTokenApi
 }
 
 func (c *SDKClient) XijingPage() *api.XijingPageApiService {

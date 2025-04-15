@@ -74,4 +74,6 @@ const (
 	MarketingTargetType_GOVERNMENT_AFFAIRS               MarketingTargetType = "MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS"
 	MarketingTargetType_CAR_ECOLOGY                      MarketingTargetType = "MARKETING_TARGET_TYPE_CAR_ECOLOGY"
 	MarketingTargetType_WECHAT_STORE_PRODUCT             MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT"
+	MarketingTargetType_APP_HARMONY                      MarketingTargetType = "MARKETING_TARGET_TYPE_APP_HARMONY"
+	MarketingTargetType_WECHAT_STORE_PRODUCT_SET         MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET"
 )
