@@ -14,4 +14,5 @@ type LiveRoomComponentStatusUpdateRequest struct {
 	ComponentId   *int64                `json:"component_id,omitempty"`
 	ComponentType CreativeComponentType `json:"component_type,omitempty"`
 	Status        SysStatus             `json:"status,omitempty"`
+	LiveBeginTime *int64                `json:"live_begin_time,omitempty"`
 }

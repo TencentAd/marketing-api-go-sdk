@@ -19,6 +19,10 @@ Name | Type | Description | Notes
 **PlotBrandLogo** | **string** |  | [optional] [default to null]
 **PlotOriginalMaterial** | [***PlotOriginalMaterial**](plot_original_material.md) |  | [optional] [default to null]
 **RedEnvelopeBrandName** | **string** |  | [optional] [default to null]
+**GiftStoryProductDesc** | **string** |  | [optional] [default to null]
+**GiftStoryProductName** | **string** |  | [optional] [default to null]
+**GiftStoryButtonText** | **string** |  | [optional] [default to null]
+**PlotButtonJumpInfo** | [***LandingPageStructure**](landing_page_structure.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

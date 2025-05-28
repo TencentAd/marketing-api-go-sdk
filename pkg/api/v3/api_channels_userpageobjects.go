@@ -39,6 +39,7 @@ ChannelsUserpageobjectsApiService 获取视频号动态列表
      * @param "LastBuffer" (optional.String) -
      * @param "Count" (optional.Int64) -
      * @param "WechatChannelsAccountId" (optional.String) -
+     * @param "AdContext" (optional.Interface of AdContext) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ChannelsUserpageobjectsGetResponse
@@ -50,6 +51,7 @@ type ChannelsUserpageobjectsGetOpts struct {
 	LastBuffer              optional.String
 	Count                   optional.Int64
 	WechatChannelsAccountId optional.String
+	AdContext               optional.Interface
 	Fields                  optional.Interface
 }
 
@@ -86,6 +88,9 @@ func (a *ChannelsUserpageobjectsApiService) Get(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.WechatChannelsAccountId.IsSet() {
 		localVarQueryParams.Add("wechat_channels_account_id", parameterToString(localVarOptionals.WechatChannelsAccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdContext.IsSet() {
+		localVarQueryParams.Add("ad_context", parameterToString(localVarOptionals.AdContext.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组深度辅助目标出价
+// 修改广告深度辅助目标出价
 type UpdateDeepConversionBehaviorAdvancedBidItem struct {
 	AdgroupId                         *int64 `json:"adgroup_id,omitempty"`
 	DeepConversionBehaviorAdvancedBid *int64 `json:"deep_conversion_behavior_advanced_bid,omitempty"`

@@ -11,4 +11,6 @@ package model
 
 // Android一键下载落地页
 type AndroidDirectDownloadPageSpec struct {
+	AndroidAppId     *string `json:"android_app_id,omitempty"`
+	AndroidChannelId *string `json:"android_channel_id,omitempty"`
 }

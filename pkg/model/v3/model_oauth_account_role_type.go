@@ -14,9 +14,14 @@ type OauthAccountRoleType string
 
 // List of OauthAccountRoleType
 const (
-	OauthAccountRoleType_ADVERTISER       OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ADVERTISER"
-	OauthAccountRoleType_AGENCY           OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_AGENCY"
-	OauthAccountRoleType_T1               OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_T1"
-	OauthAccountRoleType_BUSINESS_MANAGER OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER"
-	OauthAccountRoleType_DATA_NEXUS       OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_DATA_NEXUS"
+	OauthAccountRoleType_ADVERTISER                          OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ADVERTISER"
+	OauthAccountRoleType_AGENCY                              OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_AGENCY"
+	OauthAccountRoleType_T1                                  OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_T1"
+	OauthAccountRoleType_BUSINESS_MANAGER                    OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER"
+	OauthAccountRoleType_DATA_NEXUS                          OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_DATA_NEXUS"
+	OauthAccountRoleType_ORGANIZATION_ADVERTISER_UNIT        OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_UNIT"
+	OauthAccountRoleType_ORGANIZATION_ADVERTISER_MDM         OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_MDM"
+	OauthAccountRoleType_ORGANIZATION_ADVERTISER_CORPORATION OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_CORPORATION"
+	OauthAccountRoleType_ORGANIZATION_AGENCY_UNIT            OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_AGENCY_UNIT"
+	OauthAccountRoleType_ORGANIZATION_AGENCY_MDM             OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_AGENCY_MDM"
 )

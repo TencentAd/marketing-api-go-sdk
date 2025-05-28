@@ -173,6 +173,10 @@ func (c *SDKClient) ComponentDefaultSharing() *api.ComponentDefaultSharingApiSer
 	return c.Client.ComponentDefaultSharingApi
 }
 
+func (c *SDKClient) ComponentDetail() *api.ComponentDetailApiService {
+	return c.Client.ComponentDetailApi
+}
+
 func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReviewApiService {
 	return c.Client.ComponentElementUrgeReviewApi
 }
@@ -207,6 +211,10 @@ func (c *SDKClient) ConversionLinks() *api.ConversionLinksApiService {
 
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
+}
+
+func (c *SDKClient) CreativeRecommend() *api.CreativeRecommendApiService {
+	return c.Client.CreativeRecommendApi
 }
 
 func (c *SDKClient) CreativeTemplate() *api.CreativeTemplateApiService {

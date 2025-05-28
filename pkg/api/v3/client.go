@@ -128,6 +128,8 @@ type APIClient struct {
 
 	ComponentDefaultSharingApi *ComponentDefaultSharingApiService
 
+	ComponentDetailApi *ComponentDetailApiService
+
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
 
 	ComponentReviewResultsApi *ComponentReviewResultsApiService
@@ -145,6 +147,8 @@ type APIClient struct {
 	ConversionLinksApi *ConversionLinksApiService
 
 	ConversionsApi *ConversionsApiService
+
+	CreativeRecommendApi *CreativeRecommendApiService
 
 	CreativeTemplateApi *CreativeTemplateApiService
 
@@ -513,6 +517,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
 	c.ComponentDefaultSharingApi = (*ComponentDefaultSharingApiService)(&c.common)
+	c.ComponentDetailApi = (*ComponentDetailApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
 	c.ComponentSharingApi = (*ComponentSharingApiService)(&c.common)
@@ -522,6 +527,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ConversionLinkAssetsApi = (*ConversionLinkAssetsApiService)(&c.common)
 	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
+	c.CreativeRecommendApi = (*CreativeRecommendApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)
 	c.CreativeTemplatePreviewsApi = (*CreativeTemplatePreviewsApiService)(&c.common)

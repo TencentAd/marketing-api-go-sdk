@@ -18,4 +18,7 @@ const (
 	ComponentGenerationType_SYSTEM_DERIVE   ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_DERIVE"
 	ComponentGenerationType_SYSTEM_GENERATE ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_GENERATE"
 	ComponentGenerationType_BXJG            ComponentGenerationType = "COMPONENT_GENERATION_TYPE_BXJG"
+	ComponentGenerationType_SMART_DELIVERY  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SMART_DELIVERY"
+	ComponentGenerationType_MUSE_AIGC       ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MUSE_AIGC"
+	ComponentGenerationType_HUXUAN          ComponentGenerationType = "COMPONENT_GENERATION_TYPE_HUXUAN"
 )

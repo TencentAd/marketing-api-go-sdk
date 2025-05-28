@@ -168,4 +168,5 @@ type ProductItemSpec struct {
 	BusinessPrice                BusinessPrice          `json:"business_price,omitempty"`
 	InitialTotalInvestment       InitialTotalInvestment `json:"initial_total_investment,omitempty"`
 	BusinessAudience             BusinessAudience       `json:"business_audience,omitempty"`
+	ServiceTag                   *[]string              `json:"service_tag,omitempty"`
 }

@@ -35,4 +35,6 @@ type WechatStoreProductItemsGetListStruct struct {
 	WechatStoreProductAdStatus           *int64            `json:"wechat_store_product_ad_status,omitempty"`
 	WechatStoreProductAdUnavailableCause *[]string         `json:"wechat_store_product_ad_unavailable_cause,omitempty"`
 	StorePriceItemList                   *[]StorePriceItem `json:"store_price_item_list,omitempty"`
+	StoreId                              *string           `json:"store_id,omitempty"`
+	WxStoreProductOperateType            *int64            `json:"wx_store_product_operate_type,omitempty"`
 }

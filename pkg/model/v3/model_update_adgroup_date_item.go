@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组投放日期
+// 修改广告投放日期
 type UpdateAdgroupDateItem struct {
 	AdgroupId *int64  `json:"adgroup_id,omitempty"`
 	BeginDate *string `json:"begin_date,omitempty"`

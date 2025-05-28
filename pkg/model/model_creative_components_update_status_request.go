@@ -14,4 +14,5 @@ type CreativeComponentsUpdateStatusRequest struct {
 	ComponentId   *int64                `json:"component_id,omitempty"`
 	ComponentType CreativeComponentType `json:"component_type,omitempty"`
 	Status        AdStatus              `json:"status,omitempty"`
+	LiveBeginTime *int64                `json:"live_begin_time,omitempty"`
 }

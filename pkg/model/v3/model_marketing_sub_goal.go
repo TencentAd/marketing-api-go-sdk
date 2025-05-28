@@ -29,4 +29,6 @@ const (
 	MarketingSubGoal_SHORT_INACTIVE_USER                  MarketingSubGoal = "MARKETING_SUB_GOAL_SHORT_INACTIVE_USER"
 	MarketingSubGoal_LONG_INACTIVE_USER                   MarketingSubGoal = "MARKETING_SUB_GOAL_LONG_INACTIVE_USER"
 	MarketingSubGoal_GAME_VERSION_UPGRADE                 MarketingSubGoal = "MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE"
+	MarketingSubGoal_NEW_STORE_OPENING                    MarketingSubGoal = "MARKETING_SUB_GOAL_NEW_STORE_OPENING"
+	MarketingSubGoal_EVENING_PROMOTION                    MarketingSubGoal = "MARKETING_SUB_GOAL_EVENING_PROMOTION"
 )

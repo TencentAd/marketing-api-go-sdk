@@ -20,4 +20,5 @@ type CategoryInfo struct {
 	Cate4Id       *string `json:"cate4_id,omitempty"`
 	Cate4Name     *string `json:"cate4_name,omitempty"`
 	Cate3Disabled *bool   `json:"cate3_disabled,omitempty"`
+	LastCateTips  *string `json:"last_cate_tips,omitempty"`
 }

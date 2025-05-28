@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **Cate4Id** | **string** |  | [optional] [default to null]
 **Cate4Name** | **string** |  | [optional] [default to null]
 **Cate3Disabled** | **bool** |  | [optional] [default to null]
+**LastCateTips** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

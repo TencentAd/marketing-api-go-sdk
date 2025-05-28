@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组一键起量
+// 修改广告一键起量
 type UpdateAdgroupAutoAcquisitionItem struct {
 	AdgroupId              *int64 `json:"adgroup_id,omitempty"`
 	AutoAcquisitionEnabled *bool  `json:"auto_acquisition_enabled,omitempty"`

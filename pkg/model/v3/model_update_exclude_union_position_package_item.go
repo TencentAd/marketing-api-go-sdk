@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组屏蔽优量汇流量包信息
+// 修改广告屏蔽优量汇流量包信息
 type UpdateExcludeUnionPositionPackageItem struct {
 	AdgroupId                   *int64   `json:"adgroup_id,omitempty"`
 	ExcludeUnionPositionPackage *[]int64 `json:"exclude_union_position_package,omitempty"`

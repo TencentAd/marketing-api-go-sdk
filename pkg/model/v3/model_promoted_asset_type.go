@@ -76,4 +76,5 @@ const (
 	PromotedAssetType_WECHAT_STORE_PRODUCT             PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT"
 	PromotedAssetType_APP_HARMONY                      PromotedAssetType = "PROMOTED_ASSET_TYPE_APP_HARMONY"
 	PromotedAssetType_WECHAT_STORE_PRODUCT_SET         PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT_SET"
+	PromotedAssetType_PRODUCT_AGGREGATION_PAGE         PromotedAssetType = "PROMOTED_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE"
 )

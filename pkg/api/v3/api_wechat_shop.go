@@ -33,18 +33,21 @@ type WechatShopApiService service
 WechatShopApiService 查询微信小店信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
- * @param wechatChannelsShopName
  * @param optional nil or *WechatShopGetOpts - Optional Parameters:
+     * @param "WechatChannelsShopName" (optional.String) -
+     * @param "WechatChannelsShopId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatShopGetResponse
 */
 
 type WechatShopGetOpts struct {
-	Fields optional.Interface
+	WechatChannelsShopName optional.String
+	WechatChannelsShopId   optional.String
+	Fields                 optional.Interface
 }
 
-func (a *WechatShopApiService) Get(ctx context.Context, accountId int64, wechatChannelsShopName string, localVarOptionals *WechatShopGetOpts) (WechatShopGetResponseData, http.Header, error) {
+func (a *WechatShopApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WechatShopGetOpts) (WechatShopGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -63,7 +66,12 @@ func (a *WechatShopApiService) Get(ctx context.Context, accountId int64, wechatC
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("wechat_channels_shop_name", parameterToString(wechatChannelsShopName, ""))
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsShopName.IsSet() {
+		localVarQueryParams.Add("wechat_channels_shop_name", parameterToString(localVarOptionals.WechatChannelsShopName.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsShopId.IsSet() {
+		localVarQueryParams.Add("wechat_channels_shop_id", parameterToString(localVarOptionals.WechatChannelsShopId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

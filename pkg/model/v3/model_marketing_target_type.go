@@ -76,4 +76,5 @@ const (
 	MarketingTargetType_WECHAT_STORE_PRODUCT             MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT"
 	MarketingTargetType_APP_HARMONY                      MarketingTargetType = "MARKETING_TARGET_TYPE_APP_HARMONY"
 	MarketingTargetType_WECHAT_STORE_PRODUCT_SET         MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET"
+	MarketingTargetType_PRODUCT_AGGREGATION_PAGE         MarketingTargetType = "MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE"
 )

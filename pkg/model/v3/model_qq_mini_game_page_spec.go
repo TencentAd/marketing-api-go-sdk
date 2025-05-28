@@ -12,4 +12,5 @@ package model
 // QQ小游戏落地页信息
 type QqMiniGamePageSpec struct {
 	MiniGameTrackingParameter *string `json:"mini_game_tracking_parameter,omitempty"`
+	MiniGameId                *string `json:"mini_game_id,omitempty"`
 }

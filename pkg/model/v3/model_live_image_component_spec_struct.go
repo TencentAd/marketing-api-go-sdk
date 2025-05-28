@@ -16,4 +16,5 @@ type LiveImageComponentSpecStruct struct {
 	CheerIcon      *[]LiveCheerIconStruct `json:"cheer_icon,omitempty"`
 	IsUseCheerIcon *int64                 `json:"is_use_cheer_icon,omitempty"`
 	IsUseBgImg     *int64                 `json:"is_use_bg_img,omitempty"`
+	LiveBeginTime  *int64                 `json:"live_begin_time,omitempty"`
 }

@@ -10,5 +10,6 @@
 package model
 
 type VideosAddResponseData struct {
-	VideoId *int64 `json:"video_id,omitempty"`
+	VideoId      *int64 `json:"video_id,omitempty"`
+	CoverImageId *int64 `json:"cover_image_id,omitempty"`
 }

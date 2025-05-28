@@ -24,8 +24,6 @@ type HourlyReportApiListStruct struct {
 	ValuableClickCost                          *int64   `json:"valuable_click_cost,omitempty"`
 	ValuableClickRate                          *float64 `json:"valuable_click_rate,omitempty"`
 	Cost                                       *int64   `json:"cost,omitempty"`
-	WechatCostStage1                           *int64   `json:"wechat_cost_stage1,omitempty"`
-	WechatCostStage2                           *int64   `json:"wechat_cost_stage2,omitempty"`
 	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
 	ThousandDisplayPrice                       *int64   `json:"thousand_display_price,omitempty"`
 	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
@@ -37,10 +35,6 @@ type HourlyReportApiListStruct struct {
 	DeepConversionsCount                       *int64   `json:"deep_conversions_count,omitempty"`
 	DeepConversionsRate                        *float64 `json:"deep_conversions_rate,omitempty"`
 	DeepConversionsCost                        *int64   `json:"deep_conversions_cost,omitempty"`
-	WechatShallowConversionsCountStage1        *int64   `json:"wechat_shallow_conversions_count_stage1,omitempty"`
-	WechatShallowConversionsCountStage2        *int64   `json:"wechat_shallow_conversions_count_stage2,omitempty"`
-	WechatDeepConversionsCountStage1           *int64   `json:"wechat_deep_conversions_count_stage1,omitempty"`
-	WechatDeepConversionsCountStage2           *int64   `json:"wechat_deep_conversions_count_stage2,omitempty"`
 	ConversionsByDisplayCount                  *int64   `json:"conversions_by_display_count,omitempty"`
 	ConversionsByDisplayRate                   *float64 `json:"conversions_by_display_rate,omitempty"`
 	ConversionsByDisplayCost                   *int64   `json:"conversions_by_display_cost,omitempty"`
@@ -479,12 +473,7 @@ type HourlyReportApiListStruct struct {
 	MiniGameBfPurchaseD1Roi                    *float64 `json:"mini_game_bf_purchase_d1_roi,omitempty"`
 	MiniGameBfPurchaseD1Arpu                   *int64   `json:"mini_game_bf_purchase_d1_arpu,omitempty"`
 	MiniGameBfIncomeAmount                     *int64   `json:"mini_game_bf_income_amount,omitempty"`
-	MiniGameBfIncomeUv                         *int64   `json:"mini_game_bf_income_uv,omitempty"`
-	MiniGameBfIncomeCost                       *int64   `json:"mini_game_bf_income_cost,omitempty"`
-	MiniGameBfIncomeArpu                       *int64   `json:"mini_game_bf_income_arpu,omitempty"`
-	MiniGameBfIncomeRoi                        *float64 `json:"mini_game_bf_income_roi,omitempty"`
 	MiniGameBfIncomeD1Amount                   *int64   `json:"mini_game_bf_income_d1_amount,omitempty"`
-	MiniGameBfIncomeD1Uv                       *int64   `json:"mini_game_bf_income_d1_uv,omitempty"`
 	MiniGameBfIncomeD1Cost                     *int64   `json:"mini_game_bf_income_d1_cost,omitempty"`
 	MiniGameBfIncomeD1Roi                      *float64 `json:"mini_game_bf_income_d1_roi,omitempty"`
 	MiniGameBfIncomeD1Arpu                     *int64   `json:"mini_game_bf_income_d1_arpu,omitempty"`
@@ -562,22 +551,18 @@ type HourlyReportApiListStruct struct {
 	IncomeRoi7                                 *float64 `json:"income_roi_7,omitempty"`
 	IncomeVal14                                *int64   `json:"income_val_14,omitempty"`
 	IncomeRoi14                                *float64 `json:"income_roi_14,omitempty"`
-	MiniGameAdMonetizationUsers                *int64   `json:"mini_game_ad_monetization_users,omitempty"`
 	MiniGameAdMonetizationAmount               *int64   `json:"mini_game_ad_monetization_amount,omitempty"`
 	MiniGameAdMonetizationCost                 *int64   `json:"mini_game_ad_monetization_cost,omitempty"`
 	MiniGameAdMonetizationRoi                  *float64 `json:"mini_game_ad_monetization_roi,omitempty"`
 	MiniGameAdMonetizationArpu                 *int64   `json:"mini_game_ad_monetization_arpu,omitempty"`
-	MiniGameFirstDayAdMonetizationUsers        *int64   `json:"mini_game_first_day_ad_monetization_users,omitempty"`
 	MiniGameFirstDayAdMonetizationAmount       *int64   `json:"mini_game_first_day_ad_monetization_amount,omitempty"`
 	MiniGameFirstDayAdPayingCost               *int64   `json:"mini_game_first_day_ad_paying_cost,omitempty"`
 	MiniGameIncomeRoi1                         *float64 `json:"mini_game_income_roi_1,omitempty"`
 	MiniGameFirstDayAdPayingArpu               *int64   `json:"mini_game_first_day_ad_paying_arpu,omitempty"`
 	Minigame3dIncomeCount                      *int64   `json:"minigame_3d_income_count,omitempty"`
-	Minigame3dIncomeUv                         *int64   `json:"minigame_3d_income_uv,omitempty"`
 	MiniGameAdMonetizationAmountD3             *int64   `json:"mini_game_ad_monetization_amount_d3,omitempty"`
 	Minigame3dIncomeRoi                        *float64 `json:"minigame_3d_income_roi,omitempty"`
 	Minigame7dIncomeCount                      *int64   `json:"minigame_7d_income_count,omitempty"`
-	Minigame7dIncomeUv                         *int64   `json:"minigame_7d_income_uv,omitempty"`
 	MiniGameAdMonetizationAmountD7             *int64   `json:"mini_game_ad_monetization_amount_d7,omitempty"`
 	Minigame7dIncomeRoi                        *float64 `json:"minigame_7d_income_roi,omitempty"`
 	MiniGameAdMonetizationAmountD14            *int64   `json:"mini_game_ad_monetization_amount_d14,omitempty"`
@@ -783,6 +768,32 @@ type HourlyReportApiListStruct struct {
 	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
 	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
 	VideoOuterPlay5sRate                       *float64 `json:"video_outer_play5s_rate,omitempty"`
+	IncomeVal24hPlaRoi                         *float64 `json:"income_val_24h_pla_roi,omitempty"`
+	ViewDramaDedupPv                           *int64   `json:"view_drama_dedup_pv,omitempty"`
+	ViewDramaDedupPvRate                       *float64 `json:"view_drama_dedup_pv_rate,omitempty"`
+	ViewDramaDedupPvCost                       *int64   `json:"view_drama_dedup_pv_cost,omitempty"`
+	ClkSellingPointsElementPv                  *int64   `json:"clk_selling_points_element_pv,omitempty"`
+	VisitStoreFirstDedupPv                     *int64   `json:"visit_store_first_dedup_pv,omitempty"`
+	ClkFullwidthBackgroundPv                   *int64   `json:"clk_fullwidth_background_pv,omitempty"`
+	ClkHeaderAreaPv                            *int64   `json:"clk_header_area_pv,omitempty"`
+	OrderFirstDedupPv                          *int64   `json:"order_first_dedup_pv,omitempty"`
+	OrderFirstDedupPvCost                      *int64   `json:"order_first_dedup_pv_cost,omitempty"`
+	OrderFirstDedupPvRate                      *float64 `json:"order_first_dedup_pv_rate,omitempty"`
+	StorePayAmountOff                          *int64   `json:"store_pay_amount_off,omitempty"`
+	StorePayUvOff                              *int64   `json:"store_pay_uv_off,omitempty"`
+	StorePayPvOff                              *int64   `json:"store_pay_pv_off,omitempty"`
+	ClkSellingPointsElementUv                  *int64   `json:"clk_selling_points_element_uv,omitempty"`
+	OrderRefundActive24hPv                     *int64   `json:"order_refund_active_24h_pv,omitempty"`
+	OrderRefundActive24hRate                   *float64 `json:"order_refund_active_24h_rate,omitempty"`
+	OrderSettle24hPv                           *int64   `json:"order_settle_24h_pv,omitempty"`
+	OrderSettle24hRate                         *float64 `json:"order_settle_24h_rate,omitempty"`
+	OrderSettle24hCost                         *int64   `json:"order_settle_24h_cost,omitempty"`
+	LanJumpButtonRate                          *float64 `json:"lan_jump_button_rate,omitempty"`
+	RegDedup1dPv                               *int64   `json:"reg_dedup1d_pv,omitempty"`
+	BfDedupPv                                  *int64   `json:"bf_dedup_pv,omitempty"`
+	FollowBizAllDedupPv                        *int64   `json:"follow_biz_all_dedup_pv,omitempty"`
+	FirOgConvAutoAcquisitionPv                 *int64   `json:"fir_og_conv_auto_acquisition_pv,omitempty"`
+	SecOgConvAutoAcquisitionPv                 *int64   `json:"sec_og_conv_auto_acquisition_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

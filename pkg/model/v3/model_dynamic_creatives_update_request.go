@@ -10,13 +10,14 @@
 package model
 
 type DynamicCreativesUpdateRequest struct {
-	AccountId                        *int64              `json:"account_id,omitempty"`
-	DynamicCreativeId                *int64              `json:"dynamic_creative_id,omitempty"`
-	DynamicCreativeName              *string             `json:"dynamic_creative_name,omitempty"`
-	CreativeComponents               *CreativeComponents `json:"creative_components,omitempty"`
-	ImpressionTrackingUrl            *string             `json:"impression_tracking_url,omitempty"`
-	ClickTrackingUrl                 *string             `json:"click_tracking_url,omitempty"`
-	AutoDerivedProgramCreativeSwitch *bool               `json:"auto_derived_program_creative_switch,omitempty"`
-	ConfiguredStatus                 ConfiguredStatus    `json:"configured_status,omitempty"`
-	IsRetryBatchUpdate               *bool               `json:"is_retry_batch_update,omitempty"`
+	AccountId                        *int64               `json:"account_id,omitempty"`
+	DynamicCreativeId                *int64               `json:"dynamic_creative_id,omitempty"`
+	DynamicCreativeName              *string              `json:"dynamic_creative_name,omitempty"`
+	CreativeComponents               *CreativeComponents  `json:"creative_components,omitempty"`
+	ImpressionTrackingUrl            *string              `json:"impression_tracking_url,omitempty"`
+	ClickTrackingUrl                 *string              `json:"click_tracking_url,omitempty"`
+	AutoDerivedProgramCreativeSwitch *bool                `json:"auto_derived_program_creative_switch,omitempty"`
+	ConfiguredStatus                 ConfiguredStatus     `json:"configured_status,omitempty"`
+	IsRetryBatchUpdate               *bool                `json:"is_retry_batch_update,omitempty"`
+	SiteSetValidateModel             SiteSetValidateModel `json:"site_set_validate_model,omitempty"`
 }

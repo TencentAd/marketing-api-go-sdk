@@ -160,6 +160,7 @@ Name | Type | Description | Notes
 **BusinessPrice** | [***BusinessPrice**](BusinessPrice.md) |  | [optional] [default to null]
 **InitialTotalInvestment** | [***InitialTotalInvestment**](InitialTotalInvestment.md) |  | [optional] [default to null]
 **BusinessAudience** | [***BusinessAudience**](BusinessAudience.md) |  | [optional] [default to null]
+**ServiceTag** | **[]string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
