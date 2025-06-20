@@ -11,8 +11,10 @@ package model
 
 // 返回结构
 type AdvertiserUpdateDailyBudgetListStruct struct {
-	Code      *int64  `json:"code,omitempty"`
-	Message   *string `json:"message,omitempty"`
-	MessageCn *string `json:"message_cn,omitempty"`
-	AccountId *int64  `json:"account_id,omitempty"`
+	Code              *int64  `json:"code,omitempty"`
+	Message           *string `json:"message,omitempty"`
+	MessageCn         *string `json:"message_cn,omitempty"`
+	AccountId         *int64  `json:"account_id,omitempty"`
+	DailyBudget       *int64  `json:"daily_budget,omitempty"`
+	UseMinDailyBudget *bool   `json:"use_min_daily_budget,omitempty"`
 }

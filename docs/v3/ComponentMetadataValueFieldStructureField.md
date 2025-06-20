@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | [optional] [default to null]
 **Type_** | [***ComponentMetadataFieldType**](ComponentMetadataFieldType.md) |  | [optional] [default to null]
+**Structure** | [**[]ComponentMetadataValueFieldStructureFieldSub**](component_metadata_value_field_structure_field_sub.md) |  | [optional] [default to null]
 **IsArray** | **bool** |  | [optional] [default to null]
 **Valid** | [***ComponentMetadataValueValid**](component_metadata_value_valid.md) |  | [optional] [default to null]
 

@@ -13,4 +13,6 @@ package model
 type ChannelsShopProductSpec struct {
 	ProductId *int64  `json:"product_id,omitempty"`
 	ShopId    *string `json:"shop_id,omitempty"`
+	CatalogId *string `json:"catalog_id,omitempty"`
+	SetId     *string `json:"set_id,omitempty"`
 }

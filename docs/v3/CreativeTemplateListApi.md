@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **CreativeTemplateListGet**
-> CreativeTemplateListGetResponse CreativeTemplateListGet(ctx, accountId, marketingGoal, marketingTargetType, marketingCarrierType, optional)
+> CreativeTemplateListGetResponse CreativeTemplateListGet(ctx, accountId, optional)
 获取创意形式列表
 
 ### Required Parameters
@@ -17,9 +17,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **marketingGoal** | **string**|  | 
-  **marketingTargetType** | **string**|  | 
-  **marketingCarrierType** | **string**|  | 
  **optional** | ***CreativeTemplateListApiCreativeTemplateListGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -28,16 +25,24 @@ Optional parameters are passed through a pointer to a CreativeTemplateListApiCre
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
-
-
-
+ **marketingGoal** | **optional.String**|  | 
  **marketingSubGoal** | **optional.String**|  | 
+ **marketingTargetType** | **optional.String**|  | 
+ **marketingCarrierType** | **optional.String**|  | 
  **siteSet** | **optional.String**|  | 
  **dynamicAbilityType** | **optional.String**|  | 
  **wechatSceneSpecPosition** | [**optional.Interface of []int64**](int64.md)|  | 
  **creativeTemplateId** | **optional.Int64**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **dynamicAdType** | **optional.String**|  | 
+ **dynamicCreativeType** | **optional.String**|  | 
+ **supportSiteSet** | [**optional.Interface of []string**](string.md)|  | 
+ **bidMode** | **optional.String**|  | 
+ **wechatChannelsScene** | [**optional.Interface of []int64**](int64.md)|  | 
+ **displayScene** | [**optional.Interface of []string**](string.md)|  | 
+ **pcScene** | [**optional.Interface of []string**](string.md)|  | 
+ **adgroupId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

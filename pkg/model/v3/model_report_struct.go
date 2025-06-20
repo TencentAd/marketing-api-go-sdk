@@ -794,6 +794,11 @@ type ReportStruct struct {
 	FollowBizAllDedupPv                        *int64   `json:"follow_biz_all_dedup_pv,omitempty"`
 	FirOgConvAutoAcquisitionPv                 *int64   `json:"fir_og_conv_auto_acquisition_pv,omitempty"`
 	SecOgConvAutoAcquisitionPv                 *int64   `json:"sec_og_conv_auto_acquisition_pv,omitempty"`
+	ScanCodePlaPv                              *int64   `json:"scan_code_pla_pv,omitempty"`
+	PurchasePlaBkActive1dAmount                *int64   `json:"purchase_pla_bk_active_1d_amount,omitempty"`
+	BfAllDedupPv                               *int64   `json:"bf_all_dedup_pv,omitempty"`
+	RetentionDedupPv                           *int64   `json:"retention_dedup_pv,omitempty"`
+	RetentionAllDedupPv                        *int64   `json:"retention_all_dedup_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

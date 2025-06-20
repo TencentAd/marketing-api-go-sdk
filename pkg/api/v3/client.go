@@ -112,6 +112,12 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	BusinessUnitApi *BusinessUnitApiService
+
+	BusinessUnitAccountApi *BusinessUnitAccountApiService
+
+	BusinessUnitListApi *BusinessUnitListApiService
+
 	CategoriesApi *CategoriesApiService
 
 	CategoriesAttributeApi *CategoriesAttributeApiService
@@ -125,8 +131,6 @@ type APIClient struct {
 	ChannelsUserpageobjectsApi *ChannelsUserpageobjectsApiService
 
 	CommentListApi *CommentListApiService
-
-	ComponentDefaultSharingApi *ComponentDefaultSharingApiService
 
 	ComponentDetailApi *ComponentDetailApiService
 
@@ -297,6 +301,16 @@ type APIClient struct {
 	OauthApi *OauthApiService
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
+
+	OfficialLandingPageApi *OfficialLandingPageApiService
+
+	OfficialLandingPageComponentApi *OfficialLandingPageComponentApiService
+
+	OfficialLandingPageDetailApi *OfficialLandingPageDetailApiService
+
+	OfficialLandingPageListApi *OfficialLandingPageListApiService
+
+	OfficialLandingPageSubmitApi *OfficialLandingPageSubmitApiService
 
 	OperationLogListApi *OperationLogListApiService
 
@@ -509,6 +523,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.BusinessUnitApi = (*BusinessUnitApiService)(&c.common)
+	c.BusinessUnitAccountApi = (*BusinessUnitAccountApiService)(&c.common)
+	c.BusinessUnitListApi = (*BusinessUnitListApiService)(&c.common)
 	c.CategoriesApi = (*CategoriesApiService)(&c.common)
 	c.CategoriesAttributeApi = (*CategoriesAttributeApiService)(&c.common)
 	c.ChannelsCommentApi = (*ChannelsCommentApiService)(&c.common)
@@ -516,7 +533,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
-	c.ComponentDefaultSharingApi = (*ComponentDefaultSharingApiService)(&c.common)
 	c.ComponentDetailApi = (*ComponentDetailApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
@@ -602,6 +618,11 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
+	c.OfficialLandingPageApi = (*OfficialLandingPageApiService)(&c.common)
+	c.OfficialLandingPageComponentApi = (*OfficialLandingPageComponentApiService)(&c.common)
+	c.OfficialLandingPageDetailApi = (*OfficialLandingPageDetailApiService)(&c.common)
+	c.OfficialLandingPageListApi = (*OfficialLandingPageListApiService)(&c.common)
+	c.OfficialLandingPageSubmitApi = (*OfficialLandingPageSubmitApiService)(&c.common)
 	c.OperationLogListApi = (*OperationLogListApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)

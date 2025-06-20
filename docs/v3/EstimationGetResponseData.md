@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **TargetingStatus** | [***TargetingStatus**](TargetingStatus.md) |  | [optional] [default to null]
 **SuggestTargeting** | **[]string** |  | [optional] [default to null]
 **IsRealExposureSupported** | **bool** |  | [optional] [default to null]
+**StageBidInfo** | [**[]StageBidInfoItem**](stage_bid_info_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

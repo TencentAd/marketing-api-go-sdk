@@ -33,34 +33,53 @@ type CreativeTemplateListApiService service
 CreativeTemplateListApiService 获取创意形式列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
- * @param marketingGoal
- * @param marketingTargetType
- * @param marketingCarrierType
  * @param optional nil or *CreativeTemplateListGetOpts - Optional Parameters:
+     * @param "MarketingGoal" (optional.String) -
      * @param "MarketingSubGoal" (optional.String) -
+     * @param "MarketingTargetType" (optional.String) -
+     * @param "MarketingCarrierType" (optional.String) -
      * @param "SiteSet" (optional.String) -
      * @param "DynamicAbilityType" (optional.String) -
      * @param "WechatSceneSpecPosition" (optional.Interface of []int64) -
      * @param "CreativeTemplateId" (optional.Int64) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "DynamicAdType" (optional.String) -
+     * @param "DynamicCreativeType" (optional.String) -
+     * @param "SupportSiteSet" (optional.Interface of []string) -
+     * @param "BidMode" (optional.String) -
+     * @param "WechatChannelsScene" (optional.Interface of []int64) -
+     * @param "DisplayScene" (optional.Interface of []string) -
+     * @param "PcScene" (optional.Interface of []string) -
+     * @param "AdgroupId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeTemplateListGetResponse
 */
 
 type CreativeTemplateListGetOpts struct {
+	MarketingGoal           optional.String
 	MarketingSubGoal        optional.String
+	MarketingTargetType     optional.String
+	MarketingCarrierType    optional.String
 	SiteSet                 optional.String
 	DynamicAbilityType      optional.String
 	WechatSceneSpecPosition optional.Interface
 	CreativeTemplateId      optional.Int64
 	Page                    optional.Int64
 	PageSize                optional.Int64
+	DynamicAdType           optional.String
+	DynamicCreativeType     optional.String
+	SupportSiteSet          optional.Interface
+	BidMode                 optional.String
+	WechatChannelsScene     optional.Interface
+	DisplayScene            optional.Interface
+	PcScene                 optional.Interface
+	AdgroupId               optional.Int64
 	Fields                  optional.Interface
 }
 
-func (a *CreativeTemplateListApiService) Get(ctx context.Context, accountId int64, marketingGoal string, marketingTargetType string, marketingCarrierType string, localVarOptionals *CreativeTemplateListGetOpts) (CreativeTemplateListGetResponseData, http.Header, error) {
+func (a *CreativeTemplateListApiService) Get(ctx context.Context, accountId int64, localVarOptionals *CreativeTemplateListGetOpts) (CreativeTemplateListGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -79,12 +98,18 @@ func (a *CreativeTemplateListApiService) Get(ctx context.Context, accountId int6
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("marketing_goal", parameterToString(marketingGoal, ""))
+	if localVarOptionals != nil && localVarOptionals.MarketingGoal.IsSet() {
+		localVarQueryParams.Add("marketing_goal", parameterToString(localVarOptionals.MarketingGoal.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.MarketingSubGoal.IsSet() {
 		localVarQueryParams.Add("marketing_sub_goal", parameterToString(localVarOptionals.MarketingSubGoal.Value(), ""))
 	}
-	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
-	localVarQueryParams.Add("marketing_carrier_type", parameterToString(marketingCarrierType, ""))
+	if localVarOptionals != nil && localVarOptionals.MarketingTargetType.IsSet() {
+		localVarQueryParams.Add("marketing_target_type", parameterToString(localVarOptionals.MarketingTargetType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingCarrierType.IsSet() {
+		localVarQueryParams.Add("marketing_carrier_type", parameterToString(localVarOptionals.MarketingCarrierType.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.SiteSet.IsSet() {
 		localVarQueryParams.Add("site_set", parameterToString(localVarOptionals.SiteSet.Value(), ""))
 	}
@@ -102,6 +127,30 @@ func (a *CreativeTemplateListApiService) Get(ctx context.Context, accountId int6
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.DynamicAdType.IsSet() {
+		localVarQueryParams.Add("dynamic_ad_type", parameterToString(localVarOptionals.DynamicAdType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.DynamicCreativeType.IsSet() {
+		localVarQueryParams.Add("dynamic_creative_type", parameterToString(localVarOptionals.DynamicCreativeType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.SupportSiteSet.IsSet() {
+		localVarQueryParams.Add("support_site_set", parameterToString(localVarOptionals.SupportSiteSet.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.BidMode.IsSet() {
+		localVarQueryParams.Add("bid_mode", parameterToString(localVarOptionals.BidMode.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsScene.IsSet() {
+		localVarQueryParams.Add("wechat_channels_scene", parameterToString(localVarOptionals.WechatChannelsScene.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.DisplayScene.IsSet() {
+		localVarQueryParams.Add("display_scene", parameterToString(localVarOptionals.DisplayScene.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.PcScene.IsSet() {
+		localVarQueryParams.Add("pc_scene", parameterToString(localVarOptionals.PcScene.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdgroupId.IsSet() {
+		localVarQueryParams.Add("adgroup_id", parameterToString(localVarOptionals.AdgroupId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **CreateTime** | **int64** |  | [optional] [default to null]
 **DeleteFlag** | **int64** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
-**Medias** | [**[]MediaNew**](media_new.md) |  | [optional] [default to null]
+**Medias** | [**[]WechatChannelsMedia**](wechat_channels_media.md) |  | [optional] [default to null]
 **FinderUsername** | **string** |  | [optional] [default to null]
 **WechatChannelsAccountId** | **string** |  | [optional] [default to null]
 
