@@ -22,4 +22,5 @@ const (
 	FilterOperator_GREATER        FilterOperator = "GREATER"
 	FilterOperator_IN             FilterOperator = "IN"
 	FilterOperator_NOT_EQUALS     FilterOperator = "NOT_EQUALS"
+	FilterOperator_NOT_IN         FilterOperator = "NOT_IN"
 )

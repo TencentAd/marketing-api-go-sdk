@@ -20,4 +20,5 @@ type BidwordStruct struct {
 	ConfiguredStatus      BidwordPauseType          `json:"configured_status,omitempty"`
 	PcLandingPageInfo     *[]KeywordLandingPageInfo `json:"pc_landing_page_info,omitempty"`
 	MobileLandingPageInfo *[]KeywordLandingPageInfo `json:"mobile_landing_page_info,omitempty"`
+	DynamicCreativeId     *int64                    `json:"dynamic_creative_id,omitempty"`
 }

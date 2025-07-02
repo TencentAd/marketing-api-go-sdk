@@ -11,12 +11,13 @@ package model
 
 // 关键词信息
 type BidwordUpdateStruct struct {
-	BidwordId        *int64                 `json:"bidword_id,omitempty"`
-	BidPrice         *int64                 `json:"bid_price,omitempty"`
-	BidMode          BidMode                `json:"bid_mode,omitempty"`
-	UseGroupPrice    UseGroupPriceType      `json:"use_group_price,omitempty"`
-	PriceUpdateType  BidwordPriceUpdateType `json:"price_update_type,omitempty"`
-	RaisePrice       *int64                 `json:"raise_price,omitempty"`
-	MatchType        BidwordMatchType       `json:"match_type,omitempty"`
-	ConfiguredStatus BidwordPauseType       `json:"configured_status,omitempty"`
+	BidwordId         *int64                 `json:"bidword_id,omitempty"`
+	BidPrice          *int64                 `json:"bid_price,omitempty"`
+	BidMode           BidMode                `json:"bid_mode,omitempty"`
+	UseGroupPrice     UseGroupPriceType      `json:"use_group_price,omitempty"`
+	PriceUpdateType   BidwordPriceUpdateType `json:"price_update_type,omitempty"`
+	RaisePrice        *int64                 `json:"raise_price,omitempty"`
+	MatchType         BidwordMatchType       `json:"match_type,omitempty"`
+	ConfiguredStatus  BidwordPauseType       `json:"configured_status,omitempty"`
+	DynamicCreativeId *int64                 `json:"dynamic_creative_id,omitempty"`
 }

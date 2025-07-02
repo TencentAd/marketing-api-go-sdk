@@ -52,6 +52,7 @@ CreativeTemplateListApiService 获取创意形式列表
      * @param "DisplayScene" (optional.Interface of []string) -
      * @param "PcScene" (optional.Interface of []string) -
      * @param "AdgroupId" (optional.Int64) -
+     * @param "AdgroupType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return CreativeTemplateListGetResponse
@@ -76,6 +77,7 @@ type CreativeTemplateListGetOpts struct {
 	DisplayScene            optional.Interface
 	PcScene                 optional.Interface
 	AdgroupId               optional.Int64
+	AdgroupType             optional.String
 	Fields                  optional.Interface
 }
 
@@ -151,6 +153,9 @@ func (a *CreativeTemplateListApiService) Get(ctx context.Context, accountId int6
 	}
 	if localVarOptionals != nil && localVarOptionals.AdgroupId.IsSet() {
 		localVarQueryParams.Add("adgroup_id", parameterToString(localVarOptionals.AdgroupId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdgroupType.IsSet() {
+		localVarQueryParams.Add("adgroup_type", parameterToString(localVarOptionals.AdgroupType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

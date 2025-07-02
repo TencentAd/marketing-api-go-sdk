@@ -27,6 +27,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
+ **adgroupId** | **optional.Int64**|  | 
  **keyword** | **optional.String**|  | 
  **filtering** | [**optional.Interface of []int64**](int64.md)|  | 
  **number** | **optional.Int64**|  | 

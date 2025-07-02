@@ -21,4 +21,5 @@ const (
 	ComponentGenerationType_SMART_DELIVERY  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SMART_DELIVERY"
 	ComponentGenerationType_MUSE_AIGC       ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MUSE_AIGC"
 	ComponentGenerationType_HUXUAN          ComponentGenerationType = "COMPONENT_GENERATION_TYPE_HUXUAN"
+	ComponentGenerationType_MARKETING_ASSET ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
 )

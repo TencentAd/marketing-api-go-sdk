@@ -21,4 +21,5 @@ const (
 	ExcludedDimension_EXCLUDED_DIMENSION_APP              ExcludedDimension = "EXCLUDED_DIMENSION_APP"
 	ExcludedDimension_EXCLUDED_DIMENSION_PRODUCT          ExcludedDimension = "EXCLUDED_DIMENSION_PRODUCT"
 	ExcludedDimension_EXCLUDE_DIMENSION_WORKTABLE         ExcludedDimension = "EXCLUDE_DIMENSION_WORKTABLE"
+	ExcludedDimension_EXCLUDED_DIMENSION_GROUP            ExcludedDimension = "EXCLUDED_DIMENSION_GROUP"
 )

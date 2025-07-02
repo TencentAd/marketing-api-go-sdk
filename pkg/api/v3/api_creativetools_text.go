@@ -35,6 +35,7 @@ CreativetoolsTextApiService 获取广告文案
  * @param accountId
  * @param maxTextLength
  * @param optional nil or *CreativetoolsTextGetOpts - Optional Parameters:
+     * @param "AdgroupId" (optional.Int64) -
      * @param "Keyword" (optional.String) -
      * @param "Filtering" (optional.Interface of []int64) -
      * @param "Number" (optional.Int64) -
@@ -48,6 +49,7 @@ CreativetoolsTextApiService 获取广告文案
 */
 
 type CreativetoolsTextGetOpts struct {
+	AdgroupId           optional.Int64
 	Keyword             optional.String
 	Filtering           optional.Interface
 	Number              optional.Int64
@@ -78,6 +80,9 @@ func (a *CreativetoolsTextApiService) Get(ctx context.Context, accountId int64, 
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("max_text_length", parameterToString(maxTextLength, ""))
+	if localVarOptionals != nil && localVarOptionals.AdgroupId.IsSet() {
+		localVarQueryParams.Add("adgroup_id", parameterToString(localVarOptionals.AdgroupId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Keyword.IsSet() {
 		localVarQueryParams.Add("keyword", parameterToString(localVarOptionals.Keyword.Value(), ""))
 	}

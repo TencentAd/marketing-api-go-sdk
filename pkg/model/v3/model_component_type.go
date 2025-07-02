@@ -88,4 +88,5 @@ const (
 	ComponentType_SEARCH_ALGORITHM_GEN       ComponentType = "SEARCH_ALGORITHM_GEN"
 	ComponentType_SEARCH_DERIVATIVE_TITLE    ComponentType = "SEARCH_DERIVATIVE_TITLE"
 	ComponentType_SMART_DELIVERY_AIGC        ComponentType = "SMART_DELIVERY_AIGC"
+	ComponentType_MARKETING_ASSET_PLAYLET    ComponentType = "MARKETING_ASSET_PLAYLET"
 )

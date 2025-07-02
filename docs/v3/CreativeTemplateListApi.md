@@ -43,6 +43,7 @@ Name | Type | Description  | Notes
  **displayScene** | [**optional.Interface of []string**](string.md)|  | 
  **pcScene** | [**optional.Interface of []string**](string.md)|  | 
  **adgroupId** | **optional.Int64**|  | 
+ **adgroupType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
