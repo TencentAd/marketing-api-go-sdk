@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**OrganizationId** | **int64** |  | [optional] [default to null]
 **LabelId** | **int64** |  | [optional] [default to null]
 **LabelName** | **string** |  | [optional] [default to null]
 **FirstLabelLevelName** | **string** |  | [optional] [default to null]

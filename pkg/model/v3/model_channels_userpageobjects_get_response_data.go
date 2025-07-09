@@ -10,6 +10,7 @@
 package model
 
 type ChannelsUserpageobjectsGetResponseData struct {
-	Objects    *[]FinderObject `json:"objects,omitempty"`
-	LastBuffer *string         `json:"last_buffer,omitempty"`
+	Objects      *[]FinderObject `json:"objects,omitempty"`
+	LastBuffer   *string         `json:"last_buffer,omitempty"`
+	ContinueFlag *int64          `json:"continue_flag,omitempty"`
 }

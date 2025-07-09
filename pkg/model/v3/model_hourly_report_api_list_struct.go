@@ -799,6 +799,10 @@ type HourlyReportApiListStruct struct {
 	BfAllDedupPv                               *int64   `json:"bf_all_dedup_pv,omitempty"`
 	RetentionDedupPv                           *int64   `json:"retention_dedup_pv,omitempty"`
 	RetentionAllDedupPv                        *int64   `json:"retention_all_dedup_pv,omitempty"`
+	CreditDedupPv                              *int64   `json:"credit_dedup_pv,omitempty"`
+	PreCreditDedupPv                           *int64   `json:"pre_credit_dedup_pv,omitempty"`
+	WithdrawDedupPv                            *int64   `json:"withdraw_dedup_pv,omitempty"`
+	ApplyDedupPv                               *int64   `json:"apply_dedup_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

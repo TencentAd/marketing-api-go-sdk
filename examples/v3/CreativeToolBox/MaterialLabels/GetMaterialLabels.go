@@ -24,7 +24,6 @@ import (
 type MaterialLabelsGetExample struct {
 	TAds                  *ads.SDKClient
 	AccessToken           string
-	AccountId             int64
 	MaterialLabelsGetOpts *api.MaterialLabelsGetOpts
 }
 
@@ -34,7 +33,6 @@ func (e *MaterialLabelsGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.MaterialLabelsGetOpts = &api.MaterialLabelsGetOpts{}
 }
 
@@ -42,7 +40,7 @@ func (e *MaterialLabelsGetExample) RunExample() (model.MaterialLabelsGetResponse
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialLabels().Get(ctx, e.AccountId, e.MaterialLabelsGetOpts)
+	return tads.MaterialLabels().Get(ctx, e.MaterialLabelsGetOpts)
 }
 
 func main() {

@@ -37,4 +37,5 @@ type WechatStoreProductItemsGetListStruct struct {
 	StorePriceItemList                   *[]StorePriceItem `json:"store_price_item_list,omitempty"`
 	StoreId                              *string           `json:"store_id,omitempty"`
 	WxStoreProductOperateType            *int64            `json:"wx_store_product_operate_type,omitempty"`
+	SkuStockStatus                       *int64            `json:"sku_stock_status,omitempty"`
 }

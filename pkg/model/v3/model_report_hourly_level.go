@@ -20,4 +20,6 @@ const (
 	ReportHourlyLevel_CHANNEL          ReportHourlyLevel = "REPORT_LEVEL_CHANNEL"
 	ReportHourlyLevel_BIDWORD          ReportHourlyLevel = "REPORT_LEVEL_BIDWORD"
 	ReportHourlyLevel_ADVERTISER_TOTAL ReportHourlyLevel = "REPORT_LEVEL_ADVERTISER_TOTAL"
+	ReportHourlyLevel_PROJECT          ReportHourlyLevel = "REPORT_LEVEL_PROJECT"
+	ReportHourlyLevel_PROJECT_CREATIVE ReportHourlyLevel = "REPORT_LEVEL_PROJECT_CREATIVE"
 )

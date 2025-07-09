@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountId** | **int64** |  | [optional] [default to null]
+**OrganizationId** | **int64** |  | [optional] [default to null]
 **ImageId** | **string** |  | [optional] [default to null]
 **OperationType** | **string** |  | [optional] [default to null]
 **OperationSpec** | [***OperationSpec**](operation_spec.md) |  | [optional] [default to null]

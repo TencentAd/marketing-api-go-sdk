@@ -10,9 +10,10 @@
 package model
 
 type ImageProcessingAddRequest struct {
-	AccountId     *int64         `json:"account_id,omitempty"`
-	ImageId       *string        `json:"image_id,omitempty"`
-	OperationType *string        `json:"operation_type,omitempty"`
-	OperationSpec *OperationSpec `json:"operation_spec,omitempty"`
-	FileSizeMax   *int64         `json:"file_size_max,omitempty"`
+	AccountId      *int64         `json:"account_id,omitempty"`
+	OrganizationId *int64         `json:"organization_id,omitempty"`
+	ImageId        *string        `json:"image_id,omitempty"`
+	OperationType  *string        `json:"operation_type,omitempty"`
+	OperationSpec  *OperationSpec `json:"operation_spec,omitempty"`
+	FileSizeMax    *int64         `json:"file_size_max,omitempty"`
 }

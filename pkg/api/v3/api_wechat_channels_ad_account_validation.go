@@ -36,15 +36,17 @@ WechatChannelsAdAccountValidationApiService 视频号一键开户校验
  * @param optional nil or *WechatChannelsAdAccountValidationGetOpts - Optional Parameters:
      * @param "Nickname" (optional.String) -
      * @param "HeadImageId" (optional.String) -
+     * @param "WechatChannelsAccountId" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatChannelsAdAccountValidationGetResponse
 */
 
 type WechatChannelsAdAccountValidationGetOpts struct {
-	Nickname    optional.String
-	HeadImageId optional.String
-	Fields      optional.Interface
+	Nickname                optional.String
+	HeadImageId             optional.String
+	WechatChannelsAccountId optional.String
+	Fields                  optional.Interface
 }
 
 func (a *WechatChannelsAdAccountValidationApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WechatChannelsAdAccountValidationGetOpts) (WechatChannelsAdAccountValidationGetResponseData, http.Header, error) {
@@ -71,6 +73,9 @@ func (a *WechatChannelsAdAccountValidationApiService) Get(ctx context.Context, a
 	}
 	if localVarOptionals != nil && localVarOptionals.HeadImageId.IsSet() {
 		localVarQueryParams.Add("head_image_id", parameterToString(localVarOptionals.HeadImageId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.WechatChannelsAccountId.IsSet() {
+		localVarQueryParams.Add("wechat_channels_account_id", parameterToString(localVarOptionals.WechatChannelsAccountId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
