@@ -13,4 +13,5 @@ package model
 type AppPromotionVideoComponent struct {
 	ComponentId *int64                   `json:"component_id,omitempty"`
 	Value       *AppPromotionVideoStruct `json:"value,omitempty"`
+	IsDeleted   *bool                    `json:"is_deleted,omitempty"`
 }

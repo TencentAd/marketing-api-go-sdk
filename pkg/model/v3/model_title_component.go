@@ -13,4 +13,5 @@ package model
 type TitleComponent struct {
 	ComponentId *int64       `json:"component_id,omitempty"`
 	Value       *TitleStruct `json:"value,omitempty"`
+	IsDeleted   *bool        `json:"is_deleted,omitempty"`
 }

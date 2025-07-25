@@ -282,5 +282,6 @@ const (
 	TaskType_TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK                               TaskType = "TASK_TYPE_UPDATE_ADGROUP_TARGETING_SUB_TASK"
 	TaskType_TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD                                      TaskType = "TASK_TYPE_REPORT_YICHE_DATA_DOWNLOAD"
 	TaskType_TASK_TYPE_INSIGHT_WECHAT_LIVE_DATA_DOWNLOAD                               TaskType = "TASK_TYPE_INSIGHT_WECHAT_LIVE_DATA_DOWNLOAD"
+	TaskType_TASK_TYPE_UPDATE_SEARCH_ADCREATIVE_SYS_STATUS                             TaskType = "TASK_TYPE_UPDATE_SEARCH_ADCREATIVE_SYS_STATUS"
 	TaskType_UNKNOWN                                                                   TaskType = "UNKNOWN"
 )

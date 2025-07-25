@@ -13,4 +13,5 @@ package model
 type ChosenButtonComponent struct {
 	ComponentId *int64              `json:"component_id,omitempty"`
 	Value       *ChosenButtonStruct `json:"value,omitempty"`
+	IsDeleted   *bool               `json:"is_deleted,omitempty"`
 }

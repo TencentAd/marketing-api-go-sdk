@@ -13,4 +13,5 @@ package model
 type WxgamePlayablePageComponent struct {
 	ComponentId *int64                    `json:"component_id,omitempty"`
 	Value       *WxgamePlayablePageStruct `json:"value,omitempty"`
+	IsDeleted   *bool                     `json:"is_deleted,omitempty"`
 }

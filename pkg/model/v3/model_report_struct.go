@@ -164,17 +164,10 @@ type ReportStruct struct {
 	PagePhoneCallDirectCount                   *int64   `json:"page_phone_call_direct_count,omitempty"`
 	PagePhoneCallDirectRate                    *float64 `json:"page_phone_call_direct_rate,omitempty"`
 	PagePhoneCallDirectCost                    *int64   `json:"page_phone_call_direct_cost,omitempty"`
-	PagePhoneCallBackCount                     *int64   `json:"page_phone_call_back_count,omitempty"`
-	PagePhoneCallBackRate                      *float64 `json:"page_phone_call_back_rate,omitempty"`
-	PagePhoneCallBackCost                      *int64   `json:"page_phone_call_back_cost,omitempty"`
-	PhoneCallCount                             *int64   `json:"phone_call_count,omitempty"`
-	IntePhoneCount                             *int64   `json:"inte_phone_count,omitempty"`
-	PhoneCallUv                                *int64   `json:"phone_call_uv,omitempty"`
 	PotentialPhoneCount                        *int64   `json:"potential_phone_count,omitempty"`
 	PotentialCustomerPhoneUv                   *int64   `json:"potential_customer_phone_uv,omitempty"`
 	EffectivePhoneCount                        *int64   `json:"effective_phone_count,omitempty"`
 	ValidPhoneUv                               *int64   `json:"valid_phone_uv,omitempty"`
-	PhoneConsultCount                          *int64   `json:"phone_consult_count,omitempty"`
 	CouponUsageNumber                          *int64   `json:"coupon_usage_number,omitempty"`
 	CouponUsageRate                            *float64 `json:"coupon_usage_rate,omitempty"`
 	CouponUsageCost                            *int64   `json:"coupon_usage_cost,omitempty"`
@@ -263,8 +256,6 @@ type ReportStruct struct {
 	Order24hByClickCount                       *int64   `json:"order_24h_by_click_count,omitempty"`
 	Order24hByClickAmount                      *int64   `json:"order_24h_by_click_amount,omitempty"`
 	Order24hByClickRoi                         *float64 `json:"order_24h_by_click_roi,omitempty"`
-	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
-	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
 	DeliverCount                               *int64   `json:"deliver_count,omitempty"`
 	DeliverRate                                *float64 `json:"deliver_rate,omitempty"`
 	DeliverCost                                *int64   `json:"deliver_cost,omitempty"`
@@ -296,7 +287,6 @@ type ReportStruct struct {
 	RegClkRate                                 *float64 `json:"reg_clk_rate,omitempty"`
 	ActivateRegisterRate                       *float64 `json:"activate_register_rate,omitempty"`
 	RegPlaPv                                   *int64   `json:"reg_pla_pv,omitempty"`
-	WebRegisterUv                              *int64   `json:"web_register_uv,omitempty"`
 	RegAllDedupPv                              *int64   `json:"reg_all_dedup_pv,omitempty"`
 	RegCostPla                                 *int64   `json:"reg_cost_pla,omitempty"`
 	RegClickRatePla                            *float64 `json:"reg_click_rate_pla,omitempty"`
@@ -482,29 +472,23 @@ type ReportStruct struct {
 	KeyBehaviorConversionsRate                 *float64 `json:"key_behavior_conversions_rate,omitempty"`
 	ApplyPv                                    *int64   `json:"apply_pv,omitempty"`
 	ApplyCost                                  *int64   `json:"apply_cost,omitempty"`
-	AppApplyUv                                 *int64   `json:"app_apply_uv,omitempty"`
-	WebApplyUv                                 *int64   `json:"web_apply_uv,omitempty"`
 	BizPageApplyUv                             *int64   `json:"biz_page_apply_uv,omitempty"`
 	BizPageApplyRate                           *float64 `json:"biz_page_apply_rate,omitempty"`
 	BizPageApplyCost                           *int64   `json:"biz_page_apply_cost,omitempty"`
 	PreCreditPv                                *int64   `json:"pre_credit_pv,omitempty"`
 	PreCreditAmount                            *int64   `json:"pre_credit_amount,omitempty"`
 	PreCreditCost                              *int64   `json:"pre_credit_cost,omitempty"`
-	AppPreCreditUv                             *int64   `json:"app_pre_credit_uv,omitempty"`
 	BizPreCreditUv                             *int64   `json:"biz_pre_credit_uv,omitempty"`
 	BizPreCreditUvCost                         *int64   `json:"biz_pre_credit_uv_cost,omitempty"`
 	CreditPv                                   *int64   `json:"credit_pv,omitempty"`
 	CreditAmount                               *int64   `json:"credit_amount,omitempty"`
 	CreditCost                                 *int64   `json:"credit_cost,omitempty"`
-	AppCreditUv                                *int64   `json:"app_credit_uv,omitempty"`
-	WebCreditUv                                *int64   `json:"web_credit_uv,omitempty"`
 	BizCreditUv                                *int64   `json:"biz_credit_uv,omitempty"`
 	BizCreditCost                              *int64   `json:"biz_credit_cost,omitempty"`
 	BizCreditRate                              *float64 `json:"biz_credit_rate,omitempty"`
 	CreApplicationRate                         *float64 `json:"cre_application_rate,omitempty"`
 	WithdrawDepositPv                          *int64   `json:"withdraw_deposit_pv,omitempty"`
 	WithdrawDepositAmount                      *int64   `json:"withdraw_deposit_amount,omitempty"`
-	AppWithdrawUv                              *int64   `json:"app_withdraw_uv,omitempty"`
 	BizWithdrawDepositsUv                      *int64   `json:"biz_withdraw_deposits_uv,omitempty"`
 	BizWithdrawDepositsUvCost                  *int64   `json:"biz_withdraw_deposits_uv_cost,omitempty"`
 	CouponClickCount                           *int64   `json:"coupon_click_count,omitempty"`
@@ -803,6 +787,30 @@ type ReportStruct struct {
 	PreCreditDedupPv                           *int64   `json:"pre_credit_dedup_pv,omitempty"`
 	WithdrawDedupPv                            *int64   `json:"withdraw_dedup_pv,omitempty"`
 	ApplyDedupPv                               *int64   `json:"apply_dedup_pv,omitempty"`
+	PurchaseDedupImpPv                         *int64   `json:"purchase_dedup_imp_pv,omitempty"`
+	PurchaseDedupClkPv                         *int64   `json:"purchase_dedup_clk_pv,omitempty"`
+	PurchaseImpAmount                          *int64   `json:"purchase_imp_amount,omitempty"`
+	PurchaseClkAmount                          *int64   `json:"purchase_clk_amount,omitempty"`
+	PurchaseImpRate                            *float64 `json:"purchase_imp_rate,omitempty"`
+	PurchaseClk2Rate                           *float64 `json:"purchase_clk2_rate,omitempty"`
+	PurchaseImpCost                            *int64   `json:"purchase_imp_cost,omitempty"`
+	PurchaseClkCost                            *int64   `json:"purchase_clk_cost,omitempty"`
+	PurchaseImpRoi                             *float64 `json:"purchase_imp_roi,omitempty"`
+	PurchaseClkRoi                             *float64 `json:"purchase_clk_roi,omitempty"`
+	OrderDedupImpPv                            *int64   `json:"order_dedup_imp_pv,omitempty"`
+	OrderDedupClkPv                            *int64   `json:"order_dedup_clk_pv,omitempty"`
+	OrderClk3dPv                               *int64   `json:"order_clk_3d_pv,omitempty"`
+	OrderImp3dPv                               *int64   `json:"order_imp_3d_pv,omitempty"`
+	OrderClk23dPv                              *int64   `json:"order_clk2_3d_pv,omitempty"`
+	OrderClk3dAmount                           *int64   `json:"order_clk_3d_amount,omitempty"`
+	OrderImp3dAmount                           *int64   `json:"order_imp_3d_amount,omitempty"`
+	OrderClk23dAmount                          *int64   `json:"order_clk2_3d_amount,omitempty"`
+	OrderClk3dCost                             *int64   `json:"order_clk_3d_cost,omitempty"`
+	OrderImp3dCost                             *int64   `json:"order_imp_3d_cost,omitempty"`
+	OrderClk23dCost                            *int64   `json:"order_clk2_3d_cost,omitempty"`
+	OrderClk3dRoi                              *float64 `json:"order_clk_3d_roi,omitempty"`
+	OrderImp3dRoi                              *float64 `json:"order_imp_3d_roi,omitempty"`
+	OrderClk23dRoi                             *float64 `json:"order_clk2_3d_roi,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -812,6 +820,8 @@ type ReportStruct struct {
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`
+	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
+	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
 	CvsExpPv                                   *int64   `json:"cvs_exp_pv,omitempty"`
 	CvsExpUv                                   *int64   `json:"cvs_exp_uv,omitempty"`
 	CvsCpnClkPv                                *int64   `json:"cvs_cpn_clk_pv,omitempty"`

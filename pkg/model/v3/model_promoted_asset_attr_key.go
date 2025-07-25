@@ -126,6 +126,7 @@ const (
 	PromotedAssetAttrKey_SHORT_DRAMA_PRODUCT_MAIN_PIC                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_SHORT_DRAMA_PRODUCT_MAIN_PIC"
 	PromotedAssetAttrKey_SHORT_DRAMA_CATE_NAME                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_SHORT_DRAMA_CATE_NAME"
 	PromotedAssetAttrKey_SHORT_DRAMA_STATUS                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_SHORT_DRAMA_STATUS"
+	PromotedAssetAttrKey_SHORT_DRAMA_EPISODE_COUNT                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_SHORT_DRAMA_EPISODE_COUNT"
 	PromotedAssetAttrKey_AUDIOVISUAL_ENTERTAINMENT_FILINGS_NUMBER                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_AUDIOVISUAL_ENTERTAINMENT_FILINGS_NUMBER"
 	PromotedAssetAttrKey_AUDIOVISUAL_ENTERTAINMENT_FILINGS_CONTENT_TYPE                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_AUDIOVISUAL_ENTERTAINMENT_FILINGS_CONTENT_TYPE"
 	PromotedAssetAttrKey_AUDIOVISUAL_ENTERTAINMENT_FILINGS_PIC                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_AUDIOVISUAL_ENTERTAINMENT_FILINGS_PIC"
@@ -442,4 +443,9 @@ const (
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_CATE_NAME                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_CATE_NAME"
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_LANDING_PAGE_TYPE                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_LANDING_PAGE_TYPE"
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_LANDING_PAGE_URL                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_LANDING_PAGE_URL"
+	PromotedAssetAttrKey_RESALE_AND_COMMERCIAL_LAND_CATE_NAME                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_RESALE_AND_COMMERCIAL_LAND_CATE_NAME"
+	PromotedAssetAttrKey_RESALE_AND_COMMERCIAL_LAND_LOCATION                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_RESALE_AND_COMMERCIAL_LAND_LOCATION"
+	PromotedAssetAttrKey_RESALE_AND_COMMERCIAL_LAND_SHOP_TYPE                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_RESALE_AND_COMMERCIAL_LAND_SHOP_TYPE"
+	PromotedAssetAttrKey_RESALE_AND_COMMERCIAL_LAND_SALE_TYPE                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_RESALE_AND_COMMERCIAL_LAND_SALE_TYPE"
+	PromotedAssetAttrKey_RESALE_AND_COMMERCIAL_LAND_PROJECT_NAME                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_RESALE_AND_COMMERCIAL_LAND_PROJECT_NAME"
 )

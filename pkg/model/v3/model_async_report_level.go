@@ -33,4 +33,5 @@ const (
 	AsyncReportLevel_PRODUCT_CATALOG  AsyncReportLevel = "REPORT_LEVEL_PRODUCT_CATALOG"
 	AsyncReportLevel_PROJECT          AsyncReportLevel = "REPORT_LEVEL_PROJECT"
 	AsyncReportLevel_PROJECT_CREATIVE AsyncReportLevel = "REPORT_LEVEL_PROJECT_CREATIVE"
+	AsyncReportLevel_OS               AsyncReportLevel = "REPORT_LEVEL_OS"
 )

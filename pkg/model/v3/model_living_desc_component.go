@@ -13,4 +13,5 @@ package model
 type LivingDescComponent struct {
 	ComponentId *int64            `json:"component_id,omitempty"`
 	Value       *LivingDescStruct `json:"value,omitempty"`
+	IsDeleted   *bool             `json:"is_deleted,omitempty"`
 }

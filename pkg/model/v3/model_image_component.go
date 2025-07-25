@@ -13,4 +13,5 @@ package model
 type ImageComponent struct {
 	ComponentId *int64       `json:"component_id,omitempty"`
 	Value       *ImageStruct `json:"value,omitempty"`
+	IsDeleted   *bool        `json:"is_deleted,omitempty"`
 }

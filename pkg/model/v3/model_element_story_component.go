@@ -13,4 +13,5 @@ package model
 type ElementStoryComponent struct {
 	ComponentId *int64              `json:"component_id,omitempty"`
 	Value       *ElementStoryStruct `json:"value,omitempty"`
+	IsDeleted   *bool               `json:"is_deleted,omitempty"`
 }

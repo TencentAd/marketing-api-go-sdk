@@ -156,5 +156,6 @@ const (
 	ComponentSubType_JUMP_INFO_QQ_MINI_GAME                   ComponentSubType = "JUMP_INFO_QQ_MINI_GAME"
 	ComponentSubType_JUMP_INFO_APP_HARMONY                    ComponentSubType = "JUMP_INFO_APP_HARMONY"
 	ComponentSubType_JUMP_INFO_WECHAT_SHOP                    ComponentSubType = "JUMP_INFO_WECHAT_SHOP"
+	ComponentSubType_JUMP_INFO_SEARCH_BRAND_AREA              ComponentSubType = "JUMP_INFO_SEARCH_BRAND_AREA"
 	ComponentSubType_MARKETING_ASSET_PLAYLET                  ComponentSubType = "MARKETING_ASSET_PLAYLET"
 )

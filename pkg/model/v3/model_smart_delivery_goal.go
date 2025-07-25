@@ -64,4 +64,5 @@ const (
 	SmartDeliveryGoal_PAGE_SCAN_CODE_OPERATOR                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_OPERATOR"
 	SmartDeliveryGoal_PAGE_SCAN_CODE_HOME                                                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_HOME"
 	SmartDeliveryGoal_PAGE_SCAN_CODE                                                       SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE"
+	SmartDeliveryGoal_PAGE_CONFIRM_EFFECTIVE_LEADS                                         SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_CONFIRM_EFFECTIVE_LEADS"
 )

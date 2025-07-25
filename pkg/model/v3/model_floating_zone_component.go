@@ -13,4 +13,5 @@ package model
 type FloatingZoneComponent struct {
 	ComponentId *int64              `json:"component_id,omitempty"`
 	Value       *FloatingZoneStruct `json:"value,omitempty"`
+	IsDeleted   *bool               `json:"is_deleted,omitempty"`
 }

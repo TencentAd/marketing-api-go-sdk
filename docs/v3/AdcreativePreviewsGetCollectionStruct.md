@@ -1,4 +1,4 @@
-# CollectionStruct
+# AdcreativePreviewsGetCollectionStruct
 
 ## Properties
 Name | Type | Description | Notes

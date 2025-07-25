@@ -10,6 +10,6 @@
 package model
 
 type AdcreativePreviewsGetResponseData struct {
-	List   *[]CollectionStruct `json:"list,omitempty"`
-	Range_ *ModelRange         `json:"range,omitempty"`
+	List   *[]AdcreativePreviewsGetCollectionStruct `json:"list,omitempty"`
+	Range_ *ModelRange                              `json:"range,omitempty"`
 }

@@ -13,4 +13,5 @@ package model
 type JumpinfoComponent struct {
 	ComponentId *int64          `json:"component_id,omitempty"`
 	Value       *JumpinfoStruct `json:"value,omitempty"`
+	IsDeleted   *bool           `json:"is_deleted,omitempty"`
 }

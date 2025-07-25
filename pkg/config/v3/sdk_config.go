@@ -20,6 +20,7 @@ type SDKConfig struct {
 	SkipMonitor  bool
 	IsStrictMode bool
 	GlobalConfig GlobalConfig
+	UserToken    string
 }
 
 // GlobalConfig ...

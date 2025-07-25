@@ -13,4 +13,5 @@ package model
 type PhoneComponent struct {
 	ComponentId *int64       `json:"component_id,omitempty"`
 	Value       *PhoneStruct `json:"value,omitempty"`
+	IsDeleted   *bool        `json:"is_deleted,omitempty"`
 }
