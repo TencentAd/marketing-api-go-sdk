@@ -11,8 +11,9 @@ package model
 
 // 创意组件字段结构
 type ComponentMetadataValueFieldStructureField struct {
-	Name    *string                      `json:"name,omitempty"`
-	Type_   ComponentMetadataFieldType   `json:"type,omitempty"`
-	IsArray *bool                        `json:"is_array,omitempty"`
-	Valid   *ComponentMetadataValueValid `json:"valid,omitempty"`
+	Name      *string                                         `json:"name,omitempty"`
+	Type_     ComponentMetadataFieldType                      `json:"type,omitempty"`
+	Structure *[]ComponentMetadataValueFieldStructureFieldSub `json:"structure,omitempty"`
+	IsArray   *bool                                           `json:"is_array,omitempty"`
+	Valid     *ComponentMetadataValueValid                    `json:"valid,omitempty"`
 }

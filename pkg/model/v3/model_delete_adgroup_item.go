@@ -9,7 +9,7 @@
 
 package model
 
-// 删除广告组
+// 删除广告
 type DeleteAdgroupItem struct {
 	AdgroupId *int64 `json:"adgroup_id,omitempty"`
 }

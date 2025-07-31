@@ -4,14 +4,14 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdgroupNegativewordsAdd**](AdgroupNegativewordsApi.md#AdgroupNegativewordsAdd) | **Post** /adgroup_negativewords/add | 新增广告组否定词
-[**AdgroupNegativewordsGet**](AdgroupNegativewordsApi.md#AdgroupNegativewordsGet) | **Get** /adgroup_negativewords/get | 查询广告组否定词
-[**AdgroupNegativewordsUpdate**](AdgroupNegativewordsApi.md#AdgroupNegativewordsUpdate) | **Post** /adgroup_negativewords/update | 修改广告组否定词
+[**AdgroupNegativewordsAdd**](AdgroupNegativewordsApi.md#AdgroupNegativewordsAdd) | **Post** /adgroup_negativewords/add | 新增广告否定词
+[**AdgroupNegativewordsGet**](AdgroupNegativewordsApi.md#AdgroupNegativewordsGet) | **Get** /adgroup_negativewords/get | 查询广告否定词
+[**AdgroupNegativewordsUpdate**](AdgroupNegativewordsApi.md#AdgroupNegativewordsUpdate) | **Post** /adgroup_negativewords/update | 更新广告否定词
 
 
 # **AdgroupNegativewordsAdd**
 > AdgroupNegativewordsAddResponse AdgroupNegativewordsAdd(ctx, data)
-新增广告组否定词
+新增广告否定词
 
 ### Required Parameters
 
@@ -37,7 +37,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupNegativewordsGet**
 > AdgroupNegativewordsGetResponse AdgroupNegativewordsGet(ctx, accountId, adgroupIds, optional)
-查询广告组否定词
+查询广告否定词
 
 ### Required Parameters
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupNegativewordsUpdate**
 > AdgroupNegativewordsUpdateResponse AdgroupNegativewordsUpdate(ctx, data)
-修改广告组否定词
+更新广告否定词
 
 ### Required Parameters
 

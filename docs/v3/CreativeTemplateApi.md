@@ -39,6 +39,7 @@ Name | Type | Description  | Notes
  **dynamicCreativeType** | **optional.String**|  | 
  **creativeTemplateId** | **optional.Int64**|  | 
  **useNewVersion** | **optional.Bool**|  | 
+ **adgroupType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

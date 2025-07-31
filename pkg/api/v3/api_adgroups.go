@@ -30,7 +30,7 @@ var (
 type AdgroupsApiService service
 
 /*
-AdgroupsApiService 创建广告组
+AdgroupsApiService 创建广告
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *AdgroupsApiService) Add(ctx context.Context, data AdgroupsAddRequest) (
 }
 
 /*
-AdgroupsApiService 删除广告组
+AdgroupsApiService 删除广告
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -240,7 +240,7 @@ func (a *AdgroupsApiService) Delete(ctx context.Context, data AdgroupsDeleteRequ
 }
 
 /*
-AdgroupsApiService 获取广告组
+AdgroupsApiService 获取广告
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AdgroupsGetOpts - Optional Parameters:
@@ -384,7 +384,7 @@ func (a *AdgroupsApiService) Get(ctx context.Context, accountId int64, localVarO
 }
 
 /*
-AdgroupsApiService 更新广告组
+AdgroupsApiService 更新广告
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -489,7 +489,7 @@ func (a *AdgroupsApiService) Update(ctx context.Context, data AdgroupsUpdateRequ
 }
 
 /*
-AdgroupsApiService 批量修改广告组出价
+AdgroupsApiService 批量修改广告出价
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -594,7 +594,7 @@ func (a *AdgroupsApiService) UpdateBidAmount(ctx context.Context, data AdgroupsU
 }
 
 /*
-AdgroupsApiService 批量修改广告组开启/暂停状态
+AdgroupsApiService 批量修改广告开启/暂停状态
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -699,7 +699,7 @@ func (a *AdgroupsApiService) UpdateConfiguredStatus(ctx context.Context, data Ad
 }
 
 /*
-AdgroupsApiService 批量修改广告组日限额
+AdgroupsApiService 批量修改广告日限额
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -804,7 +804,7 @@ func (a *AdgroupsApiService) UpdateDailyBudget(ctx context.Context, data Adgroup
 }
 
 /*
-AdgroupsApiService 批量修改广告组投放起止时间
+AdgroupsApiService 批量修改广告投放起止时间
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

@@ -13,4 +13,5 @@ package model
 type MarketingPendantComponent struct {
 	ComponentId *int64                  `json:"component_id,omitempty"`
 	Value       *MarketingPendantStruct `json:"value,omitempty"`
+	IsDeleted   *bool                   `json:"is_deleted,omitempty"`
 }

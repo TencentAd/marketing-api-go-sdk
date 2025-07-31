@@ -11,5 +11,6 @@ package model
 
 // 视频号直播预约落地页信息
 type WechatChannelsReserveLivePageSpec struct {
-	ReserveId *string `json:"reserve_id,omitempty"`
+	ReserveId               *string `json:"reserve_id,omitempty"`
+	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
 }

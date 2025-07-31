@@ -9,7 +9,7 @@
 
 package model
 
-// 更新单个广告组投放时间条件
+// 更新单个广告投放时间条件
 type UpdateDatetimeStruct struct {
 	AdgroupId  *int64  `json:"adgroup_id,omitempty"`
 	BeginDate  *string `json:"begin_date,omitempty"`

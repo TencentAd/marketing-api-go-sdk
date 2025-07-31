@@ -16,7 +16,6 @@ type TaskSpec struct {
 	UpdateDeepConversionBehaviorBidSpec              *[]UpdateDeepConversionBehaviorBidItem              `json:"update_deep_conversion_behavior_bid_spec,omitempty"`
 	DeleteAdgroupSpec                                *[]DeleteAdgroupItem                                `json:"delete_adgroup_spec,omitempty"`
 	UpdateAdgroupDeepConversionWorthRateSpec         *[]UpdateAdgroupDeepConversionWorthRateItem         `json:"update_adgroup_deep_conversion_worth_rate_spec,omitempty"`
-	TargetingsShareSpec                              *[]TargetingsShareItem                              `json:"targetings_share_spec,omitempty"`
 	UpdateAdgroupConfiguredStatusSpec                *[]UpdateAdgroupConfiguredStatusItem                `json:"update_adgroup_configured_status_spec,omitempty"`
 	UpdateAdgroupDailyBudgetSpec                     *[]UpdateAdgroupDailyBudgetItem                     `json:"update_adgroup_daily_budget_spec,omitempty"`
 	UpdateAdgroupAutoAcquisitionSpec                 *[]UpdateAdgroupAutoAcquisitionItem                 `json:"update_adgroup_auto_acquisition_spec,omitempty"`
@@ -39,4 +38,5 @@ type TaskSpec struct {
 	UpdateAdgroupEcomPkamSpec                        *[]UpdateAdgroupEcomPkamItem                        `json:"update_adgroup_ecom_pkam_spec,omitempty"`
 	UpdateAdgroupDeriveConfSpec                      *[]UpdateAdgroupDeriveConfItem                      `json:"update_adgroup_derive_conf_spec,omitempty"`
 	UpdateComponentSharingSpec                       *[]UpdateComponentSharingItem                       `json:"update_component_sharing_spec,omitempty"`
+	UpdateAdgroupSmartDeliveryGoalSpec               *[]UpdateAdgroupSmartDeliveryGoalItem               `json:"update_adgroup_smart_delivery_goal_spec,omitempty"`
 }

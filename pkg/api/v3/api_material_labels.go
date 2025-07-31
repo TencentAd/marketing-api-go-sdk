@@ -343,8 +343,9 @@ func (a *MaterialLabelsApiService) Delete(ctx context.Context, data MaterialLabe
 /*
 MaterialLabelsApiService 获取素材标签列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param accountId
  * @param optional nil or *MaterialLabelsGetOpts - Optional Parameters:
+     * @param "AccountId" (optional.Int64) -
+     * @param "OrganizationId" (optional.Int64) -  account_id或organization_id传其中一个即可
      * @param "LabelId" (optional.Int64) -
      * @param "LabelName" (optional.String) -
      * @param "FirstLabelLevelIdList" (optional.Interface of []int64) -  一级标签类目ID列表
@@ -360,6 +361,8 @@ MaterialLabelsApiService 获取素材标签列表
 */
 
 type MaterialLabelsGetOpts struct {
+	AccountId              optional.Int64
+	OrganizationId         optional.Int64
 	LabelId                optional.Int64
 	LabelName              optional.String
 	FirstLabelLevelIdList  optional.Interface
@@ -372,7 +375,7 @@ type MaterialLabelsGetOpts struct {
 	Fields                 optional.Interface
 }
 
-func (a *MaterialLabelsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *MaterialLabelsGetOpts) (MaterialLabelsGetResponseData, http.Header, error) {
+func (a *MaterialLabelsApiService) Get(ctx context.Context, localVarOptionals *MaterialLabelsGetOpts) (MaterialLabelsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -390,7 +393,12 @@ func (a *MaterialLabelsApiService) Get(ctx context.Context, accountId int64, loc
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.AccountId.IsSet() {
+		localVarQueryParams.Add("account_id", parameterToString(localVarOptionals.AccountId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
+		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.LabelId.IsSet() {
 		localVarQueryParams.Add("label_id", parameterToString(localVarOptionals.LabelId.Value(), ""))
 	}

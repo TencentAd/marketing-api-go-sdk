@@ -27,6 +27,7 @@ Name | Type | Description  | Notes
 
  **accountId** | **optional.Int64**|  | 
  **advertiserType** | **optional.String**|  | 
+ **businessUnitId** | **optional.Int64**|  | 
  **cursor** | **optional.Int64**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

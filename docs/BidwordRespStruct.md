@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **ConfiguredStatus** | [***BidwordPauseType**](BidwordPauseType.md) |  | [optional] [default to null]
 **ErrorMsg** | **string** |  | [optional] [default to null]
 **ApprovalStatus** | **int64** |  | [optional] [default to null]
+**DynamicCreativeId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

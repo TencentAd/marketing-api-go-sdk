@@ -118,5 +118,6 @@ const (
 	IntOptimizationGoal_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE     IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE"
 	IntOptimizationGoal_VIEW_DRAMA_DURATION_1_MIN              IntOptimizationGoal = "OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN"
 	IntOptimizationGoal_FIRST_PROMPT_INPUT                     IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT"
+	IntOptimizationGoal_ECOMMERCE_GIFTING                      IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_GIFTING"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

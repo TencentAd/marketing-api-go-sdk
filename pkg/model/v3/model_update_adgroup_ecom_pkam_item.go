@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组一方跑量
+// 修改广告一方跑量
 type UpdateAdgroupEcomPkamItem struct {
 	AdgroupId      *int64         `json:"adgroup_id,omitempty"`
 	EcomPkamSwitch EcomPkamSwitch `json:"ecom_pkam_switch,omitempty"`

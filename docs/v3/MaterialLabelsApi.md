@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **MaterialLabelsGet**
-> MaterialLabelsGetResponse MaterialLabelsGet(ctx, accountId, optional)
+> MaterialLabelsGetResponse MaterialLabelsGet(ctx, optional)
 获取素材标签列表
 
 ### Required Parameters
@@ -98,7 +98,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***MaterialLabelsApiMaterialLabelsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -106,7 +105,8 @@ Optional parameters are passed through a pointer to a MaterialLabelsApiMaterialL
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**| account_id或organization_id传其中一个即可 | 
  **labelId** | **optional.Int64**|  | 
  **labelName** | **optional.String**|  | 
  **firstLabelLevelIdList** | [**optional.Interface of []int64**](int64.md)| 一级标签类目ID列表 | 

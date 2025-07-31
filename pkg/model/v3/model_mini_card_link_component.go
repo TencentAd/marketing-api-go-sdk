@@ -13,4 +13,5 @@ package model
 type MiniCardLinkComponent struct {
 	ComponentId *int64              `json:"component_id,omitempty"`
 	Value       *MiniCardLinkStruct `json:"value,omitempty"`
+	IsDeleted   *bool               `json:"is_deleted,omitempty"`
 }

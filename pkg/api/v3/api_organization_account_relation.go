@@ -36,6 +36,7 @@ OrganizationAccountRelationApiService 查询组织下广告账号信息
  * @param optional nil or *OrganizationAccountRelationGetOpts - Optional Parameters:
      * @param "AccountId" (optional.Int64) -
      * @param "AdvertiserType" (optional.String) -
+     * @param "BusinessUnitId" (optional.Int64) -
      * @param "Cursor" (optional.Int64) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -47,6 +48,7 @@ OrganizationAccountRelationApiService 查询组织下广告账号信息
 type OrganizationAccountRelationGetOpts struct {
 	AccountId      optional.Int64
 	AdvertiserType optional.String
+	BusinessUnitId optional.Int64
 	Cursor         optional.Int64
 	Page           optional.Int64
 	PageSize       optional.Int64
@@ -76,6 +78,9 @@ func (a *OrganizationAccountRelationApiService) Get(ctx context.Context, paginat
 	}
 	if localVarOptionals != nil && localVarOptionals.AdvertiserType.IsSet() {
 		localVarQueryParams.Add("advertiser_type", parameterToString(localVarOptionals.AdvertiserType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.BusinessUnitId.IsSet() {
+		localVarQueryParams.Add("business_unit_id", parameterToString(localVarOptionals.BusinessUnitId.Value(), ""))
 	}
 	localVarQueryParams.Add("pagination_mode", parameterToString(paginationMode, ""))
 	if localVarOptionals != nil && localVarOptionals.Cursor.IsSet() {

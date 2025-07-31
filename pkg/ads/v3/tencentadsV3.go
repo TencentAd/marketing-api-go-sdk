@@ -42,6 +42,7 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 		AccessToken: cfg.AccessToken,
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),
 		Nonce:       nonce[0:8] + nonce[9:13] + nonce[14:18],
+		UserToken:   cfg.UserToken,
 	}
 	ctx = context.WithValue(ctx, config.ContextAPIKey, apiKey)
 	client := api.NewAPIClient(cfg)

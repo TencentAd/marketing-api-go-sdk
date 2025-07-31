@@ -24,7 +24,6 @@ import (
 type ProfilesGetExample struct {
 	TAds            *ads.SDKClient
 	AccessToken     string
-	AccountId       int64
 	ProfilesGetOpts *api.ProfilesGetOpts
 }
 
@@ -34,7 +33,6 @@ func (e *ProfilesGetExample) Init() {
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.AccountId = 789
 	e.ProfilesGetOpts = &api.ProfilesGetOpts{}
 }
 
@@ -42,7 +40,7 @@ func (e *ProfilesGetExample) RunExample() (model.ProfilesGetResponseData, http.H
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.Profiles().Get(ctx, e.AccountId, e.ProfilesGetOpts)
+	return tads.Profiles().Get(ctx, e.ProfilesGetOpts)
 }
 
 func main() {

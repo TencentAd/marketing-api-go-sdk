@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **LastModifiedTime** | **int64** |  | [optional] [default to null]
 **ProfileUrl** | **string** |  | [optional] [default to null]
 **SystemStatus** | [***AdStatus**](AdStatus.md) |  | [optional] [default to null]
+**MdmId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

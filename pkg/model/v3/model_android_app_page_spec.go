@@ -13,4 +13,5 @@ package model
 type AndroidAppPageSpec struct {
 	AndroidAppId       *string `json:"android_app_id,omitempty"`
 	WechatCanvasPageId *int64  `json:"wechat_canvas_page_id,omitempty"`
+	AndroidChannelId   *string `json:"android_channel_id,omitempty"`
 }

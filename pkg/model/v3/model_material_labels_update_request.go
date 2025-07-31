@@ -11,6 +11,7 @@ package model
 
 type MaterialLabelsUpdateRequest struct {
 	AccountId            *int64  `json:"account_id,omitempty"`
+	OrganizationId       *int64  `json:"organization_id,omitempty"`
 	LabelId              *int64  `json:"label_id,omitempty"`
 	LabelName            *string `json:"label_name,omitempty"`
 	FirstLabelLevelName  *string `json:"first_label_level_name,omitempty"`

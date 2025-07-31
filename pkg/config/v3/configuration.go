@@ -48,6 +48,7 @@ type APIKey struct {
 	AccessToken string
 	Timestamp   string
 	Nonce       string
+	UserToken   string
 }
 
 type Configuration struct {

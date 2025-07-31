@@ -51,6 +51,9 @@ const (
 	ComponentType_CONSULT_LINK               ComponentType = "CONSULT_LINK"
 	ComponentType_SHOP_PRODUCT_CARD          ComponentType = "SHOP_PRODUCT_CARD"
 	ComponentType_DYNAMIC_SHOWCASE           ComponentType = "DYNAMIC_SHOWCASE"
+	ComponentType_UNVEIL_CARD                ComponentType = "UNVEIL_CARD"
+	ComponentType_HOT_TOPIC                  ComponentType = "HOT_TOPIC"
+	ComponentType_VIDEO_CHANNELS_CONTENT     ComponentType = "VIDEO_CHANNELS_CONTENT"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"
@@ -84,4 +87,6 @@ const (
 	ComponentType_V2_MDPA_DESCRIPTION        ComponentType = "V2_MDPA_DESCRIPTION"
 	ComponentType_SEARCH_ALGORITHM_GEN       ComponentType = "SEARCH_ALGORITHM_GEN"
 	ComponentType_SEARCH_DERIVATIVE_TITLE    ComponentType = "SEARCH_DERIVATIVE_TITLE"
+	ComponentType_SMART_DELIVERY_AIGC        ComponentType = "SMART_DELIVERY_AIGC"
+	ComponentType_MARKETING_ASSET_PLAYLET    ComponentType = "MARKETING_ASSET_PLAYLET"
 )

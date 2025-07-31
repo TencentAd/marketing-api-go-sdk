@@ -1,6 +1,27 @@
 # 更新日志
 本文记录了Go SDK的更新日志。
 
+## 2025-07-25
+1. 发布Go SDK [1.7.71] 版
+- 新增 MarketingApi 接口，更新模型
+- 新增 user_token 支持
+
+## 2025-07-09
+1. 发布Go SDK [1.7.70] 版
+- 新增 MarketingApi 接口，更新模型
+
+## 2025-07-02
+1. 发布Go SDK [1.7.69] 版
+- 新增 MarketingApi 接口，更新模型
+
+## 2025-06-20
+1. 发布Go SDK [1.7.68] 版
+- 新增 MarketingApi 接口，更新模型
+
+## 2025-05-28
+1. 发布Go SDK [1.7.67] 版
+- 新增 MarketingApi 接口，更新模型
+
 ## 2025-04-11
 1. 发布Go SDK [1.7.66] 版
 - 新增 MarketingApi 接口，更新模型

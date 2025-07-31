@@ -11,14 +11,16 @@ package model
 
 // 校验成功的门店poi信息
 type SuccessPoiInfoStruct struct {
-	PoiId                  *string `json:"poi_id,omitempty"`
-	OriginAddress          *string `json:"origin_address,omitempty"`
-	LocalStoreName         *string `json:"local_store_name,omitempty"`
-	LocalStoreProvince     *string `json:"local_store_province,omitempty"`
-	LocalStoreCity         *string `json:"local_store_city,omitempty"`
-	LocalStoreAddress      *string `json:"local_store_address,omitempty"`
-	LocalStoreBusinessArea *string `json:"local_store_business_area,omitempty"`
-	LocalStoreStreet       *string `json:"local_store_street,omitempty"`
-	LocalStoreDistrict     *string `json:"local_store_district,omitempty"`
-	Telephone              *string `json:"telephone,omitempty"`
+	PoiId                  *string  `json:"poi_id,omitempty"`
+	OriginAddress          *string  `json:"origin_address,omitempty"`
+	LocalStoreName         *string  `json:"local_store_name,omitempty"`
+	LocalStoreProvince     *string  `json:"local_store_province,omitempty"`
+	LocalStoreCity         *string  `json:"local_store_city,omitempty"`
+	LocalStoreAddress      *string  `json:"local_store_address,omitempty"`
+	LocalStoreBusinessArea *string  `json:"local_store_business_area,omitempty"`
+	LocalStoreStreet       *string  `json:"local_store_street,omitempty"`
+	LocalStoreDistrict     *string  `json:"local_store_district,omitempty"`
+	Telephone              *string  `json:"telephone,omitempty"`
+	Latitude               *float64 `json:"latitude,omitempty"`
+	Longitude              *float64 `json:"longitude,omitempty"`
 }

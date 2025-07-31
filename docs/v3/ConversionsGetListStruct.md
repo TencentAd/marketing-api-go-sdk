@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **DeepBehaviorAdvancedGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **DeepBehaviorAdvancedGoalMinPrice** | **int64** |  | [optional] [default to null]
 **DeepBehaviorAdvancedGoalMaxPrice** | **int64** |  | [optional] [default to null]
-**DeepOptimizationGoalType** | [***DeepOptimizationGoalType**](DeepOptimizationGoalType.md) |  | [optional] [default to null]
+**DeepOptimizationGoalType** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **IncubationOptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ConversionLinkInfo** | [***ConversionLinkInfo**](conversion_link_info.md) |  | [optional] [default to null]

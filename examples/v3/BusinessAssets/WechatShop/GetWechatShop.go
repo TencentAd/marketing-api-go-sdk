@@ -22,11 +22,10 @@ import (
 )
 
 type WechatShopGetExample struct {
-	TAds                   *ads.SDKClient
-	AccessToken            string
-	AccountId              int64
-	WechatChannelsShopName string
-	WechatShopGetOpts      *api.WechatShopGetOpts
+	TAds              *ads.SDKClient
+	AccessToken       string
+	AccountId         int64
+	WechatShopGetOpts *api.WechatShopGetOpts
 }
 
 func (e *WechatShopGetExample) Init() {
@@ -36,7 +35,6 @@ func (e *WechatShopGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = 789
-	e.WechatChannelsShopName = "wechatChannelsShopName_example"
 	e.WechatShopGetOpts = &api.WechatShopGetOpts{}
 }
 
@@ -44,7 +42,7 @@ func (e *WechatShopGetExample) RunExample() (model.WechatShopGetResponseData, ht
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.WechatShop().Get(ctx, e.AccountId, e.WechatChannelsShopName, e.WechatShopGetOpts)
+	return tads.WechatShop().Get(ctx, e.AccountId, e.WechatShopGetOpts)
 }
 
 func main() {

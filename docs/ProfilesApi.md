@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ProfilesGet**
-> ProfilesGetResponse ProfilesGet(ctx, accountId, optional)
+> ProfilesGetResponse ProfilesGet(ctx, optional)
 获取朋友圈头像昵称跳转页
 
 ### Required Parameters
@@ -70,7 +70,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **accountId** | **int64**|  | 
  **optional** | ***ProfilesApiProfilesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -78,10 +77,11 @@ Optional parameters are passed through a pointer to a ProfilesApiProfilesGetOpts
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
+ **accountId** | **optional.Int64**|  | 
  **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **organizationId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

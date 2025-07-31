@@ -13,4 +13,5 @@ package model
 type WechatChannelsComponent struct {
 	ComponentId *int64                `json:"component_id,omitempty"`
 	Value       *WechatChannelsStruct `json:"value,omitempty"`
+	IsDeleted   *bool                 `json:"is_deleted,omitempty"`
 }

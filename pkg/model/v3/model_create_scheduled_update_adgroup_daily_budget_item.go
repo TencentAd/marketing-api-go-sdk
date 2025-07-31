@@ -9,7 +9,7 @@
 
 package model
 
-// 预设置广告组次日预算
+// 预设置广告次日预算
 type CreateScheduledUpdateAdgroupDailyBudgetItem struct {
 	AdgroupId   *int64 `json:"adgroup_id,omitempty"`
 	DailyBudget *int64 `json:"daily_budget,omitempty"`

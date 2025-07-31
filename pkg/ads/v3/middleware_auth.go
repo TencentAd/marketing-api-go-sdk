@@ -35,11 +35,15 @@ func (a *AuthMiddleware) Handle(
 		AccessToken: a.tads.GetAccessToken(),
 		Timestamp:   strconv.FormatInt(time.Now().Unix(), 10),
 		Nonce:       nonce[0:8] + nonce[9:13] + nonce[14:18],
+		UserToken:   a.tads.Config.UserToken,
 	}
 	query := req.URL.Query()
 	query.Set("access_token", apiKey.AccessToken)
 	query.Set("timestamp", apiKey.Timestamp)
 	query.Set("nonce", apiKey.Nonce)
+	if apiKey.UserToken != "" {
+		query.Set("user_token", apiKey.UserToken)
+	}
 	req.URL.RawQuery = query.Encode()
 	ctx := context.WithValue(req.Context(), config.ContextAPIKey, apiKey)
 	req = req.WithContext(ctx)

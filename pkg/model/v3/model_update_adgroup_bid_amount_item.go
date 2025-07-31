@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组出价
+// 修改广告出价
 type UpdateAdgroupBidAmountItem struct {
 	AdgroupId           *int64  `json:"adgroup_id,omitempty"`
 	BidAmount           *int64  `json:"bid_amount,omitempty"`

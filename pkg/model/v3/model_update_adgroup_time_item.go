@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告组投放时间
+// 修改广告投放时间
 type UpdateAdgroupTimeItem struct {
 	AdgroupId         *int64  `json:"adgroup_id,omitempty"`
 	AccountId         *int64  `json:"account_id,omitempty"`

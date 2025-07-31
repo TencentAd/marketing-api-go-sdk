@@ -10,6 +10,7 @@
 package model
 
 type ProfilesDeleteRequest struct {
-	AccountId *int64 `json:"account_id,omitempty"`
-	ProfileId *int64 `json:"profile_id,omitempty"`
+	AccountId      *int64 `json:"account_id,omitempty"`
+	ProfileId      *int64 `json:"profile_id,omitempty"`
+	OrganizationId *int64 `json:"organization_id,omitempty"`
 }

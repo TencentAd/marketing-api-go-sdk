@@ -27,6 +27,9 @@ Name | Type | Description | Notes
 **WechatStoreProductAdStatus** | **int64** |  | [optional] [default to null]
 **WechatStoreProductAdUnavailableCause** | **[]string** |  | [optional] [default to null]
 **StorePriceItemList** | [**[]StorePriceItem**](store_price_item.md) |  | [optional] [default to null]
+**StoreId** | **string** |  | [optional] [default to null]
+**WxStoreProductOperateType** | **int64** |  | [optional] [default to null]
+**SkuStockStatus** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

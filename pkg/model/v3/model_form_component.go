@@ -13,4 +13,5 @@ package model
 type FormComponent struct {
 	ComponentId *int64      `json:"component_id,omitempty"`
 	Value       *FormStruct `json:"value,omitempty"`
+	IsDeleted   *bool       `json:"is_deleted,omitempty"`
 }

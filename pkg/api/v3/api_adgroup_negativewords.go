@@ -30,7 +30,7 @@ var (
 type AdgroupNegativewordsApiService service
 
 /*
-AdgroupNegativewordsApiService 新增广告组否定词
+AdgroupNegativewordsApiService 新增广告否定词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *AdgroupNegativewordsApiService) Add(ctx context.Context, data AdgroupNe
 }
 
 /*
-AdgroupNegativewordsApiService 查询广告组否定词
+AdgroupNegativewordsApiService 查询广告否定词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param adgroupIds
@@ -251,7 +251,7 @@ func (a *AdgroupNegativewordsApiService) Get(ctx context.Context, accountId int6
 }
 
 /*
-AdgroupNegativewordsApiService 修改广告组否定词
+AdgroupNegativewordsApiService 更新广告否定词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

@@ -11,6 +11,7 @@ package model
 
 // 视频号动态落地页信息
 type WechatChannelsFeedPageSpec struct {
-	FeedId       *string                                          `json:"feed_id,omitempty"`
-	ActionButton *ActionButtonStructForWechatChannelsFeedPageSpec `json:"action_button,omitempty"`
+	FeedId                  *string                                          `json:"feed_id,omitempty"`
+	ActionButton            *ActionButtonStructForWechatChannelsFeedPageSpec `json:"action_button,omitempty"`
+	WechatChannelsAccountId *string                                          `json:"wechat_channels_account_id,omitempty"`
 }

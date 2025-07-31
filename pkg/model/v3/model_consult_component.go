@@ -13,4 +13,5 @@ package model
 type ConsultComponent struct {
 	ComponentId *int64         `json:"component_id,omitempty"`
 	Value       *ConsultStruct `json:"value,omitempty"`
+	IsDeleted   *bool          `json:"is_deleted,omitempty"`
 }

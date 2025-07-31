@@ -141,6 +141,18 @@ func (c *SDKClient) BusinessPoint() *api.BusinessPointApiService {
 	return c.Client.BusinessPointApi
 }
 
+func (c *SDKClient) BusinessUnit() *api.BusinessUnitApiService {
+	return c.Client.BusinessUnitApi
+}
+
+func (c *SDKClient) BusinessUnitAccount() *api.BusinessUnitAccountApiService {
+	return c.Client.BusinessUnitAccountApi
+}
+
+func (c *SDKClient) BusinessUnitList() *api.BusinessUnitListApiService {
+	return c.Client.BusinessUnitListApi
+}
+
 func (c *SDKClient) Categories() *api.CategoriesApiService {
 	return c.Client.CategoriesApi
 }
@@ -169,8 +181,8 @@ func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
 
-func (c *SDKClient) ComponentDefaultSharing() *api.ComponentDefaultSharingApiService {
-	return c.Client.ComponentDefaultSharingApi
+func (c *SDKClient) ComponentDetail() *api.ComponentDetailApiService {
+	return c.Client.ComponentDetailApi
 }
 
 func (c *SDKClient) ComponentElementUrgeReview() *api.ComponentElementUrgeReviewApiService {
@@ -207,6 +219,10 @@ func (c *SDKClient) ConversionLinks() *api.ConversionLinksApiService {
 
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
+}
+
+func (c *SDKClient) CreativeRecommend() *api.CreativeRecommendApiService {
+	return c.Client.CreativeRecommendApi
 }
 
 func (c *SDKClient) CreativeTemplate() *api.CreativeTemplateApiService {
@@ -503,6 +519,26 @@ func (c *SDKClient) Oauth() *api.OauthApiService {
 
 func (c *SDKClient) ObjectCommentFlag() *api.ObjectCommentFlagApiService {
 	return c.Client.ObjectCommentFlagApi
+}
+
+func (c *SDKClient) OfficialLandingPage() *api.OfficialLandingPageApiService {
+	return c.Client.OfficialLandingPageApi
+}
+
+func (c *SDKClient) OfficialLandingPageComponent() *api.OfficialLandingPageComponentApiService {
+	return c.Client.OfficialLandingPageComponentApi
+}
+
+func (c *SDKClient) OfficialLandingPageDetail() *api.OfficialLandingPageDetailApiService {
+	return c.Client.OfficialLandingPageDetailApi
+}
+
+func (c *SDKClient) OfficialLandingPageList() *api.OfficialLandingPageListApiService {
+	return c.Client.OfficialLandingPageListApi
+}
+
+func (c *SDKClient) OfficialLandingPageSubmit() *api.OfficialLandingPageSubmitApiService {
+	return c.Client.OfficialLandingPageSubmitApi
 }
 
 func (c *SDKClient) OperationLogList() *api.OperationLogListApiService {

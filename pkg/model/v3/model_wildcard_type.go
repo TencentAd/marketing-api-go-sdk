@@ -18,4 +18,8 @@ const (
 	WildcardType_LANDING_PAGE      WildcardType = "LANDING_PAGE"
 	WildcardType_PRODUCT_INDEX     WildcardType = "PRODUCT_INDEX"
 	WildcardType_PRODUCT_RECOMMEND WildcardType = "PRODUCT_RECOMMEND"
+	WildcardType_USER_IDENTIFIER   WildcardType = "USER_IDENTIFIER"
+	WildcardType_DEEP_LINK         WildcardType = "DEEP_LINK"
+	WildcardType_UNIVERSAL_LINK    WildcardType = "UNIVERSAL_LINK"
+	WildcardType_QUERY_WORD        WildcardType = "QUERY_WORD"
 )

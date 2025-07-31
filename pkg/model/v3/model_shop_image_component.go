@@ -13,4 +13,5 @@ package model
 type ShopImageComponent struct {
 	ComponentId *int64           `json:"component_id,omitempty"`
 	Value       *ShopImageStruct `json:"value,omitempty"`
+	IsDeleted   *bool            `json:"is_deleted,omitempty"`
 }

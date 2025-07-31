@@ -13,4 +13,5 @@ package model
 type ShowDataComponent struct {
 	ComponentId *int64          `json:"component_id,omitempty"`
 	Value       *ShowDataStruct `json:"value,omitempty"`
+	IsDeleted   *bool           `json:"is_deleted,omitempty"`
 }

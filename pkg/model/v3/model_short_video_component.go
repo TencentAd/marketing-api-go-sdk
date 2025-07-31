@@ -13,4 +13,5 @@ package model
 type ShortVideoComponent struct {
 	ComponentId *int64            `json:"component_id,omitempty"`
 	Value       *ShortVideoStruct `json:"value,omitempty"`
+	IsDeleted   *bool             `json:"is_deleted,omitempty"`
 }

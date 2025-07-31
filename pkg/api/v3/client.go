@@ -112,6 +112,12 @@ type APIClient struct {
 
 	BusinessPointApi *BusinessPointApiService
 
+	BusinessUnitApi *BusinessUnitApiService
+
+	BusinessUnitAccountApi *BusinessUnitAccountApiService
+
+	BusinessUnitListApi *BusinessUnitListApiService
+
 	CategoriesApi *CategoriesApiService
 
 	CategoriesAttributeApi *CategoriesAttributeApiService
@@ -126,7 +132,7 @@ type APIClient struct {
 
 	CommentListApi *CommentListApiService
 
-	ComponentDefaultSharingApi *ComponentDefaultSharingApiService
+	ComponentDetailApi *ComponentDetailApiService
 
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
 
@@ -145,6 +151,8 @@ type APIClient struct {
 	ConversionLinksApi *ConversionLinksApiService
 
 	ConversionsApi *ConversionsApiService
+
+	CreativeRecommendApi *CreativeRecommendApiService
 
 	CreativeTemplateApi *CreativeTemplateApiService
 
@@ -293,6 +301,16 @@ type APIClient struct {
 	OauthApi *OauthApiService
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
+
+	OfficialLandingPageApi *OfficialLandingPageApiService
+
+	OfficialLandingPageComponentApi *OfficialLandingPageComponentApiService
+
+	OfficialLandingPageDetailApi *OfficialLandingPageDetailApiService
+
+	OfficialLandingPageListApi *OfficialLandingPageListApiService
+
+	OfficialLandingPageSubmitApi *OfficialLandingPageSubmitApiService
 
 	OperationLogListApi *OperationLogListApiService
 
@@ -505,6 +523,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.BidwordFlowApi = (*BidwordFlowApiService)(&c.common)
 	c.BrandApi = (*BrandApiService)(&c.common)
 	c.BusinessPointApi = (*BusinessPointApiService)(&c.common)
+	c.BusinessUnitApi = (*BusinessUnitApiService)(&c.common)
+	c.BusinessUnitAccountApi = (*BusinessUnitAccountApiService)(&c.common)
+	c.BusinessUnitListApi = (*BusinessUnitListApiService)(&c.common)
 	c.CategoriesApi = (*CategoriesApiService)(&c.common)
 	c.CategoriesAttributeApi = (*CategoriesAttributeApiService)(&c.common)
 	c.ChannelsCommentApi = (*ChannelsCommentApiService)(&c.common)
@@ -512,7 +533,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
-	c.ComponentDefaultSharingApi = (*ComponentDefaultSharingApiService)(&c.common)
+	c.ComponentDetailApi = (*ComponentDetailApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
 	c.ComponentSharingApi = (*ComponentSharingApiService)(&c.common)
@@ -522,6 +543,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ConversionLinkAssetsApi = (*ConversionLinkAssetsApiService)(&c.common)
 	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
+	c.CreativeRecommendApi = (*CreativeRecommendApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)
 	c.CreativeTemplatePreviewsApi = (*CreativeTemplatePreviewsApiService)(&c.common)
@@ -596,6 +618,11 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
+	c.OfficialLandingPageApi = (*OfficialLandingPageApiService)(&c.common)
+	c.OfficialLandingPageComponentApi = (*OfficialLandingPageComponentApiService)(&c.common)
+	c.OfficialLandingPageDetailApi = (*OfficialLandingPageDetailApiService)(&c.common)
+	c.OfficialLandingPageListApi = (*OfficialLandingPageListApiService)(&c.common)
+	c.OfficialLandingPageSubmitApi = (*OfficialLandingPageSubmitApiService)(&c.common)
 	c.OperationLogListApi = (*OperationLogListApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)

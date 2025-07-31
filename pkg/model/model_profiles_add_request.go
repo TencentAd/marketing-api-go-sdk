@@ -17,4 +17,6 @@ type ProfilesAddRequest struct {
 	HeadImageId        *string            `json:"head_image_id,omitempty"`
 	ProfileName        *string            `json:"profile_name,omitempty"`
 	Description        *string            `json:"description,omitempty"`
+	OrganizationId     *int64             `json:"organization_id,omitempty"`
+	MdmId              *int64             `json:"mdm_id,omitempty"`
 }

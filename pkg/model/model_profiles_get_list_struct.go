@@ -24,4 +24,5 @@ type ProfilesGetListStruct struct {
 	LastModifiedTime   *int64             `json:"last_modified_time,omitempty"`
 	ProfileUrl         *string            `json:"profile_url,omitempty"`
 	SystemStatus       AdStatus           `json:"system_status,omitempty"`
+	MdmId              *int64             `json:"mdm_id,omitempty"`
 }

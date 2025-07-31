@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **WechatShopGet**
-> WechatShopGetResponse WechatShopGet(ctx, accountId, wechatChannelsShopName, optional)
+> WechatShopGetResponse WechatShopGet(ctx, accountId, optional)
 查询微信小店信息
 
 ### Required Parameters
@@ -17,7 +17,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **wechatChannelsShopName** | **string**|  | 
  **optional** | ***WechatShopApiWechatShopGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -26,7 +25,8 @@ Optional parameters are passed through a pointer to a WechatShopApiWechatShopGet
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
-
+ **wechatChannelsShopName** | **optional.String**|  | 
+ **wechatChannelsShopId** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

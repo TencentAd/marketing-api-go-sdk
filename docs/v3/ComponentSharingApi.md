@@ -4,36 +4,9 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ComponentSharingAdd**](ComponentSharingApi.md#ComponentSharingAdd) | **Post** /component_sharing/add | 共享创意组件
 [**ComponentSharingGet**](ComponentSharingApi.md#ComponentSharingGet) | **Get** /component_sharing/get | 查询创意组件共享信息
 [**ComponentSharingUpdate**](ComponentSharingApi.md#ComponentSharingUpdate) | **Post** /component_sharing/update | 修改创意组件共享
 
-
-# **ComponentSharingAdd**
-> ComponentSharingAddResponse ComponentSharingAdd(ctx, data)
-共享创意组件
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **data** | [**ComponentSharingAddRequest**](ComponentSharingAddRequest.md)|  | 
-
-### Return type
-
-[**ComponentSharingAddResponse**](ComponentSharingAddResponse.md)
-
-### Authorization
-
-[accessToken](../README.md#accessToken), [nonce](../README.md#nonce), [timestamp](../README.md#timestamp)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ComponentSharingGet**
 > ComponentSharingGetResponse ComponentSharingGet(ctx, organizationId, optional)

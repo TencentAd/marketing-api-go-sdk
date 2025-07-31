@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **ImpressionFeedbackUrl** | **string** |  | [optional] [default to null]
 **AttributionWindow** | **int64** |  | [optional] [default to null]
 **DeepBehaviorAdvancedGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
-**DeepOptimizationGoalType** | [***DeepOptimizationGoalType**](DeepOptimizationGoalType.md) |  | [optional] [default to null]
+**DeepOptimizationGoalType** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **IncubationOptimizationGoal** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ConversionTemplateId** | **int64** |  | [optional] [default to null]

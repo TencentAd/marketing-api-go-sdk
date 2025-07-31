@@ -11,4 +11,6 @@ package model
 
 // 厂商下载
 type AppMarketPageSpec struct {
+	AndroidAppId     *string `json:"android_app_id,omitempty"`
+	AndroidChannelId *string `json:"android_channel_id,omitempty"`
 }

@@ -10,7 +10,8 @@
 package model
 
 type ComponentsDeleteRequest struct {
-	AccountId      *int64 `json:"account_id,omitempty"`
-	ComponentId    *int64 `json:"component_id,omitempty"`
-	OrganizationId *int64 `json:"organization_id,omitempty"`
+	AccountId      *int64         `json:"account_id,omitempty"`
+	ComponentId    *int64         `json:"component_id,omitempty"`
+	OrganizationId *int64         `json:"organization_id,omitempty"`
+	DeleteStrategy DeleteStrategy `json:"delete_strategy,omitempty"`
 }

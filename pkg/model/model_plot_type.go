@@ -18,4 +18,5 @@ const (
 	PlotType_HIGH_LIGHT   PlotType = "HIGH_LIGHT"
 	PlotType_HEART_BEAT   PlotType = "HEART_BEAT"
 	PlotType_MULTI_PACKET PlotType = "MULTI_PACKET"
+	PlotType_GIFT_STORY   PlotType = "GIFT_STORY"
 )
