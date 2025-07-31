@@ -13,4 +13,5 @@ package model
 type WechatAdBehavior struct {
 	Actions         *[]string `json:"actions,omitempty"`
 	ExcludedActions *[]string `json:"excluded_actions,omitempty"`
+	MinigameAppId   *[]string `json:"minigame_app_id,omitempty"`
 }
