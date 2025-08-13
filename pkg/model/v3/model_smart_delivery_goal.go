@@ -55,6 +55,8 @@ const (
 	SmartDeliveryGoal_QYT_LIVE_STREAM_AUDIENCE                                             SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_LIVE_STREAM_AUDIENCE"
 	SmartDeliveryGoal_DRUG_PRODUCT_ORDER_ROI                                               SmartDeliveryGoal = "SMART_DELIVERY_GOAL_DRUG_PRODUCT_ORDER_ROI"
 	SmartDeliveryGoal_PRODUCT_ORDER                                                        SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PRODUCT_ORDER"
+	SmartDeliveryGoal_LOCAL_PRODUCT_ORDER_ROI                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOCAL_PRODUCT_ORDER_ROI"
+	SmartDeliveryGoal_LOCAL_PRODUCT_ORDER                                                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOCAL_PRODUCT_ORDER"
 	SmartDeliveryGoal_PAGE_SCAN_CODE_HEALTH                                                SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_HEALTH"
 	SmartDeliveryGoal_PAGE_SCAN_CODE_BUSINESS_SERVICES                                     SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_BUSINESS_SERVICES"
 	SmartDeliveryGoal_PAGE_SCAN_CODE_TRAVEL                                                SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_TRAVEL"
@@ -65,4 +67,7 @@ const (
 	SmartDeliveryGoal_PAGE_SCAN_CODE_HOME                                                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_HOME"
 	SmartDeliveryGoal_PAGE_SCAN_CODE                                                       SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_SCAN_CODE"
 	SmartDeliveryGoal_PAGE_CONFIRM_EFFECTIVE_LEADS                                         SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_CONFIRM_EFFECTIVE_LEADS"
+	SmartDeliveryGoal_CLUE_PAY_SUCCEED                                                     SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CLUE_PAY_SUCCEED"
+	SmartDeliveryGoal_LOW_PRICE_INSURANCE_PAYMENT                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOW_PRICE_INSURANCE_PAYMENT"
+	SmartDeliveryGoal_CREDIT                                                               SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CREDIT"
 )

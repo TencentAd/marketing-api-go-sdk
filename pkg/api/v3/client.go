@@ -132,6 +132,8 @@ type APIClient struct {
 
 	CommentListApi *CommentListApiService
 
+	ComponentDependsApi *ComponentDependsApiService
+
 	ComponentDetailApi *ComponentDetailApiService
 
 	ComponentElementUrgeReviewApi *ComponentElementUrgeReviewApiService
@@ -348,6 +350,10 @@ type APIClient struct {
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
 
+	PunishmentConfigApi *PunishmentConfigApiService
+
+	PunishmentQueryApi *PunishmentQueryApiService
+
 	QualificationImagesApi *QualificationImagesApiService
 
 	QualificationStructureApi *QualificationStructureApiService
@@ -389,6 +395,8 @@ type APIClient struct {
 	UserActionSetsApi *UserActionSetsApiService
 
 	UserActionsApi *UserActionsApiService
+
+	UserOrganizationAuthenticationApi *UserOrganizationAuthenticationApiService
 
 	VideoChannelDealerDataApi *VideoChannelDealerDataApiService
 
@@ -533,6 +541,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ChannelsLivenoticeinfoApi = (*ChannelsLivenoticeinfoApiService)(&c.common)
 	c.ChannelsUserpageobjectsApi = (*ChannelsUserpageobjectsApiService)(&c.common)
 	c.CommentListApi = (*CommentListApiService)(&c.common)
+	c.ComponentDependsApi = (*ComponentDependsApiService)(&c.common)
 	c.ComponentDetailApi = (*ComponentDetailApiService)(&c.common)
 	c.ComponentElementUrgeReviewApi = (*ComponentElementUrgeReviewApiService)(&c.common)
 	c.ComponentReviewResultsApi = (*ComponentReviewResultsApiService)(&c.common)
@@ -641,6 +650,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProgrammedCommponentResultApi = (*ProgrammedCommponentResultApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.PunishmentConfigApi = (*PunishmentConfigApiService)(&c.common)
+	c.PunishmentQueryApi = (*PunishmentQueryApiService)(&c.common)
 	c.QualificationImagesApi = (*QualificationImagesApiService)(&c.common)
 	c.QualificationStructureApi = (*QualificationStructureApiService)(&c.common)
 	c.QualificationsApi = (*QualificationsApiService)(&c.common)
@@ -662,6 +673,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.UserActionSetReportsApi = (*UserActionSetReportsApiService)(&c.common)
 	c.UserActionSetsApi = (*UserActionSetsApiService)(&c.common)
 	c.UserActionsApi = (*UserActionsApiService)(&c.common)
+	c.UserOrganizationAuthenticationApi = (*UserOrganizationAuthenticationApiService)(&c.common)
 	c.VideoChannelDealerDataApi = (*VideoChannelDealerDataApiService)(&c.common)
 	c.VideoChannelFansDataApi = (*VideoChannelFansDataApiService)(&c.common)
 	c.VideoChannelLeadsDataApi = (*VideoChannelLeadsDataApiService)(&c.common)

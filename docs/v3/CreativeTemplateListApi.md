@@ -44,6 +44,7 @@ Name | Type | Description  | Notes
  **pcScene** | [**optional.Interface of []string**](string.md)|  | 
  **adgroupId** | **optional.Int64**|  | 
  **adgroupType** | **optional.String**|  | 
+ **mpaSpec** | [**optional.Interface of MpaSpec**](MpaSpec.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

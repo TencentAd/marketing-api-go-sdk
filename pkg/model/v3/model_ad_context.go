@@ -11,14 +11,16 @@ package model
 
 // 广告上下文信息
 type AdContext struct {
-	MarketingGoal          MarketingGoal           `json:"marketing_goal,omitempty"`
-	MarketingSubGoal       MarketingSubGoal        `json:"marketing_sub_goal,omitempty"`
-	MarketingCarrierType   MarketingCarrierType    `json:"marketing_carrier_type,omitempty"`
-	MarketingTargetType    MarketingTargetType     `json:"marketing_target_type,omitempty"`
-	MarketingCarrierDetail *MarketingCarrierDetail `json:"marketing_carrier_detail,omitempty"`
-	MarketingAssetId       *int64                  `json:"marketing_asset_id,omitempty"`
-	SiteSet                *[]string               `json:"site_set,omitempty"`
-	CreativeTemplateId     *int64                  `json:"creative_template_id,omitempty"`
-	PromotedAssetType      PromotedAssetType       `json:"promoted_asset_type,omitempty"`
-	ComponentType          ComponentType           `json:"component_type,omitempty"`
+	MarketingGoal           MarketingGoal            `json:"marketing_goal,omitempty"`
+	MarketingSubGoal        MarketingSubGoal         `json:"marketing_sub_goal,omitempty"`
+	MarketingCarrierType    MarketingCarrierType     `json:"marketing_carrier_type,omitempty"`
+	MarketingTargetType     MarketingTargetType      `json:"marketing_target_type,omitempty"`
+	MarketingCarrierDetail  *MarketingCarrierDetail  `json:"marketing_carrier_detail,omitempty"`
+	MarketingAssetId        *int64                   `json:"marketing_asset_id,omitempty"`
+	SiteSet                 *[]string                `json:"site_set,omitempty"`
+	CreativeTemplateId      *int64                   `json:"creative_template_id,omitempty"`
+	PromotedAssetType       PromotedAssetType        `json:"promoted_asset_type,omitempty"`
+	ComponentType           ComponentType            `json:"component_type,omitempty"`
+	MpaSpec                 *MpaSpec                 `json:"mpa_spec,omitempty"`
+	MarketingAssetOuterSpec *MarketingAssetOuterSpec `json:"marketing_asset_outer_spec,omitempty"`
 }

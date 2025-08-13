@@ -765,6 +765,7 @@ type TargetReportApiListStruct struct {
 	OrderClk3dRoi                              *float64 `json:"order_clk_3d_roi,omitempty"`
 	OrderImp3dRoi                              *float64 `json:"order_imp_3d_roi,omitempty"`
 	OrderClk23dRoi                             *float64 `json:"order_clk2_3d_roi,omitempty"`
+	IntentionAfterPaymentDedupPv               *int64   `json:"intention_after_payment_dedup_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

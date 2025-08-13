@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **EnumOptions** | [**[]ComponentMetadataValueValidEnumOption**](component_metadata_value_valid_enum_option.md) |  | [optional] [default to null]
 **MinDurationMillisecond** | **int64** |  | [optional] [default to null]
 **MaxDurationMillisecond** | **int64** |  | [optional] [default to null]
+**ImageFormatOptions** | [**[]ComponentMetadataValueValidImageFormatOption**](component_metadata_value_valid_image_format_option.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

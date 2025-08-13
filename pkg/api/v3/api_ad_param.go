@@ -41,17 +41,23 @@ AdParamApiService 获取词包
      * @param "MarketingCarrierType" (optional.String) -
      * @param "MarketingTargetType" (optional.String) -
      * @param "ProductCatalogId" (optional.Int64) -
+     * @param "MarketingAssetOuterSpec" (optional.Interface of MarketingAssetOuterSpec) -
+     * @param "MpaSpec" (optional.Interface of MpaSpec) -
+     * @param "DynamicAdType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdParamGetResponse
 */
 
 type AdParamGetOpts struct {
-	MarketingSubGoal     optional.String
-	MarketingCarrierType optional.String
-	MarketingTargetType  optional.String
-	ProductCatalogId     optional.Int64
-	Fields               optional.Interface
+	MarketingSubGoal        optional.String
+	MarketingCarrierType    optional.String
+	MarketingTargetType     optional.String
+	ProductCatalogId        optional.Int64
+	MarketingAssetOuterSpec optional.Interface
+	MpaSpec                 optional.Interface
+	DynamicAdType           optional.String
+	Fields                  optional.Interface
 }
 
 func (a *AdParamApiService) Get(ctx context.Context, accountId int64, marketingGoal string, creativeTemplateId int64, siteSet []string, localVarOptionals *AdParamGetOpts) (AdParamGetResponseData, http.Header, error) {
@@ -87,6 +93,15 @@ func (a *AdParamApiService) Get(ctx context.Context, accountId int64, marketingG
 	localVarQueryParams.Add("site_set", parameterToString(siteSet, "multi"))
 	if localVarOptionals != nil && localVarOptionals.ProductCatalogId.IsSet() {
 		localVarQueryParams.Add("product_catalog_id", parameterToString(localVarOptionals.ProductCatalogId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingAssetOuterSpec.IsSet() {
+		localVarQueryParams.Add("marketing_asset_outer_spec", parameterToString(localVarOptionals.MarketingAssetOuterSpec.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MpaSpec.IsSet() {
+		localVarQueryParams.Add("mpa_spec", parameterToString(localVarOptionals.MpaSpec.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.DynamicAdType.IsSet() {
+		localVarQueryParams.Add("dynamic_ad_type", parameterToString(localVarOptionals.DynamicAdType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

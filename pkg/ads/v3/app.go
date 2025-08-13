@@ -181,6 +181,10 @@ func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
 
+func (c *SDKClient) ComponentDepends() *api.ComponentDependsApiService {
+	return c.Client.ComponentDependsApi
+}
+
 func (c *SDKClient) ComponentDetail() *api.ComponentDetailApiService {
 	return c.Client.ComponentDetailApi
 }
@@ -613,6 +617,14 @@ func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
 }
 
+func (c *SDKClient) PunishmentConfig() *api.PunishmentConfigApiService {
+	return c.Client.PunishmentConfigApi
+}
+
+func (c *SDKClient) PunishmentQuery() *api.PunishmentQueryApiService {
+	return c.Client.PunishmentQueryApi
+}
+
 func (c *SDKClient) QualificationImages() *api.QualificationImagesApiService {
 	return c.Client.QualificationImagesApi
 }
@@ -695,6 +707,10 @@ func (c *SDKClient) UserActionSets() *api.UserActionSetsApiService {
 
 func (c *SDKClient) UserActions() *api.UserActionsApiService {
 	return c.Client.UserActionsApi
+}
+
+func (c *SDKClient) UserOrganizationAuthentication() *api.UserOrganizationAuthenticationApiService {
+	return c.Client.UserOrganizationAuthenticationApi
 }
 
 func (c *SDKClient) VideoChannelDealerData() *api.VideoChannelDealerDataApiService {

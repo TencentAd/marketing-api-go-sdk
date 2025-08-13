@@ -19,4 +19,6 @@ type AdcreativeTemplateListStructAdpermit struct {
 	CreativeTemplateSize        *string                 `json:"creative_template_size,omitempty"`
 	SupportBidModeList          *[]string               `json:"support_bid_mode_list,omitempty"`
 	SupportSiteSetInfo          *[]SupportSiteSetStruct `json:"support_site_set_info,omitempty"`
+	IsOffline                   *bool                   `json:"is_offline,omitempty"`
+	OfflineTips                 *string                 `json:"offline_tips,omitempty"`
 }

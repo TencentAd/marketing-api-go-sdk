@@ -14,12 +14,13 @@ type ComponentMetadataFieldValidType string
 
 // List of ComponentMetadataFieldValidType
 const (
-	ComponentMetadataFieldValidType_UNKNOWN ComponentMetadataFieldValidType = "UNKNOWN"
-	ComponentMetadataFieldValidType_TEXT    ComponentMetadataFieldValidType = "TEXT"
-	ComponentMetadataFieldValidType_IMAGE   ComponentMetadataFieldValidType = "IMAGE"
-	ComponentMetadataFieldValidType_VIDEO   ComponentMetadataFieldValidType = "VIDEO"
-	ComponentMetadataFieldValidType_BARRAGE ComponentMetadataFieldValidType = "BARRAGE"
-	ComponentMetadataFieldValidType_ENUM    ComponentMetadataFieldValidType = "ENUM"
-	ComponentMetadataFieldValidType_URL     ComponentMetadataFieldValidType = "URL"
-	ComponentMetadataFieldValidType_LEADS   ComponentMetadataFieldValidType = "LEADS"
+	ComponentMetadataFieldValidType_UNKNOWN            ComponentMetadataFieldValidType = "UNKNOWN"
+	ComponentMetadataFieldValidType_TEXT               ComponentMetadataFieldValidType = "TEXT"
+	ComponentMetadataFieldValidType_IMAGE              ComponentMetadataFieldValidType = "IMAGE"
+	ComponentMetadataFieldValidType_VIDEO              ComponentMetadataFieldValidType = "VIDEO"
+	ComponentMetadataFieldValidType_BARRAGE            ComponentMetadataFieldValidType = "BARRAGE"
+	ComponentMetadataFieldValidType_ENUM               ComponentMetadataFieldValidType = "ENUM"
+	ComponentMetadataFieldValidType_URL                ComponentMetadataFieldValidType = "URL"
+	ComponentMetadataFieldValidType_LEADS              ComponentMetadataFieldValidType = "LEADS"
+	ComponentMetadataFieldValidType_IMAGE_MULTI_FORMAT ComponentMetadataFieldValidType = "IMAGE_MULTI_FORMAT"
 )

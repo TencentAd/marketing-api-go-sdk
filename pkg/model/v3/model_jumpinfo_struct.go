@@ -15,4 +15,5 @@ type JumpinfoStruct struct {
 	PageSpec          *PageSpec                `json:"page_spec,omitempty"`
 	Backups           *[]BackupsJumpinfoStruct `json:"backups,omitempty"`
 	JumpinfoAccountId *int64                   `json:"jumpinfo_account_id,omitempty"`
+	PlatformType      LandingPagePlatformType  `json:"platform_type,omitempty"`
 }

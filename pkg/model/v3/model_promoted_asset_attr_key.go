@@ -77,6 +77,7 @@ const (
 	PromotedAssetAttrKey_MINIGAME_ID                                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINIGAME_ID"
 	PromotedAssetAttrKey_CONSUMER_PRODUCT_COMMODITY_TRADING_URL                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_URL"
 	PromotedAssetAttrKey_CONSUMER_PRODUCT_COMMODITY_TRADING_TYPE                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_COMMODITY_TRADING_TYPE"
+	PromotedAssetAttrKey_CONSUMER_PRODUCT_PRODUCT_HASH_ID                                          PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CONSUMER_PRODUCT_PRODUCT_HASH_ID"
 	PromotedAssetAttrKey_WECHAT_CHANNELS_ID                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ID"
 	PromotedAssetAttrKey_WECHAT_CHANNELS_LIVE_RESERVATION_ID                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_LIVE_RESERVATION_ID"
 	PromotedAssetAttrKey_MINI_PROGRAM_WECHAT_ID                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MINI_PROGRAM_WECHAT_ID"

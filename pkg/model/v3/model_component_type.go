@@ -54,6 +54,7 @@ const (
 	ComponentType_UNVEIL_CARD                ComponentType = "UNVEIL_CARD"
 	ComponentType_HOT_TOPIC                  ComponentType = "HOT_TOPIC"
 	ComponentType_VIDEO_CHANNELS_CONTENT     ComponentType = "VIDEO_CHANNELS_CONTENT"
+	ComponentType_AUDIO                      ComponentType = "AUDIO"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"

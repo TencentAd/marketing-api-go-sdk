@@ -811,10 +811,9 @@ type HourlyReportApiListStruct struct {
 	OrderClk3dRoi                              *float64 `json:"order_clk_3d_roi,omitempty"`
 	OrderImp3dRoi                              *float64 `json:"order_imp_3d_roi,omitempty"`
 	OrderClk23dRoi                             *float64 `json:"order_clk2_3d_roi,omitempty"`
+	IntentionAfterPaymentDedupPv               *int64   `json:"intention_after_payment_dedup_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
-	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
-	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
 	DynamicCreativeName                        *string  `json:"dynamic_creative_name,omitempty"`
 	SiteSet                                    *string  `json:"site_set,omitempty"`

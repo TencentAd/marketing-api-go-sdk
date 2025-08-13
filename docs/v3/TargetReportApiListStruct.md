@@ -757,6 +757,7 @@ Name | Type | Description | Notes
 **OrderClk3dRoi** | **float64** |  | [optional] [default to null]
 **OrderImp3dRoi** | **float64** |  | [optional] [default to null]
 **OrderClk23dRoi** | **float64** |  | [optional] [default to null]
+**IntentionAfterPaymentDedupPv** | **int64** |  | [optional] [default to null]
 **AgeId** | **int64** |  | [optional] [default to null]
 **CityId** | **int64** |  | [optional] [default to null]
 **RegionId** | **int64** |  | [optional] [default to null]

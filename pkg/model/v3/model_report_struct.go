@@ -811,6 +811,7 @@ type ReportStruct struct {
 	OrderClk3dRoi                              *float64 `json:"order_clk_3d_roi,omitempty"`
 	OrderImp3dRoi                              *float64 `json:"order_imp_3d_roi,omitempty"`
 	OrderClk23dRoi                             *float64 `json:"order_clk2_3d_roi,omitempty"`
+	IntentionAfterPaymentDedupPv               *int64   `json:"intention_after_payment_dedup_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -820,8 +821,6 @@ type ReportStruct struct {
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`
-	LiveStreamOrderPv                          *int64   `json:"live_stream_order_pv,omitempty"`
-	LiveStreamOrderAmount                      *int64   `json:"live_stream_order_amount,omitempty"`
 	CvsExpPv                                   *int64   `json:"cvs_exp_pv,omitempty"`
 	CvsExpUv                                   *int64   `json:"cvs_exp_uv,omitempty"`
 	CvsCpnClkPv                                *int64   `json:"cvs_cpn_clk_pv,omitempty"`

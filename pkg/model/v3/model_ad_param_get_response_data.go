@@ -10,6 +10,7 @@
 package model
 
 type AdParamGetResponseData struct {
-	SystemAdParamList  *[]AdParamListStruct `json:"system_ad_param_list,omitempty"`
-	ProductAdParamList *[]AdParamListStruct `json:"product_ad_param_list,omitempty"`
+	SystemAdParamList         *[]AdParamListStruct `json:"system_ad_param_list,omitempty"`
+	ProductAdParamList        *[]AdParamListStruct `json:"product_ad_param_list,omitempty"`
+	DynamicContentAdParamList *[]AdParamListStruct `json:"dynamic_content_ad_param_list,omitempty"`
 }

@@ -119,6 +119,7 @@ const (
 	ComponentSubType_DYNAMIC_SHOWCASE_3                       ComponentSubType = "DYNAMIC_SHOWCASE_3"
 	ComponentSubType_UNVEIL_CARD                              ComponentSubType = "UNVEIL_CARD"
 	ComponentSubType_HOT_TOPIC                                ComponentSubType = "HOT_TOPIC"
+	ComponentSubType_AUDIO                                    ComponentSubType = "AUDIO"
 	ComponentSubType_BRAND                                    ComponentSubType = "BRAND"
 	ComponentSubType_BRAND_PAGE                               ComponentSubType = "BRAND_PAGE"
 	ComponentSubType_BRAND_SEARCH                             ComponentSubType = "BRAND_SEARCH"

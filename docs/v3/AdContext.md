@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **CreativeTemplateId** | **int64** |  | [optional] [default to null]
 **PromotedAssetType** | [***PromotedAssetType**](PromotedAssetType.md) |  | [optional] [default to null]
 **ComponentType** | [***ComponentType**](ComponentType.md) |  | [optional] [default to null]
+**MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]
+**MarketingAssetOuterSpec** | [***MarketingAssetOuterSpec**](marketing_asset_outer_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

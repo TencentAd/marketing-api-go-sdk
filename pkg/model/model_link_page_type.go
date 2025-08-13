@@ -45,4 +45,5 @@ const (
 	LinkPageType_LINGQUE_H5                     LinkPageType = "LINK_PAGE_TYPE_LINGQUE_H5"
 	LinkPageType_LINGQUE_MINI_PROGRAM           LinkPageType = "LINK_PAGE_TYPE_LINGQUE_MINI_PROGRAM"
 	LinkPageType_WECHAT_CHANNELS_SHOP_PRODUCT   LinkPageType = "LINK_PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
+	LinkPageType_WECHAT_SHOP                    LinkPageType = "LINK_PAGE_TYPE_WECHAT_SHOP"
 )

@@ -18,4 +18,6 @@ type DetailListStruct struct {
 	AccountId        *int64               `json:"account_id,omitempty"`
 	ExtData          *string              `json:"ext_data,omitempty"`
 	ScopeObjectIdStr *string              `json:"scope_object_id_str,omitempty"`
+	Code             *int64               `json:"code,omitempty"`
+	OrganizationId   *int64               `json:"organization_id,omitempty"`
 }
