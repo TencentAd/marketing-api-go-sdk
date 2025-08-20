@@ -53,6 +53,8 @@ const (
 	SmartDeliveryGoal_QYT_PROMOTION_VIEW_KEY_PAGE                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_PROMOTION_VIEW_KEY_PAGE"
 	SmartDeliveryGoal_QYT_VIEW_COMMODITY_PAGE                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_VIEW_COMMODITY_PAGE"
 	SmartDeliveryGoal_QYT_LIVE_STREAM_AUDIENCE                                             SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_LIVE_STREAM_AUDIENCE"
+	SmartDeliveryGoal_QYT_CLICK                                                            SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_CLICK"
+	SmartDeliveryGoal_QYT_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER                           SmartDeliveryGoal = "SMART_DELIVERY_GOAL_QYT_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER"
 	SmartDeliveryGoal_DRUG_PRODUCT_ORDER_ROI                                               SmartDeliveryGoal = "SMART_DELIVERY_GOAL_DRUG_PRODUCT_ORDER_ROI"
 	SmartDeliveryGoal_PRODUCT_ORDER                                                        SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PRODUCT_ORDER"
 	SmartDeliveryGoal_LOCAL_PRODUCT_ORDER_ROI                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOCAL_PRODUCT_ORDER_ROI"
@@ -70,4 +72,7 @@ const (
 	SmartDeliveryGoal_CLUE_PAY_SUCCEED                                                     SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CLUE_PAY_SUCCEED"
 	SmartDeliveryGoal_LOW_PRICE_INSURANCE_PAYMENT                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOW_PRICE_INSURANCE_PAYMENT"
 	SmartDeliveryGoal_CREDIT                                                               SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CREDIT"
+	SmartDeliveryGoal_CPS_VIEW_KEY_PAGE                                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_VIEW_KEY_PAGE"
+	SmartDeliveryGoal_CPS_VIEW_COMMODITY_PAGE                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_VIEW_COMMODITY_PAGE"
+	SmartDeliveryGoal_CPS_ORDER                                                            SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_ORDER"
 )

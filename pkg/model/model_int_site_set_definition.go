@@ -56,4 +56,5 @@ const (
 	IntSiteSetDefinition_PCAD                 IntSiteSetDefinition = "SITE_SET_PCAD"
 	IntSiteSetDefinition_YUNXUAN              IntSiteSetDefinition = "SITE_SET_YUNXUAN"
 	IntSiteSetDefinition_EXPAND               IntSiteSetDefinition = "SITE_SET_EXPAND"
+	IntSiteSetDefinition_SMART                IntSiteSetDefinition = "SITE_SET_SMART"
 )

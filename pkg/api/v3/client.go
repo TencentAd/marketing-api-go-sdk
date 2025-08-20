@@ -216,6 +216,8 @@ type APIClient struct {
 
 	HourlyReportsApi *HourlyReportsApiService
 
+	IllegalComplaintApi *IllegalComplaintApiService
+
 	ImageProcessingApi *ImageProcessingApiService
 
 	ImagesApi *ImagesApiService
@@ -583,6 +585,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
 	c.GetWxGameAppGiftPackApi = (*GetWxGameAppGiftPackApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
+	c.IllegalComplaintApi = (*IllegalComplaintApiService)(&c.common)
 	c.ImageProcessingApi = (*ImageProcessingApiService)(&c.common)
 	c.ImagesApi = (*ImagesApiService)(&c.common)
 	c.JointBudgetRulesApi = (*JointBudgetRulesApiService)(&c.common)

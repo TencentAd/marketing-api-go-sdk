@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **CustomCostCap** | **int64** |  | [optional] [default to null]
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **LiveStreamAudienceCost** | **int64** |  | [optional] [default to null]
+**ClickCost** | **int64** |  | [optional] [default to null]
+**FirstTwentyFourHourEcommerceOrderCost** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

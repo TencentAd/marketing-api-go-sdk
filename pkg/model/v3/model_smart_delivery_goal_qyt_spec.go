@@ -11,12 +11,14 @@ package model
 
 // 全域通智投-投放目标
 type SmartDeliveryGoalQytSpec struct {
-	EcommerceOrderCost       *int64              `json:"ecommerce_order_cost,omitempty"`
-	EcommerceOrderRoi        *float64            `json:"ecommerce_order_roi,omitempty"`
-	PromotionViewKeyPageCost *int64              `json:"promotion_view_key_page_cost,omitempty"`
-	ViewCommodityPageCost    *int64              `json:"view_commodity_page_cost,omitempty"`
-	SmartBidType             SmartBidType        `json:"smart_bid_type,omitempty"`
-	CustomCostCap            *int64              `json:"custom_cost_cap,omitempty"`
-	CostConstraintScene      CostConstraintScene `json:"cost_constraint_scene,omitempty"`
-	LiveStreamAudienceCost   *int64              `json:"live_stream_audience_cost,omitempty"`
+	EcommerceOrderCost                    *int64              `json:"ecommerce_order_cost,omitempty"`
+	EcommerceOrderRoi                     *float64            `json:"ecommerce_order_roi,omitempty"`
+	PromotionViewKeyPageCost              *int64              `json:"promotion_view_key_page_cost,omitempty"`
+	ViewCommodityPageCost                 *int64              `json:"view_commodity_page_cost,omitempty"`
+	SmartBidType                          SmartBidType        `json:"smart_bid_type,omitempty"`
+	CustomCostCap                         *int64              `json:"custom_cost_cap,omitempty"`
+	CostConstraintScene                   CostConstraintScene `json:"cost_constraint_scene,omitempty"`
+	LiveStreamAudienceCost                *int64              `json:"live_stream_audience_cost,omitempty"`
+	ClickCost                             *int64              `json:"click_cost,omitempty"`
+	FirstTwentyFourHourEcommerceOrderCost *int64              `json:"first_twenty_four_hour_ecommerce_order_cost,omitempty"`
 }

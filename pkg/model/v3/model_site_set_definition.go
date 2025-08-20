@@ -72,4 +72,5 @@ const (
 	SiteSetDefinition_YUNXUAN                    SiteSetDefinition = "SITE_SET_YUNXUAN"
 	SiteSetDefinition_SEARCH_MOBILE_UNION        SiteSetDefinition = "SITE_SET_SEARCH_MOBILE_UNION"
 	SiteSetDefinition_EXPAND                     SiteSetDefinition = "SITE_SET_EXPAND"
+	SiteSetDefinition_SMART                      SiteSetDefinition = "SITE_SET_SMART"
 )

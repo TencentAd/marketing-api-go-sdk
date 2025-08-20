@@ -10,6 +10,7 @@
 package model
 
 type AdvertiserAddRequest struct {
+	AgencyId                *int64                   `json:"agency_id,omitempty"`
 	RegistrationType        CustomerRegistrationType `json:"registration_type,omitempty"`
 	CorporationName         *string                  `json:"corporation_name,omitempty"`
 	CorporationLicence      *string                  `json:"corporation_licence,omitempty"`

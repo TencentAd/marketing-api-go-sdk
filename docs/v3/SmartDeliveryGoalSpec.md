@@ -31,6 +31,9 @@ Name | Type | Description | Notes
 **WechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec** | [***SmartDeliveryGoalOrderFirstTwentyFourHourRefundRateSpec**](smart_delivery_goal_order_first_twenty_four_hour_refund_rate_spec.md) |  | [optional] [default to null]
 **QytLiveStreamAudienceSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
 **ProductOrderSpec** | [***SmartDeliveryGoalProductSpec**](smart_delivery_goal_product_spec.md) |  | [optional] [default to null]
+**CpsSpec** | [***SmartDeliveryGoalCpsSpec**](smart_delivery_goal_cps_spec.md) |  | [optional] [default to null]
+**QytClickSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
+**QytFirstTwentyFourHourEcommerceOrderSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

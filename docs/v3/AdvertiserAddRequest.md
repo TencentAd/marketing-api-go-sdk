@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**AgencyId** | **int64** |  | [optional] [default to null]
 **RegistrationType** | [***CustomerRegistrationType**](CustomerRegistrationType.md) |  | [optional] [default to null]
 **CorporationName** | **string** |  | [optional] [default to null]
 **CorporationLicence** | **string** |  | [optional] [default to null]

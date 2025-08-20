@@ -349,6 +349,10 @@ func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
 	return c.Client.HourlyReportsApi
 }
 
+func (c *SDKClient) IllegalComplaint() *api.IllegalComplaintApiService {
+	return c.Client.IllegalComplaintApi
+}
+
 func (c *SDKClient) ImageProcessing() *api.ImageProcessingApiService {
 	return c.Client.ImageProcessingApi
 }
