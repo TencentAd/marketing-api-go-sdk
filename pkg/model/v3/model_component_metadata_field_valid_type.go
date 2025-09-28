@@ -23,4 +23,5 @@ const (
 	ComponentMetadataFieldValidType_URL                ComponentMetadataFieldValidType = "URL"
 	ComponentMetadataFieldValidType_LEADS              ComponentMetadataFieldValidType = "LEADS"
 	ComponentMetadataFieldValidType_IMAGE_MULTI_FORMAT ComponentMetadataFieldValidType = "IMAGE_MULTI_FORMAT"
+	ComponentMetadataFieldValidType_AUDIO              ComponentMetadataFieldValidType = "AUDIO"
 )

@@ -18,6 +18,10 @@ Name | Type | Description | Notes
 **IsBlocked** | **bool** |  | [optional] [default to null]
 **IsPrivate** | **bool** |  | [optional] [default to null]
 **LogoutTimeSecond** | **int64** |  | [optional] [default to null]
+**CreatedSourceList** | **[]string** |  | [optional] [default to null]
+**AuthorizationQrCodeUrl** | **string** |  | [optional] [default to null]
+**AuthorizationExpiredTime** | **int64** |  | [optional] [default to null]
+**AuthorizationAgreement** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

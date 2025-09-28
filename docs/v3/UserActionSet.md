@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **UserActionSetId** | **int64** |  | [optional] [default to null]
 **Type_** | [***AmUserActionSetType**](AmUserActionSetType.md) |  | [optional] [default to null]
 **MobileAppId** | **int64** |  | [optional] [default to null]
+**AppIdStr** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **ActivateStatus** | **bool** |  | [optional] [default to null]

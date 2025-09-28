@@ -83,6 +83,7 @@ Name | Type | Description  | Notes
  **wechatChannelsAccountName** | **optional.String**|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 
+ **filtering** | [**optional.Interface of []FilteringStruct**](FilteringStruct.md)|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

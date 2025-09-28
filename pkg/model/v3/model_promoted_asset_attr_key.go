@@ -53,6 +53,7 @@ const (
 	PromotedAssetAttrKey_EDUCATION_EDUCATIONAL_BRAND                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_EDUCATIONAL_BRAND"
 	PromotedAssetAttrKey_EDUCATION_CERTIFICATE_TYPE                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_CERTIFICATE_TYPE"
 	PromotedAssetAttrKey_EDUCATION_TARGET_DEMOGRAPHIC_SEGMENTATION                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_TARGET_DEMOGRAPHIC_SEGMENTATION"
+	PromotedAssetAttrKey_EDUCATION_TRIAL_CLASS                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_EDUCATION_TRIAL_CLASS"
 	PromotedAssetAttrKey_TRAFFIC_CAR_BRANDE_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_BRANDE_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_SERIES_NAME                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_SERIES_NAME"
 	PromotedAssetAttrKey_TRAFFIC_CAR_MODEL_NAME                                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TRAFFIC_CAR_MODEL_NAME"

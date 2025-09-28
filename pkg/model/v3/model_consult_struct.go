@@ -11,5 +11,6 @@ package model
 
 // 咨询组件
 type ConsultStruct struct {
-	Id *int64 `json:"id,omitempty"`
+	Id           *int64                   `json:"id,omitempty"`
+	JumpInfoList *[]BackupsJumpinfoStruct `json:"jump_info_list,omitempty"`
 }

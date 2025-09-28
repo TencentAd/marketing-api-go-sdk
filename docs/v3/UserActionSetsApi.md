@@ -56,6 +56,7 @@ Name | Type | Description  | Notes
  **type_** | [**optional.Interface of []string**](string.md)|  | 
  **mobileAppId** | **optional.Int64**|  | 
  **wechatAppId** | **optional.String**|  | 
+ **appIdStr** | **optional.String**|  | 
  **name** | **optional.String**|  | 
  **includePermission** | **optional.Bool**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 

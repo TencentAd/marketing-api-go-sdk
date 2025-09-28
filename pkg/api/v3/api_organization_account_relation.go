@@ -30,7 +30,7 @@ var (
 type OrganizationAccountRelationApiService service
 
 /*
-OrganizationAccountRelationApiService 查询组织下广告账号信息
+OrganizationAccountRelationApiService 查询组织下广告账户信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param paginationMode
  * @param optional nil or *OrganizationAccountRelationGetOpts - Optional Parameters:

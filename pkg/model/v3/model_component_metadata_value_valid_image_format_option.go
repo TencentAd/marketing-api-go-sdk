@@ -15,4 +15,8 @@ type ComponentMetadataValueValidImageFormatOption struct {
 	FileSizeKbLimit *int64  `json:"file_size_kb_limit,omitempty"`
 	Height          *int64  `json:"height,omitempty"`
 	Width           *int64  `json:"width,omitempty"`
+	RatioHeight     *int64  `json:"ratio_height,omitempty"`
+	RatioWidth      *int64  `json:"ratio_width,omitempty"`
+	MinHeight       *int64  `json:"min_height,omitempty"`
+	MinWidth        *int64  `json:"min_width,omitempty"`
 }

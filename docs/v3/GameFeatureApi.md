@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GameFeatureAdd**](GameFeatureApi.md#GameFeatureAdd) | **Post** /game_feature/add | 新增游戏App特征
-[**GameFeatureGet**](GameFeatureApi.md#GameFeatureGet) | **Get** /game_feature/get | 获取游戏App特征
+[**GameFeatureAdd**](GameFeatureApi.md#GameFeatureAdd) | **Post** /game_feature/add | 新增游戏App特征V5
+[**GameFeatureGet**](GameFeatureApi.md#GameFeatureGet) | **Get** /game_feature/get | 获取游戏App特征V5
 
 
 # **GameFeatureAdd**
 > GameFeatureAddResponse GameFeatureAdd(ctx, data)
-新增游戏App特征
+新增游戏App特征V5
 
 ### Required Parameters
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **GameFeatureGet**
 > GameFeatureGetResponse GameFeatureGet(ctx, accountId, marketingTargetType, marketingTargetDetailId, optional)
-获取游戏App特征
+获取游戏App特征V5
 
 ### Required Parameters
 

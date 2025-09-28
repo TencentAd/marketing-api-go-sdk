@@ -12,6 +12,6 @@ package model
 // 商品系列条件
 type ProductSeriesSpecFilteringStruct struct {
 	Field    *string                                  `json:"field,omitempty"`
-	Operator *string                                  `json:"operator,omitempty"`
+	Operator ProductSetSpecFieldValueOperator         `json:"operator,omitempty"`
 	Values   *[]ProductSeriesSpecFilteringValueStruct `json:"values,omitempty"`
 }

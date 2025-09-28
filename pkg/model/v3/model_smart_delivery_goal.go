@@ -41,6 +41,7 @@ const (
 	SmartDeliveryGoal_WECHAT_STORE_SINGLE_PRODUCT_ORDER                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_WECHAT_STORE_SINGLE_PRODUCT_ORDER"
 	SmartDeliveryGoal_WECHAT_STORE_SINGLE_PRODUCT_ORDER_ROI                                SmartDeliveryGoal = "SMART_DELIVERY_GOAL_WECHAT_STORE_SINGLE_PRODUCT_ORDER_ROI"
 	SmartDeliveryGoal_WECHAT_STORE_SINGLE_PRODUCT_ORDER_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE SmartDeliveryGoal = "SMART_DELIVERY_GOAL_WECHAT_STORE_SINGLE_PRODUCT_ORDER_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE"
+	SmartDeliveryGoal_WECHAT_STORE_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_WECHAT_STORE_FIRST_TWENTY_FOUR_HOUR_ECOMMERCE_ORDER"
 	SmartDeliveryGoal_LEADS_BUSINESS_SERVICES                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LEADS_BUSINESS_SERVICES"
 	SmartDeliveryGoal_LEADS_TRAVEL                                                         SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LEADS_TRAVEL"
 	SmartDeliveryGoal_LEADS_INTEGRATED_SERVICES                                            SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LEADS_INTEGRATED_SERVICES"
@@ -75,4 +76,7 @@ const (
 	SmartDeliveryGoal_CPS_VIEW_KEY_PAGE                                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_VIEW_KEY_PAGE"
 	SmartDeliveryGoal_CPS_VIEW_COMMODITY_PAGE                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_VIEW_COMMODITY_PAGE"
 	SmartDeliveryGoal_CPS_ORDER                                                            SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_ORDER"
+	SmartDeliveryGoal_FICTION_FOLLOW_PURCHASE_ROI                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_FOLLOW_PURCHASE_ROI"
+	SmartDeliveryGoal_FICTION_REGISTER_PURCHASE_ROI                                        SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_REGISTER_PURCHASE_ROI"
+	SmartDeliveryGoal_FICTION_REGISTER_MONETIZATION_ROI                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_REGISTER_MONETIZATION_ROI"
 )

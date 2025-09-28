@@ -9,7 +9,7 @@
 
 package model
 
-// OptimizationGoal : 广告优化目标类型
+// OptimizationGoal : 深度优化目标类型
 type OptimizationGoal string
 
 // List of OptimizationGoal

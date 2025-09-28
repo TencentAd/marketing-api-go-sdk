@@ -88,4 +88,5 @@ type AdgroupsGetListStruct struct {
 	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
 	EnableSteadyExploration           *bool                       `json:"enable_steady_exploration,omitempty"`
 	AdxRealtimeType                   AdxRealtimeType             `json:"adx_realtime_type,omitempty"`
+	SmartTargetingStatus              SmartTargetingStatus        `json:"smart_targeting_status,omitempty"`
 }

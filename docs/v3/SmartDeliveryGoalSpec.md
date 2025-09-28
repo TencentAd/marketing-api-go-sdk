@@ -34,6 +34,10 @@ Name | Type | Description | Notes
 **CpsSpec** | [***SmartDeliveryGoalCpsSpec**](smart_delivery_goal_cps_spec.md) |  | [optional] [default to null]
 **QytClickSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
 **QytFirstTwentyFourHourEcommerceOrderSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
+**WechatStoreFirstTwentyFourHourEcommerceOrderSpec** | [***SmartDeliveryGoalFirstTwentyFourHourEcommerceOrderSpec**](smart_delivery_goal_first_twenty_four_hour_ecommerce_order_spec.md) |  | [optional] [default to null]
+**FictionFollowPurchaseRoiSpec** | [***SmartDeliveryGoalFictionFollowPurchaseRoiSpec**](smart_delivery_goal_fiction_follow_purchase_roi_spec.md) |  | [optional] [default to null]
+**FictionRegisterPurchaseRoiSpec** | [***SmartDeliveryGoalFictionRegisterPurchaseRoiSpec**](smart_delivery_goal_fiction_register_purchase_roi_spec.md) |  | [optional] [default to null]
+**FictionRegisterMonetizationRoiSpec** | [***SmartDeliveryGoalFictionRegisterMonetizationRoiSpec**](smart_delivery_goal_fiction_register_monetization_roi_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

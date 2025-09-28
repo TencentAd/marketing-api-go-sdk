@@ -48,6 +48,8 @@ type APIClient struct {
 
 	// API Services
 
+	AccountSubsidyApi *AccountSubsidyApiService
+
 	AccountVersionApi *AccountVersionApiService
 
 	AdLabelApi *AdLabelApiService
@@ -302,6 +304,8 @@ type APIClient struct {
 
 	MuseAiUgcApi *MuseAiUgcApiService
 
+	NegativewordsApi *NegativewordsApiService
+
 	OauthApi *OauthApiService
 
 	ObjectCommentFlagApi *ObjectCommentFlagApiService
@@ -380,7 +384,15 @@ type APIClient struct {
 
 	SceneSpecTagsApi *SceneSpecTagsApiService
 
+	SearchAdgroupsApi *SearchAdgroupsApiService
+
+	SearchDynamicCreativesApi *SearchDynamicCreativesApiService
+
 	SubcustomerTransferApi *SubcustomerTransferApiService
+
+	SubsidyAccountBindApi *SubsidyAccountBindApiService
+
+	SubsidyBoundAccountListApi *SubsidyBoundAccountListApiService
 
 	TargetingTagReportsApi *TargetingTagReportsApiService
 
@@ -501,6 +513,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.common.client = c
 
 	// API Services
+	c.AccountSubsidyApi = (*AccountSubsidyApiService)(&c.common)
 	c.AccountVersionApi = (*AccountVersionApiService)(&c.common)
 	c.AdLabelApi = (*AdLabelApiService)(&c.common)
 	c.AdParamApi = (*AdParamApiService)(&c.common)
@@ -628,6 +641,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiMaterialApi = (*MuseAiMaterialApiService)(&c.common)
 	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
+	c.NegativewordsApi = (*NegativewordsApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
 	c.OfficialLandingPageApi = (*OfficialLandingPageApiService)(&c.common)
@@ -667,7 +681,11 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.RtatargetApi = (*RtatargetApiService)(&c.common)
 	c.RtatargetBindApi = (*RtatargetBindApiService)(&c.common)
 	c.SceneSpecTagsApi = (*SceneSpecTagsApiService)(&c.common)
+	c.SearchAdgroupsApi = (*SearchAdgroupsApiService)(&c.common)
+	c.SearchDynamicCreativesApi = (*SearchDynamicCreativesApiService)(&c.common)
 	c.SubcustomerTransferApi = (*SubcustomerTransferApiService)(&c.common)
+	c.SubsidyAccountBindApi = (*SubsidyAccountBindApiService)(&c.common)
+	c.SubsidyBoundAccountListApi = (*SubsidyBoundAccountListApiService)(&c.common)
 	c.TargetingTagReportsApi = (*TargetingTagReportsApiService)(&c.common)
 	c.TargetingTagsApi = (*TargetingTagsApiService)(&c.common)
 	c.TargetingTagsUvApi = (*TargetingTagsUvApiService)(&c.common)

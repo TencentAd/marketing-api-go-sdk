@@ -13,6 +13,10 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 )
 
+func (c *SDKClient) AccountSubsidy() *api.AccountSubsidyApiService {
+	return c.Client.AccountSubsidyApi
+}
+
 func (c *SDKClient) AccountVersion() *api.AccountVersionApiService {
 	return c.Client.AccountVersionApi
 }
@@ -521,6 +525,10 @@ func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
 	return c.Client.MuseAiUgcApi
 }
 
+func (c *SDKClient) Negativewords() *api.NegativewordsApiService {
+	return c.Client.NegativewordsApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
@@ -677,8 +685,24 @@ func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
 
+func (c *SDKClient) SearchAdgroups() *api.SearchAdgroupsApiService {
+	return c.Client.SearchAdgroupsApi
+}
+
+func (c *SDKClient) SearchDynamicCreatives() *api.SearchDynamicCreativesApiService {
+	return c.Client.SearchDynamicCreativesApi
+}
+
 func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
 	return c.Client.SubcustomerTransferApi
+}
+
+func (c *SDKClient) SubsidyAccountBind() *api.SubsidyAccountBindApiService {
+	return c.Client.SubsidyAccountBindApi
+}
+
+func (c *SDKClient) SubsidyBoundAccountList() *api.SubsidyBoundAccountListApiService {
+	return c.Client.SubsidyBoundAccountListApi
 }
 
 func (c *SDKClient) TargetingTagReports() *api.TargetingTagReportsApiService {

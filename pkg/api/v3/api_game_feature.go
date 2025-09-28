@@ -30,7 +30,7 @@ var (
 type GameFeatureApiService service
 
 /*
-GameFeatureApiService 新增游戏App特征
+GameFeatureApiService 新增游戏App特征V5
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *GameFeatureApiService) Add(ctx context.Context, data GameFeatureAddRequ
 }
 
 /*
-GameFeatureApiService 获取游戏App特征
+GameFeatureApiService 获取游戏App特征V5
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param marketingTargetType

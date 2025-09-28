@@ -514,14 +514,14 @@ MaterialLabelsApiService 更新素材标签
 
 @return MaterialLabelsUpdateResponse
 */
-func (a *MaterialLabelsApiService) Update(ctx context.Context, data MaterialLabelsUpdateRequest) (interface{}, http.Header, error) {
+func (a *MaterialLabelsApiService) Update(ctx context.Context, data MaterialLabelsUpdateRequest) (MaterialLabelsUpdateResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
+		localVarReturnValue MaterialLabelsUpdateResponseData
 		localVarResponse    MaterialLabelsUpdateResponse
 	)
 
@@ -579,7 +579,11 @@ func (a *MaterialLabelsApiService) Update(ctx context.Context, data MaterialLabe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}

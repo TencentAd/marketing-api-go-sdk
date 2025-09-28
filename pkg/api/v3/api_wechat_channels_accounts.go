@@ -37,6 +37,7 @@ WechatChannelsAccountsApiService 获取视频号列表
      * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "Scene" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatChannelsAccountsGetResponse
@@ -46,6 +47,7 @@ type WechatChannelsAccountsGetOpts struct {
 	Filtering optional.Interface
 	Page      optional.Int64
 	PageSize  optional.Int64
+	Scene     optional.String
 	Fields    optional.Interface
 }
 
@@ -76,6 +78,9 @@ func (a *WechatChannelsAccountsApiService) Get(ctx context.Context, accountId in
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Scene.IsSet() {
+		localVarQueryParams.Add("scene", parameterToString(localVarOptionals.Scene.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

@@ -120,6 +120,7 @@ const (
 	ComponentSubType_UNVEIL_CARD                              ComponentSubType = "UNVEIL_CARD"
 	ComponentSubType_HOT_TOPIC                                ComponentSubType = "HOT_TOPIC"
 	ComponentSubType_AUDIO                                    ComponentSubType = "AUDIO"
+	ComponentSubType_WECHAT_SHOP_ACTIVITY_BULK_BUY            ComponentSubType = "WECHAT_SHOP_ACTIVITY_BULK_BUY"
 	ComponentSubType_BRAND                                    ComponentSubType = "BRAND"
 	ComponentSubType_BRAND_PAGE                               ComponentSubType = "BRAND_PAGE"
 	ComponentSubType_BRAND_SEARCH                             ComponentSubType = "BRAND_SEARCH"
@@ -158,5 +159,6 @@ const (
 	ComponentSubType_JUMP_INFO_APP_HARMONY                    ComponentSubType = "JUMP_INFO_APP_HARMONY"
 	ComponentSubType_JUMP_INFO_WECHAT_SHOP                    ComponentSubType = "JUMP_INFO_WECHAT_SHOP"
 	ComponentSubType_JUMP_INFO_SEARCH_BRAND_AREA              ComponentSubType = "JUMP_INFO_SEARCH_BRAND_AREA"
+	ComponentSubType_JUMP_INFO_SEARCH_PC                      ComponentSubType = "JUMP_INFO_SEARCH_PC"
 	ComponentSubType_MARKETING_ASSET_PLAYLET                  ComponentSubType = "MARKETING_ASSET_PLAYLET"
 )

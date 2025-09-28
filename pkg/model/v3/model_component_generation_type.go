@@ -23,5 +23,6 @@ const (
 	ComponentGenerationType_HUXUAN                           ComponentGenerationType = "COMPONENT_GENERATION_TYPE_HUXUAN"
 	ComponentGenerationType_MATERIAL_AUTHORIZED              ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MATERIAL_AUTHORIZED"
 	ComponentGenerationType_SYSTEM_OPTIMIZED_RECOMMENDATIONS ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_OPTIMIZED_RECOMMENDATIONS"
+	ComponentGenerationType_MPA                              ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MPA"
 	ComponentGenerationType_MARKETING_ASSET                  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
 )

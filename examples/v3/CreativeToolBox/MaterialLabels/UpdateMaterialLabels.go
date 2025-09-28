@@ -35,7 +35,7 @@ func (e *MaterialLabelsUpdateExample) Init() {
 	e.Data = model.MaterialLabelsUpdateRequest{}
 }
 
-func (e *MaterialLabelsUpdateExample) RunExample() (interface{}, http.Header, error) {
+func (e *MaterialLabelsUpdateExample) RunExample() (model.MaterialLabelsUpdateResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx

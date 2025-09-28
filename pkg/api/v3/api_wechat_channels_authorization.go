@@ -247,6 +247,7 @@ WechatChannelsAuthorizationApiService 获取视频号授权记录列表
      * @param "WechatChannelsAccountName" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "Filtering" (optional.Interface of []FilteringStruct) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatChannelsAuthorizationGetResponse
@@ -256,6 +257,7 @@ type WechatChannelsAuthorizationGetOpts struct {
 	WechatChannelsAccountName optional.String
 	Page                      optional.Int64
 	PageSize                  optional.Int64
+	Filtering                 optional.Interface
 	Fields                    optional.Interface
 }
 
@@ -286,6 +288,9 @@ func (a *WechatChannelsAuthorizationApiService) Get(ctx context.Context, account
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

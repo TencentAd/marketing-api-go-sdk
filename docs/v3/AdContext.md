@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **CreativeTemplateId** | **int64** |  | [optional] [default to null]
 **PromotedAssetType** | [***PromotedAssetType**](PromotedAssetType.md) |  | [optional] [default to null]
 **ComponentType** | [***ComponentType**](ComponentType.md) |  | [optional] [default to null]
+**OptimizationGoalStruct** | [***AdContextOptimizationGoalStruct**](ad_context_optimization_goal_struct.md) |  | [optional] [default to null]
 **MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]
 **MarketingAssetOuterSpec** | [***MarketingAssetOuterSpec**](marketing_asset_outer_spec.md) |  | [optional] [default to null]
 

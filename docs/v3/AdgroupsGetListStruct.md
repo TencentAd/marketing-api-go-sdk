@@ -80,6 +80,7 @@ Name | Type | Description | Notes
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
 **EnableSteadyExploration** | **bool** |  | [optional] [default to null]
 **AdxRealtimeType** | [***AdxRealtimeType**](AdxRealtimeType.md) |  | [optional] [default to null]
+**SmartTargetingStatus** | [***SmartTargetingStatus**](SmartTargetingStatus.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
