@@ -18,4 +18,7 @@ type GameFeatureGetResponseData struct {
 	GameThemeId                *int64                          `json:"game_theme_id,omitempty"`
 	GameSubThemeId             *int64                          `json:"game_sub_theme_id,omitempty"`
 	GameMarketingLifecycleList *[]GameMarketingLifecycleStruct `json:"game_marketing_lifecycle_list,omitempty"`
+	GameTypeIdV6               *int64                          `json:"game_type_id_v6,omitempty"`
+	GamePlayIdV6               *int64                          `json:"game_play_id_v6,omitempty"`
+	GameSubPlayIdListV6        *[]int64                        `json:"game_sub_play_id_list_v6,omitempty"`
 }

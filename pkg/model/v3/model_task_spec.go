@@ -39,4 +39,5 @@ type TaskSpec struct {
 	UpdateAdgroupDeriveConfSpec                      *[]UpdateAdgroupDeriveConfItem                      `json:"update_adgroup_derive_conf_spec,omitempty"`
 	UpdateComponentSharingSpec                       *[]UpdateComponentSharingItem                       `json:"update_component_sharing_spec,omitempty"`
 	UpdateAdgroupSmartDeliveryGoalSpec               *[]UpdateAdgroupSmartDeliveryGoalItem               `json:"update_adgroup_smart_delivery_goal_spec,omitempty"`
+	DeleteAccountComponentSpec                       *[]DeleteAccountComponentItem                       `json:"delete_account_component_spec,omitempty"`
 }

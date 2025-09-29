@@ -36,4 +36,5 @@ const (
 	CoverageActionType_ADD_IMAGE_SIZE_9_16                            CoverageActionType = "ADD_IMAGE_SIZE_9_16"
 	CoverageActionType_ADD_IMAGE_SIZE_20_7                            CoverageActionType = "ADD_IMAGE_SIZE_20_7"
 	CoverageActionType_LANDING_PAGE_USE_MULTI_SLOT                    CoverageActionType = "LANDING_PAGE_USE_MULTI_SLOT"
+	CoverageActionType_ADD_AUDIO                                      CoverageActionType = "ADD_AUDIO"
 )

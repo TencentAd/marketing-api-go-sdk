@@ -13,6 +13,10 @@ import (
 	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 )
 
+func (c *SDKClient) AccountSubsidy() *api.AccountSubsidyApiService {
+	return c.Client.AccountSubsidyApi
+}
+
 func (c *SDKClient) AccountVersion() *api.AccountVersionApiService {
 	return c.Client.AccountVersionApi
 }
@@ -181,6 +185,10 @@ func (c *SDKClient) CommentList() *api.CommentListApiService {
 	return c.Client.CommentListApi
 }
 
+func (c *SDKClient) ComponentDepends() *api.ComponentDependsApiService {
+	return c.Client.ComponentDependsApi
+}
+
 func (c *SDKClient) ComponentDetail() *api.ComponentDetailApiService {
 	return c.Client.ComponentDetailApi
 }
@@ -343,6 +351,10 @@ func (c *SDKClient) GetWxGameAppGiftPack() *api.GetWxGameAppGiftPackApiService {
 
 func (c *SDKClient) HourlyReports() *api.HourlyReportsApiService {
 	return c.Client.HourlyReportsApi
+}
+
+func (c *SDKClient) IllegalComplaint() *api.IllegalComplaintApiService {
+	return c.Client.IllegalComplaintApi
 }
 
 func (c *SDKClient) ImageProcessing() *api.ImageProcessingApiService {
@@ -513,6 +525,10 @@ func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
 	return c.Client.MuseAiUgcApi
 }
 
+func (c *SDKClient) Negativewords() *api.NegativewordsApiService {
+	return c.Client.NegativewordsApi
+}
+
 func (c *SDKClient) Oauth() *api.OauthApiService {
 	return c.Client.OauthApi
 }
@@ -613,6 +629,14 @@ func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
 }
 
+func (c *SDKClient) PunishmentConfig() *api.PunishmentConfigApiService {
+	return c.Client.PunishmentConfigApi
+}
+
+func (c *SDKClient) PunishmentQuery() *api.PunishmentQueryApiService {
+	return c.Client.PunishmentQueryApi
+}
+
 func (c *SDKClient) QualificationImages() *api.QualificationImagesApiService {
 	return c.Client.QualificationImagesApi
 }
@@ -661,8 +685,24 @@ func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
 	return c.Client.SceneSpecTagsApi
 }
 
+func (c *SDKClient) SearchAdgroups() *api.SearchAdgroupsApiService {
+	return c.Client.SearchAdgroupsApi
+}
+
+func (c *SDKClient) SearchDynamicCreatives() *api.SearchDynamicCreativesApiService {
+	return c.Client.SearchDynamicCreativesApi
+}
+
 func (c *SDKClient) SubcustomerTransfer() *api.SubcustomerTransferApiService {
 	return c.Client.SubcustomerTransferApi
+}
+
+func (c *SDKClient) SubsidyAccountBind() *api.SubsidyAccountBindApiService {
+	return c.Client.SubsidyAccountBindApi
+}
+
+func (c *SDKClient) SubsidyBoundAccountList() *api.SubsidyBoundAccountListApiService {
+	return c.Client.SubsidyBoundAccountListApi
 }
 
 func (c *SDKClient) TargetingTagReports() *api.TargetingTagReportsApiService {
@@ -695,6 +735,10 @@ func (c *SDKClient) UserActionSets() *api.UserActionSetsApiService {
 
 func (c *SDKClient) UserActions() *api.UserActionsApiService {
 	return c.Client.UserActionsApi
+}
+
+func (c *SDKClient) UserOrganizationAuthentication() *api.UserOrganizationAuthenticationApiService {
+	return c.Client.UserOrganizationAuthenticationApi
 }
 
 func (c *SDKClient) VideoChannelDealerData() *api.VideoChannelDealerDataApiService {

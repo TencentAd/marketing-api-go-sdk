@@ -26,4 +26,8 @@ type AuthListStruct struct {
 	IsBlocked                 *bool                    `json:"is_blocked,omitempty"`
 	IsPrivate                 *bool                    `json:"is_private,omitempty"`
 	LogoutTimeSecond          *int64                   `json:"logout_time_second,omitempty"`
+	CreatedSourceList         *[]string                `json:"created_source_list,omitempty"`
+	AuthorizationQrCodeUrl    *string                  `json:"authorization_qr_code_url,omitempty"`
+	AuthorizationExpiredTime  *int64                   `json:"authorization_expired_time,omitempty"`
+	AuthorizationAgreement    *string                  `json:"authorization_agreement,omitempty"`
 }

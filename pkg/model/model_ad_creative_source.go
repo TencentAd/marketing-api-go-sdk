@@ -23,4 +23,5 @@ const (
 	AdCreativeSource_SPECIFIC_COMBINATION                 AdCreativeSource = "AD_CREATIVE_SPECIFIC_COMBINATION"
 	AdCreativeSource_SMART_DELIVERY_MARKETING_TARGET_AIGC AdCreativeSource = "AD_CREATIVE_SMART_DELIVERY_MARKETING_TARGET_AIGC"
 	AdCreativeSource_HISTORY_COMP_REUSE                   AdCreativeSource = "AD_CREATIVE_HISTORY_COMP_REUSE"
+	AdCreativeSource_NEW_RECOMMEND                        AdCreativeSource = "AD_CREATIVE_NEW_RECOMMEND"
 )

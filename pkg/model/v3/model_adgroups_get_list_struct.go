@@ -78,6 +78,7 @@ type AdgroupsGetListStruct struct {
 	ShortPlayPayType                  ShortPlayPayType            `json:"short_play_pay_type,omitempty"`
 	SellStrategyId                    *int64                      `json:"sell_strategy_id,omitempty"`
 	OgCompletionType                  OgCompletionType            `json:"og_completion_type,omitempty"`
+	DcaSpec                           *DcaSpec                    `json:"dca_spec,omitempty"`
 	AoiOptimizationStrategy           *AoiOptimizationStrategy    `json:"aoi_optimization_strategy,omitempty"`
 	CostGuaranteeStatus               CostGuaranteeStatus         `json:"cost_guarantee_status,omitempty"`
 	CostGuaranteeMoney                *int64                      `json:"cost_guarantee_money,omitempty"`
@@ -87,4 +88,5 @@ type AdgroupsGetListStruct struct {
 	CustomCostRoiCap                  *float64                    `json:"custom_cost_roi_cap,omitempty"`
 	EnableSteadyExploration           *bool                       `json:"enable_steady_exploration,omitempty"`
 	AdxRealtimeType                   AdxRealtimeType             `json:"adx_realtime_type,omitempty"`
+	SmartTargetingStatus              SmartTargetingStatus        `json:"smart_targeting_status,omitempty"`
 }

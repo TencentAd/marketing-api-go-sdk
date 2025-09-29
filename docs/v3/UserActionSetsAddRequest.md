@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Type_** | [***AmUserActionSetType**](AmUserActionSetType.md) |  | [optional] [default to null]
 **MobileAppId** | **int64** |  | [optional] [default to null]
 **WechatAppId** | **string** |  | [optional] [default to null]
+**AppIdStr** | **string** |  | [optional] [default to null]
 **Name** | **string** |  | [optional] [default to null]
 **Description** | **string** |  | [optional] [default to null]
 **Usages** | **[]string** |  | [optional] [default to null]

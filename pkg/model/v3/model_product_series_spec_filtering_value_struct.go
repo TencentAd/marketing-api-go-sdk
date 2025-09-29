@@ -11,6 +11,7 @@ package model
 
 // 字段取值
 type ProductSeriesSpecFilteringValueStruct struct {
-	FieldValue   *string      `json:"field_value,omitempty"`
-	CurrencyType CurrencyType `json:"currency_type,omitempty"`
+	FieldValue      *string                                    `json:"field_value,omitempty"`
+	FieldValueRange *ProductSeriesSpecFilteringFieldValueRange `json:"field_value_range,omitempty"`
+	CurrencyType    CurrencyType                               `json:"currency_type,omitempty"`
 }

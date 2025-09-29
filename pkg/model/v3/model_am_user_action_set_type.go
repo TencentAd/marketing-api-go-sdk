@@ -21,4 +21,5 @@ const (
 	AmUserActionSetType_WECHAT              AmUserActionSetType = "WECHAT"
 	AmUserActionSetType_WECHAT_MINI_PROGRAM AmUserActionSetType = "WECHAT_MINI_PROGRAM"
 	AmUserActionSetType_WECHAT_MINI_GAME    AmUserActionSetType = "WECHAT_MINI_GAME"
+	AmUserActionSetType_HARMONY             AmUserActionSetType = "HARMONY"
 )

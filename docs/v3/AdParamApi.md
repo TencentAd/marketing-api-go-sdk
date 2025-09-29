@@ -35,6 +35,9 @@ Name | Type | Description  | Notes
  **marketingCarrierType** | **optional.String**|  | 
  **marketingTargetType** | **optional.String**|  | 
  **productCatalogId** | **optional.Int64**|  | 
+ **marketingAssetOuterSpec** | [**optional.Interface of MarketingAssetOuterSpec**](MarketingAssetOuterSpec.md)|  | 
+ **mpaSpec** | [**optional.Interface of MpaSpec**](MpaSpec.md)|  | 
+ **dynamicAdType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

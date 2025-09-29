@@ -9,7 +9,7 @@
 
 package model
 
-// OptimizationGoal : 广告优化目标类型
+// OptimizationGoal : 深度优化目标类型
 type OptimizationGoal string
 
 // List of OptimizationGoal
@@ -119,4 +119,6 @@ const (
 	OptimizationGoal_VIEW_DRAMA_DURATION_1_MIN              OptimizationGoal = "OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN"
 	OptimizationGoal_FIRST_PROMPT_INPUT                     OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT"
 	OptimizationGoal_ECOMMERCE_GIFTING                      OptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_GIFTING"
+	OptimizationGoal_CLUE_PAY_SUCCEED                       OptimizationGoal = "OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED"
+	OptimizationGoal_30DAYUNSUBSCRIBERATE                   OptimizationGoal = "OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE"
 )

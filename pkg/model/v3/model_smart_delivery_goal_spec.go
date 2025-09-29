@@ -39,4 +39,11 @@ type SmartDeliveryGoalSpec struct {
 	WechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec *SmartDeliveryGoalOrderFirstTwentyFourHourRefundRateSpec `json:"wechat_store_single_product_order_first_twenty_four_hour_refund_rate_spec,omitempty"`
 	QytLiveStreamAudienceSpec                                      *SmartDeliveryGoalQytSpec                                `json:"qyt_live_stream_audience_spec,omitempty"`
 	ProductOrderSpec                                               *SmartDeliveryGoalProductSpec                            `json:"product_order_spec,omitempty"`
+	CpsSpec                                                        *SmartDeliveryGoalCpsSpec                                `json:"cps_spec,omitempty"`
+	QytClickSpec                                                   *SmartDeliveryGoalQytSpec                                `json:"qyt_click_spec,omitempty"`
+	QytFirstTwentyFourHourEcommerceOrderSpec                       *SmartDeliveryGoalQytSpec                                `json:"qyt_first_twenty_four_hour_ecommerce_order_spec,omitempty"`
+	WechatStoreFirstTwentyFourHourEcommerceOrderSpec               *SmartDeliveryGoalFirstTwentyFourHourEcommerceOrderSpec  `json:"wechat_store_first_twenty_four_hour_ecommerce_order_spec,omitempty"`
+	FictionFollowPurchaseRoiSpec                                   *SmartDeliveryGoalFictionFollowPurchaseRoiSpec           `json:"fiction_follow_purchase_roi_spec,omitempty"`
+	FictionRegisterPurchaseRoiSpec                                 *SmartDeliveryGoalFictionRegisterPurchaseRoiSpec         `json:"fiction_register_purchase_roi_spec,omitempty"`
+	FictionRegisterMonetizationRoiSpec                             *SmartDeliveryGoalFictionRegisterMonetizationRoiSpec     `json:"fiction_register_monetization_roi_spec,omitempty"`
 }

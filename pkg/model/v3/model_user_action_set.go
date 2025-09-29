@@ -14,6 +14,7 @@ type UserActionSet struct {
 	UserActionSetId       *int64                 `json:"user_action_set_id,omitempty"`
 	Type_                 AmUserActionSetType    `json:"type,omitempty"`
 	MobileAppId           *int64                 `json:"mobile_app_id,omitempty"`
+	AppIdStr              *string                `json:"app_id_str,omitempty"`
 	Name                  *string                `json:"name,omitempty"`
 	Description           *string                `json:"description,omitempty"`
 	ActivateStatus        *bool                  `json:"activate_status,omitempty"`

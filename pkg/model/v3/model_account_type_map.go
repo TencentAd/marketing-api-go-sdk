@@ -44,7 +44,11 @@ const (
 	AccountTypeMap_DEBT_FIXED                        AccountTypeMap = "FUND_TYPE_DEBT_FIXED"
 	AccountTypeMap_DEBT_TEMP                         AccountTypeMap = "FUND_TYPE_DEBT_TEMP"
 	AccountTypeMap_SHORT_PLAY_GIFT                   AccountTypeMap = "FUND_TYPE_SHORT_PLAY_GIFT"
-	AccountTypeMap_SHORT_PLAY_PUBLISHER_GIFT         AccountTypeMap = "FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT"
 	AccountTypeMap_GAME_CHARGE_INDIRECT_REWARDS_GIFT AccountTypeMap = "FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT"
 	AccountTypeMap_GAME_CHARGE_DIRECT_REWARDS_GIFT   AccountTypeMap = "FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT"
+	AccountTypeMap_SHORT_PLAY_PUBLISHER_GIFT         AccountTypeMap = "FUND_TYPE_SHORT_PLAY_PUBLISHER_GIFT"
+	AccountTypeMap_MP_GAME_SPECIAL_REWARDS_GIFT      AccountTypeMap = "FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT"
+	AccountTypeMap_MINIGAME_CREDIT                   AccountTypeMap = "FUND_TYPE_MINIGAME_CREDIT"
+	AccountTypeMap_MP_GAME_PC_TARGET_GIFT            AccountTypeMap = "FUND_TYPE_MP_GAME_PC_TARGET_GIFT"
+	AccountTypeMap_INNER_RESOURCE_EXCHANGE           AccountTypeMap = "FUND_TYPE_INNER_RESOURCE_EXCHANGE"
 )

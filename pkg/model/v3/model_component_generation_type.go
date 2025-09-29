@@ -14,12 +14,15 @@ type ComponentGenerationType string
 
 // List of ComponentGenerationType
 const (
-	ComponentGenerationType_USER_CREATE     ComponentGenerationType = "COMPONENT_GENERATION_TYPE_USER_CREATE"
-	ComponentGenerationType_SYSTEM_DERIVE   ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_DERIVE"
-	ComponentGenerationType_SYSTEM_GENERATE ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_GENERATE"
-	ComponentGenerationType_BXJG            ComponentGenerationType = "COMPONENT_GENERATION_TYPE_BXJG"
-	ComponentGenerationType_SMART_DELIVERY  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SMART_DELIVERY"
-	ComponentGenerationType_MUSE_AIGC       ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MUSE_AIGC"
-	ComponentGenerationType_HUXUAN          ComponentGenerationType = "COMPONENT_GENERATION_TYPE_HUXUAN"
-	ComponentGenerationType_MARKETING_ASSET ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
+	ComponentGenerationType_USER_CREATE                      ComponentGenerationType = "COMPONENT_GENERATION_TYPE_USER_CREATE"
+	ComponentGenerationType_SYSTEM_DERIVE                    ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_DERIVE"
+	ComponentGenerationType_SYSTEM_GENERATE                  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_GENERATE"
+	ComponentGenerationType_BXJG                             ComponentGenerationType = "COMPONENT_GENERATION_TYPE_BXJG"
+	ComponentGenerationType_SMART_DELIVERY                   ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SMART_DELIVERY"
+	ComponentGenerationType_MUSE_AIGC                        ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MUSE_AIGC"
+	ComponentGenerationType_HUXUAN                           ComponentGenerationType = "COMPONENT_GENERATION_TYPE_HUXUAN"
+	ComponentGenerationType_MATERIAL_AUTHORIZED              ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MATERIAL_AUTHORIZED"
+	ComponentGenerationType_SYSTEM_OPTIMIZED_RECOMMENDATIONS ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_OPTIMIZED_RECOMMENDATIONS"
+	ComponentGenerationType_MPA                              ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MPA"
+	ComponentGenerationType_MARKETING_ASSET                  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
 )

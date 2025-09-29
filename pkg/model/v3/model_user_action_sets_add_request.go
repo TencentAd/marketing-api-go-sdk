@@ -14,6 +14,7 @@ type UserActionSetsAddRequest struct {
 	Type_                 AmUserActionSetType `json:"type,omitempty"`
 	MobileAppId           *int64              `json:"mobile_app_id,omitempty"`
 	WechatAppId           *string             `json:"wechat_app_id,omitempty"`
+	AppIdStr              *string             `json:"app_id_str,omitempty"`
 	Name                  *string             `json:"name,omitempty"`
 	Description           *string             `json:"description,omitempty"`
 	Usages                *[]string           `json:"usages,omitempty"`

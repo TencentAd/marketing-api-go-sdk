@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **UpdateAdgroupDeriveConfSpec** | [**[]UpdateAdgroupDeriveConfItem**](update_adgroup_derive_conf_item.md) |  | [optional] [default to null]
 **UpdateComponentSharingSpec** | [**[]UpdateComponentSharingItem**](update_component_sharing_item.md) |  | [optional] [default to null]
 **UpdateAdgroupSmartDeliveryGoalSpec** | [**[]UpdateAdgroupSmartDeliveryGoalItem**](update_adgroup_smart_delivery_goal_item.md) |  | [optional] [default to null]
+**DeleteAccountComponentSpec** | [**[]DeleteAccountComponentItem**](delete_account_component_item.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

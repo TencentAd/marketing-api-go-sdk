@@ -11,9 +11,9 @@ package model
 
 // 创意组件字段结构
 type CreativeComponentValueValidStructureField struct {
-	Name      *string                                         `json:"name,omitempty"`
-	Desc      *string                                         `json:"desc,omitempty"`
-	Type_     ComponentMetadataFieldType                      `json:"type,omitempty"`
-	Structure *[]CreativeComponentValueValidStructureFieldSub `json:"structure,omitempty"`
-	Valid     *CreativeComponentValueValid                    `json:"valid,omitempty"`
+	Name      *string                                                         `json:"name,omitempty"`
+	Desc      *string                                                         `json:"desc,omitempty"`
+	Type_     ComponentMetadataFieldType                                      `json:"type,omitempty"`
+	Structure *CreativeComponentValueFieldStructureWithoutValueValidStructure `json:"structure,omitempty"`
+	Valid     *CreativeComponentValueValid                                    `json:"valid,omitempty"`
 }

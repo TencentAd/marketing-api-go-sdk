@@ -143,6 +143,7 @@ UserActionSetsApiService 获取用户行为数据源
      * @param "Type_" (optional.Interface of []string) -
      * @param "MobileAppId" (optional.Int64) -
      * @param "WechatAppId" (optional.String) -
+     * @param "AppIdStr" (optional.String) -
      * @param "Name" (optional.String) -
      * @param "IncludePermission" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
@@ -155,6 +156,7 @@ type UserActionSetsGetOpts struct {
 	Type_             optional.Interface
 	MobileAppId       optional.Int64
 	WechatAppId       optional.String
+	AppIdStr          optional.String
 	Name              optional.String
 	IncludePermission optional.Bool
 	Fields            optional.Interface
@@ -190,6 +192,9 @@ func (a *UserActionSetsApiService) Get(ctx context.Context, accountId int64, loc
 	}
 	if localVarOptionals != nil && localVarOptionals.WechatAppId.IsSet() {
 		localVarQueryParams.Add("wechat_app_id", parameterToString(localVarOptionals.WechatAppId.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AppIdStr.IsSet() {
+		localVarQueryParams.Add("app_id_str", parameterToString(localVarOptionals.AppIdStr.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Name.IsSet() {
 		localVarQueryParams.Add("name", parameterToString(localVarOptionals.Name.Value(), ""))
