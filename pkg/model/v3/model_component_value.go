@@ -45,4 +45,5 @@ type ComponentValue struct {
 	MiniCardLink         *MiniCardLinkComponent         `json:"mini_card_link,omitempty"`
 	FloatingZoneList     *FloatingZoneListComponent     `json:"floating_zone_list,omitempty"`
 	VideoChannelsContent *VideoChannelsContentComponent `json:"video_channels_content,omitempty"`
+	WxgameDirectPage     *WxgameDirectPageComponent     `json:"wxgame_direct_page,omitempty"`
 }

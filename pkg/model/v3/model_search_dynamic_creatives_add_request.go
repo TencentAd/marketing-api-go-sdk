@@ -10,11 +10,13 @@
 package model
 
 type SearchDynamicCreativesAddRequest struct {
-	AccountId                  *int64              `json:"account_id,omitempty"`
-	AdgroupId                  *int64              `json:"adgroup_id,omitempty"`
-	DynamicCreativeName        *string             `json:"dynamic_creative_name,omitempty"`
-	CreativeTemplateId         *int64              `json:"creative_template_id,omitempty"`
-	DeliveryMode               DeliveryMode        `json:"delivery_mode,omitempty"`
-	CreativeComponents         *CreativeComponents `json:"creative_components,omitempty"`
-	SearchIntelligentExtension ModelSwitch         `json:"search_intelligent_extension,omitempty"`
+	AccountId                  *int64                      `json:"account_id,omitempty"`
+	AdgroupId                  *int64                      `json:"adgroup_id,omitempty"`
+	DynamicCreativeName        *string                     `json:"dynamic_creative_name,omitempty"`
+	CreativeTemplateId         *int64                      `json:"creative_template_id,omitempty"`
+	DeliveryMode               DeliveryMode                `json:"delivery_mode,omitempty"`
+	CreativeComponents         *CreativeComponents         `json:"creative_components,omitempty"`
+	SearchIntelligentExtension ModelSwitch                 `json:"search_intelligent_extension,omitempty"`
+	SublinkSwitch              AdvertiserSublinkSwitch     `json:"sublink_switch,omitempty"`
+	PicMaterialSwitch          AdvertiserPicMaterialSwitch `json:"pic_material_switch,omitempty"`
 }

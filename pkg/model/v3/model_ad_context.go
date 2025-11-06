@@ -24,4 +24,5 @@ type AdContext struct {
 	OptimizationGoalStruct  *AdContextOptimizationGoalStruct `json:"optimization_goal_struct,omitempty"`
 	MpaSpec                 *MpaSpec                         `json:"mpa_spec,omitempty"`
 	MarketingAssetOuterSpec *MarketingAssetOuterSpec         `json:"marketing_asset_outer_spec,omitempty"`
+	DynamicAdType           DynamicAdType                    `json:"dynamic_ad_type,omitempty"`
 }

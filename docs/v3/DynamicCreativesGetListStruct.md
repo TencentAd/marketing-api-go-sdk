@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **CreativeSetApprovalStatus** | [***CreativeSetApprovalStatus**](CreativeSetApprovalStatus.md) |  | [optional] [default to null]
 **Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
 **AssetInconsistentStatus** | [***AssetInconsistentStatus**](AssetInconsistentStatus.md) |  | [optional] [default to null]
+**SourceDynamicCreativeId** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

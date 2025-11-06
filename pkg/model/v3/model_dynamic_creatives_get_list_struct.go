@@ -30,4 +30,5 @@ type DynamicCreativesGetListStruct struct {
 	CreativeSetApprovalStatus  CreativeSetApprovalStatus   `json:"creative_set_approval_status,omitempty"`
 	Source                     AdCreativeSource            `json:"source,omitempty"`
 	AssetInconsistentStatus    AssetInconsistentStatus     `json:"asset_inconsistent_status,omitempty"`
+	SourceDynamicCreativeId    *int64                      `json:"source_dynamic_creative_id,omitempty"`
 }

@@ -79,4 +79,7 @@ const (
 	SmartDeliveryGoal_FICTION_FOLLOW_PURCHASE_ROI                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_FOLLOW_PURCHASE_ROI"
 	SmartDeliveryGoal_FICTION_REGISTER_PURCHASE_ROI                                        SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_REGISTER_PURCHASE_ROI"
 	SmartDeliveryGoal_FICTION_REGISTER_MONETIZATION_ROI                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_FICTION_REGISTER_MONETIZATION_ROI"
+	SmartDeliveryGoal_GAME_APP_ACTIVATE_ROI_1_DAY                                          SmartDeliveryGoal = "SMART_DELIVERY_GOAL_GAME_APP_ACTIVATE_ROI_1DAY"
+	SmartDeliveryGoal_READING_APP_ACTIVATE_RETENTION_1_DAY                                 SmartDeliveryGoal = "SMART_DELIVERY_GOAL_READING_APP_ACTIVATE_RETENTION_1DAY"
+	SmartDeliveryGoal_READING_APP_ACTIVATE_RETENTION_7_DAY                                 SmartDeliveryGoal = "SMART_DELIVERY_GOAL_READING_APP_ACTIVATE_RETENTION_7DAY"
 )

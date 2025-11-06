@@ -13,4 +13,5 @@ package model
 type XjPageSpec struct {
 	PageId                      *int64  `json:"page_id,omitempty"`
 	WechatChannelsLiveReserveId *string `json:"wechat_channels_live_reserve_id,omitempty"`
+	CustomParam                 *string `json:"custom_param,omitempty"`
 }

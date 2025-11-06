@@ -79,4 +79,5 @@ const (
 	MarketingTargetType_PRODUCT_AGGREGATION_PAGE         MarketingTargetType = "MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE"
 	MarketingTargetType_WECHAT_STORE                     MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE"
 	MarketingTargetType_RESALE_AND_COMMERCIAL_LAND       MarketingTargetType = "MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND"
+	MarketingTargetType_VIDEO_PROGRAM                    MarketingTargetType = "MARKETING_TARGET_TYPE_VIDEO_PROGRAM"
 )

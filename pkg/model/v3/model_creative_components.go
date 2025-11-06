@@ -46,4 +46,5 @@ type CreativeComponents struct {
 	FloatingZoneList     *[]FloatingZoneListComponent     `json:"floating_zone_list,omitempty"`
 	VideoChannelsContent *[]VideoChannelsContentComponent `json:"video_channels_content,omitempty"`
 	Audio                *[]AudioComponent                `json:"audio,omitempty"`
+	WxgameDirectPage     *[]WxgameDirectPageComponent     `json:"wxgame_direct_page,omitempty"`
 }

@@ -37,6 +37,6 @@ type PunishQueryListItem struct {
 	Reason              *string            `json:"reason,omitempty"`
 	CertificateList     *[]string          `json:"certificate_list,omitempty"`
 	IllegalScene        *string            `json:"illegal_scene,omitempty"`
-	MdmPunishData       *MdmPunishData     `json:"mdm_punish_data,omitempty"`
+	MdmPunishData       *[]MdmPunishData   `json:"mdm_punish_data,omitempty"`
 	AppealStatus        *bool              `json:"appeal_status,omitempty"`
 }

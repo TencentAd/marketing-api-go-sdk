@@ -38,6 +38,9 @@ Name | Type | Description | Notes
 **FictionFollowPurchaseRoiSpec** | [***SmartDeliveryGoalFictionFollowPurchaseRoiSpec**](smart_delivery_goal_fiction_follow_purchase_roi_spec.md) |  | [optional] [default to null]
 **FictionRegisterPurchaseRoiSpec** | [***SmartDeliveryGoalFictionRegisterPurchaseRoiSpec**](smart_delivery_goal_fiction_register_purchase_roi_spec.md) |  | [optional] [default to null]
 **FictionRegisterMonetizationRoiSpec** | [***SmartDeliveryGoalFictionRegisterMonetizationRoiSpec**](smart_delivery_goal_fiction_register_monetization_roi_spec.md) |  | [optional] [default to null]
+**GameAppActivateRoiSpec** | [***SmartDeliveryGoalGameAppActivateRoiSpec**](smart_delivery_goal_game_app_activate_roi_spec.md) |  | [optional] [default to null]
+**ReadingAppActivateFirstDayRetentionSpec** | [***SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec**](smart_delivery_goal_reading_app_activate_first_day_retention_spec.md) |  | [optional] [default to null]
+**ReadingAppActivateSevenDayRetentionSpec** | [***SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec**](smart_delivery_goal_reading_app_activate_seven_day_retention_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -59,6 +59,7 @@ const (
 	DestinationTypeRead_PAGE_TYPE_WECHAT_CHANNELS_PROFILE         DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_PROFILE"
 	DestinationTypeRead_PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT    DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT"
 	DestinationTypeRead_PAGE_TYPE_WECHAT_QUERY_PAGE               DestinationTypeRead = "Page_TYPE_WECHAT_QUERY_PAGE"
+	DestinationTypeRead_PAGE_TYPE_WECHAT_SHOP                     DestinationTypeRead = "PAGE_TYPE_WECHAT_SHOP"
 	DestinationTypeRead_PAGE_TYPE_TSA_OTT                         DestinationTypeRead = "PAGE_TYPE_TSA_OTT"
 	DestinationTypeRead_PAGE_TYPE_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 	DestinationTypeRead_PAGE_TYPE_WECHAT_QUERY_PAGE_2             DestinationTypeRead = "PAGE_TYPE_WECHAT_QUERY_PAGE"

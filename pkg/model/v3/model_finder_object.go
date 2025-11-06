@@ -18,4 +18,7 @@ type FinderObject struct {
 	Medias                  *[]WechatChannelsMedia `json:"medias,omitempty"`
 	FinderUsername          *string                `json:"finder_username,omitempty"`
 	WechatChannelsAccountId *string                `json:"wechat_channels_account_id,omitempty"`
+	IsDisable               *bool                  `json:"is_disable,omitempty"`
+	DisableMessage          *string                `json:"disable_message,omitempty"`
+	AuditStatus             AdStatus               `json:"audit_status,omitempty"`
 }

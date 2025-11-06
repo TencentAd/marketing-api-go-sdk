@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **WechatOfficialAccountSpec** | [***LandingPageWechatOfficialAccountSpec**](landing_page_wechat_official_account_spec.md) |  | [optional] [default to null]
 **SearchBrandAreaSpec** | [***SearchBrandAreaSpec**](search_brand_area_spec.md) |  | [optional] [default to null]
 **ChannelsShopProductSpec** | [***ChannelsShopProductSpec**](channels_shop_product_spec.md) |  | [optional] [default to null]
+**WechatShopSpec** | [***WechatShopSpec**](wechat_shop_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

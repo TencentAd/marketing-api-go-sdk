@@ -21,4 +21,5 @@ type PageSpec struct {
 	WechatOfficialAccountSpec *LandingPageWechatOfficialAccountSpec `json:"wechat_official_account_spec,omitempty"`
 	SearchBrandAreaSpec       *SearchBrandAreaSpec                  `json:"search_brand_area_spec,omitempty"`
 	ChannelsShopProductSpec   *ChannelsShopProductSpec              `json:"channels_shop_product_spec,omitempty"`
+	WechatShopSpec            *WechatShopSpec                       `json:"wechat_shop_spec,omitempty"`
 }

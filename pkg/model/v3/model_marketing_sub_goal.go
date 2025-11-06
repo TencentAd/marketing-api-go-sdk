@@ -31,4 +31,5 @@ const (
 	MarketingSubGoal_GAME_VERSION_UPGRADE                 MarketingSubGoal = "MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE"
 	MarketingSubGoal_NEW_STORE_OPENING                    MarketingSubGoal = "MARKETING_SUB_GOAL_NEW_STORE_OPENING"
 	MarketingSubGoal_EVENING_PROMOTION                    MarketingSubGoal = "MARKETING_SUB_GOAL_EVENING_PROMOTION"
+	MarketingSubGoal_SPECIAL_RELEASE                      MarketingSubGoal = "MARKETING_SUB_GOAL_SPECIAL_RELEASE"
 )

@@ -28,4 +28,5 @@ const (
 	ReportDailyLevel_PRODUCT_CATALOG  ReportDailyLevel = "REPORT_LEVEL_PRODUCT_CATALOG"
 	ReportDailyLevel_PROJECT          ReportDailyLevel = "REPORT_LEVEL_PROJECT"
 	ReportDailyLevel_PROJECT_CREATIVE ReportDailyLevel = "REPORT_LEVEL_PROJECT_CREATIVE"
+	ReportDailyLevel_CREATIVE_ASSET   ReportDailyLevel = "REPORT_LEVEL_CREATIVE_ASSET"
 )

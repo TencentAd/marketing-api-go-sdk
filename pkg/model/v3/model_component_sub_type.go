@@ -121,6 +121,7 @@ const (
 	ComponentSubType_HOT_TOPIC                                ComponentSubType = "HOT_TOPIC"
 	ComponentSubType_AUDIO                                    ComponentSubType = "AUDIO"
 	ComponentSubType_WECHAT_SHOP_ACTIVITY_BULK_BUY            ComponentSubType = "WECHAT_SHOP_ACTIVITY_BULK_BUY"
+	ComponentSubType_WXGAME_DIRECT_PAGE                       ComponentSubType = "WXGAME_DIRECT_PAGE"
 	ComponentSubType_BRAND                                    ComponentSubType = "BRAND"
 	ComponentSubType_BRAND_PAGE                               ComponentSubType = "BRAND_PAGE"
 	ComponentSubType_BRAND_SEARCH                             ComponentSubType = "BRAND_SEARCH"

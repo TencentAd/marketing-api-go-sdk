@@ -11,11 +11,13 @@ package model
 
 // 关键词信息
 type SearchBidwordStruct struct {
-	AdgroupId         *int64            `json:"adgroup_id,omitempty"`
-	Bidword           *string           `json:"bidword,omitempty"`
-	BidPrice          *int64            `json:"bid_price,omitempty"`
-	UseGroupPrice     UseGroupPriceType `json:"use_group_price,omitempty"`
-	MatchType         BidwordMatchType  `json:"match_type,omitempty"`
-	ConfiguredStatus  BidwordPauseType  `json:"configured_status,omitempty"`
-	DynamicCreativeId *int64            `json:"dynamic_creative_id,omitempty"`
+	AdgroupId             *int64              `json:"adgroup_id,omitempty"`
+	Bidword               *string             `json:"bidword,omitempty"`
+	BidPrice              *int64              `json:"bid_price,omitempty"`
+	UseGroupPrice         UseGroupPriceType   `json:"use_group_price,omitempty"`
+	MatchType             BidwordMatchType    `json:"match_type,omitempty"`
+	ConfiguredStatus      BidwordPauseType    `json:"configured_status,omitempty"`
+	DynamicCreativeId     *int64              `json:"dynamic_creative_id,omitempty"`
+	PcLandingPageInfo     *BidwordLandingPage `json:"pc_landing_page_info,omitempty"`
+	MobileLandingPageInfo *BidwordLandingPage `json:"mobile_landing_page_info,omitempty"`
 }
