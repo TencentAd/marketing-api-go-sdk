@@ -304,6 +304,8 @@ type APIClient struct {
 
 	MuseAiUgcApi *MuseAiUgcApiService
 
+	MuseAudiosApi *MuseAudiosApiService
+
 	NegativewordsApi *NegativewordsApiService
 
 	OauthApi *OauthApiService
@@ -319,6 +321,8 @@ type APIClient struct {
 	OfficialLandingPageListApi *OfficialLandingPageListApiService
 
 	OfficialLandingPageSubmitApi *OfficialLandingPageSubmitApiService
+
+	OnlinePreviewQrcodeApi *OnlinePreviewQrcodeApiService
 
 	OperationLogListApi *OperationLogListApiService
 
@@ -437,6 +441,8 @@ type APIClient struct {
 	WalletInvoiceApi *WalletInvoiceApiService
 
 	WalletTransferApi *WalletTransferApiService
+
+	WatermarksApi *WatermarksApiService
 
 	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
 
@@ -641,6 +647,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiMaterialApi = (*MuseAiMaterialApiService)(&c.common)
 	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
+	c.MuseAudiosApi = (*MuseAudiosApiService)(&c.common)
 	c.NegativewordsApi = (*NegativewordsApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)
@@ -649,6 +656,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.OfficialLandingPageDetailApi = (*OfficialLandingPageDetailApiService)(&c.common)
 	c.OfficialLandingPageListApi = (*OfficialLandingPageListApiService)(&c.common)
 	c.OfficialLandingPageSubmitApi = (*OfficialLandingPageSubmitApiService)(&c.common)
+	c.OnlinePreviewQrcodeApi = (*OnlinePreviewQrcodeApiService)(&c.common)
 	c.OperationLogListApi = (*OperationLogListApiService)(&c.common)
 	c.OptimizationGoalPermissionsApi = (*OptimizationGoalPermissionsApiService)(&c.common)
 	c.OrganizationAccountRelationApi = (*OrganizationAccountRelationApiService)(&c.common)
@@ -708,6 +716,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WalletGetBindingAdvertiserApi = (*WalletGetBindingAdvertiserApiService)(&c.common)
 	c.WalletInvoiceApi = (*WalletInvoiceApiService)(&c.common)
 	c.WalletTransferApi = (*WalletTransferApiService)(&c.common)
+	c.WatermarksApi = (*WatermarksApiService)(&c.common)
 	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
 	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)
 	c.WechatChannelsAdAccountCertificationFileApi = (*WechatChannelsAdAccountCertificationFileApiService)(&c.common)

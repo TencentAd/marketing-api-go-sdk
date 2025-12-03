@@ -27,7 +27,6 @@ type TargetReportApiListStruct struct {
 	Cost                                       *int64   `json:"cost,omitempty"`
 	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
 	ThousandDisplayPrice                       *int64   `json:"thousand_display_price,omitempty"`
-	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	ConversionsCount                           *int64   `json:"conversions_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	ConversionsRate                            *float64 `json:"conversions_rate,omitempty"`
@@ -44,24 +43,6 @@ type TargetReportApiListStruct struct {
 	ConversionsByClickCost                     *int64   `json:"conversions_by_click_cost,omitempty"`
 	PreviewConversionsCount                    *int64   `json:"preview_conversions_count,omitempty"`
 	PreviewDeepConversionsCount                *int64   `json:"preview_deep_conversions_count,omitempty"`
-	VideoOuterPlayCount                        *int64   `json:"video_outer_play_count,omitempty"`
-	VideoOuterPlayUserCount                    *int64   `json:"video_outer_play_user_count,omitempty"`
-	AvgUserPlayCount                           *float64 `json:"avg_user_play_count,omitempty"`
-	VideoOuterPlayTimeCount                    *float64 `json:"video_outer_play_time_count,omitempty"`
-	VideoOuterPlayTimeAvgRate                  *float64 `json:"video_outer_play_time_avg_rate,omitempty"`
-	VideoOuterPlayRate                         *float64 `json:"video_outer_play_rate,omitempty"`
-	VideoOuterPlayCost                         *int64   `json:"video_outer_play_cost,omitempty"`
-	VideoOuterPlay10Count                      *int64   `json:"video_outer_play10_count,omitempty"`
-	VideoOuterPlay25Count                      *int64   `json:"video_outer_play25_count,omitempty"`
-	VideoOuterPlay50Count                      *int64   `json:"video_outer_play50_count,omitempty"`
-	VideoOuterPlay75Count                      *int64   `json:"video_outer_play75_count,omitempty"`
-	VideoOuterPlay90Count                      *int64   `json:"video_outer_play90_count,omitempty"`
-	VideoOuterPlay95Count                      *int64   `json:"video_outer_play95_count,omitempty"`
-	VideoOuterPlay100Count                     *int64   `json:"video_outer_play100_count,omitempty"`
-	VideoOuterPlay3sCount                      *int64   `json:"video_outer_play3s_count,omitempty"`
-	VideoOuterPlay3sRate                       *float64 `json:"video_outer_play3s_rate,omitempty"`
-	VideoOuterPlay5sCount                      *int64   `json:"video_outer_play5s_count,omitempty"`
-	VideoOuterPlay7sCount                      *int64   `json:"video_outer_play7s_count,omitempty"`
 	ReadCount                                  *int64   `json:"read_count,omitempty"`
 	ReadCost                                   *int64   `json:"read_cost,omitempty"`
 	CommentCount                               *int64   `json:"comment_count,omitempty"`
@@ -551,7 +532,6 @@ type TargetReportApiListStruct struct {
 	ChannelsSharePlaPv                         *int64   `json:"channels_share_pla_pv,omitempty"`
 	VideoLiveSubscribeCount                    *int64   `json:"video_live_subscribe_count,omitempty"`
 	VideoLiveExpCount                          *int64   `json:"video_live_exp_count,omitempty"`
-	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	ChannelsLiveExitPlaDuration                *float64 `json:"channels_live_exit_pla_duration,omitempty"`
 	VideoLiveHeartCount                        *int64   `json:"video_live_heart_count,omitempty"`
 	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
@@ -565,7 +545,6 @@ type TargetReportApiListStruct struct {
 	LiveStreamCommodityBubbleClkPv             *int64   `json:"live_stream_commodity_bubble_clk_pv,omitempty"`
 	LiveStreamCommodityShopBagClkPv            *int64   `json:"live_stream_commodity_shop_bag_clk_pv,omitempty"`
 	LiveStreamCommodityShopListExpPv           *int64   `json:"live_stream_commodity_shop_list_exp_pv,omitempty"`
-	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	FromFollowUv                               *int64   `json:"from_follow_uv,omitempty"`
 	FromFollowCost                             *int64   `json:"from_follow_cost,omitempty"`
 	FromFollowByDisplayUv                      *int64   `json:"from_follow_by_display_uv,omitempty"`
@@ -579,7 +558,6 @@ type TargetReportApiListStruct struct {
 	BizReadingCount                            *int64   `json:"biz_reading_count,omitempty"`
 	BreakFramePlayPv                           *int64   `json:"break_frame_play_pv,omitempty"`
 	BreakFrameIpClkPv                          *int64   `json:"break_frame_ip_clk_pv,omitempty"`
-	BreakFrameIpClkUv                          *int64   `json:"break_frame_ip_clk_uv,omitempty"`
 	ClkMaterialUv                              *int64   `json:"clk_material_uv,omitempty"`
 	ClkMaterialRate                            *float64 `json:"clk_material_rate,omitempty"`
 	ClkNickPv                                  *int64   `json:"clk_nick_pv,omitempty"`
@@ -593,7 +571,6 @@ type TargetReportApiListStruct struct {
 	CvsBubbleShareClkPv                        *int64   `json:"cvs_bubble_share_clk_pv,omitempty"`
 	LpStarPageExpPv                            *int64   `json:"lp_star_page_exp_pv,omitempty"`
 	FinderTopicSliderPv                        *int64   `json:"finder_topic_slider_pv,omitempty"`
-	FinderTopicSliderPerUser                   *float64 `json:"finder_topic_slider_per_user,omitempty"`
 	FinderTopicSliderManualPv                  *int64   `json:"finder_topic_slider_manual_pv,omitempty"`
 	ShareFriendPv                              *int64   `json:"share_friend_pv,omitempty"`
 	ShareFeedPv                                *int64   `json:"share_feed_pv,omitempty"`
@@ -702,7 +679,6 @@ type TargetReportApiListStruct struct {
 	ClkLearnMorePv                             *int64   `json:"clk_learn_more_pv,omitempty"`
 	OpenAccountPv                              *int64   `json:"open_account_pv,omitempty"`
 	OpenAccountPvCost                          *int64   `json:"open_account_pv_cost,omitempty"`
-	VideoOuterPlay5sRate                       *float64 `json:"video_outer_play5s_rate,omitempty"`
 	IncomeVal24hPlaRoi                         *float64 `json:"income_val_24h_pla_roi,omitempty"`
 	ViewDramaDedupPv                           *int64   `json:"view_drama_dedup_pv,omitempty"`
 	ViewDramaDedupPvRate                       *float64 `json:"view_drama_dedup_pv_rate,omitempty"`
@@ -780,10 +756,38 @@ type TargetReportApiListStruct struct {
 	LoanQuotaOpenDedupCost                     *int64   `json:"loan_quota_open_dedup_cost,omitempty"`
 	LoanDedupPv                                *int64   `json:"loan_dedup_pv,omitempty"`
 	LoanDedupCost                              *int64   `json:"loan_dedup_cost,omitempty"`
-	LandingCpnExpPv                            *int64   `json:"landing_cpn_exp_pv,omitempty"`
-	LanButtonClickRate                         *float64 `json:"lan_button_click_rate,omitempty"`
 	ClkTopicElementPv                          *int64   `json:"clk_topic_element_pv,omitempty"`
 	AdMonetizationEcpm                         *int64   `json:"ad_monetization_ecpm,omitempty"`
+	AdMonetizationRegActive14dAmount           *int64   `json:"ad_monetization_reg_active_14d_amount,omitempty"`
+	AdMonetizationRegActive30dAmount           *int64   `json:"ad_monetization_reg_active_30d_amount,omitempty"`
+	AdMonetizationRegActive60dAmount           *int64   `json:"ad_monetization_reg_active_60d_amount,omitempty"`
+	IncomeVal30                                *int64   `json:"income_val_30,omitempty"`
+	IncomeVal60                                *int64   `json:"income_val_60,omitempty"`
+	AdMonetizationRegActive14dRoi              *float64 `json:"ad_monetization_reg_active_14d_roi,omitempty"`
+	AdMonetizationRegActive30dRoi              *float64 `json:"ad_monetization_reg_active_30d_roi,omitempty"`
+	AdMonetizationRegActive60dRoi              *float64 `json:"ad_monetization_reg_active_60d_roi,omitempty"`
+	IncomeRoi30                                *float64 `json:"income_roi_30,omitempty"`
+	IncomeRoi60                                *float64 `json:"income_roi_60,omitempty"`
+	AdMonetizationDedupRegActive14dPv          *int64   `json:"ad_monetization_dedup_reg_active_14d_pv,omitempty"`
+	AdMonetizationDedupRegActive30dPv          *int64   `json:"ad_monetization_dedup_reg_active_30d_pv,omitempty"`
+	AdMonetizationDedupRegActive60dPv          *int64   `json:"ad_monetization_dedup_reg_active_60d_pv,omitempty"`
+	AdMonetizationDedupActive14dPv             *int64   `json:"ad_monetization_dedup_active_14d_pv,omitempty"`
+	AdMonetizationDedupActive30dPv             *int64   `json:"ad_monetization_dedup_active_30d_pv,omitempty"`
+	AdMonetizationDedupActive60dPv             *int64   `json:"ad_monetization_dedup_active_60d_pv,omitempty"`
+	AdMonetizationRegActive14dPv               *int64   `json:"ad_monetization_reg_active_14d_pv,omitempty"`
+	AdMonetizationRegActive30dPv               *int64   `json:"ad_monetization_reg_active_30d_pv,omitempty"`
+	AdMonetizationRegActive60dPv               *int64   `json:"ad_monetization_reg_active_60d_pv,omitempty"`
+	AdMonetizationActive14dPv                  *int64   `json:"ad_monetization_active_14d_pv,omitempty"`
+	AdMonetizationActive30dPv                  *int64   `json:"ad_monetization_active_30d_pv,omitempty"`
+	AdMonetizationActive60dPv                  *int64   `json:"ad_monetization_active_60d_pv,omitempty"`
+	ClkAdFlipCardPv                            *int64   `json:"clk_ad_flip_card_pv,omitempty"`
+	CommissionAmount                           *int64   `json:"commission_amount,omitempty"`
+	CommissionRoi                              *float64 `json:"commission_roi,omitempty"`
+	OrderNetPv                                 *int64   `json:"order_net_pv,omitempty"`
+	OrderNetAmount                             *int64   `json:"order_net_amount,omitempty"`
+	OrderNetRoi                                *float64 `json:"order_net_roi,omitempty"`
+	OrderNetPvCost                             *int64   `json:"order_net_pv_cost,omitempty"`
+	ClkBhAnimPv                                *int64   `json:"clk_bh_anim_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

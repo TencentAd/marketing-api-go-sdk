@@ -45,6 +45,9 @@ const (
 	MarketingAssetType_FINANCE_BANK_CARD_C                                    MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_BANK_CARD_C"
 	MarketingAssetType_FINANCE_WEALTH                                         MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_WEALTH"
 	MarketingAssetType_FINANCE_OTHER                                          MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_OTHER"
+	MarketingAssetType_FINANCE_BANK_CARD_RIGHTS                               MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_BANK_CARD_RIGHTS"
+	MarketingAssetType_FINANCE_INSURANCE                                      MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_INSURANCE"
+	MarketingAssetType_FINANCE_INSURANCE_BROKER_RECRUITMENT                   MarketingAssetType = "MARKETING_ASSET_TYPE_FINANCE_INSURANCE_BROKER_RECRUITMENT"
 	MarketingAssetType_TOURIST_TRAVEL_ROUTE_BRAND                             MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_TRAVEL_ROUTE_BRAND"
 	MarketingAssetType_TOURIST_TRAVEL_ROUTE_FREE                              MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_TRAVEL_ROUTE_FREE"
 	MarketingAssetType_TOURIST_TRAVEL_TRAVEL_ROUTE                            MarketingAssetType = "MARKETING_ASSET_TYPE_TOURIST_TRAVEL_TRAVEL_ROUTE"
@@ -58,4 +61,5 @@ const (
 	MarketingAssetType_PLATFORM_CHANNEL_APP_ANDROID                           MarketingAssetType = "MARKETING_ASSET_TYPE_PLATFORM_CHANNEL_APP_ANDROID"
 	MarketingAssetType_PLATFORM_CHANNEL_APP_IOS                               MarketingAssetType = "MARKETING_ASSET_TYPE_PLATFORM_CHANNEL_APP_IOS"
 	MarketingAssetType_PLATFORM_CHANNEL_MINI_PROGRAM_WECHAT                   MarketingAssetType = "MARKETING_ASSET_TYPE_PLATFORM_CHANNEL_MINI_PROGRAM_WECHAT"
+	MarketingAssetType_VIDEO_PROGRAM_MAIN                                     MarketingAssetType = "MARKETING_ASSET_TYPE_VIDEO_PROGRAM_MAIN"
 )

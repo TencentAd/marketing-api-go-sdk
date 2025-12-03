@@ -41,6 +41,15 @@ Name | Type | Description | Notes
 **GameAppActivateRoiSpec** | [***SmartDeliveryGoalGameAppActivateRoiSpec**](smart_delivery_goal_game_app_activate_roi_spec.md) |  | [optional] [default to null]
 **ReadingAppActivateFirstDayRetentionSpec** | [***SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec**](smart_delivery_goal_reading_app_activate_first_day_retention_spec.md) |  | [optional] [default to null]
 **ReadingAppActivateSevenDayRetentionSpec** | [***SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec**](smart_delivery_goal_reading_app_activate_seven_day_retention_spec.md) |  | [optional] [default to null]
+**AiAppActivateFirstDayRetentionSpec** | [***SmartDeliveryGoalAiAppActivateFirstDayRetentionSpec**](smart_delivery_goal_ai_app_activate_first_day_retention_spec.md) |  | [optional] [default to null]
+**AiAppRegisterFirstDayRetentionSpec** | [***SmartDeliveryGoalAiAppRegisterFirstDayRetentionSpec**](smart_delivery_goal_ai_app_register_first_day_retention_spec.md) |  | [optional] [default to null]
+**BidAmountSpec** | [***SmartDeliveryGoalBidAmountSpec**](smart_delivery_goal_bid_amount_spec.md) |  | [optional] [default to null]
+**BidAmountDeepConversionWorthRateSpec** | [***SmartDeliveryGoalBidAmountDeepConversionWorthRateSpec**](smart_delivery_goal_bid_amount_deep_conversion_worth_rate_spec.md) |  | [optional] [default to null]
+**BidAmountDeepConversionBehaviorBidSpec** | [***SmartDeliveryGoalBidAmountDeepConversionBehaviorBidSpec**](smart_delivery_goal_bid_amount_deep_conversion_behavior_bid_spec.md) |  | [optional] [default to null]
+**QytNetProfitSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
+**QytNetProfitRoiSpec** | [***SmartDeliveryGoalQytSpec**](smart_delivery_goal_qyt_spec.md) |  | [optional] [default to null]
+**WechatStoreNetProfitRoiSpec** | [***SmartDeliveryGoalWechatStoreNetProfitRoiSpec**](smart_delivery_goal_wechat_store_net_profit_roi_spec.md) |  | [optional] [default to null]
+**WechatStoreNetProfitSpec** | [***SmartDeliveryGoalWechatStoreNetProfitSpec**](smart_delivery_goal_wechat_store_net_profit_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

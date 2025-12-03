@@ -39,16 +39,18 @@ WalletInvoiceApiService 共享钱包流水相关信息查询
      * @param "FundType" (optional.String) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
+     * @param "PrimaryKey" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WalletInvoiceGetResponse
 */
 
 type WalletInvoiceGetOpts struct {
-	FundType optional.String
-	Page     optional.Int64
-	PageSize optional.Int64
-	Fields   optional.Interface
+	FundType   optional.String
+	Page       optional.Int64
+	PageSize   optional.Int64
+	PrimaryKey optional.String
+	Fields     optional.Interface
 }
 
 func (a *WalletInvoiceApiService) Get(ctx context.Context, accountId int64, walletIdList string, dateRange WalletDateRangeTransaction, localVarOptionals *WalletInvoiceGetOpts) (WalletInvoiceGetResponseData, http.Header, error) {
@@ -80,6 +82,9 @@ func (a *WalletInvoiceApiService) Get(ctx context.Context, accountId int64, wall
 	}
 	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
 		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PrimaryKey.IsSet() {
+		localVarQueryParams.Add("primary_key", parameterToString(localVarOptionals.PrimaryKey.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

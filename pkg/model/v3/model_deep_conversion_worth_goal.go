@@ -29,4 +29,6 @@ const (
 	DeepConversionWorthGoal_WITHDRAW_DEPOSITS_ROAS            DeepConversionWorthGoal = "GOAL_WITHDRAW_DEPOSITS_ROAS"
 	DeepConversionWorthGoal_FULL_PRICE_COURSE_CONVERSION_ROAS DeepConversionWorthGoal = "GOAL_FULL_PRICE_COURSE_CONVERSION_ROAS"
 	DeepConversionWorthGoal_1DAYPURCHASEMONETIZATIONROAS      DeepConversionWorthGoal = "GOAL_1DAY_PURCHASE_MONETIZATION_ROAS"
+	DeepConversionWorthGoal_NET_PROFIT_24_H_ROAS              DeepConversionWorthGoal = "GOAL_NET_PROFIT_24H_ROAS"
+	DeepConversionWorthGoal_CPS_ESTIMATED_DISTRIBUTE_ROAS     DeepConversionWorthGoal = "GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS"
 )

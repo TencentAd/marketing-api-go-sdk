@@ -26,7 +26,6 @@ type ReportStruct struct {
 	Cost                                       *int64   `json:"cost,omitempty"`
 	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
 	ThousandDisplayPrice                       *int64   `json:"thousand_display_price,omitempty"`
-	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
 	ConversionsCount                           *int64   `json:"conversions_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	ConversionsRate                            *float64 `json:"conversions_rate,omitempty"`
@@ -638,6 +637,7 @@ type ReportStruct struct {
 	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
 	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
 	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
+	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
 	AdMonetizationCost                         *float64 `json:"ad_monetization_cost,omitempty"`
 	AdMonetizationRoi                          *float64 `json:"ad_monetization_roi,omitempty"`
 	AdMonetizationActive3dPv                   *int64   `json:"ad_monetization_active_3d_pv,omitempty"`
@@ -826,10 +826,38 @@ type ReportStruct struct {
 	LoanQuotaOpenDedupCost                     *int64   `json:"loan_quota_open_dedup_cost,omitempty"`
 	LoanDedupPv                                *int64   `json:"loan_dedup_pv,omitempty"`
 	LoanDedupCost                              *int64   `json:"loan_dedup_cost,omitempty"`
-	LandingCpnExpPv                            *int64   `json:"landing_cpn_exp_pv,omitempty"`
-	LanButtonClickRate                         *float64 `json:"lan_button_click_rate,omitempty"`
 	ClkTopicElementPv                          *int64   `json:"clk_topic_element_pv,omitempty"`
 	AdMonetizationEcpm                         *int64   `json:"ad_monetization_ecpm,omitempty"`
+	AdMonetizationRegActive14dAmount           *int64   `json:"ad_monetization_reg_active_14d_amount,omitempty"`
+	AdMonetizationRegActive30dAmount           *int64   `json:"ad_monetization_reg_active_30d_amount,omitempty"`
+	AdMonetizationRegActive60dAmount           *int64   `json:"ad_monetization_reg_active_60d_amount,omitempty"`
+	IncomeVal30                                *int64   `json:"income_val_30,omitempty"`
+	IncomeVal60                                *int64   `json:"income_val_60,omitempty"`
+	AdMonetizationRegActive14dRoi              *float64 `json:"ad_monetization_reg_active_14d_roi,omitempty"`
+	AdMonetizationRegActive30dRoi              *float64 `json:"ad_monetization_reg_active_30d_roi,omitempty"`
+	AdMonetizationRegActive60dRoi              *float64 `json:"ad_monetization_reg_active_60d_roi,omitempty"`
+	IncomeRoi30                                *float64 `json:"income_roi_30,omitempty"`
+	IncomeRoi60                                *float64 `json:"income_roi_60,omitempty"`
+	AdMonetizationDedupRegActive14dPv          *int64   `json:"ad_monetization_dedup_reg_active_14d_pv,omitempty"`
+	AdMonetizationDedupRegActive30dPv          *int64   `json:"ad_monetization_dedup_reg_active_30d_pv,omitempty"`
+	AdMonetizationDedupRegActive60dPv          *int64   `json:"ad_monetization_dedup_reg_active_60d_pv,omitempty"`
+	AdMonetizationDedupActive14dPv             *int64   `json:"ad_monetization_dedup_active_14d_pv,omitempty"`
+	AdMonetizationDedupActive30dPv             *int64   `json:"ad_monetization_dedup_active_30d_pv,omitempty"`
+	AdMonetizationDedupActive60dPv             *int64   `json:"ad_monetization_dedup_active_60d_pv,omitempty"`
+	AdMonetizationRegActive14dPv               *int64   `json:"ad_monetization_reg_active_14d_pv,omitempty"`
+	AdMonetizationRegActive30dPv               *int64   `json:"ad_monetization_reg_active_30d_pv,omitempty"`
+	AdMonetizationRegActive60dPv               *int64   `json:"ad_monetization_reg_active_60d_pv,omitempty"`
+	AdMonetizationActive14dPv                  *int64   `json:"ad_monetization_active_14d_pv,omitempty"`
+	AdMonetizationActive30dPv                  *int64   `json:"ad_monetization_active_30d_pv,omitempty"`
+	AdMonetizationActive60dPv                  *int64   `json:"ad_monetization_active_60d_pv,omitempty"`
+	ClkAdFlipCardPv                            *int64   `json:"clk_ad_flip_card_pv,omitempty"`
+	CommissionAmount                           *int64   `json:"commission_amount,omitempty"`
+	CommissionRoi                              *float64 `json:"commission_roi,omitempty"`
+	OrderNetPv                                 *int64   `json:"order_net_pv,omitempty"`
+	OrderNetAmount                             *int64   `json:"order_net_amount,omitempty"`
+	OrderNetRoi                                *float64 `json:"order_net_roi,omitempty"`
+	OrderNetPvCost                             *int64   `json:"order_net_pv_cost,omitempty"`
+	ClkBhAnimPv                                *int64   `json:"clk_bh_anim_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -850,7 +878,6 @@ type ReportStruct struct {
 	CvsCpnBtnClkUv                             *int64   `json:"cvs_cpn_btn_clk_uv,omitempty"`
 	CvsCpnClkDedupPv                           *int64   `json:"cvs_cpn_clk_dedup_pv,omitempty"`
 	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
-	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
 	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
 	CvsCpnVideoPlayHalfUv                      *int64   `json:"cvs_cpn_video_play_half_uv,omitempty"`
 	CvsCpnVideoPlayFinUv                       *int64   `json:"cvs_cpn_video_play_fin_uv,omitempty"`
@@ -861,14 +888,11 @@ type ReportStruct struct {
 	CvsCpnMediaPlayFinUv                       *int64   `json:"cvs_cpn_media_play_fin_uv,omitempty"`
 	AvgCvsViewtime                             *float64 `json:"avg_cvs_viewtime,omitempty"`
 	AvgCpnexpViewtime                          *float64 `json:"avg_cpnexp_viewtime,omitempty"`
-	AvgCpnplayVideoTime                        *float64 `json:"avg_cpnplay_video_time,omitempty"`
 	AvgCpnplayMediaTime                        *float64 `json:"avg_cpnplay_media_time,omitempty"`
 	CpnclkButtonPvRate                         *float64 `json:"cpnclk_button_pv_rate,omitempty"`
 	CpnplayVideoAndMediaPv                     *int64   `json:"cpnplay_video_and_media_pv,omitempty"`
-	CpnplayVideoAndMediaUv                     *int64   `json:"cpnplay_video_and_media_uv,omitempty"`
 	CpnplayVideoAndMediaFinUv                  *int64   `json:"cpnplay_video_and_media_fin_uv,omitempty"`
 	CpnplayVideoAndMediaTime                   *float64 `json:"cpnplay_video_and_media_time,omitempty"`
-	AvgCpnplayVideoAndMediaTime                *float64 `json:"avg_cpnplay_video_and_media_time,omitempty"`
 	CanvasHbSingleReceiveExpPv                 *int64   `json:"canvas_hb_single_receive_exp_pv,omitempty"`
 	CanvasHbSingleSendExpPv                    *int64   `json:"canvas_hb_single_send_exp_pv,omitempty"`
 	CanvasHbDoubleReceiveExpPv                 *int64   `json:"canvas_hb_double_receive_exp_pv,omitempty"`
@@ -883,6 +907,8 @@ type ReportStruct struct {
 	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
+	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
+	LanButtonClickRate                         *float64 `json:"lan_button_click_rate,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`

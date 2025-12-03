@@ -127,6 +127,8 @@ const (
 	OptimizationGoal_VIEW_DRAMA_DURATION_1_MIN              OptimizationGoal = "OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN"
 	OptimizationGoal_FIRST_PROMPT_INPUT                     OptimizationGoal = "OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT"
 	OptimizationGoal_ECOMMERCE_GIFTING                      OptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_GIFTING"
+	OptimizationGoal_NET_PROFIT_24_H                        OptimizationGoal = "OPTIMIZATIONGOAL_NET_PROFIT_24H"
 	OptimizationGoal_CLUE_PAY_SUCCEED                       OptimizationGoal = "OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED"
 	OptimizationGoal_30DAYUNSUBSCRIBERATE                   OptimizationGoal = "OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE"
+	OptimizationGoal_EFFECTIVE_INSURE                       OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_INSURE"
 )

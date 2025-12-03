@@ -25,4 +25,5 @@ type ComponentsGetListStruct struct {
 	PotentialStatus        CommonPotentialStatus   `json:"potential_status,omitempty"`
 	DisableMessage         *string                 `json:"disable_message,omitempty"`
 	FirstPublicationStatus FirstPublicationStatus  `json:"first_publication_status,omitempty"`
+	Scene                  ComponentScene          `json:"scene,omitempty"`
 }

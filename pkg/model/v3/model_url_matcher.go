@@ -11,6 +11,6 @@ package model
 
 // 匹配规则
 type UrlMatcher struct {
-	ParamValue *string  `json:"param_value,omitempty"`
-	Operator   Operator `json:"operator,omitempty"`
+	ParamValue *string        `json:"param_value,omitempty"`
+	Operator   FilterOperator `json:"operator,omitempty"`
 }

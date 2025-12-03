@@ -119,7 +119,9 @@ const (
 	IntOptimizationGoal_VIEW_DRAMA_DURATION_1_MIN              IntOptimizationGoal = "OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN"
 	IntOptimizationGoal_FIRST_PROMPT_INPUT                     IntOptimizationGoal = "OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT"
 	IntOptimizationGoal_ECOMMERCE_GIFTING                      IntOptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_GIFTING"
+	IntOptimizationGoal_NET_PROFIT_24_H                        IntOptimizationGoal = "OPTIMIZATIONGOAL_NET_PROFIT_24H"
 	IntOptimizationGoal_CLUE_PAY_SUCCEED                       IntOptimizationGoal = "OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED"
 	IntOptimizationGoal_30DAYUNSUBSCRIBERATE                   IntOptimizationGoal = "OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE"
+	IntOptimizationGoal_EFFECTIVE_INSURE                       IntOptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_INSURE"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

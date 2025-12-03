@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **LiveStreamAudienceCost** | **int64** |  | [optional] [default to null]
 **ClickCost** | **int64** |  | [optional] [default to null]
 **FirstTwentyFourHourEcommerceOrderCost** | **int64** |  | [optional] [default to null]
+**NetProfitCost** | **int64** |  | [optional] [default to null]
+**NetProfitRoi** | **float64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

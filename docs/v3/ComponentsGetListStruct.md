@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **PotentialStatus** | [***CommonPotentialStatus**](CommonPotentialStatus.md) |  | [optional] [default to null]
 **DisableMessage** | **string** |  | [optional] [default to null]
 **FirstPublicationStatus** | [***FirstPublicationStatus**](FirstPublicationStatus.md) |  | [optional] [default to null]
+**Scene** | [***ComponentScene**](ComponentScene.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

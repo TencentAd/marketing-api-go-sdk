@@ -14,4 +14,5 @@ type TargetOption struct {
 	Depends        *[]DependItem          `json:"depends,omitempty"`
 	SupportOptions *[]SupportOption       `json:"support_options,omitempty"`
 	Use            ComponentDependUseType `json:"use,omitempty"`
+	Tip            *string                `json:"tip,omitempty"`
 }

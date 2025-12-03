@@ -22,4 +22,5 @@ const (
 	ReportHourlyLevel_ADVERTISER_TOTAL ReportHourlyLevel = "REPORT_LEVEL_ADVERTISER_TOTAL"
 	ReportHourlyLevel_PROJECT          ReportHourlyLevel = "REPORT_LEVEL_PROJECT"
 	ReportHourlyLevel_PROJECT_CREATIVE ReportHourlyLevel = "REPORT_LEVEL_PROJECT_CREATIVE"
+	ReportHourlyLevel_VIDEO_HIGHLIGHT  ReportHourlyLevel = "REPORT_LEVEL_VIDEO_HIGHLIGHT"
 )

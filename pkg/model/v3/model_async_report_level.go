@@ -35,4 +35,5 @@ const (
 	AsyncReportLevel_PROJECT_CREATIVE AsyncReportLevel = "REPORT_LEVEL_PROJECT_CREATIVE"
 	AsyncReportLevel_OS               AsyncReportLevel = "REPORT_LEVEL_OS"
 	AsyncReportLevel_CREATIVE_ASSET   AsyncReportLevel = "REPORT_LEVEL_CREATIVE_ASSET"
+	AsyncReportLevel_VIDEO_HIGHLIGHT  AsyncReportLevel = "REPORT_LEVEL_VIDEO_HIGHLIGHT"
 )

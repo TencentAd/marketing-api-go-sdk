@@ -49,4 +49,13 @@ type SmartDeliveryGoalSpec struct {
 	GameAppActivateRoiSpec                                         *SmartDeliveryGoalGameAppActivateRoiSpec                  `json:"game_app_activate_roi_spec,omitempty"`
 	ReadingAppActivateFirstDayRetentionSpec                        *SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec `json:"reading_app_activate_first_day_retention_spec,omitempty"`
 	ReadingAppActivateSevenDayRetentionSpec                        *SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec `json:"reading_app_activate_seven_day_retention_spec,omitempty"`
+	AiAppActivateFirstDayRetentionSpec                             *SmartDeliveryGoalAiAppActivateFirstDayRetentionSpec      `json:"ai_app_activate_first_day_retention_spec,omitempty"`
+	AiAppRegisterFirstDayRetentionSpec                             *SmartDeliveryGoalAiAppRegisterFirstDayRetentionSpec      `json:"ai_app_register_first_day_retention_spec,omitempty"`
+	BidAmountSpec                                                  *SmartDeliveryGoalBidAmountSpec                           `json:"bid_amount_spec,omitempty"`
+	BidAmountDeepConversionWorthRateSpec                           *SmartDeliveryGoalBidAmountDeepConversionWorthRateSpec    `json:"bid_amount_deep_conversion_worth_rate_spec,omitempty"`
+	BidAmountDeepConversionBehaviorBidSpec                         *SmartDeliveryGoalBidAmountDeepConversionBehaviorBidSpec  `json:"bid_amount_deep_conversion_behavior_bid_spec,omitempty"`
+	QytNetProfitSpec                                               *SmartDeliveryGoalQytSpec                                 `json:"qyt_net_profit_spec,omitempty"`
+	QytNetProfitRoiSpec                                            *SmartDeliveryGoalQytSpec                                 `json:"qyt_net_profit_roi_spec,omitempty"`
+	WechatStoreNetProfitRoiSpec                                    *SmartDeliveryGoalWechatStoreNetProfitRoiSpec             `json:"wechat_store_net_profit_roi_spec,omitempty"`
+	WechatStoreNetProfitSpec                                       *SmartDeliveryGoalWechatStoreNetProfitSpec                `json:"wechat_store_net_profit_spec,omitempty"`
 }

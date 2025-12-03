@@ -121,4 +121,6 @@ const (
 	OptimizationGoal_ECOMMERCE_GIFTING                      OptimizationGoal = "OPTIMIZATIONGOAL_ECOMMERCE_GIFTING"
 	OptimizationGoal_CLUE_PAY_SUCCEED                       OptimizationGoal = "OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED"
 	OptimizationGoal_30DAYUNSUBSCRIBERATE                   OptimizationGoal = "OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE"
+	OptimizationGoal_NET_PROFIT_24_H                        OptimizationGoal = "OPTIMIZATIONGOAL_NET_PROFIT_24H"
+	OptimizationGoal_EFFECTIVE_INSURE                       OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_INSURE"
 )

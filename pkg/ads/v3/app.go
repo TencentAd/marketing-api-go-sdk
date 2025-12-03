@@ -525,6 +525,10 @@ func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
 	return c.Client.MuseAiUgcApi
 }
 
+func (c *SDKClient) MuseAudios() *api.MuseAudiosApiService {
+	return c.Client.MuseAudiosApi
+}
+
 func (c *SDKClient) Negativewords() *api.NegativewordsApiService {
 	return c.Client.NegativewordsApi
 }
@@ -555,6 +559,10 @@ func (c *SDKClient) OfficialLandingPageList() *api.OfficialLandingPageListApiSer
 
 func (c *SDKClient) OfficialLandingPageSubmit() *api.OfficialLandingPageSubmitApiService {
 	return c.Client.OfficialLandingPageSubmitApi
+}
+
+func (c *SDKClient) OnlinePreviewQrcode() *api.OnlinePreviewQrcodeApiService {
+	return c.Client.OnlinePreviewQrcodeApi
 }
 
 func (c *SDKClient) OperationLogList() *api.OperationLogListApiService {
@@ -791,6 +799,10 @@ func (c *SDKClient) WalletInvoice() *api.WalletInvoiceApiService {
 
 func (c *SDKClient) WalletTransfer() *api.WalletTransferApiService {
 	return c.Client.WalletTransferApi
+}
+
+func (c *SDKClient) Watermarks() *api.WatermarksApiService {
+	return c.Client.WatermarksApi
 }
 
 func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {

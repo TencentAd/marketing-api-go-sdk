@@ -11,7 +11,8 @@ package model
 
 // CPS投放目标
 type SmartDeliveryGoalCpsSpec struct {
-	EcommerceOrderCost       *float64 `json:"ecommerce_order_cost,omitempty"`
-	PromotionViewKeyPageCost *float64 `json:"promotion_view_key_page_cost,omitempty"`
-	ViewCommodityPageCost    *float64 `json:"view_commodity_page_cost,omitempty"`
+	EcommerceOrderCost       *int64   `json:"ecommerce_order_cost,omitempty"`
+	PromotionViewKeyPageCost *int64   `json:"promotion_view_key_page_cost,omitempty"`
+	ViewCommodityPageCost    *int64   `json:"view_commodity_page_cost,omitempty"`
+	CommissionRoi            *float64 `json:"commission_roi,omitempty"`
 }
