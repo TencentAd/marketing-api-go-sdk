@@ -530,6 +530,11 @@ type TargetReportApiListStruct struct {
 	VideoHeartCount                            *int64   `json:"video_heart_count,omitempty"`
 	VideoCommentCount                          *int64   `json:"video_comment_count,omitempty"`
 	ChannelsSharePlaPv                         *int64   `json:"channels_share_pla_pv,omitempty"`
+	ChannelsReadOfflinePv                      *int64   `json:"channels_read_offline_pv,omitempty"`
+	ChannelsHeartOfflinePv                     *int64   `json:"channels_heart_offline_pv,omitempty"`
+	ChannelsCommentOfflinePv                   *int64   `json:"channels_comment_offline_pv,omitempty"`
+	ChannelsShareOfflinePv                     *int64   `json:"channels_share_offline_pv,omitempty"`
+	ChannelsFavOfflinePv                       *int64   `json:"channels_fav_offline_pv,omitempty"`
 	VideoLiveSubscribeCount                    *int64   `json:"video_live_subscribe_count,omitempty"`
 	VideoLiveExpCount                          *int64   `json:"video_live_exp_count,omitempty"`
 	ChannelsLiveExitPlaDuration                *float64 `json:"channels_live_exit_pla_duration,omitempty"`
@@ -581,6 +586,30 @@ type TargetReportApiListStruct struct {
 	DurationPerUser                            *float64 `json:"duration_per_user,omitempty"`
 	DurationOuterPerUser                       *float64 `json:"duration_outer_per_user,omitempty"`
 	DurationKeyPagePerUser                     *float64 `json:"duration_key_page_per_user,omitempty"`
+	ClkAdElementPv                             *int64   `json:"clk_ad_element_pv,omitempty"`
+	ChannelsPraisePlaPv                        *int64   `json:"channels_praise_pla_pv,omitempty"`
+	ClkRedpocketBtnGetPv                       *int64   `json:"clk_redpocket_btn_get_pv,omitempty"`
+	ClkRedpocketBtnSharePv                     *int64   `json:"clk_redpocket_btn_share_pv,omitempty"`
+	ClkRedpocketBtnJumpPv                      *int64   `json:"clk_redpocket_btn_jump_pv,omitempty"`
+	ClkGoodsHeaderPv                           *int64   `json:"clk_goods_header_pv,omitempty"`
+	ClkGoodsInfoPv                             *int64   `json:"clk_goods_info_pv,omitempty"`
+	ClkGoodsRecommendPv                        *int64   `json:"clk_goods_recommend_pv,omitempty"`
+	ClkMiddleShowwindowPv                      *int64   `json:"clk_middle_showwindow_pv,omitempty"`
+	ClkFooterPv                                *int64   `json:"clk_footer_pv,omitempty"`
+	ClkMiddleGoodsPv                           *int64   `json:"clk_middle_goods_pv,omitempty"`
+	ClkMiddleBtnPv                             *int64   `json:"clk_middle_btn_pv,omitempty"`
+	ClkMiddleSectionPv                         *int64   `json:"clk_middle_section_pv,omitempty"`
+	ClkMiddleGridviewPv                        *int64   `json:"clk_middle_gridview_pv,omitempty"`
+	ClkBreakPv                                 *int64   `json:"clk_break_pv,omitempty"`
+	ClkRedpocketShakePv                        *int64   `json:"clk_redpocket_shake_pv,omitempty"`
+	ClkRelatedVideoPv                          *int64   `json:"clk_related_video_pv,omitempty"`
+	ClkBrandPediaPv                            *int64   `json:"clk_brand_pedia_pv,omitempty"`
+	ClkActivityNewsPv                          *int64   `json:"clk_activity_news_pv,omitempty"`
+	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
+	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
+	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
+	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
+	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
 	AdMonetizationCost                         *float64 `json:"ad_monetization_cost,omitempty"`
 	AdMonetizationRoi                          *float64 `json:"ad_monetization_roi,omitempty"`
 	AdMonetizationActive3dPv                   *int64   `json:"ad_monetization_active_3d_pv,omitempty"`
@@ -588,7 +617,10 @@ type TargetReportApiListStruct struct {
 	AdMonetizationActive7dPv                   *int64   `json:"ad_monetization_active_7d_pv,omitempty"`
 	AdMonetizationDedupActive7dPv              *int64   `json:"ad_monetization_dedup_active_7d_pv,omitempty"`
 	ClkRedpocketBtnSubscribePv                 *int64   `json:"clk_redpocket_btn_subscribe_pv,omitempty"`
+	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
+	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`
+	ClkSliderCardProductPv                     *int64   `json:"clk_slider_card_product_pv,omitempty"`
 	AfterAddWecomNegativePv                    *int64   `json:"after_add_wecom_negative_pv,omitempty"`
 	SecurityLowPriceOrderPv                    *int64   `json:"security_low_price_order_pv,omitempty"`
 	SecurityHighPriceOrderPv                   *int64   `json:"security_high_price_order_pv,omitempty"`
@@ -655,7 +687,10 @@ type TargetReportApiListStruct struct {
 	PurchaseRegActive1dPv                      *int64   `json:"purchase_reg_active_1d_pv,omitempty"`
 	PurchaseDedupRegActive1dPv                 *int64   `json:"purchase_dedup_reg_active_1d_pv,omitempty"`
 	PurchaseRegActive1dAmount                  *int64   `json:"purchase_reg_active_1d_amount,omitempty"`
+	ClkHotElementPv                            *int64   `json:"clk_hot_element_pv,omitempty"`
+	HotElementCtr                              *float64 `json:"hot_element_ctr,omitempty"`
 	SecurityNegativeDedupPv                    *int64   `json:"security_negative_dedup_pv,omitempty"`
+	ClkInterpageBtnPv                          *int64   `json:"clk_interpage_btn_pv,omitempty"`
 	AdMonetizationPlaRegActive1dMixRoi         *float64 `json:"ad_monetization_pla_reg_active_1d_mix_roi,omitempty"`
 	AdMonetizationPlaRegActive24hMixRoi        *float64 `json:"ad_monetization_pla_reg_active_24h_mix_roi,omitempty"`
 	RealCostAppAutoDownload                    *int64   `json:"real_cost_app_auto_download,omitempty"`
@@ -683,13 +718,17 @@ type TargetReportApiListStruct struct {
 	ViewDramaDedupPv                           *int64   `json:"view_drama_dedup_pv,omitempty"`
 	ViewDramaDedupPvRate                       *float64 `json:"view_drama_dedup_pv_rate,omitempty"`
 	ViewDramaDedupPvCost                       *int64   `json:"view_drama_dedup_pv_cost,omitempty"`
+	ClkSellingPointsElementPv                  *int64   `json:"clk_selling_points_element_pv,omitempty"`
 	VisitStoreFirstDedupPv                     *int64   `json:"visit_store_first_dedup_pv,omitempty"`
+	ClkFullwidthBackgroundPv                   *int64   `json:"clk_fullwidth_background_pv,omitempty"`
+	ClkHeaderAreaPv                            *int64   `json:"clk_header_area_pv,omitempty"`
 	OrderFirstDedupPv                          *int64   `json:"order_first_dedup_pv,omitempty"`
 	OrderFirstDedupPvCost                      *int64   `json:"order_first_dedup_pv_cost,omitempty"`
 	OrderFirstDedupPvRate                      *float64 `json:"order_first_dedup_pv_rate,omitempty"`
 	StorePayAmountOff                          *int64   `json:"store_pay_amount_off,omitempty"`
 	StorePayUvOff                              *int64   `json:"store_pay_uv_off,omitempty"`
 	StorePayPvOff                              *int64   `json:"store_pay_pv_off,omitempty"`
+	ClkSellingPointsElementUv                  *int64   `json:"clk_selling_points_element_uv,omitempty"`
 	OrderRefundActive24hPv                     *int64   `json:"order_refund_active_24h_pv,omitempty"`
 	OrderRefundActive24hRate                   *float64 `json:"order_refund_active_24h_rate,omitempty"`
 	OrderSettle24hPv                           *int64   `json:"order_settle_24h_pv,omitempty"`
@@ -788,6 +827,22 @@ type TargetReportApiListStruct struct {
 	OrderNetRoi                                *float64 `json:"order_net_roi,omitempty"`
 	OrderNetPvCost                             *int64   `json:"order_net_pv_cost,omitempty"`
 	ClkBhAnimPv                                *int64   `json:"clk_bh_anim_pv,omitempty"`
+	ClkBredpocketPv                            *int64   `json:"clk_bredpocket_pv,omitempty"`
+	ClkBrSubPv                                 *int64   `json:"clk_br_sub_pv,omitempty"`
+	ClkBrSharePv                               *int64   `json:"clk_br_share_pv,omitempty"`
+	ClkBrBtnPv                                 *int64   `json:"clk_br_btn_pv,omitempty"`
+	ClkBrDrivePv                               *int64   `json:"clk_br_drive_pv,omitempty"`
+	ClkBquickPv                                *int64   `json:"clk_bquick_pv,omitempty"`
+	ClkBappPv                                  *int64   `json:"clk_bapp_pv,omitempty"`
+	ClkBacountPv                               *int64   `json:"clk_bacount_pv,omitempty"`
+	ClkBaMorePv                                *int64   `json:"clk_ba_more_pv,omitempty"`
+	ClkBmActivityPv                            *int64   `json:"clk_bm_activity_pv,omitempty"`
+	ClkBmVerticalPv                            *int64   `json:"clk_bm_vertical_pv,omitempty"`
+	ClkBmPrivilegePv                           *int64   `json:"clk_bm_privilege_pv,omitempty"`
+	ClkBmSeriesPv                              *int64   `json:"clk_bm_series_pv,omitempty"`
+	ClkBmDetailPv                              *int64   `json:"clk_bm_detail_pv,omitempty"`
+	ClkRpsPv                                   *int64   `json:"clk_rps_pv,omitempty"`
+	SliderPv                                   *int64   `json:"slider_pv,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

@@ -15,4 +15,5 @@ type SmartDeliveryGoalCpsSpec struct {
 	PromotionViewKeyPageCost *int64   `json:"promotion_view_key_page_cost,omitempty"`
 	ViewCommodityPageCost    *int64   `json:"view_commodity_page_cost,omitempty"`
 	CommissionRoi            *float64 `json:"commission_roi,omitempty"`
+	ViewKeyPageUv            *int64   `json:"view_key_page_uv,omitempty"`
 }

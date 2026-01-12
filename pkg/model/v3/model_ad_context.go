@@ -25,4 +25,5 @@ type AdContext struct {
 	MpaSpec                 *MpaSpec                         `json:"mpa_spec,omitempty"`
 	MarketingAssetOuterSpec *MarketingAssetOuterSpec         `json:"marketing_asset_outer_spec,omitempty"`
 	DynamicAdType           DynamicAdType                    `json:"dynamic_ad_type,omitempty"`
+	AdgroupType             AdgroupType                      `json:"adgroup_type,omitempty"`
 }

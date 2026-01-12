@@ -214,6 +214,8 @@ type APIClient struct {
 
 	GameFeatureTagsApi *GameFeatureTagsApiService
 
+	GameFeatureV6Api *GameFeatureV6ApiService
+
 	GetWxGameAppGiftPackApi *GetWxGameAppGiftPackApiService
 
 	HourlyReportsApi *HourlyReportsApiService
@@ -359,6 +361,10 @@ type APIClient struct {
 	ProgrammedMaterialMappingsApi *ProgrammedMaterialMappingsApiService
 
 	ProgrammedTemplateApi *ProgrammedTemplateApiService
+
+	PunishDetailApi *PunishDetailApiService
+
+	PunishMetricsApi *PunishMetricsApiService
 
 	PunishmentConfigApi *PunishmentConfigApiService
 
@@ -602,6 +608,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.FundsApi = (*FundsApiService)(&c.common)
 	c.GameFeatureApi = (*GameFeatureApiService)(&c.common)
 	c.GameFeatureTagsApi = (*GameFeatureTagsApiService)(&c.common)
+	c.GameFeatureV6Api = (*GameFeatureV6ApiService)(&c.common)
 	c.GetWxGameAppGiftPackApi = (*GetWxGameAppGiftPackApiService)(&c.common)
 	c.HourlyReportsApi = (*HourlyReportsApiService)(&c.common)
 	c.IllegalComplaintApi = (*IllegalComplaintApiService)(&c.common)
@@ -675,6 +682,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProgrammedCommponentResultApi = (*ProgrammedCommponentResultApiService)(&c.common)
 	c.ProgrammedMaterialMappingsApi = (*ProgrammedMaterialMappingsApiService)(&c.common)
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
+	c.PunishDetailApi = (*PunishDetailApiService)(&c.common)
+	c.PunishMetricsApi = (*PunishMetricsApiService)(&c.common)
 	c.PunishmentConfigApi = (*PunishmentConfigApiService)(&c.common)
 	c.PunishmentQueryApi = (*PunishmentQueryApiService)(&c.common)
 	c.QualificationImagesApi = (*QualificationImagesApiService)(&c.common)

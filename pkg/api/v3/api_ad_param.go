@@ -44,6 +44,7 @@ AdParamApiService 获取词包
      * @param "MarketingAssetOuterSpec" (optional.Interface of MarketingAssetOuterSpec) -
      * @param "MpaSpec" (optional.Interface of MpaSpec) -
      * @param "DynamicAdType" (optional.String) -
+     * @param "AdgroupType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return AdParamGetResponse
@@ -57,6 +58,7 @@ type AdParamGetOpts struct {
 	MarketingAssetOuterSpec optional.Interface
 	MpaSpec                 optional.Interface
 	DynamicAdType           optional.String
+	AdgroupType             optional.String
 	Fields                  optional.Interface
 }
 
@@ -102,6 +104,9 @@ func (a *AdParamApiService) Get(ctx context.Context, accountId int64, marketingG
 	}
 	if localVarOptionals != nil && localVarOptionals.DynamicAdType.IsSet() {
 		localVarQueryParams.Add("dynamic_ad_type", parameterToString(localVarOptionals.DynamicAdType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdgroupType.IsSet() {
+		localVarQueryParams.Add("adgroup_type", parameterToString(localVarOptionals.AdgroupType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

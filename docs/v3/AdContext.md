@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]
 **MarketingAssetOuterSpec** | [***MarketingAssetOuterSpec**](marketing_asset_outer_spec.md) |  | [optional] [default to null]
 **DynamicAdType** | [***DynamicAdType**](DynamicAdType.md) |  | [optional] [default to null]
+**AdgroupType** | [***AdgroupType**](AdgroupType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

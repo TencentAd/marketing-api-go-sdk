@@ -80,4 +80,7 @@ const (
 	PromotedAssetType_WECHAT_STORE                     PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_STORE"
 	PromotedAssetType_RESALE_AND_COMMERCIAL_LAND       PromotedAssetType = "PROMOTED_ASSET_TYPE_RESALE_AND_COMMERCIAL_LAND"
 	PromotedAssetType_VIDEO_PROGRAM                    PromotedAssetType = "PROMOTED_ASSET_TYPE_VIDEO_PROGRAM"
+	PromotedAssetType_FUN_TEST                         PromotedAssetType = "PROMOTED_ASSET_TYPE_FUN_TEST"
+	PromotedAssetType_MATERNITY_PARENTING              PromotedAssetType = "PROMOTED_ASSET_TYPE_MATERNITY_PARENTING"
+	PromotedAssetType_LEISURE_ENTERTAINMENT            PromotedAssetType = "PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT"
 )

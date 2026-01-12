@@ -38,6 +38,7 @@ Name | Type | Description  | Notes
  **marketingAssetOuterSpec** | [**optional.Interface of MarketingAssetOuterSpec**](MarketingAssetOuterSpec.md)|  | 
  **mpaSpec** | [**optional.Interface of MpaSpec**](MpaSpec.md)|  | 
  **dynamicAdType** | **optional.String**|  | 
+ **adgroupType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

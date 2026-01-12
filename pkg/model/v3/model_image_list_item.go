@@ -11,7 +11,8 @@ package model
 
 // 图片结构
 type ImageListItem struct {
-	ImageId         *string `json:"image_id,omitempty"`
-	ImageUrl        *string `json:"image_url,omitempty"`
-	OriginalImageId *string `json:"original_image_id,omitempty"`
+	ImageId         *string         `json:"image_id,omitempty"`
+	ImageUrl        *string         `json:"image_url,omitempty"`
+	JumpInfo        *JumpinfoStruct `json:"jump_info,omitempty"`
+	OriginalImageId *string         `json:"original_image_id,omitempty"`
 }

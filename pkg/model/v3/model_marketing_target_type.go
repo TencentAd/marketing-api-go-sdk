@@ -80,4 +80,7 @@ const (
 	MarketingTargetType_WECHAT_STORE                     MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_STORE"
 	MarketingTargetType_RESALE_AND_COMMERCIAL_LAND       MarketingTargetType = "MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND"
 	MarketingTargetType_VIDEO_PROGRAM                    MarketingTargetType = "MARKETING_TARGET_TYPE_VIDEO_PROGRAM"
+	MarketingTargetType_FUN_TEST                         MarketingTargetType = "MARKETING_TARGET_TYPE_FUN_TEST"
+	MarketingTargetType_MATERNITY_PARENTING              MarketingTargetType = "MARKETING_TARGET_TYPE_MATERNITY_PARENTING"
+	MarketingTargetType_LEISURE_ENTERTAINMENT            MarketingTargetType = "MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT"
 )

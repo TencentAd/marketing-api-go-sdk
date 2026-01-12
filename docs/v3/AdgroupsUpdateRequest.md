@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **AutoAcquisitionBudget** | **int64** |  | [optional] [default to null]
 **AutoDerivedLandingPageSwitch** | **bool** |  | [optional] [default to null]
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
+**AutoDerivedCreativePreference** | [***AutoDerivedCreativePreference**](auto_derived_creative_preference.md) |  | [optional] [default to null]
 **ConfiguredStatus** | [***ConfiguredStatus**](ConfiguredStatus.md) |  | [optional] [default to null]
 **FlowOptimizationEnabled** | **bool** |  | [optional] [default to null]
 **PoiList** | **[]string** |  | [optional] [default to null]

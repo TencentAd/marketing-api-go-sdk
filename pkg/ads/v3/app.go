@@ -345,6 +345,10 @@ func (c *SDKClient) GameFeatureTags() *api.GameFeatureTagsApiService {
 	return c.Client.GameFeatureTagsApi
 }
 
+func (c *SDKClient) GameFeatureV6() *api.GameFeatureV6ApiService {
+	return c.Client.GameFeatureV6Api
+}
+
 func (c *SDKClient) GetWxGameAppGiftPack() *api.GetWxGameAppGiftPackApiService {
 	return c.Client.GetWxGameAppGiftPackApi
 }
@@ -635,6 +639,14 @@ func (c *SDKClient) ProgrammedMaterialMappings() *api.ProgrammedMaterialMappings
 
 func (c *SDKClient) ProgrammedTemplate() *api.ProgrammedTemplateApiService {
 	return c.Client.ProgrammedTemplateApi
+}
+
+func (c *SDKClient) PunishDetail() *api.PunishDetailApiService {
+	return c.Client.PunishDetailApi
+}
+
+func (c *SDKClient) PunishMetrics() *api.PunishMetricsApiService {
+	return c.Client.PunishMetricsApi
 }
 
 func (c *SDKClient) PunishmentConfig() *api.PunishmentConfigApiService {

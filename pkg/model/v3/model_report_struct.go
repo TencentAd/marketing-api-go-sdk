@@ -637,7 +637,10 @@ type ReportStruct struct {
 	ClkLeftGridInfoPv                          *int64   `json:"clk_left_grid_info_pv,omitempty"`
 	ClkLeftGridMiddlePv                        *int64   `json:"clk_left_grid_middle_pv,omitempty"`
 	ClkRightGridPv                             *int64   `json:"clk_right_grid_pv,omitempty"`
+	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
 	CvsCpnVideoPlayUv                          *int64   `json:"cvs_cpn_video_play_uv,omitempty"`
+	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
+	AvgCpnplayVideoTime                        *float64 `json:"avg_cpnplay_video_time,omitempty"`
 	AdMonetizationCost                         *float64 `json:"ad_monetization_cost,omitempty"`
 	AdMonetizationRoi                          *float64 `json:"ad_monetization_roi,omitempty"`
 	AdMonetizationActive3dPv                   *int64   `json:"ad_monetization_active_3d_pv,omitempty"`
@@ -858,6 +861,22 @@ type ReportStruct struct {
 	OrderNetRoi                                *float64 `json:"order_net_roi,omitempty"`
 	OrderNetPvCost                             *int64   `json:"order_net_pv_cost,omitempty"`
 	ClkBhAnimPv                                *int64   `json:"clk_bh_anim_pv,omitempty"`
+	ClkBredpocketPv                            *int64   `json:"clk_bredpocket_pv,omitempty"`
+	ClkBrSubPv                                 *int64   `json:"clk_br_sub_pv,omitempty"`
+	ClkBrSharePv                               *int64   `json:"clk_br_share_pv,omitempty"`
+	ClkBrBtnPv                                 *int64   `json:"clk_br_btn_pv,omitempty"`
+	ClkBrDrivePv                               *int64   `json:"clk_br_drive_pv,omitempty"`
+	ClkBquickPv                                *int64   `json:"clk_bquick_pv,omitempty"`
+	ClkBappPv                                  *int64   `json:"clk_bapp_pv,omitempty"`
+	ClkBacountPv                               *int64   `json:"clk_bacount_pv,omitempty"`
+	ClkBaMorePv                                *int64   `json:"clk_ba_more_pv,omitempty"`
+	ClkBmActivityPv                            *int64   `json:"clk_bm_activity_pv,omitempty"`
+	ClkBmVerticalPv                            *int64   `json:"clk_bm_vertical_pv,omitempty"`
+	ClkBmPrivilegePv                           *int64   `json:"clk_bm_privilege_pv,omitempty"`
+	ClkBmSeriesPv                              *int64   `json:"clk_bm_series_pv,omitempty"`
+	ClkBmDetailPv                              *int64   `json:"clk_bm_detail_pv,omitempty"`
+	ClkRpsPv                                   *int64   `json:"clk_rps_pv,omitempty"`
+	SliderPv                                   *int64   `json:"slider_pv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`
@@ -867,36 +886,6 @@ type ReportStruct struct {
 	ComponentType                              *string  `json:"component_type,omitempty"`
 	ImageIds                                   *string  `json:"image_ids,omitempty"`
 	VideoIds                                   *string  `json:"video_ids,omitempty"`
-	CvsExpPv                                   *int64   `json:"cvs_exp_pv,omitempty"`
-	CvsExpUv                                   *int64   `json:"cvs_exp_uv,omitempty"`
-	CvsCpnClkPv                                *int64   `json:"cvs_cpn_clk_pv,omitempty"`
-	CvsCpnClkUv                                *int64   `json:"cvs_cpn_clk_uv,omitempty"`
-	CvsCpnExpPv                                *int64   `json:"cvs_cpn_exp_pv,omitempty"`
-	CvsCpnExpUv                                *int64   `json:"cvs_cpn_exp_uv,omitempty"`
-	CvsCpnExpDuration                          *float64 `json:"cvs_cpn_exp_duration,omitempty"`
-	CvsCpnBtnClkPv                             *int64   `json:"cvs_cpn_btn_clk_pv,omitempty"`
-	CvsCpnBtnClkUv                             *int64   `json:"cvs_cpn_btn_clk_uv,omitempty"`
-	CvsCpnClkDedupPv                           *int64   `json:"cvs_cpn_clk_dedup_pv,omitempty"`
-	CvsCpnVideoPlayPv                          *int64   `json:"cvs_cpn_video_play_pv,omitempty"`
-	CvsCpnVideoPlayDuration                    *float64 `json:"cvs_cpn_video_play_duration,omitempty"`
-	CvsCpnVideoPlayHalfUv                      *int64   `json:"cvs_cpn_video_play_half_uv,omitempty"`
-	CvsCpnVideoPlayFinUv                       *int64   `json:"cvs_cpn_video_play_fin_uv,omitempty"`
-	CvsCpnMediaPlayPv                          *int64   `json:"cvs_cpn_media_play_pv,omitempty"`
-	CvsCpnMediaPlayUv                          *int64   `json:"cvs_cpn_media_play_uv,omitempty"`
-	CvsCpnMediaPlayDuration                    *float64 `json:"cvs_cpn_media_play_duration,omitempty"`
-	CvsCpnMediaPlayHalfUv                      *int64   `json:"cvs_cpn_media_play_half_uv,omitempty"`
-	CvsCpnMediaPlayFinUv                       *int64   `json:"cvs_cpn_media_play_fin_uv,omitempty"`
-	AvgCvsViewtime                             *float64 `json:"avg_cvs_viewtime,omitempty"`
-	AvgCpnexpViewtime                          *float64 `json:"avg_cpnexp_viewtime,omitempty"`
-	AvgCpnplayMediaTime                        *float64 `json:"avg_cpnplay_media_time,omitempty"`
-	CpnclkButtonPvRate                         *float64 `json:"cpnclk_button_pv_rate,omitempty"`
-	CpnplayVideoAndMediaPv                     *int64   `json:"cpnplay_video_and_media_pv,omitempty"`
-	CpnplayVideoAndMediaFinUv                  *int64   `json:"cpnplay_video_and_media_fin_uv,omitempty"`
-	CpnplayVideoAndMediaTime                   *float64 `json:"cpnplay_video_and_media_time,omitempty"`
-	CanvasHbSingleReceiveExpPv                 *int64   `json:"canvas_hb_single_receive_exp_pv,omitempty"`
-	CanvasHbSingleSendExpPv                    *int64   `json:"canvas_hb_single_send_exp_pv,omitempty"`
-	CanvasHbDoubleReceiveExpPv                 *int64   `json:"canvas_hb_double_receive_exp_pv,omitempty"`
-	CanvasHbDoubleSendExpPv                    *int64   `json:"canvas_hb_double_send_exp_pv,omitempty"`
 	Hour                                       *int64   `json:"hour,omitempty"`
 	ChannelId                                  *string  `json:"channel_id,omitempty"`
 	BuyingType                                 *string  `json:"buying_type,omitempty"`
@@ -908,7 +897,6 @@ type ReportStruct struct {
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
-	LanButtonClickRate                         *float64 `json:"lan_button_click_rate,omitempty"`
 	Queryword                                  *string  `json:"queryword,omitempty"`
 	ImageId                                    *string  `json:"image_id,omitempty"`
 	VideoId                                    *string  `json:"video_id,omitempty"`

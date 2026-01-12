@@ -43,4 +43,5 @@ type VideosGetListStruct struct {
 	SourceReferenceId        *string           `json:"source_reference_id,omitempty"`
 	OwnerAccountId           *string           `json:"owner_account_id,omitempty"`
 	Status                   MediaStatusType   `json:"status,omitempty"`
+	SimilarityStatus         SimilarityStatus  `json:"similarity_status,omitempty"`
 }

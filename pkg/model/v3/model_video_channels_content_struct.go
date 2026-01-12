@@ -11,6 +11,7 @@ package model
 
 // 视频号内容组件
 type VideoChannelsContentStruct struct {
-	AdExportId              *string `json:"ad_export_id,omitempty"`
-	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
+	AdExportId                *string `json:"ad_export_id,omitempty"`
+	WechatChannelsAccountId   *string `json:"wechat_channels_account_id,omitempty"`
+	MiniGameTrackingParameter *string `json:"mini_game_tracking_parameter,omitempty"`
 }

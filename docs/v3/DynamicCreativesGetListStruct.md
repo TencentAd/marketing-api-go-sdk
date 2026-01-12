@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **Source** | [***AdCreativeSource**](AdCreativeSource.md) |  | [optional] [default to null]
 **AssetInconsistentStatus** | [***AssetInconsistentStatus**](AssetInconsistentStatus.md) |  | [optional] [default to null]
 **SourceDynamicCreativeId** | **int64** |  | [optional] [default to null]
+**CreativeInsight** | [***CreativeInsight**](creative_insight.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -11,7 +11,9 @@ package model
 
 // 返回
 type AdcreativePreviewsGetCollectionStruct struct {
-	UserId      *string      `json:"user_id,omitempty"`
-	UserIdType  ViewerIdType `json:"user_id_type,omitempty"`
-	IsPreviewed *bool        `json:"is_previewed,omitempty"`
+	UserId            *string      `json:"user_id,omitempty"`
+	UserIdType        ViewerIdType `json:"user_id_type,omitempty"`
+	IsPreviewed       *bool        `json:"is_previewed,omitempty"`
+	AdgroupId         *int64       `json:"adgroup_id,omitempty"`
+	DynamicCreativeId *int64       `json:"dynamic_creative_id,omitempty"`
 }

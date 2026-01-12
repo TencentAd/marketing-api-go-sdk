@@ -42,6 +42,7 @@ Name | Type | Description | Notes
 **SmartBidType** | [***SmartBidType**](SmartBidType.md) |  | [optional] [default to null]
 **SmartCostCap** | **int64** |  | [optional] [default to null]
 **AutoDerivedCreativeEnabled** | **bool** |  | [optional] [default to null]
+**AutoDerivedCreativePreference** | [***AutoDerivedCreativePreference**](auto_derived_creative_preference.md) |  | [optional] [default to null]
 **SearchExpandTargetingSwitch** | [***SearchExpandTargetingSwitch**](SearchExpandTargetingSwitch.md) |  | [optional] [default to null]
 **AutoDerivedLandingPageSwitch** | **bool** |  | [optional] [default to null]
 **DataModelVersion** | **int64** |  | [optional] [default to null]

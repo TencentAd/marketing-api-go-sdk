@@ -25,5 +25,6 @@ const (
 	ComponentGenerationType_SYSTEM_OPTIMIZED_RECOMMENDATIONS ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_OPTIMIZED_RECOMMENDATIONS"
 	ComponentGenerationType_MPA                              ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MPA"
 	ComponentGenerationType_SYSTEM_AUTO_FILL                 ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SYSTEM_AUTO_FILL"
+	ComponentGenerationType_TONGTOU_SEARCH_DERIVATIVE        ComponentGenerationType = "COMPONENT_GENERATION_TYPE_TONGTOU_SEARCH_DERIVATIVE"
 	ComponentGenerationType_MARKETING_ASSET                  ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
 )

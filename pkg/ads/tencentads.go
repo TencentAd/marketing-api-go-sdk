@@ -25,7 +25,7 @@ type SDKClient struct {
 
 // Init ...
 func Init(cfg *config.SDKConfig) *SDKClient {
-	version := "1.7.76"
+	version := "1.7.77"
 	apiVersion := "v1.1"
 	ctx := context.Background()
 	nonce := uuid.New().String()
@@ -36,11 +36,18 @@ func Init(cfg *config.SDKConfig) *SDKClient {
 	}
 	ctx = context.WithValue(ctx, config.ContextAPIKey, apiKey)
 	client := api.NewAPIClient(cfg)
+	var roundTripper http.RoundTripper
+	if cfg.HTTPClient != nil && client.Cfg.HTTPClient.Transport != nil {
+		roundTripper = client.Cfg.HTTPClient.Transport
+	} else {
+		roundTripper = http.DefaultTransport
+	}
+
 	sdkClient := &SDKClient{
 		Config:       cfg,
 		Ctx:          &ctx,
 		Client:       client,
-		RoundTripper: http.DefaultTransport,
+		RoundTripper: roundTripper,
 		Version:      version,
 		ApiVersion:   apiVersion,
 	}

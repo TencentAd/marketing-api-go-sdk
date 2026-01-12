@@ -102,5 +102,11 @@ const (
 	SmartDeliveryGoal_CLUE_PAY_SUCCEED_CLASS_PARTICIPATED                                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CLUE_PAY_SUCCEED_CLASS_PARTICIPATED"
 	SmartDeliveryGoal_CREDIT_WITHDRAW_DEPOSITS_ROAS                                        SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CREDIT_WITHDRAW_DEPOSITS_ROAS"
 	SmartDeliveryGoal_LOW_PRICE_CONFIRM_EFFECTIVE_LEADS                                    SmartDeliveryGoal = "SMART_DELIVERY_GOAL_LOW_PRICE_CONFIRM_EFFECTIVE_LEADS"
+	SmartDeliveryGoal_ECOMMERCE_ORDER_EFFECTIVE_INSURE                                     SmartDeliveryGoal = "SMART_DELIVERY_GOAL_ECOMMERCE_ORDER_EFFECTIVE_INSURE"
+	SmartDeliveryGoal_ACTIVATE                                                             SmartDeliveryGoal = "SMART_DELIVERY_GOAL_ACTIVATE"
+	SmartDeliveryGoal_PROMOTION_VIEW_KEY_PAGE                                              SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PROMOTION_VIEW_KEY_PAGE"
+	SmartDeliveryGoal_EVERY_DAY_RETENTION                                                  SmartDeliveryGoal = "SMART_DELIVERY_GOAL_EVERY_DAY_RETENTION"
 	SmartDeliveryGoal_CPS_COMMISSION_ROI                                                   SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_COMMISSION_ROI"
+	SmartDeliveryGoal_CPS_VIEW_KEY_PAGE_UV                                                 SmartDeliveryGoal = "SMART_DELIVERY_GOAL_CPS_VIEW_KEY_PAGE_UV"
+	SmartDeliveryGoal_PAGE_RESERVATION_RESERVATION_CHECK                                   SmartDeliveryGoal = "SMART_DELIVERY_GOAL_PAGE_RESERVATION_RESERVATION_CHECK"
 )
