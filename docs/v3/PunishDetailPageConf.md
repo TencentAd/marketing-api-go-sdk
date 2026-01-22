@@ -3,8 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PageNum** | **int64** |  | [optional] [default to null]
+**Page** | **int64** |  | [optional] [default to null]
 **PageSize** | **int64** |  | [optional] [default to null]
+**TotalPage** | **int64** |  | [optional] [default to null]
+**TotalNum** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

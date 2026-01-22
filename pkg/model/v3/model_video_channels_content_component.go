@@ -9,7 +9,7 @@
 
 package model
 
-// 视频号内容组件
+// 视频号主页视频组件
 type VideoChannelsContentComponent struct {
 	ComponentId *int64                      `json:"component_id,omitempty"`
 	Value       *VideoChannelsContentStruct `json:"value,omitempty"`

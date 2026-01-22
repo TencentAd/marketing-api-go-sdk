@@ -286,6 +286,8 @@ type APIClient struct {
 
 	MarketingTargetTypesApi *MarketingTargetTypesApiService
 
+	MaterialAsyncTasksApi *MaterialAsyncTasksApiService
+
 	MaterialDcasetApi *MaterialDcasetApiService
 
 	MaterialDcatagApi *MaterialDcatagApiService
@@ -644,6 +646,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MarketingTargetAssetPropertyValuesApi = (*MarketingTargetAssetPropertyValuesApiService)(&c.common)
 	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
 	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
+	c.MaterialAsyncTasksApi = (*MaterialAsyncTasksApiService)(&c.common)
 	c.MaterialDcasetApi = (*MaterialDcasetApiService)(&c.common)
 	c.MaterialDcatagApi = (*MaterialDcatagApiService)(&c.common)
 	c.MaterialLabelsApi = (*MaterialLabelsApiService)(&c.common)

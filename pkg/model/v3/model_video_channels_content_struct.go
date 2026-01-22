@@ -9,7 +9,7 @@
 
 package model
 
-// 视频号内容组件
+// 视频号主页视频组件
 type VideoChannelsContentStruct struct {
 	AdExportId                *string `json:"ad_export_id,omitempty"`
 	WechatChannelsAccountId   *string `json:"wechat_channels_account_id,omitempty"`

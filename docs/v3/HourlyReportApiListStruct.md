@@ -640,6 +640,7 @@ Name | Type | Description | Notes
 **AdMonetizationActive7dPv** | **int64** |  | [optional] [default to null]
 **AdMonetizationDedupActive7dPv** | **int64** |  | [optional] [default to null]
 **ClkRedpocketBtnSubscribePv** | **int64** |  | [optional] [default to null]
+**ClkBlessingCardPv** | **int64** |  | [optional] [default to null]
 **ClkShortcutMenusPv** | **int64** |  | [optional] [default to null]
 **ChannelsDetailBtnPv** | **int64** |  | [optional] [default to null]
 **ZoneHeaderLiveClickCnt** | **int64** |  | [optional] [default to null]

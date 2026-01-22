@@ -13,16 +13,10 @@ Name | Type | Description | Notes
 **CertificationImage** | **string** |  | [optional] [default to null]
 **IdentityNumber** | **string** |  | [optional] [default to null]
 **IndividualQualification** | [***IndividualQualificationRead**](individual_qualification_read.md) |  | [optional] [default to null]
-**CorporateImageName** | **string** |  | [optional] [default to null]
-**CorporateImageLogo** | **string** |  | [optional] [default to null]
 **SystemIndustryId** | **int64** |  | [optional] [default to null]
 **CustomizedIndustry** | **string** |  | [optional] [default to null]
 **IntroductionUrl** | **string** |  | [optional] [default to null]
 **CorporateBrandName** | **string** |  | [optional] [default to null]
-**IndustryQualificationImageIdList** | **[]string** |  | [optional] [default to null]
-**IndustryQualificationImage** | **[]string** |  | [optional] [default to null]
-**AdQualificationImageIdList** | **[]string** |  | [optional] [default to null]
-**AdQualificationImage** | **[]string** |  | [optional] [default to null]
 **ContactPerson** | **string** |  | [optional] [default to null]
 **ContactPersonEmail** | **string** |  | [optional] [default to null]
 **ContactPersonTelephone** | **string** |  | [optional] [default to null]
@@ -34,7 +28,6 @@ Name | Type | Description | Notes
 **Operators** | [**[]AdvertiserOperatorStruct**](advertiser_operator_struct.md) |  | [optional] [default to null]
 **Memo** | **string** |  | [optional] [default to null]
 **AreaCode** | **int64** |  | [optional] [default to null]
-**IsLocalBusiness** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

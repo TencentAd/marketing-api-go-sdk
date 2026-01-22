@@ -514,4 +514,6 @@ const (
 	PromotedAssetAttrKey_MATERNITY_PARENTING_SERVICE_TYPE                                          PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MATERNITY_PARENTING_SERVICE_TYPE"
 	PromotedAssetAttrKey_LEISURE_ENTERTAINMENT_CATE_NAME                                           PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LEISURE_ENTERTAINMENT_CATE_NAME"
 	PromotedAssetAttrKey_LEISURE_ENTERTAINMENT_BRAND                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LEISURE_ENTERTAINMENT_BRAND"
+	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_BRAND                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_BRAND"
+	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_CATEGORY                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_CATEGORY"
 )

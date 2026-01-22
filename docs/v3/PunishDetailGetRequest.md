@@ -23,7 +23,8 @@ Name | Type | Description | Notes
 **ReviewBeginTime** | **string** |  | [optional] [default to null]
 **ReviewEndTime** | **string** |  | [optional] [default to null]
 **QueryAccountIdList** | **[]int64** |  | [optional] [default to null]
-**PageConf** | [***PunishDetailPageConf**](punish_detail_page_conf.md) |  | [optional] [default to null]
+**PageNum** | **int64** |  | [optional] [default to null]
+**PageSize** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -11,6 +11,8 @@ package model
 
 // 分页内容
 type PunishDetailPageConf struct {
-	PageNum  *int64 `json:"page_num,omitempty"`
-	PageSize *int64 `json:"page_size,omitempty"`
+	Page      *int64 `json:"page,omitempty"`
+	PageSize  *int64 `json:"pageSize,omitempty"`
+	TotalPage *int64 `json:"totalPage,omitempty"`
+	TotalNum  *int64 `json:"totalNum,omitempty"`
 }

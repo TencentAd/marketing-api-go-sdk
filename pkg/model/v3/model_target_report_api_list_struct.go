@@ -617,6 +617,7 @@ type TargetReportApiListStruct struct {
 	AdMonetizationActive7dPv                   *int64   `json:"ad_monetization_active_7d_pv,omitempty"`
 	AdMonetizationDedupActive7dPv              *int64   `json:"ad_monetization_dedup_active_7d_pv,omitempty"`
 	ClkRedpocketBtnSubscribePv                 *int64   `json:"clk_redpocket_btn_subscribe_pv,omitempty"`
+	ClkBlessingCardPv                          *int64   `json:"clk_blessing_card_pv,omitempty"`
 	ClkShortcutMenusPv                         *int64   `json:"clk_shortcut_menus_pv,omitempty"`
 	ChannelsDetailBtnPv                        *int64   `json:"channels_detail_btn_pv,omitempty"`
 	ZoneHeaderLiveClickCnt                     *int64   `json:"zone_header_live_click_cnt,omitempty"`

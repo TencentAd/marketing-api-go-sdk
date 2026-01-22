@@ -489,6 +489,10 @@ func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
 	return c.Client.MarketingTargetTypesApi
 }
 
+func (c *SDKClient) MaterialAsyncTasks() *api.MaterialAsyncTasksApiService {
+	return c.Client.MaterialAsyncTasksApi
+}
+
 func (c *SDKClient) MaterialDcaset() *api.MaterialDcasetApiService {
 	return c.Client.MaterialDcasetApi
 }
