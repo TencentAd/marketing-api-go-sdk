@@ -26,4 +26,5 @@ const (
 	AdCreativeSource_NEW_RECOMMEND                        AdCreativeSource = "AD_CREATIVE_NEW_RECOMMEND"
 	AdCreativeSource_TRANSFORMER_RESIZE                   AdCreativeSource = "AD_CREATIVE_TRANSFORMER_RESIZE"
 	AdCreativeSource_AI_FLAG_EXPERIMENT                   AdCreativeSource = "AD_CREATIVE_AI_FLAG_EXPERIMENT"
+	AdCreativeSource_NATIVE_FEED_MANAGEMENT               AdCreativeSource = "AD_CREATIVE_NATIVE_FEED_MANAGEMENT"
 )

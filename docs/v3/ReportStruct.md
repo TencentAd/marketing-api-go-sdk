@@ -871,6 +871,7 @@ Name | Type | Description | Notes
 **ClkRpsPv** | **int64** |  | [optional] [default to null]
 **SliderPv** | **int64** |  | [optional] [default to null]
 **InsuranceDedupPv** | **int64** |  | [optional] [default to null]
+**ClkBmLivePv** | **int64** |  | [optional] [default to null]
 **AdgroupId** | **int64** |  | [optional] [default to null]
 **AdgroupName** | **string** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]

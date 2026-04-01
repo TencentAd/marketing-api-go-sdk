@@ -15,35 +15,42 @@ import (
 	"net/http"
 
 	"github.com/tencentad/marketing-api-go-sdk/pkg/ads/v3"
+	"github.com/tencentad/marketing-api-go-sdk/pkg/api/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/config/v3"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/errors"
 	"github.com/tencentad/marketing-api-go-sdk/pkg/model/v3"
 )
 
-type MaterialLabelsDeleteExample struct {
-	TAds        *ads.SDKClient
-	AccessToken string
-	Data        model.MaterialLabelsDeleteRequest
+type MuseDeriveSwitchSettingsGetExample struct {
+	TAds                            *ads.SDKClient
+	AccessToken                     string
+	AccountId                       int64
+	MarketingTargetType             string
+	MarketingCarrierType            string
+	MuseDeriveSwitchSettingsGetOpts *api.MuseDeriveSwitchSettingsGetOpts
 }
 
-func (e *MaterialLabelsDeleteExample) Init() {
+func (e *MuseDeriveSwitchSettingsGetExample) Init() {
 	e.AccessToken = "YOUR ACCESS TOKEN"
 	e.TAds = ads.Init(&config.SDKConfig{
 		AccessToken: e.AccessToken,
 		IsDebug:     true,
 	})
-	e.Data = model.MaterialLabelsDeleteRequest{}
+	e.AccountId = 789
+	e.MarketingTargetType = "marketingTargetType_example"
+	e.MarketingCarrierType = "marketingCarrierType_example"
+	e.MuseDeriveSwitchSettingsGetOpts = &api.MuseDeriveSwitchSettingsGetOpts{}
 }
 
-func (e *MaterialLabelsDeleteExample) RunExample() (model.MaterialLabelsDeleteResponseData, http.Header, error) {
+func (e *MuseDeriveSwitchSettingsGetExample) RunExample() (model.MuseDeriveSwitchSettingsGetResponseData, http.Header, error) {
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.MaterialLabels().Delete(ctx, e.Data)
+	return tads.MuseDeriveSwitchSettings().Get(ctx, e.AccountId, e.MarketingTargetType, e.MarketingCarrierType, e.MuseDeriveSwitchSettingsGetOpts)
 }
 
 func main() {
-	e := &MaterialLabelsDeleteExample{}
+	e := &MuseDeriveSwitchSettingsGetExample{}
 	e.Init()
 	response, headers, err := e.RunExample()
 	if err != nil {

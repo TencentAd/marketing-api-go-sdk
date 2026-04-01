@@ -19,4 +19,5 @@ type FundTransferAddRequest struct {
 	TransferTryBest       *int64         `json:"transfer_try_best,omitempty"`
 	HighFrequencyTransfer *int64         `json:"high_frequency_transfer,omitempty"`
 	PreFetchAmount        *int64         `json:"pre_fetch_amount,omitempty"`
+	PreCheck              *int64         `json:"pre_check,omitempty"`
 }

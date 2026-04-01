@@ -25,6 +25,7 @@ const (
 	PromotedAssetAttrKey_APP_HARMONY_ID                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_HARMONY_ID"
 	PromotedAssetAttrKey_APP_NAME                                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_NAME"
 	PromotedAssetAttrKey_APP_ICON                                                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_ICON"
+	PromotedAssetAttrKey_BRAND                                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_BRAND"
 	PromotedAssetAttrKey_APP_ANDROID_ID                                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_ANDROID_ID"
 	PromotedAssetAttrKey_APP_IOS_ID                                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_APP_IOS_ID"
 	PromotedAssetAttrKey_WECHAT_OFFICIAL_ACCOUNT_ID                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_OFFICIAL_ACCOUNT_ID"
@@ -507,6 +508,7 @@ const (
 	PromotedAssetAttrKey_VIDEO_PROGRAM_DOUBAN_LINK                                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_VIDEO_PROGRAM_DOUBAN_LINK"
 	PromotedAssetAttrKey_VIDEO_PROGRAM_PLOT_SUMMARY                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_VIDEO_PROGRAM_PLOT_SUMMARY"
 	PromotedAssetAttrKey_VIDEO_PROGRAM_CERTIFICATION                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_VIDEO_PROGRAM_CERTIFICATION"
+	PromotedAssetAttrKey_VIDEO_PROGRAM_ALIAS                                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_VIDEO_PROGRAM_ALIAS"
 	PromotedAssetAttrKey_FUN_TEST_CATE_NAME                                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FUN_TEST_CATE_NAME"
 	PromotedAssetAttrKey_FUN_TEST_PRICE_RANGE                                                      PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_FUN_TEST_PRICE_RANGE"
 	PromotedAssetAttrKey_MATERNITY_PARENTING_CATE_NAME                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MATERNITY_PARENTING_CATE_NAME"
@@ -516,4 +518,6 @@ const (
 	PromotedAssetAttrKey_LEISURE_ENTERTAINMENT_BRAND                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_LEISURE_ENTERTAINMENT_BRAND"
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_BRAND                                            PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_BRAND"
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_CATEGORY                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_CATEGORY"
+	PromotedAssetAttrKey_MEDICAL_INSTITUTION_CATE_NAME                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CATE_NAME"
+	PromotedAssetAttrKey_MEDICAL_INSTITUTION_CUSTOMER_ENTITY_NAME                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CUSTOMER_ENTITY_NAME"
 )

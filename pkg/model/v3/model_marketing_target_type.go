@@ -83,4 +83,5 @@ const (
 	MarketingTargetType_FUN_TEST                         MarketingTargetType = "MARKETING_TARGET_TYPE_FUN_TEST"
 	MarketingTargetType_MATERNITY_PARENTING              MarketingTargetType = "MARKETING_TARGET_TYPE_MATERNITY_PARENTING"
 	MarketingTargetType_LEISURE_ENTERTAINMENT            MarketingTargetType = "MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT"
+	MarketingTargetType_MEDICAL_INSTITUTION              MarketingTargetType = "MARKETING_TARGET_TYPE_MEDICAL_INSTITUTION"
 )

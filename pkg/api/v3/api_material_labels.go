@@ -246,14 +246,14 @@ MaterialLabelsApiService 删除素材标签
 
 @return MaterialLabelsDeleteResponse
 */
-func (a *MaterialLabelsApiService) Delete(ctx context.Context, data MaterialLabelsDeleteRequest) (interface{}, http.Header, error) {
+func (a *MaterialLabelsApiService) Delete(ctx context.Context, data MaterialLabelsDeleteRequest) (MaterialLabelsDeleteResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue interface{}
+		localVarReturnValue MaterialLabelsDeleteResponseData
 		localVarResponse    MaterialLabelsDeleteResponse
 	)
 
@@ -311,7 +311,11 @@ func (a *MaterialLabelsApiService) Delete(ctx context.Context, data MaterialLabe
 				err = errors.NewError(localVarResponse.Code, localVarResponse.Message, localVarResponse.MessageCn, localVarResponseErrors)
 				return localVarReturnValue, localVarHttpResponse.Header, err
 			}
-			return localVarReturnValue, localVarHttpResponse.Header, err
+			if localVarResponse.Data == nil {
+				return localVarReturnValue, localVarHttpResponse.Header, err
+			} else {
+				return *localVarResponse.Data, localVarHttpResponse.Header, err
+			}
 		} else {
 			return localVarReturnValue, localVarHttpResponse.Header, err
 		}
@@ -352,6 +356,7 @@ MaterialLabelsApiService 获取素材标签列表
      * @param "SecondLabelLevelIdList" (optional.Interface of []int64) -  二级标签类目ID列表
      * @param "NeedCount" (optional.Bool) -
      * @param "BusinessScenario" (optional.String) -
+     * @param "OwnershipType" (optional.String) -  素材归属类型过滤
      * @param "OrderBy" (optional.Interface of []OrderByStruct) -
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
@@ -369,6 +374,7 @@ type MaterialLabelsGetOpts struct {
 	SecondLabelLevelIdList optional.Interface
 	NeedCount              optional.Bool
 	BusinessScenario       optional.String
+	OwnershipType          optional.String
 	OrderBy                optional.Interface
 	Page                   optional.Int64
 	PageSize               optional.Int64
@@ -416,6 +422,9 @@ func (a *MaterialLabelsApiService) Get(ctx context.Context, localVarOptionals *M
 	}
 	if localVarOptionals != nil && localVarOptionals.BusinessScenario.IsSet() {
 		localVarQueryParams.Add("business_scenario", parameterToString(localVarOptionals.BusinessScenario.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.OwnershipType.IsSet() {
+		localVarQueryParams.Add("ownership_type", parameterToString(localVarOptionals.OwnershipType.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.OrderBy.IsSet() {
 		localVarQueryParams.Add("order_by", parameterToString(localVarOptionals.OrderBy.Value(), "multi"))

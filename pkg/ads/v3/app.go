@@ -545,6 +545,10 @@ func (c *SDKClient) MuseAudios() *api.MuseAudiosApiService {
 	return c.Client.MuseAudiosApi
 }
 
+func (c *SDKClient) MuseDeriveSwitchSettings() *api.MuseDeriveSwitchSettingsApiService {
+	return c.Client.MuseDeriveSwitchSettingsApi
+}
+
 func (c *SDKClient) Negativewords() *api.NegativewordsApiService {
 	return c.Client.NegativewordsApi
 }

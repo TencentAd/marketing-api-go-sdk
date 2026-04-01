@@ -113,6 +113,7 @@ Name | Type | Description  | Notes
  **secondLabelLevelIdList** | [**optional.Interface of []int64**](int64.md)| 二级标签类目ID列表 | 
  **needCount** | **optional.Bool**|  | 
  **businessScenario** | **optional.String**|  | 
+ **ownershipType** | **optional.String**| 素材归属类型过滤 | 
  **orderBy** | [**optional.Interface of []OrderByStruct**](OrderByStruct.md)|  | 
  **page** | **optional.Int64**|  | 
  **pageSize** | **optional.Int64**|  | 

@@ -314,6 +314,8 @@ type APIClient struct {
 
 	MuseAudiosApi *MuseAudiosApiService
 
+	MuseDeriveSwitchSettingsApi *MuseDeriveSwitchSettingsApiService
+
 	NegativewordsApi *NegativewordsApiService
 
 	OauthApi *OauthApiService
@@ -664,6 +666,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
 	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.MuseAudiosApi = (*MuseAudiosApiService)(&c.common)
+	c.MuseDeriveSwitchSettingsApi = (*MuseDeriveSwitchSettingsApiService)(&c.common)
 	c.NegativewordsApi = (*NegativewordsApiService)(&c.common)
 	c.OauthApi = (*OauthApiService)(&c.common)
 	c.ObjectCommentFlagApi = (*ObjectCommentFlagApiService)(&c.common)

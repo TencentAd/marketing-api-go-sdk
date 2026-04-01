@@ -83,4 +83,5 @@ const (
 	PromotedAssetType_FUN_TEST                         PromotedAssetType = "PROMOTED_ASSET_TYPE_FUN_TEST"
 	PromotedAssetType_MATERNITY_PARENTING              PromotedAssetType = "PROMOTED_ASSET_TYPE_MATERNITY_PARENTING"
 	PromotedAssetType_LEISURE_ENTERTAINMENT            PromotedAssetType = "PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT"
+	PromotedAssetType_MEDICAL_INSTITUTION              PromotedAssetType = "PROMOTED_ASSET_TYPE_MEDICAL_INSTITUTION"
 )

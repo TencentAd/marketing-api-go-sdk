@@ -14,7 +14,9 @@ type CoverImageSnapshotType string
 
 // List of CoverImageSnapshotType
 const (
-	CoverImageSnapshotType_UNSPECIFIED CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_UNSPECIFIED"
-	CoverImageSnapshotType_FIRST_FRAME CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME"
-	CoverImageSnapshotType_SMART_FRAME CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME"
+	CoverImageSnapshotType_UNSPECIFIED         CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_UNSPECIFIED"
+	CoverImageSnapshotType_FIRST_FRAME         CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME"
+	CoverImageSnapshotType_SMART_FRAME         CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME"
+	CoverImageSnapshotType_FIRST_FRAME_DEFAULT CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME_DEFAULT"
+	CoverImageSnapshotType_SMART_FRAME_DEFAULT CoverImageSnapshotType = "COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME_DEFAULT"
 )

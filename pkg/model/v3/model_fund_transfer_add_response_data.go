@@ -16,4 +16,5 @@ type FundTransferAddResponseData struct {
 	Time            *int64         `json:"time,omitempty"`
 	IsRepeated      *bool          `json:"is_repeated,omitempty"`
 	RecommendAmount *int64         `json:"recommend_amount,omitempty"`
+	CheckResult     *CheckResult   `json:"check_result,omitempty"`
 }
