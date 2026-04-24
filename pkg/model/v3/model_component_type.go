@@ -57,6 +57,7 @@ const (
 	ComponentType_AUDIO                      ComponentType = "AUDIO"
 	ComponentType_WECHAT_SHOP_ACTIVITY       ComponentType = "WECHAT_SHOP_ACTIVITY"
 	ComponentType_WXGAME_DIRECT_PAGE         ComponentType = "WXGAME_DIRECT_PAGE"
+	ComponentType_VIDEO_LIST                 ComponentType = "VIDEO_LIST"
 	ComponentType_V2_TITLE                   ComponentType = "V2_TITLE"
 	ComponentType_V2_DESCRIPTION             ComponentType = "V2_DESCRIPTION"
 	ComponentType_V2_LONG_SUBLINK            ComponentType = "V2_LONG_SUBLINK"

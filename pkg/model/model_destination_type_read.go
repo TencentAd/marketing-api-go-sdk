@@ -64,4 +64,5 @@ const (
 	DestinationTypeRead_PAGE_TYPE_NOT_USED                        DestinationTypeRead = "PAGE_TYPE_NOT_USED"
 	DestinationTypeRead_PAGE_TYPE_WECHAT_QUERY_PAGE_2             DestinationTypeRead = "PAGE_TYPE_WECHAT_QUERY_PAGE"
 	DestinationTypeRead_PAGE_TYPE_APP_HARMONY                     DestinationTypeRead = "PAGE_TYPE_APP_HARMONY"
+	DestinationTypeRead_PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY        DestinationTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY"
 )

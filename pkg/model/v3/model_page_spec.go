@@ -44,4 +44,5 @@ type PageSpec struct {
 	WechatShopSpec                  *WechatShopSpec                      `json:"wechat_shop_spec,omitempty"`
 	WechatChannelsWatchLiveSpec     *WechatChannelsWatchLivePageSpec     `json:"wechat_channels_watch_live_spec,omitempty"`
 	HarmonyAppSpec                  *HarmonyAppPageSpec                  `json:"harmony_app_spec,omitempty"`
+	WechatChannelsActivitySpec      *WechatChannelsActivitySpec          `json:"wechat_channels_activity_spec,omitempty"`
 }

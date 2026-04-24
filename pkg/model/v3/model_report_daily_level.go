@@ -32,4 +32,5 @@ const (
 	ReportDailyLevel_CREATIVE_ASSET            ReportDailyLevel = "REPORT_LEVEL_CREATIVE_ASSET"
 	ReportDailyLevel_PRODUCT_CREATIVE_TEMPLATE ReportDailyLevel = "REPORT_LEVEL_PRODUCT_CREATIVE_TEMPLATE"
 	ReportDailyLevel_WECHAT_SHOP_PRODUCT       ReportDailyLevel = "REPORT_LEVEL_WECHAT_SHOP_PRODUCT"
+	ReportDailyLevel_PLAYLET                   ReportDailyLevel = "REPORT_LEVEL_PLAYLET"
 )

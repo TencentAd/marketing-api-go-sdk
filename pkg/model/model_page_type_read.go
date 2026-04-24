@@ -72,4 +72,5 @@ const (
 	PageTypeRead_WECHAT_SHOP                     PageTypeRead = "PAGE_TYPE_WECHAT_SHOP"
 	PageTypeRead_TSA_OTT                         PageTypeRead = "PAGE_TYPE_TSA_OTT"
 	PageTypeRead_APP_HARMONY                     PageTypeRead = "PAGE_TYPE_APP_HARMONY"
+	PageTypeRead_WECHAT_CHANNELS_ACTIVITY        PageTypeRead = "PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY"
 )

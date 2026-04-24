@@ -36,4 +36,5 @@ type CreativeComponentValueValid struct {
 	MinDurationMillisecond *int64                                          `json:"min_duration_millisecond,omitempty"`
 	MaxDurationMillisecond *int64                                          `json:"max_duration_millisecond,omitempty"`
 	ImageFormatOptions     *[]ComponentMetadataValueValidImageFormatOption `json:"image_format_options,omitempty"`
+	VideoFormatOptions     *[]ComponentMetadataValueValidVideoFormatOption `json:"video_format_options,omitempty"`
 }

@@ -880,6 +880,13 @@ type HourlyReportApiListStruct struct {
 	SliderPv                                   *int64   `json:"slider_pv,omitempty"`
 	InsuranceDedupPv                           *int64   `json:"insurance_dedup_pv,omitempty"`
 	ClkBmLivePv                                *int64   `json:"clk_bm_live_pv,omitempty"`
+	AdMonetizationIpu                          *int64   `json:"ad_monetization_ipu,omitempty"`
+	AdMonetizationLtv                          *int64   `json:"ad_monetization_ltv,omitempty"`
+	EffectiveSeedingCount                      *int64   `json:"effective_seeding_count,omitempty"`
+	EffectiveSeedingCost                       *int64   `json:"effective_seeding_cost,omitempty"`
+	EffectiveSeedingRate                       *float64 `json:"effective_seeding_rate,omitempty"`
+	EffectiveSeedingConvertionsRate            *float64 `json:"effective_seeding_convertions_rate,omitempty"`
+	AdMonetizationPlaRegAmount                 *int64   `json:"ad_monetization_pla_reg_amount,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

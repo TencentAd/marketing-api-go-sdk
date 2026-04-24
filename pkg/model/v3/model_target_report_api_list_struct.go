@@ -846,6 +846,9 @@ type TargetReportApiListStruct struct {
 	SliderPv                                   *int64   `json:"slider_pv,omitempty"`
 	InsuranceDedupPv                           *int64   `json:"insurance_dedup_pv,omitempty"`
 	ClkBmLivePv                                *int64   `json:"clk_bm_live_pv,omitempty"`
+	AdMonetizationIpu                          *int64   `json:"ad_monetization_ipu,omitempty"`
+	AdMonetizationLtv                          *int64   `json:"ad_monetization_ltv,omitempty"`
+	AdMonetizationPlaRegAmount                 *int64   `json:"ad_monetization_pla_reg_amount,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

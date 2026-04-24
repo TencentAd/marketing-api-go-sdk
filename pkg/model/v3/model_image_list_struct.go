@@ -11,6 +11,7 @@ package model
 
 // 图集
 type ImageListStruct struct {
-	JumpInfo *JumpinfoStruct  `json:"jump_info,omitempty"`
-	List     *[]ImageListItem `json:"list,omitempty"`
+	JumpInfo    *JumpinfoStruct  `json:"jump_info,omitempty"`
+	List        *[]ImageListItem `json:"list,omitempty"`
+	DisplayMode DisplayMode      `json:"display_mode,omitempty"`
 }

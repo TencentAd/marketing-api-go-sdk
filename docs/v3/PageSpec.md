@@ -36,6 +36,7 @@ Name | Type | Description | Notes
 **WechatShopSpec** | [***WechatShopSpec**](wechat_shop_spec.md) |  | [optional] [default to null]
 **WechatChannelsWatchLiveSpec** | [***WechatChannelsWatchLivePageSpec**](wechat_channels_watch_live_page_spec.md) |  | [optional] [default to null]
 **HarmonyAppSpec** | [***HarmonyAppPageSpec**](harmony_app_page_spec.md) |  | [optional] [default to null]
+**WechatChannelsActivitySpec** | [***WechatChannelsActivitySpec**](wechat_channels_activity_spec.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

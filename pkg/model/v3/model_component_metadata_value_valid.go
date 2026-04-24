@@ -36,4 +36,5 @@ type ComponentMetadataValueValid struct {
 	ImageFormatOptions     *[]ComponentMetadataValueValidImageFormatOption `json:"image_format_options,omitempty"`
 	MinDurationMillisecond *int64                                          `json:"min_duration_millisecond,omitempty"`
 	MaxDurationMillisecond *int64                                          `json:"max_duration_millisecond,omitempty"`
+	VideoFormatOptions     *[]ComponentMetadataValueValidVideoFormatOption `json:"video_format_options,omitempty"`
 }

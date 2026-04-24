@@ -665,6 +665,10 @@ func (c *SDKClient) PunishMetrics() *api.PunishMetricsApiService {
 	return c.Client.PunishMetricsApi
 }
 
+func (c *SDKClient) PunishUidMetrics() *api.PunishUidMetricsApiService {
+	return c.Client.PunishUidMetricsApi
+}
+
 func (c *SDKClient) PunishmentConfig() *api.PunishmentConfigApiService {
 	return c.Client.PunishmentConfigApi
 }

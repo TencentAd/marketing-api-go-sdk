@@ -14,10 +14,11 @@ type WechatChannelsComponentType string
 
 // List of WechatChannelsComponentType
 const (
-	WechatChannelsComponentType_PRODUCT           WechatChannelsComponentType = "PRODUCT"
-	WechatChannelsComponentType_GAME              WechatChannelsComponentType = "GAME"
-	WechatChannelsComponentType_APP               WechatChannelsComponentType = "APP"
-	WechatChannelsComponentType_DRAMA             WechatChannelsComponentType = "DRAMA"
-	WechatChannelsComponentType_NATIVE_DRAMA      WechatChannelsComponentType = "NATIVE_DRAMA"
-	WechatChannelsComponentType_WITHOUT_COMPONENT WechatChannelsComponentType = "WITHOUT_COMPONENT"
+	WechatChannelsComponentType_PRODUCT                 WechatChannelsComponentType = "PRODUCT"
+	WechatChannelsComponentType_GAME                    WechatChannelsComponentType = "GAME"
+	WechatChannelsComponentType_APP                     WechatChannelsComponentType = "APP"
+	WechatChannelsComponentType_DRAMA                   WechatChannelsComponentType = "DRAMA"
+	WechatChannelsComponentType_NATIVE_DRAMA            WechatChannelsComponentType = "NATIVE_DRAMA"
+	WechatChannelsComponentType_NATIVE_DRAMA_ATTACHMENT WechatChannelsComponentType = "NATIVE_DRAMA_ATTACHMENT"
+	WechatChannelsComponentType_WITHOUT_COMPONENT       WechatChannelsComponentType = "WITHOUT_COMPONENT"
 )

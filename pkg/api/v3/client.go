@@ -374,6 +374,8 @@ type APIClient struct {
 
 	PunishMetricsApi *PunishMetricsApiService
 
+	PunishUidMetricsApi *PunishUidMetricsApiService
+
 	PunishmentConfigApi *PunishmentConfigApiService
 
 	PunishmentQueryApi *PunishmentQueryApiService
@@ -696,6 +698,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ProgrammedTemplateApi = (*ProgrammedTemplateApiService)(&c.common)
 	c.PunishDetailApi = (*PunishDetailApiService)(&c.common)
 	c.PunishMetricsApi = (*PunishMetricsApiService)(&c.common)
+	c.PunishUidMetricsApi = (*PunishUidMetricsApiService)(&c.common)
 	c.PunishmentConfigApi = (*PunishmentConfigApiService)(&c.common)
 	c.PunishmentQueryApi = (*PunishmentQueryApiService)(&c.common)
 	c.QualificationImagesApi = (*QualificationImagesApiService)(&c.common)
