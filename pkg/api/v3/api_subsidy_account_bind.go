@@ -29,7 +29,7 @@ var (
 type SubsidyAccountBindApiService service
 
 /*
-SubsidyAccountBindApiService 补贴账号绑定或解绑广告账户
+SubsidyAccountBindApiService 补贴账号绑定或解绑账户
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

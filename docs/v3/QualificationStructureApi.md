@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**QualificationStructureGet**](QualificationStructureApi.md#QualificationStructureGet) | **Get** /qualification_structure/get | 获取广告主资质结构
+[**QualificationStructureGet**](QualificationStructureApi.md#QualificationStructureGet) | **Get** /qualification_structure/get | 获取客户资质结构
 
 
 # **QualificationStructureGet**
 > QualificationStructureGetResponse QualificationStructureGet(ctx, accountId, qualificationCode, optional)
-获取广告主资质结构
+获取客户资质结构
 
 ### Required Parameters
 

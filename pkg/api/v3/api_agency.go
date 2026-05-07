@@ -30,7 +30,7 @@ var (
 type AgencyApiService service
 
 /*
-AgencyApiService 查询腾讯广告服务商信息
+AgencyApiService 查询服务商信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param fields
  * @param page

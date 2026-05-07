@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AgencyBusinessUnitListByAccountGet**](AgencyBusinessUnitListByAccountApi.md#AgencyBusinessUnitListByAccountGet) | **Post** /agency_business_unit_list_by_account/get | 查询广告主账号所属的服务商业务单元
+[**AgencyBusinessUnitListByAccountGet**](AgencyBusinessUnitListByAccountApi.md#AgencyBusinessUnitListByAccountGet) | **Post** /agency_business_unit_list_by_account/get | 查询账号所属的服务商业务单元
 
 
 # **AgencyBusinessUnitListByAccountGet**
 > AgencyBusinessUnitListByAccountGetResponse AgencyBusinessUnitListByAccountGet(ctx, data)
-查询广告主账号所属的服务商业务单元
+查询账号所属的服务商业务单元
 
 ### Required Parameters
 

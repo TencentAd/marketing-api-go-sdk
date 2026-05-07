@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**SubsidyBoundAccountListGet**](SubsidyBoundAccountListApi.md#SubsidyBoundAccountListGet) | **Get** /subsidy_bound_account_list/get | 获取补贴账号关联的广告主账号列表
+[**SubsidyBoundAccountListGet**](SubsidyBoundAccountListApi.md#SubsidyBoundAccountListGet) | **Get** /subsidy_bound_account_list/get | 获取补贴账号关联的账号列表
 
 
 # **SubsidyBoundAccountListGet**
 > SubsidyBoundAccountListGetResponse SubsidyBoundAccountListGet(ctx, accountId, page, pageSize, optional)
-获取补贴账号关联的广告主账号列表
+获取补贴账号关联的账号列表
 
 ### Required Parameters
 

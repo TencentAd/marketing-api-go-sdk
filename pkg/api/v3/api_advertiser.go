@@ -30,7 +30,7 @@ var (
 type AdvertiserApiService service
 
 /*
-AdvertiserApiService 添加腾讯广告服务商子客
+AdvertiserApiService 添加服务商子客
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *AdvertiserApiService) Add(ctx context.Context, data AdvertiserAddReques
 }
 
 /*
-AdvertiserApiService 查询腾讯广告广告主信息
+AdvertiserApiService 查询客户信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param fields
  * @param paginationMode
@@ -273,7 +273,7 @@ func (a *AdvertiserApiService) Get(ctx context.Context, fields []string, paginat
 }
 
 /*
-AdvertiserApiService 更新腾讯广告广告主信息
+AdvertiserApiService 更新客户信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -378,7 +378,7 @@ func (a *AdvertiserApiService) Update(ctx context.Context, data AdvertiserUpdate
 }
 
 /*
-AdvertiserApiService 批量修改广告主日限额
+AdvertiserApiService 批量修改账户日预算
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

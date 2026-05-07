@@ -4,15 +4,15 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdvertiserAdd**](AdvertiserApi.md#AdvertiserAdd) | **Post** /advertiser/add | 添加腾讯广告服务商子客
-[**AdvertiserGet**](AdvertiserApi.md#AdvertiserGet) | **Get** /advertiser/get | 查询腾讯广告广告主信息
-[**AdvertiserUpdate**](AdvertiserApi.md#AdvertiserUpdate) | **Post** /advertiser/update | 更新腾讯广告广告主信息
-[**AdvertiserUpdateDailyBudget**](AdvertiserApi.md#AdvertiserUpdateDailyBudget) | **Post** /advertiser/update_daily_budget | 批量修改广告主日限额
+[**AdvertiserAdd**](AdvertiserApi.md#AdvertiserAdd) | **Post** /advertiser/add | 添加服务商子客
+[**AdvertiserGet**](AdvertiserApi.md#AdvertiserGet) | **Get** /advertiser/get | 查询客户信息
+[**AdvertiserUpdate**](AdvertiserApi.md#AdvertiserUpdate) | **Post** /advertiser/update | 更新客户信息
+[**AdvertiserUpdateDailyBudget**](AdvertiserApi.md#AdvertiserUpdateDailyBudget) | **Post** /advertiser/update_daily_budget | 批量修改账户日预算
 
 
 # **AdvertiserAdd**
 > AdvertiserAddResponse AdvertiserAdd(ctx, data)
-添加腾讯广告服务商子客
+添加服务商子客
 
 ### Required Parameters
 
@@ -38,7 +38,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserGet**
 > AdvertiserGetResponse AdvertiserGet(ctx, fields, paginationMode, pageSize, optional)
-查询腾讯广告广告主信息
+查询客户信息
 
 ### Required Parameters
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserUpdate**
 > AdvertiserUpdateResponse AdvertiserUpdate(ctx, data)
-更新腾讯广告广告主信息
+更新客户信息
 
 ### Required Parameters
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserUpdateDailyBudget**
 > AdvertiserUpdateDailyBudgetResponse AdvertiserUpdateDailyBudget(ctx, data)
-批量修改广告主日限额
+批量修改账户日预算
 
 ### Required Parameters
 

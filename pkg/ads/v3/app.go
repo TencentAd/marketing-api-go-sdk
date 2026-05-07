@@ -93,6 +93,10 @@ func (c *SDKClient) AndroidChannel() *api.AndroidChannelApiService {
 	return c.Client.AndroidChannelApi
 }
 
+func (c *SDKClient) AssetSimilarityDetail() *api.AssetSimilarityDetailApiService {
+	return c.Client.AssetSimilarityDetailApi
+}
+
 func (c *SDKClient) AsyncReportFiles() *api.AsyncReportFilesApiService {
 	return c.Client.AsyncReportFilesApi
 }

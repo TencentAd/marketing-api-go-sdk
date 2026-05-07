@@ -30,7 +30,7 @@ var (
 type CreativetoolsTextApiService service
 
 /*
-CreativetoolsTextApiService 获取广告文案
+CreativetoolsTextApiService 获取创意文案
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param maxTextLength

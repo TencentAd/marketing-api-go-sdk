@@ -483,6 +483,8 @@ const (
 	PromotedAssetAttrKey_PLATFORM_CHANNEL_REGION_NODE                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_REGION_NODE"
 	PromotedAssetAttrKey_PLATFORM_CHANNEL_APPLICATION_SCENARIOS                                    PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_APPLICATION_SCENARIOS"
 	PromotedAssetAttrKey_PLATFORM_CHANNEL_HOLIDAY_MILESTONES                                       PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_HOLIDAY_MILESTONES"
+	PromotedAssetAttrKey_PLATFORM_CHANNEL_DOMAIN                                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_DOMAIN"
+	PromotedAssetAttrKey_PLATFORM_CHANNEL_DIRECTORY                                                PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PLATFORM_CHANNEL_DIRECTORY"
 	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_BRAND_NAME                                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_BRAND_NAME"
 	PromotedAssetAttrKey_TWO_WHEEL_VEHICLE_CATE_NAME                                               PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_TWO_WHEEL_VEHICLE_CATE_NAME"
 	PromotedAssetAttrKey_CAR_ECOLOGY_CATE_NAME                                                     PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_CAR_ECOLOGY_CATE_NAME"
@@ -520,4 +522,8 @@ const (
 	PromotedAssetAttrKey_PRODUCT_AGGREGATION_PAGE_CATEGORY                                         PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_PRODUCT_AGGREGATION_PAGE_CATEGORY"
 	PromotedAssetAttrKey_MEDICAL_INSTITUTION_CATE_NAME                                             PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CATE_NAME"
 	PromotedAssetAttrKey_MEDICAL_INSTITUTION_CUSTOMER_ENTITY_NAME                                  PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_MEDICAL_INSTITUTION_CUSTOMER_ENTITY_NAME"
+	PromotedAssetAttrKey_WECHAT_CHANNELS_ACTIVITY_CATE_NAME                                        PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ACTIVITY_CATE_NAME"
+	PromotedAssetAttrKey_WECHAT_CHANNELS_ACTIVITY_ACTIVITY_ENCRYPT_ID                              PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ACTIVITY_ACTIVITY_ENCRYPT_ID"
+	PromotedAssetAttrKey_WECHAT_CHANNELS_ACTIVITY_ACTIVITY_TITLE                                   PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ACTIVITY_ACTIVITY_TITLE"
+	PromotedAssetAttrKey_WECHAT_CHANNELS_ACTIVITY_CREATOR_NICKNAME                                 PromotedAssetAttrKey = "PROMOTED_ASSET_ATTR_KEY_WECHAT_CHANNELS_ACTIVITY_CREATOR_NICKNAME"
 )

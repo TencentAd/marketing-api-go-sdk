@@ -29,7 +29,7 @@ var (
 type AdvertiserDailyBudgetApiService service
 
 /*
-AdvertiserDailyBudgetApiService 获取竞价广告账户日预算
+AdvertiserDailyBudgetApiService 获取竞价账户日预算
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param fields
@@ -135,7 +135,7 @@ func (a *AdvertiserDailyBudgetApiService) Get(ctx context.Context, accountId int
 }
 
 /*
-AdvertiserDailyBudgetApiService 更新竞价广告账户日预算
+AdvertiserDailyBudgetApiService 更新竞价账户日预算
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreativetoolsTextGet**](CreativetoolsTextApi.md#CreativetoolsTextGet) | **Get** /creativetools_text/get | 获取广告文案
+[**CreativetoolsTextGet**](CreativetoolsTextApi.md#CreativetoolsTextGet) | **Get** /creativetools_text/get | 获取创意文案
 
 
 # **CreativetoolsTextGet**
 > CreativetoolsTextGetResponse CreativetoolsTextGet(ctx, accountId, maxTextLength, optional)
-获取广告文案
+获取创意文案
 
 ### Required Parameters
 

@@ -30,7 +30,7 @@ var (
 type AdvertiserConfigApiService service
 
 /*
-AdvertiserConfigApiService 添加广告主配置
+AdvertiserConfigApiService 设置客户投放偏好
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -131,7 +131,7 @@ func (a *AdvertiserConfigApiService) Add(ctx context.Context, data AdvertiserCon
 }
 
 /*
-AdvertiserConfigApiService 查询广告主配置
+AdvertiserConfigApiService 获取客户投放偏好
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AdvertiserConfigGetOpts - Optional Parameters:

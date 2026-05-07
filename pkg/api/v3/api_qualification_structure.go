@@ -30,7 +30,7 @@ var (
 type QualificationStructureApiService service
 
 /*
-QualificationStructureApiService 获取广告主资质结构
+QualificationStructureApiService 获取客户资质结构
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param qualificationCode

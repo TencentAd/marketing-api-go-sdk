@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdLabelGet**](AdLabelApi.md#AdLabelGet) | **Get** /ad_label/get | 获取广告标签
+[**AdLabelGet**](AdLabelApi.md#AdLabelGet) | **Get** /ad_label/get | 获取创意标签
 
 
 # **AdLabelGet**
 > AdLabelGetResponse AdLabelGet(ctx, accountId, optional)
-获取广告标签
+获取创意标签
 
 ### Required Parameters
 

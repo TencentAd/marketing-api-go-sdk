@@ -30,7 +30,7 @@ var (
 type QualificationsApiService service
 
 /*
-QualificationsApiService 创建广告主资质
+QualificationsApiService 创建客户资质
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *QualificationsApiService) Add(ctx context.Context, data QualificationsA
 }
 
 /*
-QualificationsApiService 删除广告主资质
+QualificationsApiService 删除客户资质
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -240,7 +240,7 @@ func (a *QualificationsApiService) Delete(ctx context.Context, data Qualificatio
 }
 
 /*
-QualificationsApiService 获取广告主资质
+QualificationsApiService 获取客户资质
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param qualificationType
@@ -361,7 +361,7 @@ func (a *QualificationsApiService) Get(ctx context.Context, accountId int64, qua
 }
 
 /*
-QualificationsApiService 更新广告主资质
+QualificationsApiService 更新客户资质
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

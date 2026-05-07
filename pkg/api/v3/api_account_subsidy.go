@@ -30,7 +30,7 @@ var (
 type AccountSubsidyApiService service
 
 /*
-AccountSubsidyApiService 获取广告主关联的补贴账号
+AccountSubsidyApiService 获取客户关联的补贴账号
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AccountSubsidyGetOpts - Optional Parameters:

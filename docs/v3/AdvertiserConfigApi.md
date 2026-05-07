@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdvertiserConfigAdd**](AdvertiserConfigApi.md#AdvertiserConfigAdd) | **Post** /advertiser_config/add | 添加广告主配置
-[**AdvertiserConfigGet**](AdvertiserConfigApi.md#AdvertiserConfigGet) | **Get** /advertiser_config/get | 查询广告主配置
+[**AdvertiserConfigAdd**](AdvertiserConfigApi.md#AdvertiserConfigAdd) | **Post** /advertiser_config/add | 设置客户投放偏好
+[**AdvertiserConfigGet**](AdvertiserConfigApi.md#AdvertiserConfigGet) | **Get** /advertiser_config/get | 获取客户投放偏好
 
 
 # **AdvertiserConfigAdd**
 > AdvertiserConfigAddResponse AdvertiserConfigAdd(ctx, data)
-添加广告主配置
+设置客户投放偏好
 
 ### Required Parameters
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserConfigGet**
 > AdvertiserConfigGetResponse AdvertiserConfigGet(ctx, accountId, optional)
-查询广告主配置
+获取客户投放偏好
 
 ### Required Parameters
 

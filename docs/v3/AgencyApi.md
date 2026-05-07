@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AgencyGet**](AgencyApi.md#AgencyGet) | **Get** /agency/get | 查询腾讯广告服务商信息
+[**AgencyGet**](AgencyApi.md#AgencyGet) | **Get** /agency/get | 查询服务商信息
 
 
 # **AgencyGet**
 > AgencyGetResponse AgencyGet(ctx, fields, page, pageSize, optional)
-查询腾讯广告服务商信息
+查询服务商信息
 
 ### Required Parameters
 

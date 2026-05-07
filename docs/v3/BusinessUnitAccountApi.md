@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**BusinessUnitAccountGet**](BusinessUnitAccountApi.md#BusinessUnitAccountGet) | **Post** /business_unit_account/get | 查询广告主账号所属的业务单元
+[**BusinessUnitAccountGet**](BusinessUnitAccountApi.md#BusinessUnitAccountGet) | **Post** /business_unit_account/get | 查询账号所属的业务单元
 [**BusinessUnitAccountUpdate**](BusinessUnitAccountApi.md#BusinessUnitAccountUpdate) | **Post** /business_unit_account/update | 修改客户业务单元帐户
 
 
 # **BusinessUnitAccountGet**
 > BusinessUnitAccountGetResponse BusinessUnitAccountGet(ctx, data)
-查询广告主账号所属的业务单元
+查询账号所属的业务单元
 
 ### Required Parameters
 

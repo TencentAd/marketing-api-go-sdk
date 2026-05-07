@@ -29,7 +29,7 @@ var (
 type SearchAdgroupsApiService service
 
 /*
-SearchAdgroupsApiService 创建搜索广告
+SearchAdgroupsApiService 创建营销单元
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -134,7 +134,7 @@ func (a *SearchAdgroupsApiService) Add(ctx context.Context, data SearchAdgroupsA
 }
 
 /*
-SearchAdgroupsApiService 更新搜索广告
+SearchAdgroupsApiService 更新营销单元
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

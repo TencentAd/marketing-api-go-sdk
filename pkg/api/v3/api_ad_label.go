@@ -30,7 +30,7 @@ var (
 type AdLabelApiService service
 
 /*
-AdLabelApiService 获取广告标签
+AdLabelApiService 获取创意标签
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AdLabelGetOpts - Optional Parameters:

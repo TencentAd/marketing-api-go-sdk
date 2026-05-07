@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**SearchAdgroupsAdd**](SearchAdgroupsApi.md#SearchAdgroupsAdd) | **Post** /search_adgroups/add | 创建搜索广告
-[**SearchAdgroupsUpdate**](SearchAdgroupsApi.md#SearchAdgroupsUpdate) | **Post** /search_adgroups/update | 更新搜索广告
+[**SearchAdgroupsAdd**](SearchAdgroupsApi.md#SearchAdgroupsAdd) | **Post** /search_adgroups/add | 创建营销单元
+[**SearchAdgroupsUpdate**](SearchAdgroupsApi.md#SearchAdgroupsUpdate) | **Post** /search_adgroups/update | 更新营销单元
 
 
 # **SearchAdgroupsAdd**
 > SearchAdgroupsAddResponse SearchAdgroupsAdd(ctx, data)
-创建搜索广告
+创建营销单元
 
 ### Required Parameters
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **SearchAdgroupsUpdate**
 > SearchAdgroupsUpdateResponse SearchAdgroupsUpdate(ctx, data)
-更新搜索广告
+更新营销单元
 
 ### Required Parameters
 

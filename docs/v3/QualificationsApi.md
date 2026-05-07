@@ -4,15 +4,15 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**QualificationsAdd**](QualificationsApi.md#QualificationsAdd) | **Post** /qualifications/add | 创建广告主资质
-[**QualificationsDelete**](QualificationsApi.md#QualificationsDelete) | **Post** /qualifications/delete | 删除广告主资质
-[**QualificationsGet**](QualificationsApi.md#QualificationsGet) | **Get** /qualifications/get | 获取广告主资质
-[**QualificationsUpdate**](QualificationsApi.md#QualificationsUpdate) | **Post** /qualifications/update | 更新广告主资质
+[**QualificationsAdd**](QualificationsApi.md#QualificationsAdd) | **Post** /qualifications/add | 创建客户资质
+[**QualificationsDelete**](QualificationsApi.md#QualificationsDelete) | **Post** /qualifications/delete | 删除客户资质
+[**QualificationsGet**](QualificationsApi.md#QualificationsGet) | **Get** /qualifications/get | 获取客户资质
+[**QualificationsUpdate**](QualificationsApi.md#QualificationsUpdate) | **Post** /qualifications/update | 更新客户资质
 
 
 # **QualificationsAdd**
 > QualificationsAddResponse QualificationsAdd(ctx, data)
-创建广告主资质
+创建客户资质
 
 ### Required Parameters
 
@@ -38,7 +38,7 @@ Name | Type | Description  | Notes
 
 # **QualificationsDelete**
 > QualificationsDeleteResponse QualificationsDelete(ctx, data)
-删除广告主资质
+删除客户资质
 
 ### Required Parameters
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 # **QualificationsGet**
 > QualificationsGetResponse QualificationsGet(ctx, accountId, qualificationType, optional)
-获取广告主资质
+获取客户资质
 
 ### Required Parameters
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 # **QualificationsUpdate**
 > QualificationsUpdateResponse QualificationsUpdate(ctx, data)
-更新广告主资质
+更新客户资质
 
 ### Required Parameters
 

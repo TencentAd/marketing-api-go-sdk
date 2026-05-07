@@ -4,19 +4,19 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdgroupsAdd**](AdgroupsApi.md#AdgroupsAdd) | **Post** /adgroups/add | 创建广告
-[**AdgroupsDelete**](AdgroupsApi.md#AdgroupsDelete) | **Post** /adgroups/delete | 删除广告
-[**AdgroupsGet**](AdgroupsApi.md#AdgroupsGet) | **Get** /adgroups/get | 获取广告
-[**AdgroupsUpdate**](AdgroupsApi.md#AdgroupsUpdate) | **Post** /adgroups/update | 更新广告
-[**AdgroupsUpdateBidAmount**](AdgroupsApi.md#AdgroupsUpdateBidAmount) | **Post** /adgroups/update_bid_amount | 批量修改广告出价
-[**AdgroupsUpdateConfiguredStatus**](AdgroupsApi.md#AdgroupsUpdateConfiguredStatus) | **Post** /adgroups/update_configured_status | 批量修改广告开启/暂停状态
-[**AdgroupsUpdateDailyBudget**](AdgroupsApi.md#AdgroupsUpdateDailyBudget) | **Post** /adgroups/update_daily_budget | 批量修改广告日限额
-[**AdgroupsUpdateDatetime**](AdgroupsApi.md#AdgroupsUpdateDatetime) | **Post** /adgroups/update_datetime | 批量修改广告投放起止时间
+[**AdgroupsAdd**](AdgroupsApi.md#AdgroupsAdd) | **Post** /adgroups/add | 创建营销单元
+[**AdgroupsDelete**](AdgroupsApi.md#AdgroupsDelete) | **Post** /adgroups/delete | 删除营销单元
+[**AdgroupsGet**](AdgroupsApi.md#AdgroupsGet) | **Get** /adgroups/get | 获取营销单元
+[**AdgroupsUpdate**](AdgroupsApi.md#AdgroupsUpdate) | **Post** /adgroups/update | 更新营销单元
+[**AdgroupsUpdateBidAmount**](AdgroupsApi.md#AdgroupsUpdateBidAmount) | **Post** /adgroups/update_bid_amount | 批量修改营销单元出价
+[**AdgroupsUpdateConfiguredStatus**](AdgroupsApi.md#AdgroupsUpdateConfiguredStatus) | **Post** /adgroups/update_configured_status | 批量修改营销单元开启/暂停状态
+[**AdgroupsUpdateDailyBudget**](AdgroupsApi.md#AdgroupsUpdateDailyBudget) | **Post** /adgroups/update_daily_budget | 批量修改营销单元日预算
+[**AdgroupsUpdateDatetime**](AdgroupsApi.md#AdgroupsUpdateDatetime) | **Post** /adgroups/update_datetime | 批量修改营销单元投放起止时间
 
 
 # **AdgroupsAdd**
 > AdgroupsAddResponse AdgroupsAdd(ctx, data)
-创建广告
+创建营销单元
 
 ### Required Parameters
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsDelete**
 > AdgroupsDeleteResponse AdgroupsDelete(ctx, data)
-删除广告
+删除营销单元
 
 ### Required Parameters
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsGet**
 > AdgroupsGetResponse AdgroupsGet(ctx, accountId, optional)
-获取广告
+获取营销单元
 
 ### Required Parameters
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdate**
 > AdgroupsUpdateResponse AdgroupsUpdate(ctx, data)
-更新广告
+更新营销单元
 
 ### Required Parameters
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateBidAmount**
 > AdgroupsUpdateBidAmountResponse AdgroupsUpdateBidAmount(ctx, data)
-批量修改广告出价
+批量修改营销单元出价
 
 ### Required Parameters
 
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateConfiguredStatus**
 > AdgroupsUpdateConfiguredStatusResponse AdgroupsUpdateConfiguredStatus(ctx, data)
-批量修改广告开启/暂停状态
+批量修改营销单元开启/暂停状态
 
 ### Required Parameters
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateDailyBudget**
 > AdgroupsUpdateDailyBudgetResponse AdgroupsUpdateDailyBudget(ctx, data)
-批量修改广告日限额
+批量修改营销单元日预算
 
 ### Required Parameters
 
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 # **AdgroupsUpdateDatetime**
 > AdgroupsUpdateDatetimeResponse AdgroupsUpdateDatetime(ctx, data)
-批量修改广告投放起止时间
+批量修改营销单元投放起止时间
 
 ### Required Parameters
 

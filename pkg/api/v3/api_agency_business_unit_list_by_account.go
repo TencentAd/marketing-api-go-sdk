@@ -29,7 +29,7 @@ var (
 type AgencyBusinessUnitListByAccountApiService service
 
 /*
-AgencyBusinessUnitListByAccountApiService 查询广告主账号所属的服务商业务单元
+AgencyBusinessUnitListByAccountApiService 查询账号所属的服务商业务单元
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

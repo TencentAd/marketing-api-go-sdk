@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**SubsidyAccountBindAdd**](SubsidyAccountBindApi.md#SubsidyAccountBindAdd) | **Post** /subsidy_account_bind/add | 补贴账号绑定或解绑广告账户
+[**SubsidyAccountBindAdd**](SubsidyAccountBindApi.md#SubsidyAccountBindAdd) | **Post** /subsidy_account_bind/add | 补贴账号绑定或解绑账户
 
 
 # **SubsidyAccountBindAdd**
 > SubsidyAccountBindAddResponse SubsidyAccountBindAdd(ctx, data)
-补贴账号绑定或解绑广告账户
+补贴账号绑定或解绑账户
 
 ### Required Parameters
 

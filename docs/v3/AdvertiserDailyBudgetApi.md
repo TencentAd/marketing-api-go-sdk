@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdvertiserDailyBudgetGet**](AdvertiserDailyBudgetApi.md#AdvertiserDailyBudgetGet) | **Get** /advertiser_daily_budget/get | 获取竞价广告账户日预算
-[**AdvertiserDailyBudgetUpdate**](AdvertiserDailyBudgetApi.md#AdvertiserDailyBudgetUpdate) | **Post** /advertiser_daily_budget/update | 更新竞价广告账户日预算
+[**AdvertiserDailyBudgetGet**](AdvertiserDailyBudgetApi.md#AdvertiserDailyBudgetGet) | **Get** /advertiser_daily_budget/get | 获取竞价账户日预算
+[**AdvertiserDailyBudgetUpdate**](AdvertiserDailyBudgetApi.md#AdvertiserDailyBudgetUpdate) | **Post** /advertiser_daily_budget/update | 更新竞价账户日预算
 
 
 # **AdvertiserDailyBudgetGet**
 > AdvertiserDailyBudgetGetResponse AdvertiserDailyBudgetGet(ctx, accountId, fields)
-获取竞价广告账户日预算
+获取竞价账户日预算
 
 ### Required Parameters
 
@@ -37,7 +37,7 @@ Name | Type | Description  | Notes
 
 # **AdvertiserDailyBudgetUpdate**
 > AdvertiserDailyBudgetUpdateResponse AdvertiserDailyBudgetUpdate(ctx, data)
-更新竞价广告账户日预算
+更新竞价账户日预算
 
 ### Required Parameters
 
