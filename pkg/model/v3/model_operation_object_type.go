@@ -15,6 +15,7 @@ type OperationObjectType string
 // List of OperationObjectType
 const (
 	OperationObjectType_ADGROUP                 OperationObjectType = "OPERATION_OBJECT_TYPE_ADGROUP"
+	OperationObjectType_DYNAMIC_CREATIVE        OperationObjectType = "OPERATION_OBJECT_TYPE_DYNAMIC_CREATIVE"
 	OperationObjectType_MARKETING_TARGET_ASSETS OperationObjectType = "OPERATION_OBJECT_TYPE_MARKETING_TARGET_ASSETS"
 	OperationObjectType_JOINT_BUDGET            OperationObjectType = "OPERATION_OBJECT_TYPE_JOINT_BUDGET"
 )

@@ -887,6 +887,9 @@ type ReportStruct struct {
 	EffectiveSeedingRate                       *float64 `json:"effective_seeding_rate,omitempty"`
 	EffectiveSeedingConvertionsRate            *float64 `json:"effective_seeding_convertions_rate,omitempty"`
 	AdMonetizationPlaRegAmount                 *int64   `json:"ad_monetization_pla_reg_amount,omitempty"`
+	RealCostValueExplore                       *int64   `json:"real_cost_value_explore,omitempty"`
+	ClkActionContentPv                         *int64   `json:"clk_action_content_pv,omitempty"`
+	ClkActionContentUv                         *int64   `json:"clk_action_content_uv,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

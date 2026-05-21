@@ -24,4 +24,6 @@ type PunishUidMetricsDataItem struct {
 	UidCappedRejectCnt      *int64  `json:"uid_capped_reject_cnt,omitempty"`
 	PenaltyUnitPrice        *string `json:"penalty_unit_price,omitempty"`
 	UidFinalPenaltyAmount   *string `json:"uid_final_penalty_amount,omitempty"`
+	AccountOperateIdentity  *string `json:"account_operate_identity,omitempty"`
+	ComplianceOwner         *string `json:"compliance_owner,omitempty"`
 }

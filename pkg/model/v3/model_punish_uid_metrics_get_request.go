@@ -10,14 +10,16 @@
 package model
 
 type PunishUidMetricsGetRequest struct {
-	PartitionTime           *int64                       `json:"partition_time,omitempty"`
-	StartPartitionTime      *int64                       `json:"start_partition_time,omitempty"`
-	EndPartitionTime        *int64                       `json:"end_partition_time,omitempty"`
-	AccountId               *int64                       `json:"account_id,omitempty"`
-	OpsAdvertiserNameList   *[]string                    `json:"ops_advertiser_name_list,omitempty"`
-	ZcAgentGroup            *string                      `json:"zc_agent_group,omitempty"`
-	FirstLevelIndustryName  *string                      `json:"first_level_industry_name,omitempty"`
-	SecondLevelIndustryName *string                      `json:"second_level_industry_name,omitempty"`
-	QueryAccountIdList      *[]int64                     `json:"query_account_id_list,omitempty"`
-	PageConf                *PunishUidMetricsReqPageConf `json:"page_conf,omitempty"`
+	PartitionTime              *int64                       `json:"partition_time,omitempty"`
+	StartPartitionTime         *int64                       `json:"start_partition_time,omitempty"`
+	EndPartitionTime           *int64                       `json:"end_partition_time,omitempty"`
+	AccountId                  *int64                       `json:"account_id,omitempty"`
+	OpsAdvertiserNameList      *[]string                    `json:"ops_advertiser_name_list,omitempty"`
+	ZcAgentGroup               *string                      `json:"zc_agent_group,omitempty"`
+	FirstLevelIndustryName     *string                      `json:"first_level_industry_name,omitempty"`
+	SecondLevelIndustryName    *string                      `json:"second_level_industry_name,omitempty"`
+	QueryAccountIdList         *[]int64                     `json:"query_account_id_list,omitempty"`
+	PageConf                   *PunishUidMetricsReqPageConf `json:"page_conf,omitempty"`
+	AccountOperateIdentityList *[]string                    `json:"account_operate_identity_list,omitempty"`
+	ComplianceOwnerList        *[]string                    `json:"compliance_owner_list,omitempty"`
 }

@@ -13,4 +13,5 @@ package model
 type ApiTaskSpec struct {
 	TaskTypeCreateAndroidChannelPackageSpec *TaskTypeCreateAndroidChannelPackageSpec `json:"task_type_create_android_channel_package_spec,omitempty"`
 	TaskTypeUpdateAndroidChannelPackageSpec *TaskTypeUpdateAndroidChannelPackageSpec `json:"task_type_update_android_channel_package_spec,omitempty"`
+	TaskTypeDeleteCreativeAssetSpec         *TaskTypeDeleteCreativeAssetSpec         `json:"task_type_delete_creative_asset_spec,omitempty"`
 }

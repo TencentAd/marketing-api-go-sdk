@@ -11,5 +11,6 @@ package model
 
 // 视频号活动页落地页信息
 type WechatChannelsActivitySpec struct {
-	ActivityId *string `json:"activity_id,omitempty"`
+	ActivityId              *string `json:"activity_id,omitempty"`
+	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
 }

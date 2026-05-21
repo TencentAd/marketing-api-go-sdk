@@ -10,6 +10,7 @@
 package model
 
 type PagesGetResponseData struct {
-	List     *[]PagesGetListStruct `json:"list,omitempty"`
-	PageInfo *PageInfo             `json:"page_info,omitempty"`
+	List           *[]PagesGetListStruct            `json:"list,omitempty"`
+	PageInfo       *PageInfo                        `json:"page_info,omitempty"`
+	CursorPageInfo *CursorPageInfoStructLandingPage `json:"cursor_page_info,omitempty"`
 }

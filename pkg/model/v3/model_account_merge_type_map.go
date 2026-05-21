@@ -43,5 +43,10 @@ const (
 	AccountMergeTypeMap_MP_GAME_SPECIAL_REWARDS_GIFT      AccountMergeTypeMap = "FUND_TYPE_MP_GAME_SPECIAL_REWARDS_GIFT"
 	AccountMergeTypeMap_MINIGAME_CREDIT                   AccountMergeTypeMap = "FUND_TYPE_MINIGAME_CREDIT"
 	AccountMergeTypeMap_MP_GAME_PC_TARGET_GIFT            AccountMergeTypeMap = "FUND_TYPE_MP_GAME_PC_TARGET_GIFT"
+	AccountMergeTypeMap_MP_NEW_GAME_SUBSIDY               AccountMergeTypeMap = "FUND_TYPE_MP_NEW_GAME_SUBSIDY"
+	AccountMergeTypeMap_INTEGRATED_MARKETING              AccountMergeTypeMap = "FUND_TYPE_INTEGRATED_MARKETING"
+	AccountMergeTypeMap_IAA_SHARED_INCOME_COST            AccountMergeTypeMap = "FUND_TYPE_IAA_SHARED_INCOME_COST"
+	AccountMergeTypeMap_IAP_SHARED_INCOME_COST            AccountMergeTypeMap = "FUND_TYPE_IAP_SHARED_INCOME_COST"
+	AccountMergeTypeMap_UTILITY_PUBLISHER_GIFT            AccountMergeTypeMap = "FUND_TYPE_UTILITY_PUBLISHER_GIFT"
 	AccountMergeTypeMap_UNSUPPORTED                       AccountMergeTypeMap = "FUND_TYPE_UNSUPPORTED"
 )

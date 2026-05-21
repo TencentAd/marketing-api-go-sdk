@@ -29,4 +29,6 @@ type PunishDetailDataItem struct {
 	IsElementAppeal         *int64  `json:"is_element_appeal,omitempty"`
 	AgencyName              *string `json:"agency_name,omitempty"`
 	AccountFrame            *string `json:"account_frame,omitempty"`
+	AccountOperateIdentity  *string `json:"account_operate_identity,omitempty"`
+	ComplianceOwner         *string `json:"compliance_owner,omitempty"`
 }

@@ -27,55 +27,48 @@ var (
 	_ context.Context
 )
 
-type MuseDeriveSwitchSettingsApiService service
+type DcComponentSummaryInfoApiService service
 
 /*
-MuseDeriveSwitchSettingsApiService 查询生成偏好设置
+DcComponentSummaryInfoApiService 获取创意资产总结
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
- * @param marketingTargetType
- * @param marketingCarrierType
- * @param optional nil or *MuseDeriveSwitchSettingsGetOpts - Optional Parameters:
-     * @param "AutomaticSiteEnabled" (optional.Bool) -
-     * @param "SiteSet" (optional.Interface of []string) -
+ * @param componentSummaryInsightTypeList
+ * @param optional nil or *DcComponentSummaryInfoGetOpts - Optional Parameters:
+     * @param "DynamicCreativeId" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
-@return MuseDeriveSwitchSettingsGetResponse
+@return DcComponentSummaryInfoGetResponse
 */
 
-type MuseDeriveSwitchSettingsGetOpts struct {
-	AutomaticSiteEnabled optional.Bool
-	SiteSet              optional.Interface
-	Fields               optional.Interface
+type DcComponentSummaryInfoGetOpts struct {
+	DynamicCreativeId optional.Int64
+	Fields            optional.Interface
 }
 
-func (a *MuseDeriveSwitchSettingsApiService) Get(ctx context.Context, accountId int64, marketingTargetType string, marketingCarrierType string, localVarOptionals *MuseDeriveSwitchSettingsGetOpts) (MuseDeriveSwitchSettingsGetResponseData, http.Header, error) {
+func (a *DcComponentSummaryInfoApiService) Get(ctx context.Context, accountId int64, componentSummaryInsightTypeList []string, localVarOptionals *DcComponentSummaryInfoGetOpts) (DcComponentSummaryInfoGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
 		localVarFileKey     string
-		localVarReturnValue MuseDeriveSwitchSettingsGetResponseData
-		localVarResponse    MuseDeriveSwitchSettingsGetResponse
+		localVarReturnValue DcComponentSummaryInfoGetResponseData
+		localVarResponse    DcComponentSummaryInfoGetResponse
 	)
 
 	// create path and map variables
-	localVarPath := a.client.Cfg.BasePath + "/muse_derive_switch_settings/get"
+	localVarPath := a.client.Cfg.BasePath + "/dc_component_summary_info/get"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
-	localVarQueryParams.Add("marketing_carrier_type", parameterToString(marketingCarrierType, ""))
-	if localVarOptionals != nil && localVarOptionals.AutomaticSiteEnabled.IsSet() {
-		localVarQueryParams.Add("automatic_site_enabled", parameterToString(localVarOptionals.AutomaticSiteEnabled.Value(), ""))
+	if localVarOptionals != nil && localVarOptionals.DynamicCreativeId.IsSet() {
+		localVarQueryParams.Add("dynamic_creative_id", parameterToString(localVarOptionals.DynamicCreativeId.Value(), ""))
 	}
-	if localVarOptionals != nil && localVarOptionals.SiteSet.IsSet() {
-		localVarQueryParams.Add("site_set", parameterToString(localVarOptionals.SiteSet.Value(), "multi"))
-	}
+	localVarQueryParams.Add("component_summary_insight_type_list", parameterToString(componentSummaryInsightTypeList, "multi"))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}
@@ -141,7 +134,7 @@ func (a *MuseDeriveSwitchSettingsApiService) Get(ctx context.Context, accountId 
 		}
 
 		if localVarHttpResponse.StatusCode == 200 {
-			var v MuseDeriveSwitchSettingsGetResponse
+			var v DcComponentSummaryInfoGetResponse
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

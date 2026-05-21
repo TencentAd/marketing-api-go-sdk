@@ -1,15 +1,15 @@
-# TencentAds\MuseDeriveSwitchSettingsApi
+# TencentAds\DcComponentSummaryInfoApi
 
 All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**MuseDeriveSwitchSettingsGet**](MuseDeriveSwitchSettingsApi.md#MuseDeriveSwitchSettingsGet) | **Get** /muse_derive_switch_settings/get | 查询生成偏好设置
+[**DcComponentSummaryInfoGet**](DcComponentSummaryInfoApi.md#DcComponentSummaryInfoGet) | **Get** /dc_component_summary_info/get | 获取创意资产总结
 
 
-# **MuseDeriveSwitchSettingsGet**
-> MuseDeriveSwitchSettingsGetResponse MuseDeriveSwitchSettingsGet(ctx, accountId, marketingTargetType, marketingCarrierType, optional)
-查询生成偏好设置
+# **DcComponentSummaryInfoGet**
+> DcComponentSummaryInfoGetResponse DcComponentSummaryInfoGet(ctx, accountId, componentSummaryInsightTypeList, optional)
+获取创意资产总结
 
 ### Required Parameters
 
@@ -17,25 +17,22 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **marketingTargetType** | **string**|  | 
-  **marketingCarrierType** | **string**|  | 
- **optional** | ***MuseDeriveSwitchSettingsApiMuseDeriveSwitchSettingsGetOpts** | optional parameters | nil if no parameters
+  **componentSummaryInsightTypeList** | [**[]string**](string.md)|  | 
+ **optional** | ***DcComponentSummaryInfoApiDcComponentSummaryInfoGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a MuseDeriveSwitchSettingsApiMuseDeriveSwitchSettingsGetOpts struct
+Optional parameters are passed through a pointer to a DcComponentSummaryInfoApiDcComponentSummaryInfoGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
- **automaticSiteEnabled** | **optional.Bool**|  | 
- **siteSet** | [**optional.Interface of []string**](string.md)|  | 
+ **dynamicCreativeId** | **optional.Int64**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type
 
-[**MuseDeriveSwitchSettingsGetResponse**](MuseDeriveSwitchSettingsGetResponse.md)
+[**DcComponentSummaryInfoGetResponse**](DcComponentSummaryInfoGetResponse.md)
 
 ### Authorization
 

@@ -34,13 +34,19 @@ WechatOfficialAccountsApiService 获取公众号列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *WechatOfficialAccountsGetOpts - Optional Parameters:
+     * @param "Filtering" (optional.Interface of []FilteringStruct) -
+     * @param "Page" (optional.Int64) -
+     * @param "PageSize" (optional.Int64) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return WechatOfficialAccountsGetResponse
 */
 
 type WechatOfficialAccountsGetOpts struct {
-	Fields optional.Interface
+	Filtering optional.Interface
+	Page      optional.Int64
+	PageSize  optional.Int64
+	Fields    optional.Interface
 }
 
 func (a *WechatOfficialAccountsApiService) Get(ctx context.Context, accountId int64, localVarOptionals *WechatOfficialAccountsGetOpts) (WechatOfficialAccountsGetResponseData, http.Header, error) {
@@ -62,6 +68,15 @@ func (a *WechatOfficialAccountsApiService) Get(ctx context.Context, accountId in
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
+	if localVarOptionals != nil && localVarOptionals.Filtering.IsSet() {
+		localVarQueryParams.Add("filtering", parameterToString(localVarOptionals.Filtering.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.Page.IsSet() {
+		localVarQueryParams.Add("page", parameterToString(localVarOptionals.Page.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PageSize.IsSet() {
+		localVarQueryParams.Add("page_size", parameterToString(localVarOptionals.PageSize.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
 	}

@@ -38,17 +38,21 @@ PagesApiService 获取落地页列表
      * @param "Page" (optional.Int64) -
      * @param "PageSize" (optional.Int64) -
      * @param "AdContext" (optional.Interface of AdContext) -
+     * @param "PaginationMode" (optional.String) -
+     * @param "Cursor" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return PagesGetResponse
 */
 
 type PagesGetOpts struct {
-	Filtering optional.Interface
-	Page      optional.Int64
-	PageSize  optional.Int64
-	AdContext optional.Interface
-	Fields    optional.Interface
+	Filtering      optional.Interface
+	Page           optional.Int64
+	PageSize       optional.Int64
+	AdContext      optional.Interface
+	PaginationMode optional.String
+	Cursor         optional.String
+	Fields         optional.Interface
 }
 
 func (a *PagesApiService) Get(ctx context.Context, accountId int64, localVarOptionals *PagesGetOpts) (PagesGetResponseData, http.Header, error) {
@@ -81,6 +85,12 @@ func (a *PagesApiService) Get(ctx context.Context, accountId int64, localVarOpti
 	}
 	if localVarOptionals != nil && localVarOptionals.AdContext.IsSet() {
 		localVarQueryParams.Add("ad_context", parameterToString(localVarOptionals.AdContext.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.PaginationMode.IsSet() {
+		localVarQueryParams.Add("pagination_mode", parameterToString(localVarOptionals.PaginationMode.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.Cursor.IsSet() {
+		localVarQueryParams.Add("cursor", parameterToString(localVarOptionals.Cursor.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

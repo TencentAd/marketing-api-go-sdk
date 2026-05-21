@@ -68,6 +68,7 @@ Name | Type | Description | Notes
 **EnableSteadyExploration** | **bool** |  | [optional] [default to null]
 **SmartTargetingMode** | [***SmartTargetingMode**](SmartTargetingMode.md) |  | [optional] [default to null]
 **SmartCouponMode** | [***SmartCouponMode**](SmartCouponMode.md) |  | [optional] [default to null]
+**BillingModel** | [***BillingModel**](BillingModel.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

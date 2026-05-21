@@ -51,4 +51,10 @@ const (
 	AccountTypeMap_MINIGAME_CREDIT                   AccountTypeMap = "FUND_TYPE_MINIGAME_CREDIT"
 	AccountTypeMap_MP_GAME_PC_TARGET_GIFT            AccountTypeMap = "FUND_TYPE_MP_GAME_PC_TARGET_GIFT"
 	AccountTypeMap_INNER_RESOURCE_EXCHANGE           AccountTypeMap = "FUND_TYPE_INNER_RESOURCE_EXCHANGE"
+	AccountTypeMap_MP_NEW_GAME_SUBSIDY               AccountTypeMap = "FUND_TYPE_MP_NEW_GAME_SUBSIDY"
+	AccountTypeMap_INTEGRATED_MARKETING              AccountTypeMap = "FUND_TYPE_INTEGRATED_MARKETING"
+	AccountTypeMap_CASH_COST                         AccountTypeMap = "FUND_TYPE_CASH_COST"
+	AccountTypeMap_IAA_SHARED_INCOME_COST            AccountTypeMap = "FUND_TYPE_IAA_SHARED_INCOME_COST"
+	AccountTypeMap_IAP_SHARED_INCOME_COST            AccountTypeMap = "FUND_TYPE_IAP_SHARED_INCOME_COST"
+	AccountTypeMap_UTILITY_PUBLISHER_GIFT            AccountTypeMap = "FUND_TYPE_UTILITY_PUBLISHER_GIFT"
 )

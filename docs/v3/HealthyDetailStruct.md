@@ -1,10 +1,11 @@
-# WechatChannelsActivitySpec
+# HealthyDetailStruct
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ActivityId** | **string** |  | [optional] [default to null]
-**WechatChannelsAccountId** | **string** |  | [optional] [default to null]
+**AggComponentType** | **string** |  | [optional] [default to null]
+**TotalComponentNum** | **int64** |  | [optional] [default to null]
+**RejectedComponentNum** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

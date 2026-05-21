@@ -281,6 +281,10 @@ func (c *SDKClient) DataSourceDispatch() *api.DataSourceDispatchApiService {
 	return c.Client.DataSourceDispatchApi
 }
 
+func (c *SDKClient) DcComponentSummaryInfo() *api.DcComponentSummaryInfoApiService {
+	return c.Client.DcComponentSummaryInfoApi
+}
+
 func (c *SDKClient) DynamicAdImageTemplates() *api.DynamicAdImageTemplatesApiService {
 	return c.Client.DynamicAdImageTemplatesApi
 }

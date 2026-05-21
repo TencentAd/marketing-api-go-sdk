@@ -182,6 +182,8 @@ type APIClient struct {
 
 	DataSourceDispatchApi *DataSourceDispatchApiService
 
+	DcComponentSummaryInfoApi *DcComponentSummaryInfoApiService
+
 	DynamicAdImageTemplatesApi *DynamicAdImageTemplatesApiService
 
 	DynamicAdImagesApi *DynamicAdImagesApiService
@@ -604,6 +606,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.DailyBalanceReportApi = (*DailyBalanceReportApiService)(&c.common)
 	c.DailyReportsApi = (*DailyReportsApiService)(&c.common)
 	c.DataSourceDispatchApi = (*DataSourceDispatchApiService)(&c.common)
+	c.DcComponentSummaryInfoApi = (*DcComponentSummaryInfoApiService)(&c.common)
 	c.DynamicAdImageTemplatesApi = (*DynamicAdImageTemplatesApiService)(&c.common)
 	c.DynamicAdImagesApi = (*DynamicAdImagesApiService)(&c.common)
 	c.DynamicAdVideoApi = (*DynamicAdVideoApiService)(&c.common)

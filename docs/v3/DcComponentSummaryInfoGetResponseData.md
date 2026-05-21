@@ -1,10 +1,9 @@
-# WechatChannelsActivitySpec
+# DcComponentSummaryInfoGetResponseData
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ActivityId** | **string** |  | [optional] [default to null]
-**WechatChannelsAccountId** | **string** |  | [optional] [default to null]
+**SummaryData** | [***DcComponentSummaryData**](dc_component_summary_data.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
