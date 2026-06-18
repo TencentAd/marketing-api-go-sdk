@@ -852,6 +852,19 @@ type TargetReportApiListStruct struct {
 	RealCostValueExplore                       *int64   `json:"real_cost_value_explore,omitempty"`
 	ClkActionContentPv                         *int64   `json:"clk_action_content_pv,omitempty"`
 	ClkActionContentUv                         *int64   `json:"clk_action_content_uv,omitempty"`
+	Retention14dDedupPv                        *int64   `json:"retention_14d_dedup_pv,omitempty"`
+	Retention30dDedupPv                        *int64   `json:"retention_30d_dedup_pv,omitempty"`
+	RetentionRateD14                           *float64 `json:"retention_rate_d14,omitempty"`
+	RetentionRateD30                           *float64 `json:"retention_rate_d30,omitempty"`
+	AppRetentionD14Cost                        *int64   `json:"app_retention_d14_cost,omitempty"`
+	AppRetentionD30Cost                        *int64   `json:"app_retention_d30_cost,omitempty"`
+	ClkFifaIpPv                                *int64   `json:"clk_fifa_ip_pv,omitempty"`
+	LandingFifaIpGenPv                         *int64   `json:"landing_fifa_ip_gen_pv,omitempty"`
+	AfterAddWecomDeletePv                      *int64   `json:"after_add_wecom_delete_pv,omitempty"`
+	AfterAddWecomDeleteRate                    *float64 `json:"after_add_wecom_delete_rate,omitempty"`
+	AfterAddWecomConsultDedupRate              *float64 `json:"after_add_wecom_consult_dedup_rate,omitempty"`
+	AfterAddWecomClassParticipatedFisrtUvRate  *float64 `json:"after_add_wecom_class_participated_fisrt_uv_rate,omitempty"`
+	OrderCouponAmount                          *int64   `json:"order_coupon_amount,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

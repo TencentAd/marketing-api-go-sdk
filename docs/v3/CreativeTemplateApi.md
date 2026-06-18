@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **CreativeTemplateGet**
-> CreativeTemplateGetResponse CreativeTemplateGet(ctx, accountId, marketingGoal, marketingTargetType, marketingCarrierType, deliveryMode, optional)
+> CreativeTemplateGetResponse CreativeTemplateGet(ctx, accountId, deliveryMode, optional)
 获取创意形式详情
 
 ### Required Parameters
@@ -17,9 +17,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
-  **marketingGoal** | **string**|  | 
-  **marketingTargetType** | **string**|  | 
-  **marketingCarrierType** | **string**|  | 
   **deliveryMode** | **string**|  | 
  **optional** | ***CreativeTemplateApiCreativeTemplateGetOpts** | optional parameters | nil if no parameters
 
@@ -30,15 +27,16 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
-
-
-
+ **marketingGoal** | **optional.String**|  | 
  **marketingSubGoal** | **optional.String**|  | 
+ **marketingTargetType** | **optional.String**|  | 
+ **marketingCarrierType** | **optional.String**|  | 
  **automaticSiteEnabled** | **optional.Bool**|  | 
  **siteSet** | [**optional.Interface of []string**](string.md)|  | 
  **dynamicCreativeType** | **optional.String**|  | 
  **creativeTemplateId** | **optional.Int64**|  | 
  **useNewVersion** | **optional.Bool**|  | 
+ **adgroupId** | **optional.Int64**|  | 
  **adgroupType** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 

@@ -14,4 +14,7 @@ type ComponentElementRejectDetailInfoListStruct struct {
 	Reason             *string                         `json:"reason,omitempty"`
 	SiteSetList        *[]SiteSetInfoListStruct        `json:"site_set_list,omitempty"`
 	RejectInfoLocation *[]RejectInfoLocationListStruct `json:"reject_info_location,omitempty"`
+	VideoAsrInfos      *[]VideoAsrInfoStruct           `json:"video_asr_infos,omitempty"`
+	VideoOcrInfos      *[]VideoOcrInfoStruct           `json:"video_ocr_infos,omitempty"`
+	CaptionInfos       *[]CaptionInfoStruct            `json:"caption_infos,omitempty"`
 }

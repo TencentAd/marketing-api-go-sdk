@@ -88,6 +88,10 @@ type APIClient struct {
 
 	AndroidChannelApi *AndroidChannelApiService
 
+	AssetPermissionsApi *AssetPermissionsApiService
+
+	AssetPrePermissionsApi *AssetPrePermissionsApiService
+
 	AssetSimilarityDetailApi *AssetSimilarityDetailApiService
 
 	AsyncReportFilesApi *AsyncReportFilesApiService
@@ -292,8 +296,6 @@ type APIClient struct {
 
 	MarketingTargetTypesApi *MarketingTargetTypesApiService
 
-	MaterialAiAnnotationApi *MaterialAiAnnotationApiService
-
 	MaterialAsyncTasksApi *MaterialAsyncTasksApiService
 
 	MaterialDcasetApi *MaterialDcasetApiService
@@ -309,12 +311,6 @@ type APIClient struct {
 	MergeFundTypeFundsApi *MergeFundTypeFundsApiService
 
 	MergeFundTypeSubcustomerTransferApi *MergeFundTypeSubcustomerTransferApiService
-
-	MuseAiMaterialApi *MuseAiMaterialApiService
-
-	MuseAiTaskApi *MuseAiTaskApiService
-
-	MuseAiUgcApi *MuseAiUgcApiService
 
 	MuseAudiosApi *MuseAudiosApiService
 
@@ -462,8 +458,6 @@ type APIClient struct {
 
 	WalletTransferApi *WalletTransferApiService
 
-	WatermarksApi *WatermarksApiService
-
 	WechatChannelsAccountsApi *WechatChannelsAccountsApiService
 
 	WechatChannelsAdAccountApi *WechatChannelsAdAccountApiService
@@ -559,6 +553,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.AgencyRealtimeCostApi = (*AgencyRealtimeCostApiService)(&c.common)
 	c.AgencyWalletListApi = (*AgencyWalletListApiService)(&c.common)
 	c.AndroidChannelApi = (*AndroidChannelApiService)(&c.common)
+	c.AssetPermissionsApi = (*AssetPermissionsApiService)(&c.common)
+	c.AssetPrePermissionsApi = (*AssetPrePermissionsApiService)(&c.common)
 	c.AssetSimilarityDetailApi = (*AssetSimilarityDetailApiService)(&c.common)
 	c.AsyncReportFilesApi = (*AsyncReportFilesApiService)(&c.common)
 	c.AsyncReportsApi = (*AsyncReportsApiService)(&c.common)
@@ -661,7 +657,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MarketingTargetAssetPropertyValuesApi = (*MarketingTargetAssetPropertyValuesApiService)(&c.common)
 	c.MarketingTargetAssetsApi = (*MarketingTargetAssetsApiService)(&c.common)
 	c.MarketingTargetTypesApi = (*MarketingTargetTypesApiService)(&c.common)
-	c.MaterialAiAnnotationApi = (*MaterialAiAnnotationApiService)(&c.common)
 	c.MaterialAsyncTasksApi = (*MaterialAsyncTasksApiService)(&c.common)
 	c.MaterialDcasetApi = (*MaterialDcasetApiService)(&c.common)
 	c.MaterialDcatagApi = (*MaterialDcatagApiService)(&c.common)
@@ -670,9 +665,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.MergeFundTypeFundStatementsDetailedApi = (*MergeFundTypeFundStatementsDetailedApiService)(&c.common)
 	c.MergeFundTypeFundsApi = (*MergeFundTypeFundsApiService)(&c.common)
 	c.MergeFundTypeSubcustomerTransferApi = (*MergeFundTypeSubcustomerTransferApiService)(&c.common)
-	c.MuseAiMaterialApi = (*MuseAiMaterialApiService)(&c.common)
-	c.MuseAiTaskApi = (*MuseAiTaskApiService)(&c.common)
-	c.MuseAiUgcApi = (*MuseAiUgcApiService)(&c.common)
 	c.MuseAudiosApi = (*MuseAudiosApiService)(&c.common)
 	c.MuseDeriveSwitchSettingsApi = (*MuseDeriveSwitchSettingsApiService)(&c.common)
 	c.NegativewordsApi = (*NegativewordsApiService)(&c.common)
@@ -746,7 +738,6 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.WalletGetBindingAdvertiserApi = (*WalletGetBindingAdvertiserApiService)(&c.common)
 	c.WalletInvoiceApi = (*WalletInvoiceApiService)(&c.common)
 	c.WalletTransferApi = (*WalletTransferApiService)(&c.common)
-	c.WatermarksApi = (*WatermarksApiService)(&c.common)
 	c.WechatChannelsAccountsApi = (*WechatChannelsAccountsApiService)(&c.common)
 	c.WechatChannelsAdAccountApi = (*WechatChannelsAdAccountApiService)(&c.common)
 	c.WechatChannelsAdAccountCertificationFileApi = (*WechatChannelsAdAccountCertificationFileApiService)(&c.common)

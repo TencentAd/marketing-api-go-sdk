@@ -48,4 +48,6 @@ type CreativeComponents struct {
 	Audio                *[]AudioComponent                `json:"audio,omitempty"`
 	WxgameDirectPage     *[]WxgameDirectPageComponent     `json:"wxgame_direct_page,omitempty"`
 	VideoList            *[]VideoListComponent            `json:"video_list,omitempty"`
+	DoctorCard           *[]DoctorCardComponent           `json:"doctor_card,omitempty"`
+	ChannelsLiveFeed     *[]ChannelsLiveFeedComponent     `json:"channels_live_feed,omitempty"`
 }

@@ -33,17 +33,18 @@ type CreativeTemplateApiService service
 CreativeTemplateApiService 获取创意形式详情
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
- * @param marketingGoal
- * @param marketingTargetType
- * @param marketingCarrierType
  * @param deliveryMode
  * @param optional nil or *CreativeTemplateGetOpts - Optional Parameters:
+     * @param "MarketingGoal" (optional.String) -
      * @param "MarketingSubGoal" (optional.String) -
+     * @param "MarketingTargetType" (optional.String) -
+     * @param "MarketingCarrierType" (optional.String) -
      * @param "AutomaticSiteEnabled" (optional.Bool) -
      * @param "SiteSet" (optional.Interface of []string) -
      * @param "DynamicCreativeType" (optional.String) -
      * @param "CreativeTemplateId" (optional.Int64) -
      * @param "UseNewVersion" (optional.Bool) -
+     * @param "AdgroupId" (optional.Int64) -
      * @param "AdgroupType" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
@@ -51,17 +52,21 @@ CreativeTemplateApiService 获取创意形式详情
 */
 
 type CreativeTemplateGetOpts struct {
+	MarketingGoal        optional.String
 	MarketingSubGoal     optional.String
+	MarketingTargetType  optional.String
+	MarketingCarrierType optional.String
 	AutomaticSiteEnabled optional.Bool
 	SiteSet              optional.Interface
 	DynamicCreativeType  optional.String
 	CreativeTemplateId   optional.Int64
 	UseNewVersion        optional.Bool
+	AdgroupId            optional.Int64
 	AdgroupType          optional.String
 	Fields               optional.Interface
 }
 
-func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, marketingGoal string, marketingTargetType string, marketingCarrierType string, deliveryMode string, localVarOptionals *CreativeTemplateGetOpts) (CreativeTemplateGetResponseData, http.Header, error) {
+func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, deliveryMode string, localVarOptionals *CreativeTemplateGetOpts) (CreativeTemplateGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -80,12 +85,18 @@ func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, m
 	localVarFormParams := url.Values{}
 
 	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
-	localVarQueryParams.Add("marketing_goal", parameterToString(marketingGoal, ""))
+	if localVarOptionals != nil && localVarOptionals.MarketingGoal.IsSet() {
+		localVarQueryParams.Add("marketing_goal", parameterToString(localVarOptionals.MarketingGoal.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.MarketingSubGoal.IsSet() {
 		localVarQueryParams.Add("marketing_sub_goal", parameterToString(localVarOptionals.MarketingSubGoal.Value(), ""))
 	}
-	localVarQueryParams.Add("marketing_target_type", parameterToString(marketingTargetType, ""))
-	localVarQueryParams.Add("marketing_carrier_type", parameterToString(marketingCarrierType, ""))
+	if localVarOptionals != nil && localVarOptionals.MarketingTargetType.IsSet() {
+		localVarQueryParams.Add("marketing_target_type", parameterToString(localVarOptionals.MarketingTargetType.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.MarketingCarrierType.IsSet() {
+		localVarQueryParams.Add("marketing_carrier_type", parameterToString(localVarOptionals.MarketingCarrierType.Value(), ""))
+	}
 	if localVarOptionals != nil && localVarOptionals.AutomaticSiteEnabled.IsSet() {
 		localVarQueryParams.Add("automatic_site_enabled", parameterToString(localVarOptionals.AutomaticSiteEnabled.Value(), ""))
 	}
@@ -101,6 +112,9 @@ func (a *CreativeTemplateApiService) Get(ctx context.Context, accountId int64, m
 	}
 	if localVarOptionals != nil && localVarOptionals.UseNewVersion.IsSet() {
 		localVarQueryParams.Add("use_new_version", parameterToString(localVarOptionals.UseNewVersion.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.AdgroupId.IsSet() {
+		localVarQueryParams.Add("adgroup_id", parameterToString(localVarOptionals.AdgroupId.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.AdgroupType.IsSet() {
 		localVarQueryParams.Add("adgroup_type", parameterToString(localVarOptionals.AdgroupType.Value(), ""))

@@ -9,7 +9,7 @@
 
 package model
 
-// DynamicAbilityType : 动态广告投放能力类型
+// DynamicAbilityType : 动态投放能力类型
 type DynamicAbilityType string
 
 // List of DynamicAbilityType

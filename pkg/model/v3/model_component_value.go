@@ -47,4 +47,6 @@ type ComponentValue struct {
 	VideoChannelsContent *VideoChannelsContentComponent `json:"video_channels_content,omitempty"`
 	WxgameDirectPage     *WxgameDirectPageComponent     `json:"wxgame_direct_page,omitempty"`
 	VideoList            *VideoListComponent            `json:"video_list,omitempty"`
+	ChannelsLiveFeed     *ChannelsLiveFeedComponent     `json:"channels_live_feed,omitempty"`
+	DoctorCard           *DoctorCardComponent           `json:"doctor_card,omitempty"`
 }

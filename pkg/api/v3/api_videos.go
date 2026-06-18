@@ -291,6 +291,7 @@ VideosApiService 获取视频文件
      * @param "PageSize" (optional.Int64) -
      * @param "LabelId" (optional.Int64) -
      * @param "BusinessScenario" (optional.Int64) -
+     * @param "NeedAigcFlag" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return VideosGetResponse
@@ -304,6 +305,7 @@ type VideosGetOpts struct {
 	PageSize         optional.Int64
 	LabelId          optional.Int64
 	BusinessScenario optional.Int64
+	NeedAigcFlag     optional.Bool
 	Fields           optional.Interface
 }
 
@@ -345,6 +347,9 @@ func (a *VideosApiService) Get(ctx context.Context, localVarOptionals *VideosGet
 	}
 	if localVarOptionals != nil && localVarOptionals.BusinessScenario.IsSet() {
 		localVarQueryParams.Add("business_scenario", parameterToString(localVarOptionals.BusinessScenario.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.NeedAigcFlag.IsSet() {
+		localVarQueryParams.Add("need_aigc_flag", parameterToString(localVarOptionals.NeedAigcFlag.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

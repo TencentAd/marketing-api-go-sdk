@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DynamicAdImagesAdd**](DynamicAdImagesApi.md#DynamicAdImagesAdd) | **Post** /dynamic_ad_images/add | 创建用于广告投放的动态广告图片
+[**DynamicAdImagesAdd**](DynamicAdImagesApi.md#DynamicAdImagesAdd) | **Post** /dynamic_ad_images/add | 创建用于投放的动态广告图片
 [**DynamicAdImagesGet**](DynamicAdImagesApi.md#DynamicAdImagesGet) | **Get** /dynamic_ad_images/get | 获取动态广告图片信息
 
 
 # **DynamicAdImagesAdd**
 > DynamicAdImagesAddResponse DynamicAdImagesAdd(ctx, data)
-创建用于广告投放的动态广告图片
+创建用于投放的动态广告图片
 
 ### Required Parameters
 

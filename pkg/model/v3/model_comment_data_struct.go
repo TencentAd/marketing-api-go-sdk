@@ -9,7 +9,7 @@
 
 package model
 
-// 广告主备注struct
+// 客户备注struct
 type CommentDataStruct struct {
 	UserId  *int64  `json:"user_id,omitempty"`
 	Comment *string `json:"comment,omitempty"`

@@ -20,4 +20,5 @@ const (
 	CreativeAssetType_VIDEO          CreativeAssetType = "VIDEO"
 	CreativeAssetType_VIDEO_SHOWCASE CreativeAssetType = "VIDEO_SHOWCASE"
 	CreativeAssetType_IMAGE_SHOWCASE CreativeAssetType = "IMAGE_SHOWCASE"
+	CreativeAssetType_VIDEO_LIST     CreativeAssetType = "VIDEO_LIST"
 )

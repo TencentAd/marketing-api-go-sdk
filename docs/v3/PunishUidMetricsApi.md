@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**PunishUidMetricsGet**](PunishUidMetricsApi.md#PunishUidMetricsGet) | **Post** /punish_uid_metrics/get | 获取处罚UID维度指标数据
+[**PunishUidMetricsGet**](PunishUidMetricsApi.md#PunishUidMetricsGet) | **Post** /punish_uid_metrics/get | 获取素材计量治理账户指标数据
 
 
 # **PunishUidMetricsGet**
 > PunishUidMetricsGetResponse PunishUidMetricsGet(ctx, data)
-获取处罚UID维度指标数据
+获取素材计量治理账户指标数据
 
 ### Required Parameters
 

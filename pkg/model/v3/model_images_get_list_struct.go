@@ -31,4 +31,5 @@ type ImagesGetListStruct struct {
 	Status            AdStatus         `json:"status,omitempty"`
 	SampleAspectRatio *string          `json:"sample_aspect_ratio,omitempty"`
 	SimilarityStatus  SimilarityStatus `json:"similarity_status,omitempty"`
+	AigcFlag          AigcFlag         `json:"aigc_flag,omitempty"`
 }

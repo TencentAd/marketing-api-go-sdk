@@ -9,7 +9,7 @@
 
 package model
 
-// 广告主账号ID
+// 账户ID
 type AgencyBusinessUnitListAccountGetListStruct struct {
 	AccountId *int64 `json:"account_id,omitempty"`
 }

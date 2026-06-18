@@ -30,7 +30,7 @@ var (
 type IllegalComplaintApiService service
 
 /*
-IllegalComplaintApiService 新增广告主违规申述
+IllegalComplaintApiService 新增客户违规申述
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param illegalOrderId
@@ -150,7 +150,7 @@ func (a *IllegalComplaintApiService) Add(ctx context.Context, accountId int64, i
 }
 
 /*
-IllegalComplaintApiService 获取直客广告主违规申述列表
+IllegalComplaintApiService 获取直客客户违规申述列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

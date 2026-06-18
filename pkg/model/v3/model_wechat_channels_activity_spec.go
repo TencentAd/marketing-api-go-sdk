@@ -13,4 +13,5 @@ package model
 type WechatChannelsActivitySpec struct {
 	ActivityId              *string `json:"activity_id,omitempty"`
 	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
+	ActivityName            *string `json:"activity_name,omitempty"`
 }

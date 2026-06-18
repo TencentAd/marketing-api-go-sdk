@@ -25,9 +25,6 @@ type CreativeTemplateGetExample struct {
 	TAds                    *ads.SDKClient
 	AccessToken             string
 	AccountId               int64
-	MarketingGoal           string
-	MarketingTargetType     string
-	MarketingCarrierType    string
 	DeliveryMode            string
 	CreativeTemplateGetOpts *api.CreativeTemplateGetOpts
 }
@@ -39,9 +36,6 @@ func (e *CreativeTemplateGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = 789
-	e.MarketingGoal = "marketingGoal_example"
-	e.MarketingTargetType = "marketingTargetType_example"
-	e.MarketingCarrierType = "marketingCarrierType_example"
 	e.DeliveryMode = "deliveryMode_example"
 	e.CreativeTemplateGetOpts = &api.CreativeTemplateGetOpts{}
 }
@@ -50,7 +44,7 @@ func (e *CreativeTemplateGetExample) RunExample() (model.CreativeTemplateGetResp
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.CreativeTemplate().Get(ctx, e.AccountId, e.MarketingGoal, e.MarketingTargetType, e.MarketingCarrierType, e.DeliveryMode, e.CreativeTemplateGetOpts)
+	return tads.CreativeTemplate().Get(ctx, e.AccountId, e.DeliveryMode, e.CreativeTemplateGetOpts)
 }
 
 func main() {

@@ -35,7 +35,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **AdvertiserConfigGet**
-> AdvertiserConfigGetResponse AdvertiserConfigGet(ctx, accountId, optional)
+> AdvertiserConfigGetResponse AdvertiserConfigGet(ctx, accountId, fields, optional)
 获取客户投放偏好
 
 ### Required Parameters
@@ -44,6 +44,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **accountId** | **int64**|  | 
+  **fields** | [**[]string**](string.md)|  | 
  **optional** | ***AdvertiserConfigApiAdvertiserConfigGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -52,8 +53,8 @@ Optional parameters are passed through a pointer to a AdvertiserConfigApiAdverti
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
+
  **organizationId** | **optional.Int64**|  | 
- **fields** | [**optional.Interface of []string**](string.md)|  | 
 
 ### Return type
 

@@ -9,7 +9,7 @@
 
 package model
 
-// AdvertiserTypeEnum : 广告主类型
+// AdvertiserTypeEnum : 客户类型
 type AdvertiserTypeEnum string
 
 // List of AdvertiserTypeEnum

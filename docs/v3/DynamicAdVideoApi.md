@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DynamicAdVideoAdd**](DynamicAdVideoApi.md#DynamicAdVideoAdd) | **Post** /dynamic_ad_video/add | 创建用于广告投放的动态广告视频
-[**DynamicAdVideoGet**](DynamicAdVideoApi.md#DynamicAdVideoGet) | **Get** /dynamic_ad_video/get | 获取广告投放的动态广告视频
+[**DynamicAdVideoAdd**](DynamicAdVideoApi.md#DynamicAdVideoAdd) | **Post** /dynamic_ad_video/add | 创建用于投放的动态投放视频
+[**DynamicAdVideoGet**](DynamicAdVideoApi.md#DynamicAdVideoGet) | **Get** /dynamic_ad_video/get | 获取投放的动态广告视频
 
 
 # **DynamicAdVideoAdd**
 > DynamicAdVideoAddResponse DynamicAdVideoAdd(ctx, data)
-创建用于广告投放的动态广告视频
+创建用于投放的动态投放视频
 
 ### Required Parameters
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **DynamicAdVideoGet**
 > DynamicAdVideoGetResponse DynamicAdVideoGet(ctx, accountId, productCatalogId, productMode, productOuterId, dynamicAdTemplateId, optional)
-获取广告投放的动态广告视频
+获取投放的动态广告视频
 
 ### Required Parameters
 

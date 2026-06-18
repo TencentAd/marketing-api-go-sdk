@@ -134,19 +134,18 @@ func (a *AdvertiserConfigApiService) Add(ctx context.Context, data AdvertiserCon
 AdvertiserConfigApiService 获取客户投放偏好
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
+ * @param fields
  * @param optional nil or *AdvertiserConfigGetOpts - Optional Parameters:
      * @param "OrganizationId" (optional.Int64) -
-     * @param "Fields" (optional.Interface of []string) -
 
 @return AdvertiserConfigGetResponse
 */
 
 type AdvertiserConfigGetOpts struct {
 	OrganizationId optional.Int64
-	Fields         optional.Interface
 }
 
-func (a *AdvertiserConfigApiService) Get(ctx context.Context, accountId int64, localVarOptionals *AdvertiserConfigGetOpts) (AdvertiserConfigGetResponseData, http.Header, error) {
+func (a *AdvertiserConfigApiService) Get(ctx context.Context, accountId int64, fields []string, localVarOptionals *AdvertiserConfigGetOpts) (AdvertiserConfigGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -168,9 +167,7 @@ func (a *AdvertiserConfigApiService) Get(ctx context.Context, accountId int64, l
 	if localVarOptionals != nil && localVarOptionals.OrganizationId.IsSet() {
 		localVarQueryParams.Add("organization_id", parameterToString(localVarOptionals.OrganizationId.Value(), ""))
 	}
-	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
-		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
-	}
+	localVarQueryParams.Add("fields", parameterToString(fields, "multi"))
 	// to determine the Content-Type header
 	localVarHttpContentTypes := []string{"text/plain"}
 

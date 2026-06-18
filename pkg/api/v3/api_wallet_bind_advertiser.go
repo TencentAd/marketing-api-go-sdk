@@ -29,7 +29,7 @@ var (
 type WalletBindAdvertiserApiService service
 
 /*
-WalletBindAdvertiserApiService 共享钱包绑定或解绑广告账户
+WalletBindAdvertiserApiService 共享钱包绑定或解绑投放账户
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

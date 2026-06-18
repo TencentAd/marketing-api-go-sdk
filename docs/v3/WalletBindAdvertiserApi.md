@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**WalletBindAdvertiserAdd**](WalletBindAdvertiserApi.md#WalletBindAdvertiserAdd) | **Post** /wallet_bind_advertiser/add | 共享钱包绑定或解绑广告账户
+[**WalletBindAdvertiserAdd**](WalletBindAdvertiserApi.md#WalletBindAdvertiserAdd) | **Post** /wallet_bind_advertiser/add | 共享钱包绑定或解绑投放账户
 
 
 # **WalletBindAdvertiserAdd**
 > WalletBindAdvertiserAddResponse WalletBindAdvertiserAdd(ctx, data)
-共享钱包绑定或解绑广告账户
+共享钱包绑定或解绑投放账户
 
 ### Required Parameters
 

@@ -9,7 +9,7 @@
 
 package model
 
-// 微信广告行为定向
+// 微信营销行为定向
 type WechatAdBehavior struct {
 	Actions         *[]string `json:"actions,omitempty"`
 	ExcludedActions *[]string `json:"excluded_actions,omitempty"`

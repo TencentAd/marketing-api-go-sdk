@@ -10,7 +10,9 @@
 package model
 
 type AdvertiserConfigAddRequest struct {
-	AccountId              *int64                 `json:"account_id,omitempty"`
-	OrganizationId         *int64                 `json:"organization_id,omitempty"`
-	CoverImageSnapshotType CoverImageSnapshotType `json:"cover_image_snapshot_type,omitempty"`
+	AccountId                   *int64                      `json:"account_id,omitempty"`
+	OrganizationId              *int64                      `json:"organization_id,omitempty"`
+	CoverImageSnapshotType      CoverImageSnapshotType      `json:"cover_image_snapshot_type,omitempty"`
+	MultiImageCollageStatus     MultiImageCollageStatus     `json:"multi_image_collage_status,omitempty"`
+	MultiImageCollageAigcStatus MultiImageCollageAigcStatus `json:"multi_image_collage_aigc_status,omitempty"`
 }

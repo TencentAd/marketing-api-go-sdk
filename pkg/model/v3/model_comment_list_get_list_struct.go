@@ -11,11 +11,13 @@ package model
 
 // 返回结构
 type CommentListGetListStruct struct {
-	CommentId        *string                 `json:"comment_id,omitempty"`
-	Content          *string                 `json:"content,omitempty"`
-	CreatedTime      *int64                  `json:"created_time,omitempty"`
-	CommentFlag      FinderCommentFlag       `json:"comment_flag,omitempty"`
-	FinderAdObjectId *int64                  `json:"finder_ad_object_id,omitempty"`
-	AuthorReplys     *[]ReplyCommentInfoItem `json:"author_replys,omitempty"`
-	CommentLevel     *int64                  `json:"comment_level,omitempty"`
+	CommentId        *string                  `json:"comment_id,omitempty"`
+	Content          *string                  `json:"content,omitempty"`
+	CreatedTime      *int64                   `json:"created_time,omitempty"`
+	CommentFlag      FinderCommentFlag        `json:"comment_flag,omitempty"`
+	FinderAdObjectId *int64                   `json:"finder_ad_object_id,omitempty"`
+	AuthorReplys     *[]ReplyCommentInfoItem  `json:"author_replys,omitempty"`
+	CommentLevel     *int64                   `json:"comment_level,omitempty"`
+	ContentType      FinderCommentContentType `json:"content_type,omitempty"`
+	ImageCommentInfo *ImageCommentInfo        `json:"image_comment_info,omitempty"`
 }

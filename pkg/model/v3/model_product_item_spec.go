@@ -173,4 +173,9 @@ type ProductItemSpec struct {
 	InitialTotalInvestment       InitialTotalInvestment `json:"initial_total_investment,omitempty"`
 	BusinessAudience             BusinessAudience       `json:"business_audience,omitempty"`
 	ServiceTag                   *[]string              `json:"service_tag,omitempty"`
+	StreetNumber                 *string                `json:"street_number,omitempty"`
+	CommercialArea               *[]string              `json:"commercial_area,omitempty"`
+	StarsLevel                   *int64                 `json:"stars_level,omitempty"`
+	Departure                    *string                `json:"departure,omitempty"`
+	Destination                  *string                `json:"destination,omitempty"`
 }

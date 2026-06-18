@@ -29,7 +29,7 @@ var (
 type PunishDetailApiService service
 
 /*
-PunishDetailApiService 获取计量处罚明细
+PunishDetailApiService 获取素材计量治理明细数据
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

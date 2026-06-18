@@ -11,9 +11,11 @@ package model
 
 // 回复内容
 type ReplyCommentInfoItem struct {
-	CommentId    *string           `json:"comment_id,omitempty"`
-	Content      *string           `json:"content,omitempty"`
-	CreatedTime  *int64            `json:"created_time,omitempty"`
-	CommentFlag  FinderCommentFlag `json:"comment_flag,omitempty"`
-	CommentLevel *int64            `json:"comment_level,omitempty"`
+	CommentId        *string                  `json:"comment_id,omitempty"`
+	Content          *string                  `json:"content,omitempty"`
+	CreatedTime      *int64                   `json:"created_time,omitempty"`
+	CommentFlag      FinderCommentFlag        `json:"comment_flag,omitempty"`
+	CommentLevel     *int64                   `json:"comment_level,omitempty"`
+	ContentType      FinderCommentContentType `json:"content_type,omitempty"`
+	ImageCommentInfo *ImageCommentInfo        `json:"image_comment_info,omitempty"`
 }

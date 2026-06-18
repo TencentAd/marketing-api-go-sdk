@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**IllegalComplaintAdd**](IllegalComplaintApi.md#IllegalComplaintAdd) | **Post** /illegal_complaint/add | 新增广告主违规申述
-[**IllegalComplaintGet**](IllegalComplaintApi.md#IllegalComplaintGet) | **Post** /illegal_complaint/get | 获取直客广告主违规申述列表
+[**IllegalComplaintAdd**](IllegalComplaintApi.md#IllegalComplaintAdd) | **Post** /illegal_complaint/add | 新增客户违规申述
+[**IllegalComplaintGet**](IllegalComplaintApi.md#IllegalComplaintGet) | **Post** /illegal_complaint/get | 获取直客客户违规申述列表
 
 
 # **IllegalComplaintAdd**
 > IllegalComplaintAddResponse IllegalComplaintAdd(ctx, accountId, illegalOrderId, complaintReason, file)
-新增广告主违规申述
+新增客户违规申述
 
 ### Required Parameters
 
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 # **IllegalComplaintGet**
 > IllegalComplaintGetResponse IllegalComplaintGet(ctx, data)
-获取直客广告主违规申述列表
+获取直客客户违规申述列表
 
 ### Required Parameters
 

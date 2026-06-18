@@ -321,6 +321,7 @@ ImagesApiService 获取图片信息
      * @param "PageSize" (optional.Int64) -
      * @param "LabelId" (optional.Int64) -
      * @param "BusinessScenario" (optional.Int64) -
+     * @param "NeedAigcFlag" (optional.Bool) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ImagesGetResponse
@@ -334,6 +335,7 @@ type ImagesGetOpts struct {
 	PageSize         optional.Int64
 	LabelId          optional.Int64
 	BusinessScenario optional.Int64
+	NeedAigcFlag     optional.Bool
 	Fields           optional.Interface
 }
 
@@ -375,6 +377,9 @@ func (a *ImagesApiService) Get(ctx context.Context, localVarOptionals *ImagesGet
 	}
 	if localVarOptionals != nil && localVarOptionals.BusinessScenario.IsSet() {
 		localVarQueryParams.Add("business_scenario", parameterToString(localVarOptionals.BusinessScenario.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.NeedAigcFlag.IsSet() {
+		localVarQueryParams.Add("need_aigc_flag", parameterToString(localVarOptionals.NeedAigcFlag.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

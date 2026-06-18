@@ -9,7 +9,7 @@
 
 package model
 
-// 广告主违规申述信息
+// 客户违规申述信息
 type AdvertiserIllegalComplaint struct {
 	IllegalOrderId      *string                `json:"illegal_order_id,omitempty"`
 	AdvertiserAccountId *int64                 `json:"advertiser_account_id,omitempty"`

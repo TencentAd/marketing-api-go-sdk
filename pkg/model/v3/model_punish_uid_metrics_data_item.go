@@ -9,7 +9,7 @@
 
 package model
 
-// 处罚指标数据项
+// 治理账户指标数据项
 type PunishUidMetricsDataItem struct {
 	PartitionTime           *int64  `json:"partition_time,omitempty"`
 	OpsAdvertiserName       *string `json:"ops_advertiser_name,omitempty"`

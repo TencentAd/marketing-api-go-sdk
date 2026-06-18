@@ -93,6 +93,14 @@ func (c *SDKClient) AndroidChannel() *api.AndroidChannelApiService {
 	return c.Client.AndroidChannelApi
 }
 
+func (c *SDKClient) AssetPermissions() *api.AssetPermissionsApiService {
+	return c.Client.AssetPermissionsApi
+}
+
+func (c *SDKClient) AssetPrePermissions() *api.AssetPrePermissionsApiService {
+	return c.Client.AssetPrePermissionsApi
+}
+
 func (c *SDKClient) AssetSimilarityDetail() *api.AssetSimilarityDetailApiService {
 	return c.Client.AssetSimilarityDetailApi
 }
@@ -501,10 +509,6 @@ func (c *SDKClient) MarketingTargetTypes() *api.MarketingTargetTypesApiService {
 	return c.Client.MarketingTargetTypesApi
 }
 
-func (c *SDKClient) MaterialAiAnnotation() *api.MaterialAiAnnotationApiService {
-	return c.Client.MaterialAiAnnotationApi
-}
-
 func (c *SDKClient) MaterialAsyncTasks() *api.MaterialAsyncTasksApiService {
 	return c.Client.MaterialAsyncTasksApi
 }
@@ -535,18 +539,6 @@ func (c *SDKClient) MergeFundTypeFunds() *api.MergeFundTypeFundsApiService {
 
 func (c *SDKClient) MergeFundTypeSubcustomerTransfer() *api.MergeFundTypeSubcustomerTransferApiService {
 	return c.Client.MergeFundTypeSubcustomerTransferApi
-}
-
-func (c *SDKClient) MuseAiMaterial() *api.MuseAiMaterialApiService {
-	return c.Client.MuseAiMaterialApi
-}
-
-func (c *SDKClient) MuseAiTask() *api.MuseAiTaskApiService {
-	return c.Client.MuseAiTaskApi
-}
-
-func (c *SDKClient) MuseAiUgc() *api.MuseAiUgcApiService {
-	return c.Client.MuseAiUgcApi
 }
 
 func (c *SDKClient) MuseAudios() *api.MuseAudiosApiService {
@@ -839,10 +831,6 @@ func (c *SDKClient) WalletInvoice() *api.WalletInvoiceApiService {
 
 func (c *SDKClient) WalletTransfer() *api.WalletTransferApiService {
 	return c.Client.WalletTransferApi
-}
-
-func (c *SDKClient) Watermarks() *api.WatermarksApiService {
-	return c.Client.WatermarksApi
 }
 
 func (c *SDKClient) WechatChannelsAccounts() *api.WechatChannelsAccountsApiService {

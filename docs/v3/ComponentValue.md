@@ -39,6 +39,8 @@ Name | Type | Description | Notes
 **VideoChannelsContent** | [***VideoChannelsContentComponent**](video_channels_content_component.md) |  | [optional] [default to null]
 **WxgameDirectPage** | [***WxgameDirectPageComponent**](wxgame_direct_page_component.md) |  | [optional] [default to null]
 **VideoList** | [***VideoListComponent**](video_list_component.md) |  | [optional] [default to null]
+**ChannelsLiveFeed** | [***ChannelsLiveFeedComponent**](channels_live_feed_component.md) |  | [optional] [default to null]
+**DoctorCard** | [***DoctorCardComponent**](doctor_card_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

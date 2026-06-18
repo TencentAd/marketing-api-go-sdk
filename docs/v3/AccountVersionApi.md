@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AccountVersionGet**](AccountVersionApi.md#AccountVersionGet) | **Get** /account_version/get | 获取广告主新版API投放状态版本
+[**AccountVersionGet**](AccountVersionApi.md#AccountVersionGet) | **Get** /account_version/get | 获取客户新版API投放状态版本
 
 
 # **AccountVersionGet**
 > AccountVersionGetResponse AccountVersionGet(ctx, accountId, optional)
-获取广告主新版API投放状态版本
+获取客户新版API投放状态版本
 
 ### Required Parameters
 

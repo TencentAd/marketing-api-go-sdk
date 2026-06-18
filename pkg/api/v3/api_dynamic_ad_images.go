@@ -30,7 +30,7 @@ var (
 type DynamicAdImagesApiService service
 
 /*
-DynamicAdImagesApiService 创建用于广告投放的动态广告图片
+DynamicAdImagesApiService 创建用于投放的动态广告图片
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

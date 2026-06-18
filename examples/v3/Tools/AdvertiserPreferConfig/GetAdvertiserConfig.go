@@ -25,6 +25,7 @@ type AdvertiserConfigGetExample struct {
 	TAds                    *ads.SDKClient
 	AccessToken             string
 	AccountId               int64
+	Fields                  []string
 	AdvertiserConfigGetOpts *api.AdvertiserConfigGetOpts
 }
 
@@ -35,6 +36,7 @@ func (e *AdvertiserConfigGetExample) Init() {
 		IsDebug:     true,
 	})
 	e.AccountId = 789
+	e.Fields = []string{}
 	e.AdvertiserConfigGetOpts = &api.AdvertiserConfigGetOpts{}
 }
 
@@ -42,7 +44,7 @@ func (e *AdvertiserConfigGetExample) RunExample() (model.AdvertiserConfigGetResp
 	tads := e.TAds
 	// change ctx as needed
 	ctx := *tads.Ctx
-	return tads.AdvertiserConfig().Get(ctx, e.AccountId, e.AdvertiserConfigGetOpts)
+	return tads.AdvertiserConfig().Get(ctx, e.AccountId, e.Fields, e.AdvertiserConfigGetOpts)
 }
 
 func main() {

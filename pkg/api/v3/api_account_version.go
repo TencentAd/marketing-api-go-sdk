@@ -30,7 +30,7 @@ var (
 type AccountVersionApiService service
 
 /*
-AccountVersionApiService 获取广告主新版API投放状态版本
+AccountVersionApiService 获取客户新版API投放状态版本
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *AccountVersionGetOpts - Optional Parameters:

@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **WechatChannelsAccountName** | **string** |  | [optional] [default to null]
 **BulletCommentSwitchOpen** | **bool** |  | [optional] [default to null]
 **BulletCommentSupported** | **bool** |  | [optional] [default to null]
+**ObjectPrivateSwitchOpen** | **bool** |  | [optional] [default to null]
+**ObjectPrivateDisableCode** | [***ObjectPrivateDisableCode**](ObjectPrivateDisableCode.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

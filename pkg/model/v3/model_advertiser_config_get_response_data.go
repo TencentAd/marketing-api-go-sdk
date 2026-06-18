@@ -10,5 +10,7 @@
 package model
 
 type AdvertiserConfigGetResponseData struct {
-	CoverImageSnapshotType CoverImageSnapshotType `json:"cover_image_snapshot_type,omitempty"`
+	CoverImageSnapshotType      CoverImageSnapshotType      `json:"cover_image_snapshot_type,omitempty"`
+	MultiImageCollageStatus     MultiImageCollageStatus     `json:"multi_image_collage_status,omitempty"`
+	MultiImageCollageAigcStatus MultiImageCollageAigcStatus `json:"multi_image_collage_aigc_status,omitempty"`
 }

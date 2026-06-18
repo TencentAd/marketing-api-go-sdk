@@ -75,5 +75,4 @@ type AdgroupsAddRequest struct {
 	EnableSteadyExploration           *bool                          `json:"enable_steady_exploration,omitempty"`
 	SmartTargetingMode                SmartTargetingMode             `json:"smart_targeting_mode,omitempty"`
 	SmartCouponMode                   SmartCouponMode                `json:"smart_coupon_mode,omitempty"`
-	BillingModel                      BillingModel                   `json:"billing_model,omitempty"`
 }

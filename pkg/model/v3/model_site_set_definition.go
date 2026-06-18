@@ -71,6 +71,7 @@ const (
 	SiteSetDefinition_TENCENT_AD_NETWORK_OVERSEA SiteSetDefinition = "SITE_SET_TENCENT_AD_NETWORK_OVERSEA"
 	SiteSetDefinition_YUNXUAN                    SiteSetDefinition = "SITE_SET_YUNXUAN"
 	SiteSetDefinition_SEARCH_MOBILE_UNION        SiteSetDefinition = "SITE_SET_SEARCH_MOBILE_UNION"
+	SiteSetDefinition_WECHAT_NON_STANDARD        SiteSetDefinition = "SITE_SET_WECHAT_NON_STANDARD"
 	SiteSetDefinition_EXPAND                     SiteSetDefinition = "SITE_SET_EXPAND"
 	SiteSetDefinition_SMART                      SiteSetDefinition = "SITE_SET_SMART"
 )

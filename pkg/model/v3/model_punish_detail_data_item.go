@@ -9,7 +9,7 @@
 
 package model
 
-// 计量处罚明细数据项
+// 计量治理明细数据项
 type PunishDetailDataItem struct {
 	PartitionTime           *int64  `json:"partition_time,omitempty"`
 	AccountId               *int64  `json:"account_id,omitempty"`
