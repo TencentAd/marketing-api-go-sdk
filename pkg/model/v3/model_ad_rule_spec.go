@@ -9,7 +9,7 @@
 
 package model
 
-// 广告人群信息
+// 营销人群信息
 type AdRuleSpec struct {
 	RuleType       AdRuleType `json:"rule_type,omitempty"`
 	ConversionType *[]string  `json:"conversion_type,omitempty"`

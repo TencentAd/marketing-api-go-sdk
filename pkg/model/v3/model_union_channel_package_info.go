@@ -9,7 +9,7 @@
 
 package model
 
-// 广告渠道包任务处理信息
+// 营销渠道包任务处理信息
 type UnionChannelPackageInfo struct {
 	AndroidUnionAppId *int64                 `json:"android_union_app_id,omitempty"`
 	PackageName       *string                `json:"package_name,omitempty"`

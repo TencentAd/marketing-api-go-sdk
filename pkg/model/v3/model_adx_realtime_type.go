@@ -9,7 +9,7 @@
 
 package model
 
-// AdxRealtimeType : ADX程序化广告素材实时回复类型
+// AdxRealtimeType : ADX程序化投放素材实时回复类型
 type AdxRealtimeType string
 
 // List of AdxRealtimeType

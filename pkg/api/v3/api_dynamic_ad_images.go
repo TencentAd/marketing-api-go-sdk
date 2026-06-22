@@ -30,7 +30,7 @@ var (
 type DynamicAdImagesApiService service
 
 /*
-DynamicAdImagesApiService 创建用于投放的动态广告图片
+DynamicAdImagesApiService 创建用于投放的动态营销图片
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *DynamicAdImagesApiService) Add(ctx context.Context, data DynamicAdImage
 }
 
 /*
-DynamicAdImagesApiService 获取动态广告图片信息
+DynamicAdImagesApiService 获取动态营销图片信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *DynamicAdImagesGetOpts - Optional Parameters:

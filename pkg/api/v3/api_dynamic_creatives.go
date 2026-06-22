@@ -135,7 +135,7 @@ func (a *DynamicCreativesApiService) Add(ctx context.Context, data DynamicCreati
 }
 
 /*
-DynamicCreativesApiService 删除广告创意
+DynamicCreativesApiService 删除创意
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

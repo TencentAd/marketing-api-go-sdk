@@ -9,7 +9,7 @@
 
 package model
 
-// 广告资质信息
+// 资质信息
 type AdQualificationsStruct struct {
 	QualificationId     *int64                      `json:"qualification_id,omitempty"`
 	QualificationCode   *string                     `json:"qualification_code,omitempty"`

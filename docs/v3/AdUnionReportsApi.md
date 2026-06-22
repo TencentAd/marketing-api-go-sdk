@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdUnionReportsGet**](AdUnionReportsApi.md#AdUnionReportsGet) | **Get** /ad_union_reports/get | 联盟广告位报表接口
+[**AdUnionReportsGet**](AdUnionReportsApi.md#AdUnionReportsGet) | **Get** /ad_union_reports/get | 联盟营销位报表接口
 
 
 # **AdUnionReportsGet**
 > AdUnionReportsGetResponse AdUnionReportsGet(ctx, accountId, dateRange, fields, optional)
-联盟广告位报表接口
+联盟营销位报表接口
 
 ### Required Parameters
 

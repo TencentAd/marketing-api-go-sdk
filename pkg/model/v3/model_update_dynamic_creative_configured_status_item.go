@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告创意客户设置的状态
+// 修改创意客户设置的状态
 type UpdateDynamicCreativeConfiguredStatusItem struct {
 	DynamicCreativeId *int64           `json:"dynamic_creative_id,omitempty"`
 	ConfiguredStatus  ConfiguredStatus `json:"configured_status,omitempty"`

@@ -9,7 +9,7 @@
 
 package model
 
-// 广告上下文信息
+// 营销上下文信息
 type AdContext struct {
 	MarketingGoal           MarketingGoal                    `json:"marketing_goal,omitempty"`
 	MarketingSubGoal        MarketingSubGoal                 `json:"marketing_sub_goal,omitempty"`

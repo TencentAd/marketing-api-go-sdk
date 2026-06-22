@@ -9,7 +9,7 @@
 
 package model
 
-// 动态内容广告属性
+// 动态内容营销属性
 type DcaSpec struct {
 	RecommendMethodIds *[]int64 `json:"recommend_method_ids,omitempty"`
 	SetId              *string  `json:"set_id,omitempty"`

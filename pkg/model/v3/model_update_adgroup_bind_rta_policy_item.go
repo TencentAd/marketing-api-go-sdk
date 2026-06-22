@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告绑定的rta策略
+// 修改营销单元绑定的rta策略
 type UpdateAdgroupBindRtaPolicyItem struct {
 	AdgroupId           *int64  `json:"adgroup_id,omitempty"`
 	OriginRtaPolicyUuid *string `json:"origin_rta_policy_uuid,omitempty"`

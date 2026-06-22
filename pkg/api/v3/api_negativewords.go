@@ -30,7 +30,7 @@ var (
 type NegativewordsApiService service
 
 /*
-NegativewordsApiService 新增否定词，可在广告、创意上新增
+NegativewordsApiService 新增否定词，可在营销单元、创意上新增
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *NegativewordsApiService) Add(ctx context.Context, data NegativewordsAdd
 }
 
 /*
-NegativewordsApiService 查询否定词，可查询广告、创意的否词
+NegativewordsApiService 查询否定词，可查询营销单元、创意的否词
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param optional nil or *NegativewordsGetOpts - Optional Parameters:
@@ -259,7 +259,7 @@ func (a *NegativewordsApiService) Get(ctx context.Context, accountId int64, loca
 }
 
 /*
-NegativewordsApiService 更新否定词，可在广告、创意上更新
+NegativewordsApiService 更新否定词，可在营销单元、创意上更新
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 

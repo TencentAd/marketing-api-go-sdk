@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreativeTemplatePreviewsGet**](CreativeTemplatePreviewsApi.md#CreativeTemplatePreviewsGet) | **Post** /creative_template_previews/get | 获取广告创意预览
+[**CreativeTemplatePreviewsGet**](CreativeTemplatePreviewsApi.md#CreativeTemplatePreviewsGet) | **Post** /creative_template_previews/get | 获取创意预览
 
 
 # **CreativeTemplatePreviewsGet**
 > CreativeTemplatePreviewsGetResponse CreativeTemplatePreviewsGet(ctx, data)
-获取广告创意预览
+获取创意预览
 
 ### Required Parameters
 

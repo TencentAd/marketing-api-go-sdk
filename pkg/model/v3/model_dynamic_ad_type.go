@@ -9,7 +9,7 @@
 
 package model
 
-// DynamicAdType : 动态广告类型
+// DynamicAdType : 动态营销类型
 type DynamicAdType string
 
 // List of DynamicAdType

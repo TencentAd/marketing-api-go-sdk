@@ -9,7 +9,7 @@
 
 package model
 
-// SmartTargetingMode : 广告智能定向功能
+// SmartTargetingMode : 营销智能定向功能
 type SmartTargetingMode string
 
 // List of SmartTargetingMode

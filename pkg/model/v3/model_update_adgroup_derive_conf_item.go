@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告衍生创意配置出价
+// 修改营销衍生创意配置出价
 type UpdateAdgroupDeriveConfItem struct {
 	AdgroupId                  *int64              `json:"adgroup_id,omitempty"`
 	AutoDerivedCreativeEnabled *bool               `json:"auto_derived_creative_enabled,omitempty"`

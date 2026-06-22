@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告日预算
+// 修改营销单元日预算
 type UpdateAdgroupDailyBudgetItem struct {
 	AdgroupId   *int64 `json:"adgroup_id,omitempty"`
 	DailyBudget *int64 `json:"daily_budget,omitempty"`

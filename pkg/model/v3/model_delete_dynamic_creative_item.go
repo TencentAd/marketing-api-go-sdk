@@ -9,7 +9,7 @@
 
 package model
 
-// 删除广告创意
+// 删除创意
 type DeleteDynamicCreativeItem struct {
 	DynamicCreativeId *int64 `json:"dynamic_creative_id,omitempty"`
 }

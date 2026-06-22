@@ -9,7 +9,7 @@
 
 package model
 
-// 广告创意元素结构体特性
+// 创意元素结构体特性
 type AdcreativeElementStructProperty struct {
 	ElementMutualExclusive *bool `json:"element_mutual_exclusive,omitempty"`
 }

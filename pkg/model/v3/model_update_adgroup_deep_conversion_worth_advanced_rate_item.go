@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告深度优化价值的强化 ROI
+// 修改深度优化价值的强化 ROI
 type UpdateAdgroupDeepConversionWorthAdvancedRateItem struct {
 	AdgroupId                       *int64   `json:"adgroup_id,omitempty"`
 	DeepConversionWorthAdvancedRate *float64 `json:"deep_conversion_worth_advanced_rate,omitempty"`

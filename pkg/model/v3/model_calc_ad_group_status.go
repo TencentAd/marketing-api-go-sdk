@@ -9,7 +9,7 @@
 
 package model
 
-// CalcAdGroupStatus : 广告在系统中的状态
+// CalcAdGroupStatus : 营销单元在系统中的状态
 type CalcAdGroupStatus string
 
 // List of CalcAdGroupStatus

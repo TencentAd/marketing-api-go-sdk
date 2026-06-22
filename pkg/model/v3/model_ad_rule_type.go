@@ -9,7 +9,7 @@
 
 package model
 
-// AdRuleType : 广告行为类型
+// AdRuleType : 营销行为类型
 type AdRuleType string
 
 // List of AdRuleType

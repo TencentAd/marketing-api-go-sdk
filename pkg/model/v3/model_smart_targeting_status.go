@@ -9,7 +9,7 @@
 
 package model
 
-// SmartTargetingStatus : 广告智能定向状态
+// SmartTargetingStatus : 营销智能定向状态
 type SmartTargetingStatus string
 
 // List of SmartTargetingStatus

@@ -9,7 +9,7 @@
 
 package model
 
-// 智投广告组参数列表
+// 智投营销组参数列表
 type SmartDeliveryAdgroupParameter struct {
 	OptimizationGoal OptimizationGoal `json:"optimization_goal,omitempty"`
 	ConversionId     *int64           `json:"conversion_id,omitempty"`

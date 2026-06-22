@@ -30,7 +30,7 @@ var (
 type AdUnionReportsApiService service
 
 /*
-AdUnionReportsApiService 联盟广告位报表接口
+AdUnionReportsApiService 联盟营销位报表接口
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param dateRange

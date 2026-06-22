@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdcreativePreviewsAdd**](AdcreativePreviewsApi.md#AdcreativePreviewsAdd) | **Post** /adcreative_previews/add | 绑定广告预览受众
-[**AdcreativePreviewsGet**](AdcreativePreviewsApi.md#AdcreativePreviewsGet) | **Get** /adcreative_previews/get | 获取绑定的广告预览受众列表
+[**AdcreativePreviewsAdd**](AdcreativePreviewsApi.md#AdcreativePreviewsAdd) | **Post** /adcreative_previews/add | 绑定营销预览受众
+[**AdcreativePreviewsGet**](AdcreativePreviewsApi.md#AdcreativePreviewsGet) | **Get** /adcreative_previews/get | 获取绑定的营销预览受众列表
 
 
 # **AdcreativePreviewsAdd**
 > AdcreativePreviewsAddResponse AdcreativePreviewsAdd(ctx, data)
-绑定广告预览受众
+绑定营销预览受众
 
 ### Required Parameters
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 
 # **AdcreativePreviewsGet**
 > AdcreativePreviewsGetResponse AdcreativePreviewsGet(ctx, accountId, filtering, optional)
-获取绑定的广告预览受众列表
+获取绑定的营销预览受众列表
 
 ### Required Parameters
 

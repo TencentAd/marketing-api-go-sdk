@@ -30,7 +30,7 @@ var (
 type AdcreativePreviewsApiService service
 
 /*
-AdcreativePreviewsApiService 绑定广告预览受众
+AdcreativePreviewsApiService 绑定营销预览受众
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param data
 
@@ -135,7 +135,7 @@ func (a *AdcreativePreviewsApiService) Add(ctx context.Context, data AdcreativeP
 }
 
 /*
-AdcreativePreviewsApiService 获取绑定的广告预览受众列表
+AdcreativePreviewsApiService 获取绑定的营销预览受众列表
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param filtering

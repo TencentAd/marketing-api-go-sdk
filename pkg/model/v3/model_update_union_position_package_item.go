@@ -9,7 +9,7 @@
 
 package model
 
-// 修改广告定投腾讯广告联盟流量包信息
+// 修改营销定投腾讯营销联盟流量包信息
 type UpdateUnionPositionPackageItem struct {
 	AdgroupId            *int64   `json:"adgroup_id,omitempty"`
 	UnionPositionPackage *[]int64 `json:"union_position_package,omitempty"`

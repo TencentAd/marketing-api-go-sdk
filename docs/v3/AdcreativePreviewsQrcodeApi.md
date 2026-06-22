@@ -4,12 +4,12 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AdcreativePreviewsQrcodeGet**](AdcreativePreviewsQrcodeApi.md#AdcreativePreviewsQrcodeGet) | **Get** /adcreative_previews_qrcode/get | 获取广告预览二维码
+[**AdcreativePreviewsQrcodeGet**](AdcreativePreviewsQrcodeApi.md#AdcreativePreviewsQrcodeGet) | **Get** /adcreative_previews_qrcode/get | 获取营销单元预览二维码
 
 
 # **AdcreativePreviewsQrcodeGet**
 > AdcreativePreviewsQrcodeGetResponse AdcreativePreviewsQrcodeGet(ctx, accountId, adgroupId, optional)
-获取广告预览二维码
+获取营销单元预览二维码
 
 ### Required Parameters
 

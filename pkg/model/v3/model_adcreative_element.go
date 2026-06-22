@@ -9,7 +9,7 @@
 
 package model
 
-// 广告创意元素
+// 创意元素
 type AdcreativeElement struct {
 	Name           *string                          `json:"name,omitempty"`
 	ElementType    ElementType                      `json:"element_type,omitempty"`

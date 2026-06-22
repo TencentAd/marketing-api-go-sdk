@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox-api.e.qq.com/v3.0*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**DynamicCreativesAdd**](DynamicCreativesApi.md#DynamicCreativesAdd) | **Post** /dynamic_creatives/add | 创建动态创意
-[**DynamicCreativesDelete**](DynamicCreativesApi.md#DynamicCreativesDelete) | **Post** /dynamic_creatives/delete | 删除广告创意
+[**DynamicCreativesDelete**](DynamicCreativesApi.md#DynamicCreativesDelete) | **Post** /dynamic_creatives/delete | 删除创意
 [**DynamicCreativesGet**](DynamicCreativesApi.md#DynamicCreativesGet) | **Get** /dynamic_creatives/get | 获取动态创意
 [**DynamicCreativesUpdate**](DynamicCreativesApi.md#DynamicCreativesUpdate) | **Post** /dynamic_creatives/update | 更新创意
 
@@ -38,7 +38,7 @@ Name | Type | Description  | Notes
 
 # **DynamicCreativesDelete**
 > DynamicCreativesDeleteResponse DynamicCreativesDelete(ctx, data)
-删除广告创意
+删除创意
 
 ### Required Parameters
 

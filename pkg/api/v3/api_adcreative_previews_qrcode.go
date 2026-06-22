@@ -30,7 +30,7 @@ var (
 type AdcreativePreviewsQrcodeApiService service
 
 /*
-AdcreativePreviewsQrcodeApiService 获取广告预览二维码
+AdcreativePreviewsQrcodeApiService 获取营销单元预览二维码
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param adgroupId

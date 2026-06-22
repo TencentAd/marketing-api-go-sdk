@@ -135,7 +135,7 @@ func (a *DynamicAdVideoApiService) Add(ctx context.Context, data DynamicAdVideoA
 }
 
 /*
-DynamicAdVideoApiService 获取投放的动态广告视频
+DynamicAdVideoApiService 获取投放的动态营销视频
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param accountId
  * @param productCatalogId

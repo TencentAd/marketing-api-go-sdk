@@ -9,7 +9,7 @@
 
 package model
 
-// AdgroupType : 广告类型
+// AdgroupType : 营销类型
 type AdgroupType string
 
 // List of AdgroupType

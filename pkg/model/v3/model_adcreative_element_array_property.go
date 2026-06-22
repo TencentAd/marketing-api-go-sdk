@@ -9,7 +9,7 @@
 
 package model
 
-// 广告创意元素数组特性
+// 创意元素数组特性
 type AdcreativeElementArrayProperty struct {
 	MinNumber *int64 `json:"min_number,omitempty"`
 	MaxNumber *int64 `json:"max_number,omitempty"`

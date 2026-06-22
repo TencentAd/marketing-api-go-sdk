@@ -9,7 +9,7 @@
 
 package model
 
-// 动态广告支持情况
+// 动态营销支持情况
 type SupportDynamicAbilitySpecList struct {
 	DynamicAbilityType         *[]string `json:"dynamic_ability_type,omitempty"`
 	ProductItemDisplayQuantity *[]string `json:"product_item_display_quantity,omitempty"`

@@ -9,7 +9,7 @@
 
 package model
 
-// 广告否定词
+// 否定词
 type NegativeWordAdgroupStruct struct {
 	AdgroupId           *int64    `json:"adgroup_id,omitempty"`
 	PhraseNegativeWords *[]string `json:"phrase_negative_words,omitempty"`
