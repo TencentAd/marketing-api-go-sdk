@@ -23,7 +23,7 @@ type LeadsAddInfoStruct struct {
 	LeadsUserWechatAppid     *string                 `json:"leads_user_wechat_appid,omitempty"`
 	LeadsActionTime          *string                 `json:"leads_action_time,omitempty"`
 	LeadsName                *string                 `json:"leads_name,omitempty"`
-	LeadsGender              LeadsGenderType         `json:"leads_gender,omitempty"`
+	LeadsGender              GenderType              `json:"leads_gender,omitempty"`
 	LeadsEmail               *string                 `json:"leads_email,omitempty"`
 	LeadsArea                *string                 `json:"leads_area,omitempty"`
 	Bundle                   *string                 `json:"bundle,omitempty"`

@@ -11,7 +11,6 @@ package model
 
 // 删除组件并取消关联动态创意
 type TaskTypeDeleteCreativeAssetSpec struct {
-	AccountId              *int64                  `json:"account_id,omitempty"`
 	ComponentIdList        *[]int64                `json:"component_id_list,omitempty"`
 	ImageIdList            *[]string               `json:"image_id_list,omitempty"`
 	VideoIdList            *[]string               `json:"video_id_list,omitempty"`

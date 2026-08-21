@@ -11,10 +11,11 @@ package model
 
 // 医生卡结构
 type DoctorCardStruct struct {
-	DoctorHeadUrl    *string `json:"doctor_head_url,omitempty"`
-	DoctorName       *string `json:"doctor_name,omitempty"`
-	DoctorTitle      *string `json:"doctor_title,omitempty"`
-	DoctorPosition   *string `json:"doctor_position,omitempty"`
-	Department       *string `json:"department,omitempty"`
-	AreasOfExpertise *string `json:"areas_of_expertise,omitempty"`
+	DoctorHeadImageId *string `json:"doctor_head_image_id,omitempty"`
+	DoctorHeadUrl     *string `json:"doctor_head_url,omitempty"`
+	DoctorName        *string `json:"doctor_name,omitempty"`
+	DoctorTitle       *string `json:"doctor_title,omitempty"`
+	DoctorPosition    *string `json:"doctor_position,omitempty"`
+	Department        *string `json:"department,omitempty"`
+	AreasOfExpertise  *string `json:"areas_of_expertise,omitempty"`
 }

@@ -124,4 +124,6 @@ const (
 	OptimizationGoal_NET_PROFIT_24_H                        OptimizationGoal = "OPTIMIZATIONGOAL_NET_PROFIT_24H"
 	OptimizationGoal_EFFECTIVE_INSURE                       OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_INSURE"
 	OptimizationGoal_COLLECT                                OptimizationGoal = "OPTIMIZATIONGOAL_COLLECT"
+	OptimizationGoal_COUPON_AMOUNT                          OptimizationGoal = "OPTIMIZATIONGOAL_COUPON_AMOUNT"
+	OptimizationGoal_EFFECTIVE_CONSULT                      OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_CONSULT"
 )

@@ -79,6 +79,7 @@ Name | Type | Description | Notes
 **EnableBreakthroughSiteset** | **bool** |  | [optional] [default to null]
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
+**IndustryValueExplore** | [***IndustryValueExplore**](industry_value_explore.md) |  | [optional] [default to null]
 **EnableSteadyExploration** | **bool** |  | [optional] [default to null]
 **AdxRealtimeType** | [***AdxRealtimeType**](AdxRealtimeType.md) |  | [optional] [default to null]
 **SmartTargetingStatus** | [***SmartTargetingStatus**](SmartTargetingStatus.md) |  | [optional] [default to null]

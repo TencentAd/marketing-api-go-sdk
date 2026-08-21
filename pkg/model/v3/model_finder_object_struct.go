@@ -21,4 +21,5 @@ type FinderObjectStruct struct {
 	BulletCommentSupported    *bool                    `json:"bullet_comment_supported,omitempty"`
 	ObjectPrivateSwitchOpen   *bool                    `json:"object_private_switch_open,omitempty"`
 	ObjectPrivateDisableCode  ObjectPrivateDisableCode `json:"object_private_disable_code,omitempty"`
+	WechatChannelsAccountIcon *string                  `json:"wechat_channels_account_icon,omitempty"`
 }

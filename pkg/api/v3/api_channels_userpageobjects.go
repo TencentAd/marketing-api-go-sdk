@@ -40,6 +40,8 @@ ChannelsUserpageobjectsApiService 获取视频号动态列表
      * @param "Count" (optional.Int64) -
      * @param "WechatChannelsAccountId" (optional.String) -
      * @param "AdContext" (optional.Interface of AdContext) -
+     * @param "ComponentTypeList" (optional.Interface of []string) -
+     * @param "ComponentUuid" (optional.String) -
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 
 @return ChannelsUserpageobjectsGetResponse
@@ -52,6 +54,8 @@ type ChannelsUserpageobjectsGetOpts struct {
 	Count                   optional.Int64
 	WechatChannelsAccountId optional.String
 	AdContext               optional.Interface
+	ComponentTypeList       optional.Interface
+	ComponentUuid           optional.String
 	Fields                  optional.Interface
 }
 
@@ -91,6 +95,12 @@ func (a *ChannelsUserpageobjectsApiService) Get(ctx context.Context, accountId i
 	}
 	if localVarOptionals != nil && localVarOptionals.AdContext.IsSet() {
 		localVarQueryParams.Add("ad_context", parameterToString(localVarOptionals.AdContext.Value(), ""))
+	}
+	if localVarOptionals != nil && localVarOptionals.ComponentTypeList.IsSet() {
+		localVarQueryParams.Add("component_type_list", parameterToString(localVarOptionals.ComponentTypeList.Value(), "multi"))
+	}
+	if localVarOptionals != nil && localVarOptionals.ComponentUuid.IsSet() {
+		localVarQueryParams.Add("component_uuid", parameterToString(localVarOptionals.ComponentUuid.Value(), ""))
 	}
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))

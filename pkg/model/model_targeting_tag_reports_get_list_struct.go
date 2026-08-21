@@ -12,7 +12,7 @@ package model
 // 返回结构
 type TargetingTagReportsGetListStruct struct {
 	Date                                       *string  `json:"date,omitempty"`
-	Gender                                     *string  `json:"gender,omitempty"`
+	Age                                        *string  `json:"age,omitempty"`
 	ViewCount                                  *int64   `json:"view_count,omitempty"`
 	DownloadCount                              *int64   `json:"download_count,omitempty"`
 	ActivatedCount                             *int64   `json:"activated_count,omitempty"`
@@ -575,41 +575,65 @@ type TargetingTagReportsGetListStruct struct {
 	AfterAddWecomConsultDedupPvCost            *int64   `json:"after_add_wecom_consult_dedup_pv_cost,omitempty"`
 	AfterAddWecomIntentionDedupPv              *int64   `json:"after_add_wecom_intention_dedup_pv,omitempty"`
 	AfterAddWecomIntentionDedupPvCost          *int64   `json:"after_add_wecom_intention_dedup_pv_cost,omitempty"`
-	Age                                        *string  `json:"age,omitempty"`
-	RegionId                                   *int64   `json:"region_id,omitempty"`
-	CityId                                     *int64   `json:"city_id,omitempty"`
-	Province                                   *string  `json:"province,omitempty"`
-	City                                       *string  `json:"city,omitempty"`
-	ViewUserCount                              *int64   `json:"view_user_count,omitempty"`
-	AvgViewPerUser                             *float64 `json:"avg_view_per_user,omitempty"`
-	ClickUserCount                             *int64   `json:"click_user_count,omitempty"`
-	LinkClickUserCount                         *int64   `json:"link_click_user_count,omitempty"`
-	PortraitClickUserCount                     *int64   `json:"portrait_click_user_count,omitempty"`
-	NicknameClickUserCount                     *int64   `json:"nickname_click_user_count,omitempty"`
-	PoiClickUserCount                          *int64   `json:"poi_click_user_count,omitempty"`
-	PraiseUserCount                            *int64   `json:"praise_user_count,omitempty"`
-	CommentUserCount                           *int64   `json:"comment_user_count,omitempty"`
-	OrderCount                                 *int64   `json:"order_count,omitempty"`
-	LeadsUserCount                             *int64   `json:"leads_user_count,omitempty"`
-	ValidLeadsCost                             *int64   `json:"valid_leads_cost,omitempty"`
-	OfficialAccountFollowCount                 *int64   `json:"official_account_follow_count,omitempty"`
-	CouponUseCount                             *int64   `json:"coupon_use_count,omitempty"`
+	ExpPv                                      *int64   `json:"exp_pv,omitempty"`
+	Impression                                 *int64   `json:"impression,omitempty"`
+	Exposure                                   *int64   `json:"exposure,omitempty"`
+	Download                                   *int64   `json:"download,omitempty"`
+	Activation                                 *int64   `json:"activation,omitempty"`
+	AppActivatedCount                          *int64   `json:"app_activated_count,omitempty"`
+	AppActivatedRate                           *float64 `json:"app_activated_rate,omitempty"`
+	ThousandDisplayCost                        *int64   `json:"thousand_display_cost,omitempty"`
+	Click                                      *int64   `json:"click,omitempty"`
+	WebConsultCount                            *int64   `json:"web_consult_count,omitempty"`
+	WebConsultCost                             *int64   `json:"web_consult_cost,omitempty"`
+	WebPhoneCallDirectCount                    *int64   `json:"web_phone_call_direct_count,omitempty"`
+	WebPhoneCallDirectCost                     *int64   `json:"web_phone_call_direct_cost,omitempty"`
+	WebPhoneCallBackCount                      *int64   `json:"web_phone_call_back_count,omitempty"`
+	WebPhoneCallBackCost                       *int64   `json:"web_phone_call_back_cost,omitempty"`
+	OwnPageNavigationCost                      *int64   `json:"own_page_navigation_cost,omitempty"`
+	Reservation                                *int64   `json:"reservation,omitempty"`
+	WebPageReservationCount                    *int64   `json:"web_page_reservation_count,omitempty"`
+	WebPageReservationRate                     *float64 `json:"web_page_reservation_rate,omitempty"`
+	WebPageReservationCost                     *int64   `json:"web_page_reservation_cost,omitempty"`
+	WebAddToCarCount                           *int64   `json:"web_add_to_car_count,omitempty"`
+	WebAddToCarCost                            *int64   `json:"web_add_to_car_cost,omitempty"`
+	WebOrderUnitPrice                          *int64   `json:"web_order_unit_price,omitempty"`
+	WebOrderRoi                                *float64 `json:"web_order_roi,omitempty"`
+	WebDeliverCount                            *int64   `json:"web_deliver_count,omitempty"`
+	WebDeliverCost                             *int64   `json:"web_deliver_cost,omitempty"`
+	WebSignInCount                             *int64   `json:"web_sign_in_count,omitempty"`
+	WebSignInCost                              *int64   `json:"web_sign_in_cost,omitempty"`
+	AppInstallation                            *int64   `json:"app_installation,omitempty"`
+	AppActivatedCost                           *int64   `json:"app_activated_cost,omitempty"`
+	AppRetentionCount                          *int64   `json:"app_retention_count,omitempty"`
+	AppRetentionRate                           *float64 `json:"app_retention_rate,omitempty"`
+	AppRetentionCost                           *int64   `json:"app_retention_cost,omitempty"`
+	AppAddToCarCount                           *int64   `json:"app_add_to_car_count,omitempty"`
+	AppAddToCarAmount                          *int64   `json:"app_add_to_car_amount,omitempty"`
+	AppCartAmount                              *int64   `json:"app_cart_amount,omitempty"`
+	AppAddToCarCost                            *int64   `json:"app_add_to_car_cost,omitempty"`
+	AppPaymentCount                            *int64   `json:"app_payment_count,omitempty"`
+	AppPaymentAmount                           *int64   `json:"app_payment_amount,omitempty"`
+	PlatformCouponClick                        *int64   `json:"platform_coupon_click,omitempty"`
+	Follow                                     *int64   `json:"follow,omitempty"`
+	Share                                      *int64   `json:"share,omitempty"`
+	Read                                       *int64   `json:"read,omitempty"`
+	IntelligentPhoneCallDirectCount            *int64   `json:"intelligent_phone_call_direct_count,omitempty"`
+	VideoLiveExpUserCount                      *int64   `json:"video_live_exp_user_count,omitempty"`
+	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
+	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	TargetingType                              *string  `json:"targeting_type,omitempty"`
 	TargetingTag                               *string  `json:"targeting_tag,omitempty"`
 	TagClass                                   *string  `json:"tag_class,omitempty"`
 	BehaviorScene                              *string  `json:"behavior_scene,omitempty"`
 	BehaviorTimeWindow                         *string  `json:"behavior_time_window,omitempty"`
 	BehaviorIntensity                          *string  `json:"behavior_intensity,omitempty"`
-	GenderName                                 *string  `json:"gender_name,omitempty"`
-	AccountId                                  *int64   `json:"account_id,omitempty"`
-	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
-	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
-	AdId                                       *int64   `json:"ad_id,omitempty"`
-	AudienceId                                 *int64   `json:"audience_id,omitempty"`
-	PromotedObjectType                         *string  `json:"promoted_object_type,omitempty"`
-	PromotedObjectId                           *string  `json:"promoted_object_id,omitempty"`
+	RegionId                                   *int64   `json:"region_id,omitempty"`
+	CityId                                     *int64   `json:"city_id,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
+	AdId                                       *int64   `json:"ad_id,omitempty"`
+	AudienceId                                 *int64   `json:"audience_id,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
 	IncomeVal3                                 *int64   `json:"income_val_3,omitempty"`
 	IncomeVal7                                 *int64   `json:"income_val_7,omitempty"`
@@ -685,6 +709,7 @@ type TargetingTagReportsGetListStruct struct {
 	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
 	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
 	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
+	Gender                                     *string  `json:"gender,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
 	PurchasePv                                 *int64   `json:"purchase_pv,omitempty"`

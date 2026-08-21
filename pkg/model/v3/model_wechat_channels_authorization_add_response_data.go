@@ -10,10 +10,10 @@
 package model
 
 type WechatChannelsAuthorizationAddResponseData struct {
-	FinderUsername           *string `json:"finder_username,omitempty"`
 	AuthorizationQrCodeUrl   *string `json:"authorization_qr_code_url,omitempty"`
 	AuthorizationDescription *string `json:"authorization_description,omitempty"`
 	AuthorizationExpiredTime *int64  `json:"authorization_expired_time,omitempty"`
 	AuthorizationAgreement   *string `json:"authorization_agreement,omitempty"`
 	WechatChannelsAccountId  *string `json:"wechat_channels_account_id,omitempty"`
+	AuthorizationId          *string `json:"authorization_id,omitempty"`
 }

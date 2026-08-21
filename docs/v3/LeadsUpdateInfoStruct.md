@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **LeadsQq** | **int64** |  | [optional] [default to null]
 **LeadsWechat** | **string** |  | [optional] [default to null]
 **LeadsName** | **string** |  | [optional] [default to null]
-**LeadsGender** | [***LeadsGenderType**](LeadsGenderType.md) |  | [optional] [default to null]
+**LeadsGender** | [***GenderType**](GenderType.md) |  | [optional] [default to null]
 **LeadsEmail** | **string** |  | [optional] [default to null]
 **LeadsArea** | **string** |  | [optional] [default to null]
 **Bundle** | **string** |  | [optional] [default to null]

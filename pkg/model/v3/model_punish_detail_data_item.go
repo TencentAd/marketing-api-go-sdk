@@ -31,4 +31,6 @@ type PunishDetailDataItem struct {
 	AccountFrame            *string `json:"account_frame,omitempty"`
 	AccountOperateIdentity  *string `json:"account_operate_identity,omitempty"`
 	ComplianceOwner         *string `json:"compliance_owner,omitempty"`
+	ElementId               *int64  `json:"element_id,omitempty"`
+	ElementFingerPrint      *string `json:"element_finger_print,omitempty"`
 }

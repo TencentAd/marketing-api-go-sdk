@@ -71,8 +71,10 @@ type AdgroupsAddRequest struct {
 	LiveRecommendStrategyEnabled      *bool                          `json:"live_recommend_strategy_enabled,omitempty"`
 	CustomCostRoiCap                  *float64                       `json:"custom_cost_roi_cap,omitempty"`
 	SearchExpansionSwitch             SearchExpansionSwitch          `json:"search_expansion_switch,omitempty"`
+	IndustryValueExplore              *IndustryValueExplore          `json:"industry_value_explore,omitempty"`
 	AdxRealtimeType                   AdxRealtimeType                `json:"adx_realtime_type,omitempty"`
 	EnableSteadyExploration           *bool                          `json:"enable_steady_exploration,omitempty"`
 	SmartTargetingMode                SmartTargetingMode             `json:"smart_targeting_mode,omitempty"`
 	SmartCouponMode                   SmartCouponMode                `json:"smart_coupon_mode,omitempty"`
+	IsSmartDeliveryUpgradeProject     *bool                          `json:"is_smart_delivery_upgrade_project,omitempty"`
 }

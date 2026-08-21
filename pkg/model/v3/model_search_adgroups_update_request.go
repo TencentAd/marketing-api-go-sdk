@@ -33,4 +33,5 @@ type SearchAdgroupsUpdateRequest struct {
 	ConfiguredStatus                  ConfiguredStatus            `json:"configured_status,omitempty"`
 	FeedbackId                        *int64                      `json:"feedback_id,omitempty"`
 	SearchExpandTargetingSwitch       SearchExpandTargetingSwitch `json:"search_expand_targeting_switch,omitempty"`
+	IndustryValueExplore              *IndustryValueExplore       `json:"industry_value_explore,omitempty"`
 }

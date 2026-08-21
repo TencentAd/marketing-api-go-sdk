@@ -43,4 +43,5 @@ type SearchAdgroupsAddRequest struct {
 	FeedbackId                        *int64                     `json:"feedback_id,omitempty"`
 	DynamicAdType                     DynamicAdType              `json:"dynamic_ad_type,omitempty"`
 	SearchExpansionSwitch             SearchExpansionSwitch      `json:"search_expansion_switch,omitempty"`
+	IndustryValueExplore              *IndustryValueExplore      `json:"industry_value_explore,omitempty"`
 }

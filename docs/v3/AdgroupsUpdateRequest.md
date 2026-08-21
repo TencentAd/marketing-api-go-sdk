@@ -42,6 +42,7 @@ Name | Type | Description | Notes
 **CloudUnionSpec** | [***CloudUnionSpec**](cloud_union_spec.md) |  | [optional] [default to null]
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
+**IndustryValueExplore** | [***IndustryValueExplore**](industry_value_explore.md) |  | [optional] [default to null]
 **SmartTargetingMode** | [***SmartTargetingMode**](SmartTargetingMode.md) |  | [optional] [default to null]
 **SmartCouponMode** | [***SmartCouponMode**](SmartCouponMode.md) |  | [optional] [default to null]
 

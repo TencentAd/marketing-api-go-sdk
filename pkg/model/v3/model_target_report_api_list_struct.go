@@ -865,6 +865,9 @@ type TargetReportApiListStruct struct {
 	AfterAddWecomConsultDedupRate              *float64 `json:"after_add_wecom_consult_dedup_rate,omitempty"`
 	AfterAddWecomClassParticipatedFisrtUvRate  *float64 `json:"after_add_wecom_class_participated_fisrt_uv_rate,omitempty"`
 	OrderCouponAmount                          *int64   `json:"order_coupon_amount,omitempty"`
+	EffectiveConsultDedupPv                    *int64   `json:"effective_consult_dedup_pv,omitempty"`
+	EffectiveConsultDedupCost                  *int64   `json:"effective_consult_dedup_cost,omitempty"`
+	EffectiveConsultDedupRate                  *float64 `json:"effective_consult_dedup_rate,omitempty"`
 	AgeId                                      *int64   `json:"age_id,omitempty"`
 	CityId                                     *int64   `json:"city_id,omitempty"`
 	RegionId                                   *int64   `json:"region_id,omitempty"`

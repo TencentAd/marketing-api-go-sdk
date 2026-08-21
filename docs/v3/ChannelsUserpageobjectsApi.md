@@ -31,6 +31,8 @@ Name | Type | Description  | Notes
  **count** | **optional.Int64**|  | 
  **wechatChannelsAccountId** | **optional.String**|  | 
  **adContext** | [**optional.Interface of AdContext**](AdContext.md)|  | 
+ **componentTypeList** | [**optional.Interface of []string**](string.md)|  | 
+ **componentUuid** | **optional.String**|  | 
  **fields** | [**optional.Interface of []string**](string.md)| 返回参数的字段列表 | 
 
 ### Return type

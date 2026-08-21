@@ -18,4 +18,7 @@ type ElementRejectDetailInfoListStruct struct {
 	Reason             *string                         `json:"reason,omitempty"`
 	ReviewStatus       ReviewResultStatus              `json:"review_status,omitempty"`
 	RejectInfoLocation *[]RejectInfoLocationListStruct `json:"reject_info_location,omitempty"`
+	VideoAsrInfos      *[]VideoAsrInfoStruct           `json:"video_asr_infos,omitempty"`
+	VideoOcrInfos      *[]VideoOcrInfoStruct           `json:"video_ocr_infos,omitempty"`
+	CaptionInfos       *[]CaptionInfoStruct            `json:"caption_infos,omitempty"`
 }

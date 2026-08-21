@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**DoctorHeadImageId** | **string** |  | [optional] [default to null]
 **DoctorHeadUrl** | **string** |  | [optional] [default to null]
 **DoctorName** | **string** |  | [optional] [default to null]
 **DoctorTitle** | **string** |  | [optional] [default to null]

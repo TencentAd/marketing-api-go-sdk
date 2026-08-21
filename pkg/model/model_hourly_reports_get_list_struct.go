@@ -13,6 +13,10 @@ package model
 type HourlyReportsGetListStruct struct {
 	AccountId                                  *int64   `json:"account_id,omitempty"`
 	Hour                                       *int64   `json:"hour,omitempty"`
+	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
+	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
+	AdId                                       *int64   `json:"ad_id,omitempty"`
+	AdName                                     *string  `json:"ad_name,omitempty"`
 	ViewCount                                  *int64   `json:"view_count,omitempty"`
 	DownloadCount                              *int64   `json:"download_count,omitempty"`
 	ActivatedCount                             *int64   `json:"activated_count,omitempty"`
@@ -51,6 +55,8 @@ type HourlyReportsGetListStruct struct {
 	PageReservationRate                        *float64 `json:"page_reservation_rate,omitempty"`
 	PageReservationCost                        *int64   `json:"page_reservation_cost,omitempty"`
 	PageReservationCostWithPeople              *int64   `json:"page_reservation_cost_with_people,omitempty"`
+	WebAddToCartCount                          *int64   `json:"web_add_to_cart_count,omitempty"`
+	WebAddToCartCost                           *int64   `json:"web_add_to_cart_cost,omitempty"`
 	AddToCartPrice                             *int64   `json:"add_to_cart_price,omitempty"`
 	OwnPageCouponGetCount                      *int64   `json:"own_page_coupon_get_count,omitempty"`
 	OwnPageCouponGetCost                       *int64   `json:"own_page_coupon_get_cost,omitempty"`
@@ -448,20 +454,6 @@ type HourlyReportsGetListStruct struct {
 	MiniGamePayD7Roi                           *float64 `json:"mini_game_pay_d7_roi,omitempty"`
 	MiniGamePayD14Roi                          *float64 `json:"mini_game_pay_d14_roi,omitempty"`
 	MiniGamePayD30Roi                          *float64 `json:"mini_game_pay_d30_roi,omitempty"`
-	VideoFollowCount                           *int64   `json:"video_follow_count,omitempty"`
-	VideoHeartCount                            *int64   `json:"video_heart_count,omitempty"`
-	VideoCommentCount                          *int64   `json:"video_comment_count,omitempty"`
-	VideoLiveSubscribeCount                    *int64   `json:"video_live_subscribe_count,omitempty"`
-	VideoLiveExpCount                          *int64   `json:"video_live_exp_count,omitempty"`
-	VideoLiveHeartCount                        *int64   `json:"video_live_heart_count,omitempty"`
-	VideoLiveCommentCount                      *int64   `json:"video_live_comment_count,omitempty"`
-	VideoLiveShareCount                        *int64   `json:"video_live_share_count,omitempty"`
-	VideoLiveCickCommodityCount                *int64   `json:"video_live_cick_commodity_count,omitempty"`
-	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
-	VideoLiveCommentUserCount                  *int64   `json:"video_live_comment_user_count,omitempty"`
-	VideoLiveShareUserCount                    *int64   `json:"video_live_share_user_count,omitempty"`
-	VideoLiveClickCommodityUserCount           *int64   `json:"video_live_click_commodity_user_count,omitempty"`
-	VideoLiveCommodityBubbleExpCount           *int64   `json:"video_live_commodity_bubble_exp_count,omitempty"`
 	ScanCodeAddFansUv                          *int64   `json:"scan_code_add_fans_uv,omitempty"`
 	ScanCodeAddFansCount                       *int64   `json:"scan_code_add_fans_count,omitempty"`
 	ScanCodeAddFansUvCost                      *int64   `json:"scan_code_add_fans_uv_cost,omitempty"`
@@ -605,6 +597,50 @@ type HourlyReportsGetListStruct struct {
 	AfterAddWecomConsultDedupPvCost            *int64   `json:"after_add_wecom_consult_dedup_pv_cost,omitempty"`
 	AfterAddWecomIntentionDedupPv              *int64   `json:"after_add_wecom_intention_dedup_pv,omitempty"`
 	AfterAddWecomIntentionDedupPvCost          *int64   `json:"after_add_wecom_intention_dedup_pv_cost,omitempty"`
+	ExpPv                                      *int64   `json:"exp_pv,omitempty"`
+	Impression                                 *int64   `json:"impression,omitempty"`
+	Exposure                                   *int64   `json:"exposure,omitempty"`
+	Download                                   *int64   `json:"download,omitempty"`
+	Activation                                 *int64   `json:"activation,omitempty"`
+	AppActivatedCount                          *int64   `json:"app_activated_count,omitempty"`
+	AppActivatedRate                           *float64 `json:"app_activated_rate,omitempty"`
+	ThousandDisplayCost                        *int64   `json:"thousand_display_cost,omitempty"`
+	Click                                      *int64   `json:"click,omitempty"`
+	WebConsultCount                            *int64   `json:"web_consult_count,omitempty"`
+	WebConsultCost                             *int64   `json:"web_consult_cost,omitempty"`
+	WebPhoneCallDirectCount                    *int64   `json:"web_phone_call_direct_count,omitempty"`
+	WebPhoneCallDirectCost                     *int64   `json:"web_phone_call_direct_cost,omitempty"`
+	WebPhoneCallBackCount                      *int64   `json:"web_phone_call_back_count,omitempty"`
+	WebPhoneCallBackCost                       *int64   `json:"web_phone_call_back_cost,omitempty"`
+	OwnPageNavigationCost                      *int64   `json:"own_page_navigation_cost,omitempty"`
+	Reservation                                *int64   `json:"reservation,omitempty"`
+	WebPageReservationCount                    *int64   `json:"web_page_reservation_count,omitempty"`
+	WebPageReservationRate                     *float64 `json:"web_page_reservation_rate,omitempty"`
+	WebPageReservationCost                     *int64   `json:"web_page_reservation_cost,omitempty"`
+	WebAddToCarCount                           *int64   `json:"web_add_to_car_count,omitempty"`
+	WebAddToCarCost                            *int64   `json:"web_add_to_car_cost,omitempty"`
+	WebOrderUnitPrice                          *int64   `json:"web_order_unit_price,omitempty"`
+	WebOrderRoi                                *float64 `json:"web_order_roi,omitempty"`
+	WebDeliverCount                            *int64   `json:"web_deliver_count,omitempty"`
+	WebDeliverCost                             *int64   `json:"web_deliver_cost,omitempty"`
+	WebSignInCount                             *int64   `json:"web_sign_in_count,omitempty"`
+	WebSignInCost                              *int64   `json:"web_sign_in_cost,omitempty"`
+	AppInstallation                            *int64   `json:"app_installation,omitempty"`
+	AppActivatedCost                           *int64   `json:"app_activated_cost,omitempty"`
+	AppRetentionCount                          *int64   `json:"app_retention_count,omitempty"`
+	AppRetentionRate                           *float64 `json:"app_retention_rate,omitempty"`
+	AppRetentionCost                           *int64   `json:"app_retention_cost,omitempty"`
+	AppAddToCarCount                           *int64   `json:"app_add_to_car_count,omitempty"`
+	AppAddToCarAmount                          *int64   `json:"app_add_to_car_amount,omitempty"`
+	AppCartAmount                              *int64   `json:"app_cart_amount,omitempty"`
+	AppAddToCarCost                            *int64   `json:"app_add_to_car_cost,omitempty"`
+	AppPaymentCount                            *int64   `json:"app_payment_count,omitempty"`
+	AppPaymentAmount                           *int64   `json:"app_payment_amount,omitempty"`
+	PlatformCouponClick                        *int64   `json:"platform_coupon_click,omitempty"`
+	Follow                                     *int64   `json:"follow,omitempty"`
+	Share                                      *int64   `json:"share,omitempty"`
+	Read                                       *int64   `json:"read,omitempty"`
+	IntelligentPhoneCallDirectCount            *int64   `json:"intelligent_phone_call_direct_count,omitempty"`
 	RequestConversionsCount                    *int64   `json:"request_conversions_count,omitempty"`
 	RequestConversionsCost                     *int64   `json:"request_conversions_cost,omitempty"`
 	IncomeVal1                                 *int64   `json:"income_val_1,omitempty"`
@@ -682,97 +718,32 @@ type HourlyReportsGetListStruct struct {
 	MiniGamePayD7PlaRoi                        *float64 `json:"mini_game_pay_d7_pla_roi,omitempty"`
 	MiniGamePayD14PlaRoi                       *float64 `json:"mini_game_pay_d14_pla_roi,omitempty"`
 	MiniGamePayD30PlaRoi                       *float64 `json:"mini_game_pay_d30_pla_roi,omitempty"`
-	CampaignId                                 *int64   `json:"campaign_id,omitempty"`
-	CampaignName                               *string  `json:"campaign_name,omitempty"`
-	WebAddToCartCount                          *int64   `json:"web_add_to_cart_count,omitempty"`
-	WebAddToCartCost                           *int64   `json:"web_add_to_cart_cost,omitempty"`
-	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	PreviewConversionsCount                    *int64   `json:"preview_conversions_count,omitempty"`
 	PreviewDeepConversionsCount                *int64   `json:"preview_deep_conversions_count,omitempty"`
 	AcquisitionCost                            *int64   `json:"acquisition_cost,omitempty"`
-	AdId                                       *int64   `json:"ad_id,omitempty"`
-	AdName                                     *string  `json:"ad_name,omitempty"`
-	PromotedObjectType                         *string  `json:"promoted_object_type,omitempty"`
-	PromotedObjectId                           *string  `json:"promoted_object_id,omitempty"`
-	Date                                       *string  `json:"date,omitempty"`
-	MatchType                                  *int64   `json:"match_type,omitempty"`
-	BidwordId                                  *int64   `json:"bidword_id,omitempty"`
-	Bidword                                    *string  `json:"bidword,omitempty"`
+	VideoFollowCount                           *int64   `json:"video_follow_count,omitempty"`
+	VideoHeartCount                            *int64   `json:"video_heart_count,omitempty"`
+	VideoCommentCount                          *int64   `json:"video_comment_count,omitempty"`
+	VideoLiveSubscribeCount                    *int64   `json:"video_live_subscribe_count,omitempty"`
+	VideoLiveExpCount                          *int64   `json:"video_live_exp_count,omitempty"`
+	VideoLiveHeartCount                        *int64   `json:"video_live_heart_count,omitempty"`
+	VideoLiveCommentCount                      *int64   `json:"video_live_comment_count,omitempty"`
+	VideoLiveShareCount                        *int64   `json:"video_live_share_count,omitempty"`
+	VideoLiveCickCommodityCount                *int64   `json:"video_live_cick_commodity_count,omitempty"`
+	VideoLiveHeartUserCount                    *int64   `json:"video_live_heart_user_count,omitempty"`
+	VideoLiveCommentUserCount                  *int64   `json:"video_live_comment_user_count,omitempty"`
+	VideoLiveShareUserCount                    *int64   `json:"video_live_share_user_count,omitempty"`
+	VideoLiveClickCommodityUserCount           *int64   `json:"video_live_click_commodity_user_count,omitempty"`
+	VideoLiveCommodityBubbleExpCount           *int64   `json:"video_live_commodity_bubble_exp_count,omitempty"`
 	LiveStreamExpUv                            *int64   `json:"live_stream_exp_uv,omitempty"`
 	LiveStreamAvgTime                          *float64 `json:"live_stream_avg_time,omitempty"`
 	ExpOverallTopPv                            *int64   `json:"exp_overall_top_pv,omitempty"`
 	ExpAvgRank                                 *float64 `json:"exp_avg_rank,omitempty"`
 	ClkTopPv                                   *int64   `json:"clk_top_pv,omitempty"`
 	RealCostTop                                *int64   `json:"real_cost_top,omitempty"`
-	WechatAccountId                            *string  `json:"wechat_account_id,omitempty"`
-	WechatAgencyId                             *string  `json:"wechat_agency_id,omitempty"`
-	CostDeviationRate                          *float64 `json:"cost_deviation_rate,omitempty"`
-	CompensationAmount                         *int64   `json:"compensation_amount,omitempty"`
-	AvgViewPerUser                             *float64 `json:"avg_view_per_user,omitempty"`
-	ImageClickUserCount                        *int64   `json:"image_click_user_count,omitempty"`
-	VideoClickUserCount                        *int64   `json:"video_click_user_count,omitempty"`
-	LinkClickUserCount                         *int64   `json:"link_click_user_count,omitempty"`
-	PortraitClickUserCount                     *int64   `json:"portrait_click_user_count,omitempty"`
-	NicknameClickUserCount                     *int64   `json:"nickname_click_user_count,omitempty"`
-	PoiClickUserCount                          *int64   `json:"poi_click_user_count,omitempty"`
-	PlatformKeyPageViewUserCount               *int64   `json:"platform_key_page_view_user_count,omitempty"`
-	PlatformKeyPageAvgViewPerUser              *float64 `json:"platform_key_page_avg_view_per_user,omitempty"`
-	PlatformKeyPageViewDuration                *float64 `json:"platform_key_page_view_duration,omitempty"`
-	CpnClickButtonCost                         *int64   `json:"cpn_click_button_cost,omitempty"`
-	PraiseUserCount                            *int64   `json:"praise_user_count,omitempty"`
-	CommentUserCount                           *int64   `json:"comment_user_count,omitempty"`
-	OrderCount                                 *int64   `json:"order_count,omitempty"`
-	OrderRate                                  *float64 `json:"order_rate,omitempty"`
-	QuestReservationPvCost                     *int64   `json:"quest_reservation_pv_cost,omitempty"`
-	LeadsRate                                  *float64 `json:"leads_rate,omitempty"`
-	LeadsUserCount                             *int64   `json:"leads_user_count,omitempty"`
-	LeadsCost                                  *int64   `json:"leads_cost,omitempty"`
-	LeadsUserRate                              *float64 `json:"leads_user_rate,omitempty"`
-	ValidLeadsCost                             *int64   `json:"valid_leads_cost,omitempty"`
-	ValidLeadsRate                             *float64 `json:"valid_leads_rate,omitempty"`
-	PageConsultUserCount                       *int64   `json:"page_consult_user_count,omitempty"`
-	ValidPageConsultUserCount                  *int64   `json:"valid_page_consult_user_count,omitempty"`
-	WithdrDepWebUserCount                      *int64   `json:"withdr_dep_web_user_count,omitempty"`
-	WechatMinigameRegisterCost                 *int64   `json:"wechat_minigame_register_cost,omitempty"`
-	WechatMinigameRegisterRate                 *float64 `json:"wechat_minigame_register_rate,omitempty"`
-	WechatMinigameArpu                         *float64 `json:"wechat_minigame_arpu,omitempty"`
-	WechatMinigameRetentionCount               *int64   `json:"wechat_minigame_retention_count,omitempty"`
-	WechatMinigameCheckoutCount                *int64   `json:"wechat_minigame_checkout_count,omitempty"`
-	WechatMinigameCheckoutAmount               *int64   `json:"wechat_minigame_checkout_amount,omitempty"`
-	OfficialAccountFollowCount                 *int64   `json:"official_account_follow_count,omitempty"`
-	OfficialAccountFollowCost                  *int64   `json:"official_account_follow_cost,omitempty"`
-	OfficialAccountFollowRate                  *float64 `json:"official_account_follow_rate,omitempty"`
-	OfficialAccountRegisterUserCount           *int64   `json:"official_account_register_user_count,omitempty"`
-	OfficialAccountRegisterRate                *float64 `json:"official_account_register_rate,omitempty"`
-	OfficialAccountRegisterCost                *int64   `json:"official_account_register_cost,omitempty"`
-	OfficialAccountRegisterAmount              *int64   `json:"official_account_register_amount,omitempty"`
-	OfficialAccountRegisterRoi                 *int64   `json:"official_account_register_roi,omitempty"`
-	OfficialAccountApplyCount                  *int64   `json:"official_account_apply_count,omitempty"`
-	OfficialAccountApplyUserCount              *int64   `json:"official_account_apply_user_count,omitempty"`
-	OfficialAccountApplyRate                   *float64 `json:"official_account_apply_rate,omitempty"`
-	OfficialAccountApplyCost                   *int64   `json:"official_account_apply_cost,omitempty"`
-	OfficialAccountApplyAmount                 *int64   `json:"official_account_apply_amount,omitempty"`
-	OfficialAccountApplyRoi                    *int64   `json:"official_account_apply_roi,omitempty"`
-	OfficialAccountOrderCount                  *int64   `json:"official_account_order_count,omitempty"`
-	OfficialAccountFirstDayOrderCount          *int64   `json:"official_account_first_day_order_count,omitempty"`
-	OfficialAccountOrderUserCount              *int64   `json:"official_account_order_user_count,omitempty"`
-	OfficialAccountOrderRate                   *float64 `json:"official_account_order_rate,omitempty"`
-	OfficialAccountOrderCost                   *int64   `json:"official_account_order_cost,omitempty"`
-	OfficialAccountOrderAmount                 *int64   `json:"official_account_order_amount,omitempty"`
-	OfficialAccountFirstDayOrderAmount         *int64   `json:"official_account_first_day_order_amount,omitempty"`
-	OfficialAccountOrderRoi                    *int64   `json:"official_account_order_roi,omitempty"`
-	OfficialAccountConsultCount                *int64   `json:"official_account_consult_count,omitempty"`
-	OfficialAccountReaderCount                 *int64   `json:"official_account_reader_count,omitempty"`
-	OfficialAccountCreditApplyUserCount        *int64   `json:"official_account_credit_apply_user_count,omitempty"`
-	OfficialAccountCreditUserCount             *int64   `json:"official_account_credit_user_count,omitempty"`
-	CouponGetCost                              *int64   `json:"coupon_get_cost,omitempty"`
-	CouponGetRate                              *float64 `json:"coupon_get_rate,omitempty"`
-	CouponUseCount                             *int64   `json:"coupon_use_count,omitempty"`
-	ForwardUserCount                           *int64   `json:"forward_user_count,omitempty"`
-	VideoOuterPlayUserCount                    *int64   `json:"video_outer_play_user_count,omitempty"`
-	VideoInnerPlayUserCount                    *int64   `json:"video_inner_play_user_count,omitempty"`
-	PoiId                                      *string  `json:"poi_id,omitempty"`
+	VideoLiveExpUserCount                      *int64   `json:"video_live_exp_user_count,omitempty"`
+	CampaignName                               *string  `json:"campaign_name,omitempty"`
 	ProjectId                                  *int64   `json:"project_id,omitempty"`
 	ProjectName                                *string  `json:"project_name,omitempty"`
 	PurchasePv                                 *int64   `json:"purchase_pv,omitempty"`

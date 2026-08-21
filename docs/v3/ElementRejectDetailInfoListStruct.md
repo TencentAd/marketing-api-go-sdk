@@ -10,6 +10,9 @@ Name | Type | Description | Notes
 **Reason** | **string** |  | [optional] [default to null]
 **ReviewStatus** | [***ReviewResultStatus**](ReviewResultStatus.md) |  | [optional] [default to null]
 **RejectInfoLocation** | [**[]RejectInfoLocationListStruct**](reject_info_location_list_struct.md) |  | [optional] [default to null]
+**VideoAsrInfos** | [**[]VideoAsrInfoStruct**](video_asr_info_struct.md) |  | [optional] [default to null]
+**VideoOcrInfos** | [**[]VideoOcrInfoStruct**](video_ocr_info_struct.md) |  | [optional] [default to null]
+**CaptionInfos** | [**[]CaptionInfoStruct**](caption_info_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

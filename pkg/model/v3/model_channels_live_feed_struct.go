@@ -12,6 +12,5 @@ package model
 // 直播实时画面组件
 type ChannelsLiveFeedStruct struct {
 	WechatChannelsAccountId *string `json:"wechat_channels_account_id,omitempty"`
-	CoverId                 *string `json:"cover_id,omitempty"`
 	RewardedMaskSwitch      *bool   `json:"rewarded_mask_switch,omitempty"`
 }

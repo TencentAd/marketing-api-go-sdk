@@ -66,6 +66,7 @@ type AdcreativesGetListStruct struct {
 	LiveVideoSubMode              LiveVideoSubMode                  `json:"live_video_sub_mode,omitempty"`
 	LinkNameText                  *string                           `json:"link_name_text,omitempty"`
 	DynamicCreativeId             *int64                            `json:"dynamic_creative_id,omitempty"`
+	ContractUniversalLinkUrl      *string                           `json:"contract_universal_link_url,omitempty"`
 	AdcreativeTemplateId          *int64                            `json:"adcreative_template_id,omitempty"`
 	AdcreativeElements            *AdcreativeCreativeElementsReadMp `json:"adcreative_elements,omitempty"`
 }

@@ -23,6 +23,8 @@ Name | Type | Description | Notes
 **AccountFrame** | **string** |  | [optional] [default to null]
 **AccountOperateIdentity** | **string** |  | [optional] [default to null]
 **ComplianceOwner** | **string** |  | [optional] [default to null]
+**ElementId** | **int64** |  | [optional] [default to null]
+**ElementFingerPrint** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

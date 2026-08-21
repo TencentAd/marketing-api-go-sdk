@@ -22,4 +22,5 @@ const (
 	WechatAuthType_CUSTOMER_MANAGER            WechatAuthType = "CUSTOMER_MANAGER"
 	WechatAuthType_CUSTOMER_BUSINESS_UNIT      WechatAuthType = "CUSTOMER_BUSINESS_UNIT"
 	WechatAuthType_GROUP_BUSINESS_UNIT         WechatAuthType = "GROUP_BUSINESS_UNIT"
+	WechatAuthType_WECHAT_SHOP_LEAGUE          WechatAuthType = "WECHAT_SHOP_LEAGUE"
 )

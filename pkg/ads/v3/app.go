@@ -309,20 +309,12 @@ func (c *SDKClient) DynamicAdVideoTemplates() *api.DynamicAdVideoTemplatesApiSer
 	return c.Client.DynamicAdVideoTemplatesApi
 }
 
-func (c *SDKClient) DynamicCreativePreviews() *api.DynamicCreativePreviewsApiService {
-	return c.Client.DynamicCreativePreviewsApi
-}
-
 func (c *SDKClient) DynamicCreativeReviewResults() *api.DynamicCreativeReviewResultsApiService {
 	return c.Client.DynamicCreativeReviewResultsApi
 }
 
 func (c *SDKClient) DynamicCreatives() *api.DynamicCreativesApiService {
 	return c.Client.DynamicCreativesApi
-}
-
-func (c *SDKClient) EcommerceOrder() *api.EcommerceOrderApiService {
-	return c.Client.EcommerceOrderApi
 }
 
 func (c *SDKClient) ElementAppealQuota() *api.ElementAppealQuotaApiService {
@@ -601,6 +593,10 @@ func (c *SDKClient) Pages() *api.PagesApiService {
 	return c.Client.PagesApi
 }
 
+func (c *SDKClient) PreReviewTask() *api.PreReviewTaskApiService {
+	return c.Client.PreReviewTaskApi
+}
+
 func (c *SDKClient) ProductCatalogs() *api.ProductCatalogsApiService {
 	return c.Client.ProductCatalogsApi
 }
@@ -719,6 +715,10 @@ func (c *SDKClient) Rtatarget() *api.RtatargetApiService {
 
 func (c *SDKClient) RtatargetBind() *api.RtatargetBindApiService {
 	return c.Client.RtatargetBindApi
+}
+
+func (c *SDKClient) SaasMiniprogramPrereview() *api.SaasMiniprogramPrereviewApiService {
+	return c.Client.SaasMiniprogramPrereviewApi
 }
 
 func (c *SDKClient) SceneSpecTags() *api.SceneSpecTagsApiService {
@@ -889,6 +889,14 @@ func (c *SDKClient) WechatShop() *api.WechatShopApiService {
 	return c.Client.WechatShopApi
 }
 
+func (c *SDKClient) WechatShopActivity() *api.WechatShopActivityApiService {
+	return c.Client.WechatShopActivityApi
+}
+
+func (c *SDKClient) WechatShopActivityList() *api.WechatShopActivityListApiService {
+	return c.Client.WechatShopActivityListApi
+}
+
 func (c *SDKClient) WechatShopAuthorization() *api.WechatShopAuthorizationApiService {
 	return c.Client.WechatShopAuthorizationApi
 }
@@ -907,6 +915,14 @@ func (c *SDKClient) WechatStoreCatalogs() *api.WechatStoreCatalogsApiService {
 
 func (c *SDKClient) WechatStoreProductItems() *api.WechatStoreProductItemsApiService {
 	return c.Client.WechatStoreProductItemsApi
+}
+
+func (c *SDKClient) WecomCustomerAcquisitionLink() *api.WecomCustomerAcquisitionLinkApiService {
+	return c.Client.WecomCustomerAcquisitionLinkApi
+}
+
+func (c *SDKClient) WecomDepartmentUser() *api.WecomDepartmentUserApiService {
+	return c.Client.WecomDepartmentUserApi
 }
 
 func (c *SDKClient) Wildcards() *api.WildcardsApiService {

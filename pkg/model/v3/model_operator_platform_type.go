@@ -23,4 +23,5 @@ const (
 	OperatorPlatformType_SEARCH_EDITOR   OperatorPlatformType = "OPERATOR_PLATFORM_SEARCH_EDITOR"
 	OperatorPlatformType_MARKETING_ASSET OperatorPlatformType = "OPERATOR_PLATFORM_MARKETING_ASSET"
 	OperatorPlatformType_API_KEY         OperatorPlatformType = "OPERATOR_PLATFORM_API_KEY"
+	OperatorPlatformType_DELIVERY_AGENT  OperatorPlatformType = "OPERATOR_PLATFORM_DELIVERY_AGENT"
 )

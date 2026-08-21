@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 **LeadsEmail** | **string** |  | [optional] [default to null]
 **LeadsQq** | **string** |  | [optional] [default to null]
 **LeadsWechat** | **string** |  | [optional] [default to null]
-**LeadsGender** | [***LeadsGenderType**](LeadsGenderType.md) |  | [optional] [default to null]
+**LeadsGender** | [***GenderType**](GenderType.md) |  | [optional] [default to null]
 **Nationality** | **string** |  | [optional] [default to null]
 **WorkingYears** | **string** |  | [optional] [default to null]
 **Age** | **string** |  | [optional] [default to null]
@@ -58,6 +58,11 @@ Name | Type | Description | Notes
 **CorrelationFactorRank** | **string** |  | [optional] [default to null]
 **ClaimAccountId** | **int64** |  | [optional] [default to null]
 **LeadsResponseDuration** | **int64** |  | [optional] [default to null]
+**LeadsIpLocation** | **string** |  | [optional] [default to null]
+**FinderNickName** | **string** |  | [optional] [default to null]
+**FanStatus** | **int64** |  | [optional] [default to null]
+**StaffName** | **string** |  | [optional] [default to null]
+**CommonPageId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

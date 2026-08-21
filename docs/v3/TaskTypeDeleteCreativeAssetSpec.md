@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccountId** | **int64** |  | [optional] [default to null]
 **ComponentIdList** | **[]int64** |  | [optional] [default to null]
 **ImageIdList** | **[]string** |  | [optional] [default to null]
 **VideoIdList** | **[]string** |  | [optional] [default to null]

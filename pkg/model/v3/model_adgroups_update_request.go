@@ -49,6 +49,7 @@ type AdgroupsUpdateRequest struct {
 	CloudUnionSpec                    *CloudUnionSpec                `json:"cloud_union_spec,omitempty"`
 	LiveRecommendStrategyEnabled      *bool                          `json:"live_recommend_strategy_enabled,omitempty"`
 	CustomCostRoiCap                  *float64                       `json:"custom_cost_roi_cap,omitempty"`
+	IndustryValueExplore              *IndustryValueExplore          `json:"industry_value_explore,omitempty"`
 	SmartTargetingMode                SmartTargetingMode             `json:"smart_targeting_mode,omitempty"`
 	SmartCouponMode                   SmartCouponMode                `json:"smart_coupon_mode,omitempty"`
 }

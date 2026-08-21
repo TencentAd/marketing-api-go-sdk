@@ -17,4 +17,5 @@ type OfficialPageStruct struct {
 	PageTitle     *string            `json:"page_title,omitempty"`
 	PageType      OfficialPageType   `json:"page_type,omitempty"`
 	PageStatus    OfficialPageStatus `json:"page_status,omitempty"`
+	RejectReason  *string            `json:"reject_reason,omitempty"`
 }

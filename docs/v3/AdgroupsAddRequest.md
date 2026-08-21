@@ -64,10 +64,12 @@ Name | Type | Description | Notes
 **LiveRecommendStrategyEnabled** | **bool** |  | [optional] [default to null]
 **CustomCostRoiCap** | **float64** |  | [optional] [default to null]
 **SearchExpansionSwitch** | [***SearchExpansionSwitch**](SearchExpansionSwitch.md) |  | [optional] [default to null]
+**IndustryValueExplore** | [***IndustryValueExplore**](industry_value_explore.md) |  | [optional] [default to null]
 **AdxRealtimeType** | [***AdxRealtimeType**](AdxRealtimeType.md) |  | [optional] [default to null]
 **EnableSteadyExploration** | **bool** |  | [optional] [default to null]
 **SmartTargetingMode** | [***SmartTargetingMode**](SmartTargetingMode.md) |  | [optional] [default to null]
 **SmartCouponMode** | [***SmartCouponMode**](SmartCouponMode.md) |  | [optional] [default to null]
+**IsSmartDeliveryUpgradeProject** | **bool** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
