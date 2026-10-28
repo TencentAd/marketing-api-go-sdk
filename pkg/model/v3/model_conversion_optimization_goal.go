@@ -36,4 +36,5 @@ const (
 	ConversionOptimizationGoal_1DAYPURCHASEMONETIZATIONROAS    ConversionOptimizationGoal = "GOAL_1DAY_PURCHASE_MONETIZATION_ROAS"
 	ConversionOptimizationGoal_NET_PROFIT_24_H_ROAS            ConversionOptimizationGoal = "GOAL_NET_PROFIT_24H_ROAS"
 	ConversionOptimizationGoal_CPS_ESTIMATED_DISTRIBUTE_ROAS   ConversionOptimizationGoal = "GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS"
+	ConversionOptimizationGoal_24HORDERROAS                    ConversionOptimizationGoal = "GOAL_24H_ORDER_ROAS"
 )

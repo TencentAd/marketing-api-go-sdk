@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **ProductId** | **string** |  | [optional] [default to null]
 **MiniProgramPath** | **string** |  | [optional] [default to null]
 **ProductDetailPageSignature** | **string** |  | [optional] [default to null]
+**Source** | **string** |  | [optional] [default to null]
+**ProductDetailPageUrl** | **string** |  | [optional] [default to null]
 **SaasMiniprogramPreviewQrcodeUrl** | **string** |  | [optional] [default to null]
 **ComponentInfo** | [**[]SaasComponentStruct**](saas_component_struct.md) |  | [optional] [default to null]
 

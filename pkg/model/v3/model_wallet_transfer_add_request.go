@@ -18,4 +18,5 @@ type WalletTransferAddRequest struct {
 	TransferTryBest *int64         `json:"transfer_try_best,omitempty"`
 	ExternalBillNo  *string        `json:"external_bill_no,omitempty"`
 	Memo            *string        `json:"memo,omitempty"`
+	PreCheck        *int64         `json:"pre_check,omitempty"`
 }

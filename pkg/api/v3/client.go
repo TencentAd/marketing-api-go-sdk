@@ -166,6 +166,8 @@ type APIClient struct {
 
 	CreativeRecommendApi *CreativeRecommendApiService
 
+	CreativeReviewApi *CreativeReviewApiService
+
 	CreativeTemplateApi *CreativeTemplateApiService
 
 	CreativeTemplateListApi *CreativeTemplateListApiService
@@ -600,6 +602,7 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.ConversionLinksApi = (*ConversionLinksApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeRecommendApi = (*CreativeRecommendApiService)(&c.common)
+	c.CreativeReviewApi = (*CreativeReviewApiService)(&c.common)
 	c.CreativeTemplateApi = (*CreativeTemplateApiService)(&c.common)
 	c.CreativeTemplateListApi = (*CreativeTemplateListApiService)(&c.common)
 	c.CreativeTemplatePreviewsApi = (*CreativeTemplatePreviewsApiService)(&c.common)

@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **DeleteAccountComponentSpec** | [**[]DeleteAccountComponentItem**](delete_account_component_item.md) |  | [optional] [default to null]
 **UpdateDynamicCreativeSearchIntelligentExtensionSpec** | [**[]UpdateDynamicCreativeSearchIntelligentExtensionItem**](update_dynamic_creative_search_intelligent_extension_item.md) |  | [optional] [default to null]
 **DpadbuddySpec** | [**[]DpadbuddyItem**](dpadbuddy_item.md) |  | [optional] [default to null]
+**CommonStringSpec** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

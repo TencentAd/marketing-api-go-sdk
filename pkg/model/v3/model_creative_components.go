@@ -53,4 +53,6 @@ type CreativeComponents struct {
 	ChannelsLiveFeed     *[]ChannelsLiveFeedComponent     `json:"channels_live_feed,omitempty"`
 	RewardedBrowse       *[]RewardedBrowseComponent       `json:"rewarded_browse,omitempty"`
 	ChannelsBrand        *[]BrandComponent                `json:"channels_brand,omitempty"`
+	MdpaTitle            *[]MdpaTitleComponent            `json:"mdpa_title,omitempty"`
+	MdpaDescription      *[]MdpaDescriptionComponent      `json:"mdpa_description,omitempty"`
 }

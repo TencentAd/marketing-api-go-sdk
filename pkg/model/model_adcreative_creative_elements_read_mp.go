@@ -114,4 +114,8 @@ type AdcreativeCreativeElementsReadMp struct {
 	ListSublinkComponentOptions      *[]ListSublinkComponentOption      `json:"list_sublink_component_options,omitempty"`
 	ImageList3ComponentOptions       *[]ImageListComponentOption        `json:"image_list3_component_options,omitempty"`
 	RedEnvelopePacketList            *[]RedEnvelopePacketSpec           `json:"red_envelope_packet_list,omitempty"`
+	DescriptionEn                    *string                            `json:"description_en,omitempty"`
+	DescriptionTw                    *string                            `json:"description_tw,omitempty"`
+	ImageListDisplayMode             *int64                             `json:"image_list_display_mode,omitempty"`
+	MultiMaterialsDisplayMode        *int64                             `json:"multi_materials_display_mode,omitempty"`
 }

@@ -249,6 +249,10 @@ func (c *SDKClient) CreativeRecommend() *api.CreativeRecommendApiService {
 	return c.Client.CreativeRecommendApi
 }
 
+func (c *SDKClient) CreativeReview() *api.CreativeReviewApiService {
+	return c.Client.CreativeReviewApi
+}
+
 func (c *SDKClient) CreativeTemplate() *api.CreativeTemplateApiService {
 	return c.Client.CreativeTemplateApi
 }

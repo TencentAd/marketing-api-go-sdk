@@ -8,6 +8,9 @@ Name | Type | Description | Notes
 **ComponentType** | [***CreativeComponentType**](CreativeComponentType.md) |  | [optional] [default to null]
 **Status** | [***SysStatus**](SysStatus.md) |  | [optional] [default to null]
 **LiveBeginTime** | **int64** |  | [optional] [default to null]
+**IsAutoPublishEnabled** | **bool** |  | [optional] [default to null]
+**AutoPublishBeginTime** | **int64** |  | [optional] [default to null]
+**AutoPublishEndTime** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

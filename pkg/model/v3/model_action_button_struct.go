@@ -11,6 +11,7 @@ package model
 
 // 行动按钮结构
 type ActionButtonStruct struct {
-	ButtonText *string         `json:"button_text,omitempty"`
-	JumpInfo   *JumpinfoStruct `json:"jump_info,omitempty"`
+	ButtonText            *string         `json:"button_text,omitempty"`
+	JumpInfo              *JumpinfoStruct `json:"jump_info,omitempty"`
+	MiniProgramButtonText *string         `json:"mini_program_button_text,omitempty"`
 }

@@ -106,6 +106,10 @@ Name | Type | Description | Notes
 **ListSublinkComponentOptions** | [**[]ListSublinkComponentOption**](list_sublink_component_option.md) |  | [optional] [default to null]
 **ImageList3ComponentOptions** | [**[]ImageListComponentOption**](image_list_component_option.md) |  | [optional] [default to null]
 **RedEnvelopePacketList** | [**[]RedEnvelopePacketSpec**](red_envelope_packet_spec.md) |  | [optional] [default to null]
+**DescriptionEn** | **string** |  | [optional] [default to null]
+**DescriptionTw** | **string** |  | [optional] [default to null]
+**ImageListDisplayMode** | **int64** |  | [optional] [default to null]
+**MultiMaterialsDisplayMode** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

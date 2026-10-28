@@ -126,5 +126,6 @@ const (
 	IntOptimizationGoal_COLLECT                                IntOptimizationGoal = "OPTIMIZATIONGOAL_COLLECT"
 	IntOptimizationGoal_COUPON_AMOUNT                          IntOptimizationGoal = "OPTIMIZATIONGOAL_COUPON_AMOUNT"
 	IntOptimizationGoal_EFFECTIVE_CONSULT                      IntOptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_CONSULT"
+	IntOptimizationGoal_EFFECTIVE_ADD_GROUP                    IntOptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_ADD_GROUP"
 	IntOptimizationGoal_PAGE_EFFECTIVE_PHONE_CALL              IntOptimizationGoal = "OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL"
 )

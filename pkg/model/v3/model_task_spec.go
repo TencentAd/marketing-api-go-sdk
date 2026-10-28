@@ -42,4 +42,5 @@ type TaskSpec struct {
 	DeleteAccountComponentSpec                          *[]DeleteAccountComponentItem                          `json:"delete_account_component_spec,omitempty"`
 	UpdateDynamicCreativeSearchIntelligentExtensionSpec *[]UpdateDynamicCreativeSearchIntelligentExtensionItem `json:"update_dynamic_creative_search_intelligent_extension_spec,omitempty"`
 	DpadbuddySpec                                       *[]DpadbuddyItem                                       `json:"dpadbuddy_spec,omitempty"`
+	CommonStringSpec                                    *string                                                `json:"common_string_spec,omitempty"`
 }

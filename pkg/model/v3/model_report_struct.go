@@ -907,6 +907,13 @@ type ReportStruct struct {
 	EffectiveConsultDedupPv                    *int64   `json:"effective_consult_dedup_pv,omitempty"`
 	EffectiveConsultDedupCost                  *int64   `json:"effective_consult_dedup_cost,omitempty"`
 	EffectiveConsultDedupRate                  *float64 `json:"effective_consult_dedup_rate,omitempty"`
+	PaymentAmountActivatedMultipleD7           *float64 `json:"payment_amount_activated_multiple_d7,omitempty"`
+	WecomEffectiveAddGroupDedupPv              *int64   `json:"wecom_effective_add_group_dedup_pv,omitempty"`
+	MixIncomeRoi1d                             *float64 `json:"mix_income_roi_1d,omitempty"`
+	MixIncomeRoi3d                             *float64 `json:"mix_income_roi_3d,omitempty"`
+	MixIncomeRoi7d                             *float64 `json:"mix_income_roi_7d,omitempty"`
+	MixIncomeRoi14d                            *float64 `json:"mix_income_roi_14d,omitempty"`
+	MixIncomeRoi                               *float64 `json:"mix_income_roi,omitempty"`
 	AdgroupId                                  *int64   `json:"adgroup_id,omitempty"`
 	AdgroupName                                *string  `json:"adgroup_name,omitempty"`
 	DynamicCreativeId                          *int64   `json:"dynamic_creative_id,omitempty"`

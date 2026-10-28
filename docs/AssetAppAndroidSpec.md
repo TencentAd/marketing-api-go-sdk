@@ -1,0 +1,19 @@
+# AssetAppAndroidSpec
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Packname** | **string** |  | [optional] [default to null]
+**Version** | **string** |  | [optional] [default to null]
+**Icon** | **string** |  | [optional] [default to null]
+**AverageRating** | **string** |  | [optional] [default to null]
+**PackageSize** | **string** |  | [optional] [default to null]
+**Genres** | **[]string** |  | [optional] [default to null]
+**PackageDownloadUrl** | **string** |  | [optional] [default to null]
+**UserOriginUrl** | **string** |  | [optional] [default to null]
+**ChannelPackageSpec** | [**[]AssetChannelPackageSpecStruct**](asset_channel_package_spec_struct.md) |  | [optional] [default to null]
+**AppStoreBrandSpec** | [***AppStoreBrandSpec**](app_store_brand_spec.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

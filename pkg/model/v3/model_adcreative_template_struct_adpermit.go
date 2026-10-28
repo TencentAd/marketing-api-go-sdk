@@ -24,4 +24,5 @@ type AdcreativeTemplateStructAdpermit struct {
 	SupportMpaVideoTemplate       *bool                          `json:"support_mpa_video_template,omitempty"`
 	CreativePermissions           *CreativePermissions           `json:"creative_permissions,omitempty"`
 	LivePromotedType              LivePromotedType               `json:"live_promoted_type,omitempty"`
+	DefaultEnableRules            *[]DefaultEnableRule           `json:"default_enable_rules,omitempty"`
 }

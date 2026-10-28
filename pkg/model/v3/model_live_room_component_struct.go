@@ -26,4 +26,7 @@ type LiveRoomComponentStruct struct {
 	LastModifiedTime           *int64                       `json:"last_modified_time,omitempty"`
 	IsPublishEnabled           *bool                        `json:"is_publish_enabled,omitempty"`
 	WechatChannelsAccountId    *string                      `json:"wechat_channels_account_id,omitempty"`
+	IsAutoPublishEnabled       *bool                        `json:"is_auto_publish_enabled,omitempty"`
+	AutoPublishBeginTime       *int64                       `json:"auto_publish_begin_time,omitempty"`
+	AutoPublishEndTime         *int64                       `json:"auto_publish_end_time,omitempty"`
 }

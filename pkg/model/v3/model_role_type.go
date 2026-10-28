@@ -40,4 +40,6 @@ const (
 	RoleType_AGENCY_ORBAC             RoleType = "ROLE_TYPE_AGENCY_ORBAC"
 	RoleType_AGENCY_DESIGNER          RoleType = "ROLE_TYPE_AGENCY_DESIGNER"
 	RoleType_SUB_AGENCY_ADMIN         RoleType = "ROLE_TYPE_SUB_AGENCY_ADMIN"
+	RoleType_BOP_SUPER_ADMIN          RoleType = "ROLE_TYPE_BOP_SUPER_ADMIN"
+	RoleType_BOP_ADMIN                RoleType = "ROLE_TYPE_BOP_ADMIN"
 )

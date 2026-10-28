@@ -15,6 +15,8 @@ type SaasMiniprogramPrereviewAddRequest struct {
 	ProductId                       *string                `json:"product_id,omitempty"`
 	MiniProgramPath                 *string                `json:"mini_program_path,omitempty"`
 	ProductDetailPageSignature      *string                `json:"product_detail_page_signature,omitempty"`
+	Source                          *string                `json:"source,omitempty"`
+	ProductDetailPageUrl            *string                `json:"product_detail_page_url,omitempty"`
 	SaasMiniprogramPreviewQrcodeUrl *string                `json:"saas_miniprogram_preview_qrcode_url,omitempty"`
 	ComponentInfo                   *[]SaasComponentStruct `json:"component_info,omitempty"`
 }

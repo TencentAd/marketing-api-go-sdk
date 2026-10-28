@@ -10,9 +10,12 @@
 package model
 
 type LiveRoomComponentStatusUpdateRequest struct {
-	AccountId     *int64                `json:"account_id,omitempty"`
-	ComponentId   *int64                `json:"component_id,omitempty"`
-	ComponentType CreativeComponentType `json:"component_type,omitempty"`
-	Status        SysStatus             `json:"status,omitempty"`
-	LiveBeginTime *int64                `json:"live_begin_time,omitempty"`
+	AccountId            *int64                `json:"account_id,omitempty"`
+	ComponentId          *int64                `json:"component_id,omitempty"`
+	ComponentType        CreativeComponentType `json:"component_type,omitempty"`
+	Status               SysStatus             `json:"status,omitempty"`
+	LiveBeginTime        *int64                `json:"live_begin_time,omitempty"`
+	IsAutoPublishEnabled *bool                 `json:"is_auto_publish_enabled,omitempty"`
+	AutoPublishBeginTime *int64                `json:"auto_publish_begin_time,omitempty"`
+	AutoPublishEndTime   *int64                `json:"auto_publish_end_time,omitempty"`
 }

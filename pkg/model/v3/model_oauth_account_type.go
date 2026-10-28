@@ -25,4 +25,5 @@ const (
 	OauthAccountType_TONE              OauthAccountType = "ACCOUNT_TYPE_TONE"
 	OauthAccountType_BM                OauthAccountType = "ACCOUNT_TYPE_BM"
 	OauthAccountType_DATA_NEXUS        OauthAccountType = "ACCOUNT_TYPE_DATA_NEXUS"
+	OauthAccountType_BOP               OauthAccountType = "ACCOUNT_TYPE_BOP"
 )

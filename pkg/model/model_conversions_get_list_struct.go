@@ -42,4 +42,5 @@ type ConversionsGetListStruct struct {
 	IncubationOptimizationGoal       IntOptimizationGoal        `json:"incubation_optimization_goal,omitempty"`
 	DisableMessage                   *string                    `json:"disable_message,omitempty"`
 	InspectionFreeSwitch             *bool                      `json:"inspection_free_switch,omitempty"`
+	DowGradeFlag                     *int64                     `json:"dow_grade_flag,omitempty"`
 }

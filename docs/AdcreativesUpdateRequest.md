@@ -40,6 +40,7 @@ Name | Type | Description | Notes
 **UnionMarketSpec** | [***UnionMarketSpec**](union_market_spec.md) |  | [optional] [default to null]
 **AndroidQuickAppSpec** | [***AndroidQuickAppSpec**](android_quick_app_spec.md) |  | [optional] [default to null]
 **LinkNameText** | **string** |  | [optional] [default to null]
+**MacDeepLinkAppId** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]
 

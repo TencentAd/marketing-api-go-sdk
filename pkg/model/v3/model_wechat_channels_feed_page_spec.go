@@ -14,4 +14,6 @@ type WechatChannelsFeedPageSpec struct {
 	FeedId                  *string                                          `json:"feed_id,omitempty"`
 	ActionButton            *ActionButtonStructForWechatChannelsFeedPageSpec `json:"action_button,omitempty"`
 	WechatChannelsAccountId *string                                          `json:"wechat_channels_account_id,omitempty"`
+	ExportNativeDramaId     *string                                          `json:"export_native_drama_id,omitempty"`
+	NativeDramaSortId       *int64                                           `json:"native_drama_sort_id,omitempty"`
 }

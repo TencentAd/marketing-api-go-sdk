@@ -134,4 +134,5 @@ const (
 	OptimizationGoal_COLLECT                                OptimizationGoal = "OPTIMIZATIONGOAL_COLLECT"
 	OptimizationGoal_COUPON_AMOUNT                          OptimizationGoal = "OPTIMIZATIONGOAL_COUPON_AMOUNT"
 	OptimizationGoal_EFFECTIVE_CONSULT                      OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_CONSULT"
+	OptimizationGoal_EFFECTIVE_ADD_GROUP                    OptimizationGoal = "OPTIMIZATIONGOAL_EFFECTIVE_ADD_GROUP"
 )

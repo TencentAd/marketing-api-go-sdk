@@ -15,4 +15,5 @@ type MaterialDeriveInfoStruct struct {
 	OriginalAdcreativeTemplateIdList *[]int64            `json:"original_adcreative_template_id_list,omitempty"`
 	OriginalCoverImageId             *string             `json:"original_cover_image_id,omitempty"`
 	DeriveDataList                   *[]DeriveDataStruct `json:"derive_data_list,omitempty"`
+	OriginalComponentId              *int64              `json:"original_component_id,omitempty"`
 }

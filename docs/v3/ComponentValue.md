@@ -43,6 +43,8 @@ Name | Type | Description | Notes
 **ChannelsLiveFeed** | [***ChannelsLiveFeedComponent**](channels_live_feed_component.md) |  | [optional] [default to null]
 **DoctorCard** | [***DoctorCardComponent**](doctor_card_component.md) |  | [optional] [default to null]
 **RewardedBrowse** | [***RewardedBrowseComponent**](rewarded_browse_component.md) |  | [optional] [default to null]
+**MdpaTitle** | [***MdpaTitleComponent**](mdpa_title_component.md) |  | [optional] [default to null]
+**MdpaDescription** | [***MdpaDescriptionComponent**](mdpa_description_component.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

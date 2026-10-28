@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **IncubationOptimizationGoal** | [***IntOptimizationGoal**](IntOptimizationGoal.md) |  | [optional] [default to null]
 **DisableMessage** | **string** |  | [optional] [default to null]
 **InspectionFreeSwitch** | **bool** |  | [optional] [default to null]
+**DowGradeFlag** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

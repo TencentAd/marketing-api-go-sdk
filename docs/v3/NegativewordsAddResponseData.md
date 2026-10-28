@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **ExceedLimitWords** | [***ExceedLimitNegativeWordStruct**](exceed_limit_negative_word_struct.md) |  | [optional] [default to null]
 **HasSpecialWords** | [***HasSpecialNegativeWordStruct**](has_special_negative_word_struct.md) |  | [optional] [default to null]
 **SuccessWords** | [***SuccessNegativeWordStruct**](success_negative_word_struct.md) |  | [optional] [default to null]
+**DuplicateWithBidWords** | [***DuplicateNegativeWordStruct**](duplicate_negative_word_struct.md) |  | [optional] [default to null]
+**DuplicateWithExistingWords** | [***DuplicateNegativeWordStruct**](duplicate_negative_word_struct.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

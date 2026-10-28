@@ -15,4 +15,6 @@ type AdCreativeBrand struct {
 	BrandImg         *string                 `json:"brand_img,omitempty"`
 	BrandDescription *string                 `json:"brand_description,omitempty"`
 	MainJumpInfo     *[]LandingPageStructure `json:"main_jump_info,omitempty"`
+	BrandNameEn      *string                 `json:"brand_name_en,omitempty"`
+	BrandNameTw      *string                 `json:"brand_name_tw,omitempty"`
 }

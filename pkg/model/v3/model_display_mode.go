@@ -16,4 +16,5 @@ type DisplayMode string
 const (
 	DisplayMode_DEFAULT  DisplayMode = "DEFAULT"
 	DisplayMode_CAROUSEL DisplayMode = "CAROUSEL"
+	DisplayMode_TILE     DisplayMode = "TILE"
 )

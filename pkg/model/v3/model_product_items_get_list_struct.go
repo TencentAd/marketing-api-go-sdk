@@ -30,5 +30,4 @@ type ProductItemsGetListStruct struct {
 	CustomData         *string  `json:"custom_data,omitempty"`
 	IsVideo            *bool    `json:"is_video,omitempty"`
 	DataSource         *string  `json:"data_source,omitempty"`
-	ProductSelectScore *float64 `json:"product_select_score,omitempty"`
 }

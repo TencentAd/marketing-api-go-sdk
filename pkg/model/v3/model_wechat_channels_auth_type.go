@@ -23,4 +23,5 @@ const (
 	WechatChannelsAuthType_CUSTOMER_BUSINESS_UNIT      WechatChannelsAuthType = "CUSTOMER_BUSINESS_UNIT"
 	WechatChannelsAuthType_GROUP_BUSINESS_UNIT         WechatChannelsAuthType = "GROUP_BUSINESS_UNIT"
 	WechatChannelsAuthType_WECHAT_SHOP_LEAGUE          WechatChannelsAuthType = "WECHAT_SHOP_LEAGUE"
+	WechatChannelsAuthType_AGENCY_BUSINESS_UNIT        WechatChannelsAuthType = "AGENCY_BUSINESS_UNIT"
 )

@@ -47,6 +47,7 @@ Name | Type | Description | Notes
 **LiveVideoMode** | [***LiveVideoMode**](LiveVideoMode.md) |  | [optional] [default to null]
 **LiveVideoSubMode** | [***LiveVideoSubMode**](LiveVideoSubMode.md) |  | [optional] [default to null]
 **LinkNameText** | **string** |  | [optional] [default to null]
+**MacDeepLinkAppId** | **string** |  | [optional] [default to null]
 **AccountId** | **int64** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsMp**](adcreative_creative_elements_mp.md) |  | [optional] [default to null]

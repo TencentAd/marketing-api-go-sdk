@@ -15,4 +15,5 @@ type WalletTransferAddResponseData struct {
 	ExternalBillNo *string        `json:"external_bill_no,omitempty"`
 	Time           *int64         `json:"time,omitempty"`
 	IsRepeated     *bool          `json:"is_repeated,omitempty"`
+	CheckResult    *CheckResult   `json:"check_result,omitempty"`
 }

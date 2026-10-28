@@ -28,5 +28,6 @@ const (
 	ComponentGenerationType_TONGTOU_SEARCH_DERIVATIVE          ComponentGenerationType = "COMPONENT_GENERATION_TYPE_TONGTOU_SEARCH_DERIVATIVE"
 	ComponentGenerationType_ECOLOGICAL_PULL                    ComponentGenerationType = "COMPONENT_GENERATION_TYPE_ECOLOGICAL_PULL"
 	ComponentGenerationType_SMART_DELIVERY_RESOURCE_SKIP_GRANT ComponentGenerationType = "COMPONENT_GENERATION_TYPE_SMART_DELIVERY_RESOURCE_SKIP_GRANT"
+	ComponentGenerationType_DISK                               ComponentGenerationType = "COMPONENT_GENERATION_TYPE_DISK"
 	ComponentGenerationType_MARKETING_ASSET                    ComponentGenerationType = "COMPONENT_GENERATION_TYPE_MARKETING_ASSET"
 )

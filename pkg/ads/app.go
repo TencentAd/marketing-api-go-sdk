@@ -213,6 +213,14 @@ func (c *SDKClient) ComplianceValidation() *api.ComplianceValidationApiService {
 	return c.Client.ComplianceValidationApi
 }
 
+func (c *SDKClient) ContractPages() *api.ContractPagesApiService {
+	return c.Client.ContractPagesApi
+}
+
+func (c *SDKClient) ContractPromotedObjects() *api.ContractPromotedObjectsApiService {
+	return c.Client.ContractPromotedObjectsApi
+}
+
 func (c *SDKClient) Conversions() *api.ConversionsApiService {
 	return c.Client.ConversionsApi
 }

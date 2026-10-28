@@ -148,6 +148,10 @@ type APIClient struct {
 
 	ComplianceValidationApi *ComplianceValidationApiService
 
+	ContractPagesApi *ContractPagesApiService
+
+	ContractPromotedObjectsApi *ContractPromotedObjectsApiService
+
 	ConversionsApi *ConversionsApiService
 
 	CreativeComponentsApi *CreativeComponentsApiService
@@ -473,6 +477,8 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 	c.CampaignsApi = (*CampaignsApiService)(&c.common)
 	c.CapabilitiesApi = (*CapabilitiesApiService)(&c.common)
 	c.ComplianceValidationApi = (*ComplianceValidationApiService)(&c.common)
+	c.ContractPagesApi = (*ContractPagesApiService)(&c.common)
+	c.ContractPromotedObjectsApi = (*ContractPromotedObjectsApiService)(&c.common)
 	c.ConversionsApi = (*ConversionsApiService)(&c.common)
 	c.CreativeComponentsApi = (*CreativeComponentsApiService)(&c.common)
 	c.CreativeSampleProductsApi = (*CreativeSampleProductsApiService)(&c.common)

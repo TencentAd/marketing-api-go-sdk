@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **SupportMpaVideoTemplate** | **bool** |  | [optional] [default to null]
 **CreativePermissions** | [***CreativePermissions**](creative_permissions.md) |  | [optional] [default to null]
 **LivePromotedType** | [***LivePromotedType**](LivePromotedType.md) |  | [optional] [default to null]
+**DefaultEnableRules** | [**[]DefaultEnableRule**](default_enable_rule.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

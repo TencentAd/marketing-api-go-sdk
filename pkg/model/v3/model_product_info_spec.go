@@ -84,7 +84,6 @@ type ProductInfoSpec struct {
 	AuthorFansCount              *int64                 `json:"author_fans_count,omitempty"`
 	SemanticLabels               *[]string              `json:"semantic_labels,omitempty"`
 	DetailImg                    *[]string              `json:"detail_img,omitempty"`
-	HighInfoTag                  *int64                 `json:"high_info_tag,omitempty"`
 	ShowCount                    *int64                 `json:"show_count,omitempty"`
 	PlayRate                     *float64               `json:"play_rate,omitempty"`
 	MakeMoneyOnline              *string                `json:"make_money_online,omitempty"`

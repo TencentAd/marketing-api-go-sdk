@@ -78,4 +78,6 @@ type AdcreativeCreativeElementsWithOptions struct {
 	WechatChannelsCoverImgShowType WechatChannelsCoverImgShowType     `json:"wechat_channels_cover_img_show_type,omitempty"`
 	MiniCardLink                   *AdCreativeMiniCardLink            `json:"mini_card_link,omitempty"`
 	RedEnvelopePacketList          *[]RedEnvelopePacketSpec           `json:"red_envelope_packet_list,omitempty"`
+	ImageListDisplayMode           *int64                             `json:"image_list_display_mode,omitempty"`
+	MultiMaterialsDisplayMode      *int64                             `json:"multi_materials_display_mode,omitempty"`
 }

@@ -10,12 +10,14 @@
 package model
 
 type NegativewordsAddResponseData struct {
-	AdgroupId         *int64                          `json:"adgroup_id,omitempty"`
-	DynamicCreativeId *int64                          `json:"dynamic_creative_id,omitempty"`
-	Status            NegativeWordOperStatus          `json:"status,omitempty"`
-	DuplicateWords    *DuplicateNegativeWordStruct    `json:"duplicate_words,omitempty"`
-	ExceedLengthWords *ExceedLengthNegativeWordStruct `json:"exceed_length_words,omitempty"`
-	ExceedLimitWords  *ExceedLimitNegativeWordStruct  `json:"exceed_limit_words,omitempty"`
-	HasSpecialWords   *HasSpecialNegativeWordStruct   `json:"has_special_words,omitempty"`
-	SuccessWords      *SuccessNegativeWordStruct      `json:"success_words,omitempty"`
+	AdgroupId                  *int64                          `json:"adgroup_id,omitempty"`
+	DynamicCreativeId          *int64                          `json:"dynamic_creative_id,omitempty"`
+	Status                     NegativeWordOperStatus          `json:"status,omitempty"`
+	DuplicateWords             *DuplicateNegativeWordStruct    `json:"duplicate_words,omitempty"`
+	ExceedLengthWords          *ExceedLengthNegativeWordStruct `json:"exceed_length_words,omitempty"`
+	ExceedLimitWords           *ExceedLimitNegativeWordStruct  `json:"exceed_limit_words,omitempty"`
+	HasSpecialWords            *HasSpecialNegativeWordStruct   `json:"has_special_words,omitempty"`
+	SuccessWords               *SuccessNegativeWordStruct      `json:"success_words,omitempty"`
+	DuplicateWithBidWords      *DuplicateNegativeWordStruct    `json:"duplicate_with_bid_words,omitempty"`
+	DuplicateWithExistingWords *DuplicateNegativeWordStruct    `json:"duplicate_with_existing_words,omitempty"`
 }

@@ -19,6 +19,7 @@ const (
 	OauthAccountRoleType_T1                                  OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_T1"
 	OauthAccountRoleType_BUSINESS_MANAGER                    OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER"
 	OauthAccountRoleType_DATA_NEXUS                          OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_DATA_NEXUS"
+	OauthAccountRoleType_BOP                                 OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_BOP"
 	OauthAccountRoleType_ORGANIZATION_ADVERTISER_UNIT        OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_UNIT"
 	OauthAccountRoleType_ORGANIZATION_ADVERTISER_MDM         OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_MDM"
 	OauthAccountRoleType_ORGANIZATION_ADVERTISER_CORPORATION OauthAccountRoleType = "ACCOUNT_ROLE_TYPE_ORGANIZATION_ADVERTISER_CORPORATION"

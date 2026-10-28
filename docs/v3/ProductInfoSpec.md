@@ -76,7 +76,6 @@ Name | Type | Description | Notes
 **AuthorFansCount** | **int64** |  | [optional] [default to null]
 **SemanticLabels** | **[]string** |  | [optional] [default to null]
 **DetailImg** | **[]string** |  | [optional] [default to null]
-**HighInfoTag** | **int64** |  | [optional] [default to null]
 **ShowCount** | **int64** |  | [optional] [default to null]
 **PlayRate** | **float64** |  | [optional] [default to null]
 **MakeMoneyOnline** | **string** |  | [optional] [default to null]

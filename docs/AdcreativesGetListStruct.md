@@ -59,6 +59,7 @@ Name | Type | Description | Notes
 **LinkNameText** | **string** |  | [optional] [default to null]
 **DynamicCreativeId** | **int64** |  | [optional] [default to null]
 **ContractUniversalLinkUrl** | **string** |  | [optional] [default to null]
+**MacDeepLinkAppId** | **string** |  | [optional] [default to null]
 **AdcreativeTemplateId** | **int64** |  | [optional] [default to null]
 **AdcreativeElements** | [***AdcreativeCreativeElementsReadMp**](adcreative_creative_elements_read_mp.md) |  | [optional] [default to null]
 

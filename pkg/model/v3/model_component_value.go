@@ -51,4 +51,6 @@ type ComponentValue struct {
 	ChannelsLiveFeed     *ChannelsLiveFeedComponent     `json:"channels_live_feed,omitempty"`
 	DoctorCard           *DoctorCardComponent           `json:"doctor_card,omitempty"`
 	RewardedBrowse       *RewardedBrowseComponent       `json:"rewarded_browse,omitempty"`
+	MdpaTitle            *MdpaTitleComponent            `json:"mdpa_title,omitempty"`
+	MdpaDescription      *MdpaDescriptionComponent      `json:"mdpa_description,omitempty"`
 }

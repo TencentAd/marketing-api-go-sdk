@@ -11,5 +11,6 @@ package model
 
 // 创意增强MAX偏好设置
 type AutoDerivedCreativePreference struct {
-	AutoDerivedCreativeMethodTypeList *[]string `json:"auto_derived_creative_method_type_list,omitempty"`
+	AutoDerivedCreativeMethodTypeList    *[]string                                 `json:"auto_derived_creative_method_type_list,omitempty"`
+	AutoDerivedCreativeSelectProductList *[]AutoDerivedCreativeSelectProductStruct `json:"auto_derived_creative_select_product_list,omitempty"`
 }

@@ -29,4 +29,6 @@ const (
 	AdCreativeSource_NATIVE_FEED_MANAGEMENT               AdCreativeSource = "AD_CREATIVE_NATIVE_FEED_MANAGEMENT"
 	AdCreativeSource_AGGREGATION_PROMOTION                AdCreativeSource = "AD_CREATIVE_AGGREGATION_PROMOTION"
 	AdCreativeSource_QYT_SMART_AIGC                       AdCreativeSource = "AD_CREATIVE_QYT_SMART_AIGC"
+	AdCreativeSource_SMART_DELIVERY_AIGC_ENHANCE          AdCreativeSource = "AD_CREATIVE_SMART_DELIVERY_AIGC_ENHANCE"
+	AdCreativeSource_MANAGEMENT_AIGC                      AdCreativeSource = "AD_CREATIVE_MANAGEMENT_AIGC"
 )
